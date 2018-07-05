@@ -1,0 +1,144 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Triden's Estate~
+ShortName   Triden's Estate~
+Builders    delandria~
+Credits     Delandria~
+VNUMs       2350 2359
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Tue Jul 19 14:44:59 2005~
+End
+
+
+
+#MOBILES
+#2350
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+AffBy2 shadowsight~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 2350 goosefeathers~
+END
+
+#0
+
+
+
+#OBJECTS
+#2351
+Name treasury key~
+Short `#`sTriden's `yHouse Key`^~
+Desc `#`sTriden's `yHouse Key`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#2352
+Name marble fountain water~
+Short `#`wa large `sblack marble `wfountain`^~
+Desc `#`wa large `sblack marble `wfountain sits here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50000 50000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal burnproof nogetall~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#2359
+Name Treasury~
+Desc This is a big empty room with no entrance but from my bedroom. The guard has 
+a desk he sits at when he is on guard duty. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2350
+title mob trans~
+author Ixliam~
+code mob transfer $n 2359
+~
+disabled false
+last_editor Delandria~
+last_editdate 1105912673
+END
+
+#0
+
+
+#$

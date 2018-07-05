@@ -1,0 +1,221 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Rakk's Carriage~
+ShortName   Rakk's Carriage~
+Builders    None~
+VNUMs       1066 1070
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Mon Jun 27 13:40:27 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#1066
+Name whips~
+Short a set of whips~
+Desc A pair of whips lies here.~
+Level 0
+ItemType vehicle_controls~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1068 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+ExtraDesc _TRAVEL~
+The orcs chant as the carriage moves forward.
+~
+End
+
+#1067
+Name door~
+Short a large black door~
+Desc A large black door leads to the outside.~
+Level 0
+ItemType vehicle_exit~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1068 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+End
+
+#1068
+Name carriage stone~
+Short a large stone carriage~
+Desc A large stone carriage pulled by a team of orcs.~
+Level 0
+ItemType vehicle~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1070 1000 A 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+ExtraDesc carriage stone orc~
+This is a large slave propelled stone carriage. The 8 slaves are all 7 foot, 
+300 pound, black hided orcs that march to the beat of the chant they are 
+constantly mumbling. It is 11 foot tall, 10 feet long, and 6 feet wide in 
+all and the door itself is atleast 9 feet in height and 5 and a half feet in 
+width. It has two stone rear wheels that are one foot in width and four feet 
+in diameter, and one wheel in the in the front which is 10 inches in width 
+and 3 feet in diameter. The door has two fairly large paw prints engraved on 
+it, the name "Mersen Murkat" engraved in an arch underneath the paw prints, 
+and the door handle is a long and thick polished gold bar with intricate 
+designs. The steps are made of black cast iron and have hundreds of ridges 
+on them.The body of the carriage is blackened granite that was not not 
+previously smoothed. 
+~
+End
+
+#1069
+Name window~
+Short a large window~
+Desc A large window is here.~
+Level 0
+ItemType vehicle_window~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values CDFK 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+End
+
+#0
+
+
+
+#ROOMS
+#1066
+Name Driver's Seat~
+Desc This is the drivers favorite part of the carriage, it has a large throne as 
+a seat and the whips attached to all eight of the orcs. It is a very nice 
+place if you dont mind the chanting of the orcs. 
+~
+RoomFlags indoors safe no_recall law nowhere light~
+Sector vehicle~
+Owner Xylen~
+Exit southeast 1067
+Exit southwest 1068
+End
+
+
+#1067
+Name Mersen's Carriage~
+Desc This is a spacious carriage with 4 small benches fit for two to sit in and 
+looking at the bench opposite of it, on the outside makes it look like it 
+would be in bad shape inside as well, however the walls and ceiling are gold 
+colored and perfectly even. There is a red curtain blocking the front of the 
+car. 
+~
+RoomFlags indoors safe no_recall law nowhere light~
+Sector vehicle~
+Exit south 1069
+Exit west 1068
+Exit northwest 1066
+End
+
+
+#1068
+Name Mersen's Carriage~
+Desc This is a spacious carriage with 4 small benches fit for two to sit in and 
+looking at the bench opposite of it, on the outside makes it look like it 
+would be in bad shape inside as well, however the walls and ceiling are gold 
+colored and perfectly even. There is a red curtain blocking the front of the 
+car. 
+~
+RoomFlags indoors safe no_recall law nowhere light~
+Sector vehicle~
+Exit east 1067
+Exit south 1070
+Exit northeast 1066
+End
+
+
+#1069
+Name Mersen's Carriage~
+Desc This is a spacious carriage with 4 small benches fit for two to sit in and 
+looking at the bench opposite of it, on the outside makes it look like it 
+would be in bad shape inside as well, however the walls and ceiling are gold 
+colored and perfectly even. There is a red curtain blocking the front of the 
+car. 
+~
+RoomFlags indoors safe no_recall law nowhere light~
+Sector vehicle~
+Exit north 1067
+Exit west 1070
+End
+
+
+#1070
+Name Mersen's Carriage~
+Desc This is a spacious carriage with 4 small benches fit for two to sit in and 
+looking at the bench opposite of it, on the outside makes it look like it 
+would be in bad shape inside as well, however the walls and ceiling are gold 
+colored and perfectly even. There is a red curtain blocking the front of the 
+car. 
+~
+RoomFlags indoors safe no_recall law nowhere light~
+Sector vehicle~
+Exit north 1068
+Exit east 1069
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1066 -1 1066
+O 0 1069 -1 1067
+O 0 1069 -1 1068
+O 0 1069 -1 1069
+O 0 1067 -1 1070
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

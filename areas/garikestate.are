@@ -1,0 +1,1772 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Knighthire Manse~
+ShortName   Knighthire Manse~
+Builders    none~
+Credits     Garik~
+build_restricts 'all' kyarra  newbuilder mahinae~
+VNUMs       1450 1499
+AFlags  noteleport noscry hidden use_buildrestricts nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    2
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Thu Dec 22 11:21:08 2005~
+End
+
+
+
+#MOBILES
+#1450
+Name bandit guard~
+ShortD a slovenly bandit guard~
+LongD A slovenly bandit guard seems to be falling asleep at his post.~
+Desc This slovenly guard has been sent to keep the gates secure. How well he can 
+perform this task half-asleep remains to be seen. 
+~
+Race dryad~
+Align 3 3
+Level 100
+Hitroll 2
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType slash
+AC -700 -700 -700 -602
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+Act2   avoids_all_attacks~
+Off    fade~
+Imm    disease~
+Res    magic~
+Vuln   fire poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 1450 restore~
+MProg GRALL 1451 100~
+MProg SPEECH 1452 oload~
+END
+
+#1451
+Name unseen gate opener~
+ShortD unseen gate opener~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -783
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_evil detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#1452
+Name female librarian~
+ShortD old female librarian~
+LongD A librarian is here stocking the shelves.~
+Desc Before you is a old female woman with short `Wwhite `wcurly hair. When seen open 
+here eyes are `ybrownish `wcolor. She is wearing a long flowing `Rred `wdress with 
+`sblack `wshoes on. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType claw
+AC 90 90 90 73
+Wealth 20
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#1453
+Name wolf~
+ShortD a `sgrey `wwolf`^~
+LongD A grey wolf is resting by the fireplace.~
+Desc ~
+Race dog~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 81
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#1460
+Name woman female girl maid~
+ShortD a female maid~
+LongD A female maid is cleaning here.~
+Desc Before you is a toned skinny woman with long straight `sblack `whair covering 
+part of her ears. When seen open her eyes are peircing `ybrown`w. On her body 
+she is wearing a `sblack `wdress `wwith pair of `wblack shoes on her feet. On her 
+back is a tattoo of a faerie spreading her wings touching the V shape end of 
+the dress. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 74
+Wealth 20
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#1462
+Name life guard man guy~
+ShortD a well build life-guard~
+LongD Male life-guard stands here, watching for your saftey.~
+Desc Before you is a well build long curly `yblonde `whair in a pony tail. When seen 
+open, he has peircing `Bblue `weyes. On his left arm is a tattoo of a shark. 
+Below of is body he is wearing a `Rred `w swimming drunks. On his feet he is 
+wearing lighted `ytanned `wsandles. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 76
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#1471
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType slash
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#1475
+Name female girl gardener woman~
+ShortD a female gardener~
+LongD A gardener is working here.~
+Desc Before you is a toned female with long `yblonde `whair. Her skin color is very 
+`ytanned`w and sweaty. When seen open, her eyes are darkish green. On here upper 
+body is a short `ggreen `wstained `Wwhite `wcut-of shirt and below she is wearing 
+short `Wwhite `wskirt. Her knees are slight dirty and her `Rred `wsandles are bit 
+dirty as well. 
+~
+Race human~
+Align 2 3
+Level 1
+Hitroll 40
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType scratch
+AC 90 90 90 79
+Wealth 20
+Act    npc no_tame warrior~
+AffBy  sanctuary~
+Off    bash disarm dodge kick dirt_kick parry trip~
+Imm    charm pierce negative holy drowning hunger thirst fear~
+Res    magic pierce poison holy disease drowning illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos kneeling~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#1490
+Name man ghost~
+ShortD floating ghostly man~
+LongD A ghost of a man glares at you.~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType slash
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   allskills avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos dead~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1450
+Name short sword~
+Short a white shortsword~
+Desc A glow shortsword has been left here.~
+Level 12
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values sword 2 7 slash I
+Weight 0
+Material unknown~
+Extra    glow hum nodegrade~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 12 -1 damroll 2 0
+Affect modifier -1 12 -1 hitroll 2 0
+End
+
+#1451
+Name recliner~
+Short `sgrey `wrecliner`^~
+Desc A recliner stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 700 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1452
+Name fire~
+Short `sSteal`w circualr fire place.`^~
+Desc A fireplace stands in the corner.~
+Level 5
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 AB G 1499 0
+Weight 0
+Material unknown~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#1453
+Name fire~
+Short a burning fire~
+Desc A steal circular fireplace is burning here.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 G 1453 0
+Weight 0
+Material unknown~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#1454
+Name table~
+Short circular table~
+Desc A polished dark cherry table stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 7 1900 DG 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1455
+Name bar~
+Short `sblack `wcherry bar`^~
+Desc A large bar stand stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 A 0 500 10000
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1456
+Name bookcase~
+Short a large `#`ybookcase`^~
+Desc A large bookcase has been pressed against the wall.~
+Level 90
+ItemType container~
+Trap 8192 15 96 71
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4000 AC 0 4010 8000
+Weight 100
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay trap~
+End
+
+#1457
+Name desk~
+Short a cherrywood desk~
+Desc A cherrywood desk littered with rubbish stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 1000 DG 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1458
+Name altar~
+Short `Ws`ceandac `waltar`^~
+Desc A seandac altar stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 2000 DGQ 100 100
+Weight 0
+Material altar~
+Extra    bless nodegrade~
+Extra2   nodecay~
+End
+
+#1459
+Name lamp floor~
+Short `yiron `wfloor lamp`^~
+Desc A lamp is glowing here.~
+Level 1
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 0
+Material light~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#1460
+Name burning fire~
+Short burning fire~
+Desc A small fire burns here.~
+Level 1
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 0
+Material fire~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#1461
+Name rack titanium~
+Short titanium rack~
+Desc A titanium rack stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 0 0 500 1000
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1462
+Name bench~
+Short `sstone `wbench`^~
+Desc A stone bench stands here.~
+Level 6
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 15 2500 EH 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay antichaos~
+End
+
+#1463
+Name armoire closet cabinet~
+Short `Yoak `warmoire`^~
+Desc Large oak Armoire stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5000 A 0 6000 10000
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1464
+Name sofa couch seat~
+Short `ccyan `wcolour sofa`^~
+Desc A two seated cyan coloured sofa stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHKQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1465
+Name bed king~
+Short large `stitanium`w kingsized bed`^~
+Desc A large titanium frame king-sized bed stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 2000 EHKQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1466
+Name canopy bed~
+Short a Polished `ssteel`w framed canopybed~
+Desc A canopybed lays here.~
+Level 30
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 700 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1467
+Name fire place burning portal~
+Short circular `ssteal`w fire place`^~
+Desc A circular steal fireplace is burning here.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 G 1451 0
+Weight 0
+Material unknown~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#1468
+Name pool water~
+Short `cSteaming `Clarge pool`^~
+Desc A steaming large pool is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 9000 FIQ 200 200
+Weight 0
+Material unknown~
+Extra    glow hum nodegrade~
+Extra2   nodecay~
+End
+
+#1469
+Name armoire chest closet~
+Short old `sgrey `warmoire`^~
+Desc A large old armoire stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5000 ACD 1475 10000 20000
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#1470
+Name treasury key~
+Short `#`WGarik's `Ytreasury key`^~
+Desc `#`WGarik's `Ytreasury key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#1471
+Name gate key~
+Short a key~
+Desc A big key is here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove inventory rotdeath nonmetal nolocate nodegrade burnproof nouncurse norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#1475
+Name rusty key~
+Short a `yrusty`w key`^~
+Desc Rusty iron key~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material key~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#1480
+Name ball light~
+Short `Ybright `wball of light`^~
+Desc A large light is here shinning towards the water.~
+Level 1
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 0
+Material unknown~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#1482
+Name knighthire absinthe~
+Short `gKnighthire absinthe`^~
+Desc Knighthire absinthe~
+Level 20
+ItemType drinkcontainer~
+Cost 40
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 absinthe 1 0
+Weight 5
+Material beer~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#1483
+Name knighthire red wine~
+Short `rKnighthire red wine`^~
+Desc Knighthire red wine~
+Level 20
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 'red wine' 0 0
+Weight 2
+Material wine~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#1486
+Name parchment letter note~
+Short a piece of parchment~
+Desc A piece of parchment~
+Level 1
+ItemType parchment~
+Cost 11
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 unknown 0 Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#1492
+Name fontain~
+Short large `sstone `wfountain`^~
+Desc A large stone waterfountain stands here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 'untainted water' 0 0
+Weight 0
+Material unknown~
+Extra    hum~
+ExtraDesc fountain ~
+Large waterfountain is here wraped up in green vines. You can see that the 
+waterfountain is made of stone detached to itself to the vines. A statue of 
+a stern, foul-tempered knight in shining armor.  His hair and beard is black 
+and emits electric charges.  He carries the white Shield of Righteousness 
+and the black Sword of the Leveler. A name is written bottom of the fountain 
+(The `CGod `WS`ceandac`w). 
+~
+End
+
+#1493
+Name watermelon juice~
+Short `GKnighthire watermelon juice`^~
+Desc Knighthire watermelon juice~
+Level 1
+ItemType drinkcontainer~
+Cost 9
+Durability 5
+Asize 0
+Rsize 50
+Values 15 12 'watermelon juice' 0 0
+Weight 2
+Material juice~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#1494
+Name knighthire fruit punch~
+Short `RKnighthire fruit punch`^~
+Desc Knighthire fruit punch~
+Level 1
+ItemType drinkcontainer~
+Cost 7
+Durability 5
+Asize 0
+Rsize 50
+Values 13 13 'fruit punch' 0 0
+Weight 2
+Material punch~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#1498
+Name token_garik_guard_greet~
+Short token_garik_guard_greet_mp1450~
+Desc Token_garik_guard_greet_mp1450~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#1450
+Name Front gate entrance~
+Desc Large `sgrey `wcastle stands north from you with a large `yiron`w door in the middle 
+between the two guards. Above the door you notice a carved rock bolded  
+wrighting with a huge lifelike looking double headed axe built right into 
+the castle wall. 
+~
+RoomFlags light~
+Sector forest~
+ExtraDesc axe symbol huge~
+`s                /`-       ^       `- \   
+               /  `-      =     `-    \
+              /     `-    |   `-       \
+             /        `- `-v`- `-         \
+            |            |            |
+            |############|############|
+            |############|############|
+            |############|############|
+            |############|############|
+            \            |            /
+             \  `- `- `-    |   `- `- `-   /
+              \`-      `-  | `-       `-/
+               \        `-|`-        /
+                        ( )
+                         0
+                         0
+~
+ExtraDesc sign bold~
+`YK`ynighthire                                   `YC`yastle
+~
+Exit north 1451
+EFlags door closed locked nopass hard~
+EKeyvnum 1471
+EKeywords door~
+Exit southeast 56281
+End
+
+
+#1451
+Name Entrance~
+Desc `GGreen`w grass grows here with few weeds peeking out of the ground. Four large 
+stones nailed to the ground circuling a large waterfountain in the middle 
+creating a path to the `Yyellow`w door that has a window with three `ssilver`w bars 
+verticaly crossing from top to bottom of the square window. On east and west 
+side of the area are three wooden posts with rope tied around them. A small 
+rectangualr water wooden box stands behind the posts. A sign stands west of 
+the grounds with `Rred`w letters. 
+~
+RoomFlags light~
+Sector field~
+ExtraDesc sign ~
+`RPlease leave your "pets" here. Thank you, GK
+~
+Exit north 1453
+EFlags door closed~
+Exit south 1450
+EFlags door closed locked nopass hard~
+EKeyvnum 1471
+Exit northwest 1472
+EFlags door closed~
+End
+
+
+#1452
+Name Miniture beach~
+Desc A half circle room made of stone surrounds you with `yyellowish `wsand on the 
+ground. Few shells are barried under the sand to give the affect of a real 
+beach. towards the west is a pool. 
+~
+RoomFlags light~
+Sector trail~
+Exit west 1462
+End
+
+
+#1453
+Name Family room~
+Desc Square rock shape room has one opening to the west and three doors to the 
+north, south, and east.  On the celien is a large crystal chandelier with 
+over 50 candles lit.  On the ground is a large knited `ybrown `wbear-skin rug 
+that covers a cold stone floor.  In the south-east corner is a steal 
+fireplace keeping the area warm.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 1454
+EFlags door~
+Exit east 1456
+EFlags door closed~
+Exit south 1451
+EFlags door closed~
+Exit west 1455
+Exit up 1460
+Exit down 1458
+End
+
+
+#1454
+Name A Stash Room~
+Desc A small bookcase has been pressed against the stone walls. The floor has 
+been covered in oak wood polished to match the bookcase. A wooden desk has 
+been piled high with various rubbish. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc sign ~
+`WPlease be `R"Quiet"`W as people are studying here. Thank you 
+~
+Exit south 1453
+EFlags door~
+End
+
+
+#1455
+Name Dinning/Bar Area~
+Desc . Large smooth stone walls surrounds this room with 2 windows at south wall 
+and west wall giving a view of the `ggreen `wherb garden. A large barstand sits 
+near the west window and a large circular table stands in the middle of the 
+polished stone floor. At the north wall is a wooden door leading out into 
+another area. Smal sign is hanging on that door with `ydull yellow`w writing. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign ~
+`yIf door close, please do not disturb. Thank you 
+~
+Exit north 1457
+EFlags door~
+Exit east 1453
+End
+
+
+#1456
+Name Quiet/Meditation room~
+Desc Medium sized stone circular room has three banners hooked onto the wall. 
+They are hanging north,east and south wall. The floor is covered by `ybamboo`w 
+wood and there is an altar in the middle of the floor. The celien is a dome 
+shape with a large circular ball hanging. A lamp is on the floor giving this 
+room a slight `Yglow`w. 
+~
+RoomFlags nospeak light nofly~
+Sector inside~
+ExtraDesc north ~
+`Y(Glowing) `W[`cBANNER`W] `CKnights `Yof the `sGrey `CMoon
+~
+ExtraDesc east ~
+`Y(Glowing) `W[`cBANNER`W] `RR`rising `Ck`cnights `Wof the `YS`yacred `YS`yun
+~
+Exit west 1453
+EFlags door closed~
+End
+
+
+#1457
+Name Medicine room~
+Desc Small cirular room made of sparkle stone walls with two possible exit from 
+south and west. In the middle of this room is a fire pit ready to be used. A 
+titanium rack agianst north wall holds a sea-shell cauldron. On the celien 
+is a tiny square hole enough for the smoke to escape. On the west wall is a 
+small wall lamp that is lit. 
+~
+RoomFlags light~
+Sector inside~
+Exit south 1455
+EFlags door~
+Exit west 1471
+EFlags door closed~
+End
+
+
+#1458
+Name Basement floor~
+Desc Small cement square room and floor makes this area a closed in room. There 
+is one wooden door south and a open wooden door north into a locker room 
+where you feel a cool breeze and  moist humidity comming at you. 
+~
+RoomFlags light~
+Sector inside~
+Exit north 1459
+EFlags door~
+Exit south 1463
+EFlags door closed locked hard~
+EKeyvnum 1470
+Exit up 1453
+End
+
+
+#1459
+Name Locker room~
+Desc This moist square room is pretty slippery, with a bench detached the walls 
+to sit at and two doors to exit this room from south and south east is not a 
+quite large room. A sign is detached to the north wall with `Rred`w letters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign ~
+`RPlease fallow these rules!
+1.) Do not run.
+2.) Put everything in your bagback or cases.
+-You are responsible for your belongings!
+3.) Have fun!
+~
+Exit south 1458
+EFlags door~
+Exit southeast 1462
+EFlags door~
+End
+
+
+#1460
+Name Second floor~
+Desc Large octigon stone wall closes in you with eight door leading to other 
+rooms and a staircase in the middle of the hall leading down. Above is a 
+dome shape celien with a sparkling chandelier that lights this hallway 
+brightly. 
+~
+RoomFlags light~
+Sector inside~
+Exit north 1465
+EFlags door closed~
+Exit east 1461
+EFlags door closed~
+Exit south 1464
+EFlags door closed~
+Exit west 1466
+EFlags door closed~
+Exit down 1453
+Exit northeast 1468
+EFlags door closed~
+Exit southeast 1469
+EFlags door closed~
+Exit southwest 1470
+EFlags door closed~
+Exit northwest 1467
+EFlags door closed~
+End
+
+
+#1461
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace north-east of the 
+room making the room nice and warm. A large armoire stands north-west of the 
+room for storage and a canopybed south of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. west is the only exit for 
+this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit west 1460
+EFlags door closed~
+End
+
+
+#1462
+Name Pool area~
+Desc A large circular room is here with a pool in the center of the room. Towards 
+the east is a little beach area to rest at. There area two exits to this 
+room, east to the beach and north-west to the locker room. 
+~
+RoomFlags light~
+Sector swim~
+Exit east 1452
+Exit northwest 1459
+EFlags door~
+End
+
+
+#1463
+Name closet~
+Desc Dark small stoned space covers this area. Above is a little wall lantern to 
+give a glimps of light in the room. 
+~
+RoomFlags light~
+Sector inside~
+Exit north 1458
+EFlags door closed locked hard~
+EKeyvnum 1470
+EKeywords door~
+End
+
+
+#1464
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace south-east of the 
+room making the room nice and warm. A large armoire stands south-west of the 
+room for storage and a canopybed west of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. north is the only exit for 
+this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit north 1460
+EFlags door closed~
+End
+
+
+#1465
+Name '1st floor' Main bedroom~
+Desc Surrounded by `ybrown `wsoft bearskin on the walls and the floor creates a 
+cuddle relaxing enviroment. A bed and a fire place stands north on a 
+elevated floor making this room very rich. The ceilin is rounded with a 
+cylinder point making it possbile even for giants to bump there heads here. 
+A `Rrred `wcheery door leads south. 
+~
+RoomFlags private light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit south 1460
+EFlags door closed~
+Exit up 1487
+End
+
+
+#1466
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace south-west of the 
+room making the room nice and warm. A large armoire stands north-east of the 
+room for storage and a canopybed north of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. east is the only exit for 
+this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit east 1460
+EFlags door closed~
+End
+
+
+#1467
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace north-east of the 
+room making the room nice and warm. A large armoire stands south-west of the 
+room for storage and a canopybed west of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. South-east is the only exit 
+for this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may have this room to yourself. Note to me Garik and give me what your dream room would look like and i will get my builder in here as soon as possible. Thank you.
+~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit southeast 1460
+EFlags door closed~
+End
+
+
+#1468
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace south-east of the 
+room making the room nice and warm. A large armoire stands north-east of the 
+room for storage and a canopybed north of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. South-west is the only exit 
+for this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit southwest 1460
+EFlags door closed~
+End
+
+
+#1469
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace south-east of the 
+room making the room nice and warm. A large armoire stands south-west of the 
+room for storage and a canopybed west of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. north-west is the only exit 
+for this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit northwest 1460
+EFlags door closed~
+End
+
+
+#1470
+Name Spare room~
+Desc Before you is a medium sized guestroom with a firplace south-east of the 
+room making the room nice and warm. A large armoire stands south-west of the 
+room for storage and a canopybed north of this room. The ceilin is rounded 
+pointed cylinder with many nature color to it. north-east is the only exit 
+for this room. A sign is nailed on the door in `Yyellow `wletters. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc sign door~
+`YFor those who are staying please make yourself welcome. If you wish you may 
+have this room to yourself. Note to me Garik and give me what your dream 
+room would look like and i will get my builder in here as soon as possible. 
+Thank you. 
+~
+Exit northeast 1460
+EFlags door closed~
+End
+
+
+#1471
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+RoomFlags light~
+Sector field~
+Exit north 1482
+Exit east 1457
+EFlags door closed~
+Exit south 1472
+Exit west 1473
+End
+
+
+#1472
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1471
+Exit west 1474
+Exit southeast 1451
+EFlags door closed~
+End
+
+
+#1473
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1481
+Exit east 1471
+Exit south 1474
+Exit west 1475
+End
+
+
+#1474
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1473
+Exit east 1472
+Exit west 1476
+End
+
+
+#1475
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1480
+Exit east 1473
+Exit south 1476
+Exit west 1478
+End
+
+
+#1476
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind. 
+~
+Sector field~
+Exit north 1475
+Exit east 1474
+Exit south 1495
+Exit west 1477
+End
+
+
+#1477
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind. 
+~
+Sector field~
+Exit north 1478
+Exit east 1476
+End
+
+
+#1478
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1479
+Exit east 1475
+Exit south 1477
+Exit west 1496
+End
+
+
+#1479
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1483
+Exit east 1480
+Exit south 1478
+End
+
+
+#1480
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1484
+Exit east 1481
+Exit south 1475
+Exit west 1479
+End
+
+
+#1481
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1485
+Exit east 1482
+Exit south 1473
+Exit west 1480
+End
+
+
+#1482
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1486
+Exit south 1471
+Exit west 1481
+End
+
+
+#1483
+Name Knighthire garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1497
+Exit east 1484
+Exit south 1479
+End
+
+
+#1484
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit east 1485
+Exit south 1480
+Exit west 1483
+End
+
+
+#1485
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit north 1498
+Exit east 1486
+Exit south 1481
+Exit west 1484
+End
+
+
+#1486
+Name Herb garden~
+Desc `GGreen `wgrass florish this land with flowers and insects of many kind.
+~
+Sector field~
+Exit south 1482
+Exit west 1485
+Exit northeast 1494
+End
+
+
+#1487
+Name '2nd floor' Main bedroom~
+Desc A `ssteal`w fireplace is on the north-west of this room creating a warm area to 
+sleep or rest in. A large `stitanium`w bed lays east of this room with two small 
+lantern `Ylights`w above the bed dimming the whole room. 
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit down 1465
+End
+
+
+#1488
+Name Lighthouse entrance~
+Desc A cold breeze rushes in the room from the south west door into a spiral old 
+white room. A old boat that has been damage lays here with couple shovels 
+and a fishing pole in it. A ladder at the south leads p to another room. 
+~
+RoomFlags noscan~
+Sector inside~
+Exit up 1489
+Exit southwest 1494
+EFlags door closed~
+End
+
+
+#1489
+Name Lighthouse 2nd floor~
+Desc This room is filled with lumber and oil. A large fireplace is here at the 
+west side of the room with a pipe leading out of the wall and seems to be 
+going up. A ladder is at the east side leading up and down to another area. 
+~
+RoomFlags dark noscan~
+Sector inside~
+RoomEcho  1 23 100 You start hearing foot steps above you~
+RoomEcho  1 23 100 clop clop clop...~
+Exit up 1490
+Exit down 1488
+End
+
+
+#1490
+Name Lighthouse 3rd floor~
+Desc This room is quite different. You feels quite dizzie and feel a cold breeze 
+slightly touching your skin. A picture is nailed to the north end of the 
+wall that looks like it maybe starring you. The ladder in the east stops 
+going up while another ladder is at the south of this room going up. 
+~
+RoomFlags dark noscan~
+Sector inside~
+ExtraDesc north picture~
+Before you is a picture of an old man with `Wwhite`w long hair covering his 
+eyes. He seems to be quite build with a `Wshiny `stitanium`w armor. Over his 
+grinning mouth is a long `sgrey`w beared. In the background seems to be outside 
+next to the lighthouse entrance. Around the picture is an old `Ygold`w frame 
+that is pretty scratched up. 
+~
+Exit up 1491
+Exit down 1489
+End
+
+
+#1491
+Name Lighthouse 4th floor~
+Desc . Tons of cob-webs lays here in this circular room. You notice that the walls 
+are quite old and has some cracks and dints in them. A stair case at the 
+south side of the room leads up and down to another room. 
+~
+RoomFlags dark noscan~
+Sector inside~
+Exit up 1492
+Exit down 1490
+End
+
+
+#1492
+Name lighthouse 5th floor~
+Desc Few cob-webs lays all over this circular area. Few old furnitue is covered 
+by an old white sheet eccept one. A large old armoire sits west of this room 
+that a spider layed her her nest on. A old ladder stand south of this room 
+going back down and up to a very bright area. 
+~
+Sector inside~
+Exit up 1493
+Exit down 1491
+End
+
+
+#1493
+Name Light tower~
+Desc A cylinder shape roof covers this rounded area from the weather and sun. 
+Four poles from north-west, north-east, southwest, and southeast holds the 
+cylinder roof in place. In the middle of the floor, a large light is 
+detached to the floor and the roof and beams light to the outside. The floor 
+is made of stones and a small cut circular `swolf-skin`w rug lays here to walk 
+on. 
+~
+RoomFlags light~
+Sector inside~
+Exit down 1492
+End
+
+
+#1494
+Name On the Shore of Lake Lhorandia~
+Desc Standing on the shore of Lake Lhorandia, the largest freshwater lake in the 
+knowne world, it appears still and peaceful.  Small waves lap against the 
+shoreline, not touching the red bridge that leads north east to a 
+light-house. Wetting the sand and rocks around you. A sign is here in bold 
+letters nailed to the bridge.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+ExtraDesc sign ~
+`sP ea e  d   ot  go  n  h  l   h    u  !
+~
+Exit west 1498
+Exit northeast 1488
+EFlags door closed~
+Exit southwest 1486
+End
+
+
+#1495
+Name Kyarra's playpen~
+Desc A very dimly lit room with small lamps attach to the walls burning with oil. 
+ On the walls as well are small paintings of a forest which adds some color 
+to the creme walls. The floor is covered in straw and hay. 
+~
+Sector inside~
+Exit north 1476
+End
+
+
+#1496
+Name Cool place~
+Desc This place is really cool. It is so cool becuase of all the fans 
+around...wait a minute what are fans? It's not all that cool in here after 
+all. Still it's better than the outside on a boiling hot summers day. 
+~
+Sector inside~
+Exit east 1478
+End
+
+
+#1497
+Name On the Shore of Lake Lhorandia~
+Desc Standing on the shore of Lake Lhorandia, the largest freshwater lake in the 
+knowne world, it appears still and peaceful.  Small waves lap against the 
+shoreline, wetting the sand and rocks around you.  This looks like an 
+excellent place to fish. 
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit east 1498
+Exit south 1483
+End
+
+
+#1498
+Name On the Shore of Lake Lhorandia~
+Desc Standing on the shore of Lake Lhorandia, the largest freshwater lake in the 
+knowne world, it appears still and peaceful.  Small waves lap against the 
+shoreline, wetting the sand and rocks around you.  This looks like an 
+excellent place to fish. 
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit east 1494
+Exit south 1485
+Exit west 1497
+End
+
+
+#1499
+Name Hidden passage~
+Desc You walked through a `ssteal `wcircular fireplace into a hidden room. Wooden 
+walls and `sgrey `wwolf skin rug covers the floor. Another fireplace lies here 
+in the south wall. 
+~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 1450 1 1450 1
+O 0 1492 -1 1451
+O 0 1451 -1 1453
+O 0 1452 -1 1453
+M 0 1453 1 1453 1
+O 0 1456 -1 1454
+O 0 1457 -1 1454
+M 0 1452 1 1454 1
+G 0 1486 -1
+O 0 1454 -1 1455
+O 0 1455 -1 1455
+P 0 1482 5 1455 5
+P 0 1483 5 1455 5
+P 0 1493 5 1455 5
+P 0 1494 5 1455 5
+O 0 1458 -1 1456
+O 0 1459 -1 1456
+O 0 1460 -1 1457
+O 0 1461 -1 1457
+O 0 1462 -1 1459
+M 0 1460 1 1460 1
+O 0 1466 -1 1461
+O 0 1467 -1 1461
+O 0 1463 -1 1461
+O 0 1468 -1 1462
+M 0 1462 1 1462 1
+O 0 1466 -1 1464
+O 0 1467 -1 1464
+O 0 1463 -1 1464
+O 0 1463 -1 1465
+O 0 1464 -1 1465
+O 0 1466 -1 1466
+O 0 1467 -1 1466
+O 0 1463 -1 1466
+O 0 1466 -1 1467
+O 0 1467 -1 1467
+O 0 1463 -1 1467
+O 0 1466 -1 1468
+O 0 1467 -1 1468
+O 0 1463 -1 1468
+O 0 1466 -1 1469
+O 0 1467 -1 1469
+O 0 1463 -1 1469
+O 0 1466 -1 1470
+O 0 1467 -1 1470
+O 0 1463 -1 1470
+M 0 1475 1 1474 1
+M 0 1475 1 1475 1
+G 0 1475 -1
+O 0 1465 -1 1487
+O 0 1467 -1 1487
+M 0 1490 1 1490 1
+O 0 1469 -1 1492
+O 0 1480 -1 1493
+O 0 1453 -1 1499
+S
+
+
+
+#SHOPS
+#1452
+buy_type map~
+buy_type parchment~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1452
+title Oload for Newbuilder~
+author Reath~
+code mob oload 1450
+drop all
+~
+disabled false
+last_editor Reath~
+last_editdate 1118507868
+END
+
+#1451
+title Honor Among Thieves~
+author Reath~
+code if !class $n 'thief'
+and !class $n 'spellfilcher'
+and !isimmort $n
+and rand 30
+mob swipe $n gold 20
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G1451`x,`Y1450`x,`B1450`x,`r0`x,`C0`x:
+             `YMobprog: invalid if_check (if) 'isclass', mob 1450 prog 1451
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 1451 on mob 1450 (in room 1450), line 0
+`S#############
+
+~
+last_editor Reath~
+last_editdate 1118442732
+END
+
+#1450
+author Reath~
+code mob restore newbuilder
+~
+disabled false
+last_editor Reath~
+last_editdate 1118193707
+END
+
+#0
+
+
+#$

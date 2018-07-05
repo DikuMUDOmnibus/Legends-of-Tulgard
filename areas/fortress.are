@@ -1,0 +1,552 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        SpongeBob Fortress~
+ShortName   SpongeBob Fortress~
+Builders    pohjola~
+Credits     Pohjola~
+VNUMs       6400 6499
+AFlags  olconly noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      30 50
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+*LastSaved  Mon Jul 12 15:35:51 2004~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#6400
+Name main gate key~
+Short the main gate key~
+Desc An large iron key is here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    rotdeath nolocate meltdrop nodegrade~
+Wear     take hold~
+End
+
+#6401
+Name dungeon key~
+Short the dungeon key~
+Desc A small iron key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    nolocate burnproof~
+Wear     take hold~
+End
+
+#6402
+Name gate winch~
+Short the winch~
+Desc A large winch that controls the gate below is here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5000
+Material wood~
+Extra    nolocate nodegrade~
+ExtraDesc winch ~
+This wooden winch is the size of a dragons head. A thick iron chain wraps 
+around it and connects to the large gate below. There is a crank on the side 
+which can be turned manually with some effort. 
+~
+End
+
+#6403
+Name the ballista~
+Short the ballista~
+Desc A large ballista is mounted here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 8000
+Material wood~
+Extra    nonmetal~
+ExtraDesc ballista ~
+This oversized crossbow can fire large, tree-trunk sized ammunition at 
+anyone or anything which approaches the stronghold. It is firmly mounted to 
+the catwalk, but has a pivotal base which allows for a good amount of 
+aiming. A strange mechanism built onto the side enables loading and firing 
+by a single person. 
+~
+End
+
+#6404
+Name a deep stone well~
+Short a deep stone well~
+Desc A deep stone well is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc deep stone well~
+This well is very deep, as the bottom cannot be seen from above. A bucket 
+and rope are used to draw the water up from below. 
+~
+End
+
+#6405
+Name a firepit fire~
+Short the fire~
+Desc A large fire burns hotly within the firepit here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10000 0 0 500 0
+Weight 0
+Material fire~
+Extra    glow nonmetal~
+Extra2   nodecay~
+ExtraDesc firepit fire~
+The fire that burns within the pit blazes brightly. It would seem that 
+anything put in the fire would instantly burn. 
+~
+End
+
+#6406
+Name copper oil pot~
+Short a copper pot of oil~
+Desc A copper pot full of oil is here.~
+Level 30
+ItemType potion~
+Cost 530
+Asize 0
+Rsize 50
+Values 30 harm 'chaotic poison' 'resist lightning' 'resist acid'
+Weight 20
+Material copper~
+Wear     take hold~
+ExtraDesc copper oil pot~
+This rough-cast copper pot is full of an thin oily substance. It smells 
+horribly strong. 
+~
+End
+
+#6407
+Name minor healing balm~
+Short a minor healing balm~
+Desc A minor healing balm sits here, waiting to be used.~
+Level 1
+ItemType poultice~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 animal 0
+Weight 0
+Material gel~
+Extra    bless~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#6400
+Name Inner Grounds~
+Desc This area of the stronghold has been used to stockpile various barrels and 
+crates. Some of the crates have been broken, spilling out grains which give 
+the myriad of rats something to feast upon. There is a good amount of moss 
+that is growing upon the high stone walls here. High above, there is a 
+sturdy wooden catwalk that circles the inside of the wall. A wooden ladder 
+leads upwards, ending before a trapdoor which grants passage onto the 
+catwalk. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 6407
+Exit east 6401
+Exit up 6409
+EFlags door closed~
+Exit northeast 6408
+End
+
+
+#6401
+Name Inner Grounds~
+Desc This portion of the fortress is covered with a wide thatched roof. A number 
+of cots are packed tightly beneath the canopy. A few chests are also located 
+here, a place for the soldiers to store some of thier excess gear. The cots 
+look to be nothing more than some sturdy fabric stretched over a simple 
+wooden frame, each one containing a small pillow and wool blanket. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 6408
+Exit east 6402
+Exit west 6400
+End
+
+
+#6402
+Name Inner Grounds~
+Desc A small booth stands in the corner of this section of the stronghold. A 
+cooking stove is located behind the booth, a place where the inhabitants of 
+the keep can go to get a cooked meal. Other than the booth, there is not 
+much of mention located here, save for a few rough-hewn tables where the 
+folks can sit down and eat thier food. A wooden ladder travels up the wall 
+as well, leading up to the catwalk. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 6403
+Exit west 6401
+Exit up 6411
+EFlags door closed~
+Exit northwest 6408
+End
+
+
+#6403
+Name Inner Grounds~
+Desc A small archery range has been set up along the wall here. Large haybails 
+serve as targets, and there are a number of stands which hold blunt-tipped 
+arrows. The targets themselves have a few arrows still lodged deeply. The 
+stone wall is pitted and chipped, caused from missed shots no doubt. The 
+remnants of broken and splintered arrow shafts litter the ground around this 
+area. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 6404
+Exit south 6402
+Exit west 6408
+End
+
+
+#6404
+Name Inner Grounds~
+Desc Many sparring targets have been built upon the grounds here. Most of them 
+have quite a bit of scars and damage upon them. The soldiers here must train 
+continuosly to leave the targets in such shape. A thick wooden ladder leads 
+upward to a trapdoor in the floor of the catwalk high above. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit south 6403
+Exit west 6405
+Exit up 6413
+EFlags door closed~
+Exit southwest 6408
+End
+
+
+#6405
+Name Inner Grounds~
+Desc Along this section of the northern wall is a thick iron gate which grants 
+access into and out of the keep. Strong chains run through a system of 
+pulleys and wind about a crank, all which are used to lift the heavy 
+doorway. The ground is rutted deeply here, trails left behind by the many 
+visitors to this place. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 6419
+EFlags door closed locked pickproof nopass~
+EKeyvnum 6400
+Exit east 6404
+Exit south 6408
+Exit west 6406
+End
+
+
+#6406
+Name Inner Grounds~
+Desc This corner of the fortress contains nothing but a wooden ladder which leads 
+up to the catwalk some height above. The grey stones which make up the 
+sturdy walls are smoothly cut and fitted together perfectly. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 6405
+Exit south 6407
+Exit up 6415
+EFlags door closed~
+Exit southeast 6408
+End
+
+
+#6407
+Name Inner Grounds~
+Desc This area of the stronghold has little in the way of items, save for some 
+straw that has been laid down to cover most the ground here. There is a 
+feeding trough that is full of grains and another which holds water, both of 
+which are for the few horses used by the soldiers. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 6406
+Exit east 6408
+Exit south 6400
+End
+
+
+#6408
+Name Courtyard~
+Desc This open area of the fortress is used as a gathering place for its 
+occupants and visitors. There is enough open space here for a small army to 
+congress and prepare for battle. The ground here is covered with old hay and 
+straw, most likely to keep the dirt from becoming muddy when it rains. A 
+stone well is here, as is a dug out firepit. A heavy wooden door is set into 
+the ground here as well. 
+~
+RoomFlags light~
+Sector city~
+Exit north 6405
+Exit east 6403
+Exit south 6401
+Exit west 6407
+Exit down 6417
+EFlags door closed locked~
+EKeyvnum 6401
+Exit northeast 6404
+Exit southeast 6402
+Exit southwest 6400
+Exit northwest 6406
+End
+
+
+#6409
+Name Along the Parapet~
+Desc This wide wooden catwalk winds around the entire inside of the fortress, 
+offering the soldiers a good place to take up bow and arrow in defense. At 
+this point, however, the catwalk becomes even wider, obviously to make room 
+for the ballista which sits here. There are a few pots lined up against the 
+wall as well, each holding a good amount of oil. There is a small trapdoor 
+set in the floor of the catwalk, allowing passage into the interior of the 
+stronghold. 
+~
+Sector city~
+Exit north 6416
+Exit east 6410
+Exit down 6400
+EFlags door closed~
+End
+
+
+#6410
+Name Along the Parapet~
+Desc This section of the parapet has row after row of mounted quivers, each 
+holding a score of arrows. Cutouts in the stone wall allow the soldiers to 
+fire thier arrows and then take cover. A thick railing prevents anyone from 
+falling off of the catwalk and onto the keep floor far below. 
+~
+Sector city~
+Exit east 6411
+Exit west 6409
+End
+
+
+#6411
+Name Along the Parapet~
+Desc This wide wooden catwalk winds around the entire inside of the fortress, 
+offering the soldiers a good place to take up bow and arrow in defense. At 
+this point, however, the catwalk becomes even wider, obviously to make room 
+for the ballista which sits here. There are a few pots lined up against the 
+wall as well, each holding a good amount of oil. There is a small trapdoor 
+set in the floor of the catwalk, allowing passage into the interior of the 
+stronghold. 
+~
+Sector city~
+Exit north 6412
+Exit west 6410
+Exit down 6402
+EFlags door closed~
+End
+
+
+#6412
+Name Along the Parapet~
+Desc This section of the parapet has row after row of mounted quivers, each 
+holding a score of arrows. Cutouts in the stone wall allow the soldiers to 
+fire thier arrows and then take cover. A thick railing prevents anyone from 
+falling off of the catwalk and onto the keep floor far below. 
+~
+Sector city~
+Exit north 6413
+Exit south 6411
+End
+
+
+#6413
+Name Along the Parapet~
+Desc This wide wooden catwalk winds around the entire inside of the fortress, 
+offering the soldiers a good place to take up bow and arrow in defense. At 
+this point, however, the catwalk becomes even wider, obviously to make room 
+for the ballista which sits here. There are a few pots lined up against the 
+wall as well, each holding a good amount of oil. There is a small trapdoor 
+set in the floor of the catwalk, allowing passage into the interior of the 
+stronghold. 
+~
+Sector city~
+Exit south 6412
+Exit west 6414
+Exit down 6404
+EFlags door closed~
+End
+
+
+#6414
+Name Along the Parapet~
+Desc The winch which controls the gate below is located here. It is very large 
+and is wound with thick iron chains which feed down through the catwalk. 
+There are no arrow slots within the wall here, and the wall itself is taller 
+as well. The catwalk continues winding its way around the inner wall of the 
+stronghold to the east and west. 
+~
+Sector city~
+Exit east 6413
+Exit west 6415
+End
+
+
+#6415
+Name Along the Parapet~
+Desc This wide wooden catwalk winds around the entire inside of the fortress, 
+offering the soldiers a good place to take up bow and arrow in defense. At 
+this point, however, the catwalk becomes even wider, obviously to make room 
+for the ballista which sits here. There are a few pots lined up against the 
+wall as well, each holding a good amount of oil. There is a small trapdoor 
+set in the floor of the catwalk, allowing passage into the interior of the 
+stronghold. 
+~
+Sector city~
+Exit east 6414
+Exit south 6416
+Exit down 6406
+EFlags door closed~
+End
+
+
+#6416
+Name Along the Parapet~
+Desc This section of the parapet has row after row of mounted quivers, each 
+holding a score of arrows. Cutouts in the stone wall allow the soldiers to 
+fire thier arrows and then take cover. A thick railing prevents anyone from 
+falling off of the catwalk and onto the keep floor far below. 
+~
+Sector city~
+Exit north 6415
+Exit south 6409
+End
+
+
+#6417
+Name Central Dungeon~
+Desc This cramped room serves as the main chamber of the dungeons. It is quite 
+damp and smells of filth. A greenish mold grows upon the stone floor, making 
+for slick movement down here. There is a barred cell to the east of here. A 
+steep, narrow stairway leads up from this room as well. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 6418
+EFlags door closed locked nopass hard~
+EKeyvnum 6401
+Exit up 6408
+EFlags door closed locked~
+EKeyvnum 6401
+End
+
+
+#6418
+Name Dungeon Cell~
+Desc There is not much of note in this cell other than a rotting straw mat the 
+prisoner held here might sleep on. There are no windows, or any exits other 
+than the barred doorway. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 6417
+EFlags door closed locked nopass hard~
+EKeyvnum 6401
+End
+
+
+#6419
+Name Before the Fortress~
+Desc You are before the huge gate which blocks the way into a large stone 
+fortress. From the looks of it, a small army could easily reside within the 
+high walls with room to spare. Many ruts mark the road leading into the 
+place as well, marking the passage of countless travelers and such. The gate 
+looks impervious to seige, as there are many scars upon its surface that 
+tell of failed attempts. 
+~
+Sector trail~
+Exit south 6405
+EFlags door closed locked pickproof nopass~
+EKeyvnum 6400
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 6404 -1 6408
+O 0 6405 -1 6408
+O 0 6403 -1 6409
+O 0 6406 -1 6409
+O 0 6403 -1 6411
+O 0 6406 -1 6411
+O 0 6403 -1 6413
+O 0 6406 -1 6413
+O 0 6402 -1 6414
+O 0 6403 -1 6415
+O 0 6406 -1 6415
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

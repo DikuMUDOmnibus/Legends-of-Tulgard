@@ -1,0 +1,1485 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Nightshade Manor Ainne Estate~
+ShortName   Nightshade Manor~
+Builders    delandria zaroth~
+VNUMs       2630 2699
+LComment    0 0 
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Mon Dec 26 12:44:56 2005~
+End
+
+
+
+#MOBILES
+#2630
+Name dreamas minotaur butler~
+ShortD `#`sDreamas `wthe minotaur`^~
+LongD `#`rDreamas `wthe `sMinotaur `wButler stands here greeting you.`^~
+Desc He looks quite regal and refined to be a minotaur.
+~
+Race minotaur~
+Align -1 0
+XPMod 110
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType punch
+AC -400 -400 -400 -320
+Wealth 200
+Act    npc dont_wander stay_area wimpy~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared haste dark_vision regeneration~
+Off    disarm dodge trip~
+Res    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#2631
+Name servant maid~
+ShortD a maid~
+LongD `#`wA maid is here sweeping the floors.`^~
+Desc This plump middle-aged woman seems rather surprised to see you.  
+~
+Race human~
+Align 1 2
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType scratch
+AC -400 -400 -400 -324
+Wealth 20
+Act    npc no_tame stay_area wimpy warrior~
+AffBy  haste~
+AffBy2 vicegrip~
+Off    dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2632
+Name aggie the cook~
+ShortD `#`wAggie the cook`^~
+LongD `#`cAggie `wthe `ycook `wis here, preparing meals for the guests.`^~
+Desc This woman is slightly chubby and she looks like she is in her middle 40's.
+~
+Race human~
+Align 1 1
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType scratch
+AC -350 -350 -350 -304
+Wealth 20
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste~
+AffBy2 vicegrip~
+Off    dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2633
+Name nanuk the wolfhound~
+ShortD `#`sNanuk `wthe dog`^~
+LongD `RN`ranuk `wthe `sWolfhound `wpatrols the house.`^~
+Desc This huge dog looks very relaxed and happy.  His owner takes very good care 
+of him.  
+~
+Race dog~
+Align 0 0
+XPMod 110
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType chomp
+AC -350 -350 -350 -280
+Wealth 0
+Act    npc stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    fast~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#2634
+Name ghost ainne nightshade~
+ShortD `#`wthe ghost of `RA`rinne Ni`sgh`wts`sha`rde`^~
+LongD `#`wThe ghost of a huge female `ssteel dragon `wis here.`^~
+Desc ~
+Race unique~
+Align 0 0
+XPMod 140
+Level 98
+Hitroll 0
+HitDice 10d13+465
+ManaDice 5d8+270
+DamDice 10d13+52
+DamType cleave
+AC -670 -670 -670 -603
+Wealth 0
+Act    npc dont_wander scavenger no_tame aggressive stay_area undead thief~
+AffBy  detect_invis detect_hidden sanctuary otterlungs flying pass_door haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge parry trip crush gore~
+Imm    summon charm fire acid negative mental disease drowning sleep scry hunger thirst fear~
+Res    bash~
+Form   poison non_skinable sentient biped reptile~
+Part   head heart brains eye long_tongue tentacles~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    female~
+Material unknown
+END
+
+#2635
+Name ghost branwyn~
+ShortD `#`wthe ghost of `sBranwyn`^~
+LongD `#`wThe `sg`wh`so`ws`st `wof `sBranwyn `wis here kicking your ass.`^~
+Desc ~
+Race Lich~
+Align -3 -3
+XPMod 170
+Level 111
+Hitroll 0
+HitDice 20d20+650
+ManaDice 13d16+877
+DamDice 12d14+69
+DamType drain
+AC -860 -860 -860 -774
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area undead mage~
+AffBy  invisible detect_invis detect_hidden sanctuary infrared hide flying pass_door haste dark_vision regeneration~
+Off    area_attack berserk disarm fast kick parry~
+Imm    summon charm fire poison negative energy mental disease drowning sleep scry hunger thirst fear~
+Res    magic mental iron illusion~
+Vuln   holy light~
+Form   edible poison magical instant_decay non_skinable sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material etheral
+MProg GRALL 2631 100~
+MProg RANDOM 2632 70~
+END
+
+#2636
+Name servant dragonavich manor~
+ShortD a servant of the manor~
+LongD A servant of the `#`cDragonavich Manor`^ is here working.~
+Desc ~
+Race human~
+Align -1 0
+XPMod 105
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slap
+AC -500 -500 -500 -405
+Wealth 100
+Act    npc stay_area warrior~
+AffBy  infrared berserk~
+AffBy2 vicegrip~
+Off    fast kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2637
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 2637 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#2630
+Name royal bed~
+Short a royal bed~
+Desc `#`cA large royal-looking bed with a thick fluffy `sblack bedspread `con it.`^~
+Level 1
+ItemType furniture~
+Cost 9900
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 200 200
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#2631
+Name silver fountain~
+Short a silver fountain~
+Desc `#`wA `ssilver fountain `wis here, gurgling with `Cw`ca`Ct`ce`Cr.`^~
+Level 1
+ItemType fountain~
+Cost 1
+Durability 5
+Asize 30000
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 30000
+Material earthen~
+Extra    noremove nopurge nodegrade burnproof~
+End
+
+#2632
+Name carved marble bench~
+Short a carved marble bench~
+Desc `#`wA `Wg`wl`We`wa`Wm`wi`Wn`wg `Wwhite `wmarble bench offers a place to rest here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 1000 BEHKX 100 100
+Weight 0
+Material stone~
+Wear     no_sac~
+End
+
+#2634
+Name oak barrel~
+Short an oak barrel filled with elvish wine~
+Desc `#`wAn `yoak barrel `wfilled with `gelvish `rwine `wis sitting here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 'elvish wine' 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#2635
+Name `#a large `ywooden`# table with several chairs around it~
+Short `^A large `ywooden`^ table~
+Desc `#`wA large `ywooden table `wwith several chairs around it sits here.`^~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 DG 100 100
+Weight 0
+Material wood~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bench ~
+`^A large `ywooden`^ table with several chairs around it, the one at the head of 
+the table seems bigger than the rest.  
+~
+End
+
+#2636
+Name comfortable leather couch~
+Short a comfortable looking couch made of leather~
+Desc `#`wA comfortable looking couch made of `yleather `wsits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 1000 EHKN 100 100
+Weight 0
+Material leather~
+Extra    noremove nodegrade~
+End
+
+#2637
+Name aquarium~
+Short a large reptile aquarium~
+Desc `#`wa large `caquarium `wwith a 6ft long `sboa constrictor `win it.`^~
+Level 0
+ItemType trash~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material glass~
+Extra    nonmetal nodegrade burnproof norestring~
+End
+
+#2638
+Name cherrywood wooden desk~
+Short a desk made of cherrywood~
+Desc An ornately `#`rcarved`x desk made of `rcherrywood`^ lies here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 ADGJQ 100 100
+Weight 0
+Material cherrywood~
+Extra    nodegrade burnproof~
+End
+
+#2639
+Name a weapons rack~
+Short a weapons rack~
+Desc `#`wA `ywooden `wrack lined with `sweapons.`^~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 25
+Rsize 50
+Values 5000 0 0 100 100
+Weight 150
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#2640
+Name large spa bathtub~
+Short `#`wa large `Cs`cp`Ca `wbathtub`^~
+Desc `#`wa large `Cs`cp`Ca `wbathtub sets in the middle of the room.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 6000 FILS 120 120
+Weight 0
+Material unknown~
+End
+
+#2641
+Name rocking chair~
+Short `#`wa comfy `ywooden `wrocking chair`^~
+Desc `#`wtwo comfy `ywooden `wrocking chairs sit here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 DGJ 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2642
+Name comfortable full sized bed~
+Short `#`wa `ccomfortable `wfull sized bed`^~
+Desc `#`wa `ccomfortable `wfull sized bed is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 120 120
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#2644
+Name cast iron frying pan~
+Short a `#`W[`Rhot`W] `Scast iron`^ frying pan~
+Desc A hot cast iron frying pan is sitting here.~
+Level 45
+ItemType weapon~
+Cost 500
+Durability 5
+Asize 40
+Rsize 50
+Values mace 11 3 flame AD
+Weight 40
+Material iron~
+Extra    bless noremove burnproof~
+Wear     take wield hold~
+End
+
+#2645
+Name shimmering black onyx dagger~
+Short `#`wa `WS`wh`Wi`wm`Wm`we`Wr`wi`Wn`wg `sBlack Onyx `wDagger`^~
+Desc A dagger made out of onyx is laying here.~
+Level 90
+ItemType weapon~
+Cost 1400
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 15 4 shbite ADG
+Weight 25
+Material onyx~
+Extra    dark magic antigood nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage thief warrior spellfilcher anti-paladin~
+Affect modifier -1 0 -1 hitroll 3 0
+Affect modifier -1 0 -1 damroll 3 0
+Affect modifier -1 0 -1 strength 3 0
+End
+
+#2646
+Name flowing black robes~
+Short `#`SB`wlack `SR`wobes of `SM`widnight`^~
+Desc Some black robes are lying in a heap.~
+Level 91
+ItemType container~
+Cost 5000
+Durability 5
+Asize 20
+Rsize 50
+Values 1000 0 0 1000 -25
+Weight 20
+Material cloth~
+Extra    magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take about~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hp 10 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2649
+Name a big concrete slab table~
+Short a big concrete slab table~
+Desc A big concrete slab table stands here, cluttered with items.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#2650
+Name dark shadow~
+Short `#`sa dark shadow`^~
+Desc `#`sa dark shadow is here.`^~
+Level 85
+ItemType treasure~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material air~
+Extra    magic nodegrade burnproof~
+Extra2   nodecay~
+Wear     take float~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 0 -1 strength 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 saves -2 0
+Affect modifier -1 0 -1 constitution 2 0
+End
+
+#2651
+Name whip of destruction~
+Short `#a `RWhip `Wof `BD`Re`Bs`Rt`Br`Ru`Bc`Rt`Bi`Ro`Bn`^~
+Desc `#`RWhip `Wof `BD`Re`Bs`Rt`Br`Ru`Bc`Rt`Bi`Ro`Bn`^ sits here, waiting to deal some hellacious damage.~
+Level 91
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values whip 7 12 blast L
+Weight 0
+Material unknown~
+Extra    dark invis noremove nolocate nodegrade chaos norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take wield~
+Affect modifier -1 91 -1 constitution -6 0
+Affect modifier -1 91 -1 presence -6 0
+End
+
+#2653
+Name nice surprise~
+Short a nice surprise~
+Desc A surprise rests here, possibly proving useful at a later time.~
+Level 1
+ItemType pill~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 150 'illusions grandeur' 'giant strength' haste sanctuary
+Weight 5
+Material ether~
+Extra    glow hum magic~
+Wear     take no_sac~
+End
+
+#2654
+Name treasury key~
+Short `#`sAinne's House Key`^~
+Desc `#`sAinne's House Key`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#2630
+Name Grand gates of a large estate.~
+Desc You find yourself at a tall black cast iron gate.  The bars are quite thick 
+and on both sides of the gate there is a stone wall for as far as you can 
+see.  Sitting on top of the the stone wall on either side of the gate are 
+two large statues of gargoyles and on the stone wall to the left of the gate 
+there is a bronzed plaque that is engraved with the words "Nightshade 
+Manor".  
+~
+RoomFlags light~
+Sector field~
+Exit north 2631
+Exit south 56380
+End
+
+
+#2631
+Name Large Courtyard~
+Desc This is the manor's courtyard.  It looks like this is where the owner of the 
+house entertains because there are several stone tables and benches covered 
+with fancy canvas pavilions and in the west end of the courtyard there is a 
+small stage.  Straight ahead of you is the doors to the main house.  
+~
+RoomFlags light~
+Sector field~
+Exit north 2632
+EFlags door closed locked nopass hard~
+EKeyvnum 2654
+Exit east 2667
+Exit south 2630
+End
+
+
+#2632
+Name Entranceway to Nightshade Manor~
+Desc The foyer is a fairly small room, only about 10 x 10 and there are several 
+gas lanterns hanging from the ceiling.  The walls are covered with large 
+tapestries to hide the plain stone.  There is a small study off to the east 
+and the living room is to your west.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit north 2633
+Exit east 2637
+Exit south 2631
+EFlags door closed locked nopass hard~
+EKeyvnum 2654
+EKeywords door~
+Exit west 2636
+End
+
+
+#2633
+Name Great Hall~
+Desc You find yourself inside of the great hall of the manor.  There are two huge 
+marble staircases rounding the walls going to the upstairs bedrooms and to 
+the north you can see the kitchen.  The ceiling here in the hall reaches 
+over 20 feet tall with a large stained glass domed roof.  In the middle of 
+the hall stands a 10 ft tall statue of the Goddess Shinare and two large 
+cauldrons with burning oil in them on either side of it.  The dining room 
+can be seem to your east.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2634
+Exit east 2644
+Exit south 2632
+Exit up 2646
+End
+
+
+#2634
+Name Kitchen~
+Desc There seems to be a constant smell of baking bread in the kitchen even when 
+there isnt anyone in here cooking.  There is a large cookpit in the western 
+corner of the room and a large butcher block on the eastern side of the 
+kitchen with several drying herbs hanging above it.  There are cabinets 
+lining the walls above the table and on the northern wall as well.  Between 
+the cabinets on the north wall there is a pantry door and on the west wall 
+beside the stove there is a door leading outside.  Behind you on the 
+southern wall beside the door the wall looks like it could move...  Perhaps 
+it is a secret door.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2635
+Exit south 2633
+Exit west 2662
+Exit down 2655
+End
+
+
+#2635
+Name Large Pantry~
+Desc The pantry is dark and there are shelves lining the walls full of jars and 
+cans of food.  In the floor of the pantry you can see a small hatch and 
+there is light coming from around it as well as chilly air.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 2634
+Exit down 2645
+End
+
+
+#2636
+Name Living Room~
+Desc The walls of the living room are bare save for a large buffalo head mounted 
+over a red marble fireplace.  There are several pieces of nice expensive 
+looking furnature decorating the room, most of it is surrounding the 
+fireplace.  Light for the room is coming from both the fireplace and also an 
+oil lamp on a end table.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 2632
+End
+
+
+#2637
+Name Study~
+Desc There is a fireplace on the south wall of the study with a large fluffy 
+couch resting in front of it.  On the floor in front of the couch is a thick 
+bearskin rug and there is a table on either side of the couch both with a 
+burning oil lamp.  There is a door leading to another room to your north. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2638
+Exit west 2632
+End
+
+
+#2638
+Name Library~
+Desc This room is most definitely a library.  All four of the walls are lined 
+from floor to ceiling with shelves filled with books.  The only part of the 
+walls that is not covered in books are the doorway and a window on the north 
+wall.  In the middle of the room is a large wooden desk made of cherrywood 
+and chair made of the same wood.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2637
+End
+
+
+#2639
+Name Flower Garden~
+Desc In the middle of this large flower garden is a gleaming white marble bench 
+resting on a white marble platform.  It is surrounded by flowers of all 
+kinds creating a pleasant odor in the air.  The sound of water can be heard 
+coming from your east, it looks like a small pond.  There could be some good 
+fish in it. 
+~
+Sector field~
+Exit east 2640
+Exit south 2668
+End
+
+
+#2640
+Name Small Pond~
+Desc The beginning of the lush, thriving pond that spreads out to the east starts 
+here, with thick green shrubs partially surrounding it.  Groups of spirogrya 
+float along the edges in small slimy masses, part of the self evolving 
+nature system itself.  During the day, small silhouettes of fish can be seen 
+moving through the shallow water near the edges, swimming near clusters of 
+rock and big branches, left over from the trees that once stood there.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit east 2641
+Exit south 2643
+Exit west 2639
+End
+
+
+#2641
+Name Small Pond~
+Desc A continuation of the pond from the west, this area is a bit deeper than 
+most.  Small fish can be seen trying to eat low flying bugs, and those 
+resting on lily pads near the east edge by the weedbed.  Hybrid multicolored 
+reeds adorn the area, adding a bit of color and contrast to the surroundings 
+nearby.  
+~
+RoomFlags light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit south 2642
+Exit west 2640
+End
+
+
+#2642
+Name Small Pond~
+Desc The trees extending from the west run along the southern corner of this 
+pond, extending as far as one can see to the west, providing ample shade.  
+During the daytime, bigger fish can somewhat be seen swimming near the 
+surface, looking for something to eat.  Small ptarmigan can be seen flying 
+above the trees on careful inspection, their squawks quite noticeable 
+compared to the other animals that live in the area.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit north 2641
+Exit west 2643
+End
+
+
+#2643
+Name Small Pond~
+Desc This end of the pond is shaded heavily by the large trees to the south, 
+providing ample shade during hot and sunny days.  A light gust of wind 
+creates ripples across the usually still water, providing a nice effect and 
+decent spot to go fishing.  
+~
+RoomFlags light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit north 2640
+Exit east 2642
+Exit west 2668
+End
+
+
+#2644
+Name Dining Room~
+Desc The dining room is another fairly large room in the home with a large 
+rectangular shaped dining room table in the middle of the room.  There are 
+enough chairs to seat 20 people comfortably at least.  Every three feet 
+along the stone walls there is a burning oil lamp to light the room and on 
+the eastern wall there is a large painting of Paxar Nightshade, Ainne's 
+father.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 2633
+End
+
+
+#2645
+Name Small Cellar~
+Desc There are shelves lining the room here as well and there are baskets of 
+different kinds of vegetables, bags of rice and crates of other things.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 2635
+End
+
+
+#2646
+Name Hallway~
+Desc There are multiple lanterns hanging on the walls to light the hallway up.  
+You can tell that there are several bedrooms on this floor and that the one 
+at the end of the hall must be the master bedroom since the door was painted 
+and there seemed to be something hanging on it also.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 2647
+Exit down 2633
+End
+
+
+#2647
+Name Hallway~
+Desc There are multiple lanterns hanging on the walls to light the hallway up.  
+You can tell that there are several bedrooms on this floor and that the one 
+at the end of the hall must be the master bedroom since the door was painted 
+and there seemed to be something hanging on it also.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2651
+Exit east 2646
+Exit south 2652
+Exit west 2648
+End
+
+
+#2648
+Name Hallway~
+Desc There are multiple lanterns hanging on the walls to light the hallway up.  
+The door to the west of here is painted a royal purple color and there are a 
+pair of crossed daggers hanging on the door right at eye level.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2653
+Exit east 2647
+Exit south 2654
+Exit west 2669
+End
+
+
+#2649
+Name Master Bedroom~
+Desc There is color theme of black and red in the master bedroom.  The floor is 
+covered in plush black carpet and the walls are covered in expensive looking 
+red wallpaper accented with golden fleur de lis symbols.  The windows are 
+lined in thick red and black brocade draperies.  On the southern wall you 
+come upon a huge picture hanging on the wall, it is of a large family tree, 
+and at the bottom of it is the name Dragonavich.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit east 2669
+Exit south 2671
+EFlags door~
+EKeywords door~
+Exit west 2650
+EFlags door closed~
+EKeywords door~
+End
+
+
+#2650
+Name Balcony~
+Desc The view from here is breathtaking.  You can see down to the courtyard and 
+out across the woods surrounding the home.  The door going back into the 
+home is to the east.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 2649
+EFlags door closed~
+End
+
+
+#2651
+Name Bedroom~
+Desc This bedroom is 15 x 15 and has large shuttered window to the north of here. 
+ The stone walls are decorated with blue tapestries and there is a queen 
+sized bed against the west wall of the room.  Beside the bed there is a 
+table with a fancy glass oil lamp sitting on it lighting the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2647
+End
+
+
+#2652
+Name Bedroom~
+Desc This bedroom is 15 x 15 and has large shuttered window to the north of here. 
+ The stone walls are decorated with blue tapestries and there is a queen 
+sized bed against the west wall of the room.  Beside the bed there is a 
+table with a fancy glass oil lamp sitting on it lighting the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2647
+End
+
+
+#2653
+Name Bedroom~
+Desc This bedroom is 15 x 15 and has large shuttered window to the north of here. 
+ The stone walls are decorated with blue tapestries and there is a queen 
+sized bed against the west wall of the room.  Beside the bed there is a 
+table with a fancy glass oil lamp sitting on it lighting the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2648
+End
+
+
+#2654
+Name Bedroom~
+Desc This bedroom is 15 x 15 and has large shuttered window to the north of here. 
+ The stone walls are decorated with blue tapestries and there is a queen 
+sized bed against the west wall of the room.  Beside the bed there is a 
+table with a fancy glass oil lamp sitting on it lighting the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2648
+End
+
+
+#2655
+Name Stairway~
+Desc You are on a narrow curving stairwell leading from the kitchen to the depths 
+of the castle.  You can feel cold air circulating in the stairwell coming 
+from below you.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 2634
+Exit down 2656
+End
+
+
+#2656
+Name Dungeon~
+Desc The dungeon is not a very large one but effective.  There are shackles 
+hanging from the walls and several large iron cages throughout the room.  
+There are not any individual room but just one large one.  There are also 
+several wooden poles that looks like they are used to train on as well as a 
+weapons rack.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 2659
+Exit south 2673
+Exit up 2655
+End
+
+
+#2657
+Name Dungeon~
+Desc The dungeon is not a very large one but effective.  There are shackles 
+hanging from the walls and several large iron cages throughout the room.  
+There are not any individual room but just one large one.  There are also 
+several wooden poles that looks like they are used to train on as well as a 
+weapons rack.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 2656
+Exit east 2658
+Exit south 2673
+End
+
+
+#2658
+Name Dungeon~
+Desc . The dungeon is not a very large one but effective.  There are shackles 
+hanging from the walls and several large iron cages throughout the room.  
+There are not any individual room but just one large one.  There are also 
+several wooden poles that looks like they are used to train on as well as a 
+weapons rack.  The stone wall is cracked on here on the east wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2659
+Exit east 2660
+EFlags door closed~
+Exit west 2657
+End
+
+
+#2659
+Name Dungeon~
+Desc The dungeon is not a very large one but effective.  There are shackles 
+hanging from the walls and several large iron cages throughout the room.  
+There are not any individual room but just one large one.  There are also 
+several wooden poles that looks like they are used to train on as well as a 
+weapons rack.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 2658
+Exit west 2656
+End
+
+
+#2660
+Name Cramped Passageway~
+Desc The passageway is very short and cramped.  You find yourself having to crawl 
+through it unless you are under 3 feet tall.  There is a musty smell here 
+like the passageway is never opened but you can see light coming through to 
+your east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 2661
+Exit west 2658
+EFlags door closed~
+End
+
+
+#2661
+Name Cramped Passageway~
+Desc The passageway is very short and cramped.  You find yourself having to crawl 
+through it unless you are under 3 feet tall.  There is a musty smell here 
+like the passageway is never opened and there seems to be a trap door 
+leading up.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 2660
+Exit up 2631
+End
+
+
+#2662
+Name Cobblestone Walkway~
+Desc You are walking on a smooth walkway made out of cobblestones.  There are 
+several shrubberies lining the path and there is a small house to your west. 
+ 
+~
+Sector field~
+Exit east 2634
+Exit west 2663
+End
+
+
+#2663
+Name Cobblestone Walkway~
+Desc You are walking on a smooth walkway made out of cobblestones.  There are 
+several shrubberies lining the path and there is a small house to your west. 
+ 
+~
+Sector field~
+Exit east 2662
+Exit west 2664
+End
+
+
+#2664
+Name Servants Quarters~
+Desc This is a small but cozy cottage.  There are several beds lining the north 
+and west wall and on the south wall there is a large stone fireplace.  In 
+the middle of the room is a table and chairs that will seat several people.  
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 2663
+End
+
+
+#2665
+Name Stairwell~
+Desc The stairwell is very narrow and cramped and there is a single torch hanging 
+on the wall to light your way.  There also seems to be several large cracks 
+in the stone floor and walls.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 2666
+Exit down 2669
+End
+
+
+#2666
+Name Lookout~
+Desc You find yourself standing at the very highest part of the house.  The vast 
+area surrounding the home is very visable from this location, making it easy 
+to spot attackers.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 2665
+End
+
+
+#2667
+Name Cobblestone Walkway~
+Desc You are walking on a smooth walkway made out of cobblestones.  There are 
+several shrubberies lining the path and there is a small flower garden and 
+pond to your east.  
+~
+Sector field~
+Exit east 2668
+Exit west 2631
+End
+
+
+#2668
+Name Cobblestone Walkway~
+Desc You are walking on a smooth walkway made out of cobblestones.  There are 
+several shrubberies lining the path and there is a small flower garden and 
+pond to your east.  
+~
+RoomFlags light~
+Sector field~
+Exit north 2639
+Exit east 2643
+Exit west 2667
+End
+
+
+#2669
+Name Hallway~
+Desc There are multiple lanterns hanging on the walls to light the hallway up.  
+The door to the west of here is painted a royal purple color and there are a 
+pair of crossed daggers hanging on the door right at eye level.  There is 
+also a small stairwell tucked into the eastern corner that seems to go up 
+somewhere.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2670
+Exit east 2648
+Exit south 2672
+Exit west 2649
+Exit up 2665
+End
+
+
+#2670
+Name Closet~
+Desc This is a closet.  It is PACKED with clothes and shoes...  Shoes..  And more 
+shoes.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit south 2669
+End
+
+
+#2671
+Name Large Bathroom~
+Desc You find yourself inside of a large and spacious bathroom.  The floor and 
+walls are covered to the ceiling with black and gold ceramic tiles.  The 
+ceiling has a skylight in it allowing you to see out.  There are his and 
+hers sinks along the west wall as well as a stand up shower and a huge spa 
+bathtub.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2649
+EFlags door~
+End
+
+
+#2672
+Name Baby Nursery~
+Desc The walls are painted an off white color with pictures of wooden blocks 
+around the edge of the ceiling.  There is thick tan carpet covering the 
+floor.  There is a large gas operated lantern hanging from the ceiling to 
+light the room.  In the east corner there is a changing table and a large 
+toy box.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2669
+End
+
+
+#2673
+Name The Lab~
+Desc A big concrete slab table stained with chemicals stands in the middle of the 
+room.  Various test tubes lined up in racks and beakers filled with bubbling 
+chemicals cover the table, with brief flashes of light as chemical reactions 
+take place being seen within them.  Orange glowing spheres float in the 
+corners of the room, adding ample light to the surrounding area, and giving 
+plenty of light to work by.  Thick cobblestone reinforced walls with bits of 
+mortar falling out protect the rest of the house from the all too frequent 
+explosions and accidents that occur as a result of the new experimental 
+magics being studied.  
+~
+RoomFlags no_mob indoors no_recall nowhere noscry light noscan~
+Sector inside~
+Exit north 2657
+Exit east 2674
+EFlags door closed locked nopass infuriating~
+EKeyvnum 2654
+EKeywords door~
+End
+
+
+#2674
+Name A Small Storage Room~
+Desc A small storage room packed with spare devices used in experiments sits 
+here.  Racks of spare odd colored potions line the walls, with piles of 
+glass tubing filling the corners of the room.  A small glowing sphere floats 
+in the center of the room.  `RRed`^ in nature, it provides ample, soft light to 
+see by no matter what the situation.  
+~
+RoomFlags indoors antimagic light~
+Sector inside~
+Exit east 2675
+EFlags door nopass~
+Exit west 2673
+EFlags door closed locked nopass infuriating~
+EKeyvnum 2654
+Exit down 2676
+End
+
+
+#2675
+Name A Small Storage Room~
+Desc A small storage room packed with spare devices used in experiments sits 
+here.  Racks of spare odd colored potions line the walls, with piles of 
+glass tubing filling the corners of the room.  A small glowing sphere floats 
+in the center of the room.  `RRed`^ in nature, it provides ample, soft light to 
+see by no matter what the situation.  
+~
+RoomFlags indoors antimagic light~
+Room2Flags storage_room~
+Sector inside~
+Exit west 2674
+EFlags door nopass~
+End
+
+
+#2676
+Name Treasury Room~
+Desc ~
+RoomFlags indoors noscry light~
+Room2Flags storage_room~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit up 2674
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 2633 spec_fido
+M 2634 spec_steel_dragon
+M 2635 spec_cast_mage
+S
+
+
+
+#RESETS2
+O 0 2631 -1 2631
+M 0 2630 1 2632 1
+M 0 2633 1 2633 1
+M 0 2632 1 2634 1
+E 0 2644 -1 wielded~
+O 0 2636 -1 2636
+O 0 2637 -1 2636
+O 0 2636 -1 2637
+O 0 2638 -1 2638
+M 0 2636 6 2638 1
+O 0 2632 -1 2639
+O 0 2635 -1 2644
+O 0 2634 -1 2645
+M 0 2631 2 2647 1
+O 0 2630 -1 2649
+O 0 2641 -1 2650
+O 0 2642 -1 2651
+O 0 2642 -1 2652
+O 0 2642 -1 2653
+O 0 2642 -1 2654
+M 0 2636 6 2656 1
+O 0 2839 -1 2659
+O 0 2642 -1 2664
+M 0 2636 6 2664 2
+M 0 2636 6 2665 1
+O 0 2641 -1 2666
+M 0 2636 6 2668 1
+O 0 2640 -1 2671
+O 0 2649 -1 2673
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2637
+title treasury guard~
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Talintha
+   mob letpass
+   end
+ endif
+if name $n Branwyn
+mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1106204826
+END
+
+#2633
+title branwyn_fight_attackspells~
+author Zaroth~
+code mob cast 'acid blast' $n
+mob cast 'finger' $n
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1074844621
+END
+
+#2632
+title branwyn_fight_spelldown~
+author Zaroth~
+code mob cast 'dispel magic' $n
+mob cast 'dispel magic' $n
+mob cast 'dispel magic' $n
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1074851131
+END
+
+#2631
+title branwyn_prefight_spelldown~
+author Zaroth~
+code if isimmort $n
+  break
+else
+if level $n <= 80
+  language native
+  mq1 say $n, run along and play with children your own size!
+  mq2 mob transfer $n 3000
+  break
+else
+  pmote $n waves his hands about in a wicked fashion, stares at @ and utters 'wingaltrab'
+  mob cast 'dispel magic' $n
+  mob cast 'faerie' $n
+  mob kill $n
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G2631`x,`Y2635`x,`B2673`x,`r3`x,`C0`x:
+             `YMobprog: invalid if_check (if) 'islevel', mob 2635 prog 2631
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 2631 on mob 2635 (in room 2673), line 3
+`S#############
+
+~
+last_editor Zaroth~
+last_editdate 1081901437
+END
+
+#2630
+author Delandria~
+code language native
+sayto $n Welcome to Nightshade Manor.
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057373557
+END
+
+#0
+
+
+#$

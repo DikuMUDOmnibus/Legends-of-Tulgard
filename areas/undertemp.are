@@ -1,0 +1,159 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        An underground temple~
+ShortName   An underground temple~
+Builders    None~
+Credits     Delandria Rashka~
+VNUMs       615 619
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Abaddon~
+*LastSaved  Sun Jan  8 15:46:46 2006~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#615
+Name treasury key roleplay temple~
+Short a small rusted key~
+Desc A small rusted key is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#616
+Name blood stained sacrificial altar~
+Short `#`wa `Rbl`roo`Rd `sstained `wsacrificial `saltar`^~
+Desc `#`wa `Rbl`roo`Rd `sstained `wsacrificial `saltar `wstands here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 100000 ANQ 100 100
+Weight 2000
+Material marble~
+Extra    hum nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#615
+Name Entrance to a small underground temple~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector cave~
+Exit north 616
+End
+
+
+#616
+Name Throne Room~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector cave~
+Exit east 617
+Exit south 615
+Exit west 618
+Exit northeast 619
+EFlags door closed locked nopass hard infuriating~
+EKeywords door~
+End
+
+
+#617
+Name Sacrifice Altar~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector cave~
+Exit west 616
+End
+
+
+#618
+Name Sacrifice Altar~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector cave~
+Exit east 616
+End
+
+
+#619
+Name Harem Room~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector cave~
+Exit southwest 616
+EFlags door closed locked nopass hard infuriating~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1611 -1 615
+O 0 1856 -1 616
+O 0 1611 -1 616
+O 0 831 -1 616
+O 0 616 -1 617
+O 0 1611 -1 617
+O 0 616 -1 618
+O 0 1611 -1 618
+O 0 2524 -1 619
+O 0 831 -1 619
+O 0 2022 -1 619
+P 0 1620 4 2022 4
+P 0 503 4 2022 4
+P 0 803 4 2022 4
+P 0 11224 4 2022 4
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,288 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Shadow Alliance Stronghold~
+ShortName   Shadow Alliance~
+Builders    None~
+Credits     None~
+VNUMs       46400 46419
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+Security    9
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sun Jun 13 15:42:41 2004~
+End
+
+
+
+#MOBILES
+#46400
+Name mercenary bandit~
+ShortD a mercenary bandit~
+LongD A highly skilled Mercenary Bandit is here, guarding the entrance.~
+Desc His weathered face is marked with scars from battles past.
+~
+Race human~
+Align 3 0
+Level 55
+Hitroll 120
+HitDice 6d9+300
+ManaDice 2d5+50
+DamDice 10d4+23
+DamType slash
+AC -250 -250 -250 -220
+Wealth 0
+Act    npc dont_wander stay_area warrior~
+AffBy  sanctuary haste~
+Off    disarm dodge fast kick parry assist_vnum~
+Imm    summon charm holy~
+Res    fire lightning acid poison~
+Form   edible biped mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg EXALL 46400 north~
+END
+
+#46402
+Name Solnya~
+ShortD `DSolnya`x~
+LongD Solnya, the `#`sMercenary Healer`^, is here to comfort your wounds.~
+Desc She has an inpartial look on her face as she tends to people's wounds.
+~
+Race human~
+Align 2 0
+Level 101
+Hitroll 10
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 11d12+56
+DamType slice
+AC -710 -710 -710 -596
+Wealth 0
+Act    npc dont_wander train practice healer gain~
+AffBy  sanctuary~
+Imm    summon charm magic weapon~
+Form   edible mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 2197 gear~
+END
+
+#0
+
+
+
+#OBJECTS
+#46401
+Name portal Tulgard~
+Short a portal to Tulgard~
+Desc A portal to Tulgard stands here.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 KL B 3000 0
+Weight 0
+Material unknown~
+Wear     no_sac~
+End
+
+#46404
+Name loner storage pit~
+Short the storage pit~
+Desc A large pit used to store reserves for the clan is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 100000 0 0 10000 0
+Weight 0
+Material unknown~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#46400
+Name Before the Stronghold~
+Desc You stand before a large, fortress-like stronghold.  There are
+watchtowers in each of the four corners, as well as two at the massive entry
+gate that towers before you.  Arrow slits can be seen in the walls, which
+are stained with what looks to have been hot oil.  Flags with various scenes
+of warfare are placed atop each lookout tower.  You may attempt to go north
+through the gates, or you may go south onto the trail.  
+~
+Sector city~
+ExtraDesc flags~
+These flags depict many scenes of wars past.
+~
+Exit north 46401
+End
+
+
+#46401
+Name Main Hall of the Stronghold~
+Desc You are inside the main hall of the mercenary stronghold.  The interior is 
+sparcely decorated, with only a few banners depicting battles hanging from 
+the wood and stone walls.  A wooden double staircase leads up to the second 
+floor balcony, which endircles the entire interior of the room.  Arrow slits 
+can be seen on the exterior walls.  Ladders lead up into the guard towers, 
+which are manned at all times.  Exits lead up, north, west, and south.  A 
+glimmering portal to Tulgard is down from here.  
+~
+RoomFlags indoors safe law~
+Sector inside~
+Mana 130
+Heal 130
+Exit north 46404
+Exit south 46400
+Exit west 46403
+Exit up 46402
+End
+
+
+#46402
+Name On the Balcony~
+Desc You are on the balcony overlooking the main hall of the stronghold.  The
+balcony encircles the entire room, and there are arrow slits in the outside
+walls.  There is a room to the north, or you may head downstairs to the main
+hall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 46405
+Exit down 46401
+End
+
+
+#46403
+Name Mercenary Shop~
+Desc You're in a small room crammed full of weapons, armor, potions, poisons,
+and equipment of all sorts. Swords are displayed on the wall behind a
+small wooden counter, shields hang on a rack to the left of the counter.
+Potions are displayed in a glass case, boots and other items are
+set on shelves and a small table.  The only exit is east.
+~
+RoomFlags indoors safe law~
+Sector inside~
+Exit east 46401
+Exit west 46406
+End
+
+
+#46404
+Name Planning Room~
+Desc The walls of this room are covered in maps, wanted posters, and lists of 
+informants.  A long wooden table in in the center of the room, many wooden 
+chairs are pulled up to it.  A candlebra sitting in the middle of the table 
+illuminates the room, as there are no windows.  A few models are also spread 
+upon the table, representing targets for elimination.  The only exits are 
+down and to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 46401
+Exit down 27003
+End
+
+
+#46405
+Name Mercenary Leader's Office~
+Desc This is the office of the leader of the Mercenaries.  A large wooden desk
+is set up by a small window overlooking the surrounding forest.  Upon the
+desk is a large stack of wanted posters, contracts, and other documents. 
+The portrait of a former mercenary leader hangs upon the west wall.  The
+only exit is south onto the balcony.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc portrait~
+A painting of a man dressed in dark clothing and a black cloak.
+ 
+The name 'Tanin' is engraved at the bottom.
+~
+Exit south 46402
+End
+
+
+#46406
+Name Loner Banking Center~
+Desc A teller stands behind the counter here, ready to take your deposit into 
+your clan's treasury.  Type 'BANK' for info.  
+~
+RoomFlags bank safe law light~
+Sector inside~
+Exit east 46403
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 46400 2 46400 2
+M 0 46400 2 46400 2
+M 0 46402 1 46401 1
+O 0 20101 -1 46402
+O 0 46404 -1 46404
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#46400
+code if isimmort $n
+say We are honored..
+bow $n
+MOB TRANSFER $n 46401
+break
+endif
+if clan $n Shadow Alliance
+say Welcome, $n, please enter.
+MOB ECHOAT $n You walk past the guards into the stronghold.
+MOB TRANSFER $n 46401
+MOB ECHO $n walks into the Mercenary Stronghold.
+break
+endif
+say You may not pass!
+MOB ECHOAT $n You are stopped in your tracks by the point of the guard's sword at your throat.
+MOB ECHOAROUND $n The guard stands between $n and the entrance.
+break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038682703
+END
+
+#0
+
+
+#$

@@ -1,0 +1,2143 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Droghan's Lair~
+ShortName   Droghan's Lair~
+Builders    none~
+Credits     Droghan~
+VNUMs       30900 30939
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+AreaEcho  2  1   2 The slam of a wooden door against a wall echoes thru the castle like a thunder.~
+AreaEcho  1 11   2 Eerie whispers echo in the room as it passes thru with the wind.~
+*LastSaved  Tue Oct  4 21:50:44 2005~
+End
+
+
+
+#MOBILES
+#30900
+Name a mysterious force~
+ShortD a mysterious force~
+LongD Close door~
+Desc The secret-door warden checks for the password.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_invis detect_hidden~
+Form   sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 30904 100~
+MProg EXIT 30900 2~
+END
+
+#30901
+Name secret-entrance warden~
+ShortD secret-entrance warden~
+LongD (no default description)~
+Desc The secret-door warden checks for the password.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  invisible detect_invis detect_hidden~
+AffBy2 detect_treeform detect_vanish~
+Form   sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 30901 pull tapestry~
+END
+
+#30902
+Name a strong wind~
+ShortD a strong wind~
+LongD (no default description)~
+Desc The secret-door warden checks for the password.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  invisible detect_invis detect_hidden~
+Form   sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 30905 touch eyes~
+END
+
+#30903
+Name guard~
+ShortD the guard~
+LongD A large gate guard stand here, guarding the entrance.~
+Desc The large gate guard checks for password
+~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+445
+ManaDice 4d5+95
+DamDice 10d11+46
+DamType slash
+AC -610 -610 -610 -549
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noalign~
+Act2   avoids_all_attacks no_tendency~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 30903 kil na kor~
+MProg GRALL 30904 100~
+END
+
+#30904
+Name `gslender-billed`x parakeet~
+ShortD `gSlender-billed`X parakeet~
+LongD `gSlender-billed`X parakeet wanders around, pecking on some seeds. ~
+Desc `XThis parakeet has a `Gdark green`X body with a crown with `sblack`X transverse 
+lines.  `rReddish`X tone between the front and lorums, also a naked ring 
+surrounding the eyes and a abdomen with `Rreddish`X tone little notorious.  `rDark 
+red`X tail with `ggreenish`X end and pale pink legs.  
+~
+Race bird~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc stay_area pet~
+Act2   avoids_all_attacks~
+Form   edible animal sentient biped bird~
+Part   head legs heart brains guts hands feet eye wings claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material bird
+END
+
+#30905
+Name `xa `swooden`x training pole~
+ShortD `XA `swooden`X training pole~
+LongD `XA `swooden`X training pole with several arms is ready to whack the unwary.~
+Desc `XThis `swooden`X training pole is about 6' tall and 2' thick and a greased pole 
+within allows it to turn easily, giving its several `swooden`X arms coming from 
+its side a good chance to whack someone unexpectedly.  
+ 
+`XType `RPunch Pole`X to try it. *Use it at your own risk*
+ 
+~
+Race elf~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 1000d100+20000
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -164
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   allskills avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary infrared regeneration~
+Off    disarm fast kick parry trip~
+Imm    summon charm cold poison mental disease drowning light sound sleep illusion scry~
+Res    illusion~
+Vuln   poison disease~
+Form   other sentient construct biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material wood
+MProg COMMAND 30906 punch pole~
+MProg PREKILL 30906 100~
+END
+
+#30906
+Name `xa petite, beautiful elf maiden with long `sblack`x hair~
+ShortD `XA petite, beautiful elf maiden with long `sblack`X hair~
+LongD `XA petite, beautiful elf maiden with long `sblack`X hair walks around doing housekeeping.~
+Desc `XThis petite, beautiful elf maiden has pale skin that contrasts with her long 
+`sblack`X hair.  As she passes by doing the housekeeping of this place, putting 
+back in order furniture and decor, it's obvious to assume she's the maid 
+here.  Her delicate features seems unusual for a maid, mainly because this 
+place doesnt require much work, she mostly spends time enjoying the 
+tranquility of this place.  
+~
+Race elf~
+Align 1 1
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType slap
+AC -45 -45 -45 -38
+Wealth 0
+Act    npc scavenger no_tame stay_area~
+AffBy  detect_hidden infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh&bone
+END
+
+#30907
+Name Unseen_Bonfire_Guarder~
+ShortD unseen_Bonfire_Guarder~
+LongD Unseen_Bonfire_Guarder~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 30909 100~
+MProg DELAY 30907 100~
+MProg ACT 30908 from a huge bonfire.~
+END
+
+#0
+
+
+
+#OBJECTS
+#30900
+Name `xan ostrich duster with a `swooden`x handle~
+Short `XAn ostrich duster with a `swooden`X handle~
+Desc `XAn ostrich duster with a `swooden`X handle lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material feathers~
+Extra    nonmetal nogetall~
+Wear     take hold~
+End
+
+#30901
+Name `xa large `sma`br`sb`bl`se`x fountain~
+Short `Xa large `sma`Br`sb`Bl`se`X fountain~
+Desc `Xa large `sma`Br`sb`Bl`se`X fountain sits in the middle of the room.~
+Level 50
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    glow nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc fountain ~
+`^This is a `sdark white`^ and `Bblue`^ marble fountain larger than usual and it has a 
+statue of a strange sea creature in the center.  
+~
+End
+
+#30902
+Name `xa long `sstone`x bench~
+Short `Xa long `sstone`X bench~
+Desc `Xa long `sstone`X bench sits here, under a tree.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 4000 BEHKQ 100 100
+Weight 0
+Material stone~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bench ~
+`^This fine piece of furniture is made of `sstone`^, the smooth surface gives away 
+the hard work to carve and polish this bench.  
+~
+End
+
+#30903
+Name `xa large `ywooden`x table~
+Short `XA large `ywooden`X table~
+Desc `XA large `ywooden`X table with several chairs around it sits here.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 DG 100 100
+Weight 0
+Material wood~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bench ~
+`^A large `ywooden`^ table with several chairs around it, the one at the head of 
+the table seems bigger than the rest.  
+~
+End
+
+#30904
+Name `xa wide round `bpool`x~
+Short `Xa wide round `Bpool`X~
+Desc `Xa wide round `Bpool`X steams up this room.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 CFIQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc pool ~
+`^Many smoothly chiseled `sstones`# make the border of the `Bpool`^, within several 
+iron rings seem to heat the `bwater`^.  It is obvious these are connected some 
+sort of heat source, as the one to the room to the south.  
+~
+End
+
+#30905
+Name huge bonfire~
+Short `XA huge `Rbonfire`X~
+Desc `#A huge `Rbonfire`^ burns here.~
+Level 50
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10000 0 0 10000 10
+Weight 0
+Material fire~
+Extra    glow nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bonfire ~
+`^Several small `Slogs`^ rest against each other as the `Yf`Ri`Yr`Re`^ from underneath them 
+start to consume them.  The fire is contained within a circle made of stone 
+blocks around it.  
+~
+End
+
+#30906
+Name `xa tall, sturdy `roak`x tree~
+Short `XA tall, sturdy `roak`X tree~
+Desc `XA tall, sturdy `roak`X tree grows here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material tree~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc oak tree~
+`^This tall `roak`^ tree stretches several feet into the air, its branches filled 
+with deep `ggreen`^ leaves.  Its bark is thick, giving it a sturdy appearance.  
+~
+End
+
+#30907
+Name `xa huge bed covered in `sfurs`x~
+Short `XA huge bed covered in `Sfurs`X~
+Desc `XA huge bed covered in `Sfurs`X sits here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 70
+Rsize 50
+Values 2 2000 EHKQ 135 135
+Weight 0
+Material furs~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bed ~
+`^Thick `Sfurs`^ cover this huge bed, giving it a warm cozy look, rolled `sfurs`^ all 
+around it look like pillows.  
+~
+End
+
+#30908
+Name droghan key~
+Short a wicked key~
+Desc A wicked key to Droghan's Lair is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove nopurge nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take hold~
+End
+
+#30909
+Name `xa `swooden`x bunk bed~
+Short `XA `swooden`X bunk bed~
+Desc `XA `swooden`X bunk bed sits here against a wall.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 700 EHLQ 110 110
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#30910
+Name `xa `sraw iron`x oven with burners on top`x~
+Short `XA `sraw iron`X oven with burners on top`X~
+Desc `XA `sraw iron`X oven with burners on top`X sits against a corner.~
+Level 50
+ItemType cauldron~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 C 0 10 2
+Weight 0
+Material iron~
+Extra    glow nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#30911
+Name `xa small `swooden`x table with four chairs~
+Short `XA small `swooden`X table with four chairs~
+Desc `XA small `swooden`X table with four chairs sits in the middle of the room.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1000 DG 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#30912
+Name `xa `ylarge`x comfortable bed~
+Short `XA `ylarge`X comfortable bed~
+Desc `XA `ylarge`X comfortable bed with two pillows sits next to a wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 600 EHLQ 120 120
+Weight 0
+Material cotton~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#30913
+Name `xwall-to-wall `swooden`x shelves~
+Short `XWall-to-wall `swooden`X shelves~
+Desc `XThe wall-to-wall `swooden`X shelves in this room, hold many flasks, jars, boxes and bags.~
+Level 50
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#30914
+Name `xa robust `rred maple`x tree~
+Short `XA robust `rred maple`X tree~
+Desc `XA robust `rred maple`X tree grows tall here.~
+Level 50
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material tree~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc oak tree~
+`^This tall `roak`^ tree stretches several feet into the air, its branches filled 
+with deep `ggreen`^ leaves.  Its bark is thick, giving it a sturdy appearance.  
+~
+End
+
+#30915
+Name `xa `swooden`x desk with a chair~
+Short `XA `swooden`X desk with a chair~
+Desc `XA `swooden`X desk with a chair sits next to a wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 200 DGQ 100 0
+Weight 0
+Material unknown~
+End
+
+#30916
+Name `xa `sblack`x leather tilt-back sofa chair ~
+Short `XA `sblack`X leather tilt-back sofa chair~
+Desc `XA `sblack`X leather tilt-back sofa chair sits near a corner of the room.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 400 EHKQ 150 0
+Weight 0
+Material feathered leather~
+Extra    nonmetal nodegrade nogetall~
+ExtraDesc tilt-back sofa chair~
+`XThis large `sblack`X leather tilt-back sofa chair offer all the comfort you will 
+need after one of those long days.  It's obvious that once you sit down, 
+sleep will kick in in no time.  
+~
+End
+
+#30917
+Name `xa short `sblack`x maid dress with `wwhite`x lace~
+Short `XA short `sblack`X maid dress with `Wwhite`X lace~
+Desc `XA short `sblack`X maid dress with `Wwhite`X lace lies here.~
+Level 0
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nonmetal~
+Wear     take torso~
+End
+
+#30918
+Name `xa `wwhite`x apron~
+Short `XA `Wwhite`X apron~
+Desc `XA `Wwhite`X apron lies here.~
+Level 1
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nonmetal~
+Wear     take waist~
+End
+
+#30919
+Name `xa pair of `sblack`x high-heels shoes~
+Short `XA pair of `sblack`X high-heels shoes~
+Desc `XA pair of `sblack`X high-heels shoes lie here.~
+Level 1
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nonmetal~
+Wear     take feet~
+End
+
+#30920
+Name apple tree~
+Short an apple tree~
+Desc An apple tree grows here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc apple tree~
+This is a high tree, its leaves moving, at the will of the wind. You can see 
+many fruits, hanging on its branches.
+~
+End
+
+#30921
+Name red apple~
+Short a red apple~
+Desc A red apple is here, ready to be eaten.~
+Level 0
+ItemType food~
+Cost 2
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 0 0 0
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc red apple~
+This fruit is red, with some orange snd yellow strips, here and ther. Looks 
+very juicy and delicious.
+~
+End
+
+#30922
+Name orange tree~
+Short an orange tree~
+Desc An orange tree spreads its branches here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc orange tree~
+This is a soft brown tree, with many thin branches spreading over the place. 
+Many leaves hang on the branches and some fruits as well.
+~
+End
+
+#30923
+Name orange~
+Short an orange~
+Desc A juicy looking orange is here.~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 2 0 0 0
+Weight 0
+Material food~
+Wear     take~
+ExtraDesc orange ~
+Like any other orange, this orange is orange. It is also small, but juicy.
+~
+End
+
+#30924
+Name small torch~
+Short `XA small `Rtorch`X~
+Desc `XA small `Rtorch`X rests on an iron holder attached to the wall.~
+Level 1
+ItemType light~
+Cost 20
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 -1 0 0
+Weight 5
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc torch ~
+`XA small `Rtorch`X rests on an iron holder attached to the wall.
+~
+End
+
+#30925
+Name bookshelf shelf shelves~
+Short `Xa bookshelf~
+Desc `XA bookshelf is here, filled with some books, and much dirt.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 2000
+Rsize 50
+Values 400 0 0 50 100
+Weight 1200
+Material wood~
+Extra    nolocate nodegrade burnproof~
+ExtraDesc bookshelf shelv~
+This wooden shelf looks about to collapse, but still retains some books,
+among the ashes of what once were other books.
+~
+End
+
+#30926
+Name firepit fireplace~
+Short a fireplace~
+Desc A large fire burns here brightly.~
+Level 1
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 1000
+Material coals and wood~
+Extra    glow nonmetal nodegrade~
+ExtraDesc fireplac firepit large ~
+You are looking at a large fire pit, in it are large burning logs, and 
+burning coals.  
+~
+End
+
+#30927
+Name telescope~
+Short `X a large `WT`Selescop`We`X~
+Desc `X a large `WT`Selescop`We`X on a tripod sits here.~
+Level 1
+ItemType wand~
+Cost 220
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 (null) 0
+Weight 30
+Material brass~
+Extra    nolocate nodegrade~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 0 -1 intuition 2 0
+ExtraDesc telescope ~
+`W.           .                  *      .  ..      . `X 
+`W .     .       .       . *         .       .        .  `X 
+`W  *       .      . *       .   .         .    .       .`X 
+`W     .     . .           .       . .     .     .       `X 
+`W*     .      .       *       .       .        .       .`X 
+`W   .      .  *  .      .   .     .         .       .   `X 
+`W .    .    .       .       .    *        *      .   .  `X 
+`W   .    .    .  .      *  *         . .       .      . `X 
+`W   *  .    .      .  .      .    .      .        .     `X 
+`W.         .   .         .     *       .       .     .  `X 
+`W   .              .         .     .         .      .   `X 
+`W  .  .      .    .   .    .    *       *         .     `X 
+ 
+~
+End
+
+#30928
+Name large couch comfortable~
+Short `Xa large couch~
+Desc `XA large comfortable couch sits in the middle of the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 4000 EHK 102 102
+Weight 0
+Material wood and fabric~
+Extra    nodegrade~
+End
+
+#30929
+Name comfortable sofa~
+Short `Xa sofa~
+Desc `XA comfortable sofa sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 4000 EHK 102 102
+Weight 0
+Material wood and fabric~
+Extra    nodegrade~
+End
+
+#30930
+Name tomatoes~
+Short some `#`Rtomatoes`^~
+Desc Some large plump `#`Rtomatoes`^ lie here.~
+Level 1
+ItemType food~
+Cost 14
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc tomatoes~
+These are some lovely plump tomatoes, just perfect in ripeness.
+~
+End
+
+#30931
+Name large pumpkin~
+Short a pumpkin~
+Desc `#`gA large pumpkin sits here.`^~
+Level 1
+ItemType food~
+Cost 15
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc pumpkin~
+This large pumpkin looks good enough to eat.
+~
+End
+
+#30932
+Name carrots~
+Short some `#`Rcarrots`^~
+Desc Some `#`Rcarrots`^ are growing here.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 5 0 0 0 0
+Weight 10
+Material carrot~
+Wear     take hold~
+End
+
+#30935
+Name wooden desk~
+Short `XA `swooden`X desk~
+Desc `XA `swooden`X desk sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 200 EH 100 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#30900
+Name On the Drawbridge~
+Desc Before you stands Droghan's estate.  This large oaken drawbridge leads 
+inside the fortress to the north.  A murky moat lies below the drawbrige, 
+protecting the estate from invasion.  
+~
+RoomFlags safe light~
+Sector field~
+Exit north 30901
+EFlags door closed locked pickproof nopass~
+EKeyvnum 30908
+EKeywords door~
+Exit south 56053
+End
+
+
+#30901
+Name The Gatehouse Hallway~
+Desc The dark hallway is wide and very tall, the ceiling extends several feet 
+higher than usual and on a corner a spiral stair lead to the roof. A 
+chandelier hanging from the ceiling lights up the room faintly.  Most of the 
+stone-block walls are covered with `Stapestries`X that depict beings of myths 
+and legendary knights.  In the middle of the room, water runs softly within 
+a marble fountain with a `Sstatue`X on its center. 
+~
+RoomFlags indoors light~
+Sector inside~
+Owner Droghan~
+ExtraDesc tapestries ~
+`#                                              `y,--,  ,.-.`^
+                 `y,                   \,        `y\,-'`G,`y'-.'`G|`y._`^
+                `y/|          `G\    ,   `y|\         `G}  )/  /`y'-,'`G,`^
+               `y[ '          `G|\  /|   `y| |        `G/  \|  |/' ,'`^
+               `y| |       `G,.'  ',' ', `y| |  `G_,...(   (      `y_`G'`y,`^
+               `y\  \  `G__ ,-' '  ,  , '`y/ |`G,'      \     (   `y\_)`G\`^
+                `y\  \`G_\,'',   ' , ,  `y/  |`G         )         _,/`^
+                 `y\  \`G  '  ,_ _'_,-,`y<._.< `G       /         /`^
+                  `y', '>`G.,'  '  '   ,., |_      |         /`^
+                    `y\/`G'  ',   '   ,'  | /`y__,`G.-'    _,   '\`^
+                `G-,-..\  _  \  '  /  ,  / `y'._)`G _,-\'       \`^
+                 `G\_,,.) `R/`G\    ' /  /`R)`G (-,, ''    ,        |`^
+                `G,' )  | `R\_`G\       '`R-'`G  |  '(               \`^
+               `G/  /'''(   , --, ,' \   |'<'    ,            |`^
+              `G/  /_,--'\   <\  V /> ,' )<_/)  | \      _____)`^
+        `G,-, ,'   '   (_,\ \    |   /) / __/  /   '----'`^
+       `G(`y-,`G \           ) \ ('_.-._)/ /,'    /`^
+       `y| /`G  '          '/ \\ `WV   `WV`G, /'     /`^
+    `G,--`y\(`G        ,     <_/'\\     ||      /`^
+   `G(   ,`y'`G'-     \/|         \-`WA`G.`WA`G-'|     /`^
+  `G,>,_ )_,..(    )\          -,,_-'  _--'`^
+ `G(`y_ \|'`G   `y_`G,/`y_`G  /  \_            ,--'`^
+  `y\( '   <.,../`G'     '-.._   _,-'`^
+   `y'`G                      '''`^
+ 
+ 
+~
+ExtraDesc statue ~
+.                 _
+                '_))  __,  _.-"""--.
+     __        .'   Y'_ /;'  ,;;-''
+    / \\-.,_   |e    ( //  ,''(                       ,
+    | ||  _ '-/_    .-'| '.;;<                        )\
+    \_//_/ \/|-\_/ (   | ;',,/             _.-""""""-' /
+         \'\ \.-/   '\/  .;;/            .'       ,_.'''.
+          \ \ \/   /  |  ';;|          .'    _..-.  '\   '.
+           \ \ '  /   |'\';.'\        /    .'     '\  |.   \
+            '-\_.'    ; /| ';|   _   / '  /    .--. )/  \   ;
+              /   ,  / (_/ ;.'  / './   .--,  /  _ '\    ;  ;
+             |  ,;'  \  (_(     \(\ \ /'  _ \ \_( ) |    |  |
+             |        |            | Y  /' )/    /  /    |  |
+             \        (_           | ;  |      .'  /     |  |
+          /( _)      ,.-'         / ,   ;     /  /'      ;  ;
+          \     /'|  \'._      _.' ,   /     ;  |        ;  ;
+           '---;   '"-;  '----'  ,    /      |  \       /  /
+                \             ,     .'       \   '----''  /
+                 '.    ,   ,      .'          '.        .'
+             jgs   '-.__      __.-'             '""""""'
+                        '""""'
+ 
+~
+Exit north 30902
+Exit south 30900
+EFlags door closed locked pickproof nopass~
+EKeyvnum 30908
+EKeywords door~
+Exit up 30938
+End
+
+
+#30902
+Name The Courtyard~
+Desc `XThis section of the castle seems more like an indoor garden. The large floor 
+is covered in grass and a wavy path made of flat stones crosses the whole 
+garden. To the north is the entrance to the keep, the `ggreen`X vines grow 
+embracing the walls and seem to almost least the roof. A couple of `Rtorches`X 
+with iron holders attached to the walls light up this place and a tree 
+covers in shadows a bench beneath it.  
+~
+RoomFlags light~
+Sector field~
+ExtraDesc tapestry ~
+`#                                                                    `^
+`R ,                                                               ,  `^
+`R \'.                                                           .'/  `^
+`R  ),\                                                         /,(   `^
+`R /__\'.                                                     .'/__\  `^
+`R \  ''.'-.__                                           __.-'.''  /  `^
+`R  ')   ''-. \                                         / .-''   ('   `^
+`R  /   _.--'\ '.          ,               ,          .' /'--._   \   `^
+`R  |-''      '. '-.__    / \             / \    __.-' .'      ''-|   `^
+`R  \         _.''-.,_'-.|/\ \    _,_    / /\|.-'_,.-''._         /   `^
+`R   '\    .-'       /'-.|| \ |.-"   "-.| / ||.-'\       '-.    /'    `^
+`R     )-''        .'   :||  / -.\\ //.- \  ||:   '.        ''-(      `^
+`R    /          .'    / \\_ |  /`Yo`R'^'`Yo`R\  | _// \    '.          \     `^
+`R    \       .-'    .'   '--|  '"/ \"'  |--'   '.    '-.       /     `^
+`R     ')  _.'     .'    .--.; |\__"__/| ;.--.    '.     '._  ('      `^
+`R     /_.'     .-'  _.-'     \\ `W\/^\/`R //     '-._  '-.     '._\      `^
+`R     \     .''_.--'          \\     //          '--._''.     /      `^
+`R      '-._' /'            _   \\-.-//   _            '\ '_.-'       `^
+`R          '< _,..--'''|    \'"'/    |'''--..,_     >'               `^
+`R           _\  ''--..__   \     '''     /   __..--''  /_            `^
+`R          /  '-.__     '''-;    / \    ;-'''     __.-'  \           `^
+`R         |    _   ''''--..  \'-' | '-'/  ..--''''   _    |          `^
+`R         \     '-.       /   |/--|--\|   \       .-'     /          `^
+`R          '-._    '-._  /    |---|---|    \  _.-'    _.-'           `^
+`R              ''-._   '/ / / /---|---\ \ \ \'   _.-''               `^
+`R                   '-./ / / / \'---'/ \ \ \ \.-'                    `^
+`R                       ')' '  /'---'\  ' '('                        `^
+`R                      /'     |       |     '\                       `^
+`R                     /  /  | |       | |  \  \                      `^
+`R                 .--'  /   | '.     .' |   \  '--.                  `^
+`R                /_____/|  / \._\   /_./ \  |\_____\                 `^
+`R               (/      (/'     \) (/     '\)      \)                `^
+ 
+~
+Exit north 30910
+Exit east 30904
+Exit south 30901
+Exit west 30903
+End
+
+
+#30903
+Name The West Courtyard~
+Desc `XThe `ggreen`X grass covers the ground and a tall `rred oak`X grows almost as high as 
+the stone block walls. The breeze runs thru as if was to make the tree brush 
+the air with its leaves.  On the corner, following the pattern between the 
+stone blocks a creeping `gvine`X makes its way up the wall. This side of the 
+courtyard is lit by a small `Rtorch`X that rests on a iron holder thats attached 
+to the wall.  
+~
+RoomFlags light~
+Sector field~
+Exit east 30902
+Exit west 30917
+End
+
+
+#30904
+Name The East Courtyard~
+Desc `XThe `ggrass`X grows evenly on the yard and the path made of flat stone makes its 
+way to a large `rmaple`X tree as it lays its shadow over a `sstone`X bench.  The 
+`sstone`X block walls of the keep to the north and the outer curtain to the 
+south rise several floors up, a `stapestry`X hangs on the keep's wall depicting 
+some mythological creature.   
+~
+RoomFlags light~
+Sector field~
+ExtraDesc tapestry ~
+`#                                                                    `^
+`R ,                                                               ,  `^
+`R \'.                                                           .'/  `^
+`R  ),\                                                         /,(   `^
+`R /__\'.                                                     .'/__\  `^
+`R \  ''.'-.__                                           __.-'.''  /  `^
+`R  ')   ''-. \                                         / .-''   ('   `^
+`R  /   _.--'\ '.          ,               ,          .' /'--._   \   `^
+`R  |-''      '. '-.__    / \             / \    __.-' .'      ''-|   `^
+`R  \         _.''-.,_'-.|/\ \    _,_    / /\|.-'_,.-''._         /   `^
+`R   '\    .-'       /'-.|| \ |.-"   "-.| / ||.-'\       '-.    /'    `^
+`R     )-''        .'   :||  / -.\\ //.- \  ||:   '.        ''-(      `^
+`R    /          .'    / \\_ |  /`Yo`R'^'`Yo`R\  | _// \    '.          \     `^
+`R    \       .-'    .'   '--|  '"/ \"'  |--'   '.    '-.       /     `^
+`R     ')  _.'     .'    .--.; |\__"__/| ;.--.    '.     '._  ('      `^
+`R     /_.'     .-'  _.-'     \\ `W\/^\/`R //     '-._  '-.     '._\      `^
+`R     \     .''_.--'          \\     //          '--._''.     /      `^
+`R      '-._' /'            _   \\-.-//   _            '\ '_.-'       `^
+`R          '< _,..--'''|    \'"'/    |'''--..,_     >'               `^
+`R           _\  ''--..__   \     '''     /   __..--''  /_            `^
+`R          /  '-.__     '''-;    / \    ;-'''     __.-'  \           `^
+`R         |    _   ''''--..  \'-' | '-'/  ..--''''   _    |          `^
+`R         \     '-.       /   |/--|--\|   \       .-'     /          `^
+`R          '-._    '-._  /    |---|---|    \  _.-'    _.-'           `^
+`R              ''-._   '/ / / /---|---\ \ \ \'   _.-''               `^
+`R                   '-./ / / / \'---'/ \ \ \ \.-'                    `^
+`R                       ')' '  /'---'\  ' '('                        `^
+`R                      /'     |       |     '\                       `^
+`R                     /  /  | |       | |  \  \                      `^
+`R                 .--'  /   | '.     .' |   \  '--.                  `^
+`R                /_____/|  / \._\   /_./ \  |\_____\                 `^
+`R               (/      (/'     \) (/     '\)      \)                `^
+ 
+~
+Exit east 30912
+Exit west 30902
+End
+
+
+#30905
+Name The Library~
+Desc A dusty and old library, pieces of paper and torn books litter the whole 
+room. There are several shelves around the place, but the dust on them 
+reveal that they havent hold any books in a long time. An old bookshelf and 
+a desk seem to be the only things that have seem to survive in this room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 30920
+Exit east 30910
+End
+
+
+#30906
+Name The Dining Room~
+Desc `XThe stone block walls are is covered by large `Stapestries`X and in the middle 
+of the room, a huge dining table with several chairs around it.  The chair 
+at the head of it, is bigger than the rest.  The floor is mostly covered by 
+thick furs and on the ceiling, the chandelier lights up the room. On the 
+south wall there is a `Rf`Yi`Rr`Ye`Rp`Yl`Ra`Yc`Re`X that warms up the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc tapestries ~
+`X                `g,'\   `y|\                                               `X
+`X               `g/ /.:  `y;;                                               `X
+`X              `g/ :'|| `y//                                                `X
+`X             `g(`R|`g | ||`y;'                                                 `X
+`X             `g/ ||,`y;'`g-.._                                               `X
+`X            `g: ,;,'';:.--'                                              `X
+`X            `g|:|'`y'-(`g\\                                                  `X
+`X            `g::: `y\-'\`g''                                                 `X
+`X             `g\\\ `y\,-'.`g                                                 `X
+`X              `g''\ `y'.,-'-._`g      ,-._                                   `X
+`X       `g,-.       \  `y'.,-' '-.`g  / ,..'.                                 `X
+`X      `g/ ,.'.      '.  `y\ _.-' \`g',: ''\ \                                `X
+`X     `g/ / :..'-'''''-)  `y'.   _.:`g''  ''\ \                               `X
+`X    `g: :  '' '-..'''/    `y|-''  |`g''  '' \ \                              `X
+`X    `g| |  ''   ''  :     `y|__..-;`g''  ''  : :                             `X
+`X    `g| |  ''   ''  |     `y;    /`g ''  ''  | |                             `X
+`X    `g| |  ''   ''  ;    `y/--../`g_ ''_ '' _| |                     `c\       `X
+`X    `g| |  ''  _;:_/    `y:._  /`g-.'',-.'',-. |                      `c\      `X
+`X    `g: :  '',;'';/     `y|_ ,(`g   ''   ''   \|                     `R`- `c\`s)    `X
+`X     `g\ \  \(   /\     `y:,`g'  \                            `W_,,   `s{] |'    `X
+`X      `g\ \.'/  : /    ,)    /                           `W"-=\;   `s% /     `X
+`X       `g\ ':   ':    / \   :                             `W_ \\;_`s/%%      `X
+`X        `g'.\    :   :\  \  |                             `W_\| \`s_%%       `X
+`X                `g\  | '. \ |..-_                         `W\  \`s/`W\         `X
+`X             SSt `g) |.  '/___-.-'                            `W( )`-`-`-     `X
+`X               `g,'  -.'.  '. ''        _,)                   `W| \        `X
+`X               `g\'\('.\ '._ '-..___..-','                   `W/  /        `X
+`X                  `g''      ''-..___..-'                                  `X
+ 
+~
+Exit north 30916
+Exit east 30911
+EFlags door~
+Exit west 30910
+End
+
+
+#30907
+Name The Guest Room~
+Desc `XEntering the room, a desk can be seen up against a wall and a bed up against 
+the opposite wall. A chandelier lits the room with a few `Rflames`X and the cool 
+breeze come from a window above the bed.  The stone floor is mostly covered 
+with a large `sfur`X . 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 30936
+End
+
+
+#30908
+Name The Guest Room~
+Desc `XUp against the stone wall, there is a desk and a bed up against the opposite 
+wall. A chandelier hanging from the ceiling lits the room with a few `Rflames`X 
+that seem to dance with the cool breeze coming from a window above the bed. 
+The stone floor is mostly covered with a large `sfur`X. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 30936
+End
+
+
+#30909
+Name The Observatory~
+Desc `XThe stone floor is mostly covered by `yfurs`x and the ceiling is a dome made of 
+glass sections and a metal skeleton. The stone wall is only a few feet high 
+and there are metal tracks that seem to be for certain sections of the dome 
+that slide open. There is a magnificient view of the `Soutside`X since this is 
+the highest point of the castle. 
+~
+Sector inside~
+ExtraDesc outside ~
+`XLooking thru the glass section, the magnificent view of the lands of this 
+realm fills the sight, as the breeze softly runs into the room thru some of 
+the open sections of the dome, and the sounds of the wilderness quietly echo 
+all over. 
+~
+Exit down 30937
+End
+
+
+#30910
+Name The Main Hall~
+Desc `XThe polished block wall is covered by a large `Stapestry`X and in the middle of 
+the room theres a large couch with a small table in front and a couple of 
+sofas to the side. The stone floor is mostly covered by thick furs and high 
+on the roof, the chandelier flames lit dimly the room. A small `Rf`Yi`Rr`Ye`Rp`Yl`Ra`Yc`Re`X on 
+a corner provides a little warmth to the room while on the opposite corner 
+there is a spiral staircase leading to the floor above.  
+~
+RoomFlags indoors light~
+Sector inside~
+Heal 130
+ExtraDesc tapestry ~
+. 
+       -""\
+    .-"  .')     (
+   j   .'_+     :[                )      .^--..
+  i    -"       |l                ].    /      i
+ ," .:j         '8o  _,,+.,.--,   d|   ':::;    b
+ i  :'|          "88p;.  (-."_"-.oP        \.   :
+ ; .  (            >,%%%   f),):8"          \:'  i
+i  :: j          ,;%%%:; ; ; i:%%%.,        i.   '.
+i  ': ( ____  ,-::::::' ::j  [:'''          [8:   )
+< ..'''::::8888oooooo.  :(jj(,;,,,         [8::  <
+'. '':.      oo.8888888888:;%%%8o.::.+888+o.:':'  |
+ '.   '        'o'88888888b'%%%%%88< Y888P""'-    ;
+   "'---'.       Y'888888888;;.,"888b."""..::::'-'
+          "-....  b'8888888:::::.'8888._::-"
+             ':::. ':::::O:::::::.'%%'|
+              '.      "''::::::''    .'
+                '.                   <
+                  +:         ':   -';
+                   ':         : .::/
+                    ;+_  :::. :..;;;       LS
+                    ;;;;,;;;;;;;;,;;
+ 
+ 
+~
+Exit north 30921
+Exit east 30906
+Exit south 30902
+Exit west 30905
+Exit up 30936
+End
+
+
+#30911
+Name The Kitchen~
+Desc `XThe room is very hot, mainly because of the `Rfire`X of the oven on the corner, 
+it has a chimeney that runs all the way into the ceiling.  At each side a 
+row of hangers, holding several cooking aids, such as long cauldron spoon, 
+couple small iron tridents, wooden cutting board and others.  A rack of 
+spices is below one of the rows, and a pile of stacked logs for the oven 
+underneath the other one.  A couple of shelves hold many plates and big 
+metal pitchers.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 30915
+Exit west 30906
+EFlags door~
+End
+
+
+#30912
+Name Inside the East Tower~
+Desc This is the base floor of the southern east tower. The dim light of a small 
+`Rtorch`X reveals that there are no windows, theres a stairway going up, and the 
+garden's entrance to the west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 30904
+Exit up 30935
+End
+
+
+#30913
+Name Dungeon's Entrance~
+Desc `XThe spiral stairs end on the bare `ccold`X stone block floor and a single torch 
+lits the room from an iron holder on the wall.  Theres a pile of small stone 
+block next to a wall and to the east a large wooden door is blocked with a 
+large log thats held by a couple of thick iron hooks.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 30914
+EFlags door closed~
+Exit up 30918
+EFlags door closed~
+End
+
+
+#30914
+Name A Dead End~
+Desc The dim light that comes from under the wooden door to the west, reveals 
+that the rest of the room is just bare stone blocks.  Nothing more, except 
+for the moss on the corners of floor and wall.  
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 30913
+EFlags door closed~
+End
+
+
+#30915
+Name The Pantry~
+Desc `XThis dark room has shelves on every wall, except the one where the door is.  
+To the sides of the door, a couple of lamps lit this room very poorly, but 
+enough to notice all the jars, bottles on the top shelves and the boxes and 
+bags on the lower ones.  Strangely with all the things stacked here, there 
+seem to be room left to store more things.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 30926
+Exit south 30911
+End
+
+
+#30916
+Name The Open Fire Room~
+Desc A bonfire in the middle of the room lights well the room, showing a `Stapestry`^ 
+on one of the walls and a `Spainting`^ on the other.  The bonfire is kept within 
+a circle of stones and around it, a couple of feets away carved wooden logs 
+covered in furs serve as resting places.  The concave roof has a large 
+circular opening thru which the smoke can leave, several small iron pots 
+hang from the edge of the opening over the bonfire, releasing vapors to the 
+room.  
+~
+RoomFlags light~
+Sector field~
+ExtraDesc tapestry ~
+.                                                     _
+                              ==(W{==========-      /===-
+                                ||  (.--.)         /===-_--------------__
+                                | \_,|**|,__      |===--___            _,-'`
+                   -==\\        `\ ' `--'   ),    `//-\\   ----`--._.--
+               ______-==|        /`\_. .__/\ \    | |  \\          _--`
+         __-----  ,-/-==\\      (   | .  |----|   | |   `\       ,'
+      _--       /'    |  \\     )__/==0==-\<>/   / /      \     /
+    .'        /       |   \\      /-\___/--\/  /' /        \   /
+   /  ____  /         |    \`\.__/---   \  |_/'  /          \/'
+  /-'-    --------__  |     --/-         ( )   /'        _---`
+                    \_|      /        _) | ;  ),   __----
+                      '----_/      _--/- |/ \   '-- \
+                     {\__--_/}    / \\_>-|)<__\      \
+                     /'   (_/  _--  | |__>--<__|      |
+                    |   _/) )--     | |__>--<__|      |
+                    / /- ,_/       / /__>---<__/      |
+                   o-o _//        /--_>---<__--      /
+                   (^(-          /-_>---<__-      _--
+                  ,/|           /__>--<__/     _--
+               ,//('(          |__>--<__|     /                  .--_
+              ( ( '))          |__>--<__|    |                 /' _-_-\
+           `-)) )) (           |__>--<__|    | -TX           /'  /   -\`\
+          ,/,'//( (             \__>--<__\    \            /'  //      ||
+        ,( ( ((, ))              --__>--<_--_  ---__----'/'/  /'       VV
+      `-/  )` ) ,/|                 --_->--<_/-__      __-- _/
+    ._--//( )/ )) `                    ---'_/_/ /-----__---
+     ;'( ')/ ,)(                              --------
+    ' ') '( (/
+ 
+~
+ExtraDesc painting ~
+`#                                                                       `^
+`y              ___                                                      `^
+`y             ///-'     |\\_                      `G=\\\\         `y. .       `^ 
+`y            /  |='  `S,))\_|`y --_               `G     _)  \      _`y/_`y/|       `^
+`y           / ,' `S,;((((((`y    `G-`y \          `G        '---\---_ /- `y(_/`G\       `^
+`y         /' --/-`S)))))))'\`y_   _/'             `G         \_  /`R<`G  D   |      `^
+`y        (       `S((((((`y --/ --/               `G           --;  /    \--_   `^
+`y         ----|   `S))''`y    ')  '               `G             '--\_    \  ) `^
+`y             :        (_  -\           ,         `G           /---     ./  `^
+`y              \        \_   )--__  /(_/)         `G          |    )    )|  `^
+`y    ___       |`S_`y     \__/--__    --   ,'    `G  /,_;,   __--(   _/      |  `^
+`y  //--\'\    `S/' -------|`y     --------'      `G  \-  ((--    __--        |  `^
+`S((()`y   '\'\_`S(`y_`S     _----\`S             `G         ''-- ------   \_      /   `^
+`S )))`y     -----'   `S/`y      \                `G                   )       )   `^
+`S  (`y         ;`S'---'`y        :               `G                 _-    ,;;(    `^
+`y            |    '\       |                      `G       _--    ,;;;;)    `^
+`y            |    /''\     ;                     `G     _--          _/     `^
+`y           /-   /    |    )                     `G    /;;;''  ,;;:--       `^
+`y          |    /     / `G|`y /                      `G   |;;'   ,''            `^
+`y          /   /     |  `G\\`y|                      `G   |   ,;(               `^
+`y        _/  /'       \  `G\_)`y              `G     .---__\_    \,--._______   `^
+`y       ( )|'         `G(--_`y|               `G    (;;'  ;;;---/' ';;|  ';;;\  `^
+`y        ) '\_         `G|-_;;--__               -------__/'    /'_______/  `^
+`y        '----'       (   `G'---_ ---;;----------------- ;;;'_/'            `^
+`y                     '--------`G'--------....___;;;____-----               `^
+ 
+ 
+ 
+~
+Exit north 30925
+Exit south 30906
+Exit west 30921
+End
+
+
+#30917
+Name Southern West Tower~
+Desc This is the base floor of the southern west tower. The dim light of a small 
+`Rtorch`X reveals that there are no windows, theres a stairway going up, a door 
+to north and the garden's entrance to the east. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 30918
+EFlags door~
+Exit east 30903
+Exit up 30934
+End
+
+
+#30918
+Name Guards Barracks~
+Desc `XThis room is reserved for the guards of the castle, somewhere were they can 
+rest after a long day of doing their duty.  A bunk bed lies again the wall, 
+while on the next there's a `stapestry`X to decor the room a little.  A couple 
+of lamps hanging from the ceiling keep the room well lit and a cool breeze 
+comes in thru the window, as the rest of the room show the stone blocks, 
+that gives that fortress look to it.  
+ 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc tapestry ~
+`X            " 6 Basic Moves for the Good Swordsman "          
+`X                                       
+`X                                       
+`X                                       
+`X      |_O            O_\               `X             `cX`X                         
+`X        |'-)`c--- ---`X(-'\                `X      |_O   `c/ \`X  O_\                   
+`X        |\           / |               `X        |'-`c/   \`X-'\                    
+`X       /  |          |  \              `X        |\       / |                   
+`X                                       `X       /  |      |  \                  
+`X                                       
+`X           `c\ /                         `X           `c\ /`X                         
+`X      |_O   `cX`X  O_\                     `X       |_O  `cX`X  O_\                     
+`X        |'-`c/ \`X-'\                      `X        /'-`c/ \`X-'\                      
+`X        |\     / |                     `X       | \     / |                     
+`X       /  |    |  \                    `X      /   \    |  \                    
+`X                                       
+`X             `c/                         `X             `c/`X                         
+`X       /_O  `cX`X                          `X       /_O  `cX`X                          
+`X        /'-`c/ \`X  O_\                    `X        /'-`c/ \`X   O_\                   
+`X       | \    `c\`X-'\                     `X       | \    `c\`X-'_\                    
+`X      /  /      / |                    `Xejm98 /  /       \ |_                  
+`X                |  \                   
+~
+Exit north 30919
+Exit south 30917
+EFlags door~
+Exit down 30913
+EFlags door closed~
+End
+
+
+#30919
+Name Training Yard~
+Desc `XThe ground is mostly only `ydry`X dirt with a few patches of dying `ggrass`X, but 
+reveals certain patterns in front of a few `swooden`X shields one the wall and 
+around a training pole located in the middle of this place.  The stone block 
+walls rise high and below a window there is a `stapestry`X covering most of it.  
+~
+RoomFlags light~
+Sector field~
+ExtraDesc tapestry ~
+`X            " 6 Basic Moves for the Good Swordsman "          
+`X                                       
+`X                                       
+`X                                       
+`X      |_O            O_\               `X             `cX`X                         
+`X        |'-)`c--- ---`X(-'\                `X      |_O   `c/ \`X  O_\                   
+`X        |\           / |               `X        |'-`c/   \`X-'\                    
+`X       /  |          |  \              `X        |\       / |                   
+`X                                       `X       /  |      |  \                  
+`X                                       
+`X           `c\ /                         `X           `c\ /`X                         
+`X      |_O   `cX`X  O_\                     `X       |_O  `cX`X  O_\                     
+`X        |'-`c/ \`X-'\                      `X        /'-`c/ \`X-'\                      
+`X        |\     / |                     `X       | \     / |                     
+`X       /  |    |  \                    `X      /   \    |  \                    
+`X                                       
+`X             `c/                         `X             `c/`X                         
+`X       /_O  `cX`X                          `X       /_O  `cX`X                          
+`X        /'-`c/ \`X  O_\                    `X        /'-`c/ \`X   O_\                   
+`X       | \    `c\`X-'\                     `X       | \    `c\`X-'_\                    
+`X      /  /      / |                    `Xejm98 /  /       \ |_                  
+`X                |  \                   
+~
+Exit north 30922
+Exit south 30918
+End
+
+
+#30920
+Name Wrecked Room~
+Desc This room is completetly trashed. The broken furniture, torn cloths, dust 
+all over the room look like is something exploded in here. Even the impact 
+marks on the walls could point to an explosion but theres no sign of 
+anything burned in all the debris here. On a corner, oddly enough there seem 
+to be pieces of a large statue, as if it was gathered there, but the pieces 
+are so smashed that they cant tell what the statue was of. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 30905
+End
+
+
+#30921
+Name The Pool~
+Desc `XA large `Spool`X occupies the center of this room, and seems to be heated 
+somehow because of the steam that comes from the `Bwater`X in it.  A couple of 
+benches sit on opposite sides of the room, and on the stone block walls, a 
+few torches are held by iron rings attached to the walls.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc pool ~
+Many smoothly chiseled stones make the border of the pool, looking into the 
+water several iron rings seem to heat the water.  It is obvious these are 
+connected somehow to a heat source, as the one to the south room.  
+~
+Exit east 30916
+Exit south 30910
+End
+
+
+#30922
+Name The West Yard~
+Desc `XTo the west, the `Ggreen`X vines grown along the stone wall, where there is also 
+a `Rtorch`X held by an iron ring, to the south a training yard can be seen and 
+the entrance to the tower to the north. The whole ground is covered by grass 
+and extends to the east, with a few bushes along the walls. 
+~
+RoomFlags light~
+Sector field~
+Exit north 30930
+Exit east 30923
+Exit south 30919
+End
+
+
+#30923
+Name The Backyard~
+Desc `XThe grass covers the whole floor, while the `Ggreen`X vines grows on the keep's 
+wall to the south. The yard extend in all the other directions and 
+everything is faintly lit by a `Rtorch`X held by an iron ring attached to the 
+wall. There an apple tree that covers a `Sstone`X bench. 
+~
+RoomFlags light~
+Sector field~
+Exit north 30927
+Exit east 30924
+Exit west 30922
+End
+
+
+#30924
+Name The Backyard~
+Desc `XThe grass covers the whole floor, while the `Ggreen`X vines grows on the keep's 
+wall to the south. The yard extends to the west and the east and to nearby 
+to the north a small pond can be seen. Everything is faintly lit by a `Rtorch`X 
+held by an iron ring attached to the wall. 
+~
+RoomFlags light~
+Sector field~
+Exit north 30928
+Exit east 30925
+Exit west 30923
+End
+
+
+#30925
+Name The East Yard~
+Desc `XThe `Ggrass`X covering the whole floor extends to the west and there are a few 
+bushes along the nearby walls. To the south a `Rbonfire`X can be seen, while to 
+the east a small patch of vegetable are grown. To the north there is an old 
+shack with scraps of metall piled next to the door. 
+~
+RoomFlags light~
+Sector field~
+Exit north 30929
+Exit east 30926
+Exit south 30916
+Exit west 30924
+End
+
+
+#30926
+Name The Kitchen's Garden~
+Desc This garden includes traditional vegetables with many being heirloom 
+varieties like Pleasantwine tomatoes and Purple Dragon carrot. The patches 
+where the vegetable grow are separated by wooden boards buried almost 
+completly, while the rest of the garden is covered in grass with a small 
+path from the door to the pantry leading to the vegetable garden. 
+~
+RoomFlags no_mob light~
+Sector field~
+Exit north 30932
+Exit south 30915
+Exit west 30925
+End
+
+
+#30927
+Name The North Yard~
+Desc `XThe grass covering the floor continues to the south, the `Ggreen`X vines grow 
+along the walls to the north and west. There is a small `Rtorch`X held by a iron 
+ring attached to the wall and to the east there is a pond with an orange 
+tree nearby the shore. 
+~
+RoomFlags light~
+Sector field~
+Exit east 30928
+Exit south 30923
+End
+
+
+#30928
+Name The Backyard Pond~
+Desc `XA small pond cover most of the ground here, the `Bwater`X is surprisingly clean 
+although the bottom cant be seen. The `Gvines`X and bushes cover most of the 
+stone wall to the north and to the south and the west, the yard continues 
+with the floor covered with grass. To the east there's an old shack that has 
+a small opening at the base of the wall, where the water seem to go inside. 
+~
+RoomFlags light~
+Sector swim~
+Exit south 30924
+Exit west 30927
+End
+
+
+#30929
+Name An Old Forge~
+Desc `XThe dusty shack seems to be an old forge, there is an anvil and a workbench 
+against a wall. Scrap of metal is piled against the wall and under the 
+window to the west theres an whole filled with water, that is most likely 
+fed from outside. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 30925
+End
+
+
+#30930
+Name Northern West Tower~
+Desc `XThis is the base floor of the northern west tower. The dim light of a small 
+`Rtorch`X reveals that there are no windows, theres a stairway going up, and the 
+backyard entrance to the south. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 30922
+Exit up 30931
+End
+
+
+#30931
+Name On Top of the Northern West Tower~
+Desc Several large stone blocks raise up around the floor leaving some openings 
+between them.  At the center of the floor, a large pole holds a `Sflag`^.  There 
+are some stairs to the northern side of the tower leading down.  
+~
+RoomFlags light~
+Sector city~
+ExtraDesc flag ~
+A `rdark red`^ flag, depicting the dark silhouette of a Bullhead over a castle, 
+waves as the wind goes by.  
+~
+Exit down 30930
+End
+
+
+#30932
+Name Inside the Northern East Tower~
+Desc `XThis is the base floor of the northern east tower. The dim light of a small 
+`Rtorch`X reveals that there are no windows, theres a stairway going up, and the 
+backyard entrance to the south. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 30926
+Exit up 30933
+End
+
+
+#30933
+Name On Top of the Northern East Tower~
+Desc Several large stone blocks raise up all around the floor, leaving openings 
+between them.  At the center of the floor, a large pole holds a `Sflag`^.  There 
+are stairs to the northern side of the tower leading down.  
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc flag ~
+A black flag, depicting a sword across a mace under bull horns, waves on the 
+wind that runs by.  
+~
+Exit down 30932
+End
+
+
+#30934
+Name On Top of the Southern West Tower~
+Desc Several large stone blocks raise up around the floor leaving some openings 
+between them.  At the center of the floor, a large pole holds a `Sflag`^.  There 
+are some stairs to the northern side of the tower leading down.  
+~
+RoomFlags light~
+Sector city~
+ExtraDesc flag ~
+A `rdark red`^ flag, depicting the dark silhouette of a Bullhead over a castle, 
+waves as the wind goes by.  
+~
+Exit down 30917
+End
+
+
+#30935
+Name On Top of the Southern East Tower~
+Desc Several large stone blocks raise up all around the floor, leaving openings 
+between them.  At the center of the floor, a large pole holds a `Sflag`^.  There 
+are stairs to the northern side of the tower leading down.  
+~
+RoomFlags light~
+Sector city~
+ExtraDesc flag ~
+A black flag, depicting a sword across a mace under bull horns, waves on the 
+wind that runs by.  
+~
+Exit down 30912
+End
+
+
+#30936
+Name The Chamber's Hallway~
+Desc `XThe hallway is lit by `Rtorches`X on the wall and in between these, there is an 
+old `Stapestry`X. To the north, west and east there are large wooden doors to 
+the private chambers of the castle. On a corner the spiral staircase leads 
+to the floor below. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc tapestry ~
+`X   `c,   `sA           `r{}                 `X
+`X  `c/ \, `s| `c,        `W.--.                `X
+`X `c|    `s=|=`c >      `W/.--.\               `X
+`X  `c\ /' `s|`c '       `W|`s====`W|               `X
+`X   `c'   `s|         `W|'`s::`W'|               `X
+`X       `s|     `W.-;'\..../';`y_.-^-._      `X
+`X      `W/\\/  /  |...::..`y|'   `r:`y   '|    `X
+`X      `W|:'\ |   /'''::''`y|   `r.:.`y   |    `X
+`X       `W\ /\;-,/\   ::  `y|`r..:::::..`y|    `X
+`X       `s|`W\ <' >  >._::_.`y| `r':::::'`y |    `X
+`X       `s| `W'""'  /   ^^  `y|   `r':'`y   |    `X
+`X       `s|       `W|       `y\    `r:`y    /    `X
+`X       `s|       `W|        `y\   `r:`y   /     `X
+`X       `s|       `W|___/\___|`y'-.`r:`y.-'      `X
+`X       `s|        `W\_ || _/    `y'         `X
+`X       `s|        `W<_ >< _>              `X
+`X       `s|        `W|  ||  |              `X
+`X       `s|        `W|  ||  |              `X
+`X       `s|       `W_\.:||:./_             `X
+`X       `s| jgs  `W/____/\____\            `X
+ 
+~
+Exit north 30937
+Exit east 30908
+Exit west 30907
+Exit down 30910
+End
+
+
+#30937
+Name The Master Bedroom~
+Desc `XThe stone walls rise to the ceiling several feet higher than anyone would 
+expect, from it a huge chandelier lights up the room.  A window high on the 
+north wall brings in the breeze of fresh air, and below there is a large 
+leather sofa. On the corner, the spiral staircase leads to the floor above. 
+Up against the wall there is a wooden desk with a chair and on the opposite 
+wall there is a huge bed covered on furs of all kinds sits against the wall 
+and hanging above it, a `stapestry`^ softly fans as the breeze runs under it. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  1 11  10 Softly the tapestry flows with the breeze fanning the bed.~
+ExtraDesc tapestry ~
+`#                                                                      `^
+`r             `W: :  : :`r            .:::::::.                            `^
+`r             `W: '..'::`r          .::sSSs::'SSs.                         `^
+`r             `W'.....:'`r        .::sS'     ':S:Ss.                       `^
+`r              `W=' :'=`r        sS:$:         :S:SSS.                     `^
+`r              `W": ::"`r       SS: `y:`S''--   -'''`rS:SSSS.                   `^
+`y             .-`W: ::`y-.`r     SS::  `y:Y`S"`b@`S"   "`bdP`S"`r$S:SSSS.                  `^
+`y           .'  '--'-'`r    SS:::  `y:'    .      `rS:SSSSS                  `^
+`y          ;     ''')`r     S:' .sS$`y.     " "  .`rS:SSSSSb                 `^
+`y         :     -...)`r    .' .sP":$S`y.   :::: .`r$$:$SSSSS          `y.. .   `^
+`y        .' .---.../`r    .'.S'  .s$$`y:...    `rs$Y':$SSSSSb        `y: ;' :  `^
+`r      ..`y'  '.  `W: ::`r   .''. ..-$$$$S`y::.'''  `r:$:$SSSSSSS     `y .' ; .'   `^
+`r    .'s`y:  :`r:'-.`W: ::`r ..$P-'' .s$$$$`y::     .`r::$$SSSSS$$$.`y    ;  ; ;     `^
+`r   : :S`y"  :`r$$$$`WS ::`r: s$:: '   .sSP`y'     .`r::$$SSSS$$SSSSs`y..'  ; :      `^
+`r   '.'`yS  .`r:$$$$`WS ::`r'.Y$b:::  'sSP`y'     .`r::$$SSSSSSSSSSSSP`y   ;  :-.    `^
+`r    : Yb.::$$$$`WS ::`r.:::Ss::. sSS      ::::$$SSSSSSSSSY`y"       : .'    `^
+`r   .::.':::$$$$`WS ::`r'::s$Ss:::YSS      ::::$$SSSSSSSY`y"         ':      `^
+`r   ::::.'::$$$$`WS ::`rsSS$$$$:::::::..   .::::$$SSS`y' ........  ....'     `^
+`r   :::::.':S$$$`WS ::`r      '::::::::sSS'::::sY$$S:::::::::S`y$ ::`r$$.'.    `^
+`r    ':::: 'S$$$`WS ::`r       :::::sSSS$$::::sSS$D:::::::::$$`y$ ::Y`r$S. :   `^
+`r        ': S$Y:`W: ::`r        'SSSSS$$$$:SSSS$$$$PsSSs.  S$$`yS  :::`r$$ :   `^
+`r         : $::'`W: ::`r          'S$$$$P:::S$$$$PsSS' ''-.$$$`y$  :::`r$P :   `^
+`r        .:::'  `W: ::`r           '. ::::::::':::SP       '$$4s`y,':`rs$.'    `^
+`r       ':='    `W: ::`r            : '::::::' ':;          '$$$$SSY"      `^
+ 
+ 
+~
+Exit south 30936
+Exit up 30909
+End
+
+
+#30938
+Name Top of the Gatehouse~
+Desc Large stone blocks make up the battlements of the roof, the embrasures leave 
+perfect firing and lookout points. The floor is also made from stone blocks 
+with old murder holes in the center area. Down the southern wall the 
+drawbridge can be seen and to the north the inside of the castle, to the 
+east and west the curtain wall ends on towers as tall as the gatehouse. 
+~
+RoomFlags light~
+Sector city~
+Exit down 30901
+End
+
+
+#30939
+Name The Vault~
+Desc `^Oil `Slamps`^ on each wall lit this room, since there are no windows and 
+engraved on the wall, a few feet above the floor, a strange `Spainting`^ repeats 
+itself as a chain that goes all around the room.  There are several rolls of 
+`yfurs`^ on the floor against the wall as some basins and lamps.  
+~
+RoomFlags indoors light noautomap noautoexits~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 100
+LockerPickProof 3
+ExtraDesc painting ~
+`y ,--------, ,--------, ,--------, ,--------, ,--------, ,--------, ,--------,`^
+`y|  __.-=-. | .-=-.__  |  __.-=-. | .-=-.__  |  __.-=-. | .-=-.__  |  __.-=-. | `^
+`y|  --<`g(_)`y> | <`g(_)`y>--  |  --<`g(_)`y> | <`g(_)`y>-- |  --<`g(_)`y> | <`g(_)`y>--  |  --<`g(_)`y> |`^
+`y|*.__.'|   |   |'.__.*|*.__.'|   |   |'.__.*|*.__.'|   |   |'.__.*|*.__.'|   |   `^ 
+`y'----------'----------'----------'----------'----------'----------'---------'`^
+`y      " The eye sees only what the mind is prepared to comprehend. "`^
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 30903 1 30900 1
+E 0 30908 -1 hold~
+M 0 30900 1 30901 1
+E 0 30908 -1 hold~
+O 0 30901 -1 30901
+O 0 30906 -1 30902
+O 0 30902 -1 30902
+O 0 30906 -1 30903
+O 0 30902 -1 30903
+O 0 30914 -1 30904
+O 0 30902 -1 30904
+O 0 30925 -1 30905
+O 0 30935 -1 30905
+O 0 30903 -1 30906
+O 0 30912 -1 30907
+O 0 30915 -1 30907
+O 0 30912 -1 30908
+O 0 30915 -1 30908
+O 0 30927 -1 30909
+O 0 30928 -1 30910
+O 0 30929 -1 30910
+M 0 30901 1 30910 1
+O 0 30910 -1 30911
+M 0 30906 1 30911 1
+E 0 30900 -1 hold~
+E 0 30917 -1 torso~
+E 0 30918 -1 waist~
+E 0 30919 -1 feet~
+O 0 30913 -1 30915
+O 0 30905 -1 30916
+M 0 30907 1 30916 1
+O 0 30911 -1 30918
+O 0 30909 -1 30918
+M 0 30905 1 30919 1
+O 0 30904 -1 30921
+M 0 30904 1 30922 1
+O 0 30920 -1 30923
+P 0 30921 10 30920 2
+O 0 30902 -1 30923
+O 0 30932 -1 30926
+O 0 30931 -1 30926
+O 0 30930 -1 30926
+O 0 30922 -1 30927
+P 0 30923 10 30922 2
+O 0 418 -1 30929
+O 0 30916 -1 30937
+O 0 30907 -1 30937
+O 0 30915 -1 30937
+M 0 30902 1 30939 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#30909
+title someone enters.. start the loop ~
+author Droghan~
+code ** Don't do much more than start the loop,
+** which will end as soon as the room is empty.
+** This mprog will start it again with a grall **
+ 
+** I thought of adding an echo here, 
+** but it would give away people entering secretly.
+ 
+mob delay 2
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126619599
+END
+
+#30908
+title burn hand if someone gets things from the bonfire~
+author Droghan~
+code `#** Just a basic pain thing for being silly to grab stuff from the fire.
+ 
+if rand 10 
+ mob seeall
+ mob echoat $n You burn your hand on the hot flames of the bonfire!
+ mob echoaround $n $N pulls $s hand away suddenly, screaming in agony.
+ mob inflict $n 10 15
+ mob echoat $n The `Rflames`^ graze you.
+endif
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126619120
+END
+
+#30907
+title purge bonfire~
+author Droghan~
+code ** Purge everything from the fire, 
+** and call itself recursively if there are players around. **
+if players > 0
+ mob silent get all bonfire
+ mob junk all
+ if rand 33
+  mob echo The fire crackles loudly.
+ else
+  if rand 50
+   mob echo The flames dance wildly.
+  else
+   mob echo The bonfire burns brightly.
+  endif
+ endif
+ mob delay 10
+endif
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126617448
+END
+
+#30906
+title training_pole_fight~
+author Droghan~
+code mob seeall
+mob preventattack
+mob echoat $n The training pole spins at you punch one of the arms and ...
+if rand 50
+mob inflict $n 10 15
+mob peace
+mob echoat $n as the arms of the pole spin they hit you.
+break
+endif
+mob echoat $n as the arms of the pole spin quickly you manage to dodge them.
+mob peace
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057538891
+END
+
+#30905
+title Test~
+author Echmoro~
+code mob seeall
+mob echoat $n As you touch one of the eyes on the wall's painting, the stone blocks begin to move revealing the exit as a strong wind pushes you out.
+mob echoaround $n As $n touches a part of the wall's painting, the stone blocks begin to move revealing an exit but quickly a strong wind pushes $n out and the exit seals itself again.
+mob transfer $n 30910
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126646377
+END
+
+#30904
+author Ixliam~
+code close door
+lock door
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057026464
+END
+
+#30903
+title Open Drawbridge~
+author Ixliam~
+code language common
+sayto $n Welcome.
+unlock north
+open north
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126575263
+END
+
+#30902
+title Droghan_secret_exit~
+author Droghan~
+code mob seeall
+mob echoat $n As you touch the eye on the wall's painting, the stone blocks begin to move revealing the exit as a strong wind pushes you out.
+mob echoaround $n As $N touches a part of the wall's painting, the stone blocks begin to move revealing an exit but quickly a strong wind pushes everyone out and the exit seals itself again.
+mob transfer $n 30910
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126575187
+END
+
+#30901
+title Droghan_secret_entrance~
+author Droghan~
+code mob seeall
+mob echo The tapestry is slightly pulled up and several stone block seems to move into the wall, revealing a secret entrance.
+mob echo The stone blocks move into their original position and the entrance is sealed again.
+mob transfer $n 30939
+~
+disabled false
+last_editor Droghan~
+last_editdate 1126575052
+END
+
+#30900
+title open door~
+author Ixliam~
+code unlock door
+open door
+mob letpass
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057026737
+END
+
+#0
+
+
+#$

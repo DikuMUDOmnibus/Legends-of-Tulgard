@@ -1,0 +1,1085 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Nilith's Estate~
+ShortName   Nilith's Estate~
+Builders    none~
+Credits     Rashka~
+VNUMs       12170 12199
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+AreaEcho  1 23  20 A loud roar echoes through the estate.~
+*LastSaved  Tue Nov  8 20:50:18 2005~
+End
+
+
+
+#MOBILES
+#12170
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12170 100~
+END
+
+#12171
+Name nilith busty half elven girl fiery haired~
+ShortD a busty, `#`Yf`yi`Re`rry-hai`Rr`ye`Yd`^ half elven girl~
+LongD A busty, `#`Yf`yi`Re`rry-hai`Rr`ye`Yd`^ half elven girl is sleeping comatose in an `#`Ge`gl`Gv`ge`Gn `ybed`^.~
+Desc This young girl shows a great deal of elven heritage, however not quite 
+enough to be called a full elf. Fair skin covers her leanly trimmed body. 
+She's very slender in form but on the flip side she is Quite busty for an 
+elf, showing off the trait of her angrak heritage. Her eyes when seen are a 
+soft jade color that sparkles mischievously. Her hair is fiery red. It falls 
+down to her calves in gentle waves. Her hair is kept fluffed out with it 
+partially draping it over one shoulder. Her wild bangs are very long with a 
+bit falling demurely down over one eye. `#`RW`rhen `Rs`reen`^, on her left derrier cheek 
+in beautiful calligraphic elven are the words, "Your Name." `#`RW`rhen `RV`risible`S on 
+her back she has been branded with a large '`yW`S'.  She is completely missing 
+the middle finger on her left hand, all that is left is a scar from here her 
+bone once existed. She's got some slash marks across the right side of her 
+face from what could only be from sharp talons. Her face is left with some 
+faint but noticeable scars.`^ `1 `1 She is lying here sleeping, completely comatose under the thick blankets 
+of her bed. Her body is completely unresponsive, failing in even the most 
+simple of tasks such as eating or drinking. Watching her, you know and feel 
+that something is not right about her. It Her skin is very cold and clammy. 
+She would appear dead if it weren't for her shallow breathing. `1 
+~
+Race half-elf~
+Align -1 1
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area noautosocial~
+Act2   nohunt avoids_all_attacks no_random_obj~
+AffBy  blind curse sleep weaken regeneration slow~
+AffBy2 no_dispel mute~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    female~
+Material weretiger
+END
+
+#0
+
+
+
+#OBJECTS
+#12170
+Name treasury key~
+Short `#`cNilith's `yHouse Key`^~
+Desc `#`cNilith's `yHouse Key`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#12171
+Name table black stone~
+Short a `#`sb`Xl`Sack stone`^ table~
+Desc A long `#`sb`Xl`Sack stone`^ table~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10000 DG 100 100
+Weight 0
+Material marble~
+Extra    nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay regrowing~
+End
+
+#12172
+Name oak tree door~
+Short an `#`yoak `Gt`gree`^~
+Desc A large `#`yoak `Gt`gree`^ stands here noticeably.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 ABG AG 12174 0
+Weight 0
+Material oak~
+Extra    nonmetal nolocate nodegrade nogetall~
+Extra2   nodecay regrowing~
+End
+
+#12173
+Name elven sofa~
+Short an `#`Ge`gl`Gv`ge`Gn `ysofa`^~
+Desc A large `#`Ge`gl`Gv`ge`Gn `ysofa`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 99999 BEHK 100 100
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay regrowing~
+End
+
+#12174
+Name elven bed~
+Short an `#`Ge`gl`Gv`ge`Gn `ybed`^~
+Desc A comfortable `#`Ge`gl`Gv`ge`Gn `ybed`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 3 9999 BEIL 100 100
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay regrowing~
+End
+
+#12175
+Name elven desk~
+Short an `#`Ge`gl`Gv`ge`Gn `ydesk`^~
+Desc A messy `#`Ge`gl`Gv`ge`Gn `ydesk`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 300 BDGK 100 100
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12176
+Name elven bed~
+Short a large `#`Ge`gl`Gv`ge`Gn `ybed`^~
+Desc A large `#`Ge`gl`Gv`ge`Gn `ybed`^ centers the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 500 BEHL 100 100
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12177
+Name oak tree round door~
+Short a `#`yround `Gd`goor`^~
+Desc A `#`yround `Gd`goor`^ is here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 ABG AG 12171 0
+Weight 0
+Material oak~
+Extra    nonmetal nolocate nodegrade nogetall~
+Extra2   nodecay regrowing~
+End
+
+#12178
+Name liquid container tea~
+Short a `#`Yl`yiqui`Yd `ycontainer`^~
+Desc Some large `#`Yl`yiqui`Yd `ycontainers`^ fill the corner.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 -1 'spiced tea' 0 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12179
+Name baby crib~
+Short a `#`Wb`Xa`Wby c`Xri`Wb`^~
+Desc An infant's `#`Wc`Xri`Wb`^ centers the room here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 500 CFIL 100 100
+Weight 0
+Material oak~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12180
+Name eddie~
+Short a small `#`Ce`cd`Cd`ci`Ce`^~
+Desc ~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12181
+Name spring pool~
+Short a `#`Cs`cprin`Cg `bpool`^~
+Desc A bubbling `#`Cs`cprin`Cg `bpool`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 20 9999 CFI 100 100
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12182
+Name wall closet~
+Short a `#`Swall closet`^~
+Desc A large `#`Swall closet`^ is here on the right wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 90000 AC 0 90000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#12183
+Name wooden cabinet~
+Short a large `#`ywooden`^ cabinet~
+Desc A large `#`ywooden`^ cabinet hangs off the wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 90000 AC 0 90000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#12184
+Name old log~
+Short a `#`Sold `ylog`^~
+Desc A `#`Sold `ylog`^ sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 5000 EHWY 100 100
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12185
+Name statue elven wolf~
+Short the `#`Wd`Xire `Ww`Xolf`^'s mouth~
+Desc The `#`ys`gtatu`ye`^ of an `#`Ge`gl`Gv`ge`Gn `yw`goma`yn`^ and her `#`Ww`Xolf`^ is here toward the left.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 ACD 12187 1 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Extra2   nodecay regrowing~
+ExtraDesc elven ~
+This statue appears to be made right out of the stone itself. It's almost as 
+if the statue naturally grew into the likeness of the elven woman. She 
+stands tall with a large staff in one hand, and a strange glowing druidic 
+tome in the other. Her elven face is very soft and gentle-looking. Her hair 
+is very thick and long, falling down and around her feet. Her body is very 
+slender and covered in ancient artistic runes. A very large dire wolf 
+accompanys her, sitting loyally at her right side, ears perked up curiously. 
+
+~
+ExtraDesc statue ~
+This statue appears to be made right out of the stone itself. It's almost as 
+if the statue naturally grew into the likeness of the elven woman. She 
+stands tall with a large staff in one hand, and a strange glowing druidic 
+tome in the other. Her elven face is very soft and gentle-looking. Her hair 
+is very thick and long, falling down and around her feet. Her body is very 
+slender and covered in ancient artistic runes. A very large dire wolf 
+accompanys her, sitting loyally at her right side, ears perked up curiously. 
+
+~
+ExtraDesc wolf ~
+This statue appears to be made right out of the stone itself. It's almost as 
+if the statue naturally grew into the likeness of the elven woman. She 
+stands tall with a large staff in one hand, and a strange glowing druidic 
+tome in the other. Her elven face is very soft and gentle-looking. Her hair 
+is very thick and long, falling down and around her feet. Her body is very 
+slender and covered in ancient artistic runes. A very large dire wolf 
+accompanys her, sitting loyally at her right side, ears perked up curiously. 
+
+~
+End
+
+#12186
+Name ancient druidic tome~
+Short an `#`Ya`yncient `gd`Gr`Yu`yi`Yd`Gi`gc `Yt`yome`^~
+Desc An `#`Ya`yncient `Yt`yome`^ lies here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow magic bless antievil nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell noidentify regrowing~
+Wear     take hold~
+ExtraDesc chapter1 ~
+I am Azelia, better known to my tribe as Azelia Wolfblaze Danago Zerstasia. 
+I am what few might call a wild or wood elf from the tribe of Kilstani, the 
+Cat People. I am writing this mainly for those who wish to discover the 
+secrets of the tribe. Mainly, this tome is dedicated to my daughter along 
+with whomever she trusts. This is indeed one of the great secrets held even 
+now to only a select few. It is my heritage, as well as the heritage of my 
+daughters and other children to come. `1  `1  My children's heritage is that of the Kilstani. This particular village 
+is a tribe that bases itself on the preservation of Nature. Our culture is 
+based on the duality power of both male and female. The leader of the tribe 
+is the Headman. He is the shaman of the tribe, a Druid Priest set into power 
+by the choosing of Dorenne herself. It is his job to speak the will of the 
+Goddess to his village in meetings. Only women can enter tribal meetings and 
+speak aloud. Men may go, but they must sit in silence unless they are druids 
+and can feel the presence of the Divine. `1 `1 Second in power comes the Council. It is made up of 4 druids. Each druid 
+is one of the elements of Fire, Air, Earth, and Water. Their job is to 
+protect and make sure the tribe is in harmony by settling the minor feuds 
+within the community.  They also act as advisors to the Headman. `1 `1 A few problems sometime arise from the Council. Each element unfortunately 
+view themselves as the real 'favorite' of the Goddess. They usually view 
+their own decisions as the 'right' way and the others don't know what is 
+best. "Sincere, but wrong" is how they see the other elements. This is why 
+the Council relies for the final decision of the Shaman on major issues.  
+Sometimes the views of one element get too extreme.  In situations like 
+this, there has sometimes been intrigue played by one element upon another.  
+In every instance where this has been discovered, the plotting druid has 
+been stripped of his or her powers and cursed with impotence. Remember my 
+children, we are all equal in one way or another. `1 
+~
+ExtraDesc chapter2 ~
+The page to chapter two turns with difficulty. You have to be very careful 
+or the parchment starts to tear. `1 `1  Besides the Shaman there are specific jobs for each member or gender of 
+the tribe. The women cook and keep the home in order as well as rear up the 
+children. Men of the tribe of course, hunt and provide the meals. They 
+protect and aid the women as the women see fit. No elf of the tribe is known 
+to have knowledge of arcane magic. They do however; know druidic magic and 
+the power of shamanism, even if some do not practice it. All elves of the 
+Cat People revere those of druidic power and those of Nature. `1 `1 Mainly the tribe tries to remain secluded but we do realize that there are 
+"Outsiders".  Periodically, pairs of tribal members are selected to travel 
+to the lands of the Outsiders to learn, monitor, and otherwise keep track of 
+the encroachment on the Wilds.  It is an honor to be chosen for this mission 
+since it is the goddess Dorenne who hand picks us through the voice of the 
+Shaman. A mission carries a time of 80 to 500 years. Other members of the 
+tribe tend the material goods, and children, of those sent out. Hence, there 
+is also no such thing as theft. It is the results of these missions that 
+have given us of the tribe their limited knowledge of "pagan" magic. `1 `1 All of us elves of the Kilstani tribe formally devote to Dorenne in some 
+fashion. Some proclaim it by wearing her amulet; the others murmur her name 
+in soft whispers as they thank her for each passing day. Betrayal of Dorenne 
+my children, is an act of treason and is subject to death where the traitor 
+is at the mercy of the Goddess herself. My children, should you ever curse 
+Dorenne or seek to destroy Nature's realm then I am afraid I must disown you 
+and in time.. we shall meet one day for the culling. `1 `1 
+~
+ExtraDesc chapter3 ~
+The page that turns to chapter three are a little burnt along the edges.. `1 `1 We the people of the Kilstani tribe are also based on certain customs. For 
+greeting, the men cross their arms across their chests and bow at slightly 
+at the waist. It is a peaceful gesture that means to show they are willing 
+to hold peaceful conversation. The same meaning from women is done slightly 
+different. They place their right hand upon their chest and bow their head 
+slightly. A greeting like this is very formal and usually done when dealing 
+with Outsiders or introductions. An informal greeting is a kiss on the 
+cheek. This greeting is strictly used for family members. If the informal 
+greeting is abused and is used upon people who are not family or close 
+enough to be family, the tribe has been known to outcast them or condemn 
+them with a curse of impotence and shame giving them no voice at all within 
+our society. `1 `1  My children, there are no customs for farewells. The tribe believes that 
+in all that happens, the spirits of the world are all connected so there is 
+no way for one to depart and never meet again. Not even if the departure is 
+through death. Rest assured, I am always with each and every one of you. `1 `1 Another tradition is the custom of ascension my children. When a young 
+wood elf comes to age he or she must find their "spirit guide" by secluding 
+themselves within the forest, fasting and meditating upon Dorenne until 
+their spirit comes in a vision.  Sometimes this process can take days or 
+weeks.  From their spirit guide comes the responsibility and likeness to the 
+animal, taking both good and mischevious qualities.  For example, one with 
+the spirit guide of a fox is regarded as sneaky, or very clever. One with 
+the spirit guide of a djinni, or lesser djinn would be regarded as gifted 
+with wisdom and strength or short-tempered and bossy. Different things vary 
+toward each particular elf. I know you will all behave like good little 
+elves and half-elves. `1 `1 Having an animal spirit-guide isn't all there is too it though my 
+children, there are also elements that each young or old elf associates him 
+or herself with. Earth people being safe and secure with a good knowledge of 
+the herbs and lore of nature.. they get a bit selfish at times. Air people 
+being a bit broader on things since air is above and can see more.. they 
+tend to become little know-it-alls or a bit flaky. Fire is the element of 
+determination and will.. however they do tend to be a bit snotty and 
+stubborn. Water is the element of compassion, justice and empathy.. although 
+they do tend to get over emotional. The people of the tribe believe the 
+elements all exist with and for the others. Remember my children, watch 
+yourselves and be kind to all you meet. `1 `1 
+~
+ExtraDesc chapter4 ~
+The page to chapter four is a little newer then the rest of the chapters. `1 `1 I was one of the few who have been chosen to travel the world for a time 
+to answer the call of Nature to restore and protect her. I must tell you my 
+children before I forget, marriage is important. It is a sacred union that 
+can never be broken. You must choose your mate carefully or trust in an 
+elder family member to have it arranged for you. There are no things such as 
+second wives, or having mistresses. Such things are unheard of. Us wood 
+elves believe that to choose a husband or wife is a life-long commitment; 
+meaning it lasts even beyond death and to the next life. I do not know how 
+else to strain it's importance. `1 `1 Marriage is regarded as a truly blessed thing that is vilified with the 
+gift of five dragon's tears flowers. Without these flowers, it means 
+nothing. On the other side one of the stricter customs, an elf of the tribe 
+may only marry another wood elf or someone with elven blood running through 
+their veins. Marrying a human is completely unacceptable and can end in the 
+pair being outcast. This is rare due to the fact of the tribe's secluded 
+nature however, it can happen so remember, humans are very tricky and will 
+likely only wish to take advantage of you. A marriage is expected to produce 
+at least one offspring. If there is no offspring within the first century of 
+marriage, then they are assumed infertile or are out of the favor of the 
+Goddess. Either way, failure to produce offspring can terminate the 
+marriage, although they may try again if they wish. `1 `1 The people of our tribe live in homes made out of great hollowed out oak 
+trees within the heart of the forest. Many of the trees are even 'molded' 
+naturally into beautiful artwork. Taking decades to complete, magnificent 
+"natural" sculptures have been created from living trees including an elven 
+image of the Lady Dorenne. I wish you could see it one day. It's quite 
+inspiring. `1 `1 
+~
+ExtraDesc chapter5 ~
+The intro to chapter five has all sorts of drawn pictures covering page 
+after page.. `1 `1 Over the entire village is a molded canopy made from each of the druidic 
+oak homes in the likeness of a large dome where sprites, faeries, dryads and 
+other creatures of the forest dwell in peace and protection. At the center 
+of the large dome, is a huge hole to let in the blessed light and let out 
+much of the arid heat giving the village a comfortable temperature. The dome 
+also acts as a cover to protect against too much precipitation. At sunrise 
+and sunset, it's as if Dorenne herself had blessed the little clearing. It's 
+beauty is incomparable and indescribable.. `1 `1 Our village is not without it's defenses however. If attacked, or when 
+'Outsiders' wander too close to the elven community the enchantments upon 
+the trees make them appear too close to travel through. Still, some horrid 
+'Outsiders' are very persistent. If that doesn't halt them, then the trees 
+quickly revert into the natural setting of a peaceful forest and the elves 
+remain in their homes until the Shaman declares all is well after the 
+intruders pass through. If damage is attempted to the village, the 
+unfortunate defilers will find themselves surrounded and at a great 
+disadvantage. None live to warn the outside world and tell of it. This is 
+how we've kept our sacred grounds a secret. `1 `1 There are three types of warriors that protect the village generation by 
+generation. The first sets of guardians are of course, the tribe warriors. 
+They protect those near and inside the village, never traveling farther 
+unless needed or summoned by the Shaman. The warriors are armed usually with 
+spears, exotic weapons made from bear-claws or even maces. The second sets 
+of guardians are a lethal group. Archers trained to perfection with their 
+bows that rest hidden and invisible even to the trained eye within the 
+forest canopy. The third and most important sets of guardians are the 
+Rangers. They are armed with mainly with swords; however, they have the 
+honor of wielding the weapons of their own choice as well. They scout for 
+possible threats and make sure none get close to the village. Even going to 
+the extent of posing as decoys making them a well respected class on their 
+own. Usually, weapons and such are passed from grandfather, to father to 
+son. `1 `1 
+~
+ExtraDesc tome ~
+The tome itself is huge. It's a priceless heavy book engraved with golden 
+leaves. The runed hardcover appears to be made out from some sort of tough 
+leather. The pages are very old and faded to a dull aged color. Fluent 
+writing in three different languages cover the first page.. `1 `1 Chapter1 `1 Chapter2 `1 Chapter3 `1 Chapter4 `1 Chapter5 `1 Chapter6 `1 `1 The rest of the chapters are in bad condition from the wither of time and 
+weather. It's hidden contents are barely decipherable. 
+~
+ExtraDesc secret ~
+My children.. I am afraid I must warn you.. Beware of the Rage. Us of the 
+wood elves are bound to fall into it eventually. It is not a permanant thing 
+and I have found the same symptoms within some of the red-haired humans that 
+dwell within the icelands. They call it a berserker's rage. `1 `1 The legend of our rage dates back to the foundings of the tribe. I am 
+afraid I cannot reveal more besides the fact that you my children, must keep 
+your emotions in check. The Rage is sometimes called the Madness because 
+once an elf enters it.. there is no turning back until they pass out from 
+exhaustion. If you ever deal with someone within the Rage.. I'd highly 
+suggest subduing them before they harm themselves and others. Those with the 
+Rage.. almost feel no pain in their transfixion.. Be well, and be safe my 
+children. 
+~
+ExtraDesc chapter6 ~
+These pages are withered a bit from time.. `1 `1 Well, after rambling on about the tribe, I suppose I'll write a little 
+about myself. This way, you'll always have a piece of me with you. Hmmm.. I 
+suppose I am a bit on the athletic side.. but overall, I am a wild-elven 
+woman who has the gifts of druidic strength, which by far for your 
+information, is not uncommon. My spirit of ascension is a jackal, a wild dog 
+of both cleverness and adaptability. My elemental spirit is of Air. Although 
+I don't always look it or act like it, I am a lot more understanding than 
+the impression I give. Well, at least I think so. Hmm... I suppose my view 
+on my nomadic quest is basically to learn all I can, restoring the world to 
+its natural form as it should be, and to test and strengthen my own faith in 
+the Goddess. I in fact, swore allegiance to nature the same very moment I 
+received my druidic gifts upon my ascension into womanhood. `1 `1  Hmm.. Family.. well, I came from a healthy wood-elven family. They're 
+just normal villagers. Yes, I was married at one point to a ranger. 
+Unfortunately he has passed away during my quest. I still mourn him.. as 
+well as my other husbands. Together we were blessed with a healthy baby girl 
+within the first fifty years of our marriage. Before I departed upon my 
+quest, I made sure my recent child had been left behind in the care of an 
+elven maiden who has yet to achieve ascension. An elder druid woman assisted 
+her until I return home. Don't worry, this sort of behavior enables the 
+young elf to learn how to care for children making her an asset to society 
+and preparing her for offspring of her own. Delilah was well grown by then. `1 `1  Well, that is all my children. That is all I'll leave you with. My 
+youngest has departed my humble home at an age far too young and my current 
+husband is dishonorable. Luckily, he has been attacked and killed by a pack 
+of wild wolves just last week. A pity, I suppose I shall simply make one 
+last walk about the wilderness before returning home. My time is almost up. 
+I have been healing the earth for nearly five hundred years now. Be strong 
+my children and perhaps the Headman will send for you. Fight and protect 
+Dorenne and her realm. She is mother to us all. `1 `1 The rest of the book is undecipherable to the common person.. 
+~
+End
+
+#12187
+Name white sand~
+Short some `#`Ws`Xtrange `Wwhite s`Xand`^~
+Desc There is a large circle of `#`Wp`Xure `Wwhite s`Xand`^ centering here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow magic bless antievil nonmetal nodegrade norestring~
+Extra2   nodecay noidentify regrowing~
+Wear     take hold~
+End
+
+#12188
+Name fountain~
+Short a `#`Yt`yr`Yi`yc`Yk`yl`Yi`yn`Yg f`yountain`^~
+Desc A `#`Yf`yountain`^ filled with a golden liquid is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 -1 'starfruit juice' 0 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nolocate nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12189
+Name oak shelf~
+Short an `#`yo`rak `ys`rhelf`^~
+Desc An `#`yo`rak `ys`rhelf`^ is here beside the cabinet.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 90000 AC 0 90000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#12170
+Name a small clearing~
+Desc You've entered down into a small clearing, you find yourself within a 
+beautiful clearing. You're surrounded all over by towering trees and large, 
+thick bushes and shrubbery that seem to encompass and shelter the area. The 
+beautiful clearing is completely untouched by civilization and wild with 
+creatures. 
+~
+RoomFlags indoors light~
+Sector field~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit north 12171
+Exit northeast 12173
+Exit southwest 2709
+EFlags door closed locked obvious~
+EKeyvnum 12170
+EKeywords tunnel~
+Exit northwest 12172
+End
+
+
+#12171
+Name a lush forest~
+Desc The oak forest here is lush and rich with both flora and fauna. Birds flit 
+from tree to tree as squirrels and lizards scurry about. There are two worn 
+trails, one toward the north, and one down to the south into the open 
+clearing. 
+~
+RoomFlags indoors light~
+Sector forest~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit north 12189
+Exit east 12173
+Exit south 12170
+Exit west 12172
+End
+
+
+#12172
+Name a lush forest~
+Desc The forest here is lush and rich with both flora and fauna. Birds flit from 
+tree to tree as squirrels and lizards scurry about. There are two worn 
+trails, one toward the north, and one west toward the sound of the rolling 
+waves of a peaceful river. 
+~
+RoomFlags indoors light~
+Sector forest~
+RoomEcho  0 23   3 the `#`Cw`ca`Ct`ce`Cr`cy`^ sound of a river sounds close.~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit north 12186
+Exit east 12171
+Exit west 12188
+Exit northeast 12189
+Exit southeast 12170
+End
+
+
+#12173
+Name some small hills~
+Desc Some small, tree-covered hills lead onward to a small cavern. A breeze flows 
+through here gently. Lush plantlife covers the hills. The wilderness is 
+entirely untouched by rural civilization. 
+~
+RoomFlags indoors light~
+Sector hills~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit east 12187
+Exit west 12171
+Exit southwest 12170
+Exit northwest 12189
+End
+
+
+#12174
+Name Inside a great oak~
+Desc You find yourself in a tree.. YES..a tree. A great oak tree. Surprisingly 
+it's large and spacious. The tree appears unharmed and quite healthy. The 
+floor is very soft and smooth.. created with some sort of druidic will. 
+~
+RoomFlags indoors light~
+Sector forest~
+Exit east 12175
+Exit up 12179
+Exit down 12177
+End
+
+
+#12175
+Name a study~
+Desc The study is bustling and filled with all sorts of nooks and crannys. Each 
+of them filled with parchments in all sorts of languages. Most of them are 
+inaudible or hard to read due to the quick, but messily artistic writing. 
+~
+RoomFlags indoors light~
+Sector forest~
+Exit west 12174
+End
+
+
+#12176
+Name A child's room~
+Desc The room here is rather large and spacious. It's very warm and snug. The 
+room appears to be rounded, with no sharp corners of any kind. There are 
+silvery runes of protection etched about the top portion of the wall. The 
+floor is very soft and covered in a carpet of rugs. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector cave~
+Exit northeast 12182
+EFlags door closed nopass~
+EKeywords door~
+End
+
+
+#12177
+Name Underneath the oak~
+Desc You find yourself underneath the great oak tree. The solid stone ground is 
+very smooth and cool. There is a large circular door to the west. It's got a 
+strange sign on it written in some unknown language. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 12185
+EFlags door closed locked pickproof nopass obvious~
+EKeyvnum 12170
+EKeywords door~
+Exit up 12174
+Exit northeast 12178
+End
+
+
+#12178
+Name Living room~
+Desc You're inside a large living area. The center if the room is sunken down 
+into a large pit. A small controllable fire of gentle white flames burns 
+here. No smoke arises from the little flames nor does it leap uncontrollably 
+out toward anything that lands on or near it. There is a large round door to 
+the east, west and north of the room. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit north 12183
+EFlags door closed nopass obvious~
+Exit east 12184
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit west 12182
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit southwest 12177
+End
+
+
+#12179
+Name Near the treetops~
+Desc You're nearing the treetops, there's a large branch that leads out toward 
+the tops. A cool breeze flows in from here and down into the rest of the 
+ancient elven home. Fireflies kept inside lanterns fill the open room with a 
+soft and gentle glow. 
+~
+RoomFlags indoors light~
+Sector forest~
+Exit north 12180
+Exit east 12181
+Exit down 12174
+End
+
+
+#12180
+Name The treetops~
+Desc High atop the great oak is the large balcony formed right out of a huge 
+branch. The air is fresh and cool, almost giving a bit of a gentle chill. 
+Large, lush leaves are everywhere. The treetops are beautiful. You can 
+overlook to the floor far below.. pretty high isn't it? 
+~
+RoomFlags indoors light~
+Sector forest~
+Exit south 12179
+End
+
+
+#12181
+Name Attic~
+Desc Here at the tip top of the tree is a comfortable attic. Birds nest all atop 
+the large crates and barrels. Large, beautiful spiderwebs cover the corners 
+hoping to snatch a fly or two. 
+~
+RoomFlags indoors light~
+Sector forest~
+Exit west 12179
+End
+
+
+#12182
+Name Nilith's Room~
+Desc This room is pretty snug and comfortable. The floor is very clean and 
+smooth. There are various etchings in silver along the walls that glow with 
+a gentle hum. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 12178
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit southwest 12176
+EFlags door closed nopass~
+EKeywords door~
+End
+
+
+#12183
+Name Master Bedroom, Zana's room~
+Desc This room is a little bigger then the others. The floor is made out of very 
+smooth stone. On the left wall holds a picture of an elven woman, a 
+half-elven man who appears to be a messy gentleman and a little elven infant 
+who has some human qualities about her. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit south 12178
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#12184
+Name a guest room~
+Desc This room is pretty snug and comfortable. The floor is very clean and 
+smooth. There are various etchings in silver along the walls that glow with 
+a gentle hum. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 12178
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#12185
+Name Alchemist Laboratory~
+Desc The alchemist who once worked in here must have been Very messy indeed.. 
+Potions, scrolls and all other sorts are everywhere along tables and such. 
+There are various notes and parchments written in some odd language that are 
+scattered and piled about messily. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector cave~
+Exit east 12177
+EFlags door closed locked pickproof nopass obvious~
+EKeyvnum 12170
+EKeywords door~
+End
+
+
+#12186
+Name base of some mountains~
+Desc You're here at the rocky base of some small mountains. The beginnings of a 
+swamp have taken root and murky water flows in from the south and down a 
+small cave to the north. The shrubbery, while vast, has already started to 
+adjust to the new swamp forming. 
+~
+RoomFlags indoors light~
+Sector swamp~
+RoomEcho  0 23   5 a `#`rd`yeer`^ softly passes by.~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit north 12190
+Exit south 12172
+End
+
+
+#12187
+Name a comfortable cave~
+Desc Now inside a comfortable cavern, you find it's rather spacious. Fit enough 
+for a dragon. A bear must have abandoned this place. In the center of the 
+cavern is a huge firepit that keeps it warm and snug. Toward the back is a 
+spring and pool that comes up from the earth. 
+~
+RoomFlags light~
+Sector mountain~
+Exit west 12173
+End
+
+
+#12188
+Name a lazy river~
+Desc You're near a beautiful river. The water ebbs and flows peacefully. The 
+river is full of fish, it might be an ideal place to go fishing. The smooth 
+pebbles and stones that make up the river bed glisten with different earthy 
+tones. 
+~
+RoomFlags indoors light~
+Room2Flags freshwater_fish~
+Sector swim~
+RoomEcho  0 23  48 the `#`Cr`civer `Cw`ca`Ct`ce`Cr`^ flows peacefully.~
+RoomEcho  0 23   2 a `#`St`Xr`Sout`^ jumps and splashes in the water!~
+RoomEcho  0 23   1 a mighty `#`Ws`ytag`^ is seen drinking from the river.~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit east 12172
+End
+
+
+#12189
+Name forest clearing~
+Desc The oak forest opens here into a large clearing. The sky is beautiful. In 
+the center is a large open area. The ground has been cleared free of brush 
+and covered with pure white sand. The sand appears magical in it's making. 
+Perfectly fine. The druid magics seem to almost encompass you as if it 
+gathers and centers here. 
+~
+RoomFlags indoors light~
+Sector desert~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit south 12171
+Exit southeast 12173
+Exit southwest 12172
+End
+
+
+#12190
+Name A small murky cave~
+Desc The heat within this cave is ungodly as well as the stench. In a small pool 
+of murky brown water shapes move underneath of it. Very little light from 
+outside trails into this place. 
+~
+Sector cave~
+Exit south 12186
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 12172 -1 12171
+O 0 12177 -1 12174
+O 0 12175 -1 12175
+O 0 12179 -1 12176
+O 0 12173 -1 12178
+O 0 12188 -1 12179
+O 0 12178 -1 12181
+O 0 12174 -1 12182
+O 0 12176 -1 12183
+O 0 12174 -1 12184
+O 0 12183 -1 12185
+O 0 12182 -1 12185
+O 0 12189 -1 12185
+O 0 12180 -1 12187
+O 0 12181 -1 12187
+O 0 12180 -1 12188
+O 0 12184 -1 12188
+O 0 12187 -1 12189
+O 0 12185 -1 12189
+P 0 12186 1 12185 1
+P 0 12186 1 12185 1
+M 0 4122 2 12190 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#12170
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Kann
+   mob letpass
+   end
+ endif
+if fealty $n Kann
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Baridoc~
+last_editdate 1101047546
+END
+
+#0
+
+
+#$

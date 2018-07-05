@@ -1,0 +1,425 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Vane's Estate~
+ShortName   Vane's Estate~
+Builders    ardayne~
+VNUMs       80636 80645
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Aug 28 16:03:13 2005~
+End
+
+
+
+#MOBILES
+#80636
+Name young boy~
+ShortD a young boy~
+LongD A young boy doing his chores is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc no_tame stay_area no_hunt noalign~
+Imm    summon charm magic poison negative energy mental disease drowning sleep scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#80636
+Name treasury key vane aleron~
+Short `#`RV`ra`Rn`re's `WTreasury Key`^~
+Desc `#`RV`ra`Rn`re's `WTreasury Key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#80637
+Name large master bed red~
+Short a large master bed~
+Desc A large master bed is here, covered with a `#`Rr`re`Rd`^ velvet comforter.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 -1 EHLR 100 100
+Weight 0
+Material wood~
+Extra    dark~
+ExtraDesc bed master large red silk velvet~
+As you gaze upon this master bed you instantly notice the red silken sheets, 
+and the red velvet comforter. There are two plush pillows at the head of the 
+bed. Upon the center of the pillows is a single red rose. On each side of 
+the elegant headboard are two large candles casting a seductive shadow over 
+the bed. 
+~
+End
+
+#80638
+Name plush pillow~
+Short a plush pillow~
+Desc ~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 0 0 1 0
+Weight 0
+Material unknown~
+ExtraDesc plush pillow~
+A large plush pillow is here on the master bed.
+~
+End
+
+#80639
+Name red rose~
+Short a `#`Rr`re`Rd `rr`Ro`rs`Re`^~
+Desc A `#`Rr`re`Rd `rr`Ro`rs`Re`^ is here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material rose~
+Extra    dark rotdeath nonmetal nolocate nodegrade norestring nogetall~
+Wear     take hold~
+End
+
+#80640
+Name altar harpan blood~
+Short altar of harpan~
+Desc A large altar to `#`SHarpan`^ is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 blood 0 0
+Weight 0
+Material stone~
+Extra    nonmetal nolocate nodegrade burnproof chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc altar harpan blood~
+This large altar is made from pure black marble. Two large candles are 
+suspended from the ceiling and hang on opposing sides of the altar. A single 
+large black hook hangs from the ceiling above the altar. A solitary bowl for 
+sacrafices rests on the center of the altar. 
+~
+End
+
+#80641
+Name hook treasury~
+Short a black hook~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 A 80643 0
+Weight 0
+Material unknown~
+End
+
+#80642
+Name harpan book case shelf shelves~
+Short a large bookshelf~
+Desc A large bookself is here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 AB A 80645 0
+Weight 0
+Material wood~
+Extra    noremove nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay~
+End
+
+#80643
+Name master bedroom darkness black ~
+Short the darkness~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 A 80644 0
+Weight 0
+Material unknown~
+End
+
+#80644
+Name large plush corner couch~
+Short a large plush corner couch~
+Desc A large plush corner couch is here, inviting you to have a seat.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 -1 EHKQ 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay~
+End
+
+#80645
+Name darkness black~
+Short the darkness~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 A 80641 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#80636
+Name Before a Large Castle~
+Desc As you walk up to the front of this castle, all you can see is darkness. The 
+stone that composes the main walls is a black obsidian. The gate is composed 
+of solid oak with cast iron bars reinforcing the door. It is practically 
+impenetrable. A skull sits off to the left hand side of the gate. It's eyes 
+seem to follow you as you approach the door. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 80637
+EFlags door closed locked pickproof nopass~
+EKeyvnum 80636
+Exit southeast 53182
+End
+
+
+#80637
+Name The Grand Hall~
+Desc You enter into a large castle. This grand hall is the main room. The decor 
+is quite elegant. There is a double staircase going to the upstairs. The 
+stairs are made from a rare black wood. The floor is an expensive black 
+marble tile. Maroon velvet rugs lead to the stairs that lead up and the 
+rooms east, west, and north of you. A magnificent chandelir hangs from the 
+ceiling. The candles seem to burn for eternity. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 80642
+Exit east 80640
+Exit south 80636
+EFlags door closed locked pickproof nopass~
+EKeyvnum 80636
+Exit west 80638
+Exit up 80644
+EFlags door~
+EKeyvnum 80636
+End
+
+
+#80638
+Name A Banquet Hall~
+Desc You enter into a large banquet hall. There is a large banquet table in the 
+center of the room. The table is made from a rare red wood that can only be 
+acquired from the woods on the otherside of the realm. A large centerpiece 
+composed of at least a dozen red, silk roses rests on the banquet table. 
+Many servants and waitresses are busy here waiting to serve you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 80639
+Exit east 80637
+End
+
+
+#80639
+Name A Large Kitchen~
+Desc This kitchen is prepared to handle large banquets or to accomodate a single 
+guest. The wood stove has a massive hot plate on the top for cooking large 
+amounts of food. The ice box is built into the corner and is large enough 
+for a servant to walk into to acquire whatever he needs. A large banquet 
+hall is to the south, and to the east is a small den. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 80642
+Exit south 80638
+End
+
+
+#80640
+Name A Short Hallway~
+Desc This short hallway connects the grand hall to the study. A few paintings 
+line the walls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 80641
+Exit west 80637
+End
+
+
+#80641
+Name An Large Study~
+Desc This study is quite large. Hundreds of books and scrolls line the walls in 
+oak bookshelves that stretch from the floor to the ceiling. A single large, 
+cherrywood desk rests against easternly wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 80640
+Exit west 80642
+End
+
+
+#80642
+Name A Small Den~
+Desc This den is small and quaint. A plush couch rests against one wall and a 
+large pile of pillows rest in another corner. A few mounted animals hang 
+from the walls decorating the wooden theme of this room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 80641
+Exit south 80637
+Exit west 80639
+End
+
+
+#80643
+Name The Treasury Room~
+Desc A single torch hangs from the wall.
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 3
+End
+
+
+#80644
+Name The Master Bedroom~
+Desc You enter into a large master bedroom. The walls of the room are a deep 
+crimson. You notice a few candles randomly placed on tables in the room 
+trying to spread some light to this poorly lit room. The luxuriously large 
+bed is the main attraction within the spacious room. The bed is covered with 
+a soft red silk sheet. A red velvet comforter compliments the silk sheets. 
+Two large candles sit on opposing sides of the headboard of the master bed. 
+A single red rose rests upon the plush pillows. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 80637
+EFlags door~
+End
+
+
+#80645
+Name Altar to Harpan~
+Desc This room is quiet and dark. A single altar sits against the northern wall. 
+Two large candles suspended from the ceiling hang on opposing sides of the 
+altar. A large black hook hangs from the ceiling directly above the altar to 
+Harpan. 
+~
+RoomFlags indoors light~
+Room2Flags no_steal~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 80641 -1 80638
+M 0 80636 4 80639 2
+O 0 80642 -1 80641
+O 0 80644 -1 80642
+O 0 80643 -1 80643
+O 0 80637 -1 80644
+O 0 80638 -1 80644
+P 0 80639 3 80638 1
+O 0 80640 -1 80645
+O 0 80645 -1 80645
+O 0 80641 -1 80645
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

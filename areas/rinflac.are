@@ -1,0 +1,624 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Path of Kreav~
+ShortName   Path of Kreav~
+Builders    rinflac~
+VNUMs       6900 6999
+AFlags  olconly noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#6900
+Name poor box~
+ShortD poor box~
+LongD Poor Box~
+Desc Intended to be an Unseen Mobile sitting here waiting to be given money as 
+donations.  
+~
+Race other~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame~
+Act2   no_random_obj~
+Form   intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#6900
+Name poor box~
+Short a locked box.~
+Desc A plain box, apparently made of steel with a padlock.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 5000 0 0 1000 0
+Weight 32000
+Material steel~
+Extra    lock~
+Extra2   nodecay~
+End
+
+#6901
+Name pew~
+Short a bench made of oak.~
+Desc Several finely crafted oak benches lie in neat rows facing north.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 10 3000 BDEHKW 0 0
+Weight 10000
+Material oak~
+Extra2   nodecay noprimary nosecondary nochaoslace nosell antichaos~
+End
+
+#6902
+Name a red key~
+Short a red key~
+Desc A red key made of iron is lying here~
+Level 0
+ItemType key~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    meltdrop~
+Wear     take~
+End
+
+#6999
+Name portal to tulgard~
+Short portal to tulgard~
+Desc Portal to Tulgard~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 999 N A 3000 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#6900
+Name Central Portion of Church~
+Desc The room before you is as impressive as it is large.  High vaulted ceilings supported by pillars spaced between the stained glass windows gives you the impression of awe.  The wall to the west seems to be painted with pictures of angels and demons locked into some sort of struggle.
+~
+Sector inside~
+Owner Rinflac~
+ExtraDesc north ~
+This huge room continues to the north.
+~
+ExtraDesc south ~
+The room continues to the south where you see what appear to be the main entrance.
+~
+Exit north 6901
+Exit east 6921
+Exit south 6902
+Exit up 6917
+End
+
+
+#6901
+Name Western Ambo~
+Desc You stand near the raised dias at the top of the hall.  To the west is a door.  
+~
+Sector inside~
+Owner Rinflac~
+ExtraDesc south ~
+A short step down leads  you into the rest of the main room.
+~
+ExtraDesc west ~
+A set of doors, ornately carved from teak stand closed before you.
+~
+ExtraDesc east ~
+A pair of doors, ornately carved with swirls from an unknown material stand before you.
+~
+Exit east 6925
+Exit south 6900
+Exit west 6909
+End
+
+
+#6902
+Name Southern End of Church~
+Desc You are currently standing within the main room of worship within the 
+church.  A set of open doors are to the south that seem to lead into a 
+foyer.  Above head height the southern wall is filled with a mural depicting 
+a single vessel on a storm tossed sea following a divine beacon of light at 
+the prow.  
+~
+Sector inside~
+Owner rinflac~
+ExtraDesc south ~
+Through the doors appears to be a foyer.
+~
+ExtraDesc mural ~
+The mural Starts in the Southwest corner and seems to depict a story of a brave crew being led back to their homes after a tumultous journey on the open ocean.
+~
+Exit north 6900
+Exit east 6923
+Exit south 6903
+EFlags door obvious~
+EKeywords foyer~
+End
+
+
+#6903
+Name Foyer~
+Desc This shallow but wide room appears to be a foyer leading into the main hall of worship.  On this end of the room is a sculpture of a Ships Master peering through a telescope and another of a barefoot woman carrying a child in a bundle upon her back.
+~
+Sector inside~
+Owner rinflac~
+Exit north 6902
+EFlags door obvious~
+Exit east 6929
+End
+
+
+#6904
+Name Front Lawn~
+Desc The the north stands an impressive towering building at least forty feet in height.  The front lawn is fairly well kept, although a moderate amount of trash seems to have found it's way into the low hedges restricting access to a paved path leading north into the building.  A paved path also leads west around to the side of the Church.
+~
+Sector inside~
+Owner Rinflac~
+Exit north 6929
+EFlags door closed~
+Exit west 6931
+End
+
+
+#6905
+Name Front Lawn~
+Desc You are a little to the west of the main entrance to the Church in front of a smaller building tha seems to be an annex.  Occassionally through the open doorway you hear noises that you can't quite identify.
+~
+Sector inside~
+Owner Rinflac~
+RoomEcho  0 23  10 *Oooooaaaaaammm* A low pitched moan seems to be coming from the building to the north.~
+Exit north 6906
+EFlags door~
+Exit east 6931
+End
+
+
+#6906
+Name Western Annex Entrance~
+Desc You are in the entrance to a large building.  There is a bench for resting and a modest amount of noise coming from behind the many curtained off areas here.
+~
+Sector inside~
+Owner Rinflac~
+RoomEcho  0 23   5 Somebody unseen shouts, "The power of the gods is blue!"~
+RoomEcho  0 23   5 *Thump*~
+Exit north 6907
+Exit east 6932
+Exit south 6905
+EFlags door~
+Exit west 6927
+End
+
+
+#6907
+Name Back of Annex~
+Desc This large room seems to be a maze of beds and benches.  Many of the people here seem to either be talking to themselves, wandering around in circles or lying down staring at the walls.  Only one or two even seem to be aware that anybody else is present in the room.  The partitions created by the many curtains in the room makes it impossible to see everyone here at once.
+~
+Sector inside~
+Owner Rinflac~
+Exit north 6908
+EFlags door closed~
+Exit east 6933
+Exit south 6906
+Exit west 6928
+EFlags door closed~
+End
+
+
+#6908
+Name Annex Kitchen~
+Desc This room is full of all the items you'd expect in a kitchen.  A stone oven with a roaring flame, a fire pit, along with several basins probably used to clean and prepare meals.  The room is so cluttered that it's hard to see everything at once.
+~
+Sector inside~
+Owner Rinflac~
+RoomEcho 12 23   5 The fire in the pit crackles as a log burns though.~
+RoomEcho 12 23   5 *Sizzle* Some fat falls into the fire pit from the boar.~
+ExtraDesc stone ~
+The oven appears to be of brick carefully funnelling the smoke through a sealed hole in the roof.
+~
+ExtraDesc fire ~
+The Fire Pit currently has a boar on it.
+~
+ExtraDesc sink ~
+You count three basins around this room.
+~
+Exit north 6909
+EFlags door closed~
+Exit south 6907
+EFlags door closed~
+End
+
+
+#6909
+Name Hallway~
+Desc To the east is a set of double doors and to the south another one to the south.  From the south you hear the faint sound of banging, possibly of metal striking metal.  On the northern wall, is an alcove inset into the wall.
+To the west is an arched entrance.
+~
+Sector inside~
+Owner Rinflac~
+Exit north 6910
+Exit east 6901
+Exit south 6908
+EFlags door closed~
+Exit west 6911
+End
+
+
+#6910
+Name Hallway Alcove~
+Desc This alcove only extends a dozen feet into the wall and ends in a point, almost like what you'd expect from a conical helmet.  Along the walls are several paintings, each signed apparently by it's creator.  All appear to be in a strange style that does not adhere strictly to realistic portrayal of the human form, if they are in fact pictures of humans.
+~
+Sector inside~
+Owner Rinflac~
+Exit south 6909
+End
+
+
+#6911
+Name Circular Staircase~
+Desc The Corridor ends in this room which is currently filled with a circular 
+staircase leading to an upper level.  Considering the height of the main 
+building, it almost appears that there are more than one level above you.  
+To the south is a door.  
+~
+Sector inside~
+Owner Rinflac~
+Exit east 6909
+Exit south 6919
+Exit up 6912
+End
+
+
+#6912
+Name Second Landing~
+Desc The staircase does continue upwards, although the width of the stairs has shrunk to just a few feet and the  diameter of the room accordingly.  It appears only one more level lay above.  To the east is an archway.
+~
+Sector inside~
+Owner Rinflac~
+Exit east 6914
+EFlags door~
+Exit up 6913
+Exit down 6911
+End
+
+
+#6913
+Name Top of the Staircase~
+Desc The stairs appear to end at a blank stone wall, or is it.  As you look, the wall seems to shimmer as if it was alive.  All is not what it seems.
+~
+Sector inside~
+Owner Rinflac~
+Exit up 6915
+Exit down 6912
+End
+
+
+#6914
+Name Open Walkway~
+Desc You are in an elevated walkway area.  Although open allowing you a view to the north, the ceiling above you is supported by a wooden frame every few feet.
+~
+Sector inside~
+Owner Rinflac~
+Exit south 6916
+EFlags door closed locked nopass infuriating~
+EKeyvnum 6902
+Exit west 6912
+EFlags door~
+End
+
+
+#6915
+Name Study~
+Desc You are in a large room, much larger than you thought possible here a the top of the tower.  Several comfortable chairs, three tables, and an assortment of books held in the two bookcases along the walls.  A pipe and pipeweed are sitting on the table.
+~
+Sector inside~
+Owner Rinflac~
+Exit down 6913
+End
+
+
+#6916
+Name Bedroom~
+Desc The room around you contains a bed, table, two chairs and a desk filled with parchment, quills, and various books.  The room appears in disarray, although the owner probably feels it's just looks like it is in use.  There is a door to the north, east and south.
+~
+Sector inside~
+Owner Rinflac~
+Exit north 6914
+EFlags door closed locked nopass infuriating~
+EKeyvnum 6902
+Exit east 6917
+EFlags door closed locked nopass infuriating~
+EKeyvnum 6902
+Exit south 6918
+EFlags door closed locked nopass infuriating~
+EKeyvnum 6902
+End
+
+
+#6917
+Name Balcony~
+Desc ~
+Sector inside~
+Owner Rinflac~
+Exit west 6916
+EFlags door closed locked nopass infuriating~
+EKeyvnum 6902
+Exit down 6900
+End
+
+
+#6918
+Name Treasury~
+Desc This will be the Treasury
+~
+Sector inside~
+Owner Rinflac~
+Exit north 6916
+EFlags door closed locked nopass infuriating~
+EKeyvnum 6902
+End
+
+
+#6919
+Name Staff Quarters~
+Desc ~
+Sector inside~
+Exit north 6911
+Exit south 6920
+End
+
+
+#6920
+Name Staff Quarters 2~
+Desc ~
+Sector inside~
+Exit north 6919
+End
+
+
+#6921
+Name Central Portion of Church~
+Desc You are standing in the aisle nearly in the middle of this huge room.  The high vaulted ceiling is at least 60' above you supported by pillars to either side.  Rows of pews are on either side.
+~
+Sector inside~
+Exit north 6925
+Exit east 6922
+Exit south 6923
+Exit west 6900
+End
+
+
+#6922
+Name Central Portion of Church~
+Desc The room before you is as impressive as it is large.  High vaulted ceilings 
+supported by pillars spaced between the stained glass windows gives you an 
+impression of awe.  The wall to the east is painted with pictures of a 
+pilgrimage of some sort.  Many shabbily dressed people are following a 
+single female figure across a desolate wasteland. To the north is a low wall 
+blocking your view of the eastern portion of the altar area. 
+~
+Sector inside~
+Exit south 6924
+Exit west 6921
+End
+
+
+#6923
+Name Southern End of the Church~
+Desc You are in the aisle between a sec of pews to either side of you.  The ceiling above arches high over your head at least 60'.
+~
+Sector inside~
+Exit north 6921
+Exit east 6924
+Exit south 6929
+EFlags door closed~
+Exit west 6902
+End
+
+
+#6924
+Name Southern End of the Church~
+Desc You are currently standing within the main room of worship within the church.  A set of open doors are to the south that seem to lead into a foyer.  Above head height, the southern wall is filled with a mural depicting a man leading others around him forward away from an unknown calamity, possibly a fire.
+~
+Sector inside~
+ExtraDesc mural ~
+The mural shows what may be a small village in flames.  Many of the details are hard to distinguish, but the man leading the others has a halo of glowing light about his head.
+~
+Exit north 6922
+Exit south 6930
+EFlags door closed~
+Exit west 6923
+End
+
+
+#6925
+Name High Altar~
+Desc The Altar here in the middle of the Ambo is raised slightly above the rest of the room.  Many candles sit in niches along the back wall effectively backlighting anybody standing here for the benefit of people sitting in the pews.
+~
+Sector inside~
+Exit east 6926
+Exit south 6921
+Exit west 6901
+End
+
+
+#6926
+Name Ambo~
+Desc This side of the Altar area has two sections separated by a low east-west wall.  The floor behind the wall is a few feet lower which combines to block direct observation from the audience.  A couple small tables are behind the wall stacked with small items related to the services held here in the main Cathedral.
+~
+Sector inside~
+Exit west 6925
+End
+
+
+#6927
+Name Annex Corridor~
+Desc This portion of the annex contains younger patients in beds.  A few do not even seem to be alive due to their lack of expression and motion, while others are animatedly chattering.
+This portion of the annex has a few of the younger patients, evident by the higher pitch to the voices beyond the curtains dividing this room into separate cubicles.
+~
+Sector inside~
+Exit north 6928
+EFlags door closed~
+Exit east 6906
+Exit west 6934
+End
+
+
+#6928
+Name Annex Storage~
+Desc This is a storage room for supplies.  It is full of crates of various sizes and assorted items that you might expect to see in a hospital including some crutches, prepared bandages, and jars of unknown concoctions sitting on the numerous shelves.
+~
+Sector inside~
+Exit east 6907
+EFlags door closed~
+Exit south 6927
+EFlags door closed~
+End
+
+
+#6929
+Name Foyer~
+Desc This wide but narrow room appears to be the Foyer of the Church.  The room 
+extends east and west. The frame around the double door to the north is hand 
+carved in exquisite detail with what appear to be waves and possibly other 
+objects of interest. 
+~
+Sector inside~
+ExtraDesc frame ~
+As you peer a little more closely at the frame, it seems as if a story of some sort is being told.  On the left you see a ship on calm seas, at the top are the same figures and vessel on a stormy see, followed on the right with a single figure grasping a bright object that seems to be directing the vessel to follow the beam of light emanating from it's fist.
+~
+Exit north 6923
+EFlags door closed~
+Exit east 6930
+Exit south 6904
+EFlags door closed~
+Exit west 6903
+End
+
+
+#6930
+Name Foyer~
+Desc This shallow but wide room appears to be a foyer leading into the main hall of worship.  On this end of the room are a pair of statues.  One is of a small dirty barely clothed child while the other is of a prone man that appears to be suffering from an unknown malaise.
+~
+Sector inside~
+Exit north 6924
+EFlags door closed~
+Exit west 6929
+End
+
+
+#6931
+Name Front Lawn~
+Desc You are walking on a paved path between a little southwest of a large Cathedral.  Access to the building is blocked by hedges tot he north.
+~
+Sector inside~
+Exit east 6904
+Exit west 6905
+End
+
+
+#6932
+Name Patient Room~
+Desc Behind the curtain are a pair of cots each with it's own inhabitant.  While one appears to be staring at nothing, the other is muttering and jumping at each noise heard.
+~
+Sector inside~
+Exit west 6906
+End
+
+
+#6933
+Name Cubicle~
+Desc A short path through some curtains leads you to this cubicle containing a single cot.  On the wall you see evidence that somebody has attempted to draw a picture, although most of it is smeared and unrecognizable.
+~
+Sector inside~
+Exit west 6907
+End
+
+
+#6934
+Name Cluttered Cubicle~
+Desc A four cots are on the sides of this cluttered cubicle.  Many broken Gnomish Toys can be seen along the walls and, well, everywhere.  There are narrow paths where some of the items have been pushed back allowing one to walk.
+~
+Sector inside~
+Exit east 6927
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 6999 -1 6900
+O 0 6901 -1 6900
+O 0 6901 -1 6902
+M 0 6900 1 6902 1
+O 0 6902 0 6916
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

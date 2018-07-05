@@ -1,0 +1,298 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Hrugund's Estate~
+ShortName   Hrugund's Estate~
+Builders    delandria baridoc~
+Credits     Hrugund~
+VNUMs       12170 12199
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#12170
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12170 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#12170
+Name treasury key~
+Short `#`WKann's `YHouse Key`^~
+Desc `#`WKann's `YHouse Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#12170
+Name Main Hall~
+Desc The main hall of this house is dominated by a large fire pit in the center. 
+About 8 feet across and 4 feet deep, this pit can hold the largest of logs 
+and a huge amount of coals to warm the coldest of Winter's nights.  It is 
+surrounded by several low chairs.  The chairs are made of wood, but they are 
+padded and appear quite comfortable.  Many a tale must have been told from 
+these seats. The ceiling starts about 8 feet high around the sides of the 
+Hall but slopes upwards to a peak about 15 feet high in the center.  The 
+ceiling is made of enormously thick, soot-covered beams and opens in a small 
+vent that lets smoke out and creates an upwards draft.  Off to the east and 
+west sides are two alcoves, well lit and heated by the fire.  The hall 
+continues north. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12172
+Exit east 12171
+Exit south 53102
+EFlags door closed locked nopass hard~
+EKeyvnum 12170
+EKeywords door~
+Exit west 12173
+End
+
+
+#12171
+Name Eastern Alcove~
+Desc This small alcove is clearly set up as a sleeping area.  A comfortable 
+looking bed, a small table and chair, and a basin of cool, clear water are 
+here.  There is also a chest containing several wool blankets if the heat 
+from the fire pit is not enough.  Two unlit torches are in sconces on the 
+wall.  The appear unneeded as the glow from the fire lights this area quite 
+well. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 12170
+End
+
+
+#12172
+Name North Hall~
+Desc This wide hallway serves as a dining area.  Two long, sturdy, oak tables 
+line the walls ready to be moved to the center of the room should the need 
+arise.  The heat from the fire pit to the south is still felt here, and the 
+room is well lit by that glow as well as torches.  `1`1Doors are found in the center of the west and north walls, and from an 
+opening to the east wafts the aroma of a fine meal. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12175
+EFlags door closed locked nopass hard~
+EKeyvnum 12170
+EKeywords door~
+Exit east 12174
+Exit south 12170
+Exit west 12176
+EFlags door closed~
+EKeywords door~
+End
+
+
+#12173
+Name Western Alcove~
+Desc This small alcove is clearly set up as a sleeping area.  A comfortable 
+looking bed, a small table and chair, and a basin of cool, clear water are 
+here.  There is also a chest containing several wool blankets if the heat 
+from the fire pit is not enough.  Two unlit torches are in sconces on the 
+wall.  The appear unneeded as the glow from the fire lights this area quite 
+well. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 12170
+End
+
+
+#12174
+Name Kitchen~
+Desc This wide hallway serves as a dining area.  Two long, sturdy, oak tables 
+line the walls ready to be moved to the center of the room should the need 
+arise.  The heat from the fire pit to the south is still felt here, and the 
+room is well lit by that glow as well as torches.  `1`1Doors are found in the center of the west and north walls, and from an 
+opening to the east wafts the aroma of a fine meal. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 12177
+Exit west 12172
+End
+
+
+#12175
+Name Master's Room~
+Desc Oppulence is not the first word that comes to mind upon viewing this room. 
+The contents are sparse, but upon closer inspection are made of the finest 
+materials and workmanship.  `1`1A fireplace is set in the middle of the north wall and a large posted bed 
+is off to the east side.  Thick carpets made of animal furs cover the floor 
+and a large map of the Realms is on the west wall.  On the south wall, next 
+to the door, is a large display rack holding a multitude of axes of all 
+shapes, sizes, and designs.  Obviously the owner is a collector, and is 
+quite proud of his results.  A chest seems built in to the wall near the 
+bed.  It has a huge and very complicated lock on it. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit south 12172
+EFlags door closed locked nopass hard~
+EKeyvnum 12170
+End
+
+
+#12176
+Name Guest Bedroom~
+Desc This is a cozy room with a door in the east wall and a small fireplace in 
+the north.  The floors and walls are covered with animal skins insulating it 
+nicely.  `1`1Against the south wall is a large bed with a down matress.  It is covered 
+with a single bear skin seemingly from one of the biggest bears that ever 
+lived.  Two small but comfortable chairs are next to the bed and a basin of 
+fresh water is set on a small table at the foot. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 12172
+EFlags door closed~
+End
+
+
+#12177
+Name Storage Room~
+Desc This room is full of boxes, crates, bags, pouches, sacks, bushels, 
+baskets...  containers of all kinds.  They are packed in here seemingly in 
+no order.  The walls are lined with shelves and they are crammed full. Dried 
+goods dominate the contents - flour, corn meal, sugar, barley, salt, pepper 
+and other spices...  even nuts are found in here.  Narrow pathways are left 
+clear to reach the far corners of the room.  A trapdoor leading to stairs 
+down is in the center of the floor. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 12174
+Exit down 12178
+EFlags door closed~
+End
+
+
+#12178
+Name Cellar~
+Desc Wooden steps lead down into the cellar and here are found the more 
+perishable supplies.  Casks and kegs of mead and ale are lined against the 
+far wall in much more orderly fashion.  Dried fruits, smoked meats and fish, 
+even jars of marmelade and preserves neatly stacked here. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 12177
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 12170 1 12175 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#12170
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Kann
+   mob letpass
+   end
+ endif
+if fealty $n Kann
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Baridoc~
+last_editdate 1101047546
+END
+
+#0
+
+
+#$

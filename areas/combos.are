@@ -1,0 +1,702 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        item combination pieces~
+ShortName   ~
+Builders    None~
+VNUMs       80001 80200
+AFlags  noteleport noscry hidden~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#80001
+Name santa's helper~
+ShortD santa's helper~
+LongD Santa's Helper is here, doing her job.~
+Desc A short, sexy elf is here, offering help to those that need it.  Sparkling 
+blue eyes and full compliment of curves make her stand out from the rest, 
+followed a close second by her beautiful smile. Although smaller in nature, 
+she's not one to toy with... 
+~
+Race human~
+Align 0 0
+Level 135
+Hitroll 0
+HitDice 14d17+655
+ManaDice 14d17+945
+DamDice 13d19+90
+DamType none
+AC -1050 -1050 -1050 -882
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   allskills avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil protect_good haste dark_vision regeneration~
+Off    bash berserk disarm dodge fast parry trip crush gaze~
+Imm    summon charm magic weapon scry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 80001 tree~
+MProg SPEECH 80002 candy cane~
+END
+
+#0
+
+
+
+#OBJECTS
+#80001
+Name makeshift sword hilt~
+Short a makeshift sword hilt~
+Desc A makeshift sword hilt lies here, connecting dust.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80002 80001 80003 0 0
+Weight 0
+Material metal~
+Wear     take hold~
+End
+
+#80002
+Name weak steel blade~
+Short a weak steel blade~
+Desc A weak steel blade lies here, waiting to be used.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80001 80001 80003 0 0
+Weight 20
+Material steel~
+Wear     take hold~
+End
+
+#80003
+Name makeshift sword~
+Short a makeshift sword~
+Desc A makeshift sword lies around, barely visible.~
+Level 5
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values sword 1 5 slash 0
+Weight 0
+Material steel~
+Wear     take wield~
+End
+
+#80004
+Name rusted haft~
+Short a rusted haft~
+Desc A rusted haft lies here.~
+Level 5
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80005 80004 80006 0 0
+Weight 0
+Material metal~
+Wear     take~
+End
+
+#80005
+Name bent mace head~
+Short a bent mace head~
+Desc A bent mace head lies here.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80004 80004 80006 0 0
+Weight 0
+Material metal~
+Wear     take~
+End
+
+#80006
+Name no name 80006~
+Short (no short description 80006)~
+Desc (no description 80006)~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#80007
+Name chest treasury~
+Short a treasure chest~
+Desc A treasure chest~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material metal~
+Extra2   buried~
+Wear     take hold~
+End
+
+#80008
+Name leather strap~
+Short a leather strap~
+Desc A leather strap looks like it will fit around your leg~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80009 80008 80010 0 0
+Weight 1
+Material leather~
+Wear     take hold~
+End
+
+#80009
+Name shin guard~
+Short a set of shin guards~
+Desc A set of shin guards is missing its strap~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80008 80008 80010 0 0
+Weight 20
+Material steel~
+Wear     take hold~
+End
+
+#80010
+Name worn greaves~
+Short a set of worn greaves~
+Desc A set of greaves looks pretty worn~
+Level 35
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 8 0
+Weight 15
+Material steel~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian bard anti-paladin knight~
+End
+
+#80011
+Name metal buckle~
+Short a metal `#`Ybuckle`^~
+Desc `#A bright metal `Ybuckle`^ looks out of place~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80012 80011 80013 0 0
+Weight 5
+Material metal~
+Wear     take hold~
+End
+
+#80012
+Name thigh plate~
+Short a slightly dented thigh plate~
+Desc A slightly dented thigh plate could still be put to good use.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80011 80011 80013 0 0
+Weight 20
+Material metal~
+Wear     take hold~
+End
+
+#80013
+Name dented leggings~
+Short a set of dented leggings~
+Desc A set of dented leggings might still protect your thighs~
+Level 35
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 8 0
+Weight 0
+Material metal~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 35 -1 hp 3 0
+End
+
+#80014
+Name leather gloves~
+Short a pair of `#`yleather gloves`^~
+Desc A pair of `#`yleather gloves`^ waits to be claimed~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80015 80014 80016 0 0
+Weight 2
+Material leather~
+Wear     take hold~
+End
+
+#80015
+Name knuckle protectors~
+Short a set of knuckle protectors~
+Desc A set of knuckle protectors is useless without gloves~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80014 80014 80016 0 0
+Weight 0
+Material metal~
+Wear     take hold~
+End
+
+#80016
+Name gauntlets~
+Short a pair of `#`ssteel`^ gauntlets~
+Desc (no description 80016)~
+Level 35
+ItemType armor~
+Cost 250
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 10
+Material steel~
+Wear     take hands~
+ClassAllowances cleric warrior paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 35 -1 strength 2 0
+End
+
+#80017
+Name chin strap~
+Short a `#`yleather`^ chin strap~
+Desc A `#`yleather`^ chin strap is useless without a helm~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80018 80017 80019 0 0
+Weight 1
+Material leather~
+Wear     take hold~
+End
+
+#80018
+Name helm~
+Short a helm missing a chin strap~
+Desc A helmet that is clearly missing a chin strap lies here.~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80017 80017 80019 0 0
+Weight 20
+Material metal~
+Wear     take hold~
+End
+
+#80019
+Name helmet~
+Short a complete helmet~
+Desc A helmet with a new chin strap rests here~
+Level 35
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 11 11 11 10 0
+Weight 50
+Material metal~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 35 -1 saves -2 0
+End
+
+#80020
+Name thin chin guard~
+Short `#a thin `yleather`^ chin guard~
+Desc `#A thin `yleather`^ chin guard lies curled on the ground~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80021 80020 80022 0 0
+Weight 1
+Material leather~
+Wear     take hold~
+End
+
+#80021
+Name small leather cap~
+Short `#a small `yleather`^ cap~
+Desc `#A small `yleather`^ cap has nothing to hold it on your head.~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80020 80020 80022 0 0
+Weight 0
+Material leather~
+Wear     take hold~
+End
+
+#80022
+Name skull cap~
+Short `#a `yleather`^ skull cap~
+Desc `#A `yleather`^ skull cap that wont fall off is ready to be worn~
+Level 35
+ItemType armor~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 8 0
+Weight 10
+Material leather~
+Wear     take head~
+ClassAllowances mage thief druid ranger spellfilcher bard monk~
+Affect modifier -1 35 -1 reasoning 1 0
+Affect modifier -1 35 -1 intuition 1 0
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 hitroll 2 0
+End
+
+#80023
+Name hand grip~
+Short a grip made for a shield~
+Desc A hand grip that looks like it came from a shield looks useless now.~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80024 80023 80025 0 0
+Weight 0
+Material metal~
+Wear     take hold~
+End
+
+#80024
+Name shield~
+Short a shield missing a handle~
+Desc A shield with no handle lies useless for now.~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80023 80023 80025 0 0
+Weight 75
+Material metal~
+Wear     take hold~
+End
+
+#80025
+Name medium shield~
+Short a medium sized shield~
+Desc A medium sized shield that isnt so useless is propped here~
+Level 35
+ItemType armor~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 13 13 13 12 0
+Weight 75
+Material metal~
+Extra    burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 35 -1 constitution 2 0
+End
+
+#80026
+Name leather sheath~
+Short `#a pair of `yleather`^ forearm sheathes~
+Desc `#A pair of `yleather`^ sheathes that will fit your forearm but cant be tied without laces~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80027 80026 80028 0 0
+Weight 20
+Material leather~
+Wear     take hold~
+End
+
+#80027
+Name heavy leather cording~
+Short `#heavy `yleather`^ cording~
+Desc Some `#heavy `yleather`^ cording in a bundle~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80026 80026 80028 0 0
+Weight 1
+Material leather~
+Wear     take hold~
+End
+
+#80028
+Name leather vambraces~
+Short `#heavy `yleather`^ vambraces~
+Desc `#Heavy `yleather`^ vambraces that are ready to wear~
+Level 35
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 9 7 11 7 0
+Weight 25
+Material leather~
+Extra    burnproof~
+Wear     take arms~
+ClassAllowances mage cleric thief warrior druid ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 35 -1 agility 2 0
+Affect modifier -1 35 -1 quickness 2 0
+End
+
+#80029
+Name thick leather straps~
+Short `#thick `yleather`^ straps~
+Desc `#Thick `yleather`^ straps that seem to have fallen off a breastplate lie here~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80030 80029 80031 0 0
+Weight 20
+Material leather~
+Wear     take hold~
+End
+
+#80030
+Name curved metal plates~
+Short `#curved `smetal`^ plates~
+Desc `#Some curved `smetal`^ plates that would fit around your chest are gathering dust here~
+Level 1
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80029 80029 80031 0 0
+Weight 100
+Material metal~
+Wear     take hold~
+ExtraDesc thick metal plates~
+These plates might be useful as a breastplate if you could find something to 
+hold them together 
+~
+ExtraDesc curved metal plates~
+These plates might be useful as a breastplate if you could find something to 
+hold them together 
+~
+End
+
+#80031
+Name curved breastplate~
+Short `#a curved `smetal`^ breastplate~
+Desc `#A curved `smetal`^ breastplate is ready to wear~
+Level 35
+ItemType armor~
+Cost 350
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 11 0
+Weight 0
+Material steel~
+Extra    burnproof~
+Wear     take torso~
+End
+
+#80116
+Name no name 80116~
+Short (no short description 80116)~
+Desc (no description 80116)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#80001
+Name Combo items and such~
+Desc This zone houses the pieces required for the CONNECT command.  If you stat 
+the pieces to get the combos, I will find you, and you will have major 
+issues. 
+~
+RoomFlags safe imm_only noscry antimagic nofly~
+Sector inside~
+Exit north 80002
+End
+
+
+#80002
+Name Something~
+Desc F  B
+`1
+`1
+`1 20    21    12    7     1    18     4
+`1
+`1  8    16     2    4     7    13     15
+~
+Sector inside~
+Exit south 80001
+Exit west 80003
+End
+
+
+#80003
+Name Something 2~
+Desc Another room filled with clutter and..nothing. 
+~
+Sector inside~
+Exit east 80002
+Exit south 80004
+End
+
+
+#80004
+Name Something...3~
+Desc Nother room. 
+~
+Sector inside~
+Exit north 80003
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#80002
+title give candy~
+author Zaroth~
+code mob seeall
+mob oload 39153
+smile $n
+give candy $n
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1103915804
+END
+
+#80001
+title Give X-mas tree~
+author Zaroth~
+code mob seeall
+mob oload 80004 5 R
+mob echoaround $n A baby Christmas tree magically appears on the ground before $n!
+mob echoat $n A baby Christmas tree appears magically on the ground before you!
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1103859956
+END
+
+#0
+
+
+#$

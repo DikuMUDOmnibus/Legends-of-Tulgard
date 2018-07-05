@@ -1,0 +1,2020 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Byzitraea~
+ShortName   Byzitraea~
+Builders    ardayne~
+Credits     Ardayne~
+VNUMs       12100 12169
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      75 91
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Abaddon~
+*LastSaved  Sun Jan  1 23:47:30 2006~
+End
+
+
+
+#MOBILES
+#12100
+Name demon lord~
+ShortD a demon lord~
+LongD A towering, demon lord is here, striding down the street with avengence.~
+Desc This rather large male demon is quite nasty looking. His legs are similar to 
+a goats with sharp hoofs. Two massive horns stick out the top of his head 
+pointing forward. The tips of the horns look like they could cause some 
+extreme damage. 
+~
+Race demon~
+Align 0 -3
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType none
+AC -500 -500 -500 -425
+Wealth 980
+Act    npc no_tame stay_area~
+AffBy  detect_invis detect_hidden detect_good infrared flying dark_vision~
+Off    tail~
+Imm    summon charm fire poison disease scry hunger thirst~
+Res    illusion~
+Vuln   holy~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12101
+Name demon greater menacing~
+ShortD a greater demon~
+LongD A greater demon is here, conjuring up a spell.~
+Desc This rather large male demon is quite nasty looking. His legs are similar to 
+a goats with sharp hoofs. Two massive horns stick out the top of his head 
+pointing forward. The tips of the horns look like they could cause some 
+extreme damage. 
+~
+Race demon~
+Align 0 -3
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType claw
+AC -500 -500 -500 -425
+Wealth 1050
+Act    npc no_tame stay_area mage~
+AffBy  detect_hidden infrared flying dark_vision~
+Off    disarm fast parry tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   holy~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12102
+Name demon overlord~
+ShortD the demon `#`So`bv`Be`brlo`Br`Sd`^~
+LongD A massively `#`gt`Ge`Yr`yr`rif`yy`Yi`Gn`gg`^ demon `#`So`bv`Be`brlo`Br`Sd`^ is here smokin' a cigar with a smirk.~
+Desc Standing.. sitting.. I don't know.. you decide.. is a Friggen HUGE demon. 
+Huge. Just.. just huge. Bulbous greasy arms sprout.. yeah, sprout from his 
+slimy, greasy body. He looks more like a maggot that's been filled with 
+jelly. Waddling about here and there.. jiggling with every movement.. that 
+Smirk.. Omg.. the smirk. That disgusting smirk is always there as he smokes 
+his cigar.. and the SMELL!! GODS!! What IS that SMELL?! You stand there 
+stupified.. should you hit him? Heck.. if you did i bet your sword would 
+bounce off.. wanna try? 
+~
+Race demon~
+Align -3 -3
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType claw
+AC -610 -610 -610 -530
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden detect_good infrared flying dark_vision~
+Off    bash berserk disarm dodge parry tail~
+Imm    summon charm fire poison disease scry hunger thirst~
+Res    illusion~
+Vuln   holy~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12103
+Name cambion citizen~
+ShortD a `#`RC`ra`Smbi`ro`Rn `rC`Xi`Stiz`Xe`rn`^~
+LongD A cambion citizen walks along the streets here.~
+Desc ~
+Race cambion~
+Align 0 -3
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType claw
+AC -450 -450 -450 -391
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_invis dark_vision~
+Off    berserk disarm dodge~
+Imm    fire poison~
+Vuln   lightning holy~
+Form   poison sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12104
+Name gurke demon shop armor~
+ShortD gurke, The Armorer~
+LongD A very stout demon is here waiting impatiently for your business.~
+Desc This stout demon has very bad breath, but decent skills with a hammer. 
+~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks repair_man~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12105
+Name narkal demon weaponsmith shop~
+ShortD narkal, The Weaponsmith~
+LongD A smelly demon is here trying to fall asleep on the counter.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12106
+Name ugzak demon jeweler jewelry shopkeeper~
+ShortD ugzak, The Jeweler~
+LongD A tall, scrawny demon is here, staring at a diamond greedily.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12107
+Name feefee alchemy demon succubus succubi~
+ShortD feefee, The Jeweler~
+LongD A supple female demon is here just waiting to take your order.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12108
+Name weremar general store demon chubby~
+ShortD weremar, The Retailer~
+LongD A chubby, old male demon is here enjoying a cigar.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12109
+Name yila trainer demon succubus succubi~
+ShortD yila, the Trainer~
+LongD An atheletic, female demon is here to whip you into shape.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander no_tame stay_area train practice nopurge gain changer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12110
+Name shadow heal healer figure demon~
+ShortD a shadowy figure~
+LongD A shadowy figure is here, hoping to put some bounce in your step.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 0
+Act    npc dont_wander no_tame stay_area undead cleric nopurge noautosocial healer changer~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12111
+Name demon banker bank succubus succubi~
+ShortD akashka, The Banker~
+LongD A luscious female demon is here, wearing revealing clothing.~
+Desc ~
+Race demon~
+Align 0 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -602
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge changer~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12100
+Name potion divine healing~
+Short a potion of `#`cdivine healing`^~
+Desc A potion lies here.~
+Level 16
+ItemType potion~
+Cost 250
+Durability 1
+Asize 2
+Rsize 50
+Values 16 heal heal '' ''
+Weight 2
+Material unknown~
+Wear     take hold~
+End
+
+#12101
+Name potion true sight~
+Short a potion of true sight~
+Desc A potion of true sight is here.~
+Level 4
+ItemType potion~
+Cost 290
+Durability 1
+Asize 10
+Rsize 50
+Values 10 'detect invis' 'detect magic' 'detect hidden' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#12102
+Name potion armor~
+Short a potion of armor~
+Desc A potion of armor is lying here.~
+Level 20
+ItemType potion~
+Cost 425
+Durability 1
+Asize 5
+Rsize 50
+Values 35 armour '' '' ''
+Weight 5
+Material steel~
+Extra    glow magic inventory~
+Wear     take hold~
+End
+
+#12103
+Name potion sanct sanctuary~
+Short a potion of sanctuary~
+Desc A potion of sanctuary is here.~
+Level 11
+ItemType potion~
+Cost 800
+Durability 1
+Asize 10
+Rsize 50
+Values 20 sanctuary '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#12104
+Name refreshing potion~
+Short a refreshing potion~
+Desc A refreshing potion is here on the ground.~
+Level 10
+ItemType potion~
+Cost 120
+Durability 1
+Asize 0
+Rsize 50
+Values 50 refresh refresh '' ''
+Weight 1
+Material glass~
+Wear     take~
+End
+
+#12105
+Name peppermint shake potion haste~
+Short a potion of haste~
+Desc A cyan colored potion is resting here.~
+Level 10
+ItemType potion~
+Cost 100
+Durability 1
+Asize 2
+Rsize 50
+Values 50 haste '' '' ''
+Weight 2
+Material peanut~
+Wear     take hold~
+ExtraDesc shake potion haste peppermint~
+This is a bubbling substance that is cyan in color. It smells and tastes 
+like peppermint. 
+~
+End
+
+#12106
+Name blank scroll~
+Short a blank scroll~
+Desc A blank scroll is here.~
+Level 1
+ItemType scroll~
+Cost 70
+Durability 1
+Asize 0
+Rsize 50
+Values 1 '' '' '' ''
+Weight 0
+Material paper~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#12107
+Name empty potion~
+Short an empty potion~
+Desc A potion bottle is here.~
+Level 1
+ItemType potion~
+Cost 70
+Durability 1
+Asize 0
+Rsize 50
+Values 1 '' '' '' ''
+Weight 0
+Material clay~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#12108
+Name obsidian plate belt~
+Short an `#`Xo`Sbsidian`^ plated belt~
+Desc A belt made out of a strong dark stone is here.~
+Level 75
+ItemType armor~
+Cost 1840
+Durability 1
+Asize 0
+Rsize 50
+Values 16 13 15 11 0
+Weight 100
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take waist no_sac~
+Affect modifier -1 75 -1 hitroll 4 0
+Affect modifier -1 75 -1 damroll 4 0
+End
+
+#12109
+Name obsidian plate gauntlets gloves~
+Short a pair of `#`Xo`Sbsidian`^ plate gauntlets~
+Desc A pair of gauntlets made out of a strong dark stone are here.~
+Level 75
+ItemType armor~
+Cost 1860
+Durability 1
+Asize 0
+Rsize 50
+Values 15 16 14 12 0
+Weight 100
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hands no_sac~
+Affect modifier -1 75 -1 hitroll 4 0
+Affect modifier -1 75 -1 damroll 4 0
+Affect modifier -1 75 -1 hp 4 0
+Affect modifier -1 75 -1 strength 2 0
+End
+
+#12110
+Name obsidian plated boots~
+Short a pair of `#`Xo`Sbsidian`^ plated boots~
+Desc A pair of boots made out of a strong dark stone are here.~
+Level 75
+ItemType armor~
+Cost 1840
+Durability 1
+Asize 0
+Rsize 50
+Values 15 16 14 12 0
+Weight 100
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take feet no_sac~
+Affect modifier -1 75 -1 saves -6 0
+Affect modifier -1 75 -1 quickness 3 0
+Affect modifier -1 75 -1 damroll 4 0
+End
+
+#12111
+Name obsidian plate legs~
+Short a pair of `#`Xo`Sbsidian`^ leg plates~
+Desc A pair of leg plates made of a strong dark stone are here.~
+Level 75
+ItemType armor~
+Cost 2010
+Durability 1
+Asize 0
+Rsize 50
+Values 18 17 18 15 0
+Weight 100
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take legs no_sac~
+Affect modifier -1 75 -1 hitroll 5 0
+Affect modifier -1 75 -1 damroll 5 0
+Affect modifier -1 75 -1 ac -15 0
+End
+
+#12112
+Name obsidian plate vambraces arm~
+Short a pair of `#`Xo`Sbsidian`^ plate vambraces~
+Desc A pair of vambraces made from a strong dark stone are here.~
+Level 75
+ItemType armor~
+Cost 1980
+Durability 1
+Asize 0
+Rsize 50
+Values 18 17 18 15 0
+Weight 100
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take arms no_sac~
+Affect modifier -1 75 -1 agility 3 0
+Affect modifier -1 75 -1 hitroll 4 0
+Affect modifier -1 75 -1 damroll 4 0
+End
+
+#12113
+Name obsidian breastplate plate armor armour~
+Short an `#`Xo`Sbsidian`^ breastplate~
+Desc A breastplate made from a strong dark stone is here.~
+Level 75
+ItemType armor~
+Cost 2360
+Durability 1
+Asize 0
+Rsize 50
+Values 26 24 25 18 0
+Weight 200
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take torso no_sac~
+Affect modifier -1 75 -1 hp 10 0
+Affect modifier -1 75 -1 strength 2 0
+Affect modifier -1 75 -1 constitution 1 0
+End
+
+#12114
+Name obsidian full helm head~
+Short an `#`Xo`Sbsidian`^ full helm~
+Desc A helm made from a strong dark stone is here.~
+Level 75
+ItemType armor~
+Cost 2240
+Durability 1
+Asize 0
+Rsize 50
+Values 19 17 18 15 0
+Weight 120
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take head no_sac~
+Affect resist -1 75 -1 none 0 mental
+Affect modifier -1 75 -1 hp 2 0
+Affect modifier -1 75 -1 intuition 2 0
+End
+
+#12115
+Name obsidian dagger~
+Short an `#`Xo`Sbsidian`^ dagger~
+Desc A dagger made from a strong dark stone is here.~
+Level 75
+ItemType weapon~
+Cost 2910
+Durability 1
+Asize 0
+Rsize 50
+Values dagger 6 10 stab DH
+Weight 0
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 75 -1 damroll 4 0
+Affect modifier -1 75 -1 hitroll 6 0
+End
+
+#12116
+Name obsidian stone mace~
+Short an `#`Xo`Sbsidian`^ mace~
+Desc A mace made from a strong dark stone is here.~
+Level 75
+ItemType weapon~
+Cost 3010
+Durability 1
+Asize 0
+Rsize 50
+Values mace 15 4 blast DH
+Weight 50
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 75 -1 hitroll 6 0
+Affect modifier -1 75 -1 damroll 4 0
+End
+
+#12117
+Name obsidian stone whip~
+Short an `#`Xo`Sbsidian`^ laced whip~
+Desc A whip made from a strong dark stone is here.~
+Level 75
+ItemType weapon~
+Cost 3110
+Durability 1
+Asize 0
+Rsize 50
+Values whip 10 6 whip DH
+Weight 50
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 75 -1 damroll 4 0
+Affect modifier -1 75 -1 hitroll 6 0
+End
+
+#12118
+Name one-handed handed obsidian axe stone~
+Short an `#`Xo`Sbsidian`^ one-handed axe~
+Desc A one-handed axe made from a strong dark stone is here.~
+Level 75
+ItemType weapon~
+Cost 3250
+Durability 1
+Asize 0
+Rsize 50
+Values axe 11 6 cleave DH
+Weight 50
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 75 -1 hitroll 6 0
+Affect modifier -1 75 -1 damroll 4 0
+End
+
+#12119
+Name obsidian halberd stone~
+Short an `#`Xo`Sbsidian`^ halberd~
+Desc A halberd made from a strong dark stone is here.~
+Level 75
+ItemType weapon~
+Cost 3310
+Durability 1
+Asize 0
+Rsize 50
+Values polearm 9 8 thrust DFH
+Weight 50
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 75 -1 hitroll 6 0
+Affect modifier -1 75 -1 damroll 6 0
+End
+
+#12120
+Name obsidian longsword sword~
+Short an `#`Xo`Sbsidian`^ longsword~
+Desc A longsword made out of a strong dark stone is here.~
+Level 75
+ItemType weapon~
+Cost 3120
+Durability 1
+Asize 0
+Rsize 50
+Values sword 15 4 slash DH
+Weight 50
+Material obsidian~
+Extra    dark evil antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 75 -1 damroll 4 0
+Affect modifier -1 75 -1 hitroll 6 0
+End
+
+#12121
+Name obsidian ring stone~
+Short an `#`Xo`Sbsidian`^ ring~
+Desc A ring made from a strong dark stone is here.~
+Level 71
+ItemType jewelry~
+Cost 2560
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material obsidian~
+Extra    dark nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take finger no_sac~
+Affect modifier -1 71 -1 mana 80 0
+Affect modifier -1 71 -1 selfdiscipline 3 0
+Affect modifier -1 71 -1 reasoning 2 0
+End
+
+#12122
+Name obsidian pendant stone~
+Short an `#`Xo`Sbsidian`^ pendant~
+Desc A pendant made from a strong dark stone is here.~
+Level 71
+ItemType jewelry~
+Cost 2810
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material obsidian~
+Extra    dark magic nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take neck no_sac~
+Affect modifier -1 71 -1 mana 100 0
+Affect modifier -1 71 -1 hp 6 0
+End
+
+#12123
+Name obsidian bracelet stone~
+Short an `#`Xo`Sbsidian`^ bracelet~
+Desc A bracelet made from a strong dark stone is here.~
+Level 71
+ItemType jewelry~
+Cost 3510
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material obsidian~
+Extra    dark magic nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wrist no_sac~
+Affect modifier -1 71 -1 strength 2 0
+Affect modifier -1 71 -1 mana 80 0
+Affect modifier -1 71 -1 selfdiscipline 2 0
+End
+
+#12124
+Name obsidian earring stud stone~
+Short an `#`Xo`Sbsidian`^ stud earring~
+Desc A stud earring made from a strong dark stone is here.~
+Level 71
+ItemType jewelry~
+Cost 3230
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material obsidian~
+Extra    dark magic nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take no_sac ear~
+Affect modifier -1 71 -1 damroll 6 0
+Affect modifier -1 71 -1 hitroll 6 0
+Affect modifier -1 71 -1 hp 4 0
+End
+
+#12125
+Name obsidian anklet stone~
+Short an `#`Xo`Sbsidian`^ anklet~
+Desc An anklet made from a strong dark stone is here.~
+Level 71
+ItemType jewelry~
+Cost 3120
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material obsidian~
+Extra    dark magic nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take no_sac ankle~
+Affect modifier -1 71 -1 damroll 4 0
+Affect modifier -1 71 -1 move 40 0
+Affect modifier -1 71 -1 hitroll 4 0
+Affect modifier -1 71 -1 quickness 2 0
+End
+
+#12126
+Name leg malkatar bbq barbequed chicken~
+Short a barbequed malkatar leg~
+Desc A freshly barbequed malkatar leg is here to eat.~
+Level 0
+ItemType food~
+Cost 39
+Durability 1
+Asize 0
+Rsize 50
+Values 20 30 0 0 0
+Weight 10
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#12127
+Name elven skin waterskin water~
+Short an elven-skin waterskin~
+Desc A waterskin made from a skinned elven boy has been left here.~
+Level 1
+ItemType drinkcontainer~
+Cost 50
+Durability 1
+Asize 0
+Rsize 50
+Values 100 100 water 0 0
+Weight 0
+Material flesh~
+Extra    inventory~
+Wear     take hold~
+End
+
+#12128
+Name pack back backpack skin dragonhide~
+Short a dragonhide backpack~
+Desc A dragonhide backpack has been left here.~
+Level 71
+ItemType container~
+Cost 500
+Durability 1
+Asize 90
+Rsize 50
+Values 500 A 0 200 45
+Weight 90
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take back~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 71 -1 hitroll 5 0
+Affect modifier -1 71 -1 damroll 5 0
+ExtraDesc pack back backpack large dragonhide leather~
+It looks pretty big on the inside.
+~
+End
+
+#12129
+Name burning soul light~
+Short a burning soul~
+Desc A burning soul is here emitting a lot of energy.~
+Level 45
+ItemType light~
+Cost 389
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 175 0 0
+Weight 0
+Material energy~
+Extra    glow magic antigood nodegrade burnproof~
+Extra2   nodecay~
+Wear     take float~
+Affect modifier -1 45 -1 mana 50 0
+Affect modifier -1 45 -1 saves -2 0
+End
+
+#12130
+Name bedroll skin minotaur~
+Short a minotaur-skin bedroll~
+Desc A bedroll made from minotaur skin has been left here.~
+Level 1
+ItemType furniture~
+Cost 106
+Durability 1
+Asize 30
+Rsize 50
+Values 2 9999 BEHKN 115 115
+Weight 20
+Material leather~
+Extra    evil nonmetal nodegrade~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#12100
+Name Entrance to Byzitraea~
+Desc You enter into the city of Byzitraea. The walls and ceiling of the city are 
+made entirely out of obsidian from the lava flows above. Demons and cambions 
+walk the streets. Occasionally a steam vent opens and releases hot steam 
+from the ground and walls. The occasional gem can be found to sell. 
+~
+Sector inside~
+Exit north 12101
+EFlags door closed~
+Exit up 9480
+End
+
+
+#12101
+Name Power and Pain~
+Desc You enter into the city of Byzitraea. The walls and ceiling of the city are 
+made entirely out of obsidian from the lava flows above. Demons and cambions 
+walk the streets. Occasionally a steam vent opens and releases hot steam 
+from the ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12104
+Exit east 12103
+Exit south 12100
+EFlags door closed~
+Exit west 12102
+End
+
+
+#12102
+Name Street of Pain~
+Desc .  Along the Street of Pain, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12101
+Exit west 12125
+End
+
+
+#12103
+Name Street of Pain~
+Desc .  Along the Street of Pain, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12119
+Exit west 12101
+End
+
+
+#12104
+Name Street of Power~
+Desc Along the Street of Power, north of you is the center of the city. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12105
+Exit south 12101
+End
+
+
+#12105
+Name Wealth and Power~
+Desc . At the cross of Wealth and Power, to the west is the governor's mansion and 
+to the east are the shops. The walls and ceiling of the city are made 
+entirely out of obsidian from the lava flows above. Demons and cambions walk 
+the streets. Occasionally a steam vent opens and releases hot steam from the 
+ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12106
+Exit east 12108
+Exit south 12104
+Exit west 12132
+End
+
+
+#12106
+Name Street of Power~
+Desc Along the Street of Power, south of you is the center of the city. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12107
+Exit south 12105
+End
+
+
+#12107
+Name Power and Greed~
+Desc At the cross of Power and Greed, Street of Greed runs east and west, and the 
+Street of Power runs south. The walls and ceiling of the city are made 
+entirely out of obsidian from the lava flows above. Demons and cambions walk 
+the streets. Occasionally a steam vent opens and releases hot steam from the 
+ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12111
+Exit south 12106
+Exit west 12109
+End
+
+
+#12108
+Name Street of Wealth~
+Desc Along the Street of Wealth, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12134
+Exit east 12110
+Exit south 12135
+Exit west 12105
+End
+
+
+#12109
+Name Street of Greed~
+Desc Along the Street of Greed, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12107
+Exit west 12123
+End
+
+
+#12110
+Name Street of Wealth~
+Desc Along the Street of Wealth, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12136
+Exit east 12131
+Exit south 12137
+Exit west 12108
+End
+
+
+#12111
+Name Street of Greed~
+Desc Along the Street of Greed, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12147
+Exit east 12112
+Exit west 12107
+End
+
+
+#12112
+Name Street of Greed~
+Desc Along the Street of Greed, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12113
+Exit west 12111
+End
+
+
+#12113
+Name Street of Greed~
+Desc Along the Street of Greed, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12114
+Exit west 12112
+End
+
+
+#12114
+Name Suffering and Greed~
+Desc At the corner of Suffering and Greed, Street of Greed runs west, and Street 
+of Suffering to the south. The walls and ceiling of the city are made 
+entirely out of obsidian from the lava flows above. Demons and cambions walk 
+the streets. Occasionally a steam vent opens and releases hot steam from the 
+ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit south 12115
+Exit west 12113
+End
+
+
+#12115
+Name Street of Suffering~
+Desc .  Along the Street of Suffering, the street runs north and south. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12114
+Exit south 12116
+End
+
+
+#12116
+Name Street of Suffering~
+Desc .  Along the Street of Suffering, the street runs north and south. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12115
+Exit south 12117
+End
+
+
+#12117
+Name Street of Suffering~
+Desc .  Along the Street of Suffering, the street runs north and south. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12116
+Exit south 12118
+End
+
+
+#12118
+Name Pain and Suffering~
+Desc .  At the corner of Pain and Suffering, Street of Pain runs west, and Street 
+of Suffering to the north. The walls and ceiling of the city are made 
+entirely out of obsidian from the lava flows above. Demons and cambions walk 
+the streets. Occasionally a steam vent opens and releases hot steam from the 
+ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12117
+Exit west 12121
+End
+
+
+#12119
+Name Street of Pain~
+Desc .  Along the Street of Pain, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12121
+Exit west 12103
+End
+
+
+#12120
+Name ~
+Desc ~
+Sector inside~
+Exit west 12119
+End
+
+
+#12121
+Name Street of Pain~
+Desc .  Along the Street of Pain, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12118
+Exit west 12119
+End
+
+
+#12122
+Name Greed and Desolation~
+Desc At the corner of Greed and Desolation, Street of Greed runs east, and Street 
+of Desolation to the south. The walls and ceiling of the city are made 
+entirely out of obsidian from the lava flows above. Demons and cambions walk 
+the streets. Occasionally a steam vent opens and releases hot steam from the 
+ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12124
+Exit south 12128
+End
+
+
+#12123
+Name Street of Greed~
+Desc Along the Street of Greed, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12109
+Exit west 12124
+End
+
+
+#12124
+Name Street of Greed~
+Desc Along the Street of Greed, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12123
+Exit west 12122
+End
+
+
+#12125
+Name Street of Pain~
+Desc .  Along the Street of Pain, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12102
+Exit west 12126
+End
+
+
+#12126
+Name Street of Pain~
+Desc .  Along the Street of Pain, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit east 12125
+Exit west 12127
+End
+
+
+#12127
+Name Desolation and Pain~
+Desc At the corner of Desolation and Pain, Street of Pain runs east, and Street 
+of Desolation to the north. The walls and ceiling of the city are made 
+entirely out of obsidian from the lava flows above. Demons and cambions walk 
+the streets. Occasionally a steam vent opens and releases hot steam from the 
+ground and walls. The occasional gem can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12130
+Exit east 12126
+End
+
+
+#12128
+Name Street of Desolation~
+Desc Along the Street of Desolation, the street runs north and south. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12122
+Exit south 12129
+End
+
+
+#12129
+Name Street of Desolation~
+Desc Along the Street of Desolation, the street runs north and south. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12128
+Exit south 12130
+End
+
+
+#12130
+Name Street of Desolation~
+Desc Along the Street of Desolation, the street runs north and south. The walls 
+and ceiling of the city are made entirely out of obsidian from the lava 
+flows above. Demons and cambions walk the streets. Occasionally a steam vent 
+opens and releases hot steam from the ground and walls. The occasional gem 
+can be found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12129
+Exit south 12127
+End
+
+
+#12131
+Name Healer~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 12110
+End
+
+
+#12132
+Name Street of Wealth~
+Desc Along the Street of Wealth, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. 
+~
+RoomFlags indoors light~
+Sector city~
+RoomEcho  1 23   5 Steam pours out from a recently open vent that closes as quickly as it opened.~
+Exit north 12145
+Exit east 12105
+Exit south 12146
+Exit west 12133
+End
+
+
+#12133
+Name Before the Governor's Mansion~
+Desc Along the Street of Wealth, the street runs east and west. The walls and 
+ceiling of the city are made entirely out of obsidian from the lava flows 
+above. Demons and cambions walk the streets. Occasionally a steam vent opens 
+and releases hot steam from the ground and walls. The occasional gem can be 
+found to sell. Before you is the Governor's Mansion. This Mansion is huge 
+for underground mansions. 
+~
+RoomFlags no_mob indoors light~
+Sector city~
+Exit east 12132
+Exit west 12138
+EFlags door closed~
+End
+
+
+#12134
+Name Gurke's Armor Shop~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 12108
+End
+
+
+#12135
+Name Narkal's Weapons Shop~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12108
+End
+
+
+#12136
+Name Ugzak's Jewelry Shop~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 12110
+End
+
+
+#12137
+Name Yila's Training~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12110
+End
+
+
+#12138
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12139
+Exit east 12133
+EFlags door closed~
+Exit south 12140
+Exit up 12143
+Exit down 12144
+End
+
+
+#12139
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 12142
+Exit south 12138
+End
+
+
+#12140
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12138
+Exit east 12141
+End
+
+
+#12141
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 12140
+End
+
+
+#12142
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 12139
+End
+
+
+#12143
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 12138
+End
+
+
+#12144
+Name Inside the Mansion~
+Desc The walls of this mansion are entirely different from the rest of the city. 
+The walls are made of pure gold. A thick red carpet runs down the center of 
+the room. The occasional skull rests ontop of a table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 12138
+End
+
+
+#12145
+Name Feefee's Alchemy~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 12132
+End
+
+
+#12146
+Name Weremar's General Store~
+Desc A standard shop for the underground city. The walls are made of obsidian and 
+the only furniture in the room is the counter that the clerk stands behind. 
+A single torch light hangs from the wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12132
+End
+
+
+#12147
+Name Byzitraea City Bank~
+Desc Welcome to the Byzitraea city bank. The walls are made of obsidian and the 
+only furniture in the room is the counter that the clerk stands behind. A 
+single torch light hangs from the wall. 
+~
+RoomFlags indoors bank light~
+Sector inside~
+Exit south 12111
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 12101 spec_cast_mage
+M 12102 spec_breath_any
+S
+
+
+
+#RESETS2
+M 0 12103 20 12101 2
+M 0 12103 20 12105 2
+M 0 12103 20 12107 2
+M 0 12100 20 12112 2
+M 0 12103 20 12114 2
+M 0 12101 20 12115 2
+M 0 12100 20 12116 2
+M 0 12101 20 12117 2
+M 0 12103 20 12118 2
+M 0 12100 20 12119 2
+M 0 12103 20 12122 2
+M 0 12100 20 12123 2
+M 0 12100 20 12125 2
+M 0 12103 20 12127 2
+M 0 12101 20 12128 2
+M 0 12100 20 12129 2
+M 0 12101 20 12130 2
+M 0 12110 1 12131 1
+M 0 12104 1 12134 1
+G 0 12108 -1
+G 0 12109 -1
+G 0 12110 -1
+G 0 12111 -1
+G 0 12112 -1
+G 0 12113 -1
+G 0 12114 -1
+M 0 12105 1 12135 1
+G 0 12118 -1
+G 0 12117 -1
+G 0 12116 -1
+G 0 12115 -1
+G 0 12119 -1
+G 0 12120 -1
+M 0 12106 1 12136 1
+G 0 12125 -1
+G 0 12124 -1
+G 0 12123 -1
+G 0 12122 -1
+G 0 12121 -1
+M 0 12109 1 12137 1
+M 0 12102 1 12143 1
+E 0 9468 -1 hold~
+M 0 12107 1 12145 1
+G 0 12100 -1
+G 0 12101 -1
+G 0 12102 -1
+G 0 12103 -1
+G 0 12104 -1
+G 0 12105 -1
+G 0 12107 -1
+G 0 12106 -1
+M 0 12108 1 12146 1
+G 0 12126 -1
+G 0 12127 -1
+G 0 12128 -1
+G 0 12129 -1
+G 0 12130 -1
+M 0 12111 1 12147 1
+S
+
+
+
+#SHOPS
+#12104
+buy_type armor~
+buy_type armor~
+buy_type clothing~
+profit_buy 150
+profit_sell 75
+open_hour 1
+close_hour 23
+END
+
+#12105
+buy_type weapon~
+buy_type component~
+buy_type rp~
+profit_buy 150
+profit_sell 75
+open_hour 1
+close_hour 23
+END
+
+#12106
+buy_type treasure~
+buy_type warpstone~
+buy_type gem~
+buy_type jewelry~
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#12107
+buy_type potion~
+buy_type scroll~
+buy_type pill~
+buy_type staff~
+buy_type wand~
+profit_buy 110
+profit_sell 75
+close_hour 23
+END
+
+#12108
+buy_type light~
+buy_type treasure~
+buy_type trash~
+buy_type container~
+buy_type food~
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#12109
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#12110
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#12107
+title Go Home!~
+author Reath~
+code if area $i 'Windica Stables'
+else
+emote whinies and sprints off!
+mob trans self 12103
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1093197962
+END
+
+#12106
+title Horse Nudges~
+author Reath~
+code pmote $n nudges @.
+end
+~
+disabled false
+last_editor Reath~
+last_editdate 1093194939
+END
+
+#12105
+title Treasury Guard~
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Windica
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1092583758
+END
+
+#12104
+title Jewel Actions~
+author Reath~
+code Mob remember $r
+If name $q Windica
+pmote $q nuzzles up to @.
+else
+if rand 50
+if uses $q container
+pmote $q sidles up to $q and begins to search $m for goodies.
+else
+pmote $q gives up on $q for treats and trots away.
+Endif
+else
+mob call 12106 $q null null
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1093196045
+END
+
+#12103
+title River Actions~
+author Reath~
+code Mob remember $r
+If name $q Windica
+pmote $q nuzzles up to @.
+else
+if rand 50
+pmote $q sneers at @ as if laughing.
+else
+mob call 12106 $q null null
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1093194854
+END
+
+#12102
+title Rainia Actions~
+author Reath~
+code Mob remember $r
+If name $q Windica
+pmote $q nuzzles up to @.
+else
+if rand 50
+pmote $q moves closer to @ looking for hair to nibble.
+else
+mob call 12106 $q null null
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1093194542
+END
+
+#12101
+title Chicken Movements~
+author Reath~
+code if rand 50
+emote lets out a screech and pecks something off the ground.
+else
+pmote $n clucks softly and eyes @.
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1093184770
+END
+
+#12100
+title Rooster Actions~
+author Reath~
+code If hour == 7
+if rand 25
+emote turns to face the dawn and opens $l beak.
+mob zecho A rooster's crow greets the dawning day.
+endif
+else
+emote flaps $l wings wildly.
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1093195876
+END
+
+#0
+
+
+#$

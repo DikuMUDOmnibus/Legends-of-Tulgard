@@ -1,0 +1,136 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Zalen's Castle~
+ShortName   Zalen's Castle~
+Builders    rudrik~
+Credits     Zalen~
+build_restricts 'all' rudrik ~
+build_restricts 'area' rudrik ~
+build_restricts 'exits' rudrik ~
+build_restricts 'mobs' rudrik ~
+build_restricts 'objects' rudrik ~
+build_restricts 'resets' rudrik ~
+build_restricts 'rooms' rudrik ~
+VNUMs       2350 2399
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+AreaEcho  6 18  10 You can see the rays of sun show in though the window.~
+AreaEcho 18  6  10 The nightly winds start to pick up blowing though the castle.~
+*LastSaved  Sun Jan 16 16:05:20 2005~
+End
+
+
+
+#MOBILES
+#2350
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg EXALL 2350 0~
+MProg GRALL 622 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#2350
+Name Zalen's castle~
+Desc You stand before a large oak draw bridge to the north.  It stands twelve 
+feet tall and 6 feet wide.  It crosses a mote of crystal clear water.  You 
+can see all the way to the bottom of the ten foot deep mote.  
+~
+Room2Flags freshwater_fish~
+Sector city~
+Exit south 58761
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2350
+title Selbon Guard~
+author Ixliam~
+code mobseeall
+language native
+if name $n Zalen
+ sayto $n Welcome Master!
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+if fealty $n Zalen
+`# sayto $n Welcome to Zalen's Castle.
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+sayto $n Get Lost. You are not welcome here!
+~
+disabled false
+last_editor Rudrik~
+last_editdate 1091118728
+END
+
+#0
+
+
+#$

@@ -1,0 +1,217 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Legion of the Skull Clan Hall~
+ShortName   Legion of the Skull~
+Builders    None~
+VNUMs       1250 1255
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sun Dec 18 16:07:21 2005~
+End
+
+
+
+#MOBILES
+#1250
+Name demon figure~
+ShortD a demon engulfed in blue flame~
+LongD A demon engulfed in blue flame stands here.~
+Desc ~
+Race demon~
+Align 0 0
+Level 140
+Hitroll 20
+HitDice 14d17+675
+ManaDice 6d9+330
+DamDice 14d19+92
+DamType none
+AC -1090 -1090 -1090 -937
+Wealth 500
+Act    npc dont_wander train practice mage healer gain~
+AffBy  detect_evil detect_invis detect_hidden detect_good flying dark_vision~
+Off    dodge parry tail~
+Imm    magic weapon fire negative disease sleep~
+Res    summon charm mental wood illusion scry~
+Vuln   holy light iron~
+Form   edible magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 1250 banner~
+END
+
+#1251
+Name demon figure~
+ShortD a demon engulfed in a red flame~
+LongD A demon engulfed in a red flame stands here.~
+Desc ~
+Race demon~
+Align 0 0
+Level 140
+Hitroll 20
+HitDice 14d17+675
+ManaDice 6d9+330
+DamDice 14d19+92
+DamType none
+AC -1090 -1090 -1090 -937
+Wealth 500
+Act    npc dont_wander train practice mage healer gain~
+AffBy  detect_evil detect_invis detect_hidden detect_good flying dark_vision~
+Off    dodge parry tail~
+Imm    magic weapon fire negative disease sleep~
+Res    summon charm mental wood illusion scry~
+Vuln   holy light iron~
+Form   edible magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#1250
+Name Frozen Entrance to a Large Antechamber.~
+Desc A large antechamber with snow covering the floor and large icicles hanging 
+from the ceiling.  The walls are made of hard stone, but there is a layer of 
+ice covering the entire hall.  There are bones of different sizes covering 
+the ground 
+~
+Sector cave~
+Clan skull
+Exit north 1251
+Exit south 52540
+End
+
+
+#1251
+Name Main Antechamber~
+Desc This antechamber is full of icicles.  There is blood staining the ice in the 
+corners.  Bones are scattered everywhere and piled up in the corners.  
+Skulls of different races hang from the ceiling on chains. 
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 130
+Heal 130
+Exit north 1253
+Exit east 1254
+Exit south 1250
+Exit west 1252
+End
+
+
+#1252
+Name Frozen Shop~
+Desc This room is full of shelves.  There are many bottles on the shelves, and 
+placed all over the room.  A large sign at the back wall reads, "Potions for 
+sale!"   
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 1251
+End
+
+
+#1253
+Name Gatestone~
+Desc Upon entering this room, the floor sinks into a large bowl-shape.  In the 
+middle of the bowl-shape is a large gatestone used for travel in the realms. 
+  
+~
+RoomFlags light~
+Sector gateway~
+Exit south 1251
+End
+
+
+#1254
+Name Junk Closet~
+Desc As usual, this closet is full of junk. Maybe you will haul some of it away. 
+~
+RoomFlags indoors safe light~
+Room2Flags storage_room~
+Sector inside~
+Exit west 1251
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1250 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 1250 1 1251 1
+M 0 1251 1 1252 1
+G 0 5603 -1
+G 0 5649 -1
+G 0 502 -1
+G 0 803 -1
+G 0 500 -1
+G 0 3199 -1
+G 0 3088 -1
+G 0 3087 -1
+O 0 55729 -1 1253
+S
+
+
+
+#SHOPS
+#1251
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1250
+author Ixliam~
+code language native
+sayto $n Wear this banner proudly!
+mob oload 2041
+Give banner $n
+Smile $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1088214092
+END
+
+#0
+
+
+#$

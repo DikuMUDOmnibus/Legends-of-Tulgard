@@ -1,0 +1,391 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Keogh's Home~
+ShortName   Woodland House~
+Builders    keogh~
+VNUMs       1041 1050
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    8
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Mon May 24 19:20:47 2004~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#1041
+Name large four post bed~
+Short a large four-post bed~
+Desc A large four post bed has been placed here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 3000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1042
+Name long wooden bench~
+Short a long wooden bench~
+Desc A long, comfortable wooden bench rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 5000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1043
+Name large long wood wooden table~
+Short a long wooden table~
+Desc A long wooden table rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 6000 DG 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1044
+Name comfortable chair~
+Short a comfortable chair~
+Desc A comfortable-looking chair is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 2000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1045
+Name large bathtub tub bath~
+Short a large, comfortable bathtub~
+Desc A large, comfortable bathtub sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 2000 FI 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1046
+Name plush rug~
+Short a plush rug~
+Desc A soft, plush rug lies here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 3000 BEHKR 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1047
+Name large leather couch~
+Short a large leather couch~
+Desc A large leather couch rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 3000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1048
+Name large black cauldron~
+Short a large black cauldron~
+Desc A large black cauldron rests over a fire here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 10 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1049
+Name potbelly stove~
+Short a potbelly stove~
+Desc A potbelly stove rests here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 E 0 10 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1050
+Name bowl stew food~
+Short a bowl of stew~
+Desc A bowl of stew sits here.~
+Level 1
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 3 0 0 0
+Weight 5
+Material unknown~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#1041
+Name Large cavern~
+Desc This cavern is completly flooded and abruply ends to the north. 
+~
+RoomFlags dark~
+Sector inside~
+Exit south 1042
+End
+
+
+#1042
+Name Small cellar~
+Desc What was once some type of cellar or storage area is now completly flooded. 
+Wood and rusted armor, various cans and bottles cover the bottom of the 
+flooded chamber. Several old torches are along the walls, long since 
+extinguished by the  overflow of the nearby lake. 
+~
+RoomFlags dark~
+Sector inside~
+Exit north 1041
+Exit up 1043
+EFlags door closed~
+End
+
+
+#1043
+Name Small kitchen~
+Desc This room is a small kitchen.  It carries all the needs of a single person 
+or young couple.  A long counter provides a space for food to be prepared, 
+as well as a space for various spices and utensils.  A window is in the 
+north wall providing a view of the surrounding area, and a small skylight 
+rests over the counter for additional light and a better view.  Some candle 
+holders provide additional light.  There is about 3' of water in the room 
+here. There is about 3' of water in the room here. 
+~
+Room2Flags territory_1~
+Sector inside~
+Exit south 1044
+Exit west 1049
+Exit down 1042
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#1044
+Name Central hall~
+Desc You are in a small entry hall.  A high, arched ceiling holds not only lamps 
+but skylights as well.  The simple wooden walls have openings to the north, 
+east and west.  The door to the outside is south.  There is about 3' of 
+water in the room here. 
+~
+Room2Flags territory_1~
+Sector inside~
+Owner keogh katriona~
+Exit north 1043
+Exit east 1047
+Exit south 54915
+Exit west 1045
+End
+
+
+#1045
+Name Small study~
+Desc You find yourself in a nice study.  On the western wall is a small 
+fireplace, with a fire hissing quietly inside.  The fire provides both light 
+and warmth for this room.  Shelves line the walls, filled with books, 
+scrolls, small models of creatures and objects and other odds and ends.  
+This room is quite cozy by most human standards.  A small stone sprial 
+staircase leads upwards to a wooden door.  There is about 3' of water in the 
+room here. 
+~
+Room2Flags territory_1~
+Sector inside~
+Exit north 1049
+EFlags door~
+Exit east 1044
+Exit up 1046
+EFlags door~
+EKeywords trapdoor~
+End
+
+
+#1046
+Name Bedroom~
+Desc You are in a medium-sized bedroom.  Grey wooden walls support an arched 
+ceiling, from which several fancy lamps hang.  A small fireplace on the west 
+wall provides additional light and some heat.  A wooden door sits in the 
+northeast corner leading downstairs.  An archway leads north to another 
+room.  
+~
+Sector inside~
+Exit north 1050
+Exit down 1045
+EFlags door~
+End
+
+
+#1047
+Name Small living room~
+Desc You find yourself in a comfortable living room.  Several candle-holders line 
+the walls to provide light, and a small skylight privides a view of the sky 
+above.  A nice rug covers the floor.  There is about 3' of water in the room 
+here. 
+~
+Room2Flags territory_1~
+Sector inside~
+Exit north 1048
+EFlags door~
+Exit west 1044
+End
+
+
+#1048
+Name Guest room~
+Desc You are in a small guest room.  Simple walls support a flat ceiling, and a 
+few candle-holders line the walls to provide light.  A small stove sits in 
+one corner to provide warmth.  Other than these touches this room is quite 
+simple and is obviously not designed for extended stays.  The only exit is 
+to the south.  There is about 3' of water in the room here. 
+~
+Room2Flags territory_1~
+Sector inside~
+Exit south 1047
+EFlags door~
+End
+
+
+#1049
+Name Dining room~
+Desc You find yourself in a nice, comfortable dining room.  A small fire crackles 
+in a heater in the northwest corner of the room, keeping the room warm but 
+not too much so.  The walls are decorated simply, with small candle-holders 
+on the walls providing light.  A large table rests in the center of the 
+room, surrounded by a wrap-around bench for seating.  There is about 3' of 
+water in the room here. 
+~
+Room2Flags territory_1~
+Sector inside~
+Exit east 1043
+Exit south 1045
+EFlags door~
+End
+
+
+#1050
+Name Small bathroom~
+Desc This is a small bathroom.  A bathtub sits along the north wall, while a full 
+length mirror occupies the east wall.  A small rug occupies the floor here 
+to soak up stray water.  
+~
+Sector inside~
+Exit south 1046
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1048 -1 1043
+O 0 1042 -1 1044
+O 0 1044 -1 1044
+O 0 1046 -1 1044
+O 0 1044 -1 1045
+O 0 1047 -1 1045
+O 0 1041 -1 1046
+O 0 1046 -1 1046
+O 0 1047 -1 1046
+O 0 1046 -1 1047
+O 0 1044 -1 1047
+O 0 1047 -1 1047
+O 0 1041 -1 1048
+O 0 1044 -1 1048
+O 0 1045 -1 1048
+O 0 1041 -1 1048
+O 0 1046 -1 1048
+O 0 1043 -1 1049
+O 0 1045 -1 1050
+O 0 1046 -1 1050
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

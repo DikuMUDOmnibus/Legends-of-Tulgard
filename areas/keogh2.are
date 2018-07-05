@@ -1,0 +1,1627 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Private estate~
+ShortName   Woodland Home~
+Builders    none~
+Credits     javier~
+VNUMs       64000 64070
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Tue Jul 19 14:44:59 2005~
+End
+
+
+
+#MOBILES
+#64023
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 64023 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#64000
+Name well pipe water~
+Short a well-pipe~
+Desc A simple well-pipe is here for water~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64001
+Name large black cauldron food~
+Short a large cauldron~
+Desc A large, black cauldron rests by the fire~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64002
+Name bowl stew food~
+Short bowl of stew~
+Desc A bowl of warm stew~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 24 24 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nosell~
+Wear     take~
+End
+
+#64003
+Name tub bathtub bath porcelain~
+Short a porcelain bath tub~
+Desc A porcelain bath tub rests here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3000 FIL 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64004
+Name rug soft plush~
+Short a soft, plush rug~
+Desc A soft, plush rug lies here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64005
+Name comfortable large chair leather~
+Short a comfy chair~
+Desc A large, comfortable leather chair rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64006
+Name large four post four-post bed~
+Short a large four post bed~
+Desc A large, four-post bed rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64007
+Name couch long~
+Short a comfy couch~
+Desc A long, comfortable looking couch is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64008
+Name table~
+Short a simple table~
+Desc A simple table rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6000 DGJ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64009
+Name fireplace fire~
+Short a fireplace~
+Desc A nice fireplace is here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 -1 DGJ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64010
+Name tree~
+Short a large tree~
+Desc A large tree has been planted here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 -1 UVW 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64011
+Name wood iron bench~
+Short a wood and iron bench~
+Desc A long wood and iron bench is here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64012
+Name rosebush rose bush plant~
+Short a rosebush~
+Desc A rosebush has been planted here~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64013
+Name rose flower~
+Short a `Rred`x `grose`x~
+Desc A `Rred`x `grose`x has been left here~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64014
+Name a `rred`x strawberry~
+Short a `Rred`x strawberry~
+Desc A `Rred`x strawberry has been dropped here.~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     take~
+End
+
+#64015
+Name plant bush strawberry~
+Short a strawberry plant~
+Desc A strawberry plant is planted here~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64016
+Name pineapple tree~
+Short a pineapple tree~
+Desc A miniature tree is here~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64017
+Name pineapple fruit food~
+Short a pineapple~
+Desc A pineapple has been abandoned here~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64018
+Name deck chair wooden wood~
+Short a wooden deck chair~
+Desc A wooden deck chair is here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 HK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64019
+Name small wood wooden boat ship~
+Short a simple wooden boat~
+Desc A small, simple wooden boat is anchored here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3000 FIL 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64020
+Name opaque sphere~
+Short a floating, opaque sphere~
+Desc A dark floating sphere is here.~
+Level 0
+ItemType vehicle~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 64020 1000 A 0 0
+Weight 0
+Material magic~
+Extra    nodrop nopurge nonmetal nolocate meltdrop nodegrade burnproof norestring nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#64021
+Name rod~
+Short a control rod~
+Desc A control rod of pure darkness extends up from the floor.~
+Level 0
+ItemType vehicle_controls~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 64020 0 0 0 0
+Weight 0
+Material unknown~
+Extra    evil nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+ExtraDesc _TRAVEL~
+A strange feeling overcomes you as the sphere moves.
+~
+End
+
+#64022
+Name metal hoop~
+Short a metal hoop~
+Desc A simple metal hoop leading to the outside is here.~
+Level 0
+ItemType vehicle_exit~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 64020 0 0 0 0
+Weight 0
+Material magic~
+Extra    nodrop nopurge nonmetal nolocate meltdrop nodegrade burnproof norestring nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#64023
+Name comfortable black velvet bench~
+Short a black velvet bench~
+Desc A comfortable black velvet bench is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 10000 BEHKN 100 100
+Weight 0
+Material wood~
+Extra    noremove nopurge nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#64024
+Name black velvet chair~
+Short a black velvet chair~
+Desc Two comfotable black velvet chairs are here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 BEHKN 100 100
+Weight 0
+Material wood~
+Extra    noremove nopurge nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#64025
+Name portal adriata~
+Short a portal to adriata~
+Desc A portal to Adriata is here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KL B 33500 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     no_sac~
+End
+
+#64026
+Name treasury key~
+Short `#`WKey to a `YCanyon Estate`^~
+Desc `#`W A Key to a `YCanyon Estate `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#64027
+Name toilet porcelain throne~
+Short a toilet~
+Desc A simple porcelain toilet~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64028
+Name cook fire cooking~
+Short a cook fire~
+Desc A cooking fire blazes here~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#64029
+Name sign warning javier estate~
+Short a red warning sign~
+Desc A small red warning sign is attached to the wall.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#0
+
+
+
+#ROOMS
+#64000
+Name An Entry Foyer~
+Desc This is the entry foyer of this home.  Rooms branch off to the west, east 
+and north.  A door to the outside is to the south.  Atrap door rests in the 
+floor, a railing extending above it, leading to the staircase that allows 
+access to the area below.  The entirety of this rooms wall space is covered 
+in one solid mural, depicting a beautiful forest.  Pillars rest in the 
+corners and the center of the walls.  Even the ceiling has been painted to 
+look like the sky.  A few small skylights provide light, along with several 
+candle holders mounted to the pillars.  Only the floor is left unpainted, 
+its natural wood boards oddly fitting.  
+~
+Sector inside~
+Owner keogh katriona~
+Exit north 64001
+Exit east 64005
+Exit south 64010
+EFlags door~
+Exit west 64003
+Exit down 875
+End
+
+
+#64001
+Name A simple kitchen~
+Desc You are in a simple kitchen.  A fireplace rests against the east wall, one 
+side left open to allow for the large black cauldron.  Simple counters line 
+the walls, each set with various cabinets.  One such counter holds a small 
+basin with a drain for washing clothes, dishes and food.  Large wooden 
+pillars are in every corner, obviously here to support this part of the 
+house.  Candle-holders along the walls provide a soft light.  
+~
+Sector inside~
+Exit north 64009
+Exit south 64000
+Exit west 64002
+End
+
+
+#64002
+Name A Nice Dining Room~
+Desc This is a simple but elegant dining room.  Tapestries line the walls, all of 
+them depicting various scenes of nature and the forest.  The fireplace here 
+is along the western wall, and pillars are in every corner of the room.  A 
+beautiful candleabra hangs from the ceiling to provide soft light.  
+~
+Sector inside~
+Exit east 64001
+Exit south 64003
+End
+
+
+#64003
+Name A Small Library~
+Desc You find yourself in a nice study.  On the western wall is a small 
+fireplace, with a fire hissing quietly inside.  The fire provides both light 
+and warmth for this room.  Shelves line the walls, filled with books, 
+scrolls, small models of creatures and objects and other odds and ends.  
+This room is quite cozy by most standards.  A small stone sprial staircase 
+leads upwards.  
+~
+Sector inside~
+Exit north 64002
+Exit east 64000
+Exit up 64004
+End
+
+
+#64004
+Name A small living-room~
+Desc This is a simple living room.  It seems poorly suited for entertaining 
+guests.  Instead, it seems designed for one or two people to comfortably 
+relax in a quiet setting.  A fireplace occupies the south wall here, and a 
+small staircase rests in the southeast corner to access the floor below.  
+~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit north 64007
+Exit west 64008
+Exit down 64003
+End
+
+
+#64005
+Name Quiet sitting room~
+Desc You find yourself in a comfortable sitting room.  Several candle-holders 
+line the walls to provide light, and a small skylight provides a view of the 
+sky above.  A nice rug covers the floor.  Pillars support the corners, and 
+there are exits to the east and north.  
+~
+Sector inside~
+Exit north 64006
+Exit west 64000
+End
+
+
+#64006
+Name Guest Bedroom~
+Desc You are in a small guest room.  Simple walls support a flat ceiling, and a 
+few candle-holders line the walls to provide light.  A small fireplace sits 
+in one corner to provide warmth.  Other than these touches this room is 
+quite simple and is obviously not designed for extended stays.  Pillars are 
+found in the corners, painted to match the soft blue walls.  The only exit 
+is to the south.  
+~
+Sector inside~
+Exit south 64005
+End
+
+
+#64007
+Name Master bedroom~
+Desc You are in a medium-sized bedroom.  Soft green walls support an arched 
+ceiling, from which several fancy lamps hang.  A small fireplace on the west 
+wall provides additional light and some heat.  A large skylight is situated 
+in the ceiling, giving a spectacular view of the sky.  
+~
+Sector inside~
+Exit south 64004
+Exit southwest 64008
+End
+
+
+#64008
+Name Master bathroom~
+Desc This is the master bathroom.  A bathtub sits along the west wall, while a 
+full length mirror occupies the south wall.  A small rug occupies the floor 
+here to soak up stray water.  
+~
+Sector inside~
+Exit east 64004
+Exit northeast 64007
+End
+
+
+#64009
+Name Storage room~
+Desc You are standing in a small storage room.  Several shelves are built into 
+the walls and hold jars, vials and bottles of various things.  A small 
+window looks out over the area to the north.  Large wooden pillars are in 
+the corners to provide support for this room.  The only exit is south, to 
+the kitchen.  
+~
+Sector inside~
+Exit south 64001
+End
+
+
+#64010
+Name A covered deck~
+Desc This well-made wooden platform is seemingly designed for the inhabitants of 
+the attached home to enjoy the peaceful outdoors without the inconveniences 
+of insects or poor weather.  The near floor-to-ceiling windows are enclosed 
+with a soft silk mesh instead of glass to allow air to pass through but keep 
+bugs out.  Several layers of such material cover the exit to the west to 
+keep bugs out but still allow passage of the home's owners.  This deck 
+continues to the east.  
+~
+Sector inside~
+Exit north 64000
+EFlags door~
+Exit east 64011
+Exit west 64012
+End
+
+
+#64011
+Name A covered deck~
+Desc This is the eastern end of the enclosed deck.  The windows here overlook the 
+surrounding countryside, giving some amazing views of the area's wildlife.  
+The windows are filled only with a strong screen of soft silk, seen only as 
+a slight haze when looking outwards.  It is quite effective at keeping the 
+bugs out.  
+~
+Sector inside~
+Exit west 64010
+Exit down 64013
+EFlags door~
+End
+
+
+#64012
+Name An open-air deck~
+Desc You are in an open-aired portion of a large wooden deck.  Railings are 
+mounted along the edges to prevent accidental falls, but other than the 
+rails and the walls of the house, there is nothing here other than bare 
+boards and places to sit.  East takes you back to the covered area of the 
+deck, while west leads to a small garden.  
+~
+Sector city~
+Exit east 64010
+Exit west 64014
+End
+
+
+#64013
+Name A covered boat dock~
+Desc This is a small dock.  To the north is a small, shallow pond.  Looking out 
+to the area around you, it is plain that this platform is still several feet 
+above the surface below.  There is a simple staircase leading to the 
+platform above, a trap door at its peak.  You may leave the platform via the 
+stairs or by entering the pond.  
+~
+Sector inside~
+Exit north 64016
+Exit up 64011
+EFlags door~
+End
+
+
+#64014
+Name A nice garden platform~
+Desc This is a small garden.  Several large planting boxes filled with soil are 
+scattered about here, each filled with various plants.  Other than the 
+planting boxes and railings, there are no furnishings here at all.  To the 
+east is a small, open section of deck, and to the north is more garden.  
+~
+Sector city~
+Exit north 64015
+Exit east 64012
+End
+
+
+#64015
+Name A tree-bearing platform~
+Desc This portion of the deck is dominated by one large planter box.  Unlike the 
+ones to the south, this one is about three feet tall, and appears to 
+actually extend below the surface of the deck to allow for more room for the 
+roots of the tree here.  Other than the plants here and a lone bench, there 
+is little here to look at.  The only way to leave this part of the deck is 
+to the south.  
+~
+Sector city~
+Exit south 64014
+End
+
+
+#64016
+Name A small pond~
+Desc This is the south-east corner of a small, shallow pond.  Upon close 
+examination you may realize that the bottom of the pond is made up of wooden 
+boards, covered in a layer of soil and small, rounded stones about an inch 
+thick.  The edges of the pond are lined with piles of flat stones to hide 
+the wooden walls that hold the water in.  The water itself here is about 
+three feet deep, and somehow is always maintained at a very comfortable 
+temperature.  The water continues north, west, and northwest, while the dock 
+is to the south.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit north 64019
+Exit south 64013
+Exit west 64017
+Exit northwest 64018
+End
+
+
+#64017
+Name A small pond~
+Desc This is the south-west corner of a small, shallow pond.  Upon close 
+examination you may realize that the bottom of the pond is made up of wooden 
+boards, covered in a layer of soil and small, rounded stones about an inch 
+thick.  The edges of the pond are lined with piles of flat stones to hide 
+the wooden walls that hold the water in.  The water itself here is about 
+three feet deep, and somehow is always maintained at a very comfortable 
+temperature.  The pond continues east, north, and northeast.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit north 64018
+Exit east 64016
+Exit northeast 64019
+End
+
+
+#64018
+Name A small pond~
+Desc This is the north-west corner of a small, shallow pond.  Upon close 
+examination you may realize that the bottom of the pond is made up of wooden 
+boards, covered in a layer of soil and small, rounded stones about an inch 
+thick.  The edges of the pond are lined with piles of flat stones to hide 
+the wooden walls that hold the water in.  The water itself here is about ten 
+feet deep, and somehow is always maintained at a very comfortable 
+temperature.  The water continues south, east, and south-east.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit east 64019
+Exit south 64017
+Exit southeast 64016
+End
+
+
+#64019
+Name A small pond~
+Desc This is the north-east corner of a small, shallow pond.  Upon close 
+examination you may realize that the bottom of the pond is made up of wooden 
+boards, covered in a layer of soil and small, rounded stones about an inch 
+thick.  The edges of the pond are lined with piles of flat stones to hide 
+the wooden walls that hold the water in.  The water itself here is about ten 
+feet deep, and somehow is always maintained at a very comfortable 
+temperature.  The water continues south, west, and southwest.  
+~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit south 64016
+Exit west 64018
+Exit southwest 64017
+End
+
+
+#64020
+Name Inside the Sphere~
+Desc From the outside this object appears to be a sphere. Now that you are 
+inside, though, you see that it is really a floating disc shrouded darkness. 
+While it is impossible for others to see in, passengers can see out as 
+though there were nothing between them. The spells creating the effect keep 
+the weather out, too. 
+~
+RoomFlags indoors no_recall law nowhere noscry light~
+Sector vehicle~
+Exit north 64021
+End
+
+
+#64021
+Name Driving Compartment~
+Desc This is the driving compartment. Slightly higher up from the rear passenger 
+compartment it is easy to see the surrounding area for ease of driving. The 
+shrouding spells make it impossible for anyone to see into the compartment 
+from outside this odd vehicle. 
+~
+RoomFlags indoors private no_recall law nowhere noscry light~
+Sector vehicle~
+Owner javier~
+Exit south 64020
+End
+
+
+#64022
+Name Entrance to the canyon~
+Desc You are standing in the entrance to a long canyon, stretching off into the 
+distance to the north. Above is nothing but open air and the rare 
+outcropping. The only way out of the canyon lies south. 
+~
+RoomFlags noscry~
+Sector trail~
+Exit north 64023
+Exit south 56377
+End
+
+
+#64023
+Name Long staircase~
+Desc This is the north end of the canyon. Far above you is a small platform. You 
+can reach the platform via the large staircase set into the wall here. Other 
+than these stairs the only way to leave here is to go south. 
+~
+RoomFlags noscry~
+Sector trail~
+Exit south 64022
+Exit up 64024
+End
+
+
+#64024
+Name Platform in the canyon~
+Desc You are standing upon a finely made stone platform above the canyon floor. A 
+long staircase descends to the floor below, and a large stone door rests in 
+the northern canyon wall. The only way off the platform is through the door 
+or back down the stairs. 
+~
+RoomFlags noscry~
+Sector city~
+Exit north 64057
+EFlags door closed locked nopass hard~
+EKeyvnum 64026
+Exit down 64023
+End
+
+
+#64025
+Name Main hallway~
+Desc You stand at the main junction of the center hallway. To the east and west 
+lie the guest suites, while to the north lay other sections of the house. 
+Skylights and candles keep the hall well lit day and night. The stone walls 
+appear extremely sturdy. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64028
+Exit east 64027
+Exit south 64057
+Exit west 64026
+End
+
+
+#64026
+Name Blue hall~
+Desc You are standing in the entrance to the Blue Hall. To the east lies the main 
+hall, and the Blue Hall continues north. Unlike the main hall, which has 
+bare floors and walls, the floor and walls here are covered in plush blue 
+carpet and wall hangings. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64029
+Exit east 64025
+End
+
+
+#64027
+Name Green hall~
+Desc This is the beginning of the Green Hall. It is decorated with green 
+tapestries and soft green carpet. West lies the main hall, while the Green 
+Hall continues north. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64031
+Exit west 64025
+End
+
+
+#64028
+Name Main hallway~
+Desc You are in the center of the lower floor of this house. North stretches the 
+hallway, while the upper floor access lies west. To the east is the kitchen. 
+The floors here are decorated with finely-crafted tapestries, and the floor 
+is covered in a soft carpeting. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64037
+Exit east 64035
+Exit south 64025
+Exit west 64039
+End
+
+
+#64029
+Name Blue hall~
+Desc This is the center of the Blue Hall. The blue guest suite lies west from 
+here, and the hall continues south. The floors and walls are well decorated 
+in shades of blue. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit south 64026
+Exit west 64030
+End
+
+
+#64030
+Name Blue Suite~
+Desc You are standing in the middle of the Blue Suite. A multitude of manyhued 
+skylights and candleholders keep this room well lit at all times. The floors 
+are covered in plush blue carpet and the walls are decorated with soft blue 
+tapestries. To the north lies the bedroom, the sitting room south, and the 
+bathroom west. The hall lies east. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64041
+EFlags door closed~
+Exit east 64029
+Exit south 64040
+EFlags door closed~
+Exit west 64058
+EFlags door closed~
+End
+
+
+#64031
+Name Green hall~
+Desc This is the center of the Green Hall. The entrance to the hall is south, 
+while the green Suite itself is east. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit east 64032
+Exit south 64027
+End
+
+
+#64032
+Name Green Suite~
+Desc You are in the center of the Green Suite. Green-hued skylights and candles 
+light this chamber, while green carpet and tapestries adorn the floor and 
+walls. The combined effect is much like walking in a grassy meadow. South 
+lies the sitting room, north lies the bedroom, and a bathroom lies east. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64043
+EFlags door closed~
+Exit east 64059
+EFlags door closed~
+Exit south 64042
+EFlags door closed~
+Exit west 64031
+End
+
+
+#64033
+Name Tall staircase~
+Desc You are at the half way point of the staircase. Above is the main residence, 
+below is the main floor. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit up 64034
+Exit down 64039
+End
+
+
+#64034
+Name Upper living quarters~
+Desc You are in the study and sitting room of the upper floors. The room is 
+always at a comfortable temperature for most humanoid races. North and south 
+lies more rooms of this upper sanctuary, while the east and west walls 
+contain screened doors to an outside walkway. There is a small hatch leading 
+to a staircase to the lower floors. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64044
+EFlags door closed~
+Exit east 64052
+EFlags door closed~
+Exit south 64045
+Exit west 64046
+EFlags door closed~
+Exit up 64053
+Exit down 64033
+End
+
+
+#64035
+Name Kitchen~
+Desc This is the main kitchen. Pots and pans hang from many hooks here, and a 
+cauldron rests in one corner. East is the storage room and west is the main 
+hallway. North lies the dining room. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64036
+Exit east 64038
+Exit west 64028
+End
+
+
+#64036
+Name Dining Room~
+Desc This is the main dining hall. It is finely appointed and decidedly designed 
+for large banquets. To the south lies the kitchen, and to the west lies the 
+main hall. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit south 64035
+Exit west 64037
+Exit northwest 64054
+End
+
+
+#64037
+Name Main hallway~
+Desc This is the northern end of the main hallway. It is covered in soft carpet, 
+and the walls are adorned with finely woven tapestries. To the north is the 
+library, west is the main sitting room and the dining room is to the east. 
+The hall itself continues south, lined with candleholders. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64054
+Exit east 64036
+Exit south 64028
+Exit west 64055
+End
+
+
+#64038
+Name Storage room~
+Desc This is a simple sotrage room. Shelves full of supplies line the walls, and 
+two simple candle-holders provide light. The only exit is west. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit west 64035
+End
+
+
+#64039
+Name Upper tower access~
+Desc This is the access to the upper floor of this home. A large stone spiral 
+staircase leads up, while doors lead east to the main hall and north to the 
+main sitting room. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64055
+Exit east 64028
+Exit up 64033
+End
+
+
+#64040
+Name Blue Suite Sitting Room~
+Desc You are in the Blue Sitting room. Seemingly designed to give guests of the 
+owner a place to converse and relax during their stay, it is simply 
+appointed but not sparse. The only way to leave is north. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64030
+EFlags door closed~
+End
+
+
+#64041
+Name Blue Suite Bedroom~
+Desc This is the Blue Bedroom. Well appointed and decorated, this room is fit for 
+the guests of royalty. Skylights and candleholders light the room, aiding 
+the fireplace in the east wall. The hall lies south from here. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit south 64030
+EFlags door closed~
+End
+
+
+#64042
+Name Green Suite Sitting Room~
+Desc This is the sitting room of the Green Suite. Simply appointed, it is 
+designed for use by the guests of the estate's owner. The only exit is 
+north, back to the center of the suite. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64032
+EFlags door closed~
+End
+
+
+#64043
+Name Green Suite Bedroom~
+Desc You are in a nicely appointed bedroom. Skylights and candles light the room 
+nicely, giving it a warm glow at all hours. To the south lies the center of 
+the green suite. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit south 64032
+EFlags door closed~
+End
+
+
+#64044
+Name Upper bedroom~
+Desc This is a small, private bedroom. It seems to have been primarially designed 
+for the use of a sole person. It is well appointed and seems to have been 
+made for someone of much wealth and power. It is lit during the day by 
+several skylights, and at night by candles along the wall. The only exit is 
+south. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit south 64034
+EFlags door closed~
+End
+
+
+#64045
+Name Upper bathroom~
+Desc This is a small bathroom. Simple and lightly appointed, it seems to be 
+deisgned from a practical aspect. Candleholders line the walls and a lone 
+skylight occupies the ceiling, both providing soft light. The only exit lies 
+north. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64034
+End
+
+
+#64046
+Name Upper walkway~
+Desc You are standing on the deck of the upper floors of this home. To the south 
+you can see a small canyon. Forest lies to the north, well below the level 
+of this walkway. To the east is a screened door leading inside, and you may 
+continue along the walkway to the north. 
+~
+RoomFlags noscry~
+Sector city~
+Exit north 64047
+Exit east 64034
+EFlags door closed~
+End
+
+
+#64047
+Name Upper walkway~
+Desc You are standing on the upper walkway. Forest stretches out far below you in 
+all directions. To the north is a small patch of garden, and to the south is 
+more walkway. 
+~
+RoomFlags noscry~
+Sector city~
+Exit north 64048
+Exit south 64046
+End
+
+
+#64048
+Name A small garden~
+Desc You have come across the northwest garden of the upper walkways. Here rests 
+a large tree inside an equally large planter box. No other plants adorn this 
+area other than the neatly kept grass in the planter. The walkway continues 
+south and east. 
+~
+RoomFlags noscry~
+Sector city~
+Exit east 64049
+Exit south 64047
+End
+
+
+#64049
+Name Upper walkway~
+Desc You are standing in the center of the north face of ths upper walkway. 
+Forests stretch out below you in all directions. Gardens are west and east 
+of you on the walkway, and are the only directions in which you may travel. 
+~
+RoomFlags noscry~
+Sector city~
+Exit east 64050
+Exit west 64048
+End
+
+
+#64050
+Name A small garden~
+Desc You are standing in a small garden. Several plants are here, giving this 
+spot a foresty scent. Whereas the tree to the west is in a seperate box this 
+entire section of walkway has been given over to grass and plants. You may 
+head south or west from here. 
+~
+RoomFlags noscry~
+Sector city~
+Exit south 64051
+Exit west 64049
+End
+
+
+#64051
+Name Upper walkway~
+Desc You are standing on the upper walkway. Forest stretches out far below you in 
+all directions. To the north is a small patch of garden, and to the south is 
+more walkway. 
+~
+RoomFlags noscry~
+Sector city~
+Exit north 64050
+Exit south 64052
+End
+
+
+#64052
+Name Upper walkway~
+Desc You are standing on the southeastern corner of the walkway. To the south you 
+can see a small canyon, and in all other directions you see nothing but 
+forest below. To the west lies a screened door leading back inside, and to 
+the north is more walkway. 
+~
+RoomFlags noscry~
+Sector city~
+Exit north 64051
+Exit west 64034
+EFlags door closed~
+End
+
+
+#64053
+Name Upper library~
+Desc You find yourself in the private library of a rather wealthy individual. 
+Expensive-looking books line the shelves here from floor to ceiling. The 
+room is lit by skylights in the ceiling above and several sconces along the 
+uppermost beams. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit east 64056
+EFlags door closed locked nopass hard~
+EKeyvnum 64026
+Exit down 64034
+End
+
+
+#64054
+Name Main Library~
+Desc You are in a massive library. Huge shelves line all the walls, and a single 
+huge skylight is in the ceiling above. Candle-holders line all the walls 
+here to provide additional light. South lies the main hall, the sitting room 
+to the southwest, and the dingin hall to the southeast. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit south 64037
+Exit southeast 64036
+Exit southwest 64055
+End
+
+
+#64055
+Name Main sitting room~
+Desc This is the main sitting room. It is very finely decorated and very suiting 
+of true royalty. A single massive skylight looks out into the sky above, 
+some ten feet above the actual ceiling. South lies the access to the upper 
+level, while northeast lies the main library. The main hallway is directly 
+east. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit east 64037
+Exit south 64039
+Exit northeast 64054
+End
+
+
+#64056
+Name Treasury room~
+Desc You are standing in a room of fortified stone. Stone walls, stone floor, and 
+stone ceiling, all reinforced with steel bars. It would not be suprising to 
+find out there were magical wards on the walls, too. Even the door is made 
+of reinforced stone. In the center of the room rests a lone chest. The room 
+is lit by a pair of sconces attached to the steel beams along the north and 
+south walls. 
+~
+RoomFlags noscry~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit west 64053
+EFlags door closed locked nopass hard~
+EKeyvnum 64026
+End
+
+
+#64057
+Name Entrance room~
+Desc You have arrived at the entrance hall to this massive home. The main hallway 
+extends to the north and the main door lies south. The halls here are made 
+of finely-wrought stone, as is the ceiling above. Small, narrow tunnels have 
+been cut into the ceiling and lined with mirrors and glass to provide a 
+weatherproof skylight leading to the surface above, some ten feet beyond. 
+Candles line the walls to provide extra light. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit north 64025
+Exit south 64024
+EFlags door closed locked nopass hard~
+EKeyvnum 64026
+End
+
+
+#64058
+Name Blue Suite Bathroom~
+Desc This is a simple bathroom. Two blue tapestries decorate the walls. Skylights 
+and candle holders keep the room lit. The only exit is east. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit east 64030
+EFlags door closed~
+End
+
+
+#64059
+Name Green Suite Bathroom~
+Desc You find yourself in a simple bathroom. Two green tapestries adorn the 
+walls, but the floor is well-cut stone. To the west lies the center of the 
+green suite. 
+~
+RoomFlags noscry~
+Sector inside~
+Exit west 64032
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 64007 -1 64000
+O 0 64001 -1 64001
+P 0 64002 3 64001 3
+O 0 64009 -1 64001
+O 0 64008 -1 64002
+O 0 64009 -1 64002
+O 0 64007 -1 64003
+O 0 64004 -1 64003
+O 0 64005 -1 64003
+O 0 64009 -1 64003
+O 0 64008 -1 64003
+O 0 64004 -1 64004
+O 0 64005 -1 64004
+O 0 64009 -1 64004
+O 0 64007 -1 64004
+O 0 64007 -1 64005
+O 0 64008 -1 64005
+O 0 64004 -1 64005
+O 0 64005 -1 64005
+O 0 64009 -1 64005
+O 0 64006 -1 64006
+O 0 64000 -1 64006
+O 0 64009 -1 64006
+O 0 64003 -1 64006
+O 0 64004 -1 64006
+O 0 64006 -1 64007
+O 0 64004 -1 64007
+O 0 64005 -1 64007
+O 0 64007 -1 64007
+O 0 64009 -1 64007
+O 0 64003 -1 64008
+O 0 64004 -1 64008
+O 0 64000 -1 64008
+O 0 64000 -1 64009
+O 0 64011 -1 64010
+O 0 64018 -1 64010
+O 0 64011 -1 64011
+O 0 64018 -1 64011
+O 0 64011 -1 64012
+O 0 64018 -1 64012
+O 0 64011 -1 64013
+O 0 64015 -1 64014
+P 0 64014 2 64015 2
+O 0 64016 -1 64014
+P 0 64017 1 64016 1
+O 0 64010 -1 64015
+O 0 64011 -1 64015
+O 0 64012 -1 64015
+P 0 64013 2 64012 2
+O 0 64019 -1 64019
+O 0 64023 -1 64020
+O 0 64022 -1 64020
+O 0 64021 -1 64021
+O 0 64024 -1 64021
+O 0 64023 0 64034
+O 0 64024 0 64034
+O 0 64004 0 64034
+O 0 64000 -1 64035
+O 0 64001 -1 64035
+P 0 64002 3 64001 3
+O 0 64008 0 64036
+O 0 64004 0 64036
+O 0 64005 0 64040
+O 0 64007 0 64040
+O 0 64004 0 64040
+O 0 64009 0 64040
+O 0 64005 0 64041
+O 0 64009 0 64041
+O 0 64006 0 64041
+O 0 64008 0 64041
+O 0 64005 0 64042
+O 0 64007 0 64042
+O 0 64009 0 64042
+O 0 64004 0 64042
+O 0 64005 0 64043
+O 0 64004 0 64043
+O 0 64006 0 64043
+O 0 64009 0 64043
+O 0 64007 0 64043
+O 0 64006 0 64044
+O 0 64004 0 64044
+O 0 64007 0 64044
+O 0 64009 0 64044
+O 0 64003 0 64045
+O 0 64004 0 64045
+O 0 64000 0 64045
+O 0 64003 0 64045
+O 0 64004 0 64045
+O 0 64027 0 64045
+O 0 64010 0 64048
+O 0 64005 0 64053
+O 0 64007 0 64053
+O 0 64009 0 64053
+O 0 64004 0 64053
+O 0 64005 0 64054
+O 0 64007 0 64054
+O 0 64009 0 64054
+O 0 64004 0 64054
+O 0 64004 0 64054
+O 0 64004 0 64055
+O 0 64005 0 64055
+O 0 64007 0 64055
+O 0 64009 0 64055
+M 0 64023 1 64056 1
+O 0 64025 -1 64056
+O 0 64000 0 64058
+O 0 64003 0 64058
+O 0 64004 0 64058
+O 0 64027 0 64058
+O 0 64000 0 64059
+O 0 64003 0 64059
+O 0 64027 0 64059
+O 0 64004 0 64059
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#64023
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Keogh
+   mob letpass
+   end
+ endif
+if name $n Javier
+mob letpass
+   end
+ endif
+if fealty $n Keogh
+   mob letpass
+   end
+ endif
+if fealty $n Javier
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1095212327
+END
+
+#0
+
+
+#$

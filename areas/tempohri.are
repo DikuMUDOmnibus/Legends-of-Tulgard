@@ -1,0 +1,197 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of Dorenne~
+ShortName   Temple of Dorenne~
+Builders    ohri~
+VNUMs       7510 7519
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#7510
+Name priestess~
+ShortD a priestess of `#`GDorenne`^~
+LongD A priestess of the temple is here.~
+Desc ~
+Race human~
+Align 3 1
+Level 130
+Hitroll 43
+HitDice 13d16+630
+ManaDice 13d17+903
+DamDice 13d17+84
+DamType slash
+AC -1000 -1000 -1000 -810
+Wealth 430
+Act    npc dont_wander cleric~
+AffBy  protect_evil~
+Off    dodge~
+Imm    summon charm holy~
+Res    poison negative disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#7510
+Name altar~
+Short an altar to `#`GDorenne`^~
+Desc An altar to `#`GDorenne`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 QR 150 150
+Weight 5000
+Material stone~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#7511
+Name amulet dorenne~
+Short an amulet of `#`GDorenne`^~
+Desc An amulet with a tree on it is here.~
+Level 1
+ItemType jewelry~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material etheral~
+Extra    bless noremove nonmetal meltdrop burnproof nouncurse norestring~
+Extra2   nosell~
+Wear     take neck~
+Affect modifier -1 0 -1 hitroll 5 0
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 mana 100 0
+Affect modifier -1 0 -1 hp 10 0
+End
+
+#7512
+Name tiny spring~
+Short a tiny spring~
+Desc A tiny natural spring flows along the west wall here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    magic nodegrade~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#7510
+Name Entrance to the Temple~
+Desc Large white steps lead up into the magnificent temple before you.  Several 
+stone columns reach high into the air, supporting the roof of the temple.  
+An exotic carved relief winds its way around the edge of the roof, showing 
+ancient victories of the gods of the realm.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7511
+Exit south 3030
+End
+
+
+#7511
+Name Lighted Hallway~
+Desc Twelve large fluted marble columns line this hallway running north and 
+south.  The floor is made from the finest white marble, with intricate 
+designs etched into the stone with pure gold.  On each column a large brass 
+scone holds a burning torch, filling the cooridor with light.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7512
+Exit south 7510
+End
+
+
+#7512
+Name Before the Altar~
+Desc A large white altar lies before you, its surface gleaming in with light.  A 
+large fire burns on top of it, filling the room with the smell of burning 
+incense.  A large offering box is along the east wall, ready to accept 
+donations to the temple.  `1 The entire room seems to hold items that sanctum nature and fertility.  
+Murals on the stone walls depict local animal families, such as a deer 
+grooming its fawn, while the buck is alert in the background.  Shrubs and 
+flowers are placed elegantly around the room, watered by the Priestess' of 
+Dorenne.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7511
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 7510 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 7510 2 7510 10
+E 0 7511 -1 neck1~
+M 0 7510 2 7511 10
+E 0 7511 -1 neck1~
+O 0 7510 -1 7512
+M 0 7510 2 7512 10
+E 0 7511 -1 neck1~
+O 0 7512 -1 7512
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

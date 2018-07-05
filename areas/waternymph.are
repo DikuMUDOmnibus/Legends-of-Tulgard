@@ -1,0 +1,725 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Water Nymphs~
+ShortName   `BNymphs`^~
+Builders    None~
+VNUMs       29800 29820
+LComment    `#`C[ 15- 25]`^
+LRange      15 25
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sun Oct  9 17:08:38 2005~
+End
+
+
+
+#MOBILES
+#29800
+Name water nymph~
+ShortD the water nymph~
+LongD A water nymph dances playfully here.~
+Desc The nymph is a young and beautifull girl who is one with
+the water.  She giggles when she notices you looking at
+her, and skirts off into the water.
+~
+Race faerie~
+Align 3 0
+Level 16
+Hitroll 2
+HitDice 4d5+90
+ManaDice 2d5+30
+DamDice 4d4+5
+DamType magic
+AC -50 -50 -50 -42
+Wealth 60
+Act    npc stay_area thief~
+AffBy  detect_magic flying~
+Off    dodge~
+Res    magic pierce mental~
+Vuln   weapon poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#29801
+Name giant frog~
+ShortD the giant frog~
+LongD A giant `#`sblack-skinned`^ frog is resting here.~
+Desc The frog is massive, just about the size of a bull.  It is covered in glossy 
+black skin and has two large eyes on either side of it's head.  
+~
+Race frog~
+Align 0 0
+Level 18
+Hitroll -1
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType chomp
+AC -45 -45 -45 -40
+Wealth 0
+Act    npc dont_wander stay_area wimpy amphibian~
+Act2   no_random_obj~
+AffBy  otterlungs swim~
+Off    bash~
+Imm    drowning~
+Res    poison disease~
+Vuln   cold~
+Form   edible sentient biped amphibian~
+Part   head legs heart brains guts feet ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#29802
+Name giant albino frog king~
+ShortD the frog king~
+LongD A giant `#`Walbino`^ frog is sitting atop a rock here.~
+Desc This mammoth frog is covered in milk-white skin.  He is a bit bigger than 
+the other frogs around here.  
+~
+Race frog~
+Align 0 0
+Level 24
+Hitroll 1
+HitDice 4d5+105
+ManaDice 4d5+105
+DamDice 2d10+6
+DamType chomp
+AC -65 -65 -65 -56
+Wealth 0
+Act    npc dont_wander stay_area amphibian~
+Act2   no_random_obj~
+AffBy  otterlungs swim~
+Off    dodge~
+Imm    drowning~
+Res    poison disease~
+Vuln   cold~
+Form   edible sentient biped mountable amphibian cold_blood~
+Part   head legs heart brains guts feet eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#29803
+Name dryad~
+ShortD the dryad~
+LongD A dryad is here, keeping an eye on the nymphs.~
+Desc The skin of the dryad is a powdery blue, and her braided hair is emerald 
+green.  She has a magic aura around her that glows a faint pink.  
+~
+Race faerie~
+Align 2 0
+Level 26
+Hitroll 0
+HitDice 4d5+120
+ManaDice 4d5+120
+DamDice 3d7+7
+DamType magic
+AC -80 -80 -80 -65
+Wealth 200
+Act    npc no_tame stay_area cleric~
+AffBy  detect_magic detect_hidden faerie_fire infrared otterlungs protect_evil swim~
+AffBy2 passwotrace detect_treeform detect_vanish~
+Off    dodge~
+Imm    charm~
+Res    magic mental illusion~
+Vuln   poison disease~
+Form   edible magical sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#29800
+Name crystal rod~
+Short a short `#`Cc`cr`Cy`cs`Ct`ca`Cl`^ rod~
+Desc A short rod made of translucent crystal is lying here.~
+Level 8
+ItemType wand~
+Cost 140
+Durability 5
+Asize 0
+Rsize 45
+Values 8 6 4 'create food' 0
+Weight 5
+Material crystal~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   buried~
+Wear     take hold~
+End
+
+#29801
+Name shiny bead necklace~
+Short a small `#`Rb`Me`Ba`Cd`^ necklace~
+Desc A small string of colorful beads is lying here.~
+Level 12
+ItemType jewelry~
+Cost 120
+Durability 5
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 2
+Material stone~
+Extra    nonmetal~
+Extra2   buried~
+Wear     take neck~
+Affect skills scan 12 -1 none 10 0
+Affect modifier -1 12 -1 hitroll 1 0
+Affect modifier -1 12 -1 damroll 1 0
+Affect modifier -1 12 -1 strength 2 0
+End
+
+#29802
+Name gemstone shard~
+Short a `#`sg`ce`Cm`Wst`Co`cn`se`^ shard~
+Desc The small shard of a gemstone is lying here.~
+Level 20
+ItemType weapon~
+Cost 150
+Durability 5
+Asize 0
+Rsize 40
+Values dagger 3 5 stab 0
+Weight 5
+Material gemstone~
+Extra    nonmetal burnproof~
+Extra2   buried~
+Wear     take wield~
+End
+
+#29803
+Name flask potion lesser healing~
+Short potion of lesser healing~
+Desc A flask containing a clear liquid is lying here.~
+Level 4
+ItemType potion~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 16 'cure light' 'cure poison' refresh ''
+Weight 10
+Material glass~
+Extra    magic nonmetal~
+Extra2   buried~
+Wear     take hold~
+End
+
+#29804
+Name wooden buckler~
+Short a wooden buckler~
+Desc A small wooden buckler is lying here.~
+Level 36
+ItemType armor~
+Cost 200
+Durability 5
+Asize 0
+Rsize 40
+Values 12 12 12 9 0
+Weight 15
+Material wood~
+Extra    magic nonmetal burnproof~
+Extra2   buried~
+Wear     take shield~
+Affect modifier -1 36 -1 saves -4 0
+End
+
+#29805
+Name tiny pearl~
+Short a tiny `#`Wpearl`^~
+Desc A tiny pearl is lying here.~
+Level 3
+ItemType gem~
+Cost 60
+Durability 5
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 2
+Material pearl~
+Extra    glow magic nonmetal burnproof~
+Extra2   buried~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin~
+Affect modifier -1 3 -1 saves -2 0
+End
+
+#29806
+Name pile coins~
+Short a small pile of coins~
+Desc A small pile of coins is lying here.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 1 0 0 0
+Weight 0
+Material unknown~
+Extra2   buried~
+Wear     take~
+End
+
+#29807
+Name rune rock~
+Short a `#`Mr`mu`Mn`me`M-`me`Mt`mc`Mh`me`Md`^ rock~
+Desc A rock covered in odd runes is lying here.~
+Level 20
+ItemType treasure~
+Cost 130
+Durability 5
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 20
+Material rock~
+Extra    magic nonmetal burnproof~
+Extra2   buried~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect immune -1 20 -1 none 0 scry
+End
+
+#29808
+Name knotted dryad club~
+Short a dryad club~
+Desc A knotted wooden club is lying here.~
+Level 26
+ItemType weapon~
+Cost 210
+Durability 5
+Asize 0
+Rsize 45
+Values mace 4 6 pound I
+Weight 40
+Material wood~
+Extra    magic bless antievil nonmetal burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger spellfilcher bard~
+Affect modifier -1 26 -1 hitroll 2 0
+End
+
+#29809
+Name topaz amulet~
+Short a `#`ytopaz`^ amulet~
+Desc An amulet made of `#`ytopaz`^ is lying here.~
+Level 25
+ItemType jewelry~
+Cost 260
+Durability 5
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 2
+Material topaz~
+Extra    magic antievil burnproof~
+Wear     take neck~
+ClassAllowances mage cleric warrior druid paladin ranger spellfilcher bard monk~
+Affect modifier -1 25 -1 mana 60 0
+Affect objectspell 'detect evil' 0 -1 none 0 0
+End
+
+#0
+
+
+
+#ROOMS
+#29800
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29801
+EKeyvnum -1
+Exit east 29803
+EKeyvnum -1
+Exit west 29804
+EKeyvnum -1
+End
+
+
+#29801
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29806
+EKeyvnum -1
+Exit east 29802
+EKeyvnum -1
+Exit south 29800
+EKeyvnum -1
+Exit west 29805
+EKeyvnum -1
+End
+
+
+#29802
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit south 29803
+EKeyvnum -1
+Exit west 29801
+EKeyvnum -1
+End
+
+
+#29803
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29802
+EKeyvnum -1
+Exit west 29800
+EKeyvnum -1
+End
+
+
+#29804
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29805
+EKeyvnum -1
+Exit east 29800
+EKeyvnum -1
+End
+
+
+#29805
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit east 29801
+EKeyvnum -1
+Exit south 29804
+EKeyvnum -1
+End
+
+
+#29806
+Name Lake~
+Desc You are standing waist deep in a shallow lake without a current.  A warm 
+spring bubbles forth here and you feel relaxed as the magic of the lake 
+takes over your sences.  
+~
+Sector swim~
+Exit north 29807
+EKeyvnum -1
+Exit east 29812
+Exit south 29801
+EKeyvnum -1
+End
+
+
+#29807
+Name Lake~
+Desc You are standing waist deep in a shallow lake without a current.  
+A warm spring bubble forth here and you feel relaxed as the magic
+of the lake takes over your sences.
+~
+Sector swim~
+Exit north 29808
+EKeyvnum -1
+Exit south 29806
+EKeyvnum -1
+End
+
+
+#29808
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29809
+EKeyvnum -1
+Exit east 29819
+EKeyvnum -1
+Exit south 29807
+EKeyvnum -1
+Exit west 29820
+EKeyvnum -1
+End
+
+
+#29809
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29810
+EKeyvnum -1
+Exit east 29817
+EKeyvnum -1
+Exit south 29808
+EKeyvnum -1
+Exit west 29818
+EKeyvnum -1
+End
+
+
+#29810
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit north 29811
+EKeyvnum -1
+Exit east 29815
+EKeyvnum -1
+Exit south 29809
+EKeyvnum -1
+Exit west 29816
+EKeyvnum -1
+End
+
+
+#29811
+Name Lake~
+Desc You are standing knee deep in a shallow lake without a current.  As the
+water soaks in around your ankles, a pleasent tingling feeling fills
+your body.  You feel that the magic of the lake is all around you,
+watching with curiosity.
+~
+Sector swim~
+Exit east 29813
+EKeyvnum -1
+Exit south 29810
+EKeyvnum -1
+Exit west 29814
+EKeyvnum -1
+End
+
+
+#29812
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit east 55964
+Exit west 29806
+End
+
+
+#29813
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit west 29811
+EKeyvnum -1
+End
+
+
+#29814
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit east 29811
+EKeyvnum -1
+End
+
+
+#29815
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit west 29810
+EKeyvnum -1
+End
+
+
+#29816
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit east 29810
+EKeyvnum -1
+End
+
+
+#29817
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit west 29809
+EKeyvnum -1
+End
+
+
+#29818
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit east 29809
+EKeyvnum -1
+End
+
+
+#29819
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit west 29808
+EKeyvnum -1
+End
+
+
+#29820
+Name Tall Grass~
+Desc You are standing in tall grass that leads to a slope into the
+forests surrounding the lake.  You hear the happy shouts of
+water nymphs all around you.
+~
+Sector swamp~
+Exit east 29808
+EKeyvnum -1
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 29800 spec_thief
+M 29803 spec_cast_druid
+S
+
+
+
+#RESETS2
+M 0 29800 12 29800 1
+M 0 29803 1 29800 1
+E 0 29808 -1 wielded~
+E 0 29809 -1 neck1~
+M 0 29800 12 29801 1
+M 0 29800 12 29802 1
+M 0 29800 12 29803 1
+O 0 39288 -1 29803
+M 0 29800 12 29804 1
+M 0 29800 12 29805 1
+O 0 39288 -1 29805
+M 0 29800 12 29806 1
+M 0 29800 12 29807 1
+M 0 29800 12 29808 1
+M 0 29800 62 29808 3
+M 0 29800 12 29809 1
+M 0 29801 10 29809 1
+M 0 29800 12 29810 1
+M 0 29801 10 29810 1
+M 0 29800 12 29811 1
+M 0 29802 1 29811 1
+M 0 29801 10 29813 1
+O 0 29800 -1 29813
+M 0 29801 10 29814 1
+O 0 29801 -1 29814
+M 0 29801 10 29815 1
+O 0 29803 -1 29815
+M 0 29801 10 29816 1
+O 0 29802 -1 29816
+M 0 29801 10 29817 1
+O 0 29805 -1 29817
+M 0 29801 10 29818 1
+O 0 29804 -1 29818
+M 0 29801 10 29819 1
+O 0 29807 -1 29819
+M 0 29801 10 29820 1
+O 0 29806 -1 29820
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

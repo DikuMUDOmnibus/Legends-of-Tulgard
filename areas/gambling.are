@@ -1,0 +1,803 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Gambling Hall~
+ShortName   Gambling Hall~
+Builders    None~
+Credits     Kandahar~
+VNUMs       15000 15099
+LComment    `#`G[  1- 10]`^
+LRange      1 10
+Security    9
+Colour      c~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#15000
+Name dealer highdice dice~
+ShortD `#A card dealer~
+LongD A dealer is here ready to play highdice.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -574
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks no_tendency dealer~
+AffBy  detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15001
+Name dice participant player~
+ShortD a dice player~
+LongD A highdice participant shakes the dice in his hands.~
+Desc This participant's eyes are darting from side to side as he judges his
+throw.  He has been playing this game for most of the night and hopes to
+recoup his losses.  
+~
+Race human~
+Align 1 -2
+Level 6
+Hitroll 0
+HitDice 2d5+5
+ManaDice 1d4+5
+DamDice 1d7+1
+DamType punch
+AC 40 40 40 35
+Wealth 50
+Act    npc aggressive stay_area wimpy warrior indoors~
+AffBy  detect_invis~
+Off    disarm dodge trip assist_vnum~
+Vuln   magic~
+Form   edible poison animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15002
+Name treasurer greedy man~
+ShortD the greedy treasurer~
+LongD The greedy treasurer eyes a stack of coins.~
+Desc This treasurer is making mountains of money by the second.  His plan
+to run a thriving business has succeeded ...  And how!  
+~
+Race human~
+Align -3 0
+Level 12
+Hitroll 0
+HitDice 2d5+50
+ManaDice 1d5+5
+DamDice 1d10+3
+DamType slap
+AC 0 0 0 0
+Wealth 120
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    berserk disarm dodge trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15003
+Name player highdice~
+ShortD a highdice player~
+LongD This highdice player is pondering his next bet.~
+Desc This player is hoping to win back his losses from the highdice dealers.  
+~
+Race human~
+Align 1 0
+Level 9
+Hitroll 0
+HitDice 2d5+18
+ManaDice 1d4+5
+DamDice 1d8+2
+DamType none
+AC 20 20 20 16
+Wealth 90
+Act    npc stay_area warrior~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15004
+Name player chess participant~
+ShortD a tables player~
+LongD This chess player sums up his winnings.~
+Desc This player has been doing rather well considering he only just
+started playing the game.  Must be beginner's luck.  
+~
+Race human~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d1+1
+DamDice 1d5+0
+DamType scratch
+AC 80 80 80 70
+Wealth 20
+Act    npc scavenger stay_area wimpy warrior~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15005
+Name player slotmachineplayer participant~
+ShortD a slots player~
+LongD This slot machine player ponders what to play next.~
+Desc This participant likes playing the slots.  He has a tacky shirt on with gold 
+coins embroidered on it.  
+~
+Race human~
+Align -3 0
+Level 4
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d4+5
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 48
+Wealth 40
+Act    npc scavenger stay_area warrior~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15006
+Name player raffle participant~
+ShortD a dice player~
+LongD This raffles participant judges his throw carefully.~
+Desc This dice game is played with three dice.  And this player has been
+winning all night.  He is wondering whether to continue playing or take
+his winnings home before he loses it all.  
+~
+Race human~
+Align -3 0
+Level 3
+Hitroll 0
+HitDice 2d4+1
+ManaDice 1d1+1
+DamDice 1d6+0
+DamType none
+AC 70 70 70 63
+Wealth 30
+Act    npc stay_area wimpy warrior~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15007
+Name onlooker~
+ShortD an onlooker~
+LongD An interested onlooker watches the proceedings.~
+Desc This onlooker watches the games with interest and wonders if she would
+be any good at any of them.  Unable to decide whether to take the plunge,
+she wavers indecisively.  
+~
+Race human~
+Align 1 0
+Level 3
+Hitroll 0
+HitDice 2d4+1
+ManaDice 1d1+1
+DamDice 1d6+0
+DamType slap
+AC 70 70 70 56
+Wealth 20
+Act    npc stay_area wimpy warrior~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#15001
+Name 3-bar slotmachine~
+Short a 3-bar slotmachine~
+Desc A 3-bar slot machine [1 Gold] is here.~
+Level 0
+ItemType slotmachine~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 50 3 50 100
+Weight 0
+Material slot~
+Extra    nonmetal nodegrade norestring~
+Extra2   nodecay~
+End
+
+#15002
+Name 3-bar slotmachine~
+Short a 3-bar slotmachine~
+Desc A 3-bar slot machine [5 Gold] is here.~
+Level 0
+ItemType slotmachine~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 88 3 250 500
+Weight 0
+Material slot~
+Extra    nonmetal nodegrade norestring~
+End
+
+#15003
+Name 5-bar slotmachine~
+Short a 5-bar slot machine~
+Desc A 5-bar slot machine [10 Gold] is here.~
+Level 0
+ItemType slotmachine~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 500 5 500 1000
+Weight 0
+Material slot~
+Extra    nonmetal nodegrade norestring~
+End
+
+#15004
+Name 5-bar slotmachine~
+Short a 5-bar slot machine~
+Desc A 5-bar slot machine [1 Gold] is here.~
+Level 0
+ItemType slotmachine~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10 5 5000 50000
+Weight 0
+Material slot~
+Extra    nonmetal nodegrade norestring~
+End
+
+#0
+
+
+
+#ROOMS
+#15000
+Name Entrance to Ye Olde Gambling Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  To the south
+lies the treasury and betting office and to the west, the familiar paving
+of Wall Road.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15001
+Exit east 15007
+Exit south 27086
+End
+
+
+#15001
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15002
+Exit east 15006
+Exit south 15000
+End
+
+
+#15002
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15005
+Exit south 15001
+End
+
+
+#15003
+Name Betting Office~
+Desc This is the betting office.  The room is sparsely furnished with an
+old wooden desk, a couple of chairs and a large cupboard on the wall. 
+The cupboard is locked with a padlock.  The desk is covered with papers
+and there is also a quill and pot of ink to one side.  North leads to the
+entrance and south to the treasury.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15000
+Exit south 15004
+End
+
+
+#15004
+Name The Treasury~
+Desc This is the place where all the gold, silver and other treasures are
+kept.  There is a locked cabinet at the far end of the room.  And the
+rest of the room is totally bare.  North leads back to the betting
+office.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15003
+End
+
+
+#15005
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15010
+Exit south 15006
+Exit west 15002
+End
+
+
+#15006
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15005
+Exit east 15011
+Exit south 15007
+Exit west 15001
+End
+
+
+#15007
+Name Entrance Hallway to Ye Olde Gambling Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  Gambling is
+taking place in all corners of the room and the exit to the street lies
+to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15006
+Exit east 15012
+Exit south 15008
+Exit west 15000
+End
+
+
+#15008
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15007
+Exit east 15013
+Exit south 15009
+End
+
+
+#15009
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15008
+Exit east 15014
+End
+
+
+#15010
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15015
+Exit south 15011
+Exit west 15005
+End
+
+
+#15011
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15010
+Exit east 15016
+Exit south 15012
+Exit west 15006
+End
+
+
+#15012
+Name Entrance to Ye Olde Gambling hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  Gambling is
+taking place in all corners of the room and the exit to the street lies
+to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15011
+Exit east 15017
+Exit south 15013
+Exit west 15007
+End
+
+
+#15013
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15012
+Exit east 15018
+Exit south 15014
+Exit west 15008
+End
+
+
+#15014
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15013
+Exit east 15019
+Exit west 15009
+End
+
+
+#15015
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15020
+Exit south 15016
+Exit west 15010
+End
+
+
+#15016
+Name Slot Machine Hall~
+Desc A long hall stretches the length of the building, with an assortment of slot 
+machines to one side.  The hall is fairly ramshackle and the walls look like 
+they are about to blow down.  There is a buzz of low conversation and 
+strange noises coming from different parts of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15015
+Exit east 15021
+Exit south 15017
+Exit west 15011
+End
+
+
+#15017
+Name Entrance to Ye Olde Gambling hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  Gambling is
+taking place in all corners of the room and the exit to the street lies
+to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15016
+Exit east 15022
+Exit south 15018
+Exit west 15012
+End
+
+
+#15018
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15017
+Exit east 15023
+Exit south 15019
+Exit west 15013
+End
+
+
+#15019
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15018
+Exit east 15024
+Exit west 15014
+End
+
+
+#15020
+Name Cards Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the room is dedicated to the cards games now taking a hold of the city.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15021
+Exit west 15015
+End
+
+
+#15021
+Name Cards Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the room is dedicated to the cards games now taking a hold of the city.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15020
+Exit south 15022
+Exit west 15016
+End
+
+
+#15022
+Name Entrance to Ye Olde Gambling hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  Gambling is
+taking place in all corners of the room and the exit to the street lies
+to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15021
+Exit south 15023
+Exit west 15017
+End
+
+
+#15023
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15022
+Exit south 15024
+Exit west 15018
+End
+
+
+#15024
+Name Tables Hall~
+Desc A long hall stretches the length of the building, with an assortment
+of tables to one side.  The hall is fairly ramshackle and the walls look
+like they are about to blow down.  There is a buzz of low conversation
+and strange noises coming from different parts of the room.  This part of
+the hall is dedicated to the various board or tables games popular in
+this age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15023
+Exit west 15019
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 15001 -1 15001
+M 0 15005 7 15001 1
+O 0 15002 -1 15002
+M 0 15001 5 15002 1
+M 0 15002 1 15003 1
+M 0 15005 7 15004 1
+O 0 15003 -1 15005
+O 0 15004 -1 15006
+M 0 15003 7 15006 1
+M 0 15000 5 15008 1
+M 0 15005 7 15008 1
+M 0 15001 5 15008 1
+M 0 15000 5 15009 1
+M 0 15005 7 15009 1
+O 0 15002 -1 15010
+M 0 15007 3 15010 1
+M 0 15004 4 15010 2
+M 0 15003 7 15010 1
+O 0 15001 -1 15011
+M 0 15007 3 15011 1
+M 0 15001 5 15011 1
+O 0 54 -1 15012
+M 0 15000 5 15013 1
+M 0 15004 4 15013 2
+M 0 15000 5 15014 1
+M 0 15003 7 15014 1
+O 0 15001 -1 15015
+M 0 15005 7 15015 1
+M 0 15006 8 15015 1
+O 0 15001 -1 15016
+M 0 15006 8 15016 1
+M 0 15006 8 15017 1
+M 0 15006 8 15018 1
+M 0 15001 5 15018 1
+M 0 15000 5 15019 1
+M 0 15006 8 15019 1
+M 0 15006 8 15020 1
+M 0 15007 3 15020 1
+M 0 15005 7 15021 1
+M 0 15003 7 15021 1
+M 0 15001 5 15022 1
+M 0 15003 7 15022 1
+M 0 15006 8 15023 1
+M 0 15003 7 15023 1
+M 0 15003 7 15024 1
+M 0 15006 8 15024 1
+M 0 15005 7 15024 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

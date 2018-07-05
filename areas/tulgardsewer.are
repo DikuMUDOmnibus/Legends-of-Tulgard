@@ -1,0 +1,5405 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Tulgard Sewers~
+ShortName   Tulgard Sewers~
+Builders    None~
+Credits     DIKU~
+VNUMs       47000 47499
+LComment    `#`Y[  5- 30]`^
+AFlags  newbie_area_resets~
+LRange      5 30
+Security    9
+Colour      C~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:24 2005~
+End
+
+
+
+#MOBILES
+#47000
+Name oldstyle mud monster mudmonster~
+ShortD the horrifying mudmonster~
+LongD A horrifying mudmonster is slowly evolving from the mud ...~
+Desc It sure looks like something out of a horror movie. It strongly resembles
+a huge figure made up from mud alone, and it sure looks like it had human 
+flesh for breakfast and is strongly intent on having the same for dinner.
+~
+Race unique~
+Align -2 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType none
+AC 0 0 0 0
+Wealth 5
+Act    npc stay_area~
+AffBy  sneak~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47001
+Name oldstyle bat~
+ShortD the small bat~
+LongD The small fierce-looking bat is hanging from the ceiling.~
+Desc You have never in your entire life seen such a mean looking small creature,
+though it looks rather peaceful, hanging there. The thought of arousing this
+cruel creature doesn't seem appealing.
+~
+Race bat~
+Align 1 -1
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+AffBy  sneak flying dark_vision~
+Off    disarm dodge fast trip assist_race~
+Vuln   light~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye wings~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47002
+Name oldstyle rat~
+ShortD the great sewer rat~
+LongD The huge hungry-looking sewer rat sits here.~
+Desc ~
+Race unique~
+Align 1 -3
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType none
+AC 50 50 50 43
+Wealth 2
+Act    npc aggressive~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47003
+Name oldstyle spider~
+ShortD the small spider~
+LongD The small hairy spider.~
+Desc ~
+Race unique~
+Align -2 -2
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc aggressive~
+Act2   no_random_obj~
+AffBy  sneak~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47004
+Name oldstyle beetle~
+ShortD the giant earth beetle~
+LongD The giant mean-looking earth beetle crawls towards you.~
+Desc ~
+Race unique~
+Align -2 0
+Level 8
+Hitroll 0
+HitDice 2d5+8
+ManaDice 2d5+18
+DamDice 1d7+2
+DamType none
+AC 30 30 30 27
+Wealth 5
+Act    npc~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47005
+Name oldstyle maggot~
+ShortD the maggot~
+LongD The giant maggot crawls toward you.~
+Desc ~
+Race unique~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType none
+AC 70 70 70 58
+Wealth 0
+Act    npc~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47006
+Name oldstyle snake~
+ShortD the slithering snake~
+LongD The snake slithers towards you.~
+Desc ~
+Race snake~
+Align 0 -1
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType none
+AC 60 60 60 49
+Wealth 0
+Act    npc aggressive~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    disarm dodge trip assist_race~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47007
+Name oldstyle wanderer~
+ShortD the evil wanderer~
+LongD The evil wanderer stares at you.~
+Desc The evil wanderer is very thin.  He is dressed in a grey cloak.
+~
+Race unique~
+Align -3 -3
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 15
+Act    npc scavenger wimpy~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47008
+Name oldstyle homonculus homo~
+ShortD the homonculus~
+LongD The homonculus is here, looking at you with an evil look.~
+Desc The Homonculus appears in a man-like form, about 18'' tall, it has a
+greenish, reptilian skin, leathery wings, and a bat-like mouth, with
+teeth gleaming yellow.
+~
+Race unique~
+Align 0 -2
+Level 11
+Hitroll 0
+HitDice 2d5+22
+ManaDice 2d5+30
+DamDice 1d10+2
+DamType none
+AC 5 5 5 4
+Wealth 25
+Act    npc~
+AffBy  detect_invis infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47010
+Name oldstyle chreffn~
+ShortD the evil chreffn~
+LongD The chreffn are crawling here, looking around with their yellow eyes.~
+Desc The head and torso of a chreffn is copper-covered, with yellow,
+glowing eyes. The lower body is in an orange shading.
+~
+Race unique~
+Align 0 -2
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType none
+AC 0 0 0 0
+Wealth 75
+Act    npc scavenger wimpy~
+AffBy  detect_invis sneak~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47011
+Name oldstyle morkoth~
+ShortD the shadowy morkoth~
+LongD The morkoth is standing here, waiting for someone to KILL!~
+Desc It's a five feet tall, shadow monster. The shape of this creature lies
+somewhere between a human and a rat. It breaths very heavily, while staring
+at you with such a glint in the eyes that reminds you of immense hunger.
+~
+Race unique~
+Align -1 -2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc aggressive wimpy~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47013
+Name oldstyle mud monster mudmonster~
+ShortD the horrifying mudmonster~
+LongD A horrifying mudmonster is slowly evolving from the mud ...~
+Desc It sure looks like something out of a horror movie. It strongly resembles
+a huge figure made up from mud alone, and it sure looks like it had human 
+flesh for breakfast and is strongly intent on having the same for dinner.
+~
+Race unique~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType none
+AC 0 0 0 0
+Wealth 50
+Act    npc aggressive stay_area~
+AffBy  sneak~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47040
+Name oldstyle red dragon~
+ShortD the red dragon~
+LongD The red fierce-looking dragon stares at you angrily.~
+Desc The red dragon stares at you, angrily, as it wakes when you
+arrives.  It says 'Oh, human YOU woke me up ... Hsss', while
+it moves closer.  'Can one NEVER sleep in peace ... Hsss'.
+~
+Race unique~
+Align 3 -3
+Level 32
+Hitroll 0
+HitDice 5d6+160
+ManaDice 5d6+160
+DamDice 6d4+9
+DamType none
+AC -105 -105 -105 -84
+Wealth 320
+Act    npc dont_wander aggressive~
+AffBy  detect_invis infrared~
+Off    disarm dodge trip assist_vnum~
+Imm    summon charm disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg REPOP 47191 25~
+END
+
+#47041
+Name oldstyle sea hag~
+ShortD the sea hag~
+LongD The sea hag is swimming around here.~
+Desc The sea hag is so ghastly looking that you feel the deepest fear.
+Big yellow eyes and sharp teeth.  Its ears are very big,
+and it has small sharp horns.  It hates beauty.
+~
+Race unique~
+Align -3 -2
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d12+3
+DamType none
+AC -15 -15 -15 -12
+Wealth 0
+Act    npc aggressive~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#47042
+Name oldstyle guardian naga~
+ShortD the guardian naga~
+LongD The guardian naga looks kindly at you.~
+Desc The naga are a snake-liked creature. She is covered in green-gold
+scale with silvery triangles along her back. Her eyes are golden.
+She notice that you look at her, and she says: 'Watch out. This way
+leads to some evil creatures'.
+~
+Race unique~
+Align -1 2
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+2
+DamType none
+AC 0 0 0 0
+Wealth 5
+Act    npc dont_wander cleric~
+AffBy  infrared~
+Off    disarm kick parry assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#47043
+Name basilisk~
+ShortD the scaled basilisk~
+LongD The scaled basilisk crawls towards you slowly.~
+Desc The basilisk is a reptilian monster. It has eight legs, and a strong
+toothy jaws. It is dull brown with yellowish underbelly. It's eyes are
+glowing pale green.
+~
+Race lizardman~
+Align -1 0
+Level 13
+Hitroll 0
+HitDice 2d5+50
+ManaDice 2d5+50
+DamDice 2d5+3
+DamType none
+AC -10 -10 -10 -8
+Wealth 17
+Act    npc scavenger aggressive~
+AffBy  detect_invis infrared~
+Off    dodge tail gaze~
+Res    poison disease drowning~
+Vuln   cold illusion~
+Form   edible poison sentient reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47044
+Name oldstyle lemure blob~
+ShortD the lemure blob~
+LongD The lemure blob slithers terribly precisely towards you for an attack!~
+Desc This looks like a vaguely human blob. Big black yellow eyes, and a
+mouth going a little bit out from the face. The lemure does not look
+interested in you at all, but anyway it attacks. It looks like it's
+mind has been burned out.
+~
+Race unique~
+Align 0 -1
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType none
+AC 50 50 50 43
+Wealth 0
+Act    npc aggressive~
+AffBy  sneak~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47045
+Name oldstyle jones cruncher ettin~
+ShortD jones~
+LongD Jones 'Cruncher' the ettin is standing here glaring at you.~
+Desc At the first sight you thought Jones was an orc, but when it came
+closer you saw his second head. He wears an animal skin dress,
+filthy and moth eaten. Jones really stinks...
+~
+Race unique~
+Align 1 -1
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 3
+Act    npc scavenger aggressive~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47046
+Name oldstyle herald mouse killer ettin~
+ShortD herald~
+LongD Herald 'Mouse-Killer' the ettin is standing here looking confused at you.~
+Desc When you look at Herald, you feel pity. His dress are really poor,
+and the one of his heads hangs down. At the rope around his stomach
+hangs dead mouses and rats. He does not smell good.
+~
+Race unique~
+Align 1 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType none
+AC 40 40 40 36
+Wealth 2
+Act    npc scavenger~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#47190
+Name the massive drop~
+ShortD the massive drop~
+LongD Unseen_hell_move~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 47190 100~
+END
+
+#47200
+Name oldstyle master mind mindflayer~
+ShortD the master mindflayer~
+LongD The master mindflayer is here, looking at you with an evil look.~
+Desc It's a seven foot tall humanoid dressed in a purple cloak, and swinging a
+black and purple rod above its head as if it was going to attack you any
+moment now. In the middle of its head are four tentacles with sharp points.
+~
+Race unique~
+Align 0 -2
+Level 14
+Hitroll 0
+HitDice 2d5+50
+ManaDice 4d5+105
+DamDice 1d10+2
+DamType none
+AC -10 -10 -10 -8
+Wealth 50
+Act    npc scavenger aggressive mage~
+AffBy  detect_invis infrared~
+Off    dodge assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47201
+Name oldstyle senior mind mindflayer~
+ShortD the senior mindflayer~
+LongD The senior mindflayer walks around here, looking for something useful.~
+Desc This is a horrifying monster indeed, 6'6" high. Dressed in purple and black,
+and carrying a large mace in its hand. In the center of its head are four large
+tentacles with very sharp points.
+~
+Race unique~
+Align 1 -1
+Level 8
+Hitroll 0
+HitDice 2d5+5
+ManaDice 3d5+75
+DamDice 1d6+1
+DamType none
+AC 35 35 35 29
+Wealth 20
+Act    npc scavenger aggressive mage~
+AffBy  detect_invis infrared~
+Off    dodge assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47202
+Name oldstyle junior mind mindflayer~
+ShortD the junior mindflayer~
+LongD The junior mindflayer is here, watching you carefully from the corner.~
+Desc This mindflayer is six foot high. It has a small mace in its belt, and is
+dressed in purple and black cloth. It has four small tentacles in the 
+center of its head.
+~
+Race unique~
+Align 3 -1
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 3d5+65
+DamDice 1d6+0
+DamType none
+AC 50 50 50 40
+Wealth 10
+Act    npc scavenger aggressive mage~
+AffBy  detect_invis infrared~
+Off    dodge assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47203
+Name oldstyle wererat rat were~
+ShortD the ugly wererat~
+LongD An ugly wererat is here, looking at you with a strange flick in his eyes.~
+Desc The wererat is about four foot tall. It looks very much like rat, except
+that it is standing.
+~
+Race unique~
+Align 0 -2
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType none
+AC 40 40 40 35
+Wealth 2
+Act    npc scavenger aggressive stay_area~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#47204
+Name oldstyle rat gigantic~
+ShortD the gigantic rat~
+LongD There is a gigantic rat here, looking at you with a hungry look.~
+Desc The gigantic rat is about ten foot long from head to tail and has claws
+the size of your head looking very nasty.
+~
+Race unique~
+Align 3 -2
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType none
+AC 0 0 0 0
+Wealth 120
+Act    npc dont_wander aggressive~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#47190
+Name ring silver~
+Short `#`wA `WG`wl`Wi`wn`Wt`wi`Wn`wg `sR`wing of `sSilver`^~
+Desc A lovely silver ring has been left here.~
+Level 7
+ItemType jewelry~
+Cost 4000
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silver~
+Extra    magic~
+Wear     take finger~
+Affect affects -1 7 -1 none 0 invisible
+Affect affects -1 7 -1 none 0 detect_invis
+Affect affects -1 7 -1 none 0 sneak
+End
+
+#47200
+Name rod devil~
+Short `#`rA `RD`remonic `RR`rod`^~
+Desc The mysterious devil rod lies on the floor.~
+Level 15
+ItemType weapon~
+Cost 2300
+Durability 5
+Asize 60
+Rsize 50
+Values exotic 3 2 pound C
+Weight 60
+Material oldstyle~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 15 -1 hitroll 2 0
+Affect modifier -1 15 -1 strength 1 0
+ExtraDesc devil rod~
+This is indeed a mysterious rod.  It is dark black at the base but has four
+very sharp purple tentacles at the end.
+~
+End
+
+#47201
+Name mace large~
+Short `#`wA Large `sMace`^~
+Desc A large mace lies here.~
+Level 8
+ItemType weapon~
+Cost 610
+Durability 5
+Asize 100
+Rsize 50
+Values mace 1 10 crush 0
+Weight 100
+Material oldstyle~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 8 -1 damroll 2 0
+ExtraDesc large mace~
+The mace is pretty large with a weight of 10 lbs.  The head is actually four
+purple tentacles tied together.
+~
+End
+
+#47202
+Name mace small~
+Short `#`wA Small `sMace`^~
+Desc A small mace has been left here.~
+Level 8
+ItemType weapon~
+Cost 480
+Durability 5
+Asize 60
+Rsize 50
+Values mace 2 5 crush 0
+Weight 60
+Material oldstyle~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 8 -1 damroll 1 0
+ExtraDesc small mace~
+This weapon doesn't look like it does a lot of damage, but then you never know.
+It consists of a black handle and a purple head.
+~
+End
+
+#47203
+Name cloak purple~
+Short `#`mA `MP`murple `MC`mloak`^~
+Desc A purple cloak lies on the floor.~
+Level 15
+ItemType armor~
+Cost 1250
+Durability 5
+Asize 200
+Rsize 50
+Values 6 6 6 0 0
+Weight 200
+Material oldstyle~
+Extra    magic~
+Wear     take neck~
+Affect modifier -1 15 -1 saves -1 0
+End
+
+#47204
+Name potion neon blue~
+Short an neon blue potion~
+Desc A neon blue potion stands on the floor.~
+Level 17
+ItemType potion~
+Cost 1490
+Durability 5
+Asize 40
+Rsize 50
+Values 14 'cure critical' invisibility 'word of recall' ''
+Weight 40
+Material oldstyle~
+Extra    magic~
+Wear     take~
+End
+
+#47205
+Name key black~
+Short a black key~
+Desc A black key has been left on the floor.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#47206
+Name skull white~
+Short `#`wA Strange `WWhite Skull`^~
+Desc A strange white skull lies on the floor looking at you.~
+Level 4
+ItemType armor~
+Cost 10
+Durability 5
+Asize 300
+Rsize 50
+Values 1 1 1 0 0
+Weight 300
+Material bone~
+Extra    magic nodrop~
+Wear     take head~
+Affect modifier -1 4 -1 quickness -4 0
+ExtraDesc white skull~
+The skull has two small horns in the forehead. You notice some writing on
+the inside.
+~
+ExtraDesc writing text~
+You read the number '666'.
+~
+End
+
+#47208
+Name stick small light~
+Short a small stick~
+Desc A small stick lies here.~
+Level 0
+ItemType light~
+Cost 5
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 120 0 0
+Weight 10
+Material oldstyle~
+Wear     take hold~
+ExtraDesc small stick~
+The small stick does not look interesting at all.  But just as you are going
+to throw it away you notice some small letters.
+~
+ExtraDesc letters letter~
+It reads 'Hold me'.
+~
+End
+
+#47209
+Name boots muddy~
+Short `#`wA Pair of `yMuddy `sBoots`^~
+Desc A pair of muddy boots has been dropped here.~
+Level 7
+ItemType armor~
+Cost 900
+Durability 5
+Asize 200
+Rsize 50
+Values 3 3 3 0 0
+Weight 200
+Material leather~
+Wear     take feet~
+Affect modifier -1 7 -1 quickness 1 0
+ExtraDesc The boots are muddy and they look well worn, but also very comfortable.~
+~
+End
+
+#47210
+Name treasure coins~
+Short a huge treasure~
+Desc There is a huge treasure here, looking very valuable.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 400 3 0 0 0
+Weight 0
+Material oldstyle~
+Wear     take~
+ExtraDesc treasure~
+This looks like a whole lot of coins.
+~
+End
+
+#47211
+Name sword short~
+Short `#`sa short sword`^~
+Desc There lies a short sword.~
+Level 8
+ItemType weapon~
+Cost 540
+Durability 5
+Asize 40
+Rsize 50
+Values sword 2 2 pierce 0
+Weight 40
+Material oldstyle~
+Wear     take wield~
+Affect modifier -1 8 -1 hitroll 1 0
+End
+
+#47216
+Name claw red redclaw~
+Short `#`rA `RR`red `RD`rragon `RC`rlaw`^~
+Desc On the floor rests an enormous red claw.~
+Level 31
+ItemType weapon~
+Cost 580
+Durability 5
+Asize 190
+Rsize 50
+Values exotic 2 15 claw 0
+Weight 190
+Material oldstyle~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 31 -1 ac 2 0
+Affect modifier -1 31 -1 damroll 5 0
+ExtraDesc claw red redclaw~
+This big claw looks like a part of a dragon.
+~
+End
+
+#47217
+Name plate breast silvery~
+Short `#`wA `sS`wilvery `sB`wreast `sP`wlate`^~
+Desc There is a silvery breast plate on the floor.~
+Level 32
+ItemType armor~
+Cost 12400
+Durability 5
+Asize 400
+Rsize 50
+Values 8 8 8 2 0
+Weight 400
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take torso~
+Affect modifier -1 32 -1 strength 3 0
+ExtraDesc plate breast silvery~
+On the breast plate you notice a relief of large rose. The metal seems to be 
+some kind of silver or platinum.
+~
+End
+
+#47218
+Name plates leg silvery~
+Short `#`sS`wome `sS`wilvery `sL`weg `sP`wlates`^~
+Desc On the floor you see some silvery leg plates.~
+Level 32
+ItemType armor~
+Cost 10100
+Durability 5
+Asize 200
+Rsize 50
+Values 8 8 8 2 0
+Weight 200
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take legs~
+Affect modifier -1 32 -1 presence 3 0
+ExtraDesc leg plates silvery~
+They seem to be made from silver or platinum.  You see the outline of a rose.
+~
+End
+
+#47219
+Name gloves silvery~
+Short `#`wA `sP`wair of `sS`wilvery `sG`wloves`^~
+Desc You can see a pair of silvery gloves on the floor.~
+Level 27
+ItemType armor~
+Cost 3700
+Durability 5
+Asize 140
+Rsize 50
+Values 8 8 8 2 0
+Weight 140
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take hands~
+Affect modifier -1 27 -1 hitroll 2 0
+Affect modifier -1 27 -1 damroll 1 0
+ExtraDesc gloves silvery~
+The gloves are made of silver threads.
+~
+End
+
+#47220
+Name helmet silvery~
+Short `#`wA `sS`wilvery `sH`welmet`^~
+Desc The silvery helmet lies here.~
+Level 32
+ItemType armor~
+Cost 10600
+Durability 5
+Asize 350
+Rsize 50
+Values 9 9 9 2 0
+Weight 350
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take head~
+Affect modifier -1 32 -1 empathy 3 0
+ExtraDesc helmet silvery~
+The helmet is made from platinum or silver and has a white fur brush attached
+on the top.
+~
+End
+
+#47221
+Name shield~
+Short `#`sT`whe `sS`whield of the `RR`rose`^~
+Desc The shield of the rose rests on the floor.~
+Level 30
+ItemType armor~
+Cost 5800
+Durability 5
+Asize 600
+Rsize 50
+Values 8 8 8 3 0
+Weight 600
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take shield~
+Affect modifier -1 30 -1 ac -7 0
+ExtraDesc shield~
+On the shield you see a clear and perfect painting of a dark red rose on a white
+background. You also notice the inscription :'Pax Est Sanctuum'.
+~
+End
+
+#47222
+Name boots silvery~
+Short `#`wA `sP`wair of `sS`wilvery `sB`woots`^~
+Desc A pair of silvery boots stand on the floor.~
+Level 32
+ItemType armor~
+Cost 10100
+Durability 5
+Asize 400
+Rsize 50
+Values 8 8 8 2 0
+Weight 400
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take feet~
+Affect modifier -1 32 -1 quickness 3 0
+ExtraDesc boots silvery~
+The boots are made from a silvery metal.
+~
+End
+
+#47223
+Name plates arm silvery~
+Short `#`sS`wome `sS`wilvery `sA`wrm `sP`wlates`^~
+Desc On the floor you see some silvery arm plates.~
+Level 32
+ItemType armor~
+Cost 10100
+Durability 5
+Asize 400
+Rsize 50
+Values 8 8 8 2 0
+Weight 400
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take arms~
+Affect modifier -1 32 -1 intuition 3 0
+ExtraDesc plates arm silvery~
+They seem to be made from silver or platinum. You see the outline of a rose.
+~
+End
+
+#47224
+Name cloak white~
+Short `#`wA `WWhite `wCloak`^~
+Desc A white cloak lies on the floor.~
+Level 31
+ItemType armor~
+Cost 3700
+Durability 5
+Asize 200
+Rsize 50
+Values 9 9 9 2 0
+Weight 200
+Material oldstyle~
+Extra    magic bless antievil antineutral~
+Wear     take about~
+Affect modifier -1 31 -1 saves -2 0
+ExtraDesc cloak white~
+This is a very fine made cloak from an unknown material, in a bright white
+color.
+~
+End
+
+#47298
+Name treasure coins~
+Short a huge treasure~
+Desc A huge treasure is lying here, looking very valuable.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 400 12 0 0 0
+Weight 0
+Material oldstyle~
+Wear     take~
+ExtraDesc treasure~
+Looks like a LOT of coins.
+~
+End
+
+#47299
+Name sword short~
+Short `#`wa short `ssword`^~
+Desc There lies a short sword.~
+Level 10
+ItemType weapon~
+Cost 610
+Durability 5
+Asize 40
+Rsize 50
+Values sword 2 5 stab 0
+Weight 40
+Material oldstyle~
+Wear     take wield~
+ExtraDesc short sword~
+This is a very nice little weapon.
+~
+End
+
+#47300
+Name backpack pack back~
+Short `#`sa backpack`^~
+Desc A backpack stands upright here.~
+Level 0
+ItemType container~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 60 AC 0 6 100
+Weight 20
+Material oldstyle~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take back~
+End
+
+#47301
+Name beltpouch pouch~
+Short `#`ya large beltpouch`^~
+Desc A large beltpouch lies here on the ground.~
+Level 0
+ItemType container~
+Cost 20
+Durability 5
+Asize 10
+Rsize 50
+Values 5 AC 0 1 100
+Weight 10
+Material oldstyle~
+Extra    burnproof~
+Wear     take waist~
+End
+
+#47303
+Name orb dragonorb~
+Short `#`rThe `RD`rragon`RO`rrb`^~
+Desc A large sphere swirling with colors lies here.~
+Level 21
+ItemType staff~
+Cost 18600
+Durability 5
+Asize 50
+Rsize 50
+Values 13 10 10 sanctuary 0
+Weight 50
+Material oldstyle~
+Extra    magic nolocate~
+Extra2   nosell~
+Wear     take hold~
+Affect modifier -1 21 -1 presence 2 0
+Affect modifier -1 21 -1 empathy 2 0
+End
+
+#47304
+Name red torso~
+Short `#`rA `RR`red `RD`rragon `RT`rorso`^~
+Desc There is a pile of red dragonscale on the floor.~
+Level 29
+ItemType armor~
+Cost 1400
+Durability 5
+Asize 300
+Rsize 50
+Values 9 9 9 4 0
+Weight 300
+Material dragon scales~
+Extra    magic antigood~
+Wear     take torso~
+Affect modifier -1 29 -1 quickness -1 0
+Affect modifier -1 29 -1 damroll 2 0
+End
+
+#47305
+Name leggings red~
+Short `#`RR`red `RD`rragon`RS`rcale `RL`reggings`^~
+Desc On the floor you see two red dragonscale leggings.~
+Level 29
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 170
+Rsize 50
+Values 9 9 9 4 0
+Weight 170
+Material dragon scales~
+Extra    magic antigood~
+Wear     take legs~
+Affect modifier -1 29 -1 quickness -1 0
+Affect modifier -1 29 -1 damroll 2 0
+End
+
+#47306
+Name claws dragonclaws red~
+Short `#`rA `RP`rair of `RR`red `RD`rragon `RC`rlaws`^~
+Desc You can see a pair of large red dragon claws on the floor.~
+Level 20
+ItemType armor~
+Cost 250
+Durability 5
+Asize 40
+Rsize 50
+Values 3 4 5 2 0
+Weight 40
+Material dragon claw~
+Extra    magic antigood~
+Wear     take hands~
+Affect modifier -1 20 -1 damroll 2 0
+End
+
+#47307
+Name skull dragonhelm red~
+Short `#`rA `RR`red `RD`rragon`RH`relm`^~
+Desc A helmet fashioned into the likeness of a dragon skull is here.~
+Level 29
+ItemType armor~
+Cost 1500
+Durability 5
+Asize 150
+Rsize 50
+Values 9 9 9 4 0
+Weight 150
+Material dragon scales~
+Extra    magic antigood~
+Wear     take head~
+Affect modifier -1 29 -1 quickness -1 0
+Affect modifier -1 29 -1 damroll 2 0
+Affect modifier -1 29 -1 empathy 2 0
+End
+
+#47308
+Name shield red~
+Short `#`rA `RR`red `RD`rragon `RS`rhield`^~
+Desc A large red dragon shield rests on the floor.~
+Level 35
+ItemType armor~
+Cost 690
+Durability 5
+Asize 100
+Rsize 50
+Values 10 10 10 5 0
+Weight 100
+Material dragon scales~
+Extra    magic antigood~
+Wear     take shield~
+Affect modifier -1 35 -1 damroll 2 0
+End
+
+#47309
+Name greaves red dragon claw~
+Short `#`rA `RP`rair of a `RR`red `RD`rragon's `RR`rear `RC`rlaws`^~
+Desc A pair of a red dragon's rear claws is on the floor.~
+Level 29
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 400
+Rsize 50
+Values 9 9 9 4 0
+Weight 400
+Material dragon scales~
+Extra    magic antigood~
+Wear     take feet~
+Affect modifier -1 29 -1 damroll 2 0
+Affect modifier -1 29 -1 quickness -1 0
+End
+
+#47310
+Name arm guards red dragon runic~
+Short `#`RR`red `RD`rragon `RA`rrm `RG`ruards`^~
+Desc On the ground you see two red arm guards.~
+Level 29
+ItemType armor~
+Cost 900
+Durability 5
+Asize 400
+Rsize 50
+Values 9 9 9 4 0
+Weight 400
+Material dragon scales~
+Extra    magic rotdeath nolocate nodegrade burnproof~
+Extra2   nodecay runic_item~
+Wear     take arms~
+Affect modifier -1 29 -1 damroll 2 0
+Affect modifier -1 29 -1 quickness -1 0
+End
+
+#0
+
+
+
+#ROOMS
+#47001
+Name The muddy sewer~
+Desc You are standing in mud to your knees. This is not the kind of place
+for a picnic. The muddy sewer stretches further into the south.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit south 47002
+EKeyvnum -1
+EDesc You see the muddy sewer continuing into the darkness to the south.
+~
+End
+
+
+#47002
+Name The muddy sewer junction~
+Desc The muddy sewer stretches into the dark to the south. It looks as if 
+no person has ever sat his foot here before. It's too muddy for that
+anyway. The sewer leads north, south and east from here.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47001
+EKeyvnum -1
+EDesc The muddy sewer stretches into the dark to the north.
+~
+Exit east 47007
+EKeyvnum -1
+EDesc East. The muddy sewer leads into a bend that goes south.
+~
+Exit south 47003
+EKeyvnum -1
+EDesc South. The muddy sewer ends in a mudhole that way.
+~
+End
+
+
+#47003
+Name The mudhole~
+Desc You stand in mud all the way up to your thighs and it's not too 
+comfortable since you are used to a somewhat different environment.
+The sewer leads to the north of here. In the middle you can just make
+out an enormous drainpipe leading down.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47002
+EKeyvnum -1
+EDesc North. The muddy junction lies in that direction.
+~
+Exit down 47101
+EKeyvnum -1
+EDesc The muddy drainpipe leads down through the mud, otherwise it is utterly dark.
+~
+End
+
+
+#47004
+Name The Dark Pit~
+Desc You are standing by the edge of a dark pit that leads down into even
+deeper darkness. >BWWAAADDRR< - The smell from down there is unbearable.
+The sewer stretches into the darkness to the east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 47009
+EKeyvnum -1
+EDesc East. The sewer leads into the sewer junction.
+~
+Exit down 47102
+EKeyvnum -1
+EDesc The Dark Pit leads down and down and down ... well you can't see the 
+bottom anyway. There are bars that function as a ladder on the side.
+~
+End
+
+
+#47005
+Name The muddy sewer~
+Desc You are standing in the middle of a bend of the sewer pipe. It is very
+dark around here and the mud is sticking to your legs, not very pleasant.
+The pipe leads east and south from here.
+~
+RoomFlags dark indoors~
+Sector hills~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit east 47011
+EKeyvnum -1
+EDesc East. The mud stretches on into the darkness.
+~
+Exit south 47006
+EKeyvnum -1
+EDesc South. There is even more mud in that direction than where you are now. 
+Incredible.
+~
+End
+
+
+#47006
+Name The muddy sewer~
+Desc You are standing in something that reminds you very much of porridge, this
+has the advantage that it's not hot, it's rather cold actually. The pipe 
+bends to the north and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47005
+EKeyvnum -1
+EDesc The muddy sewer pipe leads into a bend that goes east.
+~
+Exit east 47012
+EKeyvnum -1
+EDesc The pipe leads into a bend that goes south. Interesting, there's mud on the
+floor there.
+~
+End
+
+
+#47007
+Name The muddy sewer bend~
+Desc This isn't your idea of a place to stay too long. You're in up to your
+knees in something that resembles mud, but you're not quite sure. The
+bend in which you stand leads west and south.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit south 47008
+EKeyvnum -1
+EDesc The pipe leads into a intersection that goes south and east. The floor here 
+is still covered in mud.
+~
+Exit west 47002
+EKeyvnum -1
+EDesc The pipe (still filled with mud) leads into a intersection that goes north 
+and south. Interesting.
+~
+End
+
+
+#47008
+Name A muddy intersection~
+Desc You have both your feet safely stuck in mud. It isn't the mud that's wrong
+it's the smell, the sounds, the total darkness that surrounds you. Everything
+here is so depressing. The pipe leads on with a trail of thick mud to the
+north, east and south.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47007
+EKeyvnum -1
+EDesc North. The pipe goes into a bend with a load of mud all the way up the walls.
+The bend leads west.
+~
+Exit east 47014
+EKeyvnum -1
+EDesc East. This way like a place for the annual mud festival, although the stench
+wouldn't allow any happiness at all. The pipe leads into a bend that leads 
+north.
+~
+Exit south 47009
+EKeyvnum -1
+EDesc South. There's less mud in that direction. *smile*. Your light doesn't 
+cover enough space for you to see much more than that it leads into some
+sort of junction.
+~
+End
+
+
+#47009
+Name The Sewer Junction~
+Desc You stand in the middle of a huge junction of sewer pipes right under
+what you'd think was an air shaft. The sewer pipes lead to the north,
+south, east and west. It look quite impossible to force your way up.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47008
+EKeyvnum -1
+EDesc North. Mud is the floor basis in that direction. Yummy.
+~
+Exit east 47017
+EKeyvnum -1
+EDesc YYEEUUCH! BOOH! THAT looks like a nice place for creepy crawlies.
+~
+Exit south 47010
+EKeyvnum -1
+EDesc North. This direction looks quite nice actually. The pipe leads into 
+a bend that goes east.
+~
+Exit west 47004
+EKeyvnum -1
+EDesc A few yards ahead - away from this junction - there is a pit leading down,
+but the smell from there...>PHEWW<.
+~
+End
+
+
+#47010
+Name A bend in sewer pipe~
+Desc You are in a bend in the sewer pipe. A strong smell seeps in from the north.
+The sewer goes north and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47009
+EKeyvnum -1
+EDesc North. You are staring into a huge junction with exits in all directions.
+~
+Exit east 47018
+EKeyvnum -1
+EDesc East. The Pipe leads into utter darkness that way.
+~
+End
+
+
+#47011
+Name The muddy sewer pipe~
+Desc You have entered a kind of tube intersection that leads south, west and east.
+Your legs are covered in mud up to the knees. REAL yucky! 
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit east 47024
+EKeyvnum -1
+EDesc East. There's less mud in that direction, or that's your impression.
+~
+Exit south 47021
+EKeyvnum -1
+EDesc That way is lost in darkness, though you sense less mud in that direction,
+perhaps even a complete end to this sludge that surrounds you.
+~
+Exit west 47005
+EKeyvnum -1
+EDesc West. The mud reaches that way too, all the way up the walls.
+~
+End
+
+
+#47012
+Name The bend in the Muddy sewer~
+Desc This is not your idea of a holiday. You stand in mud up to your knees.
+It's absolutely inconceivable how all this mud could have been placed
+here. The pipe leads to the west and south.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit south 47013
+EKeyvnum -1
+EDesc South. There's even more mud that way, incredible! Although it looks
+like an intersection in the sewer system that leads east and south.
+~
+Exit west 47006
+EKeyvnum -1
+EDesc West. All you can see, is that the pipe leads into a bend that goes
+north. But there's less mud in that direction, however odd that sounds.
+~
+End
+
+
+#47013
+Name A MUDDY intersection~
+Desc You wouldn't want to know the true feeling of standing in this mud up to 
+your hips. >BWAADR<. All that fills your mind right now is the dream of 
+a hot bath. This is NOT very clean mud you know, remember you're in the
+sewer! The pipes leads north, south and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+ExtraDesc sediment~
+It's NOT the kind of matter that would concern you too much, normally, but
+as you are in the middle of it, it just might become your main concern.
+REAL YUCKY!
+~
+Exit north 47012
+EKeyvnum -1
+EDesc North. Sludge and sediment fills this corridor of the sewer that leads
+into a bend going west.
+~
+Exit east 47026
+EKeyvnum -1
+EDesc East. You can see absolutely nothing of interest in that direction (Maybe
+that's why it's so damn interesting.??) There's no mud in that direction
+either, GREAT!
+~
+Exit south 47014
+EKeyvnum -1
+EDesc South. All you can see is more mud! Although the pipe goes into a bend
+leading west.
+~
+End
+
+
+#47014
+Name Muddy sewer~
+Desc You stand in a bend of the pipe system of the sewer with mud up to your
+thighs. Contemplating a higher level of existence here would be utterly
+inappropriate, as the smell would keep any intelligent creature from even
+thinking of anything but getting away from this foul end of the WORLD.
+The bend goes from north to west.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47013
+EKeyvnum -1
+EDesc North. Filled with mud, that place looks like an impassable intersection
+with pipes leading north and east.
+~
+Exit west 47008
+EKeyvnum -1
+EDesc West. There's less mud that way, maybe you're on your way out of this foul
+place.
+~
+End
+
+
+#47015
+Name The old well~
+Desc You are standing by an old and worn well from before this century. The sewer
+leads to the east from here and the well leads down into darkness. Metal
+bars implanted in the side of the well lead down as a ladder.
+~
+RoomFlags dark indoors~
+Sector forest~
+ExtraDesc bars~
+These look like they're pretty slippery, and not very safe, but perhaps safe
+enough for you to climb down, WITH both hands on them.
+~
+Exit east 47028
+EKeyvnum -1
+EDesc East. You see, because of the utter darkness that surround you, absolutely
+nothing. Your light isn't of much use for that kind of distance.
+~
+Exit down 47105
+EKeyvnum -1
+EDesc Down the well there's even less light than up here, so ... sorry, you can't
+see a thing. There are metal bars in the side leading down into the darkness.
+~
+End
+
+
+#47016
+Name The ordinary bend~
+Desc You are in the middle of a bend in the pipe system of the sewer system, 
+WHAT a place!!! The pipe leads to the south and the east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 47021
+EKeyvnum -1
+EDesc East. What a quiet place you've found there. It's an intersection that have
+pipeways going north and east.
+~
+Exit south 47017
+EKeyvnum -1
+EDesc South. You see nothing at all in that direction it's too dark anyway.
+~
+End
+
+
+#47017
+Name The sewer junction~
+Desc You are in a junction that leads north, west and south.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47016
+EKeyvnum -1
+EDesc North. You see a bend.
+~
+Exit south 47018
+EKeyvnum -1
+EDesc South. It looks like a pipe junction just like this one. Only that one
+leads east and west.
+~
+Exit west 47009
+EKeyvnum -1
+EDesc West. There's a junction with four pipelines in that direction.
+~
+End
+
+
+#47018
+Name The ordinary junction~
+Desc This looks like an ordinary junction, actually it seems very quiet
+here. The pipelines lead west, east and north.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47017
+EKeyvnum -1
+EDesc To the north you can see a junction like this one, leading north and west.
+~
+Exit east 47031
+EKeyvnum -1
+EDesc To the east there's nothing of particular interest, though there's a 
+junction with pipelines leading north and east.
+~
+Exit west 47010
+EKeyvnum -1
+EDesc There's a bend to the west leading north.
+~
+End
+
+
+#47021
+Name A quiet pipe junction~
+Desc This is the kind of place to rest, though the smell could be a LOT better
+than this. The sewer goes east, north and west from here.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47011
+EKeyvnum -1
+EDesc In that direction, you can't see anything. It's just too dark.
+~
+Exit east 47029
+EKeyvnum -1
+EDesc There's an ordinary junction in the pipe system to the east
+~
+Exit west 47016
+EKeyvnum -1
+EDesc West. There's an ordinary bend leading south into the sewer system in
+that direction.
+~
+End
+
+
+#47022
+Name The odd room with smooth walls~
+Desc As you enter you hear a loud click from one of the walls ... and you fall
+and fall and fall ...
+.
+.
+.
+.
+ ... And come to an abrupt end. THIS is strange indeed. There's an arched
+entryway leading down.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit down 47112
+EKeyvnum -1
+EKeywords entryway~
+EDesc Down. It's utterly dark that way, though you can make out an intersection
+of sewer pipes leading west, north and east.
+~
+End
+
+
+#47024
+Name The sewer~
+Desc You are standing in mud up to your ankles. This is an intersection with 
+sewer pipes leading east, south and west.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit east 47037
+EKeyvnum -1
+EDesc To the east there's a peculiar looking round room.
+~
+Exit south 47025
+EKeyvnum -1
+EDesc To the south there's another intersection with pipes going south and east.
+~
+Exit west 47011
+EKeyvnum -1
+EDesc To the west there's another intersection like this one, with sewer pipes
+leading south and west.
+~
+End
+
+
+#47025
+Name Another intersection~
+Desc You have never seen anything so BORING...This is an intersection with pipes
+leading north, south and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47024
+EKeyvnum -1
+EDesc To the north there's an intersection, where the pipes are leading west and
+east. You notice that the floor to the west is covered in mud.
+~
+Exit east 47038
+EKeyvnum -1
+EDesc East. You see nothing of interest in that direction, just another 
+intersection. This one leads east and south.
+~
+Exit south 47026
+EKeyvnum -1
+EDesc Another intersection lies to the south. It leads west and south.
+~
+End
+
+
+#47026
+Name A junction~
+Desc This one seems interesting, a big difference from all the other junctions.
+It seems cleaner than the rest of them. Weird. Something that looks like 
+an air shaft leads upwards, but it looks far too slippery to climb.
+The pipes lead to the south, west and north.
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+ExtraDesc mud~
+It's dark as tar and looks like something out of a toilet, on top of THAT
+the smell is absolutely OVERWHELMING.
+~
+Exit north 47025
+EKeyvnum -1
+EDesc North. You see an intersection there, leading north and east.
+~
+Exit south 47028
+EKeyvnum -1
+EDesc To the south there's ANOTHER junction leading west and east.
+~
+Exit west 47013
+EKeyvnum -1
+EDesc To the west you see a load of mud and sediment in the sewer. That should
+be an intersection there but you're not quite sure.
+~
+End
+
+
+#47028
+Name The sewer junction~
+Desc You stand in a junction of sewer pipes leading north, east and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47026
+EKeyvnum -1
+Exit east 47034
+EKeyvnum -1
+EDesc To the east you can see a bend in the pipe going south.
+~
+Exit west 47015
+EKeyvnum -1
+EDesc To the west you can just make out an old well.
+~
+End
+
+
+#47029
+Name The Triple Junction~
+Desc You stand in the middle of a huge junction of concrete sewer pipes. The 
+pipes lead into three different directions : east, south and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 47035
+EKeyvnum -1
+EDesc East. You can see a bend in the sewer pipe leading north.
+~
+Exit south 47030
+EKeyvnum -1
+EDesc To the south there's a ENORMOUS quadruple sewer junction, all lit up by
+an odd light.
+~
+Exit west 47021
+EKeyvnum -1
+EDesc To the west you can just make out another junction similar to the one 
+you are standing in.
+~
+End
+
+
+#47030
+Name The Quadruple Junction Under the City~
+Desc You are standing in something that reminds you of an entry to an ant hive.
+There are enormous concrete pipes leading north, south, east and west. 
+There's also a metal ladder built into the concrete wall leading up through
+a large trashcan.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc ladder~
+It looks as if it's made of stainless steel, and it would very well function
+as a club of considerable power, but alas ... You can't take at all since
+it's firmly set into the concrete wall.
+~
+Exit north 47029
+EKeyvnum -1
+EDesc To the north you can see a huge triple junction with sewer pipes leading
+west and east.
+~
+Exit east 47036
+EKeyvnum -1
+EDesc East. You can see a pit in the floor.
+~
+Exit south 47031
+EKeyvnum -1
+EDesc To the south there's a huge junction with pipes leading east and west.
+~
+Exit west 47022
+EKeyvnum -1
+EDesc To the west there's an odd looking room with totally smooth walls.
+~
+Exit up 3032
+End
+
+
+#47031
+Name A triple junction~
+Desc You stand in a junction with pipes leading west, north and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47030
+EKeyvnum -1
+EDesc To the north there's a ENORMOUS quadruple sewer junction, all lit up by
+an odd light.
+~
+Exit east 47044
+EKeyvnum -1
+EDesc East. You can just make out a triple junction leading north and east.
+~
+Exit west 47018
+EKeyvnum -1
+EDesc West. You can just make out a triple junction leading north and west.
+~
+End
+
+
+#47034
+Name A bend in the sewer pipe~
+Desc You can look in two directions where the pipe leads : south and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 47035
+EKeyvnum -1
+EDesc To the south you can see another bend leading west.
+~
+Exit west 47028
+EKeyvnum -1
+EDesc West. You can just make out a triple junction leading north and west.
+~
+End
+
+
+#47035
+Name The sewer pipe bend~
+Desc You can look in two different directions where the pipe goes : west and 
+north.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47034
+EKeyvnum -1
+EDesc North. You see another bend leading west.
+~
+Exit west 47029
+EKeyvnum -1
+EDesc You can see another junction although this one is a triple one with pipes
+going south and west.
+~
+End
+
+
+#47036
+Name The pit~
+Desc You stand in a section of a pipe that leads to a dead end. In the floor
+there's a pit leading down. There are bars set in the side of the pit wall
+functioning as a ladder.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit west 47030
+EKeyvnum -1
+EDesc West. You can see a dimly lit quadruple junction with an exit up.
+~
+Exit down 47122
+EKeyvnum -1
+EDesc Down the pit it's utterly dark you can't see a thing.
+~
+End
+
+
+#47037
+Name The round room~
+Desc As you enter the room it starts rotating - at first slowly, later faster
+and faster - You get totally confused as to where up and down are, but you are
+certain that the doorway is in the opposite direction of what it was when
+you entered. It now leads east. There was only this one exit.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 47050
+EKeyvnum -1
+EDesc You can just make out a smaller room with a chair.
+~
+End
+
+
+#47038
+Name The three way junction~
+Desc You are standing in a junction of pipes that lead west, east and south.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 47045
+EKeyvnum -1
+EDesc East. You can make out a dimly lit Guard Room.
+~
+Exit south 47039
+EKeyvnum -1
+EDesc To the south you can see what looks like a store room.
+~
+Exit west 47025
+EKeyvnum -1
+EDesc West. You see another junction similar to this one leading north and south.
+~
+End
+
+
+#47039
+Name The Sewer Store Room~
+Desc You stand in a small room lit by a single torch set in the wall. The only 
+way out of here is to the north.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 47038
+EKeyvnum -1
+EDesc To the north you see a pipe junction.
+~
+End
+
+
+#47041
+Name The Shaft~
+Desc You are standing by the edge of a deep, dark shaft leading down. A single
+ladder is your tool to work your way down if you so wish. The sewer pipe
+leads south from here.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc ladder~
+Firmly set into the wall of the shaft it's impossible to even rock, is your
+estimate.
+~
+Exit south 47043
+EKeyvnum -1
+EDesc To the south you can see the pipe leading further south into darkness.
+~
+Exit down 47123
+EKeyvnum -1
+EDesc Down and utter darkness. There's absolutely nothing to be seen in that 
+direction.
+~
+End
+
+
+#47043
+Name The Sewer Entrance~
+Desc You stand in the middle of a pipe that leads from north to south. Above you
+an air shaft leads up into sunlight. It seems totally impossible to go up
+that way.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47041
+EKeyvnum -1
+EDesc To the north you can just make out a huge shaft leading down.
+~
+Exit south 47044
+EKeyvnum -1
+EDesc To the south you can see a triple junction leading west and east.
+~
+End
+
+
+#47044
+Name The junction going three ways~
+Desc You are in a passageway in the pipes of the sewer system leading north, east
+and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47043
+EKeyvnum -1
+EDesc You see a sewer pipe leading north.
+~
+Exit east 47049
+EKeyvnum -1
+Exit west 47031
+EKeyvnum -1
+EDesc West. You see another junction very similar to this one that leads north
+and west.
+~
+End
+
+
+#47045
+Name The Sewer Room~
+Desc You are standing in a large room with chairs set in the walls. You have the
+feeling of being watched. To the south there's an entry to a larger room.
+The room is lit by five torches, also set in the walls. To the west there
+is a doorway leading out to the sewers.
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 47046
+EKeyvnum -1
+EDesc You can see an even larger room than this one, filled with light.
+~
+Exit west 47038
+EKeyvnum -1
+EDesc To the west you can see the sewers.
+~
+End
+
+
+#47046
+Name The Sewer room~
+Desc This is a Room with walls that glitters like gold though not quite like it.
+This is strange as it looks as if the glitter lights the whole room. It
+looks very bright. To the south the floor is covered with yucky water. The
+North leads to sort of a Guard Room.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 47045
+EKeyvnum -1
+EDesc To the north you can see the guard room.
+~
+Exit south 47047
+EKeyvnum -1
+EDesc To the south there is nothing but water and an exit leads east from there.
+~
+End
+
+
+#47047
+Name The Pool in the Sewer~
+Desc You stand in water to your waist.  To the north is the entrance to this room.
+A single door leads east.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 47046
+EKeyvnum -1
+EDesc To the north you see the entrance to this room.
+~
+Exit east 47053
+EKeyvnum -1
+EDesc You can see an enormous hall through the doorway.
+~
+End
+
+
+#47048
+Name The Sewers~
+Desc You stand in a dead end of the sewer. The only way out is south.
+You can see a shaft leading up but it looks too difficult to go up
+that way.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 47049
+EKeyvnum -1
+End
+
+
+#47049
+Name The junction~
+Desc You stand in a junction leading north, west and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47048
+EKeyvnum -1
+Exit east 47060
+EKeyvnum -1
+EDesc Darkness has closed in on that part of the sewer system, you can't see
+a thing in that direction.
+~
+Exit west 47044
+EKeyvnum -1
+EDesc West. You see another junction very similar to this one that leads north
+and west.
+~
+End
+
+
+#47050
+Name The small room~
+Desc The only thing in this room of interest is a chair, and that's tight to the 
+rock floor. A doorway leads south and another leads east into darkness.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc chair~
+This chair is made of marble, but the fact that it is worn and attached to the
+floor makes you think twice about taking it along with you.
+~
+Exit east 47055
+EKeyvnum -1
+EDesc Utter darkness...!
+~
+Exit south 47051
+EKeyvnum -1
+EDesc You can see a room with a lot of light in it. You can't make out any details.
+~
+End
+
+
+#47051
+Name The Sewer pipe~
+Desc You are in what reminds you of a foul sewer, as if you liked being here! 
+You can see two exits leading either north or south.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 47050
+EKeyvnum -1
+Exit south 47052
+EKeyvnum -1
+EDesc To the south you can see a strange light flowing from there.
+~
+End
+
+
+#47052
+Name The Grand Sewer~
+Desc You are in a Grand Sewer Pipe. This stretches toward the south. It's large 
+indeed! A doorway leads to the east from here.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 47051
+EKeyvnum -1
+EDesc To the north you can see a doorway.
+~
+Exit east 47056
+EKeyvnum -1
+EDesc You can't see anything in that darkness.
+~
+Exit south 47053
+EKeyvnum -1
+EDesc In the south end of the pipe the "floor" is completely covered with water.
+~
+End
+
+
+#47053
+Name The South end of the Grand Pipe~
+Desc You stand in water to your knees. A doorway leads west from here. The Pipe
+stretches north.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 47052
+EKeyvnum -1
+EDesc You see a lot of pictures decorating the walls.
+~
+Exit west 47047
+EKeyvnum -1
+End
+
+
+#47055
+Name The Edge of The Water Sewer~
+Desc You stand in a room where half of the floor is covered in water. The water
+leads east and a doorway leads west.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit east 47061
+EKeyvnum -1
+EDesc You can hardly make out much more than that the next place is in a pipe 
+with more water.
+~
+Exit west 47050
+EKeyvnum -1
+End
+
+
+#47056
+Name The Dark hallway~
+Desc You can't see much of this, even with a light. The hallway goes into a
+passageway to the south. A doorway leads west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 47057
+EKeyvnum -1
+EDesc You can see nothing at all, because it's completely dark in that direction.
+~
+Exit west 47052
+EKeyvnum -1
+EDesc You see a lot of light, bright as daylight, but nothing of interest.
+~
+End
+
+
+#47057
+Name The dark passageway~
+Desc You can't see anything but the ground where you put your feet. The 
+passageway seems to continue south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47056
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47058
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47058
+Name The dark passageway~
+Desc You can't see anything but the ground where you put your feet. The
+passageway seems to continue south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47057
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47059
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47059
+Name The dark passageway~
+Desc You can't see anything but the ground where you put your feet. The
+passageway seems to continue south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47058
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47060
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47060
+Name The dark passageway~
+Desc You can't see anything but the ground where you put your feet. The
+passageway seems to continue west and north. To the east there's water
+covering the floor and that leads through an arched entry to a watery
+sewer.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47059
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit east 47068
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit west 47049
+EKeyvnum -1
+EDesc You can just make out a triple junction leading north and west.
+~
+End
+
+
+#47061
+Name The Watery Sewer Bend~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to bend and lead south and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit south 47062
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit west 47055
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47062
+Name The Watery sewer~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to lead south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47061
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47063
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47063
+Name The Watery sewer~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to lead south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47062
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47064
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47064
+Name The Watery Sewer Junction~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to lead into a junction going south, north and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47063
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit east 47069
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47065
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47065
+Name The Watery sewer~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to lead south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47064
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47066
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47066
+Name The Watery sewer junction~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to lead into a junction that goes north, south and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47065
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit east 47070
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47067
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47067
+Name The Watery sewer~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to lead south and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47066
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit south 47068
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47068
+Name The Watery sewer bend~
+Desc You can't see anything but the water you're in up to your hips. The sewer
+seems to bend and lead west and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47067
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+Exit west 47060
+EKeyvnum -1
+EDesc You can't see anything in that direction and your light isn't enough to light
+that far.
+~
+End
+
+
+#47069
+Name A ledge by the dark pool~
+Desc You can't see much here but the echo tells you that there's quite a drop
+down. You can just make out a huge dark pool out there in the darkness, 
+mostly because of the trickling of water. The water from the sewer actually
+washes over this ledge and makes it quite slippery. From here it drops, 
+like a waterfall, into the pool far down.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit south 47070
+EKeyvnum -1
+EDesc You can't see a thing. It's too dark.
+~
+Exit west 47064
+EKeyvnum -1
+EDesc You can't see a thing. It's too dark.
+~
+End
+
+
+#47070
+Name A ledge by the dark pool~
+Desc You can't see much here but the echo tells you that there's quite a drop
+down. You can just make out a huge dark pool out there in the darkness,
+mostly because of the trickling of water. The water from the sewer actually
+washes over this ledge and makes it quite slippery. From here it drops,
+like a waterfall, into the pool far down. Under you there is a small fissure
+in the rock. It seems big enough to contain a few people.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water~
+It looks dark and murky, and emanates a foul stench.
+~
+Exit north 47069
+EKeyvnum -1
+EDesc You can't see a thing. It's too dark.
+~
+Exit west 47066
+EKeyvnum -1
+EDesc You can't see a thing. It's too dark.
+~
+Exit down 47099
+EKeyvnum -1
+End
+
+
+#47099
+Name The fissure under the ledge~
+Desc This is a small fissure in the solid rock. Under you lies the deep dark pool.
+The water trickles quietly down from the ledge above you. The water smells 
+like the water in a sewer.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit up 47070
+EKeyvnum -1
+Exit down 47199
+EKeyvnum -1
+EDesc The water edge.
+~
+End
+
+
+#47101
+Name Under the mudhole~
+Desc You stand in a small room with a great big opening in the ceiling. From this
+opening there's mud dripping down in large lumps. >YUCK<. You can smell the 
+foul stench of the slimy sediment as you try not to get covered by the 
+falling sludge. To the east there is an entryway leading out from here and 
+it seems absolutely impossible to force the muddy descent.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc mud~
+You never saw such disgusting matter before, it nearly makes you puke.
+~
+Exit east 47103
+EKeyvnum -1
+EDesc East. You see nothing of interest.
+~
+End
+
+
+#47102
+Name Under the Dark Pit~
+Desc Nice place you found yourself. You stand in the middle of a room with only
+two exits, Up and East. A tall ladder is left here so that you can climb
+up through the Pit without the use of a rope.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc ladder~
+This is funny enough a wooden ladder and, after closer inspection, you
+discover it is magically held towards the wall! You can't, even with your
+greatest effort, rock it at ALL!
+~
+Exit east 47104
+EKeyvnum -1
+Exit up 47004
+EKeyvnum -1
+EDesc Up. You can't see a thing up there, it's way too dark.
+~
+Exit down 47400
+EKeyvnum -1
+EKeywords trapdoor~
+End
+
+
+#47103
+Name A muddy bend in the sewer system~
+Desc You are standing in what looks like a bend in the pipe system of the
+sewer. The 'floor' is covered completely by mud! This includes covering
+your legs up to your knees as well. The pipe leads west and south.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+You never saw such disgusting matter before, it nearly makes you puke.
+~
+Exit south 47104
+EKeyvnum -1
+EDesc To the south there's less mud than here! It actually seems to end there!
+You have a feeling it would be nice to have your feet free from mud again.
+~
+Exit west 47101
+EKeyvnum -1
+EDesc You can see a room in which mud drips from the roof onto the floor in 
+great cakes of sludge. There doesn't seem to be any exits from that room
+apart from in you direction.
+~
+End
+
+
+#47104
+Name A junction in the sewer pipes~
+Desc You stand in the middle of what looks like a triple junction of pipes
+going east, west and north.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47103
+EKeyvnum -1
+EDesc You can see a mud area starting in that direction.
+~
+Exit east 47112
+EKeyvnum -1
+EDesc East. You can't even make out what it might look like, it's just too dark.
+~
+Exit west 47102
+EKeyvnum -1
+EDesc West. There's a room with a ladder leading up.
+~
+End
+
+
+#47105
+Name Down the old well~
+Desc You are dangling on the slippery sides of the old well leading down and up.
+The only secure point here is the metal bars that are cemented into the 
+sides, the ones that you cling frantically to so that you don't fall. Who
+knows how deep this well is?
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc bars~
+These look like they're pretty slippery, and not very safe.  You'd better
+not go down any further.
+~
+Exit up 47015
+EKeyvnum -1
+EDesc There's a slight, dim light from above, or maybe it's your imagination.
+Anyway it SEEMS darker down here than up there, if that is possible.
+~
+End
+
+
+#47106
+Name The northwestern corner of the ledge~
+Desc You stand, swaying out from the ledge, with only a couple of inches of safe, 
+solid ledge under your feet. The ledge continues to the east but not back
+south. It seems that the ledge is too narrow to turn on so you'll have to
+continue forward.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit east 47113
+EKeyvnum -1
+EDesc The ledge continues east.
+~
+Exit south 47107
+EKeyvnum -1
+EDesc The ledge continues south.
+~
+End
+
+
+#47107
+Name The narrow ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47106
+EKeyvnum -1
+EDesc North. The ledge leads into a corner and turns eastward.
+~
+Exit east 47190
+Exit south 47108
+EKeyvnum -1
+EDesc South. The ledge leads further south into utter darkness.
+~
+End
+
+
+#47108
+Name The narrow ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47107
+EKeyvnum -1
+EDesc North. The ledge leads further north.
+~
+Exit east 47190
+EFlags oneway~
+EKeyvnum -1
+EDesc You stare into mid-air, and right under there's absolutely nothing but
+darkness. You shiver by the thought of falling that distance.
+~
+Exit south 47109
+EKeyvnum -1
+EDesc The ledge continues further south into darkness.
+~
+End
+
+
+#47109
+Name The narrow ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47108
+EKeyvnum -1
+EDesc North. The ledge leads further north.
+~
+Exit east 47190
+EFlags oneway~
+EKeyvnum -1
+EDesc You stare into mid-air, and right under there's absolutely nothing but
+darkness. You shiver by the thought of falling that distance.
+~
+Exit south 47110
+EKeyvnum -1
+EDesc The ledge continues south into darkness.
+~
+End
+
+
+#47110
+Name The narrow ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47109
+EKeyvnum -1
+EDesc North. The ledge leads further north.
+~
+Exit east 47190
+EFlags oneway~
+EKeyvnum -1
+EDesc You stare into mid-air, and right under there's absolutely nothing but
+darkness. You shiver by the thought of falling that distance.
+~
+Exit south 47111
+EKeyvnum -1
+EDesc South. You can just make out the south-western corner of this ledge.
+~
+End
+
+
+#47111
+Name The southwestern corner of the ledge~
+Desc This seems like a ledge that is a little broader than the one just to the 
+north of here. The ledge seems to lead around some sort of Abyss of total 
+darkness. The ledge seems to have an odd-looking edge here.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc edge odd-looking~
+This is truly a weird piece of craftsmanship in your eyes. The edge seems to
+form a step leading down, but WHAT a STEP DOWN. The Abyss opens down there 
+leading to seemingly total destruction.
+~
+ExtraDesc step~
+A small rock sticks out right under it, otherwise the way is DOWN, DOWN, and
+SPLAT!!!
+~
+ExtraDesc rock~
+It looks as if it can be opened in a door-like fashion. Maybe this will lead
+the way down.
+~
+Exit north 47110
+EKeyvnum -1
+EDesc North. The ledge leads further north.
+~
+Exit east 47115
+EKeyvnum -1
+EDesc You see a broad ledge leading eastward.
+~
+Exit south 47112
+EKeyvnum -1
+EDesc South of here is the exit from the ledge.
+~
+Exit down 47279
+EKeyvnum -1
+EDesc The Abyss lies down there. Who knows what might lurk down there?
+~
+End
+
+
+#47112
+Name An odd intersection~
+Desc You stand in a rather odd intersection of pipes. The pipes actually don't
+resemble pipes anymore. They look more like a real stone tunnel, or a
+passageway hewn directly into the rock. The ways from here lead north, east
+and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47111
+EKeyvnum -1
+EDesc North. You see a ledge to something that looks like an abyss.
+~
+Exit east 47122
+EKeyvnum -1
+Exit west 47104
+EKeyvnum -1
+End
+
+
+#47113
+Name The narrow ledge going east to west~
+Desc You are in the process of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit east 47116
+EKeyvnum -1
+EDesc The ledge leads further east.
+~
+Exit south 47190
+EFlags oneway~
+EKeyvnum -1
+EDesc You stare into mid-air, and right under there's absolutely nothing but
+darkness. You shiver by the thought of falling that distance.
+~
+Exit west 47106
+EKeyvnum -1
+EDesc The ledge leads further west.
+~
+End
+
+
+#47115
+Name The Broad ledge~
+Desc You are standing on a ledge that seems quite a lot larger than the rest 
+of the ledges. This one leads to the west and the east, plus it has an exit
+going to the south. Though you could jump into mid-air, but it probably 
+wouldn't be such a good idea. The way south is in utter darkness.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47190
+EFlags oneway~
+Exit east 47121
+EKeyvnum -1
+Exit south 47129
+EKeyvnum -1
+Exit west 47111
+EKeyvnum -1
+End
+
+
+#47116
+Name The northeastern corner of the ledge~
+Desc You stand, swaying out from the ledge, with only a couple of inches of safe, 
+solid ledge under your feet.  The ledge continues to the west and leads 
+south from here into darkness.  You notice a small trapdoor here leading 
+down.  
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc ground ledge rock~
+The ground here seems a little different from all the other ledges along the
+Abyss. There's a kind of soft soil on this ledge, maybe you should look 
+carefully at this. It seems to be of some interest.
+~
+ExtraDesc soil soft earth~
+You can just make out the outline of a trapdoor here in the soil. The earth
+is probably there to conceal a secret entrance. This looks as if it leads down
+into the seemingly solid rock face of the ledge.
+~
+Exit south 47117
+EFlags oneway~
+Exit west 47113
+EKeyvnum -1
+EDesc The ledge continues west.
+~
+Exit down 47280
+EFlags door closed~
+EKeyvnum -1
+EKeywords secret trapdoor entrance~
+End
+
+
+#47117
+Name The narrow eastern ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards. And THAT is west of here so watch your step.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit south 47118
+EFlags oneway~
+EKeyvnum -1
+EDesc The ledge leads further south.
+~
+End
+
+
+#47118
+Name The narrow eastern ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards. And THAT is west of here so watch your step.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit south 47119
+EFlags oneway~
+EKeyvnum -1
+EDesc The ledge leads further south.
+~
+End
+
+
+#47119
+Name The narrow eastern ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards. And THAT is west of here so watch your step.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit south 47120
+EFlags oneway~
+EKeyvnum -1
+EDesc The ledge leads further south.
+~
+End
+
+
+#47120
+Name The narrow eastern ledge~
+Desc You are in the progress of walking all the way around the ledge since there's
+no way of turning around on this all too narrow path. There IS another exit
+from here but that leads right into mid-air and with high probability of a
+free fall session afterwards. And THAT is west of here so watch your step.
+You also see a small opening to the east.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit east 47123
+EKeyvnum -1
+EDesc East. You stare into darkness.
+~
+Exit south 47121
+EKeyvnum -1
+EDesc The ledge leads further south.
+~
+End
+
+
+#47121
+Name The southeastern corner of the ledge~
+Desc This seems like a ledge that is a little broader than the one just to the
+north of here. The ledge seems to lead around some sort of abyss of total
+darkness.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47120
+EKeyvnum -1
+EDesc North of here you can see a ledge.
+~
+Exit west 47115
+EKeyvnum -1
+EDesc The ledge leads further west.
+~
+End
+
+
+#47122
+Name Under the pit~
+Desc You stand in a completely dark cavern leading west. The wall looks weird here.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc wall~
+There is a crack here that looks like it has been made recently.
+~
+Exit west 47112
+EKeyvnum -1
+End
+
+
+#47123
+Name Under The Shaft~
+Desc A ladder leads up from here to the Shaft.
+A small opening leads west from here.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit west 47120
+EKeyvnum -1
+EDesc You can see a narrow ledge going north and south.
+~
+Exit up 47041
+EKeyvnum -1
+EDesc It's too dark up there.
+~
+End
+
+
+#47129
+Name The sewer line.~
+Desc You are in a narrow part of the sewer. Down the sewer continues and to the
+north is the ledge.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47115
+EKeyvnum -1
+EDesc You can see the southern part of the ledge.
+~
+Exit down 47221
+EKeyvnum -1
+EDesc You look deeper down into the drain.
+~
+End
+
+
+#47130
+Name The sewer pipe.~
+Desc You are in an odd sewer pipe You see some odd scratches on the pipe wall, as
+from a gigantic rat. You can see some slimy water gently running down into
+a sewer drain, and north the drain continues.
+~
+RoomFlags dark no_mob indoors~
+Sector forest~
+End
+
+
+#47190
+Name Mid-air~
+Desc You've just stepped into the most unlucky position in the whole world.  The 
+result of such a foolish act should be punished with death, you know.  With 
+an acceleration of approximately 200 feet per second, you are now descending 
+straight to Hell.  What awaits you at the bottom will continue to be a 
+mystery.  Bye Cruel World.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit down 10404
+End
+
+
+#47199
+Name The Edge of the Water~
+Desc The pool side is dimly lit up by your light. You can see absolutely nothing
+else nearby. The darkness here seems enormously oppressive. The air is
+damp and the rock on which you stand is slippery. The pool seems too dark 
+to make anything clear. The rock can be climbed upwards from here.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit up 47099
+EKeyvnum -1
+End
+
+
+#47200
+Name The Treasury~
+Desc You are in a small but well equipped treasury.  You can see some writing on
+the wall.  The ceiling has a funny glow, which enables you to see.  You can
+get back into the inner lair through the stone door which is east.
+~
+RoomFlags no_mob indoors~
+Sector inside~
+ExtraDesc door stone~
+This is a heavy black stone door it looks very solid.
+~
+ExtraDesc writing~
+You read the number '666'.
+~
+Exit east 47201
+EKeyvnum 47205
+EKeywords door stone~
+EDesc You look back through the opening into the inner lair.
+~
+End
+
+
+#47201
+Name The inner Lair~
+Desc You are in a octagonal room with smooth purple stone walls.  The floor is 
+made from black stone.  In the western wall you see a large black stone door.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 47202
+EFlags door closed~
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You look back through the door into the lair.
+~
+Exit west 47200
+EFlags door closed locked~
+EKeyvnum 47205
+EKeywords door stone~
+EDesc You see the treasury.
+~
+End
+
+
+#47202
+Name The Lair~
+Desc On the floor you see a lot of human decay, like bones and skulls. You also
+see a lot of slime. On the wall is a torch sitting in its sconce. To the north 
+are a wooden door.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skull skulls bones decay~
+On all the skulls you notice that there is a three inch hole in the 
+forehead. All the bones are broken and old.
+~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+ExtraDesc torch sconce~
+The torch is bolted to the sconce and the sconce to the wall.
+~
+Exit north 47201
+EFlags door closed~
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You can see the inner lair.
+~
+Exit east 47205
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit south 47203
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+End
+
+
+#47203
+Name The Lair~
+Desc On the floor you see a lot of human decay, like bones and skulls. You also
+see a lot of slime. On the wall is a torch sitting in its sconce.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skull skulls bones decay~
+On all the skulls you notice that there is a three inch hole in the 
+forehead. All the bones are broken and old.
+~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+ExtraDesc torch sconce~
+The torch is bolted to the sconce and the sconce to the wall.
+~
+Exit north 47202
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit east 47206
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit south 47204
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+End
+
+
+#47204
+Name The Lair~
+Desc On the floor you see a lot of human decay, like bones and skulls. You also
+see a lot of slime. On the wall is a torch sitting in its sconce.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skull skulls bones decay~
+On all the skulls you notice that there is a three inch hole in the 
+forehead. All the bones are broken and old.
+~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+ExtraDesc torch sconce~
+The torch is bolted to the sconce and the sconce to the wall.
+~
+Exit north 47203
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit east 47207
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit south 47208
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You see the lair entrance.
+~
+End
+
+
+#47205
+Name The Lair~
+Desc On the floor you see a lot of human decay, like bones and skulls. You also
+see a lot of slime. On the wall is a torch sitting in its sconce.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skull skulls bones decay~
+On all the skulls you notice that there is a three inch hole in the 
+forehead. All the bones are broken and old.
+~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+ExtraDesc torch sconce~
+The torch is bolted to the sconce and the sconce to the wall.
+~
+Exit south 47206
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit west 47202
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+End
+
+
+#47206
+Name The lair.~
+Desc On the floor you see a lot of human decay, like bones and skulls. You also
+see a lot of slime. On the wall is a torch sitting in its sconce.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+ExtraDesc bones decay~
+All the bones are broken and old.
+~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+ExtraDesc torch sconce~
+The torch is bolted to the sconce and the sconce to the wall.
+~
+Exit north 47205
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit south 47207
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit west 47203
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+End
+
+
+#47207
+Name The lair.~
+Desc On the floor you see a lot of human decay, like bones and skulls. You also
+see a lot of slime. On the wall is a torch sitting in its sconce.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skull skulls bones decay~
+On all the skulls you notice that there is a three inch hole in the 
+forehead. All the bones are broken and old.
+~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+ExtraDesc torch sconce~
+The torch is bolted to the sconce and the sconce to the wall.
+~
+Exit north 47206
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+Exit west 47204
+EKeyvnum -1
+EDesc You see another part of the lair.
+~
+End
+
+
+#47208
+Name The lair entrance.~
+Desc You are in a dry part of the sewer. To the north is a wooden door, you 
+can see some slime at the lower part of the door. You also see some skulls
+and some broken bones.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc slime~
+The slime is slimy and uninteresting.
+~
+Exit north 47204
+EFlags door closed~
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You can see the lair.
+~
+Exit east 47209
+EKeyvnum -1
+EDesc You see a crawlway.
+~
+End
+
+
+#47209
+Name The crawlway.~
+Desc You are in a narrow crawlway.  You don't notice anything interesting here.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit east 47210
+EKeyvnum -1
+EDesc You see a four-way junction.
+~
+Exit west 47208
+EKeyvnum -1
+EDesc You see the entrance to a lair.
+~
+End
+
+
+#47210
+Name The four-way junction.~
+Desc You are in a sewer junction. To the north is a small hole, to the west is a
+narrow crawlway and to the east and south the sewer continues.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 47211
+EKeyvnum -1
+EDesc You can see a small cave-like room.
+~
+Exit east 47212
+EKeyvnum -1
+EDesc You can see a sewer drain.
+~
+Exit south 47215
+EKeyvnum -1
+EDesc You can see a sewer drain.
+~
+Exit west 47209
+EKeyvnum -1
+EDesc You can see a narrow crawlway.
+~
+End
+
+
+#47211
+Name The small cave.~
+Desc You are in a collapsed sewer drain, which now is more like a small cave.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit south 47210
+EKeyvnum -1
+EDesc You look back into the four-way junction.
+~
+End
+
+
+#47212
+Name The sewer drain.~
+Desc You are in a dry sewer drain which bends to the north.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 47213
+EKeyvnum -1
+EDesc You can see the drain continuing north.
+~
+Exit west 47210
+EKeyvnum -1
+EDesc You can see the four-way junction.
+~
+End
+
+
+#47213
+Name The sewer drain.~
+Desc You are in a dry sewer drain which bends to the east.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit east 47214
+EKeyvnum -1
+EDesc You can see the drain continuing east.
+~
+Exit south 47212
+EKeyvnum -1
+EDesc You can see the drain continuing south.
+~
+End
+
+
+#47214
+Name The drain end.~
+Desc You are at the end of the drain around you the sewer has collapsed, the only
+exit is west.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit west 47213
+EKeyvnum -1
+EDesc You see the sewer drain.
+~
+End
+
+
+#47215
+Name The half-wet drain.~
+Desc You are in a sewer drain where the floor is covered with water. To the north
+it looks more dry, south however the drain runs down into some water.
+~
+RoomFlags dark indoors~
+Sector hills~
+ExtraDesc water~
+The water is dirty but it looks like you would be able to swim in it.
+~
+Exit north 47210
+EKeyvnum -1
+EDesc To the north lies a dry four-way junction.
+~
+Exit south 47216
+EKeyvnum -1
+EDesc To the south you see a sewer drain filled with water.
+~
+End
+
+
+#47216
+Name Under water in the sewer.~
+Desc You swim in some dirty water and is holding you breath. You'll better 
+continue before you drown. It is a good thing that you can hold your light
+above water-level.
+~
+RoomFlags dark indoors~
+Sector swim~
+Exit north 47215
+EKeyvnum -1
+EDesc It is hard to see, but it looks like the drain runs slightly upwards.
+~
+Exit south 47217
+EKeyvnum -1
+EDesc It is hard to see, but it looks like the drain runs a little bit upwards.
+~
+End
+
+
+#47217
+Name The half-dry drain.~
+Desc You are in a half-dry sewer drain. To the north the drain runs a little bit
+downwards into some water to the east you can see a small hole. To the west
+you see another drain.
+~
+RoomFlags dark indoors~
+Sector hills~
+ExtraDesc water~
+The water is dirty but it looks like you would be able to swim in it.
+~
+ExtraDesc hole~
+Through the hole you can just make out a very small room.
+~
+Exit north 47216
+EKeyvnum -1
+EDesc You see the drain running down into some water.
+~
+Exit east 47218
+EKeyvnum -1
+EDesc Through the hole you can just make out a very small room.
+~
+Exit west 47219
+EKeyvnum -1
+EDesc You see a drain running to the west.
+~
+End
+
+
+#47218
+Name The very small room.~
+Desc You are in a very small room, it is pretty uninteresting.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit west 47217
+EKeyvnum -1
+EDesc Through the little hole you can see a half-dry drain.
+~
+End
+
+
+#47219
+Name A dry sewer drain.~
+Desc You are in a dry but dirty sewer drain. The drain continues east and south.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit east 47217
+EKeyvnum -1
+EDesc You see a half-dry drain.
+~
+Exit south 47220
+EKeyvnum -1
+EDesc You see another boring sewer drain.
+~
+End
+
+
+#47220
+Name A boring drain.~
+Desc You are in yet another sewer drain.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 47219
+EKeyvnum -1
+EDesc You see a sewer drain continuing to the north.
+~
+Exit east 47221
+EKeyvnum -1
+EDesc You can see another drain to the east.
+~
+End
+
+
+#47221
+Name The sewer drain.~
+Desc You are in a sewer drain, there is nothing special in here, except for a 
+loud echo.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit east 47222
+EKeyvnum -1
+EDesc You can see another sewer drain.
+~
+Exit west 47220
+EKeyvnum -1
+EDesc You can make out a sewer drain to the west.
+~
+Exit up 47129
+EKeyvnum -1
+EDesc You can see a sewer line.
+~
+End
+
+
+#47222
+Name The sewer drain.~
+Desc You are in a drain, with some slimy water on the floor.
+~
+RoomFlags dark indoors~
+Sector forest~
+ExtraDesc slimy water~
+The water floats to the east from here.
+~
+Exit east 47223
+EKeyvnum -1
+EDesc You see a sewer bend.
+~
+Exit west 47221
+EKeyvnum -1
+EDesc You see a sewer drain.
+~
+End
+
+
+#47223
+Name The sewer bend.~
+Desc You find yourself in an ordinary sewer bend, which bend from west to north.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 47224
+EKeyvnum -1
+EDesc You see a sewer drain.
+~
+Exit west 47222
+EKeyvnum -1
+EDesc You see a sewer drain.
+~
+End
+
+
+#47224
+Name The sewer junction~
+Desc You stand in a junction of three sewer drains. You see some odd scratches on
+the pipe wall, as from a gigantic rat.North and south the sewer continues 
+as usual, but west it looks a little strange.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 47225
+EKeyvnum -1
+EDesc You see nothing but a sewer drain.
+~
+Exit south 47223
+EKeyvnum -1
+EDesc You see nothing but a sewer drain.
+~
+Exit west 47229
+EKeyvnum -1
+EDesc You see a strange sewer pipe.
+~
+End
+
+
+#47225
+Name The sewer~
+Desc You are in a sewer, where the slimy water runs down through a tiny hole.
+You see some odd scratches on the pipe wall, as from a gigantic rat. There 
+is a sewer drain south.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit south 47224
+EKeyvnum -1
+EDesc You see a sewer drain.
+~
+End
+
+
+#47229
+Name The strange sewer~
+Desc You are in a very strange sewer indeed, there are some odd scratches on the
+pipe wall, as from a gigantic rat. And you can see a lot of organic decay
+like bones from animals AND humans. West the drain runs slightly upwards.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit east 47224
+EKeyvnum -1
+EDesc You see a sewer junction.
+~
+Exit west 47230
+EKeyvnum -1
+EDesc You see a slimy sewer drain.
+~
+End
+
+
+#47230
+Name The damp sewer~
+Desc You are in a sewer drain with a funny damp substance on the floor, in the 
+substance you see a lot of decay. You see some odd scratches on the wall, as
+from a gigantic rat. Both to the east and west the pipe seems to run down.
+~
+RoomFlags dark no_mob indoors~
+Sector forest~
+Exit east 47229
+EKeyvnum -1
+EDesc You see a sewer.
+~
+Exit west 47231
+EKeyvnum -1
+EDesc You see a sewer.
+~
+End
+
+
+#47231
+Name The strange sewer~
+Desc You are in an ordinary sewer except for a lot of scratches on the sewer wall,
+ad a lot of debris on the floor.
+~
+RoomFlags dark indoors~
+Sector forest~
+ExtraDesc debris~
+You see a lot of organic decay on the floor.
+~
+Exit east 47230
+EKeyvnum -1
+EDesc You see a sewer.
+~
+Exit west 47232
+EKeyvnum -1
+EDesc You see another sewer.
+~
+End
+
+
+#47232
+Name The sewer~
+Desc You are in a sewer with more scratches on the walls. And of course a whole lot
+of decay. The drain runs east and north.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 47233
+EKeyvnum -1
+EDesc You see yet another sewer line.
+~
+Exit east 47231
+EKeyvnum -1
+EDesc You see a sewer pipe.
+~
+End
+
+
+#47233
+Name The sewer drain~
+Desc You stand in in a sewer drain, you are able to see some kind of cave-like
+room. You see some odd scratches on the drain wall, as from a gigantic rat. 
+The sewer leads south.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit east 47234
+EKeyvnum -1
+EDesc You see a cave-like room.
+~
+Exit south 47232
+EKeyvnum -1
+EDesc You see a sewer.
+~
+End
+
+
+#47234
+Name The rat's lair~
+Desc You are in a little cave. You are able to see quite a lot of debris on the 
+floor. There is a sewer drain west of here.
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit west 47233
+EKeyvnum -1
+EDesc You see the sewer system that way.
+~
+End
+
+
+#47279
+Name The Wall of the Abyss~
+Desc You hang onto some steps leading down into utter darkness. There's an exit 
+leading up as well, though you'll have to open the tiny rock again to do so.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit up 47111
+EKeyvnum -1
+Exit down 47399
+EKeyvnum -1
+End
+
+
+#47280
+Name The entrance.~
+Desc You are in a very dark room. You notice that some faces are
+staring at you from inside the walls. In the middle of the room
+there is a small altar. To the north there is a small round
+door.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc altar~
+This altar are very special. Faces are smiling from it. There
+is a triangle in top of it.
+~
+ExtraDesc triangle~
+The triangle is filled with small symbols in a language you have
+never seen before.
+~
+Exit north 47281
+EKeyvnum -1
+EKeywords small round door~
+EDesc A beam of red light seeps through a hole in the door.
+~
+Exit up 47116
+EFlags door closed~
+EKeyvnum -1
+EKeywords secret door~
+End
+
+
+#47281
+Name The corridor.~
+Desc The corridor is glowing oppressively in a red hue. You can hear wailing
+through an open black hole to the east. To the south there is a round door.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc small round door~
+The door is completely round without a keyhole.
+~
+ExtraDesc red light~
+The red light glows from the walls.
+~
+ExtraDesc walls~
+The walls look alive.
+~
+Exit east 47282
+EKeyvnum -1
+EDesc The hole seems more black than the night. It is appears to be "eating" the
+red light around it.
+~
+Exit south 47280
+EKeyvnum -1
+EKeywords small round door~
+End
+
+
+#47282
+Name The Realm of lost souls~
+Desc You are standing in nothing. All around you there are stars.
+Sometimes a shadow flies closely by you, wailing very loudly. 
+To the north there is a small bright hole. To the west there is 
+a small red hole.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc shadow~
+The shadow looks like a man in great pain.
+~
+Exit north 47283
+EKeyvnum -1
+EDesc You look into a very bright hole.
+~
+Exit west 47281
+EKeyvnum -1
+EDesc You look into a red hole.
+~
+End
+
+
+#47283
+Name The T-crossing~
+Desc You are in a small hallway. There are doors to the east and to
+the west. To the south there are a black hole. There is writing
+in the wall. Wails can be heard from the south.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+ExtraDesc writing~
+The writing says 'The one to the east, belongs to the beast.
+To the west you will surely END your quest!'.
+~
+Exit east 47286
+EKeyvnum -1
+EDesc Too dark to tell.
+~
+Exit south 47282
+EKeyvnum -1
+EDesc A black hole in the wall.
+~
+Exit west 47284
+EKeyvnum -1
+EDesc You can see a big fire to the west. It looks like a unhealthy
+place to enter!
+~
+End
+
+
+#47284
+Name The firedeath~
+Desc This room is very hot. There are flames surrounding you.  You can
+see no exits at all!  Skeletons are lying all over the floor.
+~
+RoomFlags no_mob indoors nowhere light~
+Sector cave~
+ExtraDesc skeletons~
+The skeletons looks like they had suffered the death of hunger.
+One of them looks like he has written something at the wall.
+~
+ExtraDesc writing wall~
+The writing says 'A pray to the GODS will not be heard, though
+the only exit is death..... Mother, I love you'.
+~
+End
+
+
+#47285
+Name The tortureroom.~
+Desc You are standing in a middle of a square room. Along the walls skeletons 
+are hanging in rusty chains. In the middle of the room there is a big metal 
+box, covered with dust. To the south you can just make out a small exit.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skeletons~
+When you look at the skeletons, you can see that they once had been in great 
+pain. They are hanging in their arms, and some of them has been killed
+with a sharp instrument.
+~
+ExtraDesc big metal box~
+The metal box is covered with dust. You notice that is once has been
+filled with coal, as you see some of them.
+~
+Exit south 47286
+EKeyvnum -1
+EKeywords door iron~
+EDesc To dark to tell.
+~
+End
+
+
+#47286
+Name The hells yard~
+Desc You are standing in a lot of mud. A disgusting smell surrounds
+the place, and makes you feel sick. Small flames sometimes shoot
+up from the hot mud. To the west there is a small door. To the 
+north you can see an iron door.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit north 47285
+EKeyvnum -1
+EKeywords door iron~
+EDesc To dark to tell.
+~
+Exit west 47283
+EKeyvnum -1
+EDesc To dark to tell.
+~
+End
+
+
+#47301
+Name The Entrance to the Realm of silence~
+Desc This is an utterly silent place. As you look around you see that there
+hasn't been a living thing in a long time. The dust lies here in a thick
+layer on the floor and on the furniture. On the wall hangs a bleak and 
+worn tapestry. A winding stone staircase leads up into darkness. On the 
+wall to the west you can see a huge torch stuck into the solid rock.
+A large portcullis blocks your way to the north.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+ExtraDesc portcullis gate~
+This seems like an exceptionally heavy gate, made of thick iron.
+~
+ExtraDesc torch light~
+This VERY old torch looks as if it has burned for ages, yet no traces of 
+the searing flame can be seen on it!
+~
+ExtraDesc stairs staircase~
+This looks as if it has been standing here for at least 12 centuries. It's 
+Very worn and cracks in the surface mingle with the cores of mineral that
+penetrates the rock from which these steps are chiselled.
+~
+End
+
+
+#47399
+Name On the walls of the Abyss~
+Desc You are clutching the steps on the wall so that you don't fall to the ground
+down below.
+A large sign says : I haven't gotten any further ... Yet. But  I'm pushing
+                    to get finished with this sewer. 
+                                           Greetings and Good Health :)
+
+                                                     Redferne The Gentle
+This stops your journey down, the only exit is up.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit up 47279
+EKeyvnum -1
+End
+
+
+#47400
+Name Cave entrance~
+Desc You are standing in the cave entrance. It is very dark
+down here. There is writing at the wall. There is an exit
+to the north. A stairway leads up.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc writing wall~
+The writing says 'BEWARE adventurer!'
+~
+Exit north 47401
+EKeyvnum -1
+EDesc To the north you can see a small tunnel.
+~
+Exit up 47102
+EKeyvnum -1
+EDesc You can see the stairs going up into darkness.
+~
+End
+
+
+#47401
+Name Cave tunnel~
+Desc You are walking in a tunnel. It is very cold. You
+can feel the presence of a living thing ... SOMEWHERE.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47402
+EKeyvnum -1
+EDesc To the north you can see the tunnel continuing.
+~
+Exit south 47400
+EKeyvnum -1
+EDesc To the south tunnel continuing.
+~
+End
+
+
+#47402
+Name Cave room~
+Desc You are standing in a room. It's much cooler now.
+The walls are glowing.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 47403
+EKeyvnum -1
+EDesc To the east you see the tunnel going downwards.
+~
+Exit south 47401
+EKeyvnum -1
+EDesc To the south you see a dark cave tunnel.
+~
+Exit west 47421
+EKeyvnum -1
+End
+
+
+#47403
+Name Cave T-cross~
+Desc You are standing in a mud-like substance. The smell here is
+awful, it is rotten. To the west you can see some light.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc mud~
+When you examine the mud, you notice small worms crawling
+around.
+~
+ExtraDesc worms~
+The worms are purple. They do not look edible.
+~
+Exit east 47404
+EKeyvnum -1
+EDesc To the east the tunnel still goes downwards.
+~
+Exit south 47408
+EKeyvnum -1
+Exit west 47402
+EKeyvnum -1
+EDesc You can see some light to the west.
+~
+End
+
+
+#47404
+Name Cave turning-point~
+Desc The mud are getting deeper. You are wondering, 'Would
+it be an idea to leave, before I disappear?'. To the
+south you notice a flat round stone are blocking the
+way. To the west you can see mud.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc flat round stone~
+The stone looks very uninteresting. BUT as you are
+about to turn away, you see a lightstribe coming
+through a small hole. Conclusion: The stone is movable.
+~
+Exit south 47405
+EFlags door closed~
+EKeyvnum -1
+EKeywords flat round stone~
+EDesc You can see an opening behind the stone.
+~
+Exit west 47403
+EKeyvnum -1
+End
+
+
+#47405
+Name The secret room~
+Desc There is dust all over the place. It looks like nobody
+has been here for ages. In the middle of the room you see
+a socket with a crystal globe. The globe glows with a
+pulsing light. To the north you see a stone door. To the
+south you see a grey block.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc socket~
+The socket looks like the work of a dwarf. It is VERY beautiful.
+~
+ExtraDesc crystal globe~
+The crystal globe is glowing with a pulsing light. It
+looks like there is smoke inside it.
+~
+Exit north 47404
+EFlags door closed~
+EKeyvnum -1
+EKeywords round stone door~
+EDesc You see a round stone door.
+~
+Exit south 47406
+EFlags door closed~
+EKeyvnum -1
+EKeywords grey block~
+EDesc You see a grey block.
+~
+End
+
+
+#47406
+Name The mudhole~
+Desc You are standing in a lot of mud. The mud goes to your
+chest. You feel the presence of something IN the mud.
+The only obvious exit is to the west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47405
+EFlags door closed~
+EKeyvnum -1
+EKeywords grey block~
+EDesc You can see nothing at all.
+~
+Exit west 47407
+EKeyvnum -1
+End
+
+
+#47407
+Name Tunnel~
+Desc The mud goes to your knees. Otherwise the tunnel looks
+very normal.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47408
+EKeyvnum -1
+Exit east 47406
+EKeyvnum -1
+EDesc You can see a mudhole.
+~
+Exit south 47409
+EKeyvnum -1
+End
+
+
+#47408
+Name The long tunnel~
+Desc Here There is almost no mud, as you stand at the top
+of a small rock. Just beside you there are a sign which
+says 'WARNING! The worms are dangerous!'.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47403
+EKeyvnum -1
+EDesc You can see a lot of mud..Yarck!
+~
+Exit south 47407
+EKeyvnum -1
+EDesc The tunnel goes a little downwards.
+~
+End
+
+
+#47409
+Name The hot room~
+Desc You are very surprised, as this room for a change are
+hot instead of cold. To the north it goes downwards into
+some mud. There are also an exit to the west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47407
+EKeyvnum -1
+EDesc You see a lot of mud.
+~
+Exit west 47410
+EKeyvnum -1
+EDesc You see a entrance to a small room.
+~
+End
+
+
+#47410
+Name The small room~
+Desc As you look around you notice a small statue. There are
+exits to the west and to the east.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc small statue~
+This is a statue of a imp, pointing to the west. The imp
+looks like a man with horns and a tail.
+~
+Exit east 47409
+EKeyvnum -1
+EDesc It is pitch dark out there.
+~
+Exit west 47411
+EKeyvnum -1
+EDesc You see a VERY long hallway.
+~
+End
+
+
+#47411
+Name The stalagmite cave~
+Desc You are standing in a stalagmite cave. Water is dripping
+from the walls. It is very cold in here.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc stalagmite~
+The stalagmites are very tall, and looks very beautiful.
+~
+Exit north 47414
+EKeyvnum -1
+Exit east 47410
+EKeyvnum -1
+EDesc You see a long hallway, and some mud.
+~
+Exit south 47412
+EKeyvnum -1
+End
+
+
+#47412
+Name The stalagmite tunnel~
+Desc You have entered a small tunnel. Here it is quite dry.
+Maybe it would be an idea to rest here.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47411
+EKeyvnum -1
+EDesc You can see a small cave to the north.
+~
+Exit west 47413
+EKeyvnum -1
+End
+
+
+#47413
+Name The spongy room~
+Desc You definitely NOT like this area. It is very dank, and most
+of the places it is wet.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit east 47412
+EKeyvnum -1
+Exit west 47445
+EKeyvnum -1
+End
+
+
+#47414
+Name The stalagmite T-cross~
+Desc You are standing in a cross. To the north you can see
+some light. Otherwise it is dark.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit north 47417
+EKeyvnum -1
+EDesc You see some light ahead.
+~
+Exit east 47415
+EKeyvnum -1
+Exit south 47411
+EKeyvnum -1
+End
+
+
+#47415
+Name The blind end room~
+Desc This room is obviously a blind end. To the north you see
+a primitive picture.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc primitive picture~
+You see some persons dancing around a huge sun. The
+sun is about 7 feet in diameter, which shows the size
+of the picture.
+~
+Exit north 47416
+EFlags door closed~
+EKeyvnum -1
+EKeywords sun~
+EDesc You see a primitive picture
+~
+Exit west 47414
+EKeyvnum -1
+End
+
+
+#47416
+Name The treasure room~
+Desc This room is rich ornamented. The walls has carves showing
+persons dancing around a sun which is drawn at the floor. It
+looks very old, and it is very dusty. To the south you see a
+secret door.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 47415
+EFlags door closed~
+EKeyvnum -1
+EKeywords door picture sun moon~
+EDesc you can see a picture with some persons crawling around a
+huge moon.
+~
+End
+
+
+#47417
+Name The square lair~
+Desc You are standing in the south-east part of the lair. You can
+see a skeleton lying at the wall.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc skeleton~
+It looks like a adventurer who wasn't lucky. You better
+watch out-
+~
+Exit north 47418
+EKeyvnum -1
+EDesc Another part of the lair
+~
+Exit south 47414
+EKeyvnum -1
+Exit west 47420
+EKeyvnum -1
+EDesc Another part of the lair
+~
+End
+
+
+#47418
+Name The square lair~
+Desc You are standing in the north-east part of the lair. You see
+a sign at the wall
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc sign wall~
+The sign says 'Gods of War I call you, my sword is by my side,
+               I seek a light free from all false pride'
+                       Reyemle Grug.....
+~
+Exit east 47421
+EFlags door closed~
+EKeyvnum -1
+EKeywords wooden door~
+EDesc You see a wooden door
+~
+Exit south 47417
+EKeyvnum -1
+EDesc another part of the lair.
+~
+Exit west 47419
+EKeyvnum -1
+EDesc another part of the lair.
+~
+End
+
+
+#47419
+Name The square lair~
+Desc You are standing in the north-west part of the lair. Here's
+another sign. There are a exit from the lair to the north.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc sign~
+The sign says 'I'm wandering around in a everlasting tale,
+               seeking the light to regain my pride
+                           Corama...
+~
+Exit north 47422
+EKeyvnum -1
+EDesc You see a small tunnel leading north.
+~
+Exit east 47418
+EKeyvnum -1
+EDesc another part of the lair.
+~
+Exit south 47420
+EKeyvnum -1
+EDesc another part of the lair.
+~
+End
+
+
+#47420
+Name The lair end~
+Desc You can see a table in front of you. It's very dusty.
+Around the table five skeletons are sitting. Exits are
+north and east.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc table~
+On the table there is dust, in the center there is a small statue of a
+Dragon sleeping.
+~
+ExtraDesc skeleton skeletons~
+You can see that they have been killed in some sort of way. Not
+by sword or club.
+~
+ExtraDesc dragon statue~
+it looks like a silver dragon. It is nailed onto the table.
+The dragon sits on a red dragon that looks dead. But the
+eyes of the red dragon is glowing pulsating red. You feel
+drained.
+~
+Exit north 47419
+EKeyvnum -1
+EDesc the northern part of the lair.
+~
+Exit east 47417
+EKeyvnum -1
+EDesc the eastern part of the lair.
+~
+End
+
+
+#47421
+Name East tunnel~
+Desc You are standing in dark tunnel, the exits are east
+and west. To the west you see a wooden door.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit east 47402
+EKeyvnum -1
+EDesc You can see a muddy tunnel.
+~
+Exit west 47418
+EFlags door closed~
+EKeyvnum -1
+EKeywords wooden door~
+EDesc You can see a wooden door.
+~
+End
+
+
+#47422
+Name North tunnel~
+Desc You are standing in a dark tunnel, it leads upwards.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47423
+EKeyvnum -1
+EDesc The dark tunnel continues.
+~
+Exit south 47419
+EKeyvnum -1
+EDesc You can see the lair.
+~
+Exit west 47436
+EKeyvnum -1
+EDesc You can see a cave entrance.
+~
+End
+
+
+#47423
+Name The L-shaped room.~
+Desc You are standing in deep darkness. To the south there is a small exit.
+To the east you can see a gaping hole.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 47424
+EKeyvnum -1
+Exit south 47422
+EKeyvnum -1
+End
+
+
+#47424
+Name The Circular hall.~
+Desc You are standing in round hall. To the north, east and south you
+can see a stone head hanging on the walls.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc head heads~
+When you study the faces of the heads you see that it
+is faces of dragons. The face to the north is red, the
+face to the east is green and the face to the south is
+blue.
+~
+ExtraDesc green~
+This looks like a evil dragon
+~
+ExtraDesc red~
+This looks like a neutral dragon
+~
+ExtraDesc blue~
+This looks like a good dragon
+~
+Exit east 47425
+EFlags door closed~
+EKeyvnum -1
+EKeywords green head dragon sculpture face~
+EDesc you see nothing special.
+~
+Exit west 47423
+EKeyvnum -1
+EDesc you see a room far away.
+~
+End
+
+
+#47425
+Name Dusty tunnel~
+Desc You are standing in dust. This place has not been
+touched for a long time. Otherwise it is quite boring
+here, looks like a place to rest! To the west you see
+the outline of a door. A tunnel leads to the east.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit east 47426
+EKeyvnum -1
+EDesc You see a tunnel which leads downwards. It is quite
+dark.
+~
+Exit west 47424
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You can see the outline of a door. Just like in the
+description!
+~
+End
+
+
+#47426
+Name The crossing~
+Desc You are standing in a crossing of hallways. You can leave this place
+in every direction, except up and down. In the dust you notice strange
+footprints.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc footprints foot~
+You have never seen this kind of footprints before!
+~
+Exit north 47431
+EKeyvnum -1
+Exit east 47430
+EKeyvnum -1
+Exit south 47427
+EKeyvnum -1
+Exit west 47425
+EKeyvnum -1
+End
+
+
+#47427
+Name The L-shaped room~
+Desc You are standing in a L-shaped room. You can hear noises from the long
+tunnel to the east. You can feel fear! A sign is hanging on the wall.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc sign~
+The sign says 'DANGER!!'.
+~
+Exit north 47426
+EKeyvnum -1
+Exit east 47428
+EKeyvnum -1
+EDesc a long dark tunnel.
+~
+End
+
+
+#47428
+Name Dragons lair~
+Desc You can see burned walls, the floorstones are fiery red.  All kinds of bones
+are scattered all over the floor.  On the walls you can see some burned
+shapes.  You smell burned flesh.  Two creatures are melted into the floor.
+You're next.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47429
+EKeyvnum -1
+EDesc You can see a long tunnel.
+~
+Exit west 47427
+EKeyvnum -1
+EDesc You can see nothing but darkness.
+~
+End
+
+
+#47429
+Name The burned room~
+Desc You are in a room, which once had been quite burned.
+There is writing on the wall.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc writing~
+The writing says 'DANGER!!!'
+~
+Exit south 47428
+EKeyvnum -1
+EDesc You can see a red glow
+~
+Exit west 47430
+EKeyvnum -1
+End
+
+
+#47430
+Name The wind tunnel~
+Desc You are standing in a tunnel. Above you, you can feel
+a breeze.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc breeze~
+The breeze comes from a hole above you. NO way to get up
+there.
+~
+Exit east 47429
+EKeyvnum -1
+EDesc To dark to tell
+~
+Exit west 47426
+EKeyvnum -1
+End
+
+
+#47431
+Name The glittering room~
+Desc This room are all bright. In the walls you can see some
+silver. Exits are: West, east and south.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc glitter walls silver~
+The glittering silver looks like it is INSIDE the walls.
+~
+Exit east 47432
+EKeyvnum -1
+Exit south 47426
+EKeyvnum -1
+Exit west 47433
+EKeyvnum -1
+End
+
+
+#47432
+Name The secret passageroom~
+Desc You have entered a tiny room. There WAS an exit down, and an
+exit to the west.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc down~
+A sign is blocking the way. It says 'we have closed an entrance to DEATH'
+~
+Exit west 47431
+EKeyvnum -1
+EDesc You can see a light to the west
+~
+End
+
+
+#47433
+Name End of long tunnel~
+Desc You are at a end of a long tunnel. Right in front of you,
+you can see a grey mass. To the east you can see a tremendous
+long tunnel, but you know that, you has just been there.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc grey mass~
+The mass is nothing but a mass, but it is quite suspicious!
+~
+Exit east 47431
+EKeyvnum -1
+EDesc Long tunnel. JUST like in the description!
+~
+Exit west 47434
+EKeyvnum -1
+EDesc A grey mass is blocking the way.
+~
+End
+
+
+#47434
+Name Stair-room~
+Desc You are standing in a small room.  Drawings of faces in pain are on the 
+walls.  You can feel that darkness is ruling this place.  There are two 
+exits: south and down.  You have a feeling the downward exit leads to a very 
+dark and evil place.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 47435
+EKeyvnum -1
+EDesc nothing but darkness
+~
+Exit down 10401
+End
+
+
+#47435
+Name Dark tunnel~
+Desc You are standing in a dark tunnel. It continues to the north
+and to the south. Bones are spread on the floor
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc bones bone~
+it looks like bones of a human.
+~
+Exit north 47434
+EKeyvnum -1
+Exit south 47436
+EKeyvnum -1
+End
+
+
+#47436
+Name Entrance to lair~
+Desc The smell here is awful.  To the south you can see some smoke.
+A tunnel leads north, and east.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47435
+EKeyvnum -1
+Exit east 47422
+EKeyvnum -1
+EDesc A small cave is to the east.
+~
+Exit south 47437
+EKeyvnum -1
+EDesc the only thing you can see are smoke.
+~
+End
+
+
+#47437
+Name North-eastern part of Basilisks cave~
+Desc It is hard to see here because of the smoke. To the north you
+can see barely see a small tunnel. Other exits are to the south
+and to the west.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47436
+EKeyvnum -1
+Exit south 47438
+EKeyvnum -1
+Exit west 47439
+EKeyvnum -1
+End
+
+
+#47438
+Name South-eastern part of basilisks cave~
+Desc There are a very small hole in wall, from where the smoke
+are coming from. Otherwise it is pitch dark. Exits are north
+and west.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc hole small~
+It's a small hole. About 1 feet in diameter.
+~
+Exit north 47437
+EKeyvnum -1
+EDesc You can see nothing but smoke
+~
+Exit west 47440
+EKeyvnum -1
+EDesc You can see nothing but smoke
+~
+End
+
+
+#47439
+Name North-western part of basilisks cave~
+Desc You can see some hay spread on the floor. The smell is awful here,
+and it makes you feel sick.  The basilisk sleeps here.
+Watch out ... Maybe it is not far away.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc hay~
+The hay is very dirty. The smell of it makes you feel sick.
+~
+Exit east 47437
+EKeyvnum -1
+Exit south 47440
+EKeyvnum -1
+End
+
+
+#47440
+Name South-western part of basilisks cave~
+Desc You can see nothing but smoke. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 47439
+EKeyvnum -1
+Exit east 47438
+EKeyvnum -1
+Exit south 47441
+EKeyvnum -1
+End
+
+
+#47441
+Name The small cave~
+Desc You are standing in small cave. You can see
+some light in the end. Exits are north and south.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 47440
+EKeyvnum -1
+EDesc You can see only smoke.
+~
+Exit south 47442
+EKeyvnum -1
+EDesc You can see a blue glow. And you feel a fresh breeze.
+~
+End
+
+
+#47442
+Name The northern end of the pool~
+Desc You have wet feet, you are standing in water. The water looks calm. You can
+see that it's a big lake. Light seeps from the water.
+~
+RoomFlags indoors~
+Sector swim~
+Exit north 47441
+EKeyvnum -1
+EDesc You can see a small cave.
+~
+Exit east 47443
+EKeyvnum -1
+EDesc You can see more water.
+~
+Exit south 47444
+EKeyvnum -1
+EDesc You can see water.
+~
+End
+
+
+#47443
+Name The pool~
+Desc You are swimming in water. It is getting deep here. It is dark in this end.
+~
+RoomFlags dark indoors~
+Sector swim~
+Exit south 47445
+EKeyvnum -1
+EDesc You can see some bubbles in the water.
+~
+Exit west 47442
+EKeyvnum -1
+EDesc You see calm water.
+~
+End
+
+
+#47444
+Name The south end of the pool~
+Desc You standing in water up to you neck. You can only see water.
+~
+RoomFlags indoors~
+Sector swim~
+Exit north 47442
+EKeyvnum -1
+EDesc You can see calm water.
+~
+Exit east 47445
+EKeyvnum -1
+EDesc To dark to tell, but you can feel something nearby.
+~
+End
+
+
+#47445
+Name The pool~
+Desc You are swimming in DARKNESS. You feel something
+touching your right leg.
+~
+RoomFlags dark indoors~
+Sector swim~
+Exit north 47443
+EKeyvnum -1
+EDesc To dark to tell.
+~
+Exit east 47413
+EKeyvnum -1
+EDesc You can feel a warm breeze.
+~
+Exit west 47444
+EKeyvnum -1
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 47200 spec_cast_mean
+M 47201 spec_cast_mage
+M 47202 spec_cast_mage
+M 47203 spec_poison
+M 47204 spec_poison
+M 47006 spec_poison
+M 47040 spec_breath_fire
+M 47041 spec_cast_undead
+M 47042 spec_cast_cleric
+M 47043 spec_breath_gas
+S
+
+
+
+#RESETS2
+M 0 47002 7 47104 3
+M 0 47006 6 47104 2
+M 0 47005 7 47112 4
+M 0 47005 7 47112 4
+M 0 47005 7 47122 3
+M 0 47190 1 47190 1
+O 0 47204 0 47200
+M 0 47200 1 47201 1
+E 0 47200 0 wielded~
+E 0 47203 0 neck1~
+G 0 47205 0
+M 0 47201 1 47203 1
+E 0 47201 0 wielded~
+M 0 47202 2 47205 1
+E 0 47202 0 wielded~
+O 0 47206 0 47206
+M 0 47202 2 47207 1
+E 0 47202 0 wielded~
+M 0 47203 10 47213 1
+E 0 47211 0 wielded~
+M 0 47203 10 47214 1
+E 0 47211 0 wielded~
+M 0 47203 10 47215 1
+E 0 47211 0 wielded~
+M 0 47203 10 47217 1
+G 0 47208 0
+E 0 47211 0 wielded~
+M 0 47203 10 47219 1
+E 0 47209 0 feet~
+E 0 47211 0 wielded~
+M 0 47203 10 47221 1
+G 0 47208 0
+E 0 47211 0 wielded~
+M 0 47203 10 47223 1
+E 0 47209 0 feet~
+E 0 47211 0 wielded~
+M 0 47203 10 47225 1
+E 0 47211 0 wielded~
+M 0 47203 10 47233 1
+G 0 47208 0
+E 0 47211 0 wielded~
+M 0 47203 10 47233 1
+E 0 47209 0 feet~
+E 0 47211 0 wielded~
+M 0 47204 1 47234 1
+M 0 47000 8 47280 1
+M 0 47000 8 47281 2
+M 0 47000 8 47281 2
+M 0 47002 7 47285 1
+E 0 47190 0 rfinger~
+M 0 47002 7 47285 1
+M 0 47000 8 47286 2
+M 0 47013 8 47286 2
+M 0 47008 4 47401 4
+M 0 47013 3 47403 3
+M 0 47044 6 47406 6
+M 0 47013 3 47412 3
+M 0 47045 1 47419 1
+M 0 47007 3 47422 3
+M 0 47011 3 47423 3
+M 0 47046 1 47424 1
+M 0 47040 1 47428 1
+E 0 47304 0 torso~
+E 0 47305 0 legs~
+E 0 47306 0 hands~
+E 0 47307 0 head~
+E 0 47308 0 shield~
+E 0 47309 0 arms~
+E 0 47310 0 feet~
+E 0 47216 0 wielded~
+M 0 47010 2 47429 2
+M 0 47042 2 47435 2
+M 0 47043 3 47439 3
+O 0 47300 0 47439
+M 0 47041 2 47444 2
+M 0 47001 12 47004 6
+M 0 47001 12 47004 6
+M 0 47001 12 47025 3
+M 0 47002 7 47031 1
+M 0 47003 8 47037 3
+M 0 47003 8 47037 3
+M 0 47003 8 47039 3
+M 0 47003 8 47039 3
+M 0 47003 8 47039 3
+M 0 47001 12 47041 3
+M 0 47002 7 47049 1
+M 0 47003 8 47050 2
+M 0 47006 6 47101 2
+M 0 47004 3 47102 3
+M 0 47006 6 47102 2
+M 0 47000 8 47103 3
+M 0 47000 8 47103 3
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#47191
+title Load Dragonorb~
+author Ixliam~
+code mob oload 47303
+hold orb
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1067531557
+END
+
+#47190
+title Go To Hell~
+author Ixliam~
+code mq1 mob seeall
+mq 8 mob force $n down
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057341949
+END
+
+#0
+
+
+#$

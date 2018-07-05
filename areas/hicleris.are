@@ -1,0 +1,937 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        High Clerists Tower~
+ShortName   `cHigh Clerists Tower`^~
+Builders    None~
+Credits     Ixliam~
+VNUMs       45325 45349
+LComment    `#`M[ NEWBIE]`^
+AFlags  noscry nogateinto nosummoninto noportalinto newbie_area_resets~
+LRange      0 0
+Security    9
+Colour      c~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:24 2005~
+End
+
+
+
+#MOBILES
+#45325
+Name furry white mouse~
+ShortD a furry `#`Wwhite`^ mouse~
+LongD A furry `#`Wwhite`^ mouse cleans its whiskers here.~
+Desc A furry white mouse sits here cleaning its whiskers.  It has tiny paws which 
+it first licks, and then rubs over its head and face.  Of course it would 
+stop cleaning, at the first smell of cheese.  
+~
+Race rabbit~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 72
+Wealth 2
+Act    npc docile no_tame stay_area wimpy pet noalign noautosocial~
+Act2   no_random_obj~
+AffBy  haste swim~
+Imm    mental drowning~
+Vuln   bash~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#45326
+Name fly~
+ShortD a fly~
+LongD A fly is buzzing around in the air.~
+Desc ~
+Race insect~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 80
+Wealth 0
+Act    npc no_tame stay_area noalign noautosocial~
+Act2   no_random_obj~
+AffBy  flying~
+Imm    mental~
+Vuln   fire~
+Form   edible non_skinable sentient insect~
+Part   head legs heart brains guts eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#45327
+Name gnat~
+ShortD a small gnat~
+LongD A small gnat is flying about.~
+Desc ~
+Race insect~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 80
+Wealth 0
+Act    npc no_tame stay_area noalign noautosocial~
+Act2   no_random_obj~
+AffBy  flying~
+Imm    mental~
+Vuln   fire~
+Form   edible non_skinable sentient insect~
+Part   head legs heart brains guts eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#45328
+Name dirty rat~
+ShortD a dirty rat~
+LongD A dirty rat is here, trying to hide in the shadows.~
+Desc This dirty rat is about a foot long, and is covered with filthy hair and
+scabs.
+~
+Race rabbit~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType bite
+AC 80 80 80 69
+Wealth 4
+Act    npc dont_wander stay_area noalign~
+Act2   no_random_obj~
+AffBy  detect_hidden infrared dark_vision~
+Off    dodge~
+Imm    disease~
+Vuln   light~
+Form   edible poison animal mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#45329
+Name pesky mosquito~
+ShortD a pesky mosquito~
+LongD A pesky mosquito buzzes in your ear.~
+Desc This mosquito is small and black, but it sure is annoying.  It flies around 
+looking for a nice piece of flesh to sink its proboscis into, and buzzes 
+loudly.  
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc stay_area noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge fast~
+Res    cold~
+Form   edible poison animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#45330
+Name centipede~
+ShortD a centipede~
+LongD A small orange centipede scurries about the floor.~
+Desc The centipede has a multi-segmented body, and each segment sports a set of 
+legs.  It uses two antenae to find things to eat and to navigate about.  
+~
+Race insect~
+Align 0 0
+XPMod 115
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType sting
+AC 80 80 80 72
+Wealth 0
+Act    npc no_tame stay_area noalign noautosocial~
+Act2   no_random_obj~
+AffBy  slow~
+Vuln   magic weapon bash~
+Form   edible non_skinable sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#45331
+Name red scorpion~
+ShortD a red scorpion~
+LongD A red scorpion is walking around here.~
+Desc Frightening it is, with its poisoning tail. What a creepy figure it is, so red 
+and so scary.
+~
+Race snake~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType sting
+AC 70 70 70 61
+Wealth 3
+Act    npc no_tame stay_area noalign~
+Act2   no_random_obj~
+AffBy  pass_door haste dark_vision~
+Res    poison~
+Vuln   cold~
+Form   edible non_skinable animal~
+Part   guts eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#45332
+Name ladybug~
+ShortD a ladybug~
+LongD A ladybug is crawling on the ground here.~
+Desc The ladybug has several orange dots on its back, and is crawling around on 
+the ground, looking for aphids.  
+~
+Race insect~
+Align 0 0
+XPMod 115
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType sting
+AC 80 80 80 72
+Wealth 0
+Act    npc no_tame stay_area noalign noautosocial~
+Act2   no_random_obj~
+AffBy  flying~
+Off    fast~
+Vuln   magic weapon bash~
+Form   edible non_skinable sentient biped insect~
+Part   head legs heart brains guts eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#45333
+Name red ant~
+ShortD a red ant~
+LongD A large red ant is here, looking for food.~
+Desc This large red ant looks somewhat harmless, though it can bite.
+~
+Race centipede~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType bite
+AC 70 70 70 60
+Wealth 2
+Act    npc dont_wander stay_area noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge fast~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison non_skinable animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#45334
+Name cockroach roach~
+ShortD a cockroach~
+LongD A nasty cockroach is hiding in the shadows.~
+Desc ~
+Race insect~
+Align 0 0
+XPMod 115
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType bite
+AC 80 80 80 72
+Wealth 0
+Act    npc no_tame stay_area noalign noautosocial~
+Act2   no_random_obj~
+Vuln   magic weapon bash~
+Form   edible non_skinable sentient biped insect~
+Part   head legs heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#45335
+Name crow bird~
+ShortD a crow~
+LongD A crow is flying around in the air.~
+Desc This is a small black crow. It pecks at the various crops here.
+~
+Race water fowl~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType peck
+AC 60 60 60 48
+Wealth 0
+Act    npc dont_wander stay_area wimpy noalign~
+Act2   no_random_obj~
+AffBy  flying haste~
+Off    dodge fast~
+Res    drowning~
+Form   edible animal mountable bird~
+Part   head legs heart brains guts feet eye wings claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#45336
+Name vulture~
+ShortD a vulture~
+LongD A large black vulture flies here.~
+Desc You see a large black vulture flying here. It is a very large bird, and
+is circling in the sky, looking for something on the ground.
+~
+Race unique~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType peck
+AC 60 60 60 52
+Wealth 0
+Act    npc~
+Act2   no_random_obj~
+AffBy  flying~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#45337
+Name tiny green grasshopper~
+ShortD `#a tiny `Ggreen `^grasshopper~
+LongD `#A tiny `Ggreen`^ grasshopper springs back and forth here.~
+Desc This small grasshopper bounces around happily as it sits upon blades of 
+grass.  The long legs on the grasshopper makes it possible to spring several 
+feet with one leap.  It jumps back and forth and is hard to keep an eye on.  
+
+~
+Race human~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d1+1
+DamDice 1d5+1
+DamType scratch
+AC 60 60 60 70
+Wealth 0
+Act    npc stay_area~
+Act2   no_random_obj~
+Form   edible non_skinable insect~
+Part   head legs heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+MProg RANDOM 22702 5~
+END
+
+#45338
+Name cleric~
+ShortD a cleric~
+LongD A cleric stands stands here.~
+Desc ~
+Race human~
+Align 0 0
+XPMod 140
+Level 6
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 48
+Wealth 100
+Act    npc dont_wander no_tame stay_area no_hunt~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#45325
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit east 45327
+Exit south 45335
+Exit west 45326
+End
+
+
+#45326
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit east 45325
+Exit west 45349
+End
+
+
+#45327
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit east 45333
+Exit west 45325
+End
+
+
+#45328
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  The western entrance lies to the east.  
+~
+Sector field~
+Exit north 45349
+Exit east 45340
+Exit south 45329
+End
+
+
+#45329
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit north 45328
+Exit east 45330
+End
+
+
+#45330
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  To the north lies the south tower entrance.  
+~
+Sector field~
+Exit north 45347
+Exit east 45332
+Exit west 45329
+End
+
+
+#45331
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  The eastern entrance lies to the west.  
+~
+Sector field~
+Exit north 45333
+Exit east 7359
+Exit south 45332
+Exit west 45344
+End
+
+
+#45332
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit north 45331
+Exit west 45330
+End
+
+
+#45333
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit south 45331
+Exit west 45327
+End
+
+
+#45334
+Name Northwest Corner of the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 45335
+Exit south 45337
+Exit southeast 45338
+End
+
+
+#45335
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 45336
+Exit south 45338
+Exit west 45334
+End
+
+
+#45336
+Name Northeast Corner of the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 45339
+Exit west 45335
+Exit southwest 45338
+End
+
+
+#45337
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45334
+Exit east 45338
+Exit south 45340
+End
+
+
+#45338
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45335
+Exit east 45339
+Exit south 45342
+Exit west 45337
+Exit northeast 45336
+Exit southeast 45344
+Exit southwest 45340
+Exit northwest 45334
+End
+
+
+#45339
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45336
+Exit south 45344
+Exit west 45338
+End
+
+
+#45340
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45337
+Exit east 45342
+Exit south 45341
+Exit west 45328
+Exit northeast 45338
+Exit southeast 45343
+End
+
+
+#45341
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45340
+Exit east 45343
+Exit south 45348
+End
+
+
+#45342
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45338
+Exit east 45344
+Exit south 45343
+Exit west 45340
+End
+
+
+#45343
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45342
+Exit east 45345
+Exit south 45347
+Exit west 45341
+Exit northeast 45344
+Exit southeast 45346
+Exit southwest 45348
+Exit northwest 45340
+End
+
+
+#45344
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45339
+Exit east 45331
+Exit south 45345
+Exit west 45342
+Exit southwest 45343
+Exit northwest 45338
+End
+
+
+#45345
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45344
+Exit south 45346
+Exit west 45343
+End
+
+
+#45346
+Name Southeast Corner of the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45345
+Exit west 45347
+Exit northwest 45343
+End
+
+
+#45347
+Name Inside the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45343
+Exit east 45346
+Exit south 45330
+Exit west 45348
+End
+
+
+#45348
+Name Southwest Corner of the Tower~
+Desc Rubble and bits of broken wood and stone lie around you, remnants of ancient 
+battles upon this fortress.  What once was a proud fortress of the Knights 
+of Solamnia is in ruin, crippled from the attacks of both the DragonArmy and 
+the dragons themselves.  Several gates used to trap dragons are but twisted 
+hunks of rust.  The floor is scorched from dragonfire, and dark maroon 
+stains are all about.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 45341
+Exit east 45347
+Exit northeast 45343
+End
+
+
+#45349
+Name Inside the Outer Walls~
+Desc A large expansive open court lies between you and the ancient High Clerists 
+Tower.  The courtyard is mostly composed of hard-packed dirt with the 
+occasional patch of grass or scrub brush.  Several dark patches can be seen 
+on the ground, remnants of battles with both man and beast, and dragon as 
+well.  The stones of the tower and blasted black and charred from ancient 
+scars of dragonbreath.  
+~
+Sector field~
+Exit east 45326
+Exit south 45328
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 45331 spec_poison
+M 45336 spec_fido
+S
+
+
+
+#RESETS2
+M 0 45332 2 45325 8
+M 0 45334 1 45326 6
+M 0 45328 2 45327 5
+M 0 45335 1 45329 6
+M 0 45326 1 45332 5
+M 0 45338 6 45332 1
+M 0 45338 6 45333 1
+M 0 45337 2 45336 5
+M 0 45337 1 45337 5
+M 0 45334 2 45338 5
+M 0 45325 3 45338 5
+M 0 45327 1 45338 5
+M 0 45326 2 45339 5
+M 0 45329 1 45340 5
+M 0 45328 2 45341 5
+M 0 45330 2 45342 5
+M 0 45338 6 45342 2
+M 0 45331 2 45343 8
+M 0 45335 2 45344 5
+M 0 45325 2 45345 5
+M 0 45326 2 45346 5
+M 0 45333 2 45347 8
+M 0 45327 1 45348 5
+M 0 45326 2 45349 6
+M 0 45338 6 45349 2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,807 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Jiangsu Monastery~
+ShortName   Jiangsu~
+Builders    None~
+build_restricts 'all' sparra  ardayne~
+VNUMs       15221 15280
+AFlags  noteleport noscry hidden use_buildrestricts~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Fri Oct  7 10:54:23 2005~
+End
+
+
+
+#MOBILES
+#15279
+Name spike metal dog~
+ShortD spike, the metal dog~
+LongD Spike, The metal dog is standing here glaring at you.~
+Desc This average sized dog seems normal, K-9 teeth, tail, fur? Hmm
+no fur.... oh my, He is made entirely out of silver!
+~
+Race dog~
+Align 0 0
+XPMod 140
+Level 6
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType claw
+AC 60 60 60 48
+Wealth 14
+Act    npc dont_wander no_tame stay_area no_hunt~
+Off    dodge fast tail~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg DEATH 1021 25~
+END
+
+#15280
+Name builder buddy~
+ShortD a builder buddy(tm)~
+LongD A builder buddy(tm) is here to help.~
+Desc ~
+Race dog~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Act2   avoids_all_attacks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 15221 restore~
+MProg SPEECH 15222 mload~
+MProg SPEECH 15223 oload~
+MProg SPEECH 15224 purge~
+END
+
+#0
+
+
+
+#OBJECTS
+#15221
+Name food item~
+Short food item is lying here~
+Desc A food item~
+Level 1
+ItemType food~
+Cost 1
+Durability 1
+Asize 0
+Rsize 50
+Values 99 99 0 0 0
+Weight 1
+Material food item~
+Extra    inventory~
+Extra2   nodecay~
+End
+
+#15279
+Name rp item~
+Short an rp item~
+Desc (no description)~
+Level 0
+ItemType rp~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#15221
+Name Gate Enterance~
+Desc Big wooden gate towers above. Painted (faded) red with gold lettering. 
+~
+Sector trail~
+Exit north 15223
+End
+
+
+#15222
+Name Front gate~
+Desc ~
+Sector inside~
+End
+
+
+#15223
+Name ~
+Desc Gate seen just to the south. Rock gardens seen to ne and nw. Monestary seen to far north. pathway starting to become overgrown.
+~
+Sector trail~
+Exit north 15224
+Exit south 15221
+End
+
+
+#15224
+Name pathway~
+Desc ~
+Sector trail~
+Exit north 15225
+Exit east 15232
+Exit south 15223
+Exit west 15226
+End
+
+
+#15225
+Name Temple Entrance~
+Desc ~
+Sector inside~
+Exit north 15238
+Exit south 15224
+End
+
+
+#15226
+Name Rock Garden~
+Desc ~
+Sector desert~
+Exit north 15231
+Exit east 15224
+Exit west 15227
+End
+
+
+#15227
+Name Rock Garden~
+Desc ~
+Sector desert~
+Exit north 15230
+Exit east 15226
+Exit west 15228
+End
+
+
+#15228
+Name Rock Garden~
+Desc ~
+Sector desert~
+Exit north 15229
+Exit east 15227
+End
+
+
+#15229
+Name Rock Garden~
+Desc ~
+Sector desert~
+Exit east 15230
+Exit south 15228
+End
+
+
+#15230
+Name Rock Garden~
+Desc ~
+Sector desert~
+Exit east 15231
+Exit south 15227
+Exit west 15229
+End
+
+
+#15231
+Name Rock Garden~
+Desc ~
+Sector desert~
+Exit south 15226
+Exit west 15230
+End
+
+
+#15232
+Name Water Garden~
+Desc ~
+Sector swim~
+Exit north 15237
+Exit east 15233
+Exit west 15224
+End
+
+
+#15233
+Name Water Garden~
+Desc ~
+Sector swim~
+Exit north 15236
+Exit east 15234
+Exit west 15232
+End
+
+
+#15234
+Name Water Garden~
+Desc ~
+Sector swim~
+Exit north 15235
+Exit west 15233
+End
+
+
+#15235
+Name Water Garden~
+Desc ~
+Sector swim~
+Exit south 15234
+Exit west 15236
+End
+
+
+#15236
+Name Water Garden~
+Desc ~
+Sector swim~
+Exit east 15235
+Exit south 15233
+Exit west 15237
+End
+
+
+#15237
+Name Water Garden~
+Desc ~
+Sector swim~
+Exit east 15236
+Exit south 15232
+End
+
+
+#15238
+Name Just Inside The Monestary~
+Desc ~
+Sector inside~
+Exit north 15250
+Exit east 15241
+Exit south 15225
+Exit west 15239
+End
+
+
+#15239
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15252
+Exit east 15238
+Exit west 15240
+End
+
+
+#15240
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15254
+Exit east 15239
+Exit west 15256
+End
+
+
+#15241
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15248
+Exit east 15242
+Exit west 15238
+End
+
+
+#15242
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15246
+Exit east 15243
+Exit west 15241
+End
+
+
+#15243
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15244
+Exit east 15266
+Exit west 15242
+End
+
+
+#15244
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15245
+Exit south 15243
+Exit west 15246
+End
+
+
+#15245
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit south 15244
+Exit west 15247
+End
+
+
+#15246
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15247
+Exit east 15244
+Exit south 15242
+Exit west 15248
+End
+
+
+#15247
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit east 15245
+Exit south 15246
+Exit west 15249
+End
+
+
+#15248
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15249
+Exit east 15246
+Exit south 15241
+Exit west 15250
+End
+
+
+#15249
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit east 15247
+Exit south 15248
+Exit west 15251
+End
+
+
+#15250
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15251
+Exit east 15248
+Exit south 15238
+Exit west 15252
+End
+
+
+#15251
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit east 15249
+Exit south 15250
+Exit west 15253
+End
+
+
+#15252
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15253
+Exit east 15250
+Exit south 15239
+Exit west 15254
+End
+
+
+#15253
+Name Bottom of the Starwell~
+Desc ~
+Sector inside~
+Exit east 15251
+Exit south 15252
+Exit west 15255
+Exit up 15276
+End
+
+
+#15254
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit north 15255
+Exit east 15252
+Exit south 15240
+End
+
+
+#15255
+Name Inside Monestary~
+Desc ~
+Sector inside~
+Exit east 15253
+Exit south 15254
+End
+
+
+#15256
+Name Fire Tao Hall Entrance~
+Desc ~
+Sector inside~
+Exit east 15240
+Exit west 15257
+EFlags door closed~
+End
+
+
+#15257
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15258
+Exit east 15256
+EFlags door closed~
+Exit west 15264
+End
+
+
+#15258
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15259
+Exit south 15257
+Exit west 15262
+End
+
+
+#15259
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit south 15258
+Exit west 15260
+End
+
+
+#15260
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit east 15259
+Exit south 15262
+Exit west 15261
+End
+
+
+#15261
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit east 15260
+Exit south 15263
+End
+
+
+#15262
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15260
+Exit east 15258
+Exit south 15264
+Exit west 15263
+End
+
+
+#15263
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15261
+Exit east 15262
+Exit south 15265
+End
+
+
+#15264
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15262
+Exit east 15257
+Exit west 15265
+End
+
+
+#15265
+Name Fire Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15263
+Exit east 15264
+End
+
+
+#15266
+Name Water Tao Hall Entrance~
+Desc ~
+Sector inside~
+Exit east 15267
+EFlags door closed~
+Exit west 15243
+End
+
+
+#15267
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15268
+Exit east 15274
+Exit west 15266
+EFlags door closed~
+End
+
+
+#15268
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15269
+Exit east 15272
+Exit south 15267
+End
+
+
+#15269
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit east 15270
+Exit south 15268
+End
+
+
+#15270
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit east 15271
+Exit south 15272
+Exit west 15269
+End
+
+
+#15271
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit south 15273
+Exit west 15270
+End
+
+
+#15272
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15270
+Exit east 15273
+Exit south 15274
+Exit west 15268
+End
+
+
+#15273
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15271
+Exit south 15275
+Exit west 15272
+End
+
+
+#15274
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15272
+Exit east 15275
+Exit west 15267
+End
+
+
+#15275
+Name Water Tao Hall~
+Desc ~
+Sector inside~
+Exit north 15273
+Exit west 15274
+End
+
+
+#15276
+Name Top of the Stairwell~
+Desc ~
+Sector inside~
+Exit east 15277
+Exit down 15253
+End
+
+
+#15277
+Name Upstairs~
+Desc ~
+Sector inside~
+Exit east 15278
+Exit west 15276
+End
+
+
+#15278
+Name Meditation Room~
+Desc Very calming and relaxing. Meditation mat on the floor. Another rolled up and against the wall under the window.
+~
+Sector inside~
+Mana 115
+Exit east 15280
+EFlags door closed~
+Exit west 15277
+End
+
+
+#15279
+Name Super Creation Room~
+Desc Build mobs and items here and export via builder buddy
+Vnums: 15221 - 15280
+~
+Sector inside~
+End
+
+
+#15280
+Name Up on the Rooftop~
+Desc From up here on the roof, the water garden below looks very calm and serene. Tiny ripples spread out from time to time, from the koi. Humid air can be felt rising from the garden. The clay tiles have been worn in some places where people must have sat and relaxed often.
+~
+Sector hills~
+ExtraDesc roof ~
+This is a roof, covered with red clay tiles.
+~
+ExtraDesc red clay tiles~
+The red clay tiles are thick and coarse. They span the entire roof in a wavy pattern. 
+~
+ExtraDesc water garden below~
+The water garden below has several rocks jutting out, appearing to form a tiny mountain range.  Koi can be seen swimming around lazily.
+~
+ExtraDesc koi ~
+A koi eats an insect from the waters surface.
+~
+ExtraDesc rock mountain range~
+This tiny cascade of mountains makes the koi look like monster sized fish.
+~
+ExtraDesc window ~
+The window ledge has been damaged some from people climbing through it over time.
+~
+Exit west 15278
+EFlags door closed obvious~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 15221 0 15279
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#15224
+title Purge~
+author Reath~
+code if name $n Sparra
+mob purge
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1124932331
+END
+
+#15223
+author Reath~
+code if name $n Sparra
+mob oload 15279
+mob echoat $n Your will be done.
+drop all
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1124932218
+END
+
+#15222
+title mload~
+author Reath~
+code if name $n Sparra
+mob mload 15279
+mob echoat $n Your will be done.
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1124932166
+END
+
+#15221
+title Restore~
+author Reath~
+code if name $n Sparra
+mob restore $n
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1124932738
+END
+
+#0
+
+
+#$

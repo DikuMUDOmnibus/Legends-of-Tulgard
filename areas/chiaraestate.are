@@ -1,0 +1,202 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        FREE FOR ESTATES~
+ShortName   FREE FOR ESTATES~
+Builders    None~
+VNUMs       12891 12900
+AFlags  noteleport noscry~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Fri Dec 16 13:21:27 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#12891
+Name defunct fountain~
+Short a defunct fountain~
+Desc A defunct fountain is situated in the center of the courtyard.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 'salt water' 1 0
+Weight 0
+Material unknown~
+End
+
+#12892
+Name wooden racks~
+Short a few wooden racks~
+Desc A few wooden racks have been set up on a wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 200 E 0 100 0
+Weight 0
+Material unknown~
+End
+
+#12893
+Name doll~
+Short a small doll~
+Desc ~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 AC 0 1 0
+Weight 0
+Material unknown~
+End
+
+#12894
+Name a treasury key for chiara's estate~
+Short Chiara's `#`Ytreasury key`^~
+Desc Chiara's `#`Ytreasury key`^~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#12891
+Name A Buried Courtyard~
+Desc What once might have been a lovely courtyard has been buried by a cave-in 
+and rubble from above. Cobblestones shattered by the age old destruction 
+form an uneven walkway to the east and west away. A defunct fountain crowns 
+the courtyard in its macabre glory. 
+~
+RoomFlags light~
+Sector inside~
+Exit east 12893
+Exit west 12892
+Exit up 59478
+EFlags door closed~
+End
+
+
+#12892
+Name A Child's Playroom~
+Desc The only room in a peasant house to survive, this small space has been 
+lovelingly covered in small trinkets. In one corner pebbles of odd colors 
+have been painstakingly stacked. In a small pile a few steps away, scraps of 
+crumbling parchment covered with beautiful flowing script covers the floor. 
+A small doll has been pinned to the wall by a stake. 
+~
+Sector inside~
+Exit east 12891
+Exit down 12894
+EFlags door closed locked~
+EKeyvnum 12894
+End
+
+
+#12893
+Name A Spotless Salle~
+Desc The rubble has been cleared from every inch of this space within a large 
+rectangle. A makeshift set of racks has been constructed with wooden 
+shrapnel on one of the few remaining walls of what must have been a huge 
+estate. Sand trickles down the blood red stone cave walls slowly on the east 
+side. 
+~
+Sector inside~
+Exit west 12891
+End
+
+
+#12894
+Name A Hidden Nook~
+Desc Hidden by the warped floorboards of the room above, a small lockable pantry 
+occupies this space. While the supplies are long since gone, someone has 
+obviously put the space to good use storing other things here. Wooden 
+shelves surround the small space giving large amounts of room for any 
+goodies brought down. 
+~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit up 12892
+EFlags door closed locked~
+EKeyvnum 12894
+End
+
+
+#12895
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#12896
+Name ~
+Desc ~
+RoomFlags light~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 12891 -1 12891
+O 0 12893 -1 12892
+P 0 12894 1 12893 1
+O 0 12892 -1 12893
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

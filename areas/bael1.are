@@ -1,0 +1,1188 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Isenfel~
+ShortName   Isenfel~
+Builders    None~
+VNUMs       4500 4549
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Fri Sep 23 01:46:28 2005~
+End
+
+
+
+#MOBILES
+#4500
+Name dragon guardian~
+ShortD `#`xa `BG`Cu`Ba`Cr`Bd`Ci`Ba`Cn `xDragon`^~
+LongD A guardian dragon is here.~
+Desc This is a large male dragon with mirror like scales.  He has large horns 
+that protrude from his head and large wings that are folded over his back.  
+There is a long, thick tail that runs out from his spine.  He is the first 
+Guardian of this place.  
+~
+Race dragon~
+Align 2 3
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 20
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared flying haste dark_vision~
+Off    area_attack berserk tail~
+Imm    summon charm bash sleep~
+Res    magic~
+Vuln   slash~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#4501
+Name drow butler~
+ShortD an average-sized male drow butler~
+LongD An average-sized male drow butler is here, ready to serve.~
+Desc Before you stands an average-sized drow male.  He is dressed like a butler.  
+Maybe this place is for someone important? 
+~
+Race drow~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc dont_wander no_tame stay_area pet~
+AffBy  detect_magic dark_vision~
+Res    magic~
+Vuln   holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4502
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  sanctuary~
+AffBy2 detect_vanish~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg EXALL 4509 0~
+MProg GRALL 4501 100~
+END
+
+#4503
+Name unseen gate opener~
+ShortD unseen gate opener~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -783
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_evil detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg TICK 4501 10~
+MProg GRALL 4501 100~
+MProg EXALL 4502 2~
+END
+
+#4504
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GRALL 4504 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#4501
+Name throne large bone~
+Short a large throne made completely of bone~
+Desc A large throne made completely of bone is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 EHK 100 100
+Weight 0
+Material bone~
+Extra    glow evil nodegrade burnproof chaos~
+Extra2   nodecay~
+ExtraDesc large throne bone~
+This is a large throne that is made entirely of bone.  The bottom of the throne is made of four large elephant tusks that hold the throne up.  The arm rests are made out of rib cages and the back is made by leg bones, arm bones and other type of bones.  Two large demon skulls are at the top on either side of the backrest facing forward.
+~
+End
+
+#4502
+Name altar~
+Short a large blood altar~
+Desc A large altar with blood flowing from it is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 DGJQ 100 100
+Weight 0
+Material unknown~
+Extra    glow evil nodegrade burnproof chaos~
+Extra2   nodecay~
+ExtraDesc altar ~
+This altar is an Altar of Darkness.  It has a large skull engraved on the back of it and blood pours over the skull into a pool of blood at the bottom of the altar.
+~
+End
+
+#4503
+Name royal bed skulls~
+Short a large royal bed with skulls on the bedposts~
+Desc A large, royal bed with skulls on the bedposts is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc royal bed~
+This is a large royal bed.  The sheets are dark red in color and the bed posts have demonic skulls on the tops of them.
+~
+End
+
+#4504
+Name stocks~
+Short a set of large wooden stocks~
+Desc This is a set of long wooden stocks.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 FI 0 0
+Weight 7000
+Material wood~
+Extra    evil nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#4505
+Name pool~
+Short a large pool is here~
+Desc A large pool is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 CFILS 100 100
+Weight 0
+Material unknown~
+Extra    glow nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#4506
+Name hottub~
+Short a medium sized hot tub~
+Desc A medium sized hot tub is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4000 CFILS 100 100
+Weight 0
+Material unknown~
+Extra    glow nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#4507
+Name large bed comfortable~
+Short a large, comfortable looking bed~
+Desc A large, comfortable bed is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 FIL 1000 100
+Weight 0
+Material unknown~
+Extra    nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#4508
+Name fountain~
+Short a large fountain with a black onyx statue of a lich~
+Desc A large fountain with a black onyx statue of a lich is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 absinthe 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#4509
+Name treasury key~
+Short `#`WBael's `Ytreasury key`^~
+Desc `#`WBael's `Ytreasury key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#4510
+Name gate key~
+Short a key~
+Desc A big key is here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove inventory rotdeath nonmetal nolocate nodegrade burnproof nouncurse norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#4500
+Name A lower stairway~
+Desc This room has a large set of stairs that climb up the back wall.  It is a 
+fairly large room that is lit by only candles.  There are statues of 
+gargoyles in each corner and four large stone doorways, one in every wall 
+leading into dark rooms.  Cobwebs and dust cover the statues.  
+~
+Sector inside~
+Exit east 4522
+Exit south 4510
+Exit west 4521
+Exit up 4501
+EFlags door closed~
+End
+
+
+#4501
+Name Bottom Stairwell~
+Desc The base of a large staircase is here.  The steps have a dark red carpet 
+that run down the middle of them as a walkway.  The handrail is very smooth 
+and has a large wooden hand as the decoration.  A painting of a woman 
+dressed in black clothing is on the wall facing the stairs.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 4505
+EFlags door closed~
+Exit east 4525
+EFlags door closed~
+Exit south 4502
+Exit west 4526
+EFlags door closed~
+Exit up 4506
+Exit down 4500
+EFlags door closed~
+End
+
+
+#4502
+Name Castle Entrance~
+Desc The entrance to this place is fairly large.  A very large fountain is here 
+that spurts out blood instead of water.  There is a large ornament made of 
+onyx in the shape of a hand.  The floor is made of a black marble but it has 
+large red carpets that spread out along the floor which make the marble 
+visible only in the corners of the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 4501
+Exit east 4503
+Exit south 4509
+EFlags door closed locked nopass hard~
+EKeyvnum 4510
+Exit west 4504
+End
+
+
+#4503
+Name Kitchen~
+Desc This is a small kitchen filled with food.  There are two pots of stew over a 
+fire that has been built in a chimney.  Pots and pans hang off wooden bars 
+that have been placed on the walls.  There is a large tub full of bottled 
+ales and liquor.  There is a cook here making sure that the food is being 
+made correctly and is made on time.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 4502
+End
+
+
+#4504
+Name Lounge room~
+Desc This room has chairs and couches in different places.  A small table sits in 
+the middle of the room.  There are four candle chandlers in the corners, and 
+a large window on the far western wall.  It seems as if this room is used to 
+lounge in. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 4502
+End
+
+
+#4505
+Name A throne room~
+Desc This is a very large room.  There is a large black throne atop a small set 
+of stairs.  A long red rug goes from the entrance of this room leading up to 
+the throne.  The floor is made of black onyx and can be seen everywhere 
+except where the carpet runs.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 4501
+EFlags door closed~
+End
+
+
+#4506
+Name Master bedroom~
+Desc This is the master bedroom of the castle.  It is at the very top of the 
+central tower.  A large window and the view out the window is magnificent is 
+near the bed. There is a bookshelf that is filled with many ancient books of 
+lore.  Two racks have also been setup here one for armor and one for 
+weapons, both of which are filled with finely crafted weapons and armor. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 4507
+EFlags door closed~
+Exit east 4508
+EFlags door closed~
+Exit west 4549
+Exit up 4548
+EFlags door closed~
+Exit down 4501
+End
+
+
+#4507
+Name A balcony~
+Desc . A small walkway openening out from the bedroom window leads to this 
+balcony.  It's view spreads over a large portion of mountains, hills, and 
+farther north to the ocean.  An onyx railing lines the balcony, the only 
+protection from a long plunge to the rocks far below.  A narrow bench takes 
+up the back wall next to the window. 
+~
+Sector inside~
+Exit east 4539
+Exit south 4506
+EFlags door closed~
+Exit west 4547
+End
+
+
+#4508
+Name Bath~
+Desc This is a large bathroom that is made luxurious.  The tub is made completely 
+of white pearl, as well as the sink.  There is a mirror above the sink and a 
+hanging chandler with candles on it giving off the light for this room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 4506
+EFlags door closed~
+End
+
+
+#4509
+Name Before a dark castle~
+Desc This is before a large dark castle.  The doors to the castle are of charred 
+oak with iron bolts holding the hinges on it.  The door looks very heavy to 
+move. The gap from which the bridge passed over ends here, and the grass 
+here is all dead. 
+~
+Sector city~
+Exit north 4502
+EFlags door closed locked nopass hard~
+EKeyvnum 4510
+EKeywords door~
+Exit east 4531
+Exit south 4532
+End
+
+
+#4510
+Name A dark passage~
+Desc You are going along on a dark passage.  The walls are made of stone that is 
+covered with moss and dirt.  Spiderwebs fill the top of the walls.  Torches 
+line the walls one on every other side.  
+~
+Sector inside~
+Exit north 4500
+Exit east 4517
+Exit south 4511
+Exit west 4520
+End
+
+
+#4511
+Name A small passage~
+Desc Still moving along the dark passage, claw marks cover both sides of the 
+passage.  The passage is very wide and high, as if for large beasts.  Rocks 
+scatter the ground in all sorts of sizes.  
+~
+Sector inside~
+Exit north 4510
+Exit east 4515
+Exit south 4512
+Exit west 4516
+End
+
+
+#4512
+Name At a cave~
+Desc This part of the passage has a large cave entrance going upwards.  The cave 
+is very dark and is cooler than the rest of the passage.  The passage 
+continues south as well.  Torches lining the walls lighting up the passage.  
+
+~
+Sector inside~
+Exit north 4511
+Exit east 4514
+EFlags door closed~
+Exit south 4519
+EFlags door closed locked hard~
+EKeyvnum 4509
+Exit west 4513
+EFlags door closed~
+Exit southeast 4524
+EFlags door closed~
+Exit southwest 4523
+EFlags door closed~
+End
+
+
+#4513
+Name Prison Cage~
+Desc This is a large cage that is used to store prisoners.  The bars are made of 
+iron.  A large lock is set on the door, but has no keyhole to be unlocked 
+with. 
+~
+Sector inside~
+Exit east 4512
+EFlags door closed~
+End
+
+
+#4514
+Name Prison Cage~
+Desc This is a large cage that is used to store prisoners.  The bars are made of 
+iron.  A large lock is set on the door, but has no keyhole to be unlocked 
+with. 
+~
+Sector inside~
+Exit west 4512
+EFlags door closed~
+End
+
+
+#4515
+Name Weapons room~
+Desc This is a large room devoted to keeping all the weapons in order.  There are 
+different types of weapons leaning against the walls, or lying out on 
+shelves.  Some of the weapons glow from enchantments placed upon them, as 
+there are also some that are translucent. A few of the weapons also are 
+engulfed in flames, ice, or have small bolts of lightning bouncing across 
+them. 
+~
+Sector inside~
+Exit west 4511
+End
+
+
+#4516
+Name Armor room~
+Desc This is a large room devoted to keeping all the armor in order.  There are 
+different types of armor hanging on hooks or lying out on shelves.  Some of 
+the armor glows from enchantments placed upon them, as there are also some 
+that are translucent. 
+~
+Sector inside~
+Exit east 4511
+End
+
+
+#4517
+Name Library~
+Desc A large room filled with shelves full of spellbooks.  Many of the spellbooks 
+have runes on the end of them that glow.  There are also scriptures of 
+different races and professions of the realm up on some of the higher 
+shelves.  A large map of the realm is pinned to the far eastern wall with 
+different colored marks in random spots as if marking something. 
+~
+Sector inside~
+Exit west 4510
+End
+
+
+#4518
+Name a dark tunnel~
+Desc The walls become shiny with mildew and grimy with dirt.  Fungus grows in 
+patches on the walls and strange colored mushrooms grow on the ground.  
+There are a few bones broken and scattered near the wall.  
+~
+Sector inside~
+End
+
+
+#4519
+Name At an Altar~
+Desc Farther down the tunnel, more torches are placed along the walls.  The walls 
+curve around in front of you and standing against the wall is a large altar. 
+ The altar is made of black onyx and has blood flowing from the altar.  
+Bones are scattered along the base of the altar.  
+~
+RoomFlags no_recall light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit north 4512
+EFlags door closed locked hard~
+EKeyvnum 4509
+EKeywords door~
+End
+
+
+#4520
+Name Laboratory~
+Desc This is a large room that has many flasks held over candles and tubes filled 
+with liquids of random colors.  Some of the tubes filled with liquids glow 
+from the magic in the liquids. Smoke comes from the flasks that are held 
+over the candles. 
+~
+Sector inside~
+Exit east 4510
+End
+
+
+#4521
+Name Torture room~
+Desc This room has hooks, nails, razors, and other sorts of torture items.  There 
+is a large table in the middle of the room that has hooks of all sizes, 
+razors, nails, and whips.  Blood stains are on the floor under a rack.  It's 
+a wonder how many people have been tortured and died in this room. 
+~
+Sector inside~
+Exit east 4500
+End
+
+
+#4522
+Name Pool room~
+Desc This room is very large and has a large pool in the middle of it.  There is 
+also a smaller pool that is heated. The bubbles in the hot tub echo 
+throughout the room as steam rises from the water. 
+~
+Sector inside~
+Exit west 4500
+End
+
+
+#4523
+Name Prison Cage~
+Desc This is a large cage that is used to store prisoners.  The bars are made of 
+iron.  A large lock is set on the door, but has no keyhole to be unlocked 
+with. 
+~
+Sector inside~
+Exit northeast 4512
+EFlags door closed~
+End
+
+
+#4524
+Name Prison Cage~
+Desc This is a large cage that is used to store prisoners.  The bars are made of 
+iron.  A large lock is set on the door, but has no keyhole to be unlocked 
+with. 
+~
+Sector inside~
+Exit northwest 4512
+EFlags door closed~
+End
+
+
+#4525
+Name Guest room~
+Desc This is a fairly large bedroom that has a comfortable looking bed in it.  
+This room is dusty from the lack of use.  It seems as if this room is used 
+for guests of the house. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 4530
+Exit east 4529
+Exit west 4501
+EFlags door closed~
+End
+
+
+#4526
+Name Guest room~
+Desc This is a fairly large bedroom that has a comfortable looking bed in it.  
+This room is dusty from the lack of use.  It seems as if this room is used 
+for guests of the house. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 4528
+EFlags door closed~
+Exit east 4501
+EFlags door closed~
+Exit west 4527
+End
+
+
+#4527
+Name Bath~
+Desc This is a large bathroom that is made luxurious.  The tub is made completely 
+of white pearl, as well as the sink.  There is a mirror above the sink and a 
+hanging chandler with candles on it giving off the light for this room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 4526
+End
+
+
+#4528
+Name Closet~
+Desc This is a small closet that is used for storing spare items.  There is 
+nothing in here right now, but there could soon be a large chest filled with 
+treasure and other such items. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 4526
+EFlags door closed~
+End
+
+
+#4529
+Name Bath~
+Desc This is a large bathroom that is made luxurious.  The tub is made completely 
+of white pearl, as well as the sink.  There is a mirror above the sink and a 
+hanging chandler with candles on it giving off the light for this room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 4525
+End
+
+
+#4530
+Name Closet~
+Desc This is a small closet that is used for storing spare items.  There is 
+nothing in here right now, but there could soon be a large chest filled with 
+treasure and other such items. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 4525
+End
+
+
+#4531
+Name Stocks~
+Desc This is a large wooden deck that is lined with wooden stocks.  Each stock 
+has a set of chains attached to it that are able to be hooked onto any 
+victim to keep them in the stocks.  There are a few small bones on the top 
+of the deck. 
+~
+Sector city~
+Exit west 4509
+End
+
+
+#4532
+Name On a Bridge~
+Desc This is a large, black onyx bridge.  The surface of the bridge is very 
+smooth.  It is not a very long bridge, but it crosses over a deep trench 
+that is filled with sharpened rocks.  Skulls are placed on the sides of the 
+bridge.  Dark clouds swirl over the castle. 
+~
+Sector trail~
+Exit north 4509
+Exit south 4537
+End
+
+
+#4533
+Name Field~
+Desc This is a pathway in a small field of grass that leads to a stone shack.  
+The grass is all brown, and looks as if it is dying. 
+~
+Sector field~
+Exit east 4537
+Exit west 4534
+End
+
+
+#4534
+Name Field~
+Desc This is a pathway in a small field of grass that leads to a stone shack.  
+The grass is all brown, and looks as if it is dying. 
+~
+Sector field~
+Exit east 4533
+Exit west 4535
+End
+
+
+#4535
+Name Before a shack~
+Desc Before you is a large, stone shack.  It stands in the middle of the field 
+next to the castle.  The grass all around it is dead and there is a sense of 
+evil about the small shack. 
+~
+Sector field~
+Exit north 4536
+Exit east 4534
+End
+
+
+#4536
+Name Shack~
+Desc This is the inside of a large shack.  Spiderwebs and insects cover the walls 
+of the shack.  There is nothing in here, save for a few skeletons and bones. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 4535
+End
+
+
+#4537
+Name Before a Bridge~
+Desc This is a pathway that leads to a bridge.  The bridge leads over a large gap 
+to a large, black castle.  The castle has dark clouds circling above it. The 
+gap below drops hundreds of feet below to a pit of sharp rocks.  The bridge 
+ahead is made completely of black onyx and has large demonic skulls posted 
+on the sides of the bridge. 
+~
+Sector trail~
+Exit north 4532
+Exit south 4538
+Exit west 4533
+End
+
+
+#4538
+Name Black Gates~
+Desc Towering high into the sky are a set of huge black gates.  The gates are 
+made completely of onyx and glisten whenever a flash of light touch them.  
+There is a slight red glow to them, hinting a bit of magic on them.  They 
+stand cracked open just enough to let people through. 
+~
+Sector mountain~
+Exit north 4537
+Exit southwest 53008
+End
+
+
+#4539
+Name A balcony~
+Desc A small walkway along the outside walls of the master bedroom serves as 
+balcony.  It's view spreads over a large portion of mountains, hills, and 
+farther north to the ocean.  An onyx railing lines the balcony, the only 
+protection from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit west 4507
+Exit southeast 4540
+End
+
+
+#4540
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit south 4541
+Exit northwest 4539
+End
+
+
+#4541
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit north 4540
+Exit southwest 4542
+End
+
+
+#4542
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit west 4543
+Exit northeast 4541
+End
+
+
+#4543
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit east 4542
+Exit west 4544
+End
+
+
+#4544
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit east 4543
+Exit northwest 4545
+End
+
+
+#4545
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit north 4546
+Exit southeast 4544
+End
+
+
+#4546
+Name A balcony~
+Desc A small walkway along the wall leads all the way around the master bedroom 
+and serves as a balcony.  It's view spreads over a large portion of 
+mountains and hills.  An onyx railing lines the balcony, the only protection 
+from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit south 4545
+Exit northeast 4547
+End
+
+
+#4547
+Name A balcony~
+Desc A small walkway along the outside walls of the master bedroom serves as 
+balcony.  It's view spreads over a large portion of mountains, hills, and 
+farther north to the ocean.  An onyx railing lines the balcony, the only 
+protection from a long plunge to the rocks far below. 
+~
+Sector inside~
+Exit east 4507
+Exit southwest 4546
+End
+
+
+#4548
+Name Lookout~
+Desc This is the very top of the castle.  There is stone railing all around the 
+top of the castle, keeping you from falling off.  You can see in every 
+direction.  To the north, the ocean stretches out to the great beyond.  To 
+the east, a dark tower stretches to the sky.  To the south, a small city 
+with a port beside it makes its every day life.  To the west, mountains and 
+hills raise up to challenge the height of the castle. 
+~
+Sector inside~
+Exit down 4506
+EFlags door closed~
+End
+
+
+#4549
+Name Picture room~
+Desc This is a large room that has six large paintings within it.  Each painting 
+is of the master of this castle.  The first painting is of a half-elven male 
+with demonic features.  The second painting is the same, but the features 
+are darker.  The third is of a large fiery demon.  The fourthis of a large 
+steel dragon.  The fifth is of a sly looking male drow, and the last is of a 
+gaunt and decaying, skeletal lich.  Each painting shows the different forms 
+the master of the castle took throughout his life. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 4506
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 4503 1 4502 1
+E 0 4510 -1 hold~
+O 0 4508 -1 4502
+O 0 4501 -1 4505
+O 0 4503 -1 4506
+M 0 4502 2 4509 2
+E 0 4510 -1 hold~
+M 0 4504 2 4519 2
+O 0 4502 -1 4519
+O 0 4505 -1 4522
+O 0 4506 -1 4522
+O 0 4507 -1 4525
+O 0 4507 -1 4525
+O 0 4507 -1 4526
+O 0 4507 -1 4526
+O 0 4504 -1 4531
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#4509
+title open door~
+author Ixliam~
+code mobseeall
+language native
+if isimmort $n
+ sayto $n Welcome Great One.
+ bow $n
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+if name $n seryas
+ sayto $n Welcome Master!
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+if fealty $n seryas
+ sayto $n Welcome to the Manor.
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+sayto $n Get lost. You are not welcome here!
+~
+disabled false
+last_editor Mahinae~
+last_editdate 1127454258
+END
+
+#4504
+title Kill All~
+author Ixliam~
+code mobseeall
+language native
+if isimmort $n
+ sayto $n Welcome Great One.
+ bow $n
+ end
+endif
+if name $n seryas
+ sayto $n Welcome Master!
+ end
+endif
+sayto $n YE SHALL DIE!!!!
+mob kill $n
+end
+~
+disabled false
+last_editor Mahinae~
+last_editdate 1127454342
+END
+
+#4502
+author Reath~
+code unlock south
+open south
+mob letpass
+end
+~
+disabled false
+last_editor Reath~
+last_editdate 1117826942
+END
+
+#4501
+title Gate Guard~
+author Reath~
+code mob seeall
+close door
+lock door
+~
+disabled false
+last_editor Reath~
+last_editdate 1117826837
+END
+
+#0
+
+
+#$

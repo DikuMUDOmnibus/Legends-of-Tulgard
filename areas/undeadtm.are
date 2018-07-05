@@ -1,0 +1,1793 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Ancient Tomb of the Dead~
+ShortName   Ancient Tomb~
+Builders    delandria~
+Credits     Delandria~
+VNUMs       9900 9999
+LComment    `#`R[ 70- 85]`^
+LRange      70 85
+Security    9
+Colour      x~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+AreaEcho  1 23  15 Water drips from the ceiling landing on your head.~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#9900
+Name crypt thing creature~
+ShortD a `#`RCrypt`s Thing`^~
+LongD A `#`RCrypt`s Thing`^ is here, `wGuarding the Entrance`^.~
+Desc A horrid creature stands here blocking your path.  
+~
+Race human~
+Align -3 -3
+XPMod 120
+Level 80
+Hitroll 55
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType wrath
+AC -500 -500 -500 -410
+Wealth 550
+Act    npc dont_wander stay_area~
+AffBy  sanctuary~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg EXALL 9900 0~
+END
+
+#9901
+Name Black Pudding~
+ShortD a `#`sblack pudding`^~
+LongD A `#`sblack pudding`^ slithers here.~
+Desc `wa `DBlack Pudding `wis sitting here.  `x a large black pudding slithers about, it 
+looks evil.  
+~
+Race Mist~
+Align 2 -3
+XPMod 120
+Level 65
+Hitroll 45
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType none
+AC -450 -450 -450 -391
+Wealth 600
+Act    npc stay_area undead~
+AffBy  otterlungs flying pass_door dark_vision~
+Off    dodge~
+Imm    cold acid poison~
+Vuln   fire~
+Form   non_skinable sentient biped mammal~
+Part   head arms legs brains hands feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material pudding
+END
+
+#9902
+Name Shadow~
+ShortD a misty `#`SShadow`^~
+LongD A misty `#`SShadow`^ is here, lurking about.~
+Desc `wa `DShadow `wis here lurking about.  `x 
+~
+Race Mist~
+Align -3 -3
+XPMod 120
+Level 56
+Hitroll 25
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -356
+Wealth 250
+Act    npc no_tame stay_area undead~
+AffBy  detect_good otterlungs flying pass_door dark_vision~
+Imm    bash sleep~
+Res    slash poison~
+Vuln   light~
+Form   instant_decay non_skinable sentient mist biped mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material mist
+END
+
+#9903
+Name Spectre~
+ShortD a `#`wS`spectre`^~
+LongD A large `#`wS`spectre`^ is floating here.~
+Desc `Wa `wSpectre `Wis floating here.  `x 
+A Spectre is floating here.
+~
+Race human~
+Align -3 -3
+XPMod 120
+Level 58
+Hitroll 30
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -352
+Wealth 300
+Act    npc stay_area undead~
+AffBy  protect_good flying dark_vision~
+AffBy2 passwotrace detect_vanish vicegrip~
+Off    dodge fast~
+Imm    magic mental disease drowning~
+Res    cold~
+Vuln   weapon holy silver~
+Form   poison non_skinable sentient undead~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#9904
+Name baatezu pit fiend~
+ShortD the `#`SBaatezu`^~
+LongD A gigantic `#`Rp`rit `Rf`riend`^ is not happy to see you!~
+Desc A large red Baatezu or Pit Fiend is standing here.  
+~
+Race dragon~
+Align -3 -3
+XPMod 120
+Level 80
+Hitroll 100
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -410
+Wealth 1000
+Act    npc dont_wander no_tame aggressive stay_area undead~
+AffBy  infrared flying haste dark_vision~
+Off    tail~
+Imm    charm fire~
+Res    bash fire~
+Vuln   pierce cold lightning holy~
+Form   edible sentient undead reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#9905
+Name Shadow Dragon~
+ShortD a large `#`SShadow Dragon`^~
+LongD A massive `#`SShadow Dragon`^ snarls at you as you enter his room!~
+Desc A Massive dragon with translucent scales.  
+~
+Race dragon~
+Align -3 -3
+XPMod 120
+Level 83
+Hitroll 75
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType slash
+AC -550 -550 -550 -440
+Wealth 1000
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  infrared flying haste dark_vision~
+Off    tail~
+Imm    charm fire cold acid~
+Res    bash fire~
+Vuln   pierce holy~
+Form   edible sentient mountable reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#9906
+Name Undead Warrior Skeletal~
+ShortD an `#`sUndead Warrior`^~
+LongD An `#`sUndead Warrior`^ is here preparing for `Rbattle`^.~
+Desc An undead warrior is here, glaring about, looking for someone to fight.  
+~
+Race human~
+Align -3 -3
+XPMod 120
+Level 50
+Hitroll 50
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType slash
+AC -400 -400 -400 -332
+Wealth 500
+Act    npc stay_area undead warrior~
+AffBy  detect_good pass_door dark_vision~
+Off    bash~
+Imm    summon pierce~
+Res    acid disease~
+Vuln   cold energy~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#9907
+Name Wraith~
+ShortD a `#`SWraith`^~
+LongD An unhappy `#`SWraith`^ floats here.~
+Desc A black cloud shaped as a human.  
+~
+Race human~
+Align -3 -3
+XPMod 120
+Level 68
+Hitroll 30
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -320
+Wealth 500
+Act    npc dont_wander stay_area undead~
+AffBy  detect_invis detect_magic detect_hidden infrared protect_good dark_vision~
+AffBy2 passwotrace detect_vanish~
+Off    dodge fast~
+Imm    summon charm poison negative drowning~
+Res    magic cold~
+Vuln   weapon holy silver~
+Form   edible poison non_skinable sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#9908
+Name horse nightmare~
+ShortD `#`WNightmare`^~
+LongD `#`sNightmare`^, the `Rpit fiend's`^ steed stands here.~
+Desc A massive black horse with blood red eyes.  He is the trusted steed to the 
+pit fiend.  He would be a valuable mount if you can tame him.  
+~
+Race horse~
+Align -3 -3
+XPMod 120
+Level 68
+Hitroll 90
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -328
+Wealth 900
+Act    npc stay_area~
+AffBy  detect_good dark_vision~
+Off    fast kick~
+Imm    light~
+Res    fire~
+Vuln   cold holy~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#9909
+Name undead beholder~
+ShortD a kasharin beholder~
+LongD A Kasharin Beholder is floating here glaring at you.~
+Desc A large beholder floats here, scanning its surroundings.
+~
+Race unique~
+Align -3 -3
+XPMod 120
+Level 61
+Hitroll 60
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType bite
+AC -450 -450 -450 -378
+Wealth 600
+Act    npc no_tame aggressive stay_area undead~
+AffBy  detect_invis detect_hidden infrared protect_good flying pass_door dark_vision~
+Off    fast~
+Imm    summon charm poison negative mental disease~
+Res    magic cold~
+Vuln   holy silver~
+Form   edible poison magical sentient undead~
+Part   heart brains guts eye eyestalks scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material 'decaying flesh'
+END
+
+#9910
+Name Mummy~
+ShortD `#`Sa mummy`^~
+LongD A tattered looking `#`sMummy`^ is pacing back and forth here.~
+Desc `wa `DMummy `wis pacing back and forth here.  `x 
+~
+Race human~
+Align -3 -3
+XPMod 120
+Level 43
+Hitroll 25
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType slash
+AC -450 -450 -450 -405
+Wealth 400
+Act    npc stay_area undead~
+AffBy  detect_good~
+Imm    cold disease~
+Res    bash~
+Vuln   slash fire~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9911
+Name mind flayer~
+ShortD a `#`smind `rflayer`^~
+LongD A large `#`sMind`r Flayer`^ is here.~
+Desc ~
+Race human~
+Align -3 -3
+XPMod 120
+Level 55
+Hitroll 90
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType slash
+AC -450 -450 -450 -382
+Wealth 900
+Act    npc stay_area~
+AffBy  detect_invis detect_hidden detect_good flying dark_vision~
+Off    tail~
+Imm    summon charm negative sleep~
+Res    slash mental disease wood illusion scry~
+Vuln   cold acid holy light~
+Form   edible magical animal sentient biped mammal dragon cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#9912
+Name ghost apparition lod verminaard~
+ShortD the Ghost of `#`RLord`s Verminaard`^~
+LongD A ghastly apparition is standing here, glaring at you.~
+Desc Verminaard is a fearsome sight indeed.  Although he is short, he is very 
+well muscled, and has been trained diligently in the art of battle.  
+~
+Race human~
+Align 0 -3
+XPMod 120
+Level 73
+Hitroll 250
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType thrust
+AC -450 -450 -450 -360
+Wealth 900
+Act    npc dont_wander stay_area~
+AffBy  haste~
+Imm    summon charm~
+Res    poison~
+Form   edible non_skinable animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9913
+Name velkyn~
+ShortD `#`sVelkyn`^~
+LongD `#`sVelkyn`^ is here, making himself at home.~
+Desc . A rough looking man stands proudly before you.  His jet black hair, greasy 
+from bad hygene.  
+ 
+~
+Race human~
+Align -3 -2
+XPMod 120
+Level 69
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType none
+AC -450 -450 -450 -360
+Wealth 0
+Act    npc dont_wander stay_area thief~
+AffBy  detect_hidden detect_good~
+Off    trip~
+Res    poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#9914
+Name decker the black dragon~
+ShortD `#`SDecker`^ the `sBlack Dragon`^~
+LongD `#`SDecker`^, a young `sblack dragon`^ is here.~
+Desc ~
+Race dragon~
+Align 2 0
+XPMod 120
+Level 75
+Hitroll 300
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType acbite
+AC -450 -450 -450 -378
+Wealth 600
+Act    npc dont_wander scavenger aggressive stay_area~
+AffBy  infrared flying~
+Off    dodge tail crush~
+Imm    summon charm acid~
+Res    bash fire~
+Vuln   pierce cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#9900
+Name Decaying Corpse~
+Short `#`wa `sDecaying Corpse `wis lying here.`^~
+Desc `#`wa `sDecaying Corpse `wis lying here.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 0 0 50 100
+Weight 0
+Material decaying flesh~
+End
+
+#9901
+Name jeweled ring~
+Short `#`wa `RJ`re`Rw`re`Rl`re`Rd `wRing`^~
+Desc `#`wa `RJ`re`Rw`re`Rl`re`Rd `wRing has been dropped here.`^~
+Level 25
+ItemType jewelry~
+Cost 600
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material steel~
+Extra    magic antigood nodegrade~
+Wear     take finger~
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#9902
+Name Large Skull~
+Short `#`wa large `yHorned `sSkull `wis hanging on the wall`^~
+Desc `#`wa large `yHorned `sSkull `wis hanging on the wall`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 0 0 10 100
+Weight 0
+Material bone~
+End
+
+#9903
+Name Pile of Bones~
+Short `#`wa Pile of `sBones`^~
+Desc `#`wa Pile of `sBones `wis lying here.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 0 0 100 100
+Weight 0
+Material bone~
+End
+
+#9904
+Name Vault sarcophagus coffin~
+Short `#`wa large `sStone `wSarcophagus`^~
+Desc `#`wa large `sStone `wSarcophagus`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 AC 0 100 100
+Weight 0
+Material stone~
+ExtraDesc sarcophagus ~
+A large sarcophagus sets here, the lid is cracked open slightly.  
+~
+End
+
+#9905
+Name translucent claw shadow dragon dagger~
+Short `#`w(T`Wra`wns`Wlu`wce`Wnt) `RC`rl`Ra`rw `wof the `sShadow Dragon`^~
+Desc A sharp translucent claw is lying here.~
+Level 80
+ItemType weapon~
+Cost 750
+Durability 5
+Asize 30
+Rsize 50
+Values dagger 5 11 pierce C
+Weight 15
+Material claw~
+Extra    dark evil antigood chaos~
+Wear     take wield~
+Affect modifier -1 80 -1 strength 1 0
+End
+
+#9906
+Name black and grey potion~
+Short a `#`SBlack`^ and `sG`wrey`^ Potion~
+Desc A `#`SBlack`^ and `sG`wrey`^ Potion has been dropped here.~
+Level 5
+ItemType potion~
+Cost 500
+Durability 5
+Asize 1
+Rsize 50
+Values 55 '' shield '' ''
+Weight 1
+Material liquid~
+Wear     take hold~
+End
+
+#9907
+Name amulet of defense~
+Short `#`wan `CA`cmulet `wof `RD`refense`^~
+Desc A glowing amulet is laying here.~
+Level 20
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material metal~
+Extra    glow~
+Wear     take neck~
+Affect modifier -1 20 -1 mana 20 0
+End
+
+#9908
+Name golden nose ring~
+Short `#`Ya `Yg`yolden `Yn`yose `Yr`ying`^~
+Desc A small golden nose ring is lying here.~
+Level 50
+ItemType armor~
+Cost 150
+Durability 5
+Asize 4
+Rsize 50
+Values 9 9 9 6 0
+Weight 10
+Material gold~
+Extra    magic noremove nodegrade burnproof~
+Wear     take face~
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 damroll 2 0
+Affect modifier -1 50 -1 hp 2 0
+Affect modifier -1 50 -1 agility 1 0
+Affect modifier -1 50 -1 quickness 1 0
+End
+
+#9909
+Name evil piercing eyes~
+Short `#`wE`svil `RP`ri`Re`rr`Rc`ri`Rn`rg `GE`gyes`^~
+Desc A pair of eyeballs are lying here.~
+Level 50
+ItemType armor~
+Cost 250
+Durability 5
+Asize 4
+Rsize 50
+Values 9 9 9 6 0
+Weight 10
+Material silk~
+Extra    evil magic antigood antineutral meltdrop nodegrade burnproof~
+Wear     take eyes~
+Affect modifier -1 0 -1 quickness 1 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 agility 1 0
+Affect modifier -1 0 -1 hp 2 0
+End
+
+#9910
+Name demonic breastplate of the fiend~
+Short `#`RD`remonic `sBreastplate `wof the `RF`riend`^~
+Desc An evil looking breastplate is lying here.~
+Level 60
+ItemType armor~
+Cost 5412
+Durability 5
+Asize 150
+Rsize 50
+Values 20 20 20 18 0
+Weight 50
+Material steel~
+Extra    hum dark evil magic antigood antineutral nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 ac -10 0
+Affect modifier -1 60 -1 hitroll 1 0
+Affect modifier -1 60 -1 damroll 1 0
+End
+
+#9911
+Name ruined sword of deception~
+Short `#`wa `sR`wu`si`wn`se`wd `sSword `wof `RD`re`Rc`re`Rp`rt`Ri`ro`Rn`^~
+Desc A glowing, humming sword is lying here.~
+Level 70
+ItemType weapon~
+Cost 1318
+Durability 5
+Asize 35
+Rsize 50
+Values sword 2 20 slash EG
+Weight 30
+Material iron~
+Extra    glow hum antigood nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 70 -1 damroll 2 0
+Affect modifier -1 70 -1 hitroll 2 0
+Affect modifier -1 70 -1 agility 2 0
+Affect modifier -1 70 -1 quickness 1 0
+End
+
+#9912
+Name black steel visor~
+Short a `#`Sblack`^ steel visor~
+Desc A `#`Sblack`^ steel visor lies here.~
+Level 75
+ItemType armor~
+Cost 1200
+Durability 5
+Asize 30
+Rsize 50
+Values 13 13 13 10 0
+Weight 30
+Material steel~
+Extra    magic nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take eyes~
+Affect affects -1 75 -1 none 0 detect_good
+End
+
+#9913
+Name shadow dragon rod~
+Short `#`rRod `wof the `sShadow `wDragon`^~
+Desc An short rod with the head of a dragon carved into it lies here.~
+Level 25
+ItemType wand~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 50 10 10 'shadow stream' 0
+Weight 5
+Material unknown~
+Extra    magic burnproof~
+Wear     take hold~
+ClassAllowances mage~
+ExtraDesc dragon rod~
+This small, 18 inch rod has a dragons head carved out of a translucent stone 
+on one end.  
+~
+End
+
+#9914
+Name amulet of deathsight~
+Short `#`wThe `rAmulet `wof `sDeathSight`^~
+Desc A strange looking amulet is lying here.~
+Level 50
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    dark evil antigood~
+Wear     take neck~
+Affect affects -1 50 -1 none 0 dark_vision
+End
+
+#9915
+Name serpent armor~
+Short `#`wa set of `GS`gerpent `GB`gody `GA`grmor`^~
+Desc A set of green tinted chainmail is lying here.~
+Level 80
+ItemType armor~
+Cost 1700
+Durability 5
+Asize 10
+Rsize 50
+Values 27 27 27 20 0
+Weight 10
+Material chain mail~
+Extra    nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 0 -1 hp 8 0
+Affect modifier -1 0 -1 constitution 3 0
+Affect modifier -1 0 -1 strength 3 0
+Affect resist -1 80 -1 none 0 poison
+ExtraDesc serpent armor~
+This chain mail armor has a dark green gemstone in the middle of it.  The 
+gemstone radiates a 5' green aura.  The armor gives the wearer immunity to 
+poisons.  
+~
+End
+
+#9916
+Name serpent sword~
+Short `#`wa `sS`wword `wof the `GS`gerpent`^~
+Desc A strange sword with a dark green color is lying here.~
+Level 75
+ItemType weapon~
+Cost 1500
+Durability 5
+Asize 150
+Rsize 50
+Values sword 6 12 slice H
+Weight 100
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Wear     take wield~
+ExtraDesc serpent sword~
+The sword  has a dark green color and the hilt has the face of a snake on 
+it.  When the sword hits it injects poison into the victim.  
+~
+End
+
+#9917
+Name ragged sign post~
+Short `#`san old ragged sign`^~
+Desc `#`sAn old ragged sign is posted here.`^~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc ragged sign~
+You are entering the Ancient Tomb of the Undead.  Be warned that this is not 
+a friendly place.  Only the strong in body shall enter and come out alive.  
+~
+End
+
+#9918
+Name tiny pearl warpstone~
+Short `#`ca `Ct`ciny `Cp`ce`Carl`^~
+Desc `#`ca `Ct`ciny `Cp`ce`Carl`^ is lying here.`^~
+Level 5
+ItemType warpstone~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material pearl~
+Wear     take hold~
+End
+
+#9919
+Name flaming demonic axe of the fiend~
+Short `#`RD`remonic `sAxe `wof the `RF`riend`^~
+Desc A large `#`Rflaming`^ axe lies here.~
+Level 75
+ItemType weapon~
+Cost 1255
+Durability 5
+Asize 40
+Rsize 50
+Values axe 5 8 cleave A
+Weight 50
+Material steel~
+Extra    dark evil antigood nodegrade burnproof~
+Wear     take wield~
+End
+
+#9920
+Name shadow cloak~
+Short a `#`Wt`wr`Wa`wn`Ws`wl`Wu`wc`We`wn`Wt `sShadow `wCloak`^~
+Desc A `#`Wt`wr`Wa`wn`Ws`wl`Wu`wc`We`wn`Wt `sShadow `wCloak`^ is lying here.~
+Level 50
+ItemType armor~
+Cost 560
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 50
+Material cloth~
+Extra    antigood nonmetal nodegrade burnproof~
+Wear     take about~
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 saves -2 0
+End
+
+#9921
+Name serpent ring~
+Short `wRing `wof the `GS`gerpent`^~
+Desc A strange ring engraved with a symbol of a `#`gserpent`^ is lying here.~
+Level 44
+ItemType jewelry~
+Cost 250
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material silver~
+Extra    magic nodegrade burnproof~
+Extra2   nodecay~
+Wear     take finger~
+Affect modifier -1 0 -1 damroll 4 0
+Affect modifier -1 0 -1 hitroll 4 0
+Affect modifier -1 0 -1 ac -5 0
+End
+
+#9922
+Name serpentine leggings~
+Short `#`wa pair of `GS`gerpentine `GL`geggings`^~
+Desc A pair of green leggings are lying here.~
+Level 62
+ItemType armor~
+Cost 1245
+Durability 5
+Asize 30
+Rsize 50
+Values 15 15 15 12 0
+Weight 30
+Material metal~
+Extra    dark evil magic antigood nonmetal nodegrade~
+Wear     take legs~
+Affect modifier -1 0 -1 agility 4 0
+Affect modifier -1 0 -1 move 40 0
+Affect modifier -1 62 -1 hitroll 2 0
+Affect modifier -1 62 -1 damroll 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#9900
+Name Entrance to a Tomb~
+Desc Before you are two massive stone columns, and a large stone door that is 
+slightly open in between them.  There is a slight bit of mist seeping out of 
+the door and the wind is blowing lightly with a slight chill to it.  
+~
+Sector forest~
+Exit north 9901
+Exit east 59872
+Exit south 59952
+Exit west 59870
+Exit southeast 59953
+Exit southwest 59951
+End
+
+
+#9901
+Name Inside the Entrance~
+Desc As you canrefully step inside the tomb a large blast of cold air hits you 
+sending chill bumps all over your body.  The room is instantly dark.  You 
+get an eerie feeling about this place.  
+~
+Sector inside~
+Exit north 9903
+Exit south 9900
+Exit west 9902
+EFlags door closed~
+End
+
+
+#9902
+Name Burial Chamber~
+Desc The musty smell almost knocks you down as you enter into this chamber.  
+There is actually a large coffin resting in the middle of this chamber.  
+~
+Sector inside~
+Exit east 9901
+EFlags door closed~
+End
+
+
+#9903
+Name Hallway inside the Tomb~
+Desc The hallway is not very long, you can see where is makes a left straight
+ahead of you.  Looking back, you can still see the light from the entrance. 
+There is a hallway to your right.  
+~
+Sector inside~
+Exit north 9904
+Exit east 9907
+Exit south 9901
+End
+
+
+#9904
+Name Hallway inside the Tomb~
+Desc The hallway is not very long, you can see where is makes a left straight
+ahead of you.  Looking back, you can still see the light from the entrance. 
+There is a hallway to your right.  
+~
+Sector inside~
+Exit north 9905
+Exit east 9906
+Exit south 9903
+End
+
+
+#9905
+Name Hallway inside the Tomb~
+Desc The hallway makes a left here.  You can see that it too isnt a very long
+hall but you also notice a lit torch hanging on the wall at the other end.  
+~
+Sector inside~
+Exit south 9904
+Exit west 9940
+End
+
+
+#9906
+Name Hallway inside the Tomb~
+Desc The hallway leads east and west from here.  You notice a large gathering
+of rats scurrying about to you east.  You feel a drop of something wet and
+gooey hit you on the head.  Looking up you are struck again in the face with
+a blob of the same slim that is seeping from the walls.  
+~
+Sector inside~
+Exit east 9908
+Exit south 9907
+Exit west 9904
+End
+
+
+#9907
+Name Hallway inside the Tomb~
+Desc The hallway makes a right up ahead and you notice a lit torch hanging on
+the wall.  
+~
+Sector inside~
+Exit north 9906
+Exit east 9909
+Exit west 9903
+End
+
+
+#9908
+Name Hallway inside the Tomb~
+Desc Rats scatter as you approach leaving a small pile of decaying flesh at
+your feet.  The hall leads west and north from here.  
+~
+Sector inside~
+Exit north 9919
+Exit west 9906
+End
+
+
+#9909
+Name Hallway inside the Tomb~
+Desc Looking south you see that there is another turn in the hallway.  The air
+in here is very moist making it hard to breath and you notice that there is
+a slimy substance seeping from walls in some places.  
+~
+Sector inside~
+Exit south 9910
+Exit west 9907
+End
+
+
+#9910
+Name Hallway inside the Tomb~
+Desc The floors seem to be very slippery making it difficult to walk. 
+Straight ahead you see the hallway turn and there is another lit torch on
+the wall.  
+~
+Sector inside~
+Exit north 9909
+Exit east 9911
+End
+
+
+#9911
+Name Hallway inside the Tomb~
+Desc The floors seem to be very slippery making it difficult to walk. 
+Straight ahead you see the hallway turn and there is another lit torch on
+the wall.  
+~
+Sector inside~
+Exit east 9912
+Exit west 9910
+End
+
+
+#9912
+Name Hallway inside the Tomb~
+Desc It seems to be getting darker even with the torches.  The hallway ahead
+is quite long but you can still see the end.  There are a couple of torches
+hanging on the walls for light.  
+~
+Sector inside~
+Exit north 9913
+Exit west 9911
+End
+
+
+#9913
+Name Hallway inside the Tomb~
+Desc It seems to be getting darker even with the torches.  The hallway ahead
+is quite long but you can still see the end.  There are a couple of torches
+hanging on the walls for light.  There is still slim leaking from the walls
+and the floor is still slippery.  
+~
+Sector inside~
+Exit north 9914
+Exit south 9912
+End
+
+
+#9914
+Name Hallway inside the Tomb~
+Desc You notice an empty torch holder on the wall and below it there is a
+decaying corpse holding an old unlit torch.  The corpse looks like it
+belonged to an Ogre or some other large race.  There are rats eating away on
+the remains.  
+~
+Sector inside~
+Exit north 9915
+Exit south 9913
+End
+
+
+#9915
+Name Hallway inside the Tomb~
+Desc The hallway turns to the east here and also continues straight ahead. 
+You notice that it turns to the west father down the hallway.  
+~
+Sector inside~
+Exit north 9916
+Exit east 9942
+Exit south 9914
+End
+
+
+#9916
+Name Hallway inside the Tomb~
+Desc The hallway goes east and west from here.  You begin to hear slight
+screeching sounds, it almost sounds like a female whimpering.  
+~
+Sector inside~
+Exit south 9915
+Exit west 9917
+End
+
+
+#9917
+Name Hallway inside the Tomb~
+Desc There are halls going north and west from here, or you can go back to way
+you came.  The hallway to the north is long and dark and all the torches on
+the wall are not lit.  
+~
+Sector inside~
+Exit north 9922
+Exit east 9916
+Exit west 9918
+End
+
+
+#9918
+Name Hallway inside the Tomb~
+Desc You notice a strange skull hanging on the wall right in front of you.  It
+has horns but it is too large to be a Minotaur.  Scanning the area you see
+that the hallway now goes north and south.  
+~
+Sector inside~
+Exit north 9920
+Exit east 9917
+Exit south 9919
+End
+
+
+#9919
+Name Hallway inside the Tomb~
+Desc You notice a strange skull hanging on the wall right in front of you.  It
+has horns but it is too large to be a Minotaur.  Scanning the area you see
+that the hallway now goes north and south.  
+~
+Sector inside~
+Exit north 9918
+Exit south 9908
+End
+
+
+#9920
+Name Hallway inside the Tomb~
+Desc The hallway goes to the east and there is a door to your left.  Engraved
+on the door is a figure of a Knight riding a large dragon.  
+~
+Sector inside~
+Exit east 9922
+Exit south 9918
+Exit west 9921
+EFlags door closed~
+End
+
+
+#9921
+Name Burial Chamber~
+Desc You are standing inside one of the burial chambers.  There are several rusty 
+weapons hanging on the walls and in the corner is a large painting that is 
+barely visible of a man on horseback wearing full armor.  There is a small 
+straw pallet in the middle of the room and an old rusty lantern setting on 
+a roughly built wooden table.  As horrid as this place is, it looks as if 
+someone actually lives here.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 9920
+EFlags door closed~
+End
+
+
+#9922
+Name Hallway inside the Tomb~
+Desc The hallway to the north is long and dark and all the torches on the wall
+are not lit.  There is a closed stone door to the west and the hallway also
+leads back south.  
+~
+Sector inside~
+Exit north 9923
+Exit south 9917
+Exit west 9920
+End
+
+
+#9923
+Name Hallway in the tomb~
+Desc You are standing in the middle of this long hallway.  It is very dark
+here and slim keeps dripping onto your head.  You can hear slight moans and
+screeching coming from the north.  
+~
+Sector inside~
+Exit north 9924
+Exit south 9922
+End
+
+
+#9924
+Name Hallway inside the Tomb ~
+Desc You can see something moving to your north, and that is where the sounds
+are coming from.  The hallway also leads to the west as well.  
+~
+Sector inside~
+Exit north 9925
+Exit south 9923
+Exit west 9929
+End
+
+
+#9925
+Name Hallway inside the Tomb~
+Desc The walls and floor here have long fingernail scratches that run at least
+3 feet and are at least half an inch deep.  The hallway runs to the west
+from here or back south the way you came.  
+~
+Sector inside~
+Exit south 9924
+Exit west 9926
+End
+
+
+#9926
+Name Hallway inside the Tomb~
+Desc You can hear slight moans and screeching coming from the east.  The hallway 
+leads east and west from here.  To the west and east it looks like the 
+hallway makes a turn.
+~
+Sector inside~
+Exit east 9925
+Exit west 9927
+End
+
+
+#9927
+Name Hallway inside the Tomb~
+Desc There is something moving in the distance to the east.  
+~
+Sector inside~
+Exit east 9926
+Exit south 9928
+End
+
+
+#9928
+Name Hallway inside the Tomb~
+Desc The hallway continues west from here or you can turn and go north. 
+Although you can see that the hallway to the north turns again after a few
+steps.  
+~
+Sector inside~
+Exit north 9927
+Exit east 9929
+Exit west 9930
+End
+
+
+#9929
+Name Hallway inside the Tomb~
+Desc You are walking down a long dark hallway.  There are dripping sounds all
+around you and occasionally you feel a drop of slim plop onto your head. 
+All of the torches on this hallway are lit until you reach the end of the
+hallway.  
+~
+Sector inside~
+Exit east 9924
+Exit west 9928
+End
+
+
+#9930
+Name Hallway inside the Tomb~
+Desc You are standing at a T intersection.  The hallway goes north, south,
+east and west from here.  To the south and west you see a tomb.  The tomb to
+the south looks as if it has been recently opened.  
+~
+Sector inside~
+Exit east 9928
+Exit south 9931
+EFlags door closed~
+Exit west 9932
+End
+
+
+#9931
+Name Burial Chamber~
+Desc The musty smell almost knocks you down as you enter this chamber.  
+~
+Sector inside~
+Exit north 9930
+EFlags door closed~
+End
+
+
+#9932
+Name Hallway inside the Tomb~
+Desc To the west is a stone door and the hallway leads south and east from
+here.  
+~
+Sector inside~
+Exit east 9930
+Exit south 9933
+Exit west 9934
+EFlags door closed~
+End
+
+
+#9933
+Name Hallway inside the Tomb~
+Desc The hallway leads to the north and south from here and there are lit
+torches lining the walls.  
+~
+Sector inside~
+Exit north 9932
+Exit south 9935
+End
+
+
+#9934
+Name Burial Chamber~
+Desc A strong smell of decay floats in the air here.  
+~
+Sector inside~
+Exit east 9932
+EFlags door closed~
+End
+
+
+#9935
+Name Hallway inside the Tomb~
+Desc The hallway leads to the north and south from here and there are lit
+torches lining the walls.  There is a large pile of bones on the floor here.
+~
+Sector inside~
+Exit north 9933
+Exit south 9936
+End
+
+
+#9936
+Name Hallway inside the Tomb~
+Desc The hallway continues south and east from here and you can see that in
+both directions that the hallway makes a turn after a few steps.  There is a
+crypt to your west.  
+~
+Sector inside~
+Exit north 9935
+Exit east 9938
+Exit south 9939
+Exit west 9937
+EFlags door closed~
+End
+
+
+#9937
+Name Burial Chamber~
+Desc The musty smell almost knocks you down as you enter into this chamber.  
+~
+RoomFlags dark~
+Sector inside~
+Exit east 9936
+EFlags door closed~
+End
+
+
+#9938
+Name Hallway inside the Tomb~
+Desc The hallway runs west and south from here and to your south you can see a
+large stone door.  
+~
+Sector inside~
+Exit south 9940
+Exit west 9936
+End
+
+
+#9939
+Name Hallway inside the Tomb~
+Desc The hall runs north and east from here.  There are strange markings drawn
+on the walls.  
+~
+Sector inside~
+Exit north 9936
+Exit east 9940
+End
+
+
+#9940
+Name Hallway inside the Tomb~
+Desc You are standing at a T intersection.  The hallway goes north, south,
+east and west from here.  To the south there is a stone door and it looks
+like it has been opened recently.  
+~
+Sector inside~
+Exit north 9938
+Exit east 9905
+Exit south 9941
+EFlags door closed~
+Exit west 9939
+End
+
+
+#9941
+Name Burial Chamber~
+Desc A strong smell of decay floats in the air here.  
+~
+Sector inside~
+Exit north 9940
+EFlags door closed~
+End
+
+
+#9942
+Name Hallway inside the Tomb~
+Desc The hallway runs north and west from here.  You begin to hear slight
+moans and screeching.  Scanning around you notice something dark move to
+your north.  
+~
+Sector inside~
+Exit north 9943
+Exit west 9915
+End
+
+
+#9943
+Name Hallway inside the Tomb~
+Desc The hallway runs north and south from here and you notice that the noises
+are getting louder.  
+~
+Sector inside~
+Exit north 9944
+Exit south 9942
+End
+
+
+#9944
+Name Hallway inside the Tomb~
+Desc The walls and floor here have long fingernail scratches the run at least
+3 feet in length and are at least half an inch deep.  The hallway runs south
+and west from here.  The passage to your west takes a turn northward.  
+~
+Sector inside~
+Exit south 9943
+Exit west 9945
+End
+
+
+#9945
+Name Hallway inside the Tomb~
+Desc The hallway goes north and east from here.  You hear moans and screeching
+to your east and you can see something dark moving.  The hallway going north
+is long and dark.  None of the Torches are lit save for one in the very far
+end of the hallway.  
+~
+Sector inside~
+Exit north 9946
+Exit east 9944
+End
+
+
+#9946
+Name Hallway inside the Tomb~
+Desc The hallway runs north and south from here.  It is a long dark hallway
+except for the single torch.  
+~
+Sector inside~
+Exit north 9947
+Exit south 9945
+End
+
+
+#9947
+Name Hallway inside the Tomb~
+Desc The hallway runs north and south from here.  It is a long dark hallway
+except for the single torch.  
+~
+Sector inside~
+Exit north 9948
+Exit south 9946
+End
+
+
+#9948
+Name Hallway inside the Tomb~
+Desc The hallway runs north and south from here.  It is a long dark hallway
+except for the single torch.  There is a stone door to your east.  
+~
+Sector inside~
+Exit north 9950
+Exit east 9949
+EFlags door closed~
+Exit south 9947
+End
+
+
+#9949
+Name Burial Crypt~
+Desc The air smells almost tolerable here.  There is a single torch hanging on 
+the wall here lighting the room.  You wonder why.  
+~
+RoomFlags light~
+Sector inside~
+Exit west 9948
+EFlags door closed~
+End
+
+
+#9950
+Name Hallway inside the Tomb~
+Desc The hallway runs north and south from here.  It is a long dark hallway
+except for the single torch.  There is a large stone door to your west.  
+~
+Sector inside~
+Exit north 9952
+Exit south 9948
+Exit west 9951
+EFlags door closed~
+End
+
+
+#9951
+Name Burial Crypt~
+Desc The smell of decay is strong here making you almost choke as you try to 
+breath.  
+~
+Sector inside~
+Exit east 9950
+EFlags door closed~
+End
+
+
+#9952
+Name Hallway inside the Tomb~
+Desc The hallway runs west and south from here.  It is a long dark hallway
+except for the single torch.  There is a large stone door to your north.  
+~
+Sector inside~
+Exit north 9953
+EFlags door closed~
+Exit south 9950
+Exit west 9954
+End
+
+
+#9953
+Name Burial Crypt~
+Desc The smell of decay is strong here making you almost choke as you try to 
+breath.  
+~
+Sector inside~
+Exit south 9952
+EFlags door closed~
+End
+
+
+#9954
+Name Hallway inside the Tomb~
+Desc The hallway leads north and east from here.  You hear a strange noise
+coming from the north.  
+~
+Sector inside~
+Exit north 9955
+Exit east 9952
+End
+
+
+#9955
+Name Hallway inside the Tomb~
+Desc The hallway runs north and south from here.  The noise is alot louder now
+though you cannot figure out what it is.  
+~
+Sector inside~
+Exit north 9956
+Exit south 9954
+Exit west 9958
+EFlags door closed~
+End
+
+
+#9956
+Name Hallway inside the Tomb~
+Desc You are at the end of a hallway.  There is a single torch hanging on the
+wall that has been blown out.  The noises that you hear now sound like
+something very large breathing.  
+~
+Sector inside~
+Exit east 9957
+EFlags door closed~
+Exit south 9955
+End
+
+
+#9957
+Name Burial Crypt~
+Desc This crypt looks almost tolerable, the walls are clean and there is 
+practically no smell of decay at all.  
+~
+RoomFlags light~
+Sector inside~
+Exit west 9956
+EFlags door closed~
+End
+
+
+#9958
+Name Burial Crypt~
+Desc You are inside a very large burial crypt, much larger than the others.  
+~
+Sector inside~
+Exit east 9955
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 9903 spec_cast_undead
+M 9905 spec_shadow_dragon
+M 9914 spec_breath_acid
+S
+
+
+
+#RESETS2
+M 0 9900 1 9900 1
+O 0 9904 0 9902
+P 0 9918 1 9904 1
+M 0 9901 15 9903 3
+G 0 9906 0
+M 0 9906 15 9904 4
+E 0 9911 -1 wielded~
+M 0 9903 15 9905 3
+M 0 9902 15 9906 3
+M 0 9911 10 9908 2
+E 0 9909 0 head~
+M 0 9902 15 9909 3
+M 0 9911 10 9910 2
+E 0 9909 0 head~
+M 0 9910 15 9911 4
+M 0 9909 5 9912 1
+M 0 9906 15 9914 4
+O 0 9900 0 9914
+P 0 9901 1 9900 1
+P 0 9918 1 9900 1
+M 0 9902 15 9915 3
+M 0 9901 15 9916 3
+G 0 9906 0
+M 0 9910 15 9917 4
+O 0 9902 0 9918
+P 0 9908 1 9902 1
+O 0 9902 0 9919
+P 0 9908 1 9902 1
+M 0 9913 1 9921 1
+E 0 9921 -1 hold~
+E 0 9922 -1 legs~
+E 0 9915 -1 torso~
+E 0 9916 -1 wielded~
+M 0 9911 10 9922 2
+E 0 9909 0 head~
+M 0 9903 15 9923 3
+M 0 9902 15 9924 3
+M 0 9907 4 9925 1
+M 0 9903 15 9926 3
+M 0 9910 15 9927 4
+M 0 9901 15 9928 3
+G 0 9906 0
+M 0 9906 15 9930 4
+M 0 9911 10 9933 2
+E 0 9909 0 head~
+M 0 9907 4 9934 1
+O 0 9903 0 9935
+P 0 9907 1 9903 1
+M 0 9907 4 9937 1
+M 0 9901 15 9938 3
+G 0 9906 0
+M 0 9902 15 9939 3
+M 0 9909 5 9940 1
+M 0 9911 10 9943 2
+E 0 9909 0 head~
+M 0 9907 4 9944 1
+M 0 9903 15 9946 3
+M 0 9901 15 9947 3
+G 0 9906 0
+M 0 9909 5 9948 1
+M 0 9912 1 9949 1
+E 0 9911 -1 wielded~
+E 0 9914 -1 neck1~
+E 0 9912 -1 eyes~
+M 0 9906 15 9950 4
+M 0 9910 15 9952 4
+M 0 9903 15 9954 3
+M 0 9908 1 9955 1
+M 0 9905 1 9957 1
+E 0 9905 0 wielded~
+G 0 9913 -1
+E 0 9920 -1 about~
+M 0 9904 1 9958 1
+E 0 9910 -1 torso~
+E 0 9919 -1 wielded~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#9900
+author Delandria~
+code language native
+mob seeall
+if level $n >= 40
+ say Enter at your own risk, $n.
+ mob letpass
+ end
+endif
+say You are not powerful enough to enter here, $n.
+emote shoves you away from the entrance.
+glare $n
+end
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1104859293
+END
+
+#0
+
+
+#$

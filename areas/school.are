@@ -1,0 +1,873 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Newbie Arena~
+ShortName   Newbie Arena~
+Builders    None~
+Credits     Ixliam~
+VNUMs       4000 4099
+LComment    `#`M[ NEWBIE]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto newbie_area_resets~
+LRange      1 5
+Security    9
+Colour      y~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:27:42 2005~
+End
+
+
+
+#MOBILES
+#4009
+Name rabbit~
+ShortD the rabbit~
+LongD A rabbit is bouncing around here.~
+Desc The rabbit smiles at you, completely harmless!
+~
+Race rabbit~
+Align 1 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 73
+Wealth 0
+Act    npc stay_area wimpy no_hunt noalign~
+Act2   no_random_obj~
+Off    dodge fast~
+Form   animal biped mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#4010
+Name lizard~
+ShortD the lizard~
+LongD A lizard slithers up to you.~
+Desc It smiles at you, and tries to eat your leg.
+~
+Race lizardman~
+Align -2 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType bite
+AC 80 80 80 64
+Wealth 0
+Act    npc stay_area no_hunt noalign~
+Off    tail assist_race~
+Res    poison disease drowning~
+Vuln   cold illusion~
+Form   edible animal sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#4011
+Name boar~
+ShortD the boar~
+LongD A boar tries to run you over.~
+Desc It grunts at you.
+~
+Race pig~
+Align 3 0
+Level 3
+Hitroll 1
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType charge
+AC 70 70 70 60
+Wealth 0
+Act    npc stay_area no_hunt noalign~
+Act2   no_random_obj~
+Off    bash berserk dodge assist_race~
+Form   animal biped mammal~
+Part   head legs heart brains guts feet ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#4012
+Name fox~
+ShortD the fox~
+LongD A fox is here staring at you.~
+Desc It's fur might be worth money.
+~
+Race fox~
+Align -3 0
+Level 1
+Hitroll 1
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 74
+Wealth 0
+Act    npc stay_area wimpy no_hunt noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge fast trip assist_race~
+Form   animal biped mammal~
+Part   head arms legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#4013
+Name snail~
+ShortD the snail~
+LongD A snail is trying to get out of your way.~
+Desc You don't see much but slime about it.
+~
+Race unique~
+Align -2 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType digestion
+AC 90 90 90 72
+Wealth 0
+Act    npc stay_area no_hunt noalign~
+Act2   no_random_obj~
+Form   edible animal crustacean cold_blood~
+Part   head guts feet eyestalks~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#4014
+Name beast~
+ShortD the beast~
+LongD A beast tries to feed off of you.~
+Desc It looks mean.  You'd better run.
+~
+Race School monster~
+Align 0 0
+Level 5
+Hitroll 1
+HitDice 2d5+4
+ManaDice 1d4+5
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 40
+Wealth 50
+Act    npc aggressive no_hunt warrior noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    disarm parry tail~
+Imm    summon charm~
+Res    fire cold~
+Vuln   magic~
+Form   animal biped mammal~
+Part   head legs heart brains guts feet ear eye tail claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#4015
+Name bear~
+ShortD the bear~
+LongD A bear is here growling at you.~
+Desc The bear must be bigger than you!  It wants to rip your head off.
+~
+Race bear~
+Align 3 0
+Level 4
+Hitroll 1
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType claw
+AC 60 60 60 48
+Wealth 0
+Act    npc stay_area no_hunt noalign~
+Act2   no_random_obj~
+Off    bash berserk disarm crush assist_race~
+Res    bash cold~
+Form   animal biped mammal~
+Part   head arms legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#4016
+Name wolf~
+ShortD the wolf~
+LongD A wolf is here snarling at you.~
+Desc The wolf doesn't want to be bothered.
+~
+Race wolf~
+Align -2 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 49
+Wealth 0
+Act    npc stay_area no_hunt noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge fast trip assist_race~
+Form   animal biped mammal~
+Part   head arms legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#4022
+Name South Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4029
+Exit east 4025
+Exit west 4023
+Exit up 4060
+End
+
+
+#4023
+Name South Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4028
+Exit east 4022
+Exit west 4024
+Exit up 4060
+End
+
+
+#4024
+Name South West Corner of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4027
+Exit east 4023
+Exit up 4060
+End
+
+
+#4025
+Name South Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4030
+Exit east 4026
+Exit west 4022
+Exit up 4060
+End
+
+
+#4026
+Name South East Corner of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4031
+Exit west 4025
+Exit up 4060
+End
+
+
+#4027
+Name West Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4032
+Exit east 4028
+Exit south 4024
+Exit up 4060
+End
+
+
+#4028
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4033
+Exit east 4029
+Exit south 4023
+Exit west 4027
+Exit up 4060
+End
+
+
+#4029
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4034
+Exit east 4030
+Exit south 4022
+Exit west 4028
+Exit up 4060
+End
+
+
+#4030
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4035
+Exit east 4031
+Exit south 4025
+Exit west 4029
+Exit up 4060
+End
+
+
+#4031
+Name East Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4036
+Exit south 4026
+Exit west 4030
+Exit up 4060
+End
+
+
+#4032
+Name West Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4037
+Exit east 4033
+Exit south 4027
+Exit west 7359
+Exit up 4060
+End
+
+
+#4033
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4038
+Exit east 4034
+Exit south 4028
+Exit west 4032
+Exit up 4060
+End
+
+
+#4034
+Name Center of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.  There is a BIG SIGN here.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign~
+Those with high bravery or low senses of cautiousness might wish to go below
+to the Dungeon.  However, know that there are aggressive monsters down there,
+and there is no quick escape back out of here when you are in the dungeon.
+~
+Exit north 4039
+Exit east 4035
+Exit south 4029
+Exit west 4033
+Exit up 4060
+Exit down 4048
+EFlags door closed~
+EKeyvnum -1
+EKeywords grate~
+EDesc You see a dark murky dungeon below.
+~
+End
+
+
+#4035
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4040
+Exit east 4036
+Exit south 4030
+Exit west 4034
+Exit up 4060
+End
+
+
+#4036
+Name East Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4041
+Exit south 4031
+Exit west 4035
+Exit up 4060
+End
+
+
+#4037
+Name West Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4042
+Exit east 4038
+Exit south 4032
+Exit up 4060
+End
+
+
+#4038
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4043
+Exit east 4039
+Exit south 4033
+Exit west 4037
+Exit up 4060
+End
+
+
+#4039
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4044
+Exit east 4040
+Exit south 4034
+Exit west 4038
+Exit up 4060
+End
+
+
+#4040
+Name Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4045
+Exit east 4041
+Exit south 4035
+Exit west 4039
+Exit up 4060
+End
+
+
+#4041
+Name East Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4046
+Exit south 4036
+Exit west 4040
+Exit up 4060
+End
+
+
+#4042
+Name North West Corner of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4043
+Exit south 4037
+Exit up 4060
+End
+
+
+#4043
+Name North Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  You can barely see the ceiling.  You feel as if you are being watched
+by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4044
+Exit south 4038
+Exit west 4042
+Exit up 4060
+End
+
+
+#4044
+Name North Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4045
+Exit south 4039
+Exit west 4043
+Exit up 4060
+End
+
+
+#4045
+Name North Wall of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4046
+Exit south 4040
+Exit west 4044
+Exit up 4060
+End
+
+
+#4046
+Name North East Corner of Arena~
+Desc You are in the Arena.  Remember, if you wish to get out of this Arena, just
+go up.  Ceilings can barely be seen in this huge Arena.  You feel as if you are
+being watched by some divine being.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 4041
+Exit west 4045
+Exit up 4060
+End
+
+
+#4048
+Name The Center of the Dungeon~
+Desc You are in the center of a large room.  A faint light from above shows that
+the floors are all covered with slime.  A feeling of dread comes over you as
+you notice that this is NOT a great place to go.  Exits go in all directions.
+Of special note is the one that brings you back up!!!
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4050
+EDesc You see the north wall.
+~
+Exit east 4053
+EDesc You see the east wall.
+~
+Exit south 4055
+EDesc You see the south wall.
+~
+Exit west 4052
+EDesc You see the west wall.
+~
+Exit up 4034
+EFlags door closed~
+EKeyvnum -1
+EKeywords grate~
+EDesc You see safety!
+~
+End
+
+
+#4049
+Name The North West Corner of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4050
+EDesc You see the north wall.
+~
+Exit south 4052
+EDesc You see the south wall.
+~
+End
+
+
+#4050
+Name The North Wall of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4051
+EDesc You see the north east corner.
+~
+Exit south 4048
+EDesc You see the center of the dungeon.
+~
+Exit west 4049
+EDesc You see the north west corner.
+~
+End
+
+
+#4051
+Name The North East Corner of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 4053
+EDesc You see the east wall.
+~
+Exit west 4050
+EDesc You see the north wall.
+~
+End
+
+
+#4052
+Name The West Wall of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 4049
+EDesc You see the north west corner.
+~
+Exit east 4048
+EDesc You see the center of the dungeon.
+~
+Exit south 4054
+EDesc You see the south west corner.
+~
+End
+
+
+#4053
+Name The East Wall of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 4051
+EDesc You see the north east corner.
+~
+Exit south 4056
+EDesc You see the south east corner.
+~
+Exit west 4048
+EDesc You see the center of the dungeon.
+~
+End
+
+
+#4054
+Name The South West Corner of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 4052
+EDesc You see the north wall.
+~
+Exit east 4055
+EDesc You see the south wall.
+~
+End
+
+
+#4055
+Name The South Wall of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 4048
+EDesc You see the center of the dungeon.
+~
+Exit east 4056
+EDesc You see the south east corner.
+~
+Exit west 4054
+EDesc You see the south west corner.
+~
+End
+
+
+#4056
+Name The South East Corner of the Dungeon~
+Desc You are against a wall in the dungeon.  It is quite dark here.  The lack of
+any windows in the area explains the smell around you.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 4053
+EDesc You see the east wall.
+~
+Exit west 4055
+EDesc You see the south wall.
+~
+End
+
+
+#4060
+Name A Safe Room~
+Desc You are in a safe room, away from all the mean rabbits and snails of the 
+Arena.  You can rest here, and go up to go back to the Newbie Recall Point.  
+
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit up 7359
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 4014 spec_fido
+S
+
+
+
+#RESETS2
+M 0 4013 5 4024 5
+M 0 4012 3 4026 3
+M 0 4009 4 4034 4
+M 0 4010 3 4042 3
+M 0 4011 3 4046 3
+M 0 4014 1 4049 1
+M 0 4015 2 4051 2
+M 0 4016 2 4054 2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,5666 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Caerlona~
+ShortName   Caerlona~
+Builders    ardayne rashka~
+build_restricts 'all' rashka ~
+VNUMs       64400 64519
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Abaddon~
+*LastSaved  Thu Jan 19 23:09:23 2006~
+End
+
+
+
+#MOBILES
+#64400
+Name elven guard gate caerlonian~
+ShortD a `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn g`cate `Wg`cuar`Wd`^~
+LongD An elven `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn g`cate `Wg`cuar`Wd`^ stands here on watch.~
+Desc A tall elven guard stands here on guard. The Caerlonian has a huge sword in 
+hand, but despite the fearsome looks.. the guard greets you with a welcoming 
+smile. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType magic
+AC -700 -700 -700 -616
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden sanctuary infrared regeneration~
+Off    bash berserk dodge kick dirt_kick parry trip assist_align~
+Imm    charm~
+Res    holy illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#64401
+Name elven city guard~
+ShortD a `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn c`city `Wg`cuar`Wd`^~
+LongD A male elven `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn c`city `Wg`cuar`Wd`^ stands here on watch.~
+Desc The elf before you stands tall in his uniform. Shiny white steel plates 
+gleam in the light. He greets you with a smile... but don't you dare cause 
+trouble.. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType divine
+AC -700 -700 -700 -567
+Wealth 0
+Act    npc no_tame stay_area warrior~
+Act2   allskills~
+AffBy  detect_hidden sanctuary infrared protect_evil regeneration~
+AffBy2 vicegrip~
+Off    bash berserk disarm dodge kick dirt_kick parry trip assist_align~
+Imm    charm~
+Res    holy illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64402
+Name elven city guard~
+ShortD a `#`Wc`Xae`Mr`mlo`Mn`Xia`Wn c`mity `Wg`muar`Wd`^~
+LongD A female elven `#`Wc`Xae`Mr`mlo`Mn`Xia`Wn c`mity `Wg`muar`Wd`^ stands here on watch.~
+Desc The elf before you stands tall in her uniform. Shiny white steel plates 
+gleam in the light. She greets you with a smile... but don't you dare cause 
+trouble.. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType divine
+AC -700 -700 -700 -602
+Wealth 0
+Act    npc no_tame stay_area warrior~
+AffBy  detect_hidden sanctuary infrared protect_evil regeneration~
+Off    bash berserk disarm dodge kick dirt_kick parry trip assist_align~
+Imm    charm~
+Res    holy illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64403
+Name half-elf male caerlonian~
+ShortD a `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn`^ half-elf male~
+LongD A `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn`^ half-elf male saunters around here.~
+Desc This half-elven male smiles at you and continues on his way. 
+~
+Race half-elf~
+Align 0 3
+Level 95
+Hitroll 0
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType punch
+AC -650 -650 -650 -572
+Wealth 0
+Act    npc no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash berserk disarm dodge kick dirt_kick parry trip~
+Res    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64404
+Name half-elf male caerlonian~
+ShortD a `#`Mc`mae`Wr`Xlo`Wn`mia`Mn`^ half-elf female~
+LongD A `#`Mc`mae`Wr`Xlo`Wn`mia`Mn`^ half-elf female strolls along here.~
+Desc . This half-elven female grins at you, winks, then continues on her way. 
+~
+Race half-elf~
+Align 0 3
+Level 95
+Hitroll 0
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType punch
+AC -650 -650 -650 -572
+Wealth 0
+Act    npc no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash berserk disarm dodge kick dirt_kick parry trip~
+Res    charm holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64405
+Name wemic marshall caerlonian~
+ShortD the `#`WC`Xa`Wer`Xlo`Wni`Xa`Wn `WM`Xarshall`^~
+LongD The `#`WC`Xa`Wer`Xlo`Wni`Xa`Wn `YW`ye`Ym`yi`Yc `WM`Xarshall`^ is here, alert for anything amiss.~
+Desc A Huge wemic towers over you. He's got the body of a hulking lion. From 
+where the lion's head would be is a large, humanoid torso ripped with 
+muscles. On his hands are vicious claws. His lion-like head is covered in 
+dusky black mane. His eyes gleam with a golden hue. Think you can take on 
+this lion-taur..? 
+~
+Race wemic~
+Align 0 3
+Level 115
+Hitroll 32
+HitDice 12d15+560
+ManaDice 5d5+125
+DamDice 12d15+70
+DamType claw
+AC -850 -850 -850 -748
+Wealth 0
+Act    npc no_tame stay_area warrior~
+Act2   allskills~
+AffBy  detect_hidden sanctuary dark_vision~
+AffBy2 no_dispel vicegrip~
+Off    disarm dodge fast dirt_kick crush~
+Imm    sleep~
+Res    holy~
+Vuln   poison~
+Form   edible biped centaur mountable mammal~
+Part   head arms heart brains guts hands fingers ear eye tail claws~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#64406
+Name unicorn white winged stallion~
+ShortD a `#`WU`Xn`Wico`Xr`Wn S`Xta`Wll`Xio`Wn`^~
+LongD A winged `#`WU`Xn`Wico`Xr`Wn S`Xta`Wll`Xio`Wn`^ is here pawing the ground with his silver hooves.~
+Desc This is a Massively huge white unicorn stallion. His mane and tail are a 
+shimmering pearly white. His frost-white fur is as soft as velvet. He 
+prances about on silver hooves. Sprouting from his back are two, enormous 
+feathered wings. Crowned upon this Unicorn's head is the famed spiral horn. 
+The horn is neither silver nor gold.. but more resembles the silvery sheen 
+of color within a seashell. I'm sure he'd make a wonderful mount if you 
+could tame him. 
+~
+Race horse~
+Align -3 3
+XPMod 120
+Level 91
+Hitroll 90
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType divine
+AC -610 -610 -610 -500
+Wealth 900
+Act    npc stay_area no_hunt cleric warrior~
+Act2   allskills no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary protect_evil sneak flying haste dark_vision regeneration~
+AffBy2 passwotrace etheral vicegrip~
+Off    bash dodge fast kick dirt_kick parry tail trip crush gore~
+Imm    summon holy light illusion scry hunger thirst~
+Res    charm magic mental~
+Vuln   acid poison negative disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye wings tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#64407
+Name lizellia famous cleric healer renouned~
+ShortD the Renouned Cleric, Lizellia~
+LongD The renouned Cleric of the Light is here tending to those in need.~
+Desc The woman before you is very serene. Her soft blue eyes seem to entrance you 
+into forgetting your pain. Her hands are gentle as they tend your wounds. 
+Her voice.. a melodious voice.. You forget what she says but it doesn't even 
+matter anymore. You're at peace. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+54
+DamType none
+AC -700 -700 -700 -588
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric healer~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared protect_evil regeneration~
+AffBy2 shadowsight detect_treeform detect_vanish vicegrip~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64408
+Name inventor gnomish grinning male ziflic~
+ShortD the Gnomish Inventor, Ziflic~
+LongD A male gnomish inventor with a wide grin sits here behind the counter.~
+Desc This squat little gnome guy seems to always have a mischevious little grin. 
+His hands fiddle around making strange little devices. He grins as you 
+glance the wares. 
+~
+Race gnome~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -609
+Wealth 2000
+Act    npc dont_wander no_tame stay_area mage~
+Act2   allskills avoids_all_attacks~
+AffBy  detect_magic infrared~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64409
+Name husky elf male armorist zerle~
+ShortD the Armorist Zerle~
+LongD A husky male elf armorist is here making repairs.~
+Desc The elf here hammering away at a piece of white-steel is pretty husky and 
+gruff looking. He's got gentle blue eyes despite his stern, ruffled 
+appearance. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+Act2   avoids_all_attacks repair_man~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64410
+Name slender lean half-elf male weaponsmith kashar~
+ShortD the Weaponsmith Kashar~
+LongD A slender, lean male half-elf weaponsmith is here forging a new blade.~
+Desc This elf is rather muscular and lean. He's got a smiling face and long 
+golden hair. He gladly shows his wares. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64411
+Name beautiful elven woman anyia~
+ShortD the Manager Anyia~
+LongD A beautiful elven woman manages the store here.~
+Desc This stunningly beautiful elven woman stands here. She smiles at you as you 
+enter the shop and begins to setup the wares of her store. Wow.. are you 
+looking at her wares.. or elsewhere? 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64412
+Name lanky elven male archer yikil~
+ShortD the Archer Yikil~
+LongD A lanky male elven archer stands here fletching an arrow.~
+Desc This lanky, and extremely slender elf sits here busily fletching arrows. He 
+nods once as you enter and continues working. You could swear his eyes keep 
+following you. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64413
+Name stunning half-elf jeweler female rhiozia~
+ShortD the Jeweler Rhiozia~
+LongD A stunning half-elf female jeweler stands here cleaning a diamond behind the counter.~
+Desc This half-elven woman stands here behind the counter carefully inspecting 
+many diamonds and such. She smiles as you enter and holds up her display. 
+She's a very nice person. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64414
+Name courier elven tall dumaki~
+ShortD the Courier Dumaki~
+LongD A tall elven courier is here smiling behind the counter.~
+Desc This elven man stands neatly in his suit. He smiles and greets you as you 
+walk in and gets a pigeon ready for delivery. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+Act2   avoids_all_attacks letter_courier~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64415
+Name elven cleric woman elderly kiama~
+ShortD the elderly cleric Kiama~
+LongD An elderly elven woman stands here behind the counter.~
+Desc This elderly woman sits here patiently behind the counter as she busily sews 
+togther some silk trousers. She looks up and smiles at you for a moment then 
+continues on. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64416
+Name golem wicked steel massive guard~
+ShortD a `#`Xg`Solem`^ of `#`rw`Sicked st`Xee`Sl`^~
+LongD A massive, sharp `#`Xg`Solem`^ of `#`rw`Sicked st`Xee`Sl`^ stands here glaring at you.~
+Desc This golem is rather small. It's stocky but quite fast. It's made entirely 
+out of sharpened spikes of steel and glares at you with it's unholy red 
+eyes. He's not a happy camper.. 
+~
+Race Golem~
+Align 0 -3
+Level 90
+Hitroll 0
+HitDice 9d12+435
+ManaDice 5d7+260
+DamDice 10d11+44
+DamType none
+AC -590 -590 -590 -495
+Wealth 230
+Act    npc dont_wander scavenger no_tame aggressive stay_area thief nopurge~
+Act2   allskills~
+AffBy  detect_invis detect_hidden infrared otterlungs dark_vision regeneration~
+AffBy2 vicegrip~
+Off    backstab dodge dirt_kick circle~
+Imm    summon charm poison disease drowning sleep hunger thirst~
+Res    bash holy~
+Vuln   lightning acid~
+Form   magical sentient construct biped~
+Part   head arms legs heart brains hands feet fingers ear eye claws horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material steel
+END
+
+#64417
+Name venomous death poisonous visage fearsome~
+ShortD a `#`gv`Ge`Yn`yo`rm`go`yu`Gs`^ death~
+LongD The fearsome visage of poisonous death hovers here glaring at you.~
+Desc Before you hovers an ominous spectre. Poison overwhelms your senses as 
+this.. thing.. glares at you. Dare you fight your fate? Dare you fight 
+against a disease-ridden or venomous demise? 
+~
+Race kapak draconian~
+Align -3 -3
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d14+69
+DamType disease
+AC -850 -850 -850 -731
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary protect_evil flying haste~
+AffBy2 vicegrip~
+Off    bash disarm dodge dirt_kick parry tail spinblock~
+Imm    poison~
+Res    holy~
+Vuln   energy mental sound~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#64418
+Name guardian famine hunger spectre foreboding fatal~
+ShortD the `#`SG`Xu`ya`Yrd`yi`Xa`Sn `WF`Xa`Wmi`Xn`We`^~
+LongD A forboding spectre giving off an aura of fatal hunger hovers here glowering at you.~
+Desc Before you hovers an ominous spectre. Hunger overwhelms your senses as 
+this.. thing.. glares at you. Dare you fight your fate? Dare you fight 
+against a death of unforgiving hunger? 
+~
+Race baaz draconian~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType sting
+AC -800 -800 -800 -656
+Wealth 230
+Act    npc dont_wander no_tame stay_area cleric~
+Act2   allskills~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary protect_evil flying haste regeneration~
+AffBy2 vicegrip~
+Off    disarm dodge fast dirt_kick spinblock~
+Imm    holy~
+Res    lightning~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#64419
+Name guardian thirst spectre wraith fatal dehydration~
+ShortD the `#`SG`Xu`ca`Crd`ci`Xa`Sn `WT`Xh`Wir`Xs`Wt`^~
+LongD A wraith-like spectre giving off an aura of fatal thirst hovers here gleaming wickedly at You.~
+Desc Before you hovers an ominous spectre. Dehydration overwhelms your senses as 
+this.. thing.. glares at you. Dare you fight your fate? Dare you fight 
+against a death of merciless thirst? 
+~
+Race sivak draconian~
+Align 0 -3
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType sting
+AC -800 -800 -800 -656
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+Act2   allskills~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary protect_evil flying haste regeneration~
+AffBy2 vicegrip~
+Off    bash disarm dodge kick dirt_kick parry tail trip spinblock~
+Imm    thirst~
+Res    cold holy~
+Vuln   light~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#64420
+Name medusa serpent woman six armed~
+ShortD the `#`YQ`yu`Xe`ye`Yn `GM`ge`rdu`gs`Ga`^~
+LongD A four-armed `#`GM`ge`rdu`gs`Ga`^ with a snake-like lower torso hisses here at you..  Don't look in her eyes!~
+Desc This medusa.. is the Queen of them all. Her lower torso is that of a 
+serpent. Her face is hideous and scaled. Her hair is made entirely out of 
+small serpents. She has glowing yellow eyes.. No.. Stop..!! Don't look into 
+her eyes!! 
+~
+Race thri-kreen~
+Align 0 -3
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 5d6+150
+DamDice 9d10+40
+DamType none
+AC -540 -540 -540 -459
+Wealth 230
+Act    npc dont_wander no_tame stay_area cleric mage warrior~
+Act2   allskills~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared protect_evil protect_good haste dark_vision regeneration~
+AffBy2 detect_treeform detect_vanish vicegrip dragon~
+Off    dodge parry tail gaze spinblock~
+Imm    holy~
+Res    poison disease~
+Vuln   cold light~
+Form   edible poison magical non_skinable animal biped insect mammal reptile snake dragon cold_blood~
+Part   head arms legs heart brains guts hands feet fingers eye eyestalks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64421
+Name half orc gromo barkeep~
+ShortD the Barkeep Gromo~
+LongD A husky half-orc cleans the bar with a white towel.~
+Desc Standing here behind the counter is a gruff looking half-orc. He grins 
+crookedly and serves you probably the biggest pint you've ever seen... 
+~
+Race half-orc~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType grep
+AC -700 -700 -700 -609
+Wealth 2000
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  infrared~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64422
+Name elven waitress~
+ShortD an elven waitress~
+LongD An elven waitress walks amongst the tables holding delicious mouthwatering platters.~
+Desc She grins sheepishly at you and readily asks what you'd like to order. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType grep
+AC -700 -700 -700 -609
+Wealth 2000
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64423
+Name horse white stallion~
+ShortD a `#`Wwhite s`Xta`Wll`Xio`Wn`^~
+LongD A battle-hardened `#`Wwhite s`Xta`Wll`Xio`Wn`^ stamps his hoof angrily here.~
+Desc A huge battle-hardened stallion stands here. He's a monstrous specimen of a 
+horse. Broad, strapping and fully ready to enter the fray. He makes one of 
+the best companions a Knight would ever need. He's by far.. NOT a cuddly 
+horse in any way. He doesn't take kindly to smooches or lovey dovey junk. 
+He's a warhorse.. and he waits impatiently for battle. 
+~
+Race horse~
+Align -3 3
+XPMod 120
+Level 90
+Hitroll 90
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType bite
+AC -600 -600 -600 -492
+Wealth 900
+Act    npc dont_wander stay_area~
+AffBy  detect_good dark_vision~
+Off    fast kick~
+Imm    summon light illusion fear~
+Res    weapon bash wood~
+Vuln   acid poison disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#64424
+Name horse bay stallion~
+ShortD a `#`Sb`yay `Ss`yta`Sll`yio`Sn`^~
+LongD A battle-hardened `#`Sb`yay `Ss`yta`Sll`yio`Sn`^ paws the ground with anticipation.~
+Desc A huge battle-hardened stallion stands here. He's a monstrous specimen of a 
+horse. Broad, strapping and fully ready to enter the fray. He makes one of 
+the best companions a Knight would ever need. He's by far.. NOT a cuddly 
+horse in any way. He doesn't take kindly to smooches or lovey dovey junk. 
+He's a warhorse.. and he waits impatiently for battle. 
+~
+Race horse~
+Align -3 3
+XPMod 120
+Level 90
+Hitroll 90
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType bite
+AC -600 -600 -600 -492
+Wealth 900
+Act    npc dont_wander stay_area~
+AffBy  detect_good dark_vision~
+Off    fast kick~
+Imm    summon light illusion fear~
+Res    weapon bash wood~
+Vuln   acid poison disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#64425
+Name golden chariot white stallions~
+ShortD a `#`YG`yo`Yld`ye`Yn `yC`Yh`yari`Yo`yt`^ drawn by four `#`WWhite S`Xta`Wll`Xio`Wns`^`^~
+LongD A `#`YG`yo`Yld`ye`Yn `yC`Yh`yari`Yo`yt`^ drawn by four `#`WWhite S`Xta`Wll`Xio`Wns`^ stands here gleaming in the light.~
+Desc A chariot flecked and emblazoned with gold stands here regally. It has large 
+wooden wheels reinforced with steel spokes. On either side of the chariot is 
+a golden sun with seven rays of fire. The front of the giant chariot depicts 
+a golden lion's head. The chariot is pulled by four battle-hardened 
+stallions. They are sturdy beasts of burden. They're ready to race head on 
+into battle.. They'll charge their foes down with a frenzy until they die. 
+~
+Race horse~
+Align 0 3
+XPMod 120
+Level 90
+Hitroll 110
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType charge
+AC -600 -600 -600 -492
+Wealth 900
+Act    npc dont_wander stay_area~
+AffBy  detect_good dark_vision~
+Off    bash berserk dodge fast kick dirt_kick parry tail trip crush~
+Imm    summon light illusion fear~
+Res    weapon bash wood~
+Vuln   acid poison disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#64426
+Name silver chariot grey stallions~
+ShortD a `#`WS`Xi`Slv`Xe`Wr `SC`Xh`Sari`Xo`St`^ drawn by four `#`SG`Xr`We`Sy S`Xta`Wll`Xio`Sns`^`^~
+LongD A `#`WS`Xi`Slv`Xe`Wr `SC`Xh`Sari`Xo`St`^ drawn by four `#`SG`Xr`We`Sy S`Xta`Wll`Xio`Sns`^ stands here gleaming in the light.~
+Desc A chariot flecked and emblazoned with silver stands here regally. It has 
+large wooden wheels reinforced with steel spokes. On either side of the 
+chariot is a silver moon set over a silver desert. The front of the giant 
+chariot depicts a silver raven's head. The chariot is pulled by four 
+battle-hardened stallions. They are sturdy beasts of burden. They're ready 
+to race head on into battle.. They'll charge their foes down with a frenzy 
+until they die. 
+~
+Race horse~
+Align 0 3
+XPMod 120
+Level 90
+Hitroll 110
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType charge
+AC -600 -600 -600 -492
+Wealth 900
+Act    npc dont_wander stay_area~
+AffBy  detect_good dark_vision~
+Off    bash berserk dodge fast kick dirt_kick parry tail trip crush~
+Imm    summon light illusion fear~
+Res    weapon bash wood~
+Vuln   acid poison disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#64427
+Name guildmaster elf paladin~
+ShortD the Guildmaster~
+LongD A towering elf paladin stands here awaiting to train you.~
+Desc This towering man stands here silently. He peers at you and slowly smiles. 
+Yes.. he's here to help you learn the skills necessary to survive. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area train practice cleric warrior gain~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64428
+Name barkeep tannick human man male~
+ShortD the Barkeep Tannick~
+LongD A gruff lookin male human is here cleaning a glass with a towel.~
+Desc This human leans back lazily behind the counter. He's got a smug grin on his 
+stubbled chin as he cleans a glass mug out with his towel. 
+~
+Race human~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 2000
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64429
+Name brownie male boy ruzzie~
+ShortD the Musician Ruzzie~
+LongD A small little fae creature stands here atop the counter.~
+Desc This little fae hops and skips around showing off all his wares. Musical 
+instruments all about play melodiously along with his antics! 
+~
+Race faerie~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 2000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64430
+Name soryalis maiden lady lances spectre~
+ShortD the `#`WM`Xa`ci`Cd`ce`Cn `WS`Co`cr`Cy`ca`Cl`ci`Cs`^~
+LongD The `#`YS`yp`Yect`yr`Ye`^ of the `#`WL`Xady`^ of the `#`WL`Xance`Ws`^ is here, her dress billows softly in an unfelt breeze.~
+Desc A beautiful spectre of a woman stands here. She wears nothing but a 
+semi-transparent gown that seems to waft against an unknown breeze. Her eyes 
+blaze an icy blue. Her lush, golden locks flow gently along with her 
+movements. She glances at you and you appear entranced.. 
+~
+Race lightning draconian~
+Align 0 3
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d14+69
+DamType radiance
+AC -850 -850 -850 -765
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area cleric~
+Act2   allskills~
+AffBy  detect_evil detect_invis detect_hidden detect_good sanctuary protect_good flying haste regeneration~
+AffBy2 vicegrip~
+Off    disarm dodge parry spinblock~
+Imm    summon holy scry~
+Res    lightning~
+Vuln   mental sound~
+Form   edible magical instant_decay non_skinable sentient undead mist biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64431
+Name dragon copper~
+ShortD a `#`yc`ro`ypp`re`yr`^ dragon~
+LongD A large male `#`yc`ro`ypp`re`yr`^ dragon is here smoking a pipe.~
+Desc Before you is a large male dragon.  His scales are copper.  His massive 
+wings are black and leathery.  When his eyes are open, you see that they are 
+coal black. The only thing to mar this image of dragon perfection, is a scar 
+that trails from his eye to his chin. 
+~
+Race dragon~
+Align 0 3
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType wrath
+AC -800 -800 -800 -696
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  flying dark_vision~
+Off    area_attack bash tail~
+Imm    summon acid holy sleep~
+Vuln   light sound~
+Form   edible sentient mountable reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64432
+Name half-elven angelic woman zana~
+ShortD an angelic half-elven woman with `#`Ws`xil`Wv`xer`Wy`^ hair~
+LongD An angelic half-elven woman with `#`Ws`xil`Wv`xer`Wy`^ hair stands here.~
+Desc This angelic woman is somewhat tall, standing at approximately six feet in 
+height. She appears slender, with a toned and athletic frame. Her skin is 
+tanned to a warm golden bronze, yet appears soft and smooth. Her eyes are, 
+when open, a deep ocean blue, and almost seem to glitter with a defiant 
+inner light. Her wavy silver hair extends to her shoulders, the almost 
+metallic strands shimmering as they catch the light with every movement. A 
+few wisps of hair hides her ears, yet there is no mistaking the elfin 
+features of her finely boned face, from her high cheekbones and delicately 
+arched eyebrows, to her narrow jawline and soft, pink lips. Delicate wings 
+extend gracefully from her back, closely resembling the wings of a bird of 
+prey. The soft white feathers seem to give off a bright pearly sheen in the 
+light. 
+~
+Race angel~
+Align 0 3
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType divine
+AC -800 -800 -800 -696
+Wealth 2000
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  detect_evil detect_invis detect_hidden infrared flying~
+Off    area_attack disarm dodge parry~
+Imm    summon charm lightning holy disease light scry hunger thirst~
+Res    illusion scry~
+Vuln   negative~
+Form   magical sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#64433
+Name flaming fiery chariot black stallions~
+ShortD a `#`YF`yl`ra`Rm`ri`yn`Yg `XC`Sha`Xr`Sio`Xt`^ drawn by four `#`rF`Ri`Ye`Rr`ry`S-`rM`Ra`Yn`Re`rd `XS`Sta`Xll`Sion`Xs`^`^~
+LongD A `#`YF`yl`ra`Rm`ri`yn`Yg `XC`Sha`Xr`Sio`Xt`^ drawn by four `#`rF`Ri`Ye`Rr`ry`S-`rM`Ra`Yn`Re`rd `XS`Sta`Xll`Sion`Xs`^ blazes here.~
+Desc A black chariot blazing with fire and emblazoned with flecks of gold stands 
+here regally. It has large wooden wheels of red flames. On either side of 
+the chariot are golden wings etched in gold. The front of the giant chariot 
+depicts a golden sun. The chariot is pulled by four black ethereal stallions 
+with fiery mane and tails. Their eyes are as wild as the flames they spew in 
+breath. They're ready to race head on into battle.. They'll charge their 
+foes down with a blazing frenzy until they die. 
+~
+Race horse~
+Align 0 3
+XPMod 120
+Level 90
+Hitroll 110
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType charge
+AC -600 -600 -600 -492
+Wealth 900
+Act    npc dont_wander stay_area warrior~
+Act2   allskills no_random_obj~
+AffBy  detect_good sanctuary flying haste dark_vision regeneration~
+Off    bash dodge kick dirt_kick tail trip gore~
+Imm    summon fire holy fear~
+Res    bash~
+Vuln   cold acid poison disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye wings tail fangs horns~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#64434
+Name banker elven woman~
+ShortD the Banker~
+LongD An elven woman stands here behind the teller's window.~
+Desc The elven banker sits here behind the teller. She smiles and asks what you 
+need exchanged. 
+~
+Race elf~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -588
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64435
+Name shadowy cloaked figure bidlum~
+ShortD a `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn`^ half-elf male~
+LongD A `#`Wc`Xae`Yr`ylo`Yn`Xia`Wn`^ half-elf male saunters around here.~
+Desc `#`SWhen not in motion, Bright gossamer wings, shimmering with every color of 
+the  `rs`gp`be`yc`rt`gr`bu`ym`c,`S can be seen spannning outwards from the back of the being 
+before you. When his eyes are open, almond shaped `Cc`cr`Cy`cs`Ct`ca`Cl h`cu`Ce`cd`S  orbs are 
+visible beneath the crest of long lashes. Dark lips and barely visible 
+dimples somewhat soften his otherwise angular countenance. His skin is a 
+soft shade of `Rv`Ye`Rr`Ym`Ri`Yl`Rl`Yi`Ro`Yn`S;  only marred by the dark tattoos of thorn covered 
+`rr`go`rs`ge`r l`gi`rn`ge`rs`S running across his neck and biceps. Bright `Rf`Yi`Re`Yr`Ry `Yr`Re`Yd`S hair runs 
+wild over his head  in unruly waves, stopping just short enough to cover the 
+subtle lines where gills form on his neck. His frame is athletic in nature; 
+a barely perceptible tightly corded muscle resting just beneath his 
+otherwise slender and docile frame.`^ 
+~
+Race changeling~
+Align -3 -2
+Level 110
+Hitroll 20
+HitDice 11d14+525
+ManaDice 5d9+300
+DamDice 11d14+64
+DamType claw
+AC -790 -790 -790 -703
+Wealth 0
+Act    npc no_tame stay_area thief~
+Act2   nohunt allskills forger~
+AffBy  detect_invis detect_hidden otterlungs sneak flying haste regeneration~
+Off    backstab dodge dirt_kick circle~
+Imm    illusion~
+Res    magic~
+Vuln   cold disease~
+Form   edible magical sentient biped blob~
+Part   head arms legs heart brains guts hands feet fingers eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#64436
+Name demon general succubi~
+ShortD a towering `#`Sblack-skinned`^ male demon~
+LongD A towering `#`Sblack-skinned`^ male demon with two large `#`Shorns`^ is standing here.~
+Desc A rather large, handsome demon towers here. He has a very dark tone of ashen grey skin.
+~
+Race demon~
+Align -3 -3
+XPMod 175
+Level 116
+Hitroll 0
+HitDice 12d15+565
+ManaDice 5d5+130
+DamDice 12d15+71
+DamType wrath
+AC -860 -860 -860 -774
+Wealth 500
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden detect_good infrared flying dark_vision~
+Off    tail~
+Imm    summon charm fire poison disease scry hunger thirst~
+Res    illusion~
+Vuln   holy~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material demon
+END
+
+#64437
+Name graal~
+ShortD the Dark Knight, Graal~
+LongD A powerfull-looking knight in black armor towers over you.~
+Desc Towering above you is the Almighty Graal. His eyes appear to penetrate right 
+through you. He is covered in black armor.. Only his face shown with his 
+beard all snowy white. 
+~
+Race unique~
+Align 0 0
+Level 130
+Hitroll 0
+HitDice 13d16+630
+ManaDice 13d17+903
+DamDice 13d18+85
+DamType none
+AC -1000 -1000 -1000 -850
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area cleric~
+Act2   allskills no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared protect_evil protect_good haste regeneration~
+AffBy2 no_dispel vicegrip~
+Off    bash disarm dodge kick dirt_kick parry trip crush circle~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material god
+END
+
+#0
+
+
+
+#OBJECTS
+#64400
+Name amulet venalena~
+Short `CA`cmulet `wof `CV`cenalena`x~
+Desc An amulet with the symbol of young woman nursing a child is here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+End
+
+#64401
+Name caerlonian robes~
+Short a set of `#`ms`Mof`mt `Wc`Xa`yer`Ylo`yni`Xa`Wn`^ robes~
+Desc A set of robes with caelonian patterns upon it lies here.~
+Level 10
+ItemType clothing~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take about~
+End
+
+#64402
+Name soryalis lady lances holy~
+Short `#`YS`yo`Xr`Wya`Xl`yi`Ys`^, `#`WL`Xad`Wy`^ of the `#`WL`ca`Cnc`ce`Ws`^~
+Desc The `#`WHoly L`ca`Cn`cc`We`^ of the `#`YL`yi`Wg`yh`Yt`^ hovers here bathed in `#`WWhite F`Xl`Wam`Xe`Ws`^.~
+Level 90
+ItemType weapon~
+Cost 90000
+Durability 1
+Asize 0
+Rsize 50
+Values polearm 24 3 radiance FIK
+Weight 100
+Material holy~
+Extra    glow hum bless antievil antineutral nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosecondary nosell antichaos~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 90 -1 damroll 10 0
+Affect modifier -1 90 -1 hitroll 10 0
+Affect vuln -1 90 -1 none 0 sound
+ExtraDesc soryalis lady lances holy ~
+This sacred lance is very elegant in it's appearance. It's creation is made 
+entirely from the soul of the Maiden Soryalis. It gives off a Very bright 
+glow, although the artifact itself isn't blinding. The lance is fully 
+consumed in holy white flames, complete with a blade of solid light. It has 
+an engraving upon the blade that flickers in visibility like a dancing 
+flame: `1 `1 `#`C`-`c*`WM`Xay the `WL`Xight guide my `WB`Xlade and the `WL`Xove of `WL`Xife guide my `WH`Xands`c*`C`-`^ `1 `1 
+~
+End
+
+#64403
+Name hardakin gentle spear unholy~
+Short `#`MH`ma`Xr`Sda`Xk`mi`Mn`^, the `#`WG`Xentl`We L`mo`Mr`Wd`^~
+Desc The `#`SUnHoly `WS`mp`Me`ma`Wr`^ of the `#`MN`mi`Sg`mh`Mt`^ hovers here bathed in `#`SBlack F`Xl`Sam`Xe`Ss`^.~
+Level 90
+ItemType weapon~
+Cost 90000
+Durability 1
+Asize 0
+Rsize 50
+Values polearm 24 3 drain FIK
+Weight 100
+Material unholy~
+Extra    glow evil bless antigood antineutral nonmetal nolocate nodegrade burnproof chaos norestring~
+Extra2   nodecay nosecondary nosell antilaw~
+Wear     take wield~
+ClassAllowances warrior ranger barbarian anti-paladin~
+Affect modifier -1 90 -1 damroll 10 0
+Affect modifier -1 90 -1 hitroll 10 0
+Affect vuln -1 90 -1 none 0 sound
+ExtraDesc hardakin gentle unholy spear ~
+The massive spear before you gleams wickedly in your hands. You can't seem 
+to let go..nor even turn your eyes away from it. The weapon itself is made 
+out of the vile Hardakin and is darker then even the black flames that 
+consume it. It is devoid of all things holy and pure. The Spear hungers for 
+nothing but death.. it's voice haunts you..calling your name seductively. It 
+drains away any thought from your mind save the need to kill. You can feel 
+it drawing upon your life force. It thirsts for the blood of the holy. 
+Nothing else can satisfy it's unquenchable hunger. `1 `1 A closer look upon the massive blade of the spear as you momentarily break 
+from it's trance and `#`SYour Name appears Engraved upon It in Blood`^, just 
+another soul waiting to be claimed through death by the Gentle Lord.. 
+~
+End
+
+#64404
+Name unicorn spiral horn~
+Short a `#`YS`yp`Yir`ya`Yl `YH`yor`Yn`^~
+Desc The long `#`YS`yp`Yir`ya`Yl `YH`yor`Yn`^ of a `#`WU`Xn`Wico`Xr`Wn`^ glows here with `#`WHoly`^ power~
+Level 91
+ItemType treasure~
+Cost 100000
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 210
+Material holy~
+Extra    glow hum magic bless antievil antineutral noremove rotdeath nonmetal nolocate meltdrop nodegrade burnproof horned norestring~
+Extra2   nosell noidentify~
+Wear     take head no_sac~
+ClassAllowances cleric druid ranger~
+Affect resist -1 91 -1 none 0 negative
+Affect modifier -1 91 -1 mana 140 0
+End
+
+#64405
+Name vial unicorn blood~
+Short a `#`WV`Xial`^ of `#`WU`Xn`Wico`Xr`Wn`S'`Ws `XB`Sl`Xoo`Sd`^~
+Desc A vial containing a precious silver fluid is here.~
+Level 90
+ItemType potion~
+Cost 10000
+Durability 1
+Asize 0
+Rsize 50
+Values 100 'restore life' curse mute despair
+Weight 11
+Material holy~
+Extra    glow hum magic bless noremove rotdeath nonmetal nolocate meltdrop nodegrade burnproof horned norestring~
+Extra2   nosell noidentify~
+Wear     take no_sac~
+End
+
+#64406
+Name potion marriage avoidal~
+Short a `#`mp`Wo`Xti`Wo`mn`^ of `#`mm`Ma`Wr`Xri`Wa`Mg`me `Ma`mv`Xo`Wi`Xd`ma`Ml`^~
+Desc A `#`mp`Wo`Xti`Wo`mn`^ of `#`mm`Ma`Wr`Xri`Wa`Mg`me `Ma`mv`Xo`Wi`Xd`ma`Ml`^ is here ready to save your bootie!!~
+Level 20
+ItemType potion~
+Cost 500
+Durability 1
+Asize 0
+Rsize 50
+Values 100 'change sex' '' '' ''
+Weight 1
+Material chaos~
+Extra    nonmetal nolocate meltdrop nodegrade burnproof chaos norestring~
+Extra2   nodecay noidentify~
+Wear     take hold no_sac~
+End
+
+#64407
+Name potion marriage avoidal part two~
+Short a `#`Cp`Wo`Xti`Wo`cn`^ of `#`cm`Ca`Wr`Sri`Wa`Cg`ce `Ca`cv`Woid`ca`Cl `YP`yar`Yt Two`R!!`^~
+Desc A `#`Cp`Wo`Xti`Wo`cn`^ of `#`cM`CA`Wr`SrI`Wa`CG`ce `CE`cs`WCa`cp`CE`R!!`^~
+Level 20
+ItemType potion~
+Cost 500
+Durability 1
+Asize 0
+Rsize 50
+Values 100 teleport '' '' ''
+Weight 1
+Material unknown~
+Extra    nonmetal nolocate meltdrop nodegrade burnproof chaos norestring~
+Extra2   nodecay noidentify~
+Wear     take hold no_sac~
+End
+
+#64408
+Name gnomish device sling~
+Short a strange `#`?g`?n`Wo`gm`?i`cs`?h `Xd`?e`rv`Si`?c`Se`^~
+Desc A strange gnomish device used to fling stuff is here.~
+Level 85
+ItemType weapon~
+Cost 2600
+Durability 1
+Asize 0
+Rsize 50
+Values sling 22 3 thwack H
+Weight 50
+Material wood~
+Extra    bless nonmetal nolocate nodegrade burnproof chaos~
+Extra2   nodecay nosecondary~
+Wear     take wield hold~
+End
+
+#64409
+Name tomatoe rotten~
+Short a `#`Gs`gl`Gi`gm`Gy `Sr`Xo`Stt`Xe`Sn `Rt`ro`Rma`Rt`ro`Re`^~
+Desc A `#`Gs`gl`Gi`gm`Gy `Sr`Xo`Stt`Xe`Sn `Rt`ro`Rma`Rt`ro`Re`^ is here... Eww Gross!!~
+Level 85
+ItemType projectile~
+Cost 102
+Durability 1
+Asize 0
+Rsize 50
+Values stone 13 6 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
+Weight 4
+Material stone~
+Extra    nonmetal~
+Extra2   nosecondary~
+Wear     take hold~
+End
+
+#64410
+Name stealthy dartgun~
+Short a `#`Sstealthy`^ dartgun~
+Desc A dartgun that looks pretty stealthy is here.~
+Level 85
+ItemType weapon~
+Cost 2600
+Durability 1
+Asize 0
+Rsize 50
+Values blowgun 21 3 sting DH
+Weight 50
+Material wood~
+Extra    bless nonmetal nolocate nodegrade chaos~
+Extra2   nodecay nosecondary~
+Wear     take wield~
+End
+
+#64411
+Name a sharp dart~
+Short a `#`Ssharp`^ dart~
+Desc A sharp dart lies here.~
+Level 85
+ItemType projectile~
+Cost 102
+Durability 1
+Asize 0
+Rsize 50
+Values dart 13 6 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
+Weight 4
+Material stone~
+Extra    nonmetal~
+Extra2   nosecondary~
+Wear     take hold~
+End
+
+#64412
+Name prayer beads rosary venalena~
+Short a `#`Wb`Xe`Wad`Xe`Wd `Cr`cosar`Cy`^ to `#`CV`cenalena`^~
+Desc A set of prayer beads with a figurine to the `#`WHoly `CM`cother`^ lies here.~
+Level 20
+ItemType treasure~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material holy~
+Extra    glow bless antievil nonmetal nolocate nodegrade norestring~
+Extra2   nodecay~
+Wear     take hold no_sac~
+Affect modifier -1 20 -1 mana 140 0
+End
+
+#64413
+Name seandac holy figurine crusader~
+Short a `#`Wholy `Cf`cigurin`Ce`^ of `#`WS`Xeanda`Wc`^~
+Desc A sacred figurine of the `#`WHoly C`Xrusade`Wr`^~
+Level 20
+ItemType treasure~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material holy~
+Extra    glow bless antievil nonmetal nolocate nodegrade norestring~
+Extra2   nodecay~
+Wear     take hold no_sac~
+Affect modifier -1 0 -1 mana 140 0
+End
+
+#64414
+Name trickster jivanor fan female male folding~
+Short a `#`Wf`Xoldin`Wg f`Xa`Wn`^ depicting the `#`?Tr`?ic`?ks`?ter `gJi`yva`Ynor`^~
+Desc A `#`Wf`Xoldin`Wg f`Xa`Wn`^ depicting the male, female aspects of the `#`?Tr`?ic`?ks`?ter `gJi`yva`Ynor`^ on each side.~
+Level 20
+ItemType treasure~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material holy~
+Extra    glow bless antievil nonmetal nolocate nodegrade norestring~
+Extra2   nodecay~
+Wear     take hold no_sac~
+Affect modifier -1 0 -1 mana 140 0
+End
+
+#64415
+Name white leather steel saddle~
+Short a `#`Ww`Xhite-`Ws`Xteel`^ and `#`yleather `Ws`Xa`Wdd`Xle`^~
+Desc A saddle made of white-steel and leather is here.~
+Level 80
+ItemType armor~
+Cost 2160
+Durability 1
+Asize 90
+Rsize 50
+Values 25 23 26 19 0
+Weight 90
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take back~
+Affect modifier -1 80 -1 mana 50 0
+Affect modifier -1 80 -1 hitroll 5 0
+Affect modifier -1 80 -1 damroll 5 0
+Affect modifier -1 80 -1 ac -10 0
+End
+
+#64416
+Name jivys jivanors hair delight bottle~
+Short a `#`YBottle`^ of `#`CJivy's Hair Delight`R!!`^~
+Desc A `#`YBottle`^ of `#`CJivy's Hair Delight`R!!`^ Oooo.. what's it do??~
+Level 20
+ItemType potion~
+Cost 500
+Durability 1
+Asize 0
+Rsize 50
+Values 80 'charm person' '' '' ''
+Weight 6
+Material chaos~
+Extra    magic bless nonmetal meltdrop nodegrade chaos norestring~
+Extra2   nodecay noidentify~
+Wear     take hold no_sac~
+End
+
+#64417
+Name quiver dracolich hide~
+Short a `#`Sd`Xr`Wa`Xc`So`Xl`Wi`Xc`Sh-hide `Wq`Xu`Siv`Xe`Wr`^~
+Desc A quiver made out of the hide of a dracolich is here.~
+Level 81
+ItemType quiver~
+Cost 2200
+Durability 1
+Asize 90
+Rsize 50
+Values 300 A 0 50 50
+Weight 90
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take back~
+Affect modifier -1 0 -1 hitroll 5 0
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 ac -10 0
+Affect modifier -1 81 -1 quickness 2 0
+End
+
+#64418
+Name cambion hide leg quiver~
+Short a `#`Rc`ra`Smbi`ro`Rn`S-`Rh`rid`Re `rleg q`Xu`Siv`Xe`rr`^~
+Desc A leg quiver made out of the hide of a cambion is here.~
+Level 81
+ItemType quiver~
+Cost 1215
+Durability 1
+Asize 90
+Rsize 50
+Values 150 A 0 25 25
+Weight 50
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take ankle~
+Affect modifier -1 0 -1 hitroll 5 0
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 ac -10 0
+End
+
+#64419
+Name belt leather steel white~
+Short a `#`Wb`Xelt`^ of `#`Ww`Xhite-`Ws`Xteel`^ and `#`yleather`^~
+Desc A belt made of white-steel and leather is here.~
+Level 87
+ItemType armor~
+Cost 1100
+Durability 1
+Asize 0
+Rsize 50
+Values 19 19 20 15 0
+Weight 40
+Material leather~
+Extra    glow antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take waist~
+ClassAllowances thief warrior paladin ranger barbarian bard monk~
+Affect modifier -1 87 -1 strength 3 0
+Affect modifier -1 87 -1 hitroll 2 0
+Affect modifier -1 87 -1 damroll 4 0
+Affect modifier -1 87 -1 hp 6 0
+End
+
+#64420
+Name white steel gauntlets~
+Short a pair of `#`Ww`Xhite-`Ws`Xteel `Wg`Xauntlet`Ws`^~
+Desc A pair of gauntlets made from white steel are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 20 20 20 18 0
+Weight 100
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hands no_sac~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 hitroll 4 0
+Affect modifier -1 87 -1 damroll 4 0
+Affect modifier -1 87 -1 hp 4 0
+Affect modifier -1 87 -1 strength 2 0
+End
+
+#64421
+Name steel white plated boots~
+Short a pair of `#`Ww`Xhite-`Ws`Xteel`^ plated `#`Wb`Xoot`Ws`^~
+Desc A pair of boots plated with white-steel are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 17 17 18 15 0
+Weight 100
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take feet no_sac~
+ClassAllowances thief warrior paladin ranger anti-paladin~
+Affect modifier -1 87 -1 saves -6 0
+Affect modifier -1 87 -1 quickness 3 0
+Affect modifier -1 87 -1 damroll 4 0
+End
+
+#64422
+Name white steel greaves plated~
+Short a pair of `#`Ww`Xhite-`Ws`Xteel`^ plated `#`Wg`Xreave`Ws`^~
+Desc A pair of greaves made from plates of white steel are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 18 19 18 17 0
+Weight 100
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take legs no_sac~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 hitroll 5 0
+Affect modifier -1 87 -1 damroll 5 0
+Affect modifier -1 87 -1 ac -15 0
+End
+
+#64423
+Name shoulder guards white steel plated~
+Short a pair of `#`Ww`Xhite-`Ws`Xteel`^ plated `#`Ws`Xhoulde`Wr-g`Xuard`Ws`^~
+Desc A pair of shoulder-guards made from plates of white-steel are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 20 18 19 19 0
+Weight 100
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take arms no_sac~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 agility 3 0
+Affect modifier -1 87 -1 hitroll 4 0
+Affect modifier -1 87 -1 damroll 4 0
+End
+
+#64424
+Name brigandine white steel breastplate plated~
+Short a `#`Ww`Xhite-`Ws`Xteel`^ plated `#`Wb`Xrigandin`We`^ breastplate~
+Desc A brigandine breastplate made from plates of white-steel is here.~
+Level 87
+ItemType armor~
+Cost 5300
+Durability 1
+Asize 0
+Rsize 50
+Values 30 32 30 27 0
+Weight 200
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take torso no_sac~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 hp 10 0
+Affect modifier -1 87 -1 hitroll 5 0
+Affect modifier -1 87 -1 damroll 5 0
+End
+
+#64425
+Name crested helm white steel~
+Short a `#`Wc`Xreste`Wd w`Xhite-`Ws`Xteel `Wh`Xel`Wm`^~
+Desc A white-steel helm with a large crest is here.~
+Level 87
+ItemType armor~
+Cost 1100
+Durability 1
+Asize 0
+Rsize 50
+Values 19 18 19 16 0
+Weight 40
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof horned~
+Extra2   nodecay~
+Wear     take head no_sac~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 strength 2 0
+Affect modifier -1 87 -1 hitroll 4 0
+Affect modifier -1 87 -1 damroll 6 0
+End
+
+#64426
+Name blue flowing cloak~
+Short a long, `#`Bf`blowing `Bc`bloak`^~
+Desc A flowing blue silk cloak trimmed in gold is crumpled here.~
+Level 87
+ItemType armor~
+Cost 2200
+Durability 1
+Asize 100
+Rsize 50
+Values 22 21 21 18 0
+Weight 80
+Material silk~
+Extra    glow magic bless antievil nonmetal nolocate nodegrade~
+Extra2   nodecay~
+Wear     take about~
+ClassAllowances cleric druid paladin ranger bard monk~
+Affect objectspell bless 87 -1 none 0 0
+Affect modifier -1 87 -1 hp 4 0
+Affect modifier -1 87 -1 mana 120 0
+Affect modifier -1 87 -1 intuition 3 0
+End
+
+#64427
+Name silk belt cord gold trimmed~
+Short a beautiful `#`Yg`yo`Yl`yd`S-`Xt`Wr`Xi`Wmm`Xed `Bs`bi`Xl`bk`^ cord~
+Desc A long silk cord tied at the waist is here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 17 18 18 16 0
+Weight 100
+Material silk~
+Extra    glow magic bless antievil nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take waist~
+ClassAllowances cleric druid paladin ranger bard monk~
+Affect modifier -1 87 -1 mana 40 0
+Affect modifier -1 87 -1 selfdiscipline 6 0
+Affect modifier -1 87 -1 hp 2 0
+End
+
+#64428
+Name golden armband~
+Short a `#`Yg`yo`Yld`ye`Yn a`yrm`Yb`yan`Yd`^~
+Desc A golden armband is here glimmering in the light.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 20 18 19 16 0
+Weight 100
+Material gold~
+Extra    glow magic bless antievil nonmetal nolocate nodegrade~
+Extra2   nodecay~
+Wear     take arms~
+ClassAllowances cleric druid paladin ranger bard~
+Affect modifier -1 87 -1 selfdiscipline 3 0
+Affect modifier -1 87 -1 hitroll 2 0
+Affect modifier -1 87 -1 damroll 2 0
+Affect modifier -1 87 -1 intuition 3 0
+End
+
+#64429
+Name silk gloves gold trimmed~
+Short a pair of `#`Yg`yo`Yl`yd`S-`Xt`Wr`Xi`Wmm`Xed `Bs`bi`Xl`bk`^ gloves~
+Desc A pair of gold-trimmed silk gloves are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 18 18 18 15 0
+Weight 100
+Material silk~
+Extra    magic bless antievil nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hands~
+ClassAllowances cleric druid paladin ranger bard~
+Affect modifier -1 87 -1 mana 40 0
+Affect modifier -1 87 -1 damroll 4 0
+Affect modifier -1 87 -1 hitroll 2 0
+Affect modifier -1 87 -1 hp 6 0
+End
+
+#64430
+Name gold trimmed silk boots~
+Short a pair of `#`Yg`yo`Yl`yd`S-`Xt`Wr`Xi`Wmm`Xed `Bs`bi`Xl`bk`^ boots~
+Desc A pair of gold-trimmed silk boots are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 17 17 17 14 0
+Weight 100
+Material silk~
+Extra    glow magic bless antievil nonmetal nodegrade~
+Extra2   nodecay~
+Wear     take feet~
+ClassAllowances cleric druid paladin ranger bard~
+Affect modifier -1 87 -1 move 60 0
+Affect modifier -1 87 -1 hp 5 0
+Affect modifier -1 87 -1 hitroll 3 0
+Affect modifier -1 87 -1 damroll 3 0
+End
+
+#64431
+Name leggings gold trimmed silk~
+Short some `#`Yg`yo`Yl`yd`S-`Xt`Wr`Xi`Wmm`Xed `Bs`bi`Xl`bk`^ leggings~
+Desc A pair of gold-trimmed silk leggings are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 20 20 20 15 0
+Weight 100
+Material silk~
+Extra    magic bless antievil nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take legs~
+ClassAllowances cleric druid paladin ranger bard~
+Affect modifier -1 87 -1 hitroll 3 0
+Affect modifier -1 87 -1 damroll 3 0
+Affect modifier -1 87 -1 mana 80 0
+Affect modifier -1 87 -1 selfdiscipline 3 0
+End
+
+#64432
+Name gold high crested helm~
+Short a `#`Yg`yo`Yl`yd `Yh`yig`Yh`S-`Yc`yr`Ye`yste`Yd`^ helm~
+Desc A golden helm with a high crest is here.~
+Level 90
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 19 18 19 16 0
+Weight 100
+Material gold~
+Extra    glow magic bless antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take head~
+ClassAllowances cleric druid ranger bard~
+Affect modifier -1 90 -1 intuition 3 0
+Affect modifier -1 90 -1 mana 60 0
+Affect affects2 -1 90 -1 none 0 vicegrip
+Affect modifier -1 90 -1 selfdiscipline 4 0
+End
+
+#64433
+Name gold trimmed silk clerical robes~
+Short a `#`Yg`yo`Yl`yd`S-`Xt`Wr`Xi`Wmm`Xed `Bs`bi`Xl`bk`^ cleric robe~
+Desc A silk clerical robe trimmed in gold is here.~
+Level 87
+ItemType armor~
+Cost 5240
+Durability 1
+Asize 200
+Rsize 50
+Values 28 31 31 27 0
+Weight 200
+Material silk~
+Extra    glow magic bless antievil nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take torso~
+ClassAllowances cleric druid paladin ranger bard~
+Affect modifier -1 87 -1 intuition 4 0
+Affect modifier -1 87 -1 mana 60 0
+Affect modifier -1 87 -1 selfdiscipline 2 0
+End
+
+#64434
+Name white steel axe double-bladed hand~
+Short a huge, `#`Wd`Xouble`S-`Wb`Xladed`^ hand axe~
+Desc A huge, `#`Wd`Xouble`S-`Wb`Xladed`^ hand axe~
+Level 89
+ItemType weapon~
+Cost 4000
+Durability 1
+Asize 150
+Rsize 50
+Values axe 3 28 chop EN
+Weight 15
+Material white-steel~
+Extra    glow bless antievil nolocate burnproof chaos~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 89 -1 hitroll 6 0
+Affect modifier -1 89 -1 damroll 10 0
+End
+
+#64435
+Name two-handed battleaxe massive~
+Short a massive, `#`Wt`Xwo`S-`Wh`Xanded`^ battleaxe~
+Desc A two-handed Dwarven axe is here.~
+Level 89
+ItemType weapon~
+Cost 5340
+Durability 1
+Asize 50
+Rsize 50
+Values axe 23 3 slice FMN
+Weight 200
+Material white-steel~
+Extra    burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard anti-paladin~
+Affect modifier -1 89 -1 hitroll 10 0
+Affect modifier -1 89 -1 damroll 5 0
+End
+
+#64436
+Name white leather tipped brass bull whip~
+Short a `#`Yb`yr`Ya`yss`^ tipped `#`Wwhite l`Xeather `Wb`Xullwhip`^~
+Desc A white leather bullwhip tipped with brass lies here.~
+Level 89
+ItemType weapon~
+Cost 4000
+Durability 1
+Asize 0
+Rsize 50
+Values whip 23 3 whip LN
+Weight 15
+Material leather~
+Extra    glow nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage cleric warrior druid paladin ranger~
+Affect modifier -1 89 -1 hitroll 8 0
+Affect modifier -1 89 -1 damroll 8 0
+End
+
+#64437
+Name silver elven longsword sword ~
+Short a `#`Ws`Xi`Slv`Xe`Wr`^ elven `#`Wl`Xongswor`Wd`^~
+Desc An elven longsword with a silver blade is here.~
+Level 89
+ItemType weapon~
+Cost 4000
+Durability 1
+Asize 150
+Rsize 50
+Values sword 19 4 magic LN
+Weight 15
+Material silver~
+Extra    glow bless antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 89 -1 hitroll 8 0
+Affect modifier -1 89 -1 damroll 8 0
+End
+
+#64438
+Name morning white steel star~
+Short a `#`Ww`Xhite`S-`Ws`Xteel `Smorning `Ws`Xta`Wr`^~
+Desc A white-steel spiked ball connected by an iron chain to a handle is here.~
+Level 89
+ItemType weapon~
+Cost 1335
+Durability 1
+Asize 0
+Rsize 50
+Values mace 21 3 smash HLN
+Weight 50
+Material white-steel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 89 -1 hitroll 6 0
+Affect modifier -1 89 -1 damroll 6 0
+End
+
+#64439
+Name brass tipped flail~
+Short a `#`Wf`Xlai`Wl`^ tipped with `#`yb`Yr`ya`Ys`ys`^~
+Desc A flail with many heads tipped with shards of brass is here.~
+Level 89
+ItemType weapon~
+Cost 4000
+Durability 1
+Asize 76
+Rsize 50
+Values flail 18 4 acbite HN
+Weight 15
+Material brass~
+Extra    glow bless antievil nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger bard monk anti-paladin~
+Affect modifier -1 89 -1 hitroll 6 0
+Affect modifier -1 89 -1 damroll 10 0
+End
+
+#64440
+Name white steel knife~
+Short a `#`Ww`Xhite`S-`Ws`Xteel `Wk`Xnif`We`^~
+Desc A sharp knife made of white-steel is here.~
+Level 89
+ItemType weapon~
+Cost 2670
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 20 3 stab DH
+Weight 10
+Material whitesteel~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 89 -1 damroll 8 0
+Affect modifier -1 89 -1 hitroll 8 0
+End
+
+#64441
+Name javelin white steel ~
+Short a `#`yjavelin`^ tipped with `#`Ww`Xhite`S-`Ws`Xteel`^~
+Desc A javelin with a sharpened tip of white-steel is stuck here in the ground.~
+Level 89
+ItemType weapon~
+Cost 1335
+Durability 1
+Asize 0
+Rsize 50
+Values polearm 22 3 thrust EHN
+Weight 50
+Material white-steel~
+Extra    glow magic bless antievil nonmetal nolocate nodegrade burnproof horned~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 89 -1 hitroll 6 0
+Affect modifier -1 89 -1 damroll 10 0
+End
+
+#64442
+Name white steel pike~
+Short a large `#`Ww`Xhite`S-`Ws`Xteel `Wp`Xik`We`^~
+Desc A large, sharp polearm made entirely of white-steel is here.~
+Level 89
+ItemType weapon~
+Cost 4000
+Durability 1
+Asize 0
+Rsize 50
+Values polearm 23 3 stab DFN
+Weight 150
+Material white-steel~
+Extra    glow dark magic bless antievil nodegrade~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 89 -1 damroll 4 0
+Affect modifier -1 89 -1 hitroll 6 0
+Affect modifier -1 89 -1 strength 3 0
+End
+
+#64443
+Name shiny brass anklet~
+Short a shiny `#`yb`Yr`ya`Ys`ys`^ anklet~
+Desc An shiny anklet made from brass is here.~
+Level 80
+ItemType treasure~
+Cost 480
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material brass~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take no_sac ankle~
+Affect modifier -1 80 -1 damroll 4 0
+Affect modifier -1 80 -1 hitroll 4 0
+Affect modifier -1 80 -1 quickness 2 0
+Affect modifier -1 80 -1 move 20 0
+End
+
+#64444
+Name earcuff brass lion emblazoned~
+Short a `#`Rl`rion `We`Xmbl`Waz`Xone`Wd `yb`Yr`ya`Ys`ys e`Ya`yr`Yc`yu`Yf`yf`^~
+Desc A brass earcuff emblazoned with a rampant lion is here.~
+Level 80
+ItemType jewelry~
+Cost 780
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material brass~
+Extra    glow bless antievil nolocate meltdrop nodegrade~
+Extra2   nodecay~
+Wear     take no_sac ear~
+Affect modifier -1 80 -1 agility 2 0
+Affect modifier -1 80 -1 damroll 6 0
+Affect modifier -1 80 -1 hitroll 6 0
+End
+
+#64445
+Name archers brace leather~
+Short an `#`Ga`grcher's `yleather `Gb`grac`Ge`^~
+Desc A brace of hard leather used to protect an archer's arm is here.~
+Level 85
+ItemType armor~
+Cost 510
+Durability 1
+Asize 7
+Rsize 50
+Values 13 13 13 10 0
+Weight 2
+Material leather~
+Extra    glow magic bless antievil nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wrist~
+ClassAllowances cleric warrior druid paladin ranger barbarian bard monk~
+Affect modifier -1 85 -1 hitroll 4 0
+Affect modifier -1 85 -1 damroll 4 0
+Affect modifier -1 85 -1 agility 1 0
+Affect modifier -1 85 -1 quickness 3 0
+End
+
+#64446
+Name bracelet golden~
+Short a `#`Yg`yo`Yld`ye`Yn b`yr`Ya`yc`Ye`yl`Ye`yt`^~
+Desc A delicate golden bracelet is here radiating magic.~
+Level 85
+ItemType jewelry~
+Cost 850
+Durability 1
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    hum magic bless antievil burnproof~
+Extra2   nodecay~
+Wear     take wrist~
+Affect modifier -1 0 -1 hp 10 0
+Affect modifier -1 85 -1 mana 60 0
+Affect modifier -1 85 -1 hitroll 2 0
+End
+
+#64447
+Name necklace golden garnet pendant~
+Short a `#`Yg`yo`Yld`ye`Yn `Wn`Ye`yc`Ykl`ya`Yc`We`^ holding a `#`Rg`rarne`Rt `Yp`Re`rnda`Rn`Yt`^~
+Desc A beautiful golden necklace holding a garnet pendant is here.~
+Level 85
+ItemType armor~
+Cost 2550
+Durability 1
+Asize 75
+Rsize 50
+Values 12 13 14 10 2
+Weight 10
+Material gold~
+Extra    glow magic bless antievil nolocate burnproof~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 85 -1 reasoning 3 0
+Affect modifier -1 85 -1 intuition 3 0
+Affect modifier -1 85 -1 hp 4 0
+End
+
+#64448
+Name ring golden whitefire fire white white-fire~
+Short a `#`Yg`yo`Yld`ye`Yn r`yin`Yg`^ of `#`WWhite`S-`WF`Xi`Wr`Xe`^~
+Desc A ring glows here, a golden band engulfed with pure white flames.~
+Level 85
+ItemType jewelry~
+Cost 2550
+Durability 1
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material magic~
+Extra    glow hum magic bless antievil noremove burnproof~
+Extra2   nodecay nochaoslace regrowing~
+Wear     take finger~
+Affect modifier -1 0 -1 hp 4 0
+Affect modifier -1 0 -1 mana 40 0
+Affect modifier -1 0 -1 ac -10 0
+Affect modifier -1 85 -1 hitroll 4 0
+Affect modifier -1 85 -1 damroll 4 0
+End
+
+#64449
+Name white feathered brass arrow~
+Short a `#`Wwhite`S-`Wf`Xea`Wthe`Xre`Wd `yb`Yr`yass a`Yr`yro`Yw`^~
+Desc A long brass arrow fletched with white feathers lies here.~
+Level 90
+ItemType projectile~
+Cost 450
+Durability 1
+Asize 0
+Rsize 50
+Values arrow 20 3 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
+Weight 1
+Material wood~
+Extra    bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay noprimary~
+Wear     take hold~
+End
+
+#64450
+Name blue feathered iron arrow~
+Short a `#`Bb`blu`Be`S-`Bf`bea`Bthe`bre`Bd `Siron a`Xr`Sro`Xw`^~
+Desc A long iron arrow fletched with blue feathers lies here.~
+Level 90
+ItemType projectile~
+Cost 450
+Durability 1
+Asize 0
+Rsize 50
+Values arrow 20 3 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
+Weight 1
+Material iron~
+Extra    bless nolocate nodegrade burnproof~
+Extra2   nodecay noprimary~
+Wear     take hold~
+ClassAllowances ranger~
+End
+
+#64451
+Name shield targe round combat~
+Short the `#`BT`barge`^ of `#`YC`yo`bmb`ya`Yt`^~
+Desc A huge targe lies here on the ground.~
+Level 91
+ItemType armor~
+Cost 11200
+Durability 1
+Asize 0
+Rsize 50
+Values 20 20 20 23 0
+Weight 300
+Material stone~
+Extra    glow hum dark bless nolocate meltdrop nodegrade burnproof horned norestring~
+Extra2   nodecay nosell~
+Wear     take shield no_sac~
+Affect modifier -1 91 -1 ac -20 0
+Affect modifier -1 91 -1 quickness 2 0
+Affect modifier -1 91 -1 agility 3 0
+Affect resist -1 91 -1 none 0 bash
+ExtraDesc 'shield targe round combat'~
+This huge round targe is made specifically for defense. It's size and shape 
+makes it ideal for agility and stealth. One section of it's round outer rim 
+is cut into a somewhat inverted crescent, giving the shield two sharp points 
+and a small space for sight while doing shield maneuvers. Emblazoned are 
+sharp bone-like studs, ideal for and protecting against bashing. 
+~
+End
+
+#64452
+Name white oak shortbow bow~
+Short a `#`Wwhite oak s`Xhortbo`Ww`^~
+Desc A sturdy shortbow made of white oak is here.~
+Level 85
+ItemType weapon~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values bow 20 3 thwack HIN
+Weight 50
+Material whiteoak~
+Extra    magic bless antievil nonmetal nolocate burnproof~
+Extra2   nodecay nosecondary~
+Wear     take wield no_sac~
+ClassAllowances warrior paladin spellfilcher bard monk~
+Affect modifier -1 85 -1 hitroll 5 0
+Affect modifier -1 85 -1 damroll 5 0
+Affect modifier -1 85 -1 agility 3 0
+Affect modifier -1 85 -1 quickness 2 0
+End
+
+#64453
+Name yew longbow bow~
+Short a large `#`Yy`yew `Yl`yongbow`^~
+Desc A heavy longbow made of yew is here.~
+Level 85
+ItemType weapon~
+Cost 2550
+Durability 1
+Asize 0
+Rsize 50
+Values bow 21 3 crush EHN
+Weight 100
+Material whiteoak~
+Extra    bless antievil nonmetal nolocate burnproof~
+Extra2   nodecay nosecondary~
+Wear     take wield no_sac~
+ClassAllowances thief barbarian bard monk~
+Affect modifier -1 85 -1 hitroll 4 0
+Affect modifier -1 85 -1 damroll 4 0
+Affect modifier -1 85 -1 intuition -6 0
+Affect modifier -1 85 -1 empathy -3 0
+Affect modifier -1 85 -1 hp 10 0
+Affect modifier -1 85 -1 strength 4 0
+End
+
+#64454
+Name willow bow longbow~
+Short a `#`Yw`yi`Yll`yo`Yw `Wl`Xon`Wg `Sbow`^~
+Desc A uniquely crafted willow longbow lies here.~
+Level 90
+ItemType weapon~
+Cost 6000
+Durability 1
+Asize 0
+Rsize 50
+Values bow 17 4 crush HIN
+Weight 150
+Material whiteoak~
+Extra    magic bless antievil nonmetal nolocate burnproof~
+Extra2   nodecay nosecondary~
+Wear     take wield no_sac~
+ClassAllowances ranger bard~
+Affect modifier -1 90 -1 hitroll 5 0
+Affect modifier -1 90 -1 damroll 5 0
+Affect modifier -1 90 -1 agility 3 0
+Affect modifier -1 90 -1 quickness 2 0
+End
+
+#64455
+Name scribbled note small~
+Short a scribbled note~
+Desc The torn edge of a note thats been messily scribbled on is here.~
+Level 50
+ItemType scroll~
+Cost 2340
+Durability 1
+Asize 0
+Rsize 50
+Values 90 sleep sleep weaken weaken
+Weight 1
+Material burntpaper~
+Extra    nonmetal nolocate nodegrade burnproof~
+Extra2   noprimary nosell~
+Wear     take hold no_sac~
+End
+
+#64456
+Name packet lyfern~
+Short a `#`yp`Xa`yck`Xe`yt`^ of `#`Gl`gyfer`Gn`^~
+Desc A packet of crushed lyfern is here.~
+Level 30
+ItemType pill~
+Cost 850
+Durability 1
+Asize 1
+Rsize 50
+Values 30 cancellation 'remove curse' cancellation ''
+Weight 10
+Material herb~
+Extra    magic inventory nonmetal~
+Wear     take hold~
+End
+
+#64457
+Name pouch rashji~
+Short a small `#`yp`wo`yu`wc`yh`^ of `#`CR`ga`Cs`Gh`gj`Ci`^~
+Desc A small `#`yp`wo`yu`wc`yh`^ of `#`CR`ga`Cs`Gh`gj`Ci`^ lies here.~
+Level 30
+ItemType pill~
+Cost 850
+Durability 1
+Asize 0
+Rsize 50
+Values 30 regeneration 'second wind' refresh ''
+Weight 20
+Material unknown~
+Extra    glow magic nonmetal nodegrade~
+Wear     take hold~
+End
+
+#64458
+Name carved wooden stake~
+Short a `#`Sc`Xa`rr`Sv`Xe`rd `ywooden`^ stake~
+Desc A `#`Sc`Xa`rr`Sv`Xe`rd `ywooden`^ stake lies here stuck in the ground.~
+Level 20
+ItemType treasure~
+Cost 100
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stake~
+Wear     take hold~
+End
+
+#64459
+Name lion brigandine plate brass~
+Short a `#`Rl`rion `We`Xmb`Wlaz`Xo`Wn`Xe`Wd `yb`Yr`yi`Yg`ya`Yn`yd`Yin`ye`^ plate~
+Desc A set of brass brigandine plates hover here in one complete torso-piece.~
+Level 91
+ItemType armor~
+Cost 98800
+Durability 1
+Asize 0
+Rsize 50
+Values 30 30 30 23 0
+Weight 300
+Material brass~
+Extra    glow hum bless antievil noremove nolocate meltdrop nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take torso no_sac~
+Affect modifier -1 0 -1 hp -4 0
+Affect modifier -1 0 -1 saves -6 0
+Affect modifier -1 0 -1 damroll 8 0
+Affect modifier -1 0 -1 hitroll 8 0
+ExtraDesc lion brigandine plate brass ~
+A red, rampant lion emblazes the center of these brass brigandine plates. 
+They piece together to form a sturdy, solid torso-piece. Each plate is 
+crafted with expert hands, kept together and reinforced by a layer of 
+mithril backing. Only the dwarves could have crafted such an artifact. It's 
+maker is yet still unknown. It's quality unmatched. 
+~
+End
+
+#64460
+Name fly fishing pole~
+Short a `#`Wf`Xly `Wf`Xishin`Wg `Spole`^~
+Desc A fly fishing pole lies here.~
+Level 50
+ItemType fishingpole~
+Cost 70
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material wood~
+Wear     take hold~
+End
+
+#64461
+Name crystalline flask holy blessed water holywater~
+Short a `#`Wc`Xr`cy`Cs`Mt`ma`Ml`Cl`ci`Xn`We f`Xlas`Wk`^ of `#`Wholy `Cw`ca`Ct`ce`Cr`^~
+Desc A crystalline flask of holy water swirls here warding off vampires.~
+Level 20
+ItemType treasure~
+Cost 500
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material holy water~
+Extra    bless norestring~
+Wear     take hold~
+End
+
+#64462
+Name glass vial lycan bane silver~
+Short a `#`Wg`Xl`Wa`Xss `Wf`Xlas`Wk`^ of `#`Cl`Sycan-`Cb`Sane`^~
+Desc A glass flask of ground wolvesbane and silver is here warding off lycans.~
+Level 20
+ItemType treasure~
+Cost 500
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material wolvesbane~
+Extra    bless chaos norestring~
+Wear     take hold~
+End
+
+#64463
+Name potion divine healing~
+Short a potion of `#`cdivine healing`^~
+Desc A potion lies here.~
+Level 20
+ItemType potion~
+Cost 250
+Durability 1
+Asize 2
+Rsize 50
+Values 16 heal heal '' ''
+Weight 2
+Material healing~
+Wear     take hold~
+End
+
+#64464
+Name vial sanct sanctuary blessed~
+Short a `#`Wb`Xle`Wss`Xed `Wv`Xia`Wl`^ of `#`Ws`Xanctuary`^~
+Desc A vial of sanctuary blessed by Lizellia is here.~
+Level 20
+ItemType potion~
+Cost 500
+Durability 1
+Asize 10
+Rsize 50
+Values 60 sanctuary bless '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#64465
+Name vial dragonic reflexes haste power~
+Short a `#`Wv`Xia`Wl`^ of `#`Wd`Gr`ga`Ggo`gn`Gi`Wc r`Xe`Wfl`Xe`Wx`Xes`^~
+Desc A vial containing dragon-like speed and strength is here.~
+Level 20
+ItemType potion~
+Cost 350
+Durability 1
+Asize 2
+Rsize 50
+Values 60 haste 'giant strength' '' ''
+Weight 2
+Material magic~
+Extra    bless burnproof~
+Wear     take hold~
+End
+
+#64466
+Name vial venom resistance poison~
+Short a small `#`Wv`Xia`Wl`^ of `#`Sv`Ge`gn`Go`Sm `Wr`Xe`Wsis`Xta`Wn`Xce`^~
+Desc A vial filled with a frothy greenish-yellow substance is here.~
+Level 30
+ItemType potion~
+Cost 1200
+Durability 1
+Asize 0
+Rsize 50
+Values 60 'poison immunity' 'resist poison' 'cure poison' ''
+Weight 10
+Material glass~
+Extra    bless chaos~
+Wear     take hold~
+End
+
+#64467
+Name vial elemental protection~
+Short a `#`Wv`Xia`Wl`^ of `#`We`Yl`ye`Rm`re`Bn`bt`Ma`ml `Wp`Xro`Wtect`Xio`Wn`^~
+Desc A vial that protects against elemental assaults glows here.~
+Level 35
+ItemType potion~
+Cost 1200
+Durability 1
+Asize 0
+Rsize 50
+Values 60 'resist fire' 'resist cold' 'resist acid' 'resist lightning'
+Weight 20
+Material elemental~
+Extra    magic burnproof~
+Wear     take hold~
+End
+
+#64468
+Name parchment letter note~
+Short a `#`Wp`Xarchmen`Wt`^~
+Desc A piece of parchment lies here.~
+Level 1
+ItemType parchment~
+Cost 10
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 unknown 0 Weight 1
+Material unknown~
+Wear     take hold~
+End
+
+#64469
+Name metal steel claw~
+Short a `#`Xm`Setal c`Xl`ra`Sw`^~
+Desc A `#`Xm`Setal c`Xl`ra`Sw`^ that extends from one's arm gleams here.~
+Level 85
+ItemType weapon~
+Cost 8500
+Durability 1
+Asize 0
+Rsize 50
+Values dagger 19 3 slice DGLN
+Weight 33
+Material steel~
+Extra    dark evil antigood burnproof chaos~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 85 -1 hitroll 5 0
+Affect modifier -1 85 -1 damroll 11 0
+End
+
+#64470
+Name staff withering obsidian~
+Short the `#`Sobs`Xi`Sd`Xi`San S`gta`Sf`gf`^ of `#`gw`Gi`Yt`yh`re`yr`Yi`Gn`gg`^~
+Desc The `#`Sobs`Xi`Sd`Xi`San S`gta`Sf`gf`^ of `#`gw`Gi`Yt`yh`re`yr`Yi`Gn`gg`^ hovers here decaying the ground about it.~
+Level 85
+ItemType weapon~
+Cost 2550
+Durability 1
+Asize 1
+Rsize 50
+Values staff 22 3 wither FHM
+Weight 10
+Material herb~
+Extra    dark magic bless antigood noremove inventory nonmetal nolocate meltdrop burnproof chaos horned~
+Extra2   nodecay nosecondary~
+Wear     take wield~
+End
+
+#64471
+Name touch death everlasting hunger ravenous aura famine~
+Short the `#`ST`Xo`Su`Xc`Sh`^ of `#`SE`Xv`ye`Yr`Xl`Sa`Xs`Yt`yi`Xn`Sg `WF`Xa`Wmi`Xn`We`^~
+Desc `#`ST`Xo`Su`Xc`Sh`^ of `#`SE`Xv`ye`Yr`Xl`Sa`Xs`Yt`yi`Xn`Sg `WF`Xa`Wmi`Xn`We`^ hovers here bringing death by ravenous hunger.~
+Level 85
+ItemType weapon~
+Cost 120040
+Durability 1
+Asize 0
+Rsize 50
+Values exotic 13 5 hunger EH
+Weight 220
+Material famine~
+Extra    dark magic bless antigood nonmetal nolocate meltdrop nodegrade burnproof chaos horned norestring~
+Extra2   nodecay nosell antilaw~
+Wear     take wield no_sac~
+End
+
+#64472
+Name touch death unforgiving thirst dehydration ravenous unquenching aura~
+Short the `#`ST`Xo`Su`Xc`Sh`^ of `#`SU`Xn`cf`Co`Xr`Sg`Xi`Cv`ci`Xn`Sg `WT`Xh`Wir`Xs`Wt`^~
+Desc The `#`ST`Xo`Su`Xc`Sh`^ of `#`SU`Xn`cf`Co`Xr`Sg`Xi`Cv`ci`Xn`Sg `WT`Xh`Wir`Xs`Wt`^ hovers here bringing death by ravenous, unquenching thirst.~
+Level 85
+ItemType weapon~
+Cost 120040
+Durability 1
+Asize 0
+Rsize 50
+Values exotic 13 5 thirst EH
+Weight 220
+Material famine~
+Extra    dark magic bless antigood nonmetal nolocate meltdrop nodegrade burnproof chaos horned norestring~
+Extra2   nodecay nosell antilaw~
+Wear     take wield no_sac~
+End
+
+#64473
+Name set brass backplates~
+Short a set of `#`yb`Yr`ya`Yss `yb`Ya`yc`Ykp`yla`Yte`ys`^~
+Desc A set of backplates hover here in place as if someone were wearing it.~
+Level 90
+ItemType armor~
+Cost 2160
+Durability 1
+Asize 90
+Rsize 50
+Values 20 19 19 23 0
+Weight 90
+Material leather~
+Extra    glow hum bless antievil noremove nonmetal nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take no_sac back~
+Affect modifier -1 90 -1 reasoning -2 0
+Affect modifier -1 90 -1 memory -1 0
+Affect modifier -1 90 -1 empathy -4 0
+Affect modifier -1 90 -1 strength 5 0
+Affect modifier -1 90 -1 quickness 4 0
+Affect modifier -1 90 -1 constitution 4 0
+Affect modifier -1 90 -1 ac -15 0
+End
+
+#64474
+Name runes master magus~
+Short `#`?R`?u`bn`?e`bs`^ of the `#`BM`baster `BM`ba`mgu`bs`^~
+Desc There is a glove here enscribed with the runes concocted together by a master magus.~
+Level 85
+ItemType weapon~
+Cost 23000
+Durability 1
+Asize 0
+Rsize 50
+Values exotic 14 4 mental BD
+Weight 220
+Material lightning~
+Extra    glow hum magic bless noremove nonmetal nolocate meltdrop nodegrade burnproof chaos~
+Extra2   nosell~
+Wear     take wield no_sac~
+Affect modifier -1 85 -1 constitution -3 0
+Affect modifier -1 85 -1 selfdiscipline 5 0
+Affect modifier -1 85 -1 empathy 6 0
+End
+
+#64475
+Name half1 broken left obsidian1 emblem1~
+Short a broken half of an `#`Sobs`Xi`Sd`Xi`San `re`Smblem`^~
+Desc The left piece of an obsidian emblem lies here tainting the ground around it.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64476 64475 64477 0 0
+Weight 1
+Material obsidian~
+Extra    evil antigood nonmetal nolocate nodegrade burnproof chaos norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64476
+Name half2 missing right obsidian2 emblem2~
+Short a missing half of an `#`Sobs`Xi`Sd`Xi`San `re`Smblem`^~
+Desc The right piece of an obsidian emblem lies here tainting the ground around it.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64475 64475 64477 0 0
+Weight 1
+Material obsidian~
+Extra    evil antigood nonmetal nolocate nodegrade burnproof chaos norestring~
+Extra2   buried nodecay nosell~
+Wear     take no_sac~
+End
+
+#64477
+Name obsidian emblem~
+Short an `#`Sobs`Xi`Sd`Xi`San `re`Smblem`^~
+Desc The obsidian emblem lies here tainting the ground around it.. it's gem is missing.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64480 64477 64481 0 0
+Weight 2
+Material obsidian~
+Extra    evil bless antigood rotdeath nonmetal nolocate nodegrade burnproof chaos norestring~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#64478
+Name torso red1 dragon1 gem1 garnet1 head upper~
+Short the `#`Rg`rarnet `Rh`read`^ and `#`Rt`rorso`^ of a `#`Rd`rragon`^~
+Desc The elegant head and torso of a garnet intori dragon gleams here.. it's missing it's lower half.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64479 64478 64480 0 0
+Weight 2
+Material garnet~
+Extra    glow evil magic bless antigood nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64479
+Name tail red2 dragon2 gem2 garnet2 lower body~
+Short the `#`Rg`rarnet `Rt`rail`^ and `#`Rb`rody`^ of a `#`Rd`rragon`^~
+Desc The elegant tail and lower body of a garnet intori dragon gleams here.. it's missing it's upper half.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64478 64478 64480 0 0
+Weight 2
+Material garnet~
+Extra    glow magic bless antigood nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64480
+Name garnet serpentine dragon~
+Short a `#`Rs`rer`Rp`ren`Rt`rine `Rg`rarnet `Rd`rragon`^~
+Desc A dragon carved of garnet is circling and devouring itself with greed.. it is missing something.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64477 64477 64481 0 0
+Weight 4
+Material unknown~
+Extra    glow magic bless antigood nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64481
+Name amulet garnet obsidian~
+Short a `#`Rd`rragon`^ inset an `#`Sobs`Xi`Sd`Xi`San am`Xu`Sl`Xe`St`^~
+Desc A garnet dragon devouring itself is inset within an obsidian amulet.. it appears to be missing something.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64484 64481 64485 0 0
+Weight 6
+Material unholy~
+Extra    glow magic bless antigood nonmetal nolocate nodegrade burnproof chaos norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64482
+Name broken1 blade half1~
+Short a broken `#`Sb`Xl`Sack-st`Xee`Sl b`Xl`Sade`^~
+Desc A broken black-steel blade is here... it's missing it's pommel.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64483 64482 64484 0 0
+Weight 40
+Material blacksteel~
+Extra    hum dark evil bless antigood nolocate burnproof norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take wield no_sac~
+End
+
+#64483
+Name rusty pommel~
+Short a `#`rr`yu`rsty `Sblack p`Xo`Smm`Xe`Sl`^~
+Desc A rusty pommel with a sharded blade lies here.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64482 64482 64484 0 0
+Weight 5
+Material blacksteel~
+Extra    hum dark bless antigood inventory nolocate nodegrade norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64484
+Name sword rusty broadsword~
+Short a `#`rr`yu`rsty `Ss`Xp`Wik`Xe`Sd b`Xro`Sad`Xsw`So`Xr`Sd`^~
+Desc A magnificent broadsword rusts here with lack of attention... it's missing something..~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64481 64481 64485 0 0
+Weight 45
+Material blacksteel~
+Extra    hum dark bless antigood nolocate nodegrade burnproof horned norestring~
+Extra2   nodecay nosell~
+Wear     take wield no_sac~
+End
+
+#64485
+Name black claymore thunder haze sword~
+Short a `#`SB`Xl`Sack C`Xla`Sym`Xo`Sre`^ named, '`#`rT`Sh`yu`Ynd`ye`Sr-`rH`Sa`yz`Se`^'~
+Desc The mighty `#`rT`Sh`yu`Ynd`ye`Sr-`rH`Sa`yz`Se`^ humms here chaotically.~
+Level 90
+ItemType weapon~
+Cost 1500
+Durability 1
+Asize 0
+Rsize 50
+Values sword 23 3 vibration LMN
+Weight 50
+Material sound~
+Extra    glow hum dark bless antigood antievil inventory nonmetal nolocate nodegrade burnproof chaos horned norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take wield no_sac~
+ClassAllowances thief warrior ranger barbarian bard~
+Affect modifier -1 90 -1 damroll 12 0
+Affect modifier -1 90 -1 hitroll 6 0
+Affect vuln -1 90 -1 none 0 sound
+ExtraDesc black claymore thunder haze sword ~
+The mighty ethereal blade before you hums chaotically. The sword itself was 
+born from the cries and wails of both grief and despair caused by the 
+suffering of the innocents. The blade itself is erratic. It never sits in 
+one place as it hums quietly to itself. It flickers with the lesser 
+movements of your hand.. and wails it's screams, writhing about it's 
+somewhat translucent sword-form with dynamic movements. It's pommel is red 
+velvet laced with golden etchings. Upon it is a garnet amulet of a 
+serpentine dragon devouring itself in agony. `1 `1 The Blade whispers with the soft voice of a sobbing mother: `1 `rI `Sa`ym t`Yhe S`ywo`Srd t`rh`Sa`yt s`Yt`yo`Sps `rt`She `rT`Sy`yr`Yan`yt`Ss a`rn`Sd p`yr`Yot`yec`St`rs `St`yh`Se `rI`Sn`yn`Yoce`yn`St.`^ `1 `1 
+~
+End
+
+#64486
+Name gold flecked oak pipe~
+Short a `#`Yg`yo`Yl`yd`S-`Yf`Sl`rec`Yk`re`Yd `So`rak`^ pipe~
+Desc An oak pipe flecked with gold lies here.~
+Level 20
+ItemType tabac_pipe~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 200 200 0 0 0
+Weight 3
+Material oak~
+Extra    magic bless nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay noprimary~
+Wear     take no_sac~
+ExtraDesc gold flecked oak pipe ~
+The pipe glimmers as light dances of it beautifully. The pipe is carved into 
+the likeness of a coiling serpent. The gold is veined into the wood of the 
+pipe and smoothed down to perfection. The oak gleams with a regal shine. 
+~
+End
+
+#64487
+Name golden sphinx figurine~
+Short a `#`Yg`yo`Yld`ye`Yn s`yph`Yi`yn`Yx f`yi`Yg`yur`Yi`yn`Ye`^~
+Desc A figurine of a golden sphinx is here protecting the answer to a long forgotten riddle.~
+Level 0
+ItemType key~
+Cost 56700
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    glow dark magic bless nolocate nodegrade burnproof chaos horned norestring~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#64488
+Name barstool stool bar~
+Short a barstool~
+Desc Some barstools are here by the counter.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10000 EHK 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay nosell regrowing~
+End
+
+#64489
+Name orc sized pint beer~
+Short an `#`ro`Src-`rs`Sized `rp`Sint`^ of `#`Wb`yee`Wr`^~
+Desc An orcish sized pint of beer froths here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 150 150 beer 0 0
+Weight 50
+Material glass~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#64490
+Name orc sized pint dark ale~
+Short an `#`ro`Src-`rs`Sized `rp`Sint`^ of `#`yd`rark `ya`rle`^~
+Desc An orcish sized pint of dark ale froths here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 150 150 'dark ale' 0 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#64491
+Name orc sized pint vodka~
+Short an `#`ro`Src-`rs`Sized `rp`Sint`^ of `#`Wv`Xodka`^~
+Desc An orcish sized pint of vodka froths here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 150 150 vodka 0 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#64492
+Name orc sized pint bloodwine~
+Short an `#`ro`Src-`rs`Sized `rp`Sint`^ of `#`Rb`rlood`Rw`rine`^~
+Desc An orcish sized pint of bloodwine froths here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 150 150 bloodwine 0 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#64493
+Name orc sized pint absinthe~
+Short an `#`ro`Src-`rs`Sized `rp`Sint`^ of `#`Wa`Xbs`Wi`Xnth`We`^~
+Desc An orcish sized pint of absinthe froths here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 150 150 absinthe 0 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#64494
+Name orcish drinking flask~
+Short an `#`ro`Srcish `Wd`Xrinkin`Wg `rf`Slask`^~
+Desc An orc-sized drinking flask is here hanging off a long strap.~
+Level 1
+ItemType drinkcontainer~
+Cost 350
+Durability 1
+Asize 0
+Rsize 50
+Values 300 300 firebreather 0 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#64495
+Name roast chicken whole~
+Short a `#`Ww`Xhol`We `yroast chicken`^~
+Desc A whole roast chicken steams here on a platter.~
+Level 1
+ItemType food~
+Cost 25
+Durability 1
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#64496
+Name roast mutton~
+Short a platter of `#`Ws`Xteam`Wy `yroast mutton`^~
+Desc A platter of steamy roast mutton is here.~
+Level 1
+ItemType food~
+Cost 25
+Durability 1
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#64497
+Name buttered lobster~
+Short a `#`Yb`yu`Xtter`ye`Yd `rlobster`^~
+Desc A platter of a steamy buttered lobster is here.~
+Level 1
+ItemType food~
+Cost 25
+Durability 1
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#64498
+Name almond stuffed plums~
+Short some `#`yalmond `Ws`Xtuffe`Wd `mplums`^~
+Desc A delicious bowl of almond stuffed plums are here.~
+Level 1
+ItemType food~
+Cost 20
+Durability 1
+Asize 3
+Rsize 50
+Values 20 30 0 0 0
+Weight 1
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take~
+End
+
+#64499
+Name sweet dates~
+Short some `#`Ys`yw`Yee`yt dates`^~
+Desc A delicious bowl of sweet dates is here.~
+Level 1
+ItemType food~
+Cost 20
+Durability 1
+Asize 3
+Rsize 50
+Values 20 30 0 0 0
+Weight 1
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take~
+End
+
+#64500
+Name porcelain cup tea~
+Short a `#`Wp`Xor`Wcel`Xai`Wn `Xcup`^ of `#`Gt`gea`^~
+Desc A porcelain cup of green tea sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 15
+Durability 1
+Asize 2
+Rsize 50
+Values 10 10 'green tea' 0 0
+Weight 5
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#64501
+Name porcelain cup tea~
+Short a `#`Wp`Xor`Wcel`Xai`Wn `Xcup`^ of `#`rt`yea`^~
+Desc A porcelain cup of spiced tea sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 15
+Durability 1
+Asize 2
+Rsize 50
+Values 10 10 'spiced tea' 0 0
+Weight 5
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#64502
+Name golden harp beautiful~
+Short a `#`Wb`Xea`Wuti`Xfu`Wl `Yg`yo`Yld`ye`Yn`^ harp~
+Desc A `#`Wb`Xea`Wuti`Xfu`Wl `Yg`yo`Yld`ye`Yn`^ harp is lying here.~
+Level 80
+ItemType instrument~
+Cost 250
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material gold~
+Extra    glow magic bless burnproof~
+Extra2   nodecay noprimary~
+Wear     take hold~
+End
+
+#64503
+Name elegant oak violin~
+Short an `#`We`Xle`Wga`Xn`Wt `So`rak `Sv`riolin`^~
+Desc An `#`We`Xle`Wga`Xn`Wt `So`rak `Sv`riolin`^ lies here.~
+Level 80
+ItemType instrument~
+Cost 250
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material oak~
+Extra    glow magic bless burnproof~
+Extra2   nodecay noprimary~
+Wear     take hold~
+End
+
+#64504
+Name carved guitar~
+Short a `#`Sc`yar`rve`yd g`yu`ri`ytar`^~
+Desc A `#`Sc`yar`rve`yd g`yu`ri`ytar`^ is here leaning against something.~
+Level 80
+ItemType instrument~
+Cost 250
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material wood~
+Extra    glow magic bless burnproof~
+Extra2   nodecay noprimary~
+Wear     take hold~
+End
+
+#64505
+Name spicy hot wings special~
+Short a dozen `#`Rsp`ri`Rcy w`ring`Rs`^ coated in `#`rspecial sauce`^~
+Desc A dozen `#`Rsp`ri`Rcy w`ring`Rs`^ coated in `#`rspecial sauce`^ makes your eyes water up with it's spice.~
+Level 1
+ItemType food~
+Cost 25
+Durability 1
+Asize 5
+Rsize 50
+Values 20 30 0 B 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#64506
+Name lucky ukulele~
+Short a `#`Wl`Cu`cc`Ck`Wy u`Xk`cu`Cl`ce`Cl`We`^~
+Desc A `#`Wl`Cu`cc`Ck`Wy u`Xk`cu`Cl`ce`Cl`We`^ sits here merrily.~
+Level 80
+ItemType instrument~
+Cost 250
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material wood~
+Extra    glow magic bless burnproof~
+Extra2   nodecay noprimary~
+Wear     take hold~
+End
+
+#64507
+Name tables table chair chairs~
+Short a chair at a table~
+Desc There are many chairs by several different tables here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 50 50000 FIL 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#64508
+Name canopy bed feather~
+Short a `#`?c`?anopy `Wf`Xea`Wth`Xer`Wb`Xe`Wd`^~
+Desc A `#`?c`?anopy `Wf`Xea`Wth`Xer`Wb`Xe`Wd`^ centers the room here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 3 10000 BEHL 100 100
+Weight 0
+Material bed~
+Extra    nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#64509
+Name conference table black buisness~
+Short a `#`Sblack t`Xa`Sb`Xl`Se`^~
+Desc A long `#`Sblack, conference t`Xa`Sb`Xl`Se`^ for buisness is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 0
+Material table~
+Extra    nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#64510
+Name cabinet~
+Short a `#`Sblack cabinet`^~
+Desc A `#`Sblack cabinet`^ is here on the wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 100 AC 0 100 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#64511
+Name stone marble base~
+Short the `#`Wm`Xar`Wbl`Xe `Wb`Xa`Wse`^~
+Desc ~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 100 AC 0 100 0
+Weight 0
+Material marble~
+Extra    nonmetal nolocate nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#64512
+Name marble fountain~
+Short the `#`Wm`Xar`Wbl`Xe `Wf`Xou`Wn`Xt`Wai`Xn`^~
+Desc A beautiful `#`Wm`Xar`Wbl`Xe `Wf`Xou`Wn`Xt`Wai`Xn`^ sits here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nolocate nodegrade~
+Extra2   nodecay regrowing~
+ExtraDesc fountain marble base white ~
+A beautiful fountain sits here in the center of the gardens. It's huge. It 
+depicts a fair maiden sitting side-saddle upon a rearing unicorn stallion. 
+Her right hand is lowered toward the basin where others try to rise and 
+reach her. Her left hand wields the Spear of Legend. `1 `1 Engraved on the base are the words: `1 `1 `#`S`-*`WS`Xoryalis, `WL`Xady of the `WL`Xances`S*`-`^ 
+~
+End
+
+#64513
+Name long wooden bench~
+Short a long wooden bench~
+Desc A long wooden bench.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 1
+Asize 2000
+Rsize 50
+Values 6 10000 EHKN 110 110
+Weight 2000
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay regrowing~
+ExtraDesc long wooden bench~
+This bench is crafted from oak wood and is finely made.  It is long enough to support four
+people confortably, and looks quite strong.
+~
+End
+
+#64514
+Name half1 golden1 left cup1 chalice1~
+Short the left half of a `#`Yg`yo`Yld`ye`Yn c`yha`Yli`yc`Ye`^~
+Desc The left half of a sacred chalice is here.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64515 64514 64516 0 0
+Weight 10
+Material gold~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay nosell antichaos~
+Wear     take hold no_sac~
+End
+
+#64515
+Name half2 golden2 right cup2 chalice2~
+Short the right half of a `#`Yg`yo`Yld`ye`Yn c`yha`Yli`yc`Ye`^~
+Desc The right half of a sacred chalice is here.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 64514 64514 64516 0 0
+Weight 10
+Material gold~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay nosell antichaos~
+Wear     take hold no_sac~
+End
+
+#64516
+Name golden chalice sacred~
+Short a `#`Yg`yo`Yld`ye`Yn c`yha`Yli`yc`Ye`^~
+Desc The sacred chalice restored, is here.~
+Level 0
+ItemType key~
+Cost 23350
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material holy~
+Extra    dark bless antievil nolocate meltdrop nodegrade norestring~
+Extra2   nodecay noprimary nosell~
+Wear     take hold no_sac~
+End
+
+#64517
+Name glass mug brew tanns~
+Short a `#`Wg`Xlass`^ mug of `#`WT`Xann's `WB`Xrew`^~
+Desc A glass mug of filled to the brim is here.~
+Level 0
+ItemType drinkcontainer~
+Cost 20
+Durability 1
+Asize 0
+Rsize 50
+Values 4 4 aquavit 0 0
+Weight 3
+Material mead~
+Wear     take hold~
+End
+
+#64518
+Name glass mug rum~
+Short a `#`Wg`Xlass`^ mug of `#`yrum`^~
+Desc A large glass mug filled to the brim with rum is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 45
+Durability 1
+Asize 0
+Rsize 50
+Values 5 5 'dark ale' 0 0
+Weight 10
+Material clay~
+Extra    burnproof~
+Wear     take hold~
+End
+
+#64519
+Name tombstone~
+Short a well-kept `#`Xtombstone`^~
+Desc A well-kept `#`Xtombstone`^ is here.~
+Level 85
+ItemType rp~
+Cost 1000
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material stone~
+Extra    nonmetal nolocate nodegrade norestring nogetall~
+ExtraDesc tombstone stone ~
+A small tombstone is here. It appears to be very well kept up. Upon closer 
+inspection, it has a large enscription: `1 `1                        `#`SReube La'Bounty `1                        Died in the year 153 `1 `1     `^`#`rOmg..it's darker in here then I thought it would be..!`^ `1 `1 There are pretty flowers left on the grave. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#64400
+Name Western Gate~
+Desc Welcome to the city of Caerlona. The gates are rather large and well 
+equipped to stop an invading army should the need arise. The ground is 
+well-kept and paved with smooth stones. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64401
+Exit west 15526
+End
+
+
+#64401
+Name West Road~
+Desc You're here on the west road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64402
+Exit west 64400
+End
+
+
+#64402
+Name West Road~
+Desc You're here on the west road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. To the 
+north and south is Market Way. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64424
+Exit east 64403
+Exit south 64423
+Exit west 64401
+End
+
+
+#64403
+Name West Road~
+Desc You're here on the west road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city.  
+~
+RoomFlags light~
+Sector city~
+Exit east 64404
+Exit south 64504
+Exit west 64402
+End
+
+
+#64404
+Name West Road~
+Desc You're here on the west road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64506
+Exit east 64405
+Exit south 64505
+Exit west 64403
+End
+
+
+#64405
+Name Caerlona City Square~
+Desc The city square is rather large and spacious. The road is paved with large 
+white stones. The white buildings around tower above the square. The center 
+has a beautiful fountain that brings a peaceful feeling to mind. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64411
+Exit east 64406
+Exit south 64416
+Exit west 64404
+End
+
+
+#64406
+Name East Road~
+Desc You're here on the East Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64407
+Exit west 64405
+End
+
+
+#64407
+Name East Road~
+Desc You're here on the East Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64495
+Exit east 64408
+Exit west 64406
+End
+
+
+#64408
+Name East Road~
+Desc You're here on the East Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64433
+Exit east 64409
+Exit south 64432
+Exit west 64407
+End
+
+
+#64409
+Name East Road~
+Desc You're here on the East Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64410
+Exit west 64408
+End
+
+
+#64410
+Name Barricaded East Gate~
+Desc Welcome to the Eastern Gates. The gates are rather large and well equipped. 
+They  are barricaded to stop the invading army outside. The ground is 
+well-kept and paved with smooth stones. The barricade is checked quite 
+often. 
+~
+RoomFlags light~
+Sector city~
+Exit west 64409
+End
+
+
+#64411
+Name North Road~
+Desc You're here on the North Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64412
+Exit east 64509
+EFlags door closed pickproof nopass~
+EKeywords gate~
+Exit south 64405
+End
+
+
+#64412
+Name North Road~
+Desc You're here on the North Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64413
+Exit south 64411
+Exit west 64507
+End
+
+
+#64413
+Name North Road~
+Desc You're here on the North Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64414
+Exit east 64436
+Exit south 64412
+Exit west 64421
+End
+
+
+#64414
+Name North Road~
+Desc You're here on the North Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64415
+Exit east 64462
+EFlags door closed obvious~
+EKeywords door~
+Exit south 64413
+End
+
+
+#64415
+Name the Barricaded North Gate~
+Desc Welcome to the Northern Gates. The gates are rather large and well equipped. 
+They  are barricaded to stop the invading army outside. The ground is 
+well-kept and paved with smooth stones. The barricade is checked quite 
+often. 
+~
+RoomFlags light~
+Sector city~
+Exit south 64414
+End
+
+
+#64416
+Name South Road~
+Desc . You're here on the South Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+ 
+~
+RoomFlags light~
+Sector city~
+Exit north 64405
+Exit east 64503
+Exit south 64417
+End
+
+
+#64417
+Name South Road~
+Desc You're here on the South Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64416
+Exit south 64418
+Exit west 64499
+End
+
+
+#64418
+Name South Road~
+Desc You're here on the South Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64417
+Exit east 64429
+Exit south 64419
+Exit west 64428
+End
+
+
+#64419
+Name South Road~
+Desc You're here on the South Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64418
+Exit south 64420
+End
+
+
+#64420
+Name Barricaded South Gate~
+Desc Welcome to the Southern Gates. The gates are rather large and well equipped. 
+They  are barricaded to stop the invading army outside. The ground is 
+well-kept and paved with smooth stones. The barricade is checked quite 
+often. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64419
+End
+
+
+#64421
+Name Garnet Way~
+Desc You're here on the Garnet Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64413
+Exit west 64422
+End
+
+
+#64422
+Name Garnet Way~
+Desc You're here on the Garnet Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. North 
+is Market Way. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64458
+Exit east 64421
+Exit southwest 64425
+End
+
+
+#64423
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city.  
+~
+RoomFlags light~
+Sector city~
+Exit north 64402
+Exit east 64510
+Exit south 64426
+End
+
+
+#64424
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64425
+Exit south 64402
+End
+
+
+#64425
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city.  
+~
+RoomFlags light~
+Sector city~
+Exit south 64424
+Exit west 64454
+Exit northeast 64422
+End
+
+
+#64426
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64423
+Exit west 64450
+Exit southeast 64427
+End
+
+
+#64427
+Name Pearl Lane~
+Desc You're here on the Pearl Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. South 
+is Market Way. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64428
+Exit south 64446
+Exit northwest 64426
+End
+
+
+#64428
+Name Pearl Lane~
+Desc You're here on the Pearl Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64418
+Exit west 64427
+End
+
+
+#64429
+Name Pearl Lane~
+Desc You're here on the Pearl Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64430
+Exit west 64418
+End
+
+
+#64430
+Name Pearl Lane~
+Desc You're here on the Pearl Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. South 
+is Rose Lane. 
+~
+RoomFlags light~
+Sector city~
+Exit south 64441
+Exit west 64429
+Exit northeast 64431
+End
+
+
+#64431
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64432
+Exit east 64437
+Exit southwest 64430
+End
+
+
+#64432
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64408
+Exit south 64431
+Exit west 64514
+End
+
+
+#64433
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64434
+Exit south 64408
+End
+
+
+#64434
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. East 
+is Saint Road. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64475
+Exit south 64433
+Exit northwest 64435
+End
+
+
+#64435
+Name Garnet Way~
+Desc You're here on the Garnet Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. To the 
+north is Saint Road. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64471
+Exit west 64436
+Exit southeast 64434
+End
+
+
+#64436
+Name Garnet Way~
+Desc You're here on the Garnet Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64435
+Exit west 64413
+End
+
+
+#64437
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit south 64438
+Exit west 64431
+Exit northeast 64442
+End
+
+
+#64438
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64437
+Exit east 64443
+Exit south 64439
+End
+
+
+#64439
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64438
+Exit west 64440
+End
+
+
+#64440
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. North 
+is the Caerlonian Cemetaries. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64444
+Exit east 64439
+Exit west 64441
+End
+
+
+#64441
+Name Rose Lane~
+Desc You're here on the Rose Lane. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. North 
+is Pearl Lane. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64430
+Exit east 64440
+End
+
+
+#64442
+Name The Silver Swan Restaurant~
+Desc As you enter, the delicious aroma of all the different foods engulf your 
+senses. There is a sign asking to please seat yourself. The tables are clean 
+with beautiful white tablecloths. There is a diamond chandelier high atop 
+the center of the room, as well as a stunning tile dancefloor. The 
+candelight from the chandelier and the tables give the restaurant a romantic 
+setting. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit southwest 64437
+End
+
+
+#64443
+Name The Cleric's Abode~
+Desc When you enter the store, at once you notice all the silk spread everywhere. 
+Pieces and bits are everywhere. The sound of gnomish sewing devices whirr 
+and chime. The gentle scent of sandalwood drifts across as you glance about 
+through the wares. 
+~
+Sector inside~
+Exit west 64438
+End
+
+
+#64444
+Name The Caerlonian Cemetary~
+Desc The cemetary grass is a beautiful shade of green. The air seems much cooler 
+here. It is a bit gloomy, and yet there is a sense of peaceful tranquility. 
+The graves are well kept and cared for. 
+~
+RoomFlags light~
+Sector hills~
+Exit north 64445
+Exit south 64440
+End
+
+
+#64445
+Name The Caerlonian Cemetary~
+Desc The cemetary grass is a beautiful shade of green. The air seems much cooler 
+here. It is a bit gloomy, and yet there is a sense of peaceful tranquility. 
+The graves are well kept and cared for. 
+~
+RoomFlags light~
+Sector hills~
+Exit south 64444
+End
+
+
+#64446
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. North 
+is Pearl Lane. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64427
+Exit west 64447
+End
+
+
+#64447
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64446
+Exit south 64451
+Exit west 64448
+End
+
+
+#64448
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags indoors~
+Sector city~
+Exit north 64449
+Exit east 64447
+End
+
+
+#64449
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64450
+Exit south 64448
+Exit west 64452
+End
+
+
+#64450
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64426
+Exit south 64449
+Exit northwest 64453
+End
+
+
+#64451
+Name Rhiozia's Delicate Creations~
+Desc The room is brightly lit by the soft candles that flicker happily. Gold 
+reflects and gives the shop a twinkling look to it. The carpet is a 
+maroonish red. There are several glass displays that bring out the best in 
+any piece of jewelry. 
+ 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit north 64447
+End
+
+
+#64452
+Name Archer's Haven~
+Desc All along the walls of this shop are arrows of all sizes. There are also 
+various bows on display. Some of them crafted special for certain people 
+with certain skills. Their unique designs give nothing but the best for each 
+individual hunter. On the wall behind the counter is a large stuffed head of 
+a stag with impressive antlers. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit east 64449
+End
+
+
+#64453
+Name Caerlona's General Store~
+Desc The general store appears quite... general. There are shelves freshly 
+stocked, stamped with prices and kept in order. The shop has a very clean 
+feel to it. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit southeast 64450
+End
+
+
+#64454
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64455
+Exit east 64425
+Exit southwest 64461
+End
+
+
+#64455
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city.  
+~
+RoomFlags light~
+Sector city~
+Exit north 64456
+Exit south 64454
+Exit west 64460
+End
+
+
+#64456
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64457
+Exit south 64455
+End
+
+
+#64457
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64459
+Exit east 64458
+Exit west 64456
+End
+
+
+#64458
+Name Market Way~
+Desc You're here on the Market Way. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. South 
+is Garnet Way. 
+~
+RoomFlags light~
+Sector city~
+Exit south 64422
+Exit west 64457
+End
+
+
+#64459
+Name Swords and Lances Anonymous~
+Desc Displayed all along the walls are tons of swords, lances, whips, flails, 
+pikes and dirks of nearly all suitable shapes and sizes. Inside glass cases 
+are smaller daggers and other such stuff. The place is surprisingly dust 
+free. Every implement of destruction... or protection.. is perfectly 
+cleaned, sharpened and in top condition. 
+~
+Sector inside~
+Exit south 64457
+End
+
+
+#64460
+Name The 'Smithy'~
+Desc The smell of molten iron and metal dust kinda smacks you in the face as you 
+enter the large shop. On display are several beautiful pieces of white-steel 
+armor. The place is very well organized and easy to sort through. 
+~
+Sector inside~
+Exit east 64455
+End
+
+
+#64461
+Name PocKit Sturffs!~
+Desc This small.. no, Tiny shop is cluttered with a whole mess of things. Many of 
+them you've never even set your eyes on. You try not to cause everything to 
+come falling down on you as you look around. Oddly, as unstable as 
+everything looks.. nothing falls no matter what you do. 
+~
+Sector inside~
+Exit northeast 64454
+End
+
+
+#64462
+Name the Tavern Entrance~
+Desc You're here in the tavern entrance. There's a place to hang your coat, and a 
+mat to wipe your wet or muddy feet on. 
+~
+Sector inside~
+Exit east 64463
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit west 64414
+EFlags door closed obvious~
+EKeywords door~
+End
+
+
+#64463
+Name the Rising Moon Tavern~
+Desc The tavern's well kept and in very good condition. It's rather dark, lit 
+dimly by candles at the bar or the fireplace. The gentle sound of a lyre 
+plays softly behind the clinking of glasses. 
+~
+Sector inside~
+Exit west 64462
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit up 64464
+End
+
+
+#64464
+Name a hall~
+Desc The long wooden hall is lit dimly by large candles. The wood floor has been 
+freshly swept. There aren't any windows, but there are doors to different 
+rooms. 
+~
+Sector inside~
+Exit north 64465
+Exit east 64469
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit west 64470
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit down 64463
+End
+
+
+#64465
+Name a hall~
+Desc The long wooden hall is lit dimly by large candles. The wood floor has been 
+freshly swept. There aren't any windows, but there are doors to different 
+rooms. 
+~
+Sector inside~
+Exit north 64467
+EFlags door closed nopass obvious~
+EKeywords door~
+Exit east 64466
+EFlags door closed nopass obvious~
+EKeywords double-door~
+Exit south 64464
+Exit west 64468
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#64466
+Name a Conference Room~
+Desc This room has no windows at all. There's only a single door leading in and 
+out. It's very buisness-like. The air seems a bit stagnant. 
+~
+Sector inside~
+Exit west 64465
+EFlags door closed nopass obvious~
+EKeywords double-door~
+End
+
+
+#64467
+Name A Bedroom~
+Desc The bedroom is isn't large, but it's spacious. In fact, it's very snug. It's 
+perfect for a good night's sleep. It's lit dimly with soft white candles. 
+~
+Sector inside~
+Exit south 64465
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#64468
+Name A Bedroom~
+Desc The bedroom is isn't large, but it's spacious. In fact, it's very snug. It's 
+perfect for a good night's sleep. It's lit dimly with soft white candles. 
+~
+Sector inside~
+Exit east 64465
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#64469
+Name A Bedroom~
+Desc The bedroom is isn't large, but it's spacious. In fact, it's very snug. It's 
+perfect for a good night's sleep. It's lit dimly with soft white candles. 
+~
+Sector inside~
+Exit west 64464
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#64470
+Name A Bedroom~
+Desc The bedroom is isn't large, but it's spacious. In fact, it's very snug. It's 
+perfect for a good night's sleep. It's lit dimly with soft white candles. 
+~
+Sector inside~
+Exit east 64464
+EFlags door closed nopass obvious~
+EKeywords door~
+End
+
+
+#64471
+Name Saint Road~
+Desc You're here on the Saint Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. South 
+is Garnet Way. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64472
+Exit south 64435
+End
+
+
+#64472
+Name Saint Road~
+Desc You're here on the Saint Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit east 64473
+Exit south 64476
+Exit west 64471
+End
+
+
+#64473
+Name Saint Road~
+Desc You're here on the Saint Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit south 64474
+Exit west 64472
+Exit southwest 64476
+End
+
+
+#64474
+Name Saint Road~
+Desc . You're here on the Saint Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64473
+Exit south 64475
+Exit west 64476
+End
+
+
+#64475
+Name Saint Road~
+Desc You're here on the Saint Road. The ground is in good condition and is paved 
+with smooth stones. Nearby you can hear the bustle of people. The city's 
+rather bustling with commotion despite the war against the dark city. West 
+is Rose Lane. 
+~
+RoomFlags light~
+Sector city~
+Exit north 64474
+Exit west 64434
+End
+
+
+#64476
+Name the temple entrance~
+Desc You find yourself before the entrance to a grand temple. It's standing up on 
+several large columns. There is an odd darkness that whispers to you from a 
+small trapdoor below. There is another odd whisper that calls to you from up 
+within the temple. Which call will you answer..? 
+~
+Sector inside~
+Exit north 64472
+Exit east 64474
+Exit up 64477
+Exit down 64478
+EFlags door closed~
+EKeywords trapdoor~
+Exit northeast 64473
+End
+
+
+#64477
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit east 64484
+Exit south 64494
+Exit west 64483
+Exit down 64476
+End
+
+
+#64478
+Name a dark chamber~
+Desc You've entered the Dark chamber of Hardakin. Beware.. to obtain the power of 
+the Gentle Lord you must prove yourself worthy. Know and Learn his story.. 
+Go forth and prove your worth. An Archway leads to the path southwest of 
+here. 
+~
+Sector inside~
+Exit up 64476
+EFlags door closed~
+EKeywords trapdoor~
+Exit southwest 64479
+EFlags door closed locked nopass~
+EKeyvnum 64477
+EKeywords archway~
+End
+
+
+#64479
+Name the outer sanctum~
+Desc Ahhh.. So you Do wish to prove yourself worthy of the Dark and Gentle Lord. 
+Learn his beginings.. All around you are tapistries about Lord Hardakin's 
+early beginings. He was a paladin and loving husband to Lady Soryalis. He 
+was a defender of Seandac.. and like all Seandacians, he wished only to 
+slaughter the wicked... which is what he did.. He waged war.. His mighty 
+Spear gleamed with his inner power and thus, the beginings of the Spear 
+emerged.... `1 `1 The Statue on the northwestern portion of the room glows, awaiting to be 
+opened. 
+~
+Sector inside~
+Exit northeast 64478
+EFlags door closed locked nopass~
+EKeyvnum 64477
+EKeywords archway~
+Exit northwest 64480
+EFlags door closed locked nopass~
+EKeyvnum 64480
+EKeywords statue~
+End
+
+
+#64480
+Name the inner sanctum~
+Desc The voice continues... Hardakin loved how quickly his enemies fell. He was 
+the Gentle lord.. bringing forth a quick and easy death to all his foes. In 
+time.. he knew his superiority in battle far outmatched the skills of his 
+wife. He began to treat her like a lesser. All the while, his lust for death 
+consumed his soul. He became a killer. A dark warrior. He stopped at nothing 
+for his selfish goals and destroyed everything in his way.. Yes.. He even 
+fought his wife.. that nuisance of a woman.. She tried to no avail.. `1 `1 A monument of the battles on the northeastern wall slowly beckons to you. 
+~
+Sector inside~
+Exit northeast 64481
+EFlags door closed locked nopass~
+EKeyvnum 64481
+EKeywords monument~
+Exit southeast 64479
+EFlags door closed locked nopass~
+EKeyvnum 64480
+EKeywords statue~
+End
+
+
+#64481
+Name the inner sanctum~
+Desc Hardakin fought his wife. They battled everywhere and anywhere. His chaotic 
+whims brought him power where her code of honor could never satisfy. He 
+brought death.. even if at every turn he faced the Lady Soryalis. It 
+mattered not.. countless died regardless.. Until one day.. the Haze rose up 
+like a rising storm built from the cries of anguish and despair.. placing 
+Hardakin to sleep. Venture forth and test your might. Test to see if you are 
+worth awakening Hardakin. `1 `1 A black gate glows eerily behind you to the south. 
+~
+Sector inside~
+Exit south 64482
+EFlags door closed locked pickproof nopass~
+EKeyvnum 64487
+EKeywords gate~
+Exit southwest 64480
+EFlags door closed locked nopass~
+EKeyvnum 64481
+EKeywords monument~
+End
+
+
+#64482
+Name The Sacred Chamber~
+Desc The Sacred Chamber of Hardakin gleams eerily. It is overshadowed by the 
+Spirit of the Dark Lord. The chamber overwhelms you with chaotic urges to 
+slay all around you. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 64481
+EFlags door closed locked pickproof nopass~
+EKeyvnum 64487
+EKeywords gate~
+End
+
+
+#64483
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit north 64485
+Exit east 64477
+End
+
+
+#64484
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit north 64489
+Exit west 64477
+End
+
+
+#64485
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit north 64486
+Exit east 64490
+Exit south 64483
+End
+
+
+#64486
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit east 64487
+Exit south 64485
+End
+
+
+#64487
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit east 64488
+Exit west 64486
+End
+
+
+#64488
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit south 64489
+Exit west 64487
+End
+
+
+#64489
+Name the outer sanctum~
+Desc You're here within the outer sanctum of the temple. The walls are lined with 
+tapistries of heroic deeds. The floor is lined with a dark blue rug. The 
+temple has an air of calmness about it.. well.. unless you're evil. 
+~
+Sector inside~
+Exit north 64488
+Exit south 64484
+Exit west 64490
+End
+
+
+#64490
+Name within the temple~
+Desc You find yourself within the temple. You feel empowered with the holy 
+divine. The floor leads to a large staircase up ahead to the inner sanctum. 
+~
+Sector inside~
+Exit east 64489
+Exit west 64485
+Exit up 64491
+End
+
+
+#64491
+Name before the inner sanctum~
+Desc You're here at the end of a large staircase. The inner sanctum is far up 
+ahead, but there isn't much else to go. The whisper of a woman calls you 
+forth by name.. dare you keep going? 
+~
+Sector inside~
+Exit north 64492
+Exit down 64490
+End
+
+
+#64492
+Name before the inner sanctum~
+Desc You're here before the inner sanctum. That voice keeps calling you by name. 
+It beckons you from the other side of the double-doors. Enter..? Or not to 
+enter? 
+~
+Sector inside~
+Exit north 64511
+EFlags door closed pickproof nopass~
+EKeywords double-door~
+Exit south 64491
+End
+
+
+#64493
+Name The Sacred Chamber~
+Desc ~
+Sector inside~
+Exit south 64511
+EFlags door closed locked pickproof nopass obvious~
+EKeyvnum 64516
+EKeywords passage~
+End
+
+
+#64494
+Name Caerlonia's Church~
+Desc The church is very quaint. It gives off a very comforting vibe. It smells a 
+bit like sandal wood. The stained glass depicts three ancient artifacts... a 
+dark spear, a beautiful lance.. and in between.. a large sword flecked with 
+lightning. Odd.. beautiful but odd.. 
+~
+Sector inside~
+Exit north 64477
+End
+
+
+#64495
+Name Stables~
+Desc The stables are very dusky smelling. Whinnies from horses and all other 
+sorts of steeds and stallions echo amongst all the chatter. You can also 
+hear the pounding of chariots as they are being made. 
+~
+RoomFlags light nofly~
+Sector inside~
+Exit north 64498
+Exit south 64407
+Exit west 64496
+End
+
+
+#64496
+Name Stables~
+Desc The stables are very dusky smelling. Whinnies from horses and all other 
+sorts of steeds and stallions echo amongst all the chatter. You can also 
+hear the pounding of chariots as they are being made. 
+~
+Sector inside~
+Exit north 64497
+Exit east 64495
+End
+
+
+#64497
+Name Stables~
+Desc The stables are very dusky smelling. Whinnies from horses and all other 
+sorts of steeds and stallions echo amongst all the chatter. You can also 
+hear the pounding of chariots as they are being made. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 64496
+End
+
+
+#64498
+Name Stables~
+Desc The stables are very dusky smelling. Whinnies from horses and all other 
+sorts of steeds and stallions echo amongst all the chatter. You can also 
+hear the pounding of chariots as they are being made. 
+~
+RoomFlags light nofly~
+Sector inside~
+Exit south 64495
+End
+
+
+#64499
+Name The Grand Gardens~
+Desc The gardens are magnificent. Bushes of roses, lilacs, and daisies cover the 
+ground and bushes. The grass always seems greenest here. Perhaps even 
+greener then you've ever seen. The air is fresh, crisp and clean. Inhale and 
+your senses are engulfed by the wonderous scents. Apple trees, fig trees and 
+all other sorts are planted randomly around. This place is a treat to just 
+about all senses. 
+~
+RoomFlags light~
+Sector forest~
+Exit north 64502
+Exit east 64417
+Exit west 64500
+End
+
+
+#64500
+Name The Grand Gardens~
+Desc The gardens are magnificent. Bushes of roses, lilacs, and daisies cover the 
+ground and bushes. The grass always seems greenest here. Perhaps even 
+greener then you've ever seen. The air is fresh, crisp and clean. Inhale and 
+your senses are engulfed by the wonderous scents. Apple trees, fig trees and 
+all other sorts are planted randomly around. This place is a treat to just 
+about all senses. 
+~
+RoomFlags light~
+Sector forest~
+Exit north 64501
+Exit east 64499
+End
+
+
+#64501
+Name The Grand Gardens~
+Desc The gardens are magnificent. Bushes of roses, lilacs, and daisies cover the 
+ground and bushes. The grass always seems greenest here. Perhaps even 
+greener then you've ever seen. The air is fresh, crisp and clean. Inhale and 
+your senses are engulfed by the wonderous scents. Apple trees, fig trees and 
+all other sorts are planted randomly around. This place is a treat to just 
+about all senses. 
+~
+RoomFlags light~
+Sector forest~
+Exit east 64502
+Exit south 64500
+End
+
+
+#64502
+Name The Grand Gardens~
+Desc The gardens are magnificent. Bushes of roses, lilacs, and daisies cover the 
+ground and bushes. The grass always seems greenest here. Perhaps even 
+greener then you've ever seen. The air is fresh, crisp and clean. Inhale and 
+your senses are engulfed by the wonderous scents. Apple trees, fig trees and 
+all other sorts are planted randomly around. This place is a treat to just 
+about all senses. 
+~
+RoomFlags light~
+Sector forest~
+Exit south 64499
+Exit west 64501
+End
+
+
+#64503
+Name The Courier's Office~
+Desc Behind the counter are several cages filled with all sorts of different 
+pigeons. Coos are constantly heard as the courier sorts through different 
+sealed parchments to deliver. The room smells of dusty feathers. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit west 64416
+End
+
+
+#64504
+Name A small Shrine~
+Desc The room here is rather large and spacious. There are comfortable pillows to 
+rest upon here as you slowly heal to perfect health. The air has the sweet 
+smell of apples and cinnamon. It's very relaxing. 
+~
+RoomFlags no_mob indoors safe light nofly~
+Room2Flags no_steal~
+Sector inside~
+Exit north 64403
+End
+
+
+#64505
+Name The Bank~
+Desc The bank is kept very neat and clean. The tiled floors are constantly swept. 
+The air has a tight feel about it. No thief would be able to snitch anything 
+here under the watchful eye of the teller. 
+~
+RoomFlags indoors bank light nofly~
+Room2Flags no_steal~
+Sector inside~
+Exit north 64404
+End
+
+
+#64506
+Name The Musician's Majesty~
+Desc Walking in the store and you find yourself surrounded by various instruments 
+on display. Some of them happily play along with the shopkeeper's dancing. 
+It's a small shop, but it gives nothing less then a jovial environment. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit south 64404
+End
+
+
+#64507
+Name the Guild Entryway~
+Desc You are within the entryway to the guild. There's a mat on the ground to 
+wipe your feet on when you enter so as not to get the guild dirty. Proper 
+appearance gives for proper training. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit east 64412
+Exit west 64508
+EFlags door closed obvious~
+End
+
+
+#64508
+Name the Caerlonian Guild~
+Desc The guild is setup to look like a large library. There are bookcases that 
+tower above you, reaching up to the ceiling. In the center of the large room 
+is somewhat of a training area. Circles are traced on the ground. The 
+ceiling is a rather large, glass dome. The room is lit by various candles. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit east 64507
+EFlags door closed obvious~
+End
+
+
+#64509
+Name A furnace room~
+Desc This room is small, it's kept specifically to hold the regal chariot of fire 
+from getting loose. There are scorching paw marks from the golden hooves of 
+the flaming stallions as they paw around impatiently. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit west 64411
+EFlags door closed pickproof nopass~
+EKeywords gate~
+End
+
+
+#64510
+Name The Molting Centaur~
+Desc The tavern is rather ruggedly but neatly kept. The wood floor creaks a bit 
+and the walls appear to be somewhat aged. The counter is a bit cracked but 
+overall, it's got a relaxing feel to it.. despite the faint smell of tabac 
+smoke. 
+~
+RoomFlags indoors light nofly~
+Sector inside~
+Exit west 64423
+End
+
+
+#64511
+Name the inner sanctum~
+Desc The inner sanctum engulfs you with a blessed light. The north monument 
+appears to be missing it's chalice. A voice whispers softly to you... Know 
+the story of Soryalis.. Know the story of the Holy Maiden of Caerlona. Once 
+married to the Paladin Hardakin.. 
+~
+Sector inside~
+Exit north 64493
+EFlags door closed locked pickproof nopass obvious~
+EKeyvnum 64516
+EKeywords passage~
+Exit south 64492
+EFlags door closed pickproof nopass~
+EKeywords double-door~
+Exit northeast 64513
+Exit northwest 64512
+End
+
+
+#64512
+Name The West Wing~
+Desc A soft whisper continues the story.. She spent time in agony and grief when 
+his downfall caused nothing but chaos. She swore to do nothing but defend 
+those who needed to be defended.. but in the end she was struck down not by 
+Hardakin.. but by the Sword.. the Haze. 
+~
+Sector inside~
+Exit southeast 64511
+End
+
+
+#64513
+Name The East Wing~
+Desc A soft voice finishes the story with a saddened tone.. Upon the demise of 
+herself and her beloved husband, the Haze broke.. before her last breath she 
+took the pommel to prevent any from assembling it again. Her spirit rests 
+now within her holy lance. A light to the world. 
+~
+Sector inside~
+Exit southwest 64511
+End
+
+
+#64514
+Name a hiking trail~
+Desc You find yourself on a hearty, well worn path. Many seem to come and go 
+wearing their fishing gear and such. Some walk by holding picnic baskets and 
+such. Others are simply doing brisk walking. The air is nice and fresh here. 
+
+~
+RoomFlags light~
+Sector trail~
+Exit east 64432
+Exit west 64519
+End
+
+
+#64515
+Name a fishing spot~
+Desc The picnic ground is rather nice here. The lake is rather full of fish. The 
+setting makes this spot an ideal place for fishing. The water ebs and flows 
+gently as the wind blows. 
+~
+RoomFlags light~
+Room2Flags freshwater_fish~
+Sector forest~
+Exit north 64517
+Exit northeast 64519
+End
+
+
+#64516
+Name a picnic area~
+Desc The picnic area is beautiful. The grass is very green. There are several 
+trees here as well that serve as the ideal place for playing hide and go 
+seek. Flowers grow all about the place. 
+~
+RoomFlags light~
+Sector forest~
+Exit south 64517
+Exit southeast 64519
+End
+
+
+#64517
+Name a hiking trail~
+Desc You find yourself on a hearty, well worn path. Many seem to come and go 
+wearing their fishing gear and such. Some walk by holding picnic baskets and 
+such. Others are simply doing brisk walking. The air is nice and fresh here. 
+
+~
+RoomFlags light~
+Sector trail~
+Exit north 64516
+Exit east 64519
+Exit south 64515
+Exit west 64518
+End
+
+
+#64518
+Name a picnic area~
+Desc The picnic area is beautiful. The grass is very green. There are several 
+trees here as well that serve as the ideal place for playing hide and go 
+seek. Flowers grow all about the place. 
+~
+Sector forest~
+Exit east 64517
+End
+
+
+#64519
+Name a hiking trail~
+Desc You find yourself on a hearty, well worn path. Many seem to come and go 
+wearing their fishing gear and such. Some walk by holding picnic baskets and 
+such. Others are simply doing brisk walking. The air is nice and fresh here. 
+
+~
+RoomFlags light~
+Sector trail~
+Exit east 64514
+Exit west 64517
+Exit southwest 64515
+Exit northwest 64516
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 64405 spec_nasty
+M 64416 spec_master_thief
+M 64417 spec_poison
+M 64418 spec_cast_cleric
+M 64419 spec_cast_mage
+M 64430 spec_cast_meaner
+M 64431 spec_cast_cleric
+M 64432 spec_cast_druid
+M 64435 spec_thief
+M 64436 spec_breath_any
+S
+
+
+
+#RESETS2
+M 0 64431 1 64512 1
+E 0 64514 -1 hold~
+M 0 64432 1 64513 1
+E 0 64515 -1 hold~
+M 0 64400 2 64400 1
+E 0 64439 -1 wielded~
+E 0 64474 -1 second~
+M 0 64401 5 64402 2
+E 0 64439 -1 wielded~
+M 0 64404 7 64403 2
+E 0 64401 -1 about~
+O 0 64513 -1 64405
+O 0 64512 -1 64405
+O 0 64511 -1 64405
+P 0 64455 2 64511 1
+M 0 64405 1 64405 1
+E 0 64459 -1 torso~
+E 0 64473 -1 back~
+M 0 64404 7 64407 2
+E 0 64401 -1 about~
+M 0 64401 5 64408 2
+E 0 64439 -1 wielded~
+M 0 64404 7 64412 2
+E 0 64401 -1 about~
+M 0 64401 5 64413 2
+E 0 64439 -1 wielded~
+M 0 64404 7 64417 2
+E 0 64401 -1 about~
+M 0 64401 5 64418 2
+E 0 64439 -1 wielded~
+M 0 64402 5 64422 2
+E 0 64474 -1 wielded~
+M 0 64403 6 64425 2
+E 0 64401 -1 about~
+M 0 64403 6 64426 2
+E 0 64401 -1 about~
+M 0 64402 5 64427 2
+E 0 64474 -1 wielded~
+M 0 64402 5 64430 2
+E 0 64474 -1 wielded~
+M 0 64403 6 64431 2
+E 0 64401 -1 about~
+M 0 64403 6 64434 2
+E 0 64401 -1 about~
+M 0 64402 5 64435 2
+E 0 64474 -1 wielded~
+M 0 64422 1 64442 1
+G 0 64495 -1
+G 0 64496 -1
+G 0 64497 -1
+G 0 64498 -1
+G 0 64499 -1
+G 0 64500 -1
+G 0 64501 -1
+O 0 64507 -1 64442
+M 0 64415 1 64443 1
+G 0 64426 -1
+G 0 64427 -1
+G 0 64428 -1
+G 0 64429 -1
+G 0 64430 -1
+G 0 64431 -1
+G 0 64432 -1
+G 0 64433 -1
+O 0 64519 -1 64444
+M 0 64435 1 64444 1
+E 0 64469 -1 wielded~
+O 0 64476 -1 64445
+O 0 64511 -1 64445
+P 0 64482 1 64511 1
+O 0 64512 -1 64445
+M 0 64413 1 64451 1
+G 0 64443 -1
+G 0 64444 -1
+G 0 64446 -1
+G 0 64447 -1
+G 0 64448 -1
+M 0 64412 1 64452 1
+G 0 64417 -1
+G 0 64445 -1
+G 0 64449 -1
+G 0 64450 -1
+G 0 64452 -1
+G 0 64453 -1
+G 0 64454 -1
+M 0 64411 1 64453 1
+G 0 64456 -1
+G 0 64457 -1
+G 0 64458 -1
+G 0 64460 -1
+G 0 64461 -1
+G 0 64462 -1
+G 0 64463 -1
+G 0 64464 -1
+G 0 64465 -1
+G 0 64466 -1
+G 0 64467 -1
+M 0 64410 1 64459 1
+G 0 64434 -1
+G 0 64435 -1
+G 0 64436 -1
+G 0 64437 -1
+G 0 64440 -1
+G 0 64441 -1
+G 0 64442 -1
+M 0 64409 1 64460 1
+G 0 64419 -1
+G 0 64420 -1
+G 0 64421 -1
+G 0 64422 -1
+G 0 64423 -1
+G 0 64424 -1
+G 0 64425 -1
+M 0 64408 1 64461 1
+G 0 64407 -1
+G 0 64406 -1
+G 0 64408 -1
+G 0 64409 -1
+G 0 64410 -1
+G 0 64411 -1
+G 0 64412 -1
+G 0 64413 -1
+G 0 64414 -1
+G 0 64415 -1
+G 0 64416 -1
+G 0 64418 -1
+O 0 64510 -1 64461
+P 0 64478 1 64510 1
+M 0 64428 1 64463 1
+O 0 64488 -1 64463
+O 0 64507 -1 64463
+G 0 64505 -1
+G 0 64517 -1
+G 0 64518 -1
+O 0 64509 -1 64466
+O 0 64508 -1 64467
+O 0 64508 -1 64468
+O 0 64508 -1 64469
+O 0 64508 -1 64470
+M 0 64416 1 64478 1
+E 0 64469 -1 wielded~
+G 0 64475 -1
+E 0 64451 -1 shield~
+M 0 64420 1 64479 1
+E 0 64470 -1 wielded~
+E 0 64487 -1 hold~
+O 0 64479 -1 64479
+M 0 64418 1 64480 1
+E 0 64471 -1 wielded~
+M 0 64419 1 64481 1
+E 0 64472 -1 wielded~
+M 0 64417 1 64482 1
+E 0 64403 -1 wielded~
+M 0 64430 1 64493 1
+G 0 64483 -1
+G 0 64402 -1
+O 0 64513 -1 64494
+M 0 64426 1 64496 1
+M 0 64423 3 64497 1
+M 0 64424 2 64497 1
+M 0 64425 1 64498 1
+O 0 64513 -1 64500
+M 0 64406 1 64501 1
+E 0 64404 -1 head~
+G 0 64405 -1
+O 0 64513 -1 64502
+M 0 64414 1 64503 1
+G 0 64468 -1
+M 0 64407 1 64504 1
+E 0 64400 -1 neck1~
+E 0 64401 -1 about~
+M 0 64434 1 64505 1
+M 0 64429 1 64506 1
+G 0 64502 -1
+G 0 64503 -1
+G 0 64504 -1
+G 0 64506 -1
+G 0 64486 -1
+M 0 64427 1 64508 1
+M 0 64433 1 64509 1
+O 0 64488 -1 64510
+M 0 64421 1 64510 1
+G 0 64489 -1
+G 0 64490 -1
+G 0 64491 -1
+G 0 64492 -1
+G 0 64493 -1
+G 0 64494 -1
+G 0 64495 -1
+S
+
+
+
+#SHOPS
+#64408
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64409
+buy_type armor~
+buy_type armor~
+buy_type clothing~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64410
+buy_type weapon~
+buy_type component~
+buy_type rp~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64411
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64412
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64413
+buy_type treasure~
+buy_type warpstone~
+buy_type gem~
+buy_type jewelry~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64414
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64415
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64421
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64422
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64428
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64429
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#64434
+profit_buy 75
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

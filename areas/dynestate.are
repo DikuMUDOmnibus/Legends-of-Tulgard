@@ -1,0 +1,489 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Versuvious Estate~
+ShortName   Versuvious~
+Builders    ardayne~
+VNUMs       80626 80635
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#80626
+Name black widow spider~
+ShortD a `#`Sb`rl`Sack w`ri`Sdow`^~
+LongD A medium-sized `#`Sb`rl`Sack w`ri`Sdow`^ ambles here.~
+Desc This spider is frighteningly huge if you're not used to the sights of the 
+drow cities.  Compared to them, this one is just a little to medium-sized 
+whelp.  It is still useful in getting rid of vermin and such.  It has eight 
+large hairy legs and several beady little `#`yb`rr`yown`ri`ysh-`Rr`red`^ eyes.  The body of 
+the entire spider is a very `#`Sp`Xi`Stch b`Xl`Sack`^, almost invisible in the dark except 
+for the large red marking under it's abodmen.  Surprisingly, the spider has 
+a little `#`Rr`red colla`Rr`^. 
+~
+Race scorpion~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType claw
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  pass_door~
+Imm    summon charm~
+Form   non_skinable insect~
+Part   head legs brains guts eye fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#80635
+Name black widow spider~
+ShortD a `#`Sb`rl`Sack w`ri`Sdow`^~
+LongD A medium-sized `#`Sb`rl`Sack w`ri`Sdow`^ peers around here.~
+Desc This spider is frighteningly huge if you're not used to the sights of the 
+drow cities.  Compared to them, this one is just a little to medium-sized 
+whelp.  It is still useful in getting rid of vermin and such.  It has eight 
+large hairy legs and several beady little `#`yb`rr`yown`ri`ysh-`Rr`red`^ eyes.  The body of 
+the entire spider is a very `#`Sp`Xi`Stch b`Xl`Sack`^, almost invisible in the dark except 
+for the large red marking under it's abodmen.  Surprisingly, the spider has 
+a little `#`bb`Bl`bu`Be `bc`Bo`blla`Br`^. 
+~
+Race scorpion~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType claw
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  pass_door~
+Imm    summon charm~
+Form   non_skinable insect~
+Part   head legs brains guts eye fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#80626
+Name crevice~
+Short the `#`Sd`Xe`We`Xp`Sen`Xi`Sng s`Xh`Wado`Xw`Ss`^~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 AB 0 80635 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#80627
+Name spider spiderweb spiderwebbing portal spidderwebbings~
+Short the `#`Xs`mp`Xiderw`me`Xbbin`mg`Xs`^ overhead~
+Desc Overhead some large `#`Xs`mp`Xiderw`me`Xbbin`mg`Xs`^ hang, covering the ceiling completely.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 M AG 80634 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#80628
+Name bed royal sheet silk~
+Short a `#`Xr`Soya`Xl b`Sed`^ with `#`Xs`Si`Xl`Sk`^ sheets~
+Desc A luxurious `#`Xr`Soya`Xl b`Sed`^ with `#`Sb`Xl`Sack `Xs`Si`Xl`Sk`^ sheets.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 10000 EILQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80629
+Name dress dresser~
+Short an `#`Sonyx d`Xr`Wess`Xe`Sr`^~
+Desc A large, `#`Sonyx d`Xr`Wess`Xe`Sr`^ stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 AC 0 1000 0
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80630
+Name night nightstand~
+Short a `#`Sn`Xi`Wgh`Xts`Wta`Xn`Sd`^~
+Desc An `#`Sonyx n`Xi`Wgh`Xts`Wta`Xn`Sd`^ is here at the right side of the bed.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80631
+Name nest comfortable~
+Short a `#`Sc`Xo`Wmf`Xo`Sr`Xt`Wab`Xl`Se nest`^~
+Desc A enormous, `#`Sc`Xo`Wmf`Xo`Sr`Xt`Wab`Xl`Se d`Xr`Sag`Xo`Sn's nest`^ engulfs the room.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 50000 FIL 150 150
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80632
+Name sofa black silk~
+Short a `#`Xs`Si`Xl`Sk`Xy `Ss`Xo`Sfa`^~
+Desc A large `#`Ss`Xi`Sl`Xk`Sy `Sb`Xl`Sack s`Xo`Sfa`^ centers the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 50000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80633
+Name fire fireplace blazing~
+Short a `#`rb`Rl`Ya`yz`Yi`Rn`rg `Sf`Xi`Srepla`Xc`Se`^~
+Desc A `#`Sf`Xi`Srepla`Xc`Se`^ of onyx `#`rb`Rl`Yaz`Re`rs`^ here warmly.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 50000 DGJQ 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80634
+Name dragon fountain~
+Short a `#`Sdr`Xa`Sg`Xo`Sn f`Xo`Wunta`Xi`Sn`^~
+Desc A magnificent `#`Sonyx f`Xo`Wunta`Xi`Sn`^ carved as a `#`Sdr`Xa`Sg`Xo`Sn`^ is here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 firebreather 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#80635
+Name drake dyn key treasury estate~
+Short `#`SVersuvious `rTreasury Key`^~
+Desc `#`SVersuvious `rTreasury Key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#80626
+Name The Front Entry~
+Desc Before you stands what appears to be a large house.  It has two large double 
+doors decorated with jewel encrusted golden engravings.  The walls are a 
+very dark earthy tone, giving the large estate a sort of camoflauge. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  1 23  20 A `#`Ss`Xp`Wid`Xe`Sr`^ quickly scuttles along the wall.~
+RoomEcho  1 23  30 Something scurries along your feet.~
+Exit up 55167
+EFlags door closed~
+Exit northeast 80627
+EFlags door closed locked pickproof~
+EKeyvnum 80635
+EKeywords double-door~
+End
+
+
+#80627
+Name An Elegant Hall~
+Desc You find yourself within an elegant hallway.  The floor is made from onyx 
+slabs of stone.  A large spidersilk rug covers the ground.  The rug is very 
+soft to the touch.  Northward leads into a large living room. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  1 23  20 A `#`Ss`Xp`Wid`Xe`Sr`^ quickly scuttles along the wall.~
+Exit north 80628
+Exit northeast 80629
+Exit southwest 80626
+EFlags door closed locked pickproof~
+EKeyvnum 80635
+EKeywords double-door~
+End
+
+
+#80628
+Name A Living Room~
+Desc Here within the living room, the walls and ceiling reach very high.  A 
+fireplace rests here giving off a gentle glow.  The floor is covered in a 
+very soft carpet.  The walls have many web-like etchings of silver. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  0 23  50 The fire flickers gently in the fireplace.~
+Exit south 80627
+End
+
+
+#80629
+Name An Elegant Hall~
+Desc You find yourself within an elegant hallway.  The floor is made from onyx 
+slabs of stone.  A large spidersilk rug covers the ground.  The rug is very 
+soft to the touch. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit southwest 80627
+Exit northwest 80630
+End
+
+
+#80630
+Name An Elegant Hall~
+Desc You find yourself within an elegant hallway.  The floor is made from onyx 
+slabs of stone.  A large spidersilk rug covers the ground.  The rug is very 
+soft to the touch.  Northward leads into the Master bedroom. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 80631
+Exit west 80632
+Exit southeast 80629
+End
+
+
+#80631
+Name The Master Bedroom~
+Desc When entering the master bedroom, you find the entire area is large and 
+spacious.  Along the black walls are web-like etchings of silver enhanced by 
+blood red diamonds of all shapes and sizes.  The floor is made from large, 
+smooth slabs of onyx stone.  Over that is a very luxurious fur rug.  It is 
+very soft to the touch. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  0 23  50 The fire flickers gently in the fireplace.~
+RoomEcho  1 23  50 A `#`Ss`Xp`Wid`Xe`Sr`^ quickly scuttles along the wall.~
+RoomEcho  1 23  30 Something scurries along your feet.~
+ExtraDesc etchings ~
+Glancing upon all the beautiful etchings, you find yourself lost within a 
+mystic web of glimmer and drowish elegance.  The room appears almost as if 
+it were filled with many webs that gleam within the gentle light of the 
+fireplace. 
+~
+Exit south 80630
+End
+
+
+#80632
+Name A Small Cavern Hall~
+Desc From here, the hall ends abruptly with what appears to be a broken floor 
+that leads downward into a dark cavern.  No torch or lamp lights down into 
+the cavern.  A warm feel to the air seems to eminate from the darkness. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho 19 22  10 A soft, cool wind blows through here.~
+RoomEcho  5  7   3 A soft, warm wind blows through here.~
+Exit east 80630
+Exit west 80633
+End
+
+
+#80633
+Name A Large Cavern Hall~
+Desc You find yourself farther inside the dark cavern.  Up ahead but seemingly 
+far is somewhat of a small bit of light.  You stumble a bit around rocks 
+that aren't seen.  Luckily, they aren't sharp.  The warm air seems to get a 
+bit muggy here and very humid. 
+ 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  5  7   3 A soft, warm wind blows through here.~
+RoomEcho 19 22  10 A soft, cool wind blows through here.~
+Exit east 80632
+Exit northwest 80634
+End
+
+
+#80634
+Name A Huge Cavern~
+Desc You find yourself within a rather large cavern end.  There is a small 
+crevice opening far up.  It is large enough to see the moonlight, and small 
+enough to protect against dripping rain or too much heat from the sunlight.  
+Covering almost the entire floor is a rather large nest.  Surprisingly, it 
+is very soft and very comfortable.  The air here is quite cool with the 
+breezes from the crevice overhead. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho 19 22  10 A soft, cool wind blows through here.~
+RoomEcho  5  7   3 A soft, warm wind blows through here.~
+Exit southeast 80633
+End
+
+
+#80635
+Name The Back Cavern~
+Desc You find yourself in the back cavern of the large drowish home.  It appears 
+to have been carved right out of the rock face.  The ground is surprisingly 
+soft with carpet.  Torches within the rounded room light the area with a 
+gentle, warm glow. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 2000
+LockerPickProof 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 80626 1 80627 1
+O 0 80632 -1 80628
+O 0 80633 -1 80628
+O 0 80626 -1 80631
+O 0 80628 -1 80631
+O 0 80629 -1 80631
+O 0 80630 -1 80631
+O 0 80633 -1 80631
+O 0 80626 -1 80634
+O 0 80631 -1 80634
+O 0 80627 -1 80635
+O 0 80634 -1 80635
+M 0 80635 1 80635 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#80626
+title child thefto setup~
+author Zaroth~
+code mob seeall
+mob swipe $n gold 15
+mob swipe $n silver 15
+mob echoat $n A small child bumps into you, giggles, then wanders off.
+mob echoaround $n A small child bumps into $n, giggles, then wanders off.
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1109123883
+END
+
+#0
+
+
+#$

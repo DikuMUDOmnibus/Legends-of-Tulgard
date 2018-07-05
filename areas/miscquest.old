@@ -1,0 +1,752 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Misc/SmallQuest~
+ShortName   Misc~
+Builders    None~
+VNUMs       3521 3599
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden~
+LRange      0 0
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Wed Apr 21 17:24:47 2004~
+End
+
+
+
+#MOBILES
+#3521
+Name oversized ego~
+ShortD strift's oversized ego~
+LongD An odd thing is floating here.~
+Desc . 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc stay_area~
+Imm    summon magic weapon bash pierce slash fire cold lightning negative energy mental disease drowning light sound silver scry fear~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg FIGHT 3521 100~
+END
+
+#3522
+Name unseen mob logger~
+ShortD unseen_mob_logger~
+LongD Unseen_mob_logger~
+Desc ~
+Race human~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg ACT 3521 gets a small silver~
+MProg EXALL 3522 south~
+END
+
+#3523
+Name leech creature black~
+ShortD a leech-like symbiote~
+LongD A black, leech-like creature is here, latched onto someone.~
+Desc This cute little kitten looks quite delicate.  It has grey fluffy fur.
+~
+Race cat~
+Align 0 0
+XPMod 0
+Level 20
+Hitroll 0
+HitDice 1d1+10
+ManaDice 1d1+1
+DamDice 2d8+5
+DamType suction
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area pet noautosocial~
+Act2   nohunt no_random_obj~
+AffBy  invisible infrared calm dark_vision regeneration~
+Off    dodge~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg COMMAND 3523 allowattach~
+MProg TICK 3524 33~
+END
+
+#3524
+Name leech owner bobu~
+ShortD the pet store owner~
+LongD An odd, wiry man stands behind the counter.~
+Desc An odd, wiry man is here standing behind the counter. He eyes you 
+suspiciously as you look at him. 
+Type <list> to see whats for sale today
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 5
+HitDice 10d13+600
+ManaDice 10d13+600
+DamDice 10d15+200
+DamType punch
+AC -150 -150 -150 -130
+Wealth 200
+Act    npc dont_wander stay_area nopurge~
+AffBy  detect_invis detect_hidden~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3599
+Name borlin tall human spirit wizened old ranger~
+ShortD the spirit of an old ranger~
+LongD A tall human spirit of a wizened old ranger is here, hovering around the spring.~
+Desc This tall humanoid figure looks as if he used to be a human but now is 
+nothing more than an ethereal apparition of what he used to be.  His 
+appearance is that of stern features and appearance. 
+~
+Race human~
+Align 1 3
+XPMod 120
+Level 68
+Hitroll 1
+HitDice 7d10+355
+ManaDice 3d5+70
+DamDice 7d8+33
+DamType none
+AC -380 -380 -380 -315
+Wealth 500
+Act    npc no_tame stay_area undead cleric warrior noautosocial~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil sneak flying pass_door haste regeneration~
+Off    bash disarm dodge fast kick parry trip~
+Imm    summon charm poison negative disease sleep wood~
+Res    magic holy~
+Vuln   fire light~
+Form   edible instant_decay sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 3593 honesty~
+MProg SPEECH 3592 holy water~
+MProg GRALL 3590 100~
+MProg DELAY 3591 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#3521
+Name token has master~
+Short token_has_master~
+Desc Token_has_master~
+Level 1
+ItemType token~
+Cost 0
+Asize 1000
+Rsize 50
+Values B 0 0 0 0
+Weight 5000
+Material wood~
+Extra    glow magic nolocate nodegrade burnproof~
+Wear     take~
+End
+
+#3522
+Name reins leather horse~
+Short some leather reins~
+Desc Some leather reins lie here.~
+Level 30
+ItemType clothing~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material leather~
+Extra    glow hum magic nonmetal nolocate burnproof norestring~
+Wear     take hold~
+End
+
+#3523
+Name a small silver key~
+Short a small silver key~
+Desc A key is lying here, shimmering in the light.~
+Level 0
+ItemType key~
+Cost 0
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    glow hum nonmetal meltdrop nodegrade norestring nogetall~
+Wear     take~
+End
+
+#3524
+Name a small silver key~
+Short a small silver key~
+Desc A key is lying here, shimmering in the light.~
+Level 0
+ItemType key~
+Cost 0
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    glow hum nonmetal meltdrop nodegrade norestring nogetall~
+Wear     take~
+End
+
+#3525
+Name sign wooden~
+Short a wooden sign~
+Desc A wooden sign is here, with much writing on its surface.~
+Level 1
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow hum bless antievil nonmetal nodegrade burnproof~
+Extra2   nodecay antichaos~
+ExtraDesc wooden sign~
+By decree of the town mayor, Leaghe, all dragons are now prohibited inside 
+the walls of Tulgard. Those who keep them as pets must have them on leash or 
+a restraining device at all times. `1For intelligent dragons, you must assume acceptable form. 
+~
+End
+
+#3526
+Name voodoo doll~
+Short a voodoo doll~
+Desc A voodoo doll lies here.~
+Level 0
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material flesh~
+Extra    evil magic antigood rotdeath nonmetal nolocate burnproof norestring~
+Extra2   nosell~
+Wear     take hold~
+End
+
+#3572
+Name tulgard noticeboard~
+Short tulgard noticeboard~
+Desc A large noticeboard hangs on the wall, pieces of paper tacked to it.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 100
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow hum magic bless nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc noticeboard message tulgard~
+You look upon the message board.  The writing on the parchments are swirled 
+into a readable language. 
+~
+End
+
+#3573
+Name dull brass neckguard~
+Short `#a `ydull brass`^ neckguard~
+Desc `#a `ydull brass`^ neckguard lies here.~
+Level 65
+ItemType armor~
+Cost 2650
+Asize 10
+Rsize 50
+Values 12 10 11 8 0
+Weight 30
+Material brass~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take neck~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc dull brass neckguard~
+This simple and rather plain appearing neckguard looks to be made from some 
+sort of dull in colour type of brass.  It has a strange pattern or symbol of 
+some sorts engraved on it. 
+~
+End
+
+#3574
+Name dark green leather tunic~
+Short a dark green leather tunic~
+Desc A dark green leather tunic lies here.~
+Level 65
+ItemType armor~
+Cost 2650
+Asize 0
+Rsize 50
+Values 21 22 23 16 0
+Weight 30
+Material leather~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take torso~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc dark green leather tunic~
+This decent looking tunic has been made from a sort of leather and been dyed 
+to a dark green.  With leather strippings hanging off the sides of it, and a 
+few chain link straps dangling from the sides, its appearance is rather 
+exotic and looks to be expensive. 
+~
+End
+
+#3575
+Name dark green leather pants~
+Short some dark green leather pants~
+Desc Some dark green leather pants lie here.~
+Level 65
+ItemType armor~
+Cost 2650
+Asize 0
+Rsize 50
+Values 15 15 17 17 0
+Weight 25
+Material leather~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take legs~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 4 0
+ExtraDesc dark green leather pants~
+This leather pants have been dyed in a dark green dye and polished over with 
+some sort of clear acrylic.  On the belt loops of the pants there is small 
+metal links with holes in them and on the sides the leather is fringed 
+slightly. 
+~
+End
+
+#3576
+Name radiant white broadaxe avenger axe~
+Short a radiant white broadaxe~
+Desc A broadaxe radianting an aura of white lies here.~
+Level 65
+ItemType weapon~
+Cost 3650
+Asize 0
+Rsize 50
+Values axe 15 4 divine I
+Weight 50
+Material iron~
+Extra    magic antievil antineutral nolocate burnproof~
+Extra2   nochaoslace~
+Wear     take wield~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 damroll 4 0
+ExtraDesc radiant white broadaxe avenger   ~
+This fairly large iron axe seems to glimmer with a white aura of sorts, its 
+blade looks rather shape and looks as if it could slice a tree down in one 
+swipe.  
+~
+End
+
+#3577
+Name dark green leather boots~
+Short some dark green leather boots~
+Desc Some dark green leather boots lie here.~
+Level 65
+ItemType armor~
+Cost 2000
+Asize 0
+Rsize 50
+Values 12 14 11 11 0
+Weight 20
+Material leather~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take feet~
+ClassAllowances ranger~
+ExtraDesc dark green leather boots~
+These leather books have been dyed in a dark green dye, the soles of the 
+boots appear to have been nailed together to the leather and have been sewn 
+into many layers.  
+~
+End
+
+#3578
+Name spiraled green stone~
+Short `#a spiraled `ggreen stone`^~
+Desc `#A spiraled `ggreen stone`^ lies here.~
+Level 65
+ItemType gem~
+Cost 2650
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take float~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 4 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 6 0
+ExtraDesc spiraled green stone~
+This small stone looks irregular and exotic in dimensional features.  
+Spiraling in a strange way and the colour of emerald this little stone looks 
+like it could be quite valuable.  
+~
+End
+
+#3579
+Name flask crystal holy blessed water~
+Short a flask of holy water~
+Desc A flask of holy water swirls about magically here.~
+Level 1
+ItemType drinkcontainer~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10 water 0 0
+Weight 10
+Material holy water~
+Extra    magic bless nolocate norestring~
+Wear     take~
+End
+
+#3580
+Name small crystal clear spring~
+Short a small crystal clear spring~
+Desc A small crystal clear spring is here, gushing out of the ground.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material water~
+Extra    burnproof~
+End
+
+#0
+
+
+
+#ROOMS
+#3521
+Name `#`YQUEST ROOMS`^~
+Desc ~
+Sector inside~
+End
+
+
+#3522
+Name The White Room~
+Desc Your in a room, surrounded by white walls.  Theres a door to the south, but 
+its locked.  `1`1The walls are slowly closing in.  
+~
+RoomFlags noscry~
+Sector field~
+Exit south 3052
+EFlags door closed locked pickproof nopass~
+EKeyvnum 3523
+End
+
+
+#3523
+Name An odd room.~
+Desc You've walked inside regular looking room. Tanks of weird, leech creatures 
+are lining the shelves on the side. 
+~
+RoomFlags indoors pet_shop noscry light~
+Sector inside~
+End
+
+
+#3524
+Name Symbiote Room~
+Desc ~
+RoomFlags indoors imm_only nowhere noscry~
+Sector inside~
+End
+
+
+#3531
+Name Dark Forest~
+Desc You've entered a dark forest.  The trees around you are baren and mysterious 
+crys can be heard echoing through.  The ground is dark, maggots and spiders 
+crawling everywhere.  
+~
+Sector inside~
+End
+
+
+#3599
+Name A Small Opening in a Forest~
+Desc This small clearing is around thirty feet in diameter.  Large trees of 
+ancient origin grow around this area like a barricade of nature's embrace.  
+Towards the southeast edges of the opening you notice a small spring of 
+crystal clear water gushing out of the ground and the smell of sweet pine 
+and flowers mingle in the air. 
+~
+RoomFlags no_recall noscry~
+Sector forest~
+Mana 125
+Heal 150
+Exit north 55316
+EFlags door closed~
+EKeywords bush~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 3524 1 3523 1
+M 0 3523 10 3524 1
+M 0 3599 1 3599 1
+E 0 3575 -1 legs~
+E 0 3574 -1 torso~
+E 0 3577 -1 feet~
+E 0 3578 -1 floating~
+E 0 3576 -1 wielded~
+E 0 3573 -1 neck1~
+E 0 3573 -1 neck2~
+O 0 3580 -1 3599
+S
+
+
+
+#SHOPS
+#3524
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#3593
+title Give Holy Water~
+author Echmoro~
+code if hastoken $n 39348
+pmote $n smiles at @ thoughtfully.
+sayto $n Indeed, honesty is to be highly esteemed.
+sayto $n As you possess this quality, you are worthy to take a flask of holy water.
+emote takes a flask from the shelf, and kneels slowly, filling it from the crystal clear water.
+emote prays the words 'bless'.
+mob oload 3579
+give flask $n
+sayto $n Take that flask, and may your heart remain true and honest all your days.
+emote smiles gently.
+mob oload 39349
+mob tgive 39349 $n
+endif
+ 
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1054818659
+END
+
+#3592
+title Try to Get Holy Water~
+author Echmoro~
+code if hastoken $n 39347
+pmote $n looks at @ with a wise glance.
+sayto $n Blessed water, did you say?
+sayto $n Well, let me see..
+sayto $n Are you worthy to behold such a thing?
+sayto $n If you are, tell me honestly, the name of a worthy quality that you possess.
+mob oload 39348
+mob tgive 39348  $n
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1054818433
+END
+
+#3591
+title Delay Warned, Attack Evil~
+author Echmoro~
+code mob seeall
+glare $q
+sayto $q I fair warned ye to leave my sanctuary!
+sayto $q Taste then bitter death of defeat!
+mob cast 'blind' $q
+mob cast 'plague' $q
+mob cast 'curse' $q
+mob cast 'thorny feet' $q
+mob cast 'weaken' $q
+mob cast 'chaotic poison' $q
+mob kill $q
+mob forget
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1054817476
+END
+
+#3590
+title Borlin Greeting~
+author Echmoro~
+code mob seeall
+if isgood $n
+  pmote $n looks up at @.
+  sayto $n Tis Fate that led ye to this sacred place, traveller.
+  sayto $n Rest by yon cooling waters and ease thy weary bones.
+else
+if isevil $n
+  sayto $n Thy presence defiles my sacred sanctuary!
+  sayto $n The Oak shall grant ye no solace... begone or taste my blade!
+  mob remember $n
+  mob delay 2
+else
+  pmote $n looks up at @.
+  sayto $n Greetings Traveller.
+endif
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1054817295
+END
+
+#3524
+author Echmoro~
+code if rand 1
+  mob cast sanctuary $q
+endif
+if rand 5
+  mob cast haste $q
+endif
+if rand 10
+  mob cast shield $q
+  mob cast armour $q
+endif
+mob inflict $q 5 15
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1082588975
+END
+
+#3523
+title Leech Affects~
+author Echmoro~
+code if !hastoken $i 3521
+  mob oload 3521
+  mob echoat $n The leech-like creature finds a nice safe places and latches onto you.
+  mob echoaround $n The leech-like creature latches onto its master.
+  mob remember $n
+else
+  mob echoat $n It's already attached
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1082588949
+END
+
+#3522
+author Echmoro~
+code if carries $n 3523
+  mob echoat $n You escape through the door before the doors close on you.
+  mob letpass
+  mob echoaround $n The walls begin to close in! Oh no! Your doomed!
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1071188398
+END
+
+#3521
+title Test~
+author Echmoro~
+code mob purge oversized
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G3521`x,`Y3523`x,`B3008`x,`r11`x,`C2`x:
+             `YMobprog: invalid if_check (if) 'wields', mob 3523 prog 3521
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 3521 on mob 3523 (in room 3008), line 11
+`S#############
+
+~
+last_editor Echmoro~
+last_editdate 1078181682
+END
+
+#0
+
+
+#$

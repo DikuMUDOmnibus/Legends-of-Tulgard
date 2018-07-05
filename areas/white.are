@@ -1,0 +1,7732 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        White Lotus~
+ShortName   White Lotus~
+Builders    ~
+Credits     strahd~
+VNUMs       7700 7899
+LComment    `#`C[ 20- 65]`^
+LRange      20 65
+Security    9
+Colour      w~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#7701
+Name monk cleaning~
+ShortD monk~
+LongD A temple monk is here cleaning and polishing the walkway.~
+Desc He looks to be a student of the temple. He is dressed in a loose brown
+robe. He is diligently cleaning the walkway.
+~
+Race human~
+Align -2 2
+Level 20
+Hitroll 0
+HitDice 3d5+79
+ManaDice 3d5+75
+DamDice 2d7+4
+DamType smash
+AC -35 -35 -35 -28
+Wealth 150
+Act    npc dont_wander stay_area~
+Off    disarm kick parry trip~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7702
+Name monk elder~
+ShortD elder monk~
+LongD An elder monk is here murmering and praying.~
+Desc ~
+Race human~
+Align 3 2
+Level 21
+Hitroll 0
+HitDice 4d5+115
+ManaDice 4d5+115
+DamDice 3d7+7
+DamType slap
+AC -75 -75 -75 -60
+Wealth 250
+Act    npc dont_wander stay_area cleric~
+Off    disarm kick parry trip~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7703
+Name monk temple student~
+ShortD temple student~
+LongD A temple student is here practicing his kung fu.~
+Desc ~
+Race human~
+Align -3 1
+Level 21
+Hitroll 0
+HitDice 4d5+90
+ManaDice 4d5+90
+DamDice 4d4+5
+DamType bite
+AC -50 -50 -50 -43
+Wealth 50
+Act    npc dont_wander stay_area~
+Off    disarm dodge kick parry~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7704
+Name monk advanced student temple~
+ShortD temple student~
+LongD A temple student is here practicing his kung fu.~
+Desc ~
+Race human~
+Align 3 1
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType thrust
+AC -60 -60 -60 -52
+Wealth 120
+Act    npc dont_wander stay_area~
+Off    disarm dodge kick dirt_kick~
+Res    magic~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7705
+Name teacher monk~
+ShortD teacher~
+LongD A temple teacher is here instructing students.~
+Desc ~
+Race human~
+Align 3 1
+Level 25
+Hitroll 0
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType slice
+AC -85 -85 -85 -72
+Wealth 200
+Act    npc dont_wander stay_area~
+Off    disarm dodge fast kick dirt_kick~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7706
+Name guard temple~
+ShortD temple guard~
+LongD A temple guard is here.~
+Desc ~
+Race human~
+Align 3 0
+Level 27
+Hitroll 1
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType thwack
+AC -85 -85 -85 -71
+Wealth 300
+Act    npc dont_wander stay_area~
+Off    disarm dodge kick dirt_kick parry assist_guard~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7701
+END
+
+#7707
+Name guard white lotus~
+ShortD guard~
+LongD A guard of the White Lotus is standing here.~
+Desc ~
+Race human~
+Align 2 1
+Level 23
+Hitroll 1
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType crush
+AC -85 -85 -85 -74
+Wealth 300
+Act    npc dont_wander stay_area~
+Off    disarm dodge kick dirt_kick parry assist_guard~
+Imm    summon charm~
+Res    magic bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7701
+END
+
+#7708
+Name kitchen attendant~
+ShortD kitchen attendant~
+LongD A kitchen attendant is here cooking for the soldiers.~
+Desc ~
+Race human~
+Align 0 2
+Level 21
+Hitroll 0
+HitDice 3d5+79
+ManaDice 3d5+75
+DamDice 2d7+4
+DamType slap
+AC -35 -35 -35 -31
+Wealth 90
+Act    npc dont_wander stay_area~
+Off    kick trip~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7702
+END
+
+#7709
+Name kitchen attendant~
+ShortD kitchen attendant~
+LongD A kitchen attendant is here cooking for the soldiers.~
+Desc ~
+Race human~
+Align -3 2
+Level 22
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType slap
+AC -45 -45 -45 -38
+Wealth 120
+Act    npc dont_wander stay_area~
+Off    kick trip~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7702
+END
+
+#7710
+Name soldier temple gambling~
+ShortD temple soldier~
+LongD A temple soldier is here gambling.~
+Desc ~
+Race human~
+Align 1 2
+Level 26
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType thwack
+AC -70 -70 -70 -57
+Wealth 130
+Act    npc dont_wander stay_area~
+Off    bash berserk kick trip~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7703
+END
+
+#7711
+Name soldier temple eating~
+ShortD temple soldier~
+LongD A temple soldier is here stuffing his mouth with rice.~
+Desc ~
+Race human~
+Align 2 2
+Level 24
+Hitroll 0
+HitDice 4d5+105
+ManaDice 4d5+105
+DamDice 2d10+6
+DamType thwack
+AC -65 -65 -65 -55
+Wealth 110
+Act    npc dont_wander stay_area~
+Off    bash berserk kick trip~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7703
+END
+
+#7712
+Name officer temple~
+ShortD temple officer~
+LongD A temple officer is here drinking wine.~
+Desc ~
+Race human~
+Align 0 2
+Level 28
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType charge
+AC -95 -95 -95 -76
+Wealth 160
+Act    npc dont_wander stay_area~
+Off    berserk disarm dodge kick assist_guard~
+Res    weapon~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7703
+END
+
+#7713
+Name prisoner~
+ShortD prisoner~
+LongD A prisoner is here barfing on the ground.~
+Desc ~
+Race human~
+Align -1 2
+Level 24
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType scratch
+AC -45 -45 -45 -39
+Wealth 70
+Act    npc dont_wander stay_area~
+Off    kick~
+Vuln   magic wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7702
+END
+
+#7714
+Name monk wandering~
+ShortD wandering monk~
+LongD A monk is here wandering and praying.~
+Desc ~
+Race human~
+Align 2 2
+Level 26
+Hitroll 0
+HitDice 4d5+115
+ManaDice 4d5+115
+DamDice 3d7+7
+DamType flame
+AC -75 -75 -75 -65
+Wealth 160
+Act    npc dont_wander stay_area~
+Off    disarm dodge kick~
+Imm    summon~
+Res    charm magic~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7715
+Name song bird~
+ShortD song bird~
+LongD A small colorful songbird is here chirping merrily.~
+Desc ~
+Race song bird~
+Align 2 2
+Level 3
+Hitroll 0
+HitDice 2d6+35
+ManaDice 2d6+35
+DamDice 1d6+0
+DamType peck
+AC 70 70 70 90
+Wealth 30
+Act    npc stay_area~
+Act2   no_random_obj~
+AffBy  flying~
+Off    dodge fast~
+Imm    summon~
+Res    weapon~
+Vuln   magic~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+Group 7704
+END
+
+#7716
+Name member poison clan~
+ShortD poison Clan member~
+LongD A member of the Poison clan is here looking tough.~
+Desc ~
+Race human~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d5+130
+ManaDice 5d5+130
+DamDice 2d12+8
+DamType wrath
+AC -90 -90 -90 -72
+Wealth 230
+Act    npc dont_wander stay_area~
+Off    berserk disarm dirt_kick parry trip~
+Imm    summon~
+Res    magic~
+Vuln   wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7703
+END
+
+#7717
+Name small frog~
+ShortD small frog~
+LongD A small frog is here croaking.~
+Desc ~
+Race frog~
+Align 0 0
+Level 14
+Hitroll 0
+HitDice 2d10+190
+ManaDice 2d10+190
+DamDice 1d12+3
+DamType slap
+AC -10 -10 -10 70
+Wealth 140
+Act    npc dont_wander~
+Act2   no_random_obj~
+AffBy  swim~
+Off    dodge~
+Res    wood~
+Vuln   cold~
+Form   edible animal~
+Part   head legs heart guts long_tongue~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7718
+Name tiny centipede~
+ShortD tiny centipede~
+LongD A tiny centipede is crawling on the ground.~
+Desc ~
+Race centiede~
+Align -2 0
+Level 15
+Hitroll 0
+HitDice 3d9+208
+ManaDice 3d9+208
+DamDice 2d6+3
+DamType bite
+AC -20 -20 -20 70
+Wealth 150
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison non_skinable animal insect~
+Part   head legs eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7719
+Name silver snake~
+ShortD silver snake~
+LongD A silver snake is slithering at your feet.~
+Desc ~
+Race snake~
+Align 2 0
+Level 17
+Hitroll 0
+HitDice 3d9+258
+ManaDice 3d9+258
+DamDice 3d4+4
+DamType bite
+AC -30 -30 -30 70
+Wealth 170
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    dodge fast~
+Imm    silver~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7720
+Name small green lizard~
+ShortD small green lizard~
+LongD A small green lizard is climbing on a nearby tree.~
+Desc ~
+Race lizardman~
+Align 3 0
+Level 18
+Hitroll 0
+HitDice 3d9+283
+ManaDice 3d9+283
+DamDice 2d7+4
+DamType suction
+AC -30 -30 -30 70
+Wealth 180
+Act    npc dont_wander stay_area~
+Off    dodge fast~
+Res    poison disease drowning~
+Vuln   cold illusion~
+Form   edible animal sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7721
+Name small red scorpion~
+ShortD small red scorpion~
+LongD A small red scorpion is scuttling across the path.~
+Desc ~
+Race scorpion~
+Align 0 0
+Level 21
+Hitroll 0
+HitDice 4d10+360
+ManaDice 4d10+360
+DamDice 4d4+5
+DamType sting
+AC -50 -50 -50 70
+Wealth 210
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    dodge fast~
+Imm    poison~
+Res    pierce cold~
+Vuln   bash~
+Form   edible non_skinable animal insect~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7722
+Name expert scorpion ma tang~
+ShortD ma Tang~
+LongD Ma Tang, Expert of the Scorpion technique is here.~
+Desc ~
+Race scorpion~
+Align -2 0
+Level 35
+Hitroll 1
+HitDice 10d10+1300
+ManaDice 10d10+1300
+DamDice 4d7+11
+DamType sting
+AC -110 -110 -110 50
+Wealth 350
+Act    npc dont_wander aggressive stay_area~
+Off    disarm fast kick parry~
+Imm    summon poison~
+Res    pierce cold~
+Vuln   bash~
+Form   edible animal insect~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7723
+Name expert toad lee ho~
+ShortD lee Ho~
+LongD Lee Ho, Expert of the Toad technique is here.~
+Desc ~
+Race frog~
+Align 2 1
+Level 31
+Hitroll 0
+HitDice 5d6+150
+ManaDice 5d6+150
+DamDice 4d6+9
+DamType smash
+AC -100 -100 -100 -81
+Wealth 310
+Act    npc dont_wander aggressive~
+AffBy  sanctuary protect_good~
+Off    berserk disarm crush~
+Res    wood~
+Vuln   cold~
+Form   edible animal~
+Part   head guts long_tongue~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7724
+Name expert centipede tang seung qwe~
+ShortD tang Seung Qwe~
+LongD Tang Seung Qwe, Expert of the Centipede technique is here.~
+Desc ~
+Race centiede~
+Align 1 -2
+Level 33
+Hitroll 0
+HitDice 5d6+195
+ManaDice 5d6+170
+DamDice 6d4+10
+DamType bite
+AC -110 -110 -110 -95
+Wealth 330
+Act    npc dont_wander aggressive stay_area~
+AffBy  dark_vision~
+Off    bash dodge kick dirt_kick parry~
+Imm    summon~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison animal insect~
+Part   head legs eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7725
+Name expert lizard yeun sun ho~
+ShortD yeun Sun Ho~
+LongD Yeun Sun Ho, Expert of the Lizard technique is here.~
+Desc ~
+Race lizardman~
+Align 0 -2
+Level 34
+Hitroll 0
+HitDice 5d6+205
+ManaDice 5d6+180
+DamDice 4d7+10
+DamType suction
+AC -113 -113 -113 -98
+Wealth 340
+Act    npc dont_wander aggressive stay_area~
+Off    area_attack dodge fast trip~
+Imm    summon~
+Res    poison disease drowning~
+Vuln   cold illusion~
+Form   edible animal sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#7726
+Name teachers last student~
+ShortD teacher's last student~
+LongD Teacher's last student is here searching for the 5 Deadly Venoms.~
+Desc ~
+Race human~
+Align -3 2
+Level 32
+Hitroll 0
+HitDice 10d10+1000
+ManaDice 10d10+1000
+DamDice 6d4+9
+DamType none
+AC -100 -100 -100 50
+Wealth 320
+Act    npc dont_wander stay_area practice~
+Off    disarm kick trip assist_guard~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7727
+Name Buddha Golden Enlightenment statue~
+ShortD statue of the Golden Buddha~
+LongD The statue of the Golden Buddha of Enlightenment sits here.~
+Desc ~
+Race human~
+Align 3 3
+Level 36
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 3d10+12
+DamType thwack
+AC -130 -130 -130 -105
+Wealth 440
+Act    npc dont_wander stay_area cleric~
+Off    bash disarm~
+Imm    wood~
+Res    magic cold silver~
+Vuln   fire iron~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+Group 7706
+END
+
+#7728
+Name Buddha Golden Wisdom statue~
+ShortD statue of the Golden Buddha~
+LongD The statue of the Golden Buddha of Wisdom sits here.~
+Desc ~
+Race human~
+Align -3 3
+Level 38
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d9+275
+DamDice 3d10+12
+DamType thwack
+AC -133 -133 -133 -118
+Wealth 450
+Act    npc dont_wander stay_area mage~
+Off    bash disarm~
+Imm    wood~
+Res    magic cold silver~
+Vuln   fire iron~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+Group 7706
+END
+
+#7729
+Name Buddha Golden Contentment statue~
+ShortD statue of the Golden Buddha~
+LongD The statue of the Golden Buddha of Contentment sits here.~
+Desc ~
+Race human~
+Align 3 3
+Level 42
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType thwack
+AC -145 -145 -145 -121
+Wealth 460
+Act    npc dont_wander stay_area~
+Off    bash disarm~
+Imm    wood~
+Res    magic cold silver~
+Vuln   fire iron~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+Group 7706
+END
+
+#7730
+Name shrine attendant~
+ShortD shrine attendant~
+LongD An attendant is here tending to the shrines.~
+Desc ~
+Race human~
+Align 3 3
+Level 28
+Hitroll 0
+HitDice 5d6+205
+ManaDice 5d6+180
+DamDice 4d7+10
+DamType pound
+AC -113 -113 -113 -99
+Wealth 370
+Act    npc dont_wander stay_area~
+Off    bash disarm dodge parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+Group 7706
+END
+
+#7731
+Name monk chanting~
+ShortD chanting monk~
+LongD A monk is sitting here chanting.~
+Desc ~
+Race human~
+Align 2 2
+Level 24
+Hitroll 0
+HitDice 4d5+120
+ManaDice 4d5+120
+DamDice 5d4+7
+DamType wrath
+AC -80 -80 -80 -72
+Wealth 250
+Act    npc dont_wander stay_area~
+Off    disarm kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7700
+END
+
+#7732
+Name wei Chin~
+ShortD wei Chin~
+LongD Wei Chin is here.~
+Desc ~
+Race human~
+Align -3 -2
+Level 34
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType slice
+AC -120 -120 -120 -106
+Wealth 460
+Act    npc dont_wander stay_area~
+Off    bash dodge kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+Group 7707
+END
+
+#7733
+Name wu Tak~
+ShortD wu Tak~
+LongD A visiting monk named, 'Wu Tak' is here.~
+Desc ~
+Race human~
+Align -3 -2
+Level 35
+Hitroll 0
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType slice
+AC -125 -125 -125 -101
+Wealth 480
+Act    npc dont_wander stay_area~
+Off    bash dodge kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7734
+Name white Lotus Chief~
+ShortD white Lotus Chief~
+LongD The White Lotus Chief is here meditating.~
+Desc ~
+Race human~
+Align -3 -3
+Level 49
+Hitroll 0
+HitDice 5d8+265
+ManaDice 6d9+325
+DamDice 6d6+16
+DamType crush
+AC -180 -180 -180 -145
+Wealth 500
+Act    npc dont_wander stay_area mage~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge kick parry trip~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7735
+Name chief personal guard~
+ShortD personal guard of the White Lotus Chief~
+LongD The personal guard of the White Lotus Chief is here.~
+Desc ~
+Race human~
+Align 3 -3
+Level 39
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType slash
+AC -130 -130 -130 -104
+Wealth 390
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash dodge kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7736
+Name chamber attendant~
+ShortD chamber attendant~
+LongD The attendant to the 36 chambers is here to welcome you.~
+Desc ~
+Race human~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType cleave
+AC -95 -95 -95 -77
+Wealth 320
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash dodge kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7737
+Name teacher 1st chamber~
+ShortD teacher of the 1st chamber~
+LongD The teacher of the 1st chamber is waiting patiently for a student.~
+Desc ~
+Race human~
+Align 1 2
+Level 31
+Hitroll 0
+HitDice 5d6+150
+ManaDice 5d6+150
+DamDice 4d6+9
+DamType pierce
+AC -100 -100 -100 -89
+Wealth 320
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash dodge parry trip~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7738
+Name teacher 2nd chamber~
+ShortD teacher of the 2nd chamber~
+LongD The teacher of the 2nd chamber is waiting patiently for a student.~
+Desc ~
+Race human~
+Align -2 1
+Level 32
+Hitroll 0
+HitDice 5d6+160
+ManaDice 5d6+160
+DamDice 6d4+9
+DamType stab
+AC -105 -105 -105 -91
+Wealth 330
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash dodge parry trip~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7739
+Name teacher whirlwind kick~
+ShortD teacher of the whirlwind kick~
+LongD The teacher of the whirlwind kick is here waiting to test you.~
+Desc ~
+Race human~
+Align 2 1
+Level 33
+Hitroll 0
+HitDice 5d6+195
+ManaDice 5d6+170
+DamDice 6d4+10
+DamType thrust
+AC -110 -110 -110 -92
+Wealth 340
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash dodge kick dirt_kick parry trip~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7740
+Name teacher chin kang palm~
+ShortD teacher of the chin kang palm~
+LongD The teacher of the chin kang palm is here waiting to test you.~
+Desc ~
+Race human~
+Align 3 1
+Level 34
+Hitroll 0
+HitDice 5d6+205
+ManaDice 5d6+180
+DamDice 4d7+10
+DamType beating
+AC -113 -113 -113 -96
+Wealth 350
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge parry trip~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7741
+Name teacher lizard style~
+ShortD teacher of the lizard style~
+LongD The teacher of the lizard style is standing on the wall.~
+Desc ~
+Race human~
+Align 2 2
+Level 33
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType suction
+AC -117 -117 -117 -101
+Wealth 360
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic infrared~
+Off    bash dodge parry trip~
+Imm    summon~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7742
+Name teacher crane style~
+ShortD teacher of the crane style~
+LongD The teacher of the crane style is here meditating.~
+Desc ~
+Race human~
+Align 0 2
+Level 34
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType blast
+AC -120 -120 -120 -97
+Wealth 370
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic infrared flying swim~
+Off    bash dodge parry trip~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7743
+Name teacher dragon style~
+ShortD teacher of the dragon style~
+LongD The teacher of the dragon style is awaiting your arrival.~
+Desc ~
+Race human~
+Align 2 -2
+Level 33
+Hitroll 0
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType flame
+AC -125 -125 -125 -108
+Wealth 380
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared flying~
+Off    bash dodge parry trip~
+Imm    summon charm~
+Vuln   pierce cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7744
+Name teacher tiger style~
+ShortD teacher of the tiger style~
+LongD The teacher of the tiger style sits here eating a pork bun.~
+Desc ~
+Race human~
+Align 2 0
+Level 36
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType claw
+AC -130 -130 -130 -105
+Wealth 390
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    berserk dodge fast trip~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7745
+Name teacher scorpion style~
+ShortD teacher of the scorpion style~
+LongD The teacher of the scorpion style is trying to decide how to kill you.~
+Desc ~
+Race human~
+Align 0 -3
+Level 35
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+13
+DamType sting
+AC -133 -133 -133 -110
+Wealth 400
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    berserk dodge trip~
+Imm    summon charm poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7746
+Name teacher snake style~
+ShortD teacher of the snake style~
+LongD The teacher of the snake style is sitting here on a silver throne.~
+Desc ~
+Race human~
+Align -3 -3
+Level 38
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType bite
+AC -137 -137 -137 -110
+Wealth 410
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    berserk dodge trip~
+Imm    summon charm~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7747
+Name teacher centipede style~
+ShortD teacher of the centipede style~
+LongD The teacher of the centipede style is waiting for you.~
+Desc ~
+Race human~
+Align 1 -3
+Level 41
+Hitroll 0
+HitDice 5d7+240
+ManaDice 5d7+240
+DamDice 4d8+14
+DamType bite
+AC -140 -140 -140 -119
+Wealth 420
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Off    berserk dodge trip~
+Imm    summon charm~
+Vuln   bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7748
+Name teacher toad style~
+ShortD teacher of the toad style~
+LongD The teacher of the toad style is waiting for you.~
+Desc ~
+Race human~
+Align 2 1
+Level 42
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType pound
+AC -145 -145 -145 -126
+Wealth 430
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden sanctuary infrared swim~
+Off    berserk dodge trip~
+Imm    summon charm~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7749
+Name teacher iron monk style~
+ShortD teacher of the iron monk style~
+LongD The teacher of the iron monk style is here meditating.~
+Desc ~
+Race human~
+Align 0 0
+Level 43
+Hitroll 0
+HitDice 5d7+245
+ManaDice 5d7+250
+DamDice 3d12+15
+DamType slash
+AC -150 -150 -150 -124
+Wealth 440
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge parry trip~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7750
+Name teacher iron head style~
+ShortD teacher of the iron head style~
+LongD The teacher of the iron head style is praying he'll spare you.~
+Desc ~
+Race human~
+Align -2 0
+Level 44
+Hitroll 0
+HitDice 5d7+247
+ManaDice 5d7+255
+DamDice 8d4+15
+DamType slash
+AC -153 -153 -153 -125
+Wealth 450
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge parry trip~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7751
+Name teacher hawk style~
+ShortD teacher of the hawk style~
+LongD The teacher of the hawk style is here drinking wine.~
+Desc ~
+Race human~
+Align 2 1
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType pound
+AC -157 -157 -157 -128
+Wealth 460
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared flying~
+Off    berserk disarm dodge fast~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7752
+Name teacher quivering palm style~
+ShortD teacher of the quivering palm style~
+LongD The teacher of the quivering palm style sits patiently on a stool here.~
+Desc ~
+Race human~
+Align 1 1
+Level 46
+Hitroll 0
+HitDice 5d8+255
+ManaDice 5d8+265
+DamDice 6d6+16
+DamType thrust
+AC -160 -160 -160 -142
+Wealth 470
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk dodge parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7753
+Name teacher five pace palm style~
+ShortD teacher of the five pace palm style~
+LongD The teacher of the five pace palm style is waiting patiently.~
+Desc ~
+Race human~
+Align 0 1
+Level 47
+Hitroll 0
+HitDice 5d8+260
+ManaDice 5d8+270
+DamDice 6d6+17
+DamType smash
+AC -170 -170 -170 -137
+Wealth 480
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk dodge parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7754
+Name healing monk chanting~
+ShortD chanting monk~
+LongD A monk is here praying and chanting.~
+Desc ~
+Race human~
+Align 0 1
+Level 59
+Hitroll 0
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 8d6+26
+DamType wrath
+AC -290 -290 -290 -240
+Wealth 600
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm fast parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7708
+END
+
+#7755
+Name teacher weightless boxing~
+ShortD teacher of weightless boxing~
+LongD The teacher of weightless boxing is here saying, 'Damn You!'~
+Desc ~
+Race human~
+Align -1 1
+Level 48
+Hitroll 0
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+18
+DamType punch
+AC -180 -180 -180 -156
+Wealth 490
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk dodge parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7756
+Name teacher lightning strike~
+ShortD teacher of the lightning strike~
+LongD The teacher of the lightning strike sits on the floor here.~
+Desc ~
+Race human~
+Align 2 0
+Level 49
+Hitroll 0
+HitDice 5d8+270
+ManaDice 5d8+270
+DamDice 4d10+18
+DamType shock
+AC -190 -190 -190 -171
+Wealth 500
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk dodge parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7757
+Name teacher iron skin~
+ShortD teacher of the iron skin technique~
+LongD The teacher of the iron skin technique sits on the floor here.~
+Desc ~
+Race human~
+Align -1 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType cleave
+AC -200 -200 -200 -176
+Wealth 510
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden sanctuary infrared~
+Off    bash berserk dodge parry~
+Imm    summon charm~
+Vuln   cold acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7758
+Name teacher chinese long sword~
+ShortD teacher of chinese long sword~
+LongD The teacher of the chinese long sword is here cutting up apples.~
+Desc ~
+Race human~
+Align -2 0
+Level 51
+Hitroll 0
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType slash
+AC -210 -210 -210 -186
+Wealth 520
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge parry~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7759
+Name teacher butterfly swords~
+ShortD teacher of butterfly swords~
+LongD The teacher of the butterfly swords is here sharpening his blades.~
+Desc ~
+Race human~
+Align 1 0
+Level 51
+Hitroll 0
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType slash
+AC -210 -210 -210 -186
+Wealth 520
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge parry~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7760
+Name teacher long spear~
+ShortD teacher of chinese long spear~
+LongD The teacher of the chinese long spear is here making kabobs.~
+Desc ~
+Race human~
+Align 3 0
+Level 52
+Hitroll 0
+HitDice 5d9+285
+ManaDice 5d9+285
+DamDice 6d7+20
+DamType stab
+AC -220 -220 -220 -195
+Wealth 530
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge parry~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7761
+Name teacher deadly palm~
+ShortD teacher of deadly palm~
+LongD The teacher of the deadly palm is here writing poetry.~
+Desc ~
+Race human~
+Align -1 0
+Level 53
+Hitroll 0
+HitDice 5d9+290
+ManaDice 5d9+290
+DamDice 6d7+21
+DamType blast
+AC -230 -230 -230 -186
+Wealth 540
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    berserk disarm dodge fast parry~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7762
+Name teacher fivechops~
+ShortD teacher of the five chops~
+LongD The teacher of the five chops is here watching the home choping channel.~
+Desc ~
+Race human~
+Align -2 -1
+Level 54
+Hitroll 0
+HitDice 5d9+295
+ManaDice 5d9+295
+DamDice 7d6+22
+DamType cleave
+AC -240 -240 -240 -216
+Wealth 550
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge parry~
+Imm    summon charm~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7763
+Name teacher angry buddha~
+ShortD teacher of the angry buddha~
+LongD The teacher of the angry buddha is here being...well..angry...~
+Desc ~
+Race human~
+Align 1 -2
+Level 56
+Hitroll 0
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType smash
+AC -260 -260 -260 -210
+Wealth 570
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash disarm dodge parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7764
+Name first master~
+ShortD 1st master of the White Lotus Clan~
+LongD The 1st master of the White Lotus Clan is here softly chanting.~
+Desc ~
+Race human~
+Align 3 -2
+Level 57
+Hitroll 0
+HitDice 6d9+305
+ManaDice 6d9+310
+DamDice 6d8+24
+DamType slash
+AC -270 -270 -270 -243
+Wealth 580
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    dodge parry trip~
+Imm    summon charm~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7765
+Name second master~
+ShortD 2nd master of the White Lotus Clan~
+LongD The 2nd master of the White Lotus Clan is here watching MTV.~
+Desc ~
+Race human~
+Align 3 -1
+Level 58
+Hitroll 0
+HitDice 6d9+310
+ManaDice 6d9+315
+DamDice 5d10+25
+DamType cleave
+AC -280 -280 -280 -232
+Wealth 590
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    disarm dodge parry trip~
+Imm    summon charm~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7766
+Name third master~
+ShortD 3rd master of the White Lotus Clan~
+LongD The 3rd master of the White Lotus Clan is here eating dumplings.~
+Desc ~
+Race human~
+Align 1 -1
+Level 59
+Hitroll 0
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 8d6+26
+DamType slice
+AC -290 -290 -290 -252
+Wealth 600
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    berserk disarm dodge parry trip~
+Imm    summon charm~
+Vuln   lightning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7767
+Name fourth master~
+ShortD 4th master of the White Lotus Clan~
+LongD The 4th master of the White Lotus Clan is waiting to test you.~
+Desc ~
+Race human~
+Align 0 -1
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType grep
+AC -300 -300 -300 -249
+Wealth 610
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge fast parry trip~
+Imm    summon charm~
+Res    weapon~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7768
+Name fifth master~
+ShortD 5th master of the White Lotus Clan~
+LongD The 5th master of the White Lotus Clan praying for your soul.~
+Desc ~
+Race human~
+Align -1 0
+Level 61
+Hitroll 0
+HitDice 6d10+320
+ManaDice 6d10+335
+DamDice 8d6+28
+DamType claw
+AC -310 -310 -310 -275
+Wealth 620
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge fast parry trip~
+Imm    summon charm~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7769
+Name abbot~
+ShortD abbot~
+LongD The Abbot awaits patiently to test your kung fu.~
+Desc ~
+Race human~
+Align -1 0
+Level 62
+Hitroll 0
+HitDice 6d10+325
+ManaDice 6d10+345
+DamDice 8d7+28
+DamType thrust
+AC -320 -320 -320 -259
+Wealth 630
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge fast kick dirt_kick parry trip~
+Imm    summon charm~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7770
+Name grand abbot~
+ShortD grand Abbot~
+LongD The Grand Abbot is here doing what Grand Abbots normally do.~
+Desc ~
+Race human~
+Align 1 0
+Level 64
+Hitroll 0
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType punch
+AC -340 -340 -340 -289
+Wealth 640
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge fast parry trip~
+Imm    summon charm~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7771
+Name disciple of buddha~
+ShortD disciple of buddha~
+LongD A disciple of buddha is here chanting and praying.~
+Desc ~
+Race human~
+Align -2 0
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType charge
+AC -350 -350 -350 -290
+Wealth 650
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    bash berserk disarm dodge fast parry trip~
+Imm    summon charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7772
+Name Buddha~
+ShortD the Buddha~
+LongD Before you sits the Buddha.~
+Desc ~
+Race human~
+Align 2 -3
+XPMod 160
+Level 66
+Hitroll 0
+HitDice 100d10+12500
+ManaDice 659d1+1
+DamDice 8d6+29
+DamType thwack
+AC -320 -320 -320 -10
+Wealth 660
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden infrared~
+Off    disarm trip~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7707
+END
+
+#7773
+Name expert snake hung wei~
+ShortD hung Wei Tung~
+LongD Hung Wei Tung, Expert of the Snake technique is here.~
+Desc ~
+Race human~
+Align 3 0
+Level 36
+Hitroll 0
+HitDice 10d10+1400
+ManaDice 10d10+1400
+DamDice 3d10+11
+DamType suction
+AC -120 -120 -120 -120
+Wealth 360
+Act    npc dont_wander stay_area~
+Off    dodge parry trip~
+Imm    summon~
+Res    poison~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 7706
+END
+
+#7774
+Name gold snake charmer~
+ShortD gold snake charmer~
+LongD A gold snake charmer is slithering at your feet.~
+Desc ~
+Race snake~
+Align 1 0
+Level 21
+Hitroll 0
+HitDice 3d9+258
+ManaDice 3d9+258
+DamDice 3d4+4
+DamType bite
+AC -30 -30 -30 70
+Wealth 210
+Act    npc dont_wander stay_area~
+Imm    silver~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+Group 7704
+END
+
+#0
+
+
+
+#OBJECTS
+#7701
+Name mop~
+Short a mop~
+Desc A wet soggy mop is here on the ground.~
+Level 18
+ItemType weapon~
+Cost 45
+Durability 5
+Asize 30
+Rsize 50
+Values exotic 3 5 slime 0
+Weight 30
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+End
+
+#7702
+Name bar soap~
+Short a bar of soap~
+Desc A bar of soap is here.~
+Level 10
+ItemType pill~
+Cost 5
+Durability 5
+Asize 10
+Rsize 50
+Values 10 'vitality drain' '' '' ''
+Weight 10
+Material soap~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7703
+Name prayer beads~
+Short prayer beads~
+Desc A string of prayer beads are here.~
+Level 24
+ItemType weapon~
+Cost 260
+Durability 5
+Asize 10
+Rsize 50
+Values whip 5 3 whip I
+Weight 10
+Material coral~
+Extra    magic nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard monk knight~
+Affect modifier -1 24 -1 mana 60 0
+End
+
+#7704
+Name chinese broadsword~
+Short chinese broadsword~
+Desc A large chinese broadsword lies on the ground.~
+Level 27
+ItemType weapon~
+Cost 220
+Durability 5
+Asize 70
+Rsize 50
+Values sword 7 3 slash D
+Weight 70
+Material metal~
+Extra    nodegrade burnproof~
+Wear     take wield~
+End
+
+#7705
+Name white lotus shield~
+Short white lotus shield~
+Desc A medium size wooden sheild with a picture of a white lotus is here.~
+Level 27
+ItemType armor~
+Cost 260
+Durability 5
+Asize 30
+Rsize 50
+Values 9 9 9 7 2
+Weight 30
+Material wood~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take shield~
+ClassAllowances cleric thief warrior paladin ranger spellfilcher bard knight~
+Affect modifier -1 27 -1 ac -15 0
+End
+
+#7706
+Name large cleaver~
+Short a large cleaver~
+Desc A very large chinese cleaver is stuck in the ground.~
+Level 21
+ItemType weapon~
+Cost 160
+Durability 5
+Asize 20
+Rsize 50
+Values axe 6 4 chop 0
+Weight 20
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard monk knight~
+End
+
+#7707
+Name chopsticks chopstick ivory~
+Short pair of chopsticks~
+Desc A pair of ivory chopsticks are stuck in the ground here.~
+Level 22
+ItemType wand~
+Cost 300
+Durability 5
+Asize 10
+Rsize 50
+Values 22 22 1 'create food' 0
+Weight 10
+Material ivory~
+Extra    magic visdeath nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk~
+End
+
+#7708
+Name pair ivory dice~
+Short pair of ivory dice~
+Desc A pair of ivory dice are sitting on the ground.~
+Level 26
+ItemType warpstone~
+Cost 260
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material ivory~
+Extra    magic visdeath nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7709
+Name deck playing cards~
+Short a deck of playing cards~
+Desc A deck of playing cards lie on the ground.~
+Level 10
+ItemType trash~
+Cost 10
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material parchment~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#7710
+Name bowl rice~
+Short bowl of rice~
+Desc A small bowl of rice is just sitting here, steaming.~
+Level 24
+ItemType pill~
+Cost 200
+Durability 5
+Asize 10
+Rsize 50
+Values 0 'cure critical' '' '' ''
+Weight 10
+Material food~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#7711
+Name jug wine~
+Short jug of wine~
+Desc A small clay jug with a red paper top is  sitting here.~
+Level 28
+ItemType drinkcontainer~
+Cost 160
+Durability 5
+Asize 20
+Rsize 50
+Values 5 5 plumwine 0 0
+Weight 20
+Material clay~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#7712
+Name green icky chunky barf~
+Short a pool of green icky chunky barf~
+Desc A small pool of green icky chunky barf~
+Level 6
+ItemType trash~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material none~
+Extra    nonmetal~
+Wear     no_sac~
+End
+
+#7713
+Name beautiful feather~
+Short a beautiful feather~
+Desc A beautifully colored feather is laying here on the ground.~
+Level 3
+ItemType wand~
+Cost 12
+Durability 5
+Asize 1
+Rsize 50
+Values 3 1 1 fly 0
+Weight 1
+Material feathers~
+Extra    magic visdeath nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7714
+Name big knife~
+Short a big knife~
+Desc A big knife is laying on the ground here.~
+Level 31
+ItemType weapon~
+Cost 315
+Durability 5
+Asize 30
+Rsize 50
+Values dagger 2 10 stab EH
+Weight 30
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7715
+Name poison clan insignia coin~
+Short poison clan insignia~
+Desc A small insignia coin is laying here on the ground.~
+Level 31
+ItemType jewelry~
+Cost 200
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silver~
+Extra    magic nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+Affect modifier -1 31 -1 agility 1 0
+Affect modifier -1 31 -1 strength 1 0
+Affect modifier -1 31 -1 quickness 1 0
+Affect modifier -1 31 -1 selfdiscipline 1 0
+End
+
+#7716
+Name scorpion technique style book~
+Short scorpion style~
+Desc You see a small book with a small scorpion on the cover here.~
+Level 35
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 3 10 beating H
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7717
+Name toad technique style book~
+Short toad style~
+Desc You see a small book with a small toad on the cover here.~
+Level 31
+ItemType weapon~
+Cost 320
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 7 3 beating H
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+End
+
+#7718
+Name centipede technique style book~
+Short centipede style~
+Desc You see a small book with a small centipede on the cover here.~
+Level 33
+ItemType weapon~
+Cost 340
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 6 4 beating H
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7719
+Name lizard technique style book~
+Short lizard style~
+Desc You see a small book with a small lizard on the cover here.~
+Level 34
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 8 3 beating H
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7720
+Name orange~
+Short an orange~
+Desc You see a small perfect orange on the ground.~
+Level 38
+ItemType pill~
+Cost 300
+Durability 5
+Asize 10
+Rsize 50
+Values 19 'illusions grandeur' refresh '' ''
+Weight 10
+Material food~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#7721
+Name enchanted prayer beads~
+Short enchanted prayer beads~
+Desc You see a small strand of prayer beads on the ground.~
+Level 41
+ItemType jewelry~
+Cost 420
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material coral~
+Extra    magic nonmetal nodegrade~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard monk~
+Affect modifier -1 41 -1 mana 100 0
+End
+
+#7722
+Name iron monk technique book~
+Short iron monk technique~
+Desc You see a small book with the iron monk technique written in it.~
+Level 43
+ItemType weapon~
+Cost 871
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 7 5 claw 0
+Weight 10
+Material parchment~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 43 -1 ac -5 0
+Affect modifier -1 43 -1 strength 1 0
+Affect modifier -1 43 -1 saves -5 0
+End
+
+#7723
+Name weightless boxing technique~
+Short weightless boxing technique~
+Desc You see a small book of kung fu laying on the ground here.~
+Level 49
+ItemType weapon~
+Cost 243
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 10 4 pound 0
+Weight 10
+Material parchment~
+Extra    magic~
+Wear     take hold~
+Affect modifier -1 49 -1 ac -10 0
+End
+
+#7724
+Name white chinese longsword~
+Short white chinese longsword~
+Desc A shiny white chinese longsword is stuck in the ground here.~
+Level 36
+ItemType weapon~
+Cost 762
+Durability 5
+Asize 30
+Rsize 50
+Values sword 7 5 slice 0
+Weight 30
+Material ivory~
+Wear     take wield~
+End
+
+#7725
+Name key chambers~
+Short key to the 36 chambers~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7726
+Name key 2nd chamber~
+Short key to the 2nd chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7727
+Name key 3rd chamber~
+Short key to the 3rd chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7728
+Name key 4th chamber~
+Short key to the 4th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7729
+Name whirlwind kick~
+Short whirlwind kick~
+Desc A small book teaching the Whirlwind Kick style is here.~
+Level 33
+ItemType weapon~
+Cost 330
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 2 16 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7730
+Name key 5th chamber~
+Short key to the 5th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7731
+Name chin kang palm~
+Short chin kang palm~
+Desc A small book teaching the chin kang palm style is here.~
+Level 34
+ItemType weapon~
+Cost 340
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 7 4 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7732
+Name key 6th chamber~
+Short key to the 6th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7733
+Name lizard style~
+Short lizard style~
+Desc A small book teaching the lizard style is here.~
+Level 35
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 9 3 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7734
+Name key 7th chamber~
+Short key to the 7th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7735
+Name crane style~
+Short crane style~
+Desc A small book teaching the crane style is here.~
+Level 36
+ItemType weapon~
+Cost 360
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 9 3 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7736
+Name key 8th chamber~
+Short key to the 8th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7737
+Name dragon style~
+Short dragon style~
+Desc A small book teaching the dragon style is here.~
+Level 37
+ItemType weapon~
+Cost 370
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 2 18 claw 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7738
+Name key 9th chamber~
+Short key to the 9th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7739
+Name tiger style~
+Short tiger style~
+Desc A small book teaching the tiger style is here.~
+Level 38
+ItemType weapon~
+Cost 380
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 3 12 claw 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7740
+Name key 10th chamber~
+Short key to the 10th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7741
+Name scorpion style~
+Short scorpion style~
+Desc A small book teaching the scorpion style is here.~
+Level 39
+ItemType weapon~
+Cost 390
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 10 3 sting 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7742
+Name key 11th chamber~
+Short key to the 11th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7743
+Name key 12th chamber~
+Short key to the 12th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7744
+Name snake style~
+Short snake style~
+Desc A small book teaching the snake style is here.~
+Level 40
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 10 3 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7745
+Name key 13th chamber~
+Short key to the 13th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7746
+Name centipede style~
+Short centipede style~
+Desc A small book teaching the centipede style is here.~
+Level 41
+ItemType weapon~
+Cost 410
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 7 5 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7747
+Name key 14th chamber~
+Short key to the 14th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7748
+Name toad style~
+Short toad style~
+Desc A small book teaching the toad style is here.~
+Level 42
+ItemType weapon~
+Cost 420
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 7 5 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7749
+Name key 15th chamber~
+Short key to the 15th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7750
+Name iron monk style~
+Short iron monk style~
+Desc A small book teaching the iron monk style is here.~
+Level 43
+ItemType weapon~
+Cost 430
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 11 3 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7751
+Name key 16th chamber~
+Short key to the 16th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7752
+Name iron head style~
+Short iron head style~
+Desc A small book teaching the iron monk style is here.~
+Level 44
+ItemType weapon~
+Cost 440
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 9 4 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7753
+Name key 17th chamber~
+Short key to the 17th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7754
+Name hawk style~
+Short hawk style~
+Desc A small book teaching the hawk style is here.~
+Level 45
+ItemType weapon~
+Cost 450
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 2 22 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7755
+Name key 18th chamber~
+Short key to the 18th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7756
+Name quivering palm style~
+Short quivering palm style~
+Desc A small book teaching the quivering palm style is here.~
+Level 46
+ItemType weapon~
+Cost 460
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 2 22 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7757
+Name key 20th chamber~
+Short key to the 20th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7758
+Name key 21st chamber~
+Short key to the 21st chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7759
+Name key 22nd chamber~
+Short key to the 22nd chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7760
+Name weightless boxing~
+Short weightless boxing~
+Desc A small book teaching the weightless boxing style is here.~
+Level 48
+ItemType weapon~
+Cost 480
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 7 6 beating N
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7761
+Name key 23rd chamber~
+Short key to the 23rd chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7762
+Name lightning strike~
+Short lightning strike~
+Desc A small book teaching the lightning strike style is here.~
+Level 49
+ItemType weapon~
+Cost 490
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 2 22 shock G
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7763
+Name key 24th chamber~
+Short key to the 24th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7764
+Name iron skin technique~
+Short iron skin technique~
+Desc A small book teaching the iron skin technique is here.~
+Level 50
+ItemType weapon~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 3 16 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7765
+Name key 25th chamber~
+Short key to the 25th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7766
+Name chinese longsword~
+Short chinese longsword~
+Desc A chinese longsword is here.~
+Level 51
+ItemType weapon~
+Cost 510
+Durability 5
+Asize 10
+Rsize 50
+Values sword 13 3 slash D
+Weight 50
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher bard monk knight~
+End
+
+#7767
+Name key 25th chamber~
+Short key to the 25th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7768
+Name chinese butterfly sword~
+Short a chinese butterfly sword~
+Desc A chinese butterfly sword is here.~
+Level 51
+ItemType weapon~
+Cost 510
+Durability 5
+Asize 10
+Rsize 50
+Values sword 13 3 slash E
+Weight 10
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher bard monk knight~
+End
+
+#7769
+Name key 26th chamber~
+Short key to the 26th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7770
+Name chinese long spear~
+Short a chinese long spear~
+Desc A chinese long spear is here.~
+Level 52
+ItemType weapon~
+Cost 520
+Durability 5
+Asize 10
+Rsize 50
+Values polearm 11 5 thrust F
+Weight 10
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger bard monk knight~
+End
+
+#7771
+Name key 27th chamber~
+Short key to the 27th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7772
+Name deadly palm style~
+Short deadly palm style~
+Desc A small book teaching the deadly palm style is here.~
+Level 53
+ItemType weapon~
+Cost 530
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 9 5 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7773
+Name key 28th chamber~
+Short key to the 28th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7774
+Name Flying buddha style~
+Short flying buddha style~
+Desc A small book teaching the flying buddha style is here.~
+Level 54
+ItemType weapon~
+Cost 540
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 11 4 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7775
+Name key 29th chamber~
+Short key to the 29th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7776
+Name angry buddha style~
+Short angry buddha style~
+Desc A small book teaching the angry buddha style is here.~
+Level 56
+ItemType weapon~
+Cost 560
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 3 18 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7777
+Name key 30th chamber~
+Short key to the 30th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7778
+Name key 31st chamber~
+Short key to the 31st chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7779
+Name key 32nd chamber~
+Short key to the 32nd chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7780
+Name key 33rd chamber~
+Short key to the 33rd chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7781
+Name key 34th chamber~
+Short key to the 34th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7782
+Name key 35th chamber~
+Short key to the 35th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7783
+Name key 36th chamber~
+Short key to the 36th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7784
+Name holy mace~
+Short the holy mace of the grand abbot~
+Desc A large polearm with a mace on top is here.~
+Level 64
+ItemType weapon~
+Cost 640
+Durability 5
+Asize 60
+Rsize 50
+Values mace 19 3 pound F
+Weight 60
+Material wood~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger knight~
+End
+
+#7785
+Name hand buddha~
+Short the hand of buddha~
+Desc The enormous Hand of Buddha is floating above you.~
+Level 66
+ItemType weapon~
+Cost 660
+Durability 5
+Asize 70
+Rsize 50
+Values exotic 15 3 slap EI
+Weight 70
+Material stone~
+Extra    magic noremove nonmetal nodegrade burnproof~
+Wear     take wield~
+End
+
+#7786
+Name blessed fountain~
+Short blessed fountain~
+Desc A glowing fountain of Buddha is flowing quietly here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 70000 70000 water 0 0
+Weight 0
+Material stone~
+End
+
+#7787
+Name key 19th chamber~
+Short key to the 19th chamber~
+Desc A small stone key lies on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Wear     take hold~
+End
+
+#7788
+Name five pace palm style~
+Short five pace palm style~
+Desc A small book teaching the five pace palm style is here.~
+Level 47
+ItemType weapon~
+Cost 470
+Durability 5
+Asize 10
+Rsize 50
+Values exotic 12 3 beating 0
+Weight 10
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7789
+Name rice cake~
+Short a rice cake~
+Desc You see a small perfect rice cake on the ground.~
+Level 46
+ItemType pill~
+Cost 100
+Durability 5
+Asize 10
+Rsize 50
+Values 46 refresh '' '' ''
+Weight 10
+Material food~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+End
+
+#7790
+Name chinese butterfly sword technique light~
+Short chinese butterfly sword~
+Desc A small book teaching the chinese butterfly sword technique is here.~
+Level 50
+ItemType weapon~
+Cost 892
+Durability 5
+Asize 50
+Rsize 50
+Values exotic 3 16 slice 0
+Weight 50
+Material parchment~
+Wear     take wield hold~
+End
+
+#7791
+Name chinese longsword technique light~
+Short chinese longsword~
+Desc A small book teaching the chinese longsword technique is here.~
+Level 50
+ItemType weapon~
+Cost 1092
+Durability 5
+Asize 40
+Rsize 50
+Values exotic 3 16 slash 0
+Weight 40
+Material parchment~
+Wear     take wield hold~
+End
+
+#7792
+Name ring white lotus chambers~
+Short the ring of the 36 chambers~
+Desc A ring of the 36 chambers of the White Lotus is here.~
+Level 66
+ItemType jewelry~
+Cost 750
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material ivory~
+Extra    magic bless noremove nonmetal nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk knight~
+Affect modifier -1 66 -1 damroll 2 0
+Affect modifier -1 66 -1 hitroll 2 0
+Affect modifier -1 66 -1 ac -10 0
+Affect modifier -1 66 -1 hp 4 0
+Affect modifier -1 66 -1 saves -2 0
+End
+
+#7793
+Name Cell door key prison~
+Short cell door key~
+Desc A small shiney silver key is sitting on the ground here.~
+Level 0
+ItemType key~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silver~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#7701
+Name Gateway to Temple~
+Desc You stand before the grand gateway to the Temple of the White Lotus Clan.
+Twin snow white and golden dragons decorate the black steel gates of the
+entrance. A small path winds down the mountain to the east.
+The black steel gates are to the south.
+     There is a small (Glowing) (Humming) tablet.
+~
+Sector city~
+ExtraDesc small tablet~
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                                  +
++            This area has been converted and adapted by           +
++                                Shang-Ti                          +
++                                                           Aug'03 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~
+Exit north 58676
+Exit east 58758
+Exit south 7702
+EFlags door closed~
+EKeyvnum -1
+EKeywords gate gates black steel~
+EDesc You see the black steel gates of the White lotus
+~
+Exit west 58756
+End
+
+
+#7702
+Name Path in Courtyard~
+Desc The path is made of large flat stones. Beautiful stone gardens fill these 
+large courtyard. In fact the only place to walk  where you will not destroy
+something beautiful is on this path. The sky above you is unusually
+blue with puffy white clouds. Everything is tranquil and harmonious.
+~
+Sector city~
+Exit north 7701
+EFlags door closed~
+EKeyvnum -1
+EKeywords gate gates black steel~
+EDesc You see the black steel gates of the White lotus
+~
+Exit south 7703
+EKeyvnum -1
+EKeywords steps~
+EDesc You see large stone steps that climb up to the temple.
+~
+End
+
+
+#7703
+Name Stone Steps~
+Desc Large roughly carved stone steps lead up to the temple. The look like
+quite a climb. More stone gardens and small shrubs like the stone steps.
+From this far below the Temple, it seems to tower over you with its
+wooden beams seemingly stretching out to the heavens.
+~
+Sector city~
+Exit north 7702
+EKeyvnum -1
+EKeywords path~
+EDesc You see a path that winds through the courtyard.
+~
+Exit south 7704
+EKeyvnum -1
+EKeywords steps~
+EDesc You see stone steps ascending the mountain.
+~
+End
+
+
+#7704
+Name Stone Steps~
+Desc Large roughly carved stone steps lead up to the temple. You are about
+half way to the temple. This climb seems almost endless. Small lizards
+occasionally scamper across the stones before you. The wind seems to
+be a bit more brisk as you climb higher towards the temple.
+~
+Sector city~
+Exit north 7703
+EKeyvnum -1
+EKeywords steps~
+EDesc You see stone steps descending the mountain.
+~
+Exit south 7705
+EKeyvnum -1
+EKeywords Temple~
+EDesc You see the Temple of the White Lotus Clan.
+~
+End
+
+
+#7705
+Name Before the Temple of the White Lotus Clan~
+Desc You stand at the top of a steep stone staircase that connects the temple
+to the valley below. The temples wooden structure seem in harmony with the 
+bare rock face that it sits on top of. Before you a short wooden stair leads 
+up to the entry doors of the temple. The whole building is an ancient Chinese 
+architecture style. Wood beams and black slate tiles hang over the well 
+polished wooden deck that lead around the temple. The large red double doors 
+of the Temple are to the South. A steep stone staircase leads down the 
+mountain to the North.
+~
+Sector city~
+Exit north 7704
+EKeyvnum -1
+EKeywords steps~
+EDesc You see stone steps descending the mountain.
+~
+Exit south 7706
+EKeyvnum -1
+EKeywords steps~
+EDesc You see wooden steps leading up to the temple doors.
+~
+End
+
+
+#7706
+Name Temple Doors~
+Desc Two large red double doors stand before you. The red wood of the doors
+are bound by black iron braces. Twin white and golden dragons adorn
+the doors. Two halves of a white lotus come together as the door closes
+to make the single white flower of the clan. Well polished wooden
+decks lead off to the east and west.
+~
+Sector city~
+Exit north 7705
+EKeyvnum -1
+EKeywords steps~
+EDesc You see stone steps descending the mountain.
+~
+Exit east 7725
+EKeyvnum -1
+EDesc You see the wooden deck that leads around the temple.
+~
+Exit south 7807
+EFlags door closed~
+EKeyvnum -1
+EKeywords door doors~
+EDesc You see the Temple doors.
+~
+Exit west 7707
+EKeyvnum -1
+EDesc You see the wooden deck that leads around the temple.
+~
+End
+
+
+#7707
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. You pause to lean
+against the railing and admire the view from this mountain top. Far below
+you see Crystalmir lake, glimmering faintly.  To the northwest you see a
+large wooden building that connects to the walkway further to the west.
+The walkway continues to the east and west.
+~
+Sector city~
+Exit east 7706
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7708
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7708
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. Pretty pink and white
+flowers grown next to the railing. The temple wall to the south of you is
+decorated with the symbol of the white lotus.
+The walkway continues to the east and west.
+~
+Sector city~
+Exit east 7707
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7709
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7709
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. North of you is a large 
+wooden building. The bustling noise of many people can be heard from within. 
+The Building is to the north. The walkway continues to the east and south.
+~
+Sector city~
+Exit north 7788
+EKeyvnum -1
+EKeywords building~
+EDesc You see a large wooden building.
+~
+Exit east 7708
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7710
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7710
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the North you see 
+a large wooden building. As you look over the railing notice that the mountain 
+drops sharply away. The shear wall of the mountain seems to disappear into the 
+mists far below. The walkway continues to the north and south.
+~
+Sector city~
+Exit north 7709
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7711
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7711
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. As you look over the
+railing notice that the mountain drops sharply away. The shear wall of the
+mountain seems to disappear into the mists far below. Screams of fighting
+are coming from the south. The walkway continues to the north and south.
+~
+Sector city~
+Exit north 7710
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7712
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7712
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. As you look over the
+railing notice that the mountain drops sharply away. The shear wall of the
+mountain seems to disappear into the mists far below. Screams of fighting
+are coming from the south.
+The walkway continues to the north and south.
+~
+Sector city~
+Exit north 7711
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7713
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7713
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. You look out
+across the temple training grounds to south. As you look out across
+the railing you can see the dark forest of Hoan-dor in the distance.
+The walkway continues to the north and east.
+~
+Sector city~
+Exit north 7712
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit east 7714
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7714
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. You look out across 
+the temple training grounds to south. The walkway continues to the east 
+and west.
+~
+Sector city~
+Exit east 7715
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7713
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7715
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. You look out
+across the temple training grounds to south. Farther to the east
+are a pair of large red doors and a stairway that leads to the grounds below.
+The walkway continues to the east and west.
+~
+Sector city~
+Exit east 7716
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7714
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7716
+Name Temple Doors~
+Desc Two large red double doors stand before you. The red wood of the doors
+are bound by black iron braces. Twin white and golden dragons adorn the doors. 
+Two halves of a white lotus come together as the door closes to make the single
+white flower of the clan. A wooden stairway to the south leads to the grounds 
+below. Well polished wooden decks lead off to the east and west.
+~
+Sector city~
+Exit north 7809
+EFlags door closed~
+EKeyvnum -1
+EKeywords door doors red~
+EDesc You see the Temple doors.
+~
+Exit east 7717
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7726
+EKeyvnum -1
+EKeywords stairway~
+EDesc You see a wooden stairway.
+~
+Exit west 7715
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7717
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. As you look out across 
+the railing to the south, you can see the temple arena area. Further to the 
+west you see a pair of large red doors and a staircase that leads to the 
+grounds below. Well polished wooden decks lead off to the east and west.
+~
+Sector city~
+Exit east 7718
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7716
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7718
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. As you look out
+across the railing to the south, you can see the temple arena area.
+Well polished wooden decks lead off to the east and west.
+~
+Sector city~
+Exit east 7719
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7717
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7719
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. As you look out across 
+the railing to the south, you can see the temple arena area. To the northeast 
+you see a large garden. Well polished wooden decks lead off to the north and 
+east.
+~
+Sector city~
+Exit north 7720
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7718
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7720
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the northeast you 
+see a large garden. Further to the north you see a staircase that descends 
+to the garden below. Well polished wooden decks lead off to the north and 
+south.
+~
+Sector city~
+Exit north 7721
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7719
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7721
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the northeast you 
+see a large garden. A wooden staircase leads down to a stone path to the 
+east. Well polished wooden decks lead off to the north and south.
+~
+Sector city~
+Exit north 7722
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit east 7753
+EKeyvnum -1
+EKeywords stairway~
+EDesc You see a wooden stairway.
+~
+Exit south 7720
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7722
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the northeast you 
+see a large garden. Further to the south you see a wooden staircase that 
+leads down to the garden below. As you look across the railing to the east 
+you notice a couple small paths that wind around from the staircase and then 
+disappear into the garden. Well polished wooden decks lead off to the north 
+and south.
+~
+Sector city~
+Exit north 7723
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit south 7721
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7723
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the east you see 
+a large garden. Well polished wooden decks lead off to the west and south.
+~
+Sector city~
+Exit south 7722
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7724
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7724
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the north you see 
+a large garden. Well polished wooden decks lead off to the east and west.
+~
+Sector city~
+Exit east 7723
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7725
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7725
+Name Walkway Around Temple~
+Desc A polished wooden walkway leads around the temple. To the north you see 
+a large garden. Further to the west you see a pair of large red doors and 
+a stone stairway that leads down the mountain. Well polished wooden decks 
+lead off to the east and west.
+~
+Sector city~
+Exit east 7724
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+Exit west 7706
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see a polished wooden walkway.
+~
+End
+
+
+#7726
+Name Stone Path~
+Desc This is a small stone and gravel path that winds though a beautiful rock
+garden. To either side of you are large patches of sculpted sand. To the
+north you see the Temple of the White Lotus Clan. Wooden steps lead
+up to a walkway. To the south you can hear the shouts of fighting.
+~
+Sector city~
+Exit north 7716
+EKeyvnum -1
+EKeywords stairway~
+EDesc You see a polished wooden stairway.
+~
+Exit south 7727
+EKeyvnum -1
+EKeywords yard~
+EDesc You see the practice yard.
+~
+End
+
+
+#7727
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the north you see a stone path that winds through a beautiful rock garden
+and up to the temple.
+~
+Sector city~
+Exit north 7726
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit east 7728
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7734
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7728
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the north and east, large stone buddhas look down apon you.
+~
+Sector city~
+Exit south 7729
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7727
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7729
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the east is a bamboo bridge.
+~
+Sector city~
+Exit east 7743
+EKeyvnum -1
+EKeywords bridge~
+EDesc You see a bamboo bridge.
+~
+Exit south 7730
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7735
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7730
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the south and east of you is a dense bamboo forest.
+~
+Sector city~
+Exit north 7729
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7731
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7731
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the south of you is a dense bamboo forest.
+~
+Sector city~
+Exit north 7735
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit east 7730
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7732
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7732
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the south and west of you is a dense bamboo forest.
+~
+Sector city~
+Exit north 7733
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit east 7731
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7733
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+~
+Sector city~
+Exit north 7734
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit east 7735
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7736
+EKeyvnum -1
+EKeywords bridge~
+EDesc You see a bamboo bridge.
+~
+End
+
+
+#7734
+Name Practice Yard~
+Desc You stand in the practice yard of the temple. Various students are here
+practicing their kung fu. This is basically a large cement yard. Several
+higher monks are walking about the practice area correcting the students.
+To the north and west of you is a beautiful pond and stream.
+~
+Sector city~
+Exit east 7727
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit south 7733
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7735
+Name Practice Yard~
+Desc This is the very center of a large cement practice yard. This is where the
+students of the temple come to learn kung fu. On the ground here is a large 
+white lotus engraved into the cement.
+~
+Sector city~
+Exit north 7727
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit east 7729
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit south 7731
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+Exit west 7733
+EKeyvnum -1
+EKeywords yard~
+EDesc You see more of the practice yard.
+~
+End
+
+
+#7736
+Name Bamboo Bridge~
+Desc This is a small bamboo bridge that cross a gurgling stream from the pond
+to the north. To the east you can hear the sounds of instructors yelling at
+the students. To the west are the training grounds of the temple.
+~
+Sector city~
+Exit east 7733
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a large cement yard.
+~
+Exit west 7737
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7737
+Name Training yard~
+Desc This area of the temple is filled with what look like small ponds. It is
+rumored that these 1000 ponds were made to represent the 1000 lakes of a 
+mystical training grounds called Jyusenkyo. large bamboo poles are stuck in 
+the middle of the ponds. Many students are training their combat skills and 
+concentration.
+~
+Sector city~
+Exit north 7738
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit east 7736
+EKeyvnum -1
+EKeywords bridge~
+EDesc You see a bamboo bridge.
+~
+Exit south 7742
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit west 7740
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7738
+Name Training yard~
+Desc This area of the temple is filled with what look like small ponds. It is
+rumored that these 1000 ponds were made to represent the 1000 lakes of a 
+mystical training grounds called Jyusenkyo. large bamboo poles are stuck 
+in the middle of the ponds. Many students are training their combat skills 
+and concentration. To the north and east of you is a large pond with a 
+stream that runs under a bridge to the southeast.
+~
+Sector city~
+Exit south 7737
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit west 7739
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7739
+Name Training yard~
+Desc This area of the temple is filled with what look like small ponds. 
+It is rumored that these 1000 ponds were made to represent the 1000 lakes
+of a mystical training grounds called Jyusenkyo. large bamboo poles are stuck 
+in the middle of the ponds. Many students are training their combat skills and 
+concentration. To the north and west of you is the edge of the mountain top. 
+The sharp steep side of the mountain disappears into the mists and forest 
+below.
+~
+Sector city~
+Exit east 7738
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit south 7740
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7740
+Name Training yard~
+Desc This area of the temple is filled with what look like small ponds. It is
+rumored that these 1000 ponds were made to represent the 1000 lakes
+of a mystical training grounds called Jyusenkyo. large bamboo poles
+are stuck in the middle of the ponds. Many students are training
+their combat skills and concentration. To the west of you is the edge of
+the mountain top. The sharp steep side of the mountain  disappears into the
+mists and forest below.
+~
+Sector city~
+Exit north 7739
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit east 7737
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit south 7741
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7741
+Name Training yard~
+Desc This area of the temple is filled with what look like small ponds. It is
+rumored that these 1000 ponds were made to represent the 1000 lakes
+of a mystical training grounds called Jyusenkyo. large bamboo poles
+are stuck in the middle of the ponds. Many students are training
+their combat skills and concentration. To the west and south of you is the
+edge of the mountain top. The sharp steep side of the mountain  disappears
+into the mists and forest below.
+~
+Sector city~
+Exit north 7740
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit east 7742
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7742
+Name Training yard~
+Desc This area of the temple is filled with what look like small ponds. It is
+rumored that these 1000 ponds were made to represent the 1000 lakes
+of a mystical training grounds called Jyusenkyo. large bamboo poles
+are stuck in the middle of the ponds. Many students are training
+their combat skills and concentration. To the south of you is the edge of the
+mountain top. The sharp steep side of the mountain  disappears into the
+mists and forest below.
+~
+Sector city~
+Exit north 7737
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+Exit west 7741
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a whole lot of small ponds with bamboo poles.
+~
+End
+
+
+#7743
+Name Bamboo Bridge~
+Desc This is a small bamboo bridge that cross a gurgling stream from the pond
+to the north. To the west you can hear the sounds of instructors yelling at
+the students. To the east is the arena of the temple.
+~
+Sector city~
+Exit east 7744
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7729
+EKeyvnum -1
+EKeywords yard~
+EDesc You see a large cement yard.
+~
+End
+
+
+#7744
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+~
+Sector city~
+Exit north 7745
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit east 7752
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit south 7751
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7743
+EKeyvnum -1
+EKeywords bridge~
+EDesc You see a bamboo bridge.
+~
+End
+
+
+#7745
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the north and west of you are large stone buddhas.
+~
+Sector city~
+Exit east 7746
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit south 7744
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7746
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the north of you the bamboo forest becomes too dense to allow
+passage.
+~
+Sector city~
+Exit east 7747
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit south 7752
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7745
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7747
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the north and east of you the bamboo forest becomes too dense to allow
+passage.
+~
+Sector city~
+Exit south 7748
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7746
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7748
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the east of you is the steep edge of the mountain. Far below you can
+see nothing but mists and forest.
+~
+Sector city~
+Exit north 7747
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit south 7749
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7752
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7749
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the south and east of you is the steep edge of the mountain. Far below
+you can see nothing but mists and forest.
+~
+Sector city~
+Exit north 7748
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7750
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7750
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the south of you is the steep edge of the mountain. Far below you can
+see nothing but mists and forest.
+~
+Sector city~
+Exit north 7752
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit east 7749
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7751
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7751
+Name Arena~
+Desc You are in the arena area of the temple. Here the temple monks come to
+practice their skill against others. The entire arena is a bamboo forest.
+Once in a while a master is known to visit this area to test the students.
+To the south of you is the steep edge of the mountain. Far below you can
+see nothing but mists and forest. To the west the bamboo forest becomes
+too dense to allow passage.
+~
+Sector city~
+Exit north 7744
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit east 7750
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7752
+Name Arena~
+Desc You stand in the center of the arena. All around you are the green poles of
+the bamboo forest. Every once in a while you catch a glimpse of a couple
+of monks fighting, and then they vanish into the bamboo.
+~
+Sector city~
+Exit north 7746
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit east 7748
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit south 7750
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+Exit west 7744
+EKeyvnum -1
+EKeywords forest~
+EDesc You see a bamboo forest.
+~
+End
+
+
+#7753
+Name Stone Path~
+Desc This is a small stone path that leads to the temple garden. It seems to wind
+around to the south and then back north as it disappears in to some very
+dense vegetation. To the west of you are the wooden steps that lead up to
+the temple.
+~
+Sector city~
+Exit south 7754
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit west 7721
+EKeyvnum -1
+EKeywords steps~
+EDesc You see some wooden steps.
+~
+End
+
+
+#7754
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. It continues south
+and then winds back to the north before it disappears in to the thick garden
+area. The path is named after the famous Mantis style of the gardener
+Xiang Fung.
+~
+Sector city~
+Exit north 7753
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit south 7755
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7755
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. It continues east
+and then winds back to the north before it disappears in to the thick garden
+area. Xiang Fung was once a the peaceful gardener of the temple. He was
+well known for his skill in the Mantis style of kung fu.
+~
+Sector city~
+Exit north 7754
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit east 7756
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7756
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. The path continues
+to the north and west. To the north you can see the beautiful gardens of
+Xiang Fung.
+~
+Sector city~
+Exit north 7757
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit west 7755
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7757
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. The path continues
+to the north and south. To the north you can see the beautiful gardens of
+Xiang Fung.
+~
+Sector city~
+Exit north 7758
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit south 7756
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7758
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. This is the
+beginning of the gardens of Xiang Fung. He spent many hours here
+tending to every flower and shrub. The garden here is so dense that
+it blocks out the sky. Rays of light break through the canopy and
+light the pathway. The path continues to the north.
+~
+Sector city~
+Exit north 7759
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit south 7757
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7759
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. The garden here
+is so dense that it blocks out the sky. Rays of light break through the
+canopy and light the pathway. Something seems to be wrong here. The
+flowers seem to be wilted and and shrubs dying. From the outside this
+would appear to be a beautiful paradise of a garden. From the inside it
+is seems to be dying. Almost as if the very heart of the garden were
+poisoned. The path continues to the west.
+~
+Sector city~
+Exit south 7758
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit west 7760
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7760
+Name Path of the Mantis~
+Desc This is a small stone path that leads to the temple garden. The garden here
+is so dense that it blocks out the sky. Rays of light break through the
+canopy and light the pathway. All of the flowers and other plants are dead.
+The smell of rotting vegetation and decay assaults your sense of smell.
+This is definitely not the beautiful gardens that Xiang Fung once labored
+so hard apon. Something new has taken over.
+The path continues to the north and east.
+~
+Sector city~
+Exit north 7761
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+Exit east 7759
+EKeyvnum -1
+EKeywords path~
+EDesc You see a stone path.
+~
+End
+
+
+#7761
+Name Garden of the 5 Deadly Venoms~
+Desc As you enter this part of the garden you see a large clan symbol burned
+into the ground. You recognize it as the symbol of the Poison clan. There
+have been rumors that recently some of the poison clan has taken up
+residence at the Temple. Now you know what has been killing the beautiful
+gardens. A path leads to the north and to the east.
+~
+Sector city~
+Exit north 7787
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7762
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7762
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path. The
+garden is a deadly quiet. The birds no longer sing, and the crickets no
+longer chirp. This is definitely not the same garden that Xiang Fung left
+so long ago.
+A path leads to the north and to the west.
+~
+Sector city~
+Exit north 7763
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7761
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7763
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path. The
+garden is a deadly quiet. The birds no longer sing, and the crickets no
+longer chirp. This is definitely not the same garden that Xiang Fung left so
+long ago. A gently breeze stirs the dry brown leaves that cover the soft dirt
+beneath you. A path leads to the north and to the south.
+~
+Sector city~
+Exit north 7764
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7762
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7764
+Name Garden Path~
+Desc You come apon a split in the path. Many dead rosebushes almost obscure
+the western path. The putrid smell of rotting vegetation turns your
+stomach. A path leads to the north and to the south.
+~
+Sector city~
+Exit north 7767
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7763
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7765
+EKeyvnum -1
+EKeywords path~
+EDesc You see an obscure path.
+~
+End
+
+
+#7765
+Name Garden Path~
+Desc This is an obcure path, almost hidden by death rosebushes. The canopy
+seems to be more dense here and the light barely seeps through the
+intertwined branches overhead. A path leads to the north and to the east.
+~
+Sector city~
+Exit north 7766
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7764
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7766
+Name Training Room of the Snake~
+Desc This room is filled with many different training devices. The stone walls
+are richly decorated with silver silk curtains and large silver statues
+of a coiled snake. Hung Wei Tung is the second pupil of the poison clan,
+and expert of the snake technique. Hung Wei Tung was brought up by a
+wealthy family and joined the Poison Clan just to learn a specialized Kung
+Fu. He has come to the garden to practice his techniques and as a guest to
+the White Lotus Chief. The only exit is to the south.
+~
+Sector city~
+Exit south 7765
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7767
+Name Garden Path~
+Desc The vegetation here is a little better than that you have seen previously.
+It is still far from the beauty that Xiang Fung brought to the garden.
+Around you stand large green bamboo stalks, and rich beds of flowers.
+The path continues to the north and south.
+~
+Sector city~
+Exit north 7768
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7764
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7768
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path.
+The path continues to the west and south.
+~
+Sector city~
+Exit south 7767
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7769
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7769
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path.
+The path continues to the north and east.
+~
+Sector city~
+Exit north 7770
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7768
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7770
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path.
+~
+Sector city~
+Exit east 7771
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7769
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7772
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7771
+Name Training Room of the Lizard~
+Desc You stand amidst a room filled with all sorts of walls. Many walls of stone,
+wood, and various other materials are propped up around the room. This is the 
+training room of the Yeun Sun Ho, the fourth pupil of the Poison Clan. Yeun 
+Sun Ho is the captain of the police in a distant village and has come to the 
+garden at the request of the White Lotus Chief. The only exit is to the west.
+~
+Sector city~
+Exit west 7770
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7772
+Name Garden Path~
+Desc You are on the north end of the garden path. Through the thick brush to the
+north you see the sharp cliff of the mountain.
+The path continues to the east and west.
+~
+Sector city~
+Exit east 7770
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7773
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7773
+Name Training Room of the Scorpion~
+Desc This room is filled with large poles and other training devices. Here Ma
+Tang comes to train. Ma Tang is the third pupil of the Poison Clan and expert 
+of the Scorpion technique. The path continues to the east, south and west.
+~
+Sector city~
+Exit east 7772
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7776
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7774
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7774
+Name Training Room of the Toad~
+Desc This large stone room is filled with beds of nails and sharp poles. Large
+thick sheets of metal hang about the room. This is the training room of
+Lee Ho, expert of the Toad technique and fifth pupil of the Poison Clan.
+The path continues to the east and south.
+~
+Sector city~
+Exit east 7773
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7775
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7775
+Name Training Room of the Centipede~
+Desc This room is almost devoid of any furniture or equipment. As you look up
+to the ceiling you notice many objects that look as though they can be
+dropped hanging over you. This the training room of the first pupil of
+the Poison Clan, Tang Seung Qwe.
+The path continues to the east and north.
+~
+Sector city~
+Exit north 7774
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7776
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7776
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path.
+The path continues to the north, east and west.
+~
+Sector city~
+Exit north 7773
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7777
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7775
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7777
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Xiang Fung would be deeply saddened at the state of his garden if he knew.
+The path continues to the south and west.
+~
+Sector city~
+Exit south 7778
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7776
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7778
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Multicolored dragonflies and other exotic insects buzz by you.
+The path continues to the north and west.
+~
+Sector city~
+Exit north 7777
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7779
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7779
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+The path continues to the east and west.
+~
+Sector city~
+Exit east 7778
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7780
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7780
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+The garden becomes to dense to pass to the west. The path continues to the 
+south and east.
+~
+Sector city~
+Exit east 7779
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7781
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7781
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+The path continues to the south and north.
+~
+Sector city~
+Exit north 7780
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7782
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7782
+Name Garden Path~
+Desc This small path winds across a shallow pond. White lotus leaves float
+gently on the suface of the water. Dead branches and murky water
+contaminate the once pristine scene. The path continues to the north and east.
+~
+Sector city~
+Exit north 7781
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7783
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7783
+Name Garden Path~
+Desc This small path winds across a shallow pond. White lotus leaves float
+gently on the suface of the water. Here in the center of the pond the
+water seems to be cleaner as if out of reach of the encroaching poison.
+The path continues to the north and west.
+~
+Sector city~
+Exit north 7784
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7782
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7784
+Name Garden Path~
+Desc This small path winds across a shallow pond. White lotus leaves float
+gently on the suface of the water. Here in the center of the pond the
+water seems to be cleaner as if out of reach of the encroaching poison.
+The path continues to the east and south.
+~
+Sector city~
+Exit east 7785
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit south 7783
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7785
+Name Garden Path~
+Desc This small path winds across a shallow pond. White lotus leaves float gently 
+on the suface of the water. The water is murky and dark as if a poison of 
+some sort has contaminated it. The path continues to the west and south.
+~
+Sector city~
+Exit south 7786
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7784
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7786
+Name Garden Path~
+Desc This is a small garden path. Decaying plants and dry brush clutters lay
+across the path. What once used to be Xiang Fungs paradise, is now nothing 
+but overgrown weeds and dead plants. The path continues to the north and east.
+~
+Sector city~
+Exit north 7785
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit east 7787
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7787
+Name Garden Path~
+Desc You walk on a small dirt path that winds through the now decaying garden.
+Every couple of feet a dead branch or shrubbery blocks the path. The
+garden is a deadly quiet. The birds no longer sing, and the crickets no
+longer chirp. This is definitely not the same garden that Xiang Fung left
+so long ago. The path continues to the west and south.
+~
+Sector city~
+Exit south 7761
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+Exit west 7786
+EKeyvnum -1
+EKeywords path~
+EDesc You see a dirt path.
+~
+End
+
+
+#7788
+Name Wooden Hall~
+Desc This is a long wooden hallway covered with the emblems of the White
+Lotus Clan. The smooth wooden floors are well polished and the sounds
+of conversation can be heard farther down the hall. The wooden walkway
+around the temple lies to the south. Prison cells lie to either side of you.
+The hall continues to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7791
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hallway.
+~
+Exit east 7789
+EFlags door closed locked~
+EKeyvnum 7793
+EKeywords cell bars~
+EDesc You see a prison cell.
+~
+Exit south 7709
+EKeyvnum -1
+EKeywords walkway~
+EDesc You see wooden walkway.
+~
+Exit west 7790
+EFlags door closed locked~
+EKeyvnum 7793
+EKeywords cell bars~
+EDesc You see a prison cell bars.
+~
+End
+
+
+#7789
+Name Prison Cell~
+Desc This is one of the cells used for detaining prisoners of the Clan. It is
+surprisingly clean for a prison cell. The cell is pretty much bare except for
+a small bench against the far wall. The only exit is to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 7788
+EFlags door closed locked~
+EKeyvnum 7793
+EKeywords cell bars~
+EDesc You see a prison cell.
+~
+End
+
+
+#7790
+Name Prison Cell~
+Desc This is one of the cells used for detaining prisoners of the Clan. It is
+surprisingly clean for a prison cell. The cell is pretty much bare except for
+a small bench against the far wall. The only exit is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7788
+EFlags door closed locked~
+EKeyvnum 7793
+EKeywords cell bars~
+EDesc You see a prison cell bars.
+~
+End
+
+
+#7791
+Name Wooden Hall~
+Desc This is a long wooden hallway covered with the emblems of the White Lotos 
+Clan. The smooth wooden floors are well polished and the sounds of conversation
+can be heard farther down the hall. The hall continues to the north and south. 
+A prison cell lies to the west. A large noisy room lies to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7794
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+Exit east 7792
+EKeyvnum -1
+EKeywords room~
+EDesc You see large room.
+~
+Exit south 7788
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+Exit west 7793
+EFlags door closed locked~
+EKeyvnum 7793
+EKeywords cell bars~
+EDesc You see the bars of a prison cell.
+~
+End
+
+
+#7792
+Name Guard Room~
+Desc You stand in the main guard station of the Clan. This very large room is
+littered with various tables and chairs. The guards spend most of their time
+here either gambling or drinking. Very few people have the courage or the
+love of death to bother the White Lotus Clan. The only exit is to the hall 
+to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 7791
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hall.
+~
+End
+
+
+#7793
+Name Prison Cell~
+Desc This is one of the cells used for detaining prisoners of the Clan. It is
+surprisingly clean for a prison cell. The cell is pretty much bare except for
+a small bench against the far wall. The only exit is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7791
+EFlags door closed locked~
+EKeyvnum 7793
+EKeywords cell bars~
+EDesc You see a prison cell bars.
+~
+End
+
+
+#7794
+Name Wooden Hall~
+Desc This is a long wooden hallway covered with the emblems of the White
+Lotus Clan. The smooth wooden floors are well polished and the sounds
+of conversation can be heard from either direction down the hall. The hall
+splits here and a smaller hall leads off to the east.
+The hall continues to the north,east and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7801
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+Exit east 7796
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+Exit south 7791
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+Exit west 7795
+EKeyvnum -1
+EKeywords room~
+EDesc You see a large room with benchs and barrels..
+~
+End
+
+
+#7795
+Name Mess Hall~
+Desc This is the Kitchen and mess hall for the guard building. Many long tables
+and benches are lined up in this room. Very large barrels that are filled with
+steamed rice sit at the end of every table. The only exit is the hall to the 
+east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7794
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+End
+
+
+#7796
+Name Wooden Hall~
+Desc This is a smaller hallway that splits off from the large main one. Small lotus
+leaves are carved into the walls. The wooden floors are also well polished, but
+appear to be less travelled than that of the main hallway. The hall continues 
+to the east and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7797
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hall.
+~
+Exit west 7794
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+End
+
+
+#7797
+Name Wooden Hall~
+Desc This is a smaller hallway that splits off from the large main one. Small lotus
+leaves are carved into the walls. The wooden floors are also well polished,
+but appear to be less travelled than that of the main hallway. The hall 
+continues to the south and west. There is a room to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7798
+EKeyvnum -1
+EKeywords room~
+EDesc You see a room.
+~
+Exit south 7799
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hall.
+~
+Exit west 7796
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hall.
+~
+End
+
+
+#7798
+Name Armoury~
+Desc You stand in a room filled with many racks of weapons and armor. Most
+of the equipment is in good condition and all bear the symbol of the
+White Lotus Clan. The only exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7797
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hall.
+~
+End
+
+
+#7799
+Name Wooden Hall~
+Desc You are in a wooden hall. Your footsteps echo lightly on the well polish
+floor. Grand pictures of dragons and temples are carved into the walls.
+Further to the south you see a large wooden door with a dragon head
+carved into it. The hall continues to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7797
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hall.
+~
+Exit south 7800
+EFlags door closed~
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You see a large wooden door with a dragon head carved in it.
+~
+End
+
+
+#7800
+Name General's Office~
+Desc This is the office of General Chow, head of the militia at the temple.
+He normally sits in his office, drinks wine and laughs alot. Most
+people are smart enough not to cause trouble at the temple. His office
+is decorated with beautiful vases and pots full of fine chinese wine.
+A large wooden door is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7799
+EFlags door closed~
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You see a large wooden door with a dragon head carved in it.
+~
+End
+
+
+#7801
+Name Wooden Hall~
+Desc You are in a large wooden hall that runs north south. Here there are various
+stories of dragons, wars and temples carved into the polished wooden walls.
+To the north and to the west you hear loud sounds of voices. The hall 
+continues to the north and south. There are rooms to either side of you.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7804
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hallway.
+~
+Exit east 7802
+EKeyvnum -1
+EKeywords room~
+EDesc You see a room full of racks.
+~
+Exit south 7794
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hallway.
+~
+Exit west 7803
+EKeyvnum -1
+EKeywords room barracks~
+EDesc You see barracks.
+~
+End
+
+
+#7802
+Name Weapons Room~
+Desc This is a large room filled with weapons for the militia. Many different
+carvings depicting battles atop of the mountain at the temple of the White
+Lotus clan span the walls. The only exit is too the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 7801
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hallway.
+~
+End
+
+
+#7803
+Name Barracks~
+Desc These are the barrack for the temple guard. Many beds and tables fill the
+room. This is where the militia spends most of its time, since few people
+ever are stupid enough to attack the temple and anger the White Lotus
+Chief. The only exit is too the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7801
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hallway.
+~
+End
+
+
+#7804
+Name End of Long Wooden Hall~
+Desc This is the end of a long wooden hallway. As you look to the south you
+see the entrance far down the hall. To the east and west come sounds of
+conversation and gambling. The hall continues to the south.
+There are rooms to the east and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7805
+EKeyvnum -1
+EKeywords room~
+EDesc You see a room.
+~
+Exit south 7801
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a long wooden hall.
+~
+Exit west 7806
+EKeyvnum -1
+EKeywords room~
+EDesc You see a room.
+~
+End
+
+
+#7805
+Name Barracks~
+Desc These are the barrack for the temple guard. Many beds and tables fill the
+room. This is where the militia spends most of its time, since few people
+ever are stupid enough to attack the temple and anger the White Lotus
+Chief. The only exit is to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 7804
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hallway.
+~
+End
+
+
+#7806
+Name Barracks~
+Desc These are the barrack for the temple guard. Many beds and tables fill the
+room. This is where the militia spends most of its time, since few people
+ever are stupid enough to attack the temple and anger the White Lotus
+Chief. The only exit is too the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7804
+EKeyvnum -1
+EKeywords hall~
+EDesc You see a wooden hallway.
+~
+End
+
+
+#7807
+Name Inside the Temple Doors~
+Desc You stand in a grand hallway, decorated with many statues of Buddha.
+Golden dragons climb the wooden columns that reach up to the ceiling far 
+above. The large white lotus emblem is embedded into the black marble floor 
+of the hallway. A pair of red wood doors lie to the north. The red wood of 
+the doors are bound by black iron braces. Twin white and golden dragons adorn 
+the doors. Two halves of a white lotus come together as the door closes to 
+make the single white flower of the clan. The hall continues to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7706
+EFlags door closed~
+EKeyvnum -1
+EKeywords door doors red~
+EDesc You see the Temple doors.
+~
+Exit south 7808
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a large hallway.
+~
+End
+
+
+#7808
+Name Hall of the Dragon~
+Desc You stand in a grand hallway, decorated with many statues of Buddha.
+Golden dragons climb the wooden columns that reach up to the ceiling
+far above. To the west you can hear the sounds of chanting. The smell
+of incense fills the air. To the east is a stairway up and a dark hall.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7807
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a large hallway.
+~
+Exit east 7810
+EKeyvnum -1
+EKeywords hall hallway stairway stair stairs~
+EDesc You see a stairway up and a dark hall
+~
+Exit south 7809
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a large hallway.
+~
+Exit west 7816
+EKeyvnum -1
+EKeywords room smoke~
+EDesc You see a room full of incense smoke.
+~
+End
+
+
+#7809
+Name Inside the Temple Doors~
+Desc You stand in a grand hallway, decorated with many statues of Buddha.
+Golden dragons climb the wooden columns that reach up to the ceiling far 
+above. The large white lotus emblem is embedded into the black marble floor 
+of the hallway. A pair of red wood doors lie to the south. The red wood of 
+the doors are bound by black iron braces. Twin white and golden dragons adorn 
+the doors. Two halves of a white lotus come together as the door closes to 
+make the single white flower of the clan. The hall continues to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7808
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a large hallway.
+~
+Exit south 7716
+EFlags door closed~
+EKeyvnum -1
+EKeywords door doors red~
+EDesc You see the Temple doors.
+~
+End
+
+
+#7810
+Name Hall of the Dragon~
+Desc This is a very dark wooden hallway. Stairs lead up to the second floor from
+here. This hall is drastically different from that of the main hall. It has no
+carvings, no dragons, and basically has no decorations at all. the wooden
+paneled walls are adorn only with small candles. The hall continues to the 
+north. A stairway here leads up to the second floor. The main hall is to the 
+west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7811
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit west 7808
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit up 7822
+EKeyvnum -1
+EKeywords stairs wooden~
+EDesc You see a flight of wooden stairs.
+~
+End
+
+
+#7811
+Name Hall of the Dragon~
+Desc This is a very dark wooden hallway. This hall is drastically different from
+that of the main hall. It has no carvings, no dragons, and basically has no
+decorations at all. the wooden paneled walls are adorn only with small candles.
+The hall continues to the east and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7812
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit south 7810
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+End
+
+
+#7812
+Name Hall of the Dragon~
+Desc This is a very dark wooden hallway. This hall is drastically different from
+that of the main hall. It has no carvings, no dragons, and basically has no
+decorations at all. the wooden paneled walls are adorn only with small candles.
+The hall continues to the south and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7813
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit west 7811
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+End
+
+
+#7813
+Name Hall of the Dragon~
+Desc This is a very dark wooden hallway. This hall is drastically different from
+that of the main hall. It has no carvings, no dragons, and basically has no
+decorations at all. the wooden paneled walls are adorn only with small candles.
+The hall continues to the north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7812
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit south 7814
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+End
+
+
+#7814
+Name Hall of the Dragon~
+Desc This is a very dark wooden hallway. This hall is drastically different from
+that of the main hall. It has no carvings, no dragons, and basically has no
+decorations at all. the wooden paneled walls are adorn only with small candles.
+The hall continues to the north and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7813
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit west 7815
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+End
+
+
+#7815
+Name Hall of the Dragon~
+Desc This is a very dark wooden hallway. This hall is drastically different from
+that of the main hall. It has no carvings, no dragons, and basically has no
+decorations at all. the wooden paneled walls are adorn only with small candles.
+You see here a large wooden arch. The arch is covered with different chinese
+characters depicting the 36 basic styles of the clan. The hall continues to 
+the east. You see a large stone steps that lead down into the darkness.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7814
+EKeyvnum -1
+EKeywords hall hallway~
+EDesc You see a hallway.
+~
+Exit down 7837
+EKeyvnum -1
+EKeywords steps darkeness~
+EDesc You see stone steps leading down in to the darkness.
+~
+End
+
+
+#7816
+Name Temple~
+Desc The temple is filled with incense smoke and the resonant sounds of many
+monks chanting. The chanting seems to almost have a life of its own as it
+can be felt even through the hard granite below you. There are red candles
+and incense burners along the wall and on small pedestals around the room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7821
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit east 7808
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit south 7817
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit west 7819
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+End
+
+
+#7817
+Name Southern end of the Temple~
+Desc Around you are many monks chanting and praying. Tall wooden pillars
+disappear in the haze above you. The constant and monotonous tapping of
+a some wooden object rattles your brain and seems to be almost hypnotizing.
+The temple is filled with incense smoke and the resonant sounds of many
+monks chanting. The chanting seems to almost have a life of its own as it
+can be felt even through the hard granite below you. There are red candles
+and incense burners along the wall and on small pedestals around the room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7816
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit west 7818
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+End
+
+
+#7818
+Name Golden Buddha of Contentment~
+Desc Before you stands a giant golden statue of a buddha. This is the Buddha
+of Contentment. Many red candles surround the statue's base and all around
+the floor. Many offerings of oranges and rice cakes sit in front of the statue.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7819
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit east 7817
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+End
+
+
+#7819
+Name Golden Buddha of Wisdom~
+Desc Before you stands a giant golden statue of a buddha. This is the Buddha
+of Wisdom. Many monks come here to pray for enlightenment to a problem
+or a decision. Many red candles surround the statue's base and all around
+the floor. Many offerings of oranges and rice cakes sit in front of the statue.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7820
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit east 7816
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit south 7818
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+End
+
+
+#7820
+Name Golden Buddha of Enlightenment~
+Desc Before you stands a giant golden statue of a buddha. This is the Buddha
+of Wisdom. The chanting here seems to be the loudest. The constant
+sounding of a gold and the tapping of a hollow wooden ball drowned
+out any other sound that you might hear. The monks chanting is rythmic
+and a deep monotone buzz. Any individual voice almost undistinguishable
+from the others.Many red candles surround the statue's base and all around
+the floor. Many offerings of oranges and rice cakes sit in front of the statue.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7821
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit south 7819
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+End
+
+
+#7821
+Name Northern end of the Temple~
+Desc Around you are many monks chanting and praying. Tall wooden pillars
+disappear in the haze above you. The constant and monotonous tapping of
+a some wooden object rattles your brain and seems to be almost hypnotizing.
+The temple is filled with incense smoke and the resonant sounds of many
+monks chanting. The chanting seems to almost have a life of its own as it
+can be felt even through the hard granite below you. There are red candles
+and incense burners along the wall and on small pedestals around the room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7816
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+Exit west 7820
+EKeyvnum -1
+EDesc You can't see much through the haze of incense smoke.
+~
+End
+
+
+#7822
+Name Top of the Stairs~
+Desc You stand at the top of a flight of wooden stairs. Loud chanting and murmurs
+can be heard from downstairs. These halls seem to be more lavishly furnished
+than the ones below. The walls are covered with gold and silver dragons and
+small tables with ancient vases line the hall. There is a stairway that 
+descends to the temple below. The hall leads off to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7823
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit down 7810
+EKeyvnum -1
+EDesc You see a wooden stairway descending to the temple below.
+~
+End
+
+
+#7823
+Name 2nd floor hallway~
+Desc You are in a lavishly furnish hallway. The walls are covered with gold and
+silver dragons and small tables with ancient vases line the hall. Brightly 
+color red lanterns hang from the ceiling, flickering gently as the candles 
+inside of them burn slowly away. The hall continues to the north and west.
+To the west you can see a wooden stairway leading down.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7824
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit west 7822
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7824
+Name 2nd floor hallway~
+Desc You are in a lavishly furnish hallway. The walls are covered with gold and
+silver dragons and small tables with ancient vases line the hall. Brightly 
+color red lanterns hang from the ceiling, flickering gently as the candles 
+inside of them burn slowly away. The hall continues to the north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7825
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit south 7823
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7825
+Name 2nd floor hallway~
+Desc You are in a lavishly furnish hallway. The walls are covered with gold and
+silver dragons and small tables with ancient vases line the hall. Brightly 
+color red lanterns hang from the ceiling, flickering gently as the candles 
+inside of them burn slowly away. The hall continues to the west and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7824
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit west 7826
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7826
+Name 2nd floor hallway~
+Desc You are in a lavishly furnish hallway. The walls are covered with gold and
+silver dragons and small tables with ancient vases line the hall. Brightly 
+color red lanterns hang from the ceiling, flickering gently as the candles 
+inside of them burn slowly away. The hall continues to the east and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7825
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit south 7827
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7827
+Name 2nd floor hallway~
+Desc You are in a lavishly furnish hallway. The walls are covered with gold and
+silver dragons and small tables with ancient vases line the hall. Brightly 
+color red lanterns hang from the ceiling, flickering gently as the candles 
+inside of them burn slowly away. The hall continues to the north and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7826
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit west 7828
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7828
+Name Rooms of the White Lotus Chief~
+Desc These are the rooms of the White Lotus Chief. He is often meditating or
+reading. He does not like to be disturbed. This room is furnished with
+the occasional chair or table. Although not poor looking, it isn't furnished
+with much. It is basically an entry for the other rooms. The hall continues 
+to the east. There are rooms to the north, south and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7830
+EKeyvnum -1
+EDesc You see a  guest room.
+~
+Exit east 7827
+EKeyvnum -1
+EDesc You see a hallway.
+~
+Exit south 7829
+EKeyvnum -1
+EDesc You see a guest room.
+~
+Exit west 7831
+EKeyvnum -1
+EDesc You see the meditation room of the White Lotus Chief.
+~
+End
+
+
+#7829
+Name Guest Room~
+Desc This is where the personal guests of the White Lotus Chief stay. The room
+is nicely done, with bamboo walls and a wooden floor. A luxurious bed with 
+silk sheets and pillows stands against the far wall. The only exit is to the 
+north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7828
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7830
+Name Room of Wei Chin~
+Desc This is the room of Wei Chin, the nephew of the White Lotus Chief. He is 
+here to serve his uncle and practice his kung fu. His room looks very much 
+unlived in. Wei Chin is usually out traveling and looking over the towns that 
+the Lotus clan controls. The only exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7828
+EKeyvnum -1
+EDesc You see a hallway.
+~
+End
+
+
+#7831
+Name Meditation Chamber~
+Desc This room is filled with long scrolls that hang on the walls. The scrolls
+recite many teachings of Buddha. Small incense burners sit in each corner
+of the room. A small knee high table stands in the middle of the room. The
+White Lotus Chief often comes here to pray and meditate. Except for the
+the day of the Dragon Boat festival, on that day he relaxes and spends his
+day in the steaming pool. There are exits in all directions.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7834
+EKeyvnum -1
+EDesc You see a shrine in the room to the north.
+~
+Exit east 7828
+EKeyvnum -1
+EDesc You see the entrance chamber.
+~
+Exit south 7832
+EKeyvnum -1
+EDesc You see a room full of books.
+~
+Exit west 7836
+EKeyvnum -1
+EDesc You see a room.
+~
+End
+
+
+#7832
+Name Library~
+Desc You stand amidst many rows of shelves. The shelves tower above you and
+are full of texts from many different areas of the world. The only exit 
+is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7831
+EKeyvnum -1
+EDesc You see a shrine in the room to the north.
+~
+Exit west 7833
+EFlags door closed~
+EKeyvnum -1
+EKeywords bookcase~
+End
+
+
+#7833
+Name Hidden Room~
+Desc This is a secret room hidden behind one of the bookshelfs. This is where
+many special books and scrolls are kept.the room is lit by a dim lightsource
+that is out of sight up above. The only exit is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7832
+EFlags door closed~
+EKeyvnum -1
+EKeywords bookcase~
+End
+
+
+#7834
+Name Shrine~
+Desc This is the private shrine of the White Lotus Chief. He spends many hours
+every day here praying and studying. The room is pretty much bare with
+the exception of a large shrine, decorated with golden buddhas and many
+offerings. There are exits to the south and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7831
+EKeyvnum -1
+Exit west 7835
+EKeyvnum -1
+End
+
+
+#7835
+Name Steaming Pool~
+Desc This is a very large steaming pool. The White Lotus Chief comes here
+during dragon boat festival to relax. Numerous stone dragon heads spit
+steaming streams into the pool. There are exits to the south and east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7834
+EKeyvnum -1
+Exit south 7836
+EKeyvnum -1
+End
+
+
+#7836
+Name Chamber of the White Lotus Chief~
+Desc This is the lavishly furnished bedroom of the White Lotus Chief. The few
+hours of the day that he is not meditating nor studying, he is here sleeping.
+Many ancient and beautiful vases adorn the corners of the room.
+There are exits to the north and east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7835
+EKeyvnum -1
+Exit east 7831
+EFlags door~
+EKeyvnum -1
+End
+
+
+#7837
+Name Entrance to the 36 Chambers~
+Desc This cold stone room is complete bare except for a door on the east wall.
+This is the entrance to the 36 Chambers of the White Lotus. It is here that
+the higher monks and students come to test their skills. The stairway seems
+to have disappeared behind you. The only exit is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7838
+EFlags door closed locked pickproof~
+EKeyvnum 7725
+End
+
+
+#7838
+Name 1st Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the first chamber. It is a basic skill chamber where students test thier
+skill at punches. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7839
+EFlags door closed locked pickproof~
+EKeyvnum 7726
+End
+
+
+#7839
+Name 2nd Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the second chamber. It is a basic skill chamber where students test their
+skill at kicks. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7840
+EFlags door closed locked pickproof~
+EKeyvnum 7727
+End
+
+
+#7840
+Name 3rd Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This 
+is the chamber of the Whirlwind Kick technique. It is a a more difficult
+chamber than the two previous ones. From here on, your skills are tested
+against the masters of the temple. And to lose from this chamber on..is to 
+lose ones life... The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7841
+EFlags door closed locked pickproof~
+EKeyvnum 7728
+End
+
+
+#7841
+Name 4th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Chin Kang Palm technique. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7842
+EFlags door closed locked pickproof~
+EKeyvnum 7730
+End
+
+
+#7842
+Name 5th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Lizard style. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7843
+EFlags door closed locked pickproof~
+EKeyvnum 7732
+End
+
+
+#7843
+Name 6th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the south wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Northern Crane style. The only exit is to the south.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit south 7844
+EFlags door closed locked pickproof~
+EKeyvnum 7734
+End
+
+
+#7844
+Name 7th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Dragon style. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7845
+EFlags door closed locked pickproof~
+EKeyvnum 7736
+End
+
+
+#7845
+Name 8th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Tiger style. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7846
+EFlags door closed locked pickproof~
+EKeyvnum 7738
+End
+
+
+#7846
+Name 9th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Scorpion style. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7847
+EFlags door closed locked pickproof~
+EKeyvnum 7740
+End
+
+
+#7847
+Name 10th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Snake style. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7848
+EFlags door closed locked pickproof~
+EKeyvnum 7742
+End
+
+
+#7848
+Name 11th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Centipede style. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7849
+EFlags door closed locked pickproof~
+EKeyvnum 7743
+End
+
+
+#7849
+Name 12th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the south wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Toad style. The only exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7850
+EFlags door closed locked pickproof~
+EKeyvnum 7745
+End
+
+
+#7850
+Name 13th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Iron Monk style. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7851
+EFlags door closed locked pickproof~
+EKeyvnum 7747
+End
+
+
+#7851
+Name 14th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Iron head technique. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7852
+EFlags door closed locked pickproof~
+EKeyvnum 7749
+End
+
+
+#7852
+Name 15th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Southern Hawk style. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7853
+EFlags door closed locked pickproof~
+EKeyvnum 7751
+End
+
+
+#7853
+Name 16th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Quivering Palm technique. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7854
+EFlags door closed locked pickproof~
+EKeyvnum 7753
+End
+
+
+#7854
+Name 17th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Five Pace Palm style. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7855
+EFlags door closed locked pickproof~
+EKeyvnum 7755
+End
+
+
+#7855
+Name 18th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the south wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Chamber of mediation. This room is a room to rest
+and consider what you have accomplished. You are half way to the end
+of the chambers. No one has ever completed all 36 chambers.....
+The only exit is to the south.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit south 7856
+EFlags door closed locked pickproof~
+EKeyvnum 7787
+End
+
+
+#7856
+Name 19th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Weightless Boxing Style. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7857
+EFlags door closed locked pickproof~
+EKeyvnum 7757
+End
+
+
+#7857
+Name 20th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Lightning Punch. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7858
+EFlags door closed locked pickproof~
+EKeyvnum 7758
+End
+
+
+#7858
+Name 21st Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Poison touch. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7859
+EFlags door closed locked pickproof~
+EKeyvnum 7759
+End
+
+
+#7859
+Name 22nd Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Shaolin Long Sword. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7860
+EFlags door closed locked pickproof~
+EKeyvnum 7761
+End
+
+
+#7860
+Name 23rd Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Shaolin Butterfly Swords. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7861
+EFlags door closed locked pickproof~
+EKeyvnum 7763
+End
+
+
+#7861
+Name 24th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the south wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Shaolin Long Spear. The only exit is to the south.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit south 7862
+EFlags door closed locked pickproof~
+EKeyvnum 7767
+End
+
+
+#7862
+Name 25th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Deadly Palm technique. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7863
+EFlags door closed locked pickproof~
+EKeyvnum 7769
+End
+
+
+#7863
+Name 26th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Flying Buddha. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7864
+EFlags door closed locked pickproof~
+EKeyvnum 7771
+End
+
+
+#7864
+Name 27th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the Angry Buddha. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7865
+EFlags door closed locked pickproof~
+EKeyvnum 7773
+End
+
+
+#7865
+Name 28th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the 1st Master. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7866
+EFlags door closed locked pickproof~
+EKeyvnum 7775
+End
+
+
+#7866
+Name 29th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the east wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the 2nd Master. The only exit is to the east.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit east 7867
+EFlags door closed locked pickproof~
+EKeyvnum 7777
+End
+
+
+#7867
+Name 30th Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the south wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the 3rd Master. The only exit is to the south.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit south 7868
+EFlags door closed locked pickproof~
+EKeyvnum 7778
+End
+
+
+#7868
+Name 31st Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the 4th Master. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7869
+EFlags door closed locked pickproof~
+EKeyvnum 7779
+End
+
+
+#7869
+Name 32nd Chamber of the White Lotus~
+Desc This cold stone room is complete bare except for a door on the west wall.
+It is here that the higher monks and students come to test their skills. This
+is the chamber of the 5th Master. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7870
+EFlags door closed locked pickproof~
+EKeyvnum 7780
+End
+
+
+#7870
+Name 33rd Chamber of the White Lotus~
+Desc This is the chamber of the Abbot of the White Lotus Clan. If you have reached
+this room you are indeed an excellent fighter.  The Abbot comes here 
+periodically when there is a student that is proficient enought with their 
+skills. The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7871
+EFlags door closed locked pickproof~
+EKeyvnum 7781
+End
+
+
+#7871
+Name 34th Chamber of the White Lotus~
+Desc You are indeed and expert! This is the 34th Chamber of the White Lotus
+Clan. Very few people have the stamina or skill to make it here.
+The Grand Abbot of the the Temple awaits you. He is here as the last
+test of your skills before you move on to the 36th Chamber.
+The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7872
+EFlags door closed locked pickproof~
+EKeyvnum 7782
+End
+
+
+#7872
+Name 35th Chamber of the White Lotus~
+Desc This is a room of meditation and rest. You may drink deeply from the fountain
+and eat to fill your body. Ahead is the 36th chamber. From there you will have
+graduated from the Temple and sent out to explore the lands. Know well that
+the last chamber will truely test your skills and stamina. Focus your mind, and
+rest your body......and may you be enlightened....
+The only exit is to the west.
+~
+RoomFlags indoors private~
+Sector inside~
+Exit west 7873
+EFlags door closed locked pickproof~
+EKeyvnum 7783
+End
+
+
+#7873
+Name 36th Chamber of the White Lotus~
+Desc This is the 36th Chamber of the White Lotus Clan. It is the ultimate test of
+one's abilities. If you survive you will surely be blessed by Buddha...
+~
+RoomFlags no_mob indoors private~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 7701 spec_janitor
+M 7702 spec_cast_cleric
+M 7717 spec_poison
+M 7718 spec_poison
+M 7719 spec_poison
+M 7720 spec_poison
+M 7721 spec_poison
+M 7727 spec_cast_cleric
+M 7728 spec_cast_mage
+M 7729 spec_breath_acid
+M 7734 spec_cast_mage
+M 7774 spec_charmer
+S
+
+
+
+#RESETS2
+M 0 7707 9 7706 2
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7707 9 7706 2
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7701 4 7707 1
+E 0 7701 -1 wielded~
+G 0 7702 -1
+M 0 7701 4 7711 1
+E 0 7701 -1 wielded~
+G 0 7702 -1
+M 0 7702 7 7713 1
+E 0 7703 -1 neck1~
+M 0 7702 7 7714 1
+E 0 7703 -1 neck1~
+M 0 7707 9 7716 2
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7707 9 7716 2
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7701 4 7718 1
+E 0 7701 -1 wielded~
+G 0 7702 -1
+M 0 7701 4 7723 1
+E 0 7701 -1 wielded~
+G 0 7702 -1
+M 0 7714 5 7726 1
+M 0 7703 15 7727 1
+M 0 7703 15 7727 1
+M 0 7703 15 7727 1
+M 0 7703 15 7727 1
+M 0 7703 15 7729 1
+M 0 7703 15 7730 1
+M 0 7703 15 7730 1
+M 0 7703 15 7730 1
+M 0 7705 6 7730 1
+M 0 7703 15 7733 1
+M 0 7703 15 7733 1
+M 0 7703 15 7733 1
+M 0 7703 15 7734 1
+M 0 7703 15 7734 1
+M 0 7705 6 7735 1
+M 0 7704 12 7737 1
+M 0 7704 12 7737 1
+M 0 7705 6 7737 1
+M 0 7704 12 7739 1
+M 0 7704 12 7739 1
+M 0 7704 12 7739 1
+M 0 7704 12 7739 1
+M 0 7704 12 7739 1
+M 0 7704 12 7739 1
+M 0 7704 12 7741 1
+M 0 7705 6 7741 1
+M 0 7704 12 7742 1
+M 0 7704 12 7745 1
+M 0 7704 12 7745 1
+M 0 7703 15 7747 1
+M 0 7703 15 7748 1
+M 0 7705 6 7749 1
+M 0 7705 6 7752 1
+M 0 7770 2 7752 1
+E 0 7784 -1 wielded~
+M 0 7715 5 7753 1
+G 0 7713 -1
+M 0 7714 5 7758 1
+M 0 7715 5 7758 1
+G 0 7713 -1
+M 0 7716 5 7761 1
+E 0 7714 -1 wielded~
+E 0 7715 -1 hold~
+M 0 7716 5 7761 2
+M 0 7716 5 7761 2
+E 0 7714 -1 wielded~
+E 0 7715 -1 hold~
+M 0 7714 5 7762 1
+M 0 7719 3 7766 3
+M 0 7719 3 7766 3
+M 0 7719 3 7766 3
+M 0 7773 1 7766 1
+E 0 7744 -1 wielded~
+M 0 7716 5 7768 1
+E 0 7714 -1 wielded~
+E 0 7715 -1 hold~
+M 0 7715 5 7769 1
+G 0 7713 -1
+M 0 7714 5 7770 1
+M 0 7720 1 7771 1
+M 0 7725 1 7771 1
+E 0 7719 -1 wielded~
+M 0 7721 5 7773 5
+M 0 7721 5 7773 5
+M 0 7721 5 7773 5
+M 0 7721 5 7773 5
+M 0 7721 5 7773 5
+M 0 7722 1 7773 1
+E 0 7716 -1 wielded~
+M 0 7717 2 7774 2
+M 0 7723 1 7774 1
+E 0 7717 -1 wielded~
+M 0 7718 2 7775 2
+M 0 7718 2 7775 2
+M 0 7724 1 7775 1
+E 0 7718 -1 wielded~
+M 0 7715 5 7776 1
+G 0 7713 -1
+M 0 7716 5 7781 1
+E 0 7715 -1 hold~
+M 0 7714 5 7784 1
+M 0 7715 5 7785 1
+G 0 7713 -1
+M 0 7716 5 7785 1
+E 0 7714 -1 wielded~
+E 0 7715 -1 hold~
+M 0 7726 1 7786 1
+M 0 7707 9 7788 1
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+E 0 7793 -1 hold~
+M 0 7713 3 7789 1
+O 0 7712 -1 7789
+M 0 7713 3 7790 1
+O 0 7712 -1 7790
+M 0 7707 9 7792 4
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7707 9 7792 4
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7707 9 7792 4
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7707 9 7792 4
+E 0 7704 -1 wielded~
+E 0 7705 -1 shield~
+M 0 7712 4 7792 1
+G 0 7711 -1
+M 0 7713 3 7793 1
+O 0 7712 -1 7793
+M 0 7708 4 7795 4
+E 0 7706 -1 wielded~
+M 0 7708 4 7795 4
+E 0 7706 -1 wielded~
+M 0 7709 4 7795 4
+E 0 7707 -1 hold~
+M 0 7709 4 7795 4
+E 0 7707 -1 hold~
+M 0 7711 4 7795 4
+G 0 7710 -1
+M 0 7711 4 7795 4
+G 0 7710 -1
+M 0 7711 4 7795 4
+G 0 7710 -1
+M 0 7711 4 7795 4
+G 0 7710 -1
+M 0 7712 4 7795 1
+G 0 7711 -1
+M 0 7712 4 7798 1
+G 0 7711 -1
+M 0 7712 4 7802 1
+G 0 7711 -1
+M 0 7710 6 7803 3
+E 0 7708 -1 hold~
+M 0 7710 6 7803 3
+M 0 7710 6 7803 3
+M 0 7710 6 7805 3
+E 0 7709 -1 hold~
+M 0 7710 6 7805 3
+M 0 7710 6 7805 3
+M 0 7706 4 7807 2
+E 0 7704 -1 wielded~
+M 0 7706 4 7807 2
+E 0 7704 -1 wielded~
+M 0 7702 7 7808 1
+E 0 7703 -1 neck1~
+M 0 7706 4 7809 2
+E 0 7704 -1 wielded~
+M 0 7706 4 7809 2
+E 0 7704 -1 wielded~
+M 0 7702 7 7811 1
+E 0 7703 -1 neck1~
+M 0 7731 11 7815 2
+M 0 7731 11 7815 2
+M 0 7731 11 7815 8
+M 0 7731 11 7815 8
+M 0 7702 7 7816 1
+E 0 7703 -1 neck1~
+M 0 7731 11 7816 8
+M 0 7731 11 7816 8
+M 0 7731 11 7816 8
+M 0 7731 11 7816 8
+M 0 7731 11 7816 8
+M 0 7731 11 7816 8
+M 0 7702 7 7817 1
+E 0 7703 -1 neck1~
+M 0 7730 4 7817 1
+M 0 7728 1 7819 1
+G 0 7721 -1
+M 0 7731 11 7819 1
+M 0 7702 7 7820 1
+E 0 7703 -1 neck1~
+M 0 7727 1 7820 1
+G 0 7720 -1
+M 0 7730 4 7820 1
+M 0 7730 4 7821 1
+M 0 7730 4 7822 1
+M 0 7733 1 7829 1
+M 0 7732 1 7830 1
+E 0 7722 -1 wielded~
+M 0 7734 1 7836 1
+E 0 7723 -1 wielded~
+M 0 7736 1 7837 1
+E 0 7725 -1 wielded~
+M 0 7737 1 7838 1
+E 0 7726 -1 wielded~
+M 0 7738 1 7839 1
+E 0 7727 -1 wielded~
+M 0 7739 1 7840 1
+E 0 7729 -1 wielded~
+E 0 7728 -1 hold~
+M 0 7740 1 7841 1
+E 0 7731 -1 wielded~
+E 0 7730 -1 hold~
+M 0 7741 1 7842 1
+E 0 7733 -1 wielded~
+E 0 7732 -1 hold~
+M 0 7742 1 7843 1
+E 0 7735 -1 wielded~
+E 0 7734 -1 hold~
+M 0 7743 1 7844 1
+E 0 7737 -1 wielded~
+E 0 7736 -1 hold~
+M 0 7744 1 7845 1
+E 0 7739 -1 wielded~
+E 0 7738 -1 hold~
+M 0 7745 1 7846 1
+E 0 7741 -1 wielded~
+E 0 7740 -1 hold~
+M 0 7746 1 7847 1
+E 0 7744 -1 wielded~
+E 0 7742 -1 hold~
+M 0 7747 1 7848 1
+E 0 7746 -1 wielded~
+E 0 7743 -1 hold~
+M 0 7748 1 7849 1
+E 0 7748 -1 wielded~
+E 0 7745 -1 hold~
+M 0 7749 1 7850 1
+E 0 7747 -1 hold~
+E 0 7750 -1 wielded~
+M 0 7750 1 7851 1
+E 0 7752 -1 wielded~
+E 0 7749 -1 hold~
+M 0 7751 1 7852 1
+E 0 7754 -1 wielded~
+E 0 7751 -1 hold~
+M 0 7752 1 7853 1
+E 0 7756 -1 wielded~
+E 0 7753 -1 hold~
+M 0 7753 1 7854 1
+E 0 7788 -1 wielded~
+E 0 7755 -1 hold~
+M 0 7754 1 7855 1
+O 0 7786 -1 7855
+O 0 7787 -1 7855
+M 0 7755 1 7856 1
+E 0 7760 -1 wielded~
+E 0 7757 -1 hold~
+M 0 7756 1 7857 1
+E 0 7762 -1 wielded~
+E 0 7758 -1 hold~
+M 0 7757 1 7858 1
+E 0 7764 -1 wielded~
+E 0 7759 -1 hold~
+M 0 7758 1 7859 1
+E 0 7766 -1 wielded~
+E 0 7766 -1 second~
+G 0 7761 -1
+M 0 7759 1 7860 1
+E 0 7768 -1 wielded~
+E 0 7768 -1 second~
+G 0 7763 -1
+M 0 7760 1 7861 1
+E 0 7770 -1 wielded~
+E 0 7767 -1 hold~
+M 0 7761 1 7862 1
+E 0 7772 -1 wielded~
+E 0 7769 -1 hold~
+M 0 7762 1 7863 1
+E 0 7774 -1 wielded~
+E 0 7771 -1 hold~
+M 0 7763 1 7864 1
+E 0 7776 -1 wielded~
+E 0 7773 -1 hold~
+M 0 7764 1 7865 1
+E 0 7775 -1 hold~
+M 0 7765 1 7866 1
+E 0 7777 -1 hold~
+M 0 7766 1 7867 1
+E 0 7778 -1 hold~
+M 0 7767 1 7868 1
+E 0 7779 -1 hold~
+M 0 7768 1 7869 1
+E 0 7780 -1 hold~
+M 0 7769 1 7870 1
+E 0 7781 -1 hold~
+M 0 7770 2 7871 1
+E 0 7784 -1 wielded~
+E 0 7782 -1 hold~
+M 0 7771 1 7872 1
+E 0 7783 -1 hold~
+O 0 7786 -1 7872
+M 0 7772 1 7873 1
+E 0 7785 16 wielded~
+E 0 7792 12 lfinger~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

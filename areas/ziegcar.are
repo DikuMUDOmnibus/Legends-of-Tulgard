@@ -1,0 +1,143 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Zieg Carriage~
+ShortName   Zieg Carriage~
+Builders    zaroth~
+Credits     zaroth~
+VNUMs       1071 1075
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#1071
+Name carriage demonic~
+Short a large demonic carriage~
+Desc A large demonic carriage is here being pulled by several nightmares.~
+Level 1
+ItemType vehicle~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1072 1000 A 0 0
+Weight 9500
+Material bone~
+Extra    nopurge nodegrade burnproof norestring~
+Extra2   nodecay~
+ExtraDesc carriage demonic large~
+This carriage is very large and, when looked at more closely, is made out of 
+bones.  It is being pulled by six hellish Nightmares  with manes of fire and 
+beady red eyes.  A light mist spreads out from under it. 
+~
+End
+
+#1072
+Name leather reins~
+Short leather reins~
+Desc Leather reins lie here, waiting to take Zieg's carriage off on a trip.~
+Level 1
+ItemType vehicle_controls~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1071 0 0 0 0
+Weight 2
+Material leather~
+Extra    nopurge nodegrade burnproof norestring~
+Extra2   nodecay~
+ExtraDesc _TRAVEL~
+Hooves can be heard as they meet the ground, the carriage moving steadily 
+along. 
+~
+End
+
+#1073
+Name bone door woven~
+Short a door made of woven bones~
+Desc A door made of woven bones lies here.~
+Level 1
+ItemType vehicle_exit~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1071 0 0 0 0
+Weight 200
+Material wood~
+Extra    nopurge nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#1071
+Name Inside The Carriage~
+Desc Up front lies the reins with a solid oak bench, used to drive the carriage about.
+~
+RoomFlags safe law light nofly~
+Sector vehicle~
+Owner bael~
+Exit west 1072
+End
+
+
+#1072
+Name Inside The Carriage~
+Desc The inside of this carriage is large and luxurious.  Black sheets hang from 
+all sides, covering the top portion of the windows on all sides.  There is 
+seating along all sides, other than the side with the door.  Braziers hang 
+from the corners with candles in them, giving off enough light to see. 
+~
+RoomFlags safe law light nofly~
+Sector vehicle~
+Exit east 1071
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1072 -1 1071
+O 0 1073 -1 1072
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

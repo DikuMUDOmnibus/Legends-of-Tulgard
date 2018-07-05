@@ -1,0 +1,1010 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Darakelami's Estate~
+ShortName   Darakelami's Estate~
+Builders    zaroth~
+Credits     none~
+VNUMs       6700 6799
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Thu Sep  9 18:28:29 2004~
+End
+
+
+
+#MOBILES
+#6702
+Name chef boardee~
+ShortD chef boardee~
+LongD `#`SChef `^`#`rBoardee`^`#`S is here, cooking up a storm.`^~
+Desc He spots you and screams, 'Git awa froom mi food!  I'll kill you!'
+~
+Race human~
+Align -2 -2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -567
+Wealth 510
+Act    npc dont_wander stay_area~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6751
+Name a bartender~
+ShortD a bartender~
+LongD A Bartender is here, serving drinks.~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#6703
+Name large steel tub~
+Short a large steel tub~
+Desc A large steel tub holding bottles of ale is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 0 0 30 2
+Weight 1000
+Material steel~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#6704
+Name onyx throne fancy~
+Short a fancy throne crafted from the purest `#`Sblack `so`wn`sy`wx`^~
+Desc A fancy throne crafted from the purest black onyx sits here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 EHKQ 100 100
+Weight 0
+Material onyx~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#6705
+Name large clear pool~
+Short a large, clear pool~
+Desc A large, clear pool is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 1000000 CFILS 100 100
+Weight 0
+Material unknown~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#6706
+Name golden altar~
+Short `#`wA `Ygolden `waltar`^~
+Desc `#`wA `Ygolden `waltar`^~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 13000 AC 0 100 100
+Weight 6000
+Material gold~
+Extra    magic nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#6707
+Name footchest chest embedded~
+Short a large wooden footchest~
+Desc A large `#`ywooden`^ footchest.~
+Level 0
+ItemType container~
+Cost 5000
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc footchest ~
+A large `#`ywooden`^ footchest at the end of the bed is here, encrusted with 
+brilliant `#`Ggems`^.  
+~
+End
+
+#6709
+Name wine rack~
+Short an old dusty wine rack~
+Desc Dusty wine racks full of aging bottles line the walls here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 80 0 0 20 0
+Weight 0
+Material wood~
+End
+
+#6710
+Name black blood fountain~
+Short a black marble fountain~
+Desc A black marble fountain is here, with an onyx hand ornament on the center.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 10000
+Rsize 50
+Values 3000 3000 water 0 0
+Weight 10000
+Material marble~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#6712
+Name bottle red wine~
+Short a bottle of red wine~
+Desc A bottle of red wine lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wine~
+Wear     take~
+End
+
+#6713
+Name white wine bottle~
+Short a bottle of white wine~
+Desc A bottle of white wine lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#6714
+Name candle burning under a flask~
+Short a candle burning under a flask of bubbling liquid~
+Desc A candle burning under a flask of bubbling liquid sits here on a table.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#6715
+Name stone table~
+Short a stone table~
+Desc A stone table sits here, littered with papers and vials of all sorts.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 4000 DGJQ 100 100
+Weight 0
+Material unknown~
+End
+
+#6716
+Name treasury key~
+Short `#`RDarakelami's `BHouse Key`^~
+Desc `#`RDarakelami's `BHouse Key`^ sits here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material metal~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#6751
+Name wooden bench~
+Short a wooden bench~
+Desc A comfortable-looking wooden bench is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 6000 BEHKQX 0 0
+Weight 0
+Material wood~
+Extra    nonmetal~
+Wear     no_sac~
+End
+
+#6752
+Name fire pit blazing fire~
+Short a `#`Rb`Yl`ra`Rz`Yi`rn`Rg `Rf`Yi`rr`Re`^~
+Desc A blazing fire centered in the middle of a fire pit is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 5000 ADGJQ 140 140
+Weight 0
+Material unknown~
+End
+
+#6753
+Name majestic marble fountain~
+Short a majestic marble fountain~
+Desc A majestic marble fountain is here, trickling water.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 1000
+Rsize 50
+Values -1 -1 water 0 0
+Weight 1000
+Material marble~
+Extra    noremove nopurge nodegrade burnproof~
+End
+
+#6754
+Name coffee table~
+Short a coffee table~
+Desc A wide coffee table is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 0 EH 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+End
+
+#6755
+Name three bookshelves bookshelf book shelf~
+Short a bookshelf~
+Desc Three bookshelves stand in the center of the room here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 20 0
+Weight 0
+Material wood~
+End
+
+#6756
+Name wooden rack wine liqueurs~
+Short a wooden rack of wines and liqueurs~
+Desc Wooden racks line the walls, holding bottles of wine and other liqueurs.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 100 0 0 30 0
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+End
+
+#6757
+Name bottle red wine~
+Short a bottle of `#`Rred`^ wine~
+Desc A bottle of `#`Rred`^ wine lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 112
+Asize 0
+Rsize 50
+Values 4 4 'red wine' 0 0
+Weight 60
+Material glass~
+Wear     take~
+End
+
+#6758
+Name bottle white wine~
+Short a bottle of `#`Wwhite`^ wine~
+Desc A bottle of `#`Wwhite`^ wine lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 112
+Asize 0
+Rsize 50
+Values 4 4 'white wine' 0 0
+Weight 60
+Material glass~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#6700
+Name Castle Entrance~
+Desc The entrance to this place is fairly large.  A very large fountain is here 
+that spurts out blood instead of water.  There is a large ornament made of 
+onyx in the shape of a hand.  The floor is made of a black marble but it has 
+large red carpets that spread out along the floor which make the marble 
+visible only in the corners of the room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6703
+Exit east 6702
+Exit west 6701
+Exit southwest 55980
+EFlags door closed locked nopass hard~
+EKeyvnum 6716
+End
+
+
+#6701
+Name Meeting Room~
+Desc This room has a large table that has two chairs on both long sides and a 
+larger chair on the end farthest away from the door.  The room is lit only 
+by candle chandlers in the corners, as there are no windows here.  The doors 
+to this room are very large and heavy to push.  It seems as if this place is 
+used for meetings that are not to be heard by anyone not invited.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 6700
+End
+
+
+#6702
+Name Kitchen~
+Desc This is a small kitchen filled with food.  There are two pots of stew over a 
+fire that has been built in a chimney.  Pots and pans hang off wooden bars 
+that have been placed on the walls.  There is a large tub full of bottled 
+ales and liquor.  There is a cook here making sure that the food is being 
+made correctly and is made on time.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 6700
+Exit down 6719
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#6703
+Name Bottom Stairwell~
+Desc A section of staircase leading both up and downstairs rests against the far 
+wall here. The steps are coated with a blood red velvet covering, the 
+handrails made of a fine dark oak. A painting of Darakelami, the owner of 
+the house is on the wall facing the stairs, clearly depicting her wielding 
+her maces. The dim light in the room appears to make her eyes in the 
+painting glow a very light shade of green depending on the angle you look at 
+it. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6711
+EFlags door closed~
+Exit south 6700
+Exit up 6704
+Exit down 6712
+End
+
+
+#6704
+Name Second Landing~
+Desc This is the top of the first stairway.  There is a door to the north, west, 
+east, and south of the stairway.  There are some pictures of people that are 
+dressed in clothing that are not in this day or age on the walls.  The 
+doorways to the rooms have runes on them that pulsate a dark red color.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6706
+Exit east 6707
+Exit south 6708
+Exit west 6705
+Exit up 6709
+Exit down 6703
+End
+
+
+#6705
+Name Guest Room~
+Desc This bedroom seems a little smaller compared to the others because of the 
+large dresser in the far corner.  The dresser is carved out of oak and 
+finished with a fine polish.  The bed is just like the others, but the 
+sheets are not as soft.  A small desk is next to the bed with a chair at the 
+foot of the bed that has blank papers and a feather pin on it.  Through the 
+window, you can see many birds fly past.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 6704
+End
+
+
+#6706
+Name Guest Room~
+Desc This is a large bedroom adorned with silk tapestries and finely carved 
+wooden furniture.  The bed is in the center of the room and is made of 
+finely carved oak with smooth bed sheets.  There is a small desk in the far 
+corner filled covered with papers with strange writings on them.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6710
+EFlags door closed~
+Exit south 6704
+End
+
+
+#6707
+Name Guest Bedroom~
+Desc This is a fairly large bedroom.  It has a large bed against the walls in the 
+corner and at the foot of the bed there is a large wooden chest with gems 
+encrusted into it.  A large painting of several demons is on the wall next 
+to the bed.  Across from the bed there is a large window with silk curtains 
+that hang from the ceiling.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 6704
+End
+
+
+#6708
+Name Guest Room~
+Desc This room is the same size as the others, but there is a mirror across from 
+the door.  Next to the mirror is a table with several small statues of 
+gargoyles and demons.  The bed is on the opposite side of the table.  The 
+bed has smooth sheets and fluffy feather pillows.  The window shutters bash 
+hard against the side of the wall outside from the harsh wind blowing 
+outside.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6704
+End
+
+
+#6709
+Name Master Bedroom~
+Desc This is the master bedroom of the castle.  It is at the very top of the 
+central tower.  A large window and the view out the window is magnificent is 
+near the bed.  There are paintings of Darakelami on the wall near the bed.  
+There is a bookshelf that is filled with many ancient books of lore.  Two 
+racks have also been setup here one for armor and one for weapons, both of 
+which are filled with finely crafted weapons and armor.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6717
+EFlags door closed obvious~
+EKeywords window~
+Exit east 6718
+EFlags door closed~
+EKeywords bookshelf~
+Exit down 6704
+End
+
+
+#6710
+Name A closet~
+Desc This is a small closet.  Clothes have been placed here for keeping.  A few 
+pairs of boots are stacked on the ground in front of a large chest, and a 
+cloak hangs from the back of the closet door.  The large chest sits against 
+the back wall of the closet and is used to hold any items not used.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 6706
+EFlags door closed~
+End
+
+
+#6711
+Name A throne room~
+Desc This is a very large room.  There is a large black throne atop a small set 
+of stairs.  A long red rug goes from the entrance of this room leading up to 
+the throne.  The floor is made of black onyx and can be seen everywhere 
+except where the carpet runs.  
+~
+RoomFlags indoors~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit south 6703
+EFlags door closed~
+End
+
+
+#6712
+Name A lower stairway~
+Desc Being lit by only candles, the light spreading through the room and into 
+others is amazing. A large set of stairs climbs up the back wall, coated 
+with cobwebs and dust. Numerous statues of demons are placed intricately in 
+the corners, their jeweled eyes reflecting the ambient light. Hand-chiseled 
+stone arches support each of the doorways with mysterious symbols above 
+them, depicting something not quite understood at this time. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6713
+Exit east 6714
+EFlags door closed~
+Exit south 6715
+Exit west 6716
+EFlags door closed~
+Exit up 6703
+End
+
+
+#6713
+Name A pool room~
+Desc This room is quite larger than the rest, the center having a large clear 
+pool. The pool tends to glow from the light entering the room to the south, 
+and looks somewhat deep in nature. There are narrow edges around the pool, 
+leaving just enough room to walk if one utilizes caution.. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 6712
+End
+
+
+#6714
+Name A laboratory~
+Desc A large table, taking most of the space in the room, is coated with vials 
+and papers. A large bookcase holds the various tomes, scrolls, and books 
+that are not scattered about this disorganized laboratory. Many vials with 
+various colors of liquids sit in racks, some are fizzing over, others are 
+crackling as if lightning was charring flesh. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 6712
+EFlags door closed~
+End
+
+
+#6715
+Name A shrine~
+Desc This room is filled with the aromatic scent of incense and candles. Various 
+shrines adorn the room, one for each of the Gods of death and chaos. 
+Flickering and glowing, the shrines appear to have some mystical power 
+through them. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 6712
+End
+
+
+#6716
+Name The torture room~
+Desc Scattered about the room are various instruments of death and torture. A bed 
+of spikes rests in one corner while maces and other spiked items hang from 
+the walls. Spears are mounted close by on the wall as well, many coated with 
+dried blood. There is a coffin the far southeastern corner, lined with razor 
+sharp steek spikes. Whips and chains are scattered and spread across the 
+tables, making a nice centerpiece for the room. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 6712
+EFlags door closed~
+End
+
+
+#6717
+Name A balcony~
+Desc A small walkway openening out from the bedroom window leads to this balcony. 
+ It's view spreads over the lower hells, an occasional yell heard from it's 
+depths.  An onyx railing lines it, the only protection from the long plunge 
+into hell.  A narrow bench takes up the back wall next to the window.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 6709
+EFlags door closed obvious~
+EKeywords window~
+End
+
+
+#6718
+Name A secret room~
+Desc A large room with walls made out of stone.  There is a large statue of a 
+half-elf male in the center of the room.  Torches line the walls and a red 
+carpet goes from the door to the foot of the statue.  At the base of the 
+statue a small `#`Splaque`^.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc plaque bael~
+.                     `#`y-=Inscribed upon the plaque=-`^
+`sBael uth Draco, Lord of the Black Hand.  May the light flee from the dark as the darkness follows him and spreads across the realms.`^
+~
+Exit west 6709
+EFlags door closed~
+EKeywords bookshelf~
+End
+
+
+#6719
+Name The wine cellar~
+Desc This is a long and wide room filled with racks full of bottles.  The smell 
+down here is very strong with alcohol.  Every bottle is full of alcohol and 
+each bottle is different.  There are enough bottles of alcohol down here to 
+keep a drunk happy for many, many years.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 6702
+EFlags door closed~
+End
+
+
+#6750
+Name an Entrance Hall~
+Desc As the door keeper welcomes you in, you see five rooms and a door that leads 
+down stairs.  To your left is an outside sitting area.  To your north-west 
+side it seems to be a forest?  A cooking area is to the north and north-east 
+side there is a side thats says: storage.  A door with a sign that says 
+Office is towards the right.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Owner piltram~
+Exit north 6752
+Exit east 6754
+EFlags door closed~
+Exit south 54016
+EFlags door closed~
+Exit west 6755
+Exit down 6756
+Exit northeast 6753
+EFlags door closed~
+Exit northwest 6751
+EFlags door closed~
+End
+
+
+#6751
+Name Animal Kingdom~
+Desc As you step in, you feel like your in another world.  Moss grows olong the 
+walls giving the room such a beauty with tree branches sticking out in the 
+window when the wind blows threw.  Along the walls, you notice four 
+aquariums with creatures in it.  You see a snake aquarium along the left 
+hand side of you and a turtle aquarium right in the front of you.  As you 
+look behind you, you will see a fish tank with wild fishes in it feeding 
+them self.  When you exit you will notice a torch hangin along the right 
+hand side of the door just giving enough light to see and shine green threw 
+the room.  
+~
+Sector inside~
+Exit southeast 6750
+EFlags door closed~
+End
+
+
+#6752
+Name Cooking Area and Dining Room~
+Desc The first thing you notice when you walk in, is animals skins decoration the 
+walls.  On top of cieling, you will notice a square hole where a small 
+breeze comes in.  From all directions you see benches and a fire pit in the 
+middle of these benches.  This area looks to be like a cooking area.  When 
+you sit and relax, you notice warmth running threw your body even when the 
+draft of the wind blows threw you.  
+~
+RoomFlags light~
+Sector inside~
+Exit south 6750
+End
+
+
+#6753
+Name a storage closet~
+Desc No window at all.  A torch along the south wall lights this room little and 
+a chest is standing in the middle ready to store things in.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit southwest 6750
+EFlags door closed~
+End
+
+
+#6754
+Name Office~
+Desc South from you, you notice a diamond shape window and a sofa right 
+underneath of it.  Towards the middle north you see a desk with a lamp on it 
+and a comfy chair behind it.  Behind the chair along the north wall, you see 
+an animal skin that has writing and a symbol of grey moon clan.  Towards 
+your right is a bookshelf with binders of information and couple of maps.  
+In here you feel more focused as a bussiness person.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+ExtraDesc animal skin~
+The symbol for the `#`sKnights `wof the `sGrey Moon`^ can be seen on this animal skin 
+along with some writting.  
+~
+Exit west 6750
+EFlags door closed~
+End
+
+
+#6755
+Name Meditiation Room~
+Desc . When you walk in, the first thing noticable is a flowerbed along the walls. 
+ Recliners sit next to each other with a lamp in the middle.  When sitting, 
+a clear view out of a rectangled window where you can watch the beautiful 
+night and day skies.  
+~
+Sector inside~
+Exit east 6750
+End
+
+
+#6756
+Name Fountain room~
+Desc In the middle of the floor is a beautiful fountain with a small statue of 
+the Goddess Lena in the middle of it.  As you look around, they're are five 
+rooms that has a warmth, earthly pull.  Towards your left is the living 
+room.  North-west is the bar and north from you is a room that has a door.  
+North-east is the library and just the right hand side is yet another room 
+with a door.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit north 6759
+EFlags door closed~
+Exit east 6761
+EFlags door closed~
+Exit west 6757
+Exit up 6750
+Exit northeast 6760
+EFlags door closed~
+Exit northwest 6758
+EFlags door closed~
+End
+
+
+#6757
+Name Living room~
+Desc As you walk in, you feel warmth of the cozy.  A sofa lies near your left and 
+a recliner near your right and one at your left.  A coffee table nicely lays 
+in the middle where you can put your stuff on.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit east 6756
+End
+
+
+#6758
+Name the Bar room~
+Desc You smell the fresh alcohal freshed made here when you walk in.  All along 
+the walls you notice hundreds of bottle from many towns and times.  There is 
+a table with 4 chairs for guests to sit at. 
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit southeast 6756
+EFlags door closed~
+End
+
+
+#6759
+Name the Master room~
+Desc Along the middle left wall you see a kingbed. To the left side of the bed 
+stands a lamp.  To your right you see a pine wordrobe in the middle of the 
+wall.  And when you look straight you notice a sofa with a snake aquarium 
+built into the wall behind the sofa. 
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Owner albion~
+Exit south 6756
+EFlags door closed~
+End
+
+
+#6760
+Name a library~
+Desc A dim light shines green when it hits the beautiful moss along the corners 
+of the room.  In the middle of the floor are three bookshelves.  There is a 
+comfortable chair where the lamp is along the left side of wall.  A sign is 
+on the first bookshelf printed in bold.  
+~
+Sector inside~
+ExtraDesc sign ~
+`#`sPlease relax but make sure to return the product back and make sure your 
+quiet.  Thanks Albion 
+~
+Exit southwest 6756
+EFlags door closed~
+End
+
+
+#6761
+Name a guest room~
+Desc When you walk in, you since a feeling of warmth on your feet when touching a 
+beautiful brown rug that lays along the whole floor.  A canopy bed sits near 
+the middle of the south wall and next to it is a dresser where you can stash 
+your clothes in.  Towards the north end of the right corner is a recliner 
+with a lamp next to that that shines a bright to lit the rooms center.  
+~
+Sector inside~
+Exit west 6756
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 6710 -1 6700
+O 0 23697 -1 6701
+O 0 705 -1 6701
+O 0 27129 -1 6701
+O 0 6703 -1 6702
+P 0 6002 5 6703 5
+M 0 6702 1 6702 1
+O 0 16245 -1 6705
+O 0 733 -1 6705
+O 0 2615 -1 6705
+O 0 28039 -1 6706
+O 0 2638 -1 6706
+O 0 2612 -1 6707
+O 0 6707 -1 6707
+O 0 23637 -1 6708
+O 0 733 -1 6708
+O 0 769 -1 6709
+O 0 4901 -1 6709
+O 0 6704 -1 6711
+O 0 6705 -1 6713
+O 0 6715 -1 6714
+O 0 6714 -1 6714
+O 0 6706 -1 6715
+O 0 1855 -1 6716
+O 0 2018 -1 6716
+O 0 6709 -1 6719
+P 0 6713 1 6709 1
+P 0 6712 1 6709 1
+O 0 703 -1 6751
+O 0 701 -1 6751
+O 0 700 -1 6751
+O 0 6751 -1 6752
+O 0 6752 -1 6752
+O 0 13338 -1 6753
+O 0 707 -1 6754
+O 0 710 -1 6754
+O 0 714 -1 6754
+O 0 716 -1 6755
+O 0 729 -1 6755
+O 0 730 -1 6755
+O 0 6753 -1 6756
+O 0 729 -1 6757
+O 0 716 -1 6757
+O 0 6754 -1 6757
+M 0 6751 1 6758 1
+O 0 707 -1 6758
+O 0 6756 -1 6758
+P 0 6758 1 6756 1
+P 0 6757 1 6756 1
+O 0 716 -1 6759
+O 0 752 -1 6759
+O 0 702 -1 6759
+O 0 769 -1 6759
+O 0 726 -1 6760
+O 0 704 -1 6760
+O 0 6755 -1 6760
+O 0 735 -1 6761
+O 0 772 -1 6761
+O 0 729 -1 6761
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,6779 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Labyrinth of Kronos~
+ShortName   Kronos~
+Builders    none~
+Credits     Blade~
+VNUMs       10600 10999
+LComment    `#`R[ 75- 85]`^
+LRange      75 85
+Security    9
+Colour      r~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#10601
+Name skeletal warrior skeleton~
+ShortD a `#`Wskeletal`^ warrior~
+LongD A `#`Wskeletal`^ warrior stands here menacing.~
+Desc `WBare bones clad in armor.  Its eyes glow red, the bones clack together
+as it starts for you.  `x 
+~
+Race undead~
+Align 3 0
+Level 75
+Hitroll 75
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType pound
+AC -450 -450 -450 -400
+Wealth 750
+Act    npc dont_wander aggressive undead~
+AffBy  detect_hidden infrared dark_vision~
+Off    disarm dodge kick parry trip assist_vnum~
+Imm    summon charm poison mental disease drowning sleep illusion hunger thirst fear~
+Res    cold negative~
+Vuln   holy~
+Form   magical non_skinable sentient undead construct biped~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 10601 100~
+MProg FIGHT 10602 20~
+END
+
+#10602
+Name skeletal guardian~
+ShortD a `#`Wskeletal`^ guardian~
+LongD A `#`Wskeletal`^ guardian bars passage.~
+Desc `wBuilt of the bones of slaves, this skeletal guardian blocks passage to
+all who dare the Labyrinth.  `x 
+~
+Race undead~
+Align 1 0
+Level 75
+Hitroll 0
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType pound
+AC -450 -450 -450 -373
+Wealth 750
+Act    npc dont_wander aggressive undead warrior~
+AffBy  detect_hidden infrared dark_vision~
+Off    disarm dodge kick parry trip assist_vnum~
+Imm    summon charm poison mental disease drowning sleep illusion hunger thirst fear~
+Res    cold negative~
+Vuln   holy~
+Form   magical non_skinable sentient undead construct biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10603
+Name doomsphere beholder undead~
+ShortD a `#`mdoom`Rsphere`^~
+LongD A `#`mdoom`Rsphere`^ gazes balefully at you.~
+Desc `wA great round floating sphere, it's tentacles writhe as it turns
+towards you, one great eye blinks balefully in the ochre puce skin that
+covers the floating being.  A large gaping maw opens below the immense
+single eye, twin nostrils set to either side flare in anticipation.  `x 
+~
+Race undead~
+Align 2 0
+Level 82
+Hitroll 80
+HitDice 8d12+405
+ManaDice 8d12+500
+DamDice 9d10+40
+DamType drain
+AC -520 -520 -520 -452
+Wealth 800
+Act    npc dont_wander aggressive cleric~
+AffBy  detect_invis detect_hidden infrared flying dark_vision regeneration~
+Off    area_attack bash disarm dodge fast~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    energy mental illusion~
+Vuln   holy~
+Form   edible magical other sentient undead construct cold_blood~
+Part   head brains eye long_tongue tentacles fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10604
+Name heucuva skeleton ~
+ShortD a `#`rrobed`^ skeleton~
+LongD A `#`rrobed`^ skeleton stands here.~
+Desc `rThe heucuva is an undead spirit similar in appearance to a skeleton. 
+The heucuva is a brown robed humanoid skeletal figure, their feet wrapped in
+the rotting remains of their footwear.  `x 
+~
+Race undead~
+Align 3 0
+Level 78
+Hitroll 80
+HitDice 8d11+385
+ManaDice 9d12+560
+DamDice 8d9+38
+DamType magic
+AC -470 -470 -470 -376
+Wealth 800
+Act    npc dont_wander aggressive undead mage~
+AffBy  detect_hidden infrared dark_vision~
+Off    area_attack dodge trip assist_vnum~
+Imm    summon charm poison mental disease drowning sleep illusion hunger thirst fear~
+Res    cold negative~
+Vuln   holy~
+Form   magical non_skinable sentient undead biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10605
+Name skeletal warrior guardian~
+ShortD a `#`Wskeletal`^ guardian~
+LongD Constructed of human bone, a `#`Wskeletal`^ guardian stands here.~
+Desc `wFour legs ending in bony feet hold this animated warrior upright.  Four
+matching arms atop a torso of bone, capable of holding many varied weapons
+writhe in unconcious warding as the monstrous guardian of the halls prepares
+to do battle.  `x 
+~
+Race undead~
+Align -2 0
+Level 81
+Hitroll 85
+HitDice 8d12+405
+ManaDice 3d5+85
+DamDice 9d10+40
+DamType claw
+AC -510 -510 -510 -459
+Wealth 850
+Act    npc aggressive stay_area undead warrior~
+AffBy  detect_hidden infrared dark_vision regeneration~
+Off    area_attack bash berserk disarm kick dirt_kick parry trip assist_vnum~
+Imm    summon charm poison mental disease drowning sleep illusion hunger thirst fear~
+Res    cold negative~
+Vuln   holy~
+Form   magical non_skinable sentient undead construct biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#10606
+Name fire healer~
+ShortD a `#`Yliving `Rflame`^~
+LongD A `#`Yliving `Rflame`^ burns here.~
+Desc `RThis living flame burns within the confines of a large bowl set within
+the altar.  `x 
+~
+Race unique~
+Align -3 0
+Level 85
+Hitroll 100
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 9d10+43
+DamType flame
+AC -550 -550 -550 -489
+Wealth 1000
+Act    npc dont_wander cleric healer~
+AffBy  detect_invis detect_hidden sanctuary infrared flying dark_vision regeneration~
+Off    area_attack dodge fast~
+Imm    summon charm fire poison negative disease sleep wood hunger thirst fear~
+Res    magic weapon lightning energy mental illusion~
+Vuln   drowning~
+Form   magical instant_decay other non_skinable sentient construct mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10607
+Name spirit ghost wailing~
+ShortD a `#`bwailing`^ spirit~
+LongD A `#`bwailing`^ spirit floats toward you.~
+Desc `bVaguely humanoid in shape, this spirit screeches a bone chilling wail
+as it floats in midair.  `x 
+~
+Race undead~
+Align 1 0
+Level 86
+Hitroll 90
+HitDice 9d12+425
+ManaDice 4d5+90
+DamDice 10d10+43
+DamType chill
+AC -560 -560 -560 -476
+Wealth 300
+Act    npc aggressive stay_area undead warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared sneak flying dark_vision~
+Off    area_attack dodge fast assist_vnum~
+Imm    summon charm cold poison negative disease drowning sleep hunger thirst fear~
+Res    energy mental sound illusion~
+Vuln   holy~
+Form   magical instant_decay non_skinable sentient undead cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#10601
+Name dark blade~
+Short a `#`sdark`^ blade~
+Desc A `#`sdark`^ blade lies here.~
+Level 80
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 18
+Rsize 50
+Values sword 7 11 slice H
+Weight 35
+Material iron~
+Extra    burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian anti-paladin~
+Affect modifier -1 80 -1 hitroll 6 0
+End
+
+#10602
+Name dark chainmail chain mail~
+Short some `#`sdark`^ chainmail~
+Desc A `#`sdark`^ suit of chainmail armor lies here.~
+Level 80
+ItemType armor~
+Cost 350
+Durability 5
+Asize 25
+Rsize 50
+Values 27 27 27 20 0
+Weight 250
+Material iron~
+Extra    dark evil magic burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger anti-paladin~
+Affect modifier -1 80 -1 ac -15 0
+Affect modifier -1 80 -1 saves -4 0
+Affect modifier -1 80 -1 hp 6 0
+End
+
+#10603
+Name helm steel dark~
+Short a `#`sdark`^ steel helm~
+Desc A `#`sdark`^ steel helm lies here.~
+Level 80
+ItemType armor~
+Cost 150
+Durability 5
+Asize 25
+Rsize 50
+Values 20 20 20 16 0
+Weight 100
+Material iron~
+Extra    burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian anti-paladin~
+End
+
+#10604
+Name boots chain dark~
+Short some `#`sdark`^ chain boots~
+Desc A pair of `#`sdark`^ chain boots.~
+Level 80
+ItemType armor~
+Cost 222
+Durability 5
+Asize 25
+Rsize 50
+Values 16 16 16 13 0
+Weight 100
+Material iron~
+Extra    burnproof~
+Wear     take feet~
+ClassAllowances cleric warrior paladin ranger barbarian anti-paladin~
+End
+
+#10605
+Name wand stone~
+Short a `#`wstone`^ wand~
+Desc A smooth `#`wstone`^ wand.~
+Level 80
+ItemType wand~
+Cost 5548
+Durability 5
+Asize 2
+Rsize 50
+Values 80 15 6 'prismatic spray' 0
+Weight 5
+Material stone~
+Extra    glow hum magic nonmetal burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher~
+End
+
+#10606
+Name chest~
+Short a `#`ywooden`^ chest~
+Desc A `#`ywooden`^ chest lies here.~
+Level 80
+ItemType container~
+Cost 100
+Durability 5
+Asize 30
+Rsize 50
+Values 20 AC 0 100 10
+Weight 300
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     no_sac~
+End
+
+#10607
+Name gold coin~
+Short a pile of `#`Ygold`^ coins~
+Desc A pile of `#`Ygolden`^ coins lies here.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 34 0 0 0
+Weight 10
+Material unknown~
+Wear     take hold~
+End
+
+#10608
+Name globe light~
+Short `x~
+Desc `x~
+Level 80
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 0
+Material unknown~
+End
+
+#10609
+Name portal~
+Short a `#`Cglowing`^ portal~
+Desc A `#`Cglowing`^ portal hangs in midair.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 10600 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#10610
+Name blade frost ~
+Short a `#`Wblade`^ of `#`Cfrost`^~
+Desc A blade of `#`Cice`^ lies here glittering.~
+Level 86
+ItemType weapon~
+Cost 623
+Durability 5
+Asize 22
+Rsize 50
+Values sword 19 3 slash BD
+Weight 25
+Material ice~
+Extra    glow magic nonmetal meltdrop burnproof~
+Wear     take wield hold~
+ClassAllowances thief warrior paladin ranger anti-paladin~
+Affect modifier -1 86 -1 hitroll 4 0
+Affect modifier -1 86 -1 damroll 4 0
+Affect modifier -1 86 -1 agility 3 0
+Affect modifier -1 86 -1 strength 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#10600
+Name Near the Cliff~
+Desc To the north, tall cliffs of grey stone rise high above the plain.  The
+escarpment flowing east and west as far as the eye can see.  Grey stunted
+shrubs grow in sparse clumps, while a faint narrow trail runs northward.  
+ 
+A small sign stands next to the trail.
+~
+RoomFlags no_mob~
+Sector mountain~
+ExtraDesc sign~
+*****************************************************************
+*****************************************************************
+**                                                             **
+**   The Labyrinth was built for Creatia by Blade for          **
+**         anyone who wishes to utilize the area. The only     **
+**         thing that we ask is the credits remain as          **
+**         they are in their original form.                    **
+**                                                             **
+**         Copyright Jan 2001                                  **
+**                      by Blade                               **
+**                               creatia.funcity.org 7500      **
+**                                                             **
+**         Some people want to rule the world.........         **
+**              We just want to build it!!!!!!!!               **
+**                                                             **
+*****************************************************************
+*****************************************************************
+~
+Exit north 10601
+EDesc A faint trail running north and south winds its way toward the
+escarpment.   
+~
+Exit south 59131
+End
+
+
+#10601
+Name Near the Cliffs~
+Desc A faint path winds north and south here.  To the south, the path
+continues out into the desolate plains of the northlands.  Close to the
+north, the grey stone walls of an immense escarpment blocks the path.  The
+trail seems to wind toward a dark patch in the face of the escarpment.   
+~
+Sector mountain~
+Exit north 10602
+EDesc A faint trail winds through sparse brush towards the escarpment.
+~
+Exit south 10600
+EDesc A faint trail leading off into the plains.
+~
+End
+
+
+#10602
+Name Near the Cliffs~
+Desc To the north lies the entrance to the caverns of the Labyrinth.  The
+grey rocky cliffs of the escarpment tower overhead.  The entrance is a dark
+maw in the rock.  Sparse brush grows in clumps to either side of the faint
+trail.   
+~
+Sector mountain~
+Exit north 10603
+EDesc Into the Labyrinth
+~
+Exit south 10601
+EDesc A faint trail winds into the northern plains
+~
+End
+
+
+#10603
+Name The Entrance to the Cavern~
+Desc North, the cavern mouth opens wide, the interior dark and forboding. 
+To the south, a faint trail leads through the dry windswept plains.  East
+and west, the great escarpment blocks all egress from the plain.   
+~
+Sector mountain~
+Exit north 10604
+EDesc A dark rough cavern leads north
+~
+Exit south 10602
+EDesc A faint trail through the plains.
+~
+End
+
+
+#10604
+Name A Dark Cavern~
+Desc Walls of dark rough stone rise to either side.  Underfoot, a thick
+layer of sand and dust covers the stone of the caverns floor.  Overhead, the
+rough stone of the cavern hides the sky.  The stone is grey, shot through
+with streaks of alternating white quartz, and dark as night obsidian.  No
+air stirs in this lightless place away from the elements.  Utter silence
+reigns.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10605
+EDesc The grey cavern continues.
+~
+Exit south 10603
+EDesc The entrance to the cavern lies southward.   
+~
+End
+
+
+#10605
+Name The Caverns~
+Desc Rough stone walls rise up to either side, while the cavern continues
+north and south.  Towards the north, the cavern narrows, while to the south,
+the cavern widens towards the entrance.  The walls of the cavern are of grey
+stone, shot through with alternating streaks of snowy white quarts, and
+night dark obsidian.  The floor underfoot is covered with a thick layer of
+dust, small stones litter the dusty surface.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10606
+Exit south 10604
+End
+
+
+#10606
+Name The Caverns~
+Desc Rough stone walls rise up to either side, while the cavern continues
+north and south.  Towards the north, the cavern narrows, while to the south,
+the cavern widens towards the entrance.  The walls of the cavern are of grey
+stone, shot through with alternating streaks of snowy white quarts, and
+night dark obsidian.  The floor underfoot is covered with a thick layer of
+dust, small stones litter the dusty surface.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10607
+Exit south 10605
+End
+
+
+#10607
+Name The Crossing~
+Desc Rough stone walls rise up to either side, To the north, the cavern
+continues north and south, while east and west, tunnels pierce the walls of
+the cavern.  To the south, the cavern widens towards the entrance.  The
+walls of the cavern are of grey stone, shot through with alternating streaks
+of snowy white quarts, and night dark obsidian.  The floor underfoot is
+covered with a thick layer of dust, small stones litter the dusty surface. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10630
+Exit east 10642
+Exit south 10606
+Exit west 10608
+End
+
+
+#10608
+Name The Tunnels~
+Desc Rough stone walls rise up to either side, the tunnel runs east and
+west.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10607
+Exit west 10609
+End
+
+
+#10609
+Name The Tunnels~
+Desc Rough stone walls rise up to either side, the tunnel runs east and
+west.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10608
+Exit west 10610
+End
+
+
+#10610
+Name The Tunnels~
+Desc Rough stone walls rise up to either side, the tunnel runs east and
+west.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   To the south, a bronze door lies ajar.  The door opens
+towards the south.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10609
+Exit south 10647
+Exit west 10611
+End
+
+
+#10611
+Name A Dark Passage~
+Desc Rough stone walls rise up to either side, the tunnel runs North and
+South.  To the east, a tunnel leads off from the main passage.  The walls of
+the tunnel are of grey stone, shot through with alternating streaks of snowy
+white quarts, and night dark obsidian.  The floor underfoot is covered with
+a thick layer of dust, small stones litter the dusty surface.  The tunnels
+are dark, no breath of air stirs the dust underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10615
+EDesc A stone passageway continues northwards.
+~
+Exit east 10610
+EDesc A stone passageway leads off eastward.
+~
+Exit south 10612
+EDesc A stone passageway continues southwards.
+~
+End
+
+
+#10612
+Name A Slanted Passage~
+Desc Rough stone walls rise up to either side, the tunnel runs North and
+South.  Slanting downwards into the bowels of the earth towards the south. 
+The walls of the tunnel are of grey stone, shot through with alternating
+streaks of snowy white quarts, and night dark obsidian.  The floor underfoot
+is covered with a thick layer of dust, small stones litter the dusty
+surface.  The tunnels are dark, no breath of air stirs the dust underfoot. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10611
+EDesc A stone passageway continues north.
+~
+Exit south 10613
+EDesc A stone passageway continues towards the south.
+~
+End
+
+
+#10613
+Name A Slanted Passage~
+Desc Rough stone walls rise up to either side, the tunnel runs North and
+South.  Slanting downwards into the bowels of the earth towards the south. 
+The walls of the tunnel are of grey stone, shot through with alternating
+streaks of snowy white quarts, and night dark obsidian.  The floor underfoot
+is covered with a thick layer of dust, small stones litter the dusty
+surface.  The tunnels are dark, no breath of air stirs the dust underfoot. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10612
+EDesc The passageway continues towards the north.
+~
+Exit down 10614
+EDesc A stone passageway continues downwards
+~
+End
+
+
+#10614
+Name A Steep Passage~
+Desc Rough stone walls rise up to either side, the tunnel runs sharpley up
+and down.  The wallss of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 10613
+EDesc A steep passageway slanting upwards.
+~
+Exit down 10648
+EDesc A steep stone passageway lies below.
+~
+End
+
+
+#10615
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10616
+EDesc The stone passageway continues.
+~
+Exit south 10611
+EDesc The stone passageway continues.
+~
+End
+
+
+#10616
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+Sector inside~
+Exit north 10617
+EDesc The stone passageway continues.
+~
+Exit south 10615
+EDesc The stone passageway continues.
+~
+End
+
+
+#10617
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10618
+EDesc The stone passageway continues.
+~
+Exit south 10616
+EDesc The stone passageway continues.
+~
+End
+
+
+#10618
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10619
+EDesc The stone passageway continues.
+~
+Exit south 10617
+EDesc The stone passageway continues.
+~
+End
+
+
+#10619
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10620
+EDesc The stone passageway continues.
+~
+Exit south 10618
+EDesc The stone passageway continues.
+~
+End
+
+
+#10620
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+east.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10621
+EDesc A stone passageway continues.
+~
+Exit south 10619
+EDesc The stone passageway continues.
+~
+End
+
+
+#10621
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs west and east
+of grey stone, shot through with alternating streaks of snowy white quarts,
+and night dark obsidian.  The floor underfoot is covered with a thick layer
+of dust, small stones litter the dusty surface.  The tunnels are dark, no
+breath of air stirs the dust underfoot.   
+The stone passageway continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10622
+EDesc The stone passageway continues.
+~
+Exit west 10620
+EDesc The stone passageway continues.
+~
+End
+
+
+#10622
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs west and
+east.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  To the south an iron bound door lies open.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10625
+Exit south 10623
+EDesc An iron bound door lies open.
+~
+Exit west 10621
+EDesc The stone passageway continues.
+~
+End
+
+
+#10623
+Name A Broken Barracks~
+Desc Shattered and burnt bunks and lockers lie scattered about the room in
+dusty heaps.  Torn and ravelled hangings and tapestries hang about the walls
+of the broken barracks hall.  Once the living quarters of the Labyrinth's
+Guardians, the room is mute testament to the harsh nature of war.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10622
+End
+
+
+#10625
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs west and
+east.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10631
+EDesc The stone passageway continues.
+~
+Exit south 10626
+EDesc A stone tunnel runs southward.
+~
+Exit west 10622
+EDesc The stone passageway continues.
+~
+End
+
+
+#10626
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10625
+EDesc The stone passageway continues.
+~
+Exit south 10627
+EDesc The stone passageway continues.
+~
+End
+
+
+#10627
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10626
+EDesc The stone passageway continues.
+~
+Exit south 10628
+EDesc The stone passageway continues.
+~
+End
+
+
+#10628
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10627
+EDesc The stone passageway continues.
+~
+Exit south 10629
+EDesc The stone passageway continues.
+~
+End
+
+
+#10629
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10628
+EDesc The stone passageway continues.
+~
+Exit south 10630
+EDesc The stone passageway continues.
+~
+End
+
+
+#10630
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10629
+Exit south 10607
+EDesc The stone passageway continues.
+~
+End
+
+
+#10631
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs west and
+east.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10632
+EDesc The stone passageway continues.
+~
+Exit west 10625
+EDesc The stone passageway continues.
+~
+End
+
+
+#10632
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs west and
+east.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.  A brass bound door lies to the south.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10634
+EDesc The stone passageway continues.
+~
+Exit south 10633
+EDesc A brass bound door lies open.
+~
+Exit west 10631
+EDesc The stone passageway continues.
+~
+End
+
+
+#10633
+Name A Broken Barracks~
+Desc Shattered and burnt bunks and lockers lie scattered about the room in
+dusty heaps.  Torn and ravelled hangings and tapestries hang about the walls
+of the broken barracks hall.  Once the living quarters of the Labyrinth's
+Guardians, the room is mute testament to the harsh nature of war.   
+~
+Sector inside~
+Exit north 10632
+End
+
+
+#10634
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs west and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10635
+EDesc The stone passageway continues.
+~
+Exit west 10632
+EDesc The stone passageway continues.
+~
+End
+
+
+#10635
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10634
+EDesc The stone passageway continues.
+~
+Exit south 10636
+EDesc The stone passageway continues.
+~
+End
+
+
+#10636
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10635
+EDesc The stone passageway continues.
+~
+Exit south 10637
+EDesc The stone passageway continues.
+~
+End
+
+
+#10637
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10636
+EDesc The stone passageway continues.
+~
+Exit south 10638
+EDesc The stone passageway continues.
+~
+End
+
+
+#10638
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10637
+EDesc The stone passageway continues.
+~
+Exit south 10639
+EDesc The stone passageway continues.
+~
+End
+
+
+#10639
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north and
+south.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10638
+EDesc The stone passageway continues.
+~
+Exit south 10640
+EDesc The stone passageway continues.
+~
+End
+
+
+#10640
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs north,east
+and west.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10639
+EDesc The stone passageway continues.
+~
+Exit east 10643
+EDesc The stone passageway continues
+~
+Exit west 10641
+EDesc The stone passageway continues.
+~
+End
+
+
+#10641
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads east and west.
+The walls of the tunnel are of grey stone, shot through with alternating
+streaks of snowy white quarts, and night dark obsidian.  The floor underfoot
+is covered with a thick layer of dust, small stones litter the dusty
+surface.  The tunnels are dark, no breath of air stirs the dust underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10640
+EDesc The stone passageway continues.
+~
+Exit west 10642
+EDesc The stone passageway continues.
+~
+End
+
+
+#10642
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, the tunnel leads east and west.
+The walls of the tunnel are of grey stone, shot through with alternating
+streaks of snowy white quarts, and night dark obsidian.  The floor underfoot
+is covered with a thick layer of dust, small stones litter the dusty
+surface.  The tunnels are dark, no breath of air stirs the dust underfoot.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10641
+EDesc The stone passageway continues.
+~
+Exit west 10607
+EDesc The stone passageway continues.
+~
+End
+
+
+#10643
+Name A Stone Passageway~
+Desc Rough stone walls rise up to either side, the tunnel runs east and
+west.  The walls of the tunnel are of grey stone, shot through with
+alternating streaks of snowy white quarts, and night dark obsidian.  The
+floor underfoot is covered with a thick layer of dust, small stones litter
+the dusty surface.  The tunnels are dark, no breath of air stirs the dust
+underfoot.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10644
+EDesc The stone passageway continues.
+~
+Exit west 10640
+EDesc The stone passageway continues.
+~
+End
+
+
+#10644
+Name A Stone Passageway~
+Desc Rough stone walls rise up to all sides, a tunnel leads west.  The walls
+of the tunnel are of grey stone, shot through with alternating streaks of
+snowy white quarts, and night dark obsidian.  The floor underfoot is covered
+with a thick layer of dust, small stones litter the dusty surface.  The
+tunnels are dark, no breath of air stirs the dust underfoot.  Brass
+bound doors lie open both north and south.   
+~
+Sector inside~
+Exit north 10645
+EDesc A brass bound door lies open.
+~
+Exit south 10646
+EDesc A brass bound door lies open.@
+~
+Exit west 10643
+EDesc A stone passageway leads off west.
+~
+End
+
+
+#10645
+Name A Broken Mess~
+Desc Broken tables and chairs lie in dust covered mouldering heaps.  The
+walls of this room hidden by the ravelled remains of ancient tapestries and
+hangings.  Dust lies thick among mouldering rugs and carpets that are strewn
+about the floor.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10644
+End
+
+
+#10646
+Name A Broken Guardroom~
+Desc Broken furniture, trash and detritus ages old lies in dust shrouded
+heaps about the floor of this large natural cavern.  Shreds of ancient
+tapestries hang in ravelling rags about the walls.  No footprints disturb
+the dust of ages in this broken hall.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10644
+End
+
+
+#10647
+Name A Broken Guardroom~
+Desc Broken furniture, trash and detritus ages old lies in dust shrouded
+heaps about the floor of this large natural cavern.  Shreds of ancient
+tapestries hang in ravelling rags about the walls.  No footprints disturb
+the dust of ages in this broken hall.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10610
+End
+
+
+#10648
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10649
+EDesc The passageway continues north.
+~
+Exit up 10614
+EDesc The Passageway continues upwards.
+~
+End
+
+
+#10649
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10650
+EDesc The passageway continues north.
+~
+Exit south 10648
+EDesc The passageway continues south.
+~
+End
+
+
+#10650
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10651
+EDesc The passageway continues north.
+~
+Exit south 10649
+EDesc The passageway continues south.
+~
+End
+
+
+#10651
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10652
+EDesc The passageway continues north.
+~
+Exit east 10686
+Exit south 10650
+EDesc The passageway continues south.
+~
+End
+
+
+#10652
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10653
+EDesc The passageway continues north.
+~
+Exit south 10651
+EDesc The passageway continues south.
+~
+End
+
+
+#10653
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10654
+EDesc The passageway continues north.
+~
+Exit south 10652
+EDesc The passageway continues south.
+~
+End
+
+
+#10654
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10655
+EDesc The passageway continues east.
+~
+Exit south 10653
+EDesc The passageway continues south.
+~
+End
+
+
+#10655
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10656
+EDesc The passageway continues east.
+~
+Exit west 10654
+EDesc The passageway continues west.
+~
+End
+
+
+#10656
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10657
+EDesc The passageway continues east.
+~
+Exit south 10689
+Exit west 10655
+EDesc The passageway continues west.
+~
+End
+
+
+#10657
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10658
+EDesc The passageway continues east.
+~
+Exit west 10656
+EDesc The passageway continues west.
+~
+End
+
+
+#10658
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10659
+EDesc The passageway continues east.
+~
+Exit west 10657
+EDesc The passageway continues west.
+~
+End
+
+
+#10659
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10660
+EDesc The passageway continues east.
+~
+Exit west 10658
+EDesc The passageway continues west.
+~
+End
+
+
+#10660
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10661
+EDesc The passageway continues east.
+~
+Exit west 10659
+EDesc The passageway continues west.
+~
+End
+
+
+#10661
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10662
+EDesc The passageway continues east.
+~
+Exit west 10660
+EDesc The passageway continues west.
+~
+End
+
+
+#10662
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10663
+EDesc The passageway continues east.
+~
+Exit south 10695
+Exit west 10661
+EDesc The passageway continues west.
+~
+End
+
+
+#10663
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10664
+EDesc The passageway continues south.
+~
+Exit west 10662
+EDesc The passageway continues west.
+~
+End
+
+
+#10664
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10663
+EDesc The passageway continues south.
+~
+Exit south 10665
+EDesc The passageway continues south.
+~
+End
+
+
+#10665
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10664
+EDesc The passageway continues south.
+~
+Exit south 10666
+EDesc The passageway continues south.
+~
+Exit west 10695
+End
+
+
+#10666
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10665
+EDesc The passageway continues south.
+~
+Exit south 10667
+EDesc The passageway continues south.
+~
+End
+
+
+#10667
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10666
+EDesc The passageway continues south.
+~
+Exit south 10668
+EDesc The passageway continues south.
+~
+End
+
+
+#10668
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10667
+EDesc The passageway continues south.
+~
+Exit south 10669
+EDesc The passageway continues south.
+~
+End
+
+
+#10669
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+Sector inside~
+Exit north 10668
+EDesc The passageway continues south.
+The passageway continues north.
+~
+Exit south 10670
+EDesc The passageway continues south.
+~
+Exit west 10700
+End
+
+
+#10670
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10669
+EDesc The passageway continues north.
+~
+Exit south 10671
+EDesc The passageway continues south.
+~
+End
+
+
+#10671
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10670
+EDesc The passageway continues north.
+~
+Exit south 10672
+EDesc The passageway continues south.
+~
+Exit west 10702
+End
+
+
+#10672
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10671
+EDesc The passageway continues north.
+~
+Exit west 10673
+EDesc The passageway continues west.
+~
+End
+
+
+#10673
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10702
+Exit east 10672
+EDesc The passageway continues east.
+~
+Exit west 10674
+EDesc The passageway continues west.
+~
+End
+
+
+#10674
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10673
+EDesc The passageway continues east.
+~
+Exit west 10675
+EDesc The passageway continues west.
+~
+End
+
+
+#10675
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10674
+EDesc The passageway continues east.
+~
+Exit west 10676
+EDesc The passageway continues west.
+~
+End
+
+
+#10676
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10705
+Exit east 10675
+EDesc The passageway continues east.
+~
+Exit west 10677
+EDesc The passageway continues west.
+~
+End
+
+
+#10677
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10676
+EDesc The passageway continues east.
+~
+Exit west 10678
+EDesc The passageway continues west.
+~
+End
+
+
+#10678
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10677
+EDesc The passageway continues east.
+~
+Exit west 10679
+EDesc The passageway continues west.
+~
+End
+
+
+#10679
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10708
+Exit east 10678
+EDesc The passageway continues east.
+~
+Exit west 10680
+EDesc The passageway continues west.
+~
+End
+
+
+#10680
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10681
+EDesc The passageway continues north.
+~
+Exit east 10679
+EDesc The passageway continues east.
+~
+End
+
+
+#10681
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10682
+EDesc The passageway continues north.
+~
+Exit east 10708
+Exit south 10680
+EDesc The passageway continues south.
+~
+End
+
+
+#10682
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10683
+EDesc The passageway continues north.
+~
+Exit south 10681
+EDesc The passageway continues south.
+~
+End
+
+
+#10683
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10684
+EDesc The passageway continues north.
+~
+Exit south 10682
+EDesc The passageway continues south.
+~
+End
+
+
+#10684
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10685
+EDesc The passageway continues north.
+~
+Exit east 10711
+Exit south 10683
+EDesc The passageway continues south.
+~
+End
+
+
+#10685
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10686
+EDesc The passageway continues north.
+~
+Exit south 10684
+EDesc The passageway continues south.
+~
+End
+
+
+#10686
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10687
+EDesc The passageway continues north.
+~
+Exit south 10685
+EDesc The passageway continues south.
+~
+Exit west 10651
+End
+
+
+#10687
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10688
+EDesc The passageway continues north.
+~
+Exit south 10686
+EDesc The passageway continues south.
+~
+End
+
+
+#10688
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10689
+EDesc The passageway continues east.
+~
+Exit south 10687
+EDesc The passageway continues south.
+~
+End
+
+
+#10689
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10656
+Exit east 10690
+EDesc The passageway continues east.
+~
+Exit west 10688
+EDesc The passageway continues west.
+~
+End
+
+
+#10690
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10691
+EDesc The passageway continues east.
+~
+Exit west 10689
+EDesc The passageway continues west.
+~
+End
+
+
+#10691
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10692
+EDesc The passageway continues east.
+~
+Exit west 10690
+EDesc The passageway continues west.
+~
+End
+
+
+#10692
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10693
+EDesc The passageway continues east.
+~
+Exit west 10691
+EDesc The passageway continues west.
+~
+End
+
+
+#10693
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10694
+EDesc The passageway continues east.
+~
+Exit west 10692
+EDesc The passageway continues west.
+~
+End
+
+
+#10694
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10695
+EDesc The passageway continues east.
+~
+Exit west 10693
+EDesc The passageway continues west.
+~
+End
+
+
+#10695
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10662
+Exit east 10665
+Exit south 10696
+EDesc The passageway continues south.
+~
+Exit west 10694
+EDesc The passageway continues south.
+~
+End
+
+
+#10696
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10695
+EDesc The passageway continues north.
+~
+Exit south 10697
+EDesc The passageway continues south.
+~
+End
+
+
+#10697
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10696
+EDesc The passageway continues north.
+~
+Exit south 10698
+EDesc The passageway continues south.
+~
+End
+
+
+#10698
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10697
+EDesc The passageway continues north.
+~
+Exit south 10699
+EDesc The passageway continues south.
+~
+End
+
+
+#10699
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10698
+EDesc The passageway continues north.
+~
+Exit south 10700
+EDesc The passageway continues south.
+~
+End
+
+
+#10700
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10699
+EDesc The passageway continues north.
+~
+Exit east 10669
+Exit south 10701
+EDesc The passageway continues south.
+~
+End
+
+
+#10701
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10700
+EDesc The passageway continues north.
+~
+Exit south 10702
+EDesc The passageway continues south.
+~
+End
+
+
+#10702
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10701
+EDesc The passageway continues north.
+~
+Exit east 10671
+Exit south 10673
+Exit west 10703
+EDesc The passageway continues west.
+~
+End
+
+
+#10703
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10702
+EDesc The passageway continues east.
+~
+Exit west 10704
+EDesc The passageway continues west.
+~
+End
+
+
+#10704
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10703
+EDesc The passageway continues east.
+~
+Exit west 10705
+EDesc The passageway continues west.
+~
+End
+
+
+#10705
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10704
+EDesc The passageway continues east.
+~
+Exit south 10676
+Exit west 10706
+EDesc The passageway continues west.
+~
+End
+
+
+#10706
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10705
+EDesc The passageway continues east.
+~
+Exit west 10707
+EDesc The passageway continues west.
+~
+End
+
+
+#10707
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10706
+EDesc The passageway continues east.
+~
+Exit west 10708
+EDesc The passageway continues west.
+~
+End
+
+
+#10708
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10709
+EDesc The passageway continues north.
+~
+Exit east 10707
+EDesc The passageway continues east.
+~
+Exit south 10679
+Exit west 10681
+End
+
+
+#10709
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10710
+EDesc The passageway continues north.
+~
+Exit south 10708
+EDesc The passageway continues south.
+~
+End
+
+
+#10710
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10711
+EDesc The passageway continues north.
+~
+Exit south 10709
+EDesc The passageway continues south.
+~
+End
+
+
+#10711
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10712
+EDesc The passageway continues north.
+~
+Exit south 10710
+EDesc The passageway continues south.
+~
+Exit west 10684
+End
+
+
+#10712
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10713
+EDesc The passageway continues north.
+~
+Exit south 10711
+EDesc The passageway continues south.
+~
+End
+
+
+#10713
+Name ~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and grey 
+stone dissolving into an eye maddening blur.  The crimson streaks a mind 
+bending whirl the color of old blood.  Dust covers the floor underfoot in a 
+thick carpet.  The sloughing flesh of the bones of the earth.  
+~
+Sector inside~
+Exit north 10714
+Exit south 10712
+End
+
+
+#10714
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10715
+EDesc The passageway continues east.
+~
+Exit south 10713
+EDesc The passageway continues south.
+~
+End
+
+
+#10715
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10716
+EDesc The passageway continues east.
+~
+Exit west 10714
+EDesc The passageway continues west.
+~
+End
+
+
+#10716
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10717
+EDesc The passageway continues east.
+~
+Exit west 10715
+EDesc The passageway continues west.
+~
+End
+
+
+#10717
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10718
+EDesc The passageway continues east.
+~
+Exit west 10716
+EDesc The passageway continues west.
+~
+End
+
+
+#10718
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10719
+EDesc The passageway continues east.
+~
+Exit west 10717
+EDesc The passageway continues west.
+~
+End
+
+
+#10719
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10720
+EDesc The passageway continues south.
+~
+Exit west 10718
+EDesc The passageway continues west.
+~
+End
+
+
+#10720
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10719
+EDesc The passageway continues north.
+~
+Exit south 10721
+EDesc The passageway continues south.
+~
+End
+
+
+#10721
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10720
+EDesc The passageway continues north.
+~
+Exit south 10722
+EDesc The passageway continues south.
+~
+End
+
+
+#10722
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10721
+EDesc The passageway continues north.
+~
+Exit south 10723
+EDesc The passageway continues south.
+~
+End
+
+
+#10723
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10722
+EDesc The passageway continues north.
+~
+Exit south 10724
+EDesc The passageway continues south.
+~
+End
+
+
+#10724
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10723
+EDesc The passageway continues north.
+~
+Exit west 10725
+EDesc The passageway continues west.
+~
+End
+
+
+#10725
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10724
+EDesc The passageway continues east.
+~
+Exit west 10726
+EDesc The passageway continues west.
+~
+End
+
+
+#10726
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10725
+EDesc The passageway continues east.
+~
+Exit west 10727
+EDesc The passageway continues west.
+~
+End
+
+
+#10727
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10726
+EDesc The passageway continues east.
+~
+Exit west 10728
+EDesc The passageway continues west.
+~
+End
+
+
+#10728
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10729
+EDesc The passageway continues north.
+~
+Exit east 10727
+EDesc The passageway continues east.
+~
+End
+
+
+#10729
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10730
+EDesc The passageway continues north.
+~
+Exit south 10728
+EDesc The passageway continues south.
+~
+End
+
+
+#10730
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10731
+EDesc The passageway continues north.
+~
+Exit south 10729
+EDesc The passageway continues south.
+~
+End
+
+
+#10731
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10732
+EDesc The passageway continues north.
+~
+Exit south 10730
+EDesc The passageway continues south.
+~
+End
+
+
+#10732
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10733
+EDesc The passageway continues east.
+~
+Exit south 10731
+EDesc The passageway continues south.
+~
+End
+
+
+#10733
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10734
+EDesc The passageway continues east.
+~
+Exit west 10732
+EDesc The passageway continues west.
+~
+End
+
+
+#10734
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the earth.  To the
+south, a brass bound door hangs open on one hinge. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10735
+EDesc A stairwell leading down lies to the east.
+~
+Exit south 10736
+EDesc A brass bound door lies open to the south.
+~
+Exit west 10733
+EDesc The passageway continues west.
+~
+End
+
+
+#10735
+Name The Passage of Blood~
+Desc The tunnel walls are of striated stone, a mixture of black, red, and
+grey stone dissolving into an eye maddening blur.  The crimson streaks a
+mind bending whirl the color of old blood.  Dust covers the floor underfoot
+in a thick carpet.  The sloughing flesh of the bones of the Eastwards, a
+stairwell climbs deeper into the bowels of the earth.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10734
+EDesc The passageway continues west.
+~
+Exit down 10738
+EDesc A stairwell plunges downward.
+~
+End
+
+
+#10736
+Name A Shattered Chapel~
+Desc Torn and ravelled hangings in once bright hues line the walls of this
+shattered room.  Piles of broken furniture and the broken bones of the
+labyrinth's inhabitants lie jumbled in dusty mouldering heaps jumbled across
+the hall's floor.  Dust lies in a thick carpet over all.  The hall silent as
+a tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10734
+EDesc A stone passageway.
+~
+Exit south 10737
+EDesc The shattered hall continues.
+~
+End
+
+
+#10737
+Name A Shattered Chapel~
+Desc Torn and ravelled hangings in once bright hues line the walls of this
+shattered room.  Piles of broken furniture and the broken bones of the
+labyrinth's inhabitants lie jumbled in dusty mouldering heaps jumbled across
+the hall's floor.  Dust lies in a thick carpet over all.  The hall silent as
+a tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10736
+EDesc The meeting hall continues.
+~
+End
+
+
+#10738
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10739
+EDesc The tunnel continues westward.
+~
+Exit up 10735
+EDesc A dark staircase.
+~
+End
+
+
+#10739
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10738
+EDesc The tunnel continues eastward.
+~
+Exit west 10740
+EDesc The tunnel continues westward.
+~
+End
+
+
+#10740
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10739
+EDesc The tunnel continues eastward.
+~
+Exit west 10741
+EDesc The tunnel continues westward.
+~
+End
+
+
+#10741
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10740
+EDesc The tunnel continues eastward.
+~
+Exit west 10742
+EDesc The tunnel continues westward.
+~
+End
+
+
+#10742
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10741
+EDesc The tunnel continues eastward.
+~
+Exit west 10743
+EDesc The tunnel continues westward.
+~
+End
+
+
+#10743
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10742
+EDesc The tunnel continues eastward.
+~
+Exit west 10744
+EDesc The tunnel continues westward.
+~
+End
+
+
+#10744
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10745
+EDesc The tunnel continues northward.
+~
+Exit east 10743
+EDesc The tunnel continues eastward.
+~
+End
+
+
+#10745
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10746
+EDesc The tunnel continues northward.
+~
+Exit south 10744
+EDesc The tunnel continues south.
+~
+End
+
+
+#10746
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10747
+EDesc The tunnel continues northward.
+~
+Exit south 10745
+EDesc The tunnel continues southward.
+~
+End
+
+
+#10747
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10748
+EDesc The tunnal continues to the east.
+~
+Exit south 10746
+EDesc The tunnel continues southward.
+~
+End
+
+
+#10748
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10749
+EDesc The tunnel continues to the east.
+~
+Exit west 10747
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10749
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10750
+EDesc The tunnel continues to the east.
+~
+Exit west 10748
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10750
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10751
+EDesc The tunnel continues to the east.
+~
+Exit west 10749
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10751
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10752
+EDesc The tunnel continues to the east.
+~
+Exit west 10750
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10752
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10753
+EDesc The tunnel continues to the east.
+~
+Exit west 10751
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10753
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10754
+EDesc The tunnel continues to the east.
+~
+Exit west 10752
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10754
+Name The Halls of Combat~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10755
+EDesc The tunnel continues to the south.
+~
+Exit west 10753
+EDesc The tunnel continues to the west.
+~
+End
+
+
+#10755
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10754
+EDesc The hall continues to the north.
+~
+Exit south 10756
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10756
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10755
+EDesc The hall continues to the north.
+~
+Exit south 10757
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10757
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10756
+EDesc The hall continues to the north.
+~
+Exit south 10758
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10758
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10757
+EDesc The hall continues to the north.
+~
+Exit south 10759
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10759
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10758
+EDesc The hall continues to the north.
+~
+Exit south 10760
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10760
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10759
+EDesc The hall continues to the north.
+~
+Exit south 10761
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10761
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10760
+EDesc The hall continues to the north.
+~
+Exit south 10762
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10762
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10761
+EDesc The hall continues to the north.
+~
+Exit south 10763
+EDesc The hall continues towards the south.
+~
+End
+
+
+#10763
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs its surfaces.   Doors of yellowed bronze are
+set into either side of the passage.  The passage ends to the south, in a
+blank wall of fiery red stone.   
+~
+Sector inside~
+Exit north 10762
+EDesc The hall continues to the north.
+~
+Exit east 10765
+EFlags door closed~
+EDesc A brass bound door lies to the east.
+~
+Exit west 10764
+EFlags door closed~
+EDesc A brass bound door lies to the west.
+~
+End
+
+
+#10764
+Name A Shattered Mess~
+Desc The walls of this room are of rock, a dull glowing red the color of old
+coals.  The tables and benches of the mess are overturned and broken, lying
+about the floor in scattered heaps of broken wood.  Amidst the scattered
+furnishings, the bones of the original defenders lie shattered.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10763
+EFlags door closed~
+EDesc A brass bound door lies too the east.
+~
+End
+
+
+#10765
+Name The Hall of Combat ~
+Desc The walls of this tunnel are polished smooth as ice.  Their surfaces
+the red of dull fire.  The floors of the tunnel are smooth underfoot, not a
+speck of dust disturbs it's surfaces.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10766
+EDesc A darkened landing lies to the north.
+~
+Exit west 10763
+EFlags door closed~
+EDesc The halls of Combat lie this way.
+~
+End
+
+
+#10766
+Name A Dark Landing~
+Desc The walls of the stone landing are of yellow stone.  To the north, lies
+a lighted staircase, south, the Hall of Fire.  The landing is dark,
+sconces mounted on the wall hold the burned out remains of eons old torches.
+The landing is swept clear of dust, by a draft that blows from the stairwell
+to the north, out a natural chimney of stone above.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10767
+EDesc A stairwell of yellow stone.
+~
+Exit south 10765
+EDesc A red stone tunnel lies southward.
+~
+End
+
+
+#10767
+Name A Stairwell~
+Desc A well lit stairwell of yellow stone circles downwards.  The yellow
+walls of stone, have affixed globes of cold mage-light at intervals casting
+a bright sterile light upon the smooth surfaces.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10766
+EDesc A dark hall lies to the south.
+~
+Exit down 10768
+EDesc A well lighted stairwell.
+~
+End
+
+
+#10768
+Name A Lighted Landing~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10769
+EDesc A well lighted hallway continues towards the west.
+~
+Exit up 10767
+EDesc A Stairwell
+~
+End
+
+
+#10769
+Name A Well Lit Hall~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10768
+EDesc The hall continues towards the east
+~
+Exit west 10770
+EDesc The hall continues to the west.
+~
+End
+
+
+#10770
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10769
+EDesc The hall continues towards the east
+~
+Exit west 10771
+EDesc The hall continues to the west.
+~
+End
+
+
+#10771
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10770
+EDesc The hall continues towards the east
+~
+Exit west 10772
+EDesc The hall continues to the west.
+~
+End
+
+
+#10772
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10771
+EDesc The hall continues towards the east
+~
+Exit west 10773
+EDesc The hall continues to the west.
+~
+End
+
+
+#10773
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10772
+EDesc The hall continues towards the east
+~
+Exit west 10774
+EDesc The hall continues to the west.
+~
+End
+
+
+#10774
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10773
+EDesc The hall continues towards the east
+~
+Exit west 10775
+EDesc The hall continues to the west.
+~
+End
+
+
+#10775
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10774
+EDesc The hall continues towards the east
+~
+Exit west 10776
+EDesc The hall continues to the west.
+~
+End
+
+
+#10776
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10775
+EDesc The hall continues towards the east
+~
+Exit south 10811
+Exit west 10777
+EDesc The hall continues to the west.
+~
+End
+
+
+#10777
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10776
+EDesc The hall continues towards the east
+~
+Exit south 10778
+EDesc The hall continues to the south.
+~
+End
+
+
+#10778
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10777
+EDesc The hall continues towards the north
+~
+Exit east 10811
+Exit south 10779
+EDesc The hall continues to the south.
+~
+End
+
+
+#10779
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10778
+EDesc The hall continues towards the north
+~
+Exit south 10780
+EDesc The hall continues to the south.
+~
+End
+
+
+#10780
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10779
+EDesc The hall continues towards the north
+~
+Exit south 10781
+EDesc The hall continues to the south.
+~
+End
+
+
+#10781
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10780
+EDesc The hall continues towards the north
+~
+Exit east 10814
+Exit south 10782
+EDesc The hall continues to the south.
+~
+End
+
+
+#10782
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10781
+EDesc The hall continues towards the north
+~
+Exit south 10783
+EDesc The hall continues to the south.
+~
+End
+
+
+#10783
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10782
+EDesc The hall continues towards the north
+~
+Exit south 10784
+EDesc The hall continues to the south.
+~
+End
+
+
+#10784
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10783
+EDesc The hall continues towards the north
+~
+Exit south 10785
+EDesc The hall continues to the south.
+~
+End
+
+
+#10785
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10784
+EDesc The hall continues towards the north
+~
+Exit east 10818
+Exit south 10786
+EDesc The hall continues to the south.
+~
+End
+
+
+#10786
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10785
+EDesc The hall continues towards the north
+~
+Exit east 10787
+EDesc The hall continues to the east.
+~
+End
+
+
+#10787
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+Sector inside~
+Exit north 10818
+Exit east 10788
+EDesc The hall continues to the east.
+~
+Exit west 10786
+EDesc The hall continues towards the west
+~
+End
+
+
+#10788
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10789
+EDesc The hall continues to the east.
+~
+Exit west 10787
+EDesc The hall continues towards the west
+~
+End
+
+
+#10789
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10790
+EDesc The hall continues to the east.
+~
+Exit west 10788
+EDesc The hall continues towards the west
+~
+End
+
+
+#10790
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10821
+Exit east 10791
+EDesc The hall continues to the east.
+~
+Exit west 10789
+EDesc The hall continues towards the west
+~
+End
+
+
+#10791
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10792
+EDesc The hall continues to the east.
+~
+Exit west 10790
+EDesc The hall continues towards the west
+~
+End
+
+
+#10792
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10793
+EDesc The hall continues to the east.
+~
+Exit west 10791
+EDesc The hall continues towards the west
+~
+End
+
+
+#10793
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10824
+Exit east 10794
+EDesc The hall continues to the east.
+~
+Exit west 10792
+EDesc The hall continues towards the west
+~
+End
+
+
+#10794
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10795
+EDesc The hall continues to the east.
+~
+Exit west 10793
+EDesc The hall continues towards the west
+~
+End
+
+
+#10795
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10796
+EDesc The hall continues to the north.
+~
+Exit west 10794
+EDesc The hall continues towards the west
+~
+End
+
+
+#10796
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10797
+EDesc The hall continues to the north.
+~
+Exit south 10795
+EDesc The hall continues towards the south
+~
+End
+
+
+#10797
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10798
+EDesc The hall continues to the north.
+~
+Exit south 10796
+EDesc The hall continues towards the south
+~
+Exit west 10826
+End
+
+
+#10798
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10799
+EDesc The hall continues to the north.
+~
+Exit south 10797
+EDesc The hall continues towards the south
+~
+End
+
+
+#10799
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10801
+EDesc The hall continues to the north.
+~
+Exit south 10798
+EDesc The hall continues towards the south
+~
+End
+
+
+#10801
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10802
+EDesc The hall continues to the north.
+~
+Exit south 10799
+EDesc The hall continues towards the south
+~
+Exit west 10830
+End
+
+
+#10802
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10803
+EDesc The hall continues to the north.
+~
+Exit south 10801
+EDesc The hall continues towards the south
+~
+End
+
+
+#10803
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10802
+EDesc The hall continues towards the south
+~
+Exit west 10804
+EDesc The hall continues to the west.
+~
+End
+
+
+#10804
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10803
+EDesc The hall continues towards the east
+~
+Exit west 10805
+EDesc The hall continues to the west.
+~
+End
+
+
+#10805
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10804
+EDesc The hall continues towards the east
+~
+Exit west 10806
+EDesc The hall continues to the west.
+~
+End
+
+
+#10806
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10805
+EDesc The hall continues towards the east
+~
+Exit west 10807
+EDesc The hall continues to the west.
+~
+End
+
+
+#10807
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10806
+EDesc The hall continues towards the east
+~
+Exit west 10808
+EDesc The hall continues to the west.
+~
+End
+
+
+#10808
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10807
+EDesc The hall continues towards the east
+~
+Exit west 10809
+EDesc The hall continues to the west.
+~
+End
+
+
+#10809
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10808
+EDesc The hall continues towards the east
+~
+Exit west 10810
+EDesc The hall continues to the west.
+~
+End
+
+
+#10810
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10809
+EDesc The hall continues towards the east
+~
+Exit west 10811
+EDesc The hall continues to the west.
+~
+End
+
+
+#10811
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10776
+Exit east 10810
+EDesc The hall continues towards the east
+~
+Exit south 10812
+EDesc The hall continues to the south.
+~
+Exit west 10778
+End
+
+
+#10812
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10811
+EDesc The hall continues towards the north
+~
+Exit south 10813
+EDesc The hall continues to the south.
+~
+End
+
+
+#10813
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10812
+EDesc The hall continues towards the north
+~
+Exit south 10814
+EDesc The hall continues to the south.
+~
+End
+
+
+#10814
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10813
+EDesc The hall continues towards the north
+~
+Exit south 10815
+EDesc The hall continues to the south.
+~
+Exit west 10781
+End
+
+
+#10815
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10814
+EDesc The hall continues towards the north
+~
+Exit south 10816
+EDesc The hall continues to the south.
+~
+End
+
+
+#10816
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10815
+EDesc The hall continues towards the north
+~
+Exit south 10817
+EDesc The hall continues to the south.
+~
+End
+
+
+#10817
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10816
+EDesc The hall continues towards the north
+~
+Exit south 10818
+EDesc The hall continues to the south.
+~
+End
+
+
+#10818
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10817
+EDesc The hall continues towards the north
+~
+Exit east 10819
+EDesc The hall continues to the east.
+~
+Exit south 10787
+Exit west 10785
+End
+
+
+#10819
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10820
+EDesc The hall continues to the east.
+~
+Exit west 10818
+EDesc The hall continues towards the west
+~
+End
+
+
+#10820
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10821
+EDesc The hall continues to the east.
+~
+Exit west 10819
+EDesc The hall continues towards the west
+~
+End
+
+
+#10821
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10822
+EDesc The hall continues to the east.
+~
+Exit south 10790
+Exit west 10820
+EDesc The hall continues towards the west
+~
+End
+
+
+#10822
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10823
+EDesc The hall continues to the east.
+~
+Exit west 10821
+EDesc The hall continues towards the west
+~
+End
+
+
+#10823
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10824
+EDesc The hall continues to the east.
+~
+Exit west 10822
+EDesc The hall continues towards the west
+~
+End
+
+
+#10824
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10825
+EDesc The hall continues to the east.
+~
+Exit south 10793
+Exit west 10823
+EDesc The hall continues towards the west
+~
+End
+
+
+#10825
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10826
+EDesc The hall continues to the north.
+~
+Exit west 10824
+EDesc The hall continues towards the west
+~
+End
+
+
+#10826
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10827
+EDesc The hall continues to the north.
+~
+Exit east 10797
+Exit south 10825
+EDesc The hall continues towards the south
+~
+End
+
+
+#10827
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10828
+EDesc The hall continues to the north.
+~
+Exit south 10826
+EDesc The hall continues towards the south
+~
+End
+
+
+#10828
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10829
+EDesc The hall continues to the north.
+~
+Exit south 10827
+EDesc The hall continues towards the south
+~
+End
+
+
+#10829
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10830
+EDesc The hall continues to the north.
+~
+Exit south 10828
+EDesc The hall continues towards the south
+~
+End
+
+
+#10830
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10831
+EDesc The hall continues to the north.
+~
+Exit east 10801
+Exit south 10829
+EDesc The hall continues towards the south
+~
+End
+
+
+#10831
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10830
+EDesc The hall continues towards the south
+~
+Exit west 10832
+EDesc The hall continues to the west.
+~
+End
+
+
+#10832
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10831
+EDesc The hall continues towards the east.
+~
+Exit west 10833
+End
+
+
+#10833
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10832
+Exit west 10834
+End
+
+
+#10834
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10833
+EDesc The hall continues towards the east.
+~
+Exit west 10835
+EDesc The hall continues to the west.
+~
+End
+
+
+#10835
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10834
+EDesc The hall continues towards the east.
+~
+Exit south 10836
+EDesc The hall continues to the south.
+~
+End
+
+
+#10836
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10835
+EDesc The hall continues towards the north.
+~
+Exit south 10837
+EDesc The hall continues to the south.
+~
+End
+
+
+#10837
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10836
+EDesc The hall continues towards the north.
+~
+Exit south 10838
+EDesc The hall continues to the south.
+~
+End
+
+
+#10838
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10837
+EDesc The hall continues towards the north.
+~
+Exit east 10841
+EDesc A small chapel lies to the east.
+~
+Exit south 10839
+EDesc The hall continues to the south.
+~
+Exit west 10842
+EDesc A narrow hall lies to the west.
+~
+End
+
+
+#10839
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10838
+EDesc The hall continues towards the north.
+~
+Exit south 10840
+EDesc The hall continues to the south.
+~
+End
+
+
+#10840
+Name The Hall of Light~
+Desc The yellowed stone of this hall is lit with many varied colors of
+mage-light, affixed to the smooth stone with fixtures of purest platinum. 
+The light cast by the many globes a sterile wan glow, bringing out and
+highlighting the dark striations in the native stone.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10839
+EDesc The hall continues towards the north.
+~
+End
+
+
+#10841
+Name The Chapel of Flame~
+Desc This is a large chamber, whose vaulted ceilings lie far overhead.  The
+walls are panelled in light golden oak, polished to a high shine.  Along the
+eastern end of the chamber, a large open altar lies, upon which burns an
+immense flame.  No fuel lies in the bowl where lies the flame, which burns
+with a warm glow.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10838
+End
+
+
+#10842
+Name A Landing~
+Desc A Narrow stair landing lies in this narrow hall, the stair dropping
+down into the depths of the labyrinth.  No light penetrates this deep cavern
+hall, save that brought by those who travel these halls.  Silence reigns
+over this dead placed.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10838
+EDesc The Hall of Light
+~
+Exit down 10846
+EDesc A Darkened stair lies below.
+~
+End
+
+
+#10846
+Name A Landing~
+Desc The stone of the landing is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10847
+EDesc A dark passage leaves towards the south.
+~
+Exit up 10842
+EDesc A dark stairwell climbs upwards.
+~
+End
+
+
+#10847
+Name A dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10846
+EDesc A dark passage leads off north.
+~
+Exit south 10848
+EDesc A dark passage leads off south.
+~
+End
+
+
+#10848
+Name A dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10847
+EDesc A dark passage leads off north.
+~
+Exit south 10849
+EDesc A dark passage leads off south.
+~
+End
+
+
+#10849
+Name A dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10848
+EDesc A dark passage leads off north.
+~
+Exit east 10850
+EDesc A dark passage leads off to the east.
+~
+Exit south 10860
+EDesc A dark passage leads off south.
+~
+End
+
+
+#10850
+Name A dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10851
+EDesc A dark passage leads off to the east.
+~
+Exit west 10849
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10851
+Name A dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10852
+EDesc A dark passage leads off to the north.
+~
+Exit west 10850
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10852
+Name A dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10853
+EDesc A dark passage leads off to the north.
+~
+Exit south 10851
+EDesc A dark passage leads off to the south
+~
+End
+
+
+#10853
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10854
+EDesc A dark passage leads off to the east.
+~
+Exit south 10852
+EDesc A dark passage leads off to the south
+~
+End
+
+
+#10854
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10855
+EDesc A dark passage leads off to the north
+~
+Exit west 10853
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10855
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10854
+EDesc A dark passage leads off to the south
+~
+Exit west 10856
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10856
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10855
+EDesc A dark passage leads off to the east
+~
+Exit west 10857
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10857
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10856
+EDesc A dark passage leads off to the east
+~
+Exit south 10858
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10858
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10857
+EDesc A dark passage leads off to the north
+~
+Exit south 10859
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10859
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10858
+EDesc A dark passage leads off to the north
+~
+End
+
+
+#10860
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10849
+EDesc A dark passage leads off to the north.
+~
+Exit south 10861
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10861
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10860
+EDesc A dark passage leads off to the north.
+~
+Exit east 10862
+EDesc A dark passage leads off to the east.
+~
+End
+
+
+#10862
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10863
+EDesc A dark passage leads off to the north.
+~
+Exit west 10861
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10863
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10864
+EDesc A dark passage leads off to the east.
+~
+Exit south 10862
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10864
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10865
+EDesc A dark passage leads off to the east.
+~
+Exit west 10863
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10865
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10866
+EDesc A dark passage leads off to the north.
+~
+Exit west 10864
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10866
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10867
+EDesc A dark passage leads off to the north.
+~
+Exit south 10865
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10867
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10868
+EDesc A dark passage leads off to the east.
+~
+Exit south 10866
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10868
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10869
+EDesc A dark passage leads off to the north.
+~
+Exit south 10883
+EDesc A dark passage leads off to the south.
+~
+Exit west 10867
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10869
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10870
+EDesc A dark passage leads off to the north.
+~
+Exit south 10868
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10870
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10871
+EDesc A dark passage leads off to the east.
+~
+Exit south 10869
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10871
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 10872
+EDesc A dark passage leads off to the south.
+~
+Exit west 10870
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10872
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10871
+EDesc A dark passage leads off to the north.
+~
+Exit south 10873
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10873
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10872
+EDesc A dark passage leads off to the north.
+~
+Exit east 10874
+EDesc A dark passage leads off to the east.
+~
+End
+
+
+#10874
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10875
+EDesc A dark passage leads off to the north.
+~
+Exit west 10873
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10875
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10876
+EDesc A dark passage leads off to the north.
+~
+Exit south 10874
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10876
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10877
+EDesc A dark passage leads off to the east.
+~
+Exit south 10875
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10877
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 10878
+EDesc A dark passage leads off to the south.
+~
+Exit west 10876
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10878
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10877
+EDesc A dark passage leads off to the north.
+~
+Exit south 10879
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10879
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10878
+EDesc A dark passage leads off to the north.
+~
+Exit south 10880
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10880
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10879
+EDesc A dark passage leads off to the north.
+~
+Exit west 10881
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10881
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10880
+EDesc A dark passage leads off to the east.
+~
+Exit west 10882
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10882
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10881
+EDesc A dark passage leads off to the east.
+~
+Exit south 10894
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10883
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10868
+EDesc A dark passage leads off to the north.
+~
+Exit south 10884
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10884
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10883
+EDesc A dark passage leads off to the north.
+~
+Exit south 10885
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10885
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10884
+EDesc A dark passage leads off to the north.
+~
+Exit west 10886
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10886
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10885
+EDesc A dark passage leads off towards the east.
+~
+Exit west 10887
+EDesc A dark passage leads off westward.
+~
+End
+
+
+#10887
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10886
+EDesc A dark passage leads off to the east.
+~
+Exit south 10888
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10888
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10887
+EDesc A dark passage leads off to the north.
+~
+Exit west 10889
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10889
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10888
+EDesc A dark passage leads off to the east.
+~
+Exit west 10890
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10890
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10889
+EDesc A dark passage leads off to the east.
+~
+Exit south 10891
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10891
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10890
+EDesc A dark passage leads off to the north.
+~
+Exit east 10892
+EDesc A dark passage leads off to the east.
+~
+End
+
+
+#10892
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10893
+EDesc A dark passage leads off to the east.
+~
+Exit west 10891
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10893
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit west 10892
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10894
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10882
+EDesc A dark passage leads off towards the north.
+~
+Exit east 10920
+EDesc A dark passage leads off to the east.
+~
+Exit south 10895
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10895
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10894
+EDesc A dark passage leads off towards the north.
+~
+Exit south 10896
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10896
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10895
+EDesc A dark passage leads off towards the north.
+~
+Exit west 10897
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10897
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10896
+EDesc A dark passage leads off towards the east.
+~
+Exit west 10898
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10898
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10897
+EDesc A dark passage leads off towards the east.
+~
+Exit south 10899
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10899
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10898
+EDesc A dark passage leads off towards the north.
+~
+Exit south 10900
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10900
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10899
+EDesc A dark passage leads off towards the north.
+~
+Exit east 10934
+EDesc A dark passage leads off to the east.
+~
+Exit west 10901
+EDesc A dark passage leads off towards the west.
+~
+End
+
+
+#10901
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10900
+EDesc A dark passage leads off to the east.
+~
+Exit west 10902
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10902
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10901
+EDesc A dark passage leads off to the east.
+~
+Exit west 10903
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10903
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10902
+EDesc A dark passage leads off to the east.
+~
+Exit south 10904
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10904
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10903
+EDesc A dark passage leads off to the north.
+~
+Exit east 10905
+EDesc A dark passage leads off to the east.
+~
+End
+
+
+#10905
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10906
+EDesc A dark passage leads off to the east.
+~
+Exit west 10904
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10906
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10907
+EDesc A dark passage leads off to the east.
+~
+Exit west 10905
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10907
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10908
+EDesc A dark passage leads off to the east.
+~
+Exit west 10906
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10908
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10909
+EDesc A dark passage leads off to the east.
+~
+Exit west 10907
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10909
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10910
+EDesc A dark passage leads off to the east.
+~
+Exit west 10908
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10910
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10911
+EDesc A dark passage leads off to the east.
+~
+Exit west 10909
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10911
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10912
+EDesc A dark passage leads off to the east.
+~
+Exit west 10910
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10912
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10913
+EDesc A dark passage leads off to the east.
+~
+Exit west 10911
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10913
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10914
+EDesc A dark passage leads off to the north.
+~
+Exit west 10912
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10914
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10915
+EDesc A dark passage leads off to the north.
+~
+Exit south 10913
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10915
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10916
+EDesc A dark passage leads off to the north.
+~
+Exit south 10914
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10916
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10917
+EDesc A dark passage leads off to the north.
+~
+Exit south 10915
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10917
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10918
+EDesc A dark passage leads off to the north.
+~
+Exit south 10916
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10918
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10919
+EDesc A dark passage leads off to the north.
+~
+Exit south 10917
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10919
+Name A Large Dark Hall~
+Desc This is an enormous dark hall running north and south from a narrow
+dark passage that lies to the south.  The room is dusty and dank, the
+accumulated dust of ages mixing with the humidity of the earth, creating a
+slippery layer of slime underfoot.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 10918
+End
+
+
+#10920
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10921
+EDesc A dark passage leads off to the east.
+~
+Exit west 10894
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10921
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10922
+EDesc A dark passage leads off to the east.
+~
+Exit west 10920
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10922
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 10923
+EDesc A dark passage leads off to the south.
+~
+Exit west 10921
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10923
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10922
+EDesc A dark passage leads off to the north.
+~
+Exit west 10924
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10924
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10923
+EDesc A dark passage leads off to the east.
+~
+Exit west 10925
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10925
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10924
+EDesc A dark passage leads off to the east.
+~
+Exit south 10926
+EDesc A dark passage leads off to the south.
+~
+End
+
+
+#10926
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 10925
+Exit east 10927
+EDesc A dark passage leads off to the east.
+~
+End
+
+
+#10927
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10928
+EDesc A dark passage leads off to the east.
+~
+Exit west 10926
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10928
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 10929
+EDesc A dark passage leads off to the south.
+~
+Exit west 10927
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10929
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+Sector inside~
+Exit north 10928
+EDesc A dark passage leads off to the north.
+~
+Exit west 10930
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10930
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10929
+EDesc A dark passage leads off to the east.
+~
+Exit west 10931
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10931
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10930
+EDesc A dark passage leads off to the east.
+~
+Exit west 10932
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10932
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10931
+EDesc A dark passage leads off to the east.
+~
+Exit west 10933
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10933
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10932
+EDesc A dark passage leads off to the east.
+~
+End
+
+
+#10934
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10935
+Exit west 10900
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10935
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10936
+EDesc A dark passage leads off to the east.
+~
+Exit west 10934
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10936
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10937
+EDesc A dark passage leads off to the east.
+~
+Exit west 10935
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10937
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 10938
+EDesc A dark passage leads off to the east.
+~
+Exit west 10936
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#10938
+Name A Dark Passage~
+Desc The stone of the passage is jet black, the surface polished to a mirror
+shine.  Underfoot, a thick layer of dust covers the polished stone of the
+passage, dust, the color of old bone.  Silence reigns over the labyrinth,
+the silence of an ancient tomb.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit west 10937
+EDesc A dark passage leads off to the west.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 10603 spec_cast_undead
+M 10604 spec_cast_undead
+M 10606 spec_breath_fire
+S
+
+
+
+#RESETS2
+M 0 10602 2 10604 99
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10607 1
+E 0 10604 0 feet~
+E 0 10603 0 head~
+E 0 10603 0 torso~
+E 0 10601 0 wielded~
+M 0 10601 99 10613 1
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10617 1
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10623 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10633 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10634 1
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10637 1
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10645 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 99 10646 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10601 6 10647 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10604 99 10648 2
+M 0 10604 99 10654 2
+M 0 10604 99 10663 2
+M 0 10604 99 10672 2
+M 0 10604 99 10680 2
+M 0 10604 99 10688 2
+M 0 10604 99 10695 2
+M 0 10604 99 10702 2
+M 0 10604 99 10708 2
+M 0 10604 99 10714 2
+M 0 10604 99 10719 2
+M 0 10604 99 10724 2
+M 0 10604 99 10728 2
+M 0 10604 99 10732 2
+M 0 10604 99 10735 2
+M 0 10603 9 10737 1
+E 0 10605 0 hold~
+M 0 10605 99 10738 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10605 99 10744 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10605 99 10744 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10605 99 10754 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10605 99 10763 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10605 99 10763 2
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+M 0 10605 99 10764 6
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+O 0 10606 0 10764
+P 0 10607 1 10606 1
+M 0 10605 99 10765 4
+E 0 10601 0 wielded~
+E 0 10602 0 torso~
+E 0 10603 0 head~
+E 0 10604 0 feet~
+O 0 10608 0 10768
+O 0 10608 0 10769
+O 0 10608 0 10770
+O 0 10608 0 10771
+O 0 10608 0 10772
+O 0 10608 0 10773
+O 0 10608 0 10774
+O 0 10608 0 10775
+O 0 10608 0 10776
+O 0 10608 0 10777
+O 0 10608 0 10778
+O 0 10608 0 10779
+O 0 10608 0 10780
+O 0 10608 0 10781
+O 0 10608 0 10782
+O 0 10608 0 10783
+O 0 10608 0 10784
+O 0 10608 0 10785
+O 0 10608 0 10786
+O 0 10608 0 10787
+O 0 10608 0 10787
+O 0 10608 0 10787
+O 0 10608 0 10788
+O 0 10608 0 10789
+O 0 10608 0 10790
+O 0 10608 0 10791
+O 0 10608 0 10792
+O 0 10608 0 10793
+O 0 10608 0 10794
+O 0 10608 0 10795
+O 0 10608 0 10796
+O 0 10608 0 10797
+O 0 10608 0 10798
+O 0 10608 0 10799
+O 0 10608 0 10801
+O 0 10608 0 10802
+O 0 10608 0 10803
+O 0 10608 0 10804
+O 0 10608 0 10805
+O 0 10608 0 10806
+O 0 10608 0 10807
+O 0 10608 0 10808
+O 0 10608 0 10809
+O 0 10608 0 10810
+O 0 10608 0 10811
+O 0 10608 0 10812
+O 0 10608 0 10813
+O 0 10608 0 10814
+O 0 10608 0 10815
+O 0 10608 0 10816
+O 0 10608 0 10817
+O 0 10608 0 10818
+O 0 10608 0 10819
+O 0 10608 0 10820
+O 0 10608 0 10821
+O 0 10608 0 10822
+O 0 10608 0 10823
+O 0 10608 0 10824
+O 0 10608 0 10825
+O 0 10608 0 10826
+O 0 10608 0 10827
+O 0 10608 0 10828
+O 0 10608 0 10829
+O 0 10608 0 10830
+O 0 10608 0 10831
+O 0 10608 0 10832
+O 0 10608 0 10833
+O 0 10608 0 10834
+O 0 10608 0 10835
+O 0 10608 0 10836
+O 0 10608 0 10837
+O 0 10608 0 10838
+O 0 10608 0 10839
+O 0 10608 0 10840
+M 0 10606 1 10841 1
+M 0 10605 99 10842 2
+M 0 10607 1 10859 99
+E 0 10610 0 wielded~
+M 0 10607 99 10861 2
+E 0 10610 0 wielded~
+M 0 10607 99 10868 2
+E 0 10610 0 wielded~
+M 0 10607 99 10896 2
+E 0 10610 0 wielded~
+M 0 10607 99 10900 2
+E 0 10610 0 wielded~
+M 0 10607 99 10904 2
+E 0 10610 0 wielded~
+M 0 10607 99 10909 2
+E 0 10610 0 wielded~
+M 0 10607 99 10913 2
+E 0 10610 0 wielded~
+M 0 10607 99 10915 2
+E 0 10610 0 wielded~
+M 0 10607 99 10919 6
+E 0 10610 0 wielded~
+O 0 10609 0 10919
+M 0 10607 1 10923 99
+E 0 10610 0 wielded~
+M 0 10607 1 10933 99
+E 0 10610 0 wielded~
+M 0 10607 1 10938 99
+E 0 10610 0 wielded~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#10602
+code if ispc $n
+  say I walk these halls to roll the bones.
+  say Yo ho ho and a tankard of Ale.
+  say I walk these halls to find more bones.
+  say Yo ho ho and a tankard of Ale.
+else
+endif
+~
+disabled false
+END
+
+#10601
+code if ispc $n
+  mob echoat $n The clacking of bone on bone is heard as a skeletal warrior attacks.
+  mob kill $n
+else
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

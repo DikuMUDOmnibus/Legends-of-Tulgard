@@ -1,0 +1,3664 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Chessboard~
+ShortName   Chess Board~
+Builders    ~
+Credits     exxon~
+VNUMs       5200 5299
+LComment    `#`C[ 30- 50]`^
+LRange      30 50
+Security    9
+Colour      x~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Mon Aug 22 17:37:49 2005~
+End
+
+
+
+#MOBILES
+#5200
+Name black pawn~
+ShortD the Pawn of the Black Court~
+LongD You see a pawn standing here waiting for orders.~
+Desc The Black Pawn looks quite like a small knight without his powerful steed.
+His armor is shiny and black. He stands ready to give his life for the Crown.
+~
+Race human~
+Align 3 -3
+Level 25
+Hitroll 0
+HitDice 5d5+140
+ManaDice 3d5+60
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -76
+Wealth 0
+Act    npc aggressive stay_area thief~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 5200
+END
+
+#5201
+Name white pawn~
+ShortD the Pawn of the White Court~
+LongD You see a pawn standing here waiting for orders.~
+Desc The White Pawn looks quite like a small knight without his powerful steed.
+His armor is spotless and white. He stands ready to give his life for the 
+Crown.
+~
+Race human~
+Align 3 3
+Level 25
+Hitroll 0
+HitDice 5d5+140
+ManaDice 3d5+60
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -82
+Wealth 0
+Act    npc stay_area thief~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 5201
+END
+
+#5202
+Name black rook castle~
+ShortD the Black Rook~
+LongD In the corner you see a large, black, stone castle on wheels.~
+Desc The Black Rook is a very large man-made tomb on wheels.  Just
+from the looks of it, it will probably be YOUR tomb.
+~
+Race human~
+Align 3 -3
+Level 42
+Hitroll 0
+HitDice 5d8+270
+ManaDice 2d5+40
+DamDice 6d6+18
+DamType beating
+AC -180 -180 -180 -154
+Wealth 0
+Act    npc aggressive stay_area warrior~
+AffBy  regeneration~
+Imm    summon~
+Form   non_skinable sentient construct~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#5203
+Name white rook castle~
+ShortD the White Rook~
+LongD In the corner you see a large, white, stone castle on wheels.~
+Desc The White Rook is a very large man-made tomb on wheels.  Just
+from the looks of it, it will probably be YOUR tomb.
+~
+Race human~
+Align 3 3
+Level 44
+Hitroll 0
+HitDice 5d8+270
+ManaDice 2d5+40
+DamDice 6d6+18
+DamType beating
+AC -180 -180 -180 -151
+Wealth 0
+Act    npc stay_area warrior~
+Imm    summon~
+Form   non_skinable sentient construct~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#5204
+Name black knight~
+ShortD the Black Knight~
+LongD Here stands a magnificent knight of the dark realm.~
+Desc The Black Knight is here, riding his ebony black war horse.  His eyes
+flash behind his visor in vengence.
+~
+Race human~
+Align 3 -3
+Level 37
+Hitroll 0
+HitDice 5d6+235
+ManaDice 2d5+25
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -118
+Wealth 0
+Act    npc stay_area warrior~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5205
+Name white knight~
+ShortD the White Knight~
+LongD Here stands a magnificent knight of the light realm.~
+Desc The White Knight is here, riding his ivory white war horse.  His eyes
+gleam behind his visor in joy.
+~
+Race human~
+Align 3 3
+Level 39
+Hitroll 0
+HitDice 5d6+235
+ManaDice 2d5+25
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -118
+Wealth 0
+Act    npc stay_area warrior~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5206
+Name black bishop priest~
+ShortD the Black Bishop~
+LongD A dark priest stands here.~
+Desc The Black Bishop seems willing to help you straight into your grave so
+he can bless you properly.
+~
+Race human~
+Align 3 -3
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+15
+DamType wrath
+AC -157 -157 -157 -127
+Wealth 0
+Act    npc stay_area cleric~
+AffBy  detect_hidden protect_good~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5207
+Name white bishop priest~
+ShortD the White Bishop~
+LongD A light priest stands here.~
+Desc The White Bishop seems willing to help you in any possible so that he can
+attain a higher spirituality.
+~
+Race human~
+Align 3 3
+Level 43
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+15
+DamType divine
+AC -157 -157 -157 -138
+Wealth 0
+Act    npc stay_area cleric~
+AffBy  detect_hidden protect_evil~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5208
+Name black queen~
+ShortD the Black Queen~
+LongD The Black Queen stands here.~
+Desc The Black Queen is a strikingly beautiful woman with pale skin and a mass of
+dark hair that crowns her head like a black cloud.  If looks could kill, you
+would already be dead.
+~
+Race human~
+Align 3 -3
+Level 53
+Hitroll 0
+HitDice 5d9+285
+ManaDice 6d10+350
+DamDice 5d8+19
+DamType magic
+AC -220 -220 -220 -187
+Wealth 0
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    dodge~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+Group 5210
+END
+
+#5209
+Name white queen~
+ShortD the White Queen~
+LongD The White Queen stands here.~
+Desc The White Queen is a stunningly beautiful woman with dark skin and a mass
+of light hair that frames her head like the sun.  This is surely love at
+first sight for you.
+~
+Race human~
+Align 3 3
+Level 53
+Hitroll 0
+HitDice 5d9+285
+ManaDice 6d10+350
+DamDice 5d8+19
+DamType magic
+AC -220 -220 -220 -189
+Wealth 0
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    dodge~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+Group 2411
+END
+
+#5210
+Name black king~
+ShortD the Black King~
+LongD The Black King stands here.~
+Desc The Black King is a menacing figure.  You can easily understand why he
+is the king and you are not.
+~
+Race human~
+Align 3 -3
+Level 55
+Hitroll 0
+HitDice 6d9+310
+ManaDice 2d5+55
+DamDice 6d8+24
+DamType beating
+AC -270 -270 -270 -243
+Wealth 0
+Act    npc dont_wander warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_good~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5211
+Name white king~
+ShortD the White King~
+LongD The White King stands here.~
+Desc The White King is a stately figure.  You can easily understand why he
+is the king and you are not.
+~
+Race human~
+Align 3 3
+Level 55
+Hitroll 0
+HitDice 6d9+310
+ManaDice 2d5+55
+DamDice 6d8+24
+DamType beating
+AC -270 -270 -270 -221
+Wealth 0
+Act    npc dont_wander warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil~
+Imm    summon~
+Form   non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5212
+Name caliph omar ghost~
+ShortD the Ghost of Caliph Omar~
+LongD The Ghost of Caliph Omar is floating here.~
+Desc Caliph Omar was person who sanctions chess for islamic people. 
+His ghost is here small, and looks like made from smoke.
+~
+Race human~
+Align 0 0
+Level 79
+Hitroll 0
+HitDice 8d12+405
+ManaDice 3d5+85
+DamDice 9d10+40
+DamType wrath
+AC -510 -510 -510 -438
+Wealth 0
+Act    npc wimpy warrior~
+AffBy  invisible detect_invis detect_hidden sanctuary sneak hide flying pass_door haste~
+Imm    summon charm sleep~
+Form   magical instant_decay non_skinable sentient undead mist~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#5200
+Name armour black pawn~
+Short some `#`sBlack Pawn`^ armor~
+Desc A pile of black armour is here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 75
+Rsize 50
+Values 10 10 10 8 2
+Weight 750
+Material steel~
+Extra    evil antigood nodegrade~
+Wear     take torso~
+ClassAllowances cleric warrior barbarian bard anti-paladin~
+Affect modifier -1 31 -1 ac -10 0
+Affect modifier -1 31 -1 saves -4 0
+End
+
+#5201
+Name armor white pawn~
+Short some `#`WWhite Pawn`^ armor~
+Desc A pile of white armour is here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 75
+Rsize 50
+Values 10 10 10 8 2
+Weight 750
+Material steel~
+Extra    bless antievil~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian bard~
+Affect modifier -1 31 -1 ac -10 0
+Affect modifier -1 31 -1 saves -4 0
+End
+
+#5202
+Name axe black pawn~
+Short a `#`SBlack Pawn's`^ axe~
+Desc The axe of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values axe 2 15 chop E
+Weight 200
+Material steel~
+Extra    evil antigood~
+Wear     take wield~
+ClassAllowances warrior ranger barbarian bard anti-paladin~
+Affect modifier -1 31 -1 hitroll 4 0
+Affect modifier -1 31 -1 damroll 4 0
+End
+
+#5203
+Name axe white pawn~
+Short a `#`WWhite Pawn's`^ axe~
+Desc The axe of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values axe 2 6 chop E
+Weight 100
+Material steel~
+Extra    bless antievil~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard~
+Affect modifier -1 31 -1 hitroll 4 0
+Affect modifier -1 31 -1 damroll 4 0
+End
+
+#5204
+Name armor black rook~
+Short some `#`SBlack Rook`^ armor~
+Desc Some armour made from the remains of a black rook lies heaped on the floor.~
+Level 46
+ItemType armor~
+Cost 920
+Durability 5
+Asize 70
+Rsize 55
+Values 15 15 15 12 5
+Weight 700
+Material stone~
+Extra    evil magic antigood antineutral nonmetal burnproof~
+Wear     take torso~
+ClassAllowances warrior barbarian spellfilcher anti-paladin~
+Affect modifier -1 46 -1 ac -25 0
+Affect modifier -1 46 -1 hp 2 0
+End
+
+#5205
+Name armor white rook~
+Short some `#`WWhite Rook`^ armor~
+Desc Some armour made from the remains of a white rook lies heaped on the floor.~
+Level 46
+ItemType armor~
+Cost 920
+Durability 5
+Asize 70
+Rsize 55
+Values 15 15 15 12 5
+Weight 700
+Material stone~
+Extra    magic bless antievil antineutral nonmetal burnproof~
+Wear     take torso~
+ClassAllowances warrior paladin barbarian spellfilcher~
+Affect modifier -1 46 -1 ac -25 0
+Affect modifier -1 46 -1 hp 2 0
+End
+
+#5206
+Name lance black knight~
+Short the `#`YLance`^ of the `#`SBlack Knight`^~
+Desc The Lance of the Black Knight lies here, waiting to rust.~
+Level 38
+ItemType weapon~
+Cost 760
+Durability 5
+Asize 50
+Rsize 50
+Values exotic 7 4 thrust D
+Weight 200
+Material bronze~
+Extra    evil magic antigood~
+Wear     take wield~
+ClassAllowances warrior anti-paladin~
+AttuneFlags attunable equal_level vanish infuriating~
+End
+
+#5207
+Name lance white knight~
+Short the `#`YLance`^ of the `#`WWhite Knight`^~
+Desc The Lance of the White Knight lies here, waiting to rust.~
+Level 38
+ItemType weapon~
+Cost 760
+Durability 5
+Asize 50
+Rsize 50
+Values exotic 7 4 thrust D
+Weight 200
+Material bronze~
+Extra    hum magic bless antievil~
+Wear     take wield~
+ClassAllowances warrior paladin~
+AttuneFlags attunable equal_level vanish infuriating~
+End
+
+#5208
+Name staff black bishop~
+Short the `#`GStaff`^ of the `#`SBlack Bishop`^~
+Desc The Black Bishop's Staff is lying here.~
+Level 44
+ItemType staff~
+Cost 880
+Durability 5
+Asize 20
+Rsize 50
+Values 44 22 4 curse 0
+Weight 80
+Material wood~
+Extra    evil magic antigood antineutral nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher anti-paladin~
+Affect modifier -1 44 -1 saves -6 0
+Affect modifier -1 44 -1 mana 60 0
+End
+
+#5209
+Name staff white bishop~
+Short the `#`GStaff`^ of the `#`WWhite Bishop`^~
+Desc The White Bishop's Staff is lying here.~
+Level 44
+ItemType staff~
+Cost 880
+Durability 5
+Asize 20
+Rsize 50
+Values 44 22 4 sanctuary 0
+Weight 80
+Material wood~
+Extra    magic bless antievil antineutral nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 44 -1 saves -6 0
+Affect modifier -1 44 -1 mana 60 0
+End
+
+#5210
+Name crown black queen~
+Short the `#`yC`Yr`Wo`Yw`yn`^ of the `#`SBlack Queen`^~
+Desc The Crown of the Black Queen lies here, looking neglected.~
+Level 53
+ItemType jewelry~
+Cost 1060
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material gold~
+Extra    glow evil magic antigood antineutral~
+Wear     take head~
+AttuneFlags attunable equal_level vanish infuriating~
+Affect modifier -1 53 -1 hitroll 2 0
+Affect modifier -1 53 -1 damroll 2 0
+Affect modifier -1 53 -1 mana 100 0
+Affect affects -1 53 -1 none 0 detect_good
+End
+
+#5211
+Name crown white queen~
+Short the `#`yC`Yr`Wo`Yw`yn`^ of the `#`WWhite Queen`^~
+Desc The Crown of the White Queen lies here, looking neglected.~
+Level 53
+ItemType jewelry~
+Cost 1060
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material gold~
+Extra    glow magic bless antievil antineutral~
+Wear     take head~
+AttuneFlags attunable equal_level vanish infuriating~
+Affect modifier -1 53 -1 hitroll 2 0
+Affect modifier -1 53 -1 damroll 2 0
+Affect modifier -1 53 -1 mana 100 0
+End
+
+#5212
+Name sceptre black king~
+Short the `#`SBlack King's `mS`cc`me`cp`mt`cr`me`^~
+Desc The Sceptre of the Black King lies here, collecting dust.~
+Level 53
+ItemType weapon~
+Cost 1060
+Durability 5
+Asize 10
+Rsize 50
+Values mace 4 12 beating DG
+Weight 100
+Material gold~
+Extra    glow evil magic antigood antineutral burnproof~
+Extra2   nosecondary~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid ranger spellfilcher anti-paladin~
+AttuneFlags attunable equal_level vanish infuriating~
+Affect modifier -1 53 -1 hp 4 0
+Affect modifier -1 53 -1 mana 40 0
+Affect modifier -1 53 -1 hitroll 2 0
+Affect modifier -1 53 -1 damroll 2 0
+Affect objectspell 'protection good' 0 -1 none 0 0
+End
+
+#5213
+Name sceptre white king~
+Short the `#`WWhite King's `mS`cc`me`cp`mt`cr`me`^~
+Desc The Sceptre of the White King lies here, collecting dust.~
+Level 53
+ItemType weapon~
+Cost 1060
+Durability 5
+Asize 10
+Rsize 50
+Values mace 4 12 beating DI
+Weight 100
+Material gold~
+Extra    glow magic bless antievil antineutral burnproof~
+Extra2   nosecondary~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+AttuneFlags attunable equal_level vanish infuriating~
+Affect modifier -1 53 -1 hp 4 0
+Affect modifier -1 53 -1 mana 40 0
+Affect modifier -1 53 -1 hitroll 2 0
+Affect modifier -1 53 -1 damroll 2 0
+Affect objectspell 'protection evil' 0 -1 none 0 0
+End
+
+#5214
+Name key black treasury~
+Short the Key to the Black Treasury~
+Desc There is a sinister black key lying here.~
+Level 6
+ItemType key~
+Cost 1
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material metal~
+Extra    invis nodrop~
+Wear     take hold~
+End
+
+#5215
+Name key white treasury~
+Short the Key to the White Treasury~
+Desc There is a bright white key lying here.~
+Level 6
+ItemType key~
+Cost 1
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material metal~
+Extra    invis nodrop~
+Wear     take hold~
+End
+
+#5216
+Name coins gold black royal treasure~
+Short the Black Royal Treasure~
+Desc There are a LOT of coins here.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 3 0 0 0
+Weight 0
+Material silver~
+Extra    nolocate~
+Wear     take~
+End
+
+#5217
+Name coins gold white royal treasure~
+Short the White Royal Treasure~
+Desc There are a LOT of coins here.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 3 0 0 0
+Weight 0
+Material silver~
+Extra    nolocate~
+Wear     take~
+End
+
+#5218
+Name flail black pawn~
+Short a `#`SBlack Pawn's`^ flail~
+Desc The flail of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values flail 7 4 beating 0
+Weight 120
+Material steel~
+Extra    evil antigood~
+Wear     take wield~
+Affect modifier -1 31 -1 damroll 2 0
+Affect modifier -1 31 -1 hitroll 2 0
+End
+
+#5219
+Name flail white pawn~
+Short a `#`WWhite Pawn's`^ flail~
+Desc The flail of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Condition 90
+Asize 100
+Rsize 50
+Values flail 7 4 beating 0
+Weight 120
+Material steel~
+Extra    bless antievil~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5220
+Name whip black pawn~
+Short a `#`SBlack Pawn's`^ whip~
+Desc The whip of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values whip 2 15 whip 0
+Weight 30
+Material leather~
+Extra    evil antigood nonmetal~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5221
+Name whip white pawn~
+Short a `#`WWhite Pawn's`^ whip~
+Desc The whip of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values whip 2 15 whip 0
+Weight 30
+Material leather~
+Extra    bless antievil nonmetal~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5222
+Name spear black pawn~
+Short a `#`SBlack Pawn's`^ spear~
+Desc The spear of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values polearm 3 13 thrust F
+Weight 100
+Material steel~
+Extra    evil antigood~
+Wear     take wield~
+Affect modifier -1 31 -1 damroll 2 0
+Affect modifier -1 31 -1 hitroll 2 0
+End
+
+#5223
+Name spear white pawn~
+Short a `#`WWhite Pawn's`^ spear~
+Desc The spear of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values polearm 3 13 thrust F
+Weight 100
+Material steel~
+Extra    bless antievil~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5224
+Name halberd black pawn~
+Short a `#`SBlack Pawn's`^ halberd~
+Desc The halberd of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values polearm 9 4 chop F
+Weight 250
+Material steel~
+Extra    evil antigood~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5225
+Name halberd white pawn~
+Short a `#`WWhite Pawn's`^ halberd~
+Desc The halberd of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values polearm 9 4 chop F
+Weight 250
+Material steel~
+Extra    bless antievil~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5226
+Name rapier black pawn~
+Short a `#`SBlack Pawn's`^ rapier~
+Desc The rapier of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values sword 9 3 thrust 0
+Weight 40
+Material steel~
+Extra    evil antigood~
+Wear     take wield~
+Affect modifier -1 31 -1 damroll 2 0
+Affect modifier -1 31 -1 hitroll 2 0
+End
+
+#5227
+Name rapier white pawn~
+Short a `#`WWhite Pawn's`^ rapier~
+Desc The rapier of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values sword 9 3 thrust 0
+Weight 40
+Material steel~
+Extra    bless antievil~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5228
+Name kris black pawn~
+Short a `#`SBlack Pawn's`^ kris~
+Desc The kris of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values dagger 7 3 stab 0
+Weight 25
+Material steel~
+Extra    evil antigood~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5229
+Name kris white pawn~
+Short a `#`WWhite Pawn's`^ kris~
+Desc The kris of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values dagger 7 3 stab 0
+Weight 25
+Material steel~
+Extra    bless antievil~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5230
+Name crossbow black pawn~
+Short a `#`SBlack Pawn's`^ crossbow~
+Desc The crossbow of a Black Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values bow 7 3 blast E
+Weight 300
+Material wood~
+Extra    evil antigood nonmetal~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5231
+Name crossbow white pawn~
+Short a `#`WWhite Pawn's`^ crossbow~
+Desc The crossbow of a White Pawn lies here.~
+Level 31
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values bow 7 3 pound E
+Weight 300
+Material wood~
+Extra    bless antievil nonmetal~
+Wear     take wield~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 damroll 2 0
+End
+
+#5232
+Name shield black pawn~
+Short a `#`SBlack Pawn's`^ shield~
+Desc You see a Black Pawn's shield here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 30
+Rsize 50
+Values 10 10 10 8 2
+Weight 300
+Material steel~
+Extra    evil antigood~
+Wear     take shield~
+End
+
+#5233
+Name shield white pawn~
+Short a `#`WWhite Pawn's`^ shield~
+Desc You see a White Pawn's shield here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 30
+Rsize 50
+Values 10 10 10 8 2
+Weight 300
+Material steel~
+Extra    bless antievil~
+Wear     take shield~
+End
+
+#5234
+Name cloak black pawn~
+Short a `#`SBlack Pawn's`^ cloak~
+Desc You see a Black Pawn's cloak here.~
+Level 31
+ItemType clothing~
+Cost 620
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material cloth~
+Extra    evil magic antigood nonmetal~
+Wear     take about~
+Affect modifier -1 31 -1 ac -10 0
+End
+
+#5235
+Name cloak white pawn~
+Short a `#`WWhite Pawn's`^ cloak~
+Desc You see a White Pawn's cloak here.~
+Level 31
+ItemType clothing~
+Cost 620
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material cloth~
+Extra    magic bless antievil nonmetal~
+Wear     take about~
+Affect modifier -1 31 -1 ac -10 0
+End
+
+#5236
+Name helmet black pawn~
+Short a `#`SBlack Pawn's`^ helmet~
+Desc You see a Black Pawn's helmet here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 50
+Rsize 50
+Values 8 8 8 6 1
+Weight 50
+Material steel~
+Extra    evil antigood~
+Wear     take head~
+ClassAllowances cleric warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5237
+Name helmet white pawn~
+Short a `#`WWhite Pawn's`^ helmet~
+Desc You see a White Pawn's helmet here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 50
+Rsize 50
+Values 8 8 8 6 1
+Weight 50
+Material steel~
+Extra    bless antievil~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5238
+Name leggings black pawn~
+Short a pair of `#`SBlack Pawn's`^ leggings~
+Desc You see a pair of Black Pawn's leggings here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 30
+Rsize 50
+Values 8 8 8 6 1
+Weight 30
+Material leather~
+Extra    evil antigood nonmetal~
+Wear     take legs~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5239
+Name leggings white pawn~
+Short a pair of `#`WWhite Pawn's`^ leggings~
+Desc You see a pair of White Pawn's leggings here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 30
+Rsize 50
+Values 8 8 8 6 1
+Weight 30
+Material leather~
+Extra    bless antievil nonmetal~
+Wear     take legs~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5240
+Name boots black pawn~
+Short a pair of `#`SBlack Pawn's`^ boots~
+Desc You see a pair of Black Pawn's boots here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 130
+Rsize 50
+Values 6 6 6 4 1
+Weight 130
+Material leather~
+Extra    evil antigood nonmetal~
+Wear     take feet~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5241
+Name boots white pawn~
+Short a pair of `#`WWhite Pawn's`^ boots~
+Desc You see a pair of Black Pawn's boots here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 130
+Rsize 50
+Values 6 6 6 4 1
+Weight 130
+Material leather~
+Extra    bless antievil nonmetal~
+Wear     take feet~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5242
+Name gloves black pawn~
+Short a pair of `#`SBlack Pawn's`^ gloves~
+Desc You see a pair of Black Pawn's Gloves here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 80
+Rsize 50
+Values 6 6 6 4 1
+Weight 80
+Material leather~
+Extra    evil antigood nonmetal~
+Wear     take hands~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5243
+Name gloves white pawn~
+Short a pair of `#`WWhite Pawn's`^ gloves~
+Desc You see a pair of White Pawn's Gloves here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 80
+Rsize 50
+Values 6 6 6 4 1
+Weight 80
+Material leather~
+Extra    bless antievil nonmetal~
+Wear     take hands~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5244
+Name sleeves black pawn~
+Short a pair of `#`SBlack Pawn's`^ sleeves~
+Desc You see a pair of Black Pawn's Sleeves here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 90
+Rsize 50
+Values 8 8 8 6 1
+Weight 90
+Material leather~
+Extra    evil antigood nonmetal~
+Wear     take arms~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5245
+Name sleeves white pawn~
+Short a pair of `#`WWhite Pawn's`^ sleeves~
+Desc You see a pair of White Pawn's Sleeves here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 90
+Rsize 50
+Values 8 8 8 6 1
+Weight 90
+Material leather~
+Extra    bless antievil nonmetal~
+Wear     take arms~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5246
+Name cape black pawn~
+Short a `#`SBlack Pawn's`^ cape~
+Desc You see a Black Pawn's Cape here.~
+Level 31
+ItemType clothing~
+Cost 620
+Durability 5
+Asize 80
+Rsize 50
+Values 0 0 0 0 0
+Weight 80
+Material cloth~
+Extra    evil magic antigood nonmetal~
+Wear     take neck~
+Affect modifier -1 31 -1 ac -10 0
+End
+
+#5247
+Name cape white pawn~
+Short a `#`WWhite Pawn's`^ cape~
+Desc You see a White Pawn's Cape here.~
+Level 31
+ItemType clothing~
+Cost 620
+Durability 5
+Asize 80
+Rsize 50
+Values 0 0 0 0 0
+Weight 80
+Material cloth~
+Extra    magic bless antievil nonmetal~
+Wear     take neck~
+Affect modifier -1 31 -1 ac -10 0
+End
+
+#5248
+Name belt black pawn~
+Short a `#`SBlack Pawn's`^ belt~
+Desc You see a Black Pawn's Belt here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 70
+Rsize 50
+Values 6 6 6 4 1
+Weight 70
+Material bronze~
+Extra    evil antigood~
+Wear     take waist~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5249
+Name belt white pawn~
+Short a `#`WWhite Pawn's`^ belt~
+Desc You see a White Pawn's Belt here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 20
+Rsize 50
+Values 6 6 6 4 1
+Weight 70
+Material bronze~
+Extra    bless antievil~
+Wear     take waist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5250
+Name bracer black pawn~
+Short a `#`SBlack Pawn's`^ bracer~
+Desc You see a Black Pawn's Bracer here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 60
+Rsize 50
+Values 4 4 4 3 0
+Weight 60
+Material bronze~
+Extra    evil antigood~
+Wear     take wrist~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#5251
+Name bracer white pawn~
+Short a `#`WWhite Pawn's`^ bracer~
+Desc You see a White Pawn's Bracer here.~
+Level 31
+ItemType armor~
+Cost 620
+Durability 5
+Asize 60
+Rsize 50
+Values 4 4 4 3 0
+Weight 60
+Material bronze~
+Extra    bless antievil~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+End
+
+#5260
+Name small chessboard~
+Short the `#`?m`?a`?g`?i`?c`^ chessboard~
+Desc You see a small chessboard here.~
+Level 72
+ItemType treasure~
+Cost 1440
+Durability 5
+Asize 60
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material marble~
+Extra    invis magic antigood antievil nonmetal nolocate burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid spellfilcher~
+AttuneFlags attunable equal_level vanish infuriating~
+Affect modifier -1 72 -1 mana 120 0
+Affect modifier -1 72 -1 selfdiscipline 3 0
+Affect affects -1 72 -1 none 0 detect_magic
+Affect affects -1 72 -1 none 0 faerie_fire
+Affect resist -1 72 -1 none 0 mental
+End
+
+#5261
+Name shield black knight~
+Short a `#`SBlack Knight's`^ shield~
+Desc You see a Black Knight's shield here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 90
+Rsize 50
+Values 13 13 13 10 2
+Weight 250
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior ranger barbarian bard anti-paladin~
+Affect modifier -1 39 -1 saves -4 0
+End
+
+#5262
+Name shield white knight~
+Short a `#`WWhite Knight's`^ shield~
+Desc You see a White Knight's shield here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 90
+Rsize 50
+Values 13 13 13 10 2
+Weight 250
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 39 -1 saves -4 0
+End
+
+#5263
+Name cloak black knight~
+Short a `#`SBlack Knight's`^ cloak~
+Desc You see a Black Knight's cloak here.~
+Level 39
+ItemType clothing~
+Cost 780
+Durability 5
+Asize 70
+Rsize 50
+Values 0 0 0 0 0
+Weight 70
+Material cloth~
+Extra    evil magic antigood nonmetal~
+Wear     take about~
+Affect modifier -1 39 -1 ac -10 0
+Affect modifier -1 39 -1 saves -4 0
+Affect affects -1 39 -1 none 0 protect_good
+End
+
+#5264
+Name cloak white knight~
+Short a `#`WWhite Knight's`^ cloak~
+Desc You see a White Knight's cloak here.~
+Level 39
+ItemType clothing~
+Cost 780
+Durability 5
+Asize 70
+Rsize 50
+Values 0 0 0 0 0
+Weight 70
+Material cloth~
+Extra    magic bless antievil nonmetal~
+Wear     take neck~
+Affect modifier -1 39 -1 ac -10 0
+Affect modifier -1 39 -1 saves -4 0
+Affect affects -1 39 -1 none 0 protect_evil
+End
+
+#5265
+Name helmet black knight~
+Short a `#`sBlack Knight's`^ helmet~
+Desc You see a Black Knight's helmet here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 70
+Rsize 50
+Values 10 10 10 8 1
+Weight 70
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take head~
+ClassAllowances cleric warrior ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 reasoning 4 0
+End
+
+#5266
+Name helmet white knight~
+Short a `#`WWhite Knight's`^ helmet~
+Desc You see a White Knight's helmet here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 70
+Rsize 50
+Values 10 10 10 8 1
+Weight 70
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 39 -1 reasoning 4 0
+End
+
+#5267
+Name greaves black knight~
+Short a pair of `#`SBlack Knight's`^ greaves~
+Desc You see a pair of Black Knight's greaves here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 80
+Rsize 50
+Values 10 10 10 8 1
+Weight 150
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take legs~
+ClassAllowances cleric warrior barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 move 160 0
+End
+
+#5268
+Name greaves white knight~
+Short a pair of `#`WWhite Knight's`^ greaves~
+Desc You see a pair of White Knight's greaves here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 80
+Rsize 50
+Values 10 10 10 8 1
+Weight 150
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 move 160 0
+End
+
+#5269
+Name boots black knight~
+Short a pair of `#`SBlack Knight's`^ boots~
+Desc You see a pair of Black Knight's boots here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 110
+Rsize 50
+Values 8 8 8 6 1
+Weight 110
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take feet~
+ClassAllowances cleric warrior ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 quickness 4 0
+End
+
+#5270
+Name boots white knight~
+Short a pair of `#`WWhite Knight's`^ boots~
+Desc You see a pair of White Knight's boots here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 110
+Rsize 50
+Values 8 8 8 6 1
+Weight 110
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take feet~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 39 -1 quickness 4 0
+End
+
+#5271
+Name gauntlets black knight~
+Short a pair of `#`SBlack Knight's`^ gauntlets~
+Desc You see a pair of Black Knight's gauntlets here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 80
+Rsize 50
+Values 8 8 8 6 1
+Weight 80
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take hands~
+ClassAllowances cleric warrior ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 strength 4 0
+End
+
+#5272
+Name gauntlets white knight~
+Short a pair of `#`WWhite Knight's`^ gauntlets~
+Desc You see a pair of White Knight's gauntlets here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 80
+Rsize 50
+Values 8 8 8 6 1
+Weight 80
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take hands~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 39 -1 strength 4 0
+End
+
+#5273
+Name vambraces black knight~
+Short a pair of `#`SBlack Knight's`^ vambraces~
+Desc You see a pair of Black Knight's vambraces here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 100
+Rsize 50
+Values 10 10 10 8 1
+Weight 120
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take arms~
+ClassAllowances cleric warrior ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 hitroll 4 0
+Affect modifier -1 39 -1 damroll 4 0
+End
+
+#5274
+Name vambraces white knight~
+Short a pair of `#`WWhite Knight's`^ vambraces~
+Desc You see a pair of White Knight's vambraces here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 100
+Rsize 50
+Values 10 10 10 8 1
+Weight 120
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take arms~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 39 -1 hitroll 4 0
+Affect modifier -1 39 -1 damroll 4 0
+End
+
+#5275
+Name cape black knight~
+Short a `#`SBlack Knight's`^ cape~
+Desc You see a Black Knight's Cape here.~
+Level 39
+ItemType clothing~
+Cost 780
+Durability 5
+Asize 70
+Rsize 50
+Values 0 0 0 0 0
+Weight 70
+Material cloth~
+Extra    evil magic antigood nonmetal~
+Wear     take neck~
+Affect modifier -1 39 -1 saves -4 0
+Affect modifier -1 39 -1 ac -10 0
+Affect resist -1 39 -1 none 0 holy
+End
+
+#5276
+Name cape white knight~
+Short a `#`WWhite Knight's`^ cape~
+Desc You see a White Knight's Cape here.~
+Level 39
+ItemType clothing~
+Cost 780
+Durability 5
+Asize 70
+Rsize 50
+Values 0 0 0 0 0
+Weight 70
+Material cloth~
+Extra    magic bless antievil antineutral nonmetal~
+Wear     take neck~
+Affect modifier -1 39 -1 ac -10 0
+Affect modifier -1 39 -1 saves -4 0
+Affect resist -1 39 -1 none 0 negative
+End
+
+#5277
+Name belt black knight~
+Short a `#`SBlack Knight's`^ belt~
+Desc You see a Black Knight's Belt here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 60
+Rsize 50
+Values 8 8 8 6 1
+Weight 80
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take waist~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 constitution 4 0
+End
+
+#5278
+Name belt white knight~
+Short a `#`WWhite Knight's`^ belt~
+Desc You see a White Knight's Belt here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 60
+Rsize 50
+Values 8 8 8 6 1
+Weight 80
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take waist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 39 -1 constitution 4 0
+End
+
+#5279
+Name bracer black knight~
+Short a `#`SBlack Knight's`^ bracer~
+Desc You see a Black Knight's Bracer here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 40
+Rsize 50
+Values 6 6 6 4 0
+Weight 40
+Material steel~
+Extra    evil magic antigood burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 39 -1 hitroll 2 0
+Affect modifier -1 39 -1 damroll 2 0
+Affect modifier -1 39 -1 agility 1 0
+End
+
+#5280
+Name bracer white knight~
+Short a `#`WWhite Knight's`^ bracer~
+Desc You see a White Knight's Bracer here.~
+Level 39
+ItemType armor~
+Cost 780
+Durability 5
+Asize 40
+Rsize 50
+Values 6 6 6 4 0
+Weight 40
+Material steel~
+Extra    magic bless antievil burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 39 -1 hitroll 2 0
+Affect modifier -1 39 -1 damroll 2 0
+Affect modifier -1 39 -1 agility 1 0
+End
+
+#5281
+Name portal~
+Short a magic portal~
+Desc A magic portal shimmers and swirls before you.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 M A 15724 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#5200
+Name The Great Chessboard~
+Desc You stand in the archway of the Chessboard of Midgaard.  The giant
+wooden gate is rusted open.
+   A narrow dirt path leads eastwards into the thick grass and the
+chessboard opens up to the west.
+~
+RoomFlags no_mob~
+Sector city~
+Exit west 5232
+EKeyvnum -1
+EDesc The huge chessboard opens up to the west.
+~
+End
+
+
+#5201
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the Black Queen's Rook.
+~
+Sector city~
+Exit east 5202
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5209
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+End
+
+
+#5202
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the Black Queen's Knight.
+~
+Sector city~
+Exit east 5203
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5210
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5201
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5203
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the Black Queen's Bishop.
+~
+Sector city~
+Exit east 5204
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5211
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5202
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5204
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the Black Queen.
+~
+Sector city~
+Exit east 5205
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5212
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5203
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+Exit down 5265
+EFlags door closed locked pickproof~
+EKeyvnum 5214
+EKeywords marble square~
+End
+
+
+#5205
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the Black King.
+~
+Sector city~
+Exit east 5206
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5213
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5204
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5206
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the Black King's Bishop.
+~
+Sector city~
+Exit east 5207
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5214
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5205
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5207
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the Black King's Knight.
+~
+Sector city~
+Exit east 5208
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5215
+Exit west 5206
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5208
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the Black King's Rook.
+~
+Sector city~
+Exit south 5216
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5207
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5209
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the Black Queen's Pawns.
+~
+Sector city~
+Exit north 5201
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5210
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5217
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+End
+
+
+#5210
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the Black Queen's Pawns.
+~
+Sector city~
+Exit north 5202
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5211
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5218
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5209
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5211
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the Black Queen's Pawns.
+~
+Sector city~
+Exit north 5203
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5212
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5219
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5210
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5212
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the Black Queen's Pawns.
+~
+Sector city~
+Exit north 5204
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5213
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5220
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5211
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5213
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the Black King's Pawns.
+~
+Sector city~
+Exit north 5205
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5214
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5221
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5212
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5214
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the Black King's Pawns.
+~
+Sector city~
+Exit north 5206
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5215
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5222
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5213
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5215
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the Black King's Pawns.
+~
+Sector city~
+Exit north 5207
+Exit east 5216
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5223
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5214
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5216
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the Black King's Pawns.
+~
+Sector city~
+Exit north 5208
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit south 5224
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5215
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5217
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5209
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5218
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5225
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+End
+
+
+#5218
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5210
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5219
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5226
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5217
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5219
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5211
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5220
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5227
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5218
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5220
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5212
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5221
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5228
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5219
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5221
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5213
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5222
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5229
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5220
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5222
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5214
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5223
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5230
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5221
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5223
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5215
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5224
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5231
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5222
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5224
+Name A Black Square~
+Desc You are standing on a black marble square.  You can see a rusty gate
+to the south.
+~
+Sector city~
+Exit north 5216
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit south 5232
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5223
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5225
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5217
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5226
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5233
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+End
+
+
+#5226
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5218
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5227
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5234
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5225
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5227
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5219
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5228
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5235
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5226
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5228
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5220
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5229
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5236
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5227
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5229
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5221
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5230
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5237
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5228
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5230
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5222
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5231
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5238
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5229
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5231
+Name A Black Square~
+Desc You are standing on a black marble square.  There is a rusty gate
+a short distance to the east.
+~
+Sector city~
+Exit north 5223
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5232
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5239
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5230
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5232
+Name A White Square~
+Desc You are standing on a white marble square.  There is a large rusty
+gate to the east.
+~
+Sector city~
+Exit north 5224
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5200
+EKeyvnum -1
+EDesc The gate to the chessboard is just to the east.
+~
+Exit south 5240
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5231
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5233
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5225
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5234
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5241
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+End
+
+
+#5234
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5226
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5235
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5242
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5233
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5235
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5227
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5236
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5243
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5234
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5236
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5228
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5237
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5244
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5235
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5237
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5229
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5238
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5245
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5236
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5238
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5230
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5239
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5246
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5237
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5239
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5231
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5240
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5247
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5238
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5240
+Name A Black Square~
+Desc You are standing on a black marble square.  There is a rusty gate
+to the north.
+~
+Sector city~
+Exit north 5232
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit south 5248
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5239
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5241
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5233
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5242
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5249
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+End
+
+
+#5242
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5234
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5243
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5250
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5241
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5243
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5235
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5244
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5251
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5242
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5244
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5236
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5245
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5252
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5243
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5245
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5237
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5246
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5253
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5244
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5246
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5238
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5247
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5254
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5245
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5247
+Name A Black Square~
+Desc You are standing on a black marble square.
+~
+Sector city~
+Exit north 5239
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5248
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5255
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5246
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5248
+Name A White Square~
+Desc You are standing on a white marble square.
+~
+Sector city~
+Exit north 5240
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit south 5256
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5247
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5249
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the White Queen's Pawns.
+~
+Sector city~
+Exit north 5241
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5250
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5257
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+End
+
+
+#5250
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the White Queen's Pawns.
+~
+Sector city~
+Exit north 5242
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5251
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5258
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5249
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5251
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the White Queen's Pawns.
+~
+Sector city~
+Exit north 5243
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5252
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5259
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5250
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5252
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the White Queen's Pawns.
+~
+Sector city~
+Exit north 5244
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5253
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5260
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5251
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5253
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the White King's Pawns.
+~
+Sector city~
+Exit north 5245
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5254
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5261
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5252
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5254
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the White King's Pawns.
+~
+Sector city~
+Exit north 5246
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5255
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit south 5262
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5253
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5255
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of one of the White King's Pawns.
+~
+Sector city~
+Exit north 5247
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5256
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit south 5263
+EKeyvnum -1
+EDesc A black square lies to the south.
+~
+Exit west 5254
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5256
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of one of the White King's Pawns.
+~
+Sector city~
+Exit north 5248
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit south 5264
+EKeyvnum -1
+EDesc A white square lies to the south.
+~
+Exit west 5255
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5257
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the White Queen's Rook.
+~
+Sector city~
+Exit north 5249
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5258
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+End
+
+
+#5258
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the White Queen's Knight.
+~
+Sector city~
+Exit north 5250
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5259
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit west 5257
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5259
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the White Queen's Bishop.
+~
+Sector city~
+Exit north 5251
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5260
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit west 5258
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5260
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the White Queen.
+~
+Sector city~
+Exit north 5252
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5261
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit west 5259
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+Exit down 5266
+EFlags door closed locked pickproof~
+EKeyvnum 5215
+EKeywords marble square~
+End
+
+
+#5261
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the White King.
+~
+Sector city~
+Exit north 5253
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5262
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit west 5260
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5262
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the White King's Bishop.
+~
+Sector city~
+Exit north 5254
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit east 5263
+EKeyvnum -1
+EDesc A black square lies to the east.
+~
+Exit west 5261
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5263
+Name A Black Square~
+Desc You are standing on a black marble square.  This is usually the home
+of the White King's Knight.
+~
+Sector city~
+Exit north 5255
+EKeyvnum -1
+EDesc A white square lies to the north.
+~
+Exit east 5264
+EKeyvnum -1
+EDesc A white square lies to the east.
+~
+Exit west 5262
+EKeyvnum -1
+EDesc A white square lies to the west.
+~
+End
+
+
+#5264
+Name A White Square~
+Desc You are standing on a white marble square.  This is usually the home
+of the White King's Rook.
+~
+Sector city~
+Exit north 5256
+EKeyvnum -1
+EDesc A black square lies to the north.
+~
+Exit west 5263
+EKeyvnum -1
+EDesc A black square lies to the west.
+~
+End
+
+
+#5265
+Name The Black Treasury~
+Desc You are standing in the treasury of the Black Court.  Hopefully no one
+has looted the Crown's treasure.
+~
+RoomFlags dark indoors private~
+Sector inside~
+Exit up 5204
+EFlags door closed locked pickproof~
+EKeyvnum 5214
+EKeywords marble square~
+EDesc A small staircase rises above you.
+~
+End
+
+
+#5266
+Name The White Treasury~
+Desc You are standing in the treasury of the White Court.  Hopefully no one 
+has looted the Crown's treasure.
+~
+RoomFlags dark indoors private~
+Sector inside~
+Exit up 5260
+EFlags door closed locked pickproof~
+EKeyvnum 5215
+EKeywords marble square~
+EDesc A small staircase rises above you.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 5206 spec_cast_cleric
+M 5207 spec_cast_cleric
+M 5208 spec_cast_mage
+M 5209 spec_cast_mage
+M 5212 spec_cast_druid
+S
+
+
+
+#RESETS2
+O 0 5281 -1 5200
+M 0 5202 2 5201 1
+E 0 5204 -1 torso~
+M 0 5204 2 5202 1
+E 0 5206 -1 wielded~
+E 0 5261 -1 shield~
+E 0 5263 -1 neck1~
+E 0 5265 -1 head~
+E 0 5267 -1 legs~
+E 0 5269 -1 feet~
+E 0 5271 -1 hands~
+E 0 5273 -1 arms~
+E 0 5275 -1 about~
+E 0 5277 -1 waist~
+E 0 5279 -1 lwrist~
+E 0 5279 -1 rwrist~
+M 0 5206 2 5203 1
+E 0 5208 -1 hold~
+M 0 5208 1 5204 1
+E 0 5210 99 head~
+M 0 5210 1 5205 1
+E 0 5212 -1 hold~
+G 0 5214 -1
+M 0 5206 2 5206 1
+E 0 5208 -1 hold~
+M 0 5204 2 5207 1
+E 0 5206 -1 wielded~
+E 0 5261 -1 shield~
+E 0 5263 -1 neck1~
+E 0 5265 -1 head~
+E 0 5267 -1 legs~
+E 0 5269 -1 feet~
+E 0 5271 -1 hands~
+E 0 5273 -1 arms~
+E 0 5275 -1 about~
+E 0 5277 -1 waist~
+E 0 5279 -1 lwrist~
+E 0 5279 -1 rwrist~
+M 0 5202 2 5208 1
+E 0 5204 -1 torso~
+M 0 5200 8 5209 1
+E 0 5200 -1 torso~
+E 0 5202 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5210 1
+E 0 5200 -1 torso~
+E 0 5230 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5211 1
+E 0 5200 -1 torso~
+E 0 5218 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5212 1
+E 0 5200 -1 torso~
+E 0 5226 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5213 1
+E 0 5200 -1 torso~
+E 0 5220 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5214 1
+E 0 5200 -1 torso~
+E 0 5228 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5215 1
+E 0 5200 -1 torso~
+E 0 5222 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5200 8 5216 1
+E 0 5200 -1 torso~
+E 0 5224 -1 wielded~
+E 0 5232 -1 shield~
+E 0 5234 -1 neck1~
+E 0 5236 -1 head~
+E 0 5238 -1 legs~
+E 0 5240 -1 feet~
+E 0 5242 -1 hands~
+E 0 5244 -1 arms~
+E 0 5246 -1 about~
+E 0 5248 -1 waist~
+E 0 5250 -1 lwrist~
+E 0 5250 -1 rwrist~
+M 0 5212 1 5233 1
+E 0 5260 -1 hold~
+M 0 5201 8 5249 1
+E 0 5201 -1 torso~
+E 0 5203 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5250 1
+E 0 5201 -1 torso~
+E 0 5231 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5251 1
+E 0 5201 -1 torso~
+E 0 5227 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5252 1
+E 0 5201 -1 torso~
+E 0 5219 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5253 1
+E 0 5201 -1 torso~
+E 0 5221 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5254 1
+E 0 5201 -1 torso~
+E 0 5229 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5255 1
+E 0 5201 -1 torso~
+E 0 5223 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5201 8 5256 1
+E 0 5201 -1 torso~
+E 0 5225 -1 wielded~
+E 0 5233 -1 shield~
+E 0 5235 -1 neck1~
+E 0 5237 -1 head~
+E 0 5239 -1 legs~
+E 0 5241 -1 feet~
+E 0 5243 -1 hands~
+E 0 5245 -1 arms~
+E 0 5247 -1 about~
+E 0 5249 -1 waist~
+E 0 5251 -1 lwrist~
+E 0 5251 -1 rwrist~
+M 0 5203 2 5257 1
+E 0 5205 -1 torso~
+M 0 5205 2 5258 1
+E 0 5207 -1 wielded~
+E 0 5262 -1 shield~
+E 0 5264 -1 neck1~
+E 0 5266 -1 head~
+E 0 5268 -1 legs~
+E 0 5270 -1 feet~
+E 0 5272 -1 hands~
+E 0 5274 -1 arms~
+E 0 5276 -1 about~
+E 0 5278 -1 waist~
+E 0 5280 -1 lwrist~
+E 0 5280 -1 rwrist~
+M 0 5207 2 5259 1
+E 0 5209 -1 hold~
+M 0 5209 1 5260 1
+E 0 5211 99 head~
+M 0 5211 1 5261 1
+E 0 5213 -1 hold~
+G 0 5215 -1
+M 0 5207 2 5262 1
+E 0 5209 -1 hold~
+M 0 5205 2 5263 1
+E 0 5207 -1 wielded~
+E 0 5262 -1 shield~
+E 0 5264 -1 neck1~
+E 0 5266 -1 head~
+E 0 5268 -1 legs~
+E 0 5270 -1 feet~
+E 0 5272 -1 hands~
+E 0 5274 -1 arms~
+E 0 5276 -1 about~
+E 0 5278 -1 waist~
+E 0 5280 -1 lwrist~
+E 0 5280 -1 rwrist~
+M 0 5203 2 5264 1
+E 0 5205 -1 torso~
+O 0 5216 1 5265
+O 0 5217 1 5266
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

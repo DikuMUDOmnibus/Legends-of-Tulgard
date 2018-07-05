@@ -1,0 +1,453 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Knights of the Grey Moon Keep~
+ShortName   Knights of the Grey Moon~
+Builders    None~
+VNUMs       911 919
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    8
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sun May  2 14:56:50 2004~
+End
+
+
+
+#MOBILES
+#912
+Name old man ancient~
+ShortD the `#`SOld `SMan`^~
+LongD An ancient old man is here ready to treat the injured.~
+Desc ~
+Race human~
+Align 2 0
+Level 51
+Hitroll 10
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType slice
+AC -210 -210 -210 -184
+Wealth 0
+Act    npc dont_wander train practice healer gain~
+AffBy  sanctuary~
+Imm    summon charm magic weapon~
+Form   edible mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 2190 gear~
+END
+
+#914
+Name aurican draconian knight~
+ShortD `#`SAurican `wthe `CD`cragon `CK`cnight`^~
+LongD Aurican the `#`CD`cragon `CK`cnight`^ is ready to train you.~
+Desc ~
+Race draconian~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 1000d2+89
+ManaDice 0d0+0
+DamDice 0d0+0
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area train practice cleric warrior gain~
+AffBy  infrared flying~
+Off    tail~
+Res    fire cold lightning acid poison disease~
+Vuln   pierce drowning~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#911
+Name target dummy~
+Short a target dummy~
+Desc A target dummy stands here, waiting to be used.~
+Level 1
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+ExtraDesc target dummy~
+This ‘dummy’ is a couple of solid wooden logs, bound with rope and padding 
+into a roughly humanoid figure.  The padding is torn in many places from 
+energetic attacks by those practicing their weapon skills.  
+~
+End
+
+#912
+Name scraps parchment~
+Short a few scraps of parchment~
+Desc A few scraps of parchment lie here, discarded.~
+Level 1
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take hold~
+ExtraDesc scraps parchment~
+This loose pile of parchment consists of various writings donated or 
+forgotten by clan members over the years.  There is some mediocre poetry 
+here, a rant against current guild policy, a shopping list, some crude 
+sketches… nothing of real interest.  
+~
+End
+
+#913
+Name bookshelf~
+Short a bookshelf~
+Desc A bookshelf carved into the wall is here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 20 0
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+End
+
+#914
+Name dusty volume~
+Short a dusty volume~
+Desc A dusty volume lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take hold~
+ExtraDesc dusty volume~
+. This is a volume on astral travel.  Hundreds of pages are devoted to 
+techniques of releasing the astral form and moving through the Astral plane. 
+ The appendix mentions that standing on a Gatestone might work, too.  
+~
+End
+
+#915
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 KN F 1101 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#916
+Name old scroll~
+Short an old scroll~
+Desc An old scroll lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    nodegrade burnproof~
+Wear     take~
+ExtraDesc old scroll~
+This scroll is cursed!  The bearer of this scroll is assigned to organize 
+the bookshelves of the Knights of the Grey Moon - a task that could take 
+years!  Perhaps if you place it back on the shelf no one will notice… 
+~
+End
+
+#917
+Name majestic marble fountain~
+Short a majestic marble fountain~
+Desc A majestic marble fountain is here, trickling water.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 1000
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 1000
+Material marble~
+Extra    noremove nopurge nodegrade burnproof~
+ExtraDesc majestic marble fountain~
+This fountain is made from a rare bluish-gray marble.  The bottom half has a 
+wide basin that collects the water trickling in.  The upper portion is an 
+impressive sculpture of three dolphins leaping from the waves.  
+~
+End
+
+#918
+Name lens~
+Short a huge lens~
+Desc A huge lens, suspended from the rafters is here.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+ExtraDesc huge lens~
+A huge glass lens, over three feet wide, is suspended here.  When the moon 
+is in the night sky, the lens illuminates the chamber with a ghostly 
+moonlight that is as bright as day.  
+~
+End
+
+#919
+Name shutters~
+Short a set of shutters~
+Desc A set of shutters, built into the ceiling.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+ExtraDesc shutters set~
+These shutters are operated by a clockwork mechanism.  They have been left 
+open so that guild members can enjoy the view.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#911
+Name At the Drawbridge~
+Desc A large wooden drawbridge lies across a large moat, leading into a stone 
+keep to the north, home of the Knights of the Grey Moon.  Two large armed 
+guards stand at attention, allowing only fellow Knights to enter the keep.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit north 912
+Exit south 3032
+End
+
+
+#912
+Name Main Hall~
+Desc . You are standing in a large sanctuary with a tall ceiling reaching over 
+15ft high.  All the walls are lined in beautiful paintings some dating back 
+several hundred years.  As you look up you see that the roof is a glass dome 
+made of stained leaded glass letting the light shine through.  There is a 
+large stone alter in the rear of the room.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Mana 130
+Heal 130
+Clan alliance
+Exit north 915
+Exit east 914
+Exit south 911
+Exit west 913
+Exit up 916
+Exit northeast 917
+Exit northwest 918
+End
+
+
+#913
+Name Supply Room~
+Desc Many potions and items line the walls as you enter the clan shop.  Just type 
+LIST to see what the shopkeeper has for sale.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 912
+Exit south 919
+End
+
+
+#914
+Name Training Hall~
+Desc Weapons and armor line the room, and training dummys are in the corners, 
+ready to improve the skills of the Knights.  Type GAIN, PRACTICE or TRAIN to 
+improve your skills and abilities.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 912
+End
+
+
+#915
+Name Transportation Room~
+Desc Stand on the Gatestone to enter the Etheral Plane.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector gateway~
+Exit south 912
+End
+
+
+#916
+Name The observatory~
+Desc The topmost room in the clan hall of the Knights of the Grey Moon, this area 
+is an engineering marvel.  A parapet reaching about chest high encircles the 
+room.  A framework of granite pillars and heavy oak beams delineate the rest 
+of the chamber.  Attached to the beams is a network of sliding shutters, 
+forged from `#`rcopper`^ and `#`ybrass`^, which are manipulated by a clockwork 
+mechanism.  The shutters are usually closed during the day and during 
+inclement weather, but are opened at night so that clan members can have an 
+unobstructed view of the night sky in all its celestial glory.  The only way 
+to exit this room is a narrow set of stone steps heading down.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit down 912
+End
+
+
+#917
+Name A fountain room~
+Desc The centerpiece of this room is a majestic marble fountain, carved in the 
+likeness of a trio of leaping dolphins.  The burble of water is always 
+present as it trickles into the pool at the base of the fountain.  A table 
+and chairs have been left in this room, as some members enjoy relaxing and 
+eating near the fountain.  An open passage to the southwest leads to the 
+main area of the guild.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit southwest 912
+End
+
+
+#918
+Name A library~
+Desc This well-lit room is a favored place for guild members of the Grey Moon to 
+relax and read, meditate, pray, and study spells.  The northern wall is 
+dominated by a homey fireplace, with a couple of comfortable chairs drawn 
+close to it.  The southern wall has shelves carved into the stone, and a 
+haphazard array of books, scrolls, and parchments are carelessly dumped 
+there.  The other walls are adorned with thick woolen wall coverings.  An 
+open passage to the southeast leads to the main area of the guild.  
+~
+RoomFlags light~
+Room2Flags no_area_echoes~
+Sector inside~
+ExtraDesc fireplace ~
+A cheery little fire burns in this hearth, providing warmth and enough light 
+to read by, if so desired.  
+~
+ExtraDesc woolen wall coverings~
+These thick blankets seem to absorb sound, helping to create the peaceful 
+atmosphere in this room.  Unfortunately, they are a `#`ydrab brown`^ color that 
+adds little to the overall décor.  
+~
+Exit southeast 912
+End
+
+
+#919
+Name An armoury~
+Desc This chamber is dedicated to martial pursuits - generally used by clan 
+members who elect to follow a more active path in resisting evil.  Sometimes 
+extra gear is dropped here for other members to claim, if desired.  The 
+floor of this room is covered by thick quilted pads, which smell faintly of 
+rust and sweat.  Racks line the walls to hold training weapons, and target 
+dummies are set up against the south wall.  An open archway to the north is 
+the only visible exit.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit north 913
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 912 1 912 1
+O 0 1042 -1 912
+O 0 3081 -1 913
+M 0 914 1 914 1
+O 0 915 -1 915
+O 0 918 -1 916
+O 0 919 -1 916
+O 0 917 -1 917
+O 0 21637 -1 917
+O 0 913 -1 918
+P 0 916 1 913 1
+P 0 914 1 913 1
+P 0 912 1 913 1
+O 0 21638 -1 918
+O 0 1610 -1 919
+O 0 911 -1 919
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

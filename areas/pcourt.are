@@ -1,0 +1,1068 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Court of Petals~
+ShortName   The Court of Petals~
+Builders    reath~
+VNUMs       64100 64399
+AFlags  noteleport noscry hidden~
+Security    9
+Colour      B~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 12:51:45 2005~
+End
+
+
+
+#MOBILES
+#64100
+Name bejeng beggar intori child~
+ShortD a small intori begger child~
+LongD A small intori beggar child shakes his cup at you.~
+Desc This dirty beggar sits with his cup and collects spare change in it. His 
+cloths are torn and filthy, he is very thin and he really just looks sad. 
+When you look at him you just notice the look of sadness in his vaccant 
+black eyes. 
+~
+Race intori~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType pound
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area wimpy thief~
+Off    dodge fast dirt_kick~
+Imm    disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#64101
+Name kanishi swordsmith intori~
+ShortD an aging male intori~
+LongD An elderly male intori kneels here.~
+Desc This intori gentleman has been clothed in simple but expensive cloth. His 
+Kimono is short and utilitarian and his callused palms have been laid one 
+atop the other in his lap. Soft white cloth covers his broad but sunken 
+shoulders and a simple silver ponytail has been tied back efficently so as 
+not to fall into the way of his blunt black eyes. 
+~
+Race intori~
+Align 0 0
+Level 60
+Hitroll 100
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType none
+AC -300 -300 -300 -258
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon sleep illusion scry fear~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP kneeling~
+DefPos kneeling~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 64100 100~
+MProg SPEECH 64101 perfect weapon~
+END
+
+#64102
+Name makiyu intori woman~
+ShortD a swarthy intori woman~
+LongD A swarthy intori woman shifts in her seat impatiently.~
+Desc This swarthy intori woman shifts in her seat. Wearing a simple tatami made 
+of coarse work cloth she fans her flushed face against the heat. Plastered 
+to her brow are dark brown curls that trail down sweatily between a set of 
+voluptous breasts and a large paunch. 
+~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -524
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#64103
+Name rashi drunk intori man~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#64100
+Name cured cherrywood log~
+Short a cured cherrywood log~
+Desc A cured cherrywood log lies here.~
+Level 1
+ItemType trash~
+Cost 1000
+Durability 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#64101
+Name cured oak log~
+Short a cured oak log~
+Desc A cured oak log lies here.~
+Level 1
+ItemType trash~
+Cost 1000
+Durability 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#64102
+Name cured willow log~
+Short a cured willow log~
+Desc A cured willow log lies here.~
+Level 1
+ItemType trash~
+Cost 1000
+Durability 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#64103
+Name bundle cured bamboo poles~
+Short a bundle of cured bamboo poles~
+Desc A bundle of cured bamboo poles lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#64104
+Name cured pine log~
+Short a cured pine log~
+Desc A cured pine log lies here.~
+Level 1
+ItemType trash~
+Cost 1000
+Durability 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#64105
+Name pine staff~
+Short a slender pine staff~
+Desc A slender pine staff lies on the ground.~
+Level 10
+ItemType weapon~
+Cost 1200
+Durability 3
+Asize 0
+Rsize 50
+Values staff 3 6 slap F
+Weight 0
+Material unknown~
+Wear     take wield~
+End
+
+#64106
+Name cherrywood tanto~
+Short a tanto made of cherrywood~
+Desc A tanto made of cherrywood has been left here.~
+Level 0
+ItemType weapon~
+Cost 1200
+Durability 1
+Asize 0
+Rsize 50
+Values dagger 2 5 stab 0
+Weight 0
+Material unknown~
+Wear     take wield~
+End
+
+#64107
+Name willow wakizashi~
+Short a willow wakizashi~
+Desc A willow wakizashi has been left.~
+Level 10
+ItemType weapon~
+Cost 1200
+Durability 1
+Asize 0
+Rsize 50
+Values sword 3 5 slice 0
+Weight 0
+Material unknown~
+Wear     take wield~
+End
+
+#64108
+Name no name 64108~
+Short (no short description 64108)~
+Desc (no description 64108)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#64109
+Name no name 64109~
+Short (no short description 64109)~
+Desc (no description 64109)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#64114
+Name no name 64114~
+Short (no short description 64114)~
+Desc (no description 64114)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#64119
+Name no name 64119~
+Short (no short description 64119)~
+Desc (no description 64119)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#64121
+Name no name 64121~
+Short (no short description 64121)~
+Desc (no description 64121)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#64127
+Name wakizashi shadowreaver~
+Short `#`sa wakizashi named `w"`WS`wh`sa`wd`Wo`ww`sr`we`Wa`wv`se`wr"`^~
+Desc `#`sa wakizashi named `w"`WS`wh`sa`wd`Wo`ww`sr`we`Wa`wv`se`wr"`s lies here.`^~
+Level 65
+ItemType weapon~
+Cost 1200
+Durability 1
+Asize 0
+Rsize 50
+Values sword 1 20 slice DM
+Weight 0
+Material unknown~
+Extra2   runic_item~
+Wear     take wield~
+End
+
+#64132
+Name chairs~
+Short a few wooden chairs~
+Desc A few wooden chairs have been left here.~
+Level 46
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 10000 EHK 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nonmetal nodegrade~
+End
+
+#0
+
+
+
+#ROOMS
+#64100
+Name Before the Palace~
+Desc To the north the majestic stone gates to the palace lay open. More symbolic 
+than utilitarian, the sheer mass of the gates would easily take a small army 
+of men to close much less open. To the south, a miniature replica of the 
+palace gates opens to the temple of Graal. To the east and west of this 
+cobbled area the districts of metal and silk meet the district of flames. 
+~
+Sector city~
+Exit east 64101
+Exit west 64111
+End
+
+
+#64101
+Name A District Intersection~
+Desc Cobblestones continue unabated in multiple directions from here. To the west 
+of this intersection the southern entrance to the Palace is visible and the 
+area here is visibly muted for it. To the north, gardens and stalls of 
+flowers dominate the path. To the south, the faint sound of hymns being sung 
+echoes through the area. 
+~
+Sector city~
+Exit north 64154
+Exit south 64152
+Exit west 64100
+Exit southeast 64102
+End
+
+
+#64102
+Name Along the District of Flames~
+Desc This section of the roadway is a mixture of singers and performers. 
+Songsheets and blankets litter the cobblestones providing no clear path 
+through and the sound of singing seems almost to come from everywhere at 
+once. 
+~
+Sector city~
+Exit southeast 64103
+Exit northwest 64101
+End
+
+
+#64103
+Name A District Intersection~
+Desc This busy little intersection is bustling with peddlers trying to hawk their 
+wares and priests denouncing them. To the east comely women beckon while to 
+the south temple chimes whistle gently in the wind. To the northwest and 
+west roads curve away with the celestial sound of voices in song echoing 
+down them and into the heavens. 
+~
+Sector city~
+Exit east 64134
+Exit south 64104
+Exit west 64151
+Exit northwest 64102
+End
+
+
+#64104
+Name Along the District of Flames~
+Desc .  This section of the road connects the district intersections of flames and 
+silk with the pathway to Anshio exit gate. Cobbled road leads north and 
+southwest in a gentle curve outlined with great walls on either side.  
+~
+Sector city~
+Exit north 64103
+Exit southwest 64122
+End
+
+
+#64105
+Name Anshio Exit Gate~
+Desc To the south droves of people scramble to be the first out of a small 
+doublewide gate. Craftsmen with barren carts and full carts alike squabble 
+over who will be first for what reason as children rush around them. The 
+gate in question is a large one with heavy black oak door and porticullis 
+set into the large stone wall that seperates the city from outsiders. 
+~
+Sector city~
+Exit west 64106
+Exit northeast 64122
+End
+
+
+#64106
+Name Anshio Entrance Gate~
+Desc To the south a large gate for those who are entering the city has been set 
+up. Wagons travel through this area at high speeds over the soft white 
+cobbles. Heavy fluted columns form the outside of a large wooden gate. To 
+the east and west the district of flames curves away. 
+~
+Sector city~
+Exit east 64105
+Exit northwest 64107
+End
+
+
+#64107
+Name Along the District of Flames~
+Desc Soft stone cobbles pave this road leading away from Anshio entrance gate. To 
+the southeast the gate looms while to the northwest the road curves away 
+towards the district intersection of flames and metal. The large stone walls 
+protecting this city enclose the road securely. 
+~
+Sector city~
+Exit southeast 64106
+Exit northwest 64108
+End
+
+
+#64108
+Name Along the District of Flames~
+Desc This curving road leads north to a large intersection and southeast towards 
+the Anshio entrance gate. To the west the looming stone walls that seperate 
+the court from the outside world line the roadway. Caravans bustle through 
+at a steady rate. 
+~
+Sector city~
+Exit north 64109
+Exit southeast 64107
+End
+
+
+#64109
+Name A District Intersection~
+Desc This wide courtyard is the intersection of two of the districts of the Petal 
+Court. To the east and west curving paths lead to the district of metal. To 
+the northeast and south more winding lanes lead into the district of flames. 
+While the south has much of the commotion of life, towards the northeast and 
+east the sounds of daily life are much less. 
+~
+Sector city~
+Exit east 64113
+Exit south 64108
+Exit west 64114
+Exit northeast 64110
+End
+
+
+#64110
+Name Along the District of Flames~
+Desc This winding road connects two intersections of the districts of flames and 
+metal. White cobblestones pave the way northeast and southwest. Soft scents 
+drift from flora lining the way to the palace far in to the northeast. 
+~
+Sector city~
+Exit northeast 64111
+Exit southwest 64109
+End
+
+
+#64111
+Name A District Intersection~
+Desc This intersection of the districts is curiously quiet. To the west, the 
+southern entrance to the palace spreads open opulently. To the north and 
+south the district of metal echoes with the sounds of swords clashing. 
+Southwest and east open to the district of flames with the sound of chanting 
+and sacred songs of joy and sorrow. 
+~
+Sector city~
+Exit north 64121
+Exit east 64100
+Exit south 64112
+Exit southwest 64110
+End
+
+
+#64112
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit north 64111
+Exit southwest 64113
+End
+
+
+#64113
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit west 64109
+Exit northeast 64112
+Exit northwest 64155
+End
+
+
+#64114
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit east 64109
+Exit northwest 64115
+End
+
+
+#64115
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit north 64116
+Exit southeast 64114
+End
+
+
+#64116
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit north 64117
+Exit south 64115
+End
+
+
+#64117
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit south 64116
+Exit northeast 64118
+End
+
+
+#64118
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit east 64119
+Exit southwest 64117
+End
+
+
+#64119
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit east 64120
+Exit west 64118
+Exit southeast 64131
+Exit northwest 64130
+End
+
+
+#64120
+Name Along the District of Metal~
+Desc ~
+Sector city~
+Exit west 64119
+Exit southeast 64132
+End
+
+
+#64121
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit south 64111
+Exit northwest 64132
+End
+
+
+#64122
+Name Along the District of Flames~
+Desc This curve in the road is paved in soft white cobbles. The path continues to 
+the southwest towards Anshio exit gate and to the northwest nearer to the 
+intersection of flames and silk. To the southeast, the large stone walls 
+that encircle this great city tower above. 
+~
+Sector city~
+Exit northeast 64104
+Exit southwest 64105
+End
+
+
+#64123
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit north 64124
+Exit southwest 64136
+End
+
+
+#64124
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit south 64123
+Exit northwest 64125
+End
+
+
+#64125
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit northeast 64137
+Exit southeast 64124
+Exit southwest 64135
+Exit northwest 64126
+End
+
+
+#64126
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit west 64127
+Exit southeast 64125
+End
+
+
+#64127
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit east 64126
+Exit southwest 64128
+End
+
+
+#64128
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit northeast 64127
+Exit southwest 64129
+End
+
+
+#64129
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit south 64130
+Exit northeast 64128
+End
+
+
+#64130
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit north 64129
+Exit east 64156
+Exit southeast 64119
+End
+
+
+#64131
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit east 64132
+Exit northwest 64119
+End
+
+
+#64132
+Name Along the District of Wood~
+Desc ~
+Sector city~
+Exit west 64131
+Exit northeast 64136
+Exit southeast 64121
+Exit northwest 64120
+End
+
+
+#64133
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit east 64142
+Exit northeast 64153
+Exit southwest 64154
+Exit northwest 64136
+End
+
+
+#64134
+Name Along the District of Silk~
+Desc ~
+Sector city~
+Exit west 64103
+Exit northeast 64149
+End
+
+
+#64135
+Name Along the District of Water~
+Desc ~
+Sector city~
+Exit south 64143
+Exit northeast 64125
+End
+
+
+#64136
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit northeast 64123
+Exit southeast 64133
+Exit southwest 64132
+Exit northwest 64143
+End
+
+
+#64137
+Name Along the District of Water~
+Desc ~
+Sector city~
+Exit east 64138
+Exit southwest 64125
+End
+
+
+#64138
+Name Yioshin Entrance Gate~
+Desc ~
+Sector city~
+Exit west 64137
+Exit southeast 64145
+End
+
+
+#64139
+Name Yioshin Exit Gate~
+Desc ~
+Sector city~
+Exit south 64140
+Exit northwest 64145
+End
+
+
+#64140
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit north 64139
+Exit southwest 64141
+End
+
+
+#64141
+Name A District Intersection~
+Desc ~
+Sector city~
+Exit east 64146
+Exit west 64153
+Exit northeast 64140
+Exit southwest 64142
+End
+
+
+#64142
+Name Along the District of Water~
+Desc ~
+Sector city~
+Exit west 64133
+Exit northeast 64141
+End
+
+
+#64143
+Name Along the District of Water~
+Desc ~
+Sector city~
+Exit north 64135
+Exit southeast 64136
+End
+
+
+#64144
+Name A District Intersection~
+Desc ~
+Sector city~
+End
+
+
+#64145
+Name Along the District of Water~
+Desc ~
+Sector city~
+Exit southeast 64139
+Exit northwest 64138
+End
+
+
+#64146
+Name Along the District of Silk~
+Desc ~
+Sector city~
+Exit west 64141
+Exit southeast 64147
+End
+
+
+#64147
+Name Along the District of Silk~
+Desc ~
+Sector city~
+Exit south 64148
+Exit northwest 64146
+End
+
+
+#64148
+Name Along the District of Silk~
+Desc ~
+Sector city~
+Exit north 64147
+Exit south 64149
+End
+
+
+#64149
+Name Along the District of Silk~
+Desc ~
+Sector city~
+Exit north 64148
+Exit southwest 64134
+End
+
+
+#64150
+Name Along the District of Silk~
+Desc ~
+Sector city~
+End
+
+
+#64151
+Name Along the District of Silk~
+Desc This small courtyard lies before a large building to the sound from which 
+thunderous singing echoes out. Various trees provide some shade and people 
+make their way through the area slowly, languoring in the sounds that issue 
+from the structure. The smell of incense floats lightly in the air here. 
+~
+Sector city~
+Exit east 64103
+Exit south 64157
+Exit northwest 64152
+End
+
+
+#64152
+Name Along the District of Silk~
+Desc All around the sound of music, divine and common, echoes through the area. 
+The path curves north and towards the southeast smoothly. Cobblestones have 
+been meticulously cleaned by the soft slippers of the many singers who carol 
+their way through the district of silk. 
+~
+Sector city~
+Exit north 64101
+Exit southeast 64151
+End
+
+
+#64153
+Name Along the District of Silk~
+Desc ~
+Sector city~
+Exit east 64141
+Exit southwest 64133
+End
+
+
+#64154
+Name Along the District of Silk~
+Desc Everything along this road has been placed for the most artful effect. 
+Flowers bloom in full colors, trees bear almost overabundant amounts of ripe 
+fruit and people passing by are beautiful almost to a fault. Subtle smells 
+of jasmine and nightblooming roses waft across the air and windchimes echo 
+like the tinkling of bells. 
+~
+Sector city~
+Exit south 64101
+Exit northeast 64133
+End
+
+
+#64155
+Name A Small Pagoda~
+Desc Small and neatly packed, the owner seems to have a nostalgic touch for old 
+and disused things. An antique cabinet basks in the glow of the sun while a 
+once-beautiful houseplant withers in a corner. Soft cotton mats create a 
+warm and inviting floor to kneel upon. 
+~
+Sector inside~
+Exit southeast 64113
+End
+
+
+#64156
+Name A Busy Office~
+Desc ~
+Sector inside~
+Exit west 64130
+End
+
+
+#64157
+Name A Reception Area~
+Desc Stout brown brick lies unadorned but spotless. Along the southern wall a set 
+of stairs curves upwards. To the north, a door opens back out upon the 
+street. The smell of incense hovers in the air just short of stifling. 
+~
+Sector inside~
+Exit north 64151
+Exit up 64158
+End
+
+
+#64158
+Name A Small Brick Room~
+Desc This austere room has few adornments. A few chairs and a large chart of odd 
+symbols are all that fill the bare space. A few slits along the northern 
+wall have been made for air currents to flow in and out of the room and the 
+east and west walls have been covered in cork. 
+~
+Sector inside~
+Exit down 64157
+End
+
+
+#0
+
+
+
+#SPECIALS
+O 64127 ospec_quicksilver_orb Load to: `#`sa wakizashi named `w"`WS`wh`sa`wd`Wo`ww`sr`we`Wa`wv`se`wr"`^
+S
+
+
+
+#RESETS2
+M 0 64100 1 64106 1
+M 0 64101 1 64155 1
+M 0 64102 1 64156 1
+O 0 64132 -1 64158
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#64101
+title Kanishi Takes the Bait~
+author Reath~
+code sayto $n [cynically]What do you know of the perfect weapon? I spent my life honing skills to create an instrument worthy of that title.[he waves towards the door.]
+mq3 sayto $n [pausing]No.. stay.
+mq5 sayto $n It must be a sign. I was thinking of such a thing today.[he smiles quietly]If you wish, bring some wood for an old man to tinker with? Three logs would be wonderful... but make sure they are the same kind... if you wish to humor me.[hope is plain on his face.]
+~
+disabled false
+last_editor Reath~
+last_editdate 1120367726
+END
+
+#64100
+title Kanishi Declines Visitors~
+author Reath~
+code sayto $n [without looking up]You can leave out the door you entered. I do not forge weapons of destruction anymore. I have retired my aching hands and seek only to find forgiveness with the gods.
+emote returns to his calm contemplation.
+~
+disabled false
+last_editor Reath~
+last_editdate 1120367531
+END
+
+#0
+
+
+#$

@@ -1,0 +1,2145 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Blood Fortress~
+ShortName   `RB`rl`Ro`ro`Rd `SFortress~
+Builders    rosaline~
+VNUMs       12800 12869
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      5 91
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Sat Feb 26 20:55:10 2005~
+End
+
+
+
+#MOBILES
+#12800
+Name imp~
+ShortD a small little imp~
+LongD A small little imp bounces about giggling.~
+Desc Giggling and hopping about is a tiny little imp.  She's here to wait on
+all
+of your needs and does so willingly..  If not a bit tricksy!
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Off    tail~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+END
+
+#12801
+Name slave~
+ShortD a man-slave~
+LongD A man-servant stands here waiting for an order~
+Desc This is a strapping young malkatar man.  He awaits your orders with a
+dashing smile.
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 74
+Wealth 0
+Act    npc stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12802
+Name demon~
+ShortD a lesser demon~
+LongD A lesser demon is here cleaning~
+Desc A lesser demon scurries about cleaning and repairing all that needs to
+be
+done.
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 73
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+Off    tail~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#12803
+Name demon~
+ShortD a mane~
+LongD A mane wanders here cleaning wherever it goes~
+Desc Here stands a mane, a lesser demon.  It cleans everything around it with
+dedication and fear of the consequences if it fails.
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+Off    tail~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12804
+Name hellhound~
+ShortD a `#`rh`Re`Sl`Xl`rh`Ro`Su`Xn`rd`^~
+LongD A snarling `#`rh`Re`Sl`Xl`rh`Ro`Su`Xn`rd`^ wanders here~
+Desc A snarling `#`rh`Re`Sl`Xl`rh`Ro`Su`Xn`rd`^ paces and snorts.  Growling at anything that moves.
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+AffBy2 passwotrace~
+Off    tail~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12800
+Name bed~
+Short a `#`Sm`Xa`Ss`Xs`Si`Xv`Se fe`Xa`Sther `Wbed`^~
+Desc A `#`Sm`Xa`Ss`Xs`Si`Xv`Se canopy fe`Xa`Sther `Wbed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 BEHLQ 100 100
+Weight 10000
+Material unknown~
+Extra    evil antigood antineutral noremove nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay antilaw~
+ExtraDesc bed ~
+This bed is massively huge.  It is a four-post feather bed with a large
+canopy of very thin black silk.  Black silk and linen blankets cover this
+bed elegantly.  Complete with a small, grey feylar headed blanket.  The
+black-marble headboard is decorated with imps and demons set up around a
+family crest of Seles.
+~
+End
+
+#12801
+Name fireplace~
+Short a huge `#`rr`Ro`Ya`Wr`Yi`Rn`rg `Sfireplace`^~
+Desc A huge `#`rr`Ro`Ya`Wr`Yi`Rn`rg `Sfireplace`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 GJ 0 0
+Weight 0
+Material unknown~
+Extra    glow nolocate~
+Extra2   nodecay~
+ExtraDesc fireplace ~
+The fireplace has a thick onyx mantle.  It is held up by two twin dragons on
+either side.  They are as dark as the very walls from which the sprout from.
+Inset within their eyes are two red jeweled orbs that seem to glow.  Are
+they watching you or is that merely a trick of the fire?
+~
+End
+
+#12802
+Name desk~
+Short an `#`So`Xb`Ssid`Xi`San desk`^~
+Desc An `#`So`Xb`Ssid`Xi`San desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 200 DG 0 0
+Weight 0
+Material unknown~
+Extra    evil antigood antineutral nopurge nonmetal nodegrade chaos norestring nogetall~
+Extra2   nodecay antilaw~
+ExtraDesc desk ~
+The desk is very long and thick.  It is made out of solid obsidian stone
+flecked with gold.  The handles are set with blood-red rubies and the crest
+of Seles.
+~
+End
+
+#12803
+Name spring~
+Short a relaxing `#`Whot `Cspring`^~
+Desc A very relaxing `#`Whot `Cs`cp`Cr`ci`Cn`cg`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 CFI 0 0
+Weight 0
+Material unknown~
+Extra    evil antigood antineutral nonmetal nogetall~
+Extra2   nodecay antilaw~
+End
+
+#12804
+Name demonic~
+Short a `#`rd`Re`rm`Ro`rn`Ri`rc`S throne`^~
+Desc An `#`Sin`Wt`Simidating `rd`Re`rm`Ro`rn`Ri`rc`S throne`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 EH 0 0
+Weight 0
+Material unknown~
+Extra    evil magic antigood antineutral nonmetal nolocate chaos norestring nogetall~
+Extra2   nodecay nochaoslace antilaw antichaos~
+ExtraDesc demonic ~
+Towering before you on the right side of the lifted platform is a massive
+throne of black marble and obsidian.  On the backrest of the intimidating
+chair rests the Crest of Seles..  The insigna of the Demon Empress.  The
+armrests are formed into the liknes of two serpentine demonic faces.  Their
+wicked faces are inset with ruby eyes that appear to watch your every move.
+
+~
+End
+
+#12805
+Name skeletal~
+Short an `#`Ws`Xk`We`Xl`We`Xt`Wa`Xl`S throne`^~
+Desc An `#`Som`Wi`Snous `Ws`Xk`We`Xl`We`Xt`Wa`Xl`S throne`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 EH 0 0
+Weight 0
+Material unknown~
+Extra    evil magic antigood antineutral nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc skeletal ~
+This throne settled on the left side of the raised platform seems more
+ominous then the other.  It has a shroud of mystery and silent fear then the
+pure chaotic madness of the first.  On the backrest of the mighty chair
+there rests the Crest of the Emperor.  An insigna made specifically for one
+man.  The great Lich King..  Companion to the Demon Empress.  The throne
+appears to be made of skulls, bones and other such rotting material and
+fossilized to remain solid.  The armrests are made of various skulls both
+fanged, sharp-toothed and deranged.
+~
+End
+
+#12806
+Name fountain~
+Short a `#`Sm`Wa`Srble f`Wo`Sunta`Wi`Sn`^~
+Desc A `#`Sblack m`Wa`Srble f`Wo`Sunta`Wi`Sn`^~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -2 -2 blood 0 0
+Weight 0
+Material unknown~
+Extra    evil magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc fountain ~
+The fountain is huge.  It is carved entirely out of a solid piece of marble.
+Countless gargoyle-like creatures cover it.  Blood trickles from their
+mouths, eyes and wounds as some of the demons appear to be battling.  The
+basin is large but not deep.  It is filled to nearly the brim with fresh
+blood.
+~
+End
+
+#12807
+Name fountain~
+Short an `#`Sobsid`Xi`San fountain`^~
+Desc A `#`Sbe`Xa`Sutiful `Sobs`Xi`Sd`Xi`San fountain`^~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 blood 0 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc fountain ~
+The fountain is carved into the likness of a large angel who leans back in
+agony.  Sticking out of her chest is a large jagged sword.  Blood trickles
+down her slender, pain-struck body, filling the obsidian basin.  Her wings
+are half plucked of feathers and in one of her arms is a broken sword.
+~
+End
+
+#12808
+Name shackles~
+Short some `#`mheavy `Sshackles`^~
+Desc Some `#`Sthick, `mheavy `Sshackles`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 CFILS 0 0
+Weight 0
+Material unknown~
+Extra    magic nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12809
+Name coffin~
+Short an `#`We`Xl`We`Xg`Wa`Xn`Wt `Scoffin`^~
+Desc An `#`We`Xl`We`Xg`Wa`Xn`Wt `Scoffin`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EIL 0 0
+Weight 0
+Material unknown~
+Extra    magic antigood antineutral nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay~
+End
+
+#12810
+Name maiden~
+Short a `#`rd`Re`rm`Ro`rn`Ri`rc`S i`Xr`Son maiden`^~
+Desc A `#`Swicked `rd`Re`rm`Ro`rn`Ri`rc`S i`Xr`Son maiden`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 CFI -5 0
+Weight 0
+Material unknown~
+Extra    evil magic noremove nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc maiden ~
+The demonic iron maiden that stands before you is carved into the image of a
+tormented demon. Lined inside the case are countless barbed needles. Once
+closed, the needles penetrate your skin just enough so that movement is
+hindered.. or your skin will be torn off by the barbs. Wicked isn't it?
+~
+End
+
+#12811
+Name table~
+Short a `#`rbl`Ro`rodi`Re`rd`S table`^~
+Desc An `#`Sint`Xi`Smidating `rbl`Ro`rodied`S table`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 EHK -5 0
+Weight 0
+Material unknown~
+Extra    glow dark evil magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc table ~
+The cold table sits menacingly on its own. Bloodstands from several
+centuries of countless torments cover the top. Thick straps of chain and
+leather don where someone might place their wrists, ankles, waist and neck.
+~
+End
+
+#12812
+Name stocks~
+Short a set of `#`Spainful`^ stocks~
+Desc A set of `#`Sp`Xa`Sinful`^ stocks~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 10000 CFIS -5 0
+Weight 0
+Material unknown~
+Extra    evil magic noremove nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12813
+Name table~
+Short a `#`sb`Xl`Sack stone`^ table~
+Desc A long `#`sb`Xl`Sack stone`^ table~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 DG 0 0
+Weight 0
+Material unknown~
+Extra    evil magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12814
+Name desk~
+Short a `#`ydesk`^ of `#`Sb`Xl`Sack wood`^~
+Desc An `#`Se`Xl`Segant`Xl`Sy`^ carved `#`ydesk`^ of `#`Sb`Xl`Sack wood`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 DGJ 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc desk ~
+Standing regally is a desk made entirely out of black wood.  Its wood type
+is entirely unknown and appears to be more magical then natural.  There are
+carved decorations of many intricate runes.  The origination of the runes
+are as much of a mystery as the wood type of the desk.  The desk handles are
+made of black marble flecked and swirled with gold.
+~
+End
+
+#12815
+Name bed~
+Short a `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^ of feathers~
+Desc A huge `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^ of feathers~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EHLQ 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#12816
+Name nightstand~
+Short a `#`Sb`Xl`Sack n`Xi`Sghtst`Xa`Snd`^~
+Desc A carved `#`Sb`Xl`Sack stone n`Xi`Sghtst`Xa`Snd`^~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10000 C 0 100 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc nightstand ~
+The small black nightstand is about waist high.  It is made entirely out of
+obsidian stone.  Resting atop the nightstand is a massive
+`Wm`Xi`Wr`Xr`Wo`Xr.
+~
+ExtraDesc mirror ~
+Resting atop the nightstand is a round silver mirror set in an ebony frame.
+A closer examination might reveal that arcane runes have been scratched onto
+the frame, suggesting the occupant uses the mirror for something besides
+looking at himself.  You continue staring dreamily into the mirror...
+Hmmm...  Narcisstic?
+~
+End
+
+#12817
+Name bed~
+Short a `#`Wc`Xo`Wm`Xf`Wy `Sfeatherbed`^~
+Desc A `#`Sc`Xa`Snopied `Wc`Xo`Wm`Xf`Wy `Sfeatherbed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12818
+Name nightstand~
+Short an `#`So`Xb`Ssidian n`Xi`Sghtst`Xa`Snd`^~
+Desc An `#`So`Xb`Ssidian n`Xi`Sghtst`Xa`Snd`^~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 C 0 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc nightstand ~
+The nightstand is made entirely out of obsidian.  It is carved beautifully.
+Gold is flecked with the black stone to give it a lovelier look.  The
+handles are made of actual gold to match the golden mist sprinkled within
+the stone.
+~
+ExtraDesc bed ~
+The bed is huge and comfortable.  From the wall up above the bed fall long
+velvet drapes, covering it like an intimate canopy.
+~
+End
+
+#12819
+Name desk~
+Short an `#`So`Xb`Ssidian desk`^~
+Desc An `#`Sin`Xt`Sricat`Xe`Sly carved `So`Xb`Ssidian desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 DG 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12820
+Name bed~
+Short a `#`Sc`Xa`Snopied bed of b`Xl`Sack lin`Xe`Sn`^~
+Desc A huge `#`Sc`Xa`Snopied bed of b`Xl`Sack lin`Xe`Sn`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12821
+Name desk~
+Short a `#`Sb`Xl`Sack m`Xa`Srbl`Xe`S desk`^~
+Desc A `#`Scarved b`Xl`Sack m`Xa`Srbl`Xe`S desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 DG 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12822
+Name wardrobe~
+Short a `#`Sb`Xl`Sack m`Xa`Srbl`Xe`S wardrobe`^~
+Desc A `#`Scarved `Sb`Xl`Sack m`Xa`Srbl`Xe`S wardrobe`^~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 C 0 1000 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc wardrobe ~
+The carved wardrobe is made entirely out of black marble.  The smooth stone
+is flecked with gold.  Set in the two door handles of the wardrobe are
+smooth rubies.
+~
+End
+
+#12823
+Name bed~
+Short a `#`Wm`Xa`Ws`Xs`Wi`Xv`We`S bed`^~
+Desc A `#`Wm`Xa`Ws`Xs`Wi`Xv`We `Ss`Xi`Smple-looking bed`^ with `#`Sblack
+linen`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 10000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12824
+Name bed~
+Short a `#`Wm`Xa`Ws`Xs`Wi`Xv`We `Sking bed`^~
+Desc A `#`Wm`Xa`Ws`Xs`Wi`Xv`We `Sc`Xa`Snopied king bed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12825
+Name desk~
+Short an `#`Sobs`Xi`Sd`Xi`San desk`^~
+Desc A `#`Scarved obs`Xi`Sd`Xi`San desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 1000 DG 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12826
+Name bed~
+Short a `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^~
+Desc A very `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^ waits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12827
+Name portrait~
+Short a `#`Slarge `rp`Ro`rrtra`ri`Rt`^~
+Desc A `#`Slarge `rp`Ro`rrtra`ri`Rt`^ hangs off the wall~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 100 A 0 1000 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay~
+ExtraDesc portrait ~
+The mural upon the portrait shows the fall of the origional Archangel
+Rosaline..  And the transformation of Harpan to the great being called the
+Demon Queen.  It also depicts how a great angel came to confront her..
+Seandac's new Archangel.
+~
+End
+
+#12828
+Name bed~
+Short a `#`Wm`Xa`Ws`Xs`Wi`Xv`We`S king bed`^~
+Desc A `#`Scomfortable `Wm`Xa`Ws`Xs`Wi`Xv`We`S king bed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 10000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc bed ~
+The bed is huge. Clearly massive in size and made for the utemost comfort.
+Black linen blankets cover the bed nicely.
+~
+End
+
+#12829
+Name table~
+Short a `#`Sm`Xa`Srble table`^~
+Desc A huge `#`Sm`Xa`Srble table`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 10000 DG 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12830
+Name treasury key~
+Short `#`yKey to `RBlood Fortress`^~
+Desc `#`yKey to `RBlood Fortress`^ is here~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#12833
+Name altar~
+Short a `#`Swicked-looking `ra`Rl`rt`Ra`rr`^~
+Desc A `#`rD`Re`rm`Ro`rn`Ri`rc`S Altar of `RH`rarpan`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 Q 0 0
+Weight 0
+Material unknown~
+Extra    hum evil magic antigood noremove nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc altar ~
+Glancing upon this demonic altar, you find it is made out of the smouldering
+corpses of imps, demons and other cursed creatures.  They all contort
+together to create the unholy artifact.  Atop the altar stands the carved
+image of Harpan herself.
+~
+End
+
+#12869
+Name portrait~
+Short a `#`Sfor`Wm`Sal portrait`^~
+Desc A `#`Sfor`Wm`Sal portrait of the `RE`rmpress `Sand `RE`rmporer`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    evil magic antigood antineutral nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc portrait ~
+Towering between the two thrones is a huge portrait of the Demon Empress and
+her Emperor in their prime eons ago.  They stand side by side, backs to each
+other in ease and arrogance, basking in the glory of their own power.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#12800
+Name Master Bedroom~
+Desc You open and enter the tall narrow door and enter a room with a black stone
+floor swirled daintily with flecks of gold...  The room you enter is rather
+large and spacious.  A `rnoticeable rug`X covers the cool stone floor.  Straight
+ahead as you walk in is a roaring fireplace.  A soft, feather-filled lounge
+couch rests warmly on the hearth.  To the right of the entrance is a large
+four-post feather bed.  Near it is another doorway to the bathroom.  The
+door is decorated with images of dragons.  To the left of the room is a full
+sized mirror and a long dresser.  Straight ahead is the arched doorway to a
+balcony.  The twin doors are carved out of solid stone, decorated with many
+images of imps, demons and dragons.  Soft, silk drapes of an inky blackness
+hang over the two doors.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc rug ~
+As you first enter the room however, you notice before you a large fur rug
+of a large, black panther-like creature.  It covers most of the cool stone
+floor.
+~
+Exit north 12803
+Exit south 12802
+EFlags door closed pickproof nopass~
+Exit west 12801
+Exit northwest 12804
+EFlags door closed~
+End
+
+
+#12801
+Name Garderobe~
+Desc This medieval bathroom is in fact, not a bathroom at all but an underground
+spring.  The spring water is Very warm.  Heated due to the fiery pits of the
+underworld.  The water flows into a large stepped basin.  The floor is stone
+paved with black granite stone to prevent slipping.  The air is warm with
+relaxing steam.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 12800
+End
+
+
+#12802
+Name a bone archway~
+Desc The hall has an arched ceiling as does most areas within the mighty
+fortress.  Ahead are two twin doors of black stone.  It is also flecked with
+gold and has intricate carvings upon it.  The floor has a lovely red rug.
+Upon the wall of either side of the two stone doors are mounted skulls with
+thick, black candles lighting the room with an eerie glow.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12800
+EFlags door closed pickproof nopass~
+Exit south 12805
+End
+
+
+#12803
+Name balcony~
+Desc This two-man balcony towers over the very pits of hell.  The `rView`X overlooks
+the chaos, mayhem and torment of dead souls.  The rail is carved all out of
+the same solid, black stone as the floor and the towering walls of the
+stronghold.  It is decorated with intricate carvings of serpentine creatures
+and images of beauty and torment.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc view ~
+Gazing out toward the view...  You see down below you the torments and
+blazing fires of hell.  The view spans for miles and miles of underworld
+beauty.  Watching lazily as countless souls are lost and tormented for their
+crimes in the world of the living.  Look that man there...  Is that..
+`mBael`X?
+
+~
+ExtraDesc bael ~
+You see a really round..  Really fat..  Spiked adamantium golem...  Walking
+around like an automaton doing meager chores for lesser demons.  Washing
+their feet, kissing their arses and whining about every little thing.
+~
+Exit south 12800
+End
+
+
+#12804
+Name a Dark, quiet study~
+Desc The study is very spacious.  There are mountains of parchments, books and
+reading scrolls that cover every wall.  The ceiling is arched and a quiet
+`rfireplace`X crackles in the corner peacefully, giving light to the black room.
+The walls are small with an arched ceiling.  Ahead of you is a large
+treasury.  The room is dimly lit with two candles set upon two skulls of
+what appears..  Or was..  Two humanoid creatures
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Owner selestia~
+ExtraDesc fireplace ~
+Over in the small corner, a small fireplace crackles and sputters playfully.
+Two obsidian demon imps hold up it's small mantle.  Their eyes glow an
+eerie red.
+~
+Exit southeast 12800
+EFlags door closed oneway~
+End
+
+
+#12805
+Name a bone archway~
+Desc The hall has an arched ceiling as does most areas within the mighty
+fortress.  Far ahead are two twin doors of black stone.  It is also flecked
+with gold and has intricate carvings upon it.  The floor has a lovely red
+rug.  Upon the wall of either side of the two stone doors are mounted skulls
+with thick, black candles lighting the room with an eerie glow.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12802
+End
+
+
+#12806
+Name a twin staircase~
+Desc Ahead are two brilliantly huge staircases that are nearly identical.  They
+both spiral to either east or west and end at the same destination.  They
+are carved entirely out of the same black stone as the floors.  It appears
+as if the stair and floor are of the same block.  The rail is flecked with
+gold.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit southeast 12807
+Exit southwest 12808
+End
+
+
+#12807
+Name a curved hall~
+Desc There's a rather long hall that curves forward as far as light permits.  On
+either side of the hall are iron faces of demons with their mouthes open.
+Within their mouth are flickering flames which light the area you're in.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 12866
+Exit southwest 12809
+Exit northwest 12806
+End
+
+
+#12808
+Name a curved hall~
+Desc There's a rather long hall that curves forward as far as light permits.  On
+either side of the hall are iron faces of demons with their mouthes open.
+Within their mouth are flickering flames which light the area you're in.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 12865
+Exit northeast 12806
+Exit southeast 12809
+End
+
+
+#12809
+Name a curved hall~
+Desc There's a rather long hall that curves forward in either direction as far as
+light permits.  On either side of the hall are iron faces of demons with
+their mouthes open.  Within their mouth are flickering flames which light
+the area you're in.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 12810
+Exit northeast 12807
+Exit northwest 12808
+End
+
+
+#12810
+Name a regal hall~
+Desc On either side of the wall are two stone statues of Demons wielding swords.
+The swords blaze and burn, giving light to the regal hall.  The ceiling is
+arched and fades into darkness.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 12809
+Exit down 12811
+End
+
+
+#12811
+Name a regal staircase~
+Desc The staircase is massive.  It is made of the same black stone as the walls
+and arched ceiling of the castle.  The railing is flecked and swirled with
+gold.  The walls following the contour of the staircase is decored with
+torches.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit up 12810
+Exit southeast 12838
+EFlags door closed pickproof nopass~
+End
+
+
+#12812
+Name Long Corridor~
+Desc The corridor is massive.  On either side of the two doors are torches to
+light the path.  The deep red rug on the floor contrasts the black stone of
+the floor, walls and arched ceiling in a complimenting way.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 12813
+Exit east 12824
+EFlags door closed nopass~
+Exit west 12825
+EFlags door closed nopass~
+End
+
+
+#12813
+Name Long Corridor~
+Desc The corridor is massive.  On either side of the two doors are torches to
+light the path.  The deep red rug on the floor contrasts the black stone of
+the floor, walls and arched ceiling in a complimenting way.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 12814
+Exit east 12823
+EFlags door closed nopass~
+Exit south 12812
+Exit west 12822
+EFlags door closed nopass~
+End
+
+
+#12814
+Name Long Corridor~
+Desc The corridor is massive.  On either side of the two doors are torches to
+light the path.  The deep red rug on the floor contrasts the black stone of
+the floor, walls and arched ceiling in a complimenting way.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 12815
+Exit east 12820
+EFlags door closed nopass~
+Exit south 12813
+Exit west 12821
+EFlags door closed nopass~
+End
+
+
+#12815
+Name Long Corridor~
+Desc The corridor is massive.  On either side of the two doors are torches to
+light the path.  The deep red rug on the floor contrasts the black stone of
+the floor, walls and arched ceiling in a complimenting way.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 12816
+EFlags door closed nopass~
+Exit east 12819
+EFlags door closed nopass~
+Exit south 12814
+Exit west 12818
+EFlags door closed nopass~
+Exit down 12817
+End
+
+
+#12816
+Name Council Room~
+Desc The Council room is extremely huge.  There are two giant windows giving a
+lovely `mview`X.  The black marble floor is flecked with gold and covered by a
+gigantic fur rug.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc view ~
+Down below are many tormented beings of all types, races, and size.
+Children are being torn to pieces and fed to demons..  Women are being
+ravaged and tormented..  Men are facing their greatest fears in full
+throttle.
+~
+Exit south 12815
+EFlags door closed nopass~
+End
+
+
+#12817
+Name West Wing~
+Desc The West Wing is marked by two twin statues of demonic warriors on either
+side of the arched doorway.  Both wield great spears and shields emblazoned
+with the Crest of Seles.  There is a circular but regal stairway that leads
+to an upper level.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit up 12815
+Exit southeast 12826
+End
+
+
+#12818
+Name Alston's room~
+Desc As you enter the room you notice first off how spacious and large it is.  To
+the right of you, there is a `#`rb`Rl`Ya`Wz`Yi`Rn`rg `rfireplace`^ that keeps the room at a very
+comfortable temperature.  The ceiling is arched and very high.  The floor is
+made from black stone and covered in various soft rugs.
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  0 23  50 the `rf`Rl`Yam`Re`rs`X flicker playfully.~
+ExtraDesc fireplace ~
+The mantle is held up by two bat-like demons. Their bodies are twisted and
+contorted into two deranged beings being tormented by the 'weight' of the
+stone mantle. The fire within the fireplace crackles and flickers with an
+eerie silence. They are in fact, red flames... the same color as hell-fire.
+~
+Exit east 12815
+EFlags door closed nopass~
+End
+
+
+#12819
+Name Nalania's room~
+Desc The room is very large and spacious.  The black stone ceiling is arched to a
+very high point giving the appearance of an even bigger room.  The `mview`X
+outside of the window is lovely.  Long black velvet drapes hang from either
+side of the window.  On the cold black stone floor is a large and very soft
+blood-maroon rug.  There is also a comfortable `rf`Ri`Yr`Re`rplace`X resting on the
+eastern wall to the entrance.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the fire crackles and flickers..~
+ExtraDesc view ~
+Glancing down the view, you find yourself overlooking the torments of hell
+itself.  Thousands of souls are punished each moment in a horrific way.
+Pain, despair, and hopelessness fills their faces.
+~
+ExtraDesc fireplace ~
+The mantle is held up by two bat-like demons.  Their bodies are twisted and
+contorted into two deranged beings being tormented by the 'weight' of the
+stone mantle.  The fire within the fireplace crackles and flickers with an
+eerie silence.  They are in fact, red flames...  The same color as
+hell-fire.
+~
+Exit west 12815
+EFlags door closed nopass~
+End
+
+
+#12820
+Name Ariale's room~
+Desc Here's a lovely room fit for anyone to rest in.  The black stone ceiling is
+arched very high.  The black marble floor is flecked with gold.  There is
+also a fireplace that flickers wickedly.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the flames crackle and sputter silently~
+Exit west 12814
+EFlags door closed nopass~
+End
+
+
+#12821
+Name Raul's room~
+Desc Here's a lovely room fit for anyone to rest in.  The black stone ceiling is
+arched very high.  The black marble floor is flecked with gold.  There is
+also a fireplace that flickers wickedly.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the flames crackle and sputter silently~
+Exit east 12814
+EFlags door closed nopass~
+End
+
+
+#12822
+Name Rynn's room~
+Desc The black stone ceiling tapers into a long arch.  The black stone walls are
+covered in beautiful `mcarvings`X.  The two windows have a lovely `mview`X of hell
+as well.  On either side of the window are two thick, black-velvet curtains
+trimmed in a blood-red maroon.  The black marble floor is covered by a giant
+rug.  The `rf`Ri`Yr`Re`rplace`X crackles gently, giving the room a warm glow.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the flames crackle and sputter silently~
+ExtraDesc fireplace ~
+The mantle is held up by two demonic serpentine figures.  Their bodies are
+twisted and contorted into two deranged beings being tormented by the
+'weight' of the stone mantle.  The fire within the fireplace crackles and
+flickers with an eerie silence.  They are in fact, red flames...  The same
+color as hell-fire.
+~
+ExtraDesc view ~
+Down below are many tormented beings of all types, races, and size.
+Children are being torn to pieces and fed to demons..  Women are being
+ravaged and tormented..  Men are facing their greatest fears in full
+throttle.
+~
+ExtraDesc carvings ~
+Glancing upon the carvings..  You find they are depicting a great battle of
+some kind.  It is the story of two great dragons..  One of Light and the
+other of Darkness battling and locked together in a great pose of
+destruction.
+~
+Exit east 12813
+EFlags door closed nopass~
+End
+
+
+#12823
+Name Eislen's room~
+Desc Here's a lovely room fit for anyone to rest in.  The black stone ceiling is
+arched very high.  The black marble floor is flecked with gold.  There is
+also a fireplace that flickers wickedly.  The black stone walls are full of
+`mcarvings`X flecked with gold.  The high ceiling is arched.  On the wall
+opposite the door is a large window with a `mview`X.  A `rf`Ri`Yr`Re`rplace`X flickers
+lazily on the western wall to the door.  Set upon the cool stone floor is a
+large soft rug of a blood-maroon.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the flames crackle and sputter silently~
+ExtraDesc carvings ~
+These carvings depict various schenes of the forest and nature itself.  It
+also depicts two massive dragons with the likeness of serpents hissing and
+coiling in challenge to each other.  One of them, being a serpent of nature
+and life..  The other, being a serpent of the undead and death.
+~
+ExtraDesc view ~
+Down below you within your magnificent view are the very depths of hell.
+Countless souls of people both recognizeable and unrecognizeable cover the
+grounds like little black ants.  Among them are the tormentor demons who
+dominated, torment and ravage their prey with glee.
+~
+ExtraDesc fireplace ~
+The mantle is made out of black marble. The same color and stone type as the
+walls and cool stone floor. On either side of the mantle are two demonic
+serpents contorting and twisting in agony by the 'weight' of the mantle.
+Within the fireplace the eerie red blaze crackles peacefully and oddly
+silent.
+~
+Exit west 12813
+EFlags door closed nopass~
+End
+
+
+#12824
+Name Lester's room~
+Desc The room is very spacious.  It has an arched ceiling of black stone.  A
+`rf`Ri`Yr`Re`rplace`X burns brightly on the eastern wall of the enterance.  Straight
+ahead of the door is a lovely `mview`X as well.  Deep maroon rugs cover the cool
+stone floor.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the fire crackles and flickers..~
+ExtraDesc view ~
+Glancing down the view, you find yourself overlooking the torments of hell
+itself.  Thousands of souls are punished each moment in a horrific way.
+Pain, despair, and hopelessness fills their faces.
+~
+ExtraDesc fireplace ~
+The mantle is held up by two bat-like demons.  Their bodies are twisted and
+contorted into two deranged beings being tormented by the 'weight' of the
+stone mantle.  The fire within the fireplace crackles and flickers with an
+eerie silence.  They are in fact, red flames...  The same color as
+hell-fire.
+~
+Exit west 12812
+EFlags door closed nopass~
+End
+
+
+#12825
+Name Cassia's room~
+Desc The room is very spacious.  Deep maroon rugs cover the cold stone floor.
+The black stone walls are etched with `mcarvings`X of stories and other such
+things.  To the west of the entrance is a huge `rf`Ri`Yr`Re`rplace`X.  A large window
+with a lovely `mview`X is there at the wall opposite of the doorway.  Black
+velvet curtains drape and compliment the window nicely.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 the fire crackles and flickers..~
+ExtraDesc carvings ~
+Glancing upon the carvings..  You find they are depicting a great battle of
+some kind.  It is the story of two great dragons..  One of Light and the
+other of Darkness battling and locked together in a great pose of
+destruction.
+~
+ExtraDesc fireplace ~
+Glancing upon the fireplace, the two figures holding up the mantle are
+man-like demons in agony.  Fangs portruding from their mouthes and batlike
+wings sprout from their back as they seemingly 'hold up' the heavy mantle.
+The fire within the fireplace glows and flickers a complete reddish color..
+The same color as hell-fire.
+~
+ExtraDesc view ~
+Glancing down the view, you find yourself overlooking the torments of hell
+itself.  Thousands of souls are punished each moment in a horrific way.
+Pain, despair, and hopelessness fills their faces.
+~
+Exit east 12812
+EFlags door closed nopass~
+End
+
+
+#12826
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+Chairs and tables of a matching inky blackness are here.  Tall black candles
+glow lazily in the darkness atop the red tablecloths of the elegant tables.
+Utensils of gold reside atop the table surrounding the thick candle.  A
+lovely window with a view of the underworld is on the wall beside you.
+Black silk curtains and drapes shimmer lazily as the sound of soft, eerie
+music overtakes you.  A short hall leads out of the ballroom to the
+northwest.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit east 12827
+Exit south 12832
+Exit northwest 12817
+End
+
+
+#12827
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+On the floor leading to and from the throne is a soft rug of the deepest
+crimson red.  It is a lovely blood color.  The rug is wide enough to allow
+two people to walk side by side straight to the throne or straight out
+toward the entrance.  The sound of soft, eerie music overtakes you.  A
+slightly angled pathway is seen to the northeast through an archway.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit east 12828
+Exit south 12831
+Exit west 12826
+Exit northeast 12846
+End
+
+
+#12828
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+On the floor leading to and from the throne is a soft rug of the deepest
+crimson red.  It is a lovely blood color.  The rug is wide enough to allow
+two people to walk side by side straight to the throne or straight out
+toward the entrance.  The sound of soft, eerie music overtakes you.  A
+slightly angled pathway is seen to the northwest through an archway.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit east 12829
+Exit south 12830
+Exit west 12827
+Exit northwest 12846
+End
+
+
+#12829
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+Chairs and tables of a matching inky blackness are here.  Tall black candles
+glow lazily in the darkness atop the red tablecloths of the elegant tables.
+Utensils of gold reside atop the table surrounding the thick candle.  A
+lovely window with a view of the underworld is on the wall beside you.
+Black silk curtains and drapes shimmer lazily as the sound of soft, eerie
+music overtakes you.  A short hall leads out of the ballroom to the
+northeast.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit south 12833
+Exit west 12828
+Exit northeast 12838
+End
+
+
+#12830
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+On the floor leading to and from the throne is a soft rug of the deepest
+crimson red.  It is a lovely blood color.  The rug is wide enough to allow
+two people to walk side by side straight to the throne or straight out
+toward the entrance.  The sound of soft, eerie music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit north 12828
+Exit east 12833
+Exit south 12835
+Exit west 12831
+End
+
+
+#12831
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+On the floor leading to and from the throne is a soft rug of the deepest
+crimson red.  It is a lovely blood color.  The rug is wide enough to allow
+two people to walk side by side straight to the throne or straight out
+toward the entrance.  The sound of soft, eerie music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit north 12827
+Exit east 12830
+Exit south 12836
+Exit west 12832
+End
+
+
+#12832
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+Chairs and tables of a matching inky blackness are here.  Tall black candles
+glow lazily in the darkness atop the red tablecloths of the elegant tables.
+Utensils of gold reside atop the table surrounding the thick candle.  A
+lovely window with a view of the underworld is on the wall beside you.
+Black silk curtains and drapes shimmer lazily as the sound of soft, eerie
+music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit north 12826
+Exit east 12831
+Exit south 12837
+End
+
+
+#12833
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+Chairs and tables of a matching inky blackness are here.  Tall black candles
+glow lazily in the darkness atop the red tablecloths of the elegant tables.
+Utensils of gold reside atop the table surrounding the thick candle.  A
+lovely window with a view of the underworld is on the wall beside you.
+Black silk curtains and drapes shimmer lazily as the sound of soft, eerie
+music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit north 12829
+Exit south 12834
+Exit west 12830
+End
+
+
+#12834
+Name Orchestra~
+Desc A lovely orchestra complete with various instruments plays the strong, soft
+music.  You almost seem taken by its eerie and enigmatic tunes.  Music that
+tells stories makes your heart leap and soar.  Music that also brings you to
+your fantasies locked in the darkest places of your heart, as well as the
+lightest.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies comming from the orchestra, overtake your
+thoughts..~
+Exit north 12833
+Exit west 12835
+End
+
+
+#12835
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+On the floor leading to and from the throne is a soft rug of the deepest
+crimson red.  It is a lovely blood color.  The rug is wide enough to allow
+two people to walk side by side straight to the throne or straight out
+toward the entrance.  The sound of soft, eerie music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies comming from the orchestra, overtake your
+thoughts..~
+Exit north 12830
+Exit east 12834
+Exit west 12836
+Exit southwest 12839
+End
+
+
+#12836
+Name Ballroom~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+On the floor leading to and from the throne is a soft rug of the deepest
+crimson red.  It is a lovely blood color.  The rug is wide enough to allow
+two people to walk side by side straight to the throne or straight out
+toward the entrance.  The sound of soft, eerie music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit north 12831
+Exit east 12835
+Exit west 12837
+Exit southeast 12839
+End
+
+
+#12837
+Name Orchistra~
+Desc Smooth, glossy floors of stone are all about the beautiful ballroom floor.
+Chairs and tables of a matching inky blackness are here.  Tall black candles
+glow lazily in the darkness atop the red tablecloths of the elegant tables.
+Utensils of gold reside atop the table surrounding the thick candle.  A
+lovely window with a view of the underworld is on the wall beside you.
+Black silk curtains and drapes shimmer lazily as the sound of soft, eerie
+music overtakes you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  25 eerie melodies overtake your senses..~
+Exit north 12832
+Exit east 12836
+End
+
+
+#12838
+Name East Wing~
+Desc The East Wing is marked by two twin statues of demonic serpents on either
+side of the arched doorway.  There is a path that leads to a spiral
+staircase which takes you down into the bowels of the castle.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit down 12845
+EFlags door closed nopass~
+Exit southwest 12829
+Exit northwest 12811
+EFlags door closed pickproof nopass~
+End
+
+
+#12839
+Name Arched entryway~
+Desc As you enter into the grand hall, the path branches out into two exits that
+lead to the elegant ballroom up ahead.  The black stone walls are lined with
+iron dragon heads that spout fire to light the dark room.  On the floor is a
+rug of a deep red.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 12840
+EFlags door closed nopass~
+Exit northeast 12835
+Exit northwest 12836
+End
+
+
+#12840
+Name long, narrow path~
+Desc The path you walk on is bleak.  The floor is pitch black and you are
+surrounded by an eerie and consuming fog.  Walking more you find yourself
+staring at the monstrous castle before you.  Wicked looking towers pierce
+the darkness with an ominous glow.  It towers and glows with a deathly aura.
+Walking closer toward the castle..  You feel as if you're being watched...
+
+~
+RoomFlags indoors noscry light noautoexits~
+Sector inside~
+RoomEcho  0 23  25 all around you... Silence...~
+Exit north 12839
+EFlags door closed nopass~
+Exit east 12843
+Exit west 12842
+Exit southwest 12841
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 12830
+End
+
+
+#12841
+Name Front Gate~
+Desc Right before you is a giant gate carved into the likeness of a giant,
+deformed and demonic skull.  A lazy haze slowly escapes the great mouth of
+the skull.  It blocks all sort of scanning ahead..  Making it impossible to
+know just what exactly is there.  On either side of the path stands two
+statues of demonic serpents.  Their eyes are inset with rubies that seem to
+glow eerily.
+~
+RoomFlags indoors nowhere noscry light nofly noscan noautoexits~
+Sector inside~
+RoomEcho  0 23  75 an eerie fog rolls swirls wickedly around you..~
+RoomEcho  0 23  25 the glowing eyes of the statues follow you..~
+Exit northeast 12840
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 12830
+EKeywords door~
+Exit southwest 10418
+End
+
+
+#12842
+Name Gardens~
+Desc The gardens are bleak and depressing.  Lush full bushes of roses cover the
+gardens.  All that would be green..  Is an eerie black.  The roses
+themselves are a deep, blood-colored maroon.
+~
+RoomFlags indoors noscry~
+Sector inside~
+RoomEcho  0 23  25 all around you... Silence...~
+Exit east 12840
+End
+
+
+#12843
+Name Gardens~
+Desc The gardens are bleak and depressing.  Lush full bushes of roses cover the
+gardens.  All that would be green..  Is an eerie black.  The roses
+themselves are a deep, blood-colored maroon.
+~
+RoomFlags indoors noscry~
+Sector inside~
+RoomEcho  0 23  25 all around you... Silence...~
+Exit west 12840
+End
+
+
+#12845
+Name a dark entryway~
+Desc The hall becomes dark and ominous.  The black marble floor is now rough to
+help you keep footing.  The torches that line the walls seem to glow dimly
+as the flames flicker and mock you.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit up 12838
+EFlags door closed nopass~
+Exit southwest 12848
+End
+
+
+#12846
+Name a massive bridge~
+Desc Walking across the path you find yourself crossing a stone bridge that
+stands high above a gushing river of magma.  The heat is searing and nearly
+unbearable.  Remaining in the center of the bridge is rather cool and
+comfortable.  The constant winds seem to press you forward..  Urging you.
+~
+RoomFlags indoors noscry light~
+Sector inside~
+RoomEcho  0 23  20 below you.. the magma bubbles lazily~
+Exit north 12847
+Exit southeast 12828
+Exit southwest 12827
+End
+
+
+#12847
+Name Throne room~
+Desc Carved into the rock high above the molten magma lake is a Very large
+room.
+Before you is a raised platform where two ominous thrones rest side by side.
+The ceiling tapers upward in a huge arch..  However the end of the ceiling
+is never seen.  All around the circular room upon the walls are numerous,
+wicked-looking torches.
+~
+RoomFlags no_mob indoors noscry light nofly~
+Sector inside~
+Exit south 12846
+End
+
+
+#12848
+Name small arched hall~
+Desc The hall becomes dark and ominous.  The black marble floor is now rough to
+help you keep footing.  The torches that line the walls seem to glow dimly
+as the flames flicker and mock you.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit west 12849
+Exit northeast 12845
+End
+
+
+#12849
+Name a damp, muggy room~
+Desc The hall becomes dark and ominous.  The black marble floor is now rough to
+help you keep footing.  The torches that line the walls seem to glow dimly
+as the flames flicker and mock you.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit north 12851
+Exit east 12848
+Exit south 12856
+Exit west 12853
+Exit northeast 12852
+Exit southeast 12857
+Exit southwest 12854
+Exit northwest 12850
+End
+
+
+#12850
+Name a dark cell~
+Desc You find yourself trapped in a cell.. Goodness... the gods sure smile
+on you don't they?
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit southeast 12849
+End
+
+
+#12851
+Name a dark cell~
+Desc You find yourself trapped in a cell..  Goodness...  The gods sure smile on
+you don't they?
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit south 12849
+End
+
+
+#12852
+Name a dark cell~
+Desc You find yourself trapped in a cell.. Goodness... the gods sure smile
+on you don't they?
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit southwest 12849
+End
+
+
+#12853
+Name a small arched hall~
+Desc The hall becomes dark and ominous.  The black marble floor is now rough to
+help you keep footing.  The torches that line the walls seem to glow dimly
+as the flames flicker and mock you.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit east 12849
+Exit west 12859
+Exit down 12860
+EFlags door closed~
+End
+
+
+#12854
+Name a dark cell~
+Desc You find yourself trapped in a cell.. Goodness... the gods sure smile
+on you don't they?
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit northeast 12849
+End
+
+
+#12856
+Name a dark cell~
+Desc You find yourself trapped in a cell.. Goodness... the gods sure smile
+on you don't they?
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit north 12849
+End
+
+
+#12857
+Name a dark cell~
+Desc You find yourself trapped in a cell.. Goodness... the gods sure smile
+on you don't they?
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit northwest 12849
+End
+
+
+#12859
+Name Torment Chamber~
+Desc This cruel room is surprisingly very spacious.  There are tables lined and
+covered with impliments of torment.  Hooks of all sorts, knives..  Daggers..
+And other odd impliments that only your darkest imagination and fears could
+grant a purpose.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit east 12853
+End
+
+
+#12860
+Name Dark Crypt~
+Desc Down in the Bowels of the castle, you find yourself surrounded by an
+eerie silence. Nothing moves. There aren't even signs of rats or other
+vermin. No dripping water.. No nothing.
+~
+RoomFlags indoors noscry~
+Sector inside~
+RoomEcho  0 23  25 an eerie silence consumes you...~
+Exit north 12861
+EFlags door closed~
+Exit up 12853
+EFlags door closed~
+End
+
+
+#12861
+Name Dark Crypt~
+Desc Down in the Bowels of the castle, you find yourself surrounded by an eerie
+silence.  Nothing moves.  There aren't even signs of rats or other vermin.
+No dripping water..  No nothing.
+~
+RoomFlags indoors noscry~
+Sector inside~
+RoomEcho  0 23  25 an eerie silence consumes you...~
+Exit north 12864
+Exit south 12860
+EFlags door closed~
+Exit northeast 12863
+Exit northwest 12862
+End
+
+
+#12862
+Name Crypt Room~
+Desc You find yourself in a small crypt room.  It is snug and settled in the
+center is a rather elegant coffin.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit southeast 12861
+End
+
+
+#12863
+Name Crypt Room~
+Desc You find yourself in a small crypt room. It is snug and settled in the
+center is a rather elegant coffin.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit southwest 12861
+End
+
+
+#12864
+Name Crypt Room~
+Desc You find yourself in a small crypt room. It is snug and settled in the
+center is a rather elegant coffin.
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit south 12861
+End
+
+
+#12865
+Name a long hall~
+Desc Planted on either side of the hall is a massive `Rdollcase`^.  The dark stone
+floor is covered by a long red rug.  Along the walls on either side of the
+dollcase is a flaming torch.  It's made out of iron and shaped into the
+likeness of a demon's head that breathes the flames which produce light.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc leaghe ~
+There is a doll of Leaghe.  The spindly doll is kneeling in front of a
+Vampire sitting on a throne.  Leaghe appears to be washing the vampire's
+feet.  There is a pin in his head labeled "Pet."
+~
+ExtraDesc nalania ~
+There is a half-elven girl here snarling and looking mean.  A pin is stuck
+in her labeled, "Undisciplined".
+~
+ExtraDesc roalyn ~
+There is a small woman who seems to be fishing with a pole that has no line.
+She appears to be frustrated and annoyed with a sword drawn.  A pin stuck
+in her head is titled.  Nothing.  There is no need for a label.  Her own
+stupidity is already beyond tinkering.
+~
+ExtraDesc dollcase ~
+`#There are four dolls on display in this glass and crystal case.  They are
+labeled `bLeaghe`^, `gGalaphile`^, `cNalania`^, and `sRoalyn`^
+~
+ExtraDesc galaphile ~
+There is a doll created in the likeness of a dragon.  Its scales glitter
+like metal and it appears to be chasing shadows while wielding stakes.
+There is a pin stuck in the doll's head which is labeled "Dazed and
+Confused."
+~
+Exit north 12868
+Exit east 12808
+End
+
+
+#12866
+Name a long hall~
+Desc Planted on either side of the hall is a massive `Sdollcase`^.  The dark stone
+floor is covered by a long red rug.  Along the walls on either side of the
+dollcase is a flaming torch.  It's made out of iron and shaped into the
+likeness of a demon's head that breathes the flames which produce light.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc zieg ~
+There is also a big blue dragon with a pin stuck in his brain titled, "If
+found please return"
+~
+ExtraDesc laen ~
+There is a demon here with tattered wings.  He lies in pieces on the ground
+as angels hover around him.  There is a pin within the center of the
+massacre labeled "Insolence"
+~
+ExtraDesc dollcase ~
+There are four dolls set within this hall.  One of them is labeled `mZieg`X,
+`mLaen`X, `mTalintha`X and the other is labeled `mKahori`X.
+~
+ExtraDesc talintha ~
+There is a little elven girl who appears a bit confused.  The pin in her
+head is labeled "Closed."
+~
+ExtraDesc kahori ~
+There is an elven girl here surrounded by many men..  All of the men have
+their backs turned and ignoring her.  A pin is stuck in her entitled.
+"Lovesick".
+~
+Exit north 12867
+Exit west 12807
+End
+
+
+#12867
+Name a long hall~
+Desc Planted on either side of the hall is a massive `Gdollcase`^.  The dark stone
+floor is covered by a long red rug.  Along the walls on either side of the
+dollcase is a flaming torch.  It's made out of iron and shaped into the
+likeness of a demon's head that breathes the flames which produce light.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc zana ~
+There is a little doll of a small silver wolf trying to track, in circles, a
+small vampire hovering overhead in the shadows.  The little vampire appears
+to be giggling and pointing walking behind her.  There is a pin stuck in her
+titled, "misdirection".
+~
+ExtraDesc seshmaru ~
+This doll of an exquisite elven gentleman has a pin stuck in his head
+labeled "Lust is Just."
+~
+ExtraDesc dollcase ~
+There are four dolls set within this hall.  One of them is labeled `mSeshmaru`X,
+`mZana`X, `mWindica`X and the other is labeled `mRynn`X.
+~
+ExtraDesc rynn ~
+There is a little girl here screaming hysterically and surrounded by
+dragons.  The dragons are walking about as if they don't notice her.
+There's a pin stuck in the little girl titled "hysteria"
+~
+ExtraDesc windica ~
+There is an elven girl here with three children in her arms.  Behind her
+stands a vampire with her face hidden.  She only has glowing green eyes.
+Tacked on the elven girl is the word "Watched".
+~
+Exit south 12866
+End
+
+
+#12868
+Name a long hall~
+Desc Planted on either side of the hall is a massive `Rdollcase`^.  The dark stone
+floor is covered by a long red rug.  Along the walls on either side of the
+dollcase is a flaming torch.  It's made out of iron and shaped into the
+likeness of a demon's head that breathes the flames which produce light.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc dollcase ~
+There are four dolls set within this hall.  One of them is labeled `mLucia`X,
+`mImari`X, `mGlorianna`X and the other is labeled `mElkan`X.
+~
+ExtraDesc lucia ~
+A small faerie like doll is here.  She is tied up to a roaster skewer and is
+being turned over a fire by a drow.  A pin in her head is titled,
+"Paranoia".
+~
+ExtraDesc imari ~
+There also seems to be a little doll of Imari...  In a little model of a
+tree...  Surrounded by other little dolls that appear to be kissing her.
+~
+ExtraDesc glorianna ~
+There is a doll of an elven woman.  She appears to be just sitting there.
+No pins in her, she is untouched.  Around her neck is a leash titled,
+"Seshmaru."
+~
+ExtraDesc elkan ~
+This doll seems to have his hands over his ears, his eye tightly closed, and
+his mouth pinched shut as if shielding from anything disagreeable.  A pin
+stuck in his head titled, "High Maintenance".
+~
+Exit south 12865
+End
+
+
+#12869
+Name a Quiet Study~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit west 12800
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 12800 -1 12800
+O 0 12801 -1 12800
+O 0 12803 -1 12801
+O 0 12802 -1 12804
+M 0 12802 1 12806 1
+M 0 12802 1 12809 1
+O 0 12813 -1 12816
+O 0 12814 -1 12818
+O 0 12815 -1 12818
+O 0 12816 -1 12818
+O 0 12817 -1 12819
+O 0 12818 -1 12819
+O 0 12819 -1 12819
+O 0 12827 -1 12820
+O 0 12828 -1 12820
+O 0 12829 -1 12820
+O 0 12826 -1 12821
+M 0 12801 1 12822 1
+O 0 12824 -1 12822
+O 0 12825 -1 12822
+M 0 12800 1 12823 1
+O 0 12822 -1 12823
+O 0 12823 -1 12823
+O 0 12826 -1 12824
+O 0 12820 -1 12825
+O 0 12821 -1 12825
+M 0 12802 1 12829 1
+M 0 12803 1 12832 1
+M 0 12803 1 12833 1
+M 0 12802 1 12834 1
+M 0 12804 1 12835 1
+M 0 12803 1 12837 1
+M 0 12804 1 12839 1
+O 0 12806 -1 12839
+O 0 12833 -1 12840
+O 0 12807 -1 12842
+O 0 12807 -1 12843
+O 0 12869 -1 12847
+O 0 12805 -1 12847
+O 0 12804 -1 12847
+O 0 12808 -1 12850
+O 0 12808 -1 12851
+O 0 12808 -1 12852
+O 0 12808 -1 12854
+O 0 12808 -1 12856
+O 0 12808 -1 12857
+O 0 12810 -1 12859
+O 0 12811 -1 12859
+O 0 12812 -1 12859
+O 0 12809 -1 12862
+O 0 12809 -1 12863
+O 0 12809 -1 12864
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

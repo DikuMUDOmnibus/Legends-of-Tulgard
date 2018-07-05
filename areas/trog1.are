@@ -1,0 +1,1563 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Troglodyte Outpost~
+ShortName   TrogArea~
+Builders    baridoc~
+Credits     baridoc~
+VNUMs       62000 62299
+AFlags  noscry~
+LRange      45 55
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+AreaEcho  0 23  15 The sound of a water droplet striking the ground echoes eerily.~
+AreaEcho  0 23  10 A shuffling noise is heard from out of the darkness.~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#62000
+Name young troglodyte~
+ShortD a young troglodyte~
+LongD A young troglodyte is playing with stone toys~
+Desc This creature looks like a miniature version of an adult, with its stocky 
+build and wide shoulders.  The only difference is the coloration.  The young 
+troglodytes seem to be more of a greyish color, perhaps to help blend in 
+with the stone. 
+~
+Race human~
+Align 0 -2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType claw
+AC 10 10 10 9
+Wealth 0
+Act    npc dont_wander amphibian~
+AffBy  infrared otterlungs dark_vision~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#62001
+Name female troglodyte~
+ShortD a female troglodyte~
+LongD A female troglodyte seems to be looking for something.~
+Desc This female troglodyte is typical of those of her species.  Mottled brown 
+and grey in color with somewhat short legs and arms, she has wide shoulders 
+and hips.  He mouth is large and filled with nasty teeth. 
+~
+Race human~
+Align 0 -2
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType bite
+AC -70 -70 -70 -60
+Wealth 150
+Act    npc scavenger stay_area amphibian~
+AffBy  infrared otterlungs dark_vision~
+Off    dodge~
+Form   edible sentient biped reptile amphibian~
+Part   head arms legs heart brains guts hands feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#62002
+Name adolescent male troglodyte~
+ShortD an adolescent male troglodyte~
+LongD (no default description)~
+Desc This male troglodyte has just about achieved adult coloration.  He is still 
+trying to make a name for himself and is too young to have his own mate. His 
+stubby arms and legs and broad shoulders belie the strength found in his 
+limbs.  The most prominent feature of his lizard-like face is the gaping maw 
+filled with sharp teeth. 
+~
+Race human~
+Align 0 -2
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType bite
+AC -137 -137 -137 -109
+Wealth 300
+Act    npc no_tame stay_area~
+AffBy  infrared otterlungs sneak dark_vision~
+Off    dodge dirt_kick~
+Form   edible sentient biped reptile amphibian~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#62003
+Name adult male troglodyte~
+ShortD an adult male troglodyte~
+LongD An adult male troglodyte is here looking none too pleased.~
+Desc The massive toad or iguana-like creature before you has dull, glowing red 
+eyes. Its skin varies from a mud brown to an olive green to a slate grey. It 
+is bulky in build with stocky arms and broad shoulders.  Its mouth is full 
+of needle-sharp teeth. 
+~
+Race human~
+Align 0 -2
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType bite
+AC -157 -157 -157 -133
+Wealth 350
+Act    npc no_tame stay_area amphibian warrior~
+AffBy  infrared otterlungs dark_vision~
+Off    dodge dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#62004
+Name troglodyte guard~
+ShortD a troglodyte guard~
+LongD A heavily armed troglodyte is here looking none too pleased.~
+Desc This troglodyte displays the typical coloration of his kind except for the 
+bright red around his neck and throat.  This is due to his being enraged and 
+ready for battle. 
+~
+Race human~
+Align 0 -2
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType bite
+AC -200 -200 -200 -160
+Wealth 400
+Act    npc scavenger no_tame stay_area amphibian warrior~
+AffBy  detect_invis detect_hidden infrared otterlungs dark_vision berserk~
+Off    berserk dodge kick dirt_kick parry assist_all~
+Imm    charm drowning~
+Res    charm~
+Form   edible sentient biped reptile amphibian~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg ENTRY 62001 100~
+MProg GREET 62000 100~
+END
+
+#62005
+Name scorpion~
+ShortD a huge scorpion~
+LongD A scorpion about as tall as a human moves towards you.~
+Desc This scorpion is so large it seems it should be in the Lost Gorge.  Standing 
+almost 5 feet at the shoulder, it is easily 12 feet long.  It has two huge 
+claws and a tail dripping with poison. 
+~
+Race human~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType pierce
+AC -157 -157 -157 -130
+Wealth 0
+Act    npc no_tame stay_area wimpy~
+AffBy  infrared haste dark_vision~
+Off    dodge fast~
+Imm    poison~
+Res    poison illusion~
+Form   edible non_skinable sentient biped spider mammal~
+Part   head legs heart brains guts eye tail claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#62006
+Name hairy spider~
+ShortD `#a large `sblack`^ hairy spider~
+LongD `#A large `sblack`^ hairy spider sees you as food!~
+Desc This spider is about 2 feet across with legs that extend another 2 or 3 feet 
+beyond that.  It's 8 eyes watch you carefully and seem to see you as nothing 
+more than food. 
+~
+Race human~
+Align 0 0
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType bite
+AC -137 -137 -137 -123
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  infrared dark_vision~
+Off    fast web~
+Imm    poison~
+Form   edible sentient spider~
+Part   head legs heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#62007
+Name translucent troglodyte eggs globe~
+ShortD a translucent globe~
+LongD A globe filled with eggs floats here~
+Desc Bluish green in color, this egg sack seems about ready to burst and release 
+hundreds, maybe thousands of little beasties loose. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 81
+Wealth 0
+Act    npc dont_wander docile no_tame~
+Act2   no_random_obj~
+AffBy  blind otterlungs~
+AffBy2 mute~
+Imm    charm fire sleep hunger thirst fear~
+Vuln   weapon pierce slash~
+Form   edible non_skinable amphibian~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#62008
+Name troglodyte shaman~
+ShortD an enraged troglodyte shaman~
+LongD A troglodyte shaman turns as you enter - boy is he mad!~
+Desc Before you is a Shaman of the tribe.  His mottling is mostly covered by his 
+decorous robes and paraphenalia, but you can make out the characteristic 
+deep red tones of anger. 
+~
+Race human~
+Align 0 -3
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType bite
+AC -250 -250 -250 -207
+Wealth 600
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs protect_good haste dark_vision~
+Off    bash dodge fast parry~
+Imm    charm drowning~
+Res    cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#62009
+Name apprentice troglodyte shaman~
+ShortD an angry shaman's apprentice~
+LongD An apprentice shaman looks up from his meditation~
+Desc This troglodyte's coloration is typical of its race - greenish brown fading 
+to dark brown.  He is dressed with typical trog armor and looks quite upset 
+at being disturbed. 
+~
+Race human~
+Align 0 -3
+Level 38
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType bite
+AC -130 -130 -130 -109
+Wealth 0
+Act    npc no_tame stay_area cleric~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs protect_good~
+Off    kick trip assist_all~
+Imm    charm drowning thirst~
+Res    cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#62010
+Name troglodyte chieftain~
+ShortD the troglodyte chieftain~
+LongD The chief of the tribe snarls at you.~
+Desc This is quite possibly the largest troglodute you've ever seen!  Standing a 
+bit over 7 feet tall and about 3 feet wide, this hulking brute dominates the 
+other trogs of the tribe.  The normally dark brown tones of adulthood are 
+fused with the angry red hues of anger.  He's mad, and he's looking at you! 
+~
+Race human~
+Align 0 -3
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType bite
+AC -250 -250 -250 -220
+Wealth 500
+Act    npc scavenger no_tame aggressive stay_area warrior~
+AffBy  detect_invis detect_hidden infrared otterlungs protect_good haste dark_vision berserk~
+Off    berserk disarm dodge fast kick dirt_kick parry~
+Imm    summon charm drowning thirst~
+Res    cold~
+Form   edible sentient biped amphibian~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg DEATH 62002 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#62000
+Name stone key~
+Short `#a `Sstone`^ key~
+Desc `#A `Sstone`^ key seems well used.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Wear     take hold~
+End
+
+#62001
+Name beetle shell helmet~
+Short a hard beetle shell~
+Desc The shell of a huge beetle lies here on its back.~
+Level 40
+ItemType armor~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 8 0
+Weight 10
+Material shell~
+Extra    nonmetal nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior druid paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 40 -1 reasoning 2 0
+Affect modifier -1 40 -1 saves -3 0
+End
+
+#62002
+Name lizardskin leather cuirass~
+Short `#a `ylizardskin leather`^ cuirass~
+Desc `#A leather cuirass made of hardened `ylizardskin`^ is here~
+Level 45
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 10 8 0
+Weight 30
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 45 -1 constitution 2 0
+Affect modifier -1 45 -1 hp 2 0
+End
+
+#62003
+Name scale vambraces~
+Short `#`sscale`^ vambraces~
+Desc `#Vambraces made of `sscales`^ await an owner~
+Level 44
+ItemType armor~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 7 0
+Weight 5
+Material scale~
+Extra    nonmetal nodegrade burnproof~
+Wear     take wrist~
+Affect modifier -1 44 -1 strength 2 0
+Affect modifier -1 44 -1 quickness 2 0
+End
+
+#62004
+Name scale leather leggings~
+Short `#`ylizardskin leather`^ and `sscale`^ leggings~
+Desc `#A set of `ylizardskin leather`^ and `sscale`^ leggings lies here forgotten.~
+Level 43
+ItemType armor~
+Cost 250
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 7 0
+Weight 25
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances cleric warrior druid paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 43 -1 hitroll 3 0
+Affect modifier -1 43 -1 selfdiscipline 2 0
+End
+
+#62005
+Name obsidian spear~
+Short `#an `Sobsidian`^ tipped spear~
+Desc `#A spear with a `Sobsidian`^ tip is here.~
+Level 47
+ItemType weapon~
+Cost 450
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 11 3 pierce D
+Weight 750
+Material stone~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian anti-paladin knight~
+ExtraDesc obsidian spear~
+`#This spear is about 6 feet long.  It has a wooden haft but is tipped with a 
+large piece of `sobsidian`^ which has been carefully flaked to give it a razor 
+sharp edge. 
+~
+End
+
+#62006
+Name obsidian axe~
+Short `#an `sobsidian`^ axe~
+Desc `#An axe with an `sobsidian`^ head waits for an owner.~
+Level 50
+ItemType weapon~
+Cost 450
+Durability 5
+Asize 0
+Rsize 50
+Values axe 11 4 chop D
+Weight 75
+Material stone~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian anti-paladin knight~
+End
+
+#62007
+Name pile rubble~
+Short a pile of rubble~
+Desc A pile of rubble threatens to clog the passageway.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 0 0 25 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc pile rubble~
+This loose pile of rocks and stones obviously came crashing down from above. 
+ Just as obviously, no one and nothing has moved them since they hit.  
+Looking closely at some of the stones, however, shows that they might be of 
+use in a sling. 
+~
+End
+
+#62008
+Name wooden crate~
+Short a wooden crate~
+Desc An old wooden crate seems about to collapse.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 10 0
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc wooden crate~
+This old crate has long since outlived its usefulness.  The sides are 
+bulging, the top has been chipped or flaked away and now lies as a pile on 
+top of the contents.  You sense that trying to lift this container would 
+destroy it.  Best to proceed carefully. 
+~
+End
+
+#62009
+Name tabard_trog~
+Short a worn out tabard~
+Desc A tabard that has definitely seen better days is in a pile.~
+Level 5
+ItemType armor~
+Cost 5
+Durability 5
+Condition 80
+Asize 0
+Rsize 50
+Values 5 5 5 3 0
+Weight 5
+Material cloth~
+Wear     take torso~
+ExtraDesc tabard ~
+This tabard fits over the head and has a single eye emblazoned on the front. 
+ It is difficult to make out any other detail as the piece is so old it is 
+practically falling apart. 
+~
+End
+
+#62010
+Name obsidian dagger~
+Short an `#`Sobsidian`^ dagger~
+Desc An `#`Sobsidian`^ dagger glints in the light.~
+Level 49
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 7 5 slash D
+Weight 5
+Material stone~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior druid paladin ranger barbarian spellfilcher bard anti-paladin knight~
+End
+
+#62011
+Name giant column~
+Short a giant column~
+Desc A giant column of stone towers over you.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 5 0
+Weight 0
+Material stone~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc giant column~
+This stone column is easily 7 feet across at the base and reaches all the 
+way to the ceiling of this chamber.  As it rises, it narrows somewhat until 
+halfway up, then begins to broaden again - clearly the result of an ancient 
+stalagmite and stalactite meeting and joining. 
+~
+End
+
+#62012
+Name chest~
+Short a large `#`sstone`^ chest~
+Desc A `#`sstone`^ chest sits here immune to the water.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 ABCD 62000 1000 0
+Weight 0
+Material unknown~
+Extra    nolocate nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc stone chest~
+This chest is carved out of stone.  The craftsmanship is quite exquisite as 
+seen in the scenes of battle depicted all over the front.  In spite of the 
+Stone Age appearance, this chest seems very secure.  Too bad there isnt a 
+stone key around somewhere. 
+~
+End
+
+#62013
+Name small gem~
+Short a small `#`Rgem`^~
+Desc A small `#`Rgem`^ looks a bit like a ruby~
+Level 15
+ItemType light~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 1
+Material diamond~
+Wear     take float~
+End
+
+#0
+
+
+
+#ROOMS
+#62000
+Name `rA Vertical Fissure`^~
+Desc This tunnel shaft is nearly vertical and completely natural.  It looks 
+exactly like what it is - a crack in the earth.  Very long and very dark due 
+to the jagged turns that block out all light from above or below, it is 
+extremely hard to keep your bearings in this passageway. 
+~
+RoomFlags dark no_mob nofly~
+Sector cave~
+Exit up 53896
+Exit down 62001
+End
+
+
+#62001
+Name `rAn East-West Passage`^~
+Desc There is a lot of rubble here, clearly caused by the shaft above breaking 
+into this passageway.  There is a hairline crack in the south wall.  The 
+fissuring seems to have stopped when it hit this place.  The walls are 
+mostly natural with only the barest of smoothing in evidence.  The passage 
+extends east and west from here.  No sound or light comes from either 
+direction. 
+~
+Sector cave~
+ExtraDesc hairline crack wall~
+A very fine crack extends down from the hole in the ceiling through the 
+south wall.  Too small to put anything in, it simply defines the end of the 
+fissure. 
+~
+Exit east 62002
+Exit west 62006
+Exit up 62000
+End
+
+
+#62002
+Name `rA Bend in the Passage~
+Desc The light from the vertical shaft is being rapidly swallowed by the 
+darkness.  The natural passage bends sharply to the southeast ahead. 
+~
+Sector cave~
+Exit west 62001
+Exit southeast 62003
+End
+
+
+#62003
+Name `#`rA Turn in the Passage`^~
+Desc The passage bends back sharply upon itself here and the height drops to a 
+few feet.  Standing upright is impossible, even for Dwarves and Gnomes or 
+any creature over two and a half feet in height. There is almost no light 
+now. 
+~
+RoomFlags nofly~
+Sector cave~
+Exit northeast 62004
+Exit northwest 62002
+End
+
+
+#62004
+Name `rAn Underground River`^~
+Desc The passageway ends here.  At the far end, the way is blocked by a fast 
+moving `briver`^.  It is about a foot below floor level and runs very swiftly.  
+It is about as cold as it can be without actually freezing.  A bit of mist 
+floats over the moving water and reflects your light. The only sensible way 
+to go is back, death would surely come quickly to any who ventured into 
+these black waters. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc river water~
+This water is icy cold and fast moving.  In fact, if it were moving slower 
+it would likely freeze.  You `#`smight`^ be able to survive if you are strong 
+enough.  But then, is it worth the risk? 
+~
+Exit down 62005
+Exit southwest 62003
+End
+
+
+#62005
+Name `rUnderground River~
+Desc WHHOOOOAAAAAAAAAA!! `1The current is fast and furious!  It whips you along, banging off the sides 
+of this underground riverway.  You are tossed, tumbled, shaken and stirred!  
+How long have you been here, you dont know.  When will it end, you cant 
+guess.  All you can do is hope it doesnt end in some huge underground 
+waterfall! 
+~
+RoomFlags dark no_mob no_recall nofly noscan~
+Sector underwater~
+Exit down 54087
+End
+
+
+#62006
+Name `rThe Passageway Continues~
+Desc The natural passageway continues here, the floor only moderately smoothed by 
+the passing of...something.  Almost all light is gone now, the blackness 
+could be unsettling to the less brave. 
+~
+Sector cave~
+Exit east 62001
+Exit west 62007
+End
+
+
+#62007
+Name `r A Passageway`^~
+Desc All light fades as you go deeper underground.  The passage slopes downwards 
+slightly and there is a mustiness to the air. 
+~
+Sector cave~
+Exit east 62006
+Exit west 62008
+End
+
+
+#62008
+Name `rA Sharp Turn`^~
+Desc The passage twists sharply, and naturally, to the northeast here.  Still 
+sloping slightly downwards, the floor and walls are less smooth and more 
+natural here. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62007
+Exit northeast 62009
+End
+
+
+#62009
+Name `rThe Passage Bends~
+Desc The bend continues to the east here.  Darker patches of black seem to 
+indicate openings ahead.  To the west, the outline of a door can be seen.  A 
+door? Here? 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62011
+Exit west 62010
+EFlags door closed~
+Exit southwest 62008
+End
+
+
+#62010
+Name `rA Storage Room`^~
+Desc The walls and floor of this room seems to have been smoothed much moreso 
+than the passage outside.  This makes the stacking of the boxes, crates, 
+sacks, bags, barrels and other miscellany here easier. The stuff in here 
+appears years old, maybe decades, and doesnt seem to be worth much, though 
+there may be something worth taking buried deep in the piles. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62009
+EFlags door closed~
+End
+
+
+#62011
+Name `rThe Intersection~
+Desc The passageway breaks off to the north here as well as continuing east-west. 
+ It is impossible to tell if one or the other is artificial, or which one 
+was created first.  Both the east and north passages appear much more used 
+than the west arm of this tunnel. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62013
+Exit east 62012
+Exit west 62009
+End
+
+
+#62012
+Name `rA Smoothed Section~
+Desc The floor of this section of the passage has been worn nearly smooth.  Up 
+ahead it seems to twist to the northeast, but it is difficult to tell in the 
+nearly non-existent light. Also of note is the fact that this passage slopes 
+downwards as it goes northeast. 
+~
+RoomFlags dark~
+Sector cave~
+Exit west 62011
+Exit northeast 62014
+End
+
+
+#62013
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the northeast, in the center of this huge area is a giant 
+column of rock barely discernable in the darkness. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62017
+Exit east 62015
+Exit south 62011
+Exit northeast 62018
+End
+
+
+#62014
+Name `rThe Polished Area~
+Desc The walls and floor are worn smooth here from the passage of countless 
+creatures over countless years. The passage turns to the east and ends in a 
+wooden door. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc wooden door~
+The door is carved in bas relief with a face.  Not a human face, but more 
+the face of a man-lizard. 
+~
+Exit east 62033
+EFlags door closed~
+Exit southwest 62012
+End
+
+
+#62015
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the north, in the center of this huge area is a giant column 
+of rock barely discernable in the darkness. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62018
+Exit east 62016
+Exit west 62013
+Exit northeast 62019
+Exit northwest 62017
+End
+
+
+#62016
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the northwest, in the center of this huge area is a giant 
+column of rock barely discernable in the darkness.  Small tunnels leads to 
+the south and northeast. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62019
+Exit south 62032
+Exit west 62015
+Exit northeast 62025
+Exit northwest 62018
+End
+
+
+#62017
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the east, in the center of this huge area is a giant column 
+of rock barely discernable in the darkness. Smaller tunnels lead to the west 
+and northwest. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62020
+Exit east 62018
+Exit south 62013
+Exit west 62031
+Exit northeast 62021
+Exit southeast 62015
+Exit northwest 62030
+End
+
+
+#62018
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  Here in the center of this huge area is a giant column, clearly 
+formed by the dripping of mineral laden water through the eons. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62021
+Exit east 62019
+Exit south 62015
+Exit west 62017
+Exit northeast 62022
+Exit southeast 62016
+Exit southwest 62013
+Exit northwest 62020
+End
+
+
+#62019
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the west, in the center of this huge area is a giant column 
+of rock barely discernable in the darkness. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62022
+Exit south 62016
+Exit west 62018
+Exit southwest 62015
+Exit northwest 62021
+End
+
+
+#62020
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the southeast, in the center of this huge area is a giant 
+column of rock barely discernable in the darkness. A smaller tunnel leads 
+to the northwest. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62021
+Exit south 62017
+Exit southeast 62018
+Exit northwest 62023
+End
+
+
+#62021
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the south, in the center of this huge area is a giant column 
+of rock barely discernable in the darkness. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62022
+Exit south 62018
+Exit west 62020
+Exit southeast 62019
+Exit southwest 62017
+End
+
+
+#62022
+Name `rCommon Area~
+Desc This chamber is huge.  The floor and walls have been worn smooth by the 
+rubbing and passing of many feet and bodies.  One thing of note however is 
+that the stalactites and stalagmites have been left in tact, often meeting 
+each other.  To the southwest, in the center of this huge area is a giant 
+column of rock barely discernable in the darkness. Smaller tunnels leads to 
+the north and east. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62024
+Exit east 62026
+Exit south 62019
+Exit west 62021
+Exit southwest 62018
+End
+
+
+#62023
+Name `rLiving Quarters~
+Desc A narrow tunnel leads from the huge central chamber to this small room. It 
+is dug into the wall it seems to make the chamber snug and warm. The lack of 
+air circulation makes it very humid here.  Off to one side is a large, flat 
+slab...it is sort of a cross between a couch and a matress, but made of one 
+solid rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit southeast 62020
+End
+
+
+#62024
+Name `rLiving Quarters~
+Desc A narrow tunnel leads from the huge central chamber to this small room. It 
+is dug into the wall it seems to make the chamber snug and warm. The lack of 
+air circulation makes it very humid here.  Off to one side is a large, flat 
+slab...it is sort of a cross between a couch and a matress, but made of one 
+solid rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit south 62022
+End
+
+
+#62025
+Name `rLiving Quarters~
+Desc A narrow tunnel leads from the huge central chamber to this small room. It 
+is dug into the wall it seems to make the chamber snug and warm. The lack of 
+air circulation makes it very humid here.  Off to one side is a large, flat 
+slab...it is sort of a cross between a couch and a matress, but made of one 
+solid rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit southwest 62016
+End
+
+
+#62026
+Name `rGuard Room~
+Desc This area looks completely natural with very little smoothing done to the 
+walls or floors.  A large door is on the east wall and an opening leads 
+north. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62027
+Exit east 62028
+EFlags door closed~
+Exit west 62022
+End
+
+
+#62027
+Name `rArmory~
+Desc `#This room clearly has been created from the rock by mortal hands.  It is 
+almost square and the walls have ledges carved into them.  There are signs 
+of recent use in this room. 
+~
+RoomFlags dark~
+Sector cave~
+Exit south 62026
+End
+
+
+#62028
+Name `rChieftain's Room~
+Desc `#This room has two large doors in it, one to the north and one to the west.  
+On the east wall is a large, low, smooth rock.  In the middle of the 
+southern part of the floor is a `cpuddle`^ with small bubbles breaking the 
+surface. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc puddle ~
+Small bubbles break the surface of this so-called puddle occasionally, a 
+clear sign that there is more here than meets the eye. 
+~
+Exit north 62039
+EFlags door closed locked~
+EKeyvnum 62000
+Exit west 62026
+EFlags door closed~
+Exit down 62029
+EFlags door closed~
+EKeywords puddle~
+End
+
+
+#62029
+Name `rTreasury~
+Desc This circular room is extremely smooth and completely underwater.  The only 
+thing of note is the chest against the side...oh yes, and the guards 
+attacking you! 
+~
+RoomFlags dark nofly~
+Sector underwater~
+Exit up 62028
+EFlags door closed~
+End
+
+
+#62030
+Name `rLiving quarters~
+Desc A narrow tunnel leads from the huge central chamber to this small room. It 
+is dug into the wall it seems to make the chamber snug and warm. The lack of 
+air circulation makes it very humid here.  Off to one side is a large, flat 
+slab...it is sort of a cross between a couch and a matress, but made of one 
+solid rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit southeast 62017
+End
+
+
+#62031
+Name `rLiving quarters~
+Desc A narrow tunnel leads from the huge central chamber to this small room. It 
+is dug into the wall it seems to make the chamber snug and warm. The lack of 
+air circulation makes it very humid here.  Off to one side is a large, flat 
+slab...it is sort of a cross between a couch and a matress, but made of one 
+solid rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62017
+End
+
+
+#62032
+Name `rLiving quarters~
+Desc A narrow tunnel leads from the huge central chamber to this small room. It 
+is dug into the wall it seems to make the chamber snug and warm. The lack of 
+air circulation makes it very humid here.  Off to one side is a large, flat 
+slab...it is sort of a cross between a couch and a matress, but made of one 
+solid rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit north 62016
+End
+
+
+#62033
+Name `rGathering Room~
+Desc `#This is a large chamber, the walls showing clear signs of having been worked 
+to make it so.  There are recent signs of passage here, about equally to the 
+northeast and southeast.  It seems obvious even to the untrained eye that 
+large number of creatures passed here.  On the north wall there seems to be 
+a pair of `csymbols`^ though they are in no language known to you. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc symbols ~
+There are two symbols, one near each exit leading from the east side.  
+Towards the northeast it looks like (_) while towards the southeast it looks 
+like (-) 
+~
+Exit west 62014
+EFlags door closed~
+Exit northeast 62034
+Exit southeast 62035
+End
+
+
+#62034
+Name `rThe Female Path~
+Desc The floor of this passage, too, has been worn smooth and it shows signs of 
+recent use. It curves smoothly to the east here, too smoothly to be 
+completely natural. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62038
+Exit southwest 62033
+End
+
+
+#62035
+Name `rThe Male Path~
+Desc The floor of this passage, too, has been worn smooth and it shows signs of 
+recent use. It curves smoothly to the east here, too smoothly to be 
+completely natural. 
+~
+RoomFlags dark~
+Sector cave~
+Exit east 62036
+Exit northwest 62033
+End
+
+
+#62036
+Name `rThe Male Path Continues~
+Desc `#The passage turns sharply here.  To the north, it widens considerably.  
+Along the east wall are many `ccarvings`^. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc carvings ~
+The rock of the east wall is covered in carvings depicting a hoard of two 
+legged, lizard like creatures waging a battle against dwarves and humans. 
+~
+Exit north 62037
+Exit west 62035
+End
+
+
+#62037
+Name `rThe Meeting Place~
+Desc `#This place is the north - south passage is quite wide, and the floor is 
+almost perfectly smooth.  The only blemish on the floor is a small 
+`cdepression`^ about the size of a large hand, and shaped suspiciously similar.  
+The `ccarvings`^ on the east wall continue and are even more intricate.  There 
+is a large door on the west wall. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc depression ~
+A hand shaped depression that seems to be made for a webbed hand. 
+~
+ExtraDesc carvings ~
+`#The east wall is completely covered in carvings of these lizard creatures 
+driving dwarves out of the underground and to the surface.  High up on the 
+wall is a carving of a huge creature, part lizard and part man.  Apparantly, 
+this is their deity as some figures seem to be prone before him in worship.  
+Looking even closer, you can make out faint `ccracks`^ in the wall. 
+~
+ExtraDesc cracks ~
+Looking closer, these arent cracks at all...they form the outline of a door! 
+
+~
+Exit north 62038
+Exit east 62042
+EFlags door closed~
+EKeywords carving~
+Exit south 62036
+Exit west 62043
+EFlags door closed~
+End
+
+
+#62038
+Name `rThe Female Path Continues~
+Desc `#The passage turns sharply here.  To the south, it widens considerably.  
+Along the east wall are many `ccarvings`^. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc carvings ~
+The rock of the east wall is covered in carvings depicting a hoard of two 
+legged, lizard like creatures waging a battle against dwarves and humans. 
+~
+Exit south 62037
+Exit west 62034
+End
+
+
+#62039
+Name `rBreeding Chamber~
+Desc This chamber has been modified into something of a clover shape with 3 
+slight alcoves off the main part.  In each alcove is a small pool of very 
+warm water.  This seems to be where the Chieftain sees to the continuation 
+of his bloodline. 
+~
+RoomFlags dark~
+Sector cave~
+Exit south 62028
+EFlags door closed locked~
+EKeyvnum 62000
+End
+
+
+#62040
+Name `rGuard Room~
+Desc This chamber seems to have been naturally hollowed out by the flow of water 
+over eons.  There is still a small `cpatch`^ of water on the floor - its black 
+color making the depth impossible to guage.  The walls and floors of this 
+cavity are totally natural and the ceiling drips with stalactites, matching 
+the stalagmites on the floor.  There are dozens of nooks and crannies where 
+things could hide, or be hidden. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc patch ~
+This small puddle of water is so dark and black that you cant tell if it is 
+an inch deep or a mile deep. 
+~
+Exit up 62043
+EFlags door closed~
+Exit down 62041
+EFlags door closed~
+EKeywords patch~
+End
+
+
+#62041
+Name `rThe Egg Chamber~
+Desc This underwater hollow is full of floating globes.  Each is translucent and 
+packed with smaller balls.  Clearly, these are eggs.  Just as clearly, if 
+they are allowed to hatch a new generation of these creatures will be 
+unleashed upon the world. 
+~
+RoomFlags dark~
+Sector underwater~
+Exit up 62040
+EFlags door closed~
+End
+
+
+#62042
+Name `rShaman's Living Chamber~
+Desc This large circular chamber has exit tunnels leading from the northeast and 
+southeast.  The chamber itself is furnished with the bare essentials - at 
+least by human standards.  A stone table and 3 stone stools sit in the 
+middle, while the perimeter is home to 4 low, smooth slabs of rock. 
+~
+RoomFlags dark~
+Sector cave~
+Exit west 62037
+EFlags door closed~
+Exit northeast 62044
+Exit southeast 62045
+End
+
+
+#62043
+Name `rThe Temple`^~
+Desc Carved deep within the rock is a large room. Its erected into some sort of 
+pagan temple. Straight ahead is an altar of sorts stained with blood.  It is 
+a slab of rock supported by truncated stalagmites.  An image of their god is 
+carved right into the rock face of the wall behind the altar.  It is their 
+patron lizard god.  Battle scenes cover the walls, all with the same theme - 
+driving dwarves to the surface. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc altar ~
+The altar shows clear signs of blood stains - and not all of it is old.  
+However, as your eye slowly wanders over it, you get the feeling it is 
+movable somehow...but where would it lead? 
+~
+Exit east 62037
+EFlags door closed~
+Exit down 62040
+EFlags door closed~
+EKeywords altar~
+End
+
+
+#62044
+Name `rShaman's Sleeping Chamber~
+Desc `#This chamber retains some of its natural characteristics.  Neither floor nor 
+walls appear smoothed at all, though in the back wall there is an `carea`^ that 
+seems to have been hollowed out. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc area ~
+This space seems dug by hand.  Perhaps a sleeping area for the inhabitant. 
+~
+Exit southwest 62042
+End
+
+
+#62045
+Name `rShaman's Sleeping Chamber~
+Desc `#This chamber retains much of its natural characteristics.  Both floor nor 
+walls appear unsmoothed by any hand, except for two `careas`^ in the back wall 
+that seems to have been hollowed out. 
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc areas ~
+These spaces seem dug by hand.  Perhaps a sleeping area for the inhabitants. 
+
+~
+Exit northwest 62042
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 62005 spec_poison
+M 62008 spec_cast_cleric
+M 62009 spec_cast_cleric
+S
+
+
+
+#RESETS2
+O 0 62007 -1 62001
+P 0 49 30 62007 10
+M 0 62006 3 62003 3
+M 0 62004 15 62008 2
+E 0 62002 -1 torso~
+E 0 62001 -1 head~
+E 0 62004 -1 legs~
+M 0 62005 4 62009 1
+O 0 62008 -1 62010
+P 0 3026 10 62008 2
+P 0 62009 5 62008 5
+M 0 62004 15 62013 1
+E 0 62002 -1 torso~
+E 0 62001 -1 head~
+E 0 62004 -1 legs~
+E 0 62005 -1 wielded~
+M 0 62004 15 62014 2
+E 0 62001 -1 head~
+E 0 62004 -1 legs~
+E 0 62002 -1 torso~
+E 0 62005 -1 wielded~
+O 0 62011 -1 62018
+P 0 62013 3 62011 1
+M 0 62001 12 62018 1
+M 0 62001 12 62023 1
+M 0 62000 10 62023 2
+M 0 62001 12 62024 1
+M 0 62000 10 62024 2
+M 0 62001 12 62025 1
+M 0 62000 10 62025 1
+M 0 62010 1 62028 1
+E 0 62001 -1 head~
+E 0 62002 -1 torso~
+E 0 62004 -1 legs~
+E 0 62003 -1 lwrist~
+E 0 62003 -1 rwrist~
+E 0 62006 -1 wielded~
+M 0 62004 15 62029 2
+O 0 62012 -1 62029
+P 0 2 4 62012 4
+P 0 1 400 62012 400
+M 0 62001 12 62030 1
+M 0 62000 10 62030 1
+M 0 62001 12 62031 1
+M 0 62000 10 62031 2
+M 0 62000 10 62032 2
+M 0 62001 12 62032 2
+M 0 62004 15 62036 2
+M 0 62004 15 62038 2
+M 0 62001 12 62039 4
+M 0 62004 15 62040 1
+M 0 62007 4 62041 4
+M 0 62008 1 62042 1
+M 0 62009 2 62044 1
+M 0 62009 2 62045 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#62002
+title Creates key for Chieftain~
+author Baridoc~
+code mob oload 62000
+~
+disabled false
+last_editor Baridoc~
+last_editdate 1100564658
+END
+
+#62001
+title Guard enters and checks~
+author Baridoc~
+code if wears $r tabard_trog
+     snort $r
+else
+scream
+mob kill $r
+endif
+~
+disabled false
+last_editor Baridoc~
+last_editdate 1099778913
+END
+
+#62000
+title Guard check~
+author Baridoc~
+code if wears $n tabard_trog
+     snort $n
+else     
+scream
+mob kill $n
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G62000`x,`Y62004`x,`B62008`x,`r0`x,`C0`x:
+             `YMobprog: invalid if_check (if) '$n', mob 62004 prog 62000
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 62000 on mob 62004 (in room 62008), line 0
+`S#############
+
+~
+last_editor Baridoc~
+last_editdate 1099709005
+END
+
+#0
+
+
+#$

@@ -1,0 +1,490 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Makan's Estate~
+ShortName   Makan's Estate~
+Builders    delandria ardayne~
+Credits     Delandria~
+VNUMs       2350 2359
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#2350
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+AffBy2 shadowsight~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 2350 goosefeathers~
+END
+
+#0
+
+
+
+#OBJECTS
+#2350
+Name fire fireplace blazing~
+Short a `#`rb`Rl`Ya`yz`Yi`Rn`rg `Sf`Xi`Srepla`Xc`Se`^~
+Desc A `#`Sf`Xi`Srepla`Xc`Se`^ of onyx `#`rb`Rl`Yaz`Re`rs`^ here warmly.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 50000 DGJQ 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#2351
+Name treasury key~
+Short `#`gMakan's `yHouse Key`^~
+Desc `#`gMakan's `yHouse Key`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#2352
+Name marble fountain water~
+Short `#`wa large `sblack marble `wfountain`^~
+Desc `#`wA large `sblack marble `wfountain sits here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal burnproof nogetall~
+Wear     no_sac~
+ExtraDesc fountain water marble black kreav~
+The statue of this fountain depicts the God Kreav: a big, healthy 
+weather-beaten man dressed as a pioneer.  He is serious but with a 
+sympathetic and kindly manner.  He kneels down on one knee, hands cradling a 
+blue-green orb to which water cascades around and into the bowl of the 
+fountain. 
+~
+End
+
+#2353
+Name tree treehouse swing~
+Short a cute treehouse~
+Desc A large oak tree is here, you can climb up to the tree house above.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 10000 FILS 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+ExtraDesc treehouse ~
+This large tree has been fitted with a large treehouse in its branches.  
+Ropes swing from the tree to climb up, and a platform has been placed 
+sturdily hanging over the pond to act like a diving board.  
+~
+End
+
+#2354
+Name swing~
+Short a tree swing~
+Desc ~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 10000 FIL 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#2355
+Name child play playpen pen~
+Short a child's playpen~
+Desc A child's playpen is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 10000 FILQ 110 110
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc child play playpen pen~
+This small playpen is meshed and plushed for the safety of the child playing 
+in it. 
+~
+End
+
+#2356
+Name drapes blue~
+Short the `#`bblue drapes`^~
+Desc ~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 AC 0 1 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2357
+Name red crib~
+Short a small redwood crib~
+Desc A small `#`Rre`rdwo`Rod`g `ycrib`g in the middle of the room.`X~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 400 L 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#2358
+Name bed can canopy~
+Short a `#`Ws`Xi`Wl`Xk `Wc`Ca`Wno`Cp`Wy `Wb`Xe`Wd`^~
+Desc A large `#`Ws`Xi`Wl`Xk `Wc`Ca`Wno`Cp`Wy `Wb`Xe`Wd`^ invites you to rest~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 1000 EILQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#2359
+Name huge steaming pool hot spring~
+Short `ca huge `Csteaming pool`^~
+Desc `#`cA huge `Csteaming pool`^ is here, bubbling gently.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99 99999 CFILO 100 100
+Weight 9999
+Material water~
+Extra    nodegrade burnproof~
+ExtraDesc huge steaming pool~
+A wide pool of hot water for bathing.  It is not clear how it is heated.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#2350
+Name Healing Pools~
+Desc You enter a room which is the first in a tower built in the name of the 
+Goddess Venalena.  The fragrance of the healing pools overwhelms you, the 
+smell of the calming salts beginning to relax your senses and clear your 
+mind.  The walls are made of light grey stone and are decorated with 
+tapestries of various beautiful landscapes.  Placed on the walls at various 
+places are torches to light the room.  To the left is a what seems to be a 
+natural `#`Shot spring`^ mixed with the calming salts that assaulted your senses.  
+It looks very inviting.  To the right is another inground pool, its waters 
+cooler than the other, used to `#`Srinse`^ off the salts.  Set between them in the 
+centre of the room is a long wooden bench. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2353
+Exit up 2351
+End
+
+
+#2351
+Name Quiet Reflection Room~
+Desc The torches of this room are dimmer in order to give the room a relaxing 
+atmosphere.  Incense is lit at the base of an altar of Venalena in the 
+centre of the room, pillows set around the altar for kneeling on while 
+praying.  A comfy rocking chair is set in a corner for weary travellers who 
+wish to relax.  A long bench is set on the north wall of the room to sit on. 
+
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 2350
+End
+
+
+#2352
+Name Fishing Pond~
+Desc This area melds beautifully a small fishing pond, surrounded by reeds and 
+water lilies, with trees and nature still growing in all its glory all 
+around.  A large tree next to the pond has a treehouse in it, with a rope 
+leading down to the pond to swim in. There is a log bench to sit on.  It 
+looks like a nice place to fish.  
+~
+RoomFlags indoors~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit south 2353
+End
+
+
+#2353
+Name A Lush Path~
+Desc This open area and path is lined with wilderness. The entrance to a log 
+cabin lies to the east, while to the North you can see another clearing.  A 
+large marble fountain has been build in this clearing, an elegant statue set 
+in the middle helping the water to flow. 
+~
+RoomFlags indoors~
+Sector trail~
+Exit north 2352
+Exit east 55314
+Exit south 2350
+Exit west 2354
+EFlags door closed~
+End
+
+
+#2354
+Name Inside the Cabin~
+Desc . The inside of the cabin's walls have been painted a beautiful tanned cream 
+color.  This room accompanies a kitchen as well as a living room.  A 
+flickering fireplace made of stone stands in the centre of the room, heating 
+the cabin, as its chimney reaches up through the roof.  Couches and chairs 
+have been set around the fireplace for guests.  Stairs that lead up to the 
+second floor of the cabin are in the far southeast corner.  There are doors 
+to the west and the north. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2356
+Exit east 2353
+EFlags door closed~
+Exit west 2357
+Exit up 2355
+End
+
+
+#2355
+Name Master Bedroom~
+Desc The floor is covered in a soft royal blue carpet and the walls are a tanned 
+cream.  There is a window on the south wall letting you look over the deep 
+forests outside.  There is a gas run lantern hanging from the ceiling to 
+light the room.  A large, comfortable royal canopy bed is set in the 
+northwest corner, elegantly decorated with deep blue drapes for privacy.  A 
+fireplace is set in the centre of the room, its chimeny leading up into the 
+roof. Other furniture set in the room include a childs playpen and a carved 
+oak dresser. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2358
+Exit west 2359
+EFlags door closed locked pickproof nopass~
+EKeyvnum 2351
+EKeywords door~
+Exit down 2354
+End
+
+
+#2356
+Name Bedroom~
+Desc . The floor is covered in a soft beige carpet.  There is a window on the east 
+wall letting you look out at the pond.  There is a gas run lantern hanging 
+from the ceiling to light the room.  A canopy bed is set in the north-west 
+corner.  A footchest is set at the end of the bed.  On the south wall near 
+the door is a tall wardrobe.  The walls have been painted with a large 
+mural, depicting a luscious forest landscape with faeries flittering about. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2354
+End
+
+
+#2357
+Name Bedroom~
+Desc . The floor is covered in a soft beige carpet.  There is a window on the west 
+wall letting you look out into the deep forests.  There is a gas run lantern 
+hanging from the ceiling to light the room.  A comfortable twinbed is set in 
+the northwest corner.  A desk and chair sits in the southeast corner.  On 
+the north wall is a teak dresser.  The walls have been painted with an 
+oceanic view, ships sailing, casting up their sails, a battle of pirates on 
+the horizon and dragons flying up in the sky.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 2354
+End
+
+
+#2358
+Name Nursery~
+Desc This nursery room has been decorated to suit a childs tastes.  Walls painted 
+with baby animals prancing around, beautiful flowers and bright sunlight.  A 
+small window on the west wall lets in the warm breeze.  A redwood crib is 
+set against the south wall, an oak dresser near it.  A toychest is set in 
+the middle of the room on a deep brown area rug. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2355
+End
+
+
+#2359
+Name Study~
+Desc A single candle hangs from the wall here. A large desk sits in the center of 
+the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 3
+Exit east 2355
+EFlags door closed locked pickproof nopass~
+EKeyvnum 2351
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 3080 -1 2350
+O 0 2359 -1 2350
+O 0 7550 -1 2351
+O 0 3080 -1 2351
+O 0 776 -1 2351
+O 0 2353 -1 2352
+O 0 2354 -1 2352
+O 0 3080 -1 2352
+O 0 2352 -1 2353
+O 0 729 -1 2354
+O 0 2350 -1 2354
+O 0 714 -1 2354
+O 0 736 -1 2355
+O 0 2355 -1 2355
+O 0 80638 -1 2355
+P 0 80639 3 80638 3
+O 0 2356 -1 2355
+O 0 2358 -1 2355
+O 0 741 -1 2356
+O 0 755 -1 2356
+O 0 772 -1 2356
+O 0 774 -1 2357
+O 0 737 -1 2357
+O 0 713 -1 2357
+O 0 733 -1 2358
+O 0 2357 -1 2358
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2350
+title mob trans~
+author Ixliam~
+code mob transfer $n 2359
+~
+disabled false
+last_editor Delandria~
+last_editdate 1105912673
+END
+
+#0
+
+
+#$

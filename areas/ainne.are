@@ -1,0 +1,214 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Ainne's Castle Estate~
+ShortName   Ainne's Castle~
+Builders    None~
+VNUMs       8600 8699
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Tue Jul 19 14:44:59 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#8600
+Name oak barrel~
+Short `#`yan oak barrel`^~
+Desc `#`yan oak barrel is sitting here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#8601
+Name king size royal bed ~
+Short `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it`^~
+Desc `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 200 200
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#8602
+Name comfortable full sized bed~
+Short `#`wa `ccomfortable `wfull sized bed`^~
+Desc `#`wa `ccomfortable `wfull sized bed is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 120 120
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#8603
+Name black marble fireplace~
+Short `#`wa `sblack m`wa`sr`wb`sl`we `wfireplace`^~
+Desc `#`wa `sblack m`wa`sr`wb`sl`we `wfireplace is here warming the room.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 9999
+Rsize 50
+Values 10 1000 FIL 120 120
+Weight 9999
+Material brick~
+Extra    nopurge burnproof~
+End
+
+#8604
+Name black leather sofa couch~
+Short `#`wa `sblack `wleather sofa`^~
+Desc `#`wa `sblack `wleather sofa sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHJR 100 100
+Weight 400
+Material leather~
+Extra    nodegrade burnproof norestring~
+End
+
+#8605
+Name small square cherrywood table~
+Short `#`wa small square `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable`^~
+Desc `#`wa small square `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable is sitting here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#8606
+Name black marble desk ~
+Short `#`wan ornately `rcarved `wdesk made of `sblack marble.`^~
+Desc `#`wan ornately `rcarved `wdesk made of `sblack marble.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 2000 ADGJQ 100 100
+Weight 0
+Material obsidian~
+Extra    nodegrade burnproof~
+End
+
+#8607
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 8606 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#8600
+Name Large Courtyard~
+Desc You find yourself in a large courtyard facing a small but elegant looking 
+house. The ground is covered in small multi-colored cobblestones. 
+~
+RoomFlags indoors noscry light~
+Sector field~
+Owner ainne satauk~
+End
+
+
+#8606
+Name Master Bedroom~
+Desc This is the master bedroom, it is larger than the other one. The walls are 
+painted a soft crimson color and the carpet is a plush black color. There 
+are no windows in this room but there are several ornate looking oil lamps 
+hanging on the walls as well as one sitting on a table beside the bed. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 8907 -1 8600
+O 0 8601 -1 8606
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

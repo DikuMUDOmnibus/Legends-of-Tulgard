@@ -1,0 +1,2268 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Icy Mountain~
+ShortName   Icy Mountain~
+Builders    none~
+Credits     Kandahar~
+VNUMs       21800 21899
+LComment    `#`R[ 60- 91]`^
+Security    9
+Colour      c~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Fri Oct 28 20:58:11 2005~
+End
+
+
+
+#MOBILES
+#21800
+Name mountain goat~
+ShortD `#a `Cmountain `ggoat`^~
+LongD A `#`Cmountain `ggoat`^ climbs deftly up the icy slopes.~
+Desc ~
+Race dog~
+Align 1 0
+Level 60
+Hitroll 110
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType slice
+AC -300 -300 -300 -246
+Wealth 1120
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  sneak regeneration~
+Off    disarm dodge fast parry tail trip~
+Imm    charm poison disease~
+Res    cold lightning~
+Vuln   fire~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21801
+Name snow elf~
+ShortD a `Wsnow `Celf`x~
+LongD A snow elf glides gracefully on the snow.~
+Desc ~
+Race elf~
+Align 2 0
+Level 70
+Hitroll 115
+HitDice 7d10+355
+ManaDice 5d6+190
+DamDice 8d8+33
+DamType slice
+AC -390 -390 -390 -343
+Wealth 1130
+Act    npc scavenger stay_area thief~
+AffBy  detect_invis detect_hidden sanctuary infrared sneak haste~
+Off    dodge parry assist_race~
+Imm    poison disease~
+Res    charm cold lightning~
+Vuln   mental iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#21802
+Name yak~
+ShortD a hairy yak~
+LongD A large beast digs around in the snow.~
+Desc ~
+Race bear~
+Align -1 0
+Level 70
+Hitroll 120
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType beating
+AC -400 -400 -400 -344
+Wealth 1140
+Act    npc scavenger stay_area warrior~
+AffBy  faerie_fire~
+Off    berserk disarm crush~
+Imm    cold~
+Res    bash lightning~
+Vuln   holy~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21803
+Name llama~
+ShortD a silver-tipped llama~
+LongD A llama looks up inquisitively.~
+Desc ~
+Race bear~
+Align -1 0
+Level 72
+Hitroll 125
+HitDice 7d11+370
+ManaDice 3d5+75
+DamDice 8d8+36
+DamType pound
+AC -420 -420 -420 -361
+Wealth 1150
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  regeneration~
+Off    berserk disarm parry crush~
+Imm    cold~
+Res    bash~
+Vuln   acid~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21804
+Name ice dhoan~
+ShortD an `Cice `cDho`M'`Ban`x~
+LongD A snowy ice maiden blinks in the cold.~
+Desc ~
+Race human~
+Align 0 0
+Level 90
+Hitroll 130
+HitDice 9d13+440
+ManaDice 4d5+95
+DamDice 10d11+45
+DamType claw
+AC -600 -600 -600 -480
+Wealth 1160
+Act    npc stay_area wimpy warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared sneak~
+Off    disarm dodge parry~
+Imm    cold~
+Res    charm~
+Vuln   fire iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#21805
+Name picatehro~
+ShortD `YPic`C'`Batehro`x~
+LongD A formidable character stands here.~
+Desc ~
+Race human~
+Align 1 0
+Level 91
+Hitroll 150
+HitDice 9d12+440
+ManaDice 10d14+658
+DamDice 10d10+45
+DamType magic
+AC -600 -600 -600 -498
+Wealth 1250
+Act    npc dont_wander scavenger stay_area mage~
+AffBy  infrared protect_evil haste regeneration~
+Off    disarm dodge parry~
+Imm    cold holy~
+Res    charm magic~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#21806
+Name argachoda~
+ShortD `MArg`C'`cachoda`x~
+LongD A ghostly figure mourns his loss.~
+Desc ~
+Race human~
+Align -1 0
+Level 85
+Hitroll 150
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType suction
+AC -550 -550 -550 -495
+Wealth 1250
+Act    npc dont_wander stay_area undead~
+AffBy  invisible sanctuary infrared plague slow~
+Off    berserk dodge parry~
+Imm    cold holy~
+Res    charm magic~
+Vuln   lightning holy iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#21807
+Name leprikada~
+ShortD `BLep`b'`mrikada`x~
+LongD A figure in a billowing cloud of snow stands here.~
+Desc ~
+Race human~
+Align -3 0
+Level 93
+Hitroll 155
+HitDice 9d13+450
+ManaDice 9d13+600
+DamDice 10d11+47
+DamType pound
+AC -630 -630 -630 -560
+Wealth 1250
+Act    npc dont_wander stay_area cleric~
+AffBy  infrared sneak haste regeneration~
+Off    dodge parry~
+Imm    cold holy~
+Res    charm magic~
+Vuln   negative energy iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21808
+Name echtahua~
+ShortD `WEch`b'`Gtahua`x~
+LongD A graceful woman gestures eloquently.~
+Desc ~
+Race human~
+Align 1 0
+Level 78
+Hitroll 160
+HitDice 8d11+395
+ManaDice 3d5+80
+DamDice 9d9+39
+DamType slap
+AC -480 -480 -480 -422
+Wealth 1250
+Act    npc dont_wander stay_area warrior~
+AffBy  sanctuary infrared haste regeneration~
+Off    dodge parry~
+Imm    cold holy~
+Res    charm~
+Vuln   poison iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#21809
+Name mountain lynx~
+ShortD `#a `Wmountain `clynx`^~
+LongD A furry feline stares through you.~
+Desc ~
+Race bear~
+Align -2 0
+Level 76
+Hitroll 140
+HitDice 8d12+420
+ManaDice 4d5+90
+DamDice 9d10+43
+DamType claw
+AC -540 -540 -540 -453
+Wealth 1200
+Act    npc stay_area wimpy warrior~
+AffBy  sneak~
+Off    berserk disarm crush~
+Imm    cold~
+Res    bash~
+Vuln   slash~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21810
+Name snow leopard~
+ShortD a snow `Dleopard`x~
+LongD A snow leopard picks its way carefully over the ice.~
+Desc ~
+Race cat~
+Align 1 0
+Level 69
+Hitroll 140
+HitDice 7d10+360
+ManaDice 3d5+70
+DamDice 8d8+33
+DamType claw
+AC -390 -390 -390 -331
+Wealth 1200
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision regeneration~
+Off    berserk disarm dodge fast crush~
+Imm    cold~
+Res    bash pierce~
+Vuln   fire~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#21800
+Name ugg boots~
+Short a pair of `#`Cugg`Wboots`^~
+Desc A snug pair of winter boots.~
+Level 60
+ItemType armor~
+Cost 2000
+Durability 5
+Asize 5
+Rsize 50
+Values 13 13 13 9 0
+Weight 50
+Material wool~
+Extra    glow bless nodegrade~
+Wear     take feet~
+Affect modifier -1 60 -1 move 160 0
+End
+
+#21801
+Name snow dagger~
+Short a snow `#`Cdagger`^~
+Desc A dagger made of ice.~
+Level 70
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 50
+Asize 5
+Rsize 50
+Values dagger 12 4 frbite B
+Weight 10
+Material ice~
+Extra    nonmetal meltdrop nouncurse norestring~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 70 -1 damroll 5 0
+Affect modifier -1 70 -1 hitroll 2 0
+End
+
+#21802
+Name crystal shard~
+Short a `#`Ccrystal `Wshard`^~
+Desc A `#`Wsliver`^ of `#`Cice`^ shines `#`Wb`xr`Ci`xl`Yl`xi`Wa`xn`Ct`xl`Yy`^.~
+Level 75
+ItemType gem~
+Cost 0
+Durability 5
+Condition 50
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material ice~
+Extra    glow nonmetal~
+Wear     take float~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 75 -1 hitroll 2 0
+Affect modifier -1 75 -1 damroll 2 0
+Affect modifier -1 75 -1 hp 4 0
+Affect modifier -1 75 -1 saves -4 0
+Affect modifier -1 75 -1 mana 40 0
+Affect resist -1 75 -1 none 0 cold
+End
+
+#21803
+Name fur hide~
+Short a `#`bh`meav`by `bfur `Bhide`^~
+Desc A fur hide jacket.~
+Level 80
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 20
+Rsize 50
+Values 27 27 27 20 0
+Weight 200
+Material fur~
+Extra    bless nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances warrior paladin ranger~
+Affect modifier -1 80 -1 hp 10 0
+Affect modifier -1 80 -1 saves -4 0
+End
+
+#21804
+Name ice axe~
+Short an `#`Cice axe`^~
+Desc A sharp edged axe made of ice.~
+Level 90
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 50
+Asize 100
+Rsize 50
+Values axe 22 3 chop B
+Weight 100
+Material ice~
+Extra    nonmetal meltdrop norestring~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian bard anti-paladin~
+Affect modifier -1 90 -1 hitroll 4 0
+Affect modifier -1 90 -1 damroll 6 0
+End
+
+#21805
+Name crystal staff~
+Short `#`C<<<`W* `cC`xr`cy`xs`ct`xa`cl `cS`xt`ca`xf`cf `W*`C>>>`^~
+Desc A staff made of bluish crystals lies here.~
+Level 75
+ItemType staff~
+Cost 2000
+Durability 5
+Asize 10
+Rsize 50
+Values 75 8 2 'frost breath' 0
+Weight 100
+Material crystal~
+Extra    glow nodrop nonmetal nolocate nodegrade norestring~
+Wear     take hold~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard anti-paladin~
+End
+
+#21806
+Name icy flower snowdrop~
+Short `#`b[`B>-`m* `WSnowdrop `m*`B-<`b]`^~
+Desc An icy flower lies here.~
+Level 75
+ItemType wand~
+Cost 0
+Durability 5
+Condition 30
+Asize 50
+Rsize 50
+Values 91 5 1 'ice lance' 0
+Weight 5
+Material snow~
+Extra    magic nonmetal meltdrop hadtimer nouncurse norestring~
+Wear     take hold~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher bard anti-paladin~
+End
+
+#21807
+Name ice cube~
+Short an `#`Wice cube`^~
+Desc A shimmering piece of ice.~
+Level 60
+ItemType pill~
+Cost 0
+Durability 5
+Condition 50
+Asize 1
+Rsize 50
+Values 75 sanctuary '' '' ''
+Weight 2
+Material ice~
+Extra    magic nonmetal meltdrop nouncurse norestring~
+Wear     take hold~
+End
+
+#21808
+Name earmuffs~
+Short a fur `#`Bea`mr`bm`mu`Bff`^~
+Desc A pair of fluffy earmuffs.~
+Level 80
+ItemType clothing~
+Cost 500
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material fur~
+Extra    magic nonmetal nodegrade norestring~
+Wear     take ear~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 saves -6 0
+Affect modifier -1 80 -1 hp 2 0
+Affect modifier -1 80 -1 mana 40 0
+End
+
+#21809
+Name jewelled collar~
+Short a `#`b[`M==`m* `Mje`Ywe`Cll`Ged c`Co`Yll`Mar `m*`M==`b]`^~
+Desc A breathtakingly cool collar.~
+Level 75
+ItemType treasure~
+Cost 3000
+Durability 5
+Asize 15
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material gold~
+Extra    glow magic nodrop noremove nodegrade burnproof~
+Wear     take neck~
+ClassAllowances warrior paladin ranger bard anti-paladin~
+Affect modifier -1 75 -1 hp 10 0
+Affect modifier -1 75 -1 ac -10 0
+Affect modifier -1 75 -1 strength 2 0
+End
+
+#21810
+Name claws leopard~
+Short some `#`Y-=# `sleopard claws `Y#=-`^~
+Desc A pair of handy strap-on leopard claws lie here.~
+Level 88
+ItemType armor~
+Cost 987
+Durability 5
+Asize 15
+Rsize 50
+Values 17 17 17 14 0
+Weight 15
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take hands~
+Affect modifier -1 88 -1 strength 3 0
+Affect modifier -1 88 -1 agility 3 0
+End
+
+#0
+
+
+
+#ROOMS
+#21800
+Name A Snowy Mountain Slope~
+Desc `WA slippery slope rises up to an icy ivory plateau in the distance. 
+Snowy peaks can be seen jutting out of the mists which form around them
+making it seem like an enchanted place.  The icy slopes sparkle as the light
+dances upon them, shiveringly majestic and awe-inspiring.  The slopes look
+treacherous from here.  `x 
+~
+Sector ice~
+Exit east 53045
+Exit up 21801
+End
+
+
+#21801
+Name A Snowy Mountain Slope~
+Desc `WA slippery slope rises up to an icy ivory plateau in the distance. 
+Snowy peaks can be seen jutting out of the mists which form around them
+making it seem like an enchanted place.  The icy slopes sparkle as the light
+dances upon them, shiveringly majestic and awe-inspiring.  The slopes look
+treacherous from here.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit up 21802
+Exit down 21800
+End
+
+
+#21802
+Name An Icy Plateau~
+Desc `WThis icy ivory plateau shimmers and sparkles as the cold snow forms a
+crust on the surface of the slope.  Snowy peaks can be seen jutting out of
+the mists which form around thme making it seem an enchanted place.  The icy
+slopes sparkle as the light dances upon them, shiveringly majestic and
+awe-inspiring.  The slopes look treacherous from here.  The icy plateau
+continues to the east and west and the slopes rise up the foothills and down
+to the bottom of the snowy slope.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21803
+Exit west 21804
+Exit up 21807
+Exit down 21801
+End
+
+
+#21803
+Name An Icy Plateau~
+Desc `WThis icy ivory plateau shimmers and sparkles as the cold snow forms a
+crust on the surface of the slope.  Snowy peaks can be seen jutting out of
+the mists which form around thme making it seem an enchanted place.  The icy
+slopes sparkle as the light dances upon them, shiveringly majestic and
+awe-inspiring.  The slopes look treacherous from here.  The icy plateau
+continues to the east and west and the slopes rise up the foothills and down
+to the bottom of the snowy slope.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit west 21802
+Exit up 21808
+End
+
+
+#21804
+Name An Icy Plateau~
+Desc `WThis icy ivory plateau shimmers and sparkles as the cold snow forms a
+crust on the surface of the slope.  Snowy peaks can be seen jutting out of
+the mists which form around thme making it seem an enchanted place.  The icy
+slopes sparkle as the light dances upon them, shiveringly majestic and
+awe-inspiring.  The slopes look treacherous from here.  The icy plateau
+continues to the east and west and the slopes rise up the foothills and down
+to the bottom of the snowy slope.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21802
+Exit up 21806
+End
+
+
+#21805
+Name Snowy Foothills~
+Desc `WThe snowy foothills glimmer frostily in the light.  There doesn't seem
+to be any chance of making it up there in one piece.  The slopes look
+treacherously slippery.  The ice crystals glint almost mischievously as if
+daring you to take a step...  And fall to your death!  The foothills
+continue right along the base of the mountains, sheer and isolated.  Smaller
+peaks seem accessible from some points.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21806
+Exit up 21811
+End
+
+
+#21806
+Name Snowy Foothills~
+Desc `WThe snowy foothills glimmer frostily in the light.  There doesn't seem
+to be any chance of making it up there in one piece.  The slopes look
+treacherously slippery.  The ice crystals glint almost mischievously as if
+daring you to take a step...  And fall to your death!  The foothills
+continue right along the base of the mountains, sheer and isolated.  Smaller
+peaks seem accessible from some points.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21807
+Exit west 21805
+Exit down 21804
+End
+
+
+#21807
+Name Snowy Foothills~
+Desc `WThe snowy foothills glimmer frostily in the light.  There doesn't seem
+to be any chance of making it up there in one piece.  The slopes look
+treacherously slippery.  The ice crystals glint almost mischievously as if
+daring you to take a step...  And fall to your death!  The foothills
+continue right along the base of the mountains, sheer and isolated.  Smaller
+peaks seem accessible from some points.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21808
+Exit west 21806
+Exit up 21812
+Exit down 21802
+End
+
+
+#21808
+Name Snowy Foothills~
+Desc `WThe snowy foothills glimmer frostily in the light.  There doesn't seem
+to be any chance of making it up there in one piece.  The slopes look
+treacherously slippery.  The ice crystals glint almost mischievously as if
+daring you to take a step...  And fall to your death!  The foothills
+continue right along the base of the mountains, sheer and isolated.  Smaller
+peaks seem accessible from some points.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21809
+Exit west 21807
+Exit down 21803
+End
+
+
+#21809
+Name Snowy Foothills~
+Desc `WThe snowy foothills glimmer frostily in the light.  There doesn't seem
+to be any chance of making it up there in one piece.  The slopes look
+treacherously slippery.  The ice crystals glint almost mischievously as if
+daring you to take a step...  And fall to your death!  The foothills
+continue right along the base of the mountains, sheer and isolated.  Smaller
+peaks seem accessible from some points.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit west 21808
+Exit up 21813
+End
+
+
+#21810
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21811
+Exit south 21815
+End
+
+
+#21811
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21816
+Exit west 21810
+Exit down 21805
+End
+
+
+#21812
+Name Icy Slope~
+Desc `WThis icy slope is very slippery and the ice crackles and crunches
+underfoot making it a very precarious climb indeed.  Mists swirl around just
+above your head and it is unclear whether this slope leads to a plunge
+downwards or carries on up.  There is a strange glowing light which appears
+to be coming from the mist.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit up 21818
+EFlags door closed~
+EKeywords mist-swirl~
+Exit down 21807
+End
+
+
+#21813
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21814
+Exit south 21820
+Exit down 21809
+End
+
+
+#21814
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21821
+Exit west 21813
+End
+
+
+#21815
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21810
+Exit east 21816
+Exit up 21823
+End
+
+
+#21816
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21811
+Exit west 21815
+End
+
+
+#21817
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21818
+Exit south 21824
+End
+
+
+#21818
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21819
+Exit west 21817
+Exit up 21825
+EFlags door closed~
+EKeywords fog~
+Exit down 21812
+EFlags door closed~
+EKeywords mist-swirl~
+End
+
+
+#21819
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21826
+Exit west 21818
+End
+
+
+#21820
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21813
+Exit east 21821
+End
+
+
+#21821
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21814
+Exit west 21820
+Exit up 21827
+End
+
+
+#21822
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21823
+Exit south 21829
+End
+
+
+#21823
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21830
+Exit west 21822
+Exit down 21815
+End
+
+
+#21824
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21817
+Exit south 21831
+End
+
+
+#21825
+Name Pic'atehro Ice Cap~
+Desc `WPic'atehro I`Cce Cap stan`xds maj`Cestically just ab`Wove the cloud
+`Wcover as if `Cit were a `xking surveyin`Cg its lands and pe`Woples.  Ice
+`Wglints and`C sparkles, f`xrosted with a ligh`Ct layer of snow wh`Wich has
+`Wcrusted `Cin the cold`x air of this mountainous reg`Cion.  Strange
+li`Wghts `Wdance a`Cbove the ice `xcap itself, little fireflies whic`Ch dart
+around c`Wrazily.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 4358
+Exit down 21818
+EFlags door closed~
+EKeywords fog~
+End
+
+
+#21826
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21819
+Exit south 21833
+End
+
+
+#21827
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21828
+Exit south 21834
+Exit down 21821
+End
+
+
+#21828
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21835
+Exit west 21827
+End
+
+
+#21829
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21822
+Exit east 21830
+Exit up 21837
+End
+
+
+#21830
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21823
+Exit west 21829
+Exit up 21838
+EFlags door closed~
+EKeywords ice-block~
+End
+
+
+#21831
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21824
+Exit east 21832
+End
+
+
+#21832
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21833
+Exit west 21831
+End
+
+
+#21833
+Name Pic'atehro Peak~
+Desc `CThese are the treacherous icy slopes of Pic'atehro Peak.  Snow abounds
+covering this glacial peak like icing drizzling over a cake.  There are
+footprints which are quite noticeable in the deep snow, echoes of a past
+time perhaps ...  Or something more recent.  Mists swirl around this peak
+sometimes like thick fog and other times like ghostly apparitions.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21826
+Exit west 21832
+End
+
+
+#21834
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21827
+Exit east 21835
+Exit up 21843
+EFlags door closed~
+EKeywords ice-block~
+End
+
+
+#21835
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21828
+Exit west 21834
+Exit up 21844
+End
+
+
+#21836
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21837
+Exit south 21846
+End
+
+
+#21837
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21847
+Exit west 21836
+Exit down 21829
+End
+
+
+#21838
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21839
+Exit south 21848
+Exit down 21830
+EFlags door closed~
+EKeywords ice-block~
+End
+
+
+#21839
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21840
+Exit west 21838
+End
+
+
+#21840
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21849
+Exit west 21839
+End
+
+
+#21841
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21842
+Exit south 21851
+End
+
+
+#21842
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21843
+Exit west 21841
+End
+
+
+#21843
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21852
+Exit west 21842
+Exit down 21834
+EFlags door closed~
+EKeywords ice-block~
+End
+
+
+#21844
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21845
+Exit south 21853
+Exit down 21835
+End
+
+
+#21845
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21854
+Exit west 21844
+End
+
+
+#21846
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21836
+Exit east 21847
+End
+
+
+#21847
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21837
+Exit west 21846
+End
+
+
+#21848
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21838
+Exit south 21855
+End
+
+
+#21849
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21840
+Exit south 21857
+Exit down 21861
+EFlags door closed~
+EKeywords ice-block~
+End
+
+
+#21850
+Name Icy Mountain Pass~
+Desc `WThis treacherous icy mountain pass is narrow and the sides are steeply
+sloped which means there could be an avalanche at any time.  Snow has
+gathered at the foot of the pass, collected from the peaks to either side. 
+Mists swirls above and the air is very cold indeed.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21861
+Exit up 21851
+EFlags door closed~
+EKeywords fog~
+End
+
+
+#21851
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21841
+Exit south 21858
+Exit down 21850
+EFlags door closed~
+EKeywords fog~
+End
+
+
+#21852
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21843
+Exit south 21860
+End
+
+
+#21853
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21844
+Exit east 21854
+End
+
+
+#21854
+Name Snowy Peak~
+Desc `WThis snowy peak is but a small fraction of the wonders yet to behold in
+this enchanted place.  Mists swirl around the bases of the higher peaks in
+the distance, their snowy caps just visible poking out of the clouds.  It
+looks as though it is possible to edge around this particular peak... 
+Careful you might slip and fall!!  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21845
+Exit west 21853
+End
+
+
+#21855
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21848
+Exit east 21856
+End
+
+
+#21856
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21857
+Exit west 21855
+Exit up 21872
+EFlags door closed~
+EKeywords fog~
+End
+
+
+#21857
+Name Arg'achoda Peak~
+Desc `CThe icy slopes of Arg'achoda Peak glint in the efervescent light
+reflected off the other peaks, despite the mists swirling around them. 
+Bright white light which almost blinds, shines luminescently on these
+slopes.  Rock hard ice, slippery and lethal is the mainstay of this peak. 
+`x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21849
+Exit west 21856
+End
+
+
+#21858
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21851
+Exit east 21859
+End
+
+
+#21859
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21860
+Exit west 21858
+Exit up 21871
+EFlags door closed~
+EKeywords crystal-shard~
+End
+
+
+#21860
+Name Lep'rikada Peak~
+Desc `CThese are the glacial slopes of Lep'rikada Peak.  Majestic and
+awe-inspiring, these are the peaks that poetry was written for.  Cascading
+white-blue ice shimmers down the cap culminating in icicles and delicate
+crystal shards.  Mists swirl around the base of the ice cap making it almost
+impossible to see where the cap ends and the slope begins.  To this end,
+there are a number of skeletons at the bottom of the canyon below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21852
+Exit west 21859
+End
+
+
+#21861
+Name Icy Mountain Pass~
+Desc `WThis treacherous icy mountain pass is narrow and the sides are steeply
+sloped which means there could be an avalanche at any time.  Snow has
+gathered at the foot of the pass, collected from the peaks to either side. 
+Mists swirls above and the air is very cold indeed.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21850
+Exit south 21862
+Exit up 21849
+EFlags door closed~
+EKeywords ice-block~
+End
+
+
+#21862
+Name Steep Mountain Slope~
+Desc `WThis steep mountain slope is very slippery and the ice crackles and
+crunches underfoot making it a very precarious climb indeed.  Mists swirl
+around just above your head and it is unclear whether this slope leads to a
+plunge downwards or carries on up.  There is a strange glowing light which
+appears to be coming from the mist.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21861
+Exit up 21863
+EFlags door closed~
+EKeywords mist-swirl~
+End
+
+
+#21863
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21864
+Exit west 21870
+Exit down 21862
+EFlags door closed~
+EKeywords mist-swirl~
+End
+
+
+#21864
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21865
+Exit west 21863
+End
+
+
+#21865
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21864
+Exit south 21866
+Exit down 21874
+EFlags door closed~
+EKeywords mist-swirl~
+End
+
+
+#21866
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21865
+Exit west 21867
+End
+
+
+#21867
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21866
+Exit west 21868
+Exit up 21873
+EFlags door closed~
+EKeywords mist~
+End
+
+
+#21868
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21869
+Exit east 21867
+End
+
+
+#21869
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21870
+Exit south 21868
+Exit down 21879
+EFlags door closed~
+EKeywords mist-swirl~
+End
+
+
+#21870
+Name Ech'tahua Peak~
+Desc `CThis peak is the highest and most magnificent of the four in the
+mountain range.  It shimmers with an unearthly glow, almost a faint
+peach-pink tint, as if bathed with a glorious sunset which never dies. 
+Little dancing lights dart around the peak as if annointing it with their
+magic.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21863
+Exit south 21869
+End
+
+
+#21871
+Name Lep'rikada Ice Cap~
+Desc `WSnow whir`cls around `xin a flur`cry on Lep'rika`Wda Ice Cap.  Ice
+`Wpelts ever`cywhere - i`xts a snowst`corm up here.  `WLights dance around
+`Wmingled into `cthe sn`xow - little li`cghts whirling arou`Wnd like a
+dervish `Wtwirling to unh`ceard me`xlodies.  Its `chard to distinguish
+wh`Were the base `Wof the ice cap st`carts and `xwhere it `cends.  Pu`Wre
+chaos.  `x 
+~
+RoomFlags no_recall nowhere~
+Sector ice~
+Exit down 21859
+EFlags door closed~
+EKeywords crystal-shard~
+End
+
+
+#21872
+Name Arg'achoda Ice Cap~
+Desc `cA sharp peak al`Wmost a p`xinnacle r`Wises from the mis`cts.  It is
+`cknown by the name `WArg'achod`xa Ice Ca`Wp.  Sheer ice co`cats the sides
+`cof this peak, clear an`Wd tantal`xisingly `Wdeep.  There app`cears to be a
+`cfigure hidden within th`We peak, n`xo it must `Wbe your imaginat`cion. 
+Blinding `csnow whips around t`Whe peak ma`xsking `Wthe visi`con....  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit down 21856
+EFlags door closed~
+EKeywords fog~
+End
+
+
+#21873
+Name Ech'tahua Ice Cap~
+Desc `YEch'tahua Ice `MCap shines `ybrilliantly `Mwith a pinky-o`Yrange hue
+which `Yperfectly refle`Mcts the ice c`yrystals cap`Mtured within it. 
+`YMist swirls around `Ythe base, leaving `Mjust the icy `ycap glowin`Mg
+above the cloud`Ys, which in turn `Yreflect the glorio`Mus oranges and`y
+pinks from `Mthe cap itself`Y.  A haze of `Yminute lights appea`Mr to dance
+in `ythese refle`Mctions producin`Yg a twilight `Yeffect.  This is `Mquite
+enchant`ying and me`Msmerisi`Yng.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit down 21867
+EFlags door closed~
+EKeywords mist~
+End
+
+
+#21874
+Name Icy Slope~
+Desc `WThis icy slope is very slippery and the ice crackles and crunches
+underfoot making it a very precarious climb indeed.  Mists swirl around just
+above your head and it is unclear whether this slope leads to a plunge
+downwards or carries on up.  There is a strange glowing light which appears
+to be coming from the mist.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit up 21865
+EFlags door closed~
+EKeywords mist-swirl~
+Exit down 21875
+End
+
+
+#21875
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21878
+Exit east 21876
+Exit up 21874
+End
+
+
+#21876
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21877
+Exit west 21875
+End
+
+
+#21877
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21876
+Exit west 21878
+Exit down 21888
+End
+
+
+#21878
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21877
+Exit south 21875
+End
+
+
+#21879
+Name Icy Slope~
+Desc `WThis icy slope is very slippery and the ice crackles and crunches
+underfoot making it a very precarious climb indeed.  Mists swirl around just
+above your head and it is unclear whether this slope leads to a plunge
+downwards or carries on up.  There is a strange glowing light which appears
+to be coming from the mist.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit up 21869
+EFlags door closed~
+EKeywords mist-swirl~
+Exit down 21880
+End
+
+
+#21880
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21883
+Exit west 21881
+Exit up 21879
+End
+
+
+#21881
+Name Icy Peak~
+Desc ~
+Sector ice~
+Exit north 21882
+Exit east 21880
+End
+
+
+#21882
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21883
+Exit south 21881
+Exit down 21884
+End
+
+
+#21883
+Name Icy Peak~
+Desc `WThis icy peak rises up to just below the mists which surround the
+higher peaks.  The air is damp as the icy slopes crack and shiver under your
+weight.  Ice crystals glint and sparkle in the strange light almost taunting
+you in their phosphoresence.  The slopes plunge down steeply to a chasm
+below.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21880
+Exit west 21882
+End
+
+
+#21884
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north east, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21887
+Exit west 21885
+Exit up 21882
+End
+
+
+#21885
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north east, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21886
+Exit east 21884
+End
+
+
+#21886
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north east, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21887
+Exit south 21885
+Exit down 21896
+End
+
+
+#21887
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north east, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21884
+Exit west 21886
+End
+
+
+#21888
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north west, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21891
+Exit east 21889
+Exit up 21877
+End
+
+
+#21889
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north west, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21890
+Exit west 21888
+End
+
+
+#21890
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north west, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector inside~
+Exit south 21889
+Exit west 21891
+Exit down 21892
+End
+
+
+#21891
+Name Snowy Peak~
+Desc `WSnow crackles and shivers as the ice begins to melt from an unknown
+force.  Shards and crystals go tumbling down the slopes into the icy chasms
+below.  Mists swirl around the majestic peak to the north west, almost
+cascading around it, resplendent and glorious.  The snow capped peak rises
+imperiously out of the top of the clouds.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21890
+Exit south 21888
+End
+
+
+#21892
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21895
+Exit east 21893
+Exit up 21890
+End
+
+
+#21893
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21894
+Exit west 21892
+End
+
+
+#21894
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21893
+Exit west 21895
+End
+
+
+#21895
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21894
+Exit south 21892
+Exit down 21854
+End
+
+
+#21896
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21899
+Exit west 21897
+Exit up 21886
+End
+
+
+#21897
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit north 21898
+Exit east 21896
+End
+
+
+#21898
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit east 21899
+Exit south 21897
+End
+
+
+#21899
+Name Icy Peak~
+Desc `WThis icy peak shimmers in the strange hallowed light reflected from the
+other peaks.  Sheer slopes plunge down to chasms below, the looks of which
+there is no hope of return.  Mists swirl around the higher snowy peaks,
+their tips just poking out of the tops.  An odd glow appears to be emanating
+from the four highest peaks.  `x 
+~
+RoomFlags nowhere~
+Sector ice~
+Exit south 21896
+Exit west 21898
+Exit down 21846
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 21801 spec_thief
+M 21805 spec_cast_mage
+M 21806 spec_cast_undead
+M 21807 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 21800 10 21801 1
+M 0 21810 5 21802 1
+M 0 21800 10 21803 1
+M 0 21800 10 21804 1
+E 0 21800 0 feet~
+M 0 21800 10 21806 1
+M 0 21809 5 21807 1
+M 0 21810 5 21808 1
+M 0 21800 10 21809 1
+M 0 21800 10 21810 1
+M 0 21803 5 21812 1
+M 0 21800 10 21814 1
+M 0 21800 10 21816 1
+M 0 21804 5 21819 1
+M 0 21800 10 21820 1
+M 0 21809 5 21821 1
+E 0 21809 0 neck1~
+M 0 21802 5 21823 1
+M 0 21805 1 21825 1
+E 0 21805 0 hold~
+M 0 21800 10 21828 1
+M 0 21803 5 21831 1
+E 0 21803 0 torso~
+M 0 21802 5 21837 1
+M 0 21804 5 21840 1
+M 0 21810 5 21846 1
+M 0 21809 5 21850 1
+M 0 21803 5 21855 1
+M 0 21804 5 21858 1
+M 0 21801 1 21861 1
+E 0 21801 0 wielded~
+M 0 21804 5 21870 1
+E 0 21804 0 wielded~
+M 0 21807 1 21871 1
+E 0 21807 0 hold~
+M 0 21806 1 21872 1
+E 0 21806 0 hold~
+M 0 21808 1 21873 1
+E 0 21808 0 head~
+M 0 21809 5 21874 1
+M 0 21802 5 21878 1
+M 0 21809 5 21879 1
+M 0 21802 5 21882 1
+G 0 21802 0
+M 0 21810 5 21885 1
+E 0 21810 0 hands~
+M 0 21810 5 21893 1
+M 0 21803 5 21894 1
+M 0 21802 5 21895 1
+M 0 21803 5 21899 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

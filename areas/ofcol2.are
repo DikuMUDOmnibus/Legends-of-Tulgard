@@ -1,0 +1,4524 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        New Ofcol~
+ShortName   New Ofcal~
+Builders    ~
+Credits     hatchet~
+VNUMs       5600 5699
+LRange      20 91
+Security    9
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#5600
+Name oldstyle cityguard guard~
+ShortD the Ofcol cityguard~
+LongD An Ofcol cityguard is standing here, making sure there is no trouble.~
+Desc This guard is surely a trained and skilled fighter.  He is fully armed and
+armored, and he uses his equipment with a practiced precision.  Luckily for 
+you, this guard will only use his deadly skills for the good of the citizens of
+Ofcol.
+~
+Race human~
+Align 2 3
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 4d5+95
+DamDice 6d6+17
+DamType punch
+AC -190 -190 -190 -165
+Wealth 65
+Act    npc scavenger mage warrior~
+AffBy  sanctuary sneak regeneration~
+Off    bash berserk disarm kick parry rescue assist_vnum~
+Imm    summon charm cold~
+Res    pierce holy light~
+Vuln   magic bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5601
+Name oldstyle marshall diana~
+ShortD marshall Diana~
+LongD Diana, the Marshall of Ofcol, stands here proudly.~
+Desc Diana is a beautiful, powerfully built woman.  She wears platinum armor for
+three reasons.  The first is to show she is strong enough to withstand the
+weight.  The second is to show her rank of office.  The third is that platinum
+is the hardest metal she can find.  She is willing to defend Ofcol to her 
+death.
+~
+Race human~
+Align 3 3
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+10
+DamType slap
+AC -117 -117 -117 -93
+Wealth 250
+Act    npc dont_wander cleric~
+AffBy  detect_invis sanctuary protect_evil~
+Off    disarm kick parry assist_vnum~
+Imm    summon bash fire~
+Res    charm holy energy mental~
+Vuln   acid poison negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5602
+Name oldstyle derrick captain guard cityguard~
+ShortD captain Derrick~
+LongD Derrick, Captain of the Guard, is here disciplining his guards.~
+Desc Derrick is a very big man.  He has acquired this station, not by brains or
+charm, but by brute strength.  He had fought in three orc wars and is a
+descendent of a surviving cityguard of old Thalos.  He believes that everything
+has to be hard won to be kept, and that laxity is for the weak.
+~
+Race human~
+Align -3 3
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+26
+DamType punch
+AC -300 -300 -300 -264
+Wealth 250
+Act    npc stay_area cleric~
+AffBy  detect_invis sanctuary protect_evil~
+Off    disarm kick parry assist_vnum~
+Imm    summon pierce cold~
+Res    charm bash disease~
+Vuln   magic poison light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5603
+Name oldstyle jacklyn captain guard cityguard~
+ShortD captain Jacklyn~
+LongD Jacklyn, Captain of the Citadel Guard, is here raising morale.~
+Desc Jacklyn is pale and wiry, but then, so are most other witches.  The fact that
+Jacklyn is a mage and a warrior makes her the perfect captain of the citadel
+guards.  Jacklyn is very beautiful, but whether it is due to her pale softness
+or her magic, no one has ever found out.  She isn't very strong physically, but
+she need not be.
+~
+Race human~
+Align -1 3
+Level 60
+Hitroll 0
+HitDice 6d9+315
+ManaDice 7d10+360
+DamDice 6d8+24
+DamType punch
+AC -290 -290 -290 -232
+Wealth 250
+Act    npc dont_wander mage~
+AffBy  detect_invis protect_evil~
+Off    berserk disarm dodge~
+Imm    magic poison sleep silver~
+Res    charm acid energy~
+Vuln   summon lightning disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5604
+Name oldstyle jim blacksmith~
+ShortD jim the Blacksmith~
+LongD Jim the Blacksmith is here, selling his latest works of metal.~
+Desc Jim is big and brawny, just like what you'd expect of a blacksmith.  He is
+smiling a very big smile, as he looks at your coins.  You wonder if he likes
+the metals or the value of the coins.
+~
+Race human~
+Align -1 3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -76
+Wealth 300
+Act    npc dont_wander~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_vnum~
+Imm    summon fire acid~
+Res    bash~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5605
+Name oldstyle sam~
+ShortD sam~
+LongD Sam is here, selling his leather works.~
+Desc Sam is a middle-aged workman.  He looks tired, but never too tired to get that
+last sale from you.  He grins at you slightly.
+~
+Race human~
+Align -1 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType punch
+AC -700 -700 -700 -630
+Wealth 1000
+Act    npc dont_wander~
+Act2   avoids_all_attacks~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_vnum~
+Imm    bash pierce fire~
+Res    disease~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5606
+Name oldstyle madam tracy~
+ShortD madam Tracy~
+LongD Madam Tracy is here, selling and buying little treasures.~
+Desc Madam Tracy is a bit old, but not to the point of senility.  Besides, she knows
+the hard ways of this world and is ready for it.  She spends her time at the
+shop, trading little things (for a wee bit of profit).
+~
+Race human~
+Align -3 3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType slap
+AC -95 -95 -95 -82
+Wealth 200
+Act    npc dont_wander~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5607
+Name oldstyle marty~
+ShortD marty~
+LongD Marty the meat store owner is here, selling you his choice meats.~
+Desc Marty is a big man.  He used to hunt the animals he sells, but now he lets his
+son, Jim, raise and slaughter the animals for him.  Marty still knows how to
+kill, though.
+~
+Race human~
+Align 1 3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -77
+Wealth 250
+Act    npc dont_wander~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5608
+Name oldstyle elizabeth farmer~
+ShortD farmer Elizabeth~
+LongD Farmer Elizabeth is here, selling the latest crop.~
+Desc Elizabeth is a very happy woman.  She can't believe the nice weather here in
+Ofcol, and the great vegetables this land produces is unbelievable to her too.
+Farmer Elizabeth smiles at you nicely, but you bet she is doing that just to
+get a good price off of you!
+~
+Race human~
+Align 1 3
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType none
+AC -45 -45 -45 -38
+Wealth 200
+Act    npc dont_wander~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5609
+Name oldstyle granny jenkins~
+ShortD granny Jenkins~
+LongD Granny Jenkins is here, running the still.~
+Desc Granny Jenkins is a feeble woman, but she knows her brew.  She might be very
+old, but she is still in charge of the still.  She cackles lightly at herself
+every time she tastes her whiskey, which is quite often!
+Granny Jenkins cackles again.
+~
+Race human~
+Align 1 1
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType punch
+AC -117 -117 -117 -94
+Wealth 5
+Act    npc dont_wander~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_vnum~
+Imm    cold disease~
+Res    holy iron~
+Vuln   charm mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5610
+Name oldstyle jack~
+ShortD jack~
+LongD Jack is here slaughtering away at the animals.~
+Desc Jack is the son of Marty, and you can see the family resemblance (especially in
+their shared affinity for slaughtering animals.)  Jack leers at you as you
+enter.  "Came by to watch, eh?", he asks.
+~
+Race human~
+Align 0 0
+Level 34
+Hitroll 0
+HitDice 5d6+205
+ManaDice 5d6+180
+DamDice 4d7+10
+DamType punch
+AC -113 -113 -113 -93
+Wealth 5
+Act    npc dont_wander aggressive wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    bash poison~
+Res    pierce holy~
+Vuln   fire silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5611
+Name oldstyle sara farmer~
+ShortD farmer Sara~
+LongD Farmer Sara is here, milking the cows.~
+Desc Farmer Sara is all covered with bits of straw and grime, but underneath all
+that, she doesn't look that bad.  She smiles at you demurely, and goes back to
+her work.
+~
+Race human~
+Align -3 2
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType bite
+AC -95 -95 -95 -84
+Wealth 14
+Act    npc dont_wander wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    cold disease~
+Res    energy mental~
+Vuln   bash sound wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5612
+Name oldstyle chicken hen~
+ShortD a hen~
+LongD A hen is here, squawking at your intrusion.~
+Desc The hen has yellow feathers and small wings.  It looks like a chicken, if
+you've ever seen one.
+~
+Race human~
+Align 2 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType peck
+AC -45 -45 -45 -40
+Wealth 0
+Act    npc wimpy pet~
+Act2   no_random_obj~
+Off    disarm dodge trip assist_vnum~
+Res    cold sound~
+Vuln   charm poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5613
+Name oldstyle cow~
+ShortD the cow~
+LongD A cow is here, munching on grass.~
+Desc The cow is here happily grazing.  It moos at you and goes back to grazing.
+~
+Race human~
+Align -1 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType chomp
+AC -70 -70 -70 -58
+Wealth 0
+Act    npc pet~
+Act2   no_random_obj~
+Off    disarm dodge trip assist_vnum~
+Imm    bash illusion~
+Res    negative~
+Vuln   summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#5614
+Name oldstyle cow~
+ShortD the cow~
+LongD A cow is here, waiting to be milked.~
+Desc The cow is just standing here.  She moos at you and otherwise ignores you.
+~
+Race human~
+Align 1 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType chomp
+AC -70 -70 -70 -60
+Wealth 0
+Act    npc dont_wander pet~
+Act2   no_random_obj~
+Off    disarm dodge trip assist_vnum~
+Imm    bash illusion~
+Res    negative~
+Vuln   summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5615
+Name oldstyle horse young~
+ShortD the young horse~
+LongD A young horse is here, grazing.~
+Desc The horse whinnies at you, then runs around you a few times, then just goes
+back to grazing.
+~
+Race human~
+Align -2 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType crush
+AC -95 -95 -95 -85
+Wealth 0
+Act    npc aggressive wimpy pet~
+Off    disarm dodge trip assist_vnum~
+Imm    holy mental~
+Res    acid~
+Vuln   fire disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#5616
+Name oldstyle pig~
+ShortD the pig~
+LongD A pig is playing here, getting itself and you dirty.~
+Desc The pig looks dirty.  It snorts and sniffs at you, then goes back to its slop.
+~
+Race pig~
+Align -3 0
+Level 28
+Hitroll 0
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType charge
+AC -85 -85 -85 -69
+Wealth 0
+Act    npc dont_wander pet~
+Act2   no_random_obj~
+Off    disarm dodge trip assist_race~
+Imm    pierce holy disease~
+Res    acid energy~
+Vuln   slash cold wood~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#5617
+Name oldstyle citizen man~
+ShortD the citizen~
+LongD A citizen is here, smiling at you.~
+Desc The citizen smiles at you.  He is having a great day, and he wishes the same
+for you.  He looks at you strangely, though, wondering why you are so armed and
+armored.
+~
+Race human~
+Align 2 1
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC -70 -70 -70 -61
+Wealth 121
+Act    npc wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    fire mental light~
+Res    disease silver~
+Vuln   bash pierce acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5618
+Name oldstyle citizen woman~
+ShortD the citizen~
+LongD A citizen is here, smiling at you.~
+Desc The citizen smiles at you.  She is having a great day, and she wishes the same
+for you.  She looks at you strangely, though, wondering why you are so armed
+and armored.
+~
+Race human~
+Align 1 1
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType punch
+AC -45 -45 -45 -39
+Wealth 122
+Act    npc wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    cold mental drowning~
+Res    poison silver~
+Vuln   bash slash acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5619
+Name oldstyle child boy~
+ShortD the boy~
+LongD A boy is here, playing tag and other kids' games.~
+Desc The little boy looks up at you and says, 'Hi.  Can I have a piece of candy?'
+He then smiles and runs away, remembering his game.
+~
+Race human~
+Align -3 1
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType claw
+AC -20 -20 -20 -16
+Wealth 100
+Act    npc wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    disease light~
+Res    fire holy~
+Vuln   charm acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5620
+Name oldstyle child girl~
+ShortD the girl~
+LongD A girl is here, playing jump jacks and other kids' games.~
+Desc The little girl looks up at you and says, 'Hi.  Can I have a pretty little
+coin?'  She then smiles and runs away, remembering her game.
+~
+Race human~
+Align -2 1
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType bite
+AC -20 -20 -20 -17
+Wealth 111
+Act    npc wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    disease light~
+Res    fire holy~
+Vuln   charm acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5621
+Name oldstyle maid woman~
+ShortD the maid~
+LongD A maid is here, cleaning the house and preparing the next meal.~
+Desc The maid startles at your presence.  'You are ruining my floors!  Wait till
+Master and Mistress come back.  You will get me in trouble!  Shoo!', she says.
+She hits you with her broom.
+~
+Race human~
+Align -1 1
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType slap
+AC -45 -45 -45 -38
+Wealth 2
+Act    npc wimpy~
+Off    disarm dodge trip assist_vnum~
+Imm    charm light sleep silver~
+Res    energy mental sound~
+Vuln   poison holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5622
+Name oldstyle Nyles~
+ShortD nyles the Bartender~
+LongD Nyles the Bartender is here, ready to serve you up a good brew.~
+Desc Nyles is a hefty guy, who looks like he's waiting for the next bar fight to
+join in.  He keeps an eye on you and his glasses, making sure you don't steal
+any.
+~
+Race human~
+Align 3 3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -83
+Wealth 50
+Act    npc dont_wander~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5623
+Name oldstyle cityguard guard~
+ShortD the Ofcol cityguard~
+LongD An Ofcol cityguard is posted here to guard the gate.~
+Desc This guard is surely a trained and skilled fighter.  He is fully armed and
+armored, and he uses his equipment with a practiced precision.  Luckily for 
+you, this guard will only use his deadly skills for the good of the citizens of
+Ofcol.
+~
+Race human~
+Align 1 3
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -82
+Wealth 50
+Act    npc dont_wander warrior~
+AffBy  protect_evil~
+Off    bash berserk disarm kick parry rescue assist_vnum~
+Imm    fire poison iron~
+Res    summon illusion~
+Vuln   charm negative wood~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5624
+Name oldstyle bard~
+ShortD a bard~
+LongD A bard is here, singing of the glories of Ofcol.~
+Desc After years of traveling around the world, this bard has decided to stay in the
+peaceful city of Ofcol, and to sing of its unmatched glories.  He smiles at
+you, hinting toward a tip from you in ever a subtle way.
+~
+Race human~
+Align 1 2
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -100
+Wealth 50
+Act    npc dont_wander~
+Off    disarm dodge trip assist_vnum~
+Imm    magic poison holy~
+Res    cold lightning~
+Vuln   acid silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5625
+Name oldstyle servant~
+ShortD a servant~
+LongD A servant is here, carrying the duties of the Keeper of the Golden Citadel.~
+Desc The servant smiles good-naturedly at you, then goes on his duties.
+~
+Race human~
+Align 3 3
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType punch
+AC -137 -137 -137 -119
+Wealth 5
+Act    npc stay_area~
+AffBy  sanctuary protect_evil~
+Off    disarm dodge trip assist_vnum~
+Imm    summon slash~
+Res    charm holy~
+Vuln   bash energy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5626
+Name oldstyle squire~
+ShortD a squire~
+LongD A squire is here, scurrying from duty to duty.~
+Desc This young man smiles at you, but is too busy to chat.
+~
+Race human~
+Align -1 3
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -240
+Wealth 600
+Act    npc stay_area~
+AffBy  protect_evil regeneration~
+Off    disarm dodge trip assist_vnum~
+Imm    holy energy disease illusion~
+Res    fire lightning light~
+Vuln   weapon bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5627
+Name oldstyle page~
+ShortD a page~
+LongD A page is here, sending a message to his knight.~
+Desc The page smiles for you, asking if he can do you a favor too.
+~
+Race human~
+Align 3 3
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType punch
+AC -200 -200 -200 -174
+Wealth 5
+Act    npc stay_area~
+AffBy  protect_evil haste~
+Off    disarm dodge trip assist_vnum~
+Imm    summon slash energy~
+Res    bash cold~
+Vuln   pierce acid poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5628
+Name oldstyle priestess~
+ShortD the Priestess of Ofcol~
+LongD The Priestess of Ofcol is here, blessing you with her beautific smile.~
+Desc The Priestess of Ofcol is an old woman, perfectly at peace with herself and 
+with the world.  She devotes all her time to help teach you the ways of her
+god, Bahamut.  The dragon symbol around her neck looks almost alive.
+~
+Race human~
+Align 1 3
+Level 63
+Hitroll 0
+HitDice 6d10+330
+ManaDice 6d10+350
+DamDice 8d7+29
+DamType slap
+AC -330 -330 -330 -270
+Wealth 50
+Act    npc dont_wander~
+AffBy  invisible sanctuary protect_evil~
+Off    disarm dodge kick trip~
+Imm    summon charm light illusion~
+Res    pierce fire disease~
+Vuln   bash acid poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5629
+Name oldstyle chaplain Jerrold~
+ShortD chaplain Jerrold~
+LongD Jerrold, the chaplain of this Citadel, is here directing the activities of the people.~
+Desc He smiles at you, with the enthusiasm of a little kid.  "What're you doing just
+STANDING here, young man?  Go help that other squire there!", he yells.  He
+turns to you and with a consipatory tone, whispers, "Kids!"
+~
+Race human~
+Align -3 3
+Level 70
+Hitroll 0
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -360
+Wealth 50
+Act    npc stay_area warrior~
+AffBy  invisible sanctuary protect_evil~
+Off    bash berserk disarm kick parry rescue assist_vnum~
+Imm    summon cold disease~
+Res    charm pierce~
+Vuln   magic light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5630
+Name oldstyle dragonlord lord dragon knight~
+ShortD a Dragonlord~
+LongD A knight wearing the scales of a dragon stands here.~
+Desc This person looks almost like a dragon itself.  His golden scales gleam with
+power.  He smiles at you with a vicious grin.  You're happy that he doesn't
+look upset at your presence. 
+~
+Race human~
+Align 3 3
+Level 80
+Hitroll 0
+HitDice 8d12+400
+ManaDice 3d5+85
+DamDice 9d9+41
+DamType slap
+AC -500 -500 -500 -445
+Wealth 50
+Act    npc dont_wander warrior~
+AffBy  invisible sanctuary protect_evil~
+Off    disarm dodge trip assist_vnum~
+Imm    summon magic cold~
+Res    charm pierce scry~
+Vuln   slash acid disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5631
+Name dragon gold old shimmering~
+ShortD the Ancient Gold Dragon~
+LongD An old dragon shimmering with the colours of this cavern peers at you sleepily.~
+Desc This dragon's head is taller than you.  He is annoyed at your disturbance, but
+realizing that you're no danger to him, he ignores you.  He waves to one of
+his attendants to escort you away.
+~
+Race dragon~
+Align 0 3
+Level 90
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType claw
+AC -600 -600 -600 -528
+Wealth 420
+Act    npc dont_wander scavenger no_tame~
+AffBy  invisible sanctuary infrared protect_evil flying dark_vision regeneration~
+Off    disarm dodge parry tail trip assist_race~
+Imm    summon charm pierce mental illusion~
+Res    charm magic bash fire mental~
+Vuln   bash cold holy light~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#5632
+Name person robed gold attending attendant~
+ShortD an attendant of the dragon~
+LongD A person robed in gold is attending to the Keeper of the Citadel.~
+Desc This elder servant to the Gold Dragon is very loyal to him, willing to risk
+his life for his liege.
+~
+Race human~
+Align -2 3
+Level 80
+Hitroll 0
+HitDice 8d11+395
+ManaDice 9d12+575
+DamDice 9d9+38
+DamType none
+AC -490 -490 -490 -426
+Wealth 210
+Act    npc dont_wander mage~
+AffBy  invisible protect_evil haste~
+Off    disarm dodge rescue trip assist_vnum~
+Imm    slash acid mental~
+Res    summon magic fire~
+Vuln   lightning energy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5633
+Name oldstyle dragonknight knight dragon~
+ShortD a Dragonknight~
+LongD A Dragonknight stands here, guarding the Golden Citadel.~
+Desc This person looks like a dragon itself.  His golden scales gleam with power.
+He smiles at you, showing very sharp teeth.
+~
+Race human~
+Align 3 3
+Level 72
+Hitroll 0
+HitDice 7d11+365
+ManaDice 7d11+365
+DamDice 8d8+36
+DamType punch
+AC -420 -420 -420 -357
+Wealth 210
+Act    npc stay_area~
+AffBy  invisible protect_evil haste~
+Off    disarm dodge trip assist_vnum~
+Imm    summon pierce cold light~
+Res    charm slash acid disease~
+Vuln   bash lightning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5634
+Name templeguard guard~
+ShortD the ofcol templeguard~
+LongD An Ofcol templeguard is posted here.~
+Desc This guard is surely a trained and skilled fighter.  He is fully armed and
+armored, and he uses his equipment with a practiced precision.  Luckily for 
+you, this guard will only use his deadly skills for the good of the citizens of
+Ofcol.
+~
+Race human~
+Align 1 3
+Level 62
+Hitroll 0
+HitDice 6d10+330
+ManaDice 3d5+60
+DamDice 8d7+28
+DamType none
+AC -320 -320 -320 -259
+Wealth 50
+Act    npc dont_wander warrior~
+AffBy  sanctuary protect_evil~
+Off    bash berserk disarm kick parry rescue assist_vnum~
+Imm    summon charm bash pierce~
+Res    magic slash fire~
+Vuln   cold lightning acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#5600
+Name axe hand~
+Short a `#`yh`wan`yd `sa`yx`se`^~
+Desc A hand axe is on the floor here.~
+Level 25
+ItemType weapon~
+Cost 420
+Durability 5
+Asize 100
+Rsize 50
+Values axe 2 16 chop 0
+Weight 100
+Material oldstyle~
+Wear     take wield~
+ExtraDesc handaxe hand axe~
+You see a finely made axe.  Iron, with a nice wooden shaft, this axe can
+withstand years of use.
+~
+End
+
+#5601
+Name meat cleaver~
+Short a `#`rm`sea`rt `rc`sl`weav`se`rr`^~
+Desc A sharp meat cleaver is just lying on the floor here!~
+Level 25
+ItemType weapon~
+Cost 530
+Durability 5
+Asize 50
+Rsize 50
+Values dagger 2 10 chop 0
+Weight 50
+Material oldstyle~
+Wear     take wield~
+Affect modifier -1 25 -1 damroll 1 0
+ExtraDesc meat cleaver~
+This meat cleaver is made of good steel.
+~
+End
+
+#5602
+Name side meat beef~
+Short a `#`yside`^ of `ybeef`^~
+Desc A side of beef is here on the floor.~
+Level 1
+ItemType food~
+Cost 50
+Durability 5
+Asize 100
+Rsize 50
+Values 24 24 0 0 0
+Weight 100
+Material oldstyle~
+Wear     take~
+End
+
+#5603
+Name side meat pork~
+Short a `yside `^of `rpork`^~
+Desc A side of pork is here on the floor.~
+Level 1
+ItemType food~
+Cost 42
+Durability 5
+Asize 100
+Rsize 50
+Values 23 23 0 0 0
+Weight 100
+Material oldstyle~
+Wear     take~
+End
+
+#5604
+Name side meat horse~
+Short a `#`yside `^of `shorse`^~
+Desc A side of horse is here on the floor.~
+Level 1
+ItemType food~
+Cost 21
+Durability 5
+Asize 120
+Rsize 50
+Values 30 30 0 0 0
+Weight 120
+Material oldstyle~
+Wear     take~
+End
+
+#5605
+Name meat chicken~
+Short a defeathered `#`Wch`rick`Wen`^~
+Desc A defeathered chicken is here on the floor.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 50
+Rsize 50
+Values 16 16 0 0 0
+Weight 50
+Material oldstyle~
+Wear     take~
+End
+
+#5606
+Name emerald ring~
+Short an `#`Ce`Sm`ce`sr`ca`Sl`Cd `Cr`cin`Cg`^~
+Desc An emerald ring is on the floor, gathering dust.~
+Level 20
+ItemType jewelry~
+Cost 222
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material emerald~
+Extra    magic~
+Wear     take finger~
+Affect modifier -1 20 -1 hp 2 0
+Affect modifier -1 20 -1 memory 2 0
+Affect modifier -1 20 -1 mana 20 0
+End
+
+#5607
+Name glass trinket~
+Short a `#`Cg`Wl`Ca`Ws`Cs `ct`Cr`Bi`bn`Bk`Ce`ct`^~
+Desc A glass trinket is on the floor, gathering dust.~
+Level 20
+ItemType gem~
+Cost 222
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    glow magic burnproof~
+Extra2   nodecay~
+Wear     take hold~
+Affect modifier -1 20 -1 saves -4 0
+Affect modifier -1 20 -1 constitution 2 0
+Affect modifier -1 20 -1 mana 40 0
+Affect modifier -1 20 -1 selfdiscipline 2 0
+Affect modifier -1 20 -1 reasoning 2 0
+Affect modifier -1 20 -1 damroll 2 0
+End
+
+#5608
+Name golden necklace~
+Short a `#`Yg`yo`Yl`yd`Ye`yn `Wn`Ye`yckla`Yc`We`^~
+Desc A golden necklace is on the floor, gathering dust.~
+Level 20
+ItemType jewelry~
+Cost 432
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material gold~
+Extra    glow magic bless burnproof~
+Wear     take neck~
+Affect modifier -1 20 -1 hp 2 0
+Affect modifier -1 20 -1 agility 2 0
+Affect resist -1 20 -1 none 0 magic
+Affect modifier -1 20 -1 damroll 2 0
+Affect modifier -1 20 -1 hitroll 2 0
+End
+
+#5609
+Name cabbage~
+Short a head of `#`ccabbage`^~
+Desc Some fresh cabbage is here, get it while it lasts!~
+Level 1
+ItemType food~
+Cost 2
+Durability 5
+Asize 20
+Rsize 50
+Values 12 12 0 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#5610
+Name lettuce~
+Short a head of `#`Glettuce`^~
+Desc Some fresh lettuce is here, get it while it lasts!~
+Level 1
+ItemType food~
+Cost 20
+Durability 5
+Asize 20
+Rsize 50
+Values 12 12 0 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#5611
+Name milk bottle~
+Short a `#`Wbottle `wof `Wmilk`^~
+Desc A glass bottle of milk is on a shelf here, fresh from the cow.~
+Level 1
+ItemType drinkcontainer~
+Cost 30
+Durability 5
+Asize 50
+Rsize 50
+Values 20 20 milk 0 0
+Weight 50
+Material oldstyle~
+Wear     take hold~
+End
+
+#5612
+Name apple~
+Short an `#`Ra`Gp`Yp`Rl`Ge`^~
+Desc An apple is on the ground.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#5613
+Name corn~
+Short an `#`year`s of `yc`Yo`yr`Yn`^~
+Desc An ear of corn is on the ground.~
+Level 1
+ItemType food~
+Cost 30
+Durability 5
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#5614
+Name hay pile~
+Short a `#`Yp`wi`Yl`we`^ of `Yh`ya`Yy`^~
+Desc There is a big pile of hay here.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 200
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material oldstyle~
+Wear     take~
+End
+
+#5615
+Name pitchfork fork~
+Short a `#`rp`sitchfork`^~
+Desc A pitchfork is on the floor.~
+Level 5
+ItemType weapon~
+Cost 140
+Durability 5
+Asize 100
+Rsize 50
+Values staff 3 2 stab 0
+Weight 100
+Material oldstyle~
+Wear     take wield~
+End
+
+#5616
+Name vest~
+Short a `#`cl`se`ca`st`ch`se`cr `svest`^~
+Desc A leather vest is on the floor.~
+Level 22
+ItemType armor~
+Cost 440
+Durability 5
+Asize 100
+Rsize 50
+Values 7 7 7 5 0
+Weight 40
+Material leather~
+Extra    nonmetal burnproof~
+Wear     take torso~
+Affect modifier -1 22 -1 damroll 2 0
+Affect modifier -1 22 -1 memory 2 0
+Affect modifier -1 22 -1 ac -3 0
+End
+
+#5617
+Name leather sleeves~
+Short some `#`cl`se`ca`st`ch`se`cr `ssleeves`^~
+Desc Some leather sleeves are on the floor.~
+Level 22
+ItemType armor~
+Cost 432
+Durability 5
+Asize 50
+Rsize 50
+Values 5 5 5 4 0
+Weight 50
+Material leather~
+Wear     take arms~
+Affect modifier -1 22 -1 mana 30 0
+Affect modifier -1 22 -1 hp 4 0
+Affect modifier -1 22 -1 constitution 2 0
+End
+
+#5618
+Name leather leggings~
+Short some `#`cl`se`ca`st`ch`se`cr `sleggings`^~
+Desc Some leather leggings are on the floor.~
+Level 22
+ItemType armor~
+Cost 338
+Durability 5
+Asize 50
+Rsize 50
+Values 5 5 5 4 0
+Weight 50
+Material leather~
+Wear     take legs~
+Affect modifier -1 22 -1 constitution 2 0
+Affect modifier -1 22 -1 hitroll 3 0
+Affect modifier -1 22 -1 reasoning 2 0
+Affect modifier -1 22 -1 ac -3 0
+End
+
+#5619
+Name boots~
+Short some `#`cl`se`ca`st`ch`se`cr`s boots`^~
+Desc Some leather boots are on the floor.~
+Level 22
+ItemType armor~
+Cost 380
+Durability 5
+Asize 50
+Rsize 50
+Values 4 4 4 3 0
+Weight 50
+Material leather~
+Wear     take feet~
+Affect affects -1 22 -1 none 0 sneak
+Affect modifier -1 22 -1 strength 2 0
+Affect modifier -1 22 -1 quickness 2 0
+Affect modifier -1 22 -1 selfdiscipline 2 0
+Affect modifier -1 22 -1 saves -2 0
+End
+
+#5620
+Name signet ring~
+Short an `#`yO`rf`yc`ro`yl `rsi`ygn`ret `rr`si`rn`sg`^~
+Desc A shiny ring of gold is in the dirt.~
+Level 80
+ItemType jewelry~
+Cost 730
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Extra    magic bless~
+Extra2   nodecay~
+Wear     take finger~
+Affect modifier -1 80 -1 hp 4 0
+Affect modifier -1 80 -1 mana 20 0
+Affect modifier -1 80 -1 constitution 2 0
+Affect modifier -1 80 -1 hitroll 4 0
+Affect modifier -1 80 -1 damroll 4 0
+Affect modifier -1 80 -1 ac -5 0
+End
+
+#5621
+Name plate brass~
+Short a `#`ybr`sa`yss `yp`slate`^~
+Desc A pile of brass plates is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1212
+Durability 5
+Asize 100
+Rsize 50
+Values 18 18 18 13 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 saves -4 0
+Affect modifier -1 55 -1 hp 4 0
+Affect modifier -1 55 -1 damroll 5 0
+End
+
+#5622
+Name helm brass~
+Short a `#`ybr`sa`yss `yh`selm`^~
+Desc A brass helm is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1121
+Durability 5
+Asize 100
+Rsize 50
+Values 13 13 13 11 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take head~
+ClassAllowances cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 ac -4 0
+Affect modifier -1 55 -1 constitution 3 0
+Affect modifier -1 55 -1 hitroll 3 0
+End
+
+#5623
+Name leggings brass~
+Short some `#`ybr`sa`yss `yl`seggings`^~
+Desc A pile of brass plates is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1280
+Durability 5
+Asize 100
+Rsize 50
+Values 13 13 13 11 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take legs~
+ClassAllowances cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 mana 40 0
+Affect modifier -1 55 -1 hp 4 0
+Affect modifier -1 55 -1 constitution 6 0
+End
+
+#5624
+Name boots brass~
+Short some `#`ybr`sa`yss `yb`soots`^~
+Desc Some brass boots are against the wall here.~
+Level 55
+ItemType armor~
+Cost 1280
+Durability 5
+Asize 100
+Rsize 50
+Values 11 11 11 9 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take feet~
+ClassAllowances cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 strength 3 0
+Affect modifier -1 55 -1 quickness 1 0
+Affect modifier -1 55 -1 agility 1 0
+Affect modifier -1 55 -1 constitution 2 0
+Affect modifier -1 55 -1 ac -5 0
+End
+
+#5625
+Name gauntlets brass~
+Short some `#`ybr`sa`yss `yg`sauntlets`^~
+Desc Some brass gauntlets are against the wall here.~
+Level 55
+ItemType armor~
+Cost 1280
+Durability 5
+Asize 100
+Rsize 50
+Values 13 13 13 10 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take hands~
+ClassAllowances mage cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 hitroll 3 0
+Affect modifier -1 55 -1 damroll 3 0
+Affect modifier -1 55 -1 saves -4 0
+Affect modifier -1 55 -1 ac -4 0
+End
+
+#5626
+Name sleeves brass~
+Short some `#`ybr`sa`yss `ys`sleeves`^~
+Desc A pile of brass plates is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1280
+Durability 5
+Asize 100
+Rsize 50
+Values 13 13 13 10 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take arms~
+ClassAllowances mage cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 hp 5 0
+Affect modifier -1 55 -1 saves -3 0
+Affect modifier -1 55 -1 hitroll 4 0
+Affect modifier -1 55 -1 damroll 4 0
+End
+
+#5627
+Name shield brass~
+Short a `#`ybr`sa`yss `ys`shield`^~
+Desc A big plate of brass is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1124
+Durability 5
+Asize 100
+Rsize 50
+Values 18 18 18 15 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take shield~
+ClassAllowances cleric warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 55 -1 hp 5 0
+Affect modifier -1 55 -1 constitution 2 0
+Affect modifier -1 55 -1 ac -4 0
+Affect modifier -1 55 -1 damroll 4 0
+End
+
+#5628
+Name girth brass~
+Short a `#`ybr`sa`yss `yg`sirth`^~
+Desc A brass girth is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1280
+Durability 5
+Asize 100
+Rsize 50
+Values 11 11 11 9 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take waist~
+ClassAllowances cleric warrior druid paladin ranger spellfilcher anti-paladin~
+Affect modifier -1 55 -1 ac -4 0
+Affect modifier -1 55 -1 hp 4 0
+Affect modifier -1 55 -1 strength 2 0
+Affect modifier -1 55 -1 hitroll 2 0
+Affect modifier -1 55 -1 damroll 2 0
+End
+
+#5629
+Name bracer brass~
+Short a `#`ybr`sa`yss `yb`sracer`^~
+Desc A brass bracer is against the wall here.~
+Level 55
+ItemType armor~
+Cost 1211
+Durability 5
+Asize 100
+Rsize 50
+Values 7 7 7 6 0
+Weight 100
+Material brass~
+Extra    magic~
+Wear     take wrist~
+ClassAllowances warrior druid paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 55 -1 hp 5 0
+Affect modifier -1 55 -1 saves -4 0
+Affect modifier -1 55 -1 damroll 3 0
+End
+
+#5630
+Name claymore sword~
+Short a `#`cc`Wl`Ca`cym`Co`Wr`ce`^~
+Desc A VERY big sword is against the wall here.~
+Level 35
+ItemType weapon~
+Cost 3100
+Durability 5
+Asize 160
+Rsize 50
+Values sword 3 12 cleave F
+Weight 100
+Material steel~
+Extra    magic~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard anti-paladin~
+Affect modifier -1 35 -1 damroll 5 0
+Affect modifier -1 35 -1 hitroll 3 0
+Affect modifier -1 35 -1 ac -3 0
+Affect modifier -1 35 -1 selfdiscipline 2 0
+End
+
+#5631
+Name plate silver~
+Short a `#`Ssilver`W p`Sl`Wa`St`We`^~
+Desc A pile of silver plating and chain is on the floor.~
+Level 65
+ItemType armor~
+Cost 1121
+Durability 5
+Asize 150
+Rsize 50
+Values 16 16 16 13 0
+Weight 150
+Material silver~
+Extra    magic antievil~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 hp 4 0
+Affect modifier -1 65 -1 ac -4 0
+Affect modifier -1 65 -1 constitution 2 0
+Affect modifier -1 65 -1 saves -3 0
+Affect modifier -1 65 -1 hitroll 4 0
+End
+
+#5632
+Name helm silver~
+Short a `#`ssilver `Wh`Se`Wl`Sm`^~
+Desc A shiny helm is on the floor.~
+Level 65
+ItemType armor~
+Cost 1144
+Durability 5
+Asize 200
+Rsize 50
+Values 11 11 11 9 0
+Weight 100
+Material silver~
+Extra    magic antievil~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 mana 40 0
+Affect affects -1 65 -1 none 0 detect_invis
+Affect modifier -1 65 -1 ac -3 0
+End
+
+#5633
+Name leggings silver~
+Short some `#`ssilver `Wl`Se`Wg`Sg`Wi`Sn`Wg`Ss`^~
+Desc Some shiny leggings are on the floor.~
+Level 65
+ItemType armor~
+Cost 1211
+Durability 5
+Asize 150
+Rsize 50
+Values 11 11 11 9 0
+Weight 150
+Material silver~
+Extra    magic antievil~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 constitution 2 0
+Affect modifier -1 65 -1 mana 60 0
+Affect modifier -1 65 -1 hp 6 0
+Affect modifier -1 65 -1 ac -4 0
+Affect modifier -1 65 -1 damroll 4 0
+End
+
+#5634
+Name boots silver~
+Short some `#`Ssilver `Sb`Wo`So`Wt`Ss`^~
+Desc Some shiny boots are on the floor.~
+Level 65
+ItemType armor~
+Cost 1201
+Durability 5
+Asize 150
+Rsize 50
+Values 13 13 13 11 0
+Weight 150
+Material silver~
+Extra    magic antievil~
+Wear     take feet~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 move 40 0
+Affect modifier -1 65 -1 selfdiscipline 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect affects2 -1 65 -1 none 0 passwotrace
+End
+
+#5635
+Name gauntlets silver~
+Short some `#`Ssilver `Sg`Wa`Su`Wn`St`Wl`Se`Wt`Ss`^~
+Desc Some shiny gauntlets are on the floor.~
+Level 65
+ItemType armor~
+Cost 1121
+Durability 5
+Asize 150
+Rsize 50
+Values 13 13 13 11 0
+Weight 15
+Material silver~
+Extra    magic antievil~
+Wear     take hands~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 hp 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 intuition 2 0
+End
+
+#5636
+Name sleeves silver~
+Short some `#`ssilver `Ws`Sl`We`Se`Wv`Se`Ws`^~
+Desc Some shiny sleeves are on the floor.~
+Level 65
+ItemType armor~
+Cost 1231
+Durability 5
+Asize 200
+Rsize 50
+Values 11 11 11 9 0
+Weight 200
+Material silver~
+Extra    magic antievil~
+Wear     take arms~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 ac -4 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hp 2 0
+Affect modifier -1 65 -1 saves -4 0
+End
+
+#5637
+Name shield silver~
+Short the `#`ssilver `Ws`Sh`Wi`Se`Wl`Sd`^~
+Desc A shiny shield is on the floor.~
+Level 65
+ItemType armor~
+Cost 1210
+Durability 5
+Asize 200
+Rsize 50
+Values 21 21 21 18 0
+Weight 200
+Material silver~
+Extra    magic antievil~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 saves -4 0
+Affect modifier -1 65 -1 ac -4 0
+Affect modifier -1 65 -1 mana 40 0
+Affect modifier -1 65 -1 damroll 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 selfdiscipline 1 0
+End
+
+#5638
+Name girth silver~
+Short the `#`Ssilver `Wg`Si`Wr`St`Wh`^~
+Desc A shiny girth is on the floor.~
+Level 65
+ItemType armor~
+Cost 1123
+Durability 5
+Asize 200
+Rsize 50
+Values 13 13 13 9 0
+Weight 200
+Material silver~
+Extra    magic antievil~
+Wear     take waist~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 ac -4 0
+Affect modifier -1 65 -1 saves -4 0
+Affect modifier -1 65 -1 mana 20 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 constitution 2 0
+End
+
+#5639
+Name plate platinum~
+Short a `#`Sp`Wlatinum `splate`^~
+Desc A pile of silvery metal is on the floor.~
+Level 30
+ItemType armor~
+Cost 600
+Durability 5
+Asize 500
+Rsize 50
+Values 10 10 10 7 0
+Weight 500
+Material platinum~
+Extra    magic antievil~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian bard anti-paladin~
+Affect modifier -1 30 -1 intuition 2 0
+Affect modifier -1 30 -1 hp 4 0
+Affect modifier -1 30 -1 damroll 2 0
+Affect modifier -1 30 -1 saves -4 0
+End
+
+#5640
+Name helmet platinum~
+Short a `#`Sp`Wlatinum `shelmet`^~
+Desc A silvery helmet is on the floor.~
+Level 30
+ItemType armor~
+Cost 621
+Durability 5
+Asize 300
+Rsize 50
+Values 9 9 9 7 0
+Weight 300
+Material platinum~
+Extra    magic antievil~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 30 -1 empathy 2 0
+Affect modifier -1 30 -1 mana 20 0
+Affect modifier -1 30 -1 hp 4 0
+Affect modifier -1 30 -1 ac -3 0
+End
+
+#5641
+Name leggings platinum~
+Short some `#`Sp`Wlatinum `sleggings`^~
+Desc Some silvery leggings are on the floor.~
+Level 30
+ItemType armor~
+Cost 621
+Durability 5
+Asize 400
+Rsize 50
+Values 7 7 7 5 0
+Weight 400
+Material platinum~
+Extra    magic antievil~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 30 -1 quickness 2 0
+Affect modifier -1 30 -1 selfdiscipline 2 0
+Affect modifier -1 30 -1 reasoning 2 0
+Affect modifier -1 30 -1 ac -2 0
+End
+
+#5642
+Name boots platinum~
+Short some `#`Sp`Wlatinum `sboots`^~
+Desc Some silvery boots are on the floor.~
+Level 32
+ItemType armor~
+Cost 612
+Durability 5
+Asize 400
+Rsize 50
+Values 6 6 6 4 0
+Weight 400
+Material platinum~
+Extra    magic antievil~
+Wear     take feet~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 32 -1 move 25 0
+Affect modifier -1 32 -1 hp 4 0
+Affect modifier -1 32 -1 ac -4 0
+End
+
+#5643
+Name gauntlets platinum~
+Short some `#`Sp`Wlatinum `sgauntlets`^~
+Desc A pair of silvery gauntlets are on the floor.~
+Level 31
+ItemType armor~
+Cost 632
+Durability 5
+Asize 400
+Rsize 50
+Values 6 6 6 4 0
+Weight 400
+Material platinum~
+Extra    magic antievil~
+Wear     take hands~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 mana 20 0
+Affect modifier -1 31 -1 memory 2 0
+Affect modifier -1 31 -1 constitution 4 0
+End
+
+#5644
+Name sleeves platinum~
+Short some `#`Sp`Wlatinum `ssleeves`^~
+Desc A pair of silvery sleeves are on the floor.~
+Level 30
+ItemType armor~
+Cost 631
+Durability 5
+Asize 400
+Rsize 50
+Values 7 7 7 5 0
+Weight 400
+Material platinum~
+Extra    magic antievil~
+Wear     take arms~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 30 -1 strength 2 0
+Affect modifier -1 30 -1 ac -4 0
+Affect modifier -1 30 -1 damroll 2 0
+Affect modifier -1 30 -1 hitroll 2 0
+End
+
+#5645
+Name shield spiked platinum~
+Short a `#`Sp`Wlatinum `rs`sp`ri`sk`re`sd `sshield`^~
+Desc A jagged, silvery shield is on the floor.~
+Level 31
+ItemType armor~
+Cost 621
+Durability 5
+Asize 400
+Rsize 50
+Values 9 9 9 5 0
+Weight 400
+Material platinum~
+Extra    magic antievil~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 31 -1 damroll 2 0
+Affect modifier -1 31 -1 hp 3 0
+Affect modifier -1 31 -1 damroll 4 0
+Affect modifier -1 31 -1 hitroll 2 0
+End
+
+#5646
+Name girth platinum~
+Short a `#`Sp`Wlatinum `sgirth`^~
+Desc A silvery girth is on the floor.~
+Level 31
+ItemType armor~
+Cost 632
+Durability 5
+Asize 400
+Rsize 50
+Values 9 9 9 3 0
+Weight 400
+Material platinum~
+Extra    magic antievil~
+Wear     take waist~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 31 -1 saves -2 0
+Affect modifier -1 31 -1 saves -4 0
+Affect modifier -1 31 -1 mana 30 0
+Affect modifier -1 31 -1 strength 2 0
+Affect modifier -1 31 -1 memory 2 0
+End
+
+#5647
+Name avenger holy sword~
+Short `#`CH`Sol`Cy `WA`Cv`ce`sn`cg`Ce`Wr`^~
+Desc A glowing silvery sword is hovering here, ready to possess an owner.~
+Level 45
+ItemType weapon~
+Cost 5700
+Durability 5
+Asize 250
+Rsize 50
+Values sword 4 5 slice DI
+Weight 250
+Material steel~
+Extra    magic antievil~
+Wear     take wield~
+AttuneFlags attunable~
+End
+
+#5648
+Name whiskey shot~
+Short a shot of `#`ywhiskey`^~
+Desc A shot of whiskey is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 12
+Durability 5
+Asize 10
+Rsize 50
+Values 1 1 whisky 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#5649
+Name ale quart~
+Short a quart of ale~
+Desc A quart of ale is on the table.~
+Level 1
+ItemType drinkcontainer~
+Cost 10
+Durability 5
+Asize 20
+Rsize 50
+Values 32 32 ale 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#5650
+Name port brew quart~
+Short a quart of port brew~
+Desc A quart of port brew is on the table.~
+Level 1
+ItemType drinkcontainer~
+Cost 18
+Durability 5
+Asize 20
+Rsize 50
+Values 32 32 'dark ale' 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#5651
+Name key citadel~
+Short the `#`Cc`ci`wt`sa`wd`ce`Cl `skey`^~
+Desc A key is on the floor.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silver~
+Wear     take~
+End
+
+#5652
+Name symbol holy~
+Short `#`wa `CH`sol`Cy `WS`Cy`cmb`Co`Wl`^~
+Desc A very shiny symbol is on the floor.~
+Level 60
+ItemType jewelry~
+Cost 1213
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material silver~
+Extra    magic bless antievil antineutral~
+Wear     take neck~
+Affect modifier -1 60 -1 mana 60 0
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 selfdiscipline 2 0
+Affect modifier -1 60 -1 memory 2 0
+Affect modifier -1 60 -1 constitution 2 0
+Affect modifier -1 60 -1 ac -2 0
+Affect affects -1 60 -1 none 0 detect_evil
+Affect objectspell bless 0 -1 none 0 0
+End
+
+#5653
+Name ranseur polearm~
+Short a `#`cr`San`Cs`seu`cr`^~
+Desc A heavy polearm is against the wall here, ready to inflict damage.~
+Level 63
+ItemType weapon~
+Cost 1080
+Durability 5
+Asize 200
+Rsize 50
+Values polearm 4 12 thrust CF
+Weight 90
+Material steel~
+Extra    magic antievil~
+Wear     take wield~
+Affect modifier -1 63 -1 hp 6 0
+Affect modifier -1 63 -1 constitution 2 0
+Affect modifier -1 63 -1 damroll 4 0
+Affect modifier -1 63 -1 hitroll 2 0
+End
+
+#5654
+Name torso dragonscale golden~
+Short a `#`Ygolden `yd`Yragon`ys`Ycale `Wt`Yo`yr`Ys`Wo`^~
+Desc A golden dragonscale torso is on the floor!~
+Level 82
+ItemType armor~
+Cost 1234
+Durability 5
+Asize 200
+Rsize 50
+Values 26 26 26 20 0
+Weight 200
+Material gold~
+Extra    magic antievil~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 hitroll 2 0
+Affect modifier -1 82 -1 strength 2 0
+Affect modifier -1 82 -1 hp 4 0
+Affect modifier -1 82 -1 ac -4 0
+End
+
+#5655
+Name dragonhelm golden~
+Short a `#`Ygolden `yd`Yragon`yh`Yelm`^~
+Desc A golden dragonhelm is on the floor!~
+Level 82
+ItemType armor~
+Cost 1624
+Durability 5
+Asize 100
+Rsize 50
+Values 20 20 20 17 0
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 hp 2 0
+Affect modifier -1 82 -1 strength 4 0
+Affect modifier -1 82 -1 damroll 2 0
+Affect modifier -1 82 -1 mana 40 0
+Affect modifier -1 82 -1 ac -5 0
+End
+
+#5656
+Name leggings golden dragonscale~
+Short some `#`Ygolden `yd`Yragon`ys`Ycale `Wl`Yeg`ygi`Yng`Ws`^~
+Desc Some golden dragonscale leggings are on the floor!~
+Level 82
+ItemType armor~
+Cost 1521
+Durability 5
+Asize 100
+Rsize 50
+Values 20 20 20 15 0
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 ac -4 0
+Affect modifier -1 82 -1 hitroll 3 0
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 strength 2 0
+Affect modifier -1 82 -1 mana 40 0
+End
+
+#5657
+Name boots golden~
+Short some `#`Ygolden `yd`Yragon`ys`Ycale `Wb`Yo`yo`Yt`Ws`^~
+Desc Some golden dragonscale boots are on the floor!~
+Level 82
+ItemType armor~
+Cost 1621
+Durability 5
+Asize 100
+Rsize 50
+Values 16 16 16 13 0
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take feet~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 move 60 0
+Affect modifier -1 82 -1 mana 40 0
+Affect modifier -1 82 -1 ac -2 0
+Affect modifier -1 82 -1 hp 2 0
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 hitroll 2 0
+End
+
+#5658
+Name gauntlets golden~
+Short some `#`Ygolden `yd`Yragon`ys`Ycale `Wga`Yun`yt`Yle`Wts`^~
+Desc Some golden dragonscale gauntlets are on the floor!~
+Level 82
+ItemType armor~
+Cost 1258
+Durability 5
+Asize 100
+Rsize 50
+Values 16 16 16 13 0
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take hands~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 ac -4 0
+Affect modifier -1 82 -1 hp 4 0
+Affect modifier -1 82 -1 mana 40 0
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 saves -2 0
+Affect modifier -1 82 -1 hitroll 2 0
+End
+
+#5659
+Name sleeves golden~
+Short some `#`Ygolden `yd`Yragon`ys`Ycale `Wsl`Ye`ye`Yv`Wes`^~
+Desc Some golden dragonscale sleeves are on the floor!~
+Level 82
+ItemType armor~
+Cost 1641
+Durability 5
+Asize 100
+Rsize 50
+Values 20 20 20 17 0
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take arms~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 ac -3 0
+Affect modifier -1 82 -1 hitroll 4 0
+Affect modifier -1 82 -1 damroll 2 0
+Affect modifier -1 82 -1 constitution 4 0
+Affect modifier -1 82 -1 reasoning 2 0
+End
+
+#5660
+Name shield golden~
+Short some `#`Ygolden `yd`Yragon`ys`Ycale `Ws`Yh`yie`Yl`Wd`^~
+Desc A golden dragonscale shield is on the floor!~
+Level 82
+ItemType armor~
+Cost 1642
+Durability 5
+Asize 100
+Rsize 50
+Values 27 26 26 20 0
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 ac -6 0
+Affect modifier -1 82 -1 hp 4 0
+Affect modifier -1 82 -1 hitroll 4 0
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 strength 4 0
+Affect modifier -1 82 -1 constitution 4 0
+End
+
+#5661
+Name girth golden~
+Short some `#`Ygolden `yd`Yragon`ys`Ycale `Wg`Yi`yr`Yt`Wh`^~
+Desc A golden dragonscale girth is on the floor!~
+Level 82
+ItemType container~
+Cost 1752
+Durability 5
+Asize 100
+Rsize 50
+Values 400 0 0 55 80
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take waist~
+ClassAllowances cleric warrior paladin ranger barbarian bard~
+Affect modifier -1 82 -1 ac -4 0
+Affect modifier -1 82 -1 saves -4 0
+Affect modifier -1 82 -1 hp 2 0
+Affect modifier -1 82 -1 constitution 4 0
+Affect modifier -1 82 -1 damroll 2 0
+Affect modifier -1 82 -1 hitroll 2 0
+End
+
+#5662
+Name claw golden~
+Short the `#`Ygolden `yclaw`^~
+Desc A small golden claw is on the floor~
+Level 82
+ItemType weapon~
+Cost 800
+Durability 5
+Asize 100
+Rsize 50
+Values exotic 12 5 claw A
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger bard~
+Affect modifier -1 82 -1 ac -6 0
+Affect modifier -1 82 -1 hp 4 0
+Affect modifier -1 82 -1 hitroll 4 0
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 strength 2 0
+End
+
+#5663
+Name orb gold dragon sphere pearl~
+Short the `#`YGold `WD`Yr`yag`Yo`Wn `WO`Cr`Wb`^~
+Desc A very large pearl-like sphere is in the center of this room.~
+Level 90
+ItemType staff~
+Cost 1200
+Durability 5
+Asize 300
+Rsize 50
+Values 90 6 6 heal 0
+Weight 90
+Material oldstyle~
+Extra    glow magic antievil antineutral~
+Wear     take hold float~
+Affect modifier -1 90 -1 mana 60 0
+Affect modifier -1 90 -1 hp 4 0
+Affect modifier -1 90 -1 damroll 4 0
+Affect modifier -1 90 -1 memory 2 0
+Affect modifier -1 90 -1 selfdiscipline 2 0
+End
+
+#5664
+Name robe golden~
+Short a `#`Ygo`yld`Yen `Wr`Yob`We`^~
+Desc A golden robe is on the floor.~
+Level 75
+ItemType armor~
+Cost 1523
+Durability 5
+Asize 100
+Rsize 50
+Values 18 18 18 15 0
+Weight 80
+Material gold~
+Extra    glow magic bless antievil nolocate~
+Extra2   nodecay~
+Wear     take about~
+ClassAllowances cleric warrior paladin ranger barbarian bard monk~
+Affect objectspell bless 0 -1 none 0 0
+Affect modifier -1 75 -1 hp 4 0
+Affect modifier -1 75 -1 mana 60 0
+Affect modifier -1 75 -1 constitution 4 0
+Affect modifier -1 75 -1 ac -4 0
+End
+
+#5665
+Name house key~
+Short a house key~
+Desc A house key is on the floor.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#5666
+Name broom~
+Short a `#`ybroom`^~
+Desc A broom is against the wall here.~
+Level 10
+ItemType weapon~
+Cost 760
+Durability 5
+Asize 80
+Rsize 50
+Values mace 2 2 beating 0
+Weight 80
+Material oldstyle~
+Wear     take wield~
+End
+
+#5667
+Name chest~
+Short a chest~
+Desc A chest is on the floor here.~
+Level 1
+ItemType container~
+Cost 100
+Durability 5
+Asize 100
+Rsize 50
+Values 100 0 0 10 100
+Weight 100
+Material oldstyle~
+Wear     take~
+End
+
+#5668
+Name claw golden~
+Short the `#`YGo`yld`Yen `WC`Yla`Ww`^~
+Desc A huge golden claw is here on the floor.~
+Level 64
+ItemType weapon~
+Cost 1500
+Durability 5
+Asize 200
+Rsize 50
+Values exotic 7 5 claw D
+Weight 100
+Material gold~
+Extra    glow magic bless antievil~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian bard monk~
+Affect modifier -1 64 -1 damroll 4 0
+End
+
+#5669
+Name golden rod~
+Short a `#`Ygolden`^ rod~
+Desc A long golden rod is on the floor here.~
+Level 65
+ItemType weapon~
+Cost 1560
+Durability 5
+Asize 100
+Rsize 50
+Values exotic 4 5 smash BL
+Weight 100
+Material gold~
+Extra    magic antievil~
+Wear     take wield~
+End
+
+#0
+
+
+
+#ROOMS
+#5600
+Name Granny's Still Room~
+Desc You are in Granny Jenkins' still room.  The smell of whiskey is heady, and
+the bottles of it on the floor make your mouth water and your mind swirl.  You
+also see a very large still.  So THIS is why there are so many grain fields!
+The exit is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5616
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see the storage shed.
+~
+End
+
+
+#5601
+Name The Big Intersection~
+Desc You are in the big intersection between Raff Way and Impy Way.  Crowds 
+of people walk past you as they go on their daily tasks.  Raff Way continues
+east and west, and Impy Way runs north and south.
+~
+Sector city~
+Exit north 5625
+EDesc Impy Way continues north.
+~
+Exit east 5666
+EDesc Raff Way continues east.
+~
+Exit south 5602
+EDesc Impy Way continues south.
+~
+Exit west 58104
+End
+
+
+#5602
+Name Impy Way~
+Desc You are on Impy Way.  You can see a leather shop east and a blacksmith
+west.  To the north you see a big intersection, and Impy Way continues south.
+~
+Sector city~
+Exit north 5601
+EDesc You see the big intersection.
+~
+Exit east 5604
+EDesc You see the leather shop.
+~
+Exit south 5605
+EDesc Impy Way continues south.
+~
+Exit west 5603
+EDesc You see the blacksmith.
+~
+End
+
+
+#5603
+Name The Blacksmith~
+Desc You are in a black and smelly room.  Pieces of metal are strewn all over
+the floor, and a wave of heat from a big furnace hits you.  An anvil sits on 
+one side of the room, and on the other side is a workbench.  The exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5602
+EDesc You see Impy Way.
+~
+End
+
+
+#5604
+Name The Leather Shop~
+Desc You are in a brown and smelly room.  Pieces of leather are strewn all over
+the floor.  The smell of burnt hide assaults your nose.  You can tell by the
+looks that the tanning is done VERY CLOSE to here!   A table is near the
+entrance.  The exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5602
+EDesc You see Impy Way.
+~
+End
+
+
+#5605
+Name Impy Way~
+Desc You are on Impy Way.  To the east is a meat store, and to the west is a
+pawn shop.  Impy Way continues north and south.  People are rushing around you
+to go to these stores.
+~
+Sector city~
+Exit north 5602
+EDesc Impy Way continues North.
+~
+Exit east 5607
+EDesc You see the Meat Store.
+~
+Exit south 5608
+EDesc Impy Way continues south.
+~
+Exit west 5606
+EDesc You see the Pawn Shop.
+~
+End
+
+
+#5606
+Name The Pawn Shop~
+Desc You are in a little shop filled with a lot of knick knacks and semi-
+valuable goods.  There is a display case full of little treasures that you are
+sure that you or any other little kid would like to touch!  The exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5605
+EDesc You see Impy Way.
+~
+End
+
+
+#5607
+Name The Meat Store~
+Desc You are in a meat store.  Hanging on hooks are meats of many kinds of
+animals.  In the background, you can hear the sound of blade against flesh.
+It smells like meat here (which is not a good smell).  The exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5605
+EDesc You see Impy Way.
+~
+End
+
+
+#5608
+Name Impy Way~
+Desc You are on Impy Way.  To the east is Farmer's Market, and to the west is
+Nyles' House of Ale.  Impy Way runs north and ends south of here.  You can hear
+the sound of housewives gossiping at the market.
+~
+Sector city~
+Exit north 5605
+EDesc Impy Way continues north.
+~
+Exit east 5610
+EDesc You see the Farmer's Market.
+~
+Exit south 5611
+EDesc You see the end of Impy Way.
+~
+Exit west 5609
+EDesc You see Nyles' House of Ale.
+~
+End
+
+
+#5609
+Name Nyles' House of Ale~
+Desc This is a very busy bar, with everyone holding homemade bottles of
+ale.  You see even the more gentile persons here, laughing along with
+Nyles, who offers you a quart of ale too.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5608
+EDesc You see Impy Way.
+~
+End
+
+
+#5610
+Name Farmer's Market~
+Desc You see many carts filled with fruits and vegetables.  Many farmers are
+all trying to sell you their produce, each saying their's is better.  The exit
+is west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5608
+EDesc You see Impy Way.
+~
+End
+
+
+#5611
+Name The End of Impy Way~
+Desc You are at the end of Impy and of the city part of Ofcol.  To the east is
+a dirt road leading toward the farm animals.  West from here are fields.  Impy
+Way continues north.
+~
+Sector city~
+Exit north 5608
+EDesc Impy Way continues north.
+~
+Exit east 5668
+EDesc You see the dirt road.
+~
+Exit west 5612
+EDesc You see the fields.
+~
+End
+
+
+#5612
+Name Fields~
+Desc You are in a corn field.  You can't see far, since the corn stalks are
+taller than you are.  You remember that the end of Impy Way is east of here, 
+and you think you see a building to the north.  The field continues south and 
+west.
+~
+Sector field~
+Exit north 5616
+EDesc You think you see a building north of here.
+~
+Exit east 5611
+EDesc You remember that the end of Impy Way is east.
+~
+Exit south 5613
+EDesc You can make a path to the fields south.
+~
+Exit west 5615
+EDesc You can make a path to the fields west.
+~
+End
+
+
+#5613
+Name Fields~
+Desc You are among fruit trees in a field.  You see many apple and orange 
+trees.  You can make out the corn fields north and some vegetable patches west.
+The sight of the fruit makes your mouth water.
+~
+Sector field~
+Exit north 5612
+EDesc You see the corn fields.
+~
+Exit west 5614
+EDesc You see the vegetable fields.
+~
+End
+
+
+#5614
+Name Fields~
+Desc You are among the vegetable fields.  You see many cabbage and lettuce
+patches, along with tomato bushes and potato plants.  To the east are some
+fruit trees, and north are some wheat fields.
+~
+Sector field~
+Exit north 5615
+EDesc You see the wheat fields.
+~
+Exit east 5613
+EDesc You see the fruit trees.
+~
+End
+
+
+#5615
+Name Fields~
+Desc You are among the wheat fields.  The gentle caress of the wheat and the
+cool shadow from the tall stalks and scarecrow lulls you to sleep and dream
+of a little girl and little dog from a faraway place.  To the east are the corn
+stalks, and south of you are the vegetable patches.
+~
+Sector field~
+Exit east 5612
+EDesc You see the corn fields.
+~
+Exit south 5614
+EDesc You see the vegetable patches.
+~
+End
+
+
+#5616
+Name The Shed~
+Desc You are in the storage shed.  Bales of wheat, corn and hay are piled
+against the wall, and some vegetables are in carts.  You see a small door
+to the west.  The main exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5612
+EDesc You see the corn fields.
+~
+Exit west 5600
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see the door.
+~
+End
+
+
+#5617
+Name Slaughterhouse~
+Desc You are in the slaughterhouse, where all the animals are slaughtered so
+that they can be sold or their skins be tanned.  The scream of dying animals
+makes your stomach churn.  The exit is to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5668
+EDesc You see the dirt road.
+~
+End
+
+
+#5618
+Name Dirt Road~
+Desc You are on a dirt road.  To the east is a barn, and you see a big chicken
+coop south of you.  The dirt road continues north and west.
+~
+Sector field~
+Exit north 5668
+EDesc You see the dirt road.
+~
+Exit east 5620
+EDesc You see the barn.
+~
+Exit south 5619
+EFlags door closed~
+EKeyvnum -1
+EKeywords coop~
+EDesc You see the chicken coop.
+~
+Exit west 5621
+EDesc You see the dirt road.
+~
+End
+
+
+#5619
+Name Chicken Coop~
+Desc You are in the chicken coop.  The smell of chickens and chicken droppings
+makes you gasp.  The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5618
+EFlags door closed~
+EKeyvnum -1
+EDesc You can sense the fresh air.
+~
+End
+
+
+#5620
+Name Barn~
+Desc You are in a barn.  There are some cows here, munching on mounds of hay.
+Milk is milked and bottled here.  You see the exit west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5618
+EDesc You see the dirt road.
+~
+End
+
+
+#5621
+Name Dirt Road~
+Desc You are on a dirt road.  To the north and south, you see some grass 
+fields.  There is a pigsty west, and the dirt road continues east.
+~
+Sector field~
+Exit north 5622
+EDesc You see some grass fields.
+~
+Exit east 5618
+EDesc You see the dirt road.
+~
+Exit south 5623
+EDesc You see some grass fields.
+~
+Exit west 5624
+EDesc You see the pigsty.
+~
+End
+
+
+#5622
+Name Grass Field~
+Desc You are in a grass field.  Fences block the way north, east, and west.
+The dirt road is to the south.
+~
+Sector field~
+Exit south 5621
+EDesc You see the dirt road.
+~
+End
+
+
+#5623
+Name Grass Field~
+Desc You are in a grass field.  Fences block the way south, east, and west.
+The dirt road is to the north.
+~
+Sector field~
+Exit north 5621
+EDesc You see the dirt road.
+~
+End
+
+
+#5624
+Name Pig Sty~
+Desc For some reason, you are in a pig sty.  You wonder why you are standing in
+muck.  To realize your senses and notice the dirt road is to the east.
+~
+Sector field~
+Exit east 5621
+EDesc You see the dry dirt road.
+~
+End
+
+
+#5625
+Name Impy Way~
+Desc You are on Impy Way.  East and west of you are big houses.  Impy Way
+continues north and reaches a big intersection south.  Children are running to
+from home to home.
+~
+Sector city~
+Exit north 5632
+EDesc Impy Way continues north.
+~
+Exit east 5626
+EFlags door closed locked~
+EKeyvnum 5665
+EKeywords door~
+EDesc You see a big house.
+~
+Exit south 5601
+EDesc You see a big intersection.
+~
+Exit west 5629
+EFlags door closed locked~
+EKeyvnum 5665
+EKeywords door~
+EDesc You see a big house.
+~
+End
+
+
+#5626
+Name Big House~
+Desc You are in a big house.  Evidently, the owners of this house are richer
+than the average citizen, since there is more than one room to this house.  A
+door leads to the kitchen east, and a bedroom is upstairs.  The exit is to the
+west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5628
+EDesc You see the kitchen.
+~
+Exit west 5625
+EFlags door closed locked~
+EKeyvnum 5665
+EKeywords door~
+EDesc You see Impy Way.
+~
+Exit up 5627
+EDesc You see the bedroom.
+~
+End
+
+
+#5627
+Name Bedroom~
+Desc You are in the bedroom.  There isn't much of interest except for a bed and
+a closet.  The stairs lead back down.
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 5626
+EDesc You see the main room of the house.
+~
+End
+
+
+#5628
+Name Kitchen~
+Desc You are in a kitchen.  There isn't much of interest here.  The main room
+is west of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5626
+EDesc You see the main room of the house.
+~
+End
+
+
+#5629
+Name Big House~
+Desc You are in a big house.  Evidently, the owners of this house are richer
+than the average citizen, since there is more than one room to this house.  A
+door leads to the kitchen west, and a bedroom is upstairs.  The exit is to the
+east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5625
+EFlags door closed locked~
+EKeyvnum 5665
+EKeywords door~
+EDesc You see Impy Way.
+~
+Exit west 5631
+EDesc You see the kitchen.
+~
+Exit up 5630
+EDesc You see the bedroom.
+~
+End
+
+
+#5630
+Name Bedroom~
+Desc You are in the bedroom.  There isn't much of interest except for a bed and
+a closet.  The stairs lead back down.
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 5629
+EDesc You see the main room of the house.
+~
+End
+
+
+#5631
+Name Kitchen~
+Desc You are in a kitchen.  There isn't much of interest here.  The main room
+is east of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5629
+EDesc You see the main room of the house.
+~
+End
+
+
+#5632
+Name Impy Way~
+Desc You are on Impy Way.  Houses are to the east and west of here.  Impy Way
+continues north and south.  There are many people walking along the streets.
+~
+Sector city~
+Exit north 5637
+EDesc Impy Way continues north.
+~
+Exit east 5633
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see a house.
+~
+Exit south 5625
+EDesc Impy Way continues south.
+~
+Exit west 5635
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see a house.
+~
+End
+
+
+#5633
+Name House~
+Desc You are in a house.  The living room and kitchen are all bundled into
+this room.  There is a bedroom south of here.  The exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5634
+EDesc You see the bedroom.
+~
+Exit west 5632
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see Impy Way.
+~
+End
+
+
+#5634
+Name Bedroom~
+Desc You are in a bedroom.  There isn't much of interest here except for a bed
+and a dresser.  The main room of the house is north of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5633
+EDesc You see the main room of the house.
+~
+End
+
+
+#5635
+Name House~
+Desc You are in a house.  The living room and kitchen are all bundled into
+this room.  There is a bedroom south of here.  The exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5632
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see Impy Way.
+~
+Exit south 5636
+EDesc You see the bedroom.
+~
+End
+
+
+#5636
+Name Bedroom~
+Desc You are in a bedroom.  There isn't much of interest here except for a bed
+and a dresser.  The main room of the house is north of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5635
+EDesc You see the main room of the house.
+~
+End
+
+
+#5637
+Name Impy Way~
+Desc You are on Impy Way.  Houses are to the east and west of here.  Impy Way
+continues south.  To the north is a big intersection.  There are many people
+walking along the streets.
+~
+Sector city~
+Exit north 5642
+EDesc You see a big intersection.
+~
+Exit east 5638
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see a house.
+~
+Exit south 5632
+EDesc Impy Way continues south.
+~
+Exit west 5640
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see a house.
+~
+End
+
+
+#5638
+Name House~
+Desc You are in a house.  The living room and kitchen are all bundled into
+this room.  There is a bedroom south of here.  The exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5639
+EDesc You see the bedroom.
+~
+Exit west 5637
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see Impy Way.
+~
+End
+
+
+#5639
+Name Bedroom~
+Desc You are in a bedroom.  There isn't much of interest here except for a bed
+and a dresser.  The main room of the house is north of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5638
+EDesc You see the main room of the house.
+~
+End
+
+
+#5640
+Name House~
+Desc You are in a house.  The living room and kitchen are all bundled into
+this room.  There is a bedroom south of here.  The exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5637
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You see Impy Way.
+~
+Exit south 5641
+EDesc You see the bedroom.
+~
+End
+
+
+#5641
+Name Bedroom~
+Desc You are in a bedroom.  There isn't much of interest here except for a bed
+and a dresser.  The main room of the house is north of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5640
+EDesc You see the main room of the house.
+~
+End
+
+
+#5642
+Name The Big Intersection~
+Desc You are on the intersection of Impy Way and Swiftest Way.  To the north of
+you is a big house.  Swiftest Way runs east and west, and Impy way continues
+south.  There are quite a few people on this intersection.
+~
+Sector city~
+Exit north 5643
+EFlags door closed~
+EKeyvnum 5665
+EKeywords door~
+EDesc You see the big house.
+~
+Exit east 5646
+EDesc Swiftest Way continues east.
+~
+Exit south 5637
+EDesc Impy Way continues south.
+~
+Exit west 5649
+EDesc Swiftest Way continues west.
+~
+End
+
+
+#5643
+Name Big House~
+Desc You are in a big house.  Evidently, the owners of this house are richer
+than the average citizen, since there is more than one room to this house.  A
+door leads to the kitchen north, and a bedroom is upstairs.  The exit is to 
+the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5645
+EDesc You see the kitchen.
+~
+Exit south 5642
+EFlags door closed~
+EKeyvnum 5665
+EKeywords door~
+EDesc You see Impy Way.
+~
+Exit up 5644
+EDesc You see the bedroom.
+~
+End
+
+
+#5644
+Name Bedroom~
+Desc You are in the bedroom.  There isn't much of interest except for a bed 
+and a closet.  The stairs lead back down.
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 5643
+EDesc You see the main room of the house.
+~
+End
+
+
+#5645
+Name Kitchen~
+Desc You are in a kitchen.  There isn't much of interest here.  The main room
+is east of here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5643
+EDesc You see the main room of the house.
+~
+End
+
+
+#5646
+Name Swiftest Way~
+Desc You are on Swiftest Way, the commoner's residential area.  Small houses
+are north and south of you.  Swiftest Way continues east, and west is a big
+intersection.
+~
+Sector city~
+Exit north 5652
+EDesc You see a small house.
+~
+Exit east 5647
+EDesc Swiftest Way continues east.
+~
+Exit south 5653
+EDesc You see a small house.
+~
+Exit west 5642
+EDesc You see a big intersection.
+~
+End
+
+
+#5647
+Name Swiftest Way~
+Desc You are on Swiftest Way, the commoner's residential area.  Small houses
+are north and south of you.  Swiftest Way continues east and west.
+~
+Sector city~
+Exit north 5654
+EDesc You see a small house.
+~
+Exit east 5648
+EDesc You see the end of Swiftest Way.
+~
+Exit south 5655
+EDesc You see a small house.
+~
+Exit west 5646
+EDesc Swiftest Way continues west.
+~
+End
+
+
+#5648
+Name End of Swiftest Way~
+Desc You are on Swiftest Way, the commoner's residential area.  Small houses
+are north, south, and east of you.  Swiftest Way continues west.
+~
+Sector city~
+Exit north 5656
+EDesc You see a small house.
+~
+Exit east 5657
+EDesc You see a small house.
+~
+Exit south 5658
+EDesc You see a small house.
+~
+Exit west 5647
+EDesc Swiftest Way continues west.
+~
+End
+
+
+#5649
+Name Swiftest Way~
+Desc You are on Swiftest Way, the commoner's residential area.  Small houses
+are north and south of you.  Swiftest Way continues west, and to the east you
+see a big intersection.
+~
+Sector city~
+Exit north 5659
+EDesc You see a small house.
+~
+Exit east 5642
+EDesc You see the big intersection.
+~
+Exit south 5660
+EDesc You see a small house.
+~
+Exit west 5650
+EDesc Swiftest Way continues west.
+~
+End
+
+
+#5650
+Name Swiftest Way~
+Desc You are on Swiftest Way, the commoner's residential area.  Small houses
+are north and south of you.  Swiftest Way continues east and west.
+~
+Sector city~
+Exit north 5661
+EDesc You see a small house.
+~
+Exit east 5649
+EDesc Swiftest Way continues east.
+~
+Exit south 5662
+EDesc You see a small house.
+~
+Exit west 5651
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5651
+Name The end of Swiftest Way~
+Desc You are on Swiftest Way, the commoner's residential area.  Small houses
+are north, south, and west of you.  Swiftest Way continues east.
+~
+Sector city~
+Exit north 5663
+EDesc You see a small house.
+~
+Exit east 5650
+EDesc Swiftest Way continues east.
+~
+Exit south 5664
+EDesc You see a small house.
+~
+Exit west 5665
+EDesc You see a small house.
+~
+End
+
+
+#5652
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5646
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5653
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5646
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5654
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5647
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5655
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5647
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5656
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5648
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5657
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5648
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5658
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5648
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5659
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5649
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5660
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5649
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5661
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5650
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5662
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5650
+EDesc You see Swiftest Way.
+~
+End
+
+
+#5663
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5651
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5664
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5651
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5665
+Name Small House~
+Desc You are in a small house, owned by a commoner of Ofcol.  There isn't much
+of value here to you, but you'd bet that the owner really cherishes the pile
+of stuff here.  The exit is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5651
+EDesc You see the end of Swiftest Way.
+~
+End
+
+
+#5666
+Name Raff Way~
+Desc You are on Raff Way.  To the west, you can see a big intersection.  To 
+the east, you see Raff Way continue toward the Golden Citadel.  There are 
+beautiful flowers growing along the road here, making this more of a garden
+than a road.
+~
+Sector city~
+Exit east 5667
+EDesc Raff Way continues east.
+~
+Exit west 5601
+EDesc You see the big intersection.
+~
+End
+
+
+#5667
+Name Raff Way~
+Desc You are on Raff Way.  Raff Way continues west to the city of Ofcol.  To 
+the east, you see Raff Way continue toward the Golden Citadel.  There are 
+beautiful flowers growing along the road here, making this more of a garden
+than a road.
+~
+Sector city~
+Exit east 5699
+EDesc You see the entrance of the Golden Citadel.
+~
+Exit west 5666
+EDesc Raff Way continues west.
+~
+End
+
+
+#5668
+Name Dirt Road~
+Desc You are on a dirt road.  To the east is a large building with a bad smell
+emanating from it.  To the west is the end of Impy Way, and this road continues
+south.
+~
+Sector field~
+Exit east 5617
+EDesc You see the large building with the bad smell.
+~
+Exit south 5618
+EDesc The dirt road continues south.
+~
+Exit west 5611
+EDesc You see the end of Impy Way.
+~
+End
+
+
+#5669
+Name The Temple of Ofcol~
+Desc You are in the Temple of Ofcol.  Golden tiles cover the floor, and solid
+gold columns reach the twelve foot ceiling of this vast chamber.  Servants in
+golden livery wander this place, making even the raggiest messenger boy look
+richer than you are.  Exits lead to the anterooms in the cardinal directions.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5670
+Exit east 5672
+Exit south 5673
+Exit west 5671
+End
+
+
+#5670
+Name The Anteroom to the Temple of Ofcol~
+Desc You are in an anteroom to the Temple of Ofcol.  Gold tiles cover the
+floor, and servants in golden livery pass you by peaceably.  The temple is to
+the south, and to the north is a hallway.  A stairways leads up.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5675
+Exit south 5669
+Exit up 5686
+End
+
+
+#5671
+Name The Anteroom to the Temple of Ofcol~
+Desc You are in an anteroom to the Temple of Ofcol.  Gold tiles cover the
+floor, and servants in golden livery pass you by peaceably.  The temple is to
+the east, and to the west is a hallway.  A stairways leads up.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5669
+Exit west 5679
+Exit up 5687
+End
+
+
+#5672
+Name The Anteroom to the Temple of Ofcol~
+Desc You are in an anteroom to the Temple of Ofcol.  Gold tiles cover the
+floor, and servants in golden livery pass you by peaceably.  The temple is to
+the west, and to the east is a hallway.  A stairways leads up.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5680
+Exit west 5669
+Exit up 5689
+End
+
+
+#5673
+Name The Anteroom to the Temple of Ofcol~
+Desc You are in an anteroom to the Temple of Ofcol.  Gold tiles cover the
+floor, and servants in golden livery pass you by peaceably.  The temple is to
+the north, and to the south is a hallway.  A stairways leads up.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5669
+Exit south 5684
+Exit up 5690
+End
+
+
+#5674
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead east and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5675
+Exit south 5677
+End
+
+
+#5675
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead east, west, and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5676
+Exit south 5670
+Exit west 5674
+End
+
+
+#5676
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead west and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5678
+Exit west 5675
+End
+
+
+#5677
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5674
+Exit south 5679
+End
+
+
+#5678
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5676
+Exit south 5680
+End
+
+
+#5679
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead to the cardinal directions, with the east leading
+toward the Temple of Ofcol, and west leading toward the City of Ofcol.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5677
+Exit east 5671
+Exit south 5681
+Exit west 5698
+EFlags door~
+End
+
+
+#5680
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead west, north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5678
+Exit south 5682
+Exit west 5672
+End
+
+
+#5681
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5679
+Exit south 5683
+End
+
+
+#5682
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5680
+Exit south 5685
+End
+
+
+#5683
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead north and east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5681
+Exit east 5684
+End
+
+
+#5684
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead east, west, and north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5673
+Exit east 5685
+Exit west 5683
+End
+
+
+#5685
+Name A Hallway of the Golden Citadel~
+Desc You are in a hallway of the Golden Citadel.  Gold tiles cover the floors,
+and rich golden tapestries drape the walls.  Servants in golden livery pass you
+by peaceably.  Exits lead west and north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5682
+Exit west 5684
+End
+
+
+#5686
+Name An Upper Chamber of the Golden Citadel~
+Desc You are in one of the upper chambers of the Golden Citadel.  The decora-
+tions of this place surpass even those of the first floor.  Gold tiles etched
+with platinum cover the floor, walls and the ceiling.  The lights from numerous
+torches reflect from these shimmering planes, giving the illusion that you are
+standing in a gem.  Stairways lead up and down, and the hall leads south. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5688
+Exit up 5691
+Exit down 5670
+End
+
+
+#5687
+Name An Upper Chamber of the Golden Citadel~
+Desc You are in one of the upper chambers of the Golden Citadel.  The decora-
+tions of this place surpass even those of the first floor.  Gold tiles etched
+with platinum cover the floor, walls and the ceiling.  The lights from numerous
+torches reflect from these shimmering planes, giving the illusion that you are
+standing in a gem.  Stairways lead up and down, and the hall leads east. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5688
+Exit up 5692
+Exit down 5671
+End
+
+
+#5688
+Name The Hall of the DragonLords~
+Desc You are in a vast hall, filled with the commanders of the Golden Citadel.
+Golden tiles etched with platinum cover the floors, and weapons of all types
+are mounted on the walls of this meeting hall.  Surrounding a solid gold table
+are four sons of the Keeper of the Golden Citadel.  They smile at you and ask 
+you to join them in lunch.  Exits lead to the cardinal directions. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5686
+Exit east 5689
+Exit south 5690
+Exit west 5687
+End
+
+
+#5689
+Name An Upper Chamber of the Golden Citadel~
+Desc You are in one of the upper chambers of the Golden Citadel.  The decora-
+tions of this place surpass even those of the first floor.  Gold tiles etched
+with platinum cover the floor, walls and the ceiling.  The lights from numerous
+torches reflect from these shimmering planes, giving the illusion that you are
+standing in a gem.  Stairways lead up and down, and the hall leads west. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5688
+Exit up 5694
+Exit down 5672
+End
+
+
+#5690
+Name An Upper Chamber of the Golden Citadel~
+Desc You are in one of the upper chambers of the Golden Citadel.  The decora-
+tions of this place surpass even those of the first floor.  Gold tiles etched
+with platinum cover the floor, walls and the ceiling.  The lights from numerous
+torches reflect from these shimmering planes, giving the illusion that you are
+standing in a gem.  Stairways lead up and down, and the hall leads north. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5688
+Exit up 5695
+Exit down 5673
+End
+
+
+#5691
+Name A Top Chamber of the Golden Citadel~
+Desc You are in one of the top chambers of the Golden Citadel.  The decorations
+of this room looks like a dragon's hoard.  The whole room is carved out of pure
+gold, and gems of all types glitter from the walls, ceiling, even the floor.
+It is obvious that this room was not meant for you to intrude upon.  A stair-
+case leads back down, and a doorway leads south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5693
+Exit down 5686
+End
+
+
+#5692
+Name A Top Chamber of the Golden Citadel~
+Desc You are in one of the top chambers of the Golden Citadel.  The decorations
+of this room looks like a dragon's hoard.  The whole room is carved out of pure
+gold, and gems of all types glitter from the walls, ceiling, even the floor.
+It is obvious that this room was not meant for you to intrude upon.  A stair-
+case leads back down, and a doorway leads east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5693
+Exit down 5687
+End
+
+
+#5693
+Name The Dragon Chamber~
+Desc You are in a vast chamber carved from gold and platinum.  Gems the size of
+a man's fist protrude from the walls, ceiling, and the floor, making your step
+painful.  A vast open sky-light lets fresh air come in from the top.  In the
+center of this chamber, you see a great wealth of coins, and on top of that
+pile of coins, you see a golden dragon squinting at you.  Exits lead to the
+cardinal directions to the anterooms.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5691
+Exit east 5694
+Exit south 5695
+Exit west 5692
+Exit up 5696
+End
+
+
+#5694
+Name A Top Chamber of the Golden Citadel~
+Desc You are in one of the top chambers of the Golden Citadel.  The decorations
+of this room looks like a dragon's hoard.  The whole room is carved out of pure
+gold, and gems of all types glitter from the walls, ceiling, even the floor.
+It is obvious that this room was not meant for you to intrude upon.  A stair-
+case leads back down, and a doorway leads west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5693
+Exit down 5689
+End
+
+
+#5695
+Name A Top Chamber of the Golden Citadel~
+Desc You are in one of the top chambers of the Golden Citadel.  The decorations
+of this room looks like a dragon's hoard.  The whole room is carved out of pure
+gold, and gems of all types glitter from the walls, ceiling, even the floor.
+It is obvious that this room was not meant for you to intrude upon.  A stair-
+case leads back down, and a doorway leads north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5693
+Exit down 5690
+End
+
+
+#5696
+Name Above the Dragon Chamber~
+Desc You are above the Dragon Chamber.  You curiously note that this shaft that
+connects the chamber to the sky is wide enough that even a dragon can fit
+through.  This shaft leads up and down.
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 5697
+Exit down 5693
+End
+
+
+#5697
+Name In the Shaft from the Dragon Chamber~
+Desc You are in the shaft leading from the Dragon Chamber.  Below you lies the
+Dragon Chamber of the Golden Citadel.  Above you, you see the sky, but 
+currently, the way out is sealed by a layer of diamond that looks impenetrable.
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 5696
+End
+
+
+#5698
+Name Inside the Entrance to the Golden Citadel~
+Desc You are inside the entrance to the Golden Citadel.  Rich golden tapestries
+line the walls, and golden tiles cover the floors.  The exit to this citadel is
+to the west, while the citadel itself is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5679
+EFlags door~
+Exit west 5699
+EFlags door closed locked~
+EKeyvnum 5651
+EKeywords gate~
+End
+
+
+#5699
+Name Outside the Entrance to the Golden Citadel~
+Desc You are outside the entrance to the Golden Citadel.  A great gate is to
+to the east, marking the entranceway into the citadel.  The road also leads
+back west to Raff Way.
+~
+Sector field~
+Exit east 5698
+EFlags door closed locked~
+EKeyvnum 5651
+Exit west 5667
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 5600 spec_guard
+M 5601 spec_cast_cleric
+M 5602 spec_cast_cleric
+M 5603 spec_cast_mage
+M 5621 spec_janitor
+M 5623 spec_guard
+M 5625 spec_nasty
+M 5626 spec_nasty
+M 5628 spec_cast_adept
+M 5629 spec_guard
+M 5630 spec_breath_any
+M 5631 spec_breath_any
+M 5632 spec_cast_mage
+M 5633 spec_breath_frost
+M 5634 spec_guard
+S
+
+
+
+#RESETS2
+M 0 5609 1 5600 1
+O 0 5649 99 5600
+M 0 5600 8 5601 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5624 99 feet~
+M 0 5601 1 5601 1
+E 0 5620 99 lfinger~
+E 0 5639 99 torso~
+E 0 5640 99 head~
+E 0 5641 99 legs~
+E 0 5642 99 feet~
+E 0 5643 99 hands~
+E 0 5644 99 arms~
+E 0 5645 99 shield~
+E 0 5646 99 waist~
+E 0 5647 99 wielded~
+M 0 5617 3 5601 1
+M 0 5604 1 5603 1
+G 0 5600 99
+G 0 5601 99
+G 0 5615 99
+G 0 5667 99
+M 0 5600 8 5604 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5623 99 legs~
+M 0 5605 1 5604 1
+G 0 5616 99
+G 0 5617 99
+G 0 5618 99
+G 0 5619 99
+M 0 5606 1 5606 1
+G 0 5606 99
+G 0 5607 99
+G 0 5608 99
+M 0 5607 1 5607 1
+G 0 5602 99
+G 0 5603 99
+G 0 5604 99
+G 0 5605 99
+M 0 5600 8 5608 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5622 99 head~
+M 0 5622 1 5609 1
+G 0 5648 99
+G 0 5649 99
+G 0 5650 99
+M 0 5624 1 5609 1
+M 0 5608 1 5610 1
+G 0 5609 99
+G 0 5610 99
+G 0 5611 99
+G 0 5612 99
+G 0 5613 99
+M 0 5618 3 5611 1
+M 0 5610 1 5617 1
+E 0 5601 99 wielded~
+M 0 5612 5 5619 4
+M 0 5611 1 5620 1
+E 0 5615 99 wielded~
+O 0 5614 99 5620
+O 0 5611 99 5620
+M 0 5614 2 5620 2
+M 0 5615 4 5622 4
+M 0 5615 4 5622 4
+M 0 5615 4 5622 4
+M 0 5615 4 5622 4
+M 0 5613 3 5623 3
+M 0 5613 3 5623 3
+M 0 5613 3 5623 3
+M 0 5616 4 5624 4
+M 0 5616 4 5624 4
+M 0 5616 4 5624 4
+M 0 5616 4 5624 4
+M 0 5621 3 5627 1
+G 0 5665 99
+E 0 5666 99 wielded~
+M 0 5621 3 5629 1
+G 0 5665 99
+E 0 5666 99 wielded~
+M 0 5620 2 5635 1
+M 0 5600 8 5637 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5629 99 lwrist~
+M 0 5618 3 5637 1
+M 0 5600 8 5642 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5626 99 arms~
+M 0 5621 3 5643 1
+E 0 5666 99 wielded~
+M 0 5600 8 5647 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5627 99 shield~
+M 0 5617 3 5648 1
+M 0 5600 8 5650 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5625 99 hands~
+M 0 5617 3 5650 1
+M 0 5620 2 5652 1
+M 0 5619 2 5655 1
+M 0 5619 2 5661 1
+M 0 5618 3 5666 1
+M 0 5600 8 5667 1
+E 0 5620 99 lfinger~
+E 0 5621 99 torso~
+E 0 5630 99 wielded~
+E 0 5628 99 waist~
+M 0 5602 1 5669 1
+E 0 5620 99 lfinger~
+E 0 5631 99 torso~
+E 0 5653 99 wielded~
+E 0 5632 99 head~
+E 0 5633 99 legs~
+E 0 5634 99 feet~
+E 0 5635 99 hands~
+M 0 5628 1 5669 1
+E 0 5620 99 lfinger~
+E 0 5664 99 about~
+E 0 5652 99 neck1~
+M 0 5625 2 5673 1
+M 0 5625 2 5674 1
+M 0 5633 3 5676 1
+E 0 5620 99 lfinger~
+E 0 5654 99 torso~
+E 0 5660 99 shield~
+E 0 5662 99 wielded~
+M 0 5627 1 5678 1
+M 0 5633 3 5681 1
+E 0 5620 99 lfinger~
+E 0 5654 99 torso~
+E 0 5660 99 shield~
+E 0 5662 99 wielded~
+M 0 5626 2 5682 1
+M 0 5626 2 5683 1
+M 0 5629 1 5688 1
+E 0 5664 99 about~
+M 0 5630 3 5688 3
+E 0 5620 99 lfinger~
+E 0 5654 99 torso~
+E 0 5660 99 shield~
+E 0 5669 99 wielded~
+E 0 5656 99 head~
+E 0 5657 99 legs~
+M 0 5630 3 5688 3
+E 0 5620 99 lfinger~
+E 0 5654 99 torso~
+E 0 5660 99 shield~
+E 0 5669 99 wielded~
+E 0 5657 99 feet~
+E 0 5658 99 hands~
+M 0 5630 3 5688 3
+E 0 5620 99 lfinger~
+E 0 5654 99 torso~
+E 0 5660 99 shield~
+E 0 5669 99 wielded~
+E 0 5659 99 arms~
+E 0 5661 99 waist~
+M 0 5633 3 5690 1
+E 0 5620 99 lfinger~
+E 0 5654 99 torso~
+E 0 5660 99 shield~
+E 0 5662 99 wielded~
+M 0 5631 1 5693 1
+E 0 5620 99 lfinger~
+E 0 5668 99 wielded~
+E 0 5663 99 hold~
+M 0 5632 2 5693 2
+E 0 5620 99 lfinger~
+E 0 5664 99 about~
+M 0 5632 2 5693 2
+E 0 5620 99 lfinger~
+E 0 5664 99 about~
+M 0 5634 3 5698 3
+E 0 5620 99 lfinger~
+E 0 5625 -1 hands~
+E 0 5629 -1 lwrist~
+E 0 5622 -1 head~
+E 0 5630 99 wielded~
+E 0 5627 99 shield~
+G 0 5651 -1
+M 0 5603 1 5699 1
+E 0 5620 99 lfinger~
+E 0 5631 99 torso~
+E 0 5653 99 wielded~
+E 0 5632 99 head~
+E 0 5636 99 arms~
+E 0 5637 99 shield~
+E 0 5638 99 waist~
+M 0 5623 3 5699 3
+E 0 5620 99 lfinger~
+E 0 5630 99 wielded~
+G 0 5651 99
+M 0 5623 3 5699 3
+E 0 5620 99 lfinger~
+E 0 5630 99 wielded~
+M 0 5623 3 5699 3
+E 0 5620 99 lfinger~
+E 0 5630 99 wielded~
+S
+
+
+
+#SHOPS
+#5604
+buy_type weapon~
+buy_type armor~
+buy_type container~
+profit_buy 120
+profit_sell 80
+close_hour 23
+END
+
+#5605
+buy_type armor~
+profit_buy 120
+profit_sell 80
+close_hour 23
+END
+
+#5606
+buy_type treasure~
+buy_type furniture~
+buy_type trash~
+profit_buy 120
+profit_sell 80
+close_hour 23
+END
+
+#5607
+buy_type food~
+profit_buy 120
+profit_sell 10
+close_hour 23
+END
+
+#5608
+buy_type drinkcontainer~
+buy_type food~
+profit_buy 120
+profit_sell 10
+close_hour 23
+END
+
+#5622
+buy_type drinkcontainer~
+profit_buy 120
+profit_sell 10
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

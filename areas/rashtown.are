@@ -1,0 +1,1641 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Rashtown~
+ShortName   Rashtown~
+Builders    None~
+VNUMs       23150 23349
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Sat Jan 14 00:38:15 2006~
+End
+
+
+
+#MOBILES
+#23150
+Name intorian stout bald man head shopkeep~
+ShortD (no short description)~
+LongD A stout, intorian man with a bald head is here, minding the shop.~
+Desc ~
+Race intori~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material human
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#23150
+Name ~
+Desc ~
+Sector inside~
+Exit southwest 23151
+End
+
+
+#23151
+Name ~
+Desc ~
+Sector inside~
+Exit west 23152
+Exit northeast 23150
+End
+
+
+#23152
+Name ~
+Desc ~
+Sector inside~
+Exit north 23156
+Exit east 23151
+Exit south 23157
+Exit west 23153
+End
+
+
+#23153
+Name ~
+Desc ~
+Sector inside~
+Exit east 23152
+Exit west 23154
+End
+
+
+#23154
+Name ~
+Desc ~
+Sector inside~
+Exit north 23158
+Exit east 23153
+Exit south 23159
+Exit west 23155
+End
+
+
+#23155
+Name ~
+Desc ~
+Sector inside~
+Exit east 23154
+Exit west 23160
+End
+
+
+#23156
+Name shop~
+Desc ~
+Sector inside~
+Exit south 23152
+End
+
+
+#23157
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23152
+End
+
+
+#23158
+Name tavern~
+Desc ~
+Sector inside~
+Exit south 23154
+End
+
+
+#23159
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23154
+End
+
+
+#23160
+Name ~
+Desc ~
+Sector inside~
+Exit east 23155
+Exit west 23175
+Exit southwest 23162
+Exit northwest 23161
+End
+
+
+#23161
+Name ~
+Desc ~
+Sector inside~
+Exit north 23163
+Exit south 23175
+Exit southeast 23160
+Exit southwest 23176
+End
+
+
+#23162
+Name ~
+Desc ~
+Sector inside~
+Exit north 23175
+Exit south 23169
+Exit northeast 23160
+Exit northwest 23176
+End
+
+
+#23163
+Name ~
+Desc ~
+Sector inside~
+Exit east 23164
+Exit south 23161
+Exit west 23187
+End
+
+
+#23164
+Name ~
+Desc ~
+Sector inside~
+Exit north 23167
+Exit east 23165
+Exit west 23163
+End
+
+
+#23165
+Name ~
+Desc ~
+Sector inside~
+Exit east 23166
+Exit west 23164
+End
+
+
+#23166
+Name ~
+Desc ~
+Sector inside~
+Exit north 23168
+Exit west 23165
+End
+
+
+#23167
+Name road to the palace~
+Desc ~
+Sector inside~
+Exit south 23164
+Exit up 23251
+Exit northwest 23197
+End
+
+
+#23168
+Name shop~
+Desc ~
+Sector inside~
+Exit south 23166
+End
+
+
+#23169
+Name ~
+Desc ~
+Sector inside~
+Exit north 23162
+Exit east 23170
+Exit south 23271
+Exit west 23192
+End
+
+
+#23170
+Name ~
+Desc ~
+Sector inside~
+Exit east 23171
+Exit south 23174
+Exit west 23169
+End
+
+
+#23171
+Name ~
+Desc ~
+Sector inside~
+Exit east 23172
+Exit west 23170
+End
+
+
+#23172
+Name ~
+Desc ~
+Sector inside~
+Exit south 23173
+Exit west 23171
+Exit northeast 23258
+End
+
+
+#23173
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23172
+End
+
+
+#23174
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23170
+End
+
+
+#23175
+Name a large fountain~
+Desc ~
+Sector inside~
+Exit north 23161
+Exit east 23160
+Exit south 23162
+Exit west 23176
+Exit down 23285
+End
+
+
+#23176
+Name ~
+Desc ~
+Sector inside~
+Exit east 23175
+Exit west 23177
+Exit northeast 23161
+Exit southeast 23162
+End
+
+
+#23177
+Name ~
+Desc ~
+Sector inside~
+Exit east 23176
+Exit west 23178
+End
+
+
+#23178
+Name ~
+Desc ~
+Sector inside~
+Exit north 23180
+Exit east 23177
+Exit south 23181
+Exit west 23179
+End
+
+
+#23179
+Name ~
+Desc ~
+Sector inside~
+Exit east 23178
+Exit west 23182
+End
+
+
+#23180
+Name shop~
+Desc ~
+Sector inside~
+Exit south 23178
+End
+
+
+#23181
+Name bank~
+Desc ~
+Sector inside~
+Exit north 23178
+End
+
+
+#23182
+Name ~
+Desc ~
+Sector inside~
+Exit north 23185
+Exit east 23179
+Exit south 23186
+Exit west 23183
+End
+
+
+#23183
+Name ~
+Desc ~
+Sector inside~
+Exit east 23182
+Exit northwest 23184
+End
+
+
+#23184
+Name shop~
+Desc ~
+Sector inside~
+Exit southeast 23183
+End
+
+
+#23185
+Name shop~
+Desc ~
+Sector inside~
+Exit south 23182
+End
+
+
+#23186
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23182
+End
+
+
+#23187
+Name ~
+Desc ~
+Sector inside~
+Exit north 23191
+Exit east 23163
+Exit west 23188
+End
+
+
+#23188
+Name ~
+Desc ~
+Sector inside~
+Exit east 23187
+Exit west 23189
+End
+
+
+#23189
+Name ~
+Desc ~
+Sector inside~
+Exit north 23190
+Exit east 23188
+End
+
+
+#23190
+Name ~
+Desc ~
+Sector inside~
+Exit south 23189
+End
+
+
+#23191
+Name road to the palace~
+Desc ~
+Sector inside~
+Exit south 23187
+Exit up 23252
+Exit northeast 23197
+End
+
+
+#23192
+Name ~
+Desc ~
+Sector inside~
+Exit east 23169
+Exit south 23196
+Exit west 23193
+End
+
+
+#23193
+Name ~
+Desc ~
+Sector inside~
+Exit east 23192
+Exit west 23194
+End
+
+
+#23194
+Name ~
+Desc ~
+Sector inside~
+Exit east 23193
+Exit south 23195
+Exit northwest 23260
+End
+
+
+#23195
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23194
+End
+
+
+#23196
+Name shop~
+Desc ~
+Sector inside~
+Exit north 23192
+End
+
+
+#23197
+Name road to the palace~
+Desc ~
+Sector inside~
+Exit north 23198
+EFlags door closed~
+Exit southeast 23167
+Exit southwest 23191
+End
+
+
+#23198
+Name outer courts~
+Desc ~
+Sector inside~
+Exit north 23208
+Exit east 23201
+Exit south 23197
+EFlags door closed~
+Exit west 23199
+End
+
+
+#23199
+Name ~
+Desc ~
+Sector inside~
+Exit north 23209
+Exit east 23198
+Exit west 23200
+End
+
+
+#23200
+Name ~
+Desc ~
+Sector inside~
+Exit north 23210
+Exit east 23199
+Exit up 23253
+Exit northwest 23204
+End
+
+
+#23201
+Name ~
+Desc ~
+Sector inside~
+Exit north 23211
+Exit east 23202
+Exit west 23198
+End
+
+
+#23202
+Name ~
+Desc ~
+Sector inside~
+Exit north 23207
+Exit west 23201
+Exit up 23254
+Exit northeast 23203
+End
+
+
+#23203
+Name ~
+Desc ~
+Sector inside~
+Exit west 23207
+Exit up 23255
+Exit northeast 23206
+Exit southwest 23202
+End
+
+
+#23204
+Name ~
+Desc ~
+Sector inside~
+Exit east 23210
+Exit up 23257
+Exit southeast 23200
+Exit northwest 23205
+End
+
+
+#23205
+Name ~
+Desc ~
+Sector inside~
+Exit up 23256
+EFlags door closed~
+Exit southeast 23204
+End
+
+
+#23206
+Name ~
+Desc ~
+Sector inside~
+Exit southwest 23203
+End
+
+
+#23207
+Name ~
+Desc ~
+Sector inside~
+Exit east 23203
+Exit south 23202
+Exit west 23211
+End
+
+
+#23208
+Name outer courts~
+Desc ~
+Sector inside~
+Exit north 23212
+EFlags door closed~
+EKeywords gate~
+Exit east 23211
+Exit south 23198
+Exit west 23209
+End
+
+
+#23209
+Name ~
+Desc ~
+Sector inside~
+Exit east 23208
+Exit south 23199
+Exit west 23210
+End
+
+
+#23210
+Name ~
+Desc ~
+Sector inside~
+Exit east 23209
+Exit south 23200
+Exit west 23204
+End
+
+
+#23211
+Name ~
+Desc ~
+Sector inside~
+Exit east 23207
+Exit south 23201
+Exit west 23208
+End
+
+
+#23212
+Name inner courts~
+Desc ~
+Sector inside~
+Exit north 23217
+Exit east 23214
+Exit south 23208
+EFlags door closed~
+EKeywords gate~
+Exit west 23213
+End
+
+
+#23213
+Name ~
+Desc ~
+Sector inside~
+Exit north 23216
+Exit east 23212
+Exit northwest 23218
+End
+
+
+#23214
+Name ~
+Desc ~
+Sector inside~
+Exit north 23215
+Exit west 23212
+Exit northeast 23219
+End
+
+
+#23215
+Name ~
+Desc ~
+Sector inside~
+Exit east 23219
+Exit south 23214
+Exit west 23217
+Exit northwest 23220
+End
+
+
+#23216
+Name ~
+Desc ~
+Sector inside~
+Exit east 23217
+Exit south 23213
+Exit west 23218
+Exit northeast 23220
+End
+
+
+#23217
+Name a fountain~
+Desc ~
+Sector inside~
+Exit east 23215
+Exit south 23212
+Exit west 23216
+End
+
+
+#23218
+Name ~
+Desc ~
+Sector inside~
+Exit east 23216
+Exit southeast 23213
+End
+
+
+#23219
+Name ~
+Desc ~
+Sector inside~
+Exit west 23215
+Exit southwest 23214
+End
+
+
+#23220
+Name ~
+Desc ~
+Sector inside~
+Exit north 23221
+EFlags door closed~
+EKeywords double-door~
+Exit southeast 23215
+Exit southwest 23216
+End
+
+
+#23221
+Name inside palace~
+Desc ~
+Sector inside~
+Exit south 23220
+EFlags door closed~
+EKeywords double-door~
+Exit northwest 23222
+End
+
+
+#23222
+Name ~
+Desc ~
+Sector inside~
+Exit west 23226
+Exit southeast 23221
+End
+
+
+#23223
+Name ~
+Desc ~
+Sector inside~
+Exit east 23272
+Exit west 23230
+Exit northeast 23271
+Exit southeast 23225
+End
+
+
+#23224
+Name ~
+Desc ~
+Sector inside~
+Exit east 23232
+Exit west 23272
+Exit southwest 23225
+Exit northwest 23271
+End
+
+
+#23225
+Name ~
+Desc ~
+Sector inside~
+Exit north 23272
+Exit south 23304
+Exit northeast 23224
+Exit northwest 23223
+End
+
+
+#23226
+Name ~
+Desc ~
+Sector inside~
+Exit east 23222
+Exit up 23227
+End
+
+
+#23227
+Name wizard tower~
+Desc ~
+Sector inside~
+Exit west 23236
+EFlags door closed nopass obvious~
+Exit up 23228
+Exit down 23226
+End
+
+
+#23228
+Name wizard tower~
+Desc ~
+Sector inside~
+Exit up 23229
+Exit down 23227
+End
+
+
+#23229
+Name ~
+Desc ~
+Sector inside~
+Exit down 23228
+End
+
+
+#23230
+Name ~
+Desc ~
+Sector inside~
+Exit east 23223
+Exit south 23280
+Exit west 23231
+End
+
+
+#23231
+Name ~
+Desc ~
+Sector inside~
+Exit east 23230
+Exit west 23234
+End
+
+
+#23232
+Name ~
+Desc ~
+Sector inside~
+Exit east 23233
+Exit south 23279
+Exit west 23224
+End
+
+
+#23233
+Name ~
+Desc ~
+Sector inside~
+Exit east 23235
+Exit west 23232
+End
+
+
+#23234
+Name ~
+Desc ~
+Sector inside~
+Exit east 23231
+Exit southwest 23281
+Exit northwest 23276
+End
+
+
+#23235
+Name ~
+Desc ~
+Sector inside~
+Exit west 23233
+Exit northeast 23278
+Exit southeast 23282
+End
+
+
+#23236
+Name ~
+Desc ~
+Sector inside~
+Exit east 23227
+EFlags door closed nopass obvious~
+Exit down 23237
+End
+
+
+#23237
+Name ~
+Desc ~
+Sector inside~
+Exit up 23236
+Exit down 23239
+End
+
+
+#23238
+Name ~
+Desc ~
+Sector inside~
+Exit up 23237
+End
+
+
+#23239
+Name ~
+Desc ~
+Sector inside~
+Exit up 23237
+Exit southeast 23240
+End
+
+
+#23240
+Name ~
+Desc ~
+Sector inside~
+Exit east 23241
+Exit southwest 23249
+EFlags door closed nopass obvious~
+Exit northwest 23239
+End
+
+
+#23241
+Name ~
+Desc ~
+Sector inside~
+Exit north 23247
+EFlags door closed nopass obvious~
+Exit east 23242
+Exit south 23248
+EFlags door closed nopass obvious~
+Exit west 23240
+End
+
+
+#23242
+Name ~
+Desc ~
+Sector inside~
+Exit north 23245
+EFlags door closed nopass obvious~
+Exit east 23243
+Exit south 23246
+EFlags door closed nopass obvious~
+Exit west 23241
+End
+
+
+#23243
+Name ~
+Desc ~
+Sector inside~
+Exit west 23242
+Exit northeast 23244
+Exit southeast 23250
+EFlags door closed nopass obvious~
+End
+
+
+#23244
+Name torture chamber~
+Desc ~
+Sector inside~
+Exit southwest 23243
+End
+
+
+#23245
+Name a cell~
+Desc ~
+Sector inside~
+Exit south 23242
+EFlags door closed nopass obvious~
+End
+
+
+#23246
+Name a cell~
+Desc ~
+Sector inside~
+Exit north 23242
+EFlags door closed nopass obvious~
+End
+
+
+#23247
+Name a cell~
+Desc ~
+Sector inside~
+Exit south 23241
+EFlags door closed nopass obvious~
+End
+
+
+#23248
+Name a cell~
+Desc ~
+Sector inside~
+Exit north 23241
+EFlags door closed nopass obvious~
+End
+
+
+#23249
+Name a cell~
+Desc ~
+Sector inside~
+Exit down 23205
+EFlags door closed~
+Exit northeast 23240
+EFlags door closed nopass obvious~
+End
+
+
+#23250
+Name a cell~
+Desc ~
+Sector inside~
+Exit northwest 23243
+EFlags door closed nopass obvious~
+End
+
+
+#23251
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23167
+End
+
+
+#23252
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23191
+End
+
+
+#23253
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23200
+End
+
+
+#23254
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23202
+End
+
+
+#23255
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23203
+End
+
+
+#23256
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23205
+End
+
+
+#23257
+Name guard tower~
+Desc ~
+Sector inside~
+Exit down 23204
+End
+
+
+#23258
+Name tavern~
+Desc ~
+Sector inside~
+Exit east 23259
+Exit southwest 23172
+End
+
+
+#23259
+Name tavern~
+Desc ~
+Sector inside~
+Exit north 23269
+EFlags door closed~
+Exit west 23258
+End
+
+
+#23260
+Name brothel~
+Desc ~
+Sector inside~
+Exit west 23261
+Exit southeast 23194
+End
+
+
+#23261
+Name dancers~
+Desc ~
+Sector inside~
+Exit north 23262
+EFlags door closed~
+Exit east 23260
+End
+
+
+#23262
+Name back rooms~
+Desc ~
+Sector inside~
+Exit north 23263
+Exit east 23265
+EFlags door closed obvious~
+Exit south 23261
+EFlags door closed~
+Exit west 23264
+EFlags door closed obvious~
+End
+
+
+#23263
+Name backrooms~
+Desc ~
+Sector inside~
+Exit north 23268
+EFlags door closed obvious~
+Exit east 23267
+EFlags door closed obvious~
+Exit south 23262
+Exit west 23266
+EFlags door closed obvious~
+End
+
+
+#23264
+Name ~
+Desc ~
+Sector inside~
+Exit east 23262
+EFlags door closed obvious~
+End
+
+
+#23265
+Name ~
+Desc ~
+Sector inside~
+Exit west 23262
+EFlags door closed obvious~
+End
+
+
+#23266
+Name ~
+Desc ~
+Sector inside~
+Exit east 23263
+EFlags door closed obvious~
+End
+
+
+#23267
+Name ~
+Desc ~
+Sector inside~
+Exit west 23263
+EFlags door closed obvious~
+End
+
+
+#23268
+Name ~
+Desc ~
+Sector inside~
+Exit south 23263
+EFlags door closed obvious~
+End
+
+
+#23269
+Name ~
+Desc ~
+Sector inside~
+Exit east 23274
+EFlags door closed obvious~
+Exit south 23259
+EFlags door closed~
+Exit west 23273
+EFlags door closed obvious~
+End
+
+
+#23270
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#23271
+Name road~
+Desc ~
+Sector inside~
+Exit north 23169
+Exit south 23272
+Exit southeast 23224
+Exit southwest 23223
+End
+
+
+#23272
+Name fountain~
+Desc ~
+Sector inside~
+Exit north 23271
+Exit east 23224
+Exit south 23225
+Exit west 23223
+End
+
+
+#23273
+Name ~
+Desc ~
+Sector inside~
+Exit east 23269
+EFlags door closed obvious~
+End
+
+
+#23274
+Name ~
+Desc ~
+Sector inside~
+Exit west 23269
+EFlags door closed obvious~
+End
+
+
+#23275
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#23276
+Name ~
+Desc ~
+Sector inside~
+Exit southeast 23234
+End
+
+
+#23277
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#23278
+Name ~
+Desc ~
+Sector inside~
+Exit southwest 23235
+End
+
+
+#23279
+Name ~
+Desc ~
+Sector inside~
+Exit north 23232
+End
+
+
+#23280
+Name ~
+Desc ~
+Sector inside~
+Exit north 23230
+End
+
+
+#23281
+Name ~
+Desc ~
+Sector inside~
+Exit northeast 23234
+Exit southeast 23283
+End
+
+
+#23282
+Name ~
+Desc ~
+Sector inside~
+Exit southwest 23284
+Exit northwest 23235
+End
+
+
+#23283
+Name ~
+Desc ~
+Sector inside~
+Exit northwest 23281
+End
+
+
+#23284
+Name ~
+Desc ~
+Sector inside~
+Exit northeast 23282
+End
+
+
+#23285
+Name a secret passage~
+Desc ~
+Sector inside~
+Exit up 23175
+Exit down 23286
+End
+
+
+#23286
+Name a hidden room~
+Desc ~
+Sector inside~
+Exit north 23287
+EFlags door closed~
+Exit up 23285
+End
+
+
+#23287
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit south 23286
+EFlags door closed~
+Exit northwest 23288
+End
+
+
+#23288
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit southeast 23287
+Exit southwest 23289
+End
+
+
+#23289
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit northeast 23288
+Exit southeast 23290
+End
+
+
+#23290
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit northeast 23291
+Exit northwest 23289
+End
+
+
+#23291
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit southwest 23290
+Exit northwest 23292
+End
+
+
+#23292
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit southeast 23291
+Exit southwest 23293
+End
+
+
+#23293
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit northeast 23292
+Exit southeast 23294
+End
+
+
+#23294
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit northeast 23295
+Exit northwest 23293
+End
+
+
+#23295
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit southwest 23294
+Exit northwest 23296
+End
+
+
+#23296
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit southeast 23295
+Exit southwest 23297
+End
+
+
+#23297
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit northeast 23296
+Exit southeast 23298
+End
+
+
+#23298
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit northeast 23299
+Exit northwest 23297
+End
+
+
+#23299
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit southwest 23298
+Exit northwest 23300
+End
+
+
+#23300
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit south 23301
+Exit southeast 23299
+End
+
+
+#23301
+Name a tunnel~
+Desc ~
+Sector inside~
+Exit north 23300
+Exit up 23302
+End
+
+
+#23302
+Name before the chamber~
+Desc ~
+Sector inside~
+Exit north 23303
+Exit down 23301
+End
+
+
+#23303
+Name the Secret Chamber~
+Desc ~
+Sector inside~
+Exit south 23302
+End
+
+
+#23304
+Name ~
+Desc ~
+Sector inside~
+Exit north 23225
+Exit south 23305
+Exit southeast 23309
+Exit southwest 23307
+End
+
+
+#23305
+Name ~
+Desc ~
+Sector inside~
+Exit north 23304
+Exit south 23306
+End
+
+
+#23306
+Name ~
+Desc ~
+Sector inside~
+Exit north 23305
+Exit south 23311
+End
+
+
+#23307
+Name ~
+Desc ~
+Sector inside~
+Exit south 23308
+Exit northeast 23304
+Exit northwest 23312
+End
+
+
+#23308
+Name ~
+Desc ~
+Sector inside~
+Exit north 23307
+End
+
+
+#23309
+Name ~
+Desc ~
+Sector inside~
+Exit south 23310
+Exit northeast 23313
+Exit northwest 23304
+End
+
+
+#23310
+Name ~
+Desc ~
+Sector inside~
+Exit north 23309
+End
+
+
+#23311
+Name ~
+Desc ~
+Sector inside~
+Exit north 23306
+End
+
+
+#23312
+Name ~
+Desc ~
+Sector inside~
+Exit southeast 23307
+End
+
+
+#23313
+Name ~
+Desc ~
+Sector inside~
+Exit southwest 23309
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#23150
+profit_buy 75
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

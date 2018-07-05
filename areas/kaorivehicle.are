@@ -1,0 +1,163 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Kaori Vehicle~
+ShortName   Kaori's Carriage~
+Builders    None~
+VNUMs       1061 1065
+AFlags  noteleport noscry hidden nogateinto nosummoninto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#1061
+Name reins~
+Short a set of fiery reins~
+Desc A set of `#`rf`Rl`Ya`xm`Yi`Rn`rg`^ reins are here, waiting to be picked up.~
+Level 0
+ItemType vehicle_controls~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 56696 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc _TRAVEL~
+The carriage rumbles along, dust billowing around it.~
+End
+
+#1062
+Name iron door~
+Short an iron door~
+Desc An iron door leading to the outside is here.~
+Level 0
+ItemType vehicle_exit~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 56696 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#1063
+Name cushioned bench~
+Short a cushioned bench~
+Desc A bench covered in thick cushions is here, looking somewhat inviting.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 10000 BEHKN 100 100
+Weight 0
+Material wood~
+Extra    noremove nopurge nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#1064
+Name small cushioned seat~
+Short a small cushioned seat~
+Desc A small cushioned seat just large enough for one person is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 BEHKN 100 100
+Weight 0
+Material wood~
+Extra    noremove nopurge nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#1061
+Name Within an Iron Carriage~
+Desc The solid black iron walls are covered in neat rows of rivets, and red silk 
+curtains over the entrance bar one's view of the outside world. The floor is 
+covered in a plush red carpet, presumably to lessen the bone-jarring 
+vibrations of the carriage. A small door to the north leads to the driver's 
+seat. 
+~
+RoomFlags indoors safe law nowhere light nofly~
+Room2Flags no_shadowplane~
+Sector vehicle~
+ExtraDesc silk curtains~
+`#A pair of `Rc`rrimson `Rs`rilk`^ curtains blocks one's view of the outside.  
+~
+Exit north 1062
+EFlags door closed obvious~
+End
+
+
+#1062
+Name Driver's Seat~
+Desc You are in the driver's seat of the black iron carriage. Before you, a team 
+of four huge hellhounds await your commands.  
+~
+RoomFlags indoors safe solitary law nowhere light nofly~
+Room2Flags no_shadowplane~
+Sector vehicle~
+Owner Kaori~
+Exit south 1061
+EFlags door closed obvious~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1062 -1 1061
+O 0 1063 -1 1061
+O 0 1061 -1 1062
+O 0 1064 -1 1062
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

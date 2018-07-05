@@ -1,0 +1,1004 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Selbon's Estate~
+ShortName   Valcore Estate~
+Builders    none~
+Credits     Selbon~
+VNUMs       2350 2389
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Thu Jul 29 07:43:57 2004~
+End
+
+
+
+#MOBILES
+#2350
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg EXALL 2350 0~
+MProg GRALL 622 100~
+END
+
+#2351
+Name seraph vern~
+ShortD `#`YVern`^~
+LongD A giant Seraph covered in golden armor is here.~
+Desc ~
+Race angel~
+Align 3 3
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType divine
+AC 90 90 90 81
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge indoors noautosocial~
+Act2   avoids_all_attacks~
+AffBy  flying~
+Form   magical biped~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg GRALL 622 100~
+MProg EXALL 621 2~
+END
+
+#2359
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2374
+Name no name~
+ShortD `#a strong looking `ychestnut`^ mare stands here~
+LongD `#a stong looking `ychestnut`^ mare stands here grazing on the lush `Ggreen `ggrass`^~
+Desc A strong looking chestnut mare stands here grazing on the lush green grass.
+~
+Race horse~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 76
+Wealth 0
+Act    npc no_tame stay_area outdoors~
+Act2   avoids_all_attacks~
+Imm    acid~
+Form   animal mammal~
+Part   head legs brains guts ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material fur
+END
+
+#2375
+Name mustang horse~
+ShortD `#a `sblack`^ mustang~
+LongD `#a `sblack`^ coated mustang wanders here freely.~
+Desc Before you is a large muscular black coated mustang with blackish grey
+hair.
+~
+Race horse~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc no_tame stay_area outdoors~
+Act2   avoids_all_attacks~
+Form   animal mammal~
+Part   head legs heart brains guts ear eye tail~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2350
+Name oak table~
+Short large oak table~
+Desc A large, round `#`yoak`^ table sits in the middle of the room here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 DGJ 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2351
+Name large oak weapon rack~
+Short a large oak weapon rack~
+Desc A large `#`yoak`^ weapon rack stands here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1500 0 0 200 0
+Weight 0
+Material wood~
+Extra    nonmetal~
+Wear     no_sac~
+End
+
+#2352
+Name oak chair~
+Short a fancy oak chair~
+Desc A fancy `yoak`g chair sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 BEHK 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2353
+Name oak bookcase~
+Short large oak book case~
+Desc A large `yoak`g bookcase filled with books sits here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 10 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#2354
+Name coffee table~
+Short a coffee table~
+Desc A wide coffee table is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 0 EH 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+End
+
+#2356
+Name gold key~
+Short a gold key~
+Desc A gold key is here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop noremove inventory nopurge rotdeath nonmetal nolocate meltdrop nodegrade burnproof nouncurse nogetall~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#2357
+Name large oak bed~
+Short `#large `yoak`^ bed~
+Desc `#A beautiful `yoak`^ bed sits in the middle of the room dressed with flanel sheets.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 2000 BEHKQ 100 100
+Weight 2000
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay nosell~
+End
+
+#2359
+Name treasury key~
+Short `#`WSelbon's `Ytreasury key`^~
+Desc `#`WSelbon's `Ytreasury key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#2362
+Name small oak bed~
+Short `#a small `yoak`^ bed.~
+Desc `#A simple bed for one person, it has a rough frame of `yoak`^ wood.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 20 EHK 100 100
+Weight 0
+Material wood~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#2366
+Name oak dresser~
+Short `#an `yoak`^ dresser~
+Desc `#An `yoak`^ dresser stands here. It is about for feet high, and sturdily built.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 20 NO 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#2372
+Name bench~
+Short a stoned bench~
+Desc A stoned bench lays next to a burning fire.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 700 EHK 100 100
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#2373
+Name fire~
+Short a burning firepit~
+Desc A fire is burning here.~
+Level 1
+ItemType light~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 0
+Material unknown~
+Extra    glow nonmetal nodegrade~
+Extra2   nodecay~
+ExtraDesc fire ~
+A pile of small logs and sticks in a hole is burning here.
+~
+End
+
+#2374
+Name chest~
+Short a brown wooden chest`^~
+Desc A brown wooden chest lays near the window.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 200 A 0 180 340
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#2350
+Name Valcore Stronghold~
+Desc You stand before a large oak draw bridge to the north.  It stands twelve 
+feet tall and 6 feet wide.  It crosses a mote of crystal clear water.  You 
+can see all the way to the bottom of the ten foot deep mote.  
+~
+Room2Flags freshwater_fish~
+Sector city~
+Exit north 2351
+EFlags door closed locked nopass hard~
+EKeyvnum 2356
+EKeywords gate~
+End
+
+
+#2351
+Name Valcore Stronghold~
+Desc You are in a large foyer with weapons on the walls.  The ceiling is about 
+sixteen feet high.  Looks like this is where you would make your final 
+preparations for battle here.  To the west and east are large oak doors.  
+~
+Sector inside~
+Exit east 2353
+EFlags door noclose~
+Exit south 2350
+EFlags door closed locked nopass hard~
+EKeyvnum 2356
+EKeywords gate~
+Exit west 2352
+EFlags door noclose~
+End
+
+
+#2352
+Name Valcore Stronghold~
+Desc There is a large round oak table in this room.  There are a dozen chairs 
+surrounding the table.  You see clan members names etched into the table.  
+You also notice the words "In memory of Voronda" carved into the center of
+the table.  You see large oak doors to the east and to the north.
+~
+Sector inside~
+Exit north 2356
+EFlags door noclose~
+Exit east 2351
+EFlags door noclose~
+End
+
+
+#2353
+Name Valcore Stronghold~
+Desc You see a large study.  The walls are lined with bookcases.  Many small 
+tables and chairs fill the room.  Everything is made of oak.  You see maps, 
+books and parchments laying around.  You notice oak doors to the north and 
+to the west.  
+~
+Sector inside~
+Exit north 2355
+EFlags door noclose~
+Exit west 2351
+EFlags door noclose~
+End
+
+
+#2354
+Name Selbon's private chambers~
+Desc Before you is the lord's living quarters.  You see a large plush couch here 
+and an altar to Seandac.  On the coffee table there are some books and toys 
+for a child.  You see a oak door leading to the staircase and an oak door
+to the west.
+~
+Sector inside~
+Exit west 2357
+Exit down 2355
+EFlags door closed~
+End
+
+
+#2355
+Name Valcore Stronghold~
+Desc Before you looks like a lounge area lined with pillows and cushions.  There 
+is a small fountain here and a small stove to make a meal or two here.  
+Looking up you see a grand staircase leading to the second floor.  To the 
+west you see a long hallway and to the south you see a large oak door.  
+~
+Sector inside~
+Exit north 2377
+EFlags door closed~
+Exit east 2360
+Exit south 2353
+EFlags door noclose~
+Exit west 2356
+Exit up 2354
+EFlags door closed~
+End
+
+
+#2356
+Name Valcore Stronghold~
+Desc Before you is a large hot tub in the center of the room.  You see the steam
+rising up to the ceiling.  While looking up you notice a grand staircase
+going to the second floor.  To the top of the stairs you see a door.
+It looks as though they maybe private chambers.  To the east you see a
+grand hallway and to the south you see a large oak door. 
+~
+Sector inside~
+Exit north 2374
+EFlags door closed~
+Exit east 2355
+Exit south 2352
+EFlags door noclose~
+Exit west 2367
+Exit up 2358
+EFlags door closed~
+End
+
+
+#2357
+Name Selbon's private chambers~
+Desc Before you is a Grand master bedroom.  It is adorned with silk and has a 
+nice vibrant smell to it.  You see a very large bed, twice the size of a 
+king size bed.  As like the rest of the rooms, the furniture is made of 
+oak. You have doors to the east and west made of oak.  You also see a blue
+door to the south.
+~
+Sector inside~
+Exit east 2354
+Exit south 2359
+EFlags door closed locked hard~
+EKeyvnum 2359
+EKeywords door~
+Exit west 2358
+End
+
+
+#2358
+Name Selbon's private chambers~
+Desc You see a large closet.  Many clothes and armor hang in this room.  Oops
+did someone leave their panties on the floor?
+You see an oak door to the east.  
+~
+Sector inside~
+Exit east 2357
+Exit down 2356
+EFlags door closed~
+End
+
+
+#2359
+Name Selbon's private chambers~
+Desc Before you looks like a child's room.  Everything is adorned in blue trim.
+You see toys nicely placed all around.  And you see a beautiful rocking 
+chair in the corner of the room.  You see a blue door to the north.
+~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 100
+LockerPickProof 1
+Exit north 2357
+EFlags door closed locked hard~
+EKeyvnum 2359
+EKeywords door~
+End
+
+
+#2360
+Name Valcore stonghold~
+Desc You find yourself in a hall way with many doors.  This is the east wing of 
+the guest area. 
+~
+Sector inside~
+Exit north 2361
+EFlags door~
+Exit east 2363
+Exit south 2362
+EFlags door~
+Exit west 2355
+End
+
+
+#2361
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit south 2360
+EFlags door~
+End
+
+
+#2362
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit north 2360
+EFlags door~
+End
+
+
+#2363
+Name Valcore stonghold~
+Desc You find yourself in a hall way with many doors.  This is the east wing of 
+the guest area. 
+~
+Sector inside~
+Exit north 2364
+EFlags door~
+Exit east 2366
+EFlags door~
+Exit south 2365
+EFlags door~
+Exit west 2360
+End
+
+
+#2364
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit south 2363
+EFlags door~
+End
+
+
+#2365
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit north 2363
+EFlags door~
+End
+
+
+#2366
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit west 2363
+EFlags door~
+End
+
+
+#2367
+Name Valcore stonghold~
+Desc You find yourself in a hall way with many doors.  This is the west wing of 
+the guest area. 
+~
+Sector inside~
+Exit north 2370
+EFlags door~
+Exit east 2356
+Exit south 2373
+EFlags door~
+Exit west 2368
+End
+
+
+#2368
+Name Valcore stonghold~
+Desc You find yourself in a hall way with many doors.  This is the west wing of 
+the guest area. 
+~
+Sector inside~
+Exit north 2369
+EFlags door~
+Exit east 2367
+Exit south 2372
+EFlags door~
+Exit west 2371
+EFlags door~
+End
+
+
+#2369
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit south 2368
+EFlags door~
+End
+
+
+#2370
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit south 2367
+EFlags door~
+End
+
+
+#2371
+Name Gariks Room~
+Desc Light yellowish brown stone walls surrounds this area with a carving oval circle window on the west wall. A picture of a man holding an axe with a scroll detached to it lays north on the wall.
+~
+Sector inside~
+ExtraDesc scroll ~
+Knighthire - `YK`yingdom `wof `Rstrength`w, `Mfaith`w, `Wwisdom`w, and `Cglory
+~
+Exit east 2368
+EFlags door~
+End
+
+
+#2372
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit north 2368
+EFlags door~
+End
+
+
+#2373
+Name Valcore stonghold~
+Desc You are in a guest bedroom.  It is quite plan here and everything is made of 
+oak. 
+~
+Sector inside~
+Exit north 2367
+EFlags door~
+End
+
+
+#2374
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2382
+Exit east 2376
+Exit south 2356
+EFlags door closed~
+Exit west 2375
+End
+
+
+#2375
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2383
+Exit east 2374
+End
+
+
+#2376
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2381
+Exit east 2377
+Exit west 2374
+End
+
+
+#2377
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2380
+Exit east 2378
+Exit south 2355
+EFlags door closed~
+Exit west 2376
+End
+
+
+#2378
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2379
+Exit west 2377
+End
+
+
+#2379
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2388
+Exit south 2378
+Exit west 2380
+End
+
+
+#2380
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2387
+Exit east 2379
+Exit south 2377
+Exit west 2381
+End
+
+
+#2381
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2386
+Exit east 2380
+Exit south 2376
+Exit west 2382
+End
+
+
+#2382
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2385
+Exit east 2381
+Exit south 2374
+Exit west 2383
+End
+
+
+#2383
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit north 2384
+Exit east 2382
+Exit south 2375
+End
+
+
+#2384
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit east 2385
+Exit south 2383
+End
+
+
+#2385
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit east 2386
+Exit south 2382
+Exit west 2384
+End
+
+
+#2386
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit east 2387
+Exit south 2381
+Exit west 2385
+End
+
+
+#2387
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit east 2388
+Exit south 2380
+Exit west 2386
+End
+
+
+#2388
+Name Valcore fields~
+Desc You find yourself in a large horse pasture.  The field is very green and 
+lush.  You smell the odor of hey in the air. 
+~
+Sector field~
+Exit south 2379
+Exit west 2387
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 2350 1 2350 1
+E 0 2356 -1 hold~
+M 0 2351 1 2351 1
+E 0 2356 -1 hold~
+O 0 2351 -1 2351
+O 0 2352 -1 2352
+O 0 2350 -1 2352
+O 0 2353 -1 2353
+O 0 3451 -1 2353
+O 0 3451 -1 2353
+O 0 65 -1 2354
+O 0 2354 -1 2354
+O 0 1049 -1 2355
+O 0 2357 -1 2357
+O 0 7682 -1 2359
+O 0 1044 -1 2359
+O 0 2366 -1 2361
+O 0 2362 -1 2361
+O 0 2366 -1 2362
+O 0 2362 -1 2362
+O 0 2366 -1 2364
+O 0 2362 -1 2364
+O 0 2366 -1 2365
+O 0 2362 -1 2365
+O 0 2366 -1 2366
+O 0 2362 -1 2366
+O 0 2366 -1 2369
+O 0 2362 -1 2369
+O 0 2366 -1 2370
+O 0 2362 -1 2370
+O 0 2373 -1 2371
+O 0 2372 -1 2371
+O 0 2374 -1 2371
+O 0 2366 -1 2372
+O 0 2362 -1 2372
+O 0 2366 -1 2373
+O 0 2362 -1 2373
+M 0 2374 1 2374 1
+M 0 2374 1 2377 1
+M 0 2375 1 2379 1
+M 0 2375 1 2381 1
+M 0 2375 1 2383 1
+M 0 2374 1 2385 1
+M 0 2375 1 2386 1
+M 0 2374 1 2387 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2350
+title Selbon Guard~
+author Ixliam~
+code mobseeall
+language native
+if name $n Selbon
+ sayto $n Welcome Master!
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+if fealty $n selbon
+ sayto $n Welcome to Castle Valcore.
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+sayto $n Get Lost. You are not welcome here!
+ 
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1081098089
+END
+
+#0
+
+
+#$

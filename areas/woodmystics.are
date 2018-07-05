@@ -1,0 +1,689 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Grove of the Woodland Mystics~
+ShortName   Woodland Mystics~
+Builders    None~
+Credits     None~
+VNUMs       19730 19759
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+Security    9
+Colour      s~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Sep  3 12:03:22 2005~
+End
+
+
+
+#MOBILES
+#19730
+Name martin ranger~
+ShortD `#`BMartin`^ the `#`gRanger`^~
+LongD `#`BMartin`^ the `#`gRanger`^ is here selling his wares.~
+Desc A tall rangy man sits here on a comfy spot of `#`gmoss`^, patiently waiting for 
+customers to pass by and purchase from his fine selection.  
+~
+Race elf~
+Align 1 0
+Level 53
+Hitroll 0
+HitDice 10d169+1200
+ManaDice 1d10+400
+DamDice 5d10+40
+DamType none
+AC -500 -500 -500 -200
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_hidden sanctuary infrared~
+Imm    summon charm iron~
+Res    charm magic~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 19738 banner~
+END
+
+#19731
+Name leanna~
+ShortD leanna the `#`GA`grcher`^~
+LongD Leanna the `#`GA`grcher`^ is here, waiting for students.~
+Desc An elven maiden of astonishing beauty stands before you.  Though she may
+look innocent, you see in her eyes, such shrewed cunning and malice, that
+you realise she is anything but.  
+~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 30
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType pierce
+AC -700 -700 -700 -595
+Wealth 0
+Act    npc dont_wander train practice gain~
+AffBy  detect_invis detect_hidden sanctuary infrared~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#19732
+Name Aramus elf guard~
+ShortD aramus~
+LongD Aramus is here, guarding the entrance.~
+Desc Before you stands a tall, muscular elf.  His size seems more suited to a
+human barbarian than one of the elvish race, but his pointed ears betray his
+heratige.  
+~
+Race elf~
+Align -2 0
+Level 55
+Hitroll 100
+HitDice 1d1+19999
+ManaDice 20d10+450
+DamDice 40d20+10
+DamType wrath
+AC -550 -550 -550 -550
+Wealth 550
+Act    npc dont_wander warrior update_always~
+AffBy  detect_invis detect_hidden sanctuary infrared haste berserk~
+Off    bash disarm kick dirt_kick~
+Imm    summon charm~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg EXALL 19732 4~
+END
+
+#19733
+Name kiros elf guard~
+ShortD kiros~
+LongD Kiros is here guarding the entrance.~
+Desc Before you stands a slim, but obviously swift elf.  His demeanor, unlike
+that of the brute next to him is that of an intelligent and charismatic
+individual.  You do, however realise his potential to create some severe
+havoc when presented in combat.  
+~
+Race elf~
+Align 3 0
+Level 54
+Hitroll 90
+HitDice 1d1+14999
+ManaDice 1d20+150
+DamDice 30d30+50
+DamType none
+AC -550 -550 -550 -500
+Wealth 540
+Act    npc dont_wander thief update_always~
+AffBy  detect_invis detect_hidden sanctuary infrared haste~
+Off    backstab disarm dirt_kick trip~
+Imm    summon charm~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg EXALL 19733 4~
+END
+
+#19734
+Name banker chalaen~
+ShortD `#`GChalaen`^ the banker~
+LongD `#`GChalaen`^ the banker is here, ready to help you.~
+Desc . `#`GChalaen`^ the banker is here, ready to help you.  
+~
+Race unique~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType crush
+AC -300 -300 -300 -249
+Wealth 550
+Act    npc dont_wander docile stay_area warrior nopurge indoors changer~
+AffBy  detect_evil detect_invis detect_hidden infrared protect_good~
+Imm    charm acid iron~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#19735
+Name priestess Titania~
+ShortD `#`RTitania`^ the Priestess~
+LongD `#`RTitania`^ the Priestess is here.~
+Desc Before you stands a woman of exquisite beauty.  Flame red hair and emerald 
+green eyes make her a wonder to behold, not to mention the perfect figure.  
+She makes women jealous, and men drool, yet all know her heart is first and 
+foremost for the goddess Dorenne. 
+~
+Race elf~
+Align 3 0
+Level 54
+Hitroll 6
+HitDice 10d200+1200
+ManaDice 1d20+300
+DamDice 5d10+30
+DamType pound
+AC -300 -300 -300 -300
+Wealth 540
+Act    npc dont_wander train practice cleric healer gain update_always~
+AffBy  detect_invis detect_hidden sanctuary infrared~
+Off    disarm kick crush~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#19730
+Name ivy leaf ring woodland mystics~
+Short `#`gan `Gi`gv`Gy `gl`Ge`ga`Gf `gring`^~
+Desc A ring made from ivy leaves is laying here.~
+Level 1
+ItemType jewelry~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material ivy~
+Extra    glow antievil rotdeath nonmetal nolocate meltdrop nodegrade burnproof norestring~
+Extra2   nodecay clan_item nosell~
+Wear     take finger~
+ExtraDesc ivy leaf ring~
+This ring is made out of perfectly preserved ivy leaves. On the inside of the band there is the words "`#`gWoodland Mystics`^" engraved in it.
+~
+End
+
+#19731
+Name fresh soft tofu~
+Short `#`WFresh Soft Tofu`^~
+Desc A smashed piece of tufu is here.~
+Level 1
+ItemType food~
+Cost 23
+Durability 5
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material tofu~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#19732
+Name grilled veggie burger~
+Short `#`wa hot `sg`wr`si`wl`sl`we`sd `yveggie `wburger`^~
+Desc A smashed veggie burger is here.~
+Level 1
+ItemType food~
+Cost 26
+Durability 5
+Asize 3
+Rsize 50
+Values 22 26 0 0 0
+Weight 3
+Material veggies~
+Extra    nonmetal~
+Wear     take~
+End
+
+#19733
+Name organic cup milk~
+Short `#`wa cup of organic `Wmilk`^~
+Desc A cup of milk is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 10
+Durability 5
+Asize 5
+Rsize 50
+Values 3 3 milk 0 0
+Weight 10
+Material liquid~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#19734
+Name huge round oak table~
+Short a huge round oak table~
+Desc `#`wa huge round `yoak `wtable rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 500
+Rsize 50
+Values 10 7000 DGJ 100 100
+Weight 500
+Material wood~
+End
+
+#19735
+Name wooden wall rack herb cabinet~
+Short `#`ya wooden wall rack for herbs`^~
+Desc `#`ya wooden wall rack for herbs`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#19736
+Name green marble fountain~
+Short a `#`gg`Gr`ge`Ge`gn `Gm`ga`Gr`gb`Gl`ge`^ fountain~
+Desc A `#`gg`Gr`ge`Ge`gn `Gm`ga`Gr`gb`Gl`ge`^ fountain.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 10000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+ExtraDesc green ~
+`#`WA `gg`Gr`ge`Ge`gn `Gm`ga`Gr`gb`Gl`ge `Wfountain`^ is here, spurting refreshing, cool water from the 
+hands of a `#`Gv`gi`Gn`ge`^ wrapped statue of a beautiful `#`Gelven`^ female in long robs.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#19730
+Name An Old Gnarled Oak~
+Desc Before you, seemingly from nowhere, appears a giant gnarled oak tree. 
+It's ancient boughs seem to stretch out and grasp at the trees surrounding
+it.  There seems to be a lot of activity centred around this tree, as the
+ground is worn around the base of the oak, as if people converse on this
+point.  Looking around you see barely perceptable marks in the tree, as if
+something has been carved into it.  
+~
+RoomFlags indoors law light~
+Sector forest~
+Clan 'woodland mystics'
+Exit up 19731
+Exit down 33001
+End
+
+
+#19731
+Name Entrance to the Sacred Grove~
+Desc This oak was chosen for it's age and stability, and as you can see, it has 
+plenty of room.  Looking around you see a few elves milling about their 
+tasks, but mingled with them are a select few of other races, obviously 
+rangers by their garb.  The bough you are currently standing on extends 
+south, over the road, and a path runs north, deep into the foliage of the 
+forests.  
+~
+RoomFlags indoors law light~
+Sector forest~
+Exit north 19733
+Exit south 19732
+Exit down 19730
+End
+
+
+#19732
+Name The Lookout Point~
+Desc From this bough, the Orders observe the traffic passing their Halls.  If any 
+seek entrance to their abode, guards can be made ready in an instant, so 
+they are never caught unaware.  Messengers can be seen passing along 
+information from time to time, generally when somthing passes beneath this 
+bough, it seems that nothing escapes the shrewed eyes of the Order of 
+Woodland Mystics.  
+~
+RoomFlags indoors law light~
+Sector forest~
+Exit north 19731
+End
+
+
+#19733
+Name Intersection of Boughs~
+Desc Here the bough you are currently traversing meets with another, similarly 
+thick and ancient bough, travelling almost perpendicular to the one you are 
+on.  To the north you see `GG`great`x `GO`gaken`x D`Doors`x, leading into some massive 
+chamber, that seems to me precariously balancing on the bough of the tree.  
+To the east you see a some less extravagant doors leading into a smaller 
+chamber with the words 'Bank' written across them.  
+~
+RoomFlags indoors law light~
+Sector forest~
+Mana 110
+Exit north 19734
+Exit east 19735
+Exit south 19731
+Exit west 19738
+End
+
+
+#19734
+Name Council Chamber~
+Desc As you enter this room, you get the sense that this was created from the 
+trunk of a smaller oak.  On further inspection, however, you notice fine 
+lines, where planks of wood have been cleverly joined to give the appearence 
+of one entire piece of wood.  In the centre of the room, lies a massive 
+oaken table, surrounded by ten exquisitely carved seats.  In this room is 
+where the Council decides the direction of the Order. 
+~
+RoomFlags indoors law light~
+Sector inside~
+Exit south 19733
+End
+
+
+#19735
+Name Woodland Mystics Bank~
+Desc This is a medium-sized room in which all banking is done.  A counter lines 
+the wall, behind it stands a female elf banker, watching you and smiling, 
+ready to help you with your banking needs.  The path continues on to the 
+north, or back toward the intersection.  (Type BANK for further 
+information.)  
+~
+RoomFlags indoors bank law light~
+Sector inside~
+Exit north 19736
+Exit west 19733
+End
+
+
+#19736
+Name Path to Another Oak~
+Desc This path leads from the bank to another giant oak tree in the forest.  As 
+you travel along the path you notice a man sitting on a comfy spot of `#`gmoss`^, 
+selling his wares.  As you continue to look around, it appears as if the 
+forest itself is listening to what is occuring ahead.  When you near the 
+second oak, you see an exquisitely designed building, sitting in the center 
+of its bough.  From the look of it, the building is a temple.  
+~
+RoomFlags indoors law light~
+Sector forest~
+Exit north 19737
+Exit south 19735
+End
+
+
+#19737
+Name The Temple~
+Desc As you enter this room your are overwhelmed by a sense of peace.  Birds sing 
+their songs merrily in nearby trees, and the soft chanting seems to soothe 
+the tensions of the soul.  A `#`Swillow`^ tree appears to be steadily growing in 
+one section of the temple, you wonder how it is sustained, considering the 
+distinct lack of soil in the tree.  A `#`Sbench`^ takes up one length of the 
+temple, allowing patrons to sit and relax while praying to their goddess.  
+As you continue to look around the temple appears more of a small `#`Sgarden`^ 
+area to a temple, with various small trees growing in pockets around the 
+room.  
+ 
+~
+RoomFlags indoors no_recall law light~
+Sector gateway~
+ExtraDesc willow~
+Here stands an ancient willow of amazing proportions.  It's slender trunk
+and drooping branches extend beyond that of a normal tree, it is as if the
+tree was simply made to be as it is.  
+~
+ExtraDesc bench~
+Here sits a long ornately carved oaken bench.  It's deeply colour wood
+depicting the creation of Zivilyn, the tree of Life.  It's intricacies
+astound you, and as you look, you begin to wonder of this was magically
+created, or carved by hand.  
+~
+ExtraDesc garden ~
+The atmosphere of the temple is soothing and calm.  The flora around it 
+consists of beatiful patches of flowers and various small trees which the 
+priestess `#`RTitania`^ keeps healthy.  
+~
+Exit south 19736
+End
+
+
+#19738
+Name Storage Room~
+Desc This hollowed out section in the tree is full of a wide variety of items. 
+~
+RoomFlags indoors law light~
+Room2Flags storage_room~
+Sector inside~
+Exit east 19733
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 19731 1 19732 1
+O 0 28057 -1 19733
+O 0 19734 -1 19734
+M 0 19734 1 19735 1
+M 0 19730 1 19736 1
+O 0 19736 -1 19736
+G 0 19733 -1
+G 0 19731 -1
+G 0 19732 -1
+G 0 23639 -1
+G 0 27123 -1
+G 0 23609 -1
+G 0 3199 -1
+G 0 3088 -1
+G 0 3087 -1
+M 0 19735 1 19737 1
+O 0 55729 -1 19737
+O 0 28057 -1 19737
+O 0 7360 -1 19737
+S
+
+
+
+#SHOPS
+#19730
+profit_buy 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#19738
+title woodland mystics~
+author Delandria~
+code language native
+sayto $n Wear this banner proudly!
+mob oload 2038
+Give banner $n
+Smile $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1088213372
+END
+
+#19737
+code language native
+if clan $n aerendyl
+MOB OLOAD 2108
+say Here you are.
+give chainmail $n
+else
+say We have a spy! Archers shoot him!
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038685827
+END
+
+#19735
+code language native
+if isimmort $n
+say Greetings $n, what can i do for you?
+else
+if clan $n aerendyl
+say Do you require my services?
+else
+say What are you doing in this temple!
+kill $n
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038685854
+END
+
+#19734
+disabled false
+END
+
+#19733
+code language native
+if isimmort $n
+bow $n
+say Greetings $n, feel free to enter.
+MOB TRANSFER $n 19731
+break
+endif
+if clan $n aerendyl
+say Welcome home $n, enjoy your stay.
+MOB ECHOAT $n Kiros pushes Aramus aside and allows you passage.
+MOB TRANSFER $n 19731
+MOB ECHO Kiros pushes Aramus aside, allowing $n passage into the halls.
+break
+endif
+say Your presence is not required in these halls, please leave now.
+MOB ECHO Kiros slowly draws his blade and prepares for combat.
+break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038686171
+END
+
+#19732
+code language native
+if isimmort $n
+bow $n
+break
+endif
+if clan $n Aerendyl
+bow $n
+break
+endif
+growl $n
+MOB ECHO Aramus moves into a fighting stance, preparing for combat, but also blocking your path.
+break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038686197
+END
+
+#19731
+code language native
+if isimmort $n
+  bow $n
+  MOB ECHOAT $n Leanna lays her bow at your feet
+sayto $n What can I do for you, Great One ?
+else
+if clan $n aerendyl
+MOB ECHOAT $n In one swift movement Leanna strings her bow, removes an arrow from it's quiver, and trains a bead on you.
+say Do you wish to be trained $n?
+else
+say Your life is forfeit...
+kill $n
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038686756
+END
+
+#19730
+code language native
+if isimmort $n
+  bow $n
+sayto $n Greetings! How may I be of service ?
+else
+if clan $n aerendyl
+sayto $n Would you like to purchase some of my fine wares ?
+else
+say You are not supposed to be here. You life is forfeit.
+kill $n
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038686635
+END
+
+#0
+
+
+#$

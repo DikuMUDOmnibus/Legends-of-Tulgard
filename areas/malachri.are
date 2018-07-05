@@ -1,0 +1,607 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-pre7
+Name        Malach-Ri's Castle~
+ShortName   ~
+Builders    None~
+VNUMs       1500 1519
+AFlags  noscry hidden~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Tue Jan 20 12:23:38 2004~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#1500
+Name cloud bed~
+Short a large cloud~
+Desc A large cloud is floating here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 10000 EHKR 110 110
+Weight 0
+Material unknown~
+ExtraDesc cloud ~
+This cloud is very fluffy and quite large.  It doesnt move, just stays here 
+hovering.  
+~
+End
+
+#1501
+Name black marble table~
+Short a black marble table~
+Desc A black marble table stands here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 DG 100 100
+Weight 0
+Material unknown~
+End
+
+#1502
+Name shelf shelves~
+Short a shelf~
+Desc A shelf is hanging on the wall here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 E 0 10 100
+Weight 0
+Material unknown~
+End
+
+#1503
+Name stove~
+Short a stove~
+Desc A stove stands against the wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow~
+ExtraDesc stove ~
+There is a fire glowing inside this stove. Ther are two burner holes on top.
+~
+End
+
+#1504
+Name black marble book shelf~
+Short a bookshelf~
+Desc A black marble bookshelf is standing here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 E 0 100 100
+Weight 0
+Material unknown~
+ExtraDesc book ~
+A huge bookshelf made of black marble.  It is packed with books and scrolls. 
+ It is resting against the wall making it appear part of the wall itself.  
+~
+End
+
+#1505
+Name recliner leather~
+Short a leather recliner~
+Desc A leather recliner.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 EHK 110 110
+Weight 0
+Material leather~
+ExtraDesc recliner~
+This recliner is made of soft, black leather.  It is overstuffed and looks 
+extremely comfy.  
+~
+End
+
+#1506
+Name leather sofa~
+Short a leather sofa~
+Desc A leather sofa~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 10000 EHK 110 110
+Weight 0
+Material unknown~
+ExtraDesc sofa ~
+This sofa is made of the softest leather and is black in colour.  It is 
+stuffed amply and looks really comfortable.  
+~
+End
+
+#1507
+Name royal canopy bed~
+Short a canopy bed~
+Desc A canopy bed.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 10000 EHK 110 110
+Weight 0
+Material unknown~
+End
+
+#1508
+Name feather bed~
+Short a feather bed.~
+Desc A feather bed.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 10000 EHK 110 110
+Weight 0
+Material unknown~
+End
+
+#1509
+Name black marble dresser~
+Short a marble dresser.~
+Desc A marble dresser.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 A 0 100 100
+Weight 0
+Material unknown~
+End
+
+#1510
+Name marble desk~
+Short a marble desk~
+Desc A marble desk~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 DG 100 100
+Weight 0
+Material marble~
+ExtraDesc desk ~
+This desk was carved from the same material as the walls.  Other than that 
+there is nothing special about it.  
+~
+End
+
+#1511
+Name bucket~
+Short a foul smelling bucket~
+Desc A foul smelling bucket~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc bucket ~
+You peer inside the bucket and are repulsed to find excrements inside!  
+~
+End
+
+#1512
+Name altar~
+Short altar~
+Desc A huge Altar~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 10000 Q 105 105
+Weight 0
+Material unknown~
+ExtraDesc altar ~
+This is a huge Altar.  It is made from the same black marble as the first 
+floor of the house is.  
+~
+End
+
+#1513
+Name dungeon key~
+Short a key~
+Desc A small key lies here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+ExtraDesc key ~
+A small key white a "D" stamped on the head.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#1500
+Name Bridge~
+Desc This drawbridge is the only way to enter the estate before you.  There is
+only open air and clouds above, below, behind and to the sides of you.  
+Before you is a grand looking castle.  It appears to made of black marble 
+and has a slight radiance to it.  The front door is closed tightly.  
+~
+Sector inside~
+RoomEcho  0 23  20 A small cloud passes by.~
+Exit north 1501
+EFlags door closed locked pickproof nopass~
+EDesc A great black marble door is here.  It is closed and locked.
+~
+End
+
+
+#1501
+Name Grand Hall~
+Desc The walls, floors and ceiling are all made of black marble.  You are in what 
+appears to be the main hall.  
+~
+RoomFlags light~
+Sector inside~
+RoomEcho  0 23  10 Your ears are filled with beautifuly haunting harp music. ~
+Exit north 1502
+Exit east 1503
+Exit south 1500
+EFlags door closed locked pickproof nopass~
+Exit west 1504
+Exit northeast 1506
+Exit northwest 1505
+End
+
+
+#1502
+Name Grand Staircase(middle)~
+Desc The walls, floors and ceiling are all made of black marble.  There is a 
+grand staircase before you.  It both ascends and descends.  
+~
+RoomFlags light~
+Sector inside~
+Exit south 1501
+Exit up 1516
+Exit down 1507
+End
+
+
+#1503
+Name kitchen~
+Desc The walls, floors and ceiling are all made of black marble.  This is a 
+kitchen.  There are cupboards lining the walls.  A stove sits off to the 
+side.  A table is in the center of the room .
+~
+RoomFlags light~
+Sector inside~
+Exit west 1501
+End
+
+
+#1504
+Name Living Quarters~
+Desc The walls, floors and ceiling are all made of black marble.  This is a cozy 
+looking room.  It is furnished comfortably.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 1501
+End
+
+
+#1505
+Name Den~
+Desc The walls, floors and ceiling are all made of black marble.  You find 
+yourself in a smaller room with just a few furnishings.  There are a few 
+shelves and a desk but not much else.  
+~
+RoomFlags light~
+Sector inside~
+Exit southeast 1501
+End
+
+
+#1506
+Name Library~
+Desc The walls, floors and ceiling are all made of black marble.  This room is 
+obviously a library of some kind.  There are shelves packed with books along 
+the walls.  
+~
+RoomFlags light~
+Sector inside~
+Exit southwest 1501
+End
+
+
+#1507
+Name Cellar~
+Desc . Your at the bottom of a grand staircase and standing in a dark cellar.  
+~
+Sector cave~
+Mana 80
+Heal 80
+RoomEcho  1 23  10 You feel something tugging at your leg.~
+RoomEcho  1 23  20 Water drops from above and lands at your feet~
+Exit east 1508
+Exit west 1509
+EFlags door closed~
+Exit up 1502
+End
+
+
+#1508
+Name Cellar~
+Desc This is a dark dank cave.  You can barely see anthing but cobwebs and murky 
+darkness.  
+~
+Sector cave~
+Mana 80
+Heal 80
+RoomEcho  1 23  20 Water drops from the ceiling and lands at your feet.~
+RoomEcho  1 23  10 You feel something tugging at your leg.~
+Exit north 1514
+EFlags door closed~
+Exit south 1515
+EFlags door closed~
+Exit west 1507
+End
+
+
+#1509
+Name Cellar~
+Desc This is a dark dank cave.  You can barely see anthing but cobwebs and murky 
+darkness.  
+~
+Sector cave~
+Mana 80
+Heal 80
+RoomEcho  1 23  20 Water drops from above and lands at your feet.~
+RoomEcho  1 23  10 You feel something tugging at your leg.~
+Exit north 1513
+EFlags door closed nopass~
+EKeyvnum 1513
+EDesc A heavy Ironclad door.
+~
+Exit east 1507
+EFlags door closed~
+Exit south 1510
+End
+
+
+#1510
+Name Cellar~
+Desc This is a dark dank cave.  You can barely see anthing but cobwebs and murky 
+darkness.  
+~
+Sector cave~
+Mana 80
+Heal 80
+RoomEcho  1 23  10 You feel something tugging at your leg.~
+RoomEcho  1 23  20 Water drops from above and lands at your feet.~
+Exit north 1509
+Exit south 1511
+End
+
+
+#1511
+Name Cellar~
+Desc This is a dark dank cave.  You can barely see anthing but cobwebs and murky 
+darkness.  
+~
+Sector cave~
+Mana 80
+Heal 80
+RoomEcho  1 23  20 Water drops from above and lands at your feet.~
+RoomEcho  1 23  10 You feel something tugging at your leg.~
+Exit north 1510
+Exit west 1512
+EFlags door closed~
+End
+
+
+#1512
+Name Altar Room~
+Desc This room is slightly larger than the rest.  The only thing that sets it 
+apart from the rest of the caves down here is a huge marble structure in the 
+middle of the room.  
+~
+RoomFlags indoors light noscan~
+Sector inside~
+Mana 110
+Heal 110
+Exit east 1511
+EFlags door closed~
+End
+
+
+#1513
+Name Dungeon~
+Desc This room is dark, damp and not very big at all.  There are rough stone 
+walls and matching ceiling.  The floor is nothing more than packed dirt.  
+The only other thing in this room is a small bucket.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic~
+Sector cave~
+Mana 50
+Heal 50
+RoomEcho  1 23  20 Water drops from above and lands at your feet.~
+RoomEcho  1 23  20 You feel something tugging at your leg.~
+Exit south 1509
+EFlags door closed nopass~
+End
+
+
+#1514
+Name Labratory~
+Desc Most of the room is taken up by a large table with various equipment on it.  
+There are beakers, burners, and tubes.  
+~
+RoomFlags indoors light~
+Sector cave~
+RoomEcho  1 23  20 You hear the sound of bubbling liquid.~
+RoomEcho  1 23  10 You see a `#`?c`?o`?l`?o`?r`?f`?u`?l`^ `#`Yflash`^ from the corner of your eye~
+ExtraDesc equip ~
+There are various beakers burners and tubes set up on the table.  They are 
+all interconnected and doing various things.  Some are boiling, some are 
+being mixed, some are just simple waiting to be used.  
+~
+Exit south 1508
+EFlags door closed~
+End
+
+
+#1515
+Name Storage~
+Desc Although this room is basically hollowed out of the ground, there are 
+shelves and space for storage.  
+~
+Sector cave~
+Mana 80
+Heal 80
+Exit north 1508
+EFlags door closed~
+End
+
+
+#1516
+Name Grand Staircase(top)~
+Desc The walls, floors and ceiling are all made of white marble.  There is a 
+grand staircase before you that goes back down and doors on each side of you 
+and in front of you.  
+~
+Sector inside~
+ExtraDesc staircase ~
+The staircase descends and is made of black marble.
+~
+Exit north 1519
+EFlags door closed~
+Exit east 1517
+EFlags door closed~
+Exit west 1518
+EFlags door closed~
+Exit down 1502
+End
+
+
+#1517
+Name Guest Room~
+Desc The walls ceiling and floor are composed of white marble.  This appears to 
+be a bed chamber.  
+~
+Sector inside~
+Exit west 1516
+EFlags door closed~
+End
+
+
+#1518
+Name Guest Room~
+Desc The walls ceiling and floor are composed of white marble.  This appears to 
+be a bed chamber.  
+~
+Sector inside~
+Exit east 1516
+EFlags door closed~
+End
+
+
+#1519
+Name Master Bedroom~
+Desc This room is quite a bit larger than the other two.  It too is entirely made 
+of white marble.  
+~
+Sector inside~
+Exit south 1516
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1503 -1 1503
+O 0 1501 -1 1503
+O 0 1502 -1 1503
+O 0 1505 -1 1504
+O 0 1506 -1 1504
+O 0 1502 -1 1504
+O 0 1502 -1 1505
+O 0 1510 -1 1505
+O 0 1502 -1 1505
+O 0 1501 -1 1506
+O 0 1504 -1 1506
+O 0 1505 -1 1506
+O 0 1512 -1 1512
+O 0 1511 -1 1513
+O 0 1501 -1 1514
+O 0 1502 -1 1514
+O 0 1502 -1 1515
+O 0 1509 -1 1517
+O 0 1508 -1 1517
+O 0 1507 -1 1518
+O 0 1509 -1 1518
+O 0 1509 -1 1519
+P 0 1513 1 1509 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

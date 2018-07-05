@@ -1,0 +1,3121 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        City of Solace~
+ShortName   Solace~
+Builders    ~
+Credits     Ixliam~
+VNUMs       21600 21725
+LComment    `#`Y[  ALL  ]`^
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Krynn~
+AreaEcho 19  5  20 Birds sing in the vallenwoods around you.~
+AreaEcho  8 15  20 Crickets chirp in the distance.~
+*LastSaved  Tue Aug 23 22:28:12 2005~
+End
+
+
+
+#MOBILES
+#21600
+Name elf female potion dealer~
+ShortD the potion dealer~
+LongD A female elf with a cart of potions is here.~
+Desc ~
+Race elf~
+Align 1 1
+Level 110
+Hitroll 5
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType slice
+AC -800 -800 -800 -712
+Wealth 180
+Act    npc scavenger no_tame no_hunt warrior noautosocial changer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared dark_vision regeneration~
+Imm    summon charm scry~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#21601
+Name Theos Ironfield~
+ShortD `#Theos Ironfield`^~
+LongD Theos Ironfield is here, forging weapons and armor for his shop.~
+Desc Theos Ironfield is a large black man standing 6'7".  Ash and soot from the 
+fires of his forge over his leather apron, and he wield a large hammer in 
+his `wSilver Arm`x.  
+~
+Race human~
+Align 3 3
+Level 60
+Hitroll 15
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType pound
+AC -300 -300 -300 -267
+Wealth 60
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  sanctuary protect_evil~
+Off    bash berserk disarm fast dirt_kick assist_align~
+Imm    summon charm disease~
+Res    weapon fire~
+Form   biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg RANDOM 21601 5~
+MProg RANDOM 21600 9~
+MProg GRALL 21643 100~
+MProg BRIBE 21644 5000~
+END
+
+#21602
+Name khendos shop blacksmith~
+ShortD khendos the apprentice~
+LongD Khendos stands behind the counter, ready to serve your needs.~
+Desc ~
+Race human~
+Align 0 0
+Level 60
+Hitroll 20
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType slice
+AC -300 -300 -300 -240
+Wealth 1000
+Act    npc dont_wander stay_area warrior~
+Act2   repair_man~
+Off    bash dodge parry~
+Imm    summon charm~
+Res    magic weapon~
+Form   biped mammal~
+Part   head arms legs heart guts hands feet eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 21602 100~
+END
+
+#21603
+Name child mage~
+ShortD a rambunctious child mage~
+LongD A young child in mages robes is running around the classroom.~
+Desc ~
+Race human~
+Align -3 0
+Level 5
+Hitroll 0
+HitDice 2d4+1
+ManaDice 3d5+60
+DamDice 1d5+0
+DamType punch
+AC 60 60 60 49
+Wealth 10
+Act    npc dont_wander stay_area mage noalign~
+Form   biped mammal~
+Part   head arms legs guts fingers~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+MProg RANDOM 21603 5~
+END
+
+#21604
+Name student mage apprentice teacher~
+ShortD an apprentice mage~
+LongD The masters apprentice stand here, trying to calm the class down.~
+Desc ~
+Race human~
+Align -2 0
+Level 18
+Hitroll 5
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType pierce
+AC -45 -45 -45 -39
+Wealth 190
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_magic haste~
+Form   biped mammal~
+Part   head arms legs heart guts hands fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg RANDOM 21605 7~
+MProg GREET 21604 100~
+END
+
+#21605
+Name master mage old grumpy~
+ShortD the Master Mage~
+LongD The grumpy old Master Mage is here, and he is NOT happy to see you!~
+Desc ~
+Race human~
+Align -1 0
+Level 35
+Hitroll 12
+HitDice 5d6+205
+ManaDice 5d7+260
+DamDice 6d4+9
+DamType magic
+AC -113 -113 -113 -97
+Wealth 350
+Act    npc dont_wander aggressive mage~
+AffBy  sanctuary haste~
+Off    fast~
+Res    magic~
+Form   biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21606
+Name banker Syrus~
+ShortD syrus the banker~
+LongD Syrus the Banker is here, ready for your transactions.~
+Desc ~
+Race human~
+Align -1 0
+Level 60
+Hitroll 0
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType crush
+AC -300 -300 -300 -267
+Wealth 550
+Act    npc dont_wander docile stay_area warrior nopurge indoors changer~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 21660 100~
+END
+
+#21607
+Name hill dwarf~
+ShortD a `#`yhill dwarf`^~
+LongD A resident `#`yhill dwarf`^ is standing here.~
+Desc ~
+Race dwarf~
+Align -2 0
+Level 15
+Hitroll 4
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType slash
+AC -20 -20 -20 -17
+Wealth 150
+Act    npc wimpy warrior~
+AffBy  infrared~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#21608
+Name elf~
+ShortD an elf~
+LongD An elf from Qualinesti is wandering through Solace.~
+Desc ~
+Race elf~
+Align 1 1
+Level 16
+Hitroll 5
+HitDice 3d5+72
+ManaDice 2d4+5
+DamDice 2d6+4
+DamType slice
+AC -25 -25 -25 -22
+Wealth 180
+Act    npc warrior~
+AffBy  infrared~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#21609
+Name otik sandarr~
+ShortD `#`yOtik Sandarr`^~
+LongD `#`yOtik Sandarr`^ stands behind the bar, ready to take your order.~
+Desc ~
+Race human~
+Align 2 0
+Level 60
+Hitroll 50
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -246
+Wealth 600
+Act    npc dont_wander warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 21609 100~
+END
+
+#21611
+Name kender~
+ShortD a `#`ykender`^~
+LongD A `#`ykender`^ is standing here. Better grab your money purse!~
+Desc Better hold on to your money and your belongings!
+ 
+~
+Race kender~
+Align -1 0
+Level 9
+Hitroll 2
+HitDice 2d5+8
+ManaDice 2d4+5
+DamDice 1d7+2
+DamType punch
+AC 30 30 30 26
+Wealth 75
+Act    npc wimpy thief~
+AffBy  infrared pass_door~
+Res    poison mental disease~
+Vuln   poison light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#21612
+Name Tika Majere~
+ShortD `#`CTika `CMajere`^~
+LongD `#The beautiful `CTika `CMajere`^ is here, serving customers.~
+Desc Tika's curly red hair flows down her back.  She wears a low cut top,
+showing off her..  Ummm...  Assets.  She is very attractive, and gives you a
+wink as she trots off to serve the patrons of the inn.  
+~
+Race human~
+Align -2 0
+Level 53
+Hitroll 20
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType punch
+AC -250 -250 -250 -200
+Wealth 200
+Act    npc stay_area~
+AffBy  sanctuary haste~
+Off    disarm dodge fast dirt_kick parry trip assist_players~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 21645 100~
+MProg BRIBE 21612 5000~
+END
+
+#21613
+Name mistress edwina healer~
+ShortD `#Mistress Edwina`^~
+LongD Mistress Edwina stands here, tending to your wounds.~
+Desc ~
+Race halfelf~
+Align -1 0
+Level 100
+Hitroll 90
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+54
+DamType blast
+AC -700 -700 -700 -630
+Wealth 600
+Act    npc dont_wander cleric noalign healer~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil haste regeneration~
+Off    area_attack bash disarm dodge fast dirt_kick parry trip~
+Imm    summon charm magic weapon poison negative disease drowning~
+Res    charm fire cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 21613 100~
+END
+
+#21614
+Name town guard~
+ShortD a `#`ytown guard`^~
+LongD A member of the `#`ytown guard`^ is here, keeping the peace.~
+Desc ~
+Race human~
+Align -1 1
+Level 30
+Hitroll 5
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -76
+Wealth 105
+Act    npc stay_area wimpy warrior~
+AffBy  protect_evil haste~
+Off    berserk disarm dodge fast kick parry rescue~
+Res    poison disease~
+Form   biped mammal~
+Part   head arms legs heart guts hands fingers eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#21615
+Name mayor Solace~
+ShortD the mayor of Solace~
+LongD The Mayor of Solace is here, making his rounds.~
+Desc ~
+Race human~
+Align 3 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+6
+DamType pound
+AC -70 -70 -70 -56
+Wealth 250
+Act    npc wimpy cleric noalign~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21616
+Name old man fizban wizard~
+ShortD wise old man~
+LongD A wise old man is sitting here by the fire.~
+Desc ~
+Race human~
+Align -3 3
+Level 100
+Hitroll 99
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType magic
+AC -700 -700 -700 -595
+Wealth 0
+Act    npc stay_area train practice gain~
+Act2   crime_points~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 21616 100~
+END
+
+#21617
+Name citizen~
+ShortD citizen of Solace~
+LongD A citizen of Solace is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 13
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType none
+AC -20 -20 -20 -16
+Wealth 50
+Act    npc wimpy warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#21618
+Name rhiannon~
+ShortD `#Rhiannon of Solace`^~
+LongD Rhiannon is here, selling her potions.~
+Desc ~
+Race elf~
+Align 3 0
+Level 50
+Hitroll 20
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType punch
+AC -200 -200 -200 -180
+Wealth 500
+Act    npc dont_wander~
+AffBy  infrared~
+Imm    magic~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#21619
+Name kosh jeweler~
+ShortD `#Kosh the jeweler`^~
+LongD Kosh the Jeweler stand here, his fingers covered with rings.~
+Desc ~
+Race gnome~
+Align 3 0
+Level 60
+Hitroll 40
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -264
+Wealth 600
+Act    npc dont_wander warrior changer~
+AffBy  infrared~
+Res    magic poison mental disease~
+Vuln   magic drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#21620
+Name alchemist dwarven~
+ShortD a dwarven alchemist~
+LongD A dwarven alchemist wanders, looking for things to combine.~
+Desc ~
+Race human~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -77
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  sanctuary haste regeneration~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 21606 metal~
+MProg SPEECH 21607 rare~
+END
+
+#0
+
+
+
+#OBJECTS
+#21601
+Name boulder~
+Short a large `#`Sboulder`^~
+Desc A large `#`Sboulder`^ lies just off the road.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 10000
+Rsize 50
+Values 2 10000 BEHK 110 100
+Weight 10000
+Material unknown~
+Extra    nonmetal burnproof~
+End
+
+#21602
+Name red hot forge~
+Short a `#`Rred-hot`^ forge~
+Desc A `#`Rred-hot`^ forge is in the corner.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 10000
+Rsize 50
+Values 100 AC 0 1000 0
+Weight 10000
+Material steel~
+Extra    glow burnproof~
+End
+
+#21603
+Name silver arm strength~
+Short `#`SSilver Arm`^ of `#`SStrength`^~
+Desc An arm made of silver metal is lying here.~
+Level 55
+ItemType armor~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 11 11 0
+Weight 20
+Material artifact~
+Extra    magic antineutral burnproof~
+Wear     take arms~
+ClassAllowances cleric warrior druid paladin ranger anti-paladin knight~
+AttuneFlags attunable hard~
+Affect modifier -1 55 -1 damroll 2 0
+Affect modifier -1 55 -1 hitroll 2 0
+Affect objectspell 'giant strength' 55 -1 none 0 0
+End
+
+#21604
+Name steel molten lump ore~
+Short lump of molten steel~
+Desc A lump of molten steel used for forging lies here, ready to be worked.~
+Level 1
+ItemType ore~
+Cost 160
+Durability 5
+Asize 60
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material steel~
+Wear     take hold~
+Affect modifier -1 1 -1 strength -2 0
+End
+
+#21605
+Name forging hammer~
+Short `#`Sforging`^ hammer~
+Desc A steel hammer used for forging armor and weapons lies here.~
+Level 60
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 240
+Rsize 50
+Values mace 7 8 pound A
+Weight 25
+Material steel~
+Extra    noremove burnproof~
+Wear     take wield hold~
+ClassAllowances cleric thief warrior paladin bard knight~
+Affect modifier -1 60 -1 mana -40 0
+Affect modifier -1 60 -1 hitroll 2 0
+End
+
+#21606
+Name fine steel mace~
+Short fine `#`Ssteel`^ mace~
+Desc A fine steel mace lies gleaming on the ground.~
+Level 30
+ItemType weapon~
+Cost 355
+Durability 5
+Asize 120
+Rsize 50
+Values mace 4 7 crush D
+Weight 120
+Material steel~
+Extra    burnproof~
+Wear     take wield hold~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher bard knight~
+ExtraDesc mace~
+This mace was forged by Theos Ironfield.
+~
+End
+
+#21607
+Name sword steel longsword~
+Short fine `#`Ssteel`^ longsword~
+Desc A fine steel longsword lies gleaming on the ground.~
+Level 30
+ItemType weapon~
+Cost 355
+Durability 5
+Asize 100
+Rsize 50
+Values sword 7 3 slash DE
+Weight 100
+Material steel~
+Extra    burnproof~
+Wear     take wield hold~
+ClassAllowances cleric thief warrior paladin ranger barbarian bard knight~
+ExtraDesc sword~
+This fine steel longsword was forged by Theos Ironfield.
+~
+End
+
+#21608
+Name steel dagger~
+Short fine `#`Ssteel`^ dagger~
+Desc A fine steel dagger lies gleaming on the ground.~
+Level 35
+ItemType weapon~
+Cost 410
+Durability 5
+Asize 20
+Rsize 50
+Values dagger 7 3 pierce D
+Weight 20
+Material steel~
+Extra    burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin barbarian spellfilcher knight~
+ExtraDesc dagger~
+This dagger was forged by Theos Ironfield.
+~
+End
+
+#21609
+Name fine steel axe~
+Short fine `#`Ssteel`^ axe~
+Desc A fine steel axe lies gleaming on the ground.~
+Level 30
+ItemType weapon~
+Cost 355
+Durability 5
+Asize 145
+Rsize 50
+Values axe 5 7 slash EF
+Weight 145
+Material steel~
+Extra    burnproof~
+Wear     take wield hold~
+ClassAllowances warrior paladin ranger barbarian knight~
+End
+
+#21610
+Name engraved steel breastplate plate~
+Short engraved `#`Ssteel`^ breastplate~
+Desc A steel breasplate with fancy engraving is lying here.~
+Level 35
+ItemType armor~
+Cost 240
+Durability 5
+Asize 20
+Rsize 50
+Values 11 11 11 8 0
+Weight 50
+Material steel~
+Extra    burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian bard knight~
+End
+
+#21611
+Name pig face bascinet steel~
+Short a `#`Ssteel`^ pig face bascinet~
+Desc A fine pig-face bascinet is lying here.~
+Level 35
+ItemType armor~
+Cost 190
+Durability 5
+Asize 10
+Rsize 50
+Values 8 8 8 7 0
+Weight 10
+Material steel~
+Extra    burnproof~
+Wear     take head hold~
+ClassAllowances cleric warrior paladin barbarian bard knight~
+End
+
+#21612
+Name engraved steel greaves~
+Short engraved `#`Ssteel`^ greaves~
+Desc A fine pair of engraved steel greaves lies on the ground.~
+Level 35
+ItemType armor~
+Cost 222
+Durability 5
+Asize 13
+Rsize 50
+Values 8 8 8 7 0
+Weight 13
+Material steel~
+Extra    burnproof~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian bard knight~
+End
+
+#21613
+Name crested heater shield~
+Short crested `#`Sheater`^ shield~
+Desc A steel heater shield lies on the ground.~
+Level 34
+ItemType armor~
+Cost 126
+Durability 5
+Asize 10
+Rsize 50
+Values 11 11 11 8 0
+Weight 10
+Material steel~
+Extra    burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian bard knight~
+End
+
+#21614
+Name welcome sign~
+Short a wooden welcome sign~
+Desc A wooden sign is here. You might want to read it.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    burnproof~
+ExtraDesc sign~
+**************************************
+*         Welcome to Solace!         *
+*  May your stay be a pleasant one.  *
+*                                    *
+*   -- Area created by Ixliam --     *
+**************************************
+~
+End
+
+#21615
+Name order tablet~
+Short work order tablet~
+Desc An armorsmith's work order tablet is lying here, filled with orders.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Wear     take wield hold~
+End
+
+#21616
+Name key slender~
+Short a slender key~
+Desc A slender key is lying here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material gold~
+Wear     take hold~
+End
+
+#21617
+Name small desk key~
+Short a small desk key~
+Desc A small key lies here on the floor.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material brass~
+Wear     take hold~
+End
+
+#21618
+Name sparkling wand~
+Short a `#`?s`?p`?a`?r`?k`?l`?i`?n`?g`^ wand~
+Desc A `#`?s`?p`?a`?r`?k`?l`?i`?n`?g`^ wand is lying on the ground.~
+Level 35
+ItemType wand~
+Cost 250
+Durability 5
+Asize 4
+Rsize 50
+Values 35 10 8 'dispel magic' 0
+Weight 4
+Material wood~
+Extra    hum magic~
+Wear     take hold~
+ClassAllowances mage cleric thief ranger spellfilcher~
+End
+
+#21619
+Name bookshelf~
+Short a dusty bookshelf~
+Desc A large dusty bookshelf stand here, filled with spellbooks.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 100 -50
+Weight 0
+Material wood~
+End
+
+#21620
+Name oak desk~
+Short a large oak desk~
+Desc A large oak desk covered with papers is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 ABCD 21617 100 0
+Weight 0
+Material oak~
+End
+
+#21621
+Name scroll givk upi ssjpkr~
+Short scroll titled 'givk upi ssjpkr'~
+Desc A scroll titled 'givk upi ssjpkr' is lying here.~
+Level 45
+ItemType scroll~
+Cost 875
+Durability 5
+Asize 0
+Rsize 50
+Values 45 fireball blindness 'lightning bolt' ''
+Weight 0
+Material paper~
+Extra    glow magic~
+Wear     take hold~
+ClassAllowances mage thief ranger spellfilcher~
+End
+
+#21622
+Name ancient book legend~
+Short a `#`YB`yook `cof `YL`yegends`^~
+Desc An ancient book titled 'Legends of the World' is lying here.~
+Level 0
+ItemType light~
+Cost 50
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 999 0 0
+Weight 10
+Material paper~
+Extra    glow~
+Wear     take hold~
+Affect modifier -1 0 -1 quickness 2 0
+ExtraDesc book~
+You open the book and begin to read the table of contents.
+1. How I defeated the Green Dragon by Thistlenott Burrhopp
+2. Nice prisons to visit in Abanasia by Kristop Hotfoot
+3. Wanderlust - Now, where's my hoopak! by Trispringer
+4. How to make friends through stories by Chianna Flamehair
+5. Dressing in Style by Kristoff Thimblefeet
+6. Dealing with Dwarves by Alherta Kellerflop.
+ 
+You realize it is a book by kobolds and wonder what it was doing in
+a mages library. You quickly shut it before you go insane.
+~
+End
+
+#21623
+Name feather bed nice~
+Short a comfortable bed~
+Desc A nice `#`cfeather bed`^ is here, it looks quite comfortable.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 500
+Rsize 50
+Values 2 5000 EHK 105 105
+Weight 500
+Material feather~
+End
+
+#21624
+Name pine dresser wood~
+Short a `#`ypine dresser`^~
+Desc A `#`ypine dresser`^ is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 30
+Rsize 50
+Values 1000 ACD 0 1000 0
+Weight 30
+Material unknown~
+End
+
+#21625
+Name gold necklace~
+Short a `#`Ygold`^ necklace~
+Desc A `#`Ygold`^ necklace is lying here.~
+Level 5
+ItemType jewelry~
+Cost 240
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    noremove~
+Wear     take neck hold~
+End
+
+#21626
+Name platinum wedding band~
+Short `wa `Splatinum `wwedding band`^~
+Desc A wedding band made of platinum is here.~
+Level 0
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material diamond~
+Extra    glow burnproof~
+Wear     take finger hold~
+Affect modifier -1 0 -1 presence 1 0
+Affect modifier -1 0 -1 empathy 2 0
+Affect modifier -1 0 -1 hitroll 1 0
+Affect modifier -1 0 -1 damroll 1 0
+End
+
+#21627
+Name bloodstone~
+Short a `#`rbloodstone`^~
+Desc A `#`rbloodstone`^ is lying here.~
+Level 0
+ItemType gem~
+Cost 345
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material bloodstone~
+Wear     take hold~
+End
+
+#21628
+Name purple potion~
+Short a `#`mpurple potion`^~
+Desc A `#`mpurple potion`^ in a vial is standing here.~
+Level 25
+ItemType potion~
+Cost 80
+Durability 5
+Asize 0
+Rsize 50
+Values 30 teleport 'faerie fire' blindness ''
+Weight 0
+Material unknown~
+Extra    magic~
+Wear     take hold~
+End
+
+#21629
+Name black potion~
+Short a `#`Sblack potion`^~
+Desc A `#`Sblack potion`^ is lying here.~
+Level 10
+ItemType potion~
+Cost 18
+Durability 5
+Asize 1
+Rsize 50
+Values 35 'protection evil' '' '' ''
+Weight 1
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#21630
+Name glowing white potion~
+Short a `#`Yglowing `Wwhite`^ potion~
+Desc A `#`Yglowing `Wwhite`^ potion is lying here.~
+Level 10
+ItemType potion~
+Cost 18
+Durability 5
+Asize 0
+Rsize 50
+Values 35 'protection good' '' '' ''
+Weight 0
+Material unknown~
+Extra    magic~
+Wear     take hold~
+End
+
+#21631
+Name thick blue potion~
+Short a thick `#`Bblue potion`^~
+Desc A thick `#`Bblue potion`^ in a large vial is lying here.~
+Level 13
+ItemType potion~
+Cost 190
+Durability 5
+Asize 2
+Rsize 50
+Values 32 refresh 'remove curse' 'cure poison' ''
+Weight 2
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#21632
+Name kender-shaped potion~
+Short a `#`ykender-shaped potion`^~
+Desc A potion with the picture of a kender on it is lying here.~
+Level 15
+ItemType potion~
+Cost 200
+Durability 5
+Asize 2
+Rsize 50
+Values 25 'pass door' '' '' ''
+Weight 2
+Material kender~
+Extra    magic~
+Wear     take hold~
+End
+
+#21633
+Name smelly potion~
+Short a `#`Gsmelly`^ potion~
+Desc A `#`Gsmelly`^ potion is lying here.~
+Level 20
+ItemType potion~
+Cost 100
+Durability 5
+Asize 4
+Rsize 50
+Values 25 heal fly '' ''
+Weight 4
+Material fart~
+Extra    magic~
+Wear     take hold~
+End
+
+#21634
+Name help potion~
+Short a potion named 'Help'~
+Desc A potion with the word 'HELP!' on it lies here.~
+Level 10
+ItemType potion~
+Cost 225
+Durability 5
+Asize 5
+Rsize 50
+Values 30 'remove curse' 'word of recall' 'cure serious' ''
+Weight 5
+Material glass~
+Extra    glow magic~
+Wear     take hold~
+End
+
+#21635
+Name fountain silver~
+Short a `#`wsilver fountain`^~
+Desc A `#`wsilver fountain`^ is here, gurgling with water.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 1000 water 0 0
+Weight 0
+Material unknown~
+Extra    burnproof~
+End
+
+#21636
+Name fireplace~
+Short a `#`Rblazing`^ fireplace~
+Desc A `#`Rblazing`^ fireplace is here, warming the inn.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 9999
+Rsize 50
+Values 1 1000 ADGJO -80 -50
+Weight 9999
+Material brick~
+Extra    glow nopurge burnproof~
+End
+
+#21637
+Name round table~
+Short a round table~
+Desc A round table with six chairs is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 500
+Rsize 50
+Values 6 5000 BDGJ 120 120
+Weight 500
+Material wood~
+End
+
+#21638
+Name chair~
+Short a chair~
+Desc A nice looking chair is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 2000 BFIL 105 105
+Weight 0
+Material wood~
+End
+
+#21639
+Name mug mead~
+Short a `#`yfoaming`^ mug of mead~
+Desc A foaming mug of mead is here.~
+Level 0
+ItemType drinkcontainer~
+Cost 2
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3 mead 0 0
+Weight 0
+Material mead~
+Wear     take hold~
+End
+
+#21640
+Name spiced potatoes plate~
+Short Otik's `#`Rs`rp`Ri`rc`Re`rd`^ potatoes~
+Desc A plate of Otik's `#`Rs`rp`Ri`rc`Re`rd`^ potatoes is here.~
+Level 0
+ItemType food~
+Cost 3
+Durability 5
+Asize 1
+Rsize 50
+Values 20 50 0 0 0
+Weight 1
+Material potatoe~
+Wear     take hold~
+End
+
+#21641
+Name ice-cold beer~
+Short an `#`Cice-cold`^ beer~
+Desc An `#`Cice-cold`^ beer is sitting here.~
+Level 0
+ItemType drinkcontainer~
+Cost 2
+Durability 5
+Asize 1
+Rsize 50
+Values 3 3 beer 0 0
+Weight 1
+Material beer~
+Wear     take hold~
+End
+
+#21642
+Name brightly colored kender pants~
+Short some `#`?b`?r`?i`?g`?h`?t`?l`?y `?c`?o`?l`?o`?r`?e`?d `?k`?e`?n`?d`?e`?r`^ pants~
+Desc A pair of `#`?b`?r`?i`?g`?h`?t`?l`?y `?c`?o`?l`?o`?r`?e`?d `?k`?e`?n`?d`?e`?r`^ pants are lying here.~
+Level 5
+ItemType clothing~
+Cost 32
+Durability 5
+Asize 0
+Rsize 46
+Values 0 0 0 0 0
+Weight 4
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances thief spellfilcher bard~
+Affect modifier -1 5 -1 ac -1 0
+Affect modifier -1 5 -1 hitroll 1 0
+End
+
+#21643
+Name turkey leg~
+Short a `#`yturkey leg`^~
+Desc A delicious looking `#`yturkey leg`^ is sitting here.~
+Level 0
+ItemType food~
+Cost 4
+Durability 5
+Asize 1
+Rsize 50
+Values 20 40 0 0 0
+Weight 1
+Material unknown~
+Wear     take hold~
+End
+
+#21644
+Name yummy funnel cake~
+Short a `#`W(`Cyummy`W)`Y funnel cake`^~
+Desc A piece of `#`W(`Cyummy`W)`Y funnel cake`^ is sitting here.~
+Level 0
+ItemType food~
+Cost 20
+Durability 5
+Asize 1
+Rsize 50
+Values 10 20 0 0 0
+Weight 1
+Material cake~
+Wear     take hold~
+End
+
+#21645
+Name cast iron frying pan runic~
+Short a `#`W[`Rhot`W] `Scast iron`^ frying pan~
+Desc A hot cast iron frying pan is sitting here.~
+Level 45
+ItemType weapon~
+Cost 16
+Durability 5
+Asize 40
+Rsize 50
+Values mace 11 3 flame AD
+Weight 40
+Material iron~
+Extra    bless noremove nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace runic_item~
+Wear     take wield hold~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher bard knight~
+End
+
+#21646
+Name steak stake~
+Short a `#`ysteak`^ on a `#`ystake`^~
+Desc Some delicious `#`ysteak`^ on a `#`ystake`^ is sitting here.~
+Level 0
+ItemType food~
+Cost 2
+Durability 5
+Asize 1
+Rsize 50
+Values 15 30 0 0 0
+Weight 1
+Material steak~
+Wear     take hold~
+End
+
+#21647
+Name hoopak~
+Short a `#`yhoopak`^~
+Desc A kender hoopak is lying here.~
+Level 9
+ItemType weapon~
+Cost 25
+Durability 5
+Asize 4
+Rsize 45
+Values staff 3 4 thwack F
+Weight 4
+Material wood~
+Wear     take wield hold~
+End
+
+#0
+
+
+
+#ROOMS
+#21600
+Name Road through the Forest~
+Desc The road runs from the trail west through the forest, with trees lining the 
+road on either side.  Off in the distance, you hear the sounds and sense 
+civilization, but of what exact kind in this area, you do not know.  
+~
+Sector trail~
+Exit north 82344
+Exit east 21601
+Exit south 82404
+Exit southwest 82403
+End
+
+
+#21601
+Name Road to Solace~
+Desc The road continues to the east and west, winding its way through the
+forest.  The town of Solace lies to the east, home of the famous vallenwood
+trees, known across the world for their enormous size and strength.  A large
+boulder sits off to the side of the path, and it appears like it would be a
+good place to rest.  
+~
+Sector trail~
+Exit east 21602
+Exit west 21600
+End
+
+
+#21602
+Name Before Solace~
+Desc The road turns north through the forest as the town of Solace lies ahead.
+The forest begins to give way to a large clearing, and you begin to make out
+the vallenwood trees to the north.  Wisps of smoke come from the homes the
+townfolk have constructed in the trees, building around them, rather than
+cutting them down.  
+~
+Sector trail~
+Exit north 21603
+Exit west 21601
+End
+
+
+#21603
+Name Entrance to Solace~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues north and south from
+here.  
+~
+Sector city~
+Exit north 21604
+Exit south 21602
+End
+
+
+#21604
+Name Main Street and Habbakuk Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues in all directions from
+here.  
+~
+Sector city~
+Exit north 21605
+Exit east 21639
+Exit south 21603
+Exit west 21679
+End
+
+
+#21605
+Name Main Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues north and south.  
+~
+Sector city~
+Exit north 21606
+Exit south 21604
+End
+
+
+#21606
+Name Main Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues north and south.  
+~
+Sector city~
+Exit north 21607
+Exit south 21605
+End
+
+
+#21607
+Name Main & Zivilyn Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues north, south, east and
+west from here.  
+~
+Sector city~
+Exit north 21608
+Exit east 21654
+Exit south 21606
+Exit west 21680
+End
+
+
+#21608
+Name Main Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21609
+Exit south 21607
+End
+
+
+#21609
+Name Center of Solace~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  Stading in the center of Solace, a large
+staircase winds its way up a vallenwood tree, into the Inn of the Last Home
+above.  
+~
+Sector city~
+Exit north 21610
+Exit east 21651
+Exit south 21608
+Exit west 21681
+Exit up 21700
+End
+
+
+#21610
+Name Main Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21611
+Exit south 21609
+End
+
+
+#21611
+Name Main Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21612
+Exit south 21610
+End
+
+
+#21612
+Name Main Street & Solace Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21613
+Exit east 21668
+Exit south 21611
+End
+
+
+#21613
+Name Main Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  As you look up you see the back side of the
+Inn of the Last Home, and a rope descending down from the kitchen area, but
+you cannot reach it from here.  
+~
+Sector city~
+Exit north 21614
+Exit south 21612
+End
+
+
+#21614
+Name Main & Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  The outskirts of Solace lie to the north, or
+you man continue around the edge of town to the east and west, or back south
+into town.  
+~
+Sector city~
+Exit north 21615
+Exit east 21621
+Exit south 21613
+Exit west 21616
+End
+
+
+#21615
+Name Outskirts of Solace~
+Desc This rough, caravan-blazed trail heads south into the town of Solace, home 
+of the famed Vallenwood trees.  From here, many homes and walkways can be 
+seen built high up upon the branches of these mighty trees.  The trail heads 
+north from here as well, making a route for trade caravans to travel upon.  
+~
+RoomFlags no_mob~
+Sector city~
+Exit south 21614
+End
+
+
+#21616
+Name Paladine & Sirrion Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21614
+Exit south 21683
+Exit west 21617
+End
+
+
+#21617
+Name Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21616
+Exit west 21618
+End
+
+
+#21618
+Name Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A small staircase winds around a vallenwood
+tree into the branches above.  
+~
+Sector city~
+Exit east 21617
+Exit west 21619
+Exit up 21692
+End
+
+
+#21619
+Name Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21618
+Exit west 21620
+End
+
+
+#21620
+Name Paladine Street & Raistlin Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21619
+Exit south 21671
+End
+
+
+#21621
+Name Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21622
+Exit west 21614
+End
+
+
+#21622
+Name Paladine Steet and Solace Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21623
+Exit south 21644
+Exit west 21621
+End
+
+
+#21623
+Name Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A shop called 'Bubblies R Us' is to the
+south.  
+~
+Sector city~
+Exit east 21624
+Exit south 21627
+Exit west 21622
+End
+
+
+#21624
+Name Paladine Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21625
+Exit west 21623
+End
+
+
+#21625
+Name Paladine Street and Mishakal Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit south 21626
+Exit west 21624
+End
+
+
+#21626
+Name Mishakal Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A nice looking home lies to the west.  
+~
+Sector city~
+Exit north 21625
+Exit south 21628
+Exit west 21647
+EFlags door closed locked nopass~
+End
+
+
+#21627
+Name Bubblies R Us~
+Desc Shelves line the walls, filled with beakers and jars with various colors
+of potions to buy.  A strange smell fills the air around you.  The young
+proprietor of the shop, Rhiannon, stands ready to meet your requests.  A
+door to the north lies open to the street outside.  
+~
+Sector inside~
+Exit north 21623
+End
+
+
+#21628
+Name Mishakal Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A staircase leads up into the treetops, and
+you can make out the Bank of Solace above.  
+~
+Sector city~
+Exit north 21626
+Exit south 21631
+Exit up 21661
+End
+
+
+#21631
+Name Mishakal Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21628
+Exit south 21633
+End
+
+
+#21633
+Name Mishakal Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21631
+Exit south 21635
+End
+
+
+#21635
+Name Habbakuk Way & Mishakal Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues west and north from
+here.  
+~
+Sector city~
+Exit north 21633
+Exit west 21637
+End
+
+
+#21637
+Name Habbakuk Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  To the north lies the blacksmith shop of
+Theos Ironfield, and the road continues east and west.  
+~
+Sector city~
+Exit north 21642
+Exit east 21635
+Exit west 21638
+End
+
+
+#21638
+Name Habbakuk Way & Lookout Road~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  The road continues north, east and west
+from here.  
+~
+Sector city~
+Exit north 21641
+Exit east 21637
+Exit west 21639
+End
+
+
+#21639
+Name Habbakuk Way~
+Desc . Below the mighty vallenwoods, you find yourself in awe of their size. Trunk 
+the size of dragons, reaching far into the sky.  Ladders ascend into the 
+treetops, connecting the intricate maze of buildings that are nestled in the 
+arms of the vallenwood trees.  The road continues west and east from here.  
+~
+Sector city~
+Exit east 21638
+Exit west 21604
+End
+
+
+#21641
+Name Lookout Road~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21654
+Exit south 21638
+End
+
+
+#21642
+Name Theos's Arms & Armor~
+Desc Arms and armor line the walls of the Blacksmith shop.  Theos's assistant
+Khendos, stands behind a large oak counter, ready to serve your needs.  A
+slight smell of fire and ash fills the air, and you can feel the heat from
+the forge and hear the sounds of a hammer to the east.  A large oak door
+leading outside lies to the south.  
+~
+Sector inside~
+Exit east 21643
+Exit south 21637
+End
+
+
+#21643
+Name At the Forge~
+Desc The open air gives way the the sound of metal on metal, fire and smoke,
+as you stand near the forge of Theos Ironfield.  A several large barrels
+filled with oil, water, and some with what looks like blood stand here,
+ready to quench the fiery steel.  A rack filled with tongs, hammers,
+chisels, and other tools of the smith stands beside the forge.  Several
+anvils mounted on treestumps stand ready to work the steel into weapons and
+armor.  
+~
+Sector inside~
+Exit west 21642
+End
+
+
+#21644
+Name Solace Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A staircase leads up into the treetops from
+here.  
+~
+Sector city~
+Exit north 21622
+Exit south 21668
+Exit up 21645
+End
+
+
+#21645
+Name Along a Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit east 21648
+Exit down 21644
+End
+
+
+#21646
+Name Kosh's Fine Jewelery~
+Desc Several cases of fine jewelry and gems line the walls of this
+establishment.  Fine carpeting covers the floor, and Kosh, the Solace
+jeweler, is wearing enough jewelery to fund a large war.  A reenforced steel
+door is to the west, leading to the outside.  
+~
+RoomFlags safe~
+Sector inside~
+Exit west 21648
+End
+
+
+#21647
+Name A Wealthy Home~
+Desc This home is quite extravagent.  Large tapestries and paintings hang from
+the walls.  A blazing marble fireplace is on the southern wall, with a
+picture of the owner's family above the mantle.  A large bear-skin rug
+covers the stone floor, while a feather bed is in another corner of the
+room, beside a dresser.  An oak-framed door leading to the street is to the
+east.  
+~
+Sector inside~
+Exit east 21626
+EFlags door closed locked nopass~
+End
+
+
+#21648
+Name Outside the Jeweler~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  The jeweler's shop
+lies to the east.  
+~
+Sector city~
+Exit east 21646
+Exit south 21649
+Exit west 21645
+End
+
+
+#21649
+Name Along a Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21648
+Exit south 21650
+End
+
+
+#21650
+Name Along a Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21649
+Exit east 21659
+End
+
+
+#21651
+Name Below the Healer Cottage~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A ladder leads up a vallenwood and into a
+small building above.  
+~
+Sector city~
+Exit west 21609
+Exit up 21659
+End
+
+
+#21653
+Name Lookout Point~
+Desc High above the trees you can see the entire town of Solace.  To the far
+west lies the Mages school, the Inn of the Last Home is in the center of
+town, and just southwest of here if Theos's blacksmith shop.  Slightly
+northeast is Mistress Edwina's healing cottage and a bit further is the Bank
+of Solace.  At the edge of town to the northeast lies the Rhianon's potion &
+magic shop, and several homes are scattered both on the ground and in the
+vallenwoods.  It is quite a magnificent sight from here.  
+~
+Sector inside~
+Exit down 21654
+End
+
+
+#21654
+Name Below the Lookout Tower~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  A long flight of stairs leads up into the
+lookout tower, and the road continues to the west and south.  
+~
+Sector city~
+Exit south 21641
+Exit west 21607
+Exit up 21653
+End
+
+
+#21655
+Name Path through the Woods~
+Desc ~
+RoomFlags no_mob nowhere~
+Sector forest~
+End
+
+
+#21656
+Name Walkway through the Vallenwoods~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21657
+Exit west 21691
+End
+
+
+#21657
+Name Among the Vallenwoods~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  A small home lies to
+the north.  
+~
+Sector city~
+Exit north 21658
+EFlags door closed locked~
+Exit east 21664
+Exit south 21656
+End
+
+
+#21658
+Name A Small Home~
+Desc This small home is spartan at best.  Cheap cloth curtains cover the
+windows, and a single bed lies in one coner beside a nightstand.  A small
+fireplace lies on the east corner of the home, giving warmth during the cold
+winters.  It looks like a nice, basic home, but nothing to write home about.
+~
+Sector inside~
+Exit south 21657
+EFlags door closed locked~
+End
+
+
+#21659
+Name Healer's Cottage~
+Desc The cottage is well lit with a magical glow from several continual light
+spells placed in globes on the wall.  Cool air flows in from the open
+windows, as the fragrence of the forest fills the cottage.  You feel like
+this would be a great place to catch some rest, as several couches and
+benches line the walls.  It feels like a very safe place under the
+protection of Mistress Edwina.  
+~
+RoomFlags safe~
+Sector inside~
+Exit west 21650
+Exit down 21651
+End
+
+
+#21660
+Name Bank of Solace~
+Desc Inside of the large bank, customers are making their transactions.  They
+are trading gold for silver, silver for gold, or just depositing their money
+for safekeeping.  Why don't you make a deposit or withdrawl today ?  
+~
+RoomFlags bank safe law~
+Room2Flags no_steal~
+Sector inside~
+Exit east 21661
+End
+
+
+#21661
+Name On a Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  A large set of stairs
+lead down, and the Bank of Solace is to the west.  
+~
+Sector city~
+Exit south 21662
+Exit west 21660
+Exit down 21628
+End
+
+
+#21662
+Name On a Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21661
+Exit south 21663
+End
+
+
+#21663
+Name On a Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21662
+Exit south 21664
+End
+
+
+#21664
+Name Among the Vallenwoods~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21663
+Exit west 21657
+End
+
+
+#21667
+Name Town Guard Headquarters~
+Desc The town guard headquarters is nice and clean, compared to others you
+have seen.  Several cells for jailing drunk and criminals lie behind the
+large desk to your south.  A clerk stands behind the desk, ready to take any
+reports of wrongdoing and dispatch the guard to 'clear up the matter'.  To
+the west, a trophy case showcasing the various awards and honors the guard
+has received over the years.  
+~
+Sector inside~
+Exit north 21668
+End
+
+
+#21668
+Name Solace Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  The headquaters for the town guard lies to
+the south.  
+~
+Sector city~
+Exit north 21644
+Exit south 21667
+Exit west 21612
+End
+
+
+#21671
+Name Raistlin Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  A flight of stairs leads up and curves
+around a large vallenwood.  
+~
+Sector city~
+Exit north 21620
+Exit south 21672
+Exit up 21693
+End
+
+
+#21672
+Name Raistlin Lane~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21671
+Exit south 21673
+End
+
+
+#21673
+Name Before the Mage School~
+Desc You find yourself right outside the famous Mage's school of Solace, where
+young children and teenages come to take their first lessons on wielding
+magic.  You hear the sounds of children in the air, and the scolding voice
+of the master as he tries to calm them down, and make them behave.  The
+school lies just to the south of here.  
+~
+Sector city~
+Exit north 21672
+Exit east 21676
+Exit south 21674
+End
+
+
+#21674
+Name Solace Mage School~
+Desc The clamor of children in the classroom is...  Well, not exacly music to
+your ears.  20 small wooden desks fill the room, while a chalkboard and the
+teachers desk faces the students.  Paper airplanes litter the floor , and
+you wonder if all mages start their careers this way.  The school looks a
+bit underfinaced, and the paint is peeling in several places.  A large oak
+door lies to the east.  
+~
+Sector inside~
+Exit north 21673
+Exit east 21675
+EFlags door closed~
+End
+
+
+#21675
+Name Master Mage's Study~
+Desc A large oaken desk covered with test papers and spellbooks dominates this
+small room.  Greenish paint is peeling off the walls, and spell component
+residue litters the floor.  Several bookshelves stand full of books, and
+dust covers the top of the bookshelf.  You hope the master doesn't come in
+and catch you in his study!  Oak doors lie to the west and south.  
+~
+Sector inside~
+Exit south 21687
+EFlags door closed locked nopass~
+EKeyvnum 21616
+Exit west 21674
+EFlags door closed~
+End
+
+
+#21676
+Name Habbakuk Way & Zivilyn Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21686
+Exit east 21677
+Exit west 21673
+End
+
+
+#21677
+Name Habbakuk Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21678
+Exit west 21676
+End
+
+
+#21678
+Name Habbakuk Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.   
+~
+Sector city~
+Exit east 21679
+Exit west 21677
+End
+
+
+#21679
+Name Habbakuk Way~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21604
+Exit west 21678
+End
+
+
+#21680
+Name Zivilyn Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21607
+Exit west 21684
+End
+
+
+#21681
+Name Sirrion Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21682
+Exit east 21609
+End
+
+
+#21682
+Name Sirrion Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  A large staircase winds its way up into the
+treetops here.  
+~
+Sector city~
+Exit north 21683
+Exit south 21681
+Exit up 21691
+End
+
+
+#21683
+Name Sirrion Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunks the size of dragons, reach far into the sky.  Ladders ascend into the
+treetops, connecting the intricate maze of buildings that are nestled in the
+arms of the vallenwood trees.  
+~
+Sector city~
+Exit north 21616
+Exit south 21682
+End
+
+
+#21684
+Name Zivilyn Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  A flight of stairs leads up into the
+vallenwoods.  
+~
+Sector city~
+Exit east 21680
+Exit west 21685
+Exit up 21688
+End
+
+
+#21685
+Name Zivilyn Steet~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21684
+Exit west 21686
+End
+
+
+#21686
+Name Zivilyn Street~
+Desc Below the mighty vallenwoods, you find yourself in awe of their size. 
+Trunk the size of dragons, reaching far into the sky.  Ladders ascend into
+the treetops, connecting the intricate maze of buildings that are nestled in
+the arms of the vallenwood trees.  
+~
+Sector city~
+Exit east 21685
+Exit south 21676
+End
+
+
+#21687
+Name Mages Laboratory~
+Desc Potions bubble and caldrons brew, a feeling of magic comes over you. 
+Enchantments fill the air with power, all around this special hour. 
+Blackness falls upon your eyes, as they widen in suprise!  The Master mage's
+eyes glare at you, and with his power you'll be torn in two!  
+~
+Sector inside~
+Exit north 21675
+EFlags door closed locked nopass~
+EKeyvnum 21616
+End
+
+
+#21688
+Name In the Treetops~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21689
+Exit down 21684
+End
+
+
+#21689
+Name On the Vallenwood Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit south 21688
+Exit west 21690
+End
+
+
+#21690
+Name On the Vallenwood Walkway~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  
+~
+Sector city~
+Exit north 21692
+Exit east 21689
+Exit west 21693
+End
+
+
+#21691
+Name The Landing in the Vallenwoods~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  A large staircase
+leads down to the ground from here.  
+~
+Sector city~
+Exit east 21656
+Exit west 21692
+Exit down 21682
+End
+
+
+#21692
+Name Around the Vallenwood Tree~
+Desc You find yourself far above the ground in the vallenwood trees. 
+Exquisitly constructed bridges, stairs and pathways wind in and out of the
+vallenwood trees.  The view from here is magnificent.  A large staircase
+leads down to the ground from here.  
+~
+Sector city~
+Exit east 21691
+Exit south 21690
+Exit down 21618
+End
+
+
+#21693
+Name On the Vallenwood Walkway~
+Desc The flight of stairs curves around a mighty vallenwood tree.  You are
+just above the ground in the vallenwood trees.  Exquisitly constructed
+bridges, stairs and pathways wind in and out of the vallenwood trees.  The
+view from here is magnificent.  
+~
+Sector city~
+Exit east 21690
+Exit down 21671
+End
+
+
+#21700
+Name Inn of the Last Home~
+Desc Here at the entrance to the Inn of the Last Home, you are awestruck by
+its size.  Smoke rises from two chimneys, one on each side of the inn. 
+Light and the noise of the crowd, along with the smell of spiced potatoes
+pours from the entrance.  The inn stands two stories tall, and has been the
+home of many adventures, both famous and not-so famous.  Perhaps it can be
+your new home as well.  
+~
+Sector inside~
+Exit north 21701
+Exit down 21609
+End
+
+
+#21701
+Name Inn of the Last Home~
+Desc The sights and smells of this famous inn fill your senses.  Wifts of
+delicious food, including Otik's spiced potatoes, make your mouth water in
+anticipation.  A well-worn bar dominates the inn, polished to a warm glow. 
+Patrons wander in and out of the inn, some meeting with friends, some
+meeting with enemies.  But all come here to enjoy good companionship, great
+food, and ice cold mead.  
+~
+Sector inside~
+Exit north 21702
+Exit east 21703
+Exit south 21700
+End
+
+
+#21702
+Name Near the Kitchen~
+Desc The sights and smells of this famous inn fill your senses.  Wifts of
+delicious food, including Otik's spiced potatoes, make your mouth water in
+anticipation.  A well-worn bar dominates the inn, polished to a warm glow. 
+Patrons wander in and out of the inn, some meeting with friends, some
+meeting with enemies.  But all come here to enjoy good companionship, great
+food, and ice cold mead.  A set of swinging doors is to the north, leading
+into the kitchen.  
+~
+Sector inside~
+Exit north 21707
+Exit east 21704
+Exit south 21701
+End
+
+
+#21703
+Name Inn of the Last Home~
+Desc The sights and smells of this famous inn fill your senses.  Wifts of
+delicious food, including Otik's spiced potatoes, make your mouth water in
+anticipation.  A well-worn bar dominates the inn, polished to a warm glow. 
+Patrons wander in and out of the inn, some meeting with friends, some
+meeting with enemies.  But all come here to enjoy good companionship, great
+food, and ice cold mead.  
+~
+Sector inside~
+Exit north 21704
+Exit east 21705
+Exit west 21701
+End
+
+
+#21704
+Name At the Bar~
+Desc The sights and smells of this famous inn fill your senses.  Wifts of
+delicious food, including Otik's spiced potatoes, make your mouth water in
+anticipation.  A well-worn bar stands before you, polished to a warm glow. 
+Patrons wander in and out of the inn, some meeting with friends, some
+meeting with enemies.  But all come here to enjoy good companionship, great
+food, and ice cold mead.  
+~
+Sector inside~
+Exit east 21706
+Exit south 21703
+Exit west 21702
+End
+
+
+#21705
+Name By the Fireplace~
+Desc The sights and smells of this famous inn fill your senses.  Wifts of
+delicious food, including Otik's spiced potatoes, make your mouth water in
+anticipation.  A well-worn bar dominates the inn, polished to a warm glow. 
+Patrons wander in and out of the inn, some meeting with friends, some
+meeting with enemies.  But all come here to enjoy good companionship, great
+food, and ice cold mead.  
+~
+Sector inside~
+Exit north 21706
+Exit east 750
+EKeywords door~
+Exit west 21703
+End
+
+
+#21706
+Name Inn of the Last Home~
+Desc The sights and smells of this famous inn fill your senses.  Wifts of
+delicious food, including Otik's spiced potatoes, make your mouth water in
+anticipation.  A well-worn bar dominates the inn, polished to a warm glow. 
+Patrons wander in and out of the inn, some meeting with friends, some
+meeting with enemies.  But all come here to enjoy good companionship, great
+food, and ice cold mead.  
+~
+Sector inside~
+Exit south 21705
+Exit west 21704
+End
+
+
+#21707
+Name Kitchen of the Inn~
+Desc The smell of spicy potatoes and ice cold brew fills the kitchen.  The
+heat from the stove washes over you, as seveal cooks prepare food and drink
+for the patrons of the Inn.  Several gully dwarves can be seen washing
+dishes, some with washcloths, others with their tongues.  You hope that the
+plate you got wasn't washed that way!  At the very back of the kitchen is a
+small opening in the floor, with a rope ladder leading to the ground below. 
+It looks like a nice escape route.  
+~
+Sector inside~
+Exit south 21702
+Exit down 21613
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 21603 spec_thief
+M 21604 spec_cast_mage
+M 21605 spec_cast_mage
+M 21611 spec_thief
+M 21615 spec_cast_cleric
+S
+
+
+
+#RESETS2
+O 0 21601 0 21601
+M 0 21614 30 21602 1
+E 0 21610 0 torso~
+E 0 21607 0 hold~
+E 0 21607 0 wielded~
+O 0 21614 0 21603
+M 0 21611 20 21606 1
+E 0 21647 0 wielded~
+E 0 21642 0 legs~
+O 0 21635 0 21609
+M 0 21614 30 21609 1
+E 0 21613 0 shield~
+E 0 21612 0 legs~
+E 0 21610 0 torso~
+E 0 21606 0 wielded~
+M 0 21615 1 21610 1
+M 0 21617 30 21610 2
+M 0 21608 10 21610 2
+M 0 21600 1 21612 1
+G 0 1004 -1
+G 0 1002 -1
+G 0 1001 -1
+G 0 1000 -1
+M 0 21611 20 21619 1
+E 0 21642 0 legs~
+E 0 21647 0 wielded~
+M 0 21614 30 21624 2
+E 0 21612 0 legs~
+E 0 21611 0 head~
+E 0 21610 0 torso~
+E 0 21608 0 hold~
+E 0 21607 0 wielded~
+M 0 21611 20 21625 1
+E 0 21642 0 legs~
+E 0 21647 0 wielded~
+M 0 21618 1 21627 1
+G 0 21634 0
+G 0 21633 0
+G 0 21632 0
+G 0 21631 0
+G 0 21630 0
+G 0 21629 0
+M 0 21617 30 21628 2
+M 0 21607 20 21628 2
+M 0 21611 20 21637 1
+E 0 21642 0 legs~
+E 0 21647 0 wielded~
+M 0 21602 1 21642 1
+E 0 21615 0 hold~
+G 0 21607 -1
+G 0 21608 -1
+G 0 21606 -1
+G 0 21609 -1
+G 0 21610 -1
+G 0 21611 -1
+G 0 21612 -1
+G 0 21613 -1
+M 0 21601 1 21643 1
+E 0 21603 0 arms~
+E 0 21605 0 wielded~
+O 0 21602 0 21643
+P 0 21604 1 21602 1
+M 0 21619 1 21646 1
+G 0 3040 -1
+G 0 3066 -1
+G 0 3068 -1
+G 0 3077 -1
+O 0 21623 0 21647
+O 0 21624 0 21647
+P 0 21630 1 21624 1
+P 0 21627 1 21624 1
+P 0 21625 1 21624 1
+M 0 21614 30 21653 1
+E 0 21609 0 wielded~
+E 0 21607 0 hold~
+E 0 21610 0 torso~
+E 0 21611 0 head~
+M 0 21607 20 21654 2
+M 0 21607 20 21654 2
+M 0 21620 1 21654 1
+O 0 21624 0 21658
+P 0 21628 1 21624 1
+O 0 21623 0 21658
+M 0 21613 1 21659 1
+M 0 21606 1 21660 1
+M 0 21614 30 21667 3
+E 0 21611 0 head~
+E 0 21613 0 shield~
+E 0 21607 0 wielded~
+M 0 21603 12 21674 12
+M 0 21604 1 21674 1
+E 0 21616 0 hold~
+O 0 21619 0 21675
+P 0 21622 1 21619 1
+O 0 21620 0 21675
+P 0 21621 1 21620 1
+M 0 21605 1 21687 1
+G 0 21617 -1
+E 0 21618 0 hold~
+M 0 21607 20 21688 2
+M 0 21608 10 21688 2
+M 0 21617 30 21688 2
+M 0 21614 30 21691 1
+E 0 21611 0 head~
+E 0 21609 0 wielded~
+O 0 21638 0 21701
+O 0 21637 0 21701
+O 0 21637 0 21702
+O 0 21638 0 21702
+O 0 21638 0 21703
+O 0 21637 0 21703
+M 0 21612 1 21703 1
+E 0 21645 0 wielded~
+O 0 21638 0 21704
+O 0 21637 0 21704
+M 0 21609 1 21704 1
+G 0 21646 0
+G 0 21644 0
+G 0 21643 0
+G 0 21640 0
+G 0 21641 0
+G 0 21639 0
+M 0 21616 1 21705 1
+M 0 21607 20 21705 1
+O 0 21636 0 21705
+O 0 21637 0 21705
+O 0 21638 0 21705
+M 0 21611 20 21706 1
+E 0 21647 0 wielded~
+E 0 21642 0 legs~
+O 0 21637 0 21706
+O 0 21638 0 21706
+S
+
+
+
+#SHOPS
+#21600
+buy_type potion~
+buy_type scroll~
+profit_buy 110
+profit_sell 70
+close_hour 23
+END
+
+#21602
+buy_type weapon~
+buy_type armor~
+profit_buy 103
+profit_sell 60
+close_hour 23
+END
+
+#21609
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+close_hour 23
+END
+
+#21618
+buy_type potion~
+buy_type scroll~
+buy_type wand~
+profit_buy 90
+profit_sell 40
+close_hour 23
+END
+
+#21619
+buy_type gem~
+buy_type jewelry~
+buy_type treasure~
+profit_buy 101
+profit_sell 90
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#21660
+code if isfollow $n
+break
+endif
+if isnpc $n
+break
+endif
+wait 2
+if sex $n != 1
+say Welcome to our bank milady, you are looking quite lovely today!
+wink $n
+break
+endif
+say Welcome to our bank sir, please come in.
+smile $n
+break
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057708740
+END
+
+#21645
+title Ask HOBBLE~
+author Ixliam~
+code if hasskill $n hobble > 5
+ end
+endif
+if hasskill $n mace > 99
+ whisper $n I can teach you how to smash knees with your mace for 50 gold.
+ end
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038629809
+END
+
+#21644
+title TEACH CUTOFF~
+author Ixliam~
+code junk 50 gold
+junk 5000 silver
+if hasskill $n cutoff > 5
+ sayto $n Thanks for the donation to the children of Solace. I'll see it is used well.
+ end
+endif
+if hasskill $n polearm > 99
+ sayto $n Just wield your polearm and during the fight use it to CUTOFF your opponents retreat.
+ emote shows you some secret moves with a pike sitting in the corner.
+ sayto $n You got the hang of it. Now go practice on your own.
+ mob setskill $n cutoff 15
+ end
+endif
+sayto $n Thanks for the donation to the poor of Solace.
+emote puts the money in his pocket.
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038777194
+END
+
+#21643
+title ASK CUTOFF~
+author Ixliam~
+code if hasskill $n cutoff > 5
+ emote hammers away at his forge.
+ end
+endif
+if hasskill $n polearm > 99
+ sayto $n I can teach you to cutoff your enemies retreat during combat for 50 gold.
+ end
+endif
+sayto $n Welcome to my forge. Anything I can do for you ?
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038777017
+END
+
+#21616
+code if isnpc $n
+ break
+else
+say Psst... Would you like me to teach you some things ?
+say I can help you out. Type PRAC, TRAIN or GAIN.
+smile
+break
+endif
+~
+disabled false
+END
+
+#21613
+code say Welcome to my peacefull cottage. Might I heal your wounds ?
+say Type 'HEAL' to see a list of services.
+smile $n
+break
+~
+disabled false
+END
+
+#21612
+title Teach HOBBLE~
+author Ixliam~
+code if hasskill $n hobble > 5
+ junk 50 gold
+junk 5000 silver
+ kiss $n
+ end
+endif
+if hasskill $n mace > 99
+ sayto $n Clutch your mace firmly in your hand, like so.
+ emote firmly grasps her frying pan.
+ sayto $n Then, HOBBLE them in the knees!
+ emote whacks a nearby customer in the knees and they fall to the ground.
+ sayto $n See how easy that is. Now you go practice. I gotta get back to work.
+ junk 50 gold
+ junk 5000 silver
+mob setskill $n hobble 15
+ end
+endif
+ junk 50 gold
+ junk 2000 silver
+ peck $n
+ giggle
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1038630055
+END
+
+#21609
+code say Hi. Can I interest you in some of my famous spiced potatoes ?
+say Just type LIST to see what we have to order.
+smile
+break
+~
+disabled false
+END
+
+#21607
+title mention of metal (rare)~
+author Zaroth~
+code sayto $n Ahh yes, the rare metal.. I'm going to say some place close to the hive.. hidden in their stash of things for survival you may find some of that..
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1107394425
+END
+
+#21606
+title mention of metal (not rare)~
+author Zaroth~
+code sayto $n Yes, I deal with many metals, unless you can be more specific, stop wasting my time.
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1107394093
+END
+
+#21605
+code emote slaps a ruler in his hand.
+say Now class, settle down this instant!
+break
+~
+disabled false
+END
+
+#21604
+code say Can you please help me settle these kids down ?
+sigh
+break
+~
+disabled false
+END
+
+#21603
+code emote throws a paper airplane at the teacher.
+break
+~
+disabled false
+END
+
+#21602
+code if isfollow $n
+   break
+else
+   if isnpc $n
+    break
+  else
+   wait 2
+if sex $n == 2
+say Good day madam, how may I help you ?
+break
+else
+say Good day sir, how may I help you ?
+break
+endif
+ 
+endif
+break
+endif
+~
+disabled false
+END
+
+#21601
+code emote strikes some molten steel with his hammer.
+break
+~
+disabled false
+END
+
+#21600
+code mob echo `RF`rire`x and `RS`rparks`x fly from the forge.
+break
+~
+disabled false
+END
+
+#0
+
+
+#$

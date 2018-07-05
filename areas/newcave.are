@@ -1,0 +1,792 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Cave of Beginnings~
+ShortName   Cave of Beginnings~
+Builders    None~
+Credits     Hans~
+VNUMs       1021 1040
+LComment    `#`M[ NEWBIE]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto newbie_area_resets~
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+AreaEcho  0 23  80 A mysterious wind blows through the cave.~
+*LastSaved  Sat Aug 20 10:27:42 2005~
+End
+
+
+
+#MOBILES
+#1021
+Name spike metal dog~
+ShortD spike, the metal dog~
+LongD Spike, The metal dog is standing here glaring at you.~
+Desc This average sized dog seems normal, K-9 teeth, tail, fur? Hmm
+no fur.... oh my, He is made entirely out of silver!
+~
+Race dog~
+Align 0 0
+XPMod 140
+Level 6
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType claw
+AC 60 60 60 48
+Wealth 14
+Act    npc dont_wander no_tame stay_area no_hunt~
+Act2   no_random_obj~
+Off    dodge fast tail~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg DEATH 1021 25~
+END
+
+#1022
+Name fluffy fluff ball~
+ShortD fluffy, the fluff ball~
+LongD Fluffy, The fluff ball is standing here acting fluffy.~
+Desc Before you stands a big ball of.... well.... Fluff.
+~
+Race insect~
+Align 0 0
+XPMod 140
+Level 6
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 51
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt noalign noautosocial~
+Off    dodge fast~
+Vuln   bash~
+Form   edible sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material fluff
+MProg DEATH 1022 25~
+END
+
+#1023
+Name grig~
+ShortD a grig~
+LongD A small grig is leaping around the room excitedly.~
+Desc The grig is a sprite-like creature with a humanoid body and the legs of a 
+cricket.  A tiny set of wings allow it to fly about, and it can leap quite a 
+distance with it's legs.  It is quite shy and means no harm to anyone.  
+~
+Race human~
+Align 0 0
+XPMod 110
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType peck
+AC 80 80 80 65
+Wealth 0
+Act    npc no_tame stay_area no_hunt~
+Act2   no_random_obj~
+AffBy  calm~
+Off    dodge~
+Vuln   magic weapon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#1024
+Name centipede~
+ShortD a centipede~
+LongD A small orange centipede scurries about the floor.~
+Desc The centipede has a multi-segmented body, and each segment sports a set of 
+legs.  It uses two antenae to find things to eat and to navigate about.  
+~
+Race insect~
+Align 0 0
+XPMod 115
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType sting
+AC 70 70 70 58
+Wealth 0
+Act    npc no_tame stay_area no_hunt noalign noautosocial~
+Act2   no_random_obj~
+AffBy  slow~
+Vuln   magic weapon bash~
+Form   edible non_skinable sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#1025
+Name cave bat~
+ShortD a cave bat~
+LongD A blind cave bat flies about the cavern.~
+Desc There is a cave flying about, obviously disturbed from its slumber.  It 
+carries a little piece of jewelry in its claws.  
+~
+Race human~
+Align 0 0
+XPMod 110
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType suction
+AC 50 50 50 60
+Wealth 0
+Act    npc no_tame stay_area no_hunt~
+Act2   no_random_obj~
+Off    bash dodge fast~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#1026
+Name rock slimy~
+ShortD a slime-covered rock~
+LongD There is a rock covered in slime.~
+Desc A rock lies here, covered in slime.  Amazingly, it is slowly moving, whether 
+it is the slime that is organic or the rock, it is moving.  There is a bit 
+of slime that seems to hover about the rock.  
+~
+Race other~
+Align 0 0
+XPMod 115
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType pound
+AC 70 70 70 61
+Wealth 0
+Act    npc no_tame stay_area no_hunt~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    bash~
+Imm    summon~
+Res    bash pierce slash~
+Form   non_skinable blob~
+Part   head~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material rock
+END
+
+#1027
+Name snarling rat~
+ShortD a snarling rat~
+LongD A rat is here snarling like it has rabies!~
+Desc This rat appears to have some sort of disease and is snarling
+at everything that wanders near it. Watch out!
+~
+Race rabbit~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 52
+Wealth 0
+Act    npc no_tame stay_area no_hunt~
+Act2   no_random_obj~
+Off    dodge~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1021
+Name silver collar~
+Short a `#`Wsilver`^ collar~
+Desc A `#`Wsilver`^ collar rests here on the ground.~
+Level 6
+ItemType jewelry~
+Cost 40
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silver~
+Extra    glow nodegrade~
+Wear     take neck~
+Affect modifier -1 6 -1 hp 2 0
+Affect modifier -1 6 -1 hitroll 2 0
+End
+
+#1022
+Name fluffy anklet~
+Short a `#`Yfluffy`^ anklet~
+Desc A fluffy band of fur for your ankle is here.~
+Level 6
+ItemType jewelry~
+Cost 23
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material fluff~
+Extra    nonmetal nodegrade~
+Wear     take ankle~
+Affect modifier -1 6 -1 damroll 2 0
+End
+
+#1023
+Name amber ring~
+Short an `#`ya`rm`Rb`re`yr`^ ring~
+Desc A small band of amber lies upon the ground.~
+Level 2
+ItemType jewelry~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material amber~
+Extra    nonmetal nodegrade~
+Wear     take finger~
+Affect modifier -1 2 -1 hp 2 0
+ExtraDesc amber ~
+The thin band of amber glows slightly, and is warm to the touch.  
+~
+ExtraDesc ring ~
+The thin band of amber glows slightly, and is warm to the touch.  
+~
+End
+
+#1024
+Name centipede feeler~
+Short a `#`mc`be`mn`bt`mi`bp`me`bd`me`^ feeler~
+Desc The feeler of a centipede has been removed from it's owner.~
+Level 0
+ItemType treasure~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material feather~
+Extra    nonmetal nodegrade~
+Wear     take ear~
+Affect modifier -1 0 -1 agility 1 0
+Affect modifier -1 0 -1 quickness 1 0
+ExtraDesc feeler ~
+This is a tiny piece of the centipede that it used to find it's way about.  
+~
+End
+
+#1025
+Name dull bracelet~
+Short a `#`sdull`^ bracelet~
+Desc A `#`sdull`^ bracelet seems to have been of use at one time.~
+Level 1
+ItemType jewelry~
+Cost 5
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material metal~
+Extra    nodegrade~
+Wear     take wrist~
+Affect modifier -1 1 -1 ac -5 0
+End
+
+#1026
+Name floating slime glob~
+Short a `#`ygooey `mglob`^ of `#`Gslime`^~
+Desc There seems to be a small glob of slime that hovers around. There is no obvious reason for this phenomena, but it floats.~
+Level 1
+ItemType gem~
+Cost 8
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material slime~
+Extra    magic nodegrade~
+Wear     take float~
+Affect modifier -1 1 -1 ac -5 0
+End
+
+#1027
+Name small chunk of cheese~
+Short `wa small chunk of `Ych`yee`Yse`^~
+Desc `wa small chunk of `Ych`yee`Yse `wis laying here.`^~
+Level 0
+ItemType pill~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 25 haste refresh sanctuary ''
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#1030
+Name ring power~
+Short `YRing of Power`^~
+Desc `^A `ygold ring`^ with a strange script written on it.~
+Level 92
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 200 200 200 200 0
+Weight 0
+Material unknown~
+Extra    hum magic bless nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take finger~
+Affect objectspell sanctuary 92 -1 none 0 0
+Affect objectspell fly 92 -1 none 0 0
+Affect objectspell 'true sight' 92 -1 none 0 0
+Affect objectspell 'sense poison' 92 -1 none 0 0
+Affect objectspell 'tough skin' 92 -1 none 0 0
+Affect objectspell bless 92 -1 none 0 0
+Affect objectspell 'augment hearing' 92 -1 none 0 0
+Affect objectspell 'aura of temperance' 92 -1 none 0 0
+Affect modifier -1 92 -1 hp 1000 0
+Affect modifier -1 92 -1 damroll 100 0
+Affect modifier -1 92 -1 hitroll 100 0
+Affect modifier -1 92 -1 mana 1000 0
+ExtraDesc ring ~
+On it you read the following:
+One Ring to rule them all, One Ring to find them.
+One Ring to bring them all, and in the darkness bind them.
+~
+End
+
+#1031
+Name sign large wooden~
+Short a large wooden sign~
+Desc A large wooden `#`Rsign`^ rests here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    glow hum magic nodegrade burnproof~
+ExtraDesc sign ~
+Don't let your first adventure be your last!
+Haven't tested yourself yet?
+Turn back from this path!
+~
+ExtraDesc large ~
+Don't let your first adventure be your last!
+Haven't tested yourself yet?
+Turn back from this path!
+~
+ExtraDesc wooden ~
+Don't let your first adventure be your last!
+Haven't tested yourself yet?
+Turn back from this path!
+~
+End
+
+#1032
+Name can canadian whoop arse~
+Short `#A can of `YGrade A `RC`Wa`Rn`Wa`Rd`Wi`Ra`Wn `^Style `GWhoop-`CArse`^~
+Desc A small red and white can lies here, Pulsating with weird energy.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 ABCD 1033 1000 1
+Weight 0
+Material aluminum~
+Extra    glow hum nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#1033
+Name can opener~
+Short `#`CA `GCan `YOpener`^~
+Desc An odd instrument lies here.~
+Level 1
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 100 2 slice D
+Weight 0
+Material unknown~
+Extra    glow hum magic bless nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take wield~
+End
+
+#1034
+Name fortune cookie~
+Short a fortune cookie~
+Desc A type of cookie lies here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 AC 0 1 1
+Weight 0
+Material bread~
+Wear     take hold~
+ExtraDesc fortune cookie~
+Maybe you should open it to see what fortune you get.
+~
+End
+
+#1035
+Name small fortune~
+Short a small paper fortune.~
+Desc A piece of white paper lies here, with something scribbled on it.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#1021
+Name Entrance to the Caves~
+Desc As you venture down the stairs into this underground learning facility
+the sensation of a trouble free life overcomes you. You can hear loud
+roars and groans of creatures within the caves and the air has a sort
+of sweet smell to it.
+~
+RoomFlags no_mob safe~
+Sector inside~
+RoomEcho  1 23  65 Loud roars come from the south.~
+Exit north 7359
+Exit south 1022
+End
+
+
+#1022
+Name Within the Cave~
+Desc You are within the Cave of Beginnings and all around you strange
+creatures wander about. Some are wearing items which may have some
+value for you and a voice within urges you to obtain these items
+by whatever means possible.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1021
+Exit east 1024
+Exit south 1023
+Exit west 1025
+End
+
+
+#1023
+Name Center of the Cave~
+Desc You stand in the center of the large cave and from this vantage
+point can see that in the southern regions of the cave it branches
+off to the southeast and southwest. Once again a voice can be 
+heard on the wind, urging you on.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1022
+Exit east 1026
+Exit south 1028
+Exit west 1027
+End
+
+
+#1024
+Name Northeast corner of the Cave~
+Desc You are within the Cave of Beginnings and all around you strange
+creatures wander about. Some are wearing items which may have some
+value for you and a voice within urges you to obtain these items
+by whatever means possible.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1026
+Exit west 1022
+End
+
+
+#1025
+Name Northwest corner of the Cave~
+Desc You are within the Cave of Beginnings and all around you strange
+creatures wander about. Some are wearing items which may have some
+value for you and a voice within urges you to obtain these items
+by whatever means possible.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 1022
+Exit south 1027
+End
+
+
+#1026
+Name Eastern wall of the Cave~
+Desc You are within the Cave of Beginnings and all around you strange
+creatures wander about. Some are wearing items which may have some
+value for you and a voice within urges you to obtain these items
+by whatever means possible.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1024
+Exit south 1029
+Exit west 1023
+End
+
+
+#1027
+Name Western wall of the Cave~
+Desc You are within the Cave of Beginnings and all around you strange
+creatures wander about. Some are wearing items which may have some
+value for you and a voice within urges you to obtain these items
+by whatever means possible.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1025
+Exit east 1023
+Exit south 1030
+End
+
+
+#1028
+Name Southern wall of the Cave~
+Desc You are within the Cave of Beginnings and all around you strange
+creatures wander about. Some are wearing items which may have some
+value for you and a voice within urges you to obtain these items
+by whatever means possible.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1023
+Exit east 1029
+Exit west 1030
+End
+
+
+#1029
+Name Southeastern corner of the Cave~
+Desc You have come to the southeastern corner of the cave and to the
+southeast you see a small corridor. There is a dim light coming
+from it and you can hear a scratching noise. The voice on the 
+wind continues to urge you on.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1026
+Exit west 1028
+Exit southeast 1031
+End
+
+
+#1030
+Name Southwestern corner of the Cave~
+Desc You have come to the southwestern corner of the cave and to the 
+southwest you see a corridor. Scratching can be heard coming from
+within and a voice on the wind urges you to enter.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1027
+Exit east 1028
+Exit southwest 1033
+End
+
+
+#1031
+Name Tiny Corridor~
+Desc You are within a tiny corridor and it leads either to
+the northwest or to the south. A bright light gleams from
+the south and you think for a second you see gold.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1032
+Exit northwest 1029
+End
+
+
+#1032
+Name Fluffy's Room~
+Desc You have entered a circular cavern with fur all along the 
+walls. The air smells like honey and the floor has a soft
+fluffy feeling about it. The voice on the wind cheers you
+on as you wander about.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1031
+End
+
+
+#1033
+Name Corridor~
+Desc You are within a decent sized corridor heading to the south
+and to the northeast. The walls and floor appear to be made 
+over a silvery metal and you can see your reflection within
+them.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1034
+Exit northeast 1030
+End
+
+
+#1034
+Name Spike's Room~
+Desc This room is made entirely out of a silver metal and it is like
+being in a room full of mirrors. A small nest of metal shavings
+in is the center of the room and the only exit is to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1033
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 1023 3 1024 3
+G 0 1023 -1
+M 0 1025 3 1025 3
+E 0 1025 -1 lwrist~
+M 0 1027 6 1026 6
+G 0 1027 -1
+M 0 1027 6 1027 6
+G 0 1027 -1
+M 0 1024 3 1029 3
+E 0 1024 -1 hold~
+M 0 1026 3 1030 3
+E 0 1026 -1 floating~
+M 0 1022 1 1032 1
+E 0 1022 -1 hold~
+M 0 1021 1 1034 1
+E 0 1021 -1 neck1~
+O 0 1031 -1 1021
+M 0 1027 6 1023 6
+G 0 1027 -1
+M 0 1027 6 1023 6
+G 0 1027 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#1022
+title Fluffy loading cheap blade~
+author Zaroth~
+code mob oload 80002
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1104516613
+END
+
+#1021
+title Spike loading cheap hilt~
+author Zaroth~
+code mob oload 80001
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1104516364
+END
+
+#0
+
+
+#$

@@ -1,0 +1,1373 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        FREE FOR ESTATES3~
+ShortName   FREE FOR ESTATES3~
+Builders    none~
+Credits     none~
+VNUMs       2600 2619
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sun Oct  9 00:48:41 2005~
+End
+
+
+
+#MOBILES
+#2600
+Name close door~
+ShortD a myterious force~
+LongD Close door~
+Desc The secret-door warden checks for the password.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_invis detect_hidden~
+Form   non_skinable sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 2604 100~
+MProg EXIT 2600 2~
+END
+
+#2601
+Name secret-entrance warden~
+ShortD secret-entrance warden~
+LongD (no default description)~
+Desc The secret-door warden checks for the password.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  invisible detect_invis detect_hidden~
+AffBy2 detect_treeform detect_vanish~
+Form   sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 2601 night of the moon~
+END
+
+#2602
+Name secret-entrance warden~
+ShortD a stong wind~
+LongD (no default description)~
+Desc The secret-door warden checks for the password.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 73
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  invisible detect_invis detect_hidden~
+Form   non_skinable sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 2605 touch eyes~
+END
+
+#2603
+Name guard~
+ShortD the guard~
+LongD A large gate guard stand here, guarding the entrance.~
+Desc This guard is a strong malkatar man, focused on his duty of guarding the 
+fortress.  He watches you curiously, as if waiting for something. 
+~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+445
+ManaDice 4d5+95
+DamDice 10d11+46
+DamType slash
+AC -610 -610 -610 -549
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noalign~
+Act2   avoids_all_attacks no_tendency~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 2603 kil na kor~
+MProg GRALL 2604 100~
+MProg SPEECH 2603 night of the moon~
+END
+
+#2604
+Name sereh maid~
+ShortD sereh, the castle maid~
+LongD `#`gSereh`X cleans up the room.~
+Desc Sereh is a half-elven woman roughly 5'2" in height.  She has long, greying 
+black hair to her mid-back.  She looks to be about in her mid-fourties.  She 
+wears dark grey working robes as she cleans the room.  She bows to you 
+respectively, smiling, then she goes about her work again. 
+~
+Race half-elf~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  infrared~
+Res    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#2605
+Name `xa `swooden`x training pole~
+ShortD `XA `swooden`X training pole~
+LongD `XA `swooden`X training pole with several arms is ready to whack the unwary.~
+Desc `XThis `swooden`X training pole is about 6' tall and 2' thick and a greased pole 
+within allows it to turn easily, giving its several `swooden`X arms coming from 
+its side a good chance to whack someone unexpectedly.  
+ 
+`XType `RPunch Pole`X to try it. *Use it at your own risk*
+ 
+~
+Race elf~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 1000d100+20000
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -164
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt~
+Act2   allskills avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary infrared regeneration~
+Off    disarm fast kick parry trip~
+Imm    summon charm cold poison mental disease drowning light sound sleep illusion scry~
+Res    illusion~
+Vuln   poison disease~
+Form   edible non_skinable sentient construct biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material wood
+END
+
+#2606
+Name petite plump cook~
+ShortD a plump and old female markian~
+LongD An old, plump markian woman stands near the oven.~
+Desc This petite, plump markian woman wears a cooks apron and a dark grey working 
+dress as she stands near the oven, waiting on some boiling pots. 
+~
+Race human~
+Align 1 1
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType slap
+AC -45 -45 -45 -38
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh&bone
+END
+
+#2607
+Name hobo calico cat~
+ShortD `#`yHobo`X, the calico cat with one eye~
+LongD `#`yHobo`X, the calico cat with one eye rests here.~
+Desc Hobo is a slinky calico cat with one eye.
+~
+Race cat~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType claw
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area pet~
+Part   head heart brains ear eye tail claws~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    female~
+Material none
+END
+
+#2608
+Name white rabbit~
+ShortD a white male rabbit~
+LongD A white rabbit hops along the ground.~
+Desc This white rabbit has pure white fluffy fur.  Its cute button nose twitches 
+as it hops alone the grass.  It has a cute puffy tail and long floppy ears. 
+~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType claw
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   forger~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2609
+Name drohan gardener~
+ShortD drohan, the gardener~
+LongD `#`gDrohan`X, a male half-elf tends to the garden.~
+Desc Drohan is a mild mannered half-elven man in his mid-fourties.  He is 5'9" 
+tall and has long black hair to his shoulders.  He wears dark grey working 
+clothes as he tends to the garden. 
+~
+Race half-elf~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType slash
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2600
+Name garden rake~
+Short a `#`Smetal`X garden rake~
+Desc A `#`Smetal`X gardening rake.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+Wear     take hands hold~
+End
+
+#2601
+Name fount fountain marble~
+Short a small marble fountain~
+Desc A small `#`Wma`Rr`Wb`Rl`We`g fountain sits in the middle of the room.`X~
+Level 50
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    glow nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc fountain ~
+This is a small `#`Wwhite`X marble fountain freckled with `#`Rred`X.  It has `#`Sstatue`X of a 
+regal half-elven woman in the center of it. 
+~
+End
+
+#2602
+Name `xa long `sstone`x bench~
+Short `Xa long `sstone`X bench~
+Desc `Xa long `sstone`X bench sits here, under a tree.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 4000 BEHKQ 100 100
+Weight 0
+Material stone~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bench ~
+`^This fine piece of furniture is made of `sstone`^, the smooth surface gives away 
+the hard work to carve and polish this bench.  
+~
+End
+
+#2603
+Name small fireplace~
+Short a small `#`Yf`Ri`Yr`Re`Yp`Rl`Ya`Rc`Ye`X~
+Desc A small `#`Rfireplace`g sits in the middle of the room.`X~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 1000 DG 0 0
+Weight 0
+Material wood~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc fireplace ~
+A small fireplace gives more warmth to this room as its `#`Yf`Ri`Yr`Re`X flickers within 
+it.  The chimeny rises from it to catch the smoke and leads high up through 
+the roof. 
+~
+End
+
+#2604
+Name wide round pool~
+Short a wide round pool~
+Desc A wide round `#`Bpool`X steams here.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 CFIQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc pool ~
+Many smoothly chiseled `#`Sstones`X make the porder of the pool, within several 
+iron rings seem to heat the `#`bwater`X.  It is obvious these are connected to 
+some sort of heat source to heat the water. 
+~
+End
+
+#2605
+Name `xa huge `rbonfire`x ~
+Short a comfy sofa~
+Desc A comfortable `#`ysofa `gis here near the fireplace.`X~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 1000 EHK 0 0
+Weight 0
+Material fire~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#2606
+Name `xa tall, sturdy `roak`x tree~
+Short `XA tall, sturdy `roak`X tree~
+Desc `XA tall, sturdy `roak`X tree grows here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material tree~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc oak tree~
+`^This tall `roak`^ tree stretches several feet into the air, its branches filled 
+with deep `ggreen`^ leaves.  Its bark is thick, giving it a sturdy appearance.  
+~
+End
+
+#2607
+Name `xa huge bed covered in `sfurs`x~
+Short a huge bed covered in furs~
+Desc A huge bed covered in `#`Sfurs`X sits here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 70
+Rsize 50
+Values 2 2000 EHKQ 135 135
+Weight 0
+Material furs~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc bed ~
+`^Thick `Sfurs`^ cover this huge bed, giving it a warm cozy look, rolled `sfurs`^ all 
+around it look like pillows.  
+~
+End
+
+#2608
+Name droghan key~
+Short a wicked key~
+Desc A wicked key to Droghan's Lair is here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove nopurge nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take hold~
+End
+
+#2609
+Name `xa `swooden`x bunk bed~
+Short `XA `swooden`X bunk bed~
+Desc `XA `swooden`X bunk bed sits here against a wall.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 700 EHLQ 110 110
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc drohan ~
+Drohan is a mild-mannered half-elven in his mid-fourties.  He is 5'9" tall 
+and has long black hair to his shoulders.  He wears dark grey working 
+clothes as he tends to the garden. 
+~
+End
+
+#2610
+Name `xa `sraw iron`x oven with burners on top`x~
+Short `XA `sraw iron`X oven with burners on top`X~
+Desc `XA `sraw iron`X oven with burners on top`X sits against a corner.~
+Level 50
+ItemType cauldron~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 C 0 10 2
+Weight 0
+Material iron~
+Extra    glow nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#2611
+Name `xa small `swooden`x table with four chairs~
+Short `XA small `swooden`X table with four chairs~
+Desc `XA small `swooden`X table with four chairs sits in the middle of the room.~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1000 DG 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#2612
+Name `xa `ylarge`x comfortable bed~
+Short `XA `ylarge`X comfortable bed~
+Desc `XA `ylarge`X comfortable bed with two pillows sits next to a wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 600 EHLQ 120 120
+Weight 0
+Material cotton~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#2613
+Name red crib~
+Short a small redwood crib~
+Desc A small `#`Rre`rdwo`Rod`g `ycrib`g in the middle of the room.`X~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 400 L 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#2614
+Name `xa robust `rred maple`x tree~
+Short `XA robust `rred maple`X tree~
+Desc `XA robust `rred maple`X tree grows tall here.~
+Level 50
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material tree~
+Extra    nonmetal nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc oak tree~
+`^This tall `roak`^ tree stretches several feet into the air, its branches filled 
+with deep `ggreen`^ leaves.  Its bark is thick, giving it a sturdy appearance.  
+~
+End
+
+#2615
+Name `xa `swooden`x desk with a chair~
+Short `XA `swooden`X desk with a chair~
+Desc `XA `swooden`X desk with a chair sits next to a wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 200 DGQ 100 0
+Weight 0
+Material unknown~
+End
+
+#2616
+Name black leather sofa chair~
+Short `XA `sblack`X leather tilt-back sofa chair~
+Desc A `#`sblack`g leather tilt-back sofa chair.`X~
+Level 50
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 400 EHK 0 0
+Weight 0
+Material feathered leather~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#2617
+Name chamberpot~
+Short a chamberpot~
+Desc A chamberpot sits on the ground here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 E 0 0
+Weight 0
+Material metal~
+Extra    noremove nodegrade norestring~
+Extra2   nodecay~
+End
+
+#2618
+Name washbasin~
+Short a washbasin~
+Desc A washbasin is set upon a pedestal here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material marble~
+Extra    nodegrade~
+Extra2   nodecay~
+ExtraDesc washbasin ~
+This washbasin is made of white marble and is set steadily upon a pedestal 
+at average height.  There is clean water already in it.  At the side of the 
+pedestal on the floor is a jug full of more water to fill the washbasin when 
+needed. 
+~
+End
+
+#2619
+Name wooden table~
+Short a wooden table~
+Desc A `#`ywooden table`X with clean towels upon it.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+ExtraDesc table ~
+This wooden table is set near the washbasin, upon it are set a bunch of 
+clean, white towels. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#2600
+Name On the Drawbridge~
+Desc A large oaken drawbridge leads from the road to a fortress to the north.  A 
+murky `#`Smoat`X lies below the drawbridge and guardtowers peirce into the sky 
+from inside the strong walls surrounding the fortress to protect the estate 
+from invasion.  The wall is made from thick, dark grey stones, covered in 
+moss at the base from the water in the moat and holding a few green vines 
+blooming with white flowers, leading into small windows in the wall. 
+~
+RoomFlags safe light~
+Sector field~
+RoomEcho 12 11  10 A splash emits from the water below.~
+ExtraDesc moat ~
+The water in the moat is a bit murky from mud that is mixed in with it.  
+Although murky, it is quite clean, and you can see birds swimming in it, 
+splashing and playing in the water. 
+~
+Exit north 2601
+EFlags door closed locked pickproof nopass~
+EKeyvnum 2608
+EKeywords door~
+Exit south 56053
+End
+
+
+#2601
+Name The Hall~
+Desc This hallway is wide with a very tall roof that extends several feet higher 
+than anyone would expect.  A chandelier of torches hangs elegantly from the 
+roof, giving off a warm, comfortable atmosphere to light the room.  The 
+stone-block walls are covered with beautiful transparent red curtains to 
+give the room warmth, and on the west wall is a `#`Stapestry`X that depicts a 
+white and gold creature of myth.  In the middle of the room, water runs 
+softly within a small marble fountain, water running from the `#`Sstatue`X in the 
+centre. 
+~
+Sector inside~
+Owner ohri~
+ExtraDesc tapestry~
+.                                    `#`Y/`X
+                         `#`W__`X       `#`Y//`X
+                         `#`W-\= \=\ `Y//`X
+                       `#`W--=_\=---`Y//`W=--`X        
+                     `#`W-_==/  \/ `Y//`W\/--`X   
+                      `#`W==/   /`YO   O`W\==-- `X
+         _ _ _ _     `#`W/_/    \  ]  /--    
+        /\ ( (- \    /       ] ] ]==-  
+       (\ _\_\_\-\__/     \  (,_,)-- 
+      (\_/                 \     \-   
+      \/      /       (   ( \  ] /) 
+      /      (         \   \_ \./ )  
+      (       \         \      )  \     
+      (       /\_ _ _ _ /---/ /\_  \    
+       \     / \     / ____/ /   \  \  
+        (   /   )   / `Y/  /`W__ )   (  ) 
+        (  )   / __/ `Y'---` `W      / /
+        \  /   \ \             _/ /  
+        ] ]     )_\_         `Y/__\`W/       
+        /_\     `Y]___\                     
+       (___)  `X
+~
+ExtraDesc statue ~
+The statue in the middle of the fountain is of a regal half-elven woman and 
+two bears.  The two bears are a mother and her baby.  The woman wears a 
+flowing gown with a cloak about her body that billows behind her, a sword 
+sheathed at her side, and she is barefoot.  Her face is gentile and her eyes 
+sparkle with red rubies.  She leans slightly down, her hand out touching the 
+mother bear as the baby is up on its hind legs, reaching out to the woman's 
+hands, playing with her.  They stand upon flat stones, as if in a shallow 
+river, to which the fountain water trickles through and into the base of the 
+fountain bowl.  Carved into the fountain is an enscription: 'Ohri Nightmoon, 
+ranger of old and protector of nature.' 
+~
+Exit north 2602
+Exit south 2600
+EFlags door closed locked pickproof nopass~
+EKeyvnum 2608
+EKeywords door~
+End
+
+
+#2602
+Name Sitting Room~
+Desc You first notice when you enter is the large `#`Stapestry`X hanging on the 
+northern stone-block wall.  The stone floor is covered by thick furs and 
+high on the roof, a chandelier of torches hangs, giving the room its light.  
+There is also a fireplace in the center of the room, to which the furniture 
+is arranged around. 
+~
+Sector inside~
+Heal 130
+ExtraDesc tapestry ~
+________________________________________________________________________
+                          `#`W  ___________ _
+                        __/   .::::.-'-(/-/)
+                     _/:  .::::.-' .-'\/\_'`Y*******`W           __ (_))
+                    /:  .::::./   -._-.  `Yd`W\|                (_))_(__))
+                     /: (""""/    '.  (__/||            (_))__(_))--(__))
+                      \::).-'  -._  \/ \\/\|
+              __ _ .-'')/  '-'. . '. |  (i_O
+          .-'      \       -'      '\|
+     _ _./      .-'|       '.  (    \\                         `g % % %`W
+  .-'   :      '_  \         '-'\  /|/      `g@ @ @              % % % %`W
+ /      )\_      '- )_________.-|_/^\      `g@ @ @@@            % %`y\/`g% %`W
+ (   .-'   )-._-:  /        \(/\'-._ '.     `g@`y|`g@@@@@             `s..`y|`s.......`W
+  (   )  _//_/|:  /          '\()   '\_\     `y|/_`g@@`s              )'-._.-._.`W
+   ( (   \()^_/)_/             )/      \\    `y/                 `s/   /`W
+    )  `G_.-`W\\.\(_)`G__._.-'-.-'-.`W//`G_.-'-.-.`W)\`G-'`y/`G._               `s/       .-''-'
+`G.-.-.-'   `Y_`Wo\ \\\     `S'::'`W   (o`Y_ `g'-.-' `Y|__\`G'-.-;`b`- `- `- `-`- `- `-`-`S/   /\    ('-
+          `Y\ /`W  \\\`Y__          )_\    `G.:::::::.-'`y\`S           '- - -|_ _  )
+`g     :::''':::::^`Y)__\`g:::::::::::::::::'''''''-._ `y\                   
+`g    :::::::  '''''''''''   ''''''''''''':::. -'`y\  \`X                  
+_____`#`g':::::`X_____________________________________`#`y\`S__`y\`X_____________________ 
+~
+Exit east 2604
+Exit south 2601
+Exit west 2603
+End
+
+
+#2603
+Name A long hall~
+Desc This hall is long and wide.  It acts like a gallery because of the many 
+glass cases set against the walls.  Displayed under the glass of the `#`Scases`X 
+is a collection of swords.  Upon the walls behind the cases are transparent 
+red drapes to give a warm touch to the hall, along with torches in iron 
+holders to light it.  There is a large wooden door to the north and south 
+leading into other rooms and an exit to the west leading into a quaint yard. 
+
+~
+RoomFlags safe light~
+Sector inside~
+ExtraDesc cases ~
+You peer through the glass of these cases to see a collection of swords.  
+The swords are all shapes, sizes and designs, some looking brand new, others 
+rusted, all kept that way because of their sentimentality. 
+~
+Exit north 2605
+EFlags door closed~
+Exit east 2602
+Exit south 2614
+EFlags door closed~
+Exit west 2617
+End
+
+
+#2604
+Name A long hall~
+Desc This hall is long and wide.  It acts more like a gallery, because of the 
+many cases set against the walls.  Displayed under the glass of the cases is 
+a broad collection of swords.  Upon the walls are trasparent red drapes to 
+give a warm touch to the hall, along with torches to light it. To the south 
+is a wooden door leading into the main garderobe. On the eastern wall is a 
+small wooden door with a shield and swords decoration upon it, leading into 
+the guard's barracks. 
+~
+Sector inside~
+ExtraDesc cases ~
+Peering through the glass of the cases you see many swords of all different 
+shapes, sizes and makes.  Some are elegantly decorated, others not, and some 
+are even rusty.  They are a collection and hold sentimental value to its 
+owner. 
+~
+Exit north 2606
+Exit east 2612
+Exit south 2618
+EFlags door closed~
+Exit west 2602
+End
+
+
+#2605
+Name The Master Bedroom~
+Desc The stone-block walls raise the ceiling several feet higher than anyone 
+would expect, from it a huge chandelier lights up the room.  A window high 
+on the western wall brings in the breeze, decorated by transparent red 
+drapes tied at the sides.  Below the window there is a large wooden chest.  
+On the northern corner there is an arched opening with spiral stairs that 
+reach up to the tower.  A huge bed covered on furs of all kinds sits against 
+the eartern wall and above it, hanging from the wall, a `#`Stapestry`X softly fans 
+as the breeze runs under it.  All along the walls there are numerous small 
+and large portraits of `#`Sfamilies`X. 
+~
+Sector inside~
+RoomEcho  1 11   2 Softly the tapestry flows with the breeze fanning the bed.~
+ExtraDesc tapestry ~
+.                                  
+                                 ('-.
+                                  \  ' 
+     /)         ,   '--.           \    '
+    //     , '          \/          \   '   '   
+   //    ,'              ./         /\    \>- '   ,----------.
+  ( \  ,'    .-.-,_        /      ,' /\    \   . '            '.
+   \ \'     />--< .)       ./   ,'  /  \     .      '           '.
+    \ `   -{/    \ .)        / /   / ,' \       '     '-----.     \
+    <\      )     ).:)       ./   /,' ,' \        '.  /\)    '.    \
+     >^,  //     /..:)       /   //--'    \         `(         )    )
+      | ,'/     /. .:)      /   (/         \          \       /    /
+      ( |(_    (...::)     (                \       .-.\     /   ,'
+      (O| /     \:.::)                      /\    ,'   \)   /  ,'
+       \|/      /'.:::)                   ,/  \  /         (  /
+               /  /',.:)                ,'/    )/           \ \
+             ,' ,'.'  ':>-._._________,<;'    (/            (,'
+           ,'  /  |     '^-^--^--^-^-^-'
+ .--------'   /   |
+(       .----'    |
+ \ <'.  \         |
+  \ \ '. \        |
+   \ \  '.'.      |
+    \ \   '.'.    |
+     \ \    '.'.  |
+      \ \     '.'.|
+       \ \      '.'.
+        \ \     ,^-' 
+         \ \    | 
+          '.'.  |
+            '.'.|
+              '._> 
+~
+ExtraDesc families ~
+One portrait is of a young adult half-elf female, her hair black with blue 
+streaks, her eyes a crimson colour.  She smiles and sits daintly in an 
+elegant gown on a wooden chair, underneath her name is printed, 'Erain'.  
+Another are several smaller portraits, of a young baby half-elven boy 
+giggling or sleeping, and in the corner his name is printed 'Nicholas'.  
+Others hold portraits of old friends and friends families. 
+~
+Exit south 2603
+EFlags door closed~
+Exit up 2607
+End
+
+
+#2606
+Name A hall~
+Desc This hall is decorated with the same warm, transparent red drapes found 
+elsewhere in the castle to give it a warm atmosphere.  Torches light the way 
+on the walls.  To the north is a door leading into another room, and to the 
+east is a turn off into more hallway. There is a small arch opening in the 
+east wall that reveals stairs that lead up into the western guard tower. 
+~
+Sector inside~
+Exit north 2619
+EFlags door closed~
+Exit east 2611
+Exit south 2604
+Exit up 2608
+End
+
+
+#2607
+Name The West Tower~
+Desc Several large stone blocks raise up around the floor leaving some openings 
+between them.  At the center of the floor, a large pole holds a `Sflag`^.  There 
+are some stairs to the northern side of the tower leading down.  
+~
+RoomFlags light~
+Sector city~
+ExtraDesc flag ~
+A light red flag, depiction a two-toned crescent moon, waves in the wind that runs by.
+~
+Exit down 2605
+End
+
+
+#2608
+Name Inside the East Tower~
+Desc Halfway to the top, the spiral stairs come to a break on a wooden floor.  On 
+the wall, a large window opens the view to the `Soutside`^, to its sides, two 
+iron rings hold torches for the nighttime.  Rolls of furs and some boxes are 
+piled under the stone blocks of the stairs, 
+~
+RoomFlags indoors light~
+Sector inside~
+Owner ohri~
+ExtraDesc outside ~
+Looking through the window, the magnificent view of the lands of this realm 
+fills the sight, as the breeze softly runs into the room, the sounds of the 
+wilderness quietly echo all over.  
+~
+Exit up 2609
+Exit down 2606
+End
+
+
+#2609
+Name The East Tower~
+Desc Several large stone blocks raise up all around the floor, leaving openings 
+between them.  At the center of the floor, a large pole holds a `Sflag`^.  There 
+are stairs to the northern side of the tower leading down.  
+~
+Sector inside~
+ExtraDesc flag ~
+A light red flag, depiction a two-toned crescent moon, waves in the wind that runs by.
+~
+Exit down 2608
+End
+
+
+#2610
+Name The Vault~
+Desc Oil `#`Slamps`X on each wall light this room since there are no windows.  Engraved 
+on the wall, a few feet from the floor, a strange `#`Spainting`X repeats itself as 
+a chain that goes all around the room.  There are several furs to cover the 
+cold stone floor. `1 
+~
+RoomFlags indoors light noautomap noautoexits~
+Room2Flags storage_room~
+Sector inside~
+RoomEcho 12  0  10 All around you... silence...~
+ExtraDesc painting ~
+`y ,--------, ,--------, ,--------, ,--------, ,--------, ,--------, ,--------,`^
+`y|  __.-=-. | .-=-.__  |  __.-=-. | .-=-.__  |  __.-=-. | .-=-.__  |  __.-=-. | `^
+`y|  --<`g(_)`y> | <`g(_)`y>--  |  --<`g(_)`y> | <`g(_)`y>-- |  --<`g(_)`y> | <`g(_)`y>--  |  --<`g(_)`y> |`^
+`y|*.__.'|   |   |'.__.*|*.__.'|   |   |'.__.*|*.__.'|   |   |'.__.*|*.__.'|   |   `^ 
+`y'----------'----------'----------'----------'----------'----------'---------'`^
+`y      " The eye sees only what the mind is prepared to comprehend. "`^
+~
+ExtraDesc lamps ~
+These lamps are held off of the walls by a metal rod stuck into the stone 
+walls and dangled by strong chains.  They give a warm, orange glow to the 
+room. 
+~
+End
+
+
+#2611
+Name A short hall~
+Desc This short hall has nothing to it really.  The walls are decorated with the 
+transparent red curtains to give it some warmth, with torches lighting the 
+way.  To the north there is an arch built into the wall that leads into the 
+kitchen.  To the east is a wooden door, leading outside into the eastern 
+yard.  To the south is a wooden door which hangs a small shield and swords, 
+showing that room is living quarters of the guards. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2615
+Exit east 2616
+Exit south 2612
+EFlags door closed~
+Exit west 2606
+End
+
+
+#2612
+Name Guard Barracks~
+Desc This room is reserved for the guards of the castle, somewhere where they can 
+rest after a long day of doing their duty.  A bunk bed lies against the 
+wall, while on the next there's a `#`Stapestry`X to decor the room a little.  A 
+couple of lamps hang from the ceiling to keep the room well lit.  A cool 
+breeze comes in through the window on the south wall.  There is a door to 
+the north. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc tapestry ~
+`X   `c,   `sA           `r{}                 `X
+`X  `c/ \, `s| `c,        `W.--.                `X
+`X `c|    `s=|=`c >      `W/.--.\               `X
+`X  `c\ /' `s|`c '       `W|`s====`W|               `X
+`X   `c'   `s|         `W|'`s::`W'|               `X
+`X       `s|     `W.-;'\..../';`y_.-^-._      `X
+`X      `W/\\/  /  |...::..`y|'   `r:`y   '|    `X
+`X      `W|:'\ |   /'''::''`y|   `r.:.`y   |    `X
+`X       `W\ /\;-,/\   ::  `y|`r..:::::..`y|    `X
+`X       `s|`W\ <' >  >._::_.`y| `r':::::'`y |    `X
+`X       `s| `W'""'  /   ^^  `y|   `r':'`y   |    `X
+`X       `s|       `W|       `y\    `r:`y    /    `X
+`X       `s|       `W|        `y\   `r:`y   /     `X
+`X       `s|       `W|___/\___|`y'-.`r:`y.-'      `X
+`X       `s|        `W\_ || _/    `y'         `X
+`X       `s|        `W<_ >< _>              `X
+`X       `s|        `W|  ||  |              `X
+`X       `s|        `W|  ||  |              `X
+`X       `s|       `W_\.:||:./_             `X
+`X       `s| jgs  `W/____/\____\            `X
+ 
+~
+Exit north 2611
+EFlags door closed~
+Exit west 2604
+End
+
+
+#2613
+Name A small garden~
+Desc This small garden is full of vegetables, flowers and even a few fruit trees. 
+ It is dimly lit by torches upon the stone wall that protects the fortress.  
+There is a small shed in the south-west corner for tools.  The only exit is 
+to the north. 
+~
+RoomFlags indoors~
+Sector field~
+Exit north 2616
+End
+
+
+#2614
+Name Nursery~
+Desc This room is quaintly decorated to fit the personality of a happy child.  
+Half of the walls are brightly decorated with a mural of the outdoors, from 
+a blue sky with puffy white clouds to deep green grass, bouncing bunny 
+families and colourful flowers of all shapes and sizes.  The other half is 
+decorated with a beautiful nightscape, with a smiling moon and dancing 
+stars, with little faeries spreading faerie dust over sleeping animals.  The 
+floor is covered with a warm carpet made of cut furs.  The crib sits in the 
+centre of the room. 
+~
+RoomFlags indoors safe light~
+Sector inside~
+Exit north 2603
+EFlags door closed~
+End
+
+
+#2615
+Name The Kitchen~
+Desc `XThe room is very hot, mainly because of the `Rfire`X of the oven on the corner, 
+it has a chimeney that runs all the way into the ceiling.  At each side a 
+row of hangers, holding several cooking aids, such as long cauldron spoon, 
+couple small iron tridents, wooden cutting board and others.  A rack of 
+spices is below one of the rows, and a pile of stacked logs for the oven 
+underneath the other one.  A couple of shelves hold many plates and big 
+metal pitchers.  There wooden door upon the floor in the far north-east 
+corner leading into the kitchen's storage room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2611
+End
+
+
+#2616
+Name The East Yard~
+Desc You step into this eastern yard to be overtaken by the scent of a heated 
+pool.  Torches upon the walls light the area dimly, giving it a warm and 
+inviting atmosphere.  There is a small inground pool surrounded by stones, 
+steam rising from it into the cool air.  The stone walls, which are covered 
+in random beautiful patterns of vines, give this yard the privacy it needs. 
+~
+RoomFlags light~
+Sector field~
+Exit south 2613
+Exit west 2611
+End
+
+
+#2617
+Name The West Yard~
+Desc Green grass covers the ground and a tall red oak grows as high as the 
+stone-block walls.  There is a stone bench set under the tree to sit or rest 
+at.  You notice a `#`Shole`X under the tree, exposing some roots and some white 
+fluff from a rabbit.  On the corner of the stone wall, following the pattern 
+between the stone blocks, a creeping vine makes its way up the wall, some of 
+it blooming with white flowers. 
+~
+Sector field~
+RoomEcho  9 18  30 A warm breeze blows through the yard.~
+ExtraDesc hole ~
+Peering into this burrow under the tree you see a family of rabbits.  There 
+is a mother rabbit and five little baby rabbits, huddled together and 
+looking at you as you look at them. 
+~
+Exit east 2603
+End
+
+
+#2618
+Name Main Garderobe~
+Desc This garderobe is the usual medieval washroom.  There's a window to the 
+south with a view of the outside.  A chamberpot and a washbasin are set in 
+this room, with a table holding clean towels. 
+~
+Sector inside~
+Exit north 2604
+EFlags door closed~
+End
+
+
+#2619
+Name Guest Room~
+Desc This room is cozy enough for anyone to sleep in.  A desk sits against the 
+east wall and a bed set on the west wall.  A chandelier lights the room with 
+a few flames.  A warm breeze blows through from a small window above the 
+bed, decorated with transparent red drapes.  The floor is covered with a 
+large `#`Sfur`X and upon one of the walls near the door is a `#`Stapestry`X of a cat. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc tapestry~
+.                        /\____/\    __
+                      .'  """"  ',-'  '--.__
+                 __,- :   -  -  ;  " ::     '-. -.__
+              ,-sssss '._  '' _,'"     ,'`-`-`-::'.sssss-.
+             |ssssss ,' ,_'--'_    __,' ::  '  '.ssssss|
+            |sssssss '-._____`- `,,'_______,---_;; ssssss|
+             |ssssssssss     `--'`-{__   ____   ,'ssssss|
+              `-ssssssssssssssssss `-`-`-`-`-`-`-`-`-`-`-`- ssss.-'
+                   `---.sssssssssssssssssssss.---'
+~
+ExtraDesc fur ~
+This large fur is many furs sewn together.  They are patched, some black and 
+some brown, creating a nice pattern to create the fur that keeps feet warm. 
+~
+Exit south 2606
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 2603 1 2600 1
+E 0 2608 -1 hold~
+M 0 2600 1 2601 1
+E 0 2608 -1 hold~
+O 0 2601 -1 2601
+M 0 2601 1 2602 1
+O 0 2603 -1 2602
+M 0 2604 1 2602 1
+O 0 2616 -1 2602
+O 0 2605 -1 2602
+O 0 2607 -1 2605
+M 0 2602 1 2610 1
+O 0 2609 -1 2612
+O 0 2611 -1 2612
+M 0 2609 1 2613 1
+E 0 2600 -1 hold~
+O 0 2613 -1 2614
+O 0 2610 -1 2615
+M 0 2606 1 2615 1
+O 0 2604 -1 2616
+O 0 2606 -1 2617
+O 0 2602 -1 2617
+M 0 2608 1 2617 1
+O 0 2617 -1 2618
+O 0 2618 -1 2618
+O 0 2619 -1 2618
+O 0 2612 -1 2619
+O 0 2615 -1 2619
+M 0 2607 1 2619 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2606
+title training_pole_fight~
+author Droghan~
+code mob seeall
+mob preventattack
+mob echoat $n The training pole spins at you punch one of the arms and ...
+if rand 50
+mob inflict $n 10 15
+mob peace
+mob echoat $n as the arms of the pole spin they hit you.
+break
+endif
+mob echoat $n as the arms of the pole spin quickly you manage to dodge them.
+mob peace
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057538891
+END
+
+#2605
+title Test~
+author Echmoro~
+code mob seeall
+mob echoat $n As you touch the eye on the wall's painting, the stone blocks begin to move revealing the exit as a strong wind pushes you out.
+mob echoaround $n As $n touches a part of the wall's painting, the stone blocks begin to move revealing an exit but quickly a strong wind pushes $n out and the exit seals itself again.
+mob transfer $n 2602
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057074955
+END
+
+#2604
+author Ixliam~
+code close door
+lock door
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057026464
+END
+
+#2603
+title Open Drawbridge~
+author Ixliam~
+code language native
+sayto $n Welcome.
+unlock north
+open north
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057026361
+END
+
+#2602
+title Droghan_secret_exit~
+author Droghan~
+code mob seeall
+mob echoat $n As you touch the eye on the wall's painting, the stone blocks begin to move revealing the exit as a strong wind pushes you out.
+mob echoaround $n As $N touches a part of the wall's painting, the stone blocks begin to move revealing an exit but quickly a strong wind pushes everyone out and the exit seals itself again.
+mob transfer all 2602
+~
+disabled false
+last_editor Droghan~
+last_editdate 1057125637
+END
+
+#2601
+title Droghan_secret_entrance~
+author Droghan~
+code mob seeall
+mob echo The tapestry is slightly pulled up and several stone block seems to move into the wall, revealing a secret entrance.
+mob echo The stone blocks move into their original position and the entrance is sealed again.
+mob transfer $n 2610
+~
+disabled false
+last_editor Droghan~
+last_editdate 1057125962
+END
+
+#2600
+title open door~
+author Ixliam~
+code unlock door
+open door
+mob letpass
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057026737
+END
+
+#0
+
+
+#$

@@ -1,0 +1,571 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Tirips Estate Castle~
+ShortName   Tirips Estate~
+Builders    delandria~
+Credits     Rakk~
+VNUMs       10550 10559
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+*LastSaved  Tue May  3 14:24:40 2005~
+End
+
+
+
+#MOBILES
+#10550
+Name gate guardian keyholder castle estate guard~
+ShortD a large granite golem~
+LongD A large granite golem stands here in the corner.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 10550 100~
+END
+
+#10551
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 10551 thenextking~
+END
+
+#10552
+Name servant~
+ShortD a servant~
+LongD A servant stands here waiting to serve you.~
+Desc ~
+Race human~
+Align -1 0
+XPMod 105
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 75
+Wealth 20
+Act    npc stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  infrared berserk~
+Off    fast kick parry~
+Imm    summon magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+MProg GRALL 10553 100~
+END
+
+#10553
+Name maid~
+ShortD a maid~
+LongD A maid is here cleaning.~
+Desc ~
+Race human~
+Align -1 0
+XPMod 105
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 75
+Wealth 20
+Act    npc stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  infrared berserk~
+Off    fast kick parry~
+Imm    summon magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#10554
+Name cook~
+ShortD a cook~
+LongD A female cook stands here.~
+Desc ~
+Race human~
+Align -1 0
+XPMod 105
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 75
+Wealth 20
+Act    npc dont_wander stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  infrared berserk~
+Off    fast kick parry~
+Imm    summon magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GREET 10552 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#10550
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 K 0 10558 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#10551
+Name treasury key~
+Short `#`RRakk's `YHouse Key`^~
+Desc `#`RRakk's `YHouse Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#10552
+Name large plush couch sofa~
+Short a large plush couch~
+Desc A large plush couch seems to invite your buttox to be seated~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 BEHJR 100 100
+Weight 400
+Material leather~
+Extra    nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#10553
+Name long dark brown table~
+Short a long dark brown table~
+Desc A very long and luxurious table is set for the next meal~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#10554
+Name fountain~
+Short a fountain~
+Desc This beautiful fountain has a constant flow of crystal clear spring water~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 999999 999999 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#10555
+Name sign~
+Short a sign~
+Desc A sign is hanging on the wall here.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc sign ~
+`#`R"Did you remember to wash your hands?"`^
+~
+End
+
+#10556
+Name master bed ~
+Short a master bed~
+Desc A beautiful black and red master bed is neat and tidy~
+Level 1
+ItemType furniture~
+Cost 0
+Condition 90
+Asize 1
+Rsize 50
+Values 4 2000 EHK 100 100
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#10557
+Name foot chest~
+Short a foot chest~
+Desc A hand carved foot chest has extra sheets and cover in it~
+Level 1
+ItemType container~
+Cost 588
+Asize 100
+Rsize 50
+Values 1000 0 0 100 100
+Weight 30
+Material wood~
+Extra    inventory nopurge nonmetal nolocate nodegrade burnproof~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#10550
+Name The Entry Room~
+Desc This is a large room with a coat rack, a shoe rack, and a big comfortable 
+couch. The floor is highly polished hardwood and the couch is situated with 
+its back pressed against the east wall. As soon as you walk in you see the 
+shoe rack right beside the door with a sign on it that says "Remove shoes 
+before entry." A few paces east is the coat rack which is almost in the 
+corner, and a bit north of that is the couch. The walls are decorated with 
+multiple portraits (mostly of lizardmen), torches, and two windows near the 
+door. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 10553
+Exit east 10552
+Exit south 55969
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 10551
+Exit west 10551
+End
+
+
+#10551
+Name Dining Room~
+Desc This room is astonishing. The floor is completely spotless, gleaming, black 
+and white tiles. In the centre of the room there is a very long table that 
+is already set for the next meal, There are four chairs at the table; One 
+large one at the eastern end and 3 smaller chairs on the western end, and a 
+few more smaller ones are in the corner for when more guests are feasting 
+there. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 10550
+End
+
+
+#10552
+Name Sitting Room~
+Desc This room is quite unlike the other rooms. It has a shaggy carpetted floor, 
+4 comfortable looking chair around a home-made oak table. Instead of 
+portraits there are trophys on the walls and there are no windows, most 
+likely so that the cigar fumes can not leave the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 10550
+End
+
+
+#10553
+Name The Social Room~
+Desc This room is most likely where a party would be held. There is a ton of open 
+sapce, a stairwell leading upstairs and a fountain as the centre peace of 
+the room. The shelves on the wall are hand carved and very neat. There is a 
+fireplace on the western side of the room which is beautiful...but there 
+seems the be a crack in the polished floor just in front of it. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 10556
+Exit east 10555
+EFlags door~
+EKeywords door~
+Exit south 10550
+Exit west 10554
+Exit up 10557
+End
+
+
+#10554
+Name The Pantry~
+Desc This is a standard pantry. Food, tableware, linens, and other dining items 
+are compactly stored in any and evrey open space. One wall has spices and 
+light foods, one wall has tableware and linens, and the other has the main 
+coarses set up for atleast 3 days in advanced. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 10553
+End
+
+
+#10555
+Name The Public Lavatory~
+Desc This is a small but very clean bathroom with a sign on the door the reads, 
+"Did you flush?" The toilet is large and has a toilet paper dispencer filled 
+with white, cushy, soft toilet paper on the wall to the right. Right beside 
+the door is a sink with separate fossets for the hot and cold water and has 
+a mirror just above and a towel rack with a clean white towel on it to the 
+left. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 10553
+EFlags door~
+End
+
+
+#10556
+Name The Kitchen~
+Desc This room has multiple chefs, maids and servants in it. It has 2 stoves, two 
+large counters, and very many organized shelves all which are used to 
+prepare food. This room only has workers from the castle in it so you'd 
+better go before you get in trouble... 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 10553
+End
+
+
+#10557
+Name The Master Bedroom~
+Desc This room is breath-taking, The master bed is black and red with a chest at 
+the foot and a night table at each side with notpads on it with wierd 
+drawings, writings, and other texts. The floor in this room has a soft dark 
+blue carpet and is perhaps the cleanest of the entire castle. There is a 
+light just to the north comming out from underneath the door labelled, "KEEP 
+OUT" 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 10558
+Exit down 10553
+End
+
+
+#10558
+Name The Master Bathroom~
+Desc This is a much better washroom than the one downstairs. It has a large, 
+white bath tub, a massive decorative sink and another toilet that looks the 
+same as the one downstairs. Keeping in mind that the door read, "KEEP OUT" 
+You shouldn't stay in here too long... 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 10557
+End
+
+
+#10559
+Name Treasury Room~
+Desc Unless you own this castle you'd best leave before the guards attack...too 
+late. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 10553 -1 10551
+O 0 10552 -1 10552
+M 0 10553 1 10552 1
+O 0 10554 -1 10553
+M 0 10552 1 10553 1
+O 0 10555 -1 10555
+M 0 10554 1 10556 1
+O 0 10557 -1 10557
+O 0 10556 -1 10557
+M 0 10551 1 10558 1
+O 0 10550 -1 10559
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#10553
+title servant~
+author Delandria~
+code language native
+sayto $n Is there anything you would like?" 
+~
+disabled false
+last_editor Delandria~
+last_editdate 1113005728
+END
+
+#10552
+title cook~
+author Delandria~
+code language native
+if name $n Rakk
+sayto $n Your next meal shall be the finest I make!
+end
+endif
+if name $n Tirips
+sayto $n Your next meal shall be the finest I make!
+end
+endif
+if isimmort $n
+bow $n
+end
+endif
+~
+disabled false
+last_editor Delandria~
+last_editdate 1113069971
+END
+
+#10551
+title mob transfer~
+author Delandria~
+code mob transfer $n 10559
+~
+disabled false
+last_editor Delandria~
+last_editdate 1113004551
+END
+
+#10550
+title Guard~
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Rakk
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1113004308
+END
+
+#0
+
+
+#$

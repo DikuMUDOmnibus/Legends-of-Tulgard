@@ -1,0 +1,3122 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World: Midgaard Mall~
+ShortName   Midgaard Mall~
+Builders    none~
+Credits     Ebola~
+VNUMs       5500 5599
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+Security    9
+Colour      Y~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   StupidWorld~
+*LastSaved  Sat Aug 20 19:14:13 2005~
+End
+
+
+
+#MOBILES
+#5500
+Name kate~
+ShortD kate~
+LongD Kate, the owner of Kate's Kountry Krap, busily arranges a display.~
+Desc Kate looks at you suspiciously; you don't seem like you have much use for
+her doilies.  
+~
+Race human~
+Align -3 0
+Level 200
+Hitroll 0
+HitDice 50d10+4000
+ManaDice 0d0+0
+DamDice 5d8+19
+DamType shock
+AC -200 -200 -200 -200
+Wealth 100
+Act    npc dont_wander no_tame nopurge~
+AffBy  sanctuary~
+Off    area_attack bash disarm dodge parry trip crush~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5501
+Name walker woman~
+ShortD a mall walker~
+LongD A middle-aged woman is power-walking around the mall.~
+Desc The mall walker impatiently brushes you aside.  She has more important
+things to do, like walk around the mall.  
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 12
+HitDice 3d9+208
+ManaDice 0d0+0
+DamDice 2d6+3
+DamType slap
+AC -20 -20 -20 0
+Wealth 0
+Act    npc no_tame stay_area~
+Off    kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5502
+Name mall rat kid teen youth~
+ShortD a mall rat~
+LongD A teenage mall rat lounges here.~
+Desc The mall rat ignores you.
+~
+Race human~
+Align 1 0
+Level 13
+Hitroll 0
+HitDice 2d10+170
+ManaDice 0d0+0
+DamDice 2d5+3
+DamType pound
+AC -10 -10 -10 10
+Wealth 0
+Act    npc no_tame stay_area~
+Off    kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5503
+Name guard cop rent-a-cop pig~
+ShortD the Rent-A-Cop~
+LongD A Rent-A-Cop stands here, trying to look intimidating.~
+Desc The Rent-A-Cop glares accusingly at you.  "Aren't you banished from this mall?"
+~
+Race pig~
+Align -3 0
+Level 25
+Hitroll 1
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType beating
+AC -70 -70 -70 -59
+Wealth 2
+Act    npc no_tame stay_area~
+Off    backstab disarm parry trip assist_guard~
+Imm    summon charm~
+Form   edible non_skinable animal sentient biped mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5504
+Name rat teen youth~
+ShortD a mall rat~
+LongD A teenage mall rat lounges here.~
+Desc The mall rat sneers at you.
+~
+Race human~
+Align 2 0
+Level 12
+Hitroll 0
+HitDice 2d10+160
+ManaDice 0d0+0
+DamDice 1d9+3
+DamType pound
+AC 0 0 0 0
+Wealth 0
+Act    npc scavenger no_tame stay_area~
+Off    dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5505
+Name rat teen youth~
+ShortD a mall rat~
+LongD A teenage mall rat lounges here.~
+Desc The mall rat sneers at you.
+~
+Race human~
+Align -2 0
+Level 14
+Hitroll 0
+HitDice 2d10+170
+ManaDice 0d0+0
+DamDice 1d12+3
+DamType slash
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5506
+Name kid toddler child~
+ShortD a small child~
+LongD A small child is about to throw a temper tantrum.~
+Desc Your presence is only exacerbating the small child's temper tantrum.  Why
+don't you put the rest of the mall out of its misery?  
+~
+Race human~
+Align -3 0
+Level 8
+Hitroll 0
+HitDice 2d7+96
+ManaDice 0d0+0
+DamDice 1d7+2
+DamType bite
+AC 30 30 30 50
+Wealth 0
+Act    npc no_tame stay_area~
+Off    dodge kick dirt_kick trip~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 1
+END
+
+#5507
+Name mother~
+ShortD the mother~
+LongD A frazzled mother is about to lose her patience.~
+Desc The harried young mother has about 47 more things to buy at the mall
+before her 2-year-old explodes into a full fledged temper tantrum.  It
+doesn't look like she'll get it all done.  
+~
+Race human~
+Align -1 0
+Level 12
+Hitroll 0
+HitDice 2d10+150
+ManaDice 0d0+0
+DamDice 1d10+3
+DamType scratch
+AC 0 0 0 20
+Wealth 0
+Act    npc no_tame stay_area~
+Off    berserk dirt_kick rescue~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+Group 1
+END
+
+#5508
+Name santa claus~
+ShortD santa Claus~
+LongD Santa Claus is here, listening to endless lines of children ask for automatic weapons.~
+Desc Santa Claus sits on his chair at the North Pole with a small child on his
+lap, chuckling and looking jolly.  When you look closer, you can see just
+how jolly he really is....  
+~
+Race human~
+Align 0 -3
+Level 113
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType magic
+AC -850 -850 -850 -731
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste dark_vision regeneration~
+Off    disarm fast crush~
+Imm    summon charm magic bash acid negative energy disease~
+Res    cold~
+Form   edible magical non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5509
+Name bunny rabbit~
+ShortD the Easter Bunny~
+LongD The Easter Bunny is here distributing chocolate eggs.~
+Desc The Easter Bunny sits in a nest of shiny plastic grass, giving cocoa
+treats to the little kids who come and sit on his lap.  
+~
+Race rabbit~
+Align 0 0
+Level 113
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType bite
+AC -850 -850 -850 -688
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste dark_vision regeneration~
+Off    dodge fast tail~
+Imm    summon charm~
+Form   edible non_skinable animal sentient biped mammal~
+Part   head arms legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#5510
+Name elf~
+ShortD santa's Elf~
+LongD One of Santa's Elves stands here~
+Desc You can tell that this disgruntled Elf isn't getting paid much beyond
+minimum wage.  
+~
+Race elf~
+Align -3 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType blast
+AC -70 -70 -70 -57
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_hidden infrared~
+Imm    summon charm~
+Res    illusion~
+Vuln   poison disease iron~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5511
+Name cosmetologist~
+ShortD a cosmetologist~
+LongD A recent graduate of La James College of Cosmetology stands here.~
+Desc The cosmetologist manages to look cheerful and vapid, at the same time! 
+All that tuition must have been worth it.  
+~
+Race human~
+Align 1 0
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType pierce
+AC -137 -137 -137 -123
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5512
+Name clerk cashier~
+ShortD a sales clerk~
+LongD A cashier is ready to ring up your purchase~
+Desc The sales clerk looks bored waiting for you to buy something.
+~
+Race human~
+Align 2 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType thwack
+AC -117 -117 -117 -105
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    tail~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5513
+Name foot warrior~
+ShortD a footwarrior~
+LongD A footwarrior is limping here~
+Desc The footwarrior bellows at you.
+"Do not panic! Lay down your arms! We just want you to relax and enjoy your
+shoes!"
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType pound
+AC -850 -850 -850 -680
+Wealth 0
+Act    npc dont_wander no_tame~
+Off    tail crush~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5514
+Name faceless counter slave~
+ShortD a faceless counter slave~
+LongD A faceless counter slave is ready to serve you.~
+Desc The faceless counter slave stares listlessly at you and asks "Can I help you?"
+~
+Race human~
+Align -2 0
+Level 200
+Hitroll 200
+HitDice 401d66+8081
+ManaDice 200d10+85
+DamDice 66d3+105
+DamType crush
+AC -1260 -1260 -1260 -840
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5515
+Name usher~
+ShortD the usher~
+LongD An usher is here, keeping the audience in line.~
+Desc The usher is too busy staring and drooling at what's happening in the
+back row to pay attention to you.  
+~
+Race human~
+Align 2 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType beating
+AC -45 -45 -45 -37
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5516
+Name hig hurtenflurst~
+ShortD hig Hurtenflurst~
+LongD Hig Hurtenflurst happens to be a young rising executive in the Dolmansaxlil Shoe Corporation.~
+Desc Hig Hurtenflurst is wearing a startlingly sensible pair of shoes.  You 
+wonder how high he had to climb in the ranks of the Dolmansaxlil Galactic 
+Shoe Corporation to get them.  
+~
+Race goblin~
+Align -1 -1
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType pound
+AC -500 -500 -500 -415
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared dark_vision~
+Off    disarm dodge~
+Imm    summon charm poison disease~
+Res    negative~
+Vuln   magic fire mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5517
+Name faceless counter slave~
+ShortD a faceless counter slave~
+LongD A faceless counter slave is ready to serve you.~
+Desc The counter slave looks at you listlessly and asks "Can I help you?"
+~
+Race human~
+Align -1 0
+Level 200
+Hitroll 200
+HitDice 401d66+8081
+ManaDice 200d10+85
+DamDice 66d3+105
+DamType pound
+AC -1260 -1260 -1260 -840
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5518
+Name Barthez goalie~
+ShortD barthez~
+LongD Emmanuel Barthez is here, running register.~
+Desc Barthez apparently needs something to do in the years between World Cups,
+so he's working here.  Noticing your stare, he begins bouncing a cheap
+soccer ball on his head.  It could be either a threat, or a mating dance.  
+~
+Race human~
+Align 3 0
+Level 200
+Hitroll 0
+HitDice 5d10+4500
+ManaDice 0d0+0
+DamDice 5d8+19
+DamType wrath
+AC -200 -200 -200 -180
+Wealth 14
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5519
+Name team bleus French soccer~
+ShortD les Bleus~
+LongD The rest of the French soccer team is here, too.~
+Desc The team seems to be down on their luck after their latest staggering
+defeat, and they're all waiting for Barthez to start handing out free
+soccer balls.  
+~
+Race unique~
+Align -2 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType beating
+AC -95 -95 -95 -82
+Wealth 210
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#5520
+Name faceless counter slave~
+ShortD a faceless counter slave~
+LongD A faceless counter slave is here, ready to serve you.~
+Desc The faceless counter slave stares at a point just beyond your head and
+asks "Can I help you?"  
+~
+Race human~
+Align -3 0
+Level 200
+Hitroll 200
+HitDice 401d66+8081
+ManaDice 200d10+85
+DamDice 66d3+105
+DamType pound
+AC -1260 -1260 -1260 -840
+Wealth 100
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  sanctuary~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5521
+Name slave~
+ShortD a faceless counter slave~
+LongD A faceless counter slave is here, ready to serve you.~
+Desc The faceless counter slave stares at a point just beyond your head and
+asks "Can I help you?"  
+~
+Race human~
+Align -2 0
+Level 200
+Hitroll 0
+HitDice 25d10+2250
+ManaDice 0d0+0
+DamDice 3d12+14
+DamType pound
+AC -140 -140 -140 -120
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5522
+Name nerd~
+ShortD a nerd~
+LongD A nerd is drooling at the shelves of circuit boards.~
+Desc The nerd glances back at you, stutters, and runs off to the back to look at
+crystal radio kits.
+~
+Race human~
+Align 1 0
+Level 36
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType scratch
+AC -120 -120 -120 -100
+Wealth 12
+Act    npc dont_wander no_tame stay_area~
+Off    kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5523
+Name boy~
+ShortD a little boy~
+LongD A little boy is here, peeing.~
+Desc This kid is in every single bathroom you've ever visited, and it's
+starting to creep you out.  
+~
+Race human~
+Align 0 0
+Level 11
+Hitroll 0
+HitDice 2d8+134
+ManaDice 0d0+0
+DamDice 1d10+2
+DamType thwack
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5524
+Name bum~
+ShortD a bum~
+LongD A bum is here, searching the trash for returnable bottles.~
+Desc Aside from a scraggly beard and a layer of dirt, this bum is in pretty
+good condition, complete with a full set of teeth!  
+~
+Race human~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 2d10+150
+ManaDice 0d0+0
+DamDice 1d10+3
+DamType pound
+AC 0 0 0 0
+Wealth 1
+Act    npc no_tame stay_area~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5525
+Name pants pile~
+ShortD a pile of pants~
+LongD A jumbled pile of khaki pants is going to need some serious ironing.~
+Desc Some poor clerk must have gotten a little lazy; a large pile of pants is on the
+floor in the back of the mens department.  It looks large enough to suffocate
+anyone who tries to clean it up...
+~
+Race unique~
+Align -2 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType crush
+AC -70 -70 -70 -56
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+Imm    summon charm~
+Res    bash~
+Vuln   slash fire~
+Form   edible non_skinable construct blob~
+Part   legs tentacles~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#5526
+Name father~
+ShortD the father~
+LongD The father of the small child looks lost.~
+Desc Between quelling his child's temper tantrums and trying to find what he
+came for, this poor man has no time to deal with you.  
+~
+Race human~
+Align 2 0
+Level 12
+Hitroll 0
+HitDice 2d10+150
+ManaDice 0d0+0
+DamDice 1d10+3
+DamType punch
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5527
+Name carjacker~
+ShortD a carjacker~
+LongD A carjacker stands here, diligently working on the lock of your car.~
+Desc This carjacker obviously isn't the most experienced, or he wouldn't be 
+standing here with you right next to him.  
+~
+Race human~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -336
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary haste~
+Off    uppercut circle~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material skin
+END
+
+#5528
+Name short shady pickpocket~
+ShortD a small shady pickpocket~
+LongD A short shady figure wanders about, bumping into people.~
+Desc This shady character slinks in and out of the limited light within the mall, 
+picking pockets for easy money.  
+~
+Race human~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType none
+AC -157 -157 -157 -135
+Wealth 0
+Act    npc no_tame stay_area wimpy thief~
+AffBy  detect_invis detect_hidden infrared sneak hide haste~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material skin
+END
+
+#5529
+Name expert electronics~
+ShortD an electronics expert~
+LongD An electronics expert stands here, ready to answer your questions.~
+Desc ~
+Race human~
+Align 0 0
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType none
+AC -650 -650 -650 -520
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm hunger thirst~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5530
+Name a hair stylist~
+ShortD a short blonde hair stylist~
+LongD A short blonde hair stylist is here, doing well... hair.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area changer~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#5531
+Name sexy brunette sales representative~
+ShortD a sexy brunette sales representative~
+LongD A sexy brunette sales representative stands here, trying to get you to buy things.~
+Desc This sexy brunette will do just about anything to get you to buy the 
+merchandise in the shop.  Slim sexy legs streaming down from her perfect 
+figure are quite noticeable due to the leather shorts she's wearing. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType none
+AC -850 -850 -850 -714
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary protect_evil haste regeneration~
+Off    berserk dodge fast parry uppercut~
+Imm    summon charm cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5532
+Name short book lady~
+ShortD a short book lady~
+LongD A short book lady stands here, waiting to assist you.~
+Desc This short book lady is quite knowledgable, quite comparable to many her senior.
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType none
+AC -850 -850 -850 -731
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste regeneration~
+Imm    summon charm poison holy sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5533
+Name short sexy redhead~
+ShortD a short sexy `#`Rredhead`^~
+LongD A short sexy `#`Rredhead`^ waits at the counter to sell you something.~
+Desc This short redhead is one hot number! Long red hair flows seemlessly from 
+her head, complimented by her sparkling baby blue eyes.  An hourglass shape 
+completes the picture, her tight clothing showing every last bit of curves. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType none
+AC -850 -850 -850 -680
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary infrared protect_evil haste dark_vision regeneration~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5534
+Name pet turtle snapping~
+ShortD a snapping turtle~
+LongD A snapping turtle is here.~
+Desc This turtle's head is large, with strong jaws and two barbels on the chin. 
+The carapace is of a light brown shade,  the underside is of a yellowish 
+cream texture with a few dark markings.  Brown skin coats this terror, with 
+legs that are heavily scaled, flowing into a mix of webbed feet with long 
+claws.  The tail contains three rows of scales, making it easy to identify. `1 
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType chomp
+AC -450 -450 -450 -364
+Wealth 0
+Act    npc dont_wander pet noalign nopurge~
+Act2   no_random_obj~
+AffBy  sanctuary otterlungs haste dark_vision swim regeneration~
+Form   edible sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#5535
+Name pet ferret~
+ShortD a slinky ferret~
+LongD A ferret is here.~
+Desc A long slinky ferret is before you.  Short baby ears peek out of its head, 
+flowing seemlessly into the fur coat that covers its body.  Long 
+brownish-black claws can be seen from time to time, making it good for 
+climbing. A thin elongated tail completes it, firmly attached and able to 
+attack. 
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType none
+AC -137 -137 -137 -110
+Wealth 0
+Act    npc dont_wander pet noalign nopurge~
+Act2   no_random_obj~
+AffBy  detect_hidden sanctuary haste dark_vision regeneration~
+Off    dodge fast parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5536
+Name pet pit viper~
+ShortD a pit viper~
+LongD A pit viper is here.~
+Desc Huge in length with thick green scales, this pit viper isn't one to toy 
+with.  A narrow enlongated sloping jawline accents this vipers bright white 
+teeth. Hoods folded into the sides of its head blend in, meshing with the 
+rest of it until provoked. 
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType acbite
+AC -610 -610 -610 -542
+Wealth 0
+Act    npc dont_wander pet noalign nopurge~
+Act2   no_random_obj~
+AffBy  detect_hidden sanctuary sneak haste dark_vision~
+Off    dodge fast parry~
+Form   edible sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#5537
+Name dracon undead~
+ShortD an undead dracon~
+LongD A strange animal is here, it is part horse and part dragon.~
+Desc A pitch black dracon is here.  It upper torso is the head and neck of a 
+dragon, its lower torso is that of a horse.  It holds itself proudly with 
+its mouth twisted in a sneer.  Dark black horse like legs support a shorter 
+than normal dragon shaped neck, gleaming teeth show.  Claw like hands 
+protrude from its front torso making it look all the more horrible. 
+~
+Race human~
+Align 0 0
+Level 89
+Hitroll 0
+HitDice 9d12+435
+ManaDice 9d12+575
+DamDice 10d11+44
+DamType slash
+AC -590 -590 -590 -501
+Wealth 0
+Act    npc dont_wander no_tame stay_area pet nopurge~
+AffBy  detect_invis detect_hidden sanctuary flying haste dark_vision~
+Off    dodge fast parry~
+Imm    negative~
+Res    disease~
+Form   edible instant_decay sentient undead biped centaur mountable reptile dragon cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#5538
+Name riding lizard~
+ShortD a riding lizard~
+LongD A riding lizard stands here, awaiting its master.~
+Desc Before you is a large lizard. Mottled skin of green and black covers its 
+body from head to toe. A long, pointed tail extends from its body, and its 
+feet end in large sticky toe-pads. 
+~
+Race human~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -315
+Wealth 0
+Act    npc dont_wander no_tame stay_area pet amphibian nopurge~
+AffBy  sanctuary sneak haste dark_vision~
+Res    fire~
+Vuln   cold~
+Form   edible non_skinable animal biped mountable mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#5500
+Name lace doily~
+Short a lace doily~
+Desc A lace doily MUST have some useful purpose...~
+Level 1
+ItemType trash~
+Cost 5
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material lace~
+Wear     take hold~
+End
+
+#5501
+Name basket~
+Short a small wicker basket~
+Desc A small wicker basket filled with potpourri sits here.~
+Level 1
+ItemType container~
+Cost 320
+Durability 5
+Asize 5
+Rsize 50
+Values 10 AC -1 10 0
+Weight 5
+Material bamboo~
+Wear     take hold~
+End
+
+#5502
+Name basket wicker large~
+Short a large wicker basket~
+Desc A large wicker basket full of dried flowers sits here.~
+Level 1
+ItemType container~
+Cost 450
+Durability 5
+Asize 5
+Rsize 50
+Values 20 AC -1 20 0
+Weight 5
+Material bamboo~
+Wear     take hold~
+End
+
+#5503
+Name broken egg~
+Short a broken easter egg~
+Desc A broken easter egg lies here.~
+Level 25
+ItemType weapon~
+Cost 100
+Durability 5
+Condition 10
+Asize 5
+Rsize 50
+Values dagger 2 10 slice 0
+Weight 5
+Material plastic~
+Extra    magic~
+Wear     take wield~
+Affect affects -1 25 -1 none 0 'sneak hide'
+ExtraDesc broken egg~
+It looks like this egg used to be painted with cute pink bunnies.~
+End
+
+#5504
+Name small knife~
+Short a small knife~
+Desc A small shiny knife lies here.~
+Level 12
+ItemType weapon~
+Cost 90
+Durability 5
+Condition 90
+Asize 5
+Rsize 50
+Values dagger 2 4 pierce 0
+Weight 5
+Material steel~
+Wear     take wield~
+Affect modifier -1 12 -1 damroll 1 0
+Affect modifier -1 12 -1 hitroll 1 0
+End
+
+#5505
+Name glowing ball fire~
+Short a glowing ball of `#`Rf`ri`Rr`re`^~
+Desc A glowing ball of fire lies here.~
+Level 5
+ItemType light~
+Cost 10
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 100 0 0
+Weight 5
+Material fire~
+Extra    glow~
+Wear     take hold~
+Affect affects -1 5 -1 none 0 detect_invis
+ExtraDesc lighter zippo~
+This Zippo lighter is engraved with the initials MJB~
+End
+
+#5506
+Name pair scissors~
+Short a pair of scissors~
+Desc A pair of specialized trimming scissors lies here.~
+Level 40
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 5
+Rsize 50
+Values dagger 2 18 pierce 0
+Weight 5
+Material steel~
+Wear     take wield~
+End
+
+#5507
+Name directory~
+Short the Directory~
+Desc A directory stands in the middle of the floor.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material earth~
+ExtraDesc inscription~
+Welcome to the Midgaard Mall!
+This area was written by Lady Ebola during a fit of procrastination.  As a
+result, she failed to write several scholarship application essays, and is going
+to be up to her ears in student loans, so you'd better appreciate it.~
+ExtraDesc directory~
+The mall directory lists the stores that were in the mall when it opened, but it
+hasn't been changed since.  You briefly debate trying to find Fred's Fine Flints,
+or Hand Axes Galore, but then decide against it.
+There is a small inscription at the bottom.~
+End
+
+#5508
+Name ray~
+Short Shoe Shop Intensifier Ray~
+Desc A Dolmansaxlil Shoe Shop Intensifier Ray squats here.~
+Level 1
+ItemType treasure~
+Cost 400
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material nothingness~
+Extra    glow evil~
+ExtraDesc intensifier ray~
+The Shoe Shop Intensifier Ray is designed to exponentially increase the demand
+for shoes until a civilization passes the Shoe Event Horizon, at which point
+there will be nothing left but shoe shops and civilization will collapse.~
+End
+
+#5509
+Name uncomfortable shoes~
+Short uncomfortable shoes~
+Desc A pair of uncomfortable, highly fashionable shoes sits here.~
+Level 14
+ItemType armor~
+Cost 25
+Durability 5
+Asize 5
+Rsize 50
+Values 3 3 3 0 2
+Weight 5
+Material soft leather~
+Extra    noremove~
+Wear     take feet~
+Affect affects -1 14 -1 none 0 slow
+Affect modifier -1 14 -1 quickness -1 0
+End
+
+#5510
+Name coffee cup~
+Short a cup of coffee~
+Desc A fresh cup of coffee is cooling down rapidly.~
+Level 1
+ItemType drinkcontainer~
+Cost 5
+Durability 5
+Asize 5
+Rsize 50
+Values 1 1 coffee 0 0
+Weight 5
+Material energy~
+Wear     take hold~
+End
+
+#5511
+Name coffee mocha~
+Short a double mocha~
+Desc A double mocha sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 14
+Durability 5
+Asize 5
+Rsize 50
+Values 2 2 coffee 0 0
+Weight 5
+Material energy~
+Wear     take hold~
+End
+
+#5512
+Name soda~
+Short an almond italian soda~
+Desc An almond flavored Italian soda sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 12
+Durability 5
+Asize 5
+Rsize 50
+Values 2 2 coke 0 0
+Weight 5
+Material cream~
+Wear     take hold~
+End
+
+#5513
+Name espresso~
+Short an espresso~
+Desc A shot of espresso sits here.~
+Level 10
+ItemType potion~
+Cost 550
+Durability 5
+Asize 5
+Rsize 50
+Values 12 haste '' '' ''
+Weight 5
+Material energy~
+Wear     take hold~
+End
+
+#5514
+Name pastry turnover~
+Short an apple turnover~
+Desc An apple turnover looks scrumptious.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 5
+Rsize 50
+Values 2 1 0 0 0
+Weight 5
+Material food~
+Wear     take hold~
+End
+
+#5515
+Name sensible shoes~
+Short sensible shoes~
+Desc A pair of startlingly sensible shoes is here.~
+Level 80
+ItemType armor~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 14 14 14 14 0
+Weight 5
+Material soft leather~
+Wear     take feet~
+ClassAllowances cleric druid paladin ranger spellfilcher bard~
+Affect modifier -1 80 -1 quickness 3 0
+End
+
+#5516
+Name espresso~
+Short a double espresso~
+Desc A double espresso sits here.~
+Level 24
+ItemType potion~
+Cost 300
+Durability 5
+Asize 5
+Rsize 50
+Values 24 haste '' '' ''
+Weight 5
+Material energy~
+Wear     take hold~
+End
+
+#5517
+Name sandwich sub~
+Short a turkey sandwich~
+Desc A six-inch turkey sub sits here.~
+Level 1
+ItemType food~
+Cost 11
+Durability 5
+Asize 5
+Rsize 50
+Values 6 6 0 0 0
+Weight 5
+Material food~
+Wear     take hold~
+End
+
+#5518
+Name cheese sandwich~
+Short a cheese sandwich~
+Desc A six-inch cheese sub sits here~
+Level 1
+ItemType food~
+Cost 13
+Durability 5
+Asize 5
+Rsize 50
+Values 6 6 0 0 0
+Weight 5
+Material food~
+Wear     take hold~
+End
+
+#5519
+Name cookie~
+Short a monster cookie~
+Desc A monster cookie rests here.~
+Level 12
+ItemType pill~
+Cost 2000
+Durability 5
+Asize 5
+Rsize 50
+Values 25 'giant strength' '' '' ''
+Weight 5
+Material food~
+Wear     take hold~
+ExtraDesc cookie~
+These cookies sure changed when they started making blue M&Ms.~
+ExtraDesc monster~
+Never confuse a monster cookie with the Cookie Monster.~
+End
+
+#5520
+Name cookie~
+Short a fortune cookie~
+Desc A fortune cookie is here.~
+Level 15
+ItemType pill~
+Cost 490
+Durability 5
+Asize 5
+Rsize 50
+Values 15 bless '' '' ''
+Weight 5
+Material food~
+Wear     take hold~
+ExtraDesc fortune cookie~
+The fortune reads "You love Chinese food."~
+End
+
+#5521
+Name noodles lo mein~
+Short vegetable lo mein~
+Desc Some vegetable lo mein rests here.~
+Level 1
+ItemType food~
+Cost 15
+Durability 5
+Asize 5
+Rsize 50
+Values 8 7 0 0 0
+Weight 5
+Material food~
+Wear     take hold~
+End
+
+#5522
+Name meatlike bean burrito~
+Short a meatlike bean burrito~
+Desc An "El Grande" Meatlike Bean Burrito rests here.~
+Level 1
+ItemType food~
+Cost 128
+Durability 5
+Asize 5
+Rsize 50
+Values 2 3 0 A 0
+Weight 5
+Material food~
+Wear     take hold~
+End
+
+#5523
+Name guards~
+Short shin guards~
+Desc A pair of shin guards rests here.~
+Level 30
+ItemType armor~
+Cost 190
+Durability 5
+Asize 5
+Rsize 50
+Values 5 6 5 2 1
+Weight 5
+Material plastic~
+Extra    magic~
+Wear     take legs~
+Affect modifier -1 30 -1 quickness 1 0
+Affect modifier -1 30 -1 agility 1 0
+End
+
+#5524
+Name glasses thick~
+Short really thick glasses~
+Desc A pair of really thick glasses has been repaired with duct tape.~
+Level 36
+ItemType armor~
+Cost 20
+Durability 5
+Asize 5
+Rsize 50
+Values 4 4 4 0 1
+Weight 5
+Material glass~
+Wear     take face~
+Affect modifier -1 36 -1 presence -1 0
+Affect modifier -1 36 -1 memory 1 0
+Affect modifier -1 36 -1 reasoning 1 0
+End
+
+#5525
+Name your car~
+Short your car~
+Desc You finally found it!  It's your car!~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 4 1000 FILP 120 100
+Weight 5
+Material steel~
+End
+
+#5526
+Name ball~
+Short a ball~
+Desc A cheap ball lies here, collecting dust.~
+Level 15
+ItemType treasure~
+Cost 60
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material hard leather~
+Extra    magic~
+Wear     take hold~
+End
+
+#5527
+Name fountain~
+Short a water fountain~
+Desc A drinking fountain is mounted at the exactly wrong height.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values -1 -1 water 0 0
+Weight 5
+Material steel~
+End
+
+#5528
+Name can trash~
+Short a trash can~
+Desc A trash can has already been looted by the local bums.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 2 1000 FILO 130 100
+Weight 5
+Material plastic~
+ExtraDesc trash can~
+This is your classic brownish sort of trash can, complete with useless square
+hinged lid that has been upturned by some ambitious bum looking for returnable
+bottles.~
+End
+
+#5529
+Name bottle~
+Short a returnable bottle~
+Desc You could get a nickel for this returnable bottle.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material glass~
+Wear     take hold~
+ExtraDesc bottle~
+Apparently, this bottle once contained Orc Cola.~
+End
+
+#5530
+Name pants~
+Short casual cotton pants~
+Desc A pair of tailored cotton pants is suitable for both home and office!~
+Level 10
+ItemType armor~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 2 2 2 2 1
+Weight 5
+Material cloth~
+Wear     take legs~
+End
+
+#5531
+Name rice~
+Short fried rice~
+Desc A small takeout container is full of fried rice.~
+Level 1
+ItemType food~
+Cost 21
+Durability 5
+Asize 5
+Rsize 50
+Values 6 6 0 0 0
+Weight 5
+Material food~
+Wear     take~
+End
+
+#5532
+Name chopsticks~
+Short chopsticks~
+Desc A pair of cheap wooden chopsticks is here.~
+Level 20
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values dagger 2 8 pierce 0
+Weight 5
+Material wood~
+Wear     take wield~
+End
+
+#5533
+Name bed waterbed display~
+Short a waterbed~
+Desc A display with padded rails and a flowery quilt looks particularly inviting.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 3 1000 EHK 110 110
+Weight 2900
+Material water~
+End
+
+#5534
+Name festive hat~
+Short a `#`Rf`Ge`Rs`Gt`Ri`Gv`Re`^ hat~
+Desc A festive hat lies here, waiting to be worn.~
+Level 90
+ItemType armor~
+Cost 400
+Durability 5
+Asize 5
+Rsize 50
+Values 3 3 3 3 0
+Weight 10
+Material cloth~
+Wear     take head~
+Affect affects -1 90 -1 none 0 sneak
+End
+
+#5545
+Name spicy nachos~
+Short a plate of `#`Rspicy`^ nachos~
+Desc A plate of `#`Rspicy`^ nachos sits here, waiting to be eaten.~
+Level 1
+ItemType food~
+Cost 100
+Durability 5
+Asize 30
+Rsize 50
+Values 10 10 0 0 0
+Weight 5
+Material chips~
+Wear     take hold~
+End
+
+#5546
+Name coke cup~
+Short a cup of `#`Rcoke`^~
+Desc A cup of `#`Rcoke`^ sits here, collecting dust.~
+Level 1
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Asize 15
+Rsize 50
+Values 9 9 coke 0 0
+Weight 4
+Material paper~
+Wear     take hold~
+End
+
+#5547
+Name sub footlong~
+Short a footlong sub~
+Desc A footlong sub wrapped in paper sits here.~
+Level 40
+ItemType pill~
+Cost 26000
+Durability 5
+Asize 30
+Rsize 50
+Values 60 bless 'giant strength' haste ''
+Weight 35
+Material meat~
+Wear     take hold~
+End
+
+#5548
+Name crowbar bar rusted~
+Short a rusted `#`Scrowbar`^~
+Desc A rusted jimmy stick used to break into cars rests here.~
+Level 70
+ItemType weapon~
+Cost 250
+Durability 5
+Asize 20
+Rsize 50
+Values exotic 6 9 none 0
+Weight 0
+Material unknown~
+Wear     take wield hold~
+Affect modifier -1 70 -1 quickness 1 0
+End
+
+#5549
+Name blonde wig~
+Short a `#`Yblonde`^ wig~
+Desc A blonde wig lies here, waiting to be worn.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 20
+Material hair~
+Wear     take head~
+Affect modifier -1 5 -1 presence 3 0
+End
+
+#5550
+Name brown wig~
+Short a `#`ybrown`^ wig~
+Desc A brown wig lies here, waiting to be worn.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 20
+Material unknown~
+Wear     take head~
+Affect modifier -1 5 -1 presence 3 0
+End
+
+#5551
+Name black wig~
+Short a `#`sblack`^ wig~
+Desc A black wig lies here, waiting to be worn~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 20
+Material hair~
+Wear     take head~
+Affect modifier -1 5 -1 presence 3 0
+End
+
+#5552
+Name wig red~
+Short a `#`Rred`^ wig~
+Desc A red wig lies here, waiting to be worn.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 20
+Material hair~
+Wear     take head~
+Affect modifier -1 5 -1 presence 3 0
+End
+
+#5553
+Name eyes blue~
+Short `#`Bblue`^ eyes~
+Desc A pair of eyes lies here, obviously discarded.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 10
+Material flesh~
+Wear     take eyes~
+Affect modifier -1 5 -1 presence 1 0
+End
+
+#5554
+Name green eyes~
+Short `#`ggreen`^ eyes~
+Desc A set of eyes lies here, obviously discarded.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 10
+Material flesh~
+Wear     take eyes~
+End
+
+#5555
+Name brown eyes~
+Short `#`ybrown`^ eyes~
+Desc A pair of eyes lies here, obviously discarded.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 10
+Material flesh~
+Wear     take eyes~
+Affect modifier -1 5 -1 presence 1 0
+End
+
+#5556
+Name black eyes~
+Short `#`sblack`^ eyes~
+Desc A pair of eyes lies here, obviously discarded.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 10
+Material flesh~
+Wear     take face~
+Affect modifier -1 5 -1 presence 1 0
+End
+
+#5557
+Name lavender eyes~
+Short `#`Mlavender`^ eyes~
+Desc A pair of eyes lies here, obviously discarded.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 10
+Material flesh~
+Wear     take face~
+Affect modifier -1 5 -1 presence 1 0
+End
+
+#5558
+Name shoes walking~
+Short a pair of walking shoes~
+Desc A pair of walking shoes lies here collecting dust.~
+Level 5
+ItemType armor~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 5 5 0
+Weight 20
+Material leather~
+Wear     take feet~
+End
+
+#5559
+Name shoes jogging~
+Short a pair of jogging shoes~
+Desc A pair of jogging shoes lies here, obviously forgotten.~
+Level 35
+ItemType armor~
+Cost 4900
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 6 6 0
+Weight 20
+Material leather~
+Wear     take feet~
+Affect modifier -1 35 -1 agility 2 0
+Affect modifier -1 35 -1 quickness 1 0
+End
+
+#5560
+Name wicked pair sprinting shoes~
+Short a `#`Rw`ri`Rc`rk`Re`rd`^ pair of sprinting shoes~
+Desc A wicked pair of sprinting shoes lies here, obviously forgotten.~
+Level 91
+ItemType armor~
+Cost 55000
+Durability 5
+Asize 0
+Rsize 50
+Values 12 8 8 8 0
+Weight 25
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take feet~
+Affect modifier -1 91 -1 quickness 4 0
+Affect modifier -1 91 -1 agility 5 0
+End
+
+#5561
+Name pair sprinting shoes~
+Short a pair of `#`Gs`gp`Gr`gi`Gn`gt`Gi`gn`Gg`^ shoes~
+Desc A pair of sprinting shoes lies here, obviously forgotten.~
+Level 65
+ItemType armor~
+Cost 19000
+Durability 5
+Asize 0
+Rsize 50
+Values 7 7 7 7 0
+Weight 0
+Material leather~
+Wear     take feet~
+Affect modifier -1 65 -1 quickness 3 0
+Affect modifier -1 65 -1 agility 2 0
+End
+
+#5562
+Name shorts brightly colored~
+Short `#`Yb`Rr`Yi`Rg`Yh`Rt`Yl`Ry`^ colored shorts~
+Desc A pair of `#`Yb`Rr`Yi`Rg`Yh`Rt`Yl`Ry`^ colored shorts lies here, waiting to be worn.~
+Level 5
+ItemType armor~
+Cost 890
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 2 2 0
+Weight 10
+Material cotton~
+Wear     take waist~
+End
+
+#5563
+Name striped zebra shirt~
+Short a `#`ss`Wt`sr`Wi`sp`We`sd `Wz`se`Wb`sr`Wa`^ shirt~
+Desc A `#`ss`Wt`sr`Wi`sp`We`sd `Wz`se`Wb`sr`Wa`^ shirt lies here, collecting dust.~
+Level 5
+ItemType armor~
+Cost 950
+Durability 5
+Asize 0
+Rsize 50
+Values 3 2 1 1 0
+Weight 15
+Material twill~
+Wear     take torso~
+End
+
+#5564
+Name toga~
+Short a toga~
+Desc A toga lies here, apparently removed after a party.~
+Level 5
+ItemType armor~
+Cost 1300
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 2 2 0
+Weight 0
+Material cotton~
+Wear     take about~
+End
+
+#5565
+Name plush comfy chair~
+Short a plush comfy chair~
+Desc A plush comfy chair~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 300 BFIL 0 0
+Weight 200
+Material fabric~
+End
+
+#5566
+Name soft comfy couch~
+Short a soft comfy couch~
+Desc A soft comfy couch~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1200 BEHK 0 0
+Weight 0
+Material fabric~
+End
+
+#5567
+Name vampire novel~
+Short a vampire novel~
+Desc A vampire novel lies here, obviously misplaced.~
+Level 1
+ItemType rp~
+Cost 442
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material paper~
+Wear     take hold~
+End
+
+#5568
+Name werewolf novel~
+Short a werewolf novel~
+Desc A werewolf novel lies here, obviously misplaced.~
+Level 1
+ItemType rp~
+Cost 442
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material paper~
+Wear     take hold~
+End
+
+#5569
+Name book supernatural~
+Short a book about the supernatural~
+Desc A book about the supernatural lies here, obviously misplaced.~
+Level 1
+ItemType trash~
+Cost 442
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material paper~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#5500
+Name Kate's Kountry Krap~
+Desc This tiny store is filled with wicker baskets, lace doilies, and adorable
+figurines of mice wearing bonnets.  A large pile of old ladies is in the far
+corner, fighting over some beanie babies.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc pile old ladies~
+With a decisive WHACK! of her cane, one of the old ladies emerges from the pile
+clutching Eddie the Ebola-infested Monkey.~
+Exit south 5517
+EKeyvnum -1
+End
+
+
+#5501
+Name Parking Lot~
+Desc Squinting against the glare of a thousand windshields, you wonder how
+anyone can find their car in this mass of automotive conformity.  A manhole
+is set into the pavement here.  
+~
+Sector city~
+ExtraDesc manhole~
+NEENAH FOUNDRY CO.
+   NEENAH, WIS.~
+Exit north 5517
+EKeyvnum -1
+Exit east 5531
+EKeyvnum -1
+Exit south 5528
+EKeyvnum -1
+Exit west 5532
+EKeyvnum -1
+End
+
+
+#5502
+Name Inside the Mall~
+Desc The echoing buzz of stressed-out shoppers and screaming children
+threatens to drown out the subliminal messages in the music.  Aberstupid &
+Rich lies to the north, and La Moche Femme is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc subliminal message~
+Shoplifting is evil and causes impotence.  Please pay for your purchases --
+twice.
+--The Mgt.~
+Exit north 5503
+EKeyvnum -1
+Exit east 5517
+EKeyvnum -1
+Exit south 5504
+EKeyvnum -1
+Exit west 5505
+EKeyvnum -1
+End
+
+
+#5503
+Name Aberstupid & Rich~
+Desc A small army of mallrats is browsing through the racks, harrassing little 
+children.  Unattentive parents wander about aimlessly, letting their little 
+children raise hell. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5502
+EKeyvnum -1
+End
+
+
+#5504
+Name La Moche Femme~
+Desc As you walk into this trendy salon, the stinking miasma of nail polish,
+ultra-strength hairspray and Endangered Botanicals brand shampoo almost
+makes you vomit.  The December, 1982 issue of Pedicures Today sits in the
+magazine rack, awaiting your perusal.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc magazine pedicures~
+As you flip idly through the magazine, your attention is drawn by a
+heart-warming story about woman who marries her pedicurist and later
+develops severe bunions.  He almost leaves her then for a young blonde
+hairdresser, but a wise marriage counselor is able to restore their
+relationship.  You put the magazine down with renewed faith in humanity.  
+~
+Exit north 5502
+EKeyvnum -1
+End
+
+
+#5505
+Name Inside the Mall~
+Desc The mall is decorated in nauseating pastel, carefully calculated to make
+you feel at ease and ready to spend.  The Dolmansaxlil Shoe Corporation lies
+to the north, and a bookstore is to the south.  To the west you can hear the
+frightened shrieks of little kids visiting the Easter Bunny.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5506
+EKeyvnum -1
+Exit east 5502
+EKeyvnum -1
+Exit south 5507
+EKeyvnum -1
+Exit west 5508
+EKeyvnum -1
+End
+
+
+#5506
+Name Dolmansaxlil Shoe Shop~
+Desc This is the latest outpost of the Dolmansaxlil Galactic Shoe Corporation, an 
+entity which has been widely criticized for its aggressive marketing 
+practices.  The shelves are filled with a bewildering variety of shoes, none 
+of which fit quite right.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc shoes~
+They are very stylish and fashion conscious!  Stop staring, and buy some
+shoes! Enjoy them!~
+Exit south 5505
+EKeyvnum -1
+Exit down 5516
+EKeyvnum -1
+End
+
+
+#5507
+Name Barnes and Ignoble~
+Desc Soothing New Age music and the smell of ink permeate the air here. People 
+stand in the aisles reading books they have no intention of purchasing, and 
+stand in long lines to purchase books they have no intention of reading.  A 
+small coffee shop is to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5505
+EKeyvnum -1
+Exit east 5518
+EKeyvnum -1
+End
+
+
+#5508
+Name The Easter Bunny~
+Desc Quaint pastel scenery decorates this area of the mall, depicting cute
+little farm animals, smiling children, and grotesquely decorated eggs.  A
+large pink throne is set up in the middle, surrounded by lines of impatient
+children.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5526
+EKeyvnum -1
+Exit east 5505
+EKeyvnum -1
+Exit south 5527
+EKeyvnum -1
+Exit west 5525
+EKeyvnum -1
+End
+
+
+#5509
+Name Inside the Mall~
+Desc The vast expanse of ceiling tile in this part of the wall has been broken
+by a mural, which seems to be completely ignored by all the shoppers below. 
+Wombat Waterbeds is to the north, and the Midgaard Cinema is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc graffiti~
+The graffiti is completely illegible - looks like a hosting problem.~
+ExtraDesc mural~
+A wonderful agricultural scene depicts a farmer sitting on his tractor, waving to
+the brave adventurers below.  His face was originally a portrait of the Mayor,
+but has been obscured by layers of graffiti plugging the author's website.~
+Exit north 5510
+EKeyvnum -1
+Exit east 5511
+EKeyvnum -1
+Exit south 5512
+EKeyvnum -1
+Exit west 5517
+EKeyvnum -1
+End
+
+
+#5510
+Name Wombat Waterbeds.~
+Desc Large, comfy-looking displays are scattered about the floor of Wombat
+Waterbeds, your source for esoteric bed accessories!  
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+Exit south 5509
+EKeyvnum -1
+End
+
+
+#5511
+Name Inside the Mall~
+Desc The obnoxious music is really getting annoying now, but the people here
+seem to be enjoying, or at least tolerating it.  A shop full of shiny
+gadgets that don't do anything is north, and Microwave Shack is to the
+south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5513
+EKeyvnum -1
+Exit east 5515
+EKeyvnum -1
+Exit south 5514
+EKeyvnum -1
+Exit west 5509
+EKeyvnum -1
+End
+
+
+#5512
+Name Midgaard Cinema~
+Desc The lobby of the Midgaard Cinema is covered in posters advertising the
+latest films.  The three screens of the cinema are to the west, south, and
+east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc posters~
+The coming attraction seems to be "The Mayor of Midgaard," a comic tale about a
+young man who dreams of one day holding the key to the Western Gates. It stars
+teenage heartthrob and 15th century Florentine banker Cosmo de' Medici.~
+Exit north 5509
+EKeyvnum -1
+Exit east 5521
+EKeyvnum -1
+Exit south 5520
+EKeyvnum -1
+Exit west 5519
+EKeyvnum -1
+End
+
+
+#5513
+Name Shiny Things Unlimited~
+Desc A bewildering array of shiny junk jewelry and scented candles crowds the
+walls of this tiny shop.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5511
+EKeyvnum -1
+End
+
+
+#5514
+Name Microwave Shack~
+Desc Obscure electronics parts, telephones and alarm clock radios are
+scattered randomly throughout the store.  You can hardly move in here
+without running into something that glows and makes strange beeping noises
+when you touch it.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5511
+EKeyvnum -1
+End
+
+
+#5515
+Name The North Pole~
+Desc Cotton batting is strewn about the floor here, imitating snow.  A big,
+red and white striped barber pole is standing in the middle of the room
+bearing a sign, right next to a large red chair.  Small children are
+everywhere.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign~
+The sign is endearingly painted in a small child's handwriting, complete with the
+traditional backwards "e"
+It says:  "North Pole"~
+Exit north 5523
+EKeyvnum -1
+Exit east 5522
+EKeyvnum -1
+Exit south 5524
+EKeyvnum -1
+Exit west 5511
+EKeyvnum -1
+End
+
+
+#5516
+Name Shoe Storage Room~
+Desc This musty basement is the office of the Midgaard division of the
+Dolmansaxlil Galactic Shoe Corporation.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit up 5506
+EKeyvnum -1
+EKeywords door trap~
+End
+
+
+#5517
+Name Mall Entrance~
+Desc The entrance to the mall is composed of lofty arches and skylights,
+giving the impression of calm and spaciousness.  This atmosphere is somewhat
+undermined by the PA system blaring hits of the past three decades, combined
+with the shrieks of small children.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5500
+EKeyvnum -1
+Exit east 5509
+EKeyvnum -1
+Exit south 5501
+EKeyvnum -1
+Exit west 5502
+EKeyvnum -1
+End
+
+
+#5518
+Name Barnes and Ignoble Coffee Shop~
+Desc Behind the counter are tempting racks of pastries and an impressive array
+of polished steel machines, most of which look like coffeemakers.  A couple,
+though, bear a disquieting resemblance to medieval torture devices.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5507
+EKeyvnum -1
+End
+
+
+#5519
+Name Oh, that Beastly Fido!~
+Desc This screen is playing "Oh, that Beastly Fido!," a slapstick comedy
+featuring a rabid dog, a fearless adventurer and 5,000 rubber chickens.  The
+audience is rolling helplessly in the aisles, although you suspect this has
+more to do with the popcorn than the movie.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 5512
+EKeyvnum -1
+End
+
+
+#5520
+Name Living with Edgar~
+Desc This screen is playing "Living with Edgar," a serious drama about a woman
+whose son is born with polygastrism, and her struggles to keep him fed.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 5512
+EKeyvnum -1
+End
+
+
+#5521
+Name Hack 'n' Slash~
+Desc You are astonished to see that this screen is playing "Hack 'n' Slash,"
+an unauthorized biography of you!  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 5512
+EKeyvnum -1
+End
+
+
+#5522
+Name Discount Mart~
+Desc Welcome to Discount Mart!  A tall ceiling supports the seeming acres of
+fluorescent lights that are right now turning you into a washed-out creature
+of greenish-yellow nothingness.  They're also making all that cheap plastic
+crap from Taiwan look much more attractive.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5515
+EKeyvnum -1
+End
+
+
+#5523
+Name Food Court~
+Desc Plastic furniture dots the tiled EZ-Kleen floor of the food court.  A
+constant stream of people enters the room hungry, swarms over small formica
+tables, and leaves looking full.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5533
+EKeyvnum -1
+Exit east 5535
+EKeyvnum -1
+Exit south 5515
+EKeyvnum -1
+Exit west 5534
+EKeyvnum -1
+End
+
+
+#5524
+Name Music World~
+Desc As you enter this store, the obnoxious hits of the past three decades are
+replaced by the equally obnoxious hits of today.  Bins of plastic wrapped
+CDs are scattered about the floor, and gaudy posters of teen idols are
+scattered about the walls.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc posters~
+Most of the posters seem to feature the band Lip Sync Boyz, composed of an
+indeterminate number of reasonably attractive youths and an AI
+composer/synthesizer.~
+Exit north 5515
+EKeyvnum -1
+End
+
+
+#5525
+Name Fratzerjibbit's~
+Desc This posh department store was established in 1928 by Edgar
+Fratzerjibbit, a poor tailor with dreams of stock options.  Unfortunately,
+he had a twelfth story office and jumped out the window when the market
+crashed, leaving his son Orville to build the small family store into a
+multinational corporation.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5538
+EKeyvnum -1
+Exit east 5508
+EKeyvnum -1
+Exit south 5539
+EKeyvnum -1
+Exit west 5540
+EKeyvnum -1
+End
+
+
+#5526
+Name Utility Hallway~
+Desc The walls of this small hallway are tiled in a comfortable peach color. 
+A sign points your way to the restrooms.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign~
+<--Mens    Womens-->~
+Exit east 5536
+EKeyvnum -1
+Exit south 5508
+EKeyvnum -1
+Exit west 5537
+EKeyvnum -1
+End
+
+
+#5527
+Name Sam's Sporting Goods (and bads)~
+Desc The scent of fresh vinyl permeates this shop, which is filled with cheap
+soccer balls.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5508
+EKeyvnum -1
+End
+
+
+#5528
+Name South Parking Lot~
+Desc A steady stream of cars runs into and out of the parking lot here,
+filling Penny Lane past any reasonable semblance of well-mannered traffic. 
+From the south drift the sounds of angry drivers trying to navigate the
+intersection.  The parking lot spreads out in all other directions, and
+further to the north the low spread of the mall is visible.  
+~
+Sector city~
+Exit north 5501
+EKeyvnum -1
+Exit east 5530
+EKeyvnum -1
+Exit west 5529
+EKeyvnum -1
+End
+
+
+#5529
+Name Southwest Parking Lot~
+Desc There are hardly any cars at all in this remote corner of the lot.
+~
+RoomFlags no_mob~
+Sector city~
+Exit north 5532
+EKeyvnum -1
+Exit east 5528
+EKeyvnum -1
+Exit south 7915
+End
+
+
+#5530
+Name Southeast Parking Lot~
+Desc The endless yellow lines are starting to frighten you.  If you stare at
+them just right, you can almost see secret messages.  
+~
+Sector city~
+ExtraDesc secret messages~
+You can't quite make out the secret messages in the yellow lines on the
+pavement, and your eyes are beginning to hurt.~
+Exit north 5531
+EKeyvnum -1
+Exit west 5528
+EKeyvnum -1
+End
+
+
+#5531
+Name Northeast Parking Lot~
+Desc You finally found it!  It's your car!  Now all you have to do is find
+your way out without smashing into that stupid little Neon that keeps
+zipping around the lot in flagrant violation of conventional parking lot
+behavior...  
+~
+Sector city~
+Exit south 5530
+EKeyvnum -1
+Exit west 5501
+EKeyvnum -1
+End
+
+
+#5532
+Name Northwest Parking Lot~
+Desc Parking is scarce this close to the mall.  This just might be the cause of a
+vicious fight in the third row between a motorcyclist and a minivan driver...
+~
+Sector city~
+ExtraDesc fight~
+The gist of the argument seems to be that the motorcyclist takes up a full
+parking space that should rightfully belong to the minivan, but the minivan
+driver's family tree contains too many sheep and monkeys to allow him anywhere
+near the mall.~
+Exit east 5501
+EKeyvnum -1
+Exit south 5529
+EKeyvnum -1
+End
+
+
+#5533
+Name Sub Shop~
+Desc This shop is little more than a plexiglas counter hiding large piles of
+rotten lettuce and lunch meat.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5523
+EKeyvnum -1
+End
+
+
+#5534
+Name Chinese Express~
+Desc The intoxicating aroma of Meal #63 drifts over the counter of the Chinese
+Express.  Mmm, grease!  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5523
+EKeyvnum -1
+End
+
+
+#5535
+Name Taco Joe's~
+Desc Oddly enough, this is the one restaurant in all of Midgaard where none of
+the employees speak Spanish.  The large wall menu devotes 75% of its space
+to advertising the new "El Grande" Meatlike Bean Burrito.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5523
+EKeyvnum -1
+End
+
+
+#5536
+Name the Men's Room~
+Desc In spite of the reek of sanitizer that hangs in the air, this bathroom is
+filthy.  Soggy bits of toilet paper carpet the floor, and it would probably
+be a bad idea for you to look in the last urinal...  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc last urinal~
+BLECCHHHH!
+You gag, choke and finally vomit at the stench.  When your eyes clear enough to
+see, you realize that whatever disgusting thing was here originally, too many
+curious adventurers have puked all over it for you to identify it.~
+Exit west 5526
+EKeyvnum -1
+End
+
+
+#5537
+Name the Ladies Room~
+Desc Whoever was in here last seems to have had an unusual fondness for cheap
+perfume -- the air is thick with it.  The bathroom is filthy to boot;
+however, most of the stalls have doors on them, and most of the doors close
+properly, so it can't be all that bad.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5526
+EKeyvnum -1
+End
+
+
+#5538
+Name Luggage, shoes and ugly jewelry~
+Desc The fact that suitcases, shoes and nasty gold electroplate brooches are
+all in the same area of the store seems to mystify no one here.  Maybe
+there's some logic to it, after all.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5525
+EKeyvnum -1
+End
+
+
+#5539
+Name A small hallway~
+Desc A small hallway extends just north and south of here, to the north is the 
+center of the mall..from the south weird noises can be heard. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5525
+EKeyvnum -1
+Exit south 5541
+End
+
+
+#5540
+Name Mens~
+Desc The conservative men's department looks much like an arctic white out,
+done over in navy blue and khaki.  Cotton Oxford shirts are everywhere,
+along with high-quality suit coats.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5525
+EKeyvnum -1
+End
+
+
+#5541
+Name Pets R' Us~
+Desc Various exotic birds rest on perches near the entrance.  Just to the left of 
+the entrance is a wall of aquariums containing exotic fish.  Many different 
+types of rodents and pets are for sale... if you have the right amount of 
+cash. 
+~
+RoomFlags indoors pet_shop law~
+Sector inside~
+Exit north 5539
+End
+
+
+#5542
+Name `#`BPET `RSHOP `BSTORAGE`^~
+Desc If you are `#`Bin this room`^ and are `#`Bmortal`^, please notify an `#`RIMMORTAL`^ 
+immediately.  If you are an immortal and your name is not Ixliam, Delandria, 
+Echmoro, or Zaroth.. `#`RDO NOT`^ touch any of the resets without consulting one 
+or more of them. 
+~
+RoomFlags no_mob indoors law nowhere noautoexits~
+Sector inside~
+Owner zaroth~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 5502 spec_fido
+M 5503 spec_guard
+M 5504 spec_thief
+M 5505 spec_nasty
+M 5524 spec_janitor
+M 5528 spec_thief
+S
+
+
+
+#RESETS2
+M 0 5500 1 5500 1
+G 0 5502 -1
+G 0 5501 -1
+G 0 5500 -1
+M 0 5506 6 5501 6
+M 0 5507 6 5501 6
+M 0 5502 6 5502 6
+E 0 5505 0 light~
+M 0 5504 6 5503 6
+E 0 5504 0 wielded~
+M 0 5531 1 5503 1
+G 0 5562 -1
+G 0 5563 -1
+G 0 5564 -1
+M 0 5511 2 5504 2
+E 0 5506 0 wielded~
+M 0 5530 1 5504 1
+G 0 5549 -1
+G 0 5550 -1
+G 0 5551 -1
+G 0 5552 -1
+G 0 5553 -1
+G 0 5554 -1
+G 0 5555 -1
+G 0 5556 -1
+G 0 5557 -1
+M 0 5502 1 5505 1
+E 0 5505 -1 light~
+M 0 5528 1 5505 1
+O 0 5528 -1 5505
+M 0 5513 1 5506 1
+E 0 5509 0 feet~
+G 0 5560 -1
+G 0 5561 -1
+G 0 5559 -1
+G 0 5558 -1
+O 0 5565 -1 5507
+O 0 5566 -1 5507
+M 0 5532 1 5507 1
+G 0 5569 -1
+G 0 5567 -1
+G 0 5568 -1
+M 0 5509 1 5508 1
+E 0 5503 0 wielded~
+M 0 5506 6 5508 6
+M 0 5507 6 5508 3
+M 0 5526 6 5508 3
+M 0 5528 1 5509 1
+M 0 5507 1 5509 1
+M 0 5503 12 5509 10
+O 0 5533 0 5510
+M 0 5501 6 5511 6
+M 0 5529 1 5514 1
+M 0 5522 1 5514 1
+E 0 5524 -1 head~
+M 0 5508 1 5515 1
+E 0 5534 0 head~
+M 0 5510 2 5515 2
+M 0 5506 6 5515 3
+M 0 5507 6 5515 3
+M 0 5526 6 5515 3
+M 0 5516 1 5516 1
+E 0 5515 0 feet~
+M 0 5506 6 5517 6
+M 0 5507 6 5517 6
+M 0 5514 1 5518 1
+G 0 5510 0
+G 0 5511 0
+G 0 5512 0
+G 0 5513 0
+G 0 5514 0
+G 0 5516 0
+M 0 5515 3 5519 1
+M 0 5515 3 5520 1
+M 0 5515 3 5521 1
+M 0 5503 12 5522 2
+M 0 5501 6 5523 3
+M 0 5504 6 5524 6
+E 0 5505 0 light~
+M 0 5528 1 5525 1
+O 0 5527 0 5526
+M 0 5518 1 5527 1
+M 0 5519 1 5527 1
+E 0 5523 0 legs~
+E 0 5526 0 hold~
+M 0 5527 1 5531 1
+E 0 5548 -1 wielded~
+O 0 5525 -1 5531
+M 0 5517 1 5533 1
+G 0 5517 -1
+G 0 5547 -1
+G 0 5518 -1
+G 0 5519 -1
+M 0 5520 1 5534 1
+E 0 5532 0 wielded~
+G 0 5520 0
+G 0 5521 0
+G 0 5531 0
+M 0 5521 1 5535 1
+G 0 5546 -1
+G 0 5522 -1
+G 0 5545 -1
+M 0 5523 1 5536 1
+M 0 5525 1 5540 1
+E 0 5530 0 legs~
+M 0 5533 1 5541 11
+M 0 5534 1 5542 1
+M 0 5535 1 5542 1
+M 0 5536 1 5542 1
+M 0 5537 40 5542 1
+M 0 5538 40 5542 1
+S
+
+
+
+#SHOPS
+#5500
+buy_type container~
+profit_buy 150
+profit_sell 100
+close_hour 23
+END
+
+#5513
+profit_buy 130
+profit_sell 100
+close_hour 23
+END
+
+#5514
+buy_type food~
+profit_buy 150
+profit_sell 100
+close_hour 23
+END
+
+#5517
+buy_type food~
+profit_buy 130
+profit_sell 100
+close_hour 23
+END
+
+#5520
+profit_buy 150
+profit_sell 100
+close_hour 23
+END
+
+#5521
+buy_type food~
+profit_buy 120
+profit_sell 100
+close_hour 23
+END
+
+#5529
+buy_type container~
+profit_buy 150
+profit_sell 100
+close_hour 23
+END
+
+#5530
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#5531
+profit_buy 120
+profit_sell 70
+close_hour 23
+END
+
+#5532
+profit_buy 140
+profit_sell 100
+close_hour 23
+END
+
+#5533
+profit_buy 130
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

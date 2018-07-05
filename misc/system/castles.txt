@@ -1,0 +1,121 @@
+/* This is for Rom2.4b6 with Ivans OLC 
+ * On my mud players can buy there own castle, in which the imms
+ * make the rooms for them and the player can edit this castle's
+ * name and description and extra keys.  Thus allowing players
+ * with a lot of money to create a custom environment which they
+ * prefer to go to rest, heal, talk to buddies, in.
+ * 
+ * -_- Animosity -_- of Enmity, newbieRPG.d2g.com 5190
+ *
+ */
+
+/* Add to any of the redit commands you dont want the players
+ * to be able to change.
+ */
+
+    if (pRoom->owner == ch->name){
+        send_to_char("You cannot set that.\n\r", ch);
+        return FALSE; }
+
+/* There are a few other changes you will need to change in the db.c
+ * In the load_room function and also in the save_rooms function.
+ * I trust that you have somewhat of an idea what to change so I'll leave
+ * these to you. If you have problems email me: r_baldwin@frontiernet.net
+ */ 
+
+/******* ADD THIS TO OLC_ACT.C *******/
+---UNDER redit_name function---
+
+/* 
+ * Castle Code created/Hacked by Animosity.
+ */
+REDIT( redit_owner )
+{
+    ROOM_INDEX_DATA *pRoom;
+    char buf[MSL];
+    char name[MSL];
+
+    EDIT_ROOM(ch, pRoom);
+    one_argument( argument, name );
+    
+    if ( name[0] == '\0' )
+    {
+        send_to_char("Syntax: {Bowner {D[{WToggles the Room Owner.{D]{x\n\r", ch);
+        return FALSE;
+    }
+  
+    name[0] = UPPER( name[0] );
+
+    if ( strstr( pRoom->owner, name ) != '\0' )    
+    {
+        pRoom->owner = string_replace( pRoom->owner, name, "\0" );
+        pRoom->owner = string_unpad( pRoom->owner );
+
+        if ( pRoom->owner[0] == '\0' )
+        {
+            free_string( pRoom->owner );
+            pRoom->owner = str_dup( "None" );
+        }
+        send_to_char( "Owner removed.\n\r", ch );
+        return TRUE;
+    }
+    else
+    {
+        buf[0] = '\0';
+        if ( strstr( pRoom->owner, "None" ) != '\0' )
+        {
+            pRoom->owner = string_replace( pRoom->owner, "None", "\0" );
+            pRoom->owner = string_unpad( pRoom->owner );
+        }
+        
+        if (pRoom->owner[0] != '\0' )
+        {
+            strcat( buf, pRoom->owner );
+            strcat( buf, " " );
+        }
+        strcat( buf, name );
+        free_string( pRoom->owner );
+        pRoom->owner = string_proper( str_dup( buf ) );
+     
+        send_to_char( "Owner added.\n\r", ch );
+        send_to_char( pRoom->owner,ch);
+        return TRUE;  
+    }
+    return FALSE;
+}
+
+/********** END OF CODE ***********/
+
+Any bugs please report to me at: r_baldwin@frontiernet.net,
+Like I said before I run this on my rom2.4b6 and it works perfect.
+It should work with anything that uses Ivans OLC code however.
+
+<--Helpfile-->
+
+-1 CASTLES BUILDINGS~
+
+  Castle's are player owned places that the player themselves can
+customize the name and description of how many ever rooms that
+they can afford to buy.
+
+Here is a cost list.
+--Title----------Cost----------Landowner Title----------
+10 Rooms ---- 100,000 Gold	Sir/Miss
+20 Rooms ---- 200,000 Gold    **Comming Soon**
+30 Rooms ---- 300,000 Gold	**Comming Soon**
+40 Rooms ---- 400,000 Gold	**Comming Soon**
+50 Rooms ---- 500,000 Gold    **Comming Soon**
+60 Rooms ---- 600,000 Gold    **Comming Soon**
+70 Rooms ---- 700,000 Gold 	Lord/Mistress
+80 Rooms ---- 800,000 Gold	Heir
+90 Rooms ---- 900,000 Gold	King/Queen
+--------------------------------------------------------
+If you would like to buy some rooms then please talk to an immortal.
+They should be able to help you.  The immortal will also explain
+how to edit your new castle if you need help.
+
+=====Here is a list of what you can buy for your house.=====
+Will be completed shortly.
+
+{R-{M_{R- {DA{wn{Di{wm{Do{ws{Di{wt{Dy {R-{M_{R-{x
+~

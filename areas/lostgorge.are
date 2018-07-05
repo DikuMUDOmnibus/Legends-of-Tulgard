@@ -1,0 +1,2129 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Lost Gorge~
+ShortName   `gLost Gorge`^~
+Builders    None~
+Credits     Shang-Ti~
+VNUMs       6800 6899
+LComment    `#`R[ 75-100]`^
+Security    8
+Colour      g~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#6800
+Name dinosaur anatosaurus~
+ShortD an Anatosaurus~
+LongD A huge duck-billed dinosaur is grazing on some vegetation here.~
+Desc This 30' tall dinosaur vaguely resembles a gigantic duck with the body of
+a lizard.  
+~
+Race lizardman~
+Align 1 0
+Level 75
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType crush
+AC -400 -400 -400 -328
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  dark_vision~
+Off    area_attack bash berserk tail crush~
+Imm    charm mental~
+Res    weapon fire cold poison disease~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#6801
+Name dinosaur ankylosaurus~
+ShortD an ankylosaurus~
+LongD An armadillo-like dinosaur is startled by your presence.~
+Desc This dinosaur is well over 15' long from head to tail.  It is built
+rather like an armadillo, with thick armor plates covering it's body and
+huge spines protruding from it's sides.  The long tail ends in a huge
+knobbed growth perfect for bashing foes.  
+~
+Race lizardman~
+Align -1 0
+Level 80
+Hitroll 0
+HitDice 8d12+410
+ManaDice 8d12+500
+DamDice 9d10+42
+DamType smash
+AC -530 -530 -530 -450
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  slow~
+Off    area_attack bash berserk tail crush~
+Imm    charm mental~
+Res    weapon poison mental~
+Vuln   cold drowning~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#6802
+Name dinosaur allosaurus~
+ShortD an allosaurus~
+LongD A monstorous dinosaur with a huge mouth full of jagged teeth thinks you are dinner.~
+Desc This dinosaur appears very deadly, as he is fast and a highly aggressive
+predator.  It has a maw full of fangs the size of short swords and twice as
+sharp.  
+~
+Race lizardman~
+Align -1 0
+Level 91
+Hitroll 0
+HitDice 9d12+420
+ManaDice 9d12+540
+DamDice 10d10+43
+DamType chomp
+AC -560 -560 -560 -481
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  dark_vision berserk~
+Off    area_attack bash tail crush~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal biped mountable reptile cold_blood~
+Part   head arms legs heart brains guts feet eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6803
+Name dinosaur brontosaurus~
+ShortD a brontosaurus~
+LongD A titanic dinosaur towers above the treetops here.~
+Desc This quadraped is gargantuan, stretching more than 70' in length from
+head to tail.  It leaves immense impressions in the ground with each step,
+better not stand in his path.  
+~
+Race lizardman~
+Align 1 0
+Level 75
+Hitroll 0
+HitDice 9d12+420
+ManaDice 9d12+540
+DamDice 10d10+43
+DamType crush
+AC -560 -560 -560 -470
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  dark_vision slow~
+Off    area_attack bash tail crush~
+Imm    charm mental~
+Res    poison disease drowning~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6804
+Name dinosaur archelon ischyros~
+ShortD an archelon ischyros~
+LongD A very large turtle-like dinosaur is looking for vegetation here.~
+Desc Swimming around this area, this big turtle-like amphibian searches for
+aquatic vegetation to eat.  It is only 12' long, but has an equal proportion
+in girth.  
+~
+Race lizardman~
+Align 1 0
+Level 90
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType claw
+AC -550 -550 -550 -456
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  calm dark_vision swim~
+Off    area_attack bash berserk tail~
+Imm    charm mental drowning~
+Res    acid poison disease~
+Vuln   cold lightning~
+Form   edible mountable fish cold_blood~
+Part   head heart brains guts eye fins tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#6805
+Name dinosaur brachiosaurus~
+ShortD a brachiosaurus~
+LongD An impossibly massive dinosaur is causing the earth to shake with each step.~
+Desc This massive dinosaur dwarfs all the others in this valley.  While not the 
+longest, the sheer mass of this one must be twice that of any other you have 
+seen.  
+~
+Race lizardman~
+Align 2 0
+XPMod 150
+Level 70
+Hitroll 0
+HitDice 8d12+600
+ManaDice 8d12+500
+DamDice 9d10+42
+DamType crush
+AC -530 -530 -530 -439
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  swim slow~
+Off    area_attack bash tail~
+Imm    charm mental~
+Res    weapon poison disease drowning~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#6806
+Name dinosaur dinichtys~
+ShortD a dinichtys~
+LongD A large fish-like dinosaur is swimming around looking for prey.~
+Desc The mouth of this viscious fish appears quite able to swallow a human in
+a single gulp.  You don't want to get any closer to it's mouth to find out
+for sure.  
+~
+Race lizardman~
+Align -2 0
+Level 85
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType bite
+AC -500 -500 -500 -400
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  dark_vision berserk swim~
+Off    fast tail~
+Imm    charm mental drowning~
+Res    poison disease~
+Vuln   cold lightning~
+Form   edible mountable fish cold_blood~
+Part   head heart brains guts eye fins tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#6807
+Name dinosaur elasmosaurus~
+ShortD an elasmosaurus~
+LongD A highly aggressive dinosaur notices your movements and attacks.~
+Desc This dinosaur resembles a fish with four legs and a long neck.  This one
+is most likely a carnivore, judging by the jagged teeth and sharp claws.  
+~
+Race lizardman~
+Align -3 0
+Level 94
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType chomp
+AC -610 -610 -610 -530
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  dark_vision berserk~
+Off    area_attack bash fast tail crush~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6808
+Name dinosaur paleoscincus~
+ShortD a paleoscincus~
+LongD A heavily plated dinosaur with a wickedly spiked tail snorts at your intrusion.~
+Desc This one could be described as a walking dreadnought, for it is heavily
+plated, sports sharp spines along it's flanks, and has a wickedly spiked
+tail.  It would be rather difficult to damage this one.  
+~
+Race lizardman~
+Align 1 0
+Level 88
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType smash
+AC -600 -600 -600 -492
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  haste dark_vision berserk~
+Off    area_attack bash tail crush gore~
+Imm    charm mental~
+Res    fire lightning poison disease~
+Vuln   cold drowning~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail horns scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#6809
+Name dinosaur stegosaurus~
+ShortD a stegosaurus~
+LongD A dinosaur with large spine plates and a long spiked tail is grazing here.~
+Desc This dinosaur lumbers around eating the lush vegetation.  It disregards
+you as nothing more than a mere fly, an annoyance.  Along it's back are
+jutting bone plates, as well as similar plates on the tail.  
+~
+Race lizardman~
+Align 2 0
+Level 86
+Hitroll 0
+HitDice 8d12+400
+ManaDice 8d12+500
+DamDice 9d10+40
+DamType beating
+AC -510 -510 -510 -459
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  dark_vision~
+Off    area_attack bash tail crush gore~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6810
+Name dinosaur triceratops~
+ShortD a triceratops~
+LongD A dinosaur with a bony shield and 3 great horns growing from it's skull charges you.~
+Desc This dinosaur resembles a tremendous 3-horned rhinoceros with a large
+bone plate protruding from the back of it's skull.  As you examine him, he
+lowers his head and turns toward you, ready to charge.  
+~
+Race lizardman~
+Align -3 0
+Level 86
+Hitroll 0
+HitDice 9d12+425
+ManaDice 9d12+550
+DamDice 10d10+44
+DamType pierce
+AC -570 -570 -570 -461
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  dark_vision berserk~
+Off    area_attack bash tail crush gore~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail horns~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6811
+Name dinosaur camptosaurus~
+ShortD a camptosaurus~
+LongD A rather small dinosaur ignores you and continues grazing.~
+Desc This dinosaur looks to be on the low end of the food chain, easy prey for
+the carnivores.  It is only 8' tall, very small for the size of the other
+dinosaurs in the valley here.  
+~
+Race lizardman~
+Align -1 0
+Level 75
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType charge
+AC -400 -400 -400 -356
+Wealth 0
+Act    npc no_tame stay_area wimpy noalign~
+AffBy  dark_vision~
+Off    bash tail crush~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal biped mountable reptile cold_blood~
+Part   head arms legs heart brains guts feet eye tail~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#6812
+Name dinosaur compsognathus~
+ShortD a compsognathus~
+LongD A dog-sized dinosaur is sneaking around hunting prey.~
+Desc This dinosaur resembles an overgrown iguana walking on it's hind legs. 
+It is very small, not even 2' tall, but is incredibly fast and voracious.  
+~
+Race lizardman~
+Align -3 0
+Level 77
+Hitroll 0
+HitDice 7d11+365
+ManaDice 7d11+365
+DamDice 8d8+36
+DamType claw
+AC -420 -420 -420 -365
+Wealth 0
+Act    npc dont_wander no_tame aggressive noalign~
+AffBy  infrared hide dark_vision berserk~
+Off    backstab dodge fast kick tail~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal biped mountable reptile cold_blood~
+Part   head arms legs heart brains guts feet eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#6813
+Name dinosaur dimetrodon~
+ShortD a dimetrodon~
+LongD An alligator-like dinosaur with a large spiny fin along it's back is hunting here.~
+Desc A carnivorous dinosaur sporting a tall, spiny fin along it's back turns
+towards you.  He seems awfully hungry, maybe you should run.  
+~
+Race lizardman~
+Align -1 0
+Level 83
+Hitroll 0
+HitDice 8d11+390
+ManaDice 8d11+440
+DamDice 9d9+39
+DamType bite
+AC -480 -480 -480 -408
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  dark_vision berserk~
+Off    area_attack bash tail~
+Imm    charm mental drowning~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#6814
+Name dinosaur tennodontosaurus~
+ShortD a tennodontosaurus~
+LongD A wicked looking dinosaur is swimming around, looking for a meal.~
+Desc This giant monster resembles a titanic shark with a long, razor-toothed
+maw.  It stretches well over 30' long, 5' of it is just mouth.  
+~
+Race lizardman~
+Align 3 0
+Level 97
+Hitroll 0
+HitDice 9d13+445
+ManaDice 9d13+575
+DamDice 10d11+47
+DamType chomp
+AC -620 -620 -620 -502
+Wealth 0
+Act    npc no_tame aggressive noalign~
+AffBy  infrared dark_vision berserk swim~
+Off    area_attack bash fast tail~
+Imm    charm mental drowning~
+Res    poison disease~
+Vuln   cold~
+Form   edible mountable fish cold_blood~
+Part   head heart brains guts eye fins tail fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6815
+Name dinosaur tyrannosaurus~
+ShortD a tyrannosaurus~
+LongD The most frightening dinosaur you have ever seen blasts out a deafening roar.~
+Desc This is truly the king of the carnivorous dinosaurs.  It is a gigantic
+killing machine, fast and driven by an instinct to eat anything that moves. 
+~
+Race lizardman~
+Align 3 0
+XPMod 200
+Level 81
+Hitroll 0
+HitDice 9d12+600
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType chomp
+AC -600 -600 -600 -504
+Wealth 0
+Act    npc no_tame aggressive stay_area noalign~
+AffBy  dark_vision berserk~
+Off    area_attack bash fast tail crush~
+Imm    charm mental~
+Res    poison disease~
+Vuln   cold~
+Form   edible animal biped mountable reptile cold_blood~
+Part   head arms legs heart brains guts feet eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#6816
+Name the gimp~
+ShortD the gimp~
+LongD The Gimp is here.~
+Desc The gimp looks, well, gimpy.  
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 100d1+100
+ManaDice 1d4+5
+DamDice 1d1+0
+DamType mental
+AC 90 90 90 77
+Wealth 0
+Act    npc dont_wander no_tame~
+Off    dodge fast parry~
+Imm    magic weapon poison disease~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg TICK 6816 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#6800
+Name small chest~
+Short a small chest burried beneath the sand~
+Desc A small chest is poking out from beneath the sand here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 100
+Rsize 50
+Values 1000 ABCD 6829 1000 0
+Weight 100
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   buried~
+Wear     no_sac~
+End
+
+#6801
+Name giant gemstone~
+Short a giant gemstone~
+Desc An uncut gemstone as big as an orange rests here.~
+Level 0
+ItemType gem~
+Cost 8000
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#6811
+Name gargantuan fern~
+Short a gargantuan fern~
+Desc A gargantuan green fern grows up from the ground here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 1000 0
+Weight 0
+Material plant~
+Wear     no_sac~
+End
+
+#6829
+Name small rusty key~
+Short a small rusty key~
+Desc A small key seems to be long forgotten on the ground here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material iron~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#6816
+Name Trail into the Gorge~
+Desc The view of the gorge below is truly magnificent from up here.  You can
+see the entire valley as it stretches out to the sheer cliffs which have
+sealed this place off from time and civilization.  A very small path to the
+east has been carved into the cliffside, meandering down into the gorge far
+below you.  Sitting to the west is a boulder that has been cleft and
+inscribed on the flat surface.  
+~
+RoomFlags no_mob~
+Sector mountain~
+ExtraDesc boulder~
+Inscriptions on the flat face of this massive stone read 'Beware all who
+enter, for here dwell beasts that time has forgotten'.  
+~
+Exit east 6817
+Exit south 53240
+End
+
+
+#6817
+Name On the Cliff Trail~
+Desc This small path is precarious in the best of spots.  Looking below you,
+you notice that this is no man made path.  The rubble from the partial
+collapse of this wall of the gorge lies on the valley floor.  To the west
+the trail slowly rises to the top of the cliff.  To the east the path
+disappears into the high forest canopy.  
+~
+RoomFlags no_mob~
+Sector mountain~
+Exit east 6818
+Exit west 6816
+End
+
+
+#6818
+Name On the Cliff Trail~
+Desc At this spot on the trail you stand even with the treetops of a massive
+forest that spreads out to the south.  Far off beyond the trees you can make
+out a large body of water.  Also there appears to be a rather large sand
+barge in the middle of the water.  To the west the trail slowly makes it's
+way back up to the top of the cliff, while to the east the forest blocks all
+the light and envelops the path in an impenetrable darkness.  
+~
+RoomFlags no_mob~
+Sector mountain~
+Exit east 6819
+Exit west 6817
+End
+
+
+#6819
+Name Base of the Cliff~
+Desc Towering high above you, the broad leaves on the treetops manage to
+submerge this forest in a murky twilight.  The girth of these trees could
+dwarf a dragon, and thier height is well beyond the reach of even a titan. 
+To the south the forest stretches out and looks like it would not be
+difficult to become lost.  Climbing up the face of the cliff to the west is
+the long, dangerous path to the top of the gorge.  
+~
+RoomFlags no_mob~
+Sector mountain~
+Exit south 6822
+Exit west 6818
+End
+
+
+#6820
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6827
+Exit east 6821
+Exit south 6827
+Exit west 6824
+End
+
+
+#6821
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6828
+Exit east 6822
+Exit south 6828
+Exit west 6820
+End
+
+
+#6822
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6819
+Exit east 6823
+Exit south 6829
+Exit west 6821
+End
+
+
+#6823
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6830
+Exit east 6824
+Exit south 6830
+Exit west 6822
+End
+
+
+#6824
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6831
+Exit east 6820
+Exit south 6831
+Exit west 6823
+End
+
+
+#6825
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6825
+Exit east 6826
+Exit south 6835
+Exit west 6833
+End
+
+
+#6826
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6826
+Exit east 6827
+Exit south 6826
+Exit west 6825
+End
+
+
+#6827
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6820
+Exit east 6828
+Exit south 6820
+Exit west 6826
+End
+
+
+#6828
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6821
+Exit east 6829
+Exit south 6821
+Exit west 6827
+End
+
+
+#6829
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+Sector field~
+Exit north 6822
+Exit east 6830
+Exit south 6829
+Exit west 6828
+End
+
+
+#6830
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6823
+Exit east 6831
+Exit south 6823
+Exit west 6829
+End
+
+
+#6831
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6824
+Exit east 6832
+Exit south 6824
+Exit west 6830
+End
+
+
+#6832
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6832
+Exit east 6833
+Exit south 6832
+Exit west 6831
+End
+
+
+#6833
+Name The Venerable Copse~
+Desc The enormous trees of this wood grow have grown into an impossibly
+confusing maze of roots and branches.  What's more, some of the trees seem
+to have been pushed over or broken off, making the task of keeping a trail
+through here rather toilsome.  All about you the forest continues to obscure
+your senses.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 6833
+Exit east 6825
+Exit south 6843
+Exit west 6832
+End
+
+
+#6834
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6845
+Exit east 6835
+Exit south 6845
+Exit west 6835
+End
+
+
+#6835
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6825
+Exit east 6834
+Exit south 6835
+Exit west 6834
+End
+
+
+#6836
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6869
+Exit east 6837
+Exit south 6847
+Exit west 6842
+End
+
+
+#6837
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6837
+Exit east 6838
+Exit south 6837
+Exit west 6836
+End
+
+
+#6838
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6838
+Exit east 6839
+Exit south 6838
+Exit west 6837
+End
+
+
+#6839
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6839
+Exit east 6840
+Exit south 6850
+Exit west 6838
+End
+
+
+#6840
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6840
+Exit east 6841
+Exit south 6840
+Exit west 6839
+End
+
+
+#6841
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6841
+Exit east 6842
+Exit south 6841
+Exit west 6840
+End
+
+
+#6842
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6875
+Exit east 6836
+Exit south 6853
+Exit west 6841
+End
+
+
+#6843
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6833
+Exit east 6844
+Exit south 6843
+Exit west 6844
+End
+
+
+#6844
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6855
+Exit east 6843
+Exit south 6855
+Exit west 6843
+End
+
+
+#6845
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6834
+Exit east 6846
+Exit south 6834
+Exit west 6846
+End
+
+
+#6846
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6857
+Exit east 6845
+Exit south 6857
+Exit west 6845
+End
+
+
+#6847
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6836
+Exit east 6847
+Exit south 6858
+Exit west 6847
+End
+
+
+#6848
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6870
+Exit east 6849
+Exit south 6859
+Exit west 6849
+End
+
+
+#6849
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6871
+Exit east 6848
+Exit south 6860
+Exit west 6848
+End
+
+
+#6850
+Name In the Lagoon~
+Desc The violence of the waters has faded and all is at peace here.  The
+surface of the sea is smooth as glass and radiates an amazing azure glow. 
+You seem to have entered the lagoon of a great sand bar.  To the south a
+small beach allows access onto the dry land.  To the north the water rages
+with a devilish fury.  
+~
+Sector noswim~
+Exit north 6839
+Exit south 6861
+End
+
+
+#6851
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6873
+Exit east 6852
+Exit south 6862
+Exit west 6852
+End
+
+
+#6852
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6874
+Exit east 6851
+Exit south 6863
+Exit west 6851
+End
+
+
+#6853
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6842
+Exit east 6853
+Exit south 6864
+Exit west 6853
+End
+
+
+#6854
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6865
+Exit east 6855
+Exit south 6865
+Exit west 6855
+End
+
+
+#6855
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6844
+Exit east 6854
+Exit south 6844
+Exit west 6854
+End
+
+
+#6856
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6867
+Exit east 6857
+Exit south 6867
+Exit west 6857
+End
+
+
+#6857
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6846
+Exit east 6856
+Exit south 6846
+Exit west 6856
+End
+
+
+#6858
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6847
+Exit east 6858
+Exit south 6869
+Exit west 6858
+End
+
+
+#6859
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6848
+Exit east 6859
+Exit south 6870
+Exit west 6859
+End
+
+
+#6860
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6849
+Exit east 6860
+Exit south 6871
+Exit west 6860
+End
+
+
+#6861
+Name The Sandy Reef~
+Desc The luminecent sands of this small island blaze with unbearable heat. 
+The whole of this area is devoid of any form of life as well as anything
+other than sand.  A small beach allows access to the lagoon to the north,
+which is the only visible exit away from here.  
+~
+RoomFlags dark no_mob~
+Sector desert~
+Exit north 6850
+End
+
+
+#6862
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6851
+Exit east 6862
+Exit south 6873
+Exit west 6862
+End
+
+
+#6863
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6852
+Exit east 6863
+Exit south 6874
+Exit west 6863
+End
+
+
+#6864
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6853
+Exit east 6864
+Exit south 6875
+Exit west 6864
+End
+
+
+#6865
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6854
+Exit east 6866
+Exit south 6854
+Exit west 6866
+End
+
+
+#6866
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6877
+Exit east 6865
+Exit south 6877
+Exit west 6865
+End
+
+
+#6867
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6856
+Exit east 6868
+Exit south 6856
+Exit west 6868
+End
+
+
+#6868
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6868
+Exit east 6867
+Exit south 6879
+Exit west 6867
+End
+
+
+#6869
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6858
+Exit east 6870
+Exit south 6836
+Exit west 6870
+End
+
+
+#6870
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6859
+Exit east 6869
+Exit south 6848
+Exit west 6869
+End
+
+
+#6871
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6860
+Exit east 6872
+Exit south 6849
+Exit west 6873
+End
+
+
+#6872
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 6872
+Exit east 6873
+Exit south 6883
+Exit west 6871
+End
+
+
+#6873
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6862
+Exit east 6871
+Exit south 6851
+Exit west 6872
+End
+
+
+#6874
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6863
+Exit east 6875
+Exit south 6852
+Exit west 6875
+End
+
+
+#6875
+Name In the Tumultuous Surf~
+Desc Whitecaps break all around you in this wicked maelstrom.  As you reach
+the pinacle of one swell, you see only rougher waters abound.  The pounding
+of the waves is unforgiving against all that venture into the brine, and
+there is naught but the roar of crashing water to fill your ears.  Hopefully
+anything living in these rough seas poses less danger than the creatures on
+the dry land.  
+~
+Sector noswim~
+Exit north 6864
+Exit east 6874
+Exit south 6842
+Exit west 6874
+End
+
+
+#6876
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6876
+Exit east 6877
+Exit south 6887
+Exit west 6877
+End
+
+
+#6877
+Name Among the Rolling Hills~
+Desc The boundless headlands around you make it difficult to keep your
+bearings as you make your way through this ancient gorge.  The only visible
+markings are those of further-off hilltops and the regular impressions of
+some massive animal's tracks.  Some of the crater-like prints are quite
+capable of engulfing you, hindering your travels even further.  
+~
+Sector hills~
+Exit north 6866
+Exit east 6876
+Exit south 6866
+Exit west 6876
+End
+
+
+#6878
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6889
+Exit east 6879
+Exit south 6889
+Exit west 6888
+End
+
+
+#6879
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6868
+Exit east 6880
+Exit south 6890
+Exit west 6878
+End
+
+
+#6880
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6891
+Exit east 6881
+Exit south 6891
+Exit west 6879
+End
+
+
+#6881
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6892
+Exit east 6882
+Exit south 6892
+Exit west 6880
+End
+
+
+#6882
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6893
+Exit east 6883
+Exit south 6893
+Exit west 6881
+End
+
+
+#6883
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6872
+Exit east 6884
+Exit south 6894
+Exit west 6882
+End
+
+
+#6884
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6895
+Exit east 6885
+Exit south 6895
+Exit west 6883
+End
+
+
+#6885
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6896
+Exit east 6886
+Exit south 6896
+Exit west 6884
+End
+
+
+#6886
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6897
+Exit east 6887
+Exit south 6897
+Exit west 6885
+End
+
+
+#6887
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6876
+Exit east 6888
+Exit south 6898
+Exit west 6886
+End
+
+
+#6888
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6899
+Exit east 6878
+Exit south 6899
+Exit west 6887
+End
+
+
+#6889
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6878
+Exit east 6890
+Exit south 6878
+Exit west 6899
+End
+
+
+#6890
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6879
+Exit east 6891
+Exit south 6890
+Exit west 6889
+End
+
+
+#6891
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6880
+Exit east 6892
+Exit south 6880
+Exit west 6890
+End
+
+
+#6892
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6881
+Exit east 6893
+Exit south 6881
+Exit west 6891
+End
+
+
+#6893
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6882
+Exit east 6894
+Exit south 6882
+Exit west 6892
+End
+
+
+#6894
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6883
+Exit east 6895
+Exit south 6894
+Exit west 6893
+End
+
+
+#6895
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6884
+Exit east 6896
+Exit south 6884
+Exit west 6894
+End
+
+
+#6896
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6885
+Exit east 6897
+Exit south 6885
+Exit west 6895
+End
+
+
+#6897
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6886
+Exit east 6898
+Exit south 6886
+Exit west 6896
+End
+
+
+#6898
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6887
+Exit east 6899
+Exit south 6898
+Exit west 6897
+End
+
+
+#6899
+Name Upon the Plains~
+Desc These plains are host to lush growths of grasses, ferns, mushrooms, and
+wildflowers.  From time to time the ground beneath your feet quivers from
+the impact of dinosaurs roaming around the gorge.  As far as the eye can see
+there is only more vegetation and the frequent mass of the huge beasts that
+dwell upon these plains.  
+~
+Sector field~
+Exit north 6888
+Exit east 6889
+Exit south 6888
+Exit west 6898
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 6812 spec_poison
+M 6813 spec_poison
+M 6814 spec_poison
+M 6815 spec_breath_any
+S
+
+
+
+#RESETS2
+M 0 6800 12 6820 3
+M 0 6805 4 6822 1
+M 0 6808 4 6826 2
+M 0 6811 16 6829 8
+O 0 6811 0 6829
+P 0 6829 1 6811 1
+M 0 6800 12 6830 3
+M 0 6808 4 6832 2
+M 0 6803 6 6834 1
+M 0 6803 6 6835 1
+M 0 6806 6 6837 2
+M 0 6814 2 6839 1
+M 0 6806 6 6841 2
+M 0 6803 6 6843 1
+M 0 6803 6 6844 1
+M 0 6809 8 6845 2
+M 0 6810 4 6846 2
+M 0 6802 2 6846 1
+M 0 6814 2 6850 1
+M 0 6810 4 6854 2
+M 0 6802 2 6854 1
+M 0 6809 8 6855 2
+M 0 6801 5 6856 2
+M 0 6805 4 6857 1
+M 0 6804 12 6860 3
+O 0 6800 0 6861
+P 0 6801 1 6800 1
+M 0 6804 12 6862 3
+M 0 6805 4 6865 1
+M 0 6801 5 6866 2
+M 0 6803 6 6867 1
+M 0 6804 12 6869 3
+M 0 6806 1 6871 1
+M 0 6806 1 6873 1
+M 0 6804 12 6875 3
+M 0 6803 6 6877 1
+M 0 6807 2 6879 1
+M 0 6812 12 6880 6
+M 0 6813 2 6881 1
+M 0 6815 2 6883 1
+M 0 6805 4 6883 1
+M 0 6813 2 6885 1
+M 0 6812 12 6886 6
+M 0 6807 2 6887 1
+M 0 6809 8 6891 2
+M 0 6800 12 6892 3
+M 0 6811 16 6893 4
+M 0 6815 2 6894 1
+M 0 6801 5 6894 1
+M 0 6811 16 6895 4
+M 0 6800 12 6896 3
+M 0 6809 8 6897 2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#6816
+title gimp talk~
+author Habbakuk~
+code emote gimps with a furious vengence.
+mq15 emote deems vengence has been wrought, and takes a time-out.
+mq16 scratch
+mq18 adjust
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022905378
+END
+
+#0
+
+
+#$

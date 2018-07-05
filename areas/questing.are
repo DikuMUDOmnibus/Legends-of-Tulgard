@@ -1,0 +1,3072 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Quests~
+ShortName   Quests~
+Builders    None~
+VNUMs       11300 11500
+AFlags  noteleport noscry hidden nogateinto nosummoninto newbie_area_resets~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#11300
+Name chip seller~
+ShortD a small chip selling faerie~
+LongD A small faerie is behind a desk here.~
+Desc ~
+Race human~
+Align 0 0
+Level 149
+Hitroll 0
+HitDice 15d18+725
+ManaDice 15d19+1063
+DamDice 14d22+104
+DamType none
+AC -1190 -1190 -1190 -999
+Wealth 2980
+Act    npc dont_wander no_tame stay_area noautosocial~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden flying~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material magic
+MProg GRALL 11300 100~
+END
+
+#11301
+Name unseen door summoner~
+ShortD unseen_door_summoner~
+LongD Unseen_jack_loader~
+Desc I open the door and summon a human to give kids candy :)
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 76
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_invis detect_hidden infrared sneak dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg ACT 11303 knocks loudly~
+END
+
+#11302
+Name unseen_trashman~
+ShortD unseen_trashman~
+LongD Unseen_trashman~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg HOUR 3000 0~
+MProg HOUR 3000 1~
+MProg HOUR 3000 2~
+MProg HOUR 3000 3~
+MProg HOUR 3000 4~
+MProg HOUR 3000 5~
+MProg HOUR 3000 6~
+MProg HOUR 3000 7~
+MProg HOUR 3000 8~
+MProg HOUR 3000 9~
+MProg HOUR 3000 10~
+MProg HOUR 3000 11~
+MProg HOUR 3000 12~
+MProg HOUR 3000 13~
+MProg HOUR 3000 14~
+MProg HOUR 3000 15~
+MProg HOUR 3000 16~
+MProg HOUR 3000 17~
+MProg HOUR 3000 18~
+MProg HOUR 3000 19~
+MProg HOUR 3000 20~
+MProg HOUR 3000 21~
+MProg HOUR 3000 22~
+MProg HOUR 3000 23~
+END
+
+#11303
+Name female minotaur citizen~
+ShortD a female citizen~
+LongD A female citizen is here, handing out candy.~
+Desc ~
+Race minotaur~
+Align 3 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -16
+Wealth 60
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared~
+Off    gore~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 11302 trick or treat~
+END
+
+#11304
+Name male citizen~
+ShortD a male citizen~
+LongD A male citizen is here handing out candy.~
+Desc ~
+Race minotaur~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType beating
+AC 90 90 90 79
+Wealth 20
+Act    npc dont_wander no_tame stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared~
+Off    berserk gore~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg SPEECH 11302 trick or treat~
+END
+
+#11305
+Name the headless horsemen jack~
+ShortD the headless horsemen~
+LongD A large headless man is here, riding a pitch black horse.~
+Desc Your looking at a giant being cloaked in darkness.  He mounts a large, pitch 
+black stallion.  On his shoulders, there is no head.  Blood can be seen 
+slowly seeping out the open wound.  
+~
+Race human~
+Align 0 0
+Level 99
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+630
+DamDice 10d13+54
+DamType none
+AC -690 -690 -690 -586
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area pet~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#11306
+Name goto mob~
+ShortD the goto mob~
+LongD The goto mob is here, waiting to be goto'd.~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 78
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#11307
+Name unseen fog~
+ShortD unseen_fog~
+LongD I screw up peoples sight heh.~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXIT 11306 east~
+MProg EXIT 11306 east~
+END
+
+#0
+
+
+
+#OBJECTS
+#11300
+Name ace diamonds card~
+Short `#`WAce`^ of `RDiamonds`^~
+Desc `#`WAce`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11301
+Name two diamonds card~
+Short `#`WTwo`^ of `RDiamonds`^~
+Desc `#`WTwo`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11302
+Name three diamonds card~
+Short `#`WThree`^ of `RDiamonds`^~
+Desc `#`WThree`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11303
+Name four diamonds card~
+Short `#`WFour`^ of `RDiamonds`^~
+Desc `#`WFour`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11304
+Name five diamonds card~
+Short `#`WFive`^ of `RDiamonds`^~
+Desc `#`WFive`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11305
+Name six diamonds card~
+Short `#`WSix`^ of `RDiamonds`^~
+Desc `#`WSix`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11306
+Name seven hearts card~
+Short `#`WSeven`^ of `RHearts`^~
+Desc `#`WSeven`^ of `RHearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11307
+Name eight diamonds card~
+Short `#`WEight`^ of `RDiamonds`^~
+Desc `#`WEight`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11308
+Name nine diamonds card~
+Short `#`WNine`^ of `RDiamonds`^~
+Desc `#`WNine`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11309
+Name ten diamonds card~
+Short `#`WTen`^ of `RDiamonds`^~
+Desc `#`WTen`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11310
+Name jack diamonds card~
+Short `#`WJack`^ of `RDiamonds`^~
+Desc `#`WJack`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11311
+Name queen diamonds card~
+Short `#`WQueen`^ of `RDiamonds`^~
+Desc `#`WQueen`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11312
+Name king diamonds card~
+Short `#`WKing`^ of `RDiamonds`^~
+Desc `#`WKing`^ of `RDiamonds`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11313
+Name ace clubs card~
+Short `#`WAce`^ of `Bclubs`^~
+Desc `#`WAce`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11314
+Name two clubs card~
+Short `#`WTwo`^ of `Bclubs`^~
+Desc `#`WTwo`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11315
+Name three clubs card~
+Short `#`WThree`^ of `Bclubs`^~
+Desc `#`WThree`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11316
+Name four clubs card~
+Short `#`WFour`^ of `Bclubs`^~
+Desc `#`WFour`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11317
+Name five clubs card~
+Short `#`WFive`^ of `Bclubs`^~
+Desc `#`WFive`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11318
+Name six clubs card~
+Short `#`WSix`^ of `Bclubs`^~
+Desc `#`WSix`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11319
+Name seven clubs card~
+Short `#`WSeven`^ of `Bclubs`^~
+Desc `#`WSeven`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11320
+Name eight clubs card~
+Short `#`WEight`^ of `Bclubs`^~
+Desc `#`WEight`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11321
+Name nine clubs card~
+Short `#`WNine`^ of `Bclubs`^~
+Desc `#`WNine`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11322
+Name ten clubs card~
+Short `#`WTen`^ of `Bclubs`^~
+Desc `#`WTen`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11323
+Name jack clubs card~
+Short `#`WJack`^ of `Bclubs`^~
+Desc `#`WJack`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11324
+Name queen clubs card~
+Short `#`WQueen`^ of `Bclubs`^~
+Desc `#`WQueen`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11325
+Name king clubs card~
+Short `#`WKing`^ of `Bclubs`^~
+Desc `#`WKing`^ of `Bclubs`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11326
+Name ace hearts card~
+Short `#`WAce`^ of `Rhearts`^~
+Desc `#`WAce`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11327
+Name two hearts card~
+Short `#`WTwo`^ of `Rhearts`^~
+Desc `#`WTwo`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11328
+Name three hearts card~
+Short `#`WThree`^ of `Rhearts`^~
+Desc `#`WThree`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11329
+Name four hearts card~
+Short `#`WFour`^ of `Rhearts`^~
+Desc `#`WFour`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11330
+Name five hearts card~
+Short `#`WFive`^ of `Rhearts`^~
+Desc `#`WFive`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11331
+Name six hearts card~
+Short `#`WSix`^ of `Rhearts`^~
+Desc `#`WSix`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11332
+Name seven hearts card~
+Short `#`WSeven`^ of `Rhearts`^~
+Desc `#`WSeven`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11333
+Name eight hearts card~
+Short `#`WEight`^ of `Rhearts`^~
+Desc `#`WEight`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11334
+Name nine hearts card~
+Short `#`WNine`^ of `Rhearts`^~
+Desc `#`WNine`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11335
+Name ten hearts card~
+Short `#`WTen`^ of `Rhearts`^~
+Desc `#`WTen`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11336
+Name jack hearts card~
+Short `#`WJack`^ of `Rhearts`^~
+Desc `#`WJack`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11337
+Name queen hearts card~
+Short `#`WQueen`^ of `Rhearts`^~
+Desc `#`WQueen`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11338
+Name king hearts card~
+Short `#`WKing`^ of `Rhearts`^~
+Desc `#`WKing`^ of `Rhearts`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11339
+Name ace spades card~
+Short `#`WAce`^ of `Bspades`^~
+Desc `#`WAce`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11340
+Name two spades card~
+Short `#`WTwo`^ of `Bspades`^~
+Desc `#`WTwo`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11341
+Name three spades card~
+Short `#`WThree`^ of `Bspades`^~
+Desc `#`WThree`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11342
+Name four spades card~
+Short `#`WFour`^ of `Bspades`^~
+Desc `#`WFour`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11343
+Name five spades card~
+Short `#`WFive`^ of `Bspades`^~
+Desc `#`WFive`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11344
+Name six spades card~
+Short `#`WSix`^ of `Bspades`^~
+Desc `#`WSix`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11345
+Name seven spades card~
+Short `#`WSeven`^ of `Bspades`^~
+Desc `#`WSeven`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11346
+Name eight spades card~
+Short `#`WEight`^ of `Bspades`^~
+Desc `#`WEight`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11347
+Name nine spades card~
+Short `#`WNine`^ of `Bspades`^~
+Desc `#`WNine`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11348
+Name ten spades card~
+Short `#`WTen`^ of `Bspades`^~
+Desc `#`WTen`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11349
+Name jack spades card~
+Short `#`WJack`^ of `Bspades`^~
+Desc `#`WJack`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11350
+Name queen spades card~
+Short `#`WQueen`^ of `Bspades`^~
+Desc `#`WQueen`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11351
+Name king spades card~
+Short `#`WKing`^ of `Bspades`^~
+Desc `#`WKing`^ of `Bspades`^~
+Level 1
+ItemType rp~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    glow hum nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#11352
+Name deck box~
+Short a box of cards~
+Desc A small paper box lies here.~
+Level 1
+ItemType container~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 A 0 50 100
+Weight 5
+Material paper~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#11353
+Name five chip 5chip~
+Short `#a `Y5 gold`^ chip~
+Desc `#a `Y5 gold`^ chip~
+Level 1
+ItemType rp~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plastic~
+Extra    nolocate sellextract nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#11354
+Name ten chip 10chip~
+Short `#a `Y10 gold`^ chip~
+Desc `#a `Y10 gold`^ chip~
+Level 1
+ItemType rp~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plastic~
+Extra    nolocate sellextract nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#11355
+Name community pile~
+Short community pile~
+Desc The community pile.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 100 100
+Weight 0
+Material unknown~
+Extra    glow nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#11356
+Name the pot~
+Short the pot~
+Desc The "Pot"~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 100 100
+Weight 0
+Material unknown~
+Extra    glow nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#11357
+Name discard pile~
+Short discard pile~
+Desc The discard pile~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 100 100
+Weight 0
+Material unknown~
+Extra    glow nopurge nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#11358
+Name one chip 1chip~
+Short `#a `Y1 gold`^ chip~
+Desc `#a `Y1 gold`^ chip~
+Level 1
+ItemType rp~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plastic~
+Extra    nolocate sellextract nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#11359
+Name dealer hand~
+Short the dealers hand~
+Desc The dealers hand.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10000 0 0 50 100
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#11360
+Name player hand~
+Short player hand~
+Desc A players hand is here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10000 0 0 50 100
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#11361
+Name twenty-five chip 25chip~
+Short `#a `Y25 gold`^ chip~
+Desc `#a `Y25 gold`^ chip~
+Level 1
+ItemType rp~
+Cost 2500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plastic~
+Extra    nolocate sellextract nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#11370
+Name orb perception magical hovers~
+Short the `#`WOrb`^ of `WPe`wrc`sep`wti`Won`^~
+Desc A magical orb hovers here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    glow magic nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#11371
+Name orb illusion magical hovers~
+Short the `#`WOrb`^ of `WIl`wl`sus`wi`Won`^~
+Desc A magical orb hovers here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    glow magic nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#11372
+Name orb might~
+Short the `#`WOrb`^ of `WM`wi`sg`wh`Wt`^~
+Desc A magical orb hovers here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    glow hum magic nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#11400
+Name peppermint candy~
+Short a `#`Rp`We`Rp`Wp`Re`Wr`Rm`Wi`Rn`Wt `Rc`Wa`Rn`Wd`Ry`^~
+Desc There is a small peppermint candy on the ground here.~
+Level 1
+ItemType pill~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 1 refresh '' '' ''
+Weight 1
+Material candy~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc peppermint candy~
+This small piece of candy looks very sweet and tasty.  
+~
+End
+
+#11401
+Name gummy candy strange~
+Short a gummy candy~
+Desc A strange gummy candy lies on the floor here.~
+Level 1
+ItemType food~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 0
+Material candy~
+Extra    inventory nonmetal~
+Wear     take~
+End
+
+#11402
+Name candy~
+Short a sweet candy~
+Desc A sweet candy is melting here~
+Level 1
+ItemType food~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 2 0 0 0 0
+Weight 0
+Material candy~
+Wear     take hold~
+ExtraDesc candy ~
+This is a little round candy slightly pink in colour and it smells of raspberries. It is hard, and made of crystalised sugar.
+~
+End
+
+#11403
+Name mint leaf green sugar candy ~
+Short a mint leaf sugar candy~
+Desc A green sugar candy lies here, smelling sweet.~
+Level 1
+ItemType food~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 6
+Material rock sugar~
+Extra    inventory~
+Wear     take~
+End
+
+#11404
+Name sticky lollipop~
+Short a sticky `#`Wl`Yo`Bl`rl`mi`Rp`Wo`Yp`^~
+Desc A sticky `#`Wl`Yo`Bl`rl`mi`Rp`Wo`Yp`^ is melting here.~
+Level 1
+ItemType food~
+Cost 59
+Durability 5
+Asize 0
+Rsize 50
+Values 3 1 0 0 0
+Weight 2
+Material sugar~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#11405
+Name has_given_candy~
+Short has given candy already~
+Desc (no description 11405)~
+Level 1
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#11406
+Name jack o lantern~
+Short jack-o-lantern~
+Desc You see a Jack-O-Lantern here, grinning at you with a menacing smile.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 M F 11300 0
+Weight 0
+Material unknown~
+Extra    glow hum nonmetal nodegrade burnproof~
+End
+
+#11482
+Name potion of restoration~
+Short a potion of restoration~
+Desc A potion of restoration lies here.~
+Level 50
+ItemType potion~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 refresh heal regeneration refresh
+Weight 0
+Material unknown~
+Extra    glow nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nosecondary~
+Wear     take~
+End
+
+#11483
+Name potion gods dark mysterious~
+Short a `#`Spotion`^ of the `Wgods`^~
+Desc A dark, mysterious potion lies here.~
+Level 1
+ItemType potion~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80 'dragon strength' 'stone skin' 'illusions grandeur' bless
+Weight 10
+Material unknown~
+Extra    glow nonmetal nolocate nodegrade burnproof norestring nogetall~
+Extra2   nosell~
+Wear     take~
+End
+
+#11495
+Name letter block t scrabble~
+Short the letter t~
+Desc A scrabble letter block lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#11496
+Name letter block scrabble u~
+Short the letter u~
+Desc A scrabble letter block lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#11497
+Name letter block scrabble w~
+Short the letter w~
+Desc A scrabble letter block lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#11498
+Name letter block scrabble x~
+Short the letter x~
+Desc A scrabble letter block lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#11499
+Name letter block scrabble y~
+Short the letter y~
+Desc A scrabble letter block lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#11500
+Name letter block scrabble z~
+Short the letter z~
+Desc A scrabble letter block lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#11300
+Name Path to town~
+Desc ~
+Sector forest~
+Exit east 11301
+End
+
+
+#11301
+Name Dark spooky path~
+Desc ~
+Sector forest~
+Exit east 11302
+Exit west 11300
+End
+
+
+#11302
+Name Dark spooky path~
+Desc The room is foggy, you can barely see the trees. Weird sounds eminate in all 
+directions. 
+~
+Sector forest~
+Exit east 11303
+Exit west 11301
+End
+
+
+#11303
+Name Dark spooky path~
+Desc The room is foggy, you can barely see the trees. Weird sounds eminate in all 
+directions. 
+~
+Sector forest~
+Exit east 11304
+Exit west 11302
+End
+
+
+#11304
+Name Dark spooky path~
+Desc The room is foggy, you can barely see the trees. Weird sounds eminate in all 
+directions. 
+~
+Sector forest~
+Exit east 11305
+Exit west 11303
+End
+
+
+#11305
+Name Dark spooky path~
+Desc The room is foggy, you can barely see the trees. Weird sounds eminate in all 
+directions. 
+~
+Sector forest~
+Exit east 11306
+Exit west 11304
+End
+
+
+#11306
+Name Dark spooky path~
+Desc ~
+Sector forest~
+Exit east 11307
+Exit west 11305
+End
+
+
+#11307
+Name Dark spooky path~
+Desc ~
+Sector forest~
+Exit east 11308
+EFlags door~
+Exit west 11306
+End
+
+
+#11308
+Name Gate to a small town.~
+Desc ~
+Sector city~
+Exit east 11309
+EFlags door closed~
+Exit west 11307
+EFlags door~
+End
+
+
+#11309
+Name Inside the west gate~
+Desc ~
+RoomFlags dark nowhere noscry~
+Sector city~
+Exit north 11318
+Exit east 11310
+Exit south 11327
+Exit west 11308
+EFlags door closed~
+End
+
+
+#11310
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11344
+Exit east 11311
+Exit south 11368
+Exit west 11309
+End
+
+
+#11311
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11345
+Exit east 11312
+Exit south 11369
+Exit west 11310
+End
+
+
+#11312
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11346
+Exit east 11313
+Exit south 11370
+Exit west 11311
+End
+
+
+#11313
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11347
+Exit east 11314
+Exit south 11371
+Exit west 11312
+End
+
+
+#11314
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11348
+Exit east 11315
+Exit south 11372
+Exit west 11313
+End
+
+
+#11315
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11349
+Exit east 11316
+Exit south 11373
+Exit west 11314
+End
+
+
+#11316
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11350
+Exit east 11317
+Exit south 11374
+Exit west 11315
+End
+
+
+#11317
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11351
+Exit south 11375
+Exit west 11316
+End
+
+
+#11318
+Name Corner of the street~
+Desc Your at the corner of the street. Looking east is a very dark laneway. 
+Shadows creep and scurry across the floor. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit east 11319
+Exit south 11309
+End
+
+
+#11319
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11336
+Exit east 11320
+Exit south 11360
+Exit west 11318
+End
+
+
+#11320
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11337
+Exit east 11321
+Exit south 11361
+Exit west 11319
+End
+
+
+#11321
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11338
+Exit east 11322
+Exit south 11362
+Exit west 11320
+End
+
+
+#11322
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11339
+Exit east 11323
+Exit south 11363
+Exit west 11321
+End
+
+
+#11323
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11340
+Exit east 11324
+Exit south 11364
+Exit west 11322
+End
+
+
+#11324
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11341
+Exit east 11325
+Exit south 11365
+Exit west 11323
+End
+
+
+#11325
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11342
+Exit east 11326
+Exit south 11366
+Exit west 11324
+End
+
+
+#11326
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11343
+Exit south 11367
+Exit west 11325
+End
+
+
+#11327
+Name Corner of the street~
+Desc Your at the corner of the street. Looking east is a very dark laneway. 
+Shadows creep and scurry across the floor. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11309
+Exit east 11328
+End
+
+
+#11328
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11352
+Exit east 11329
+Exit south 11376
+Exit west 11327
+End
+
+
+#11329
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11353
+Exit east 11330
+Exit south 11377
+Exit west 11328
+End
+
+
+#11330
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11354
+Exit east 11331
+Exit south 11378
+Exit west 11329
+End
+
+
+#11331
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11355
+Exit east 11332
+Exit south 11379
+Exit west 11330
+End
+
+
+#11332
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11356
+Exit east 11333
+Exit south 11380
+Exit west 11331
+End
+
+
+#11333
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11357
+Exit east 11334
+Exit south 11381
+Exit west 11332
+End
+
+
+#11334
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11358
+Exit east 11335
+Exit south 11382
+Exit west 11333
+End
+
+
+#11335
+Name A dark street~
+Desc Your walking on a very dark street. Candles and Jack-o-lanters light the 
+edges of the long path. It seems to extend endlessly into the night. You can 
+see a house to the north and south. 
+~
+RoomFlags dark safe nowhere noscry antimagic noscan~
+Sector city~
+Exit north 11359
+Exit south 11383
+Exit west 11334
+End
+
+
+#11336
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11319
+End
+
+
+#11337
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11320
+End
+
+
+#11338
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11321
+End
+
+
+#11339
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11322
+End
+
+
+#11340
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11323
+End
+
+
+#11341
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11324
+End
+
+
+#11342
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11325
+End
+
+
+#11343
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11326
+End
+
+
+#11344
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11310
+End
+
+
+#11345
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11311
+End
+
+
+#11346
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11312
+End
+
+
+#11347
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11313
+End
+
+
+#11348
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11314
+End
+
+
+#11349
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11315
+End
+
+
+#11350
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11316
+End
+
+
+#11351
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11317
+End
+
+
+#11352
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11328
+End
+
+
+#11353
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11329
+End
+
+
+#11354
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11330
+End
+
+
+#11355
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11331
+End
+
+
+#11356
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11332
+End
+
+
+#11357
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11333
+End
+
+
+#11358
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11334
+End
+
+
+#11359
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11384
+EFlags door closed~
+Exit south 11335
+End
+
+
+#11360
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11319
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11361
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11320
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11362
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11321
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11363
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11322
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11364
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11323
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11365
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11324
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11366
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11325
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11367
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11326
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11368
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors solitary nowhere noscry~
+Sector inside~
+Exit north 11310
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11369
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11311
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11370
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11312
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11371
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11313
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11372
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11314
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11373
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11315
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11374
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11316
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11375
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11317
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11376
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11328
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11377
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11329
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11378
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11330
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11379
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11331
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11380
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11332
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11381
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11333
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11382
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11334
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11383
+Name Porch of a house~
+Desc Your standing outside on a wooden porch. The floorboards are creaky and 
+rotting. Strange, errie sounds eminate from the house inside. 
+~
+RoomFlags dark indoors private nowhere noscry~
+Sector inside~
+Exit north 11335
+Exit south 11384
+EFlags door closed~
+End
+
+
+#11384
+Name If you are in here, recall NOW!~
+Desc You did a bad thing. I will kill you now
+          -Ech
+~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 11307 5 11302 1
+M 0 11307 5 11303 1
+M 0 11307 5 11304 1
+M 0 11307 5 11305 1
+M 0 11301 48 11336 1
+M 0 11301 48 11337 1
+M 0 11301 48 11338 1
+M 0 11301 48 11339 1
+M 0 11301 48 11340 1
+M 0 11301 48 11341 1
+M 0 11301 48 11342 1
+M 0 11301 48 11343 1
+M 0 11301 48 11344 1
+M 0 11301 40 11344 1
+M 0 11301 48 11345 1
+M 0 11301 48 11346 1
+M 0 11301 48 11347 1
+M 0 11301 48 11348 1
+M 0 11301 48 11349 1
+M 0 11301 48 11350 1
+M 0 11301 48 11351 1
+M 0 11301 48 11352 1
+M 0 11301 48 11353 1
+M 0 11301 48 11354 1
+M 0 11301 48 11355 1
+M 0 11301 48 11356 1
+M 0 11301 48 11357 1
+M 0 11301 48 11358 1
+M 0 11301 48 11359 1
+M 0 11301 48 11360 1
+M 0 11301 48 11361 1
+M 0 11301 48 11362 1
+M 0 11301 48 11363 1
+M 0 11301 48 11364 1
+M 0 11301 48 11365 1
+M 0 11301 48 11366 1
+M 0 11301 48 11367 1
+M 0 11301 48 11368 1
+M 0 11301 48 11369 1
+M 0 11301 48 11370 1
+M 0 11301 48 11371 1
+M 0 11301 48 11372 1
+M 0 11301 48 11373 1
+M 0 11301 48 11374 1
+M 0 11301 48 11375 1
+M 0 11301 48 11376 1
+M 0 11301 48 11377 1
+M 0 11301 48 11378 1
+M 0 11301 48 11379 1
+M 0 11301 48 11380 1
+M 0 11301 48 11381 1
+M 0 11301 48 11382 1
+M 0 11301 48 11383 1
+S
+
+
+
+#SHOPS
+#11300
+buy_type rp~
+buy_type rp~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#11306
+author Echmoro~
+code if rand 40
+mob silently transfer $n 11302
+mob echoat $n You wander around lost in the fog.
+mob echoaround $n You see $n walk off into the distance.
+else
+mob letpass
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1099274352
+END
+
+#11305
+title Give Items to Jack!~
+author Echmoro~
+code mob silently get candle jack
+if has $i candle
+if has $i pumpkin
+    mob echo The Headless Horseman grabs the Jack-O-Lantern in one and and reins in the other.
+remove token
+give token $n
+    mob echo Throws back and tosses rides off into the distance, merciless cackling echoing throughout the streets.
+    mob purge $i
+  endif
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1067706265
+END
+
+#11304
+title Do nothing on north~
+author Echmoro~
+code if room $i == 11377
+  mob letpass
+endif
+if room $i == 11387
+  mob letpass
+endif
+if room $i == 11368
+  mob letpass
+endif
+if room $i == 11378
+  mob letpass
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1067698282
+END
+
+#11303
+title Load Citizen~
+author Echmoro~
+code if !hastoken $i 11405
+  if rand 50
+    mob mload 11303
+  else
+    mob mload 11304
+  endif
+  mob oload 11405
+mob ttimer 11405 $i 5
+open south
+open north
+mob echo A citizen walks out, carrying a bowl of candy.
+mob vforce 11304 say Wow! Whats the magic word?
+mob vforce 11303 say Wow! Whats the magic word?
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1099273805
+END
+
+#11302
+title Hand Out Candy~
+author Echmoro~
+code mob seeall
+if rand 5
+mob oload 11361
+give chip $n
+else
+if rand 33
+  mob oload 11400
+  mob oload 11402
+else
+  if rand 33
+    mob oload 11403
+    mob oload 11401
+  else
+    if rand 33
+      mob oload 11401
+      mob oload 11404
+    else
+      if rand 33
+         mob oload 11403
+         mob oload 11402
+      else
+        if rand 33
+           mob oload 11404
+           mob oload 11400
+         else
+             if rand 33
+               mob oload 11401
+               mob oload 11400
+             else
+               if rand 25
+                 mob oload 11401
+                 mob oload 11402
+               endif
+             endif
+           endif
+         endif
+       endif
+     endif
+   endif
+give candy $n
+give candy $n
+give lollipop $n
+endif
+smile $n
+mob echo The citizen heads back inside.
+mob stun $n 6
+close north
+close south
+mob purge $i
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1099273688
+END
+
+#11301
+title Found Head~
+author Echmoro~
+code mob seeall
+if money $i < 100
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1078529779
+END
+
+#11300
+title ScareCrow Reaction~
+author Echmoro~
+code mob seeall
+lang human
+sayto $n Greetings, Welcome and please enjoy your stay.
+smile $n
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1078432700
+END
+
+#0
+
+
+#$

@@ -1,0 +1,393 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Nerem's Estate~
+ShortName   Nerem's Estate~
+Builders    None~
+VNUMs       1350 1399
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    8
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Fri Mar 26 18:39:01 2004~
+End
+
+
+
+#MOBILES
+#1350
+Name dai~
+ShortD dai~
+LongD A small baby feylar is here, crawling around.~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 81
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy2 fear_magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg PREKILL 1350 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#1351
+Name hand carved sofa~
+Short a hand carved `#`rs`yof`ra`^~
+Desc A hand carved sofa sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 5000 DGJQ 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1352
+Name hand carved wooden chair~
+Short a hand carved `#`ywooden `rc`yhai`yr`^~
+Desc A hand carved wooden chair sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 2000 EHKQ 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1353
+Name small carved table~
+Short a small, carved `#`ytable`^~
+Desc A small, carved table is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 4000 ADGJQ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1354
+Name assorted boardgames board games~
+Short a few assored board games~
+Desc A few assorted board games lie here, ready to be played.~
+Level 1
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay nosell~
+End
+
+#1355
+Name easel~
+Short an easel~
+Desc An easel is here.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1356
+Name hand carved bed~
+Short a hand carved bed~
+Desc A hand carved bed is here, looking comfortable.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 3000 BEHKR 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1357
+Name hand carved dresser~
+Short a hand carved dresser~
+Desc A hand carved dresser is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 0 0 100 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1358
+Name hand carved side-table~
+Short a hand carved side-table~
+Desc A hand carved side-table~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 50 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1359
+Name hand carved child's sized bed~
+Short a hand carved, child's sized bed~
+Desc A hand carved, child's sized bed is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 2000 BEHKR 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#1350
+Name Bottom of a large oak tree~
+Desc This is the bottom of a giant tree oak tree.  The ground is soft and has 
+short trimmed grass with scattered items about.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Owner nerem millia~
+Exit north 1351
+Exit south 56537
+EFlags door closed~
+End
+
+
+#1351
+Name Large opening in a tree~
+Desc This is a small room just to pass by into the main room.  It isn’t very 
+decorated or anything but it's not a very important room anyway.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit north 1352
+Exit south 1350
+End
+
+
+#1352
+Name Hollowed tree~
+Desc This is a large hollowed tree, The insides have been completely carved by 
+hand and the furniture is made by the remainders of the tree!  Whoever built 
+this house sure must have been smart.  There are even stairs leading towards 
+the top of the tree.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit south 1351
+Exit up 1353
+End
+
+
+#1353
+Name Middle of the tree trunk~
+Desc This is the middle of the tree trunk carved out into a stairway.  It looks 
+like nothing could fit her except this grand stairway.  All around are 
+different portraits of Nerem and Millia In different poses most are very 
+nice and some were obviously made by Nerem eww!  
+~
+Sector inside~
+ExtraDesc portraits nerem millia poses~
+Various portraits of Nerem and Millia hang here.  Each showing a differnt 
+image of the two.  
+~
+Exit up 1354
+Exit down 1352
+End
+
+
+#1354
+Name a passage room~
+Desc This is just a small room leading into six other rooms.  There isn't much 
+special about this room.  It just leads into other rooms.  
+~
+Sector inside~
+Exit north 1357
+EFlags door closed~
+Exit east 1356
+EFlags door closed~
+Exit south 1355
+Exit west 1358
+Exit up 1359
+Exit down 1353
+End
+
+
+#1355
+Name activity room~
+Desc This is a colourful activity room.  It has an a couple easels and some 
+assorted instruments.  Other than that it has a few games such as chess and 
+checkers.  
+~
+Sector inside~
+Exit north 1354
+End
+
+
+#1356
+Name the master bedroom~
+Desc This master bedroom is quite large.  It has a window looking out towards the 
+east, giving a beautiful view of the sunrise.  On the bed, there are soft, 
+fluffy sheets that make it very comfortable.  
+~
+Sector inside~
+Exit west 1354
+EFlags door closed~
+End
+
+
+#1357
+Name guest room~
+Desc This is a regular looking bedroom made for guests.  It has a bed to the 
+left, and a dresser to the right.  It also has a small window facing north.  
+
+~
+Sector inside~
+Exit south 1354
+EFlags door closed~
+End
+
+
+#1358
+Name Child's room~
+Desc This is a small cute little bedroom.  It has toys lying about and stuffed 
+animals everywhere.  There is a handcarved bed that seems to be in the shape 
+of a moon at the feet and sun at the head.  The moon has the word "Luna" 
+writin in large letters across it and "Sol" writin likewise across the sun.  
+
+~
+Sector inside~
+Exit east 1354
+End
+
+
+#1359
+Name attic~
+Desc This is the attic where all of the unused junk lives.  It has a low roof, 
+not allowing you to stand.  There is dust everywhere, almost making you 
+sneeze.  
+~
+Sector inside~
+Exit down 1354
+End
+
+
+#1367
+Name ~
+Desc ~
+Sector swim~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1352 -1 1352
+O 0 1351 -1 1352
+O 0 1353 -1 1352
+O 0 1354 -1 1355
+O 0 1355 -1 1355
+O 0 1358 -1 1356
+O 0 1356 -1 1356
+O 0 1357 -1 1356
+O 0 1356 -1 1357
+O 0 1357 -1 1357
+O 0 1359 -1 1358
+O 0 1358 -1 1358
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#1350
+title Prevnet Dai's Death~
+author Echmoro~
+code mob echoat $n I don't think her parents would be happy if you did that.
+mob preventattack
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1065966008
+END
+
+#0
+
+
+#$

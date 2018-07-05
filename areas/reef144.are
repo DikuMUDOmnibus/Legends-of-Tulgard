@@ -1,0 +1,2421 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Coral Reef~
+ShortName   Coral Reef~
+Builders    None~
+Credits     Myretha~
+VNUMs       4725 4799
+LComment    `#`C[ 35- 50]`^
+Security    9
+Colour      x~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:31:02 2005~
+End
+
+
+
+#MOBILES
+#4725
+Name trigger~
+ShortD `x~
+LongD `x ~
+Desc ~
+Race human~
+Align 3 0
+Level 200
+Hitroll 0
+HitDice 14d132+1100
+ManaDice 52d10+100
+DamDice 7d7+29
+DamType none
+AC -240 -240 -240 -80
+Wealth 0
+Act    npc dont_wander unseen~
+AffBy  detect_invis infrared dark_vision swim~
+Imm    summon charm magic weapon drowning~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 4735 100~
+MProg DELAY 4736 100~
+END
+
+#4726
+Name trigger~
+ShortD `x~
+LongD `x ~
+Desc ~
+Race human~
+Align -3 0
+Level 200
+Hitroll 0
+HitDice 14d132+1100
+ManaDice 52d10+100
+DamDice 7d7+29
+DamType none
+AC -240 -240 -240 -80
+Wealth 0
+Act    npc dont_wander unseen~
+AffBy  detect_invis infrared dark_vision swim~
+Imm    summon charm magic weapon drowning~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 4737 100~
+MProg DELAY 4738 100~
+END
+
+#4727
+Name seahorse~
+ShortD a large `#`yseahorse`^~
+LongD A large `#`yseahorse`^ drifts here.~
+Desc A seahorse, large for his breed, looks at you expectantly.  
+~
+Race human~
+Align 1 0
+Level 50
+Hitroll 50
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType charge
+AC -200 -200 -200 -160
+Wealth 500
+Act    npc dont_wander no_tame~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision swim~
+Imm    summon charm magic weapon drowning~
+Form   edible sentient fish cold_blood~
+Part   head heart brains guts eye fins tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg GRALL 4745 100~
+MProg ACT 4726 buy~
+END
+
+#4728
+Name wolffish~
+ShortD `bAn immense fish`x~
+LongD `bAn immense wolffish lies in wait for prey. `x ~
+Desc `bAn immense fish almost 60 feet in length, it's massive jaws yaw
+toothily as it sees you entering the cavern. It's body is monochromatic
+grey, with immense eyes that track your every movement. It's fins are
+serrated and it's tail short, and obviously powerful. The body is striped in
+two different `Dgreys`b. `x 
+~
+Race unique~
+Align 1 0
+Level 50
+Hitroll 50
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType crush
+AC -200 -200 -200 -172
+Wealth 500
+Act    npc dont_wander scavenger aggressive indoors~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared sneak hide dark_vision swim~
+Off    area_attack fast tail crush gore~
+Imm    drowning~
+Vuln   light~
+Form   edible sentient mountable fish cold_blood~
+Part   head heart brains guts eye fins tail scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#4729
+Name starfish~
+ShortD a large starfish~
+LongD A large starfish hides within the crevice.~
+Desc Hiding inside the crevice, the starfish preys upon the coral colonies.  
+~
+Race human~
+Align -1 0
+Level 40
+Hitroll 40
+HitDice 5d6+235
+ManaDice 3d5+85
+DamDice 3d10+12
+DamType none
+AC -133 -133 -133 -111
+Wealth 400
+Act    npc dont_wander no_tame aggressive mage warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision swim regeneration~
+Off    area_attack dodge fast parry trip~
+Imm    summon charm drowning~
+Res    fire~
+Vuln   cold~
+Form   edible crustacean~
+Part   head heart brains guts eye tentacles~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#4730
+Name seahorse~
+ShortD `WThe Old`x `ySeahorse`x~
+LongD `WA wizened, old`x `ySeahorse`x `Wdrifts here. `x ~
+Desc `wA`x `yseahorse`x`w, wizened and tired, drifts here. `x 
+~
+Race human~
+Align -2 0
+Level 50
+Hitroll 50
+HitDice 5d9+275
+ManaDice 4d5+95
+DamDice 6d6+17
+DamType charge
+AC -190 -190 -190 -167
+Wealth 500
+Act    npc dont_wander no_tame stay_area mage warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared haste dark_vision berserk swim~
+Off    area_attack bash disarm dodge fade fast parry tail trip~
+Imm    summon charm drowning~
+Res    bash pierce slash~
+Form   edible sentient crustacean~
+Part   head heart brains guts eye fins tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg RANDOM 4725 20~
+MProg GIVE 4747 4731~
+MProg GRALL 4746 100~
+END
+
+#4731
+Name damselfish~
+ShortD `MThe Damselfish in Distress`x~
+LongD `MA Damselfish darts quickly about. `x ~
+Desc `MSwimming erratically, the Damselfish tries to avoid the sea's
+predators. `x 
+~
+Race human~
+Align 0 0
+Level 40
+Hitroll 40
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType slap
+AC -137 -137 -137 -117
+Wealth 400
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision swim~
+Imm    summon charm~
+Res    pierce slash~
+Form   edible sentient~
+Part   head heart brains guts eye fins scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg GRALL 4748 100~
+END
+
+#4732
+Name starfish crown thorns~
+ShortD a large starfish~
+LongD A `#`ycrown-of-thorns starfish`^ rests upon his throne. ~
+Desc Luxuriating amidst his wealth, the Crown-of-Thorns regally watches you.  
+~
+Race human~
+Align -3 0
+Level 50
+Hitroll 50
+HitDice 5d9+275
+ManaDice 4d5+95
+DamDice 6d6+17
+DamType crush
+AC -190 -190 -190 -163
+Wealth 500
+Act    npc dont_wander no_tame stay_area mage warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared otterlungs dark_vision swim regeneration~
+Off    area_attack dodge fast kick parry tail trip crush~
+Imm    summon charm magic weapon drowning~
+Res    pierce slash~
+Vuln   cold~
+Form   edible sentient crustacean~
+Part   head heart brains guts eye tentacles~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+MProg GRALL 4749 100~
+END
+
+#4733
+Name octopus~
+ShortD a `Wlarge Octopus`x~
+LongD `DA large Octopus guards his treasures. `x ~
+Desc `DThe Octopus jealously guards his horde of treasures hidden within his
+garden. `x 
+~
+Race human~
+Align 0 0
+Level 50
+Hitroll 50
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType crush
+AC -200 -200 -200 -180
+Wealth 500
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared sneak hide haste dark_vision swim regeneration~
+Off    bash berserk disarm dodge fade fast parry trip crush~
+Imm    summon charm drowning~
+Vuln   cold~
+Form   edible sentient fish~
+Part   head heart brains guts eye tentacles~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4734
+Name jellyfish~
+ShortD a jellyfish~
+LongD `DA jellyfish floats through the waters. `x ~
+Desc `DA grey mass of jelly floats in the sea. Its tentacles sweeping in its
+wake. `x 
+~
+Race human~
+Align 3 0
+Level 26
+Hitroll 30
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType sting
+AC -95 -95 -95 -81
+Wealth 300
+Act    npc no_tame stay_area wimpy~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision swim~
+Off    fast assist_vnum~
+Imm    drowning~
+Res    bash cold~
+Vuln   fire~
+Form   edible poison non_skinable blob~
+Part   head guts tentacles~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4735
+Name clam~
+ShortD a `#`Bclam`^~
+LongD A clam rests here.~
+Desc An immense clam rests along the sea floor.  
+~
+Race human~
+Align -3 0
+Level 30
+Hitroll 30
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType digestion
+AC -95 -95 -95 -79
+Wealth 20
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+AffBy  swim~
+Off    bash gore~
+Imm    drowning~
+Res    weapon bash pierce slash~
+Vuln   cold~
+Form   non_skinable crustacean~
+Part   heart guts~
+StartP sitting~
+DefPos sitting~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#4736
+Name clownfish~
+ShortD a `#`Rc`Yl`Ro`Yw`Rn`Yf`Ri`Ys`Rh`^~
+LongD A `#`Rc`Yl`Ro`Yw`Rn`Yf`Ri`Ys`Rh`^ swims amidst the coral. ~
+Desc A brightly colored fish darts among the waters of the sea.  
+~
+Race human~
+Align -3 0
+Level 35
+Hitroll 35
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType slime
+AC -117 -117 -117 -105
+Wealth 350
+Act    npc stay_area wimpy~
+AffBy  swim~
+Imm    drowning~
+Vuln   cold~
+Form   edible fish~
+Part   head heart brains guts fins tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4737
+Name firefish~
+ShortD a `#`rfirefish`^~
+LongD A `#`rfirefish`^ swims gracefully in the ocean waters.~
+Desc Swimming gracefully, this red fish terrorizes the deep.  
+~
+Race human~
+Align 3 0
+Level 40
+Hitroll 40
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType none
+AC -137 -137 -137 -109
+Wealth 400
+Act    npc no_tame aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision swim~
+Off    fade fast parry tail~
+Imm    drowning~
+Res    fire~
+Vuln   cold~
+Form   edible fish~
+Part   head heart brains guts fins tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4738
+Name lionfish~
+ShortD a lionfish~
+LongD The lionfish glides through the waters.~
+Desc Lurking within the depths, the lionfish awaits his prey.  
+~
+Race human~
+Align 2 0
+Level 45
+Hitroll 45
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType chomp
+AC -157 -157 -157 -130
+Wealth 450
+Act    npc no_tame aggressive stay_area~
+AffBy  detect_invis detect_hidden infrared sneak hide dark_vision swim~
+Imm    drowning~
+Form   edible fish~
+Part   head heart brains guts eye fins~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4739
+Name trigger~
+ShortD ~
+LongD `~
+Desc ~
+Race human~
+Align 0 0
+Level 200
+Hitroll 200
+HitDice 411d67+8081
+ManaDice 200d11+95
+DamDice 67d2+140
+DamType none
+AC -1340 -1340 -1340 -930
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 4774 60~
+END
+
+#0
+
+
+
+#OBJECTS
+#4725
+Name sponge~
+Short a small `#`msponge`^~
+Desc A small sponge has broken away from the reef.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material sponge~
+Extra    nonmetal~
+Wear     take~
+End
+
+#4726
+Name babelfish~
+Short a small `#`Mbabelfish`^~
+Desc A small babelfish swims here.~
+Level 30
+ItemType gem~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#4727
+Name algae~
+Short a small piece of `#`Galgae`^~
+Desc A small piece of `#`Galgae`^ clings to the coral.~
+Level 35
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal~
+Wear     take~
+End
+
+#4728
+Name black coral~
+Short a sprig of `#`sblack coral`^~
+Desc A small piece of `#`sblack coral`^ rests here.~
+Level 30
+ItemType jewelry~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Wear     take neck~
+End
+
+#4729
+Name coral key~
+Short a small piece of `#`wcoral`^~
+Desc `RA small piece of coral rests here.`x~
+Level 40
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#4730
+Name questdone~
+Short `wDamselfish Quest Done Token`x~
+Desc `X~
+Level 40
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#4731
+Name scale shield~
+Short a `MDamselfish scale`x~
+Desc `MA scale of the Damselfish rests here.`x~
+Level 30
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 10
+Rsize 50
+Values 8 8 8 8 0
+Weight 10
+Material unknown~
+Extra    nonmetal burnproof~
+Wear     take shield~
+Affect resist -1 30 -1 none 0 drowning
+End
+
+#4732
+Name coral key~
+Short `RA small piece of coral`x~
+Desc `RA small piece of coral rests here.`x~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#4733
+Name sand dollar~
+Short a `#`ysand dollar`^~
+Desc `yA sand dollar floats here.`x~
+Level 50
+ItemType jewelry~
+Cost 980
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal burnproof~
+Wear     take float~
+Affect immune -1 50 -1 none 0 drowning
+Affect modifier -1 50 -1 constitution 4 0
+Affect objectspell otterlungs 50 -1 none 0 0
+End
+
+#4734
+Name mp4746~
+Short the `wSeahorse's Quest Token`x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#4735
+Name mp47M35~
+Short `wTimer Token`x~
+Desc `x~
+Level 52
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#4736
+Name damselfish tunic~
+Short a `W"I found the `MDamselfish`W" tunic`x~
+Desc `WA tunic lies here.`x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    meltdrop~
+Wear     take torso~
+End
+
+#4737
+Name pearl~
+Short `Wa small pearl`x~
+Desc `WA small pearl lies here.`x~
+Level 30
+ItemType warpstone~
+Cost 1000
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material pearl~
+Extra    nonmetal burnproof~
+Wear     take hold~
+End
+
+#4738
+Name pearl ring~
+Short `Wa pearl ring`x~
+Desc `WA small pearl ring lies here.`x~
+Level 30
+ItemType jewelry~
+Cost 3500
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material pearl~
+Extra    magic nonmetal burnproof~
+Wear     take finger~
+Affect modifier -1 30 -1 mana 60 0
+Affect modifier -1 30 -1 saves -2 0
+ExtraDesc ring~
+`WEtched with distinctive markings, it looks as though this ring was once worn 
+by a powerful magic user.  `x 
+~
+End
+
+#4739
+Name pearl bracelet~
+Short `Wa small pearl bracelet`x~
+Desc `WA pile of small pearls lies here.`x~
+Level 30
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material pearl~
+Extra    nonmetal burnproof~
+Wear     take wrist~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 damroll 2 0
+Affect modifier -1 30 -1 hp 4 0
+End
+
+#4740
+Name ship stern galley~
+Short the ship's stern~
+Desc The battered stern of an ancient galley is nestled upon the ocean's floor.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 300 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal burnproof~
+End
+
+#4741
+Name gold~
+Short a pile of `#`Ygold`^~
+Desc A pile of `#`Ygold`^ is scattered here.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 200
+Rsize 50
+Values 0 15 0 0 0
+Weight 200
+Material unknown~
+Extra    nonmetal~
+Wear     take~
+End
+
+#4742
+Name statue~
+Short `ra`x `Dsmall`x `rstatue`x~
+Desc `DA statue of a small `reel`x `Dlies here.`x~
+Level 45
+ItemType wand~
+Cost 5000
+Durability 5
+Asize 100
+Rsize 50
+Values 50 1 1 cancellation 0
+Weight 100
+Material unknown~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#4725
+Name The Coral Reef~
+Desc Coral reefs of all the colours of the rainbow can be seen here
+reflecting the light, which filters through. Fish of unknown 
+origins swim in and out of the reef slowly, adding a sense of 
+serenity. Air bubbles float gently from the reefs to the 
+surface, giving the coral an appearance of breathing.
+~
+Sector underwater~
+Exit east 4726
+EDesc The coral reef continues.
+~
+Exit up 55996
+End
+
+
+#4726
+Name The Coral Reef~
+Desc Shafts of light twinkle in the stillness of the deep blue water.  A
+large cylindrical reef rises from the ocean floor, it's surface 
+dominated by smaller coral colonies.  Beautifully colored and 
+exotically shaped fish swim among the colonies.
+~
+Sector underwater~
+Exit north 4727
+EDesc The coral reef continues.  
+~
+Exit west 4725
+EDesc The coral reef continues.
+~
+End
+
+
+#4727
+Name The Coral Reef~
+Desc A cylindrical reef rises from the ocean floor exhibiting the many
+colors of the rainbow. Coral colonies dominate the surface of the reef,
+where large numbers of fish swim among them.  Starfish, intent on their
+own business, slowly make their way, as a group of exotic seahorses 
+swim in and around the reef. Further travel into the depths is blocked 
+by an overhanging of coral below.
+~
+Sector underwater~
+Exit east 4728
+EDesc The coral reef continues.  
+~
+Exit south 4726
+EDesc The coral reef continues.  
+~
+End
+
+
+#4728
+Name The Coral Reef~
+Desc The forms of the stony Coral colonies of the reef closely resemble
+a sculptor's workshop.  As beautifully colored fish swim through
+the deep blue water, seahorses dart in and out of the Coral
+formations along the reef.
+~
+Sector underwater~
+Exit north 4731
+EDesc The coral reef continues.  
+~
+Exit west 4727
+EDesc The coral reef continues.  
+~
+Exit down 4729
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4729
+Name Along The Ocean Floor~
+Desc Along the ocean's floor, the stony coral formations have given way 
+to soft coral colonies, which were hidden beneath the formations.
+Giant clams, starfish, and a colorful variety of sedentary fish lie
+about the sea's floor.  The huge cylindrical reef allows exit only
+to the north or up towards the surface.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 4730
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4728
+EDesc The coral reef continues.  
+~
+End
+
+
+#4730
+Name Along The Ocean Floor~
+Desc At this depth, larger forms of life can be seen gliding through The
+deep blue waters. Here, the harder coral formations have given way 
+to softer varieties.  Giant crabs and larger starfish hang about 
+under Coral overhangings, while at the edges, seasnakes find holes
+to hide within.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit east 4734
+EDesc You can continue along the ocean floor.  
+~
+Exit south 4729
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4731
+EDesc The coral reef continues.  
+~
+End
+
+
+#4731
+Name The Coral Reef~
+Desc The stony coral colonies are exotic in their many and varied forms, as
+if sculpted by sentient hands. The beauty of the many shapes almost takes
+attention away from the myriad and colorful forms of the small fish that
+swim in and around the coral. Among the many other forms of sea life found 
+here are playful seahorses that dart in and out of the formations and many 
+armed starfish that slowly make their way across the reef. 
+~
+Sector underwater~
+Exit east 4732
+EDesc The coral reef continues.  
+~
+Exit south 4728
+EDesc The coral reef continues.  
+~
+Exit down 4730
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4732
+Name The Coral Reef~
+Desc Continuing to glide through the deep waters, you are surrounded by all
+the wonders of the sea. The Coral formations are criss-crossed by
+shafts of light that pierce the warm ocean water. The reef
+seems almost alive as air bubbles float from it to the surface.  
+~
+Sector underwater~
+Exit east 4733
+EDesc The coral reef continues.  
+~
+Exit west 4731
+EDesc The coral reef continues.  
+~
+Exit down 4734
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4733
+Name The Coral Reef~
+Desc Beautifully colored fish swim in and about The Coral
+formations, which appear to have been sculpted by sentient beings. The
+cylindrical reef, rising from the ocean floor, exhibits the many colors of
+the rainbow.  Further travel into the ocean depths is blocked by an
+outcropping of the Coral reef.  
+~
+Sector underwater~
+Exit north 4789
+EDesc The coral reef continues.
+~
+Exit east 4735
+EDesc A whirlpool attempts to pull you towards it.  
+~
+Exit south 4790
+EDesc The coral reef continues.
+~
+Exit west 4732
+EDesc The coral reef continues.  
+~
+End
+
+
+#4734
+Name Along The Ocean Floor~
+Desc The ocean's floor is a coral kaleidoscope of shapes and colors.  
+An overhanging formation of coral offers a shadowy hiding place 
+for fish, which glide through the waters.  A large coral colony 
+blocks all exits, except to the west or up towards the water's 
+surface.
+~
+RoomFlags indoors~
+Room2Flags storage_room~
+Sector underwater~
+Exit west 4730
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4732
+EDesc The coral reef continues.  
+~
+End
+
+
+#4735
+Name A Whirlpool~
+Desc The current begins to froth and churn as it rushes towards
+the center of the whirlpool!  Although the grasp of the 
+vortex is strong, breaking free might be possible!
+~
+RoomFlags no_mob~
+Sector underwater~
+Exit east 4740
+EDesc An escape from the whirlpool opens up to the east.  
+~
+Exit down 4736
+End
+
+
+#4736
+Name A Whirlpool~
+Desc Sucked further down in to the fierce maelstrom, there seems
+to be no avenue of escape!  With any luck, the turbulent 
+waters will not dash you into pieces against the Coral
+reef!
+~
+RoomFlags no_mob indoors~
+Sector underwater~
+End
+
+
+#4737
+Name The Sea Floor~
+Desc The sea floor is cluttered with debris that has been battered 
+against the stony coral formation, which has created a small 
+cave-like room.  The water from the whirlpool above rushes 
+through the small cave, threatening to batter all within it's 
+path.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 4745
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4725
+EKeywords boulder~
+EDesc You see a strange looking boulder coral sitting to the north.  
+~
+Exit east 4746
+EDesc You can continue along the ocean floor.  
+~
+End
+
+
+#4738
+Name A Small Outcropping of Coral~
+Desc A small island, created by ancient Coral formations, is
+surrounded by clear, blue waters. Able to support only 
+minimal flora and fauna, there is very little to see 
+here. Gazing into The waters, a plethora of colors and 
+shapes can be seen. 
+~
+Sector underwater~
+Exit north 4741
+EDesc The coral reef continues.  
+~
+Exit west 4789
+EDesc The coral reef continues.  
+~
+Exit down 4768
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4727
+EKeywords coral~
+EDesc There seems to be a loose piece of Coral.  
+~
+End
+
+
+#4739
+Name The Coral Reef~
+Desc Gliding along the reef, an amazing number of exotic fish 
+dart in and about the coral formation. The coral, sponges, 
+and the colorful brilliance of the reef fish are breathtaking. 
+The patter of wavelets above combines with the chirps, 
+squeaks, whistles, and croaks of the marine life to create 
+a cacophony of sound.
+~
+Sector underwater~
+Exit east 4791
+EDesc The coral reef continues.  
+~
+Exit west 4790
+EDesc The coral reef continues.  
+~
+End
+
+
+#4740
+Name The Coral Reef~
+Desc The colors of the cylindrical reef compete with the exotic 
+coloring of the fish to attempt to overwhelm the senses.
+Not even the most lavish of mainland gardens can compare
+with the beauty found here along the coral reef.  The upward
+pull of the current is too strong to allow deeper exploration.
+~
+Sector underwater~
+Exit north 4792
+EDesc The coral reef continues.  
+~
+Exit west 4735
+EDesc A whirlpool attempts to pull you towards it.  
+~
+End
+
+
+#4741
+Name The Coral Reef~
+Desc Shafts of light stream through the deep blue waters.  Coral
+colonies dominate the surface of the reef, as fish of every
+shape, size, and color dart around you.  Outcroppings of 
+the reef block travel in all directions, but east and south.
+
+~
+Sector underwater~
+Exit east 4742
+EDesc The coral reef continues.  
+~
+Exit south 4738
+EDesc The coral reef continues.  
+~
+End
+
+
+#4742
+Name The Coral Reef~
+Desc The coral colonies along the cylindrical reef appear exotically 
+sculpted, as if sentient beings once toiled in the oceans depths.
+Air bubbles drift towards the water's surface from the depths
+of the reef, as the marine life scuttles, swims, and clings to
+the only universe they've known.
+~
+Sector underwater~
+Exit east 4743
+EDesc The coral reef continues.  
+~
+Exit west 4741
+EDesc The coral reef continues.  
+~
+End
+
+
+#4743
+Name The Coral Reef~
+Desc Branching and boulder-shaped Coral colonies dominate The
+surface of the reef, as a variety of beautifully colored 
+fish swim among them. Outcroppings of The Coral formations
+block all directions, except west and down, which leads
+into the ocean's depths.
+~
+Sector underwater~
+Exit west 4742
+EDesc The coral reef continues.  
+~
+Exit down 4744
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4744
+Name A Tunnel Through The Coral Reef~
+Desc Surrounded by the Coral colonies, a small passage opens among
+them, allowing passage through the cylindrical reef. Lionfish,
+stonefish, and others pass through the tunnel going about 
+their business.  The picturesque qualities of the reef and 
+its inhabitants are reminiscent of The most lavish mainland gardens.
+~
+RoomFlags indoors solitary~
+Sector underwater~
+Exit east 4748
+EDesc A small tunnel leads through the coral reef.  
+~
+Exit up 4743
+EDesc The coral reef continues.  
+~
+End
+
+
+#4745
+Name The Seahorse Stables~
+Desc Set into the Coral reef is a small cavern. Its floor is covered
+in kelp. Plankton has been piled in a neat row down the wall to your
+left and, before you, within smaller caverns, are several seahorses,
+which seem to have been stabled here.
+~
+RoomFlags indoors safe~
+Sector underwater~
+Exit north 4747
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4729
+EDesc A small boulder coral blocks entrance to the north.  
+~
+Exit south 4737
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4725
+EKeywords boulder~
+EDesc A large boulder coral blocks the exit to the south.  
+~
+End
+
+
+#4746
+Name Along The Ocean Floor~
+Desc A kaleidoscope of shapes and colors assaults the senses,
+along the base of the Coral reef.  Outcroppings prevent 
+further travel to the east, north, and south.. Fish of 
+exotic colors dart in and around the reef.  Along the 
+ocean floor, debris is strewn haphazardly, almost
+spoiling the beauty of the reef.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit west 4737
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4740
+EDesc Fighting the current, you can just make it to the reef.  
+~
+End
+
+
+#4747
+Name A Small Stable~
+Desc Having passed through a small boulder coral doorway, you 
+stand within a very small cavern. It's dimensions are just 
+barely able to hold you and it's occupant.  Kelp covers 
+the floor and a stack of plankton has been piled against 
+the back wall.
+~
+RoomFlags indoors private~
+Sector underwater~
+Exit south 4745
+EFlags door closed locked pickproof nopass~
+EDesc A small boulder coral blocks the exit to the south.  
+~
+End
+
+
+#4748
+Name Along The Ocean Floor~
+Desc You pass along the bottom of the sea, below the coral. To the west,
+lies a dark tunnel, while above, the reef holds sway. Fish school in
+colorful abandon to all sides. Larger predatory fish scythe among the
+schools of smaller fish. An occasional porpoise can be seen from time to
+time and the haunting songs of whales can be heard in mournful song amidst
+the water.  
+~
+RoomFlags indoors~
+Sector underwater~
+Exit south 4749
+EDesc You can continue along the ocean floor.  
+~
+Exit west 4744
+EDesc A small tunnel leads through the coral reef.  
+~
+Exit up 4754
+EDesc The coral reef continues.  
+~
+End
+
+
+#4749
+Name Along The Ocean Floor~
+Desc The seafloor is jumbled here, the stone of the bottom covered with a
+deep layer of sediment. Above, many different types of fish can be seen
+schooling. An occasional predator wreaks havoc among the smaller fish, as it
+rushes through the schools. Crustaceans of many shapes and sizes crawl
+amongst the stones of the bottom, including many starfish and
+sanddollars.  
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 4748
+EDesc You can continue along the ocean floor.  
+~
+Exit east 4752
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4750
+EDesc The coral reef continues.  
+~
+End
+
+
+#4750
+Name The Coral Reef~
+Desc The reef is spread out in all it's glory. Coral of many
+shapes sizes and colors grow in riotous profusion. Anenomes 
+grow upon the coral, with many brightly colored clownfish 
+nestling in their haven.  Countless varieties of colorful 
+fish glide effortlessly through coral forests.
+~
+Sector underwater~
+Exit north 4754
+EDesc The coral reef continues.  
+~
+Exit east 4751
+EDesc The coral reef continues.  
+~
+Exit down 4749
+EDesc The ocean depths lie below you.  
+~
+End
+
+
+#4751
+Name The Coral Reef~
+Desc Gliding through the gently rocking waters, along the
+the coral outcroppings, are sponges, firefish, and 
+skunk-striped anemonefish, which add to the profusion 
+of colors along the reef.
+~
+Sector underwater~
+Exit north 4753
+EDesc The coral reef continues.  
+~
+Exit west 4750
+EDesc The coral reef continues.  
+~
+Exit down 4752
+EDesc The ocean depths lie below you.  
+~
+End
+
+
+#4752
+Name Along The Ocean Floor~
+Desc The sea's floor lies near, while the reef holds sway in the upper 
+reaches of this underwater land.  The growth of the coral colonies
+blocks all exits, save west, up towards the surface, or down towards
+a dark gulf, leading towards uncharted depths. Fish swim here in 
+small schools, while an occasional eel can be seen fluidly gliding
+through the deep blue waters.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit west 4749
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4751
+EDesc The coral reef continues.  
+~
+Exit down 4760
+EDesc A dark shaft leads further down.  
+~
+End
+
+
+#4753
+Name The Coral Reef~
+Desc The rough reef surrounds this cranny.  Coral of many 
+shapes, sizes, and colors grow in profusion. Anenomes 
+grow upon the coral, with many brightly colored clownfish 
+nestling in their haven. Countless varieties of colorful 
+fish glide effortlessly through the coral structures. 
+~
+Sector underwater~
+Exit north 4755
+EDesc The coral reef continues.  
+~
+Exit south 4751
+EDesc The coral reef continues.  
+~
+End
+
+
+#4754
+Name The Coral Reef~
+Desc The Coral outcroppings block further passage, save for down and
+south. The walls of the many-colored Coral teem with fish and
+other exotic forms of sea life. The gently rocking waters and the 
+air bubbles, which drift slowly upwards from the cylindrical reef, 
+coalesce into a sense of serenity. 
+~
+Sector underwater~
+Exit south 4750
+EDesc The coral reef continues.  
+~
+Exit down 4748
+EDesc The ocean depths lie below you.  
+~
+End
+
+
+#4755
+Name The Coral Reef~
+Desc The Coral flourishes here in many shades and hues of pure
+vibrant color. Fish of many sizes and shapes swim here. 
+Anemones grow upon The coral, hosting a multitude of smaller 
+fish within their protective grasp. An occasional predator 
+flashes through, scattering The fish, who soon resume their 
+aimless wanderings.
+~
+Sector underwater~
+Exit north 4756
+EDesc The coral reef continues.  
+~
+Exit south 4753
+EDesc The coral reef continues.  
+~
+End
+
+
+#4756
+Name The Coral Reef~
+Desc The reef is spectacular here in its multitude of hues 
+and colors. Fish and other sea life glide through Coral 
+masses and the other sedentary creatures that grow from 
+it's surface.
+~
+Sector underwater~
+Exit east 4759
+EDesc The coral reef continues.  
+~
+Exit south 4755
+EDesc The coral reef continues.  
+~
+Exit down 4757
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4757
+Name Along The Ocean Floor~
+Desc The harder Coral colonies have given way to softer corals, 
+which hide under the overhanging formations. Their branches
+sway with the gently rocking waters, as if trees caught in 
+a breeze.  Outcroppings block further travel, allowing only
+east or up, towards the surface, as exits.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit east 4758
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4756
+EDesc The coral reef continues.  
+~
+End
+
+
+#4758
+Name Along The Ocean Floor~
+Desc Exotic colored fish dart in and around The Coral formation,
+as other marine life clings to the reef's surface. Outcroppings 
+of the cylindrical reef curl around you, allowing passage only
+to the west and up towards the surface.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit west 4757
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4759
+EDesc The coral reef continues.  
+~
+End
+
+
+#4759
+Name The Coral Reef~
+Desc Large schools of fish glide through the deep blue waters
+along the coral reef.  The coral colonies along the reef
+display every color under the rainbow, lending itself as
+a useful camouflage for the exotically colored fish.
+~
+Sector underwater~
+Exit east 4764
+EDesc The coral reef continues.  
+~
+Exit south 4793
+EDesc The coral reef continues.  
+~
+Exit west 4756
+EDesc The coral reef continues.  
+~
+Exit down 4758
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4760
+Name A dark shaft below the sea~
+Desc The narrow walls of the shaft enclose the darkness which
+reigns in this natural sink below the ocean's floor.  The 
+brightly colored fish, of the upper regions of the sea,
+give way to the monochromatic life that exists in darkness.
+An occasional spark of light can be seen, as phosphorescent
+marine life hunts it's varied prey.  The walls of the shaft
+are limestone, covered with the drifting silt of ages.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit up 4752
+EDesc The floor of the ocean lies above.  
+~
+Exit down 4761
+EDesc A shaft into darkness continues further.  
+~
+End
+
+
+#4761
+Name A shaft into darkness~
+Desc The shaft continues below, but the opening is blocked by fallen 
+stone and rubble of what appears to be several ancient ships. 
+To the west, a natural alcove lies in the shaft.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit west 4763
+EDesc An rocky natural alcove lies this way.  
+~
+Exit up 4760
+EDesc A dark shaft continues further above.  
+~
+End
+
+
+#4762
+Name A Small Outcropping of Coral~
+Desc Ancient Coral outcroppings have formed the small island you stand
+upon. Although surrounded by crystal, blue waters, the island is
+unable to support much life. Seagulls swoop above the outcropping,
+in their endless search for food. It might be best to travel with 
+care, to avoid damaging this fragile reef.
+~
+Sector inside~
+Exit north 4764
+EDesc The coral reef continues.  
+~
+Exit south 4766
+EDesc The coral reef continues.  
+~
+Exit west 4793
+EDesc The coral reef continues.  
+~
+Exit down 4767
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4727
+EKeywords coral~
+EDesc There seems to be a loose piece of Coral.  
+~
+End
+
+
+#4763
+Name Wolf's Lair~
+Desc A dark cave has been created off of the chasm that pierces the 
+ocean floor.  The water is amazingly clear of marine life, save 
+for the odd plankton that drifts within the water. The walls of 
+the cave are covered with a layer of silt.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit east 4761
+EDesc A dark shaft in the water lies here.  
+~
+End
+
+
+#4764
+Name The Coral Reef~
+Desc Light filters through the waters, casting shadows in its wake. The
+multitude of fish and other marine life, who spend their lives within 
+the reef's shadow, create a kaleidoscope of color against the already 
+colorful coral. The gently rocking waters attempt to lull you into a 
+dangerous sense of serenity.
+~
+Sector underwater~
+Exit east 4772
+EDesc The coral reef continues.  
+~
+Exit south 4762
+EDesc The coral reef juts above the water.  
+~
+Exit west 4759
+EDesc The coral reef continues.  
+~
+Exit down 4771
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4765
+Name The Coral Reef~
+Desc The cylindrical reef is covered by corals  of many shapes,
+sizes and colors. Brain corals, sea fans, organ-pipe corals 
+and corals resembling the tendrils and leaves of plants are 
+among those seen here.  Small colorful fish dart in and about 
+the reef.
+~
+Sector underwater~
+Exit north 4793
+EDesc The coral reef juts above the water.  
+~
+Exit east 4766
+EDesc The coral reef continues.  
+~
+Exit down 4769
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4766
+Name The Coral Reef~
+Desc The Coral formations are overwhelming in their shapes, the 
+riot of colors and the astonishing variety of life. Jellyfish 
+pump along, as schools of fish part, to allow them to pass 
+through, quickly closing ranks again.
+~
+Sector underwater~
+Exit north 4762
+EDesc The coral reef continues.  
+~
+Exit west 4765
+EDesc The coral reef continues.  
+~
+Exit down 4770
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4767
+Name A Large Cavern Within The Coral~
+Desc The floor of the cavern is covered with a deep, soft carpet 
+of kelp. Tapestries of multi-colored algae hang upon The
+curved, rough walls of The Coral reef. A large throne, 
+covered with mother-of-pearl, stands against the far wall.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit up 4762
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4727
+EKeywords coral~
+EDesc There seems to be a loose piece of Coral.  
+~
+End
+
+
+#4768
+Name A Small Cavern Within The Coral~
+Desc The floor of the small cavern is covered with algae. Protruding
+Coral formations pierce the rough walls of the reef, where slimy
+pieces of kelp hang in greasy disarray.  
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit up 4738
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4727
+EKeywords coral~
+EDesc There seems to be a loose piece of Coral.  
+~
+End
+
+
+#4769
+Name Along The Ocean Floor~
+Desc The sea floor is covered in a deep layer of sediment, through 
+which discarded bits and pieces of debris peek. The scattered 
+timbers of a wrecked ship can be seen, tossed as a child's game 
+of Pick Up Sticks. Giant clams and other sedentary marine life 
+have made their homes here amid the clutter.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit east 4770
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4765
+EDesc The coral reef continues.  
+~
+End
+
+
+#4770
+Name Along The Ocean Floor~
+Desc Covered in debris, the sea floor is cluttered and jumbled. The 
+soft Coral colonies sway in the gently rocking waters. Colorful 
+and exotic fish can be seen darting in and about The cylindrical 
+reef.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 4771
+EDesc You can continue along the ocean floor.  
+~
+Exit west 4769
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4766
+EDesc The coral reef continues.  
+~
+End
+
+
+#4771
+Name Along The Ocean Floor~
+Desc The coral's colorful brilliance is breathtakingly beautiful.
+Chirps, whistles, squeaks, and croaks, of the marine life, 
+combine with the sounds of the water's gentle waves to create 
+a symphony of sound.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit east 4773
+EDesc You can continue along the ocean floor.  
+~
+Exit south 4770
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4764
+EDesc The coral reef continues.  
+~
+End
+
+
+#4772
+Name The Coral Reef~
+Desc The cylindrical reef, rising from the ocean floor, is covered 
+by colorful Coral colonies. An amazing number of exotically 
+shaped and beautifully colored fish dart in amongst them.  Light
+filters through the warm ocean waters, casting ominous shadows about.
+~
+Sector underwater~
+Exit east 4774
+EDesc The coral reef continues.  
+~
+Exit west 4764
+EDesc The coral reef continues.  
+~
+Exit down 4773
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4773
+Name Along The Ocean Floor~
+Desc Exotically colored fish swim in schools darting in and out
+of the coral reef. The coral colonies protrude from the reef, 
+creating a small niche. Broken pieces of coral and other 
+debris litter the ocean floor.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit west 4771
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4772
+EDesc The coral reef continues.  
+~
+End
+
+
+#4774
+Name The Coral Reef~
+Desc The reef continues, turning towards the north and east. The 
+water is extremely shallow here, the coral sloping sharply 
+towards the surface. A veritable carpet of spiny sea urchins 
+lines the ocean floor. Small fish in many colors swim placidly 
+above and even through the carpet of shellfish.
+
+~
+Sector underwater~
+Exit south 4775
+EDesc The coral reef continues.  
+~
+Exit west 4772
+EDesc The coral reef continues.  
+~
+End
+
+
+#4775
+Name The Coral Reef~
+Desc Passage here is treacherous, as the walls of the reef are 
+covered with a veritable carpet of sea urchins.  Small fish 
+dart in and around the coral, carefully avoiding the stinging 
+spines.  A passage leads further down into the ocean depths. 
+~
+Sector underwater~
+Exit north 4774
+EDesc The coral reef continues.  
+~
+Exit east 4777
+EDesc The coral reef continues.  
+~
+Exit down 4776
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4776
+Name Along The Ocean Floor~
+Desc Crustaceans of many sizes and shapes make their way along the 
+sea's floor, which is covered in a deep layer of sediment. 
+Broken pieces of Coral and other odds and ends of debris lie 
+scattered about. The reef's formations block all travel, save 
+for the north and up towards the surface of the waters.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 4778
+EDesc You can continue along the ocean floor.  
+~
+Exit up 4775
+EDesc The coral reef continues.  
+~
+End
+
+
+#4777
+Name The Coral Reef~
+Desc The Coral continues here in multi-colored, variegated hues.
+Colorful clownfish swim among the anemones that grow upon 
+the reef. The stony, Coral formations could have come 
+straight from the most talented sculptor's workshop.
+~
+Sector underwater~
+Exit east 4779
+EDesc The coral reef continues.  
+~
+Exit west 4775
+EDesc The coral reef continues.  
+~
+Exit down 4778
+EDesc The ocean floor lies below you.  
+~
+End
+
+
+#4778
+Name Along The Ocean Floor~
+Desc The coral colonies of this pocket of the reef impede 
+further travel in all directions, except south and up
+towards the sea's surface.  Scattered bits of debris 
+lie partially immersed within the sediment along the 
+ocean's floor.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit south 4776
+EDesc The ocean floor lies below you.  
+~
+Exit up 4777
+EDesc The coral reef continues.  
+~
+End
+
+
+#4779
+Name The Coral Reef~
+Desc The reef grows colorful and bountiful. Variegated and 
+multicolored fish of all sizes swim here, among the many 
+different types of coral. To The west, a superb stand of 
+black coral grows to the height of several men standing 
+upon each other's shoulders. A chasm opens up beneath you. 
+~
+Sector underwater~
+Exit east 4786
+EDesc The coral reef continues.  
+~
+Exit west 4777
+EDesc The coral reef continues.  
+~
+Exit down 4780
+EDesc A giant chasm opens up below you.  
+~
+End
+
+
+#4780
+Name A Giant Chasm~
+Desc Between the cliffs of the coral reef, there is a large 
+undersea canyon. The depth of the ocean is brought into 
+focus as the world seems to fold away from any light.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit up 4779
+EDesc The coral reef continues.  
+~
+Exit down 4781
+EDesc The giant chasm leads further into the murky depths.  
+~
+End
+
+
+#4781
+Name Inside The Giant Chasm~
+Desc Darkness envelopes the waters within the canyon; however
+the multitude of colors has not been muted, due to The
+phosphorescence of the life within the chasm.  The 
+coral seems to grow almost with a purpose, a much less
+haphazard arrangement than seen before.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit east 4782
+EDesc You can continue through the giant chasm.  
+~
+Exit up 4780
+EDesc The chasm opens upward.  
+~
+End
+
+
+#4782
+Name Further Into The Chasm~
+Desc The Coral formations seem to take on an even greater 
+purpose, coalescing into almost recognizable shapes 
+and forms. Brightly colored fish swim in small schools, 
+oblivious to your presence. The sea floor lies an
+unreachable depth below you.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit south 4783
+EDesc The chasm leads further to the south.  
+~
+Exit west 4781
+EDesc The chasm leads further to the west.  
+~
+End
+
+
+#4783
+Name Further Into The Chasm~
+Desc Amazingly clear of any debris, the sea floor rises almost 
+vertically from the north, allowing you to once again walk 
+upon the surface of the ocean's floor. The brightly colored 
+coral colonies resemble neat rows of hedges, underwater trees, 
+and clusters of flowers. A coral latticed trellis arches 
+over an entrance to the east.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit north 4782
+EDesc The sea floor drops almost vertically to the north.  
+~
+Exit east 4784
+EDesc A latticed archway of Coral leads to the east.  
+~
+End
+
+
+#4784
+Name The Octopus' Garden~
+Desc Passing through the lattice arch, you step into a small grotto. The
+coral colonies form an almost solid wall in this round room. Small
+statues of the marine life have been formed from brightly colored
+Coral. Starfish, sanddollars, clownfish, clams and shrimp are among
+those represented by the statues. Kelp creates a thick lawn underfoot.
+ 
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit north 4785
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4732
+EKeywords boulder~
+EDesc There seems to be a loose piece of Coral.  
+~
+Exit west 4783
+EDesc A latticed archway of Coral leads to the west.  
+~
+End
+
+
+#4785
+Name A Hidden Chamber~
+Desc A small chamber formed by the Coral hides the Octopus' treasures.
+~
+RoomFlags dark indoors private~
+Sector underwater~
+Exit south 4784
+EFlags door closed locked pickproof nopass~
+EKeywords boulder~
+EDesc There seems to be a loose piece of Coral.  
+~
+End
+
+
+#4786
+Name The Coral Reef~
+Desc North and west, the coral reef continues. Fish swim in 
+placid erratic paths, as they look for food. Small shrimp 
+and crustaceans swarm over the surface of the coral. On 
+occasion, a porpoise and even small whales are seen 
+flashing near this underwater garden.
+~
+Sector underwater~
+Exit north 4787
+EDesc The coral reef continues.  
+~
+Exit west 4779
+EDesc The coral reef continues.  
+~
+End
+
+
+#4787
+Name The Coral Reef~
+Desc The Coral formations create a shelf upon which small
+crustaceans seem almost to be sunning themselves.  Fish
+swim through the gently rocking waters seemingly oblivious 
+to your presence. The patter of the wavelets above 
+combines with the other sounds from the depths to 
+create an lulling symphony of sound.
+~
+Sector underwater~
+Exit south 4786
+EDesc The coral reef continues.  
+~
+End
+
+
+#4789
+Name The Coral Reef~
+Desc Coral reefs of all the colours of the rainbow can be seen here
+reflecting the light, which filters through. Fish of unknown 
+origins swim in and out of the reef slowly, adding a sense of 
+serenity. Air bubbles float gently from the reefs to the 
+surface, giving the coral an appearance of breathing.
+~
+Sector underwater~
+Exit east 4738
+Exit south 4733
+End
+
+
+#4790
+Name The Coral Reef~
+Desc Beautifully colored fish swim in and about The Coral 
+formations, which appear to have been sculpted by 
+sentient beings. The cylindrical reef, rising from 
+the ocean floor, exhibits the many colors of the rainbow.  
+Further travel into the ocean depths is blocked by an
+outcropping of the Coral reef.
+~
+Sector underwater~
+Exit north 4733
+Exit east 4739
+End
+
+
+#4791
+Name The Coral Reef~
+Desc Gliding further along the reef, you watch an amazing 
+number of exotic fish darting in and about the formation. 
+The coral, sponges, and the colorful brilliance of the 
+reef fish are breathtaking. The patter of wavelets above 
+combines with the chirps, squeaks, whistles, and croaks 
+of the marine life to create a cacophony of sound.  
+~
+Sector underwater~
+Exit north 4740
+EDesc The coral reef continues.  
+~
+Exit west 4739
+EDesc The coral reef continues.  
+~
+End
+
+
+#4792
+Name The Coral Reef~
+Desc Light filters through the waters, casting shadows in its wake. The
+multitude of fish and other marine life, who spend their lives within 
+the reef's shadow, create a kaleidoscope of color against the already 
+colorful coral. The gently rocking waters attempt to lull you into a 
+dangerous sense of serenity.
+~
+Sector underwater~
+Exit south 4740
+EDesc The coral reef continues.  
+~
+Exit west 4738
+EDesc The coral reef continues.  
+~
+End
+
+
+#4793
+Name The Coral Reef~
+Desc The reef is spread out in all it's glory. Coral of many
+shapes sizes and colors grow in riotous profusion. Anenomes 
+grow upon the coral, with many brightly colored clownfish 
+nestling in their haven.  Countless varieties of colorful 
+fish glide effortlessly through coral forests.
+~
+Sector underwater~
+Exit north 4759
+EDesc The coral reef continues.  
+~
+Exit east 4762
+EDesc The coral reef continues.  
+~
+Exit south 4765
+EDesc The coral reef continues.  
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 4728 spec_breath_lightning
+M 4729 spec_nasty
+M 4730 spec_cast_mage
+M 4733 spec_nasty
+M 4737 spec_poison
+S
+
+
+
+#RESETS2
+M 0 4734 5 4725 1
+M 0 4736 5 4727 1
+M 0 4735 5 4729 1
+G 0 4737 0
+M 0 4734 5 4731 1
+O 0 4727 0 4732
+M 0 4738 1 4734 1
+M 0 4725 1 4735 1
+M 0 4726 1 4736 1
+O 0 4725 0 4736
+M 0 4735 5 4737 1
+G 0 4739 0
+O 0 4727 0 4738
+M 0 4737 5 4739 1
+M 0 4736 5 4741 1
+M 0 4727 1 4745 1
+G 0 4726 0
+E 0 4729 0 hold~
+M 0 4730 1 4747 1
+E 0 4729 0 hold~
+O 0 4727 0 4748
+M 0 4735 5 4749 1
+G 0 4737 0
+M 0 4734 5 4750 1
+M 0 4736 5 4753 1
+O 0 4727 0 4755
+M 0 4734 5 4759 1
+O 0 4727 0 4762
+M 0 4728 1 4763 1
+M 0 4738 1 4764 1
+M 0 4737 5 4765 1
+O 0 4727 0 4767
+M 0 4732 1 4767 1
+O 0 4727 0 4768
+M 0 4729 1 4768 1
+M 0 4738 5 4769 1
+O 0 4740 0 4769
+P 0 4741 1 4740 1
+M 0 4737 1 4772 1
+M 0 4735 5 4773 1
+G 0 4738 0
+M 0 4736 5 4774 1
+M 0 4739 2 4774 1
+M 0 4739 2 4775 1
+M 0 4735 5 4776 1
+G 0 4737 0
+M 0 4734 5 4777 1
+M 0 4737 5 4778 1
+O 0 4728 0 4779
+M 0 4733 1 4784 1
+E 0 4732 0 hold~
+G 0 4742 0
+M 0 4731 1 4785 1
+M 0 4737 5 4787 1
+M 0 4736 5 4787 1
+M 0 4737 5 4791 1
+M 0 4737 5 4793 1
+S
+
+
+
+#SHOPS
+#4727
+buy_type gem~
+profit_buy 100
+profit_sell 30
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#4799
+disabled false
+END
+
+#4798
+code mob debug on
+if ispc $n
+  mob force trigger put chest stern
+else
+endif
+mob debug off
+~
+disabled false
+END
+
+#4774
+code if ispc $n
+mob damage $n 10 30
+mob echo A sea urchin spine penetrates through your clothing!!! Ouch!`x
+end
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1040985775
+END
+
+#4751
+disabled false
+END
+
+#4749
+code if carries $n 4730
+  mob oload 4735
+  mob otransfer mp47M35 4747  
+  mob oload 4736
+  mob oload 4733
+  mob remove $n 4734
+  mob remove $n 4730
+  say `yWord has reached me of your courageous deed.`x
+  say `yPlease accept this as a token of our gratitude.`x
+  give sanddollar $n
+  give damselfish $n
+  say `yYou are welcome in our depths for as long as you desire.`x
+else
+  say `yThe old Seahorse has asked to see you.`x
+  say `ySeek him below the Vortex.`x
+endif
+~
+disabled false
+END
+
+#4748
+code if carries $n 4734
+  mob oload 4731
+  say `MThank you, oh, thank you, $n! I'm free at last!`x
+  drop scale
+  mob echo `MThe Damselfish disappears with a POOF!`X
+mob purge $i
+else
+  say `MThank you, oh, thank you, $n! I'm free at last!`x
+  say `MHowever, you are not "The One".`x
+endif
+~
+disabled false
+END
+
+#4747
+code mob oload 4730
+give questdone $n
+say `WOho! You have returned triumphant! Your name`x
+say `Wshall long be remembered as a hero of the Reef!`x
+say `WSeek out the Crown-of-Thorns that he may`x
+say `Wreward you well.`x
+unlock south
+open south
+~
+disabled false
+END
+
+#4746
+code if objhere 4735 and carries $n 4726
+  say `W`WI thank you for going to the trouble`x`x
+  say `W`Wof seeing me; however, all is well`x`x
+  say `W`Wat the moment.  Perhaps you will`x`x
+  say `W`Wcheck back at a later time.`x`x
+  open south
+else
+  if carries $n 4734 and carries $n 4726
+    say `W`WI hope you have news for us, as I`x`x
+    say `W`Whave told you all I knew.`x`x
+    open south
+  else
+    if carries $n 4726
+      say `W`WI wish I could speak with you at length, but`x`x
+      say `W`Wsomething dreadful has occurred.  A damselfish`x`x
+      say `W`Whas been kidnapped and is being held against`x`x
+      say `W`Wher will.  Seek the Damselfish in Distress`x`x
+      say `W`Win the Octopus' Garden in the Sea.  Bring`x`x
+      say `W`Wproof of her rescue and you shall be rewarded.`x`x
+      mob oload 4734
+      give mp4746 $n
+      open south
+    else
+      say `WHsiflebab a yub.`x
+      open south
+    endif
+  endif
+endif
+~
+disabled false
+END
+
+#4745
+code if carries $n 4731 and carries $n 4726
+  say `WYou have returned! The Old Seahorse has been waiting for you!`x
+  unlock north
+  open north
+else 
+  if carries $n 4734 and carries $n 4726
+  say `WMuch luck to you, $n!`x
+  unlock north
+  open north
+    else 
+      if carries $n 4726
+      say `WSomeone in back would like to speak with you.`x
+      unlock north
+      open north
+        else
+          say `WRotalsnart a evah tsum uoy.`x
+      endif
+  endif
+endif
+~
+disabled false
+END
+
+#4738
+code if hastarget $i
+  mob echoat $q You land with a THUD on the sea floor.`x
+mob damage $q 30 50
+  mob gtransfer $q 4737
+mob echo $q was sucked further into the whirlpool!`x
+  mob forget
+endif
+~
+disabled false
+END
+
+#4737
+code if ispc $n
+  mob remember $n
+  mob delay 1
+endif
+~
+disabled false
+END
+
+#4736
+code if hastarget $i
+  mob echoat $q You have been sucked into the whirlpool!`x
+mob force $q down
+  mob echo $q was sucked into the whirlpool!`x
+mob forget
+endif
+~
+disabled false
+END
+
+#4735
+code if ispc $n
+  mob remember $n
+mob delay 1
+endif
+~
+disabled false
+END
+
+#4729
+disabled false
+END
+
+#4728
+disabled false
+END
+
+#4726
+code if carries $n 4726
+else
+  say `WWelcome, $n! The babelfish allows us to speak`x
+  say `Wand understand one another.  Someone in back`x
+  say `Wwould like to speak with you.`x
+  unlock north
+ open north
+endif
+~
+disabled false
+END
+
+#4725
+code mob purge
+~
+disabled false
+END
+
+#0
+
+
+#$

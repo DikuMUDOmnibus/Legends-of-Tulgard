@@ -1,0 +1,2355 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Adriata~
+ShortName   City of Adriata~
+Builders    javier~
+Credits     `x~
+VNUMs       33500 33699
+LComment    ALL
+AFlags  noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    3
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#33500
+Name guard adriata city~
+ShortD a guard~
+LongD A guard of Adriata is here, on patrol~
+Desc This is one of the famed guards of Adriata. Based on his uniform and armor 
+it appears this is a simple foot soldier, not one of the citys feared combat 
+mages. Despite this, this guard should be taken quite seriously in combat, 
+as even the foot soldiers of the city are rumored to be quite formidable. 
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType slash
+AC -550 -550 -550 -478
+Wealth 0
+Act    npc no_tame stay_area warrior~
+Act2   murder_10_pts~
+AffBy  detect_invis detect_hidden sanctuary~
+AffBy2 detect_vanish vicegrip~
+Off    bash disarm dodge kick dirt_kick parry assist_guard assist_vnum~
+Imm    summon charm~
+Res    weapon disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#33501
+Name guard city adriata mage~
+ShortD a combat mage~
+LongD One of the city's famed combat mages is here~
+Desc This is one of the elite combat mages of Adriata. Trained in the arts of the 
+sword and the spell, they are quite formidable in combat. Dressed head to 
+toe in black and blood red, they are even a fearsome sight to behold. 
+~
+Race human~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slash
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc no_tame stay_area mage~
+Act2   murder_25_pts~
+AffBy  detect_invis detect_hidden sanctuary pass_door~
+AffBy2 detect_vanish vicegrip~
+Off    dodge assist_guard assist_vnum~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#33580
+Name dwarf dirty shop keeper shopkeeper~
+ShortD a dirty-looking dwarf~
+LongD A dirty-looking dwarf is here, watching his shop.~
+Desc ~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -714
+Wealth 60
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Off    dodge fast kick dirt_kick parry circle~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#33581
+Name no name~
+ShortD a smelter worker~
+LongD A smelting worker is here, doing his job.~
+Desc Before you is one of the smelter workers. Tall and muscular, and with a deep 
+tan, it would seem he has worked here for quite some time. Beads of sweat 
+drop down his face and arms, while his simple shirt and pants seem soaked in 
+it. 
+~
+Race human~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -410
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   murder_5_pts~
+Off    bash dodge kick~
+Res    fire light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#33672
+Name guard prison burly~
+ShortD a burly prison guard~
+LongD A burly prison guard is here, watching the cells.~
+Desc ~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 13d16+605
+ManaDice 13d16+860
+DamDice 13d17+80
+DamType slash
+AC -950 -950 -950 -779
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_magic detect_hidden infrared protect_evil protect_good haste dark_vision berserk regeneration~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#33500
+Name a massive granite fountain~
+Short a massive granite fountain~
+Desc A massive marble fountain is spraying water here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 99999 99999 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#33566
+Name small black key ribbon~
+Short a small black key on a black ribbon~
+Desc A small black key on a black ribbon is here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    hum nodrop rotdeath nolocate meltdrop nodegrade nouncurse~
+Extra2   nosell~
+Wear     hold~
+End
+
+#33672
+Name jail cell key~
+Short a jail cell key~
+Desc A small metal key is lying here, unused.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath nodegrade~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#33500
+Name Ground floor entrance~
+Desc This is the ground floor entrance to the Adriata administrative building. 
+The massive, pyramid-shaped palace extends far above you, stairs leading up 
+into the offices of the building. A seperate staircase leads downwards into 
+the Adriata prison facility, where troublemakers are kept until they can be 
+publically tried for their crimes. The entrance area itself is essentially a 
+massive pavilion, with the palace serving as the roof. The main square can 
+be reached by leaving theough any of the gates that lie on the north, south, 
+east and west sides of the pavilion. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 33505
+Exit east 33507
+Exit south 33501
+Exit west 33503
+Exit up 33634
+Exit down 33671
+End
+
+
+#33501
+Name Plaza South~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33500
+Exit east 33508
+Exit south 33509
+Exit west 33502
+End
+
+
+#33502
+Name Plaza Southwest~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33503
+Exit east 33501
+Exit southwest 33514
+End
+
+
+#33503
+Name Plaza West~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33504
+Exit east 33500
+Exit south 33502
+Exit west 33519
+End
+
+
+#33504
+Name Plaza Northwest~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit east 33505
+Exit south 33503
+Exit northwest 33524
+End
+
+
+#33505
+Name Plaza north~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33529
+Exit east 33506
+Exit south 33500
+Exit west 33504
+End
+
+
+#33506
+Name Plaza Northeast~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit south 33507
+Exit west 33505
+Exit northeast 33534
+End
+
+
+#33507
+Name Plaza East~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33506
+Exit east 33543
+Exit south 33508
+Exit west 33500
+End
+
+
+#33508
+Name Plaza Southeast~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33507
+Exit west 33501
+Exit southeast 33548
+End
+
+
+#33509
+Name Gold Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33501
+Exit east 33571
+Exit south 33510
+Exit west 33562
+End
+
+
+#33510
+Name Gold Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33509
+Exit east 33570
+Exit south 33511
+Exit west 33563
+End
+
+
+#33511
+Name Gold Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33510
+Exit south 33512
+Exit west 33564
+End
+
+
+#33512
+Name Gold Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33511
+Exit east 33568
+End
+
+
+#33513
+Name Patrol master office~
+Desc ~
+Sector inside~
+Exit east 33567
+End
+
+
+#33514
+Name Stone Street~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33572
+Exit south 33579
+Exit northeast 33502
+Exit southwest 33515
+End
+
+
+#33515
+Name Stone Street~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33573
+Exit south 33578
+Exit northeast 33514
+Exit southwest 33516
+End
+
+
+#33516
+Name Stone Street~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33574
+Exit northeast 33515
+Exit southwest 33517
+End
+
+
+#33517
+Name Stone Street~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33575
+Exit northeast 33516
+Exit southwest 33518
+End
+
+
+#33518
+Name Stone Street~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33576
+Exit south 33577
+Exit down 33553
+Exit northeast 33517
+End
+
+
+#33519
+Name Steel Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.
+~
+RoomFlags light~
+Sector cave~
+Exit north 33580
+Exit east 33503
+Exit west 33520
+End
+
+
+#33520
+Name Steel Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33581
+Exit east 33519
+Exit south 33587
+Exit west 33521
+End
+
+
+#33521
+Name Steel Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33582
+Exit east 33520
+Exit south 33586
+Exit west 33522
+End
+
+
+#33522
+Name Steel Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33567
+Exit east 33521
+Exit south 33585
+End
+
+
+#33524
+Name Fire Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.  
+~
+RoomFlags light~
+Sector cave~
+Exit north 33595
+Exit west 33588
+Exit southeast 33504
+Exit northwest 33525
+End
+
+
+#33525
+Name Fire Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.  
+~
+RoomFlags light~
+Sector cave~
+Exit north 33594
+Exit west 33589
+Exit southeast 33524
+Exit northwest 33526
+End
+
+
+#33526
+Name Fire Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.  
+~
+RoomFlags light~
+Sector cave~
+Exit north 33593
+Exit west 33590
+Exit southeast 33525
+Exit northwest 33527
+End
+
+
+#33527
+Name Fire Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33592
+Exit west 33591
+Exit southeast 33526
+Exit northwest 33528
+End
+
+
+#33528
+Name Fire Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit southeast 33527
+End
+
+
+#33529
+Name Brass Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.  
+~
+RoomFlags light~
+Sector cave~
+Exit north 33530
+Exit east 33603
+Exit south 33505
+Exit west 33596
+End
+
+
+#33530
+Name Brass Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33531
+Exit south 33529
+Exit west 33597
+End
+
+
+#33531
+Name Brass Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.  
+~
+RoomFlags light~
+Sector cave~
+Exit north 33532
+Exit east 33602
+Exit south 33530
+Exit west 33598
+End
+
+
+#33532
+Name Brass Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness.  
+~
+RoomFlags light~
+Sector cave~
+Exit east 33601
+Exit south 33531
+End
+
+
+#33534
+Name Sand Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33604
+Exit northeast 33535
+Exit southwest 33506
+End
+
+
+#33535
+Name Sand Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33605
+Exit northeast 33536
+Exit southwest 33534
+End
+
+
+#33536
+Name Sand Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33606
+Exit east 33610
+Exit northeast 33537
+Exit southwest 33535
+End
+
+
+#33537
+Name Sand Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33607
+Exit east 33609
+Exit northeast 33538
+Exit southwest 33536
+End
+
+
+#33538
+Name Sand Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33608
+Exit east 33539
+Exit southwest 33537
+End
+
+
+#33539
+Name A well-lit tunnel~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit east 33540
+Exit west 33538
+End
+
+
+#33540
+Name A well-lit tunnel~
+Desc ~
+RoomFlags light~
+Sector cave~
+Exit north 33541
+Exit west 33539
+End
+
+
+#33541
+Name Desert cavern~
+Desc ~
+Sector cave~
+Exit north 33542
+Exit south 33540
+End
+
+
+#33542
+Name North to desert~
+Desc ~
+Sector trail~
+Exit south 33541
+End
+
+
+#33543
+Name Hearth Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33611
+Exit east 33544
+Exit south 33618
+Exit west 33507
+End
+
+
+#33544
+Name Hearth Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33612
+Exit east 33545
+Exit south 33617
+Exit west 33543
+End
+
+
+#33545
+Name Hearth Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit east 33546
+Exit south 33616
+Exit west 33544
+End
+
+
+#33546
+Name Hearth Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33613
+Exit east 33687
+Exit south 33615
+Exit west 33545
+End
+
+
+#33548
+Name Light Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33619
+Exit west 33626
+Exit southeast 33549
+Exit northwest 33508
+End
+
+
+#33549
+Name Light Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33620
+Exit west 33625
+Exit southeast 33550
+Exit northwest 33548
+End
+
+
+#33550
+Name Light Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33621
+Exit southeast 33551
+Exit northwest 33549
+End
+
+
+#33551
+Name Light Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit west 33624
+Exit southeast 33552
+Exit northwest 33550
+End
+
+
+#33552
+Name Light Street~
+Desc You are on one of the myriad streets of the city of Adriata. Finely set 
+cobbles line the street here, leaving not a single protruding edge to trip 
+over or for a carriage to bounce on. The middle of the street is marked with 
+a narrow, two foot tall aqueduct, funneling water from the plaza to other 
+areas of the city for public use. Along the outside edges of the street are 
+small shrubs, providing a refreshing change from the normally drab stone 
+structure of the city. Far above can be seen the cavern roof and the complex 
+lighting system that keeps the city from plunging into darkness. 
+~
+RoomFlags light~
+Sector cave~
+Exit north 33622
+Exit west 33623
+Exit northwest 33551
+End
+
+
+#33553
+Name Central mine access~
+Desc ~
+Sector inside~
+Exit north 33554
+Exit west 33557
+Exit up 33518
+End
+
+
+#33554
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit north 33555
+Exit south 33553
+End
+
+
+#33555
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit north 33556
+Exit south 33554
+End
+
+
+#33556
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit north 33561
+Exit south 33555
+End
+
+
+#33557
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit east 33553
+Exit west 33558
+End
+
+
+#33558
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit east 33557
+Exit west 33559
+End
+
+
+#33559
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit east 33558
+Exit west 33560
+End
+
+
+#33560
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit east 33559
+End
+
+
+#33561
+Name Stone mine~
+Desc ~
+Sector cave~
+Exit south 33556
+End
+
+
+#33562
+Name ~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit east 33509
+End
+
+
+#33563
+Name Bank of Adriata~
+Desc ~
+Sector inside~
+Exit east 33510
+End
+
+
+#33564
+Name Councelor's apartment~
+Desc ~
+Sector inside~
+Exit east 33511
+Exit up 33565
+End
+
+
+#33565
+Name ~
+Desc ~
+Sector inside~
+Exit down 33564
+End
+
+
+#33566
+Name Private office~
+Desc ~
+Sector inside~
+Exit east 33631
+EFlags door pickproof nopass~
+End
+
+
+#33567
+Name Guard barracks~
+Desc ~
+Sector inside~
+Exit south 33522
+Exit west 33513
+End
+
+
+#33568
+Name Councelor's apartment~
+Desc ~
+Sector inside~
+Exit west 33512
+Exit up 33569
+End
+
+
+#33569
+Name ~
+Desc ~
+Sector inside~
+Exit down 33568
+End
+
+
+#33570
+Name Some Random Building~
+Desc ~
+Sector inside~
+Exit west 33510
+End
+
+
+#33571
+Name ~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit east 33632
+Exit west 33509
+End
+
+
+#33572
+Name ~
+Desc ~
+Sector inside~
+Exit south 33514
+End
+
+
+#33573
+Name ~
+Desc ~
+Sector inside~
+Exit south 33515
+End
+
+
+#33574
+Name ~
+Desc ~
+Sector inside~
+Exit south 33516
+End
+
+
+#33575
+Name Stone Processing~
+Desc ~
+Sector inside~
+Exit south 33517
+End
+
+
+#33576
+Name Mine Foreman's Office~
+Desc ~
+Sector inside~
+Exit south 33518
+End
+
+
+#33577
+Name Mine Equipment Storage~
+Desc ~
+Sector inside~
+Exit north 33518
+End
+
+
+#33578
+Name ~
+Desc ~
+Sector inside~
+Exit north 33515
+End
+
+
+#33579
+Name ~
+Desc ~
+Sector inside~
+Exit north 33514
+End
+
+
+#33580
+Name Ore Sales~
+Desc This is the public ore purchasing booth. Large metal bins full of various 
+chunks of raw metal are for sale here at reasonable prices. A large, long 
+counter occupies the northern end of the store, with a large set of scales 
+perched atop it. The ore prices are posted on the front of the counter for 
+reference. 
+~
+Sector inside~
+Exit south 33519
+End
+
+
+#33581
+Name Steel Street Smelters~
+Desc This is the city-run smelting operation used to process ore destined for 
+export to other areas. Various workers can be seen milling about, turning 
+raw ore into enriched and formed bars of various metals and alloys. The heat 
+near the machinery can often be overbearing, and the entire facility stays 
+warm at all times. The only way out is to the south. 
+~
+Sector inside~
+RoomEcho  0 23   2 The sound of metal clanging rings from somewhere in the facility.~
+RoomEcho  0 23   2 The roar of a furnace gains in volume for a moment, then returns to normal.~
+Exit south 33520
+End
+
+
+#33582
+Name Armorsmith~
+Desc This is the home of one of Adriata's famous armor shops, Silent Guard 
+Armory. All sorts of metal armor lines the walls, including the basic, the 
+common and in some cases some armor that can only be described as unique. 
+Everything here appropriately seems to be crafted from steel. On the north 
+end of the store is a counter, behind which rests the shopkeepers supplies 
+and a black velvet curtain. From time to time a glint of bright metal can be 
+seen through one of the loops supporting the curtain. The only exit is 
+south. 
+~
+Sector inside~
+Exit north 33583
+EFlags door closed~
+EKeywords curtain~
+Exit south 33521
+End
+
+
+#33583
+Name A private shop~
+Desc You are standing in a room that most could only describe as amazing. Some of 
+the most finely crafted weapons and armor ever made line the walls here, and 
+theyre all for sale. Looking closely, one will realize that every last item 
+for sale here is made of the purest, hardest mithril. The owner of this shop 
+doesnt let just anybody buy his armor and weapons, either. A small counter 
+occupies the north wall, and the only exit is south through the curtain. 
+~
+RoomFlags private noscry light~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit south 33582
+EFlags door closed~
+EKeywords curtain~
+End
+
+
+#33585
+Name City Smithy~
+Desc ~
+Sector inside~
+Exit north 33522
+End
+
+
+#33586
+Name Public Smithing Shop~
+Desc ~
+Sector inside~
+Exit north 33521
+End
+
+
+#33587
+Name Steel Street Blades~
+Desc This is the home of Steel Street Blades, one of the weapon shops of Adriata. 
+All sorts of weapons line the basic wood walls, ranging from the most basic 
+steel dagger to magnificent broadswords, axes, and even the occasional bow, 
+but only a few have parchment hanging from them with marked prices. A long 
+counter seperates the northern half of the store from the southern half, 
+where the weaponsmith's tools are kept. The only way out of this shop is the 
+door to the north. 
+~
+Sector inside~
+Exit north 33520
+End
+
+
+#33588
+Name Steel Ore Recieving~
+Desc ~
+Sector inside~
+Exit east 33524
+End
+
+
+#33589
+Name Steel Ore Processing~
+Desc ~
+Sector inside~
+Exit east 33525
+End
+
+
+#33590
+Name Fire Pit Inn~
+Desc ~
+Sector inside~
+Exit east 33526
+End
+
+
+#33591
+Name Steel Smelter~
+Desc ~
+Sector inside~
+Exit east 33527
+End
+
+
+#33592
+Name Copper Smelter~
+Desc ~
+Sector inside~
+Exit south 33527
+End
+
+
+#33593
+Name Fire Pit Bar~
+Desc ~
+Sector inside~
+Exit south 33526
+End
+
+
+#33594
+Name Copper Ore Processing~
+Desc ~
+Sector inside~
+Exit south 33525
+End
+
+
+#33595
+Name Copper Ore Recieving~
+Desc ~
+Sector inside~
+Exit south 33524
+End
+
+
+#33596
+Name Brass Street Smelters~
+Desc ~
+Sector inside~
+Exit east 33529
+End
+
+
+#33597
+Name ~
+Desc ~
+Sector inside~
+Exit east 33530
+End
+
+
+#33598
+Name ~
+Desc ~
+Sector inside~
+Exit east 33531
+End
+
+
+#33601
+Name ~
+Desc ~
+Sector inside~
+Exit west 33532
+End
+
+
+#33602
+Name ~
+Desc ~
+Sector inside~
+Exit west 33531
+End
+
+
+#33603
+Name ~
+Desc ~
+Sector inside~
+Exit west 33529
+End
+
+
+#33604
+Name ~
+Desc ~
+Sector inside~
+Exit south 33534
+End
+
+
+#33605
+Name ~
+Desc ~
+Sector inside~
+Exit south 33535
+End
+
+
+#33606
+Name ~
+Desc ~
+Sector inside~
+Exit south 33536
+End
+
+
+#33607
+Name ~
+Desc ~
+Sector inside~
+Exit south 33537
+End
+
+
+#33608
+Name ~
+Desc ~
+Sector inside~
+Exit south 33538
+End
+
+
+#33609
+Name ~
+Desc ~
+Sector inside~
+Exit west 33537
+End
+
+
+#33610
+Name ~
+Desc ~
+Sector inside~
+Exit west 33536
+End
+
+
+#33611
+Name ~
+Desc ~
+Sector inside~
+Exit south 33543
+End
+
+
+#33612
+Name ~
+Desc ~
+Sector inside~
+Exit south 33544
+End
+
+
+#33613
+Name ~
+Desc ~
+Sector inside~
+Exit south 33546
+End
+
+
+#33615
+Name ~
+Desc ~
+Sector inside~
+Exit north 33546
+End
+
+
+#33616
+Name ~
+Desc ~
+Sector inside~
+Exit north 33545
+End
+
+
+#33617
+Name ~
+Desc ~
+Sector inside~
+Exit north 33544
+End
+
+
+#33618
+Name ~
+Desc ~
+Sector inside~
+Exit north 33543
+End
+
+
+#33619
+Name ~
+Desc ~
+Sector inside~
+Exit south 33548
+End
+
+
+#33620
+Name ~
+Desc ~
+Sector inside~
+Exit south 33549
+End
+
+
+#33621
+Name ~
+Desc ~
+Sector inside~
+Exit south 33550
+End
+
+
+#33622
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit east 33627
+Exit south 33552
+End
+
+
+#33623
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit east 33552
+Exit south 33631
+End
+
+
+#33624
+Name ~
+Desc ~
+Sector inside~
+Exit east 33551
+End
+
+
+#33625
+Name ~
+Desc ~
+Sector inside~
+Exit east 33549
+End
+
+
+#33626
+Name ~
+Desc ~
+Sector inside~
+Exit east 33548
+End
+
+
+#33627
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit south 33628
+Exit west 33622
+End
+
+
+#33628
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit north 33627
+Exit south 33629
+End
+
+
+#33629
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit north 33628
+Exit west 33630
+End
+
+
+#33630
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit east 33629
+Exit west 33631
+End
+
+
+#33631
+Name Keepers of the Light~
+Desc ~
+Sector inside~
+Exit north 33623
+Exit east 33630
+Exit west 33566
+EFlags door pickproof nopass~
+End
+
+
+#33632
+Name ~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit south 33633
+Exit west 33571
+End
+
+
+#33633
+Name ~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit north 33632
+End
+
+
+#33634
+Name Central Landing~
+Desc ~
+Sector inside~
+Exit up 33665
+Exit down 33500
+Exit northeast 33635
+Exit southeast 33637
+Exit southwest 33639
+Exit northwest 33641
+End
+
+
+#33635
+Name ~
+Desc ~
+Sector inside~
+Exit north 33663
+Exit east 33662
+Exit south 33636
+Exit west 33642
+Exit southwest 33634
+End
+
+
+#33636
+Name ~
+Desc ~
+Sector inside~
+Exit north 33635
+Exit east 33661
+Exit south 33637
+End
+
+
+#33637
+Name ~
+Desc ~
+Sector inside~
+Exit north 33636
+Exit east 33660
+Exit south 33659
+Exit west 33638
+Exit northwest 33634
+End
+
+
+#33638
+Name ~
+Desc ~
+Sector inside~
+Exit east 33637
+Exit south 33658
+Exit west 33639
+End
+
+
+#33639
+Name ~
+Desc ~
+Sector inside~
+Exit north 33640
+Exit east 33638
+Exit south 33657
+Exit west 33646
+Exit northeast 33634
+End
+
+
+#33640
+Name ~
+Desc ~
+Sector inside~
+Exit north 33641
+Exit south 33639
+Exit west 33645
+End
+
+
+#33641
+Name ~
+Desc ~
+Sector inside~
+Exit north 33643
+Exit east 33642
+Exit south 33640
+Exit west 33644
+Exit southeast 33634
+End
+
+
+#33642
+Name ~
+Desc ~
+Sector inside~
+Exit north 33664
+Exit east 33635
+Exit west 33641
+End
+
+
+#33643
+Name ~
+Desc ~
+Sector inside~
+Exit south 33641
+End
+
+
+#33644
+Name ~
+Desc ~
+Sector inside~
+Exit east 33641
+End
+
+
+#33645
+Name ~
+Desc ~
+Sector inside~
+Exit east 33640
+End
+
+
+#33646
+Name ~
+Desc ~
+Sector inside~
+Exit east 33639
+End
+
+
+#33657
+Name ~
+Desc ~
+Sector inside~
+Exit north 33639
+End
+
+
+#33658
+Name ~
+Desc ~
+Sector inside~
+Exit north 33638
+End
+
+
+#33659
+Name ~
+Desc ~
+Sector inside~
+Exit north 33637
+End
+
+
+#33660
+Name ~
+Desc ~
+Sector inside~
+Exit west 33637
+End
+
+
+#33661
+Name ~
+Desc ~
+Sector inside~
+Exit west 33636
+End
+
+
+#33662
+Name ~
+Desc ~
+Sector inside~
+Exit west 33635
+End
+
+
+#33663
+Name ~
+Desc ~
+Sector inside~
+Exit south 33635
+End
+
+
+#33664
+Name ~
+Desc ~
+Sector inside~
+Exit south 33642
+End
+
+
+#33665
+Name Offices of the Council~
+Desc ~
+Sector inside~
+Exit north 33666
+Exit east 33667
+Exit south 33668
+Exit west 33669
+Exit up 33670
+Exit down 33634
+End
+
+
+#33666
+Name City Budget Officer's Office~
+Desc ~
+Sector inside~
+Exit south 33665
+End
+
+
+#33667
+Name City Chief Planner's Office~
+Desc ~
+Sector inside~
+Exit west 33665
+End
+
+
+#33668
+Name Exeuctive Secretary's Office~
+Desc ~
+Sector inside~
+Exit north 33665
+End
+
+
+#33669
+Name Security Chief's Office~
+Desc ~
+Sector inside~
+Exit east 33665
+End
+
+
+#33670
+Name Office of the Lord of Adriata~
+Desc ~
+Sector inside~
+Exit down 33665
+End
+
+
+#33671
+Name Security Checkpoint~
+Desc This is what appears to be a security checkpoint to control access to the 
+jail below. The stairway to the plaza above is on the east side of the room, 
+while the stairs down to the jail are on the west side. Oddly enough, small 
+round holes can be seen surrounding both sets of stairs. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit up 33500
+Exit down 33672
+End
+
+
+#33672
+Name Prison Central~
+Desc This is the central room of the Adriata prison. THe walls are made from 
+heavy stone, with reinforced steel bars along the walls, while reinforced 
+steel beams support a stone ceiling. North and west are the cell blocks 
+themselves, while a staircase leads up to a security checkpoint. South and 
+east are small offices for the staff. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 33675
+Exit east 33678
+Exit south 33677
+Exit west 33673
+Exit up 33671
+End
+
+
+#33673
+Name West Cellblock~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit north 33679
+EFlags door closed locked nopass~
+EKeyvnum 33672
+Exit east 33672
+Exit south 33682
+EFlags door closed locked nopass~
+EKeyvnum 33672
+Exit west 33674
+End
+
+
+#33674
+Name West Cellblock~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit north 33680
+EFlags door closed locked nopass~
+EKeyvnum 33672
+Exit east 33673
+Exit south 33681
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33675
+Name North Cellblock~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit north 33676
+Exit east 33686
+EFlags door closed locked nopass~
+EKeyvnum 33672
+Exit south 33672
+Exit west 33683
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33676
+Name North Cellblock~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit east 33685
+EFlags door closed locked nopass~
+EKeyvnum 33672
+Exit south 33675
+Exit west 33684
+EFlags door closed locked nopass easy~
+EKeyvnum 33672
+End
+
+
+#33677
+Name Warden's Office~
+Desc This is the office of the jail warden. The walls here are adorned with the 
+posters of former wanted felons. Many of the posters feature a large `RX`x over 
+the face of the offender, while several bear thick black vertical stripes. 
+It seems this warned prefers to bring unwilling criminals back to jail in 
+small pieces as opposed to alive. A very small number of the posters are 
+unmarred, and they appear to be rather new. Perhaps these individuals have 
+not yet met with the wrath of the Adriata prison warden. The main room of 
+the jail lies north. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 33672
+End
+
+
+#33678
+Name Watch Office~
+Desc This is the office used by the head of the current watch duty. The room has 
+very little in the way of furnishings, but has the same reinforced walls and 
+ceiling as the rest of the prison. West from here is the main room of the 
+prison. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit west 33672
+End
+
+
+#33679
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit south 33673
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33680
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit south 33674
+EFlags door closed locked~
+EKeyvnum 33672
+End
+
+
+#33681
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit north 33674
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33682
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit north 33673
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33683
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit east 33675
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33684
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit east 33676
+EFlags door closed locked nopass easy~
+EKeyvnum 33672
+End
+
+
+#33685
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit west 33676
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33686
+Name A small cell~
+Desc You are in a jail cell in the Adriata jail. The cell here is cramped and 
+dark, only enough light provided by the enchanted ceiling to let the 
+occupant see the walls around them. Oddly enough, no door is visible in the 
+room, apparently blending into the stonework of the walls. 
+~
+RoomFlags indoors no_recall noscry antimagic~
+Sector inside~
+Exit west 33675
+EFlags door closed locked nopass~
+EKeyvnum 33672
+End
+
+
+#33687
+Name Fields entrance~
+Desc ~
+RoomFlags light~
+Sector field~
+Exit east 33692
+Exit south 33688
+Exit west 33546
+End
+
+
+#33688
+Name Grain field~
+Desc ~
+RoomFlags light~
+Sector field~
+Exit north 33687
+Exit east 33689
+End
+
+
+#33689
+Name Grain field~
+Desc ~
+RoomFlags light~
+Sector field~
+Exit north 33692
+Exit east 33690
+Exit west 33688
+End
+
+
+#33690
+Name Grain field~
+Desc ~
+RoomFlags light~
+Sector field~
+Exit north 33691
+Exit west 33689
+End
+
+
+#33691
+Name Grain field~
+Desc ~
+RoomFlags light~
+Sector field~
+Exit south 33690
+Exit west 33692
+End
+
+
+#33692
+Name Grain field~
+Desc ~
+RoomFlags light~
+Sector field~
+Exit east 33691
+Exit south 33689
+Exit west 33687
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 33500 16 33501 1
+O 0 33500 -1 33502
+M 0 33500 16 33503 1
+O 0 33500 -1 33504
+M 0 33500 16 33505 1
+O 0 33500 -1 33506
+M 0 33500 16 33507 1
+O 0 33500 -1 33508
+M 0 33500 16 33512 1
+M 0 33500 16 33518 1
+M 0 33500 16 33522 1
+M 0 33500 16 33528 1
+M 0 33500 16 33532 1
+M 0 33500 16 33538 1
+M 0 33500 16 33546 1
+M 0 33500 16 33552 1
+M 0 33580 1 33580 1
+M 0 33581 2 33581 2
+O 0 33566 -1 33631
+O 0 33672 -1 33672
+M 0 33672 1 33672 1
+S
+
+
+
+#SHOPS
+#33580
+profit_buy 150
+profit_sell 75
+open_hour 8
+close_hour 18
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

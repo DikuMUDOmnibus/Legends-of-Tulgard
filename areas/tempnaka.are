@@ -1,0 +1,238 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of Venalena~
+ShortName   Temple of Venalena~
+Builders    None~
+VNUMs       7550 7559
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#7550
+Name priest cleric anacor~
+ShortD `#`wa priestess of `MVenalena`^~
+LongD A priestess of Venalena is here, reclining patiently.~
+Desc She carries the symbol of Venalena to her breast. 
+~
+Race human~
+Align -2 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -574
+Wealth 0
+Act    npc dont_wander cleric healer~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#7551
+Name bath attendant~
+ShortD a hooded bath attendant~
+LongD A hooded bath attendant proffers towels to those bathing.~
+Desc White obviously human, this attendant's features are formless beneath the 
+hood of its robe. It passes towels out politely but wordlessly to those in 
+need and reclines in a corner almost invisibly so as not to intrude. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 79
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#7550
+Name altar~
+Short an altar to `#`CVenalena`^~
+Desc An altar to `#`CVenalena`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 QR 150 150
+Weight 5000
+Material stone~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#7551
+Name white oak seat~
+Short a `#`ww`Wh`wi`Wt`we`^ oak seat~
+Desc ~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 100000 EHK 100 100
+Weight 0
+Material unknown~
+Extra    bless~
+End
+
+#7552
+Name steaming pool~
+Short a steaming pool~
+Desc ~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 50000 FILS 105 105
+Weight 0
+Material unknown~
+End
+
+#7553
+Name rinsing cool pool~
+Short a cool rinsing pool~
+Desc ~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 50000 FILS 100 100
+Weight 0
+Material unknown~
+Extra    bless~
+End
+
+#0
+
+
+
+#ROOMS
+#7550
+Name Entrance to the Temple~
+Desc Large white steps lead up into the magnificent temple before you.  Several 
+stone columns reach high into the air, supporting the roof of the temple.  
+An exotic carved relief winds its way around the edge of the roof, showing 
+ancient victories of the gods of the realm.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7551
+Exit south 3039
+End
+
+
+#7551
+Name Lighted Hallway~
+Desc Twelve large fluted marble columns line this hallway running north and 
+south.  The floor is made from the finest white marble, with intricate 
+designs etched into the stone with pure gold.  On each column a large brass 
+scone holds a burning torch, filling the corridor with light.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7552
+Exit south 7550
+Exit west 7553
+End
+
+
+#7552
+Name Before the Altar~
+Desc A large white altar lies before you, its surface gleaming in with light.  A 
+large fire burns on top of it, filling the room with the smell of burning 
+incense.  A large offering box is along the east wall, ready to accept 
+donations to the temple.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit south 7551
+End
+
+
+#7553
+Name A Bathing Room~
+Desc A set of pools carved into the marble have been filled with steaming water 
+and enclosed with embroidered cloth seperators. Around each pool writing of 
+multitudes of languages is lacquered with pure gold. Seats of white oak 
+stand against the wall for those waiting and cooler, rinsing pools on the 
+northern side of the room are for those who have finished. 
+~
+RoomFlags light~
+Room2Flags no_steal~
+Sector inside~
+Exit east 7551
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 7550 -1 7552
+O 0 7551 -1 7553
+O 0 7552 -1 7553
+O 0 7553 -1 7553
+M 0 7551 1 7553 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

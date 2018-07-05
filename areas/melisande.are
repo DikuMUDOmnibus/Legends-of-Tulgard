@@ -1,0 +1,437 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Melisande's Estate~
+ShortName   Melisande's Estate~
+Builders    melisande~
+Credits     Delandria~
+VNUMs       7100 7169
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#7100
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 7100 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#7100
+Name treasury key~
+Short `#`WMelisande's `YHouse Key`^~
+Desc `#`WMelisande's `YHouse Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#7101
+Name marble fountain~
+Short a `#`mmarble`^ fountain~
+Desc A `#`mmarble`^ fountain is here~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+End
+
+#7102
+Name black leather sofa couch~
+Short `#`wa soft `sblack `w'C' shaped sofa`^~
+Desc `#`wA soft `sblack `w'C' shaped sofa sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHJR 100 100
+Weight 400
+Material leather~
+Extra    nodegrade burnproof norestring~
+End
+
+#7103
+Name king size royal bed ~
+Short `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it`^~
+Desc `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 150 150
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#7104
+Name comfortable full sized bed~
+Short `#`wa `ccomfortable `wfull sized bed`^~
+Desc `#`wa `ccomfortable `wfull sized bed is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 120 120
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#7105
+Name small square cherrywood table~
+Short `#`wa small square `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable`^~
+Desc `#`wa small square `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable is sitting here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#7106
+Name painting of melisande~
+Short a painting of melisande~
+Desc `#`wA large painting of Melisande hangs above the fireplace.`^~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc painting ~
+You see a large painting of Melisande. She is dressed in a pure white gown 
+with a red cloak and matching red belt that hangs down the front of her 
+gown. She is standing on some rocks overlooking a beautiful hillside. Her 
+thick red hair is hanging free around her like a veil. The wind is blowing 
+her hair and cloak around. 
+~
+End
+
+#7107
+Name antique wooden baby crib bed~
+Short an antique wooden baby bed~
+Desc An antique wooden baby bed is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#7108
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 7101 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#7109
+Name wooden cabinet crate~
+Short a huge wooden crate~
+Desc A huge wooden crate rests here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#7100
+Name Courtyard~
+Desc You are inside of a large courtyard. It is paved in thousands of tiny 
+multi-colored pebblestones. Thick shrubs outline the courtyard creating a 
+large circular pattern centering around a huge rose marble fountain. There 
+is a door to a house leading to your north. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7101
+EFlags door closed locked nopass hard~
+EKeyvnum 7100
+EKeywords door~
+Exit south 57566
+End
+
+
+#7101
+Name Living Room~
+Desc A large candleabra hangs from the center of the ceiling creating a soft 
+light. The walls are made out of a light colored pine and the floor is 
+covered in a soft black carpet. Bookshelves line the west wall and there is 
+a gigantic fireplace lining to east wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7102
+Exit south 7100
+EFlags door closed locked nopass hard~
+EKeyvnum 7100
+Exit up 7107
+End
+
+
+#7102
+Name Kitchen~
+Desc The walls are painted a soft blue and the floor is made from a dark colored 
+marble. Several lanterns hang from the walls creating light. There is a 
+large window overlooking the yard to your east and a huge cookstove on the 
+north wall. To your west there is a door leading to a large barn. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7101
+Exit west 7103
+Exit down 7104
+End
+
+
+#7103
+Name Pole Barn~
+Desc You find yourself underneath a huge barn that is open sided on one side. The 
+roof is a large sheet of metal and it is held up by tall wooden poles. There 
+are walls on three sides and the ground is covered with a layer of straw. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7102
+End
+
+
+#7104
+Name Basement~
+Desc You find yourself inside of a huge basement deep inside of the ground 
+underneath the home. The ceiling is at least 20 feet high and the floor is 
+made out of a grey marble. There is a huge brazier resting in the middle of 
+the room creating light. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Owner melisande galaphile~
+Exit up 7102
+End
+
+
+#7105
+Name Hallway~
+Desc You are inside of a small hallway leading east from the basement. There are 
+lanterns hanging from the walls here. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 7106
+End
+
+
+#7106
+Name Treasury Room~
+Desc This room is very plain. The walls are painted white and there is a black 
+carpet covering the floor. Several crates rest about the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit up 7105
+End
+
+
+#7107
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is a bedroom to your 
+east and to your west from here. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7108
+Exit west 7109
+Exit down 7101
+End
+
+
+#7108
+Name Master Bedroom~
+Desc You find yourself inside of the houses master bedroom. The walls are painted 
+a rich burgandy color and there is a plush black carpet covering the floor. 
+There is a huge bay window that you can rest on to your east that allows you 
+to look out into the yard. A large floor lantern is resting in the corner of 
+the room by a small bedside table. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit west 7107
+End
+
+
+#7109
+Name Children's Room~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on to your west that allows you to look out into the yard. A small 
+lantern is resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7107
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 7101 -1 7100
+O 0 7102 -1 7101
+O 0 7106 -1 7101
+O 0 7105 -1 7102
+O 0 418 -1 7103
+M 0 7100 2 7105 2
+O 0 7108 -1 7106
+O 0 7104 -1 7109
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#7100
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Melisande
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1091910450
+END
+
+#0
+
+
+#$

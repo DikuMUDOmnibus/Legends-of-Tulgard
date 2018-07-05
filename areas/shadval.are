@@ -1,0 +1,3709 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Shadow Valley~
+ShortName   Shadow Valley~
+Builders    None~
+Credits     Kandahar~
+VNUMs       12700 12799
+LComment    `#`R[ 45- 75]`^
+LRange      45 75
+Security    9
+Colour      g~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Tue Sep 13 19:04:51 2005~
+End
+
+
+
+#MOBILES
+#12700
+Name pet shoppe owner man~
+ShortD the pet shoppe owner~
+LongD A scruffy looking old man peers at you through rheumy eyes. ~
+Desc This old man seems almost to be a permanent fixture of this place, he too
+covered in four inches of dust. He could almost be dead but for the slight
+rocking of his chair and almost barely noticeable nod of his head as you
+walk into the shoppe. 
+~
+Race human~
+Align 3 3
+Level 100
+Hitroll 390
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType scratch
+AC -700 -700 -700 -623
+Wealth 650
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12701
+Name shadow being pet~
+ShortD a `#`sshadow `wbeing`^~
+LongD `WYour `Dshadow `Wdances around you`x. ~
+Desc Floating before your eyes is a misty figure void of any distinct form
+whatsoever. It melds and dances around you, happily released from its prison
+..... For now. 
+~
+Race human~
+Align -1 3
+Level 45
+Hitroll 180
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType chill
+AC -157 -157 -157 -136
+Wealth 450
+Act    npc warrior~
+AffBy  detect_invis detect_hidden flying~
+Form   magical instant_decay other non_skinable mist intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12702
+Name old waitress~
+ShortD an old waitress~
+LongD A tired old woman waits patiently.~
+Desc ~
+Race human~
+Align -2 3
+Level 50
+Hitroll 500
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType slap
+AC -200 -200 -200 -178
+Wealth 0
+Act    npc dont_wander stay_area~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12703
+Name baker~
+ShortD the baker~
+LongD The baker shifts nervously from one foot to the other. ~
+Desc The baker bustles around in his shop almost nervously avoiding your gaze.
+He is not adverse to selling his products to you though... He looks up as if
+to warn you about something but is suddenly cut short with a pained
+expression to his face and a shocked look in his eyes. 
+~
+Race human~
+Align -3 3
+Level 50
+Hitroll 500
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType punch
+AC -200 -200 -200 -170
+Wealth 500
+Act    npc dont_wander stay_area~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12704
+Name pet bat vampire~
+ShortD a `#`rvampire`^ bat~
+LongD A `#`rvampire `sbat`^ grins evilly at you.~
+Desc Extraordinarily large with unusually piercing eyes, this bat looks
+hungry. In fact, it isn't the type to turn down a feast of blood at any time
+of the day or night.... 
+~
+Race bat~
+Align -2 0
+Level 55
+Hitroll 220
+HitDice 6d9+300
+ManaDice 2d5+50
+DamDice 10d4+23
+DamType suction
+AC -250 -250 -250 -220
+Wealth 550
+Act    npc pet warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+Off    dodge fast parry rescue~
+Vuln   light~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12705
+Name old dear lady doddering~
+ShortD the old dear~
+LongD A doddering old lady peers at you. ~
+Desc She is a shrewd old bat and if you can afford to sell to her, she is the
+only shopkeeper who will buy from you in this derelict old town. Makes you
+wonder how she can afford to do that. 
+~
+Race human~
+Align 3 1
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType slap
+AC -200 -200 -200 -168
+Wealth 500
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden weaken~
+Off    dodge parry~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#12706
+Name serpent snake~
+ShortD a slim `#`Gserpent`^~
+LongD A `#`Gserpent`^ slips through the weeds, a silent killer.~
+Desc `gThis serpent is one of the most poisonous kinds. Definitely not what
+you wanted to hear! It has diamond patterning along its length and vicious
+looking fangs dripping with venom. `x 
+~
+Race snake~
+Align 2 -1
+Level 60
+Hitroll 240
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType bite
+AC -300 -300 -300 -246
+Wealth 600
+Act    npc dont_wander aggressive undead~
+Act2   no_random_obj~
+AffBy  detect_invis protect_good sneak hide haste~
+Off    disarm dodge trip~
+Res    charm poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#12707
+Name apparition~
+ShortD an `#`wapparition`^~
+LongD An `#`Wapparition`^ passes by.~
+Desc `WThis apparition floats gently by seemingly without a care in the world.
+It also seems intent on getting somewhere.... `x 
+~
+Race human~
+Align 3 0
+Level 55
+Hitroll 220
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType chill
+AC -250 -250 -250 -210
+Wealth 550
+Act    npc stay_area undead~
+AffBy  detect_invis detect_hidden flying~
+Off    dodge parry~
+Form   magical instant_decay non_skinable sentient undead~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12708
+Name spirit~
+ShortD a `#`ccrying `wspirit`^~
+LongD A `#`ccrying `Wspirit`^ looks most miserable.~
+Desc `WThis spirit has had a bad day... Or life. Wait ... Aren't spirits dead?
+`x 
+~
+Race human~
+Align 1 0
+Level 54
+Hitroll 216
+HitDice 5d9+295
+ManaDice 5d9+295
+DamDice 7d6+22
+DamType sting
+AC -240 -240 -240 -213
+Wealth 540
+Act    npc~
+Form   magical instant_decay non_skinable sentient undead intangible biped~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12709
+Name ghost~
+ShortD a `#`wghost`^~
+LongD A `#`Wghost`^ cackles madly at you.~
+Desc `WThis ghost doesn't appear to like you much. Better keep out of his way!
+`x 
+~
+Race human~
+Align 0 0
+Level 55
+Hitroll 220
+HitDice 6d9+300
+ManaDice 2d5+50
+DamDice 10d4+23
+DamType shock
+AC -250 -250 -250 -217
+Wealth 550
+Act    npc stay_area undead warrior~
+AffBy  flying~
+Off    dodge~
+Form   magical instant_decay non_skinable sentient undead mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12710
+Name spectre~
+ShortD a `#`sghostly `Wspectre`^~
+LongD A `#`sghostly `Wspectre`^ floats past.~
+Desc `WThis spectre doesn't consist of much, just a few wisps of misty matter,
+which you can see right through... `x 
+~
+Race human~
+Align -3 0
+Level 53
+Hitroll 212
+HitDice 5d9+290
+ManaDice 5d9+290
+DamDice 6d7+20
+DamType shbite
+AC -230 -230 -230 -202
+Wealth 530
+Act    npc stay_area undead cleric~
+AffBy  detect_invis detect_hidden flying~
+Off    dodge~
+Form   magical instant_decay non_skinable sentient undead biped~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12711
+Name ghostly child~
+ShortD a `#`sghostly `Wchild`^~
+LongD A very pale child stands here looking at you. ~
+Desc `WMy goodness, this child looks thin and wan. Quite a ghostly sheen on
+her face. `x 
+~
+Race human~
+Align -3 0
+Level 52
+Hitroll 208
+HitDice 5d9+285
+ManaDice 5d9+285
+DamDice 6d7+20
+DamType chill
+AC -220 -220 -220 -184
+Wealth 520
+Act    npc stay_area wimpy undead~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12712
+Name ghostly man~
+ShortD a `#`sghostly `Wman`^~
+LongD A pale man wanders by. ~
+Desc `WThis man is so pale, he is almost transparent. `x 
+~
+Race human~
+Align 2 0
+Level 50
+Hitroll 200
+HitDice 5d8+270
+ManaDice 6d9+330
+DamDice 6d6+17
+DamType slime
+AC -190 -190 -190 -167
+Wealth 500
+Act    npc stay_area undead mage~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12713
+Name ghostly woman~
+ShortD a `#`sghostly `Wwoman`^~
+LongD A woman floats by purposefully. ~
+Desc `WThis transparent being was obviously once a totally organised person.
+Death hasn't changed her. `x 
+~
+Race human~
+Align -2 0
+Level 52
+Hitroll 208
+HitDice 5d9+290
+ManaDice 2d5+50
+DamDice 6d7+20
+DamType chill
+AC -220 -220 -220 -184
+Wealth 520
+Act    npc stay_area undead warrior~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12714
+Name ghostly cat~
+ShortD a `#`sghostly `Wcat`^~
+LongD A cat sits here washing itself. ~
+Desc `WThis cat is on its 10th life. `x 
+~
+Race cat~
+Align -2 0
+Level 55
+Hitroll 220
+HitDice 6d9+300
+ManaDice 2d5+50
+DamDice 10d4+23
+DamType claw
+AC -250 -250 -250 -225
+Wealth 550
+Act    npc stay_area undead warrior~
+Act2   no_random_obj~
+AffBy  invisible detect_invis infrared protect_good sneak flying pass_door dark_vision~
+Off    dodge fast parry tail~
+Res    charm pierce~
+Vuln   bash fire~
+Form   edible animal undead mountable~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12715
+Name ghostly dog~
+ShortD a `#`sghostly `Wdog`^~
+LongD A dog sniffs around your feet. ~
+Desc `WThis dog appears to be looking for something... ARGH... Better move
+fast! ! `x 
+~
+Race dog~
+Align -1 0
+Level 50
+Hitroll 200
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 4d10+18
+DamType bite
+AC -200 -200 -200 -160
+Wealth 500
+Act    npc stay_area wimpy undead cleric~
+Act2   no_random_obj~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    dodge fast parry trip~
+Res    charm bash~
+Vuln   acid~
+Form   edible animal undead mountable~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12716
+Name sheet ghost~
+ShortD a `#`wsheet`^~
+LongD A `#`sdust `wsheet`^ is draped over something~
+Desc `WCareful it may be alive! `x 
+~
+Race human~
+Align 3 2
+Level 56
+Hitroll 224
+HitDice 6d9+305
+ManaDice 2d5+55
+DamDice 10d4+24
+DamType chill
+AC -260 -260 -260 -221
+Wealth 560
+Act    npc stay_area warrior~
+Form   magical other non_skinable construct~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12717
+Name ghostly servant~
+ShortD a `#`sghostly `Wservant`^~
+LongD A servant wanders around dusting. ~
+Desc `WThis servant met a gruesome end but that doesn't stop her from
+continuing with her tasks even after death! `x 
+~
+Race human~
+Align -2 3
+Level 57
+Hitroll 228
+HitDice 6d9+305
+ManaDice 6d9+310
+DamDice 6d8+24
+DamType slime
+AC -270 -270 -270 -243
+Wealth 570
+Act    npc stay_area wimpy undead~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm slash~
+Vuln   energy~
+Form   magical instant_decay non_skinable sentient undead intangible biped~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12718
+Name ghostly maid~
+ShortD a `#`sghostly `Wmaid`^~
+LongD A maid flutters her eyelashes at you. ~
+Desc `WThis maid hasn't lost her touch, has she? `x 
+~
+Race human~
+Align 1 3
+Level 58
+Hitroll 232
+HitDice 6d9+305
+ManaDice 7d10+350
+DamDice 10d4+23
+DamType chill
+AC -270 -270 -270 -232
+Wealth 580
+Act    npc stay_area undead mage~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm pierce~
+Vuln   energy~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12719
+Name ghostly girl amyghost~
+ShortD the `#`sghost`^ of `#`cAmy`^~
+LongD A little girl stands here, as pale as a `#`Wghost`^.~
+Desc `WThis little girl has lived in the house all her life, unfortunately not
+many years. She likes to play in the attic. `x 
+~
+Race human~
+Align 2 3
+Level 59
+Hitroll 236
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 5d10+25
+DamType chill
+AC -290 -290 -290 -246
+Wealth 590
+Act    npc stay_area undead cleric~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm fire~
+Vuln   energy~
+Form   magical instant_decay non_skinable sentient undead intangible biped~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#12720
+Name ghostly boy patrickghost~
+ShortD the `#`sghost`^ of `#`cPatrick`^~
+LongD A young boy kicks a football around. ~
+Desc `WThis young boy seems to have found the perfect place to kick a ball
+around. `x 
+~
+Race human~
+Align 3 3
+Level 60
+Hitroll 5
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType shock
+AC -300 -300 -300 -255
+Wealth 0
+Act    npc stay_area undead warrior~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    disarm dodge fast parry trip~
+Res    charm acid~
+Vuln   cold~
+Form   magical instant_decay non_skinable sentient undead intangible biped~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#12721
+Name ghostly woman gertrudeghost~
+ShortD the `#`sghost`^ of `#`cGertrude`^~
+LongD A woman sits patiently as if waiting to dance. ~
+Desc `WThis woman looks as though her evening has just been ruined. She is all
+dressed up for ballroom dancing, yet there is no orchestra and certainly no
+ball. `x 
+~
+Race human~
+Align -3 3
+Level 62
+Hitroll 372
+HitDice 6d10+320
+ManaDice 7d11+365
+DamDice 8d6+26
+DamType drain
+AC -310 -310 -310 -279
+Wealth 620
+Act    npc stay_area undead mage~
+AffBy  invisible detect_invis detect_hidden protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm cold~
+Vuln   energy~
+Form   magical instant_decay non_skinable sentient undead intangible biped~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12722
+Name ghostly man gentleman samuelghost~
+ShortD the `#`sghost`^ of `#`cSamuel`^~
+LongD A gentleman stands waiting for the music to start. ~
+Desc `WThis gentleman enjoys ballroom dancing and appears to be waiting for
+something, his head cocked to one side, as if listening. `x 
+~
+Race human~
+Align -1 3
+Level 65
+Hitroll 390
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType chill
+AC -350 -350 -350 -283
+Wealth 650
+Act    npc stay_area undead~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm cold~
+Vuln   energy~
+Form   magical instant_decay non_skinable sentient undead intangible biped~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12723
+Name ghostly canary~
+ShortD the `#`sghostly `Ycanary`^~
+LongD A pet canary flutters around the room. ~
+Desc `WThis once vibrant song bird twitters and sings even in the afterlife. `x 
+~
+Race song bird~
+Align 3 3
+Level 61
+Hitroll 366
+HitDice 6d9+320
+ManaDice 5d5+140
+DamDice 8d6+27
+DamType peck
+AC -300 -300 -300 -243
+Wealth 610
+Act    npc stay_area thief~
+AffBy  invisible detect_invis protect_evil sneak hide flying pass_door~
+Off    berserk dodge fast parry~
+Res    charm bash~
+Vuln   fire~
+Form   edible animal undead bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#12724
+Name ghostly skivvy~
+ShortD a `#`sghostly `Wskivvy`^~
+LongD A skivvy looks worn out from scrubbing. ~
+Desc `WThis young girl seems to do nothing but scrub floors and do all the
+little jobs around the household that no one else will do. `x 
+~
+Race human~
+Align 2 2
+Level 63
+Hitroll 378
+HitDice 6d10+325
+ManaDice 5d6+150
+DamDice 8d7+28
+DamType sting
+AC -320 -320 -320 -268
+Wealth 630
+Act    npc stay_area wimpy undead thief~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    dodge parry trip~
+Res    charm fire~
+Vuln   energy~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12725
+Name ghostly cook~
+ShortD a `#`sghostly `Wcook`^~
+LongD A cook bustles around busily. ~
+Desc `WThis cook would LOVE to get back to her kitchen as she is sure the
+skivvies are slacking. `x 
+~
+Race human~
+Align 3 3
+Level 60
+Hitroll 240
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+26
+DamType chop
+AC -300 -300 -300 -270
+Wealth 600
+Act    npc stay_area undead cleric~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    dodge fast parry trip~
+Res    charm fire~
+Vuln   cold~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#12726
+Name ghostly chamber maid~
+ShortD a `#`sghostly `Wchambermaid`^~
+LongD A chambermaid hurries off to wash her hands. ~
+Desc `WThis chambermaid has the nasty task of emptying the chamberpots in the
+household. Ghastly smells usually emanate from those things. This one is no
+exception. `x 
+~
+Race human~
+Align 2 2
+Level 59
+Hitroll 236
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 8d6+26
+DamType chill
+AC -290 -290 -290 -243
+Wealth 590
+Act    npc stay_area undead~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm cold~
+Vuln   bash~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12727
+Name ghostly butler~
+ShortD the `#`sghostly `Wbutler`^~
+LongD The butler stands to attention. ~
+Desc `WThe butler has always been used to being given orders. He is waiting
+for some right now. `x 
+~
+Race human~
+Align -1 3
+Level 57
+Hitroll 228
+HitDice 6d9+310
+ManaDice 2d5+55
+DamDice 6d8+24
+DamType shbite
+AC -270 -270 -270 -232
+Wealth 570
+Act    npc stay_area undead warrior~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    berserk disarm dodge parry trip~
+Res    charm energy~
+Vuln   cold~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12728
+Name ghostly nanny~
+ShortD the `#`sghostly `Wnanny`^~
+LongD The nanny clucks over the children's antics. ~
+Desc `WThe nanny still thinks of 'her' children as babies and loves them just
+as much now as she did back then. `x 
+~
+Race human~
+Align 3 3
+Level 58
+Hitroll 232
+HitDice 6d9+305
+ManaDice 7d10+350
+DamDice 10d4+23
+DamType chill
+AC -270 -270 -270 -234
+Wealth 580
+Act    npc stay_area wimpy undead mage~
+AffBy  invisible detect_invis protect_evil sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm fire~
+Vuln   energy~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12729
+Name undead~
+ShortD a `#`yliving `sundead`^~
+LongD An undead shimmers in and out of view. ~
+Desc `WThis undead person doesn't look very healthy. It doesn't look too happy
+about it either. `x 
+~
+Race human~
+Align 1 -3
+Level 52
+Hitroll 208
+HitDice 5d9+285
+ManaDice 5d9+285
+DamDice 6d7+20
+DamType frbite
+AC -220 -220 -220 -178
+Wealth 520
+Act    npc stay_area wimpy undead~
+AffBy  invisible detect_invis protect_good sneak flying pass_door~
+Off    disarm dodge kick parry~
+Res    charm cold~
+Vuln   fire~
+Form   edible magical sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#12730
+Name banshee wailing~
+ShortD a `#`Cwailing `sbanshee`^~
+LongD A banshee wails loudly making a frightful noise. ~
+Desc `WThis banshee doesn't get any prizes for singing as she screeches
+loudly, hoping to chill your soul. `x 
+~
+Race human~
+Align 3 -2
+Level 54
+Hitroll 216
+HitDice 5d9+300
+ManaDice 2d5+50
+DamDice 7d6+22
+DamType sting
+AC -240 -240 -240 -194
+Wealth 540
+Act    npc stay_area undead warrior~
+AffBy  invisible detect_invis protect_good sneak flying pass_door~
+Off    berserk disarm dodge parry trip~
+Res    charm acid~
+Vuln   bash~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12731
+Name zombie~
+ShortD a `#`rzombie`^~
+LongD A zombie looks straight through you. ~
+Desc `WThis person looks totally blank. It walks so mechanically that it could
+be dead. `x 
+~
+Race human~
+Align -3 -3
+Level 58
+Hitroll 232
+HitDice 6d9+305
+ManaDice 7d10+350
+DamDice 10d4+23
+DamType slime
+AC -270 -270 -270 -234
+Wealth 580
+Act    npc stay_area undead mage~
+AffBy  invisible detect_invis protect_evil pass_door~
+Off    disarm dodge kick parry trip~
+Res    summon charm acid~
+Vuln   bash~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#12732
+Name ghast~
+ShortD a `#`cg`sh`ca`ss`ct`^~
+LongD A ghast opens its mouth to reveal the horrors within. ~
+Desc `WThis ghast would no sooner look at you than breathe its deadly breath
+on you. `x 
+~
+Race human~
+Align 0 -3
+Level 59
+Hitroll 236
+HitDice 6d9+320
+ManaDice 2d5+55
+DamDice 8d6+26
+DamType chill
+AC -290 -290 -290 -234
+Wealth 590
+Act    npc stay_area undead warrior~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12733
+Name evil spirit~
+ShortD an `#`sevil `Wspirit`^~
+LongD An evil spirit's icy cold fingers trail down your spine. ~
+Desc `WThis evil spirit enjoys huntin' and hauntin' people, particularly those
+who have golden auras. `x 
+~
+Race human~
+Align 0 -3
+Level 64
+Hitroll 15
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType chill
+AC -340 -340 -340 -285
+Wealth 0
+Act    npc stay_area undead~
+AffBy  flying~
+Form   magical instant_decay non_skinable sentient undead mist intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12734
+Name demon~
+ShortD a `#`rmalicious`^ demon~
+LongD A demon sizes you up, looking for your weaknesses. ~
+Desc `WThis demon doesn't look at all friendly. He growls throatily and froths
+at the mouth. Best keep out of his way. If you can. `x 
+~
+Race human~
+Align -3 -3
+Level 60
+Hitroll 10
+HitDice 6d9+315
+ManaDice 5d5+140
+DamDice 8d6+26
+DamType slime
+AC -290 -290 -290 -246
+Wealth 0
+Act    npc stay_area wimpy undead thief~
+AffBy  invisible detect_invis protect_good sneak flying pass_door~
+Off    backstab disarm dodge parry trip~
+Res    charm lightning energy~
+Vuln   fire~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#12735
+Name ghoul~
+ShortD a `#`sg`wh`so`wu`sl`^~
+LongD A ghoul cackles fiendishly at you. ~
+Desc `WThis ghoul sounds quite mad as it chortles and cackles to itself. Or
+maybe that is intended to scare you. `x 
+~
+Race human~
+Align 2 -2
+Level 63
+Hitroll 378
+HitDice 6d10+330
+ManaDice 6d10+350
+DamDice 8d7+28
+DamType slime
+AC -330 -330 -330 -297
+Wealth 630
+Act    npc stay_area undead cleric~
+Form   edible sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12736
+Name poltergeist~
+ShortD a `#`bp`co`bl`ct`be`cr`bg`ce`bi`cs`bt`^~
+LongD A poltergeist throws something at you. ~
+Desc `WThis poltergeist has been around for some time and is often up to wild
+and wicked tricks. Particularly on unsuspecting guests. `x 
+~
+Race human~
+Align -3 -3
+Level 62
+Hitroll 372
+HitDice 6d10+320
+ManaDice 5d6+150
+DamDice 8d6+28
+DamType sting
+AC -310 -310 -310 -260
+Wealth 220
+Act    npc stay_area undead thief~
+AffBy  flying~
+Form   magical instant_decay non_skinable sentient undead mist intangible~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#12737
+Name moddey dhoo~
+ShortD the `#`sModdey Dhoo`^~
+LongD The Moddey Dhoo howls eerily within your soul. ~
+Desc `WThe ghost of this black dog roams around dark places and it is said
+that whomever sees it, dies shortly after. `x 
+~
+Race human~
+Align -1 -3
+Level 65
+Hitroll 20
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 8d7+30
+DamType frbite
+AC -350 -350 -350 -283
+Wealth 0
+Act    npc stay_area undead cleric~
+AffBy  flying~
+Form   magical instant_decay non_skinable animal sentient undead intangible~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#12738
+Name djinn~
+ShortD a `#`Ctowering `mdjinn`^~
+LongD A towering djinn grins manically and cracks its knuckles. ~
+Desc `WThis djinn has a permanent headache as it toils through the burning
+fires of hell. Metaphorically speaking. `x 
+~
+Race unique~
+Align -3 -3
+Level 65
+Hitroll 390
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType flbite
+AC -350 -350 -350 -311
+Wealth 650
+Act    npc stay_area warrior~
+AffBy  invisible detect_invis sanctuary protect_good sneak flying pass_door haste regeneration~
+Off    berserk disarm dodge dirt_kick parry~
+Res    charm weapon~
+Vuln   magic~
+Form   edible magical sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12739
+Name troll evil~
+ShortD an `#`mevil `ytroll`^~
+LongD An evil troll is concocting another horrifying experience for someone. ~
+Desc `WThis evil troll rubs its gnarled hands together and its eyebrows knit
+in a frown, as its idea takes form in its head. `x 
+~
+Race troll~
+Align -2 -2
+Level 64
+Hitroll 384
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType sting
+AC -340 -340 -340 -282
+Wealth 640
+Act    npc stay_area mage~
+AffBy  invisible detect_invis detect_hidden infrared protect_good pass_door regeneration~
+Off    berserk disarm dodge parry trip~
+Res    charm bash~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#12740
+Name wicked witch~
+ShortD a `#`bwicked `cwitch`^~
+LongD A wicked witch throws her head back and cackles with evil delight. ~
+Desc `WThis witch obviously has plans in store for uninvited guests. You were
+invited now weren't you? `x 
+~
+Race elf~
+Align -3 -3
+Level 65
+Hitroll 390
+HitDice 6d10+335
+ManaDice 7d11+380
+DamDice 8d7+28
+DamType magic
+AC -340 -340 -340 -295
+Wealth 650
+Act    npc stay_area mage~
+AffBy  infrared~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12741
+Name warlock treacherous~
+ShortD a `#`rt`sr`re`sa`rc`sh`re`sr`ro`su`rs `Rwarlock`^~
+LongD A treacherous warlock schemes and plots against you. ~
+Desc `WThis warlock is inherently evil and his dastardly plans usually involve
+removing parts of his victims' anatomy. `x 
+~
+Race hobgoblin~
+Align 3 -3
+Level 65
+Hitroll 390
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType slime
+AC -350 -350 -350 -290
+Wealth 650
+Act    npc stay_area warrior~
+AffBy  invisible detect_invis infrared protect_good sneak flying pass_door dark_vision~
+Off    berserk disarm dodge dirt_kick parry~
+Res    charm poison disease~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tusks~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12742
+Name evil wizard~
+ShortD an `#`sevil `mwizard`^~
+LongD An evil wizard has eyes like black pools of darkness. ~
+Desc `WThis evil wizard attempts to mesmerise you with his yawning black
+gaping holes. His eyes want to suck you dry and yet, that can't be
+possible... Can it? `x 
+~
+Race orc~
+Align 2 -3
+Level 64
+Hitroll 384
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType chill
+AC -340 -340 -340 -302
+Wealth 640
+Act    npc stay_area mage~
+AffBy  invisible detect_invis infrared protect_good sneak flying pass_door~
+Off    disarm dodge parry trip~
+Res    charm pierce disease~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12743
+Name were maid~
+ShortD a `#`ww`se`wr`se`w-`sm`wa`si`wd`^~
+LongD A were-maid is torn between good and evil. ~
+Desc `WThis were-maid is a combination of powerful wolf and beautiful maiden.
+She treads a fine line between good and evil. `x 
+~
+Race werewolf~
+Align 3 0
+Level 63
+Hitroll 378
+HitDice 6d10+330
+ManaDice 6d10+350
+DamDice 8d7+29
+DamType shbite
+AC -330 -330 -330 -283
+Wealth 630
+Act    npc dont_wander no_tame~
+AffBy  detect_hidden infrared dark_vision~
+Off    dodge fade tail~
+Imm    summon charm~
+Res    magic disease~
+Vuln   holy silver iron~
+Form   edible magical sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12700
+Name Pet Shoppe Sign~
+Short pet Shoppe Sign~
+Desc A sign.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 0 0 0 0 0
+Weight 1000
+Material none~
+Wear     no_sac~
+ExtraDesc sign~
+1. Choose your pet.
+2. Pay up!
+3. Get outta my shop!
+~
+End
+
+#12701
+Name 1964 Rockolla Juke Box~
+Short 1964 Rockolla Juke Box~
+Desc An old style juke box is here playing a continuous stream of tunes.~
+Level 0
+ItemType jukebox~
+Cost 0
+Durability 5
+Asize 9000
+Rsize 50
+Values 0 0 0 0 0
+Weight 9000
+Material unknown~
+ExtraDesc 1964~
+To play a song on the juke box, type play list. Then pick your song and
+type play loud (song). This will also broadcast it on the music channel. To
+play a song just in the room and not on the music channel, type play (song).
+~
+ExtraDesc rockolla~
+To play a song on the juke box, type play list. Then pick your song and
+type play loud (song). This will also broadcast it on the music channel. To
+play a song just in the room and not on the music channel, type play (song).
+~
+ExtraDesc box~
+To play a song on the juke box, type play list. Then pick your song and
+type play loud (song). This will also broadcast it on the music channel. To
+play a song just in the room and not on the music channel, type play (song).
+~
+ExtraDesc juke~
+To play a song on the juke box, type play list. Then pick your song and
+type play loud (song). This will also broadcast it on the music channel. To
+play a song just in the room and not on the music channel, type play (song).
+~
+End
+
+#12702
+Name glass coke coca-cola~
+Short a glass of Coca-Cola~
+Desc A glass of Coca-Cola~
+Level 0
+ItemType drinkcontainer~
+Cost 40
+Durability 5
+Asize 1
+Rsize 50
+Values 3 3 coke 0 0
+Weight 1
+Material unknown~
+Extra    meltdrop~
+Wear     take~
+End
+
+#12703
+Name Rootbeer Float~
+Short a rootbeer float~
+Desc A scrumptious softdrink of rootbeer and icecream, begging to be drank.~
+Level 0
+ItemType drinkcontainer~
+Cost 50
+Durability 5
+Asize 2
+Rsize 50
+Values 15 13 'root beer' 0 0
+Weight 2
+Material unknown~
+Extra    meltdrop~
+Wear     take~
+ExtraDesc float~
+Ahhhhh. Just imagine how good this will taste once it is in your mouth.
+It just might possibly be made from the best stuff on earth. 
+~
+End
+
+#12704
+Name bread sticks breadsticks~
+Short breadsticks~
+Desc Some breadsticks are here.~
+Level 0
+ItemType food~
+Cost 50
+Durability 5
+Asize 1
+Rsize 50
+Values 10 10 0 0 0
+Weight 1
+Material unknown~
+Wear     take~
+ExtraDesc breadsticks~
+These look so delicious it makes you want to eat them up right now. 
+~
+ExtraDesc sticks~
+These look so delicious it makes you want to eat them up right now. 
+~
+ExtraDesc bread~
+These look so delicious it makes you want to eat them up right now. 
+~
+End
+
+#12705
+Name chocolate malt~
+Short a chocolate malt~
+Desc A very tasty chocolate drink.~
+Level 0
+ItemType drinkcontainer~
+Cost 75
+Durability 5
+Asize 0
+Rsize 50
+Values 7 7 milk 0 0
+Weight 0
+Material unknown~
+Extra    meltdrop~
+Wear     take~
+ExtraDesc chocolate~
+MMMMMMMM. This is the best tasting chocolate malt that you will ever have
+in your life. 
+~
+End
+
+#12706
+Name sticky bun~
+Short a sticky bun~
+Desc A sticky gooey bun oozes freshness.~
+Level 0
+ItemType food~
+Cost 50
+Durability 5
+Asize 1
+Rsize 50
+Values 20 20 0 A 0
+Weight 1
+Material unknown~
+Wear     take~
+End
+
+#12707
+Name gingerbread~
+Short a piece of gingerbread~
+Desc A piece of sticky freshly made gingerbread.~
+Level 0
+ItemType food~
+Cost 70
+Durability 5
+Asize 4
+Rsize 50
+Values 35 25 0 0 0
+Weight 4
+Material unknown~
+Wear     take~
+End
+
+#12708
+Name piano portal~
+Short `Wa `Dcorridor `Win time`x~
+Desc `WA broken down old `Dpiano `Wstands `bgloomily `Win one corner`x.~
+Level 45
+ItemType portal~
+Cost 0
+Durability 5
+Asize 400
+Rsize 50
+Values 0 0 A 12721 0
+Weight 400
+Material unknown~
+Extra    dark magic~
+Wear     no_sac~
+End
+
+#12709
+Name feather duster~
+Short a `Cfeather `Wduster`x~
+Desc A `Cfeather `Wduster`x is the perfect cleaning tool.~
+Level 50
+ItemType armor~
+Cost 200
+Durability 5
+Asize 5
+Rsize 50
+Values 10 10 10 10 0
+Weight 5
+Material unknown~
+Extra    invis antievil~
+Wear     take float~
+End
+
+#12710
+Name night light teddybear~
+Short a `yteddybear `bnight `Clight`x~
+Desc A `yteddybear `bnight `Clight`c glows `Yluminously`x.~
+Level 50
+ItemType light~
+Cost 250
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 999 0 0
+Weight 10
+Material unknown~
+Extra    invis antievil~
+Wear     take hold~
+End
+
+#12711
+Name football~
+Short a `Df`xo`Do`xt`Db`xa`Dl`xl~
+Desc A `Df`xo`Do`xt`Db`xa`Dl`xl looks perfect for kicking around.~
+Level 50
+ItemType armor~
+Cost 15000
+Durability 5
+Asize 10
+Rsize 50
+Values 16 16 16 12 0
+Weight 10
+Material unknown~
+Extra    invis bless~
+Wear     take shield~
+End
+
+#12712
+Name ballroom gown~
+Short a `Cturquoise `Bblue `cballroom `Wgown`x~
+Desc A `Cturquoise `Bblue `cballroom `Wgown`x is faded and dusty.~
+Level 50
+ItemType armor~
+Cost 750
+Durability 5
+Asize 5
+Rsize 50
+Values 17 17 17 13 0
+Weight 5
+Material unknown~
+Extra    invis bless antievil~
+Wear     take torso~
+End
+
+#12713
+Name cummberbund~
+Short a `#`Rcummer`rbund`^~
+Desc A `#`Rcummer`rbund`^ is looking rather elegant.~
+Level 50
+ItemType clothing~
+Cost 400
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    invis bless antievil nodegrade~
+Wear     take waist~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 50 -1 ac -10 0
+End
+
+#12714
+Name cuts sores~
+Short `Rcuts `xand `Msores`x~
+Desc `RCuts `xand `Msores`x don't look very pretty.~
+Level 50
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 10 8 0
+Weight 0
+Material unknown~
+Extra    invis antievil~
+Wear     take hands~
+End
+
+#12715
+Name rolled sleeves~
+Short rolled-up `Wsleeves`x~
+Desc These `Wsleeves`x are rolled-up.~
+Level 50
+ItemType armor~
+Cost 250
+Durability 5
+Asize 5
+Rsize 50
+Values 13 13 13 10 0
+Weight 5
+Material unknown~
+Extra    invis bless antievil~
+Wear     take arms~
+End
+
+#12716
+Name chamberpot~
+Short a `#`Wceramic `Ychamberpot`^~
+Desc The contents of this chamberpot swish around ominously.~
+Level 50
+ItemType armor~
+Cost 400
+Durability 5
+Asize 100
+Rsize 50
+Values 17 17 17 13 0
+Weight 100
+Material unknown~
+Extra    invis bless nodegrade~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+End
+
+#12717
+Name tattered dress~
+Short a `ct`Da`ct`Dt`ce`Dr`ce`Dd `Wdress`x~
+Desc A `Wdress lies in `ct`Da`ct`Dt`ce`Dr`cs`x.~
+Level 50
+ItemType armor~
+Cost 500
+Durability 5
+Asize 5
+Rsize 50
+Values 13 13 13 10 0
+Weight 5
+Material unknown~
+Extra    dark evil invis antigood~
+Wear     take about~
+End
+
+#12718
+Name crown thorns~
+Short a `Ycrown `xof `gthorns`x~
+Desc A `Ycrown `xmade of `Dprickly `gthorns`x.~
+Level 50
+ItemType armor~
+Cost 300
+Durability 5
+Asize 10
+Rsize 50
+Values 13 13 13 10 0
+Weight 10
+Material unknown~
+Extra    evil invis antigood antineutral~
+Wear     take head~
+End
+
+#12719
+Name gory pus wounds~
+Short `Rgory `Ypus`x-`yfilled `Rgaping `rwounds`x~
+Desc `RGory `Ypus`x-`yfilled `Rgaping `rwounds`W weep `Rblood `xand `Wgristle`x.~
+Level 50
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 10 8 0
+Weight 0
+Material unknown~
+Extra    dark evil invis antigood~
+Wear     take feet~
+End
+
+#12720
+Name slimy mucus~
+Short `gslimy `Ggreen `ymucus`x~
+Desc A circlet of `gslimy `Ggreen `ymucus`x looks positively disgusting.~
+Level 50
+ItemType armor~
+Cost 0
+Durability 5
+Asize 3
+Rsize 50
+Values 7 7 7 6 0
+Weight 3
+Material unknown~
+Extra    dark evil invis antigood antineutral~
+Wear     take wrist~
+End
+
+#12721
+Name ball chain shackle~
+Short a `Dball `Wand `ychain `Ds`xh`Wa`xc`Dk`xl`We`x~
+Desc This `Dball `Wand `ychain `Ds`xh`Wa`xc`Dk`xl`We`x looks cruel and heavy.~
+Level 50
+ItemType armor~
+Cost 750
+Durability 5
+Asize 10
+Rsize 50
+Values 13 13 13 10 0
+Weight 10
+Material unknown~
+Extra    dark evil invis antigood antineutral~
+Wear     take legs~
+End
+
+#12722
+Name knuckle spike~
+Short a `Dgruesome `Rk`rn`Ru`rc`Rk`rl`Re `Dspi`Rke`x~
+Desc A `Dgruesome `Rk`rn`Ru`rc`Rk`rl`Re `Dspi`Rke`x looks perfect for gouging eyes out.~
+Level 50
+ItemType armor~
+Cost 300
+Durability 5
+Asize 5
+Rsize 50
+Values 5 5 5 3 0
+Weight 5
+Material unknown~
+Extra    dark evil invis antigood~
+Wear     take finger~
+End
+
+#12723
+Name hangmans noose~
+Short a `Dh`Wangman's `ynoose`x~
+Desc This `Dh`Wangman's `ynoose`x is a classic killer.~
+Level 50
+ItemType armor~
+Cost 400
+Durability 5
+Asize 5
+Rsize 50
+Values 8 8 8 6 0
+Weight 5
+Material unknown~
+Extra    dark evil invis antigood antineutral~
+Wear     take neck~
+End
+
+#12724
+Name sword enchantment~
+Short the `Ysword`x of `Cenchantment`x~
+Desc The `Ysword `xof `Cenchantment`x leaves a `ctrail `xof `Yg`xl`yi`xt`Yt`xe`yr`xi`Yn`xg `Ystars `xwhich `Cdazzle `xyou.~
+Level 50
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 20
+Rsize 50
+Values sword 2 22 frbite BEH
+Weight 20
+Material unknown~
+Extra    invis bless antievil antineutral~
+Wear     take wield~
+End
+
+#12725
+Name sword demons~
+Short the `Ysword`x of `Rdemons`x~
+Desc The `Ysword `xof `Rdemons`x has `ranguished `xand `Dtortured `Wfaces `xliving in its `Rhilt`x.~
+Level 50
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 20
+Rsize 50
+Values sword 9 4 flbite ACE
+Weight 20
+Material unknown~
+Extra    dark evil invis antigood antineutral~
+Wear     take wield~
+End
+
+#12726
+Name sword vision~
+Short the `Ysword `xof `Cv`xi`cs`xi`Co`xn~
+Desc The `Ysword `xof `Cv`xi`cs`xi`Co`xn leaves a `ctrail `xof `Ys`xp`ya`xr`Yk`xl`yi`xn`Yg `Cmystical `Wclarity`x.~
+Level 50
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 20
+Rsize 50
+Values sword 2 22 shbite EGH
+Weight 20
+Material unknown~
+Extra    dark invis bless antigood antievil~
+Wear     take wield~
+End
+
+#12727
+Name air indecision~
+Short an `Wair `xof `Di`xn`Wd`xe`Dc`xi`Ws`xi`Do`xn~
+Desc An `Wair `xof `Di`xn`Wd`xe`Dc`xi`Ws`xi`Do`xn `Wshimmers `xand `Dfades`x.~
+Level 50
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 0
+Material unknown~
+Extra    dark invis bless antigood antievil~
+Wear     take hold~
+End
+
+#12728
+Name signpost~
+Short a signpost~
+Desc `DA signpost`x.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 2000
+Rsize 50
+Values 0 0 0 0 0
+Weight 2000
+Material unknown~
+Wear     no_sac~
+ExtraDesc signpost~
+`CEnter at Your Own Peril!
+ 
+       `DOr Run in Terror!`x
+ 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#12700
+Name Entrance to the Valley of Shadows~
+Desc There is an air of creepiness here as a gloomy looking valley seems to
+unfold before your very eyes.  Some magical force could be pulling the soul
+out of your mortal body and thrusting it into the land spread out around
+you.  You should probably turn back now before it is too late.   
+~
+RoomFlags no_mob~
+Sector hills~
+Exit north 12701
+Exit south 986
+Exit up 53486
+End
+
+
+#12701
+Name South End of Town~
+Desc This road looks like it hasn't been used in a while.  It is rutted and
+covered in potholes.  Definitely not a good road for a blind person.  There
+are a few shops to the sides of the road here and further into the town. 
+Right at the end of the road, lies a HUGE mansion complete with
+impressive looking gates.  To the east lies a broken down shack.  There is a
+barely readable sign standing at the foot of it.   
+~
+RoomFlags no_recall~
+Sector city~
+ExtraDesc sign~
+All you can make out is 'S a w Va e P t Sho pe'. 
+~
+Exit north 12704
+Exit east 12702
+Exit south 12700
+End
+
+
+#12702
+Name Shadow Valley Pet Shoppe~
+Desc Whoa...  The dust!  Enough to make you cough and wheeze.  This place
+looks like it hasn't been cleaned in years.  There has to be at least four
+inches of dust on everything.  The floorboards creak and whine under your
+feet - quite an uneasy feeling that.  There is a ramshackle old counter to
+the west of the shop and a frail looking old man sunk into a hardwood
+rocking chair.  He barely acknowledges your entrance as he nods his head to
+a sign sitting on the counter top.   
+~
+RoomFlags indoors pet_shop~
+Sector inside~
+Exit west 12701
+End
+
+
+#12703
+Name Shadow Valley Pet Shoppe Storage~
+Desc You should not be here ... Leave before you get caught! (besides, you
+can't kill pets) 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+End
+
+
+#12704
+Name Middle of Town~
+Desc This is the middle of town.  There are some more buildings up the road
+and belittling all around it, is a massive mansion almost seeming to glare
+down on the rest of the valley before it.  Creepy.  To the east lies an
+old-fashioned soda shoppe and to the west, an aroma of freshly baked bread
+emanates.   
+~
+RoomFlags no_recall~
+Sector city~
+Exit north 12707
+Exit east 12705
+Exit south 12701
+Exit west 12706
+End
+
+
+#12705
+Name Shadow Valley Soda Shoppe~
+Desc Wow this place sure is old-fashioned.  Medieval even.  It also looks
+like it hasn't been used in a while.  Dust and cobwebs abound.  Broken-down
+stools and decrepit old tables lie in a pile in one corner.  An equally old
+waitress stands ready to take your order.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12704
+End
+
+
+#12706
+Name The GingerBread Shoppe~
+Desc Mmmmmmmm....  Don't you just love the smell of freshly baked bread? 
+The way it entices you to sit down and buy a bun or piece of soft, moist and
+chewy breadstick.  However, the shop has a thick layer of dust and the
+products look a bit long in the tooth, as does the owner.   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 12704
+End
+
+
+#12707
+Name Middle of Town~
+Desc This is still the middle of town.  To the north the old mansion seems
+to tower over the rest of the town, its windows appearing to turn into
+gaping, chilling eyes.  What an imagination!  To the west lies a tumble down
+old store and to the east, the tinkling sounds of a piano being played.   
+~
+RoomFlags no_recall~
+Sector city~
+Exit north 12710
+Exit east 12708
+Exit south 12704
+Exit west 12709
+End
+
+
+#12708
+Name Shadow Valley Saloon~
+Desc The distinct sound of laughter and tinkling of a piano being played
+gaily, echo throughout the room - yet there is no one here.  There is an old
+broken down piano standing in the corner of the room, but it doesn't look
+like it has been touched in decades.  Cobwebs hang from the dusty
+chandeliers and the floorboards creak eerily around you.  Uh...  Perhaps now
+is a good time to leave this place?   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12707
+End
+
+
+#12709
+Name Shadow Valley Antiques~
+Desc This old antique shop appears to have been named aptly.  It looks so
+old that cobwebs and dust might be for sale too.  It might as well be a
+ghost town for all the old dear has to offer, for unless she buys from the
+passing trade, it must be an extremely boring existence.  There is a sign on
+the counter.   
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign~
+I buy as well as sell goods. 
+~
+Exit east 12707
+End
+
+
+#12710
+Name End of Town~
+Desc This is the northern most end of town.  There is a tiny overgrown path
+which appears to lead to the mansion which towers over the town to the
+north.  To the east, lies a small shoppe and to the west, children can be
+heard playing.   
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 12713
+Exit east 12711
+Exit south 12707
+Exit west 12712
+End
+
+
+#12711
+Name Shadow Valley Medicine Shoppe~
+Desc Strange looking medicine shoppe, for sure...  It is completely devoid
+of life or sound.  Completely and utterly deserted.  Almost as if the people
+of this town are, for the most part, avoiding you ...  Or you just can't see
+them ...  Or maybe this IS a real live ghost town!   
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12710
+End
+
+
+#12712
+Name Shadow Valley School~
+Desc This looks like it used to be the town school.  The playground is
+deserted and there is no sign of life anywhere in the rooms around the
+quadrangle.  Perhaps you were just imagining the noises....   
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 12710
+End
+
+
+#12713
+Name Path to the Mansion~
+Desc This overgrown path doesn't look like it has been used for quite some
+time.  Weeds and grass have sprung up and no attempt has been made to clear
+the way.  The mansion to the north looks somewhat run down from here, with a
+couple of the shutters hanging off the windows and the panes of glass, for
+the most part, shattered and incomplete.   
+~
+RoomFlags no_recall~
+Sector field~
+Exit north 12714
+Exit south 12710
+End
+
+
+#12714
+Name Closer to the Mansion~
+Desc The path is extremely overgrown here, so much that it is almost
+impossible to walk through.  Tall bindweed wraps its vines around the trees
+lining the path and more of the same vines snake along the ground covering
+it almost.  The mansion looms up to the north and the path continues into
+town to the south.   
+~
+RoomFlags no_mob no_recall~
+Sector field~
+Exit north 12715
+Exit south 12713
+End
+
+
+#12715
+Name Front Gates~
+Desc This is the entrance to the mansion.  A set of impressive looking
+gates, albeit rusted with age and neglect, stand to the north reaching a
+height of about twenty feet.  They stand rusted open and a rusty chain hangs
+off one of them with a sign trailing in the weeds.   
+~
+RoomFlags no_mob no_recall~
+Sector inside~
+ExtraDesc sign~
+B E W A R E  Enter at Your Own Peril 
+~
+Exit north 12717
+Exit south 12714
+End
+
+
+#12716
+Name Grand Foyer~
+Desc This was once an impressive room.  Now it is a derelict shamble.  The
+windows are bereft of their glass and the shutters are hanging off,
+occasionally blowing and creaking in the wind.  Cobwebs hang from the
+ceiling and across the room, draped over the dusty chandeliers and waving
+gently with the passing breeze.  The air is otherwise still and yet... 
+There is a presence here......   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12718
+Exit east 12719
+Exit south 12717
+EFlags door closed~
+Exit west 12721
+End
+
+
+#12717
+Name Mansion Courtyard~
+Desc This is the courtyard of the mansion.  The front gates lie to the
+south, rusted open from years of neglect.  The courtyard has also been left
+to waste with overgrown weeds and plants threatening to take over.  It is a
+veritable jungle in here.  The mansion itself lies to the north, its very
+structure almost seeming to draw you inside, wanting to devour your soul. 
+ 
+~
+RoomFlags no_recall~
+Sector city~
+ExtraDesc sign~
+Welcome to our humble home. All that we ask is that you wipe your feet
+and close the door behind you. Thank you. The Shadow Family 
+~
+Exit north 12716
+EFlags door closed~
+EKeywords door~
+Exit south 12715
+End
+
+
+#12718
+Name Staircase~
+Desc This grandiose staircase is covered in a worn and moth-eaten, faded red
+carpet.  In its day it must have been very plush, but now it really isn't
+anything special.  The staircase winds its way upstairs.  South leads to the
+foyer.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+ExtraDesc cellar-door~
+The cellar-door is made of oak. 
+~
+Exit south 12716
+Exit up 12731
+Exit down 12760
+EFlags door closed~
+EKeywords cellar-door~
+EDesc Slime oozes out of the cracks in the cellar-door. 
+~
+End
+
+
+#12719
+Name Dining Room~
+Desc This is part of the east wing.  Once an elegant dining room, it stands
+in total silence, empty and neglected.  Yet still all the furniture remains,
+albeit covered in dust and cobwebs.  Almost as if the house has stood still
+through the years, the occupants long gone.  And no one has dared to live
+here since....  There are doors to the north and south.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12727
+EFlags door closed~
+EKeywords door~
+Exit east 12720
+Exit south 12728
+EFlags door closed~
+EKeywords door~
+Exit west 12716
+End
+
+
+#12720
+Name Sitting Room~
+Desc This is the sitting room where the family rest before partaking of
+their repasts of the day.  It is a light and airy room with a huge bay
+window to the east which overlooks the now overgrown garden.  South leads
+into the conservatory and to the north lies the master's favourite room. 
+Dead flies lie around the base of the bay window.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12729
+Exit south 12730
+Exit west 12719
+End
+
+
+#12721
+Name Lobby~
+Desc This is the formal lobby of the mansion.  It is really a continuation
+of the foyer with the same plush rugs lying upon hardwood floors.  If only
+there wasn't so much dust!  Cobwebs adorn the chandeliers and tiny spiders
+scuttle out between your feet, seemingly unused to the passage of feet.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12725
+Exit east 12716
+Exit south 12726
+Exit west 12722
+EFlags door closed~
+EKeywords grandiose-door~
+End
+
+
+#12722
+Name Ballroom~
+Desc This glorious room once used to be lively and gay and filled with
+people dancing to their hearts content throughout the year when the owners
+decided to hold a ball.  But now all that remains is a thick layer of dust
+and a multitude of cobwebs dangling from the chandeliers.  The ballroom
+continues to the north and south.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12723
+Exit east 12721
+EFlags door closed~
+EKeywords grandiose-door~
+Exit south 12724
+End
+
+
+#12723
+Name Ballroom~
+Desc This is the northern end of the ballroom where the orchestra used to
+sit, to play the waltzes and foxtrots and other gay melodies for the couples
+to dance to.  There is a bay window to the west of the room, which overlooks
+the now overgrown garden.  Sad and faded drapes hang at the windows and a
+thick layer of dust coats the floor.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 12722
+End
+
+
+#12724
+Name Ballroom~
+Desc The southern end of the ballroom houses the long tables upon which
+would lie a veritable banquet of small eats and glasses of bubbly wine and
+spirits.  Comfortable chairs are arranged in clusters for the womenfolk to
+sit down at whilst not dancing or whilst waiting for their partners to bring
+their plates.  There is a bay window to the west of the room, overlooking
+the overgrown garden and sad and faded drapes hang at the windows as if
+yearning for those old and almost forgotten times.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12722
+End
+
+
+#12725
+Name Library~
+Desc This library is quite a formal one with floor to ceiling bookshelves
+housing several hundred books, all covered with dust, of course.  Swathes of
+cobwebs hang down from the ceiling making this room look the least used of
+them all.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 12721
+End
+
+
+#12726
+Name Trophy Room~
+Desc The walls here are adorned with the trophies of hunts.  Stags heads,
+Moose heads and Buffalo heads rear out from the plaques they are mounted on.
+Cabinets edge the walls and within them, lie the smaller trophies of the
+hunt; the stuffed mongooses, foxes, raccoons and polecats.  Dust covers the
+trophies, floor and cabinets showing that no one has been here in a long
+while.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12721
+End
+
+
+#12727
+Name Kitchen~
+Desc This once used to be the busy kitchen of the household.  It stretches a
+good distance to the north and you can only imagine all the bustling
+servants and cooks busily preparing the food for the family.  Now it is
+deserted and no remnants of food lie behind.  Everything appears to have
+been left as it were all those years ago though....  Odd.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12787
+EFlags door closed~
+EKeywords drapes~
+Exit south 12719
+EFlags door closed~
+EKeywords door~
+End
+
+
+#12728
+Name Drawing Room~
+Desc This room was where the lady of the house used to entertain her
+visitors.  But no more.  The chintz setees lie covered in dust and cobwebs
+with who knows what making homes in the stuffing.  The once elegant velvet
+drapes are faded with age and the tapestries look moth-eaten and worn.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12719
+EFlags door closed~
+EKeywords door~
+End
+
+
+#12729
+Name Billiard Room~
+Desc This is the splendid looking billiard room.  Or it did look splendid
+once upon a time.  It appears that time has stood still though, for the
+table is set as though a game is midway through, the balls covered
+completely in dust as though they haven't been touched for a good number of
+years.  The books in the bookcases, are too, covered in dust and cobwebs and
+yet...  There are footprints on the floor.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+ExtraDesc footprints~
+They walk right up to the wall and stop there. 
+~
+Exit south 12720
+End
+
+
+#12730
+Name Conservatory~
+Desc This was once the lady of the house's most favoured room.  Adorned with
+tall plants in elegant vases and jardinieres, this was a lush paradise for
+the lady to escape to, for the enjoyment of peace and solitude.  Now the
+plants have died and the vases lie in fragments around the room, sad and
+neglected.  Yet the moss seems to have survived...  Or is it something else?
+ 
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12720
+End
+
+
+#12731
+Name Top of the Stairs~
+Desc The landing at the top of the stairs is carpetted in the same faded red
+carpet, complete with moth-holes and dust.  The walls are made from oak
+panels which seem to be hiding something.  Cobwebs hang down from the
+chandelier here and tiny spiders scuttle about, unused to visitors.  The
+stairs wind their way down to the main foyer.  There is a carved door to the
+south and a plain door to the east.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+ExtraDesc carveddoor~
+The carveddoor has intricate designs carved into it. 
+~
+ExtraDesc trapdoor~
+A strange wailing appears to be emanating from the trapdoor. 
+~
+Exit east 12738
+EFlags door closed~
+EKeywords plain-door~
+Exit south 12732
+EFlags door closed~
+EKeywords carveddoor~
+Exit west 12788
+Exit up 12740
+EFlags door closed~
+EKeywords trapdoor~
+EDesc There are strange noises coming from the trapdoor in the ceiling. 
+~
+Exit down 12718
+End
+
+
+#12732
+Name Master Bedroom~
+Desc This is the master bedroom.  Carpetted throughout, it is large and airy
+with windows on two of the walls.  It stretches far to the south and east
+making it a comfortable yet welcoming room.  In this part of the room,
+stands three chintz easy chairs and a small table.  They are, of course,
+coated with a thin film of dust, like the rest of the house.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12731
+EFlags door closed~
+EKeywords carved-door~
+Exit east 12736
+Exit south 12733
+End
+
+
+#12733
+Name Master Bedroom~
+Desc This is a section of the master bedroom.  Carpetted throughout, it is
+large and airy with windows on two of the walls.  It stretches far to the
+north and east making it a comfortable yet welcoming room.  In this part of
+the room, stands the lady's dresser, next to the picture window.  The
+cobwebs float down gently from the faded drapes, making the windows look
+almost frosted.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12732
+Exit east 12734
+End
+
+
+#12734
+Name Master Bedroom~
+Desc This is a section of the master bedroom.  Carpetted throughout, it is
+large and airy with windows on two of the walls.  It stretches far to the
+north and west making it a comfortable yet welcoming room.  In this part of
+the room, lays a lovely white bearskin rug although now it is grey with dust
+and mildew.  There is a door to the east leading to the dressing room and
+the picture window to the south, sheds a musty kind of light on the whole
+room.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12736
+Exit east 12735
+EFlags door closed~
+EKeywords dressingroom-door~
+Exit west 12733
+End
+
+
+#12735
+Name Dressing Room~
+Desc The dressing room is quite a large room stretching a long way to the
+north.  On the south wall of the room lies a strangely shaped window.  It is
+a crescent shape.  The panes of glass are covered in dust and dirt making it
+impossible to see through.  There are racks of clothing here, not to mention
+bureaus and chests of drawers.  A long free-standing mirror is also here and
+a small sewing table.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12737
+Exit west 12734
+EFlags door closed~
+EKeywords dressingroom-door~
+End
+
+
+#12736
+Name Master Bedroom~
+Desc This is a section of the master bedroom.  Carpetted throughout, it is
+large and airy with windows on two of the walls.  It stretches far to the
+south and west making it a comfortable yet welcoming room.  In this part of
+the room, stands the large double bed.  It is raised quite high and is in
+the four-poster style.  The drapes around it are faded and moth-eaten, and
+diaphanous swathes of cobweb drape around it, creating curtains of a natural
+kind.  There is a door to the east and one to the north.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12738
+EFlags door closed~
+EKeywords bathroom-door~
+Exit east 12737
+EFlags door closed~
+EKeywords dressingroom-door~
+Exit south 12734
+Exit west 12732
+End
+
+
+#12737
+Name Dressing Room~
+Desc The dressing room is quite a large room stretching a long way to the
+south.  At the far south wall lies a strange crescent shaped window.  Almost
+like an eye.  However at this end of the room, stands a long rack of
+clothing as well as bureaus and chests of drawers.  There is also a long
+mirror here and a chintz sofa.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 12735
+Exit west 12736
+EFlags door closed~
+EKeywords dressingroom-door~
+End
+
+
+#12738
+Name Bathroom~
+Desc This is the main bathroom of the house which the children and parents
+alike use.  It is a large room stretching far to the east with a large
+fireplace at that end.  Here, however stands a large claw-foot ceramic bath.
+Heavens knows how much water it takes to fill that.  There is a door to the
+south which leads into the master bedroom and a door to the west to the
+landing.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 12739
+Exit south 12736
+EFlags door closed~
+EKeywords bedroom-door~
+Exit west 12731
+EFlags door closed~
+EKeywords plain-door~
+End
+
+
+#12739
+Name Bathroom~
+Desc This is the main bathroom of the house which the children and parents
+alike use.  It is a large room stretching far to the west with a large
+claw-foot ceramic bath at the end.  At this end however, stands a large
+fireplace which when drawn, heats up the bathroom making it exceedingly
+cosy.  There is also a heated towel rail, sink and toilet here.  They match
+the bath in both colour and style.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit west 12738
+End
+
+
+#12740
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags no_mob indoors no_recall~
+Sector inside~
+ExtraDesc trapdoor~
+The trapdoor stops unwanted spirits getting out. 
+~
+Exit north 12741
+Exit south 12751
+Exit west 12753
+Exit down 12731
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#12741
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12795
+Exit east 12742
+Exit west 12752
+End
+
+
+#12742
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 12744
+Exit south 12743
+Exit west 12741
+End
+
+
+#12743
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12742
+Exit east 12745
+Exit south 12748
+Exit west 12740
+End
+
+
+#12744
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit south 12745
+Exit west 12742
+End
+
+
+#12745
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12744
+Exit east 12794
+Exit south 12746
+Exit west 12743
+End
+
+
+#12746
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12745
+Exit south 12747
+Exit west 12748
+End
+
+
+#12747
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12746
+Exit west 12749
+End
+
+
+#12748
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12743
+Exit east 12746
+Exit south 12749
+End
+
+
+#12749
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12748
+Exit east 12747
+Exit west 12750
+End
+
+
+#12750
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12751
+Exit east 12749
+Exit west 12755
+End
+
+
+#12751
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12740
+Exit east 12748
+Exit south 12750
+Exit west 12754
+End
+
+
+#12752
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 12741
+Exit south 12753
+Exit west 12759
+End
+
+
+#12753
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12752
+Exit east 12740
+Exit west 12758
+End
+
+
+#12754
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12753
+Exit south 12755
+Exit west 12757
+End
+
+
+#12755
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12754
+Exit east 12750
+Exit west 12756
+End
+
+
+#12756
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12757
+Exit east 12755
+End
+
+
+#12757
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12758
+Exit east 12754
+Exit south 12756
+End
+
+
+#12758
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12759
+Exit east 12753
+Exit south 12757
+End
+
+
+#12759
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 12752
+Exit south 12758
+End
+
+
+#12760
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark no_mob indoors no_recall~
+Sector inside~
+Exit north 12761
+Exit east 12765
+Exit south 12775
+Exit west 12777
+Exit up 12718
+EFlags door closed~
+EKeywords cellar-door~
+EDesc Salvation! 
+~
+End
+
+
+#12761
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12762
+Exit south 12760
+Exit west 12778
+End
+
+
+#12762
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12763
+Exit south 12761
+End
+
+
+#12763
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12770
+Exit south 12764
+Exit west 12762
+End
+
+
+#12764
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12763
+Exit east 12769
+Exit south 12765
+Exit west 12761
+End
+
+
+#12765
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12768
+Exit south 12766
+End
+
+
+#12766
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12765
+Exit east 12767
+Exit west 12775
+End
+
+
+#12767
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12768
+Exit east 12774
+End
+
+
+#12768
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12769
+Exit south 12767
+Exit west 12765
+End
+
+
+#12769
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12772
+Exit south 12768
+Exit west 12764
+End
+
+
+#12770
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12771
+Exit south 12769
+Exit west 12763
+End
+
+
+#12771
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12797
+Exit west 12770
+End
+
+
+#12772
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12771
+Exit south 12773
+Exit west 12769
+End
+
+
+#12773
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12772
+Exit south 12774
+Exit west 12768
+End
+
+
+#12774
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12773
+Exit west 12767
+End
+
+
+#12775
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12766
+Exit south 12784
+Exit west 12776
+End
+
+
+#12776
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12777
+Exit east 12775
+Exit west 12783
+End
+
+
+#12777
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12778
+Exit east 12760
+Exit south 12776
+Exit west 12782
+End
+
+
+#12778
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12779
+Exit east 12761
+Exit west 12781
+End
+
+
+#12779
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12762
+Exit south 12778
+Exit west 12780
+End
+
+
+#12780
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12779
+Exit south 12781
+Exit west 12799
+End
+
+
+#12781
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 12778
+Exit south 12782
+End
+
+
+#12782
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12781
+Exit south 12783
+End
+
+
+#12783
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12782
+Exit east 12776
+End
+
+
+#12784
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12775
+Exit south 12785
+End
+
+
+#12785
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 12784
+Exit south 12786
+End
+
+
+#12786
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark no_mob indoors no_recall~
+Sector inside~
+Exit north 12785
+Exit up 12714
+EFlags door closed~
+EKeywords grate~
+EDesc The grate sheds only a tiny amount of light down here due to the weeds
+and undergrowth which have grown over it. 
+~
+End
+
+
+#12787
+Name Servants Quarters~
+Desc These are the tiny cramped quarters where the servants live, or rather
+used to live.  They look like they haven't been occupied for some time.  By
+people anyway.  The droppings on the floor indicate other mammals have been
+making their homes here.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+ExtraDesc drapes~
+The drapes open into the kitchen area. 
+~
+Exit south 12727
+EFlags door closed~
+EKeywords drapes~
+End
+
+
+#12788
+Name Landing~
+Desc This part of the landing too has moth-eaten carpet which has faded with
+the passing of the years.  The oak panels on the northern walls, make the
+passageway appear darker than it really is.  However, the chandeliers would
+have solved that problem.  Now however, the only light source is from a
+window at the far west side of the hall.  There is a door to the south.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 12731
+Exit south 12789
+EFlags door closed~
+EKeywords ornate-door~
+Exit west 12790
+End
+
+
+#12789
+Name Bedroom~
+Desc This is the only guest bedroom in the house.  The double bed looks
+relatively comfortable and the large fireplace to the west of the room,
+appears to only just have been put out.  Which is rather odd considering the
+layers of dust covering the furniture and floor.  There is an adjoining
+bathroom to the south.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12788
+EFlags door closed~
+EKeywords ornate-door~
+Exit south 12793
+End
+
+
+#12790
+Name Landing~
+Desc This is the far west side of the landing, right next to the window on
+the west wall.  The panes of glass are dusty and dirty which makes it very
+difficult to see anything through.  From the geography of the place though,
+this window would overlook the overgrown garden.  There is a sound of
+children laughing which appears to be coming from the south.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit east 12788
+Exit south 12791
+EFlags door closed~
+EKeywords patterned-door~
+End
+
+
+#12791
+Name Bedroom~
+Desc This room, once so vibrant with the happy sounds of children playing is
+now silent and empty.  Two beds lie on either side of the room and the walls
+are decorated in bright colours which sadly, are now faded.  Whispering
+appears to be coming from the south.   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12790
+EFlags door closed~
+EKeywords patterned-door~
+Exit south 12792
+EKeywords playroom-door~
+End
+
+
+#12792
+Name Playroom~
+Desc This is a large room dedicated to the toys and clothes belonging to the
+children of the house.  What fun it must have been to play in here.  In the
+south wall lies a strangely shaped window, a crescent, complete with window
+seat.  The panes of glass are covered in something....   
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12791
+EKeywords playroom-door~
+End
+
+
+#12793
+Name Bathroom~
+Desc The claw-foot ceramic bath is the focus of attention in this room. 
+With a white tiled floor and matching toilet and sink suite, the bathroom
+would be almost a pleasure to use.  There is even a heated towel rail here. 
+ 
+~
+RoomFlags indoors no_recall~
+Sector inside~
+Exit north 12789
+End
+
+
+#12794
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags no_mob indoors no_recall~
+Sector inside~
+Exit north 12796
+Exit west 12745
+End
+
+
+#12795
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags no_mob indoors no_recall~
+Sector inside~
+Exit north 12796
+Exit south 12741
+End
+
+
+#12796
+Name Attic~
+Desc This is part of the attic, high up in the top of the mansion.  Cobwebs
+hang down from the ceiling and layers of dust and dirt coat the floor. 
+Every room looks the same.  It would be easy to get lost in here.   
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit south 12794
+End
+
+
+#12797
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit south 12771
+Exit west 12798
+End
+
+
+#12798
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark no_mob indoors safe~
+Sector inside~
+Exit east 12797
+End
+
+
+#12799
+Name Cellar~
+Desc This is part of the cellar, deep down in the recesses of the eerie
+mansion.  This is where the wine and stores of vegetables and fruit would be
+kept over the winter.  Now it is dark, damp and gloomy, the floors covered
+in a sticky, slippery slime.  Every room looks the same.  It wouldn't be too
+hard to get lost in here.   
+~
+RoomFlags dark no_mob indoors no_recall~
+Sector inside~
+Exit east 12780
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 12706 spec_poison
+M 12707 spec_cast_undead
+M 12710 spec_cast_cleric
+M 12711 spec_cast_undead
+M 12712 spec_cast_mage
+M 12715 spec_cast_cleric
+M 12717 spec_cast_undead
+M 12718 spec_cast_mage
+M 12719 spec_cast_cleric
+M 12721 spec_cast_mage
+M 12722 spec_cast_undead
+M 12723 spec_nasty
+M 12724 spec_thief
+M 12725 spec_cast_cleric
+M 12726 spec_cast_undead
+M 12728 spec_cast_mage
+M 12729 spec_cast_undead
+M 12731 spec_cast_mage
+M 12733 spec_cast_undead
+M 12734 spec_nasty
+M 12735 spec_cast_cleric
+M 12736 spec_thief
+M 12737 spec_cast_cleric
+M 12739 spec_cast_undead
+M 12740 spec_cast_mage
+M 12742 spec_cast_undead
+M 12743 spec_werewolf
+S
+
+
+
+#RESETS2
+O 0 12728 0 12700
+M 0 12715 5 12701 1
+M 0 12712 5 12701 1
+M 0 12715 5 12702 1
+M 0 12700 1 12702 1
+O 0 12700 0 12702
+M 0 12701 1 12703 1
+M 0 12704 1 12703 1
+M 0 12713 5 12704 1
+M 0 12711 5 12704 1
+M 0 12715 5 12705 1
+M 0 12711 5 12705 1
+M 0 12702 1 12705 1
+G 0 12702 0
+G 0 12703 0
+G 0 12705 0
+M 0 12712 5 12706 1
+M 0 12703 1 12706 1
+G 0 12704 0
+G 0 12706 0
+G 0 12707 0
+M 0 12715 5 12707 1
+M 0 12712 5 12707 1
+M 0 12713 5 12708 1
+O 0 12708 0 12708
+M 0 12714 5 12709 1
+M 0 12713 5 12709 1
+M 0 12705 1 12709 1
+M 0 12711 5 12710 1
+M 0 12712 5 12710 1
+M 0 12713 5 12711 1
+M 0 12711 5 12711 1
+M 0 12714 5 12712 1
+M 0 12711 5 12712 1
+M 0 12712 5 12713 1
+M 0 12707 5 12716 1
+M 0 12715 5 12717 1
+M 0 12706 1 12717 1
+M 0 12710 5 12718 1
+M 0 12713 5 12719 1
+M 0 12707 5 12720 1
+M 0 12708 5 12721 1
+M 0 12707 5 12722 1
+M 0 12708 5 12723 1
+M 0 12709 5 12724 1
+M 0 12710 5 12725 1
+M 0 12707 5 12726 1
+M 0 12714 5 12727 1
+M 0 12707 5 12727 1
+M 0 12714 5 12730 1
+M 0 12709 5 12730 1
+M 0 12708 5 12731 1
+M 0 12710 5 12734 1
+M 0 12709 5 12736 1
+M 0 12710 5 12738 1
+M 0 12708 5 12739 1
+M 0 12717 5 12740 1
+E 0 12709 0 floating~
+M 0 12716 5 12741 1
+M 0 12728 1 12741 1
+M 0 12720 1 12742 1
+E 0 12711 0 hold~
+M 0 12724 3 12743 1
+E 0 12714 0 hands~
+M 0 12717 5 12744 1
+E 0 12709 0 floating~
+M 0 12716 5 12745 1
+M 0 12724 3 12745 1
+E 0 12714 0 hands~
+M 0 12718 5 12746 1
+M 0 12725 2 12746 1
+E 0 12715 0 arms~
+M 0 12724 3 12747 1
+E 0 12714 0 hands~
+M 0 12716 5 12748 1
+M 0 12723 1 12748 1
+M 0 12718 5 12749 1
+M 0 12726 3 12749 1
+E 0 12716 0 shield~
+M 0 12725 2 12750 1
+E 0 12715 0 arms~
+M 0 12722 1 12751 1
+E 0 12713 0 waist~
+E 0 12724 0 wielded~
+M 0 12717 5 12752 1
+E 0 12709 0 floating~
+M 0 12718 5 12753 1
+M 0 12726 3 12753 1
+E 0 12716 0 shield~
+M 0 12716 5 12754 1
+M 0 12721 1 12754 1
+E 0 12712 0 torso~
+M 0 12717 5 12755 1
+E 0 12709 0 floating~
+M 0 12719 1 12756 1
+E 0 12710 0 light~
+M 0 12718 5 12757 1
+M 0 12727 1 12757 1
+M 0 12717 5 12758 1
+E 0 12709 0 floating~
+M 0 12716 5 12759 1
+M 0 12726 3 12759 1
+E 0 12716 0 shield~
+M 0 12732 5 12760 1
+M 0 12731 4 12761 1
+M 0 12730 5 12762 1
+E 0 12717 0 about~
+M 0 12729 3 12763 1
+M 0 12730 5 12765 1
+E 0 12717 0 about~
+M 0 12732 5 12766 1
+M 0 12729 3 12767 1
+M 0 12731 4 12768 1
+M 0 12736 2 12769 1
+E 0 12721 0 legs~
+M 0 12730 5 12770 1
+E 0 12717 0 about~
+M 0 12731 4 12771 1
+M 0 12729 3 12772 1
+M 0 12735 2 12773 1
+E 0 12720 0 lwrist~
+M 0 12730 5 12774 1
+E 0 12717 0 about~
+M 0 12733 1 12775 1
+E 0 12718 0 head~
+M 0 12734 1 12776 1
+E 0 12719 0 feet~
+M 0 12731 4 12777 1
+M 0 12737 1 12778 1
+M 0 12741 1 12778 1
+M 0 12732 5 12779 1
+M 0 12740 1 12779 1
+M 0 12742 1 12780 1
+M 0 12732 5 12781 1
+M 0 12736 2 12781 1
+E 0 12721 0 legs~
+M 0 12731 4 12782 1
+M 0 12735 2 12783 1
+E 0 12720 0 lwrist~
+M 0 12738 1 12784 1
+E 0 12722 0 lfinger~
+E 0 12725 0 wielded~
+M 0 12739 1 12785 1
+E 0 12723 0 neck1~
+M 0 12714 5 12787 1
+M 0 12709 5 12787 1
+M 0 12743 1 12788 1
+E 0 12726 0 wielded~
+E 0 12727 0 light~
+M 0 12709 5 12789 1
+M 0 12710 5 12790 1
+M 0 12708 5 12791 1
+M 0 12718 5 12794 1
+M 0 12718 5 12795 1
+M 0 12730 5 12797 1
+E 0 12717 0 about~
+M 0 12732 5 12799 1
+S
+
+
+
+#SHOPS
+#12700
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#12702
+profit_buy 110
+profit_sell 95
+close_hour 23
+END
+
+#12703
+profit_buy 110
+profit_sell 95
+close_hour 23
+END
+
+#12705
+buy_type armor~
+buy_type weapon~
+buy_type trash~
+buy_type light~
+buy_type container~
+profit_buy 125
+profit_sell 85
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

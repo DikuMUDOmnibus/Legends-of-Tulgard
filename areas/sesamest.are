@@ -1,0 +1,2970 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World: Sesame Street~
+ShortName   Sesame Street~
+Builders    ~
+Credits     Lenny~
+VNUMs       31000 31069
+LComment    `#`C[ 35- 45]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+Security    9
+Colour      Y~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   StupidWorld~
+Continent   stupid~
+*LastSaved  Sun Sep 18 21:28:31 2005~
+End
+
+
+
+#MOBILES
+#31000
+Name ernie~
+ShortD ernie~
+LongD Ernie stands here, waiting to bathe.~
+Desc Ernie looks the same, as if the spell didnt affect him. He is still orange,
+and has a banana in his ear. Well, what did you expect, he isnt that bright.
+~
+Race human~
+Align 3 1
+Level 44
+Hitroll 0
+HitDice 5d7+247
+ManaDice 5d7+255
+DamDice 8d4+15
+DamType punch
+AC -153 -153 -153 -128
+Wealth 440
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31001
+Name bert~
+ShortD bert~
+LongD ~
+Desc Bert stands here with his unibrow lowered. He looks quite angry actually.
+As you look closer you see that his nose is wrong...oh wait, thats Ernies
+nose!
+~
+Race human~
+Align -3 0
+Level 43
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType punch
+AC -157 -157 -157 -136
+Wealth 450
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31002
+Name big Bird~
+ShortD big Bird~
+LongD Big Bird stands here waiting for his friend to stop by.~
+Desc Big bird is a tall yellow bird with humungous feet and an annoying voice.
+He stands about 9 feet tall and is covered in yellow feathers.
+~
+Race avian~
+Align -2 0
+Level 43
+Hitroll 0
+HitDice 5d7+245
+ManaDice 5d7+250
+DamDice 3d12+15
+DamType punch
+AC -150 -150 -150 -123
+Wealth 430
+Act    npc dont_wander~
+Act2   no_random_obj~
+AffBy  detect_hidden flying dark_vision~
+Imm    summon~
+Res    mental illusion~
+Vuln   poison disease~
+Form   edible non_skinable sentient biped bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31003
+Name the count~
+ShortD the Count~
+LongD The Count stands here counting away.~
+Desc The count is a very distinguished looking gentleman. He wears a monacle on
+his left eye, and a black cape over his body. As you look at him he says,
+'One, one look....Ahh ahh ahh'
+~
+Race human~
+Align 2 -1
+Level 48
+Hitroll 0
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+18
+DamType punch
+AC -180 -180 -180 -162
+Wealth 480
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31004
+Name oscar grouch~
+ShortD oscar the grouch~
+LongD Oscar the grouch reeks here with the scent of garbage.~
+Desc Oscar the grouch is a green muppet who looks VERY angry. You notice that
+not only does he live in a garbage can, he reeks of the smell of raw sewage.
+~
+Race human~
+Align 3 -3
+Level 46
+Hitroll 0
+HitDice 5d8+255
+ManaDice 5d8+265
+DamDice 6d6+16
+DamType punch
+AC -160 -160 -160 -128
+Wealth 460
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31005
+Name Grover~
+ShortD super Grover~
+LongD Super Grover stands here wishing he could fly.~
+Desc Super Grover is Grover's alter ego. He is the one man holding Mumford off here.
+Probably cause he started the fight with Mumford, that brought the evilness to 
+Sesame street.
+~
+Race human~
+Align 2 1
+Level 38
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType punch
+AC -137 -137 -137 -123
+Wealth 400
+Act    npc dont_wander~
+AffBy  sanctuary~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31006
+Name Kermit frog~
+ShortD kermit the frog~
+LongD Kermit the frog sings here.~
+Desc Kermit is the same lovable frog as always, or is he. As you look closer you
+can see an evil gleem in his eye. 
+~
+Race snake~
+Align -1 -1
+Level 42
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType punch
+AC -145 -145 -145 -121
+Wealth 420
+Act    npc dont_wander~
+Act2   no_random_obj~
+AffBy  protect_evil~
+Imm    summon~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31007
+Name kookie Monster~
+ShortD kookie Monster~
+LongD Kookie Monster stands here munching on cookies.~
+Desc After a glance at Kookie monster, you realize you wouldnt be able to tell
+if he was turned evil or not. He has crumbs all over his body from the way
+he sloppily eats cookies.
+~
+Race centipede~
+Align -1 0
+Level 39
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -115
+Wealth 390
+Act    npc stay_area~
+Imm    summon~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31008
+Name gordon~
+ShortD gordon~
+LongD Gordon stands here fixing a radio.~
+Desc Gordon is a handsome man in his 40's. He seems to be always working on a new
+project. 
+~
+Race human~
+Align 0 0
+Level 36
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType punch
+AC -120 -120 -120 -102
+Wealth 360
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31009
+Name Hooper mr.hooper~
+ShortD mr.Hooper~
+LongD Mr.Hooper stands here.~
+Desc Mr.Hooper is a short balding old man who appears to be dead. 
+~
+Race human~
+Align -2 -1
+Level 38
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType punch
+AC -130 -130 -130 -113
+Wealth 380
+Act    npc dont_wander~
+AffBy  protect_evil~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31010
+Name luis~
+ShortD luis~
+LongD Luis strums away on his guitar here.~
+Desc Luis is a middle aged man who liked to sit and play his guitar for the 
+children who used to come here when it was Sesame Street.
+~
+Race human~
+Align 2 0
+Level 42
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType punch
+AC -145 -145 -145 -127
+Wealth 420
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31011
+Name mommy Grover~
+ShortD mommy Grover~
+LongD Mommy Grover stands here.~
+Desc Mommy Grover looks distinctively like Grover, so you can tell where he got it
+from. The only real difference would be the hair, since this is a muppet.
+~
+Race human~
+Align -2 0
+Level 36
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType punch
+AC -120 -120 -120 -106
+Wealth 360
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#31012
+Name guy Smily~
+ShortD guy Smily~
+LongD Guy Smily stands here yelling 'Yaaayyyyy.'~
+Desc Guy Smily has a dashing smile and a charming personality. His dexterity is 
+probably the reason his show can still air.
+~
+Race bear~
+Align 1 0
+Level 43
+Hitroll 0
+HitDice 5d7+245
+ManaDice 5d7+250
+DamDice 3d12+15
+DamType punch
+AC -150 -150 -150 -135
+Wealth 430
+Act    npc aggressive~
+AffBy  sanctuary~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31013
+Name sherlock Hemlock~
+ShortD sherlock Hemlock~
+LongD Sherlock Hemlock stands here looking for clues.~
+Desc Sherlock Hemlock is the muppet version of Sherlock Holmes. They look vaguely
+alike and even dress the same.
+~
+Race human~
+Align 2 0
+Level 37
+Hitroll 0
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType punch
+AC -125 -125 -125 -107
+Wealth 370
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31014
+Name cartoon kid~
+ShortD a cartoon kid~
+LongD A cartoon kid stands here chanting to himself.~
+Desc This kid looks like a generic cartoon character, but he keeps mumbling 
+something under his breath. You can barely pick it out. 'A loaf of bread,
+a carton of milk, and a stick of butter.'
+~
+Race human~
+Align 3 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType punch
+AC -117 -117 -117 -100
+Wealth 350
+Act    npc dont_wander~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31015
+Name rodeo Rosie~
+ShortD rodeo Rosie~
+LongD Rodeo Rosie stands here.~
+Desc Rodeo Rosie is a muppet dressed like a cowgirl. She looks like she is one
+tough and ornery philly.
+~
+Race human~
+Align 2 -1
+Level 46
+Hitroll 0
+HitDice 5d8+255
+ManaDice 5d8+265
+DamDice 6d6+16
+DamType punch
+AC -160 -160 -160 -137
+Wealth 460
+Act    npc dont_wander aggressive stay_area~
+AffBy  protect_evil~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#31016
+Name Slimey worm~
+ShortD slimey, Oscars pet worm~
+LongD Slimey, Oscars pet worms slithers here.~
+Desc Slimey is a small little muppet worm. He has a cute little smile and of 
+course the traditional striped shirt of muppets on.
+~
+Race snake~
+Align -2 0
+Level 37
+Hitroll 0
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType punch
+AC -125 -125 -125 -107
+Wealth 370
+Act    npc dont_wander~
+Act2   no_random_obj~
+Imm    summon~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31017
+Name muppet~
+ShortD a muppet~
+LongD A muppet stands here.~
+Desc This muppet is just a plain walk on muppet. Has been used for many scenes,
+but never named. This allows for his salary to be kept low.
+~
+Race human~
+Align -1 -1
+Level 43
+Hitroll 0
+HitDice 5d7+245
+ManaDice 5d7+250
+DamDice 3d12+15
+DamType punch
+AC -150 -150 -150 -124
+Wealth 430
+Act    npc dont_wander~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31017
+END
+
+#31018
+Name muppet~
+ShortD a muppet~
+LongD A muppet stands here.~
+Desc This muppet is here to pester and bother you. He pokes you in the eyes and
+says 'What are you looking at?'
+~
+Race human~
+Align -1 -3
+Level 39
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -113
+Wealth 390
+Act    npc aggressive~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31018
+END
+
+#31019
+Name alien muppet yep~
+ShortD an alien muppet~
+LongD An alien muppet says 'Yup yup yup yup yup yup.'~
+Desc This muppet is peculiar looking. He has a large mouth and small eyes. The
+only thing you hear him say is 'Yup' Very agreeable dont you think?
+~
+Race human~
+Align 3 -1
+Level 40
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType punch
+AC -145 -145 -145 -127
+Wealth 420
+Act    npc aggressive~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31019
+END
+
+#31020
+Name alien muppet nope~
+ShortD an alien muppet~
+LongD An alien muppet stands here.~
+Desc This muppet is another alien. He seems very disagreeable, cause all he says
+is no. Very strange.
+~
+Race human~
+Align 1 0
+Level 36
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType punch
+AC -145 -145 -145 -120
+Wealth 420
+Act    npc aggressive~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31020
+END
+
+#31021
+Name receptionist~
+ShortD a receptionist~
+LongD A receptionist sits here.~
+Desc This receptionist looks very bored about her job. When you ask to go in she 
+just asks who you are. Not much of a help.
+~
+Race human~
+Align -2 -1
+Level 38
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType punch
+AC -130 -130 -130 -109
+Wealth 380
+Act    npc dont_wander~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#31022
+Name muppet monkey~
+ShortD a muppet monkey~
+LongD A muppet monkey stands here.~
+Desc This monkey looks like it was made from the scraps of other muppets. The
+limbs dont exactly match each other and the body doesnt quite have the form it 
+should.
+~
+Race human~
+Align 1 0
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType punch
+AC -137 -137 -137 -110
+Wealth 400
+Act    npc dont_wander aggressive wimpy~
+Act2   no_random_obj~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31022
+END
+
+#31023
+Name the Amazing Mumford~
+ShortD the Amazing Mumford~
+LongD The Amazing Mumford utters the words 'Ala Peanut Butter Sandwiches'~
+Desc Mumford is the cause for the darkness and evil at Sesame street. Apparantly
+he had a quarrel with Grover about a fork, and decided to take it out on 
+everyone.
+~
+Race human~
+Align -2 -3
+Level 47
+Hitroll 0
+HitDice 5d8+255
+ManaDice 6d9+310
+DamDice 8d4+15
+DamType punch
+AC -160 -160 -160 -134
+Wealth 470
+Act    npc dont_wander mage~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good protect_evil~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31024
+Name Forgetful jones~
+ShortD forgetful Jones~
+LongD Forgetful Jones stands here.~
+Desc Forgetful Jones cant remember anything, not even what he wanted to kill.
+Perhaps it was you? He isnt wearing anything, cause he forgot it.
+~
+Race human~
+Align -1 0
+Level 38
+Hitroll 0
+HitDice 5d6+220
+ManaDice 3d5+80
+DamDice 3d10+12
+DamType punch
+AC -125 -125 -125 -101
+Wealth 380
+Act    npc dont_wander stay_area thief~
+AffBy  detect_invis~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31025
+Name Evil muppet~
+ShortD an evil muppet~
+LongD An evil muppet stands here.~
+Desc This is a mean looking muppet, who is in the gang that now runs this place.
+He isnt bad alone, but if he is with his friends, looks out.
+~
+Race human~
+Align 1 -2
+Level 38
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType punch
+AC -130 -130 -130 -104
+Wealth 380
+Act    npc aggressive stay_area~
+AffBy  protect_evil~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31025
+END
+
+#31026
+Name Gang muppet~
+ShortD a gang muppet~
+LongD A gang muppet stands here causing trouble.~
+Desc This is an incredibly mean looking muppet. From the look on his face, he
+likes to fight, and really enjoys taunting people.
+~
+Race human~
+Align -3 -2
+Level 39
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -110
+Wealth 390
+Act    npc aggressive stay_area~
+AffBy  protect_evil~
+Off    assist_race~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 31026
+END
+
+#31027
+Name Gang leader muppet~
+ShortD the muppet gang leader~
+LongD The muppet gang leader stands here.~
+Desc This leader is a twisted muppet. He has orange skin and a blue nose. He looks
+like trouble, cause he is. He is Mumford's right hand man.
+~
+Race human~
+Align 2 -2
+Level 51
+Hitroll 0
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType punch
+AC -210 -210 -210 -182
+Wealth 510
+Act    npc dont_wander aggressive stay_area~
+AffBy  protect_evil~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31028
+Name beeker~
+ShortD beeker~
+LongD Beeker stands here mixing away.~
+Desc Beeker has a pointy head, and orange hair. He is wearing a white lab coat.
+He came to Sesame street once it became evil, so he could finally expiriment
+with what he wanted.
+~
+Race human~
+Align 3 0
+Level 37
+Hitroll 0
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType punch
+AC -125 -125 -125 -100
+Wealth 370
+Act    npc dont_wander~
+AffBy  detect_invis~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31029
+Name snuffulupagus~
+ShortD snuffulupagus~
+LongD Snuffulupagus stands here.~
+Desc Snuffulupagus is an invisble friend of Big Birds. He looks like a large,
+brown, shaggy elephant. It is rumored that Snuffulupagus doesnt even exist.
+Guess he does!
+~
+Race human~
+Align 2 0
+Level 39
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -117
+Wealth 390
+Act    npc dont_wander undead~
+AffBy  invisible protect_evil~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31030
+Name bruiser muppet~
+ShortD a big mean bruiser muppet~
+LongD A big mean bruiser muppet stands here.~
+Desc This muppet is huge. His 24" pythons are gonna come down on you!!!
+~
+Race snake~
+Align 2 -2
+Level 41
+Hitroll 0
+HitDice 5d7+240
+ManaDice 5d7+240
+DamDice 4d8+14
+DamType punch
+AC -140 -140 -140 -124
+Wealth 410
+Act    npc aggressive~
+AffBy  invisible protect_evil~
+Off    assist_race~
+Imm    summon~
+Form   non_skinable~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#31000
+Name rubber duck~
+Short `#`wa little `Yr`yu`Yb`yb`Ye`Yr d`yu`Yc`yk`Yy`^~
+Desc A rubber duck lies here.~
+Level 44
+ItemType weapon~
+Cost 10
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values mace 5 8 scratch 0
+Weight 70
+Material rubber~
+Wear     take wield~
+Affect modifier -1 44 -1 hitroll 4 0
+Affect modifier -1 44 -1 damroll 4 0
+Affect modifier -1 44 -1 ac -10 0
+End
+
+#31001
+Name striped shirt~
+Short A striped shirt~
+Desc An orange and purple striped shirt lies here.~
+Level 39
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 10 10 10 0 1
+Weight 40
+Material wool~
+Extra    magic~
+Wear     take torso~
+Affect modifier -1 39 -1 quickness 2 0
+Affect modifier -1 39 -1 ac -5 0
+End
+
+#31002
+Name loaf bread~
+Short A loaf of bread~
+Desc A loaf of bread rises here.~
+Level 40
+ItemType food~
+Cost 50
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 10 10 0 0 0
+Weight 20
+Material food~
+Wear     take hold~
+End
+
+#31003
+Name carton milk~
+Short A carton of milk~
+Desc A carton of milk sits here.~
+Level 36
+ItemType drinkcontainer~
+Cost 5
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 12 12 milk 0 0
+Weight 20
+Material paper~
+Wear     take hold~
+End
+
+#31004
+Name stick butter~
+Short A stick of butter~
+Desc A stick of butter melts here.~
+Level 38
+ItemType food~
+Cost 25
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 20 20 0 0 0
+Weight 20
+Material food~
+Wear     take hold~
+End
+
+#31005
+Name acoustic guitar~
+Short An acoustic guitar~
+Desc An acoustic guitar lies here.~
+Level 42
+ItemType weapon~
+Cost 100
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values exotic 10 3 pound 0
+Weight 70
+Material wood~
+Extra    hum magic~
+Wear     take wield~
+Affect modifier -1 42 -1 presence 2 0
+Affect modifier -1 42 -1 hitroll 4 0
+Affect modifier -1 42 -1 damroll 4 0
+End
+
+#31006
+Name cape~
+Short grover's cape~
+Desc A cape with a G on it lies here.~
+Level 38
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 10 9 10 6 1
+Weight 30
+Material wool~
+Extra    magic~
+Wear     take about~
+Affect modifier -1 38 -1 strength 2 0
+Affect modifier -1 38 -1 move 50 0
+Affect modifier -1 38 -1 hitroll 2 0
+Affect modifier -1 38 -1 damroll 2 0
+End
+
+#31007
+Name helmet~
+Short grover's helmet~
+Desc A strange looking helmet lies here.~
+Level 40
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 11 11 11 0 1
+Weight 40
+Material iron~
+Extra    magic~
+Wear     take head~
+Affect modifier -1 40 -1 strength 1 0
+Affect modifier -1 40 -1 empathy 1 0
+End
+
+#31008
+Name microphone~
+Short A microphone~
+Desc A microphone lies here.~
+Level 39
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values exotic 5 6 slice G
+Weight 70
+Material steel~
+Extra    hum noremove inventory rotdeath meltdrop nouncurse nogetall~
+Extra2   nosell~
+Wear     take wield~
+ClassAllowances knight~
+Affect modifier -1 39 -1 quickness 2 0
+Affect modifier -1 39 -1 hitroll 4 0
+Affect modifier -1 39 -1 damroll 3 0
+End
+
+#31009
+Name monacle~
+Short A monacle~
+Desc A monacle lies here.~
+Level 45
+ItemType armor~
+Cost 500
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 9 9 9 0 1
+Weight 20
+Material glass~
+Extra    glow bless~
+Wear     take eyes~
+Affect modifier -1 45 -1 presence 2 0
+Affect modifier -1 45 -1 ac -10 0
+End
+
+#31010
+Name Cape count~
+Short The Count's Cape~
+Desc A cape has been carelessly tossed here.~
+Level 45
+ItemType armor~
+Cost 500
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 10 10 10 0 1
+Weight 30
+Material wood~
+Extra    glow hum magic bless~
+Wear     take about~
+Affect modifier -1 45 -1 empathy 1 0
+Affect modifier -1 45 -1 mana 25 0
+Affect modifier -1 45 -1 ac -15 0
+Affect modifier -1 45 -1 hitroll 2 0
+Affect modifier -1 45 -1 damroll 2 0
+End
+
+#31011
+Name lasso rope~
+Short A lasso~
+Desc A pile of rope lies here.~
+Level 45
+ItemType weapon~
+Cost 250
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values whip 6 7 slap 0
+Weight 70
+Material snakeskin~
+Extra    glow magic~
+Wear     take wield~
+Affect modifier -1 45 -1 hitroll 3 0
+Affect modifier -1 45 -1 damroll 3 0
+End
+
+#31012
+Name leather hat~
+Short a leather hat~
+Desc A leather hat sits here.~
+Level 46
+ItemType armor~
+Cost 400
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 12 12 12 0 1
+Weight 30
+Material leather~
+Extra    evil magic~
+Wear     take head~
+Affect modifier -1 46 -1 presence -1 0
+Affect modifier -1 46 -1 ac -10 0
+Affect modifier -1 46 -1 hitroll 2 0
+End
+
+#31013
+Name leather boots~
+Short leather boots~
+Desc A pair of leather boots lie here.~
+Level 45
+ItemType armor~
+Cost 250
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 9 8 9 6 1
+Weight 40
+Material snakeskin~
+Extra    nodrop~
+Wear     take feet~
+Affect modifier -1 45 -1 intuition 1 0
+Affect modifier -1 45 -1 move 20 0
+Affect modifier -1 45 -1 ac -20 0
+Affect modifier -1 45 -1 hitroll 1 0
+Affect modifier -1 45 -1 damroll 1 0
+End
+
+#31014
+Name magnifying glass~
+Short A magnifying glass~
+Desc A magnifying glass lies here.~
+Level 3
+ItemType treasure~
+Cost 0
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material glass~
+Extra    magic~
+Wear     take hold~
+Affect modifier -1 3 -1 quickness 2 0
+Affect modifier -1 3 -1 empathy 2 0
+Affect modifier -1 3 -1 mana 15 0
+Affect modifier -1 3 -1 ac -20 0
+Affect modifier -1 3 -1 hitroll 1 0
+End
+
+#31015
+Name tweed coat overcoat~
+Short A tweed overcoat~
+Desc A tweed overcoat lies here.~
+Level 36
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 78
+Rsize 50
+Values 10 10 10 0 1
+Weight 78
+Material wool~
+Wear     take about~
+Affect modifier -1 36 -1 presence 2 0
+Affect modifier -1 36 -1 ac -20 0
+End
+
+#31016
+Name pipe~
+Short a pipe~
+Desc A pipe lies here smoking away.~
+Level 36
+ItemType tabac_pipe~
+Cost 0
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values 1000 1000 0 0 0
+Weight 50
+Material corn~
+Extra    glow~
+Wear     take hold~
+End
+
+#31017
+Name hat chef chef's cookie~
+Short A chef's hat~
+Desc A chef's hat has been left here.~
+Level 37
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 10 10 10 0 1
+Weight 30
+Material velvet~
+Extra    magic~
+Wear     take head~
+Affect modifier -1 37 -1 strength 2 0
+Affect modifier -1 37 -1 quickness 2 0
+Affect modifier -1 37 -1 agility 2 0
+End
+
+#31018
+Name spatula~
+Short A spatula~
+Desc A spatula lies here, ready to be used.~
+Level 36
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values mace 10 3 thwack 0
+Weight 70
+Material steel~
+Extra    bless~
+Wear     take wield~
+Affect modifier -1 36 -1 strength 2 0
+End
+
+#31019
+Name beak big bird bird's~
+Short `#`YBig `YBird's beak`^~
+Desc A long yellow beak sits here.~
+Level 41
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values exotic 6 6 pierce 0
+Weight 70
+Material horn~
+Extra    noremove rotdeath nouncurse~
+Wear     take wield~
+ClassAllowances knight~
+Affect modifier -1 41 -1 hitroll 2 0
+Affect modifier -1 41 -1 damroll 2 0
+End
+
+#31020
+Name Garbage can lid~
+Short a garbage can lid~
+Desc A dented and battered garbage can lid.~
+Level 60
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values exotic 5 8 smash 0
+Weight 70
+Material steel~
+Extra    dark noremove~
+Wear     take wield~
+Affect modifier -1 60 -1 hitroll 4 0
+Affect modifier -1 60 -1 damroll 4 0
+Affect modifier -1 60 -1 ac -10 0
+End
+
+#31021
+Name garbage can~
+Short A garbage can~
+Desc A dented and beat up garbage can sits here.~
+Level 44
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 60
+Rsize 50
+Values 12 12 12 0 2
+Weight 60
+Material steel~
+Extra    evil rotdeath nouncurse~
+Wear     take about~
+Affect modifier -1 44 -1 move -50 0
+Affect modifier -1 44 -1 hitroll 2 0
+Affect modifier -1 44 -1 damroll 1 0
+Affect modifier -1 44 -1 ac -20 0
+End
+
+#31022
+Name hair net~
+Short A hair net~
+Desc A hair net sits her.~
+Level 36
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 10 10 10 0 1
+Weight 20
+Material satin~
+Wear     take head~
+End
+
+#31023
+Name frog collar~
+Short A frog collar~
+Desc A green 5 pointed frog collar sits here.~
+Level 39
+ItemType armor~
+Cost 100
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 11 11 11 0 1
+Weight 30
+Material copper~
+Extra    nodrop bless~
+Wear     take neck~
+Affect modifier -1 39 -1 presence 2 0
+Affect modifier -1 39 -1 hitroll 3 0
+Affect modifier -1 39 -1 damroll 3 0
+Affect modifier -1 39 -1 ac -10 0
+End
+
+#31024
+Name Sparkling sequenned jacket~
+Short A sparkling sequenned jacket~
+Desc A shiny jacket lies here.~
+Level 39
+ItemType armor~
+Cost 500
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values 11 11 11 0 2
+Weight 50
+Material steel~
+Extra    glow~
+Wear     take about~
+Affect modifier -1 39 -1 empathy -1 0
+Affect modifier -1 39 -1 mana 25 0
+Affect modifier -1 39 -1 hitroll 3 0
+Affect modifier -1 39 -1 damroll 2 0
+End
+
+#31025
+Name banana~
+Short A banana in your ear~
+Desc A banana sits here.~
+Level 43
+ItemType armor~
+Cost 431
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 9 9 9 -3 1
+Weight 30
+Material food~
+Wear     take head~
+Affect modifier -1 43 -1 presence -1 0
+Affect modifier -1 43 -1 hitroll 2 0
+End
+
+#31026
+Name Ernies Ernie's nose~
+Short `#`wErnie's `RNose`^~
+Desc A nose from a muppet lies here.~
+Level 43
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 12 12 12 0 1
+Weight 20
+Material paper~
+Extra    noremove rotdeath nouncurse norestring~
+Wear     take face~
+ClassAllowances knight~
+End
+
+#31027
+Name mud pie~
+Short A mud pie~
+Desc A delicious looking mud pie lies here.~
+Level 35
+ItemType food~
+Cost 0
+Durability 5
+Condition 90
+Asize 5
+Rsize 50
+Values 10 8 0 A 0
+Weight 5
+Material food~
+Extra    dark~
+Wear     take~
+End
+
+#31028
+Name Funky pants~
+Short Funky pants~
+Desc A pair of funky pants lies here.~
+Level 40
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 12 12 13 9 0
+Weight 30
+Material wool~
+Extra    glow~
+Wear     take legs~
+Affect modifier -1 40 -1 ac -20 0
+End
+
+#31029
+Name Lab coat~
+Short A white lab coat~
+Desc A white lab coat sits here.~
+Level 36
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 10 10 10 0 1
+Weight 30
+Material satin~
+Extra    dark~
+Wear     take about~
+Affect modifier -1 36 -1 presence 2 0
+Affect modifier -1 36 -1 empathy 2 0
+Affect modifier -1 36 -1 ac -30 0
+End
+
+#31030
+Name Magic Dust~
+Short Some dark magic dust~
+Desc Some dark magic dust lies here.~
+Level 35
+ItemType pill~
+Cost 1000
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 35 bless 'cure light' 'cure serious' haste
+Weight 10
+Material sandstone~
+Extra    dark~
+Wear     take hold~
+End
+
+#31031
+Name Mumford wand mumfords~
+Short Mumford's wand~
+Desc A dark glowing wand lies here.~
+Level 45
+ItemType wand~
+Cost 1000
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 55 35 35 'lightning breath' 0
+Weight 30
+Material gold~
+Extra    glow dark~
+Wear     take hold~
+End
+
+#31032
+Name Peanut butter sandwich~
+Short A `#`ypeanut butter`^ sandwich`^~
+Desc A peanut butter sandwhich lies here.~
+Level 1
+ItemType food~
+Cost 5
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 20 10 0 0 0
+Weight 1
+Material food~
+Extra    magic~
+Wear     take hold~
+End
+
+#31033
+Name fork~
+Short a fork~
+Desc A dirty fork lies here waiting to be cleaned.~
+Level 45
+ItemType weapon~
+Cost 0
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values exotic 4 10 pierce 0
+Weight 70
+Material steel~
+Extra    dark~
+Wear     take wield~
+Affect modifier -1 45 -1 presence 2 0
+Affect modifier -1 45 -1 mana 25 0
+Affect modifier -1 45 -1 hitroll 3 0
+Affect modifier -1 45 -1 damroll 2 0
+End
+
+#31034
+Name Leader's ring~
+Short `#`wa `rleader's `wring`^~
+Desc A ring with a leadership quality lies here.~
+Level 44
+ItemType jewelry~
+Cost 250
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material copper~
+Wear     take finger~
+Affect modifier -1 44 -1 ac -15 0
+Affect modifier -1 44 -1 hitroll 2 0
+Affect modifier -1 44 -1 damroll 2 0
+End
+
+#31035
+Name Bracelet leader~
+Short A leader's bracelet~
+Desc A really nice bracelet has been left here.~
+Level 43
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 12 12 12 0 1
+Weight 20
+Material copper~
+Wear     take wrist~
+Affect modifier -1 43 -1 intuition 2 0
+Affect modifier -1 43 -1 mana 15 0
+Affect modifier -1 43 -1 ac -15 0
+Affect modifier -1 43 -1 hitroll 3 0
+Affect modifier -1 43 -1 damroll 2 0
+End
+
+#31036
+Name Ring evilness~
+Short `#`wa ring of `sevilness`^~
+Desc A ring that has an evil aura lies here.~
+Level 36
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 4 4 4 3 1
+Weight 10
+Material platinum~
+Extra    dark antigood~
+Wear     take finger~
+Affect modifier -1 36 -1 strength 2 0
+Affect modifier -1 36 -1 ac -20 0
+Affect modifier -1 36 -1 hitroll 4 0
+Affect modifier -1 36 -1 damroll 3 0
+End
+
+#31037
+Name Bandana Bracelet~
+Short A bandana bracelet~
+Desc A bandana bracelet marks your membership in the gang.~
+Level 39
+ItemType armor~
+Cost 0
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 7 6 7 0 1
+Weight 30
+Material copper~
+Extra    nodrop noremove~
+Wear     take wrist~
+Affect modifier -1 39 -1 presence -1 0
+Affect modifier -1 39 -1 empathy -1 0
+Affect modifier -1 39 -1 hitroll 1 0
+Affect modifier -1 39 -1 damroll 1 0
+Affect modifier -1 39 -1 ac -10 0
+End
+
+#31038
+Name oven~
+Short An oven~
+Desc An oven sits here baking away.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 500 0 0 500 100
+Weight 0
+Material wood~
+End
+
+#31039
+Name Cookie~
+Short Freshly baked chocolate chip cookie~
+Desc A freshly baked chocolate chip cookie melts here.~
+Level 40
+ItemType food~
+Cost 10
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 50 50 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#31040
+Name vase~
+Short A vase~
+Desc A vase sits here holding flowers.~
+Level 38
+ItemType container~
+Cost 10
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 300 0 0 300 100
+Weight 10
+Material porcelain~
+Wear     take~
+End
+
+#31041
+Name Roses~
+Short A dozen long stemmed roses~
+Desc A dozen long stemmed roses beautifully bloom here.~
+Level 38
+ItemType treasure~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    bless~
+Wear     take hold~
+End
+
+#31042
+Name table~
+Short A table~
+Desc A beautifully carved oak table stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+End
+
+#31043
+Name Pile clothes~
+Short A pile of clothes~
+Desc A pile of clothes is heaped here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Condition 75
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wool~
+End
+
+#31044
+Name phone pay~
+Short A pay phone~
+Desc A pay phone lies broken here, better check the coin return slot.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 120 0 0 120 100
+Weight 0
+Material wood~
+End
+
+#31045
+Name quarter~
+Short A quarter~
+Desc A quarter lies here.~
+Level 41
+ItemType treasure~
+Cost 0
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Wear     take~
+End
+
+#31046
+Name Foosball table~
+Short A foosball table~
+Desc A foosball table sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+End
+
+#31047
+Name Pool table~
+Short A pool table~
+Desc A pool table sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+End
+
+#31048
+Name bar~
+Short A bar~
+Desc A nice looking bar, carved into and graffiti'd up with the gangs logos.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 200 0 0 200 100
+Weight 0
+Material steel~
+End
+
+#31049
+Name glass Milk~
+Short A glass of milk~
+Desc A glass of milk rests here.~
+Level 39
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 2 2 milk 0 0
+Weight 20
+Material glass~
+Wear     take~
+End
+
+#31050
+Name Water glass~
+Short A glass of water~
+Desc A glass of water rests here.~
+Level 38
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 2 2 water 0 0
+Weight 20
+Material glass~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#31000
+Name Bus Stop~
+Desc You stand at a bus stop in the middle of nowhere. The area looks vaguely
+familiar, but you are not sure. There is trash and graffiti everywhere. One
+really noticeable sign reads 'Sesame Street'. The street runs north from here.
+There is a small (Glowing) (Huming) tablet.
+~
+RoomFlags dark~
+Sector city~
+ExtraDesc small tablet~
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++   +
++   This area has been groked, modified, debugged (?:) and adapted   +
++   in hot, friday's night, june'96    +
++   by jaceks +
++   +
++   PS. prepare to die - it is {35 50} area with aggro mobs+
++    only armed personel allowed  +
++   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~
+Exit north 31001
+Exit east 8157
+Exit west 8156
+End
+
+
+#31001
+Name Recognition~
+Desc You suddenly realize that you are on Sesame Street. From the looks of it
+this is not the same street you once knew and loved. The streets are fairly
+empty and filled with trash and graffiti. You wonder what has become of this
+once proud neighborhood. There is a door to a small house to the east, or you
+can proceed down the street.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31004
+Exit east 31002
+EFlags door~
+EKeyvnum -1
+Exit south 31000
+End
+
+
+#31002
+Name Small house~
+Desc You have entered a run down old house. From the looks of it the tenants
+here are very poor. There is a door to the kitchen to the north, or you can
+return to the street to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31003
+EFlags door~
+EKeyvnum -1
+Exit west 31001
+EFlags door~
+EKeyvnum -1
+End
+
+
+#31003
+Name Poor kitchen~
+Desc You have walked into a kitchen. The cupboards are empty, and you see a list
+written on the fridge. As you read the note, you see 'A loaf of bread, a carton
+of milk, and a stick of butter. The only exit is to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 31002
+EFlags door~
+EKeyvnum -1
+End
+
+
+#31004
+Name The street~
+Desc The street is filled with gloominess and despair here as you walk along.
+There is a fairly nice house to the east and a telephone booth to the west.
+It seems kind of odd that the house doesnt look as run down as the rest.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31011
+Exit east 31007
+EFlags door~
+EKeyvnum -1
+Exit south 31001
+Exit west 31006
+EFlags door~
+EKeyvnum -1
+EKeywords Telephone booth
+~
+End
+
+
+#31006
+Name Telephone booth~
+Desc You stand in a telephone booth that looks very unoperationable. The
+phone itself has been ripped off the wall, and it seems to have been smashed
+by a blunt object. There is also a pile of clothes lying here.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31004
+EFlags door~
+EKeyvnum -1
+End
+
+
+#31007
+Name Grover's House~
+Desc You have walked into a quaint little house, that seems to have been here
+a long time. The house is very old fashioned looking, and you can smell a
+sweet smell from the kitchen in the north. As you look around, you see a bed
+in each of the other rooms. 
+~
+RoomFlags dark~
+Sector city~
+Exit north 31010
+Exit east 31009
+Exit south 31008
+Exit west 31004
+EFlags door~
+EKeyvnum -1
+End
+
+
+#31008
+Name Grovers Room~
+Desc This is Grover's room. It has pictures of the Sesame street from when it
+was grand. There are also pictures of some of his old chums, Kermit, Cookie
+monster, and the Count. This room seems empty now however.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31007
+End
+
+
+#31009
+Name Mommy Grovers Bedroom~
+Desc This is mommy Grover's bedroom. There is a scent of incense here, a vase
+with fresh flowers rests on a table in the middle of the room. This room is
+where mommy Grover comes and cries about the evil that has taken over.
+~
+RoomFlags dark~
+Sector city~
+Exit west 31007
+End
+
+
+#31010
+Name Grovers Kitchen~
+Desc You stand in Grovers kitchen. The scent of freshly baked muppet cookies
+comes from the stove. Maybe you can sneak one from out of the stove? The only
+exit appears to be to the south.
+~
+RoomFlags dark~
+Sector city~
+Exit south 31007
+End
+
+
+#31011
+Name Sesame Street~
+Desc The street begins to darken here, as if a magical force is present. To
+your west you see Ernie and Bert's house, and to the east is an abandonned
+lot. You can also proceed to the north and south still.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31018
+Exit east 31012
+Exit south 31004
+Exit west 31013
+EFlags door~
+EKeyvnum -1
+EKeywords Door
+~
+End
+
+
+#31012
+Name Abandoned lot~
+Desc You stand in the ruins of a home that used to be on Sesame Street. It
+looks as though there was a mighty blaze. It also appears as if it were burned
+intentionally, from the gas cans lying around.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 31011
+End
+
+
+#31013
+Name Ernie and Bert's House~
+Desc You are standing in Ernie and Bert's house. There are pictures of this 
+duo all over doing miscellaneous things. There is soft music coming from the
+stereo..'La la la la....lemon, la la la la ...linoleum' You can tell that this
+is one of Bert and Ernie's popular songs.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31011
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+Exit west 31014
+End
+
+
+#31014
+Name Living Room~
+Desc This is where Ernie and Bert spend most of there time. There is a large 
+picture on the wall of Bert and Ernie with there arms around each other. There
+are two recliners here for the duo to relax in. There are exits to the east
+and west.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31013
+Exit west 31015
+End
+
+
+#31015
+Name Bert and Ernies Bedroom~
+Desc This room is a quaint little bedroom for Bert and Ernie. Even though they
+are old enough to date they share a room. Its a good thing they are muppets.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31014
+Exit south 31017
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+End
+
+
+#31017
+Name Ernie's tub~
+Desc You have walked in to Ernie and Bert's bath room. There is a bath drawn,
+and the steam makes it extremely hard to see. The onlt apparent exit is to
+the north.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31015
+EFlags door~
+EKeyvnum -1
+EKeywords Door
+~
+End
+
+
+#31018
+Name Sesame Street~
+Desc This section of road looks very familiar, except for the gloominess that
+has been cast upon it. You can see the heavy gang activity, and notice that
+people are really scared. You can go down into Oscar the Grouch's can, or
+east to Gordons repair shop. A familiar looking alley lies to the east, or
+you can proceed down the street.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31028
+Exit east 31019
+Exit south 31011
+Exit west 31020
+Exit down 31022
+End
+
+
+#31019
+Name Gordons repair shop~
+Desc You are standing in Gordons repair shop. There are broken gadgets laying 
+about and and Gordon is here working away. The only apparent exit is to the 
+west.
+~
+RoomFlags dark~
+Sector city~
+Exit west 31018
+End
+
+
+#31020
+Name Familiar alley~
+Desc You stand in an alley that looks like you belong here. You can still feel
+the evil effects of the spell cast upon the street, but it doesnt seem to hit
+as hard here. There is a REALLY big door here to the west, or you can return
+to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 31018
+Exit west 31021
+EFlags door~
+EKeyvnum -1
+EKeywords really big door
+~
+End
+
+
+#31021
+Name Big Bird's Nest~
+Desc You are standing in Big Birds nest. This is where he and Snufflupugus
+come and hang out. This is a mighty big nest, but then you remember, he is
+a Big Bird.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 31020
+EFlags door~
+EKeyvnum -1
+EKeywords Really big door
+~
+End
+
+
+#31022
+Name Grouch Can~
+Desc You have entered Oscar's can, I must admit that takes guts. The stench in
+here is attrocious! There is scattered garbage everywhere here scattered about.
+You can hardly move in this muck.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31023
+Exit south 31025
+Exit up 31018
+End
+
+
+#31023
+Name Inside the can~
+Desc The size of this can is actually quite amazing. You could not tell from
+its appearance that there would be this much stuff in here. You can now tell
+why Oscar is such a grouch. 
+~
+RoomFlags dark~
+Sector city~
+Exit south 31024
+Exit west 31022
+End
+
+
+#31024
+Name Oscars Can~
+Desc The stench is even worse here than anywhere else in the can. You can see
+a large pile of used socks here. Your stomach starts to turn as you see that
+Slimy, Oscar's pet worm is playing on that pile of socks.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31023
+Exit west 31025
+End
+
+
+#31025
+Name Oscars house~
+Desc The stench here is definately not human. You wonder how anyone can live
+like this, but then you remember thats why he is so grouchy. Too bad he doesnt
+win the lottery to move or hire a maid to clean.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31022
+Exit east 31024
+End
+
+
+#31028
+Name Bend in the road~
+Desc You have come to a bend in the road here. There is a desolate playground
+to your north and east, and the road continues to your west. From here you
+can see the entire length of the street, and see the effects the evil has
+done here. Who could have possibly done this?
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31031
+Exit east 31029
+Exit south 31018
+Exit west 31032
+End
+
+
+#31029
+Name The Playground~
+Desc You stand in an old playground that is hardly used anymore, since the 
+children are afraid of Sesame street now. There is a sand box to the north,
+where the playground continues, or you can go back to the street to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31030
+Exit west 31028
+End
+
+
+#31030
+Name Sand Box~
+Desc You are in a fairly large sand box that doesnt seem to have been used in
+a while. Besides the gang muppets, there is little use at all for the play 
+ground, and the gangs only come to catch kids to beat up. The play ground
+continues to the south and west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 31029
+Exit west 31031
+End
+
+
+#31031
+Name Playground~
+Desc This desolate play ground shows no signs of life usually, since the evil
+spell was cast on the street. Only the truly brave or extremely ignorant come
+here to play, and most dont return. There is a path to the north, or you can 
+return to the street to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31050
+Exit south 31028
+End
+
+
+#31032
+Name Continuing down the street~
+Desc As you proceed down the street, you can feel the evil growing stronger
+and stronger. You only hope you can stop this evil and return Sesame street
+back to its cute old self. However, some of you more evil types feel right at
+home. Mr.Hooper's store is to the north, and Maria's apartment is to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31033
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+Exit east 31028
+Exit south 31034
+EFlags door~
+EKeyvnum -1
+EKeywords Door
+~
+Exit west 31035
+End
+
+
+#31033
+Name Hooper's Store~
+Desc You are in old Mr.Hooper's Store. This business was hit hard by the evil,
+and he doesn't have quite the variety as he used to. He is still fairly happy,
+and enjoys to babble endlessly to anyone who comes in.
+~
+RoomFlags dark~
+Sector city~
+Exit south 31032
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+End
+
+
+#31034
+Name Maria's apartment~
+Desc You have entered Maria's apartment. This is where ole Gordo comes after
+a long hard day of fixing things and rests. This apartment is small, but
+seems to block the evil out.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31032
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+End
+
+
+#31035
+Name Further Yet~
+Desc You are further down the street and start to wonder if you can make it
+back. The evil here is getting to strong to take. To the north is a run down
+shack, that seems pretty popular.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31048
+EFlags door~
+EKeyvnum -1
+Exit east 31032
+Exit west 31036
+End
+
+
+#31036
+Name Even Further~
+Desc The evil that surrounds you now is more great than any you have felt. The
+source for this has got to be pretty close. To your north you see the Counts
+castle, and to your south you see an abandonned house.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31037
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+Exit east 31035
+Exit south 31045
+Exit west 31041
+End
+
+
+#31037
+Name Counts Entry Way~
+Desc You stand in the entry way to the Count's Castle. Everything here is
+numbered, and renumbered at least a hundred times. You can faintly here a
+'Wah ah ah' sound in the distance. The is a door to the north or you can 
+return to the street to the south.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31038
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+Exit south 31036
+EFlags door~
+EKeyvnum -1
+End
+
+
+#31038
+Name Counts Living Loom~
+Desc This is where the count hangs out most of the time counting. He used to
+get out more, but the evil is even to evil for him. You can see lightning,
+even though you are indoors. Everything in this room, like the other has been
+counted and counted again and again.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31039
+Exit south 31037
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+Exit west 31040
+End
+
+
+#31039
+Name The Count's Count Room~
+Desc This is where the Count comes to count numbers, count people, count his
+blessings, and do accounting. The walls(all four of them) are filled with
+scribbles. The only exit appears to be to the west.
+~
+RoomFlags dark~
+Sector city~
+Exit west 31038
+End
+
+
+#31040
+Name The Counts room~
+Desc This is the bedroom of the count. This room has less scribbles on the wall,
+and you think there might be a reason for the notches in the bedpost. The only
+exit appears to be back to the east.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31038
+End
+
+
+#31041
+Name Almost at the end~
+Desc You stand very near the end of Sesame street, and the evil is as thick
+as you can possibly take. There are no sounds of laughter any more, you can
+here a mumbling noise in the distance. You can go into the studio to the 
+south or brave what stands at the end of the street?
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 31036
+Exit south 31042
+Exit west 31044
+End
+
+
+#31042
+Name Tv studio~
+Desc You stand in the entryway to where the actual show about Sesame street 
+was taped. The walls here are not too badly vandalized, but there is a little
+graffiti saying 'Mumford di....' It looks to have been scratched in blood.
+There is a door to the south, or you can return to the north.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31041
+Exit south 31043
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+End
+
+
+#31043
+Name Studio~
+Desc You stand on the set for the Guy Smily show. This is where Guy does all
+of his work. His is the only show still on the air, he must have cut some sort
+of deal with the evil. The only exit appears to be to the north.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31042
+EFlags door~
+EKeyvnum -1
+EKeywords door
+~
+End
+
+
+#31044
+Name The Dead End~
+Desc You have reached the end, the DEAD END. You now see where the evilness
+comes from, the Amazing Mumford. He is chatting those evil spells on Sesame
+street. He utters the words 'Ala Peanut Butter Sandwiches!' You notice that
+there is no return from here.
+~
+RoomFlags dark indoors~
+Sector inside~
+End
+
+
+#31045
+Name Abandonned house~
+Desc You stand in an abandonned house on Sesame street. The inhabitants from
+here must have left very quickly for the place seems like a mess. From the
+looks of things, the evilness must have drove them away. It appears that 
+some of the evil muppets have taken residence here.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31035
+Exit south 31046
+End
+
+
+#31046
+Name Back room~
+Desc This room used to be a bedroom it looks like. It has been vandalized so 
+badly now, you can hardly even tell. It appears to still be used by the
+derelicts who walk these streets now.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31045
+End
+
+
+#31048
+Name The Gang house~
+Desc You have entered the hang out of the Antistab gang. Better watch your
+back, after all, you have see some of this mean looking gang. The hallway
+continues to your north, or you can heed my warning and go south.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31060
+Exit south 31035
+End
+
+
+#31050
+Name Start of the path~
+Desc You are on a path from the playground to the old pond. This path seems
+very peaceful, but you can feel someone watching you. There are many wild
+flowers and trees lining both sides of the trail.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31051
+Exit south 31031
+End
+
+
+#31051
+Name A turn in the path~
+Desc The path turns here, and you can see the pond ahead. The path doesnt
+seem trodden, or at least not much lately. The forestry is starting to take
+over its hold on the path. The path continues to the east or south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 31052
+Exit south 31050
+End
+
+
+#31052
+Name Along the pond~
+Desc You stand along side the pond. Besides the beer bottles and garbage, and
+tires, the water looks incredibly mucky. Makes you kind of feel like taking
+a swim. You think you can see something in the middle of the pond.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 31053
+Exit south 31056
+Exit west 31051
+End
+
+
+#31053
+Name Along the pond~
+Desc Standing along side the pond, you see how badly a little pollution really
+affects things. This pond doesnt look fit to supply life to anything, yet
+there are some bizarre looking life forms in it. You can see something to 
+your east, on the pond.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31052
+Exit east 31056
+Exit south 31054
+End
+
+
+#31054
+Name The path~
+Desc This part of the path looks much more frequently used. To your south you
+can see a house that looks very much in use. The forest ends here abruptly,
+as you can see the remains of trees from bonfires that the gang has.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31053
+Exit south 31055
+End
+
+
+#31055
+Name A path~
+Desc There is a path here that seems like it was used for the gang to get away,
+when the muppet police were still on the job. Every now and then they still
+get raided, so its very much in use. The path continues to the north, or you
+can enter the house to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 31054
+Exit south 31066
+End
+
+
+#31056
+Name The pond~
+Desc You float atop a small pond that seems to be almost thick enough to stand
+on. Kermit the frog is here singing. Kermit sings 'Its not easy being Green'
+You wonder if thats because hes a frog, or because he has drunk some of this
+pond water.
+~
+RoomFlags dark~
+Sector noswim~
+Exit north 31052
+Exit west 31053
+End
+
+
+#31060
+Name Hallway~
+Desc You stand where the hallway can go in any direction. To your east you see
+a pool table and a bar, and your west has a foosball table. This must be where
+the gang hangs out. The hallway continues to the north and south.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31065
+Exit east 31061
+Exit south 31048
+Exit west 31062
+End
+
+
+#31061
+Name Pool Room~
+Desc This is a rec room that the gang uses. There is a pool table in the
+center of the room, and a bar in the corner. This room has a haze from all
+the smoke. The ashtrays are full and there are cigarette butts everywhere.
+~
+RoomFlags dark~
+Sector city~
+Exit west 31060
+End
+
+
+#31062
+Name Rec room~
+Desc This is another recreation room that the gang has. Whenever they arent
+out ruining the town or molesting people. The only apparent exit is to the
+east.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31060
+End
+
+
+#31063
+Name The Hallway~
+Desc The walls in this hallway are thoroughly ruined. Every inch of the
+decor is covered in some graffiti. Big letters spell out 'All hail Mumford!'
+You can continue down the hallway, or go into the bedrooms to the east and
+west.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31066
+Exit east 31065
+Exit south 31060
+Exit west 31064
+End
+
+
+#31064
+Name Master Bedroom~
+Desc This is the master bedroom of the gang house. There is only one bed in
+this room, and it is fairly large. This room is incredibly clean and orderly
+compared to the rest of the house. The only apparent exit is to the west.
+~
+RoomFlags dark~
+Sector city~
+Exit west 31063
+End
+
+
+#31065
+Name Bedroom~
+Desc This is a bedroom in the gang house. There are many cots and mattresses
+laying about, that anyone can use. This house usually sleeps about 20 so it 
+gets pretty hard to sleep. The only apparent exit is to the east.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31063
+End
+
+
+#31066
+Name End of the Hall~
+Desc You stand at the end of the hall. There is some graffiti here that reads
+'Mumford is the man' and 'I love peanut butter sandwiches' The kitchen lies
+to the west, you can return to your south, or exit the house to the north.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31055
+EFlags door pickproof~
+EKeyvnum -1
+EKeywords Door
+~
+Exit south 31063
+Exit west 31067
+End
+
+
+#31067
+Name The Kitchen~
+Desc You are in a kitchen, though it wouldnt appear so from appearance. There
+are empty pizza boxes lying everywhere and piles of garbage everywhere. You
+notice that there is a sort of path to the sink, and scrapings on the floor 
+by it. The only apparent exit is to the east.
+~
+RoomFlags dark~
+Sector city~
+Exit north 31068
+EFlags door pickproof~
+EKeywords Sink
+~
+Exit east 31066
+End
+
+
+#31068
+Name The Lab~
+Desc You are standing in a drug lab. There are vials and beakers everywhere.
+There is a small hole to the east in case of raids, and the exit to the
+south. You better hurry, I am sure the gang wouldnt want you in here.
+~
+RoomFlags dark~
+Sector city~
+Exit east 31055
+EKeywords hole
+~
+Exit south 31067
+EFlags door pickproof~
+EKeyvnum -1
+End
+
+
+#31069
+Name The Meat Locker~
+Desc You are in a meat locker filled with various slabs of body parts. As you
+look around, you notice many people on the Farside now "reside" here. On one
+hook you see Lenny's head rotting away. On another, you see Worthy's half-eaten
+torso. On yet another hook, you see the individual body parts of Macaroni,
+Cookie, Res, and Lok. On the far wall, you see the half eaten leg of Snikt, 
+while rats chew on the remains of RoX and Dizzy. Garth is here also, his echos
+of grief can still be heard. you sigh with relief as you notice that you still
+have your body parts.
+~
+RoomFlags dark no_recall~
+Sector city~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 31023 spec_cast_mage
+M 31024 spec_thief
+M 31027 spec_fido
+M 31029 spec_cast_undead
+S
+
+
+
+#RESETS2
+M 0 31005 1 31006 1
+E 0 31006 -1 waist~
+E 0 31007 -1 head~
+O 0 31043 -1 31006
+O 0 31044 -1 31006
+P 0 31045 1 31044 1
+O 0 31042 -1 31009
+O 0 31040 -1 31009
+P 0 31041 1 31040 1
+M 0 31011 1 31010 1
+E 0 31022 -1 head~
+O 0 31038 -1 31010
+P 0 31039 3 31038 3
+M 0 31014 1 31011 1
+M 0 31019 4 31012 2
+M 0 31020 5 31012 1
+M 0 31001 1 31014 1
+E 0 31001 -1 torso~
+E 0 31026 -1 head~
+M 0 31000 1 31017 1
+E 0 31000 -1 wielded~
+E 0 31025 -1 head~
+M 0 31013 1 31018 1
+E 0 31014 -1 hold~
+E 0 31015 -1 torso~
+E 0 31016 -1 light~
+M 0 31008 1 31019 1
+M 0 31020 5 31020 2
+M 0 31002 1 31021 1
+E 0 31019 -1 wielded~
+M 0 31029 1 31021 1
+M 0 31016 1 31024 1
+M 0 31004 1 31025 1
+E 0 31020 -1 wielded~
+E 0 31021 -1 waist~
+M 0 31017 1 31029 1
+E 0 31028 -1 legs~
+M 0 31030 1 31029 1
+M 0 31007 1 31030 1
+E 0 31018 -1 wielded~
+E 0 31017 -1 head~
+G 0 31039 -1
+M 0 31026 6 31030 1
+E 0 31037 -1 lwrist~
+M 0 31025 6 31031 1
+E 0 31030 -1 hold~
+E 0 31036 -1 rfinger~
+M 0 31009 1 31033 1
+G 0 31002 -1
+G 0 31003 -1
+G 0 31004 -1
+M 0 31024 1 31033 1
+M 0 31010 1 31034 1
+E 0 31005 -1 wielded~
+M 0 31015 1 31035 1
+E 0 31011 -1 wielded~
+E 0 31012 -1 head~
+E 0 31013 -1 feet~
+M 0 31018 1 31036 1
+E 0 31001 -1 torso~
+M 0 31003 1 31039 1
+E 0 31009 -1 head~
+E 0 31010 -1 waist~
+M 0 31021 1 31042 1
+M 0 31012 1 31043 1
+E 0 31008 -1 wielded~
+E 0 31024 -1 waist~
+M 0 31023 1 31044 1
+E 0 31031 -1 hold~
+E 0 31033 -1 wielded~
+G 0 31032 -1
+M 0 31022 4 31046 2
+M 0 31006 1 31056 1
+E 0 31023 -1 wielded~
+M 0 31026 6 31061 1
+E 0 31037 -1 lwrist~
+O 0 31047 -1 31061
+O 0 31048 -1 31061
+P 0 31049 1 31048 1
+P 0 31050 1 31048 1
+M 0 31026 6 31062 1
+E 0 31037 -1 lwrist~
+O 0 31046 -1 31062
+M 0 31027 1 31064 1
+E 0 31034 -1 rfinger~
+E 0 31035 -1 lwrist~
+M 0 31026 6 31065 1
+E 0 31037 -1 lwrist~
+M 0 31028 1 31068 1
+E 0 31029 -1 about~
+E 0 31030 -1 hold~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

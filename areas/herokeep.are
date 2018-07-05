@@ -1,0 +1,1433 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Hero's Keep~
+ShortName   Hero's Keep~
+Builders    ixliam~
+Credits     Ixliam~
+VNUMs       2480 2520
+LComment    `#`R[ 80- 91]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+Security    9
+Colour      r~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:27:42 2005~
+End
+
+
+
+#MOBILES
+#2480
+Name sxcyr~
+ShortD sxcyr, the old wyrm~
+LongD Sxcyr, the ancient wyrm is here.~
+Desc Almost dead, Sxcyr has long outlasted her usefullness as a
+battledragon.  She now serves her new master as a visier, and gives advices
+on how to run her campaigns daily.  
+~
+Race dragon~
+Align -3 -3
+Level 80
+Hitroll 20
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType claw
+AC -500 -500 -500 -435
+Wealth 800
+Act    npc dont_wander aggressive~
+AffBy  detect_invis detect_magic detect_hidden sanctuary infrared protect_good flying haste dark_vision berserk~
+Off    tail assist_race~
+Res    charm bash fire~
+Vuln   pierce cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 2483 99~
+END
+
+#2481
+Name shade~
+ShortD a shade~
+LongD An evil shade is lurking about.~
+Desc Formed of nothingness, the shades torment the mortal realm looking for
+wealth.  It is believed that they think wealth is the key to life.  
+~
+Race Lich~
+Align 1 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType drain
+AC -500 -500 -500 -410
+Wealth 550
+Act    npc dont_wander undead~
+AffBy  pass_door~
+Imm    weapon~
+Vuln   magic~
+Form   edible poison magical non_skinable sentient undead biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 2482 99~
+END
+
+#2482
+Name rugged battlerager~
+ShortD a rugged battlerager~
+LongD A rugged battlerager is here standing watch.~
+Desc Completely encased in armor, this fearsome looking battlerager is
+in deadly looking spikes.  From beneath his dark helm two `Rred eyes are
+discernable.  
+~
+Race dwarf~
+Align 2 -3
+Level 95
+Hitroll 70
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType smash
+AC -650 -650 -650 -585
+Wealth 550
+Act    npc dont_wander undead warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_good haste regeneration~
+Off    bash berserk disarm dodge fast dirt_kick parry assist_align~
+Imm    charm poison negative disease~
+Res    pierce slash fire poison disease~
+Vuln   bash lightning acid drowning~
+Form   edible sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg BRIBE 2481 100~
+MProg RANDOM 2480 5~
+END
+
+#2483
+Name footman dragonsoldier~
+ShortD a dragonsoldier footman~
+LongD A DragonSoldier footman stands here, looking around impatiently.~
+Desc ~
+Race human~
+Align 0 0
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType punch
+AC -550 -550 -550 -462
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    berserk dodge kick dirt_kick parry trip assist_vnum~
+Res    charm fire lightning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2484
+Name captain dragonsoldiers~
+ShortD a dragonsoldier captain~
+LongD A Captain of the DragonSoldiers stands here, ready to battle.~
+Desc ~
+Race draconian~
+Align 0 0
+Level 88
+Hitroll 0
+HitDice 9d12+430
+ManaDice 9d12+560
+DamDice 10d10+45
+DamType claw
+AC -580 -580 -580 -487
+Wealth 150
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  flying~
+Off    bash disarm fast dirt_kick tail~
+Res    fire cold lightning acid~
+Vuln   holy silver~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material scale
+END
+
+#2485
+Name metallic red dragon~
+ShortD `#`Ra metallic red dragon`^~
+LongD A `#`Rmetallic red dragon`^ is here, sharpening its talons.~
+Desc ~
+Race dragon~
+Align -3 -3
+Level 79
+Hitroll 0
+HitDice 10d13+465
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType none
+AC -670 -670 -670 -582
+Wealth 1580
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  sanctuary infrared flying dark_vision~
+Off    tail~
+Imm    fire illusion scry~
+Res    magic~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material 'dragon meat'
+END
+
+#2486
+Name metallic blue dragon~
+ShortD `#a`B metallic blue dragon`^~
+LongD `#A great dragon is here, with `Bmetallic blue scales`^.~
+Desc ~
+Race dragon~
+Align -3 -3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType none
+AC -650 -650 -650 -533
+Wealth 1600
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary infrared flying dark_vision~
+Off    tail~
+Imm    lightning illusion scry~
+Res    magic~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material 'dragon meat'
+END
+
+#2487
+Name saemoth priestess~
+ShortD `#`SSaemoth the `SPriestess`^~
+LongD Saemoth, the `#`SDark `SPriestess`^ is here.~
+Desc Saemoth is dressed in long flowing black robes.  About her neck is an unholy 
+symbol, that of the Goddess Harpan.  
+~
+Race drow~
+Align 0 0
+XPMod 150
+Level 113
+Hitroll 0
+HitDice 13d16+605
+ManaDice 100d100+10000
+DamDice 13d17+80
+DamType wrath
+AC -950 -950 -950 -798
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt~
+AffBy  detect_magic dark_vision~
+Res    magic~
+Vuln   holy light~
+Form   edible poison magical sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material drow
+MProg FIGHT 2520 20~
+MProg RANDOM 2486 90~
+END
+
+#2488
+Name taesar dark mage~
+ShortD `#`STaesar`^~
+LongD `#`STaesar the `SDark `SMagi`^ is here.~
+Desc You see simply a tall man dressed in flowing black robes.  His only weapon 
+is a small dagger, which glows brightly with an unholy aura.  
+~
+Race drow~
+Align 0 0
+Level 88
+Hitroll 0
+HitDice 9d13+445
+ManaDice 9d13+575
+DamDice 10d11+47
+DamType none
+AC -620 -620 -620 -527
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic dark_vision~
+Res    magic~
+Vuln   holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material wealth
+END
+
+#2493
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2480
+Name crowbar~
+Short a black crowbar~
+Desc A crowbar is here on the ground.~
+Level 50
+ItemType key~
+Cost 1
+Durability 5
+Asize 100
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material iron~
+Extra    rotdeath~
+Wear     take hold~
+End
+
+#2481
+Name battlerager helm~
+Short `#`YS`ypiked `YH`yelm of the `YR`yager`^~
+Desc A pitch black helm is here.~
+Level 91
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 100
+Rsize 50
+Values 23 23 23 23 0
+Weight 100
+Material mithril~
+Extra    glow dark magic nodrop noremove burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take head~
+Affect modifier -1 91 -1 hp 10 0
+End
+
+#2482
+Name spiked rager armor~
+Short `#`YS`ypiked `YA`yrmor of the `YR`yager`^~
+Desc A pitch black suit of armor is here.~
+Level 91
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 250
+Rsize 50
+Values 30 30 28 24 0
+Weight 250
+Material mithril~
+Extra    dark magic nodrop noremove burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take torso~
+Affect modifier -1 91 -1 damroll 3 0
+Affect modifier -1 91 -1 hitroll 3 0
+End
+
+#2483
+Name rager axe~
+Short `#`YS`yharp `YA`yxe of the `YR`yager`^~
+Desc A deadly looking axe is here.~
+Level 91
+ItemType weapon~
+Cost 3000
+Durability 5
+Asize 150
+Rsize 50
+Values axe 3 30 slice DHN
+Weight 150
+Material mithril~
+Extra    glow evil magic nodrop noremove burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield~
+End
+
+#2485
+Name flowing black robes~
+Short `#`SB`wlack `SR`wobes of `SM`widnight`^~
+Desc Some black robes are lying in a heap.~
+Level 91
+ItemType container~
+Cost 5000
+Durability 5
+Asize 20
+Rsize 50
+Values 1000 0 0 1000 -25
+Weight 20
+Material cloth~
+Extra    magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take about~
+Affect modifier -1 91 -1 damroll 5 0
+Affect modifier -1 91 -1 hp 10 0
+Affect modifier -1 91 -1 hitroll 5 0
+End
+
+#2486
+Name unholy symbol key~
+Short an unholy symbol of `#`SHarpan`^~
+Desc An unholy symbol is affixed to a chain here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material brass~
+Extra    dark evil rotdeath~
+Wear     take neck~
+End
+
+#2487
+Name onyx effigy~
+Short an `#`Sonyx effigy`^~
+Desc An `#`Sonyx effigy`^ is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 ABCD 2486 100 0
+Weight 0
+Material adamantium~
+Extra    dark nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+End
+
+#2488
+Name celestial dagger~
+Short `#`CCelestial Dagger`^~
+Desc A dark unholy dagger burns the dirt it lies upon.~
+Level 91
+ItemType weapon~
+Cost 5000
+Durability 5
+Asize 40
+Rsize 50
+Values dagger 12 6 shbite GH
+Weight 40
+Material mithril~
+Extra    dark magic nodrop antigood noremove nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take wield~
+Affect modifier -1 91 -1 hitroll 2 0
+Affect modifier -1 91 -1 damroll 2 0
+End
+
+#2489
+Name dragon breastplate~
+Short a dragon breastplate~
+Desc A breastplate engraved with multi-colored dragons is here.~
+Level 80
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 250
+Rsize 50
+Values 26 26 25 20 0
+Weight 250
+Material mithril~
+Extra    burnproof~
+Wear     take torso~
+Affect modifier -1 80 -1 saves -1 0
+Affect modifier -1 80 -1 quickness 2 0
+Affect modifier -1 80 -1 damroll 2 0
+End
+
+#2490
+Name dragon pike~
+Short a dragon pike~
+Desc A long pike tipped with razor sharp barbs glistens here.~
+Level 80
+ItemType weapon~
+Cost 5000
+Durability 5
+Asize 100
+Rsize 50
+Values polearm 5 16 charge DF
+Weight 100
+Material unknown~
+Wear     take wield~
+Affect modifier -1 80 -1 damroll 6 0
+Affect modifier -1 80 -1 hitroll 1 0
+End
+
+#2491
+Name flail souls~
+Short `#`YF`ylail of `YS`youls`^~
+Desc Ghosts circle the head of a flail on the ground.~
+Level 91
+ItemType weapon~
+Cost 4000
+Durability 5
+Asize 150
+Rsize 50
+Values flail 4 21 flame ACK
+Weight 150
+Material silver~
+Extra    magic nodrop bless noremove nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take wield~
+Affect affects -1 91 -1 none -1 detect_evil
+Affect modifier -1 91 -1 hitroll 1 0
+Affect modifier -1 91 -1 damroll 10 0
+End
+
+#2492
+Name glittering diamond~
+Short a glittering diamond~
+Desc A glittering diamond lies here.~
+Level 0
+ItemType gem~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material diamond~
+Extra    nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#2493
+Name golden throne~
+Short `#a `Ygolden throne`^~
+Desc `#A `Ygolden throne glitters brilliantly.`^~
+Level 92
+ItemType furniture~
+Cost 50000000
+Durability 5
+Asize 7000
+Rsize 50
+Values 1 10000 EHK 300 300
+Weight -15536
+Material gold~
+Extra    glow nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace nosell~
+End
+
+#2516
+Name whip anihilation~
+Short `#`SWhip `wof `SAnihilation`^~
+Desc A whip lies here.~
+Level 91
+ItemType weapon~
+Cost 1500
+Durability 5
+Asize 4
+Rsize 50
+Values whip 3 28 whip EN
+Weight 4
+Material adamantium~
+Extra    magic nodrop noremove nodegrade norestring~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#0
+
+
+
+#ROOMS
+#2480
+Name Before the Battlerager~
+Desc An imposing fortress of metal looms before you.  Angry and rusted spikes 
+pierce through solid iron in crude patterns.  Impossibly heavy 
+reinforcements hang precariously from altogether too few rivets..  Squeeking 
+as they pivot.
+ 
+A `#`RRED SIGN`^ is here.
+~
+Sector inside~
+Mana 1
+Heal 1
+ExtraDesc red sign~
+(written in blood)
+`rThis area was made to tax the strongest of the strong.
+`rAdventure at your own risk, and seek shelter in groups.
+`rLevel 80 or above. Enter at your own risk!`^
+~
+Exit north 2481
+Exit west 56150
+End
+
+
+#2481
+Name Entrance hall~
+Desc As you pass beneath the jagged mouth of the fortress the smell of coal
+smoke assails your senses.  Black pitch covers everything with a thick coat
+of sticky goo.  You feel the hints of a warm breeze coming from the north. 
+It is not too late to turn back now!  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2482
+Exit south 2480
+End
+
+
+#2482
+Name Dead end~
+Desc The cramped hallway comes to an abrupt end at an iron portcullis. 
+Through the rusted slats of the monstrosity only darkness can be seen.  A
+constant warm breeze flows through, and the black goo has been formed into
+little peaks.  Everything is covered in the slime, the walls, floor and
+manhole cover, and even the ceiling.  The only way out is the way you came. 
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+ExtraDesc manhole cover~
+Formed of a heavy circular disk, the metal plate on the floor serves
+as a small door to a portal in the floor.  
+~
+ExtraDesc portcullis~
+Shut fast, it doesn't look as if the portcullis has been opened for
+hundreds of years.  It is formed of wrought iron bars (rusted now)
+completely encased in sticky pitch.  Square holes that a man could of easily
+fit his arm through are now coated with oozing sludge and rust.  
+~
+Exit south 2481
+Exit down 2483
+EFlags door closed locked pickproof nopass~
+EKeyvnum 2480
+EKeywords trapdoor~
+End
+
+
+#2483
+Name Underground~
+Desc Any sounds of the outside are now gone.  It is dark, and the smell of
+coal pitch is putrid.  Occasionally you hear the sound of flapping feet
+wading through the quagmire of ooze on the floor...  Somewhere.  A small
+iron runged ladder leads up, and tiny tunnels lead off into blackness to
+either side.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit east 2484
+Exit west 2486
+Exit up 2482
+EFlags door closed locked pickproof nopass~
+EKeyvnum 2480
+End
+
+
+#2484
+Name Underground~
+Desc The tiny, dark and cramped passageway comes to an elbow here.  One
+tunnel leads north, the other west.  You can hear the sounds of giggling.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2485
+Exit west 2483
+End
+
+
+#2485
+Name Underground~
+Desc The ooze on the floor gets deeper here, and it makes slurping sucking
+noises as you step out of it.  An oppressive heat is settling in, causing
+the sludge to become watery towards the north.
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2487
+Exit south 2484
+End
+
+
+#2486
+Name Underground whirlpool~
+Desc The sludge swirls fast and knocks you off of your feet!  You have no
+time to think before you are...  
+     S     D
+      U     O
+       C     W
+        K     N
+         E
+          D
+~
+RoomFlags dark no_recall~
+Sector inside~
+Exit down 33453
+End
+
+
+#2487
+Name Underground~
+Desc The sickly ooze on the floor is almost painfully warm.  It has the
+constitution of hot milk.  Occasionally a thick bubble will rise to the
+surface and pop spewing goo everywhere.  There is a ledge to the west, and
+darkness to the south.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit south 2485
+Exit west 2488
+End
+
+
+#2488
+Name Hall of the gods~
+Desc Slate grey stone sanded by eons of religous cleaning has eerie swirls
+and patterns.  This polished stone forms the floor, walls and arching
+ceiling.  A set of similiar stone steps leads up into light.  A river of
+pitch black flowing from a grate starts to the east.  
+~
+RoomFlags dark no_mob no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit east 2487
+Exit up 2489
+End
+
+
+#2489
+Name On the grass~
+Desc You are atop a set of steps that leads down into darkness.  To the east
+lies a grandoise open air temple the likes of which only exist in a kender's
+wildest dreams.  Wealth and power are displayed flagrantly and excessively. 
+This is certainly not meant for mortal eyes!  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2490
+Exit south 2506
+Exit down 2488
+End
+
+
+#2490
+Name On the grass~
+Desc The corner of the temple lies directly north, and a you can see a dark
+hole in the ground to the south.  Directly to your east A set of HUGE marble
+pillars thrusts out of the glasslike floors of the temple.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2491
+Exit south 2489
+End
+
+
+#2491
+Name On the grass~
+Desc From here you can see the northern and western sides of the enormous
+temple laid out to the southeast.  You can see intricate rain gutters formed
+of sterling silver trimming the edge of the roof, and ending in statuesque
+`Donyx gargoyles at each corner.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2492
+Exit south 2490
+End
+
+
+#2492
+Name On the grass~
+Desc The northwest corner of the temple is directly west.  A luscious green
+lawn of grass forms a healthy walkway the entire circumferance of the
+temple, and it continues to the east.  Some HUGE pillars bar your passage
+into the temple, but it looks like there's a more official looking opening
+further on.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2493
+Exit west 2491
+End
+
+
+#2493
+Name On the grass~
+Desc A gaping wide space between the support pillars starts here and goes
+clear through the temple to the south.  The grass path continues to the west
+and east.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2494
+Exit south 2511
+Exit west 2492
+End
+
+
+#2494
+Name On the grass~
+Desc The gaping wide space between the pillars seems to end towards the
+eastern end of the temple.  Through the space you can see fountains, rugs,
+and all sorts of unimaginable riches.  The green continues both to your east
+and west.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2495
+Exit south 2512
+Exit west 2493
+End
+
+
+#2495
+Name On the grass~
+Desc The northeast corner of the temple is directly east.  The green path
+you've been following continues both ways.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2496
+Exit west 2494
+End
+
+
+#2496
+Name On the grass~
+Desc From here you can see the northern and eastern walls of the temple.  A
+laughing `Donyx gargoyle with a silver rain gutter passing through one ear
+and out the other looks down with a perpetual grin.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit south 2497
+Exit west 2495
+End
+
+
+#2497
+Name On the grass~
+Desc You are on the eastern perimeter of the grandoise temple.  The grass
+strip that circles the temple leads north and south.  HUGE marble pillars
+bar entrance into the temple.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2496
+Exit south 2498
+End
+
+
+#2498
+Name On the grass~
+Desc The sweet smell of flowers assails your senses.  Alongside the grass
+path a small bed of roses has been planted.  The path continues north and
+south.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2497
+Exit south 2499
+End
+
+
+#2499
+Name On the grass~
+Desc You are on the eastern perimeter of the temple.  The grass strip that
+forms the circumvents the temple continues north and south.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2498
+Exit south 2500
+End
+
+
+#2500
+Name On the grass~
+Desc From here you can make out the eastern and southern edges of the
+temple.  A big sad `Donyx gargoyle stares down at you, with a rain gutter
+shoved up his butt and continuing out of his mouth.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2499
+Exit west 2501
+End
+
+
+#2501
+Name On the grass~
+Desc The southeast corner of the temple is directly east.  The luscious
+green lawn of grass continues to the west.  The HUGE marble pillars to the
+north are too close together to get through to the north.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2500
+Exit west 2502
+End
+
+
+#2502
+Name On the grass~
+Desc A big gap in the large marble pillars that construct the temple opens
+to your north.  Through the gap you can see there is a similiar one on the
+other side.  You can smell something awful.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2508
+Exit east 2501
+Exit west 2503
+End
+
+
+#2503
+Name On the grass~
+Desc The density of the pillars slackens here enough to allow you access to
+the temple to your north.  You can smell something pretty awful coming out
+of the temple.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2507
+Exit east 2502
+Exit west 2504
+End
+
+
+#2504
+Name ~
+Desc The southwest corner of the temple is directly west.  The luscious
+green lawn of grass that you've been walking on appears to circle the entire
+temple.  Some HUGE pillars bar your passage into the temple here, but it
+looks like they open up more in other places.  
+~
+RoomFlags dark no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit east 2503
+Exit west 2505
+End
+
+
+#2505
+Name On the grass~
+Desc From here you can see the southern and western sides of the enormous
+temple laid out to the northeast.  Intricate rain gutters pounded from
+sterling silver trim the edge of the roof.  The rain gutters encompass the
+entire structure and exit via large `Donyx gargoyle statues at each of the
+four corners.  The particular statue here has a gruesome smile on his face. 
+~
+RoomFlags no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2506
+Exit east 2504
+End
+
+
+#2506
+Name On the grass~
+Desc The southeast corner of the temple is directly south of you and a large
+pit of blackness is to the north.  Huge marble pillars rise to dizzying
+heights to your east.  
+~
+RoomFlags no_recall~
+Sector field~
+Mana 1
+Heal 1
+Exit north 2489
+Exit south 2505
+End
+
+
+#2507
+Name Temple steps~
+Desc White marble steps lead up and into the temple that is directly north.
+The sound of water splashing and birds singing comes from within.  The lush
+green lawn surrounding the temple does its thing south.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2510
+Exit east 2508
+Exit south 2503
+End
+
+
+#2508
+Name Temple steps~
+Desc White marble steps lead up and into the temple that lies directly
+north.  You can hear the sound of water trickling, and of birds singing from
+within.  The lush green lawn surrounding the temple is south.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2509
+Exit south 2502
+Exit west 2507
+End
+
+
+#2509
+Name In the pool~
+Desc This is the eastern end of the long pool.  Ivory fountains gush
+crystal clear water towards the arched ceilings of the temple.  A set of
+marble steps leads out of the pool to the east, and up to a throne of some
+sort.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2512
+Exit east 2516
+Exit south 2508
+Exit west 2510
+End
+
+
+#2510
+Name In the pool~
+Desc A smooth pristine pool of water dominates the center of the temple. 
+Blue marble makes up the walls and floor of the pools, and stark white ivory
+forms the delicate fountains that feed them.  The temple continues in all
+directions.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2511
+Exit east 2509
+Exit south 2507
+Exit west 2513
+End
+
+
+#2511
+Name Temple steps~
+Desc White marble steps lead up and into the temple that lies directly
+south.  You can hear the sound of water trickling, and of birds singing from
+within.  The lush green lawn surrounding the temple is north.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2493
+Exit east 2512
+Exit south 2510
+End
+
+
+#2512
+Name Temple steps~
+Desc White marble steps lead up and into the temple that is directly south.
+The sound of water splashing and birds singing comes from within.  The lush
+green lawn surrounding the temple does its thing north.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2494
+Exit south 2509
+Exit west 2511
+End
+
+
+#2513
+Name Inside the temple~
+Desc This is the western end of the temple.  HUGE marble pillars bar
+passage to the west, but there are two acloves to the north and south.  To
+the east the entire length of the temple is visible.  Beautiful pools fed by
+ivory fountains dominate the floor to the east.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2514
+Exit east 2510
+Exit south 2515
+End
+
+
+#2514
+Name Quiet corner~
+Desc You are surrounded by HUGE pillars to the east, south and west that
+seperate you from the rest of the temple.  A long chain hanging from the
+roof holds a lantern.  A strong smell pervades from underneath you, where
+strong iron bars hold something inside.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit south 2513
+Exit down 2520
+End
+
+
+#2515
+Name Quiet corner~
+Desc This is the southwesternmost corner of the beautiful temple.  Secluded
+and sectioned off from the rest of the temple by HUGE pillars, it is very
+quiet...  And smelly.  A foul smell comes from the cage built into the
+floor.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2513
+Exit down 2519
+End
+
+
+#2516
+Name Throne room~
+Desc Spotted animal furs cover marble steps that lead up to the glorius
+throne of gold.  A balmy perfumed breeze blows gently through, rustling the
+leaves of potted ferns.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 10
+Heal 10
+Exit north 2517
+Exit south 2518
+Exit west 2509
+End
+
+
+#2517
+Name Sxcyr's roost~
+Desc This is the roost of the kings very own dragon: Sxcyr.  Relatively
+neat for the living space of a dragon, there are only a few tufts of hair
+and fur laying about.  Of particular interest is the ceiling, where a
+mechanical device has been formed that can open up to allow Sxcyr to fly
+through.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit south 2516
+End
+
+
+#2518
+Name Quiet corner~
+Desc This is the southeasternmost corner of the temple.  Rather plain
+compared to the throne room to the north, this small nook is rather sparcely
+furnished.  Only a squat marble pedestal stands here.  
+~
+RoomFlags dark no_recall~
+Sector inside~
+Mana 1
+Heal 1
+Exit north 2516
+End
+
+
+#2519
+Name Holding cell~
+Desc The beauty of the temple has no affect here.  The walls are pitch
+black and covered with mold.  The floor is cold, wet and slimy.  There are
+some bones of various animals strewn about on the floor.  
+~
+RoomFlags dark no_mob~
+Sector inside~
+Mana 1
+Heal 1
+End
+
+
+#2520
+Name Holding cell~
+Desc Dug beneath the temple floors, this dungeon is filthy!  Dripping wet
+slime falls from the overhead bars.  There doesn't appear any way to get
+out.  
+~
+RoomFlags dark no_mob~
+Sector inside~
+Mana 1
+Heal 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 2480 spec_poison
+M 2481 spec_cast_undead
+M 2485 spec_breath_fire
+M 2486 spec_breath_lightning
+M 2487 spec_cast_cleric
+M 2488 spec_cast_meaner
+S
+
+
+
+#RESETS2
+M 0 2482 1 2482 1
+E 0 2480 0 hold~
+E 0 2481 0 head~
+E 0 2482 0 torso~
+E 0 2483 0 wielded~
+M 0 2481 8 2483 2
+M 0 2481 8 2484 2
+M 0 2481 8 2485 2
+M 0 2481 8 2487 2
+M 0 2483 20 2489 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2491 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2494 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2496 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2498 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2500 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2502 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2483 20 2505 1
+E 0 2489 -1 torso~
+E 0 2490 -1 wielded~
+M 0 2484 5 2507 1
+E 0 2491 -1 wielded~
+E 0 2489 -1 torso~
+M 0 2484 5 2509 1
+E 0 2491 -1 wielded~
+E 0 2489 -1 torso~
+M 0 2484 5 2510 1
+E 0 2491 -1 wielded~
+E 0 2489 -1 torso~
+M 0 2484 5 2512 1
+E 0 2491 -1 wielded~
+E 0 2489 -1 torso~
+M 0 2484 5 2513 1
+E 0 2491 -1 wielded~
+E 0 2489 -1 torso~
+M 0 2485 12 2514 2
+M 0 2486 12 2514 2
+M 0 2485 12 2515 2
+M 0 2486 12 2515 2
+M 0 2488 1 2516 1
+E 0 2488 -1 wielded~
+E 0 2485 -1 about~
+M 0 2487 1 2516 1
+E 0 2485 -1 about~
+E 0 2486 -1 neck1~
+E 0 2516 -1 wielded~
+O 0 2493 -1 2516
+O 0 2487 0 2517
+P 0 2492 3 2487 3
+M 0 2480 1 2517 1
+M 0 2485 12 2518 2
+M 0 2486 12 2518 2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2520
+title Saemoth Kills~
+code mob seeall
+if players > 0
+emote raises her hands to the sky, calling forth the power of Harpan.
+MOB CAST 'poison' $r
+MOB CAST 'plague' $r
+MOB CAST 'curse' $r
+MOB CAST 'weaken' $r
+MOB CAST 'heal' saemoth
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1109474803
+END
+
+#2486
+title Saemoth Sits~
+code rest throne
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056751342
+END
+
+#2483
+code mob zecho Sxcyr screams a warning at $n!
+mob echoat at $n Sxcyr charges at you.
+mob kill $n
+break
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056771307
+END
+
+#2482
+code if carries $n potion
+mob echoat $n A shade lunges at you grasping for your potions.
+mob echoaround $n A shade lunges at $n grasping for their potions.
+mob kill $n
+else
+mob echoat $n A shade wails and shrieks at the arrival of flesh.
+endif
+break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056768747
+END
+
+#2481
+code emote whispers, `g'Go on.'
+unlock down
+open down
+break
+endif
+~
+disabled false
+END
+
+#2480
+code emote paces to and fro, fondly shaking a money purse.
+close down
+lock down
+break
+~
+disabled false
+END
+
+#0
+
+
+#$

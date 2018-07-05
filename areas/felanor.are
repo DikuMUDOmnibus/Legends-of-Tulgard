@@ -1,0 +1,9036 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        City of Felanor~
+ShortName   Felanor~
+Builders    None~
+Credits     diku~
+VNUMs       6000 6399
+LComment    `#`Y[  ALL  ]`^
+Security    9
+Colour      C~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Sep  3 00:29:16 2005~
+End
+
+
+
+#MOBILES
+#6000
+Name wizard~
+ShortD the wizard~
+LongD A wizard walks around behind the counter, talking to himself.~
+Desc The wizard looks old and senile, and yet he looks like a very powerful
+wizard. He is equipped with fine clothing, and is wearing many fine
+rings and bracelets.
+~
+Race human~
+Align 1 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType magic
+AC -60 -60 -60 -49
+Wealth 230
+Act    npc dont_wander nopurge~
+AffBy  detect_invis~
+Off    area_attack dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 6033 100~
+END
+
+#6001
+Name baker~
+ShortD the baker~
+LongD The baker looks at you calmly, wiping flour from his face with one hand.~
+Desc A fat, nice looking baker. But you can see that he has many scars on his
+body.
+~
+Race human~
+Align -1 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -48
+Wealth 230
+Act    npc dont_wander nopurge~
+Off    bash berserk dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 6005 100~
+END
+
+#6002
+Name grocer~
+ShortD the grocer~
+LongD A grocer stands at the counter, with a slightly sleepy look on his face.~
+Desc A tall grocer, who moves two 200 pounds bag of flour around on his shoulders.
+~
+Race human~
+Align 0 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -48
+Wealth 230
+Act    npc dont_wander nopurge~
+Off    disarm dodge dirt_kick~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 6001 100~
+MProg DELAY 6002 100~
+END
+
+#6003
+Name weaponsmith~
+ShortD johnathan the weaponsmith~
+LongD Johnathan the Weaponsmith is standing here with a glint in his eye.~
+Desc A young weaponsmith, who still has lots to learn.
+~
+Race human~
+Align -1 2
+Level 23
+Hitroll 10
+HitDice 4d5+105
+ManaDice 2d5+5
+DamDice 3d6+6
+DamType punch
+AC -60 -60 -60 -54
+Wealth 230
+Act    npc dont_wander warrior nopurge~
+Off    bash disarm kick parry~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 6000 100~
+END
+
+#6004
+Name armorer armorer~
+ShortD the armorer~
+LongD An armourer stands here.~
+Desc An old but very strong armourer, he has made more armours in his
+lifetime than you have ever seen.
+~
+Race human~
+Align 3 2
+Level 23
+Hitroll 10
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType punch
+AC -60 -60 -60 -48
+Wealth 230
+Act    npc dont_wander nopurge~
+Off    bash disarm dodge dirt_kick parry trip~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 6000 100~
+END
+
+#6005
+Name thief~
+ShortD the thief~
+LongD A thief, all dressed in black.~
+Desc Well COUNT your money!
+~
+Race human~
+Align -3 0
+Level 8
+Hitroll 1
+HitDice 2d5+5
+ManaDice 2d4+5
+DamDice 1d8+1
+DamType punch
+AC 35 35 35 28
+Wealth 80
+Act    npc scavenger wimpy thief~
+AffBy  sneak hide~
+Off    disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6006
+Name captain~
+ShortD the captain~
+LongD A retired captain stands here, selling boats.~
+Desc This captain has killed more sharks than you have eaten peas.
+~
+Race human~
+Align 2 2
+Level 23
+Hitroll 10
+HitDice 4d5+105
+ManaDice 2d5+5
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -48
+Wealth 230
+Act    npc dont_wander warrior nopurge~
+Off    bash disarm kick~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6007
+Name sailor~
+ShortD the sailor~
+LongD A sailor stands here, waiting to train you.~
+Desc He looks like a strong, fit sailor.
+~
+Race human~
+Align 1 2
+Level 23
+Hitroll 5
+HitDice 4d5+105
+ManaDice 2d5+5
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -52
+Wealth 58
+Act    npc dont_wander train warrior nopurge~
+Off    dodge fast dirt_kick trip~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6008
+Name boy~
+ShortD the pet shop boy~
+LongD A pet shop boy is here, humming gently.~
+Desc He is young and close-cropped and looks quite happy.
+~
+Race human~
+Align -3 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType punch
+AC -60 -60 -60 -53
+Wealth 230
+Act    npc dont_wander nopurge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6009
+Name jeweller~
+ShortD the jeweller~
+LongD The jeweller is standing behind the desk.~
+Desc He is fat and has a content although watchful look on his face.
+~
+Race human~
+Align 2 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType slap
+AC -60 -60 -60 -53
+Wealth 230
+Act    npc dont_wander nopurge~
+Off    area_attack dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6010
+Name leather worker~
+ShortD the leather worker~
+LongD The leather worker is sitting by the table, sewing a leather cap.~
+Desc She looks as an honest, hard-working artisan who only just earns enough to
+keep herself going.
+~
+Race human~
+Align -3 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType punch
+AC -60 -60 -60 -48
+Wealth 230
+Act    npc dont_wander nopurge~
+Off    area_attack dodge trip~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#6012
+Name healer valen~
+ShortD valen the Healer~
+LongD Valen the Healer, stands ready to heal you of your wounds.~
+Desc Although retired from adventuring, the healer still lends a hand.
+Type 'heal' to see a listing of spells.
+~
+Race human~
+Align 2 3
+Level 101
+Hitroll 0
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 10d13+55
+DamType divine
+AC -710 -710 -710 -624
+Wealth 1010
+Act    npc dont_wander cleric nopurge healer~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    dodge fast kick parry~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6020
+Name guildmaster master~
+ShortD the guildmaster~
+LongD Your guildmaster is standing here.~
+Desc Even though your guildmaster looks old and tired, you can clearly see the
+vast amount of knowledge she possesses. She is wearing fine magic clothing,
+and you notice that she is surrounded by a blue shimmering aura.
+~
+Race elf~
+Align 1 3
+Level 36
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d8+265
+DamDice 6d4+10
+DamType magic
+AC -117 -117 -117 -94
+Wealth 0
+Act    npc dont_wander practice mage nopurge~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Off    dodge fade~
+Imm    summon charm magic weapon~
+Res    charm illusion~
+Vuln   poison disease iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#6021
+Name guildmaster master~
+ShortD the guildmaster~
+LongD Your guildmaster is standing here.~
+Desc You are in no doubt that this guildmaster is truly close to your god; he has
+a peaceful, loving look. You notice that he is surrounded by a white aura.
+~
+Race human~
+Align 0 3
+Level 36
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 4d7+11
+DamType divine
+AC -120 -120 -120 -96
+Wealth 0
+Act    npc dont_wander practice cleric nopurge~
+AffBy  detect_evil detect_invis detect_magic detect_hidden sanctuary dark_vision~
+Off    disarm dodge fast kick parry~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6022
+Name guildmaster master~
+ShortD the guildmaster~
+LongD Your guildmaster is standing here.~
+Desc You realize that whenever your guildmaster moves, you fail to notice it:
+the way of the true thief.  She is dressed in poor clothing, having
+the appearance of a beggar.
+human~
+Race unique~
+Align -2 3
+Level 36
+Hitroll 0
+HitDice 5d6+210
+ManaDice 3d5+75
+DamDice 4d7+11
+DamType punch
+AC -117 -117 -117 -105
+Wealth 0
+Act    npc dont_wander practice thief nopurge~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    backstab disarm dodge fast dirt_kick trip~
+Imm    summon charm magic weapon~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#6023
+Name guildmaster master~
+ShortD the guildmaster~
+LongD Your guildmaster is standing here.~
+Desc This is your master. A short, strong dwarf with bulging muscles.  Several scars
+across his body prove that he was using arms before you were born.  He
+has a calm look on his face.
+~
+Race dwarf~
+Align -2 3
+Level 36
+Hitroll 0
+HitDice 5d6+220
+ManaDice 2d5+25
+DamDice 3d10+11
+DamType beating
+AC -120 -120 -120 -105
+Wealth 0
+Act    npc dont_wander practice warrior nopurge~
+AffBy  detect_invis detect_hidden infrared~
+Off    area_attack bash berserk disarm kick parry~
+Imm    summon charm magic weapon~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6024
+Name sorcerer~
+ShortD the sorcerer~
+LongD A sorcerer is guarding the entrance.~
+Desc He is an experienced mage who has specialized in the field of Combat Magic.
+He is here to guard the Mage's Guild and his superior knowledge of offensive
+as well as defensive spells make him a deadly opponent.
+~
+Race elf~
+Align -1 2
+Level 30
+Hitroll 5
+HitDice 5d5+140
+ManaDice 3d5+70
+DamDice 5d4+7
+DamType magic
+AC -90 -90 -90 -75
+Wealth 300
+Act    npc dont_wander mage warrior nopurge~
+AffBy  invisible detect_invis detect_hidden infrared~
+Off    area_attack disarm fade~
+Imm    summon charm~
+Res    charm magic weapon illusion~
+Vuln   poison disease iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6025
+Name templar~
+ShortD the knight templar~
+LongD A knight templar is guarding the entrance.~
+Desc He is a specially trained warrior belonging to the military order of the Faith.
+His duty is to protect the faithful from persecution and infidel attacks and
+his religious devotion combined with his superior skill makes him a deadly
+opponent.
+~
+Race human~
+Align 0 2
+Level 30
+Hitroll 5
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 2d12+8
+DamType divine
+AC -95 -95 -95 -80
+Wealth 300
+Act    npc dont_wander cleric warrior nopurge~
+AffBy  detect_invis infrared~
+Off    berserk disarm kick parry~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6026
+Name assassin~
+ShortD the assassin~
+LongD An assassin is guarding the entrance.~
+Desc He is a thief who has specialized in killing others as effectively as possible,
+using all sorts of weapons.  His superior knowledge of how and where to use
+them combined with his extraordinary stealth makes him a deadly opponent.
+~
+Race human~
+Align -2 2
+Level 30
+Hitroll 8
+HitDice 5d5+140
+ManaDice 1d5+5
+DamDice 2d12+8
+DamType pierce
+AC -90 -90 -90 -72
+Wealth 300
+Act    npc dont_wander thief warrior nopurge~
+AffBy  detect_invis detect_hidden sneak hide~
+Off    backstab disarm dodge dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6027
+Name knight~
+ShortD the knight~
+LongD A knight is guarding the entrance.~
+Desc He is an expert warrior who has attained knighthood through countless
+chivalrous deeds.  His duty is to protect the Guild of Swordsmen and his
+extreme skill combined with his experience in warfare makes him a deadly
+opponent.
+~
+Race human~
+Align 1 2
+Level 30
+Hitroll 10
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -79
+Wealth 300
+Act    npc dont_wander warrior nopurge~
+AffBy  detect_invis detect_hidden~
+Off    area_attack bash berserk disarm fast kick parry~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6040
+Name bartender~
+ShortD the bartender~
+LongD A bartender watches you calmly, while he skillfully mixes a drink.~
+Desc A tired looking Bartender who hates trouble in his bar.
+~
+Race human~
+Align -2 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -50
+Wealth 150
+Act    npc dont_wander nopurge~
+Off    dodge fast dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6041
+Name waiter~
+ShortD the waiter~
+LongD A waiter is going around from one place to another.~
+Desc A tired looking waiter.
+~
+Race human~
+Align 3 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -49
+Wealth 150
+Act    npc dont_wander nopurge~
+Off    dodge fast dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6042
+Name waiter~
+ShortD the waiter~
+LongD A man who in his young days was a famous sorcerer but now leads a quiet,
+peaceful life as a waiter.~
+Desc ~
+Race human~
+Align -2 1
+Level 23
+Hitroll 0
+HitDice 4d5+95
+ManaDice 5d6+170
+DamDice 2d8+5
+DamType beating
+AC -55 -55 -55 -46
+Wealth 150
+Act    npc dont_wander mage nopurge~
+AffBy  detect_invis~
+Off    dodge dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6043
+Name waiter~
+ShortD the waiter~
+LongD A waiter who seems to have reached contact with God.~
+Desc ~
+Race human~
+Align 3 1
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 4d4+6
+DamType beating
+AC -60 -60 -60 -49
+Wealth 150
+Act    npc dont_wander cleric nopurge~
+Off    dodge fast dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6044
+Name waiter~
+ShortD the waiter~
+LongD A waiter who knows where all his customers keep their money.~
+Desc ~
+Race human~
+Align 2 1
+Level 23
+Hitroll 0
+HitDice 4d5+95
+ManaDice 2d5+30
+DamDice 4d4+6
+DamType beating
+AC -55 -55 -55 -49
+Wealth 150
+Act    npc dont_wander thief nopurge~
+Off    dodge fast dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6045
+Name waiter~
+ShortD the waiter~
+LongD A waiter who easily could kill you, and still carry quite a few firebreathers.~
+Desc ~
+Race human~
+Align 0 1
+Level 23
+Hitroll 0
+HitDice 4d5+105
+ManaDice 2d5+5
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -48
+Wealth 150
+Act    npc dont_wander warrior nopurge~
+Off    backstab dodge fast dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6046
+Name filthy~
+ShortD filthy~
+LongD Filthy is standing here, eager to serve you a special drink.~
+Desc Filthy looks real, ehm, dirty. He likes to keep his costumers happy,
+but do not mess with him or else he'll get upset.
+~
+Race human~
+Align 1 1
+Level 23
+Hitroll 2
+HitDice 4d5+95
+ManaDice 2d5+30
+DamDice 4d4+6
+DamType beating
+AC -55 -55 -55 -44
+Wealth 200
+Act    npc dont_wander thief nopurge~
+Off    backstab disarm dodge dirt_kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6060
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard stands here.~
+Desc A big, strong, helpful, trustworthy guard.
+~
+Race human~
+Align 1 3
+Level 15
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -16
+Wealth 150
+Act    npc scavenger stay_area warrior~
+Off    bash berserk disarm parry rescue assist_guard assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6061
+Name janitor~
+ShortD the janitor~
+LongD A janitor is walking around, cleaning up.~
+Desc ~
+Race human~
+Align 1 2
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType pound
+AC 90 90 90 72
+Wealth 10
+Act    npc stay_area wimpy~
+Off    trip assist_vnum~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6062
+Name fido dog~
+ShortD the beastly fido~
+LongD A beastly fido is here.~
+Desc Fido is a small dog that has a foul smell and pieces of rotted meat hanging
+around its teeth.
+~
+Race fido~
+Align -3 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 75
+Wealth 0
+Act    npc aggressive stay_area wimpy noalign~
+Act2   no_random_obj~
+Off    dodge assist_race~
+Vuln   magic~
+Form   edible poison animal mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+MProg HPCNT 6066 70~
+MProg FIGHT 6063 75~
+MProg KILL 6062 100~
+MProg GREET 6061 100~
+END
+
+#6063
+Name vagabond~
+ShortD the vagabond~
+LongD A vagabond is here, looking for victims.~
+Desc He looks pretty mean.
+~
+Race human~
+Align 3 0
+Level 5
+Hitroll 1
+HitDice 2d4+1
+ManaDice 1d4+5
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 50
+Wealth 18
+Act    npc scavenger thief~
+Off    backstab dirt_kick trip assist_align~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg BRIBE 6006 10~
+END
+
+#6064
+Name drunk~
+ShortD the drunk~
+LongD A singing, happy drunk wanders around, singing about Moria.~
+Desc A drunk who seems to be too happy, and to carry too much money.
+~
+Race human~
+Align 0 1
+Level 2
+Hitroll -1
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType beating
+AC 80 80 80 71
+Wealth 20
+Act    npc stay_area~
+Off    assist_vnum~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 6003 100~
+MProg DELAY 6004 100~
+END
+
+#6065
+Name beggar~
+ShortD the beggar~
+LongD A beggar is here, asking for a few coins.~
+Desc The beggar looks like she is fed up with life.
+~
+Race human~
+Align 2 1
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType beating
+AC 90 90 90 81
+Wealth 0
+Act    npc dont_wander~
+Off    dodge dirt_kick trip assist_vnum~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg BRIBE 6006 10~
+MProg GREET 6007 100~
+MProg DELAY 6008 100~
+END
+
+#6066
+Name cat~
+ShortD an alley cat~
+LongD An alley cat hisses at you.~
+Desc The alley cat is half starved and more than a little feral.
+~
+Race cat~
+Align -3 0
+Level 5
+Hitroll 1
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType scratch
+AC 50 50 50 44
+Wealth 0
+Act    npc aggressive stay_area wimpy noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    berserk dodge fast assist_race~
+Vuln   magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#6067
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard is here, guarding the gate.~
+Desc A big, strong, helpful, trustworthy guard.
+~
+Race human~
+Align -3 3
+Level 15
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -16
+Wealth 150
+Act    npc dont_wander warrior~
+Off    bash berserk disarm parry rescue assist_guard assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6068
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard is here, guarding the gate.~
+Desc A big, strong, helpful, trustworthy guard.
+~
+Race human~
+Align -1 3
+Level 15
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -16
+Wealth 150
+Act    npc dont_wander warrior~
+Off    bash berserk disarm parry rescue assist_guard assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6069
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard is here, guarding the mayor.~
+Desc A big, strong, helpful, trustworthy guard.
+~
+Race human~
+Align -3 3
+Level 20
+Hitroll 4
+HitDice 4d5+90
+ManaDice 2d5+5
+DamDice 2d8+5
+DamType punch
+AC -45 -45 -45 -40
+Wealth 200
+Act    npc dont_wander warrior~
+AffBy  invisible hide~
+Off    bash berserk disarm fast parry rescue assist_guard assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6070
+Name shopkeeper old man~
+ShortD the ancient potion-brewer~
+LongD An old man eyes you greedily.
+The old man says, 'Would you like to buy a nice love potion?'~
+Desc He looks very dangerous.  I wouldn't try to rob him.
+~
+Race human~
+Align 3 3
+Level 32
+Hitroll 0
+HitDice 5d6+150
+ManaDice 5d7+245
+DamDice 2d12+8
+DamType magic
+AC -100 -100 -100 -84
+Wealth 320
+Act    npc dont_wander cleric mage nopurge~
+AffBy  detect_invis detect_magic detect_hidden~
+Off    dodge fade fast~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg EXIT 6070 2~
+END
+
+#6071
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard is here, guarding the gate alertly.~
+Desc A big, strong, helpful, trustworthy guard.
+~
+Race human~
+Align -1 3
+Level 15
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -17
+Wealth 150
+Act    npc dont_wander warrior~
+Off    bash berserk disarm parry rescue assist_guard assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6072
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard is here, guarding the gate.  He is half asleep.~
+Desc A big, strong, helpful, trustworthy guard.
+~
+Race human~
+Align 0 3
+Level 15
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -18
+Wealth 150
+Act    npc dont_wander warrior~
+Off    bash berserk disarm parry rescue assist_guard assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6073
+Name slender banker~
+ShortD a slender banker~
+LongD A slender banker stands here, waiting to assist you.~
+Desc Just type BANK to see a list of all that you can do here.
+~
+Race human~
+Align 0 3
+Level 124
+Hitroll 10
+HitDice 12d16+600
+ManaDice 13d16+852
+DamDice 13d16+79
+DamType punch
+AC -940 -940 -940 -789
+Wealth 0
+Act    npc dont_wander update_always~
+AffBy  detect_invis detect_magic detect_hidden sanctuary protect_evil protect_good haste regeneration~
+Imm    summon charm magic weapon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6074
+Name bank teller~
+ShortD a bank teller~
+LongD `BA bank teller is waiting to serve you.`x~
+Desc A tall dark haired man peers at you through round wire rimmed glasses.
+~
+Race human~
+Align 2 3
+Level 110
+Hitroll 10
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType punch
+AC -800 -800 -800 -664
+Wealth 0
+Act    npc dont_wander docile update_always changer~
+AffBy  detect_invis detect_magic detect_hidden sanctuary~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6090
+Name kitten cat pet~
+ShortD the kitten~
+LongD A small loyal kitten is here.~
+Desc The kitten looks like a cute, little, fierce fighter.
+~
+Race cat~
+Align -2 1
+Level 1
+Hitroll 2
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType scratch
+AC 90 90 90 74
+Wealth 0
+Act    npc dont_wander noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge fast~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#6091
+Name puppy dog pet~
+ShortD the puppy~
+LongD A small loyal puppy is here.~
+Desc The puppy looks like a cute, little, fierce fighter.
+~
+Race dog~
+Align -2 1
+Level 3
+Hitroll 2
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType bite
+AC 70 70 70 57
+Wealth 0
+Act    npc dont_wander noalign~
+Act2   no_random_obj~
+AffBy  detect_hidden~
+Off    fast trip~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#6092
+Name beagle dog pet~
+ShortD the beagle~
+LongD A small, quick, loyal beagle is here.~
+Desc The beagle looks like a fierce fighter.
+~
+Race dog~
+Align -2 1
+Level 5
+Hitroll 3
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 43
+Wealth 0
+Act    npc dont_wander noalign~
+Act2   no_random_obj~
+AffBy  detect_hidden~
+Off    fast trip~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#6093
+Name rottweiler dog pet~
+ShortD the rottweiler~
+LongD A large, loyal rottweiler is here.~
+Desc The rottweiler looks like a strong, fierce fighter.
+~
+Race dog~
+Align -1 1
+Level 7
+Hitroll 3
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType bite
+AC 35 35 35 31
+Wealth 0
+Act    npc dont_wander noalign~
+Act2   no_random_obj~
+AffBy  detect_hidden~
+Off    bash berserk fast rescue~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6094
+Name wolf pet~
+ShortD the wolf~
+LongD A large, trained wolf is here.~
+Desc The wolf looks like a strong, fearless fighter.
+~
+Race wolf~
+Align 3 0
+Level 9
+Hitroll 3
+HitDice 2d5+12
+ManaDice 2d5+25
+DamDice 1d8+2
+DamType bite
+AC 20 20 20 16
+Wealth 0
+Act    npc dont_wander noalign~
+Act2   no_random_obj~
+AffBy  detect_hidden dark_vision~
+Off    bash dodge fast~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6095
+Name eagle bird pet~
+ShortD the eagle~
+LongD A loyal eagle circles overhead.~
+Desc The eagle looks like a strong fierce fighter.
+~
+Race song bird~
+Align 0 0
+Level 12
+Hitroll 3
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType claw
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander pet noalign~
+Act2   no_random_obj~
+AffBy  detect_hidden flying dark_vision~
+Off    dodge fast trip~
+Res    magic~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#6096
+Name lion pet~
+ShortD the lion~
+LongD A large, faithful lion is here.~
+Desc The great lion looks very fierce.
+~
+Race cat~
+Align -3 0
+Level 15
+Hitroll 2
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType chomp
+AC -20 -20 -20 -17
+Wealth 0
+Act    npc dont_wander pet noalign~
+AffBy  detect_hidden dark_vision~
+Off    bash dodge fast~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6097
+Name tiger pet~
+ShortD the tiger~
+LongD A great, loyal tiger is here.~
+Desc The large, striped tiger looks like a savage fighter.
+~
+Race cat~
+Align -1 0
+Level 20
+Hitroll 3
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType claw
+AC -45 -45 -45 -36
+Wealth 0
+Act    npc dont_wander pet noalign~
+AffBy  detect_hidden dark_vision~
+Off    bash dodge fast tail trip~
+Res    magic~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6099
+Name joleb blacksmith~
+ShortD joleb the Blacksmith~
+LongD Joleb the Blacksmith is here, ready to enhance your weapons.~
+Desc A young weaponsmith, who still has lots to learn.
+~
+Race human~
+Align 1 2
+Level 100
+Hitroll 50
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType slash
+AC -700 -700 -700 -609
+Wealth 1000
+Act    npc dont_wander warrior nopurge unseen~
+Off    bash disarm kick parry~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6100
+Name maid~
+ShortD the maid~
+LongD The maid is waiting for your order.~
+Desc She is very beautiful with golden hair, and deep blue eyes. A good reason
+for coming here more often.
+~
+Race human~
+Align 3 3
+Level 23
+Hitroll 2
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType beating
+AC -60 -60 -60 -50
+Wealth 180
+Act    npc dont_wander nopurge~
+Off    dodge fade~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#6120
+Name sexton~
+ShortD the sexton~
+LongD A sexton is sitting here, drinking hot tea.~
+Desc The sexton looks like he is relaxing after another grave-digging job.
+~
+Race human~
+Align 0 2
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType punch
+AC 70 70 70 58
+Wealth 30
+Act    npc dont_wander wimpy~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6121
+Name swan~
+ShortD the swan~
+LongD A swan is swimming around in the pond.~
+Desc The white swan is very elegant.
+~
+Race water fowl~
+Align -2 3
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 79
+Wealth 0
+Act    npc dont_wander noalign~
+AffBy  flying swim~
+Off    bash dodge assist_race~
+Res    drowning~
+Vuln   magic~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#6122
+Name duckling~
+ShortD the duckling~
+LongD A duckling is swimming around in the pond.~
+Desc The duckling is adorable, it looks most of all like a tiny furball.
+~
+Race water fowl~
+Align -1 3
+Level 90
+Hitroll 0
+HitDice 1d1+1
+ManaDice 1d1+1
+DamDice 1d1+0
+DamType peckb
+AC 100 100 100 100
+Wealth 0
+Act    npc dont_wander noalign~
+AffBy  flying swim~
+Off    dodge assist_race~
+Res    drowning~
+Vuln   magic~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#6123
+Name sparrow~
+ShortD the sparrow~
+LongD A sparrow is flapping around on the ground.~
+Desc The sparrow looks like it is enjoying life.
+~
+Race song bird~
+Align 1 3
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType peck
+AC 50 50 50 43
+Wealth 0
+Act    npc stay_area wimpy noalign~
+Act2   no_random_obj~
+AffBy  flying~
+Off    dodge fast assist_race~
+Vuln   magic~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#6124
+Name duck~
+ShortD the duck~
+LongD A duck is here, quacking happily.~
+Desc The duck is quite fat.  It looks like it is enjoying life.
+~
+Race water fowl~
+Align -2 3
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType peckb
+AC 90 90 90 72
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying swim~
+Off    dodge assist_race~
+Res    drowning~
+Vuln   magic~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#6140
+Name captain~
+ShortD the Captain of the Cityguards~
+LongD The Captain of the Cityguards is looking to send you on a quest.~
+Desc A big, strong, angry captain.
+~
+Race human~
+Align -3 3
+Level 101
+Hitroll 100
+HitDice 10d14+490
+ManaDice 4d5+110
+DamDice 11d12+56
+DamType slash
+AC -710 -710 -710 -589
+Wealth 500
+Act    npc dont_wander scavenger warrior~
+AffBy  detect_invis~
+Off    bash berserk disarm fast parry rescue~
+Imm    summon charm magic weapon slash fire lightning acid holy mental disease silver iron~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 6000
+END
+
+#6141
+Name cityguard guard~
+ShortD the cityguard~
+LongD A cityguard stands here, looking very upset.~
+Desc A big, strong, angry guard.
+~
+Race human~
+Align 2 3
+Level 15
+Hitroll 3
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -17
+Wealth 150
+Act    npc dont_wander scavenger aggressive warrior~
+Off    bash berserk disarm fast parry rescue assist_vnum~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 6000
+END
+
+#6142
+Name secretary~
+ShortD the secretary~
+LongD A secretary is sitting at the desk.~
+Desc She looks very busy.
+The Secretary says 'Sorry, but the Mayor is extremely busy today'.
+The Secretary says 'Please sit down and have a seat in the meantime'.
+~
+Race human~
+Align -1 2
+Level 12
+Hitroll 2
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType slap
+AC 0 0 0 0
+Wealth 100
+Act    npc dont_wander~
+Off    dodge fast kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#6143
+Name mayor~
+ShortD the mayor~
+LongD The mayor is here.  He shakes your hand.~
+Desc He is a stocky, middle-aged man with thin, grey hair.
+~
+Race human~
+Align -2 2
+Level 23
+Hitroll 6
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType punch
+AC -60 -60 -60 -54
+Wealth 230
+Act    npc dont_wander~
+AffBy  protect_evil~
+Off    disarm dodge trip assist_players~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 6000
+END
+
+#6144
+Name crier~
+ShortD the town crier~
+LongD The town crier is here, weeping quietly.~
+Desc He is very good at his job - completely dissolved in tears.
+~
+Race human~
+Align -1 2
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 77
+Wealth 10
+Act    npc wimpy~
+Off    berserk~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6150
+Name esme waitress~
+ShortD esme~
+LongD Esme the waitress hums to herself and wonders what you'd like to order.~
+Desc Esme brushes a lock of dark hair away from her wire-rimmed glasess and
+smiles warmly at you.
+~
+Race human~
+Align -3 2
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType slap
+AC -70 -70 -70 -61
+Wealth 250
+Act    npc dont_wander nopurge~
+Off    dodge fade~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6160
+Name melancholy~
+ShortD melancholy~
+LongD Melancholy is here, sewing a new tent together for a customer.~
+Desc Ragged brown hair frames a ghostly, pale face.  Puffy eyelids surround
+two sky blue, haunting eyes.  An old, brown robe is wrapped around her frail
+frame.  She looks up from her sewing and looks inquiringly at you, a smile
+crossing her face.  
+~
+Race human~
+Align -1 2
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType slap
+AC -70 -70 -70 -61
+Wealth 250
+Act    npc dont_wander nopurge~
+Off    dodge fade~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#6161
+Name lister green tree snake~
+ShortD lister~
+LongD A green tree snake is sitting here on a pile of books.~
+Desc This is Melancholy's pet tree snake, Lister.  Something seems odd about his 
+jaw, almost as if he were smiling at you.  He's quite friendly, but don't
+get him drunk.
+~
+Race snake~
+Align 3 0
+Level 15
+Hitroll 3
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType bite
+AC -20 -20 -20 -17
+Wealth 0
+Act    npc dont_wander nopurge~
+Act2   no_random_obj~
+AffBy  detect_invis~
+Off    dodge fast trip assist_race~
+Res    pierce poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#6162
+Name otho money banker~
+ShortD otho the Banker~
+LongD Otho the Banker is ready to help you.~
+Desc Otho is grotesquely fat man dressed in rich clothes.  Apparently the money
+changing business pays quite well in this busy city, or possibly the rumors
+of his fencing services are true...
+~
+Race human~
+Align 0 2
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType slap
+AC -70 -70 -70 -56
+Wealth 250
+Act    npc dont_wander nopurge changer~
+AffBy  detect_invis detect_hidden~
+Off    dodge fade~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6163
+Name thief~
+ShortD the thief~
+LongD A thief, all dressed in black.~
+Desc Well COUNT your money!
+~
+Race human~
+Align -2 0
+Level 30
+Hitroll 1
+HitDice 5d5+130
+ManaDice 3d5+60
+DamDice 2d12+8
+DamType stab
+AC -90 -90 -90 -72
+Wealth 100
+Act    npc scavenger wimpy thief~
+AffBy  sneak hide~
+Off    disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6180
+Name Zarthon Summoner~
+ShortD zarthon the Summoner~
+LongD Zarthon the Summoner stands ready to transport you to distant realms.~
+Desc ~
+Race elf~
+Align 2 0
+Level 100
+Hitroll 100
+HitDice 10d13+475
+ManaDice 11d15+734
+DamDice 10d13+52
+DamType crush
+AC -690 -690 -690 -558
+Wealth 1000
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden sanctuary infrared regeneration~
+Off    area_attack disarm dodge fade fast dirt_kick parry assist_race~
+Imm    summon charm weapon mental~
+Res    charm illusion~
+Vuln   poison disease iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#6000
+Name barrel beer~
+Short a barrel of beer~
+Desc A beer barrel has been left here.~
+Level 0
+ItemType drinkcontainer~
+Cost 75
+Durability 5
+Asize 160
+Rsize 50
+Values 300 300 beer 0 0
+Weight 160
+Material wood~
+Wear     take~
+End
+
+#6001
+Name bottle beer~
+Short a bottle of beer~
+Desc A beer bottle has been left here.~
+Level 0
+ItemType drinkcontainer~
+Cost 5
+Durability 5
+Asize 10
+Rsize 50
+Values 16 16 beer 0 0
+Weight 10
+Material glass~
+Wear     take~
+End
+
+#6002
+Name bottle ale~
+Short a bottle of ale~
+Desc A dark bottle of ale has been left here.~
+Level 0
+ItemType drinkcontainer~
+Cost 6
+Durability 5
+Asize 20
+Rsize 50
+Values 16 16 ale 0 0
+Weight 20
+Material glass~
+Wear     take~
+End
+
+#6003
+Name bottle firebreather~
+Short a bottle of firebreather~
+Desc A bottle of firebreather has been left here.~
+Level 0
+ItemType drinkcontainer~
+Cost 25
+Durability 5
+Asize 10
+Rsize 50
+Values 12 12 firebreather 0 0
+Weight 10
+Material glass~
+Wear     take~
+End
+
+#6004
+Name bottle local~
+Short a bottle of local specialty~
+Desc A dark bottle has been left here.~
+Level 0
+ItemType drinkcontainer~
+Cost 11
+Durability 5
+Asize 10
+Rsize 50
+Values 12 12 'local specialty' 0 0
+Weight 10
+Material glass~
+Wear     take~
+End
+
+#6006
+Name stone~
+Short A Clan Stone~
+Desc Somebody left their Clan Stone here.~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values 45 45 0 0 0
+Weight 20
+Material adamite~
+Wear     take~
+End
+
+#6009
+Name potpie pot pie~
+Short a big pot pie~
+Desc A big pot pie has been left here.~
+Level 0
+ItemType food~
+Cost 22
+Durability 5
+Asize 20
+Rsize 50
+Values 20 40 0 0 0
+Weight 20
+Material food~
+Wear     take~
+End
+
+#6010
+Name pit~
+Short the donation pit~
+Desc A pit for sacrifices is in front of the altar.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10000 0 0 1000 100
+Weight 0
+Material unknown~
+Extra    nopurge~
+ExtraDesc pit~
+This is where you can put money and items to help the poor and
+unfortunate people in this city.  
+~
+End
+
+#6011
+Name bread~
+Short a bread~
+Desc A loaf of bread is here. It doesn't look too stale.~
+Level 0
+ItemType food~
+Cost 9
+Durability 5
+Asize 10
+Rsize 50
+Values 18 12 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#6012
+Name cinnamon roll~
+Short a cinnamon roll~
+Desc A piping hot cinnamon roll is here. It looks delicious!~
+Level 0
+ItemType food~
+Cost 16
+Durability 5
+Asize 10
+Rsize 50
+Values 4 8 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#6013
+Name cookies~
+Short a batch of Sara's cookies~
+Desc A plate of chocolate chip cookies is here.~
+Level 0
+ItemType food~
+Cost 11
+Durability 5
+Asize 10
+Rsize 50
+Values 8 10 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#6014
+Name danish blueberry~
+Short a blueberry danish~
+Desc A scrumptious blueberry danish is here.~
+Level 0
+ItemType food~
+Cost 5
+Durability 5
+Asize 10
+Rsize 50
+Values 8 6 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#6020
+Name dagger~
+Short a dagger~
+Desc A dagger with a long thin blade is here.~
+Level 0
+ItemType weapon~
+Cost 157
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values dagger 1 4 stab 0
+Weight 10
+Material steel~
+Wear     take wield~
+End
+
+#6021
+Name sword small~
+Short a small sword~
+Desc A small sword lies here.~
+Level 0
+ItemType weapon~
+Cost 250
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values sword 1 5 slice 0
+Weight 30
+Material steel~
+Wear     take wield~
+End
+
+#6022
+Name sword long~
+Short a long sword~
+Desc A long sword has been left here.~
+Level 12
+ItemType weapon~
+Cost 610
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values sword 2 5 slash 0
+Weight 50
+Material steel~
+Wear     take wield~
+End
+
+#6023
+Name club~
+Short a club~
+Desc A stout wooden club is here.~
+Level 3
+ItemType weapon~
+Cost 220
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values mace 1 7 pound 0
+Weight 30
+Material wood~
+Wear     take wield~
+Affect modifier -1 3 -1 hitroll -1 0
+End
+
+#6024
+Name mace heavy~
+Short a mace~
+Desc A heavy iron mace is here.~
+Level 6
+ItemType weapon~
+Cost 390
+Durability 5
+Condition 90
+Asize 100
+Rsize 50
+Values mace 2 4 pound 0
+Weight 100
+Material iron~
+Wear     take wield~
+Affect modifier -1 6 -1 damroll 1 0
+End
+
+#6025
+Name axe hand~
+Short a hand axe~
+Desc A small hand axe lies forgotten on the floor.~
+Level 1
+ItemType weapon~
+Cost 310
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values axe 1 6 chop 0
+Weight 50
+Material iron~
+Wear     take wield~
+End
+
+#6026
+Name axe battle~
+Short a battle axe~
+Desc A large steel axe rests on the ground.~
+Level 5
+ItemType weapon~
+Cost 650
+Durability 5
+Condition 90
+Asize 90
+Rsize 50
+Values axe 2 5 chop F
+Weight 90
+Material steel~
+Wear     take wield~
+End
+
+#6027
+Name spear~
+Short a spear~
+Desc A long spear leans against the wall.~
+Level 15
+ItemType weapon~
+Cost 84
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values staff 1 8 pierce 0
+Weight 50
+Material steel~
+Wear     take wield~
+End
+
+#6028
+Name staff~
+Short a wooden staff~
+Desc A stout wooden staff lies on the floor.~
+Level 9
+ItemType weapon~
+Cost 580
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values staff 1 8 pound F
+Weight 40
+Material wood~
+Wear     take wield~
+Affect modifier -1 9 -1 ac -2 0
+End
+
+#6029
+Name flail~
+Short a flail~
+Desc A small iron flail is here.~
+Level 10
+ItemType weapon~
+Cost 77
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values flail 1 7 pound 0
+Weight 50
+Material iron~
+Wear     take wield~
+Affect modifier -1 10 -1 ac 1 0
+End
+
+#6030
+Name torch~
+Short a torch~
+Desc A large torch.~
+Level 0
+ItemType light~
+Cost 4
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 0 0 50 0 0
+Weight 30
+Material wood~
+Wear     take~
+End
+
+#6031
+Name lantern~
+Short a hooded brass lantern~
+Desc A hooded brass lantern has been left here.~
+Level 0
+ItemType light~
+Cost 75
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 250 0 0
+Weight 40
+Material brass~
+Wear     take~
+ExtraDesc lantern~
+It is a large and robust but somewhat battered oil lantern made from brass,
+equipped with a handle to make it handy and a hood to protect its flame.
+Some letters have been scratched on its bottom.
+~
+ExtraDesc letters~
+They say, "Use 'hold lantern' to activate."
+~
+End
+
+#6032
+Name bag~
+Short a bag~
+Desc A small bag.~
+Level 0
+ItemType container~
+Cost 9
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 50 0 0 5 100
+Weight 10
+Material leather~
+Wear     take~
+End
+
+#6033
+Name box~
+Short a box~
+Desc A small box.~
+Level 0
+ItemType container~
+Cost 30
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 10 0 0 5 100
+Weight 10
+Material wood~
+Wear     take~
+End
+
+#6039
+Name scroll cancellation~
+Short a scroll of cancellation~
+Desc A rolled vellum scroll is here.~
+Level 9
+ItemType scroll~
+Cost 1190
+Durability 5
+Asize 10
+Rsize 50
+Values 15 cancellation '' '' ''
+Weight 10
+Material vellum~
+Extra    magic~
+Wear     take hold~
+ExtraDesc scroll~
+Use this scroll to remove magical curses.
+~
+End
+
+#6040
+Name scroll identify~
+Short a scroll of identify~
+Desc A scroll has carelessly been left here.~
+Level 7
+ItemType scroll~
+Cost 890
+Durability 5
+Asize 10
+Rsize 50
+Values 12 identify '' '' ''
+Weight 10
+Material vellum~
+Extra    magic~
+Wear     take hold~
+ExtraDesc scroll identify~
+The scroll has a magic formula drawn upon it:
+     ???
+    ?   ?
+       ?
+      ?
+      ?
+      *
+~
+End
+
+#6041
+Name potion yellow~
+Short a yellow potion of see invisible~
+Desc A small yellow potion has carelessly been left here.~
+Level 0
+ItemType potion~
+Cost 220
+Durability 5
+Asize 10
+Rsize 50
+Values 12 'detect invis' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+ExtraDesc potion yellow~
+The potion has a small label 'Detect The Invisible'.
+~
+End
+
+#6042
+Name scroll recall~
+Short a scroll of recall~
+Desc A scroll has carelessly been left here.~
+Level 17
+ItemType scroll~
+Cost 2900
+Durability 5
+Asize 20
+Rsize 50
+Values 20 'word of recall' '' '' ''
+Weight 20
+Material vellum~
+Extra    magic~
+Wear     take hold~
+ExtraDesc scroll~
+The scroll has written a formula of 'Word of Recall' upon it.
+~
+End
+
+#6043
+Name ring protection~
+Short a ring of protection~
+Desc an enchanted ring of protection sits on the floor.~
+Level 8
+ItemType treasure~
+Cost 640
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silver~
+Extra    magic~
+Wear     take finger~
+Affect modifier -1 8 -1 ac -2 0
+Affect modifier -1 8 -1 saves -1 0
+ExtraDesc ring~
+It's a silver ring set with a gleaming moonstone.
+~
+End
+
+#6044
+Name wand magic missile missiles~
+Short a wand of magic missiles~
+Desc a wooden stick lies on the ground.~
+Level 2
+ItemType wand~
+Cost 320
+Durability 5
+Asize 10
+Rsize 50
+Values 4 10 10 'magic missile' 0
+Weight 10
+Material wood~
+Extra    magic~
+Wear     take hold~
+ExtraDesc wand~
+It has a little note that says 'point this end at target'.
+~
+End
+
+#6045
+Name jacket scale mail~
+Short a scale mail jacket~
+Desc A scale mail jacket is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 850
+Durability 5
+Condition 90
+Asize 160
+Rsize 50
+Values 3 4 4 0 2
+Weight 160
+Material steel~
+Wear     take torso~
+End
+
+#6046
+Name bronze breast plate~
+Short a bronze breast plate~
+Desc A bronze breast plate is lying on the ground.~
+Level 15
+ItemType armor~
+Cost 2100
+Durability 5
+Condition 90
+Asize 200
+Rsize 50
+Values 6 5 7 0 5
+Weight 200
+Material bronze~
+Wear     take torso~
+End
+
+#6047
+Name bronze breast plate~
+Short a special bronze breast plate~
+Desc A special bronze breast plate is lying on the ground.~
+Level 15
+ItemType armor~
+Cost 2100
+Durability 5
+Condition 90
+Asize 200
+Rsize 50
+Values 6 5 7 0 5
+Weight 200
+Material bronze~
+Wear     take torso~
+End
+
+#6050
+Name raft~
+Short a raft~
+Desc A raft has been left here.~
+Level 0
+ItemType boat~
+Cost 400
+Durability 5
+Condition 75
+Asize 750
+Rsize 50
+Values 0 0 0 0 0
+Weight 750
+Material wood~
+Wear     take~
+ExtraDesc raft~
+The raft looks very primitive.
+~
+End
+
+#6051
+Name canoe~
+Short a canoe~
+Desc A canoe has been left here.~
+Level 0
+ItemType boat~
+Cost 900
+Durability 5
+Condition 90
+Asize 320
+Rsize 50
+Values 0 0 0 0 0
+Weight 320
+Material wood~
+Wear     take~
+ExtraDesc canoe~
+The canoe is fairly light.
+~
+End
+
+#6052
+Name bracer strong leather~
+Short a leather bracer~
+Desc A strong leather bracer is here.~
+Level 0
+ItemType armor~
+Cost 112
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 2 2 0 0
+Weight 10
+Material leather~
+Wear     take wrist~
+End
+
+#6053
+Name belt leather~
+Short a leather belt~
+Desc A soft leather belt is here.~
+Level 0
+ItemType armor~
+Cost 136
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 1 2 2 0 0
+Weight 10
+Material leather~
+Wear     take waist~
+End
+
+#6054
+Name girdle leather~
+Short a leather girdle~
+Desc A wide leather girdle is here.~
+Level 0
+ItemType armor~
+Cost 220
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 1 3 3 0 1
+Weight 20
+Material leather~
+Wear     take waist~
+End
+
+#6060
+Name jerkin leather~
+Short a leather jerkin~
+Desc A leather jerkin is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 270
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values 1 2 2 0 0
+Weight 50
+Material leather~
+Wear     take torso~
+End
+
+#6061
+Name cap leather~
+Short a leather cap~
+Desc A leather cap is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 136
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 1 2 2 0 0
+Weight 10
+Material leather~
+Wear     take head~
+End
+
+#6062
+Name pants leather~
+Short a pair of leather pants~
+Desc A pair of leather pants is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 136
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values 1 2 2 0 0
+Weight 50
+Material leather~
+Wear     take legs~
+End
+
+#6063
+Name boots leather~
+Short a pair of leather boots~
+Desc A pair of leather boots lies here.~
+Level 0
+ItemType armor~
+Cost 136
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 1 2 2 0 0
+Weight 30
+Material leather~
+Wear     take feet~
+End
+
+#6064
+Name gloves leather~
+Short a pair of leather gloves~
+Desc A pair of leather gloves is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 136
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 1 2 2 0 0
+Weight 10
+Material leather~
+Wear     take hands~
+End
+
+#6065
+Name sleeves leather~
+Short a pair of leather sleeves~
+Desc A pair of leather sleeves is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 136
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 1 2 2 0 0
+Weight 30
+Material leather~
+Wear     take arms~
+End
+
+#6066
+Name jerkin hard leather~
+Short a hard leather jerkin~
+Desc A hard leather jerkin is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 430
+Durability 5
+Condition 90
+Asize 80
+Rsize 50
+Values 1 3 3 0 1
+Weight 80
+Material leather~
+Wear     take torso~
+End
+
+#6067
+Name cap hard leather~
+Short a hard leather cap~
+Desc A hard leather cap is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 220
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values 1 3 3 0 0
+Weight 20
+Material leather~
+Wear     take head~
+End
+
+#6068
+Name pants hard leather~
+Short a pair of hard leather pants~
+Desc A pair of hard leather pants is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 220
+Durability 5
+Condition 90
+Asize 70
+Rsize 50
+Values 1 3 3 0 1
+Weight 70
+Material leather~
+Wear     take legs~
+End
+
+#6069
+Name boots hard leather~
+Short a pair of hard leather boots~
+Desc A pair of hard leather boots lies here.~
+Level 0
+ItemType armor~
+Cost 220
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 1 3 3 0 1
+Weight 40
+Material leather~
+Wear     take feet~
+End
+
+#6070
+Name gloves hard leather~
+Short a pair of hard leather gloves~
+Desc A pair of hard leather gloves is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 220
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 1 3 3 0 1
+Weight 10
+Material leather~
+Wear     take hands~
+End
+
+#6071
+Name sleeves hard leather~
+Short a pair of hard leather sleeves~
+Desc A pair of hard leather sleeves is lying on the ground.~
+Level 0
+ItemType armor~
+Cost 220
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 1 3 3 0 1
+Weight 40
+Material leather~
+Wear     take arms~
+End
+
+#6072
+Name jerkin scale mail~
+Short a scale mail jerkin~
+Desc A scale mail jerkin is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 850
+Durability 5
+Asize 140
+Rsize 50
+Values 3 4 4 0 2
+Weight 140
+Material steel~
+Wear     take torso~
+End
+
+#6073
+Name coif scale mail~
+Short a scale mail coif~
+Desc A scale mail coif is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 420
+Durability 5
+Asize 40
+Rsize 50
+Values 3 4 4 0 1
+Weight 40
+Material steel~
+Wear     take head~
+End
+
+#6074
+Name skirt scale mail~
+Short a long scale mail skirt~
+Desc A long scale mail skirt is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 420
+Durability 5
+Asize 80
+Rsize 50
+Values 3 4 4 0 2
+Weight 80
+Material steel~
+Wear     take legs~
+End
+
+#6075
+Name boots reinforced~
+Short a pair of reinforced boots~
+Desc A pair of reinforced boots lies here.~
+Level 5
+ItemType armor~
+Cost 420
+Durability 5
+Asize 40
+Rsize 50
+Values 3 4 4 0 2
+Weight 40
+Material leather~
+Wear     take feet~
+End
+
+#6076
+Name gloves reinforced~
+Short a pair of reinforced gloves~
+Desc A pair of reinforced gloves is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 420
+Durability 5
+Asize 20
+Rsize 50
+Values 3 4 4 0 2
+Weight 20
+Material leather~
+Wear     take hands~
+End
+
+#6077
+Name sleeves scale mail~
+Short a pair of scale mail sleeves~
+Desc A pair of scale mail sleeves is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 420
+Durability 5
+Asize 60
+Rsize 50
+Values 3 4 4 0 2
+Weight 60
+Material steel~
+Wear     take arms~
+End
+
+#6080
+Name potion heal healing~
+Short a potion of healing~
+Desc A potion of healing is here.~
+Level 11
+ItemType potion~
+Cost 700
+Durability 5
+Asize 10
+Rsize 50
+Values 25 heal '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6081
+Name potion sanct sanctuary~
+Short a potion of sanctuary~
+Desc A potion of sanctuary is here.~
+Level 11
+ItemType potion~
+Cost 800
+Durability 5
+Asize 10
+Rsize 50
+Values 20 sanctuary '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6082
+Name potion divine~
+Short a potion of divine protection~
+Desc A potion of divine protection is here.~
+Level 16
+ItemType potion~
+Cost 1800
+Durability 5
+Asize 10
+Rsize 50
+Values 35 sanctuary 'stone skin' 'illusions grandeur' ''
+Weight 10
+Material crystal~
+Extra    glow hum magic bless~
+Wear     take hold~
+End
+
+#6083
+Name potion cure light~
+Short a potion of cure light wounds~
+Desc A potion of cure light wounds is here.~
+Level 0
+ItemType potion~
+Cost 150
+Durability 5
+Asize 10
+Rsize 50
+Values 5 'cure light' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6084
+Name potion cure serious~
+Short a potion of cure serious wounds~
+Desc A potion of cure serious wounds is here.~
+Level 1
+ItemType potion~
+Cost 220
+Durability 5
+Asize 10
+Rsize 50
+Values 10 'cure serious' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6085
+Name potion cure critical critic~
+Short a potion of cure critical wounds~
+Desc A potion of cure critical wounds is here.~
+Level 5
+ItemType potion~
+Cost 390
+Durability 5
+Asize 10
+Rsize 50
+Values 15 'cure critical' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6086
+Name potion antidote bottle~
+Short a bottle of antidote~
+Desc A bottle of antidote is here.~
+Level 8
+ItemType potion~
+Cost 550
+Durability 5
+Asize 10
+Rsize 50
+Values 14 'cure poison' 'cure light' 'cure disease' ''
+Weight 10
+Material clay~
+Extra    magic~
+Wear     take hold~
+End
+
+#6087
+Name potion cure blindness~
+Short a potion of cure blindness~
+Desc A potion of cure blindness is here.~
+Level 0
+ItemType potion~
+Cost 230
+Durability 5
+Asize 10
+Rsize 50
+Values 13 'cure blindness' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6088
+Name vial holy water~
+Short a vial of holy water~
+Desc A vial of holy water is here.~
+Level 10
+ItemType potion~
+Cost 720
+Durability 5
+Asize 10
+Rsize 50
+Values 20 bless 'protection evil' 'remove curse' ''
+Weight 10
+Material crystal~
+Extra    glow magic bless~
+Wear     take hold~
+End
+
+#6089
+Name potion armor~
+Short a potion of armor~
+Desc A potion of armor is here.~
+Level 0
+ItemType potion~
+Cost 200
+Durability 5
+Asize 10
+Rsize 50
+Values 10 '' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6090
+Name potion negation~
+Short a potion of negation~
+Desc A potion of negation is here.~
+Level 9
+ItemType potion~
+Cost 830
+Durability 5
+Asize 10
+Rsize 50
+Values 35 cancellation '' '' ''
+Weight 10
+Material glass~
+Extra    hum magic~
+Wear     take hold~
+End
+
+#6091
+Name potion fly flying~
+Short a potion of flying~
+Desc A potion of flying is here.~
+Level 3
+ItemType potion~
+Cost 250
+Durability 5
+Asize 10
+Rsize 50
+Values 9 fly '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6092
+Name potion true sight~
+Short a potion of true sight~
+Desc A potion of true sight is here.~
+Level 4
+ItemType potion~
+Cost 290
+Durability 5
+Asize 10
+Rsize 50
+Values 10 'detect invis' 'detect magic' 'detect hidden' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6097
+Name shield small metal~
+Short a small metal shield~
+Desc A small metal shield is lying on the ground.~
+Level 5
+ItemType armor~
+Cost 750
+Durability 5
+Asize 30
+Rsize 50
+Values 4 4 4 1 2
+Weight 30
+Material steel~
+Wear     take shield~
+End
+
+#6099
+Name Platinum coin~
+Short a `DPlatinum Coin`x~
+Desc A `DPlatinum Coin`x is lying here~
+Level 0
+ItemType gem~
+Cost 100000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material platinum~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#6100
+Name tea cup~
+Short a cup of tea~
+Desc A cup has been set here.~
+Level 0
+ItemType drinkcontainer~
+Cost 8
+Durability 5
+Asize 10
+Rsize 50
+Values 6 6 tea 0 0
+Weight 10
+Material china~
+Wear     take~
+ExtraDesc cup~
+It is a small simple cup.
+~
+End
+
+#6101
+Name coffee cup~
+Short a cup of coffee~
+Desc A cup has been set here.~
+Level 0
+ItemType drinkcontainer~
+Cost 6
+Durability 5
+Asize 10
+Rsize 50
+Values 6 6 coffee 0 0
+Weight 10
+Material china~
+Wear     take~
+ExtraDesc cup~
+It is a small simple cup.
+~
+End
+
+#6102
+Name water cup~
+Short a cup of water~
+Desc A cup has been set here.~
+Level 0
+ItemType drinkcontainer~
+Cost 1
+Durability 5
+Asize 10
+Rsize 50
+Values 10 10 water 0 0
+Weight 10
+Material clay~
+Wear     take~
+ExtraDesc cup~
+It is a large simple cup.
+~
+End
+
+#6105
+Name bracer bronze~
+Short a bronze bracer~
+Desc A bronze bracer is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 760
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 3 6 6 0 3
+Weight 30
+Material bronze~
+Wear     take wrist~
+End
+
+#6106
+Name bracer iron~
+Short an iron bracer~
+Desc An iron bracer is lying on the ground.~
+Level 15
+ItemType armor~
+Cost 1020
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 3 7 7 0 3
+Weight 40
+Material iron~
+Wear     take wrist~
+End
+
+#6110
+Name shirt chain mail~
+Short a chain mail shirt~
+Desc A chain mail shirt is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 1320
+Durability 5
+Asize 180
+Rsize 50
+Values 5 4 5 0 3
+Weight 180
+Material steel~
+Wear     take torso~
+End
+
+#6111
+Name coif chain mail~
+Short a chain mail coif~
+Desc A chain mail coif is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 660
+Durability 5
+Asize 50
+Rsize 50
+Values 5 4 5 0 2
+Weight 50
+Material steel~
+Wear     take head~
+End
+
+#6112
+Name skirt chain mail~
+Short a long chain mail skirt~
+Desc A long chain mail skirt is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 660
+Durability 5
+Asize 100
+Rsize 50
+Values 5 4 5 0 3
+Weight 100
+Material steel~
+Wear     take legs~
+End
+
+#6113
+Name boots ironbound~
+Short a pair of iron-bound boots~
+Desc A pair of iron-bound boots lies here.~
+Level 10
+ItemType armor~
+Cost 660
+Durability 5
+Asize 60
+Rsize 50
+Values 5 4 5 0 3
+Weight 60
+Material iron~
+Wear     take feet~
+End
+
+#6114
+Name gauntlets chain mail~
+Short a pair of chain mail gauntlets~
+Desc A pair of chain mail gauntlets is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 660
+Durability 5
+Asize 40
+Rsize 50
+Values 5 4 5 0 3
+Weight 40
+Material steel~
+Wear     take hands~
+End
+
+#6115
+Name sleeves chain mail~
+Short a pair of chain mail sleeves~
+Desc A pair of chain mail sleeves is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 660
+Durability 5
+Asize 80
+Rsize 50
+Values 5 4 5 0 3
+Weight 80
+Material steel~
+Wear     take arms~
+End
+
+#6116
+Name shield large metal~
+Short a large metal shield~
+Desc A large metal shield is lying on the ground.~
+Level 10
+ItemType armor~
+Cost 1190
+Durability 5
+Asize 100
+Rsize 50
+Values 5 5 5 2 4
+Weight 100
+Material steel~
+Wear     take shield~
+End
+
+#6117
+Name shield small wooden~
+Short a small wooden shield~
+Desc A small wooden shield is lying on the ground.~
+Level 3
+ItemType armor~
+Cost 510
+Durability 5
+Asize 20
+Rsize 50
+Values 4 3 2 1 1
+Weight 20
+Material wood~
+Wear     take shield~
+End
+
+#6120
+Name key iron~
+Short a key~
+Desc An iron key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material iron~
+Wear     take~
+ExtraDesc key iron~
+The iron key is not special.
+~
+End
+
+#6121
+Name key rusty~
+Short a key~
+Desc A rusty key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Condition 50
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material iron~
+Wear     take~
+ExtraDesc key rusty~
+The key is a fairly large rusty key.  You notice some fresh dirt on it.
+~
+End
+
+#6122
+Name key wooden~
+Short a key~
+Desc A wooden key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material wood~
+Wear     take~
+ExtraDesc key wooden~
+The wooden key is not special.
+~
+End
+
+#6123
+Name key brass~
+Short a key~
+Desc A brass key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material brass~
+Wear     take~
+ExtraDesc key brass~
+The brass key is small and looks like it fits a very complicated lock.
+~
+End
+
+#6124
+Name sword long~
+Short a long sword~
+Desc A long sword has been left here.~
+Level 26
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 50
+Rsize 50
+Values sword 2 12 slash D
+Weight 50
+Material steel~
+Wear     take wield~
+ExtraDesc sword long~
+This is the ceremonial sword of the Mayor of Felanor.
+A
+13 20
+A
+12 20
+~
+End
+
+#6129
+Name hand cuffs~
+Short a pair of hand cuffs~
+Desc A pair of hand cuffs has been left here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Condition 75
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material iron~
+Wear     take hold~
+End
+
+#6130
+Name desk drawer~
+Short the desk~
+Desc A desk is set against the western wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 34 ABCD 6122 20 100
+Weight 0
+Material wood~
+ExtraDesc desk~
+The desk looks very sparse, there is a drawer on the left side.
+~
+ExtraDesc drawer~
+You notice a keyhole in the drawer.
+~
+End
+
+#6131
+Name safe~
+Short the safe~
+Desc A safe is placed in a dark corner of the room.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 34 ABCD 6123 20 100
+Weight 0
+Material iron~
+ExtraDesc safe~
+The safe is very heavy.
+~
+End
+
+#6132
+Name silver coins~
+Short the silver coins~
+Desc A lot of silver is here.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 0 0
+Weight 0
+Material silver~
+Wear     take~
+ExtraDesc silver~
+Looks like at least a thousand coins.
+~
+End
+
+#6133
+Name city key~
+Short the City Key~
+Desc The very big City Key is lying here.~
+Level 0
+ItemType key~
+Cost 100
+Durability 5
+Condition 90
+Asize 250
+Rsize 50
+Values 0 0 0 0 0
+Weight 250
+Material gold~
+Wear     take~
+ExtraDesc city key~
+It is probably the biggest key you have seen in your life. It is made from
+polished gold and has various patterns on it along with the Midgaard Coat of
+Arms.
+~
+End
+
+#6134
+Name bench~
+Short the Bench~
+Desc A white-painted wooden bench is standing here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+ExtraDesc bench~
+It is a quite heavy but very comfortable bench.  It is placed with its front
+towards the river so you can sit and watch the river and the houses on the
+other side.
+~
+End
+
+#6135
+Name fountain water~
+Short a fountain~
+Desc A small white fountain gushes forth here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material unknown~
+ExtraDesc fountain~
+It is very nice.  Made from fine white marble.
+~
+End
+
+#6136
+Name coins~
+Short a small pile of coins~
+Desc A small pile of coins lies here.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 20 0 0 0 0
+Weight 0
+Material silver~
+Wear     take~
+End
+
+#6137
+Name key steel~
+Short a steel key~
+Desc A large steel key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material steel~
+Wear     take~
+ExtraDesc key steel~
+A key of this size must fit a very strong lock.
+~
+End
+
+#6138
+Name skin water buffalo~
+Short a buffalo water skin~
+Desc A bloated dead buffalo is on the floor.~
+Level 0
+ItemType drinkcontainer~
+Cost 24
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 64 64 water 0 0
+Weight 40
+Material leather~
+Wear     take~
+End
+
+#6139
+Name letter resignation~
+Short the receptionist's letter of resignation~
+Desc The receptionist's letter of resignation is taped to the wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+ExtraDesc letter resignation~
+The letter is written in a bold and feminine Carolinian hand.
+
+    To whom it may concern,
+
+        Merc Industries has installed a new no-rent save and quit
+        system.  Apparently one can now save and quit at any time
+        from anywhere inside a town or out.  My services here are
+        no longer required.
+
+    Diana the Receptionist
+~
+End
+
+#6140
+Name notice liquidation bank~
+Short the bank's notice of liquidation~
+Desc The bank's notice of liquidation is taped to the wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+ExtraDesc notice liquidation bank~
+The letter is written in a reserved and dignified Spencer hand.
+
+    To whom it may concern,
+
+        Merc Industries has charmed your money.  Apparently one's
+        gold will remain close, even beyond death. We are closing
+        down our offices and ATM machines.  Our services here are
+        no longer required.
+
+    Felanor City Bank
+~
+End
+
+#6149
+Name taxidermy scroll~
+Short scroll of taxidermy~
+Desc A scroll of taxidermy is lying here.~
+Level 1
+ItemType scroll~
+Cost 10000
+Durability 5
+Asize 1
+Rsize 50
+Values 90 '' '' '' ''
+Weight 1
+Material leather~
+Extra    magic~
+Wear     take hold~
+End
+
+#6150
+Name coffee cup cinnamon~
+Short a cup of cinnamon coffee~
+Desc A piping hot cup of cinnamon coffee is here.~
+Level 0
+ItemType drinkcontainer~
+Cost 12
+Durability 5
+Asize 10
+Rsize 50
+Values 6 6 coffee 0 0
+Weight 10
+Material china~
+Wear     take~
+ExtraDesc coffee~
+It's a nice flavorful blend, just right for late-night mudding sessions.
+~
+End
+
+#6151
+Name soup bowl~
+Short a bowl of chicken noodle soup~
+Desc A nice hot bowl of chicken noodle soup is here.~
+Level 0
+ItemType food~
+Cost 10
+Durability 5
+Asize 20
+Rsize 50
+Values 4 8 0 0 0
+Weight 20
+Material wood~
+Wear     take~
+ExtraDesc soup~
+This looks like just the thing for a cold!
+~
+End
+
+#6152
+Name bowl beef stew~
+Short a bowl of beef stew~
+Desc A bowl of nice thick beef stew, with lots of vegetables, steams here.~
+Level 0
+ItemType food~
+Cost 14
+Durability 5
+Asize 30
+Rsize 50
+Values 25 25 0 0 0
+Weight 30
+Material food~
+Wear     take~
+ExtraDesc stew bowl~
+This is Kate's special stew, guaranteed to keep hunger pangs away for many
+hours.  Care for a bite?
+~
+End
+
+#6153
+Name biscuit~
+Short a biscuit~
+Desc A yummy biscuit, covered with butter, is here.~
+Level 0
+ItemType food~
+Cost 5
+Durability 5
+Asize 10
+Rsize 50
+Values 4 3 0 0 0
+Weight 10
+Material food~
+Wear     take~
+ExtraDesc biscuit~
+A nice, soft biscuit with just enough butter.  Better buy two.
+~
+End
+
+#6154
+Name beer bottle killian irish red~
+Short a bottle of George Killian's Irish Red~
+Desc A dark-tinted bottle of beer is here.~
+Level 0
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Asize 20
+Rsize 50
+Values 16 16 beer 0 0
+Weight 20
+Material glass~
+Wear     take~
+ExtraDesc beer bottle~
+It's a fine beer for serious drinkers, complete with the famous horse head
+logo.  Worth every penny.
+~
+End
+
+#6161
+Name key white~
+Short a white key~
+Desc A white key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material ivory~
+Wear     take hold~
+End
+
+#6162
+Name map Felanor~
+Short a map of the city of Felanor~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map Felanor~
+..
+                        * * * Felanor * * *
+                         = = ========== = =
+ 
+                                     Rainbow Bridge (Asgard and Valhalla)
+                                    /
+          North            Temple Altar   Mud School <--- ** NEWBIES **
+            |   /Up        (Healer, Pit)      |           ** GO HERE **
+            | /                  |       /Entrance to
+     West---+---East             |     /  Mud School
+          / |                 Temple of       |
+    Down/   |                   Mota        Arena
+          South               (Recall)
+                                 |
+                                 |   /In the Air   /Defunct Reception
+                  Cleric         | /             /
+       Northern   Guild----Temple Square---Grunting---Bar    Northern
+       Felanor              (Fountain)    Boar Inn          Felanor
+     (Clan Road) Magic           |                          (Clan Road)
+           |     Shop   Bakery   |    Grocer    Weaponsmith     |
+           |       |      |      |       |           |          |
+To    <---West---Main-Street---Market----Main-Street-+--------East--->Cross
+Shire,    Gate     |      |    Square    |           |        Gate    Roads
+Forest of  |     Mage  Armoury   |     Jeweler    Warrior       |
+Haon-Dor   |     Guild           |                 Guild     Wall Road
+          Wall                   |                              |
+          Road  Leather  Map     |    Grebe's  Pet   Apothecary |
+           |     Shop    Shop    |    Tavern   Shop  (Potions)  |
+           |      |       |    Common   |       |       |       |
+          Wall---Poor-Alley----Square---Dark-Alley------+----Wall Road
+          Road    |       |      |      |       |       |       |
+           |   Temple   Grubby   |   Thieves  Levee   Warehouse |
+           |  Of Stupid  Inn     |    Guild   (Boats) (Sailor)  |
+           |                    Dump            |               |
+          Wall  Mob      Sewers/ |              |             Wall
+          Road--Factory          |              |             Road
+           |                   South         Felanor           |         To the
+         Bridge                Bridge         River---------> Bridge <--> Sands
+           |                     |                              |           of
+        Southern              Southern                       Southern     Sorrow
+        Felanor              Felanor                       Felanor
+~
+End
+
+#6163
+Name map thera~
+Short a map of Thera~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 1500
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map thera~
+..
+                         * * * Northern Thera  * * *
+                          = = ================== = =
+ 
+                                                   Moria
+                             Olympus          New    |    Dwarven--Mines
+Mage            Elven Valley    |     Ofcol--Ofcol   +----Kingdom
+Tower                       \   |       |            |       |    \Catacombs
+  |    Dragon Tower          Plains-----+            |   Day-Care
+  |   /                         |       |            |             Void---Old
+Shadow                      Northern  Stones of      |   Nirvana\    |   Thalos
+Grove---Galaxy              Felanor   G'harne       |            \Holy
+  |                             |                    |     Smurf   Grove
+   \  Arachnos    Shire  Asgard | In the Air         |    Village    |
+     \   |          |         \ | /                  |       |       |    Check
+      Forest Of-----+-------Felanor---------------Cross---Eastern Road---Point
+      Haon Dor              / | | | \              Roads             |
+     /     |     Mob Factory  | | |  Machine            \        Gnome Village
+  Old    Troll               /  | |  Dreams               \
+ Marsh    Den           Sewer   |  \            Ruins of---Dwarf---Frigid Waste
+                                |    \Felanor   Thalos    Forest         |
+       Redferne's---Chain---Southern    River                |  \      Keep of
+       Residence            Felanor         \       Wyvern--+  Drow   Mahn-tor
+           |                  / | \          Sands of Tower  |  City
+         Clouds      Gang Land  | Graveyard  Sorrow          |
+        (Harpies)               |      \           \       Elemental
+                            Miden'nir   Church   Mega-City  Canyon
+                            (Goblins)  Catacombs    One
+ 
+This map shows just about all the major areas on ROM.  This map is NOT drawn
+to scale, some of the directions were changed to make everything fit.  This
+map shows the GENERAL location of an area with respect to the other areas.
+Type "areas" for a complete list with suggested levels and the authors.
+~
+End
+
+#6164
+Name map southern Felanor~
+Short a map of southern Felanor~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 1000
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map southern Felanor~
+..
+                         * * * SOUTHERN Felanor * * *
+                          = = =================== = =
+ 
+ West                          South             Kate's                   East
+Bridge                         Bridge            Diner                   Bridge
+  |                              |                 |                       |
+Northwest                        |              Austral                Northeast
+Concourse---Promenade--------Promenade----------Square-----------------Concourse
+    |           |                |                 |                       |
+    |           |                |                 |          Fountain     |
+    |           |                |              Emerald           |        |
+Concourse     Park              Park-----Park     Ave----Penny--Penny--Concourse
+    |         Road            Entrance   Cafe      |     Lane   Lane       |
+    |           |                |              Emerald                    |
+    |           |                |                Ave                      |
+    |           |                |                 |                       |
+    |  Guard  Park     Park     The      Park   Emerald   Town             |
+    |   HQ----Road---Entrance---Park---Entrance---Ave-----Hall             |
+    |           |                                  |                       |
+    |         Park              Emerald---------Emerald--------------Gang  |
+    |         Road                Ave             Ave                |  |  |
+    |           |                  |                                 |  |  |
+    |         Park----------------Road----------Park            Elm--Land  |
+    |         Road             /Crossing        Road           Street      |
+    |                     Chain    |              |              |         |
+Concourse                /         |            Park----Elm-----Elm----Concourse
+    |       (Redferne's, Harpies)  |            Road   Street  Street      |
+    |                              |              |              |         |
+    |                Emerald--Emerald            Park        Graveyard     |
+    |                  Ave      Ave             Road    (Church Catacombs) |
+    |                   |                         |                        |
+    |                Emerald                    Park                       |
+    |                  Ave                      Road                       |
+    |                   |                         |                        |
+Concourse-----------Concourse------Inside-----Concourse----------------Concourse
+                                 South Gate
+                                     |
+                                 Miden'Nir
+                                 (Goblins)
+
+~
+End
+
+#6165
+Name map dwarven kingdom dwarf~
+Short a map of the Dwarven Kingdom~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 750
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map dwarven kingdom dwarf~
+..
+                         * * * The Dwarven Kingdom * * *
+                          = = ===================== = =
+ 
+                    Dwarven
+                    Hospital
+                       |                                              *Path to
+         North of---Path by---Path by---Barracks     Guard--Door to----Castle
+          Shops     Hospital  Barracks  Entrance     House  Kingdom  Strangelove
+Granite     |                              |                   |
+Head's---Path North                      First               Narrow
+Bakery    of Shop                       Barracks              Path
+            |                              |                   |
+         Hide and    Turn               Back of     Bend in--Narrow
+        Tooth Shop--in Road             Barracks     Path     Path
+                       |                    \         |
+                    Path to               Dwarven   Narrow
+                    Village              Catacombs   Path
+                       |                              |
+             Store  *Inside    Entrance     Top of   Dark   *Mine
+             Room---Entrance--To Mountain--Mountain--Path--Entrance
+                \                             |                 \
+               Wine                        Middle of          Dwarven
+              Cellar                       Mountain            Mines
+                  \                            |
+                Dwarven                    Base of
+               Catacombs    Moria          Mountain           North
+                              |               |           Up\   |
+                              |            Path to            \ |
+                            Plains--Hills--Dwarven      West----+----East
+                              |            Kingdom              | \
+                              |               |                 |   \Down
+              Felanor <----Cross          Dwarven            South
+                            Roads          Drop-off
+                                          (Day-Care)
+ 
+*key required
+~
+End
+
+#6166
+Name map moria first~
+Short a map of the first level of Moria~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 1500
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map moria first~
+* * * MORIA - Map 1 * * *                                           To Mahn-Tor
+ = = =============== = =                                                 |
+Talk about a mess!                                                   Foothills
+                                                                         |
+This is as far as our courageous, noble, brave           Light Cave    Valley
+and apparently quite deceased cartographers                   |           |
+could get.  Perhaps more maps could be found             Smelly Tunnel  Cave
+in the depths of Moria itself.                                |           |
+                                                  Cave---Many Tunnels---Tunnel
+                                                    |         |           |
+         West End--Large Cave--East End           Cave      Tunnel      *Hole
+            |          |                            |         |        (Map 2)
+            |        Tunnel---------Tunnel--------Tunnel----Tunnel
+            |                                       |
+ *Hole----Damp----Damp  Tunnel--Tunnel--Tunnel    Tunnel
+(Map 3)  Tunnel  Tunnel   |               |         |
+                   |      |            (*Map 3)  The Cave
+                   |      |                         |
+                   |    Tunnel--Light--Maze      End of
+                   |            Cave    |        The Path
+                   |                  Light         |
+                   |                  Cave      The Hills--> Dwarven Kingdom
+                   |                    |           |
+                 Tunnel----Tunnel-----Light     The Plains
+                                      Cave          |
+                                                 The Lane
+                                                    |
+                                      Felanor <--Cross--> Eastern Road
+                                                  Roads
+                                                    |
+                                               Dwarf Forest
+~
+End
+
+#6167
+Name map new thalos~
+Short a map of New Thalos ~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 2500
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map new thalos~
+..
+           * * * **************** New Thalos ***************** * * *
+                   "Not Thalos or Old Thalos but New Thalos"
+            = = =============================================== = =
+
+                                   Plains
+                                     |
+Northwest--West Casbah-------------North-----------------Casbah--------Northeast
+  Tower     |                       Gate                    |            Tower
+          Alley                      |                      |              |
+            |    Guard            Sultan's                  |  Library----Kali
+          Alley  House              Walk                    |             Row
+                   |                 |      Dancing         |              |
+     Sultan's----Grand----Palace--Sultan's--Daemon          |   Dance-----Kali
+      Palace    Entrance   Gate     Walk      Inn           |   Hall      Row
+                   |                 |                      |
+                 Guard               |         Bowyer--Guildsman's--Mason's
+                 House               |         Guild       Row      Guild
+ High                                |                      |
+Priest                               |         Weaver--Guildsman's--Craftsman
+Chamber  Altar                    Sultan's     Guild       Row        Guild
+  |        |                        Walk                    |
+Inside--Inside--Donation             |         Tanner--Guildsman's--Museum
+Temple  Temple    Room               |         Guild       Row      of the
+  |        |                         |                      |       Greater
+Cleric     |                         |                 Guildsman's---Gods
+Guild     /                          |                     Row
+        /                            |                      |
+     Temple             Ahkeem's  Sultan's  Vera's     Guildsman's         Mage
+     Gates                Stuff     Walk   Veggies         Row             Tower
+       |     Alley--Alley    |       |       |              |                |
+     Temple    |           Market--Market--Market           | Witch's  Magic |
+     Square  Alley   Bank--Square  Square  Square--Butchery |  Brew    Shop  |
+       |       |             |       |       |              |    |      |    |
+West--West---West---West---Market--Center--Market---East--East--East--East--East
+Gate  Main   Main   Main   Square  Square  Square   Main  Main  Main  Main  Gate
+  |    |       |             |       |       |              |    |
+  |  Repair  Alley  Store--Market--Market--Market--Abdul's  | Mercenary--Thieves
+  |   Shop     |           Square  Square  Sqaure   Armor   |   Guild     Guild
+  |          Alley--Alley    |       |       |             Alley
+Warrior's                  Bread   Medina  Igor's  Leather  |           Smuggler
+  Guild                    Stand     |    Weapons   Shop---Alley--Alley---Inn
+                                   Medina                        /
+      Warehouse    Shipwright        |     Forge  Stables      /    Cass's  Dump
+       |     |          |          Common    |       |        |       |      |
+       +-----West Ishtar Drive-----Square----+---East Ishtar Drive----+------+
+                        |            |
+                    Boat Ramp        |
+                        |          South
+===================Ishtar River====Bridge======================> To Dragon Sea
+                                     |
+                                   South
+                                   Gate
+~
+End
+
+#6168
+Name map olympus~
+Short a map of Olympus~
+Desc A rolled up map is here.~
+Level 0
+ItemType map~
+Cost 2000
+Durability 5
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material paper~
+Wear     take~
+ExtraDesc map olympus~
+..
+                               *****OLYMPUS*****
+                               =================
+ 
+                                   Bedroom
+                                      |
+                                   Northern
+                                     Hall
+                        Western       |         Eastern
+              Bedroom----Hall----Second Floor----Hall----Bedroom
+                                /     |
+                         Stairway  Southern
+                             |       Hall                    North
+                        Throne Room   |                        |  /Up
+                             |      Bedroom                    |/
+                             |                          West---+---East
+                  Kitchen    |     Stable                     /|
+                     |       |       |                  Down/  |
+        Guest     Western  Castle  Eastern   Guest           South
+       Quarters----Wing----Entry----Wing----Quarters
+                     |       |       |
+                  Storage   Z|    Storage
+                   Room     e|S    Room   Smithy
+                            u|t             |
+                            s+--Ares Street-+--Weapon
+                    Mystery  |              |   Shop
+                    Shop-----+           Armoury
+                             |
+                   Residence-+-Residence
+                             |
+                     Bakery--+
+                             |
+                       **Entrance**
+                            /
+                      Mountain
+~
+End
+
+#6237
+Name pit~
+Short the donation pit~
+Desc A pit for sacrifices is in front of the altar.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10000 0 0 1000 100
+Weight 0
+Material unknown~
+Extra    nopurge~
+End
+
+#6238
+Name skin water buffalo~
+Short a buffalo water skin~
+Desc A bloated dead buffalo is on the floor.~
+Level 0
+ItemType drinkcontainer~
+Cost 3
+Durability 5
+Condition 90
+Asize 40
+Rsize 50
+Values 64 64 water 0 0
+Weight 40
+Material leather~
+Wear     take~
+End
+
+#6240
+Name scroll identify~
+Short a scroll of identify~
+Desc A scroll has carelessly been left here.~
+Level 7
+ItemType scroll~
+Cost 890
+Durability 5
+Asize 10
+Rsize 50
+Values 12 identify '' '' ''
+Weight 10
+Material vellum~
+Extra    magic~
+Wear     take hold~
+ExtraDesc scroll identify~
+The scroll has a magic formula drawn upon it:
+     ???
+    ?   ?
+       ?
+      ?
+      ?
+      *
+~
+End
+
+#6241
+Name potion yellow~
+Short a yellow potion of see invisible~
+Desc A small yellow potion has carelessly been left here.~
+Level 0
+ItemType potion~
+Cost 220
+Durability 5
+Asize 10
+Rsize 50
+Values 12 'detect invis' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+ExtraDesc potion yellow~
+The potion has a small label 'Detect The Invisible'.
+~
+End
+
+#6242
+Name scroll recall~
+Short a scroll of recall~
+Desc A scroll has carelessly been left here.~
+Level 17
+ItemType scroll~
+Cost 2900
+Durability 5
+Asize 20
+Rsize 50
+Values 20 'word of recall' '' '' ''
+Weight 20
+Material vellum~
+Extra    magic~
+Wear     take hold~
+ExtraDesc scroll~
+The scroll has written a formula of 'Word of Recall' upon it.
+~
+End
+
+#6280
+Name potion heal healing~
+Short a potion of healing~
+Desc A potion of healing is here.~
+Level 11
+ItemType potion~
+Cost 800
+Durability 5
+Asize 10
+Rsize 50
+Values 20 heal '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6281
+Name potion sanct sanctuary~
+Short a potion of sanctuary~
+Desc A potion of sanctuary is here.~
+Level 11
+ItemType potion~
+Cost 800
+Durability 5
+Asize 10
+Rsize 50
+Values 20 sanctuary '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6282
+Name potion divine~
+Short a potion of divine protection~
+Desc A potion of divine protection is here.~
+Level 16
+ItemType potion~
+Cost 1800
+Durability 5
+Asize 10
+Rsize 50
+Values 35 sanctuary 'stone skin' '' ''
+Weight 10
+Material crystal~
+Extra    glow hum magic bless~
+Wear     take hold~
+End
+
+#6283
+Name potion cure light~
+Short a potion of cure light wounds~
+Desc A potion of cure light wounds is here.~
+Level 0
+ItemType potion~
+Cost 150
+Durability 5
+Asize 10
+Rsize 50
+Values 5 'cure light' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6284
+Name potion cure serious~
+Short a potion of cure serious wounds~
+Desc A potion of cure serious wounds is here.~
+Level 1
+ItemType potion~
+Cost 220
+Durability 5
+Asize 10
+Rsize 50
+Values 10 'cure serious' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6285
+Name potion cure critical critic~
+Short a potion of cure critical wounds~
+Desc A potion of cure critical wounds is here.~
+Level 5
+ItemType potion~
+Cost 390
+Durability 5
+Asize 10
+Rsize 50
+Values 15 'cure critical' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6286
+Name potion antidote bottle~
+Short a bottle of antidote~
+Desc A bottle of antidote is here.~
+Level 8
+ItemType potion~
+Cost 550
+Durability 5
+Asize 10
+Rsize 50
+Values 14 'cure poison' 'cure light' 'cure disease' ''
+Weight 10
+Material clay~
+Extra    magic~
+Wear     take hold~
+End
+
+#6287
+Name potion cure blindness~
+Short a potion of cure blindness~
+Desc A potion of cure blindness is here.~
+Level 0
+ItemType potion~
+Cost 230
+Durability 5
+Asize 10
+Rsize 50
+Values 13 'cure blindness' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6288
+Name vial holy water~
+Short a vial of holy water~
+Desc A vial of holy water is here.~
+Level 10
+ItemType potion~
+Cost 720
+Durability 5
+Asize 10
+Rsize 50
+Values 20 bless 'protection evil' 'remove curse' ''
+Weight 10
+Material crystal~
+Extra    glow magic bless~
+Wear     take hold~
+End
+
+#6289
+Name potion armor~
+Short a potion of armor~
+Desc A potion of armor is here.~
+Level 0
+ItemType potion~
+Cost 200
+Durability 5
+Asize 10
+Rsize 50
+Values 10 '' '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6290
+Name potion negation~
+Short a potion of negation~
+Desc A potion of negation is here.~
+Level 9
+ItemType potion~
+Cost 830
+Durability 5
+Asize 10
+Rsize 50
+Values 35 cancellation '' '' ''
+Weight 10
+Material glass~
+Extra    hum magic~
+Wear     take hold~
+End
+
+#6291
+Name potion fly flying~
+Short a potion of flying~
+Desc A potion of flying is here.~
+Level 3
+ItemType potion~
+Cost 250
+Durability 5
+Asize 10
+Rsize 50
+Values 9 fly '' '' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6292
+Name potion true sight~
+Short a potion of true sight~
+Desc A potion of true sight is here.~
+Level 4
+ItemType potion~
+Cost 290
+Durability 5
+Asize 10
+Rsize 50
+Values 10 'detect invis' 'detect magic' 'detect hidden' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#6349
+Name long sword~
+Short a glowing long sword~
+Desc A glowing long sword is here.~
+Level 29
+ItemType weapon~
+Cost 6100
+Durability 5
+Condition 90
+Asize 50
+Rsize 50
+Values sword 4 6 slash 0
+Weight 50
+Material steel~
+Wear     take wield~
+Affect modifier -1 29 -1 hitroll 2 0
+Affect modifier -1 29 -1 damroll 2 0
+ExtraDesc long sword~
+It looks exceptionally sharp and well-balanced. Maybe you should keep it.
+~
+End
+
+#6350
+Name sword standard merc~
+Short a standard issue sword~
+Desc You see a standard issue sword here.~
+Level 25
+ItemType weapon~
+Cost 1280
+Durability 5
+Asize 50
+Rsize 50
+Values sword 3 5 slash 0
+Weight 50
+Material steel~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 25 -1 hitroll 1 0
+Affect modifier -1 25 -1 damroll 1 0
+ExtraDesc sword~
+You see a sword of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6351
+Name dagger standard merc~
+Short a standard issue dagger~
+Desc You see a standard issue dagger here.~
+Level 20
+ItemType weapon~
+Cost 590
+Durability 5
+Asize 20
+Rsize 50
+Values dagger 2 5 pierce 0
+Weight 20
+Material steel~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 20 -1 hitroll 1 0
+Affect modifier -1 20 -1 damroll 1 0
+ExtraDesc dagger~
+You see a dagger of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6352
+Name mace standard merc~
+Short a standard issue mace~
+Desc You see a standard issue mace here.~
+Level 15
+ItemType weapon~
+Cost 620
+Durability 5
+Asize 100
+Rsize 50
+Values mace 2 4 pound 0
+Weight 100
+Material iron~
+Extra    magic~
+Wear     take wield~
+Affect modifier -1 15 -1 hitroll 1 0
+Affect modifier -1 15 -1 damroll 2 0
+ExtraDesc mace~
+You see a mace of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6353
+Name vest standard merc~
+Short `#`wa `sstandard `wissue `rv`se`rs`st`^~
+Desc You see a standard issue vest here.~
+Level 5
+ItemType armor~
+Cost 900
+Durability 5
+Asize 50
+Rsize 50
+Values 4 4 3 1 1
+Weight 50
+Material leather~
+Wear     take torso~
+ExtraDesc vest~
+You see a vest of great craftsmanship.  Stamped on the side is:
+Merc Industries
+~
+End
+
+#6354
+Name shield standard merc~
+Short a standard issue shield~
+Desc You see a standard issue shield here.~
+Level 5
+ItemType armor~
+Cost 810
+Durability 5
+Asize 30
+Rsize 50
+Values 4 4 4 2 2
+Weight 30
+Material steel~
+Wear     take shield~
+ExtraDesc shield~
+You see a shield of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6355
+Name cloak standard merc~
+Short `#a `sstandard `wissue `rc`sl`ro`sa`rk`^~
+Desc You see a standard issue cloak here.~
+Level 5
+ItemType armor~
+Cost 510
+Durability 5
+Asize 40
+Rsize 50
+Values 3 5 4 1 1
+Weight 40
+Material cloth~
+Wear     take neck~
+ExtraDesc cloak~
+You see a cloak of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6356
+Name helmet standard merc~
+Short `#`wa `sstandard `wissue `rh`se`rl`sm`re`st`^~
+Desc You see a standard issue helmet here.~
+Level 5
+ItemType armor~
+Cost 450
+Durability 5
+Asize 30
+Rsize 50
+Values 4 4 3 1 1
+Weight 30
+Material leather~
+Wear     take head~
+ExtraDesc helmet~
+You see a helmet of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6357
+Name leggings standard merc~
+Short `#`wa pair of `sstandard `wissue `rl`se`rg`sg`ri`sn`rg`ss`^~
+Desc You see a pair of standard issue leggings here.~
+Level 5
+ItemType armor~
+Cost 450
+Durability 5
+Asize 30
+Rsize 50
+Values 4 4 3 1 1
+Weight 30
+Material leather~
+Wear     take legs~
+ExtraDesc leggings~
+You see leggings of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6358
+Name boots standard merc~
+Short `#`wa pair of `sstandard `wissue `rb`so`ro`st`rs`^~
+Desc You see a pair of standard issue boots here.~
+Level 5
+ItemType armor~
+Cost 450
+Durability 5
+Asize 30
+Rsize 50
+Values 4 4 3 1 1
+Weight 30
+Material leather~
+Wear     take feet~
+ExtraDesc boots~
+You see boots of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6359
+Name gloves standard merc~
+Short `#`wa pair of `sstandard `wissue `rg`sl`ro`sv`re`ss`^~
+Desc You see a pair of standard issue gloves here.~
+Level 5
+ItemType armor~
+Cost 450
+Durability 5
+Asize 30
+Rsize 50
+Values 4 4 3 1 1
+Weight 30
+Material leather~
+Wear     take hands~
+ExtraDesc gloves~
+You see gloves of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6360
+Name sleeves standard merc~
+Short `wa pair of `sstandard `wissue `rs`sl`re`se`rv`se`rs`^~
+Desc You see a pair of standard issue sleeves here.~
+Level 5
+ItemType armor~
+Cost 450
+Durability 5
+Asize 20
+Rsize 50
+Values 4 4 3 1 1
+Weight 20
+Material leather~
+Wear     take arms~
+ExtraDesc sleeves~
+You see sleeves of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6361
+Name cape standard merc~
+Short `#`wa `sstandard `wissue `rc`sa`rp`se`^~
+Desc You see a standard issue cape here.~
+Level 3
+ItemType armor~
+Cost 380
+Durability 5
+Asize 20
+Rsize 50
+Values 3 4 3 1 1
+Weight 20
+Material cloth~
+Wear     take about~
+ExtraDesc cape~
+You see a cape of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6362
+Name belt standard merc~
+Short `#`wa `sstandard `wissue `rb`se`rl`st`^~
+Desc You see a standard issue belt here.~
+Level 5
+ItemType armor~
+Cost 450
+Durability 5
+Asize 20
+Rsize 50
+Values 4 4 3 1 1
+Weight 20
+Material bronze~
+Wear     take waist~
+ExtraDesc belt standard merc~
+You see a bronze belt of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6363
+Name bracer standard merc~
+Short `#`wa `sstandard `wissue `rb`sr`ra`sc`re`sr`^~
+Desc You see a standard issue bracer here.~
+Level 3
+ItemType armor~
+Cost 390
+Durability 5
+Asize 10
+Rsize 50
+Values 2 4 4 1 0
+Weight 10
+Material bronze~
+Wear     take wrist~
+ExtraDesc bracer~
+You see a bracer of great craftsmanship.  Imprinted on the side is:
+Merc Industries
+~
+End
+
+#6364
+Name ring signet~
+Short `#`wa `scity guard `rs`si`rg`sn`re`st `wring`^~
+Desc You see a ring with a strange symbol on the floor.~
+Level 16
+ItemType treasure~
+Cost 1280
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material copper~
+Extra    magic~
+Wear     take finger~
+Affect modifier -1 16 -1 ac -4 0
+Affect modifier -1 16 -1 saves -1 0
+End
+
+#6365
+Name banner war merc~
+Short a war banner~
+Desc A war banner is on the floor here.~
+Level 8
+ItemType light~
+Cost 640
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 500 0 0
+Weight 10
+Material cloth~
+Extra    glow magic~
+Wear     take~
+Affect modifier -1 8 -1 saves -1 0
+Affect modifier -1 8 -1 ac -2 0
+ExtraDesc banner~
+This is the official Merc war banner to see you through the darkest realm!
+~
+End
+
+#6371
+Name ring diamond wedding~
+Short `#`wa `Wd`wi`sa`Wm`wo`sn`Wd `Wwedding `wring`^~
+Desc A diamond wedding ring has been left here.~
+Level 20
+ItemType treasure~
+Cost 860
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material diamond~
+Extra    bless~
+Wear     take finger~
+Affect modifier -1 20 -1 saves -2 0
+ExtraDesc ring diamond wedding~
+A slender gold band set with a marquise-cut four carat blue-white solitaire.
+Inscribed on the inside of the band is: 'Your loving husband'.
+~
+End
+
+#6372
+Name band gold wedding~
+Short `#`wa `Yg`yo`Yl`yd `wwedding `sband`^~
+Desc A gold wedding band has been left here.~
+Level 20
+ItemType treasure~
+Cost 860
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    bless~
+Wear     take finger~
+Affect modifier -1 20 -1 saves -2 0
+End
+
+#6373
+Name pearl~
+Short a small `Wp`we`Wa`wr`Wl`^~
+Desc A small but well-formed pearl lies here.~
+Level 0
+ItemType gem~
+Cost 1000
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material pearl~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#6374
+Name garnet gem~
+Short a `#`rgarnet`^~
+Desc A garnet catches your eye.~
+Level 0
+ItemType gem~
+Cost 500
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#6375
+Name emerald gem~
+Short an `#`Ge`gm`Ge`gr`Ga`gl`Gd`^~
+Desc A deep green emerald winks at you.~
+Level 0
+ItemType gem~
+Cost 5000
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#6376
+Name ruby gem~
+Short a `#`Rr`ru`Rb`ry`^~
+Desc A beautiful, if small, ruby is here.~
+Level 0
+ItemType gem~
+Cost 6000
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#6377
+Name diamond gem~
+Short a `#`Wd`wi`Wa`wm`Wo`wn`Wd`^~
+Desc A diamond catches and reflects the lighting.~
+Level 0
+ItemType gem~
+Cost 10000
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#6378
+Name opal~
+Short an `#`Wo`mp`wa`Ml`^~
+Desc A lustrous opal reminds you of far-off places.~
+Level 0
+ItemType gem~
+Cost 2000
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Extra    sellextract~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#6001
+Name Temple of the Gods~
+Desc You are in the southern end of the temple hall in the Temple of the Gods.  
+The temple has been constructed from giant marble blocks, eternal in 
+appearance, and most of the walls are covered by ancient wall paintings 
+picturing gods, giants and peasants.  Large steps lead down through the 
+grand temple gate, descending the huge mound upon which the temple is built 
+and ends on the temple square below.  
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+ExtraDesc plaque~
+Welcome to Felanor, City of the Gods.  We hope you enjoy your stay here.  
+~
+Exit north 6054
+EKeyvnum -1
+EDesc At the northern end of the temple hall is a statue and a huge altar.
+~
+Exit south 6005
+End
+
+
+#6002
+Name Cleric's Inner Sanctum~
+Desc This is the inner sanctum.  A picture of the mighty Mota is hanging on
+the wall, just above the altar which is set against the western wall.  A well
+in the middle of the floor leads down into darkness.  Vile smells waft from
+the depths.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+Exit east 6003
+EKeyvnum -1
+EDesc You see your favorite place, the bar of divination.
+~
+End
+
+
+#6003
+Name Cleric's Bar~
+Desc The bar is one of the finest in the land, lucky it is members only.  Fine
+furniture is set all around the room.  A small sign is hanging on the wall.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+ExtraDesc sign~
+The sign reads:
+Free instructions provided by the waiter:
+
+   Buy  - Buy something (drinkable) from the waiter.
+   List - The waiter will show you all the different drinks and
+          specialties, and tell the price of each.
+~
+Exit south 6004
+EKeyvnum -1
+EDesc You see the entrance.
+~
+Exit west 6002
+EKeyvnum -1
+EDesc You see the inner sanctum.
+~
+End
+
+
+#6004
+Name Entrance to Cleric's Guild~
+Desc The entrance hall is a small modest room, reflecting the true nature of
+the Clerics.  The exit leads east to the temple square.  A small entrance to
+the bar is in the northern wall.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6003
+EKeyvnum -1
+EDesc You see the bar, richly decorated with really stylish furniture.
+~
+Exit east 6005
+EKeyvnum -1
+EDesc You see the Temple Square.
+~
+End
+
+
+#6005
+Name The Temple Square~
+Desc You are standing on the temple square.  Huge marble steps lead up to the
+temple gate.  The entrance to the Clerics Guild is to the west, and the old
+Grunting Boar Inn, is to the east.  Just south of here you see the market
+square, the center of Felanor.
+~
+RoomFlags law~
+Sector city~
+Exit north 6001
+EKeyvnum -1
+EDesc You see the temple.
+~
+Exit east 6006
+EKeyvnum -1
+EDesc You see the good old Grunting Boar Inn.
+~
+Exit south 6014
+EKeyvnum -1
+EDesc You see the Market Square.
+~
+Exit west 6004
+EKeyvnum -1
+EDesc You see the entrance to the Clerics Guild.
+~
+Exit up 6057
+EKeyvnum -1
+EDesc You see the air.
+~
+End
+
+
+#6006
+Name Entrance to the Grunting Boar Inn~
+Desc You are standing in the entrance hall of the Grunting Boar Inn.  The hall
+has been wisely decorated with simple but functional furniture.  A small
+staircase leads up to the Summoner's Shop, and the bar is to the east.  
+~
+RoomFlags indoors bank law~
+Room2Flags no_steal~
+Sector inside~
+Exit east 6007
+EKeyvnum -1
+EDesc Surprise! You see the bar.
+~
+Exit west 6005
+EKeyvnum -1
+EDesc You see the temple square.
+~
+Exit up 6008
+EKeyvnum -1
+EDesc You see the defunct reception room.
+~
+End
+
+
+#6007
+Name The Grunting Boar~
+Desc You are standing in the bar.  The bar is set against the northern wall, old
+archaic writing, carvings and symbols cover its top.  A fireplace is built into
+the western wall, and through the southeastern windows you can see the temple
+square.  This place makes you feel like home.
+A small sign with big letters is fastened to the bar.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc sign~
+The sign reads:
+Free instructions provided by the Grunting Boar Inn.
+
+   Buy  - Buy something (drinkable) from the bartender.
+   List - The bartender will show you all the different drinks and
+          specialties, and tell the price of each.
+~
+ExtraDesc writing carving carvings symbols symbol~
+Although it is very hard to understand, you think it looks a lot like beer,
+poems about beer, and small beer-mugs.
+~
+Exit west 6006
+EKeyvnum -1
+EDesc You see the exit to the entrance hall.
+~
+End
+
+
+#6008
+Name Office of the Summoner~
+Desc You are standing in a dusty room, which is now the temporary home of the 
+Summoner's Shop.  The bartender was kind enough to let him stay here, so be 
+nice to him.  He is not one to be trifled with, as he is out of business 
+since the gatestones were discovered.  
+~
+RoomFlags indoors law~
+Sector inside~
+Exit down 6006
+EKeyvnum -1
+EDesc You see the entrance hall.
+~
+End
+
+
+#6009
+Name The Bakery~
+Desc You are standing inside the small bakery.  A sweet scent of Danish and
+fine bread fills the room.  The bread and Danish are arranged in fine order
+on the shelves, and seem to be of the finest quality.
+A small sign is on the counter.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc danish pastry~
+You see that this is truly delicious pastry.  Must be made by a Dane from
+Denmark (which surely is not the capital of Sweden!).  Former ruler of
+Scandinavia, England, Northern Germany, Northern France, Russia, Greenland,
+Iceland, Estonia etc. etc.
+   The sight of those large, wholesome chokoladeboller makes your mouth water
+and your soul sing.
+
+~
+ExtraDesc sign~
+Free instructions provided by the store:
+
+   Buy  - Will buy you some bread or pastry.
+   List - The baker will kindly tell you the price and sort of the bread in
+          his bakery.
+~
+Exit south 6013
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6010
+Name The General Store~
+Desc You are inside the general store.  All sorts of items are stacked on shelves
+behind the counter, safely out of your reach.
+A small note hangs on the wall.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc note~
+The note reads:
+
+  List  - Show which various items are in the store.
+  Buy   - Buy an item.
+  Value - The shopkeeper will (free of charge) tell how much he will
+          pay for your item.
+  Sell  - Sell an item.
+~
+Exit south 6015
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6011
+Name The Weapon Shop~
+Desc You are inside the weapon shop.  To the east lies the Blacksmith.  To see
+what is available, type LIST, or read the small note on the counter.  
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc note~
+The note reads:
+
+  List  - Show which various items are in the store.
+  Buy   - Buy an item.
+  Value - The shopkeeper will (free of charge) tell how much he will
+          pay for your item.
+  Sell  - Sell an item.
+~
+Exit east 6099
+Exit south 6016
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6012
+Name Main Street~
+Desc You are at the end of the main street of Felanor.  South of here is the
+entrance to the Guild of Magic Users.  The street continues east towards the
+market square.  The magic shop is to the north and to the west is the city
+gate.
+~
+RoomFlags law~
+Sector city~
+Exit north 6033
+EKeyvnum -1
+EDesc You see the magic shop.
+~
+Exit east 6013
+EKeyvnum -1
+EDesc You see the main street.
+~
+Exit south 6017
+EKeyvnum -1
+EDesc You see the entrance to the Guild of Magic Users.
+~
+Exit west 6040
+EKeyvnum -1
+EDesc You see the city gate.
+~
+End
+
+
+#6013
+Name Main Street~
+Desc You are on the main street passing through the City of Felanor.  South of
+here is the entrance to the Armoury, and the bakery is to the north.  East of
+here is the market square.
+~
+RoomFlags law~
+Sector city~
+Exit north 6009
+EKeyvnum -1
+EDesc You see the bakery.
+~
+Exit east 6014
+EKeyvnum -1
+EDesc You see the market square.
+~
+Exit south 6020
+EKeyvnum -1
+EDesc You see the armoury.
+~
+Exit west 6012
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6014
+Name Market Square~
+Desc You are standing on the market square, the famous Square of Felanor.
+A large, peculiar looking statue is standing in the middle of the square.
+Roads lead in every direction, north to the temple square, south to the
+common square, east and westbound is the main street.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc statue~
+What you see is the Felanor Worm, stretching around the Palace of Felanor.
+~
+Exit north 6005
+EKeyvnum -1
+EDesc You see the temple square.
+~
+Exit east 6015
+EKeyvnum -1
+EDesc You see the main street.
+~
+Exit south 6025
+EKeyvnum -1
+EDesc You see the common square.
+~
+Exit west 6013
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6015
+Name The Main Street~
+Desc You are on Main Street crossing through town.  To the north is the general
+store, and the main street continues east.  To the west you see and hear the
+market place and to the south is the Jeweller's Shop.
+~
+RoomFlags law~
+Sector city~
+Exit north 6010
+EKeyvnum -1
+EDesc You see the general store.
+~
+Exit east 6016
+EKeyvnum -1
+EDesc You see Main Street.
+~
+Exit south 6034
+EKeyvnum -1
+EDesc You see the Jeweller's Shop.
+~
+Exit west 6014
+EKeyvnum -1
+EDesc You see the market square.
+~
+End
+
+
+#6016
+Name The Main Street~
+Desc The main street, to the north is the weapon shop and to the south is the
+Guild of Swordsmen.  To the east you leave town and to the west the street
+leads to the market square.
+~
+RoomFlags law~
+Sector city~
+Exit north 6011
+EKeyvnum -1
+EDesc You see the weapon shop.
+~
+Exit east 6041
+EKeyvnum -1
+EDesc You see the city gate.
+~
+Exit south 6021
+EKeyvnum -1
+EDesc You see the swordsmen's guild.
+~
+Exit west 6015
+EKeyvnum -1
+EDesc You see the main street leading to the market square.
+~
+End
+
+
+#6017
+Name Entrance to Mage's Guild~
+Desc The entrance hall is a small, poor lighted room.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6012
+EKeyvnum -1
+EDesc You see the main street.
+~
+Exit south 6018
+EKeyvnum -1
+EDesc You see your favorite place, the Mage's Bar.
+~
+End
+
+
+#6018
+Name Mage's Bar~
+Desc The bar is one of the weirdest in the land.  Mystical images float around
+the air.  Illusions of fine furniture appear all around the room.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+Exit north 6017
+EKeyvnum -1
+EDesc You see the lobby.
+~
+Exit east 6019
+EKeyvnum -1
+EDesc You see the laboratory.
+~
+End
+
+
+#6019
+Name Mage's Laboratory~
+Desc This is the Magical Experiments Laboratory.  Dark smoke-stained stones
+arch over numerous huge oaken tables, most of these cluttered with strange-
+looking pipes and flasks.  The floor is covered with half-erased pentagrams
+and even weirder symbols, and a blackboard in a dark corner has only been
+partially cleaned, some painful-looking letters faintly visible.  A well in
+the middle of the floor leads down into darkness.  Vile smells waft from the
+depths.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+Exit west 6018
+EKeyvnum -1
+EDesc You see the bar.
+~
+End
+
+
+#6020
+Name The Armoury~
+Desc The armoury with all kinds of armours on the walls and in the window.  You
+see helmets, shields and chain mails.  To the north is the main street.
+On the wall is a small note.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc note~
+You can use these commands for trading:
+
+  value <item>     To get the price of an item in your possession.
+  sell <item>      To sell something.
+  buy <item>       To buy something (provided that the shop has it in store).
+  list             Gives you a listing of the shop's inventory.
+
+        WE DON'T GIVE CREDIT; WE DON'T EXPECT TO RECEIVE CREDIT!
+                             NO HAGGLING
+~
+Exit north 6013
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6021
+Name Entrance Hall to the Guild of Swordsmen~
+Desc The entrance hall to the Guild of Swordsmen.  A place where one has to be
+careful not to say something wrong (or right).  To the east is the bar and to
+the north is the main street.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6016
+EKeyvnum -1
+EDesc You see the main street.
+~
+Exit east 6022
+EKeyvnum -1
+EDesc You see the swordsmen's bar, many noises comes from there.
+~
+End
+
+
+#6022
+Name The Bar of Swordsmen~
+Desc The bar of swordsmen, once upon a time beautifully furnished.  But now the
+furniture is all around you in small pieces.  To the south is the yard, and
+to the west is the entrance hall.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+Exit south 6023
+EKeyvnum -1
+EDesc You see the practice yard.
+~
+Exit west 6021
+EKeyvnum -1
+EDesc You see the entrance hall to the thieves guild.
+~
+End
+
+
+#6023
+Name The Tournament and Practice Yard~
+Desc The practice yard of the fighters.  To the north is the bar.  A well leads
+down into darkness.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+Exit north 6022
+EKeyvnum -1
+EDesc You see the bar.
+~
+End
+
+
+#6024
+Name Eastern End of Poor Alley~
+Desc You are at the poor alley. South of here is the Grubby Inn and to the
+east you see common square. Melancholy's map shop is north. The alley continues 
+further west.
+~
+RoomFlags law~
+Sector city~
+Exit north 6160
+EKeyvnum -1
+EDesc You see Melancholy's Map Shop
+~
+Exit east 6025
+EKeyvnum -1
+EDesc You see the common square.
+~
+Exit south 6048
+EKeyvnum -1
+EDesc You see the Inn.
+~
+Exit west 6044
+EKeyvnum -1
+EDesc You see the poor alley.
+~
+End
+
+
+#6025
+Name The Common Square~
+Desc The common square, people pass you, talking to each other.  To the west is
+the poor alley and to the east is the dark alley.  To the north, this square
+is connected to the market square.  From the south you notice a nasty smell.
+~
+RoomFlags law~
+Sector city~
+Exit north 6014
+EKeyvnum -1
+EDesc You see the market square.
+~
+Exit east 6026
+EKeyvnum -1
+EDesc You see the dark alley.
+~
+Exit south 6030
+EKeyvnum -1
+EDesc You see the city dump.
+~
+Exit west 6024
+EKeyvnum -1
+EDesc You see the poor alley.
+~
+End
+
+
+#6026
+Name The Dark Alley~
+Desc The dark alley, to the west is the common square and to the south is the
+Guild of Thieves.  Grebe's Tavern, the famous sailor's dive, is north.
+The alley continues east.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc guild~
+It is the thieves guild, don't enter if you care about your health or money.
+~
+Exit north 6352
+EKeyvnum -1
+EDesc You see a foul-smelling sailor's dive.
+~
+Exit east 6045
+EKeyvnum -1
+EDesc The alley continues east.
+~
+Exit south 6027
+EKeyvnum -1
+EDesc You see the entrance to the thieves guild.
+~
+Exit west 6025
+EKeyvnum -1
+EDesc You see the common square.
+~
+End
+
+
+#6027
+Name Entrance Hall to the Guild of Thieves~
+Desc The entrance hall to the thieves' and assassins' guild.  A place where you
+can lose both your life and your money, if you are not careful.  To the north
+is the dark alley and to the east is the thieves' bar.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6026
+EKeyvnum -1
+EDesc You see the alley.
+~
+Exit east 6028
+EKeyvnum -1
+EDesc You see the thieves bar, where everything disappears.
+~
+End
+
+
+#6028
+Name The Thieves Bar~
+Desc The bar of the thieves.  Once upon a time this place was beautifully
+furnished, but now it seems almost empty.  To the south is the yard, and to
+the west is the entrance hall.
+   (Maybe the furniture has been stolen?!)
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+ExtraDesc furniture~
+As you look at the furniture, the chair you sit on disappears.
+~
+Exit south 6029
+EKeyvnum -1
+EDesc You see the secret yard.
+~
+Exit west 6027
+EKeyvnum -1
+EDesc You see the entrance hall to the thieves guild.
+~
+End
+
+
+#6029
+Name The Secret Yard~
+Desc The secret practice yard of thieves and assassins.  To the north is the
+bar.  A well leads down into darkness.
+~
+RoomFlags no_mob indoors law~
+Sector inside~
+Exit north 6028
+EKeyvnum -1
+EDesc You see the bar.
+~
+End
+
+
+#6030
+Name The Dump~
+Desc The dump, where the people from the city drop their garbage.  Through the
+garbage you can see a large junction of pipes, looks like the entrance to the
+sewer system.  South of here you see the river and to the north is the common
+square.  A rickety old bridge leads south to the promenade.
+~
+RoomFlags no_mob law~
+Sector field~
+Exit north 6025
+EKeyvnum -1
+EDesc You see the common square.
+~
+Exit south 6254
+EKeyvnum -1
+EDesc You see a river between northern and southern Felanor.  A small bridge
+spans the flow.
+~
+End
+
+
+#6031
+Name The Pet Shop~
+Desc The Pet Shop is a small crowded store, full of cages and animals of
+various sorts and sizes.  There is a sign on the wall.
+~
+RoomFlags indoors pet_shop law~
+Sector inside~
+ExtraDesc sign~
+The sign reads:
+
+  Use 'List' to see the available pets.
+  Use 'Buy <pet> <name>' to buy yourself a pet and name it.
+
+  You can use 'order <pet> <instructions>' to order your pets around.
+  If you abuse your pet, it will no longer regard you as its master.
+  If you have several pets you may use 'order all <instructions>'
+
+ Regards,
+
+   The Shopkeeper
+~
+Exit south 6045
+EKeyvnum -1
+EDesc You see the Alley.
+~
+End
+
+
+#6032
+Name Pet Shop Store~
+Desc This is the small dark room in which the Pet Shop Boy keeps his pets.
+It is vital that this room be immediately after the pet shop.
+~
+RoomFlags no_mob indoors law nowhere noautoexits~
+Sector inside~
+End
+
+
+#6033
+Name The Magic Shop~
+Desc You are in a small room that smells of rare chemicals and spices.
+Dividing the room in two is a large desk, and on the wall behind it are
+numerous shelves crammed with jars, bottles, books and scrolls of all
+sorts and sizes.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc jars bottles~
+Some of them are transparent enabling you to see that some contain colored
+powders while others contain body parts of various animals.
+~
+ExtraDesc books~
+Most of them appear to be very old and dusty.
+~
+ExtraDesc scrolls~
+Each scroll is stored in a leather tube that protects it from moist.
+~
+Exit south 6012
+EKeyvnum -1
+EDesc You see the main street.
+~
+End
+
+
+#6034
+Name The Jeweller's Shop~
+Desc You are in a small, beautifully furnished room.  The warm light emanating
+from the small oil lamps on the walls is reflected in the hard, polished
+surface of the big mahogany desk that stands in the centre of the room.
+A small sign with golden letters stands on the desk.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc oil lamps~
+They are made from polished gold and looks as if they are securely fastened
+to the smooth stone walls.
+~
+ExtraDesc desk~
+Your face is reflected in its surface.
+~
+ExtraDesc sign~
+The golden letters say :-
+
+    Use 'list' to see what is in store,
+        'buy <item>' to buy an item,
+        'sell <item>' to sell an item and
+        'value <item>' to make the jeweller evaluate an item.
+~
+Exit north 6015
+EKeyvnum -1
+EDesc You see Main Street.
+~
+End
+
+
+#6035
+Name The Leather Shop~
+Desc An acrid smell fills this large room.  Along the walls are numerous
+shelves containing all sorts of animal hide and in the crackling fireplace
+hangs a big iron pot with boiling water.  In the middle of the room is a
+large oak table.
+A wooden sign is hanging above the fireplace.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc fireplace~
+It is a rather large fireplace made from heavy granite rocks.
+~
+ExtraDesc table~
+It is made from solid oak but appears to be very used.  Its surface is
+covered in marks and scratches.  A large burning candle stands directly on
+the table surface, tallow flowing down its sides.
+~
+ExtraDesc pot~
+Several large pieces of leather hide are boiling in the iron pot.
+~
+ExtraDesc sign~
+The wooden sign says :-
+
+    Use 'list' to see what is in store,
+        'buy <item>' to buy an item,
+        'sell <item>' to sell an item and
+        'value <item>' to make the leather worker evaluate an item.
+~
+Exit south 6044
+EKeyvnum -1
+EDesc You see the alley.
+~
+End
+
+
+#6040
+Name Inside the Western Gate of Felanor~
+Desc You are by two small towers that have been built into the city wall and
+connected with a footbridge across the heavy wooden gate.  Main Street leads
+east and Wall Road leads both north and south from here.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc bridge footbridge~
+It is too high up to reach but it looks as if one easily could walk across it
+from one tower to the other.
+~
+ExtraDesc gate~
+It is a set of very big double doors made from hard wood.  They have been
+reinforced with large iron bands to make them even more sturdy.  One of the
+doors is equipped with a very big lock.
+~
+ExtraDesc tower towers~
+Both of the towers are built from large grey rocks that have been fastened to
+each other with some kind of mortar, just like the city wall.
+~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6257
+EKeyvnum -1
+EDesc Wall road runs along the inner city wall to the north.
+~
+Exit east 6012
+EKeyvnum -1
+EDesc You see Main Street.
+~
+Exit south 6042
+EKeyvnum -1
+EDesc You see the road running along the inner side of the city wall.  You notice
+that it is called Wall Road.
+~
+Exit west 6052
+EKeyvnum 6133
+EKeywords gate~
+EDesc The city gate is to the west.
+~
+End
+
+
+#6041
+Name Inside the Eastern Gate of Felanor~
+Desc You are by two small towers that have been built into the city wall and
+connected with a footbridge across the heavy wooden gate.  Main Street leads
+west from here.  Wall road crosses the street, heading north and south along
+the city wall.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc bridge footbridge~
+It is too high up to reach but it looks as if one easily could walk across it
+from one tower to the other.
+~
+ExtraDesc gate~
+It is a set of very big double doors made from hard wood.  They have been
+reinforced with large iron bands to make them even more sturdy.  One of the
+doors is equipped with a very big lock.
+~
+ExtraDesc tower towers~
+Both of the towers are built from large grey rocks that have been fastened to
+each other with some kind of mortar, just like the city wall.
+~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6267
+EKeyvnum -1
+EDesc Wall road heads north along the city wall.
+~
+Exit east 6053
+EKeyvnum 6133
+EKeywords gate~
+EDesc You see the city gate.
+~
+Exit south 6250
+EDesc Wall road heads south towards the poor section of town.
+~
+Exit west 6016
+EKeyvnum -1
+EDesc You see Main Street.~
+End
+
+
+#6042
+Name Wall Road~
+Desc You are walking next to the western city wall.  The road continues further
+south and the city gate is just north of here.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6040
+EKeyvnum -1
+EDesc You see the city gate.
+~
+Exit south 6043
+EKeyvnum -1
+EDesc The road continues further south.
+~
+End
+
+
+#6043
+Name Wall Road~
+Desc You are walking next to the western city wall.  Wall Road continues further
+north and south.  A small, poor alley leads east.
+Some letters have been written on the wall here.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc letters~
+It says 'Who watches the watchmen?'
+~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6042
+EKeyvnum -1
+EDesc The road continues further north.
+~
+Exit east 6044
+EKeyvnum -1
+EDesc The alley leads east.
+~
+Exit south 6047
+EKeyvnum -1
+EDesc The road continues further south.
+~
+End
+
+
+#6044
+Name Poor Alley~
+Desc You are in narrow and dirty alley leading east and west.  The leather shop
+is to the north.
+~
+RoomFlags law~
+Sector city~
+Exit north 6035
+EKeyvnum -1
+EDesc The leather shop is to the north.
+~
+Exit east 6024
+EKeyvnum -1
+EDesc The alley leads east.
+~
+Exit south 6170
+EKeyvnum -1
+EDesc There is an ornate doorway to the south.
+~
+Exit west 6043
+EKeyvnum -1
+EDesc The alley leads west.
+~
+End
+
+
+#6045
+Name Alley at Levee~
+Desc You are standing in the alley which continues east and west.  South of
+here you see the levee.  North is the Pet Shop.
+~
+RoomFlags law~
+Sector city~
+Exit north 6031
+EDesc You see, hear, and smell the pet shop.
+~
+Exit east 6046
+EKeyvnum -1
+EDesc The alley leads east.
+~
+Exit south 6049
+EKeyvnum -1
+EDesc You see the levee.
+~
+Exit west 6026
+EKeyvnum -1
+EDesc The alley leads west.
+~
+End
+
+
+#6046
+Name Eastern end of Alley~
+Desc You are standing at the eastern end of the alley,  near the city walls.  
+Wall road loops around the city to your east, and you can see an old 
+three-story warehouse to the south.  The Fountain of Youth Apothecary is 
+north.
+~
+RoomFlags law~
+Sector city~
+Exit north 6056
+EDesc You see a pricey-looking potion shop.
+~
+Exit east 6251
+EKeyvnum -1
+EDesc You see wall road, running a north-south loop around the city.
+~
+Exit south 6050
+EKeyvnum -1
+EDesc You see the warehouse.
+~
+Exit west 6045
+EKeyvnum -1
+EDesc You see the alley.
+~
+End
+
+
+#6047
+Name Wall Road~
+Desc You are standing on the road next to the western city wall which
+continues north.  South of here is a bridge across the river.  To the east,
+you see an odd looking building painted bright orange with purple trim...
+it must be the Mob Factory!
+~
+RoomFlags law~
+Sector city~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6043
+EKeyvnum -1
+EDesc You see the road.
+~
+Exit south 6051
+EKeyvnum -1
+EDesc You see the bridge.
+~
+End
+
+
+#6048
+Name Grubby Inn~
+Desc You are inside the old Grubby Inn.  This place has not been cleaned for
+several decades, vile smells make you dizzy.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6024
+EKeyvnum -1
+EDesc You see the alley.
+~
+End
+
+
+#6049
+Name Levee~
+Desc You are at the levee.  South of here you see the river gently flowing west.
+The river bank is very low making it possible to enter the river.  Directly
+across the river you can see a small boat landing built off of Kate's Diner.
+~
+RoomFlags law~
+Sector city~
+Exit north 6045
+EKeyvnum -1
+EDesc You see the Alley.
+~
+Exit south 6203
+EKeyvnum -1
+EDesc You see the river flowing west.
+~
+End
+
+
+#6050
+Name Abandoned Warehouse~
+Desc You are inside the only room in the old warehouse.  The place is very dusty
+and appears to have been unused for many years.  The skylight spills
+violet-tinged light.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6046
+EKeyvnum -1
+EDesc You see the alley.
+~
+End
+
+
+#6051
+Name On the Bridge~
+Desc You are standing on the stone bridge crosses the river.  The bridge is
+built out from the western city wall and the river flows west through an
+opening in the wall ten feet below the bridge.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc bridge~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar, just like the wall.
+~
+ExtraDesc opening~
+You cannot really see it from here as it is somewhere beneath your feet.
+~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6047
+EKeyvnum -1
+EDesc You see the road.
+~
+Exit south 6100
+EKeyvnum -1
+EDesc You see the Concourse.
+~
+End
+
+
+#6052
+Name Outside the Western Gate of Felanor~
+Desc You are by two small towers that have been built into the city wall and
+connected with a footbridge across the heavy wooden gate.  To the west you
+can see the edge of a big forest. A small dusty trail leads north along the
+wall.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc bridge footbridge~
+It is too high up to reach but it looks as if one easily could walk across it
+from one tower to the other.
+~
+ExtraDesc gate~
+It is a set of very big double doors made from hard wood.  They have been
+reinforced with large iron bands to make them even more sturdy.  One of the
+doors is equipped with a very big lock.
+~
+ExtraDesc tower towers~
+Both of the towers are built from large grey rocks that have been fastened to
+each other with some kind of mortar, just like the city wall.
+~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit east 6040
+EKeyvnum 6133
+EKeywords gate~
+EDesc The city gate is to the east.
+~
+Exit west 58653
+End
+
+
+#6053
+Name Outside the Western Gate of Felanor~
+Desc You are by two small towers that have been built into the city wall and
+connected with a footbridge across the heavy wooden gate.  To the east the
+plains stretch out in the distance. To the north a small dusty trail follow
+the city wall.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc bridge footbridge~
+It is too high up to reach but it looks as if one easily could walk across it
+from one tower to the other.
+~
+ExtraDesc gate~
+It is a set of very big double doors made from hard wood.  They have been
+reinforced with large iron bands to make them even more sturdy.  One of the
+doors is equipped with a very big lock.
+~
+ExtraDesc tower towers~
+Both of the towers are built from large grey rocks that have been fastened to
+each other with some kind of mortar, just like the city wall.
+~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit east 58655
+Exit west 6041
+EKeyvnum 6133
+EKeywords gate~
+EDesc You see the city gate.
+~
+End
+
+
+#6054
+Name By the Temple Altar~
+Desc You are by the temple altar in the northern end of the Temple of the Gods.  
+A huge altar made from white polished marble is standing in front of you, 
+glowing with power.  The back of the altar opens into a a beautiful atrium, 
+above which can be seen a rainbow.  
+~
+RoomFlags bank nochannels safe law~
+Sector inside~
+Mana 110
+Heal 110
+ExtraDesc altar~
+Even though the altar is more than ten feet long it appears to be made from a
+single block of white virgin marble.
+~
+Exit south 6001
+EKeyvnum -1
+EDesc You see the southern end of the temple.
+~
+End
+
+
+#6056
+Name The Fountain of Youth Apothecary~
+Desc An old man putters around behind the counter, making strange love potions
+and curative philtres.  He turns as you enter, and looks on with avarice.
+Judging from the furnishings, he's been made very wealthy by his trade.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit south 6046
+EKeyvnum -1
+EDesc You see the eastern end of alley.
+~
+End
+
+
+#6057
+Name In the air...~
+Desc WOW you can fly!  You are floating in the air above Temple Square of Felanor.
+~
+RoomFlags no_mob law~
+Sector air~
+Exit down 6005
+EDesc Back down on the earth where you should be!
+~
+End
+
+
+#6099
+Name Blacksmith Shop~
+Desc Entering the blacksmith shop, you notice the wide variety of tools and
+equipment here.  Several large anvils are mounted on tree stumps towards the
+rear of the shop, right beside two glowing forges.  Several open barrels of
+water sit next to the forge, ready to quench and temper blades as they come
+out of the forge.  A rack of hammers, dies and punches sits on the far right
+wall, and several hand powered stone wheels for sharpening blades are seen
+here also.  Joleb the Blacksmith is able to offer custom weapon forgings for
+existing weapons that you may have.  Type FORGE to see what is available.  
+~
+RoomFlags indoors no_portal arena nochannels private safe solitary law~
+Sector inside~
+Exit west 6011
+End
+
+
+#6100
+Name Northwest end of Concourse~
+Desc You are at the concourse, the city wall is just west.  A small promenade
+goes east, and the bridge is just north of here.  The concourse continues
+south along the city wall.
+~
+RoomFlags law~
+Sector city~
+Exit north 6051
+EKeyvnum -1
+EDesc You see the Bridge.
+~
+Exit east 6101
+EKeyvnum -1
+EDesc You see the promenade.
+~
+Exit south 6270
+EKeyvnum -1
+EDesc The concourse continues south.
+~
+End
+
+
+#6101
+Name Promenade~
+Desc The river gently flows west just north of here.  The promenade continues 
+further east and to the west you see the city wall.  Park Road leads south 
+from here.  
+~
+RoomFlags law~
+Sector city~
+Exit east 6102
+EKeyvnum -1
+EDesc The promenade.
+~
+Exit south 6131
+EKeyvnum -1
+EDesc Park Road leads south.
+~
+Exit west 6100
+EKeyvnum -1
+EDesc You see the Concourse.
+~
+End
+
+
+#6102
+Name Promenade~
+Desc The river gently flows west just north of here.  The promenade continues
+both east and west.  A rickety bridge crosses the river to the north, towards
+the city dump (fortunately, the wind is blowing towards the dump today). 
+South of here you see the entrance to the park, and a small building seems
+to be just west of the entrance.  Austral Square, home of Kate's Diner, lies
+to your east.
+~
+RoomFlags law~
+Sector city~
+Exit north 6254
+EKeyvnum -1
+EDesc A rickety old bridge crosses the river, heading towards the city dump.
+~
+Exit east 6103
+EKeyvnum -1
+EDesc You see people moving in and out of Kate's Diner.
+~
+Exit south 6105
+EKeyvnum -1
+EDesc You see the park entrance.
+~
+Exit west 6101
+EKeyvnum -1
+EDesc You see the promenade.
+~
+End
+
+
+#6103
+Name Austral Square~
+Desc The Promenade opens here onto Austral Square, on the south bank of the
+Felanor River.  All around you is the bustle of Southern Felanor--
+shopkeepers on break, a town gossip or two prattling away.  You hear the
+river lapping at the pilings of the dock by Kate's Diner, which is to your
+north.  Emerald Avenue begins to the south, the Promenade continues west,
+and the concourse ends to your east.
+~
+RoomFlags law~
+Sector city~
+Exit north 6150
+EKeyvnum -1
+EDesc You smell the heavenly scents of Kate's Diner.
+~
+Exit east 6104
+EKeyvnum -1
+EDesc You see the Concourse.
+~
+Exit south 6132
+EKeyvnum -1
+EDesc The small path leads south.
+~
+Exit west 6102
+EKeyvnum -1
+EDesc You see the promenade.
+~
+End
+
+
+#6104
+Name Northeast end of Concourse~
+Desc You are at the Concourse.  The city wall is just east and Austral Square,
+home of Kate's Diner, is west.  Looking across the river you see an old  
+warehouse.  A strong stone bridge crosses the river to the north, where the
+concourse becomes wall road.  The Concourse continues south along the wall.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is far too high to climb.
+~
+Exit north 6253
+EKeyvnum -1
+EDesc A strong stone bridge crosses the river.
+~
+Exit south 6272
+EKeyvnum -1
+EDesc The Concourse continues south, towards an intersection with Penny Lane.
+~
+Exit west 6103
+EKeyvnum -1
+EDesc You Austral Square.
+~
+End
+
+
+#6105
+Name Park Entrance~
+Desc You are standing just inside the small park of Felanor.  To the north is
+the promenade and a small path leads south into the park.  To your east is
+the famous Park Cafe.
+~
+RoomFlags no_mob law~
+Sector city~
+Exit north 6102
+EKeyvnum -1
+EDesc You see the promenade.
+~
+Exit east 6106
+EKeyvnum -1
+EDesc You see Park Cafe.
+~
+Exit south 6108
+EKeyvnum -1
+EDesc You see the park.
+~
+End
+
+
+#6106
+Name Park Cafe~
+Desc You are inside Park Cafe, a very well lighted, cosy place. The cafe
+is built from large logs. Through the windows in the northern wall you
+see the river, and through the southern window you see many vigorous
+colorful plants.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit west 6105
+EKeyvnum -1
+EDesc You see the park entrance.
+~
+End
+
+
+#6107
+Name Small path through the park~
+Desc You are walking along a small path through the park.  The path continues
+south and east.
+~
+RoomFlags law~
+Sector city~
+Exit east 6108
+EKeyvnum -1
+Exit south 6113
+EKeyvnum -1
+End
+
+
+#6108
+Name Small path in the park~
+Desc You are standing on a small path inside the park.  The park entrance is
+just north of here, and Park Cafe is just east of the entrance.  The path
+leads further east and west.
+~
+RoomFlags law~
+Sector city~
+Exit north 6105
+EKeyvnum -1
+EDesc You see the northern park entrance.
+~
+Exit east 6109
+EKeyvnum -1
+Exit west 6107
+EKeyvnum -1
+End
+
+
+#6109
+Name Small path in the park~
+Desc You are on a small path running through the park.  It continues west and
+south and just north of here you see the southern wall of Park Cafe.
+~
+RoomFlags law~
+Sector city~
+Exit south 6115
+EKeyvnum -1
+Exit west 6108
+EKeyvnum -1
+End
+
+
+#6110
+Name Cityguard Head Quarters~
+Desc You are inside a tidy office.  A big desk made from dark wood is standing
+in the centre of the room.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit east 6111
+Exit west 6142
+End
+
+
+#6111
+Name Park Road~
+Desc The road continues north and south.  A building is just west of here, you
+notice a sign on the door.  The park entrance is to the east.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc building door sign~
+The sign on the door says:-
+
+                 Cityguard Head Quarters
+~
+Exit north 6131
+EKeyvnum -1
+Exit east 6112
+EKeyvnum -1
+EDesc You see the park entrance.
+~
+Exit south 6118
+EKeyvnum -1
+Exit west 6110
+EKeyvnum -1
+EKeywords door~
+EDesc You see the cityguard head quarters.
+~
+End
+
+
+#6112
+Name Western Park Entrance~
+Desc You are standing at the western end of the park.  A small path leads east
+into the park and going west through the entrance you will reach Park Road.
+~
+RoomFlags no_mob law~
+Sector city~
+Exit east 6113
+EKeyvnum -1
+Exit west 6111
+EKeyvnum -1
+End
+
+
+#6113
+Name A path in the park~
+Desc You are in the park.  The paths lead north and west.  Westwards is the
+park entrance and to the east you see a small pond.
+~
+RoomFlags law~
+Sector city~
+Exit north 6107
+EKeyvnum -1
+Exit east 6114
+EKeyvnum -1
+EDesc You see the pond.
+~
+Exit west 6112
+EKeyvnum -1
+EDesc You see the western park entrance.
+~
+End
+
+
+#6114
+Name The Pond~
+Desc You are swimming around in the pond, feeling rather stupid.  You can get
+back on the path from the eastern and western end of the pond.
+~
+RoomFlags law~
+Sector swim~
+Exit east 6115
+EKeyvnum -1
+Exit west 6113
+EKeyvnum -1
+End
+
+
+#6115
+Name A path in the park~
+Desc You are in the park.  The paths lead north and east.  Eastwards is the
+park entrance and to the west you see a small pond.
+~
+RoomFlags law~
+Sector city~
+Exit north 6109
+EKeyvnum -1
+Exit east 6116
+EKeyvnum -1
+Exit west 6114
+EKeyvnum -1
+End
+
+
+#6116
+Name Eastern Park Entrance~
+Desc You are standing at the eastern end of the park.  A small path leads west
+into the park.  Going east through the entrance you will reach Emerald
+Avenue.
+~
+RoomFlags no_mob law~
+Sector city~
+Exit east 6117
+EKeyvnum -1
+Exit west 6115
+EKeyvnum -1
+End
+
+
+#6117
+Name Emerald Avenue~
+Desc You are at Emerald Avenue which continues north and south.  To the west is
+the park entrance and to the east is the not very big Town Hall of Felanor.
+~
+RoomFlags law~
+Sector city~
+Exit north 6132
+EKeyvnum -1
+Exit east 6137
+EKeyvnum -1
+Exit south 6119
+EKeyvnum -1
+Exit west 6116
+EKeyvnum -1
+End
+
+
+#6118
+Name Park Road~
+Desc You are on Park Road which leads north and south.
+~
+RoomFlags law~
+Sector city~
+Exit north 6111
+EKeyvnum -1
+Exit south 6135
+EKeyvnum -1
+End
+
+
+#6119
+Name Emerald Avenue~
+Desc You are standing at a bend on Emerald Avenue.  The road leads north and west.
+To the east, you see some run-down slums...it looks like the bad part of
+town.
+~
+RoomFlags law~
+Sector city~
+Exit north 6117
+EKeyvnum -1
+Exit west 6133
+EKeyvnum -1
+End
+
+
+#6120
+Name Road Crossing~
+Desc You are in the middle of the road cross.  Roads lead in all directions.
+A huge black iron chain as thick as a tree trunk is fastened into the ground
+at the centre of the road cross.  Its other end leads directly upwards towards
+the sky.
+A road sign is here.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc sign~
+The sign points in all directions:
+
+   North - Emerald Avenue.
+   East  - Park Road.
+   South - Emerald Avenue.
+   West  - Park Road.
+
+Someone has added the following with red paint:
+
+   Up    - Redferne's Flying Citadel.
+~
+ExtraDesc chain~
+The the chain reaches the clouds high above you.  It must take some really
+powerful magic to hold such a chain in place.
+~
+Exit north 6133
+EKeyvnum -1
+Exit east 6136
+EKeyvnum -1
+Exit south 6134
+EKeyvnum -1
+Exit west 6135
+EKeyvnum -1
+End
+
+
+#6121
+Name Emerald Avenue~
+Desc You are standing at a bend on Emerald Avenue.  The road leads south and
+east.
+~
+RoomFlags law~
+Sector city~
+Exit east 6134
+EKeyvnum -1
+Exit south 6125
+EKeyvnum -1
+End
+
+
+#6122
+Name Park Road~
+Desc You are on Park Road which leads south and north.  Elm Street is east of
+here.
+~
+RoomFlags law~
+Sector city~
+Exit north 6136
+EKeyvnum -1
+Exit east 6123
+EKeyvnum -1
+Exit south 6126
+EKeyvnum -1
+End
+
+
+#6123
+Name Elm Street~
+Desc You are on Elm street.  Park Road is to the west and Elm Street continues
+in eastward direction.
+~
+RoomFlags law~
+Sector city~
+Exit east 6124
+EKeyvnum -1
+Exit west 6122
+EKeyvnum -1
+End
+
+
+#6124
+Name Elm Street~
+Desc You near the end of Elm Street.  An old elm tree grows here.  A heavy
+iron grating is south, surrounding the city's graveyard.  You can see a sign
+hanging on the grate.  The concourse joins Elm Street to the east, and the
+street ends to the north near a run-down neighborhood.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc grate grating~
+Looks heavy.  A small sign is hanging on it.
+~
+ExtraDesc sign~
+The sign says :-
+ 
+                          Graveyard of Felanor
+ 
+    Many brave adventurers have found their final resting place here.
+          Please show respect and do not desecrate their tombs.
+~
+ExtraDesc elm tree~
+The fresh young leaves of the elm tree wave gently in the wind.
+~
+Exit north 6144
+EKeyvnum -1
+EDesc You see the beginnings of Felanor's bad neighborhoods.
+~
+Exit east 6273
+EKeyvnum -1
+EDesc You see the concourse.
+~
+Exit west 6123
+EKeyvnum -1
+End
+
+
+#6125
+Name Emerald Avenue~
+Desc You are on Emerald Avenue which continues north.
+The Concourse is south of here.
+~
+RoomFlags law~
+Sector city~
+Exit north 6121
+EKeyvnum -1
+Exit south 6128
+EKeyvnum -1
+End
+
+
+#6126
+Name Park Road~
+Desc You are on Park Road which continues north.  The Concourse is south of here.
+~
+RoomFlags law~
+Sector city~
+Exit north 6122
+EKeyvnum -1
+Exit south 6129
+EKeyvnum -1
+End
+
+
+#6127
+Name On the Concourse~
+Desc You are at the southwest corner of the city wall.  The Concourse leads
+both north and east.
+~
+RoomFlags law~
+Sector city~
+Exit north 6271
+EKeyvnum -1
+Exit east 6128
+EKeyvnum -1
+End
+
+
+#6128
+Name On the Concourse~
+Desc You are walking around the scenic concourse as it continues its path around
+the city of Felanor.  The south gate of the city lies to your east, and the 
+southwestern corner of the city wall is west.  Emerald Avenue stretches out
+to the north.
+~
+RoomFlags law~
+Sector city~
+Exit north 6125
+EKeyvnum -1
+EDesc Emerald avenue lies to the north.
+~
+Exit east 6255
+EKeyvnum -1
+EDesc You can see the heavily guarded southern gate of Felanor.
+~
+Exit west 6127
+EKeyvnum -1
+End
+
+
+#6129
+Name On the Concourse~
+Desc The concourse continues its path around the city.  The southern gates of the
+city are west of here, and park road lies north.  The northeastern corner of
+the city wall is east.
+~
+RoomFlags dark law~
+Sector city~
+Exit north 6126
+EKeyvnum -1
+Exit east 6130
+EKeyvnum -1
+Exit west 6255
+EKeyvnum -1
+EDesc You see the south gate of Felanor.
+~
+End
+
+
+#6130
+Name On the Concourse~
+Desc You are at the southeast corner of the city wall.  The Concourse leads
+both north and west.
+~
+RoomFlags law~
+Sector city~
+Exit north 6273
+EKeyvnum -1
+Exit west 6129
+EKeyvnum -1
+End
+
+
+#6131
+Name Park Road~
+Desc You are at Park Road which continues north and south.
+~
+RoomFlags law~
+Sector city~
+Exit north 6101
+EKeyvnum -1
+Exit south 6111
+EKeyvnum -1
+End
+
+
+#6132
+Name Emerald Avenue~
+Desc You are standing on the north end of Emerald Avenue.  To the north is 
+Austral Square and Kate's Diner, to the east is the small street Penny Lane.
+~
+RoomFlags law~
+Sector city~
+Exit north 6103
+EKeyvnum -1
+Exit east 6139
+EKeyvnum -1
+Exit south 6117
+EKeyvnum -1
+End
+
+
+#6133
+Name Emerald Avenue~
+Desc You are standing at a bend on Emerald Avenue.  To the east the road goes on
+and to the south is the Road Crossing.
+~
+RoomFlags law~
+Sector city~
+Exit east 6119
+EKeyvnum -1
+Exit south 6120
+EKeyvnum -1
+End
+
+
+#6134
+Name Emerald Avenue~
+Desc You are standing at a bend on Emerald Avenue.  To the west the road goes on
+and to the north is the Road Crossing.
+~
+RoomFlags law~
+Sector city~
+Exit north 6120
+EKeyvnum -1
+Exit west 6121
+EKeyvnum -1
+End
+
+
+#6135
+Name Park Road~
+Desc You are at a bend on Park Road.  To the north the road goes on and to the
+east is the Road Crossing.  To the south, the ancient cliffs rise from deep
+under the ground, forming a wall.
+~
+RoomFlags law~
+Sector city~
+Exit north 6118
+EKeyvnum -1
+Exit east 6120
+EKeyvnum -1
+End
+
+
+#6136
+Name Park Road~
+Desc You are at a bend on Park Road.  To the south the road goes on and to the
+west is the Road Crossing.
+~
+RoomFlags law~
+Sector city~
+Exit south 6122
+EKeyvnum -1
+Exit west 6120
+EKeyvnum -1
+End
+
+
+#6137
+Name The Waiting Room~
+Desc You are standing in the waiting room at the town hall.  Wooden chairs stand
+along the walls and a long desk is placed in the middle of the room.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit east 6138
+EKeyvnum -1
+EDesc It looks like some kind of office.
+~
+Exit west 6117
+EKeyvnum -1
+EDesc The exit west leads to Emerald Avenue.
+~
+End
+
+
+#6138
+Name The Mayor's Office~
+Desc You are in the not very big office of the Mayor of Felanor.  A large and
+polished but completely empty desk is standing in front of an armchair that
+looks so comfortable that it most of all resembles a bed with the head end
+raised slightly.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc chair armchair~
+This chair is really a masterpiece.  A chair where one can sit as comfortably
+as in a bed.  All lecture halls should be equipped with these things.
+~
+Exit west 6137
+EKeyvnum -1
+EDesc The waiting room is to the west.
+~
+End
+
+
+#6139
+Name Penny Lane~
+Desc You are on Penny Lane.  Emerald Avenue is to the west and Penny Lane
+continues in eastward direction.
+~
+RoomFlags law~
+Sector city~
+Exit east 6140
+EKeyvnum -1
+Exit west 6132
+EKeyvnum -1
+End
+
+
+#6140
+Name Penny Lane~
+Desc You are on Penny Lane.  The narrow road continues north and west, and
+the concourse intersects this street to the east.
+~
+RoomFlags law~
+Sector city~
+Exit north 6141
+EKeyvnum -1
+Exit east 6272
+EKeyvnum -1
+EDesc You see the concourse.
+~
+Exit west 6139
+EKeyvnum -1
+End
+
+
+#6141
+Name The end of Penny Lane~
+Desc You are at the end of Penny Lane.  The only exit appears to be south.
+~
+RoomFlags law~
+Sector city~
+Exit south 6140
+EKeyvnum -1
+End
+
+
+#6142
+Name Captain's Office~
+Desc You are in the Office of the Captain of the Guard.  The Felanor Coat of
+Arms is hanging on the north wall and a heavy steel door is to the south.
+The Captain will send you on a quest. type QUEST or HELP QUEST to see
+what might be available.
+~
+Sector inside~
+ExtraDesc arms~
+Although a bit dusty the Coat of Arms is an excellent piece of work.
+~
+Exit east 6110
+Exit south 6143
+EFlags door closed locked pickproof~
+End
+
+
+#6143
+Name The Jail~
+Desc You are in a dark and humid jail.  The dark stone walls are hard and cold
+to the touch.  A heavy steel door is to the north.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc wall walls~
+The walls are marked with lots of scratches.  Some of them spell sentences
+like "JAIL IS BETTER THAN SQL" and "BIGFOOTDAMOOSE IS ALIVE".
+~
+Exit north 6142
+EFlags door closed locked pickproof~
+End
+
+
+#6144
+Name The end of Elm Street~
+Desc Elm street ends here, next to a dangerous-looking run down neighborhood.
+You can enter the slums to the east, or head towards the graveyard to the
+south.  It occurs to you that this isn't the happiest section of town.
+~
+RoomFlags law~
+Sector city~
+Exit south 6124
+EKeyvnum -1
+EDesc Elm street continues towards a graveyard.
+~
+End
+
+
+#6150
+Name Kate's Diner~
+Desc The smells of baking bread and simmering stew lead you dancing through the 
+doorway of the diner.  No greasy spoons to be seen here-- the booth walls 
+are covered in casual paisleys; the chairs are carved wood, rescued from 
+garage sales.  Most tables have chess or backgammon boards carved and 
+painted on their fingertip-smooth tops.  The refrain of some musical or 
+other from the 1800's blends with the dusty golden light and the wonderful 
+smells to put you completely at ease.  A huge picture window looks out over 
+the Felanor River, and a doorway leads north onto the dock and the South 
+Bank river landing, while the main entrance to the south returns you to 
+Austral Square. On most days you will find Kate here, testing a batch of 
+stew or brewing a special pot of cinnamon coffee, eerily just in time for 
+your arrival Pull up a chair, perhaps play a game, and take time out to 
+talk. 
+~
+RoomFlags bank safe law~
+Sector inside~
+ExtraDesc window landing~
+You can see a rickety bridge to your northwest, leading back into
+Central Felanor.  A rustic dock connects the Diner with the Felanor
+River, and a boat or two floats lazily past.  Across the river you can see
+the Levee and the Guild of Thieves, but they seem very far away from all
+of this...
+~
+Exit north 6203
+EKeyvnum -1
+EDesc A small boat landing lets boats land at the diner.
+~
+Exit south 6103
+EKeyvnum -1
+EDesc You see Austral Square.
+~
+End
+
+
+#6160
+Name Melancholy's Campaign Supplies~
+Desc As you walk in, a sudden gust of wind enters the shop and sends several
+scraps of paper fly around the room.  You blink as the dust you've stirred
+up stings your eyes, and take a look around the shop.  This shop is
+cluttered with old pieces of parchment, stacks of books, and odd scraps of
+canvas.  A desk with slightly less clutter than the rest of the shop is in
+front of you.  A scroll case full of scrolls is behind the desk.  A bookcase
+is to the right of you, and to the left is a window overlooking the Common
+Square.  A small door, half hidden by a stack of tents, leads to a room in
+the back of the shop.  
+~
+RoomFlags no_summon no_mob law~
+Sector inside~
+ExtraDesc bookcase~
+You see many cartographer journals and topographical studies.  You also see
+quite a few tomes written by someone named "Anson MacDonald".
+~
+ExtraDesc window~
+You peer out the window and see a cityguard beating up an old lady.
+~
+Exit north 6161
+EFlags door closed locked pickproof~
+EKeyvnum 6161
+EKeywords door~
+EDesc A sign on the door says, "Unauthorized Personel Prohibited".
+~
+Exit south 6024
+EKeyvnum -1
+EDesc To the south is the Poor Alley.  Across the alley, you see the Grubby Inn.
+~
+End
+
+
+#6161
+Name Melancholy's Room~
+Desc A faint smell of incense teases your nose as you enter this room.  You 
+step onto a soft bearskin rug and look around.  A simple bed lies against
+the far wall.  At the foot of it is a sturdy, ironbound chest, most likely
+full of Melancholy's trappings from her adventuring days.  On a small table
+under a window to the east is a vase with a single white rose.  Other than
+that, the room is quite bare.  
+~
+RoomFlags no_summon no_mob private law~
+Sector inside~
+ExtraDesc chest~
+This chest is firmly locked, and the device by which it opens is beyond your
+reckoning.
+~
+Exit south 6160
+EFlags door closed locked pickproof~
+EKeyvnum 6161
+EKeywords door~
+EDesc A small door to the south leads out into the map shop.
+~
+End
+
+
+#6170
+Name Temple Of Stupid~
+Desc As you enter the abandoned warehouse your eyes blink violently to
+adjust to the almost total darkness.  You wonder where the windows are
+as you step into a mud puddle in the middle of the floor.  As your eyes
+adjust, you realize that there are mud puddles all around the room, and
+this is some weird version of windows.  In a flash of revelation, you
+realize that you've entered the Temple of Stupid.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc puddle puddles~
+The puddles on the floor are filthy and exude a foul stench.
+~
+Exit north 6044
+EKeyvnum -1
+EDesc Poor Alley is to the north.
+~
+End
+
+
+#6200
+Name Under the Bridge~
+Desc The arch under the bridge is covered by seaweed for one foot above the
+surface of the river.  The water gently flows through an opening in the lower
+part of the city wall.
+~
+RoomFlags law~
+Sector noswim~
+ExtraDesc wall~
+It is built from large grey rocks that have been fastened to each other with
+some kind of mortar.  Looks pretty solid.
+~
+Exit east 6201
+EKeyvnum -1
+End
+
+
+#6201
+Name On the River~
+Desc North of here you see the miserable buildings of the poor alley.  The
+river flows west towards the bridge.  The riverbanks are too steep to climb.
+~
+RoomFlags law~
+Sector noswim~
+Exit east 6202
+EKeyvnum -1
+Exit west 6200
+EKeyvnum -1
+End
+
+
+#6202
+Name On the River~
+Desc North of here you see the dump.  The river flows from east to west.  The
+riverbanks are too steep to climb.  A bridge passes overhead, connecting the
+dump to the promenade.
+~
+RoomFlags law~
+Sector noswim~
+Exit east 6203
+EKeyvnum -1
+Exit west 6201
+EKeyvnum -1
+End
+
+
+#6203
+Name On the River~
+Desc The levee is directly north of here, and a small boat landing for Kate's
+Diner is to the south.  The river flows in an east west direction.
+~
+RoomFlags no_mob law~
+Sector noswim~
+Exit north 6049
+EKeyvnum -1
+Exit east 6204
+EKeyvnum -1
+Exit south 6150
+EKeyvnum -1
+EDesc You see the landing in the back of Kate's Diner. 
+~
+Exit west 6202
+EKeyvnum -1
+End
+
+
+#6204
+Name On the River~
+Desc You see the warehouse on the northern riverbank.  East of here the river
+passes under the eastern bridge and through the city wall. The banks of the 
+levee are west, in the direction of the current.
+~
+RoomFlags law~
+Sector noswim~
+Exit east 6205
+EKeyvnum -1
+Exit west 6203
+EKeyvnum -1
+End
+
+
+#6205
+Name On the River~
+Desc The river enters from a hole in the eastern city wall.  The hole has been
+blocked by several vertically positioned iron bars set into the wall. Overhead
+you can see the stone buttresses of the eastern bridge.
+~
+RoomFlags law~
+Sector noswim~
+Exit west 6204
+EKeyvnum -1
+End
+
+
+#6250
+Name Wall Road~
+Desc Wall road extends north and south along the eastern walls of the city.
+The east gate is north of you, south is an intersection with a dark alley. You
+check to make sure you still have your wallet.
+~
+RoomFlags law~
+Sector city~
+Exit north 6041
+EKeyvnum -1
+EDesc The eastern gate of the city is north.
+~
+Exit south 6251
+EKeyvnum -1
+EDesc You see an intersection with a dark alley.
+~
+End
+
+
+#6251
+Name Wall Road~
+Desc You are walking along the eastern wall of the city, on a road extending 
+between the east gate and a bridge to the south.  A dark, dirty alley lies west 
+of here.  You step carefully around a pool of liquid...who knows what it could 
+be in a place this foul...
+~
+RoomFlags law~
+Sector city~
+Exit north 6250
+EKeyvnum -1
+EDesc Wall road continues to the north, heading towards the gate.
+~
+Exit south 6252
+EKeyvnum -1
+EDesc Wall road continues to the south, towards a bridge over the Felanor river.
+~
+Exit west 6046
+EKeyvnum -1
+EDesc A dirty, unlight alley lies to the west...it looks like a perfect spot for a
+mugging.
+~
+End
+
+
+#6252
+Name Wall Road~
+Desc The walls of Felanor tower above you to the east, keeping the city safe
+from its enemies...you hope.  An intersection with a dark alley lies north,
+and a bridge over the Felanor river is south.  Beyond the bridge wall road 
+turns in the concourse.
+~
+RoomFlags law~
+Sector city~
+Exit north 6251
+EKeyvnum -1
+EDesc You see an intersection with a dark alley.
+~
+Exit south 6253
+EKeyvnum -1
+EDesc The eastern bridge crosses the river to the south.
+~
+End
+
+
+#6253
+Name On the Bridge~
+Desc You are crossing a strong stone bridge, which spans the Felanor river.
+Below you, the river flows into an opening in the city wall, sealed with
+strong metal bars.  North of you is wall road, south of here the concourse
+loops around the inside of the city walls.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc opening bars river~
+Hmm...some of the bars have been ripped out of the wall.  Enough to pass a
+good sized raft or canoe, or perhaps even a barge.  You wonder what sort of
+beast had the strength to do this.
+~
+Exit north 6252
+EKeyvnum -1
+EDesc Wall road continues to the north.
+~
+Exit south 6104
+EKeyvnum -1
+EDesc The concourse stretches around the southern parts of Felanor.
+~
+End
+
+
+#6254
+Name The South Bridge~
+Desc You are standing on a small, rickety bridge leading from the Felanor
+City Dump to the much more attractive promenade of the southern parts of 
+Felanor.  You can smell the stench of the dump to the north, the fresher
+air of the promenade seems preferable.  Below you are the swift-moving 
+currents of the Felanor river.
+~
+RoomFlags law~
+Sector city~
+Exit north 6030
+EDesc You can see the clutter of the City Dump.
+~
+Exit south 6102
+EKeyvnum -1
+EDesc The beautiful promenade lies along the river.  What a romantic place to visit!
+~
+End
+
+
+#6255
+Name Inside the Southern Gate of Felanor~
+Desc Two strong stone towers surround a heavy wooden gate set into the city wall,
+to guard against the goblins that lurk in the southern forests.  You can exit
+the city to the south, if you dare, or walk down the concourse to the east
+or west.
+~
+RoomFlags law~
+Sector city~
+Exit east 6129
+EKeyvnum -1
+EDesc The concourse heads east along the inside of the city wall.
+~
+Exit south 6256
+EKeyvnum 6133
+EDesc You see the southern gate.
+~
+Exit west 6128
+EKeyvnum -1
+EDesc The concourse heads west along the inside of the city wall.
+~
+End
+
+
+#6256
+Name Outsite the Southern Gate of Felanor~
+Desc You are standing outside the strong wooden gate on the southern walls of 
+Felanor.  Guards eye you suspiciously from the two towers on either side of 
+the gate, as they stand watch to protect the city from invaders.  The vast 
+city of Felanor lies north.  
+~
+RoomFlags law~
+Sector forest~
+Exit north 6255
+EKeyvnum 6133
+EDesc You see the southern gate.
+~
+Exit south 58735
+End
+
+
+#6257
+Name Wall Road~
+Desc You are walking along wall road, just north of the west gate of Felanor.  
+The road continues along the western wall to the north, towards an intersection
+with a busy Clan street.
+~
+RoomFlags law~
+Sector city~
+Exit north 6258
+EKeyvnum -1
+EDesc You see an intersection between wall road and a busy Clan street.
+~
+Exit south 6040
+EKeyvnum -1
+EDesc The west gate of the city lies south.
+~
+End
+
+
+#6258
+Name Wall Road~
+Desc Wall road intersects with a crowded Clan Road here, filled with shops and
+artisans.  The street stretches off to the east, towards the far wall of the
+city.  Wall road continues to the north and south.
+~
+RoomFlags law~
+Sector city~
+Exit north 6259
+EKeyvnum -1
+EDesc Wall road continues to the north, towards the northwestern corner of the wall.
+~
+Exit east 6301
+EKeyvnum -1
+EDesc You see the shops and clan halls of Clan Road.
+~
+Exit south 6257
+EKeyvnum -1
+EDesc Wall road continues alongside the western wall, heading towards the west gate.
+~
+End
+
+
+#6259
+Name Wall Road~
+Desc You are walking along wall road, which extends along the inside of the western
+wall of Felanor.  To the south, you can see an intersection with a crowded
+Clan street.  The northwestern corner of the city wall lies ahead to the
+north.
+~
+RoomFlags law~
+Sector city~
+Exit north 6260
+EKeyvnum -1
+EDesc You see the northwestern corner of the city wall.
+~
+Exit south 6258
+EKeyvnum -1
+EDesc To the south, wall road intersects with a crowded Clan street.
+~
+End
+
+
+#6260
+Name The Northwest Corner~
+Desc You are standing beneath the northwestern corner of the city wall, on a turn
+in wall road.  You can head south, towards the west gate, or east, to the 
+north gate.
+~
+RoomFlags law~
+Sector city~
+Exit east 6261
+EKeyvnum -1
+EDesc Wall road continues along the northern wall of the city.
+~
+Exit south 6259
+EKeyvnum -1
+EDesc Wall road continues along the western wall of the city.
+~
+End
+
+
+#6261
+Name Wall Road~
+Desc The city walls tower over you as walk down wall road, between the northwestern
+corner of the wall to the west, and the northern gate of Felanor to the east.
+~
+RoomFlags law~
+Sector city~
+Exit east 6262
+EKeyvnum -1
+EDesc Wall road continues to the east, towards the northern gate of Felanor.
+~
+Exit west 6260
+EKeyvnum -1
+EDesc You can see the northwest corner of the city wall to the west.
+~
+End
+
+
+#6262
+Name Inside the North Gate of Felanor~
+Desc Two small towers surround a strong wooden gate, connected by a small stone
+bridge set with murder holes.  This gate is not as heavily guarded as the 
+others, as the plains outside are safe to travel.  You can leave Felanor to
+the north, or continues along wall road to the west and east.  A teeming clan
+street is visible to the south, and beyond that the graceful spires of the
+Temple of Mota, but there is no way to reach them from here.
+~
+RoomFlags law~
+Sector city~
+Exit north 6268
+EKeyvnum 6133
+EDesc The northern plains are visible through the gate.
+~
+Exit east 6263
+EKeyvnum -1
+EDesc Wall road continues to the east, alongside the northern wall.
+~
+Exit west 6261
+EKeyvnum -1
+EDesc Wall road continues to the west, alongside the northern wall.
+~
+End
+
+
+#6263
+Name Wall Road~
+Desc You are walking along wall road, between the northern gate of the city and the
+northeastern corner of the city walls.  You can see bloodstains on the road...
+better be on guard for thieves.
+~
+RoomFlags law~
+Sector city~
+Exit east 6264
+EKeyvnum -1
+EDesc You see the northeastern corner of the city walls.
+~
+Exit west 6262
+EKeyvnum -1
+EDesc The northern gate of the city lies east.
+~
+End
+
+
+#6264
+Name The Northeast Corner~
+Desc Wall road turns the corner here, as you pass by the northeastern edge of the
+city wall.  The north gate lies to your west, and the road south leads to the
+eastern gate of Felanor.
+~
+RoomFlags law~
+Sector city~
+Exit south 6265
+EKeyvnum -1
+EDesc Wall road continues to the south, along the eastern wall of the city.
+~
+Exit west 6263
+EKeyvnum -1
+EDesc Wall road continues to the west, along the northern wall of the city.
+~
+End
+
+
+#6265
+Name Wall Road~
+Desc Just south of you is an intersection with a crowded clan street.  The 
+eastern wall of Felanor is beside you, and to the north you can see the 
+northeast corner of the city wall.
+~
+RoomFlags law~
+Sector city~
+Exit north 6264
+EKeyvnum -1
+EDesc You can see the northeast corner of the city wall.
+~
+Exit south 6266
+EKeyvnum -1
+EDesc You see an intersection with a crowded street.
+~
+End
+
+
+#6266
+Name Wall Road~
+Desc Here, wall road meets up with a busy clan street heading off towards the 
+west, and the far wall of the city.  You can smell spices, perfume, freshly
+cured hide, and other strange scents, all mingle together in one heady aroma.
+Wall road continues to the north and south.
+~
+RoomFlags law~
+Sector city~
+Exit north 6265
+EKeyvnum -1
+EDesc Wall road continues to the north, along the eastern wall of the city.
+~
+Exit south 6267
+EKeyvnum -1
+EDesc Wall road continues to the south, towards the east gate of Felanor.
+~
+Exit west 6316
+EKeyvnum -1
+EDesc You see a mass of people heading down Clan Road.
+~
+End
+
+
+#6267
+Name Wall Road~
+Desc You are near the center of wall road, just north of the east gate of the city.
+To the north, you can see an intersection with a crowded clan street.
+The guards at the gate eye you suspiciously from afar.
+~
+RoomFlags law~
+Sector city~
+Exit north 6266
+EKeyvnum -1
+EDesc You see an intersection with a busy clan street.
+~
+Exit south 6041
+EKeyvnum -1
+EDesc You see the well-guarded east gate of Felanor.
+~
+End
+
+
+#6268
+Name Outside the North Gate of Felanor~
+Desc You stand outside the north gate of the walled city of Felanor.  A dusty 
+trail is visibile to the north, it stretches around the walls of the city.  
+Further north lies the vast wilderness.  
+~
+RoomFlags law~
+Sector field~
+Exit north 58573
+Exit south 6262
+EKeyvnum 6133
+EDesc You see the north gate of Felanor.
+~
+End
+
+
+#6270
+Name On the Concourse~
+Desc The strong stone walls of Felanor rise up to the west, keeping evil at bay.
+The concourse heads towards a bridge to the north, and continues south 
+alongside a beautiful park.
+~
+RoomFlags law~
+Sector city~
+Exit north 6100
+EKeyvnum -1
+EDesc The concourse continues to the north, along the city wall.
+~
+Exit south 6271
+EKeyvnum -1
+EDesc The concourse heads south, passing by a beautiful park.
+~
+End
+
+
+#6271
+Name On the Concourse near the park~
+Desc You are walking down the Concoruse, along the western wall of Felanor.  To
+the north, the road passes by a beautiful park, to the south, you can see
+the southwest corner of the city wall.
+~
+RoomFlags law~
+Sector city~
+Exit north 6270
+EKeyvnum -1
+EDesc The concourse heads north, passing by a beautiful park.
+~
+Exit south 6127
+EKeyvnum -1
+EDesc You can see the southwest corner of the city wall.
+~
+End
+
+
+#6272
+Name On the Concourse at Penny Lane~
+Desc You are on a road leading around the inner walls of Felanor.  To the north,
+the concourse heads towards a bridge into northern Felanor.  To the south, 
+you can see an intersection with Elm Street.  The quaint paved streets of
+Penny Lane lie west.
+~
+RoomFlags law~
+Sector city~
+Exit north 6104
+EKeyvnum -1
+EDesc The concourse continues to the north, towards the east bridge.
+~
+Exit south 6273
+EKeyvnum -1
+EDesc The concourse continues south, towards an intersection with Elm Street.
+~
+Exit west 6140
+EKeyvnum -1
+EDesc You see Penny Lane.
+~
+End
+
+
+#6273
+Name On the Concourse at Elm Street~
+Desc The air grows chill as you pass near the Elm Street graveyard.  The walls of
+Felanor are to the east, and the concourse continues to the north and south.
+To your west, you see Elm Street at the graveyard entrance.
+~
+RoomFlags law~
+Sector city~
+Exit north 6272
+EKeyvnum -1
+EDesc The concourse continues to the north, towards an intersection with Penny Lane.
+~
+Exit south 6130
+EKeyvnum -1
+EDesc The concourse continues to the south, towards the southeast corner of the wall.
+~
+Exit west 6124
+EKeyvnum -1
+EDesc You see Elm Street and the graveyard entrance.
+~
+End
+
+
+#6301
+Name Clan Road~
+Desc You are standing on the western end of Clan Road.  The traffic here  
+is light.  This is a quieter section of Felanor.  You can hear the sound of
+haggling coming from the east.
+~
+RoomFlags law~
+Sector city~
+Exit east 6302
+EKeyvnum -1
+EDesc Clan Road continues east.
+~
+Exit west 6258
+EKeyvnum -1
+EDesc Wall Road is to the west.
+~
+End
+
+
+#6302
+Name Clan Road~
+Desc You are walking along Clan Road.  To the south of you is the Bank of 
+Felanor.  Clan road continues on to the east and west.  
+~
+RoomFlags law~
+Sector city~
+Exit east 6303
+EKeyvnum -1
+EDesc Clan Road continues east.
+~
+Exit south 6334
+EKeyvnum -1
+EDesc The money changer is to the south.
+~
+Exit west 6301
+EKeyvnum -1
+EDesc Clan Road continues west.
+~
+End
+
+
+#6303
+Name Clan Road~
+Desc The shops on this stretch of Clan road are long-closed and boarded up.
+Not much traffic passes through this part, as there is nothing to buy.  
+~
+RoomFlags law~
+Sector city~
+Exit east 6314
+EKeyvnum -1
+EDesc Clan Road continues to the east.
+~
+Exit west 6302
+EKeyvnum -1
+EDesc Clan Road continues to the west.
+~
+End
+
+
+#6314
+Name Clan Road~
+Desc Noise and light abound on this part of Clan Road.  Clan road continues off
+to the east and west.
+~
+RoomFlags law~
+Sector city~
+Exit east 6315
+EKeyvnum -1
+EDesc Clan Road continues to the east.
+~
+Exit west 6303
+EKeyvnum -1
+EDesc Clan Road continues to the west.
+~
+End
+
+
+#6315
+Name Clan Road~
+Desc Clan Road seems to widen here slightly, allowing more traffic to 
+travel through the area.  To the south is another entrance to the busy
+pub.  This door is also open wide and spilling forth the sounds of
+happy patrons.  Clan Road continues to the east and west.
+~
+RoomFlags law~
+Sector city~
+Exit east 6316
+EKeyvnum -1
+EDesc Clan Road continues to the east.
+~
+Exit south 6356
+EKeyvnum -1
+EDesc A busy pub is to the south.
+~
+Exit west 6314
+EKeyvnum -1
+EDesc Clan Road continues to the west.
+~
+End
+
+
+#6316
+Name Clan Road~
+Desc You are at the eastern end of Clan Road.  To the east of you, the  
+tall wall around the city looms up before you and casts its shadow on
+you.  Clan Road continues to the west.  
+~
+RoomFlags law~
+Sector city~
+Exit east 6266
+EKeyvnum -1
+EDesc Wall Road is east of here.
+~
+Exit west 6315
+EKeyvnum -1
+EDesc Clan Road continues to the west.
+~
+End
+
+
+#6334
+Name Bank of Felanor~
+Desc A few strategically placed lanterns keep this place well-lit in the 
+absence of any windows.  The room is surprisingly well appointed with  
+tapestries hanging on the walls.  You'd wager your life the moneylender's
+guards are behind them, as there are none here.  The moneylender himself
+works from behind a large desk, no doubt holding a fortune in gold and silver.
+A smallish sign hangs on the wall, lettered in common.
+~
+RoomFlags indoors bank~
+Room2Flags no_steal~
+Sector inside~
+ExtraDesc sign~
+Give me your coins, and I shall change them for you, taking but 1 in 20 for
+my fee.  --- Otho the Changer
+~
+ExtraDesc tapestries walls~
+You think about peeking behind the tapestries, but think better of it.
+~
+Exit north 6302
+EKeyvnum -1
+EDesc Clan Road is to the north.
+~
+End
+
+
+#6352
+Name Grebe's Tavern~
+Desc Dive.  That's all you can say about this place; its a
+dive.  You step carefully over the dead and/or drunk sailors
+on the floor toward the center of the room.  There's no
+decorations on the wall; they've all been ripped down in anger
+or for use as weapons at one time or another.  Looking around,
+you search vainly for a clean table to sit at, and then give up.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc table tables~
+You find a table that's relatively vomit-free.
+~
+ExtraDesc wall walls~
+Bare, except for the holes.
+~
+Exit south 6026
+EDesc A dark alley is to the south.
+~
+End
+
+
+#6355
+Name Andy's Pub~
+Desc The busy pub is filled with patrons.  People are laughing and singing.
+A minstrel plays his lute in another part of the pub, and a few people
+are even dancing.  Andy, the pubs owner, wanders around and checks to see
+that the needs of his customers are met.  The bar is to your south.  East
+of you is another section of the pub.  You know that there are rooms to
+be had somewhere around here...
+~
+RoomFlags indoors law~
+Sector inside~
+Exit east 6356
+EKeyvnum -1
+EDesc You see another room in the pub.
+~
+Exit south 6357
+EKeyvnum -1
+EDesc The bar is to the south of you.
+~
+End
+
+
+#6356
+Name A Room in the Pub~
+Desc This part of the pub is filled with dancing and singing.  A wandering
+minstrel is on a chair in a corner with his lute.  A busty red headed
+woman is standing near him and singing a tale of comedic heroism. Drunk
+men sit laughing at their tables and busy bar maids weave through the
+crowd with full mugs and horns of ale and mead.  Another part of the pub
+is located to your west. The bar is to the south.  A set of steps occupy
+in a corner of the room.  They lead up to the inn section of this
+prosperous establishment.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit north 6315
+EKeyvnum -1
+EDesc Clan Road is to the north.
+~
+Exit south 6358
+EKeyvnum -1
+EDesc The bar is to your south.
+~
+Exit west 6355
+EKeyvnum -1
+EDesc Another room in the pub is to your west.
+~
+Exit up 6359
+EKeyvnum -1
+EDesc A set of stairs leads up to the reception area.
+~
+End
+
+
+#6357
+Name The Bar~
+Desc A long mahogany bar is set in the back of the pub.  Mugs line a shelf
+behind the bar.  Bottles of strong, nasty looking liquids decorate one
+of the lower shelves.  A large cask rests on a table behind the bar.  A
+strong but friendly-looking bartender stands next to the cask polishing
+glasses.  A couple of the bar maids stand in a corner and throw the most
+inviting glances your way.
+A sign is on the wall.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc sign~
+The sign says: Don't forget our dinner menu.
+~
+Exit north 6355
+EKeyvnum -1
+EDesc The pub proper is to the north.
+~
+End
+
+
+#6358
+Name The Bar~
+Desc A long mahogany bar is set in the back of the pub.  Mugs line a shelf
+behind the bar.  Bottles of strong, nasty looking liquids decorate one
+of the lower shelves.  A large cask rests on a table behind the bar.  A
+strong but friendly looking bartender stands next to the cask polishing
+glasses.  A couple of the bar maids stand in a corner and throw the most
+inviting glances your way.
+~
+RoomFlags indoors law~
+Sector inside~
+ExtraDesc sign~
+The sign says: Don't forget our dinner menu.
+~
+Exit north 6356
+EKeyvnum -1
+EDesc The pub proper is to the north.
+~
+End
+
+
+#6359
+Name The Inn~
+Desc You are standing upstairs from Andy's Pub at Andy's Inn.  A few chairs
+and a couple of end tables give the room a ``homey' atmosphere.  A large
+stone fireplace burns brightly against one wall and warms the room.  A
+large oak desk is nestled in one corner of the room.  A small man with
+wire-framed glasses sits behind the desk working dilligently on his books.
+He looks up as you enter the room.  He looks at you quizzically.  He is
+probably waiting for you to ask him for a room.
+~
+RoomFlags indoors law~
+Sector inside~
+Exit down 6356
+EKeyvnum -1
+EDesc The stairs lead back down to the pub.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 6162 spec_breath_fire
+M 6163 spec_nasty
+M 6000 spec_cast_mage
+M 6005 spec_thief
+M 6012 spec_cast_adept
+M 6020 spec_cast_mage
+M 6021 spec_cast_cleric
+M 6024 spec_cast_mage
+M 6042 spec_cast_mage
+M 6043 spec_cast_cleric
+M 6060 spec_guard
+M 6061 spec_janitor
+M 6062 spec_fido
+M 6067 spec_guard
+M 6068 spec_guard
+M 6069 spec_guard
+M 6100 spec_cast_cleric
+M 6120 spec_cast_cleric
+M 6140 spec_questmaster
+M 6143 spec_mayor
+S
+
+
+
+#RESETS2
+M 0 6150 1 6150 1
+G 0 6154 0
+G 0 6152 0
+G 0 6153 0
+G 0 6151 0
+G 0 6150 0
+G 0 6100 0
+M 0 6160 1 6160 1
+M 0 6071 2 6255 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6361 0 about~
+M 0 6071 2 6255 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6362 0 waist~
+M 0 6072 1 6262 1
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6354 0 shield~
+M 0 6074 1 6334 1
+M 0 6021 1 6002 1
+M 0 6043 1 6003 1
+G 0 6002 0
+G 0 6004 0
+E 0 6022 0 wielded~
+M 0 6025 1 6004 1
+M 0 6060 18 6004 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6355 0 neck2~
+O 0 6135 0 6005
+M 0 6061 5 6006 5
+M 0 6073 1 6006 1
+M 0 6040 1 6007 1
+G 0 6000 0
+G 0 6001 0
+E 0 6022 0 wielded~
+M 0 6064 3 6007 3
+M 0 6180 1 6008 1
+M 0 6001 1 6009 1
+G 0 6009 0
+G 0 6011 0
+G 0 6012 0
+G 0 6013 0
+G 0 6014 0
+E 0 6022 0 wielded~
+M 0 6002 1 6010 1
+G 0 6030 0
+G 0 6031 0
+E 0 65 0 hold~
+G 0 6138 0
+G 0 6032 0
+G 0 6033 0
+M 0 6003 1 6011 1
+G 0 6020 0
+G 0 6021 0
+G 0 6022 0
+G 0 6023 0
+G 0 6024 0
+G 0 6025 0
+G 0 6026 0
+G 0 6027 0
+G 0 6028 0
+G 0 6029 0
+E 0 6022 0 wielded~
+M 0 6062 16 6012 4
+O 0 7570 -1 6014
+M 0 6060 18 6014 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6356 0 head~
+M 0 6062 16 6016 4
+M 0 6024 1 6017 1
+M 0 6060 18 6017 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6357 0 legs~
+M 0 6042 1 6018 1
+G 0 6002 0
+G 0 6003 0
+E 0 6022 0 wielded~
+M 0 6020 1 6019 1
+M 0 6004 1 6020 1
+G 0 6072 0
+G 0 6073 0
+G 0 6074 0
+G 0 6075 0
+G 0 6076 0
+G 0 6077 0
+G 0 6110 0
+G 0 6111 0
+G 0 6112 0
+G 0 6113 0
+G 0 6114 0
+G 0 6115 0
+G 0 6116 0
+G 0 6097 0
+G 0 6117 0
+E 0 6022 0 wielded~
+M 0 6027 1 6021 1
+E 0 6349 0 wielded~
+M 0 6060 18 6021 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6358 0 feet~
+M 0 6045 1 6022 1
+G 0 6002 0
+G 0 6003 0
+G 0 6004 0
+E 0 6022 0 wielded~
+M 0 6023 1 6023 1
+M 0 6062 16 6024 4
+M 0 6062 16 6025 4
+M 0 6063 5 6026 5
+E 0 6021 0 wielded~
+E 0 6066 0 torso~
+E 0 6052 0 rwrist~
+M 0 6066 1 6026 1
+M 0 6026 1 6027 1
+E 0 6349 0 wielded~
+M 0 6060 18 6027 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6359 0 hands~
+M 0 6005 4 6027 2
+E 0 6351 0 wielded~
+M 0 6044 1 6028 1
+G 0 6003 0
+G 0 6004 0
+E 0 6022 0 wielded~
+M 0 6022 1 6029 1
+M 0 6008 1 6031 1
+M 0 6090 1 6032 1
+M 0 6091 1 6032 1
+M 0 6092 1 6032 1
+M 0 6093 1 6032 1
+M 0 6094 1 6032 1
+M 0 6000 1 6033 1
+G 0 6040 0
+G 0 6041 0
+G 0 6039 0
+G 0 6042 0
+G 0 6043 0
+G 0 6044 0
+M 0 6009 1 6034 1
+G 0 6378 0
+G 0 6377 0
+G 0 6376 0
+G 0 6375 0
+G 0 6374 0
+G 0 6373 0
+G 0 6372 -1
+G 0 6371 -1
+M 0 6010 1 6035 1
+G 0 6060 0
+G 0 6061 0
+G 0 6062 0
+G 0 6063 0
+G 0 6064 0
+G 0 6065 0
+G 0 6066 0
+G 0 6067 0
+G 0 6068 0
+G 0 6069 0
+G 0 6070 0
+G 0 6071 0
+G 0 6052 0
+G 0 6053 0
+G 0 6054 0
+M 0 6068 2 6040 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6361 0 about~
+M 0 6068 2 6040 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6362 0 waist~
+M 0 6067 2 6041 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6360 0 arms~
+M 0 6067 2 6041 2
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6354 0 shield~
+M 0 6065 2 6044 1
+M 0 6046 1 6048 1
+G 0 6003 0
+G 0 6004 0
+E 0 6022 0 wielded~
+M 0 6163 1 6048 1
+M 0 6065 2 6048 1
+M 0 6006 1 6049 1
+G 0 6050 0
+G 0 6051 0
+M 0 6007 1 6050 1
+O 0 6010 0 6054
+M 0 6012 5 6054 1
+M 0 6070 5 6056 1
+G 0 6080 0
+G 0 6081 0
+G 0 6082 0
+G 0 6083 0
+G 0 6084 0
+G 0 6085 0
+G 0 6086 0
+G 0 6087 0
+G 0 6088 0
+G 0 6089 0
+G 0 6090 0
+G 0 6091 0
+G 0 6092 0
+M 0 6099 1 6099 1
+O 0 6134 0 6101
+O 0 6134 0 6102
+O 0 6134 0 6103
+M 0 6100 1 6106 1
+G 0 6100 0
+G 0 6101 0
+G 0 6102 0
+M 0 6120 1 6106 1
+G 0 6121 0
+M 0 6123 1 6109 1
+M 0 6060 18 6109 1
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6363 0 rwrist~
+M 0 6060 18 6111 4
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+G 0 6120 0
+M 0 6060 18 6111 4
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+E 0 6363 0 rwrist~
+M 0 6124 2 6113 1
+M 0 6121 1 6114 1
+M 0 6122 1 6114 1
+M 0 6124 2 6115 1
+M 0 6060 18 6117 1
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+M 0 6060 18 6120 1
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+M 0 6144 1 6120 1
+M 0 6060 18 6125 1
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+E 0 6353 0 torso~
+M 0 6005 4 6128 2
+E 0 6351 0 wielded~
+M 0 6142 1 6137 1
+M 0 6143 1 6138 1
+E 0 6124 0 wielded~
+M 0 6069 4 6138 4
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+M 0 6069 4 6138 4
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+M 0 6069 4 6138 4
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+M 0 6069 4 6138 4
+E 0 6365 0 light~
+E 0 6364 0 lfinger~
+E 0 6350 0 wielded~
+O 0 6135 0 6141
+O 0 6136 0 6141
+M 0 6140 1 6142 1
+E 0 6350 0 wielded~
+G 0 6122 0
+G 0 6137 0
+O 0 6130 0 6142
+P 0 6123 1 6130 1
+S
+
+
+
+#SHOPS
+#6150
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#6160
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#6162
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#6000
+buy_type scroll~
+buy_type wand~
+buy_type staff~
+buy_type potion~
+profit_buy 105
+profit_sell 15
+close_hour 23
+END
+
+#6001
+profit_buy 110
+profit_sell 100
+close_hour 23
+END
+
+#6002
+buy_type light~
+buy_type treasure~
+buy_type trash~
+buy_type container~
+buy_type food~
+profit_buy 150
+profit_sell 40
+close_hour 23
+END
+
+#6003
+buy_type weapon~
+buy_type tabac_pipe~
+buy_type rp~
+profit_buy 120
+profit_sell 40
+close_hour 23
+END
+
+#6004
+buy_type armor~
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#6006
+buy_type boat~
+profit_buy 120
+profit_sell 90
+open_hour 6
+close_hour 22
+END
+
+#6008
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#6009
+buy_type treasure~
+buy_type warpstone~
+buy_type gem~
+buy_type jewelry~
+profit_buy 110
+profit_sell 100
+close_hour 23
+END
+
+#6010
+buy_type armor~
+profit_buy 110
+profit_sell 50
+close_hour 23
+END
+
+#6040
+profit_buy 110
+profit_sell 100
+close_hour 23
+END
+
+#6042
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#6043
+profit_buy 110
+profit_sell 100
+close_hour 23
+END
+
+#6044
+profit_buy 170
+profit_sell 100
+close_hour 23
+END
+
+#6045
+profit_buy 150
+profit_sell 100
+close_hour 23
+END
+
+#6046
+profit_buy 100
+profit_sell 90
+close_hour 23
+END
+
+#6070
+buy_type potion~
+profit_buy 1000
+profit_sell 100
+close_hour 23
+END
+
+#6100
+profit_buy 110
+profit_sell 90
+open_hour 6
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#6070
+code if money $n > 10000
+  say Do come again anytime, $N!
+else
+  say Come back when you've got more money!
+endif
+mob transfer $n 6046
+~
+disabled false
+END
+
+#6066
+code whimper
+surrender
+~
+disabled false
+END
+
+#6065
+code laugh
+growl
+~
+disabled false
+END
+
+#6064
+code emote explodes!
+mob damage all 5 10 nokill
+~
+disabled false
+END
+
+#6063
+code mob echoat $n $I barks and snarls at you!
+mob echoaround $n $I barks and snarls at $n!
+~
+disabled false
+END
+
+#6062
+code emote yelps in anger!
+~
+disabled false
+END
+
+#6061
+code if isgood $n
+mob echoat $n $I wags its tail at you.
+mob echoaround $n $I wags its tail at $n.
+else
+mob echoat $n $I growls at you!
+mob echoaround $n $I growls at $n!
+endif
+~
+disabled false
+END
+
+#6054
+code if isfollow $n
+break
+else
+ if isnpc $n
+break
+else
+wait 2
+say Welcome to the Temple, $n.
+endif
+endif
+~
+disabled false
+END
+
+#6033
+code if ispc $n
+   if carries $n q1-1
+     mob remove $n 6799
+    say Thank you for coming. There is something afoot in the lands.
+    say But right now, Imhotep is working on the quest, so please
+     say check back later. But here, take this as a gift until he
+     say can get it working.
+     mob oload 6377
+     mob oload 6377
+     mob oload 6377
+     mob oload 6377
+     give diamond $n
+     give diamond $n
+     give diamond $n
+     give diamond $n
+     break
+  else
+    say Welcome $n to the store. Please, take you time and look around.
+   break
+  endif
+break
+endif
+~
+disabled false
+END
+
+#6008
+code if hastarget $i
+  burp
+  say Oh, pardon me.
+  giggle
+  say Yummmm... tastes like beer.
+else
+mob forget
+endif
+~
+disabled false
+END
+
+#6007
+code if isdelay $i
+  break
+else
+  say Hey $n, you got any change ?
+  say I just need a little bit to buy me a drink.
+  hiccup
+  mob remember $n
+  mob delay 5
+endif
+~
+disabled false
+END
+
+#6006
+code if sex $n < 2
+  say Thank ye, kind sir!
+else
+  say Thank ye, milady!
+endif
+if level $n < 5
+  say Since you have money in abundance, let me share your wealth!
+  mob kill $n
+endif
+~
+disabled false
+END
+
+#6005
+code if isimmort $n
+  say Greetings to the Great $N!
+  bow
+else
+  if sex $n < 2
+    say Hello! How may I serve you?
+    chuckle
+  else
+    say Good day, milady! How may I be of help today?
+    wink $n
+  endif
+endif
+~
+disabled false
+END
+
+#6004
+code if hastarget $i
+  puke $q
+  say S-sorry, matey...
+  hiccup
+else
+mob forget
+endif
+~
+disabled false
+END
+
+#6003
+code if isdelay $i
+  break
+else
+  mob echoat $n $I rises and begins to wobble towards you...
+  mob echoaround $n $I rises and begins to wobble towards $N...
+  mob remember $n
+  mob delay 5
+endif
+~
+disabled false
+END
+
+#6002
+code if hastarget $i
+   mob echo The grocer blinks slowly...
+   mob echo The grocer falls alseep on the counter.
+mob forget
+else
+mob forget
+endif
+~
+disabled false
+END
+
+#6001
+code if isdelay $i
+  break
+else
+  stretch
+  say Psst, $n.
+  say Quickly, find what you need and leave.
+  yawn
+  mob remember $n
+  mob delay 5
+endif
+~
+disabled false
+END
+
+#6000
+code if isfollow $n
+   break
+else
+   if isnpc $n
+     break
+   else
+      wait 2
+     if sex $n == 2
+     say Good day madam, may I help you ?
+     break
+    else
+     say Good day sir, may I help you ?
+     break
+   endif
+  
+endif
+break
+~
+disabled false
+END
+
+#0
+
+
+#$

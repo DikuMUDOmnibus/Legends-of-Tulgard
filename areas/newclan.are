@@ -1,0 +1,237 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-pre7
+Name        NEW CLAN~
+ShortName   NEW CLAN~
+Builders    none~
+VNUMs       2595 2599
+AFlags  noteleport noscry hidden~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Mon Dec 29 18:17:10 2003~
+End
+
+
+
+#MOBILES
+#2595
+Name strong shopkeeper~
+ShortD a strong looking shopkeeper~
+LongD A strong looking shopkeeper awaits your purchase.~
+Desc ~
+Race human~
+Align -2 0
+Level 110
+Hitroll 100
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType smash
+AC -800 -800 -800 -704
+Wealth 600
+Act    npc dont_wander stay_area changer~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2596
+Name calm looking man in white robes~
+ShortD a calm looking man~
+LongD A calm looking man dressed in white robes rests here, ready to cure your wounds.~
+Desc ~
+Race human~
+Align 2 3
+XPMod 120
+Level 140
+Hitroll 2
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+94
+DamType punch
+AC -1100 -1100 -1100 -913
+Wealth 400
+Act    npc dont_wander no_tame stay_area cleric nopurge healer~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared dark_vision~
+Off    disarm dodge parry~
+Imm    summon charm magic disease sound~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2595
+Name marble fountain~
+Short `Wa `wmarble `Wfountain`^~
+Desc `#A `WMarble `Wfountain`^ is full of water here.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 10000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+End
+
+#2596
+Name banner~
+Short `#`W[`cBANNER`W] Alliance of the `CD`Wivin`Ce `rF`Rl`Ya`Rm`re`^~
+Desc A clan banner is here, glowing with power~
+Level 5
+ItemType light~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 2
+Material etheral~
+Extra    glow rotdeath nonmetal nolocate meltdrop nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take~
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 ac -30 0
+End
+
+#0
+
+
+
+#ROOMS
+#2595
+Name Main Hall ~
+Desc Before you stands a grand hall.  Your voice seems to echo off the stone 
+walls.  You see four tapestries hanging from ceiling to floor here with 
+different crests on them.  Above the meeting room you see a plaque with the 
+words, "Die for what is right".  To the south you see armor and weapons 
+laying around.  To the west the sweet smell of potions, and to the east you 
+hear some prayers being said.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2596
+Exit east 2599
+Exit south 2597
+Exit west 2598
+Exit up 27003
+Exit down 3000
+End
+
+
+#2596
+Name Grand Meeting Room~
+Desc You have arrived in a large office like room.  You see a large some what 
+round marble table in the center of the room.  You see the same four crests 
+etched into the marble as you saw on the tapestries.  You notice parchments 
+and letters sprawled out onto the table.  The only exit is to the south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2595
+End
+
+
+#2597
+Name Donation Room~
+Desc Here you notice a large room full of armor and weapons.  You see a note on 
+the locker that reads.  "Feel free to help yourself to any equipment in this 
+room."  "Keep in mind your other clan members."  
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 10000
+LockerPickProof 3
+Exit north 2595
+End
+
+
+#2598
+Name Supply Room~
+Desc Many potions and items line the walls as you enter the clan shop.  Just type 
+LIST to see what the shopkeeper has for sale.  You see the exit to the east. 
+ 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 2595
+End
+
+
+#2599
+Name Healer's Room~
+Desc Here stands the local clan healer.  He is here to treat the sick and heal 
+the weak.  You see a large alter to the north of the room.  You notice the 
+only way out is the way you came.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 2595
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 2595 -1 2595
+M 0 2595 1 2598 1
+G 0 1000 -1
+G 0 1001 -1
+G 0 1002 -1
+G 0 1004 -1
+M 0 2596 1 2599 1
+S
+
+
+
+#SHOPS
+#2595
+buy_type armor~
+buy_type potion~
+profit_buy 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,682 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Camiraim Gnomish Village~
+ShortName   Camiraim Gnomish Village~
+Builders    ~
+Credits     Chemosh~
+VNUMs       25200 25230
+LComment    `#`Y[ 16- 20]`^
+LRange      16 20
+Security    9
+Colour      m~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#25212
+Name tisletop gnome~
+ShortD tisletop~
+LongD Tisletop stands here with a silly grin on his face.~
+Desc ~
+Race kender~
+Align -2 0
+Level 90
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -602
+Wealth 1800
+Act    npc dont_wander scavenger stay_area~
+Act2   avoids_all_attacks~
+AffBy  infrared pass_door~
+Off    dodge fast~
+Res    slash poison mental disease~
+Vuln   poison mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#25228
+Name tumbertop gnome~
+ShortD tumbertop~
+LongD Tumbertop the Tailor is here, ready to make some clothes.~
+Desc ~
+Race kender~
+Align -2 0
+Level 90
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 1800
+Act    npc dont_wander scavenger stay_area~
+Act2   avoids_all_attacks~
+AffBy  infrared pass_door~
+Off    dodge fast~
+Res    slash poison mental disease~
+Vuln   poison mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#25229
+Name gnome~
+ShortD a gnome~
+LongD A short pudgy gnome smiles at you.~
+Desc ~
+Race gnome~
+Align -1 0
+Level 16
+Hitroll 30
+HitDice 3d5+72
+ManaDice 2d4+5
+DamDice 2d6+4
+DamType thwack
+AC -25 -25 -25 -21
+Wealth 50
+Act    npc scavenger stay_area warrior~
+AffBy  detect_magic infrared~
+Off    dodge~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#25200
+Name shiney glasses~
+Short a pair of `#`Ys`yh`Yi`yn`Ye`yy `Yglasses`^~
+Desc A pair of `#`Ys`yh`Yi`yn`Ye`yy `Yglasses`^ lay here.~
+Level 15
+ItemType jewelry~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    burnproof~
+Wear     take eyes~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 15 -1 ac -4 0
+End
+
+#25201
+Name belt of many pouches~
+Short `#`yBelt of Many `RP`rouches`^~
+Desc `#`yA Belt with Many `RP`rouches`^ is lying here`^.~
+Level 25
+ItemType container~
+Cost 700
+Durability 5
+Asize 3
+Rsize 50
+Values 1000 AC 0 500 50
+Weight 3
+Material unknown~
+Extra    magic burnproof~
+Wear     take waist~
+End
+
+#25202
+Name kender walking shoes~
+Short `#`YB`Bright `RW`Ya`Bl`Rk`Bi`Yn`Rg `BS`Yhoes`^~
+Desc `Ya pair of `YB`Bright `RW`Ya`Bl`Rk`Bi`Yn`Rg `BS`Yhoes are laying here`^~
+Level 20
+ItemType armor~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 4 0
+Weight 0
+Material unknown~
+Extra    magic burnproof~
+Wear     take feet~
+End
+
+#25212
+Name small silvery sword~
+Short `#`wa small `ss`wi`Wl`sv`we`Wr`sy sword`^~
+Desc A silvery sword has been dropped here.~
+Level 16
+ItemType weapon~
+Cost 355
+Durability 5
+Asize 48
+Rsize 50
+Values sword 3 5 slash D
+Weight 50
+Material steel~
+Extra    burnproof~
+Wear     take wield~
+End
+
+#25228
+Name vest bright blue~
+Short a `#`Bbright blue`^ vest~
+Desc A silk blue vest lies here.~
+Level 25
+ItemType clothing~
+Cost 1364
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silk~
+Extra    magic nonmetal~
+Wear     take torso~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 25 -1 ac -6 0
+Affect modifier -1 25 -1 hitroll 1 0
+Affect modifier -1 25 -1 saves -1 0
+End
+
+#25229
+Name majestic marble fountain~
+Short a majestic marble fountain~
+Desc A majestic marble fountain is here, trickling water.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 60000 60000 water 0 0
+Weight 1000
+Material marble~
+Extra    noremove nopurge nodegrade burnproof~
+End
+
+#0
+
+
+
+#ROOMS
+#25200
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Kender pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25201
+End
+
+
+#25201
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Kender pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25202
+Exit west 25200
+End
+
+
+#25202
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Kender pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25207
+Exit south 25201
+Exit west 25203
+End
+
+
+#25203
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Gnomes pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction.  This road leads to 
+the tower. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25204
+Exit east 25202
+Exit west 25209
+End
+
+
+#25204
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Gnomes pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction.  This road leads to 
+the tower. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25205
+Exit south 25203
+End
+
+
+#25205
+Name Strawberry Boulevard~
+Desc The road stops abruptly in front of a large tower.  The place looks to be 
+very busy, with lots of lights in the windows.  A large marble fountain 
+stands in front of the place engraved with the names of famous gnomish 
+inventors.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25206
+Exit south 25204
+End
+
+
+#25206
+Name Palace Courtyard~
+Desc The road dead ends into a large tower. The only way you can go is back south 
+where you came from on Strawberry Boulevard or go into the tower. The tower 
+looks impressive standing 4 or 5 levels high at least. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25353
+Exit south 25205
+End
+
+
+#25207
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Kender pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25208
+Exit west 25202
+End
+
+
+#25208
+Name Strawberry Boulevard~
+Desc You are standing in the middle of a winding street.  Kender pass you on 
+every side, occasionally bumping into you.  Shops can be seen on either side 
+of the road.  Other roads branch off in every direction. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25227
+Exit south 25223
+Exit west 25207
+End
+
+
+#25209
+Name Dead End Lane~
+Desc You are now on Dead End Lane.  The street leads a straight path to Town 
+Hall.  These street names are confusing.  As far as you can tell, Dead End 
+Lane is the major bi-way of Camiraim.  Shops and houses branch off all down 
+the street.  At the end of it you see the wonderous Town Hall.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25203
+Exit west 25210
+End
+
+
+#25210
+Name Dead End Lane~
+Desc You are now on Dead End Lane.  The street leads a straight path to Town 
+Hall.  These street names are confusing.  As far as you can tell, Dead End 
+Lane is the major bi-way of Camiraim.  Shops and houses branch off all down 
+the street.  At the end of it you see the wonderous Town Hall.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25209
+Exit west 25211
+End
+
+
+#25211
+Name Dead End Lane~
+Desc You are now on Dead End Lane.  The street leads a straight path to Town 
+Hall.  These street names are confusing.  As far as you can tell, Dead End 
+Lane is the major bi-way of Camiraim.  Shops and houses branch off all down 
+the street.  At the end of it you see the wonderous Town Hall.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25210
+Exit west 25212
+End
+
+
+#25212
+Name Dead End Lane~
+Desc You are now on Dead End Lane.  The street leads a straight path to Town 
+Hall.  These street names are confusing.  As far as you can tell, Dead End 
+Lane is the major bi-way of Camiraim.  Shops and houses branch off all down 
+the street.  At the end of it you see the wonderous Town Hall.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25215
+Exit east 25211
+Exit west 25213
+End
+
+
+#25213
+Name Dead End Lane~
+Desc You are now on Dead End Lane.  The street leads a straight path to Town 
+Hall.  These street names are confusing.  As far as you can tell, Dead End 
+Lane is the major bi-way of Camiraim.  Shops and houses branch off all down 
+the street.  At the end of it you see the wonderous Town Hall.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25218
+Exit east 25212
+Exit south 25228
+Exit west 25214
+End
+
+
+#25214
+Name In front of Camiraim Town Hall~
+Desc You now stand in front of a glorious Town Hall.  It looks to be 7 or 8 
+stories tall.  Grand, ornate doors bearing elaborately carved reliefs stand 
+in the way of you entrance.  Two guards sit lounging on the steps, rummaging 
+through their pouches, looking into their belongings.  A large ornate 
+fountain sits here with the names of all the famous gnomes from Camiraim. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25213
+End
+
+
+#25215
+Name Tisletop's Weapon Shop~
+Desc You are in a shop specializing in the making and selling of weapons.  All 
+along the walls in intricate displays are various swords and weird looking 
+weapons. Behind a low sitting counter is Tisletop himself.  He smiles a big 
+smile and waves at you as you enter. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 25212
+End
+
+
+#25218
+Name Straight Street~
+Desc This is the street cleverly titled Straight Street.  Along it are a couple 
+of shops and a few houses, but it is not as populated as Dead End Lane.  
+Young gnomes run up and down the street playing.  Back to the way you came 
+is Dead End Lane.  The road winds off to the north.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25219
+Exit south 25213
+End
+
+
+#25219
+Name Straight Street~
+Desc This is the street cleverly titled Straight Street.  Along it are a couple 
+of shops and a few houses, but it is not as populated as Dead End Lane.  
+Young gnomes run up and down the street playing.  Back to the way you came 
+is Dead End Lane.  The road winds off to the north.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25220
+Exit south 25218
+End
+
+
+#25220
+Name Straight Street~
+Desc This is the street cleverly titled Straight Street.  Along it are a couple 
+of shops and a few houses, but it is not as populated as Dead End Lane.  
+Young gnomes run up and down the street playing.  Back to the way you came 
+is Dead End Lane.  The road winds off to the north.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25221
+Exit west 25219
+End
+
+
+#25221
+Name Straight Street~
+Desc This is the street cleverly titled Straight Street.  Along it are a couple 
+of shops and a few houses, but it is not as populated as Dead End Lane.  
+Young gnomes run up and down the street playing.  Back to the way you came 
+is Dead End Lane.  The road winds off to the north.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit south 25220
+Exit west 25222
+End
+
+
+#25222
+Name Straight Street~
+Desc This is the street cleverly titled Straight Street.  Along it are a couple 
+of shops and a few houses, but it is not as populated as Dead End Lane.  
+Young gnomes run up and down the street playing.  Back to the way you came 
+is Dead End Lane.  The road winds off to the north.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25223
+Exit east 25221
+End
+
+
+#25223
+Name Straight Street~
+Desc This is the street cleverly titled Straight Street.  Along it are a couple 
+of shops and a few houses, but it is not as populated as Dead End Lane.  
+Young gnomes run up and down the street playing.  Back to the way you came 
+is Dead End Lane.  The road winds off to the north.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 25208
+Exit east 25224
+Exit south 25222
+End
+
+
+#25224
+Name Direct Route Drive~
+Desc This is Direct Route Drive.  For once the name seems to be farely
+relative.  The road stretches in out straight in front of you.  Maybe it
+will take you somewhere important.  This road seems to be residential.  You
+don't see any shops, just houses.  None of them look to be locked.  Makes
+sense because in this town locks are futile.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25225
+Exit west 25223
+End
+
+
+#25225
+Name Direct Route Drive~
+Desc This is Direct Route Drive.  For once the name seems to be farely
+relative.  The road stretches in out straight in front of you.  Maybe it
+will take you somewhere important.  This road seems to be residential.  You
+don't see any shops, just houses.  None of them look to be locked.  Makes
+sense because in this town locks are futile.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25226
+Exit west 25224
+End
+
+
+#25226
+Name Direct Route Drive~
+Desc This is Direct Route Drive.  For once the name seems to be farely
+relative.  The road stretches in out straight in front of you.  Maybe it
+will take you somewhere important.  This road seems to be residential.  You
+don't see any shops, just houses.  None of them look to be locked.  Makes
+sense because in this town locks are futile.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 25227
+Exit west 25225
+End
+
+
+#25227
+Name Direct Route Drive~
+Desc This is Direct Route Drive.  For once the name seems to be farely relative.  
+The road stretches in out straight in front of you.  Maybe it will take you 
+somewhere important.  This road seems to be residential.  You don't see any 
+shops, just houses.  None of them look to be locked.  Makes sense because in 
+this town locks are futile. 
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 55806
+Exit south 25208
+Exit west 25226
+End
+
+
+#25228
+Name Gnomish Clothing Shop~
+Desc This is the shop where gnomes can come to buy clothes.  All the displays 
+show clothes fit for gnomes but a sign on the wall reads, "We cater to the 
+extra-tall".  Boots, shirts, leggings, and vests of a powerfully colorful 
+nature are spread out about the room to draw attention.  A steady flow of 
+gnomes enter this room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25213
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 25229 30 25201 1
+E 0 25200 -1 eyes~
+O 0 25229 -1 25205
+M 0 25229 30 25207 1
+E 0 25200 -1 eyes~
+M 0 25229 30 25211 1
+E 0 25200 -1 eyes~
+M 0 25229 30 25213 1
+E 0 25200 -1 eyes~
+M 0 25229 30 25214 1
+O 0 25229 -1 25214
+M 0 25212 1 25215 1
+G 0 25212 -1
+M 0 25229 30 25226 1
+E 0 25200 -1 eyes~
+M 0 25229 30 25227 1
+E 0 25200 -1 eyes~
+M 0 25228 1 25228 1
+G 0 25228 0
+G 0 25201 -1
+G 0 25202 -1
+S
+
+
+
+#SHOPS
+#25212
+buy_type weapon~
+buy_type jewelry~
+buy_type treasure~
+buy_type gem~
+profit_buy 150
+profit_sell 35
+close_hour 23
+END
+
+#25228
+buy_type clothing~
+buy_type jewelry~
+buy_type treasure~
+buy_type gem~
+profit_buy 150
+profit_sell 35
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#25200
+code steal coin $n
+~
+disabled false
+END
+
+#0
+
+
+#$

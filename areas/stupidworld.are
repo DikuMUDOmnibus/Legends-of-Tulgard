@@ -1,0 +1,10003 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World~
+ShortName   Stupid World~
+Builders    ~
+Credits     Ixliam~
+VNUMs       7900 8499
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport nogateinto nosummoninto noportalinto~
+Security    9
+Colour      R~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   StupidWorld~
+Continent   stupid~
+*LastSaved  Tue Sep 13 22:39:43 2005~
+End
+
+
+
+#MOBILES
+#7900
+Name bugblatter beast~
+ShortD `#a `gBugblatter `gBeast`^~
+LongD Oh no! You forgot your towel and the bugblatter beast is here!~
+Desc ~
+Race Lich~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -81
+Wealth 0
+Act    npc no_tame noautosocial~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden pass_door~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    mental illusion scry~
+Form   edible poison magical non_skinable sentient undead biped cold_blood~
+Part   head arms hands fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7901
+Name middle finger~
+ShortD a `#`WMiddle `WFinger`^~
+LongD A big middle finger is here, flipping you off!~
+Desc ~
+Race kender~
+Align 0 0
+Level 81
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType none
+AC -550 -550 -550 -478
+Wealth 0
+Act    npc scavenger no_tame~
+AffBy  infrared pass_door~
+Off    assist_vnum~
+Imm    fear~
+Res    slash~
+Vuln   negative~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7902
+Name snipe~
+ShortD a snipe~
+LongD A deadly snipe is here, hiding.~
+Desc ~
+Race avian~
+Align 0 0
+Level 23
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType none
+AC -70 -70 -70 -63
+Wealth 0
+Act    npc no_tame stay_area wimpy~
+AffBy  detect_hidden flying dark_vision~
+Off    bash berserk dirt_kick tail assist_vnum~
+Res    mental illusion~
+Vuln   poison disease~
+Form   edible non_skinable sentient biped bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7903
+Name smelly fart cloud~
+ShortD a smelly fart~
+LongD A dark smelly cloud is drifting about.~
+Desc ~
+Race Mist~
+Align 0 0
+Level 96
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType digestion
+AC -700 -700 -700 -616
+Wealth 0
+Act    npc no_tame stay_area~
+Imm    summon charm poison disease fear~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7904
+Name rock lobster~
+ShortD a giant `#`rRock `rLobster`^~
+LongD It's not a rock, its a `#`rRock `rLobster`W!!!`^~
+Desc ~
+Race unique~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType crush
+AC -300 -300 -300 -243
+Wealth 0
+Act    npc scavenger stay_area wimpy~
+AffBy  detect_invis detect_hidden otterlungs haste~
+Off    area_attack parry tail crush~
+Imm    cold disease drowning~
+Res    poison~
+Form   edible non_skinable crustacean mountable~
+Part   head legs guts eye tail claws~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material lobster
+END
+
+#7905
+Name master baiter~
+ShortD the `#`WMaster `CBaiter`^~
+LongD The `#`WMaster `CBaiter`^ is here, looking for bait.~
+Desc ~
+Race kender~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 10d13+460
+ManaDice 10d13+620
+DamDice 10d12+51
+DamType none
+AC -660 -660 -660 -567
+Wealth 0
+Act    npc scavenger no_tame~
+AffBy  infrared pass_door~
+Off    assist_vnum~
+Imm    fear~
+Res    slash~
+Vuln   negative~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7906
+Name fluffball kirby~
+ShortD kirby the `#`Wfluffball`^~
+LongD Kirby the fluffball stands here, waiting for a challenge.~
+Desc ~
+Race human~
+Align 0 0
+XPMod 145
+Level 110
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -792
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_invis detect_magic detect_hidden sanctuary infrared protect_evil protect_good dark_vision regeneration~
+Off    bash dodge fast parry~
+Imm    summon fire cold energy~
+Res    weapon bash acid light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7907
+Name the shocker~
+ShortD the shocker~
+LongD The Shocker stands here, ready to shock some people.~
+Desc ~
+Race hobgoblin~
+Align 0 0
+Level 108
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType shbite
+AC -900 -900 -900 -792
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary sneak hide haste dark_vision~
+AffBy2 no_dispel~
+Res    bash negative disease~
+Vuln   fire sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#8000
+Name bozo clown~
+ShortD `#`?B`?o`?z`?o `Wthe `?C`?l`?o`?w`?n`^~
+LongD A clown in a funny costume is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 38
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType none
+AC -137 -137 -137 -119
+Wealth 0
+Act    npc scavenger no_tame stay_area~
+AffBy  detect_invis detect_hidden pass_door dark_vision~
+AffBy2 passwotrace~
+Off    disarm dodge dirt_kick parry~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#7900
+Name stellar gateway~
+Short a `#`YStellar Gateway`^~
+Desc A `#`YStellar Gateway`^ covered with mystical symbols is here.~
+Level 0
+ItemType stargate~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material platinum~
+Extra    glow nonmetal nodegrade burnproof~
+ExtraDesc stellar gateway~
+A large round device stands on the platform to the Stellar Gateway, with 
+strange symbols arrayed in a circle around a large red glowing dome. The 
+gateway itself is 30' in diameter, and has the same strange symbols around 
+it on an inner ring, with an outer ring with 5 large triangles set about the 
+outside. When 5 symbols on the small device are pressed, the inner ring of 
+the gateway spins and the triangles light up one at a time as the proper 
+symbol passes underneath it. Once all 5 symbols are pressed in a correct 
+order, the red dome lights up. It can then be pressed, and a shimmering 
+silver gateway appears inside the inner ring of the Stellar Gateway. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#7900
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+RoomFlags indoors~
+Sector field~
+Exit east 7901
+EKeyvnum -1
+Exit south 7926
+EKeyvnum -1
+Exit west 7925
+EKeyvnum -1
+End
+
+
+#7901
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7902
+EKeyvnum -1
+Exit south 7927
+EKeyvnum -1
+Exit west 7900
+EKeyvnum -1
+End
+
+
+#7902
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7903
+EKeyvnum -1
+Exit south 7928
+EKeyvnum -1
+Exit west 7901
+EKeyvnum -1
+End
+
+
+#7903
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7904
+EKeyvnum -1
+Exit south 7929
+EKeyvnum -1
+Exit west 7902
+EKeyvnum -1
+End
+
+
+#7904
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7905
+EKeyvnum -1
+Exit south 7930
+EKeyvnum -1
+Exit west 7903
+EKeyvnum -1
+End
+
+
+#7905
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7906
+EKeyvnum -1
+Exit south 7931
+EKeyvnum -1
+Exit west 7904
+EKeyvnum -1
+End
+
+
+#7906
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7907
+EKeyvnum -1
+Exit south 7932
+EKeyvnum -1
+Exit west 7905
+EKeyvnum -1
+End
+
+
+#7907
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7908
+EKeyvnum -1
+Exit south 7933
+EKeyvnum -1
+Exit west 7906
+EKeyvnum -1
+End
+
+
+#7908
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7909
+EKeyvnum -1
+Exit south 7934
+EKeyvnum -1
+Exit west 7907
+EKeyvnum -1
+End
+
+
+#7909
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7910
+EKeyvnum -1
+Exit south 7935
+EKeyvnum -1
+Exit west 7908
+EKeyvnum -1
+End
+
+
+#7910
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7911
+EKeyvnum -1
+Exit south 7936
+EKeyvnum -1
+Exit west 7909
+EKeyvnum -1
+End
+
+
+#7911
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7912
+EKeyvnum -1
+Exit south 7937
+EKeyvnum -1
+Exit west 7910
+EKeyvnum -1
+End
+
+
+#7912
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 4605
+Exit east 7913
+EKeyvnum -1
+Exit south 7938
+EKeyvnum -1
+Exit west 7911
+EKeyvnum -1
+End
+
+
+#7913
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7914
+EKeyvnum -1
+Exit south 7939
+EKeyvnum -1
+Exit west 7912
+EKeyvnum -1
+End
+
+
+#7914
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7915
+EKeyvnum -1
+Exit south 7940
+EKeyvnum -1
+Exit west 7913
+EKeyvnum -1
+End
+
+
+#7915
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 5529
+Exit east 7916
+EKeyvnum -1
+Exit south 7941
+EKeyvnum -1
+Exit west 7914
+EKeyvnum -1
+End
+
+
+#7916
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7917
+EKeyvnum -1
+Exit south 7942
+EKeyvnum -1
+Exit west 7915
+EKeyvnum -1
+End
+
+
+#7917
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7918
+EKeyvnum -1
+Exit south 7943
+EKeyvnum -1
+Exit west 7916
+EKeyvnum -1
+End
+
+
+#7918
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7919
+EKeyvnum -1
+Exit south 7944
+EKeyvnum -1
+Exit west 7917
+EKeyvnum -1
+End
+
+
+#7919
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7920
+EKeyvnum -1
+Exit south 7945
+EKeyvnum -1
+Exit west 7918
+EKeyvnum -1
+End
+
+
+#7920
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7921
+EKeyvnum -1
+Exit south 7946
+EKeyvnum -1
+Exit west 7919
+EKeyvnum -1
+End
+
+
+#7921
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7922
+EKeyvnum -1
+Exit south 7947
+EKeyvnum -1
+Exit west 7920
+EKeyvnum -1
+End
+
+
+#7922
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit east 7923
+EKeyvnum -1
+Exit south 7948
+EKeyvnum -1
+Exit west 7921
+EKeyvnum -1
+End
+
+
+#7923
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+ 
+A dark and creepy looking district lies to your north.
+~
+Sector field~
+Exit north 25231
+Exit east 7924
+EKeyvnum -1
+Exit south 7949
+EKeyvnum -1
+Exit west 7922
+EKeyvnum -1
+End
+
+
+#7924
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit south 7950
+EKeyvnum -1
+Exit west 7923
+EKeyvnum -1
+End
+
+
+#7925
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown.  An annoying 
+sound comes from the north.  
+~
+Sector field~
+Exit north 8501
+Exit east 7926
+EKeyvnum -1
+Exit south 7951
+EKeyvnum -1
+Exit west 7950
+EKeyvnum -1
+End
+
+
+#7926
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7900
+EKeyvnum -1
+Exit east 7927
+EKeyvnum -1
+Exit south 7952
+EKeyvnum -1
+Exit west 7925
+EKeyvnum -1
+End
+
+
+#7927
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7901
+EKeyvnum -1
+Exit east 7928
+EKeyvnum -1
+Exit south 7953
+EKeyvnum -1
+Exit west 7926
+EKeyvnum -1
+End
+
+
+#7928
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7902
+EKeyvnum -1
+Exit east 7929
+EKeyvnum -1
+Exit south 7954
+EKeyvnum -1
+Exit west 7927
+EKeyvnum -1
+End
+
+
+#7929
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7903
+EKeyvnum -1
+Exit east 7930
+EKeyvnum -1
+Exit south 7955
+EKeyvnum -1
+Exit west 7928
+EKeyvnum -1
+End
+
+
+#7930
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7904
+EKeyvnum -1
+Exit east 7931
+EKeyvnum -1
+Exit south 7956
+EKeyvnum -1
+Exit west 7929
+EKeyvnum -1
+End
+
+
+#7931
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7905
+EKeyvnum -1
+Exit east 7932
+EKeyvnum -1
+Exit south 7957
+EKeyvnum -1
+Exit west 7930
+EKeyvnum -1
+End
+
+
+#7932
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7906
+EKeyvnum -1
+Exit east 7933
+EKeyvnum -1
+Exit south 7958
+EKeyvnum -1
+Exit west 7931
+EKeyvnum -1
+End
+
+
+#7933
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7907
+EKeyvnum -1
+Exit east 7934
+EKeyvnum -1
+Exit south 7959
+EKeyvnum -1
+Exit west 7932
+EKeyvnum -1
+End
+
+
+#7934
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7908
+EKeyvnum -1
+Exit east 7935
+EKeyvnum -1
+Exit south 7960
+EKeyvnum -1
+Exit west 7933
+EKeyvnum -1
+End
+
+
+#7935
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7909
+EKeyvnum -1
+Exit east 7936
+EKeyvnum -1
+Exit south 7961
+EKeyvnum -1
+Exit west 7934
+EKeyvnum -1
+End
+
+
+#7936
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7910
+EKeyvnum -1
+Exit east 7937
+EKeyvnum -1
+Exit south 7962
+EKeyvnum -1
+Exit west 7935
+EKeyvnum -1
+End
+
+
+#7937
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7911
+EKeyvnum -1
+Exit east 7938
+EKeyvnum -1
+Exit south 7963
+EKeyvnum -1
+Exit west 7936
+EKeyvnum -1
+End
+
+
+#7938
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7912
+EKeyvnum -1
+Exit east 7939
+EKeyvnum -1
+Exit south 7964
+EKeyvnum -1
+Exit west 7937
+EKeyvnum -1
+End
+
+
+#7939
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7913
+EKeyvnum -1
+Exit east 7940
+EKeyvnum -1
+Exit south 7965
+EKeyvnum -1
+Exit west 7938
+EKeyvnum -1
+End
+
+
+#7940
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7914
+EKeyvnum -1
+Exit east 7941
+EKeyvnum -1
+Exit south 7966
+EKeyvnum -1
+Exit west 7939
+EKeyvnum -1
+End
+
+
+#7941
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7915
+EKeyvnum -1
+Exit east 7942
+EKeyvnum -1
+Exit south 7967
+EKeyvnum -1
+Exit west 7940
+EKeyvnum -1
+End
+
+
+#7942
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7916
+EKeyvnum -1
+Exit east 7943
+EKeyvnum -1
+Exit south 7968
+EKeyvnum -1
+Exit west 7941
+EKeyvnum -1
+End
+
+
+#7943
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7917
+EKeyvnum -1
+Exit east 7944
+EKeyvnum -1
+Exit south 7969
+EKeyvnum -1
+Exit west 7942
+EKeyvnum -1
+End
+
+
+#7944
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7918
+EKeyvnum -1
+Exit east 7945
+EKeyvnum -1
+Exit south 7970
+EKeyvnum -1
+Exit west 7943
+EKeyvnum -1
+End
+
+
+#7945
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7919
+EKeyvnum -1
+Exit east 7946
+EKeyvnum -1
+Exit south 7971
+EKeyvnum -1
+Exit west 7944
+EKeyvnum -1
+End
+
+
+#7946
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7920
+EKeyvnum -1
+Exit east 7947
+EKeyvnum -1
+Exit south 7972
+EKeyvnum -1
+Exit west 7945
+EKeyvnum -1
+End
+
+
+#7947
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7921
+EKeyvnum -1
+Exit east 7948
+EKeyvnum -1
+Exit south 7973
+EKeyvnum -1
+Exit west 7946
+EKeyvnum -1
+End
+
+
+#7948
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7922
+EKeyvnum -1
+Exit east 7949
+EKeyvnum -1
+Exit south 7974
+EKeyvnum -1
+Exit west 7947
+EKeyvnum -1
+End
+
+
+#7949
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7923
+EKeyvnum -1
+Exit east 7924
+EKeyvnum -1
+Exit south 7975
+EKeyvnum -1
+Exit west 7948
+EKeyvnum -1
+End
+
+
+#7950
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7924
+EKeyvnum -1
+Exit east 7951
+EKeyvnum -1
+Exit south 7976
+EKeyvnum -1
+Exit west 7975
+EKeyvnum -1
+End
+
+
+#7951
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7925
+EKeyvnum -1
+Exit east 7952
+EKeyvnum -1
+Exit south 7977
+EKeyvnum -1
+Exit west 7950
+EKeyvnum -1
+End
+
+
+#7952
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7926
+EKeyvnum -1
+Exit east 7953
+EKeyvnum -1
+Exit south 7978
+EKeyvnum -1
+Exit west 7951
+EKeyvnum -1
+End
+
+
+#7953
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7927
+EKeyvnum -1
+Exit east 7954
+EKeyvnum -1
+Exit south 7979
+EKeyvnum -1
+Exit west 7952
+EKeyvnum -1
+End
+
+
+#7954
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7928
+EKeyvnum -1
+Exit east 7955
+EKeyvnum -1
+Exit south 7980
+EKeyvnum -1
+Exit west 7953
+EKeyvnum -1
+End
+
+
+#7955
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7929
+EKeyvnum -1
+Exit east 7956
+EKeyvnum -1
+Exit south 7981
+EKeyvnum -1
+Exit west 7954
+EKeyvnum -1
+End
+
+
+#7956
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7930
+EKeyvnum -1
+Exit east 7957
+EKeyvnum -1
+Exit south 7982
+EKeyvnum -1
+Exit west 7955
+EKeyvnum -1
+End
+
+
+#7957
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7931
+EKeyvnum -1
+Exit east 7958
+EKeyvnum -1
+Exit south 7983
+EKeyvnum -1
+Exit west 7956
+EKeyvnum -1
+End
+
+
+#7958
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7932
+EKeyvnum -1
+Exit east 7959
+EKeyvnum -1
+Exit south 7984
+EKeyvnum -1
+Exit west 7957
+EKeyvnum -1
+End
+
+
+#7959
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7933
+EKeyvnum -1
+Exit east 7960
+EKeyvnum -1
+Exit south 7985
+EKeyvnum -1
+Exit west 7958
+EKeyvnum -1
+End
+
+
+#7960
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7934
+EKeyvnum -1
+Exit east 7961
+EKeyvnum -1
+Exit south 7986
+EKeyvnum -1
+Exit west 7959
+EKeyvnum -1
+End
+
+
+#7961
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7935
+EKeyvnum -1
+Exit east 7962
+EKeyvnum -1
+Exit south 7987
+EKeyvnum -1
+Exit west 7960
+EKeyvnum -1
+End
+
+
+#7962
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7936
+EKeyvnum -1
+Exit east 7963
+EKeyvnum -1
+Exit south 7988
+EKeyvnum -1
+Exit west 7961
+EKeyvnum -1
+End
+
+
+#7963
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7937
+EKeyvnum -1
+Exit east 7964
+EKeyvnum -1
+Exit south 7989
+EKeyvnum -1
+Exit west 7962
+EKeyvnum -1
+End
+
+
+#7964
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7938
+EKeyvnum -1
+Exit east 7965
+EKeyvnum -1
+Exit south 7990
+EKeyvnum -1
+Exit west 7963
+EKeyvnum -1
+End
+
+
+#7965
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7939
+EKeyvnum -1
+Exit east 7966
+EKeyvnum -1
+Exit south 7991
+EKeyvnum -1
+Exit west 7964
+EKeyvnum -1
+End
+
+
+#7966
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7940
+EKeyvnum -1
+Exit east 7967
+EKeyvnum -1
+Exit south 7992
+EKeyvnum -1
+Exit west 7965
+EKeyvnum -1
+End
+
+
+#7967
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7941
+EKeyvnum -1
+Exit east 7968
+EKeyvnum -1
+Exit south 7993
+EKeyvnum -1
+Exit west 7966
+EKeyvnum -1
+End
+
+
+#7968
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7942
+EKeyvnum -1
+Exit east 7969
+EKeyvnum -1
+Exit south 7994
+EKeyvnum -1
+Exit west 7967
+EKeyvnum -1
+End
+
+
+#7969
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7943
+EKeyvnum -1
+Exit east 7970
+EKeyvnum -1
+Exit south 7995
+EKeyvnum -1
+Exit west 7968
+EKeyvnum -1
+End
+
+
+#7970
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7944
+EKeyvnum -1
+Exit east 7971
+EKeyvnum -1
+Exit south 7996
+EKeyvnum -1
+Exit west 7969
+EKeyvnum -1
+End
+
+
+#7971
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7945
+EKeyvnum -1
+Exit east 7972
+EKeyvnum -1
+Exit south 7997
+EKeyvnum -1
+Exit west 7970
+EKeyvnum -1
+End
+
+
+#7972
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7946
+EKeyvnum -1
+Exit east 7973
+EKeyvnum -1
+Exit south 7998
+EKeyvnum -1
+Exit west 7971
+EKeyvnum -1
+End
+
+
+#7973
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7947
+EKeyvnum -1
+Exit east 7974
+EKeyvnum -1
+Exit south 7999
+EKeyvnum -1
+Exit west 7972
+EKeyvnum -1
+End
+
+
+#7974
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7948
+EKeyvnum -1
+Exit east 7949
+EKeyvnum -1
+Exit south 8000
+EKeyvnum -1
+Exit west 7973
+EKeyvnum -1
+End
+
+
+#7975
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7949
+EKeyvnum -1
+Exit east 7976
+EKeyvnum -1
+Exit south 8001
+EKeyvnum -1
+Exit west 8000
+EKeyvnum -1
+End
+
+
+#7976
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7950
+EKeyvnum -1
+Exit east 7977
+EKeyvnum -1
+Exit south 8002
+EKeyvnum -1
+Exit west 7975
+EKeyvnum -1
+End
+
+
+#7977
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7951
+EKeyvnum -1
+Exit east 7978
+EKeyvnum -1
+Exit south 8003
+EKeyvnum -1
+Exit west 7976
+EKeyvnum -1
+End
+
+
+#7978
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7952
+EKeyvnum -1
+Exit east 7979
+EKeyvnum -1
+Exit south 8004
+EKeyvnum -1
+Exit west 7977
+EKeyvnum -1
+End
+
+
+#7979
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7953
+EKeyvnum -1
+Exit east 7980
+EKeyvnum -1
+Exit south 8005
+EKeyvnum -1
+Exit west 7978
+EKeyvnum -1
+End
+
+
+#7980
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7954
+EKeyvnum -1
+Exit east 7981
+EKeyvnum -1
+Exit south 8006
+EKeyvnum -1
+Exit west 7979
+EKeyvnum -1
+End
+
+
+#7981
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7955
+EKeyvnum -1
+Exit east 7982
+EKeyvnum -1
+Exit south 8007
+EKeyvnum -1
+Exit west 7980
+EKeyvnum -1
+End
+
+
+#7982
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7956
+EKeyvnum -1
+Exit east 7983
+EKeyvnum -1
+Exit south 8008
+EKeyvnum -1
+Exit west 7981
+EKeyvnum -1
+End
+
+
+#7983
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7957
+EKeyvnum -1
+Exit east 7984
+EKeyvnum -1
+Exit south 8009
+EKeyvnum -1
+Exit west 7982
+EKeyvnum -1
+End
+
+
+#7984
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7958
+EKeyvnum -1
+Exit east 7985
+EKeyvnum -1
+Exit south 8010
+EKeyvnum -1
+Exit west 7983
+EKeyvnum -1
+End
+
+
+#7985
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7959
+EKeyvnum -1
+Exit east 7986
+EKeyvnum -1
+Exit south 8011
+EKeyvnum -1
+Exit west 7984
+EKeyvnum -1
+End
+
+
+#7986
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7960
+EKeyvnum -1
+Exit east 7987
+EKeyvnum -1
+Exit south 8012
+EKeyvnum -1
+Exit west 7985
+EKeyvnum -1
+End
+
+
+#7987
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7961
+EKeyvnum -1
+Exit east 7988
+EKeyvnum -1
+Exit south 8013
+EKeyvnum -1
+Exit west 7986
+EKeyvnum -1
+End
+
+
+#7988
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7962
+EKeyvnum -1
+Exit east 7989
+EKeyvnum -1
+Exit south 8014
+EKeyvnum -1
+Exit west 7987
+EKeyvnum -1
+End
+
+
+#7989
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7963
+EKeyvnum -1
+Exit east 7990
+EKeyvnum -1
+Exit south 8015
+EKeyvnum -1
+Exit west 7988
+EKeyvnum -1
+End
+
+
+#7990
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7964
+EKeyvnum -1
+Exit east 7991
+EKeyvnum -1
+Exit south 8016
+EKeyvnum -1
+Exit west 7989
+EKeyvnum -1
+End
+
+
+#7991
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7965
+EKeyvnum -1
+Exit east 7992
+EKeyvnum -1
+Exit south 8017
+EKeyvnum -1
+Exit west 7990
+EKeyvnum -1
+End
+
+
+#7992
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7966
+EKeyvnum -1
+Exit east 7993
+EKeyvnum -1
+Exit south 8018
+EKeyvnum -1
+Exit west 7991
+EKeyvnum -1
+End
+
+
+#7993
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7967
+EKeyvnum -1
+Exit east 7994
+EKeyvnum -1
+Exit south 8019
+EKeyvnum -1
+Exit west 7992
+EKeyvnum -1
+End
+
+
+#7994
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7968
+EKeyvnum -1
+Exit east 7995
+EKeyvnum -1
+Exit south 8020
+EKeyvnum -1
+Exit west 7993
+EKeyvnum -1
+End
+
+
+#7995
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7969
+EKeyvnum -1
+Exit east 7996
+EKeyvnum -1
+Exit south 8021
+EKeyvnum -1
+Exit west 7994
+EKeyvnum -1
+End
+
+
+#7996
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7970
+EKeyvnum -1
+Exit east 7997
+EKeyvnum -1
+Exit south 8022
+EKeyvnum -1
+Exit west 7995
+EKeyvnum -1
+End
+
+
+#7997
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7971
+EKeyvnum -1
+Exit east 7998
+EKeyvnum -1
+Exit south 8023
+EKeyvnum -1
+Exit west 7996
+EKeyvnum -1
+End
+
+
+#7998
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7972
+EKeyvnum -1
+Exit east 7999
+EKeyvnum -1
+Exit south 8024
+EKeyvnum -1
+Exit west 7997
+EKeyvnum -1
+End
+
+
+#7999
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7973
+EKeyvnum -1
+Exit east 7974
+EKeyvnum -1
+Exit south 8025
+EKeyvnum -1
+Exit west 7998
+EKeyvnum -1
+End
+
+
+#8000
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7974
+EKeyvnum -1
+Exit east 8001
+EKeyvnum -1
+Exit south 8026
+EKeyvnum -1
+Exit west 8025
+EKeyvnum -1
+End
+
+
+#8001
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7975
+EKeyvnum -1
+Exit east 8002
+EKeyvnum -1
+Exit south 8027
+EKeyvnum -1
+Exit west 8000
+EKeyvnum -1
+End
+
+
+#8002
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7976
+EKeyvnum -1
+Exit east 8003
+EKeyvnum -1
+Exit south 8028
+EKeyvnum -1
+Exit west 8001
+EKeyvnum -1
+End
+
+
+#8003
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7977
+EKeyvnum -1
+Exit east 8004
+EKeyvnum -1
+Exit south 8029
+EKeyvnum -1
+Exit west 8002
+EKeyvnum -1
+End
+
+
+#8004
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7978
+EKeyvnum -1
+Exit east 8005
+EKeyvnum -1
+Exit south 8030
+EKeyvnum -1
+Exit west 8003
+EKeyvnum -1
+End
+
+
+#8005
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7979
+EKeyvnum -1
+Exit east 8006
+EKeyvnum -1
+Exit south 8031
+EKeyvnum -1
+Exit west 8004
+EKeyvnum -1
+End
+
+
+#8006
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7980
+EKeyvnum -1
+Exit east 8007
+EKeyvnum -1
+Exit south 8032
+EKeyvnum -1
+Exit west 8005
+EKeyvnum -1
+End
+
+
+#8007
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7981
+EKeyvnum -1
+Exit east 8008
+EKeyvnum -1
+Exit south 8033
+EKeyvnum -1
+Exit west 8006
+EKeyvnum -1
+End
+
+
+#8008
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7982
+EKeyvnum -1
+Exit east 8009
+EKeyvnum -1
+Exit south 8034
+EKeyvnum -1
+Exit west 8007
+EKeyvnum -1
+End
+
+
+#8009
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7983
+EKeyvnum -1
+Exit east 8010
+EKeyvnum -1
+Exit south 8035
+EKeyvnum -1
+Exit west 8008
+EKeyvnum -1
+End
+
+
+#8010
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7984
+EKeyvnum -1
+Exit east 8011
+EKeyvnum -1
+Exit south 8036
+EKeyvnum -1
+Exit west 8009
+EKeyvnum -1
+End
+
+
+#8011
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7985
+EKeyvnum -1
+Exit east 8012
+EKeyvnum -1
+Exit south 8037
+EKeyvnum -1
+Exit west 8010
+EKeyvnum -1
+End
+
+
+#8012
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7986
+EKeyvnum -1
+Exit east 8013
+EKeyvnum -1
+Exit south 8038
+EKeyvnum -1
+Exit west 8011
+EKeyvnum -1
+End
+
+
+#8013
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7987
+EKeyvnum -1
+Exit east 8014
+EKeyvnum -1
+Exit south 8039
+EKeyvnum -1
+Exit west 8012
+EKeyvnum -1
+End
+
+
+#8014
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7988
+EKeyvnum -1
+Exit east 8015
+EKeyvnum -1
+Exit south 8040
+EKeyvnum -1
+Exit west 8013
+EKeyvnum -1
+End
+
+
+#8015
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7989
+EKeyvnum -1
+Exit east 8016
+EKeyvnum -1
+Exit south 8041
+EKeyvnum -1
+Exit west 8014
+EKeyvnum -1
+End
+
+
+#8016
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7990
+EKeyvnum -1
+Exit east 8017
+EKeyvnum -1
+Exit south 8042
+EKeyvnum -1
+Exit west 8015
+EKeyvnum -1
+End
+
+
+#8017
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7991
+EKeyvnum -1
+Exit east 8018
+EKeyvnum -1
+Exit south 8043
+EKeyvnum -1
+Exit west 8016
+EKeyvnum -1
+End
+
+
+#8018
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7992
+EKeyvnum -1
+Exit east 8019
+EKeyvnum -1
+Exit south 8044
+EKeyvnum -1
+Exit west 8017
+EKeyvnum -1
+End
+
+
+#8019
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7993
+EKeyvnum -1
+Exit east 8020
+EKeyvnum -1
+Exit south 8045
+EKeyvnum -1
+Exit west 8018
+EKeyvnum -1
+End
+
+
+#8020
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7994
+EKeyvnum -1
+Exit east 8021
+EKeyvnum -1
+Exit south 8046
+EKeyvnum -1
+Exit west 8019
+EKeyvnum -1
+End
+
+
+#8021
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7995
+EKeyvnum -1
+Exit east 8022
+EKeyvnum -1
+Exit south 8047
+EKeyvnum -1
+Exit west 8020
+EKeyvnum -1
+End
+
+
+#8022
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7996
+EKeyvnum -1
+Exit east 8023
+EKeyvnum -1
+Exit south 8048
+EKeyvnum -1
+Exit west 8021
+EKeyvnum -1
+End
+
+
+#8023
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7997
+EKeyvnum -1
+Exit east 8024
+EKeyvnum -1
+Exit south 8049
+EKeyvnum -1
+Exit west 8022
+EKeyvnum -1
+End
+
+
+#8024
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7998
+EKeyvnum -1
+Exit east 7999
+EKeyvnum -1
+Exit south 8050
+EKeyvnum -1
+Exit west 8023
+EKeyvnum -1
+End
+
+
+#8025
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 7999
+EKeyvnum -1
+Exit east 8026
+EKeyvnum -1
+Exit south 8051
+EKeyvnum -1
+Exit west 8050
+EKeyvnum -1
+End
+
+
+#8026
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8000
+EKeyvnum -1
+Exit east 8027
+EKeyvnum -1
+Exit south 8052
+EKeyvnum -1
+Exit west 8025
+EKeyvnum -1
+End
+
+
+#8027
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8001
+EKeyvnum -1
+Exit east 8028
+EKeyvnum -1
+Exit south 8053
+EKeyvnum -1
+Exit west 8026
+EKeyvnum -1
+End
+
+
+#8028
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8002
+EKeyvnum -1
+Exit east 8029
+EKeyvnum -1
+Exit south 8054
+EKeyvnum -1
+Exit west 8027
+EKeyvnum -1
+End
+
+
+#8029
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8003
+EKeyvnum -1
+Exit east 8030
+EKeyvnum -1
+Exit south 8055
+EKeyvnum -1
+Exit west 8028
+EKeyvnum -1
+End
+
+
+#8030
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8004
+EKeyvnum -1
+Exit east 8031
+EKeyvnum -1
+Exit south 8056
+EKeyvnum -1
+Exit west 8029
+EKeyvnum -1
+End
+
+
+#8031
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8005
+EKeyvnum -1
+Exit east 8032
+EKeyvnum -1
+Exit south 8057
+EKeyvnum -1
+Exit west 8030
+EKeyvnum -1
+End
+
+
+#8032
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8006
+EKeyvnum -1
+Exit east 8033
+EKeyvnum -1
+Exit south 8058
+EKeyvnum -1
+Exit west 8031
+EKeyvnum -1
+End
+
+
+#8033
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8007
+EKeyvnum -1
+Exit east 8034
+EKeyvnum -1
+Exit south 8059
+EKeyvnum -1
+Exit west 8032
+EKeyvnum -1
+End
+
+
+#8034
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8008
+EKeyvnum -1
+Exit east 8035
+EKeyvnum -1
+Exit south 8060
+EKeyvnum -1
+Exit west 8033
+EKeyvnum -1
+End
+
+
+#8035
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8009
+EKeyvnum -1
+Exit east 8036
+EKeyvnum -1
+Exit south 8061
+EKeyvnum -1
+Exit west 8034
+EKeyvnum -1
+End
+
+
+#8036
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8010
+EKeyvnum -1
+Exit east 8037
+EKeyvnum -1
+Exit south 8062
+EKeyvnum -1
+Exit west 8035
+EKeyvnum -1
+End
+
+
+#8037
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8011
+EKeyvnum -1
+Exit east 8038
+EKeyvnum -1
+Exit south 8063
+EKeyvnum -1
+Exit west 8036
+EKeyvnum -1
+End
+
+
+#8038
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8012
+EKeyvnum -1
+Exit east 8039
+EKeyvnum -1
+Exit south 8064
+EKeyvnum -1
+Exit west 8037
+EKeyvnum -1
+End
+
+
+#8039
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8013
+EKeyvnum -1
+Exit east 8040
+EKeyvnum -1
+Exit south 8065
+EKeyvnum -1
+Exit west 8038
+EKeyvnum -1
+End
+
+
+#8040
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8014
+EKeyvnum -1
+Exit east 8041
+EKeyvnum -1
+Exit south 8066
+EKeyvnum -1
+Exit west 8039
+EKeyvnum -1
+End
+
+
+#8041
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8015
+EKeyvnum -1
+Exit east 8042
+EKeyvnum -1
+Exit south 8067
+EKeyvnum -1
+Exit west 8040
+EKeyvnum -1
+End
+
+
+#8042
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8016
+EKeyvnum -1
+Exit east 8043
+EKeyvnum -1
+Exit south 8068
+EKeyvnum -1
+Exit west 8041
+EKeyvnum -1
+End
+
+
+#8043
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8017
+EKeyvnum -1
+Exit east 8044
+EKeyvnum -1
+Exit south 8069
+EKeyvnum -1
+Exit west 8042
+EKeyvnum -1
+End
+
+
+#8044
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8018
+EKeyvnum -1
+Exit east 8045
+EKeyvnum -1
+Exit south 8070
+EKeyvnum -1
+Exit west 8043
+EKeyvnum -1
+End
+
+
+#8045
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8019
+EKeyvnum -1
+Exit east 8046
+EKeyvnum -1
+Exit south 8071
+EKeyvnum -1
+Exit west 8044
+EKeyvnum -1
+End
+
+
+#8046
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8020
+EKeyvnum -1
+Exit east 8047
+EKeyvnum -1
+Exit south 8072
+EKeyvnum -1
+Exit west 8045
+EKeyvnum -1
+End
+
+
+#8047
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8021
+EKeyvnum -1
+Exit east 8048
+EKeyvnum -1
+Exit south 8073
+EKeyvnum -1
+Exit west 8046
+EKeyvnum -1
+End
+
+
+#8048
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8022
+EKeyvnum -1
+Exit east 8049
+EKeyvnum -1
+Exit south 8074
+EKeyvnum -1
+Exit west 8047
+EKeyvnum -1
+End
+
+
+#8049
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8023
+EKeyvnum -1
+Exit east 8024
+EKeyvnum -1
+Exit south 8075
+EKeyvnum -1
+Exit west 8048
+EKeyvnum -1
+End
+
+
+#8050
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8024
+EKeyvnum -1
+Exit east 8051
+EKeyvnum -1
+Exit south 8076
+EKeyvnum -1
+Exit west 8075
+EKeyvnum -1
+End
+
+
+#8051
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8025
+EKeyvnum -1
+Exit east 8052
+EKeyvnum -1
+Exit south 8077
+EKeyvnum -1
+Exit west 8050
+EKeyvnum -1
+End
+
+
+#8052
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8026
+EKeyvnum -1
+Exit east 8053
+EKeyvnum -1
+Exit south 8078
+EKeyvnum -1
+Exit west 8051
+EKeyvnum -1
+End
+
+
+#8053
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8027
+EKeyvnum -1
+Exit east 8054
+EKeyvnum -1
+Exit south 8079
+EKeyvnum -1
+Exit west 8052
+EKeyvnum -1
+End
+
+
+#8054
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8028
+EKeyvnum -1
+Exit east 8055
+EKeyvnum -1
+Exit south 8080
+EKeyvnum -1
+Exit west 8053
+EKeyvnum -1
+End
+
+
+#8055
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8029
+EKeyvnum -1
+Exit east 8056
+EKeyvnum -1
+Exit south 8081
+EKeyvnum -1
+Exit west 8054
+EKeyvnum -1
+End
+
+
+#8056
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8030
+EKeyvnum -1
+Exit east 8057
+EKeyvnum -1
+Exit south 8082
+EKeyvnum -1
+Exit west 8055
+EKeyvnum -1
+End
+
+
+#8057
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8031
+EKeyvnum -1
+Exit east 8058
+EKeyvnum -1
+Exit south 8083
+EKeyvnum -1
+Exit west 8056
+EKeyvnum -1
+End
+
+
+#8058
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8032
+EKeyvnum -1
+Exit east 8059
+EKeyvnum -1
+Exit south 8084
+EKeyvnum -1
+Exit west 8057
+EKeyvnum -1
+End
+
+
+#8059
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8033
+EKeyvnum -1
+Exit east 8060
+EKeyvnum -1
+Exit south 8085
+EKeyvnum -1
+Exit west 8058
+EKeyvnum -1
+End
+
+
+#8060
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8034
+EKeyvnum -1
+Exit east 8061
+EKeyvnum -1
+Exit south 8086
+EKeyvnum -1
+Exit west 8059
+EKeyvnum -1
+End
+
+
+#8061
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8035
+EKeyvnum -1
+Exit east 8062
+EKeyvnum -1
+Exit south 8087
+EKeyvnum -1
+Exit west 8060
+EKeyvnum -1
+End
+
+
+#8062
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8036
+EKeyvnum -1
+Exit east 8063
+EKeyvnum -1
+Exit south 8088
+EKeyvnum -1
+Exit west 8061
+EKeyvnum -1
+End
+
+
+#8063
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8037
+EKeyvnum -1
+Exit east 8064
+EKeyvnum -1
+Exit south 8089
+EKeyvnum -1
+Exit west 8062
+EKeyvnum -1
+End
+
+
+#8064
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8038
+EKeyvnum -1
+Exit east 8065
+EKeyvnum -1
+Exit south 8090
+EKeyvnum -1
+Exit west 8063
+EKeyvnum -1
+End
+
+
+#8065
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8039
+EKeyvnum -1
+Exit east 8066
+EKeyvnum -1
+Exit south 8091
+EKeyvnum -1
+Exit west 8064
+EKeyvnum -1
+End
+
+
+#8066
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8040
+EKeyvnum -1
+Exit east 8067
+EKeyvnum -1
+Exit south 8092
+EKeyvnum -1
+Exit west 8065
+EKeyvnum -1
+End
+
+
+#8067
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8041
+EKeyvnum -1
+Exit east 8068
+EKeyvnum -1
+Exit south 8093
+EKeyvnum -1
+Exit west 8066
+EKeyvnum -1
+End
+
+
+#8068
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8042
+EKeyvnum -1
+Exit east 8069
+EKeyvnum -1
+Exit south 8094
+EKeyvnum -1
+Exit west 8067
+EKeyvnum -1
+End
+
+
+#8069
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8043
+EKeyvnum -1
+Exit east 8070
+EKeyvnum -1
+Exit south 8095
+EKeyvnum -1
+Exit west 8068
+EKeyvnum -1
+End
+
+
+#8070
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8044
+EKeyvnum -1
+Exit east 8071
+EKeyvnum -1
+Exit south 8096
+EKeyvnum -1
+Exit west 8069
+EKeyvnum -1
+End
+
+
+#8071
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8045
+EKeyvnum -1
+Exit east 8072
+EKeyvnum -1
+Exit south 8097
+EKeyvnum -1
+Exit west 8070
+EKeyvnum -1
+End
+
+
+#8072
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8046
+EKeyvnum -1
+Exit east 8073
+EKeyvnum -1
+Exit south 8098
+EKeyvnum -1
+Exit west 8071
+EKeyvnum -1
+End
+
+
+#8073
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8047
+EKeyvnum -1
+Exit east 8074
+EKeyvnum -1
+Exit south 8099
+EKeyvnum -1
+Exit west 8072
+EKeyvnum -1
+End
+
+
+#8074
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8048
+EKeyvnum -1
+Exit east 8049
+EKeyvnum -1
+Exit south 8100
+EKeyvnum -1
+Exit west 8073
+EKeyvnum -1
+End
+
+
+#8075
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8049
+EKeyvnum -1
+Exit east 8076
+EKeyvnum -1
+Exit south 8101
+EKeyvnum -1
+Exit west 8100
+EKeyvnum -1
+End
+
+
+#8076
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8050
+EKeyvnum -1
+Exit east 8077
+EKeyvnum -1
+Exit south 8102
+EKeyvnum -1
+Exit west 8075
+EKeyvnum -1
+End
+
+
+#8077
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8051
+EKeyvnum -1
+Exit east 8078
+EKeyvnum -1
+Exit south 8103
+EKeyvnum -1
+Exit west 8076
+EKeyvnum -1
+End
+
+
+#8078
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8052
+EKeyvnum -1
+Exit east 8079
+EKeyvnum -1
+Exit south 8104
+EKeyvnum -1
+Exit west 8077
+EKeyvnum -1
+End
+
+
+#8079
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8053
+EKeyvnum -1
+Exit east 8080
+EKeyvnum -1
+Exit south 8105
+EKeyvnum -1
+Exit west 8078
+EKeyvnum -1
+End
+
+
+#8080
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8054
+EKeyvnum -1
+Exit east 8081
+EKeyvnum -1
+Exit south 8106
+EKeyvnum -1
+Exit west 8079
+EKeyvnum -1
+End
+
+
+#8081
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8055
+EKeyvnum -1
+Exit east 8082
+EKeyvnum -1
+Exit south 8107
+EKeyvnum -1
+Exit west 8080
+EKeyvnum -1
+End
+
+
+#8082
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8056
+EKeyvnum -1
+Exit east 8083
+EKeyvnum -1
+Exit south 8108
+EKeyvnum -1
+Exit west 8081
+EKeyvnum -1
+End
+
+
+#8083
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8057
+EKeyvnum -1
+Exit east 8084
+EKeyvnum -1
+Exit south 8109
+EKeyvnum -1
+Exit west 8082
+EKeyvnum -1
+End
+
+
+#8084
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8058
+EKeyvnum -1
+Exit east 8085
+EKeyvnum -1
+Exit south 8110
+EKeyvnum -1
+Exit west 8083
+EKeyvnum -1
+End
+
+
+#8085
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8059
+EKeyvnum -1
+Exit east 8086
+EKeyvnum -1
+Exit south 8111
+EKeyvnum -1
+Exit west 8084
+EKeyvnum -1
+End
+
+
+#8086
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8060
+EKeyvnum -1
+Exit east 8087
+EKeyvnum -1
+Exit south 8112
+EKeyvnum -1
+Exit west 8085
+EKeyvnum -1
+End
+
+
+#8087
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8061
+EKeyvnum -1
+Exit east 8088
+EKeyvnum -1
+Exit south 8113
+EKeyvnum -1
+Exit west 8086
+EKeyvnum -1
+End
+
+
+#8088
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8062
+EKeyvnum -1
+Exit east 8089
+EKeyvnum -1
+Exit south 8114
+EKeyvnum -1
+Exit west 8087
+EKeyvnum -1
+End
+
+
+#8089
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8063
+EKeyvnum -1
+Exit east 8090
+EKeyvnum -1
+Exit south 8115
+EKeyvnum -1
+Exit west 8088
+EKeyvnum -1
+End
+
+
+#8090
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8064
+EKeyvnum -1
+Exit east 8091
+EKeyvnum -1
+Exit south 8116
+EKeyvnum -1
+Exit west 8089
+EKeyvnum -1
+End
+
+
+#8091
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8065
+EKeyvnum -1
+Exit east 8092
+EKeyvnum -1
+Exit south 8117
+EKeyvnum -1
+Exit west 8090
+EKeyvnum -1
+End
+
+
+#8092
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8066
+EKeyvnum -1
+Exit east 8093
+EKeyvnum -1
+Exit south 8118
+EKeyvnum -1
+Exit west 8091
+EKeyvnum -1
+End
+
+
+#8093
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8067
+EKeyvnum -1
+Exit east 8094
+EKeyvnum -1
+Exit south 8119
+EKeyvnum -1
+Exit west 8092
+EKeyvnum -1
+End
+
+
+#8094
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8068
+EKeyvnum -1
+Exit east 8095
+EKeyvnum -1
+Exit south 8120
+EKeyvnum -1
+Exit west 8093
+EKeyvnum -1
+End
+
+
+#8095
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8069
+EKeyvnum -1
+Exit east 8096
+EKeyvnum -1
+Exit south 8121
+EKeyvnum -1
+Exit west 8094
+EKeyvnum -1
+End
+
+
+#8096
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8070
+EKeyvnum -1
+Exit east 8097
+EKeyvnum -1
+Exit south 8122
+EKeyvnum -1
+Exit west 8095
+EKeyvnum -1
+End
+
+
+#8097
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8071
+EKeyvnum -1
+Exit east 8098
+EKeyvnum -1
+Exit south 8123
+EKeyvnum -1
+Exit west 8096
+EKeyvnum -1
+End
+
+
+#8098
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8072
+EKeyvnum -1
+Exit east 8099
+EKeyvnum -1
+Exit south 8124
+EKeyvnum -1
+Exit west 8097
+EKeyvnum -1
+End
+
+
+#8099
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8073
+EKeyvnum -1
+Exit east 8074
+EKeyvnum -1
+Exit south 8125
+EKeyvnum -1
+Exit west 8098
+EKeyvnum -1
+End
+
+
+#8100
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8074
+EKeyvnum -1
+Exit east 8101
+EKeyvnum -1
+Exit south 8126
+EKeyvnum -1
+Exit west 8125
+EKeyvnum -1
+End
+
+
+#8101
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8075
+EKeyvnum -1
+Exit east 8102
+EKeyvnum -1
+Exit south 8127
+EKeyvnum -1
+Exit west 8100
+EKeyvnum -1
+End
+
+
+#8102
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8076
+EKeyvnum -1
+Exit east 8103
+EKeyvnum -1
+Exit south 8128
+EKeyvnum -1
+Exit west 8101
+EKeyvnum -1
+End
+
+
+#8103
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8077
+EKeyvnum -1
+Exit east 8104
+EKeyvnum -1
+Exit south 8129
+EKeyvnum -1
+Exit west 8102
+EKeyvnum -1
+End
+
+
+#8104
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8078
+EKeyvnum -1
+Exit east 8105
+EKeyvnum -1
+Exit south 8130
+EKeyvnum -1
+Exit west 8103
+EKeyvnum -1
+End
+
+
+#8105
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8079
+EKeyvnum -1
+Exit east 8106
+EKeyvnum -1
+Exit south 8131
+EKeyvnum -1
+Exit west 8104
+EKeyvnum -1
+End
+
+
+#8106
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8080
+EKeyvnum -1
+Exit east 8107
+EKeyvnum -1
+Exit south 8132
+EKeyvnum -1
+Exit west 8105
+EKeyvnum -1
+End
+
+
+#8107
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8081
+EKeyvnum -1
+Exit east 8108
+EKeyvnum -1
+Exit south 8133
+EKeyvnum -1
+Exit west 8106
+EKeyvnum -1
+End
+
+
+#8108
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8082
+EKeyvnum -1
+Exit east 8109
+EKeyvnum -1
+Exit south 8134
+EKeyvnum -1
+Exit west 8107
+EKeyvnum -1
+End
+
+
+#8109
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8083
+EKeyvnum -1
+Exit east 8110
+EKeyvnum -1
+Exit south 8135
+EKeyvnum -1
+Exit west 8108
+EKeyvnum -1
+End
+
+
+#8110
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8084
+EKeyvnum -1
+Exit east 8111
+EKeyvnum -1
+Exit south 8136
+EKeyvnum -1
+Exit west 8109
+EKeyvnum -1
+End
+
+
+#8111
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8085
+EKeyvnum -1
+Exit east 8112
+EKeyvnum -1
+Exit south 8137
+EKeyvnum -1
+Exit west 8110
+EKeyvnum -1
+End
+
+
+#8112
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8086
+EKeyvnum -1
+Exit east 8113
+EKeyvnum -1
+Exit south 8138
+EKeyvnum -1
+Exit west 8111
+EKeyvnum -1
+End
+
+
+#8113
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8087
+EKeyvnum -1
+Exit east 8114
+EKeyvnum -1
+Exit south 8139
+EKeyvnum -1
+Exit west 8112
+EKeyvnum -1
+End
+
+
+#8114
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8088
+EKeyvnum -1
+Exit east 8115
+EKeyvnum -1
+Exit south 8140
+EKeyvnum -1
+Exit west 8113
+EKeyvnum -1
+End
+
+
+#8115
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8089
+EKeyvnum -1
+Exit east 8116
+EKeyvnum -1
+Exit south 8141
+EKeyvnum -1
+Exit west 8114
+EKeyvnum -1
+End
+
+
+#8116
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8090
+EKeyvnum -1
+Exit east 8117
+EKeyvnum -1
+Exit south 8142
+EKeyvnum -1
+Exit west 8115
+EKeyvnum -1
+End
+
+
+#8117
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8091
+EKeyvnum -1
+Exit east 8118
+EKeyvnum -1
+Exit south 8143
+EKeyvnum -1
+Exit west 8116
+EKeyvnum -1
+End
+
+
+#8118
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8092
+EKeyvnum -1
+Exit east 8119
+EKeyvnum -1
+Exit south 8144
+EKeyvnum -1
+Exit west 8117
+EKeyvnum -1
+End
+
+
+#8119
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8093
+EKeyvnum -1
+Exit east 8120
+EKeyvnum -1
+Exit south 8145
+EKeyvnum -1
+Exit west 8118
+EKeyvnum -1
+End
+
+
+#8120
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8094
+EKeyvnum -1
+Exit east 8121
+EKeyvnum -1
+Exit south 8146
+EKeyvnum -1
+Exit west 8119
+EKeyvnum -1
+End
+
+
+#8121
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8095
+EKeyvnum -1
+Exit east 8122
+EKeyvnum -1
+Exit south 8147
+EKeyvnum -1
+Exit west 8120
+EKeyvnum -1
+End
+
+
+#8122
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8096
+EKeyvnum -1
+Exit east 8123
+EKeyvnum -1
+Exit south 8148
+EKeyvnum -1
+Exit west 8121
+EKeyvnum -1
+End
+
+
+#8123
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8097
+EKeyvnum -1
+Exit east 8124
+EKeyvnum -1
+Exit south 8149
+EKeyvnum -1
+Exit west 8122
+EKeyvnum -1
+End
+
+
+#8124
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8098
+EKeyvnum -1
+Exit east 8099
+EKeyvnum -1
+Exit south 8150
+EKeyvnum -1
+Exit west 8123
+EKeyvnum -1
+End
+
+
+#8125
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8099
+EKeyvnum -1
+Exit east 8126
+EKeyvnum -1
+Exit south 8151
+EKeyvnum -1
+Exit west 8150
+EKeyvnum -1
+End
+
+
+#8126
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8100
+EKeyvnum -1
+Exit east 8127
+EKeyvnum -1
+Exit south 8152
+EKeyvnum -1
+Exit west 8125
+EKeyvnum -1
+End
+
+
+#8127
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8101
+EKeyvnum -1
+Exit east 8128
+EKeyvnum -1
+Exit south 8153
+EKeyvnum -1
+Exit west 8126
+EKeyvnum -1
+End
+
+
+#8128
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8102
+EKeyvnum -1
+Exit east 8129
+EKeyvnum -1
+Exit south 8154
+EKeyvnum -1
+Exit west 8127
+EKeyvnum -1
+End
+
+
+#8129
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8103
+EKeyvnum -1
+Exit east 8130
+EKeyvnum -1
+Exit south 8155
+EKeyvnum -1
+Exit west 8128
+EKeyvnum -1
+End
+
+
+#8130
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8104
+EKeyvnum -1
+Exit east 8131
+EKeyvnum -1
+Exit south 8156
+EKeyvnum -1
+Exit west 8129
+EKeyvnum -1
+End
+
+
+#8131
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8105
+EKeyvnum -1
+Exit east 8132
+EKeyvnum -1
+Exit south 8157
+EKeyvnum -1
+Exit west 8130
+EKeyvnum -1
+End
+
+
+#8132
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8106
+EKeyvnum -1
+Exit east 8133
+EKeyvnum -1
+Exit south 8158
+EKeyvnum -1
+Exit west 8131
+EKeyvnum -1
+End
+
+
+#8133
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8107
+EKeyvnum -1
+Exit east 8134
+EKeyvnum -1
+Exit south 8159
+EKeyvnum -1
+Exit west 8132
+EKeyvnum -1
+End
+
+
+#8134
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8108
+EKeyvnum -1
+Exit east 8135
+EKeyvnum -1
+Exit south 8160
+EKeyvnum -1
+Exit west 8133
+EKeyvnum -1
+End
+
+
+#8135
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8109
+EKeyvnum -1
+Exit east 8136
+EKeyvnum -1
+Exit south 8161
+EKeyvnum -1
+Exit west 8134
+EKeyvnum -1
+End
+
+
+#8136
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8110
+EKeyvnum -1
+Exit east 8137
+EKeyvnum -1
+Exit south 8162
+EKeyvnum -1
+Exit west 8135
+EKeyvnum -1
+End
+
+
+#8137
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8111
+EKeyvnum -1
+Exit east 8138
+EKeyvnum -1
+Exit south 8163
+EKeyvnum -1
+Exit west 8136
+EKeyvnum -1
+End
+
+
+#8138
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8112
+EKeyvnum -1
+Exit east 8139
+EKeyvnum -1
+Exit south 8164
+EKeyvnum -1
+Exit west 8137
+EKeyvnum -1
+End
+
+
+#8139
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8113
+EKeyvnum -1
+Exit east 8140
+EKeyvnum -1
+Exit south 8165
+EKeyvnum -1
+Exit west 8138
+EKeyvnum -1
+End
+
+
+#8140
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8114
+EKeyvnum -1
+Exit east 8141
+EKeyvnum -1
+Exit south 8166
+EKeyvnum -1
+Exit west 8139
+EKeyvnum -1
+End
+
+
+#8141
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8115
+EKeyvnum -1
+Exit east 8142
+EKeyvnum -1
+Exit south 8167
+EKeyvnum -1
+Exit west 8140
+EKeyvnum -1
+End
+
+
+#8142
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8116
+EKeyvnum -1
+Exit east 8143
+EKeyvnum -1
+Exit south 8168
+EKeyvnum -1
+Exit west 8141
+EKeyvnum -1
+End
+
+
+#8143
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8117
+EKeyvnum -1
+Exit east 8144
+EKeyvnum -1
+Exit south 8169
+EKeyvnum -1
+Exit west 8142
+EKeyvnum -1
+End
+
+
+#8144
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8118
+EKeyvnum -1
+Exit east 8145
+EKeyvnum -1
+Exit south 8170
+EKeyvnum -1
+Exit west 8143
+EKeyvnum -1
+End
+
+
+#8145
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8119
+EKeyvnum -1
+Exit east 8146
+EKeyvnum -1
+Exit south 8171
+EKeyvnum -1
+Exit west 8144
+EKeyvnum -1
+End
+
+
+#8146
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8120
+EKeyvnum -1
+Exit east 8147
+EKeyvnum -1
+Exit south 8172
+EKeyvnum -1
+Exit west 8145
+EKeyvnum -1
+End
+
+
+#8147
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8121
+EKeyvnum -1
+Exit east 8148
+EKeyvnum -1
+Exit south 8173
+EKeyvnum -1
+Exit west 8146
+EKeyvnum -1
+End
+
+
+#8148
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8122
+EKeyvnum -1
+Exit east 8149
+EKeyvnum -1
+Exit south 8174
+EKeyvnum -1
+Exit west 8147
+EKeyvnum -1
+End
+
+
+#8149
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8123
+EKeyvnum -1
+Exit east 8124
+EKeyvnum -1
+Exit south 8175
+EKeyvnum -1
+Exit west 8148
+EKeyvnum -1
+End
+
+
+#8150
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8124
+EKeyvnum -1
+Exit east 8151
+EKeyvnum -1
+Exit south 8176
+EKeyvnum -1
+Exit west 8175
+EKeyvnum -1
+End
+
+
+#8151
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8125
+EKeyvnum -1
+Exit east 8152
+EKeyvnum -1
+Exit south 8177
+EKeyvnum -1
+Exit west 8150
+EKeyvnum -1
+End
+
+
+#8152
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8126
+EKeyvnum -1
+Exit east 8153
+EKeyvnum -1
+Exit south 8178
+EKeyvnum -1
+Exit west 8151
+EKeyvnum -1
+End
+
+
+#8153
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8127
+EKeyvnum -1
+Exit east 8154
+EKeyvnum -1
+Exit south 8179
+EKeyvnum -1
+Exit west 8152
+EKeyvnum -1
+End
+
+
+#8154
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8128
+EKeyvnum -1
+Exit east 8155
+EKeyvnum -1
+Exit south 8180
+EKeyvnum -1
+Exit west 8153
+EKeyvnum -1
+End
+
+
+#8155
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8129
+EKeyvnum -1
+Exit east 8156
+EKeyvnum -1
+Exit south 8181
+EKeyvnum -1
+Exit west 8154
+EKeyvnum -1
+End
+
+
+#8156
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8130
+EKeyvnum -1
+Exit east 31000
+Exit south 8182
+EKeyvnum -1
+Exit west 8155
+EKeyvnum -1
+End
+
+
+#8157
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8131
+EKeyvnum -1
+Exit east 8158
+EKeyvnum -1
+Exit south 8183
+EKeyvnum -1
+Exit west 31000
+End
+
+
+#8158
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8132
+EKeyvnum -1
+Exit east 8159
+EKeyvnum -1
+Exit south 8184
+EKeyvnum -1
+Exit west 8157
+EKeyvnum -1
+End
+
+
+#8159
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8133
+EKeyvnum -1
+Exit east 8160
+EKeyvnum -1
+Exit south 8185
+EKeyvnum -1
+Exit west 8158
+EKeyvnum -1
+End
+
+
+#8160
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8134
+EKeyvnum -1
+Exit east 8161
+EKeyvnum -1
+Exit south 8186
+EKeyvnum -1
+Exit west 8159
+EKeyvnum -1
+End
+
+
+#8161
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8135
+EKeyvnum -1
+Exit east 8162
+EKeyvnum -1
+Exit south 8187
+EKeyvnum -1
+Exit west 8160
+EKeyvnum -1
+End
+
+
+#8162
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8136
+EKeyvnum -1
+Exit east 8163
+EKeyvnum -1
+Exit south 8188
+EKeyvnum -1
+Exit west 8161
+EKeyvnum -1
+End
+
+
+#8163
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8137
+EKeyvnum -1
+Exit east 8164
+EKeyvnum -1
+Exit south 8189
+EKeyvnum -1
+Exit west 8162
+EKeyvnum -1
+End
+
+
+#8164
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8138
+EKeyvnum -1
+Exit east 8165
+EKeyvnum -1
+Exit south 8190
+EKeyvnum -1
+Exit west 8163
+EKeyvnum -1
+End
+
+
+#8165
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8139
+EKeyvnum -1
+Exit east 8166
+EKeyvnum -1
+Exit south 8191
+EKeyvnum -1
+Exit west 8164
+EKeyvnum -1
+End
+
+
+#8166
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8140
+EKeyvnum -1
+Exit east 8167
+EKeyvnum -1
+Exit south 8192
+EKeyvnum -1
+Exit west 8165
+EKeyvnum -1
+Exit up 14201
+End
+
+
+#8167
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8141
+EKeyvnum -1
+Exit east 8168
+EKeyvnum -1
+Exit south 8193
+EKeyvnum -1
+Exit west 8166
+EKeyvnum -1
+End
+
+
+#8168
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8142
+EKeyvnum -1
+Exit east 8169
+EKeyvnum -1
+Exit south 8194
+EKeyvnum -1
+Exit west 8167
+EKeyvnum -1
+End
+
+
+#8169
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8143
+EKeyvnum -1
+Exit east 8170
+EKeyvnum -1
+Exit south 8195
+EKeyvnum -1
+Exit west 8168
+EKeyvnum -1
+End
+
+
+#8170
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8144
+EKeyvnum -1
+Exit east 8171
+EKeyvnum -1
+Exit south 8196
+EKeyvnum -1
+Exit west 8169
+EKeyvnum -1
+End
+
+
+#8171
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8145
+EKeyvnum -1
+Exit east 8172
+EKeyvnum -1
+Exit south 8197
+EKeyvnum -1
+Exit west 8170
+EKeyvnum -1
+End
+
+
+#8172
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8146
+EKeyvnum -1
+Exit east 8173
+EKeyvnum -1
+Exit south 8198
+EKeyvnum -1
+Exit west 8171
+EKeyvnum -1
+End
+
+
+#8173
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8147
+EKeyvnum -1
+Exit east 8174
+EKeyvnum -1
+Exit south 8199
+EKeyvnum -1
+Exit west 8172
+EKeyvnum -1
+End
+
+
+#8174
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8148
+EKeyvnum -1
+Exit east 8149
+EKeyvnum -1
+Exit south 8200
+EKeyvnum -1
+Exit west 8173
+EKeyvnum -1
+End
+
+
+#8175
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8149
+EKeyvnum -1
+Exit east 8176
+EKeyvnum -1
+Exit south 8201
+EKeyvnum -1
+Exit west 8200
+EKeyvnum -1
+End
+
+
+#8176
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8150
+EKeyvnum -1
+Exit east 8177
+EKeyvnum -1
+Exit south 8202
+EKeyvnum -1
+Exit west 8175
+EKeyvnum -1
+End
+
+
+#8177
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8151
+EKeyvnum -1
+Exit east 8178
+EKeyvnum -1
+Exit south 8203
+EKeyvnum -1
+Exit west 8176
+EKeyvnum -1
+End
+
+
+#8178
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8152
+EKeyvnum -1
+Exit east 8179
+EKeyvnum -1
+Exit south 8204
+EKeyvnum -1
+Exit west 8177
+EKeyvnum -1
+End
+
+
+#8179
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8153
+EKeyvnum -1
+Exit east 8180
+EKeyvnum -1
+Exit south 8205
+EKeyvnum -1
+Exit west 8178
+EKeyvnum -1
+End
+
+
+#8180
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8154
+EKeyvnum -1
+Exit east 8181
+EKeyvnum -1
+Exit south 8206
+EKeyvnum -1
+Exit west 8179
+EKeyvnum -1
+End
+
+
+#8181
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8155
+EKeyvnum -1
+Exit east 8182
+EKeyvnum -1
+Exit south 8207
+EKeyvnum -1
+Exit west 8180
+EKeyvnum -1
+End
+
+
+#8182
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8156
+EKeyvnum -1
+Exit east 8183
+EKeyvnum -1
+Exit south 8208
+EKeyvnum -1
+Exit west 8181
+EKeyvnum -1
+End
+
+
+#8183
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8157
+EKeyvnum -1
+Exit east 8184
+EKeyvnum -1
+Exit south 8209
+EKeyvnum -1
+Exit west 8182
+EKeyvnum -1
+End
+
+
+#8184
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8158
+EKeyvnum -1
+Exit east 8185
+EKeyvnum -1
+Exit south 8210
+EKeyvnum -1
+Exit west 8183
+EKeyvnum -1
+End
+
+
+#8185
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8159
+EKeyvnum -1
+Exit east 8186
+EKeyvnum -1
+Exit south 8211
+EKeyvnum -1
+Exit west 8184
+EKeyvnum -1
+End
+
+
+#8186
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8160
+EKeyvnum -1
+Exit east 8187
+EKeyvnum -1
+Exit south 8212
+EKeyvnum -1
+Exit west 8185
+EKeyvnum -1
+End
+
+
+#8187
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8161
+EKeyvnum -1
+Exit east 8188
+EKeyvnum -1
+Exit south 8213
+EKeyvnum -1
+Exit west 8186
+EKeyvnum -1
+End
+
+
+#8188
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8162
+EKeyvnum -1
+Exit east 8189
+EKeyvnum -1
+Exit south 8214
+EKeyvnum -1
+Exit west 8187
+EKeyvnum -1
+End
+
+
+#8189
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8163
+EKeyvnum -1
+Exit east 8190
+EKeyvnum -1
+Exit south 8215
+EKeyvnum -1
+Exit west 8188
+EKeyvnum -1
+End
+
+
+#8190
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8164
+EKeyvnum -1
+Exit east 8191
+EKeyvnum -1
+Exit south 8216
+EKeyvnum -1
+Exit west 8189
+EKeyvnum -1
+End
+
+
+#8191
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8165
+EKeyvnum -1
+Exit east 8192
+EKeyvnum -1
+Exit south 8217
+EKeyvnum -1
+Exit west 8190
+EKeyvnum -1
+End
+
+
+#8192
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8166
+EKeyvnum -1
+Exit east 8193
+EKeyvnum -1
+Exit south 8218
+EKeyvnum -1
+Exit west 8191
+EKeyvnum -1
+End
+
+
+#8193
+Name A large field~
+Desc Rolling mountains spread about you, each rise leading to parts unknown.  
+~
+Sector mountain~
+Exit north 8167
+EKeyvnum -1
+Exit east 8194
+EKeyvnum -1
+Exit south 8219
+EKeyvnum -1
+Exit west 8192
+EKeyvnum -1
+End
+
+
+#8194
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8168
+EKeyvnum -1
+Exit east 8195
+EKeyvnum -1
+Exit south 8220
+EKeyvnum -1
+Exit west 8193
+EKeyvnum -1
+End
+
+
+#8195
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8169
+EKeyvnum -1
+Exit east 8196
+EKeyvnum -1
+Exit south 8221
+EKeyvnum -1
+Exit west 8194
+EKeyvnum -1
+End
+
+
+#8196
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8170
+EKeyvnum -1
+Exit east 8197
+EKeyvnum -1
+Exit south 8222
+EKeyvnum -1
+Exit west 8195
+EKeyvnum -1
+End
+
+
+#8197
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8171
+EKeyvnum -1
+Exit east 8198
+EKeyvnum -1
+Exit south 8223
+EKeyvnum -1
+Exit west 8196
+EKeyvnum -1
+End
+
+
+#8198
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8172
+EKeyvnum -1
+Exit east 8199
+EKeyvnum -1
+Exit south 8224
+EKeyvnum -1
+Exit west 8197
+EKeyvnum -1
+End
+
+
+#8199
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8173
+EKeyvnum -1
+Exit east 8174
+EKeyvnum -1
+Exit south 8225
+EKeyvnum -1
+Exit west 8198
+EKeyvnum -1
+End
+
+
+#8200
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8174
+EKeyvnum -1
+Exit east 8201
+EKeyvnum -1
+Exit south 8226
+EKeyvnum -1
+Exit west 8225
+EKeyvnum -1
+End
+
+
+#8201
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8175
+EKeyvnum -1
+Exit east 8202
+EKeyvnum -1
+Exit south 8227
+EKeyvnum -1
+Exit west 8200
+EKeyvnum -1
+End
+
+
+#8202
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8176
+EKeyvnum -1
+Exit east 8203
+EKeyvnum -1
+Exit south 8228
+EKeyvnum -1
+Exit west 8201
+EKeyvnum -1
+End
+
+
+#8203
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8177
+EKeyvnum -1
+Exit east 8204
+EKeyvnum -1
+Exit south 8229
+EKeyvnum -1
+Exit west 8202
+EKeyvnum -1
+End
+
+
+#8204
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8178
+EKeyvnum -1
+Exit east 8205
+EKeyvnum -1
+Exit south 8230
+EKeyvnum -1
+Exit west 8203
+EKeyvnum -1
+End
+
+
+#8205
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8179
+EKeyvnum -1
+Exit east 8206
+EKeyvnum -1
+Exit south 8231
+EKeyvnum -1
+Exit west 8204
+EKeyvnum -1
+End
+
+
+#8206
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8180
+EKeyvnum -1
+Exit east 8207
+EKeyvnum -1
+Exit south 8232
+EKeyvnum -1
+Exit west 8205
+EKeyvnum -1
+End
+
+
+#8207
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8181
+EKeyvnum -1
+Exit east 8208
+EKeyvnum -1
+Exit south 8233
+EKeyvnum -1
+Exit west 8206
+EKeyvnum -1
+End
+
+
+#8208
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8182
+EKeyvnum -1
+Exit east 8209
+EKeyvnum -1
+Exit south 8234
+EKeyvnum -1
+Exit west 8207
+EKeyvnum -1
+End
+
+
+#8209
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8183
+EKeyvnum -1
+Exit east 8210
+EKeyvnum -1
+Exit south 8235
+EKeyvnum -1
+Exit west 8208
+EKeyvnum -1
+End
+
+
+#8210
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8184
+EKeyvnum -1
+Exit east 8211
+EKeyvnum -1
+Exit south 8236
+EKeyvnum -1
+Exit west 8209
+EKeyvnum -1
+End
+
+
+#8211
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8185
+EKeyvnum -1
+Exit east 8212
+EKeyvnum -1
+Exit south 8237
+EKeyvnum -1
+Exit west 8210
+EKeyvnum -1
+End
+
+
+#8212
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8186
+EKeyvnum -1
+Exit east 8213
+EKeyvnum -1
+Exit south 8238
+EKeyvnum -1
+Exit west 8211
+EKeyvnum -1
+End
+
+
+#8213
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8187
+EKeyvnum -1
+Exit east 8214
+EKeyvnum -1
+Exit south 8239
+EKeyvnum -1
+Exit west 8212
+EKeyvnum -1
+End
+
+
+#8214
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8188
+EKeyvnum -1
+Exit east 8215
+EKeyvnum -1
+Exit south 8240
+EKeyvnum -1
+Exit west 8213
+EKeyvnum -1
+End
+
+
+#8215
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8189
+EKeyvnum -1
+Exit east 8216
+EKeyvnum -1
+Exit south 8241
+EKeyvnum -1
+Exit west 8214
+EKeyvnum -1
+End
+
+
+#8216
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8190
+EKeyvnum -1
+Exit east 8217
+EKeyvnum -1
+Exit south 8242
+EKeyvnum -1
+Exit west 8215
+EKeyvnum -1
+End
+
+
+#8217
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8191
+EKeyvnum -1
+Exit east 8218
+EKeyvnum -1
+Exit south 8243
+EKeyvnum -1
+Exit west 8216
+EKeyvnum -1
+End
+
+
+#8218
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8192
+EKeyvnum -1
+Exit east 8219
+EKeyvnum -1
+Exit south 8244
+EKeyvnum -1
+Exit west 8217
+EKeyvnum -1
+End
+
+
+#8219
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8193
+EKeyvnum -1
+Exit east 8220
+EKeyvnum -1
+Exit south 8245
+EKeyvnum -1
+Exit west 8218
+EKeyvnum -1
+End
+
+
+#8220
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8194
+EKeyvnum -1
+Exit east 8221
+EKeyvnum -1
+Exit south 8246
+EKeyvnum -1
+Exit west 8219
+EKeyvnum -1
+End
+
+
+#8221
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8195
+EKeyvnum -1
+Exit east 8222
+EKeyvnum -1
+Exit south 8247
+EKeyvnum -1
+Exit west 8220
+EKeyvnum -1
+End
+
+
+#8222
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8196
+EKeyvnum -1
+Exit east 8223
+EKeyvnum -1
+Exit south 8248
+EKeyvnum -1
+Exit west 8221
+EKeyvnum -1
+End
+
+
+#8223
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8197
+EKeyvnum -1
+Exit east 8224
+EKeyvnum -1
+Exit south 8249
+EKeyvnum -1
+Exit west 8222
+EKeyvnum -1
+End
+
+
+#8224
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8198
+EKeyvnum -1
+Exit east 8199
+EKeyvnum -1
+Exit south 8250
+EKeyvnum -1
+Exit west 8223
+EKeyvnum -1
+End
+
+
+#8225
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8199
+EKeyvnum -1
+Exit east 8226
+EKeyvnum -1
+Exit south 8251
+EKeyvnum -1
+Exit west 8250
+EKeyvnum -1
+End
+
+
+#8226
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8200
+EKeyvnum -1
+Exit east 8227
+EKeyvnum -1
+Exit south 8252
+EKeyvnum -1
+Exit west 8225
+EKeyvnum -1
+End
+
+
+#8227
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8201
+EKeyvnum -1
+Exit east 8228
+EKeyvnum -1
+Exit south 8253
+EKeyvnum -1
+Exit west 8226
+EKeyvnum -1
+End
+
+
+#8228
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8202
+EKeyvnum -1
+Exit east 8229
+EKeyvnum -1
+Exit south 8254
+EKeyvnum -1
+Exit west 8227
+EKeyvnum -1
+End
+
+
+#8229
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8203
+EKeyvnum -1
+Exit east 8230
+EKeyvnum -1
+Exit south 8255
+EKeyvnum -1
+Exit west 8228
+EKeyvnum -1
+End
+
+
+#8230
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8204
+EKeyvnum -1
+Exit east 8231
+EKeyvnum -1
+Exit south 8256
+EKeyvnum -1
+Exit west 8229
+EKeyvnum -1
+End
+
+
+#8231
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8205
+EKeyvnum -1
+Exit east 8232
+EKeyvnum -1
+Exit south 8257
+EKeyvnum -1
+Exit west 8230
+EKeyvnum -1
+End
+
+
+#8232
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8206
+EKeyvnum -1
+Exit east 8233
+EKeyvnum -1
+Exit south 8258
+EKeyvnum -1
+Exit west 8231
+EKeyvnum -1
+End
+
+
+#8233
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8207
+EKeyvnum -1
+Exit east 8234
+EKeyvnum -1
+Exit south 8259
+EKeyvnum -1
+Exit west 8232
+EKeyvnum -1
+End
+
+
+#8234
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8208
+EKeyvnum -1
+Exit east 8235
+EKeyvnum -1
+Exit south 8260
+EKeyvnum -1
+Exit west 8233
+EKeyvnum -1
+End
+
+
+#8235
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8209
+EKeyvnum -1
+Exit east 8236
+EKeyvnum -1
+Exit south 8261
+EKeyvnum -1
+Exit west 8234
+EKeyvnum -1
+End
+
+
+#8236
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8210
+EKeyvnum -1
+Exit east 8237
+EKeyvnum -1
+Exit south 8262
+EKeyvnum -1
+Exit west 8235
+EKeyvnum -1
+End
+
+
+#8237
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8211
+EKeyvnum -1
+Exit east 8238
+EKeyvnum -1
+Exit south 8263
+EKeyvnum -1
+Exit west 8236
+EKeyvnum -1
+End
+
+
+#8238
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8212
+EKeyvnum -1
+Exit east 8239
+EKeyvnum -1
+Exit south 8264
+EKeyvnum -1
+Exit west 8237
+EKeyvnum -1
+End
+
+
+#8239
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8213
+EKeyvnum -1
+Exit east 8240
+EKeyvnum -1
+Exit south 8265
+EKeyvnum -1
+Exit west 8238
+EKeyvnum -1
+End
+
+
+#8240
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8214
+EKeyvnum -1
+Exit east 8241
+EKeyvnum -1
+Exit south 8266
+EKeyvnum -1
+Exit west 8239
+EKeyvnum -1
+End
+
+
+#8241
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8215
+EKeyvnum -1
+Exit east 8242
+EKeyvnum -1
+Exit south 8267
+EKeyvnum -1
+Exit west 8240
+EKeyvnum -1
+End
+
+
+#8242
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8216
+EKeyvnum -1
+Exit east 8243
+EKeyvnum -1
+Exit south 8268
+EKeyvnum -1
+Exit west 8241
+EKeyvnum -1
+End
+
+
+#8243
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8217
+EKeyvnum -1
+Exit east 8244
+EKeyvnum -1
+Exit south 8269
+EKeyvnum -1
+Exit west 8242
+EKeyvnum -1
+End
+
+
+#8244
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8218
+EKeyvnum -1
+Exit east 8245
+EKeyvnum -1
+Exit south 8270
+EKeyvnum -1
+Exit west 8243
+EKeyvnum -1
+End
+
+
+#8245
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8219
+EKeyvnum -1
+Exit east 8246
+EKeyvnum -1
+Exit south 8271
+EKeyvnum -1
+Exit west 8244
+EKeyvnum -1
+End
+
+
+#8246
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8220
+EKeyvnum -1
+Exit east 8247
+EKeyvnum -1
+Exit south 8272
+EKeyvnum -1
+Exit west 8245
+EKeyvnum -1
+End
+
+
+#8247
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8221
+EKeyvnum -1
+Exit east 8248
+EKeyvnum -1
+Exit south 8273
+EKeyvnum -1
+Exit west 8246
+EKeyvnum -1
+End
+
+
+#8248
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8222
+EKeyvnum -1
+Exit east 8249
+EKeyvnum -1
+Exit south 8274
+EKeyvnum -1
+Exit west 8247
+EKeyvnum -1
+End
+
+
+#8249
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8223
+EKeyvnum -1
+Exit east 8224
+EKeyvnum -1
+Exit south 8275
+EKeyvnum -1
+Exit west 8248
+EKeyvnum -1
+End
+
+
+#8250
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8224
+EKeyvnum -1
+Exit east 8251
+EKeyvnum -1
+Exit south 8276
+EKeyvnum -1
+Exit west 8275
+EKeyvnum -1
+End
+
+
+#8251
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8225
+EKeyvnum -1
+Exit east 8252
+EKeyvnum -1
+Exit south 8277
+EKeyvnum -1
+Exit west 8250
+EKeyvnum -1
+End
+
+
+#8252
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8226
+EKeyvnum -1
+Exit east 8253
+EKeyvnum -1
+Exit south 8278
+EKeyvnum -1
+Exit west 8251
+EKeyvnum -1
+End
+
+
+#8253
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8227
+EKeyvnum -1
+Exit east 8254
+EKeyvnum -1
+Exit south 8279
+EKeyvnum -1
+Exit west 8252
+EKeyvnum -1
+End
+
+
+#8254
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8228
+EKeyvnum -1
+Exit east 8255
+EKeyvnum -1
+Exit south 8280
+EKeyvnum -1
+Exit west 8253
+EKeyvnum -1
+End
+
+
+#8255
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8229
+EKeyvnum -1
+Exit east 8256
+EKeyvnum -1
+Exit south 8281
+EKeyvnum -1
+Exit west 8254
+EKeyvnum -1
+End
+
+
+#8256
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8230
+EKeyvnum -1
+Exit east 8257
+EKeyvnum -1
+Exit south 8282
+EKeyvnum -1
+Exit west 8255
+EKeyvnum -1
+End
+
+
+#8257
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8231
+EKeyvnum -1
+Exit east 8258
+EKeyvnum -1
+Exit south 8283
+EKeyvnum -1
+Exit west 8256
+EKeyvnum -1
+End
+
+
+#8258
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8232
+EKeyvnum -1
+Exit east 8259
+EKeyvnum -1
+Exit south 8284
+EKeyvnum -1
+Exit west 8257
+EKeyvnum -1
+End
+
+
+#8259
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8233
+EKeyvnum -1
+Exit east 8260
+EKeyvnum -1
+Exit south 8285
+EKeyvnum -1
+Exit west 8258
+EKeyvnum -1
+End
+
+
+#8260
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8234
+EKeyvnum -1
+Exit east 8261
+EKeyvnum -1
+Exit south 8286
+EKeyvnum -1
+Exit west 8259
+EKeyvnum -1
+End
+
+
+#8261
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8235
+EKeyvnum -1
+Exit east 8262
+EKeyvnum -1
+Exit south 8287
+EKeyvnum -1
+Exit west 8260
+EKeyvnum -1
+End
+
+
+#8262
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8236
+EKeyvnum -1
+Exit east 8263
+EKeyvnum -1
+Exit south 8288
+EKeyvnum -1
+Exit west 8261
+EKeyvnum -1
+End
+
+
+#8263
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8237
+EKeyvnum -1
+Exit east 8264
+EKeyvnum -1
+Exit south 8289
+EKeyvnum -1
+Exit west 8262
+EKeyvnum -1
+End
+
+
+#8264
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8238
+EKeyvnum -1
+Exit east 8265
+EKeyvnum -1
+Exit south 8290
+EKeyvnum -1
+Exit west 8263
+EKeyvnum -1
+End
+
+
+#8265
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8239
+EKeyvnum -1
+Exit east 8266
+EKeyvnum -1
+Exit south 8291
+EKeyvnum -1
+Exit west 8264
+EKeyvnum -1
+End
+
+
+#8266
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8240
+EKeyvnum -1
+Exit east 8267
+EKeyvnum -1
+Exit south 8292
+EKeyvnum -1
+Exit west 8265
+EKeyvnum -1
+End
+
+
+#8267
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8241
+EKeyvnum -1
+Exit east 8268
+EKeyvnum -1
+Exit south 8293
+EKeyvnum -1
+Exit west 8266
+EKeyvnum -1
+End
+
+
+#8268
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8242
+EKeyvnum -1
+Exit east 8269
+EKeyvnum -1
+Exit south 8294
+EKeyvnum -1
+Exit west 8267
+EKeyvnum -1
+End
+
+
+#8269
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8243
+EKeyvnum -1
+Exit east 8270
+EKeyvnum -1
+Exit south 8295
+EKeyvnum -1
+Exit west 8268
+EKeyvnum -1
+End
+
+
+#8270
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8244
+EKeyvnum -1
+Exit east 8271
+EKeyvnum -1
+Exit south 8296
+EKeyvnum -1
+Exit west 8269
+EKeyvnum -1
+End
+
+
+#8271
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8245
+EKeyvnum -1
+Exit east 8272
+EKeyvnum -1
+Exit south 8297
+EKeyvnum -1
+Exit west 8270
+EKeyvnum -1
+End
+
+
+#8272
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8246
+EKeyvnum -1
+Exit east 8273
+EKeyvnum -1
+Exit south 8298
+EKeyvnum -1
+Exit west 8271
+EKeyvnum -1
+End
+
+
+#8273
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8247
+EKeyvnum -1
+Exit east 8274
+EKeyvnum -1
+Exit south 8299
+EKeyvnum -1
+Exit west 8272
+EKeyvnum -1
+End
+
+
+#8274
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8248
+EKeyvnum -1
+Exit east 8249
+EKeyvnum -1
+Exit south 8300
+EKeyvnum -1
+Exit west 8273
+EKeyvnum -1
+End
+
+
+#8275
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8249
+EKeyvnum -1
+Exit east 8276
+EKeyvnum -1
+Exit south 8301
+EKeyvnum -1
+Exit west 8300
+EKeyvnum -1
+End
+
+
+#8276
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8250
+EKeyvnum -1
+Exit east 8277
+EKeyvnum -1
+Exit south 8302
+EKeyvnum -1
+Exit west 8275
+EKeyvnum -1
+End
+
+
+#8277
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8251
+EKeyvnum -1
+Exit east 8278
+EKeyvnum -1
+Exit south 8303
+EKeyvnum -1
+Exit west 8276
+EKeyvnum -1
+End
+
+
+#8278
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8252
+EKeyvnum -1
+Exit east 8279
+EKeyvnum -1
+Exit south 8304
+EKeyvnum -1
+Exit west 8277
+EKeyvnum -1
+End
+
+
+#8279
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8253
+EKeyvnum -1
+Exit east 8280
+EKeyvnum -1
+Exit south 8305
+EKeyvnum -1
+Exit west 8278
+EKeyvnum -1
+End
+
+
+#8280
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8254
+EKeyvnum -1
+Exit east 8281
+EKeyvnum -1
+Exit south 8306
+EKeyvnum -1
+Exit west 8279
+EKeyvnum -1
+End
+
+
+#8281
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8255
+EKeyvnum -1
+Exit east 8282
+EKeyvnum -1
+Exit south 8307
+EKeyvnum -1
+Exit west 8280
+EKeyvnum -1
+End
+
+
+#8282
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8256
+EKeyvnum -1
+Exit east 8283
+EKeyvnum -1
+Exit south 8308
+EKeyvnum -1
+Exit west 8281
+EKeyvnum -1
+End
+
+
+#8283
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8257
+EKeyvnum -1
+Exit east 8284
+EKeyvnum -1
+Exit south 8309
+EKeyvnum -1
+Exit west 8282
+EKeyvnum -1
+End
+
+
+#8284
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8258
+EKeyvnum -1
+Exit east 8285
+EKeyvnum -1
+Exit south 8310
+EKeyvnum -1
+Exit west 8283
+EKeyvnum -1
+End
+
+
+#8285
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8259
+EKeyvnum -1
+Exit east 8286
+EKeyvnum -1
+Exit south 8311
+EKeyvnum -1
+Exit west 8284
+EKeyvnum -1
+End
+
+
+#8286
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8260
+EKeyvnum -1
+Exit east 8287
+EKeyvnum -1
+Exit south 8312
+EKeyvnum -1
+Exit west 8285
+EKeyvnum -1
+End
+
+
+#8287
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8261
+EKeyvnum -1
+Exit east 8288
+EKeyvnum -1
+Exit south 8313
+EKeyvnum -1
+Exit west 8286
+EKeyvnum -1
+End
+
+
+#8288
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8262
+EKeyvnum -1
+Exit east 8289
+EKeyvnum -1
+Exit south 8314
+EKeyvnum -1
+Exit west 8287
+EKeyvnum -1
+End
+
+
+#8289
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8263
+EKeyvnum -1
+Exit east 8290
+EKeyvnum -1
+Exit south 8315
+EKeyvnum -1
+Exit west 8288
+EKeyvnum -1
+End
+
+
+#8290
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8264
+EKeyvnum -1
+Exit east 8291
+EKeyvnum -1
+Exit south 8316
+EKeyvnum -1
+Exit west 8289
+EKeyvnum -1
+End
+
+
+#8291
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8265
+EKeyvnum -1
+Exit east 8292
+EKeyvnum -1
+Exit south 8317
+EKeyvnum -1
+Exit west 8290
+EKeyvnum -1
+End
+
+
+#8292
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8266
+EKeyvnum -1
+Exit east 8293
+EKeyvnum -1
+Exit south 8318
+EKeyvnum -1
+Exit west 8291
+EKeyvnum -1
+End
+
+
+#8293
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8267
+EKeyvnum -1
+Exit east 8294
+EKeyvnum -1
+Exit south 8319
+EKeyvnum -1
+Exit west 8292
+EKeyvnum -1
+End
+
+
+#8294
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8268
+EKeyvnum -1
+Exit east 8295
+EKeyvnum -1
+Exit south 8320
+EKeyvnum -1
+Exit west 8293
+EKeyvnum -1
+End
+
+
+#8295
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8269
+EKeyvnum -1
+Exit east 8296
+EKeyvnum -1
+Exit south 8321
+EKeyvnum -1
+Exit west 8294
+EKeyvnum -1
+End
+
+
+#8296
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8270
+EKeyvnum -1
+Exit east 8297
+EKeyvnum -1
+Exit south 8322
+EKeyvnum -1
+Exit west 8295
+EKeyvnum -1
+End
+
+
+#8297
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8271
+EKeyvnum -1
+Exit east 8298
+EKeyvnum -1
+Exit south 8323
+EKeyvnum -1
+Exit west 8296
+EKeyvnum -1
+End
+
+
+#8298
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8272
+EKeyvnum -1
+Exit east 8299
+EKeyvnum -1
+Exit south 8324
+EKeyvnum -1
+Exit west 8297
+EKeyvnum -1
+End
+
+
+#8299
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8273
+EKeyvnum -1
+Exit east 8274
+EKeyvnum -1
+Exit south 8325
+EKeyvnum -1
+Exit west 8298
+EKeyvnum -1
+End
+
+
+#8300
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8274
+EKeyvnum -1
+Exit east 8301
+EKeyvnum -1
+Exit south 8326
+EKeyvnum -1
+Exit west 8325
+EKeyvnum -1
+End
+
+
+#8301
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8275
+EKeyvnum -1
+Exit east 8302
+EKeyvnum -1
+Exit south 8327
+EKeyvnum -1
+Exit west 8300
+EKeyvnum -1
+End
+
+
+#8302
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8276
+EKeyvnum -1
+Exit east 8303
+EKeyvnum -1
+Exit south 8328
+EKeyvnum -1
+Exit west 8301
+EKeyvnum -1
+End
+
+
+#8303
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8277
+EKeyvnum -1
+Exit east 8304
+EKeyvnum -1
+Exit south 8329
+EKeyvnum -1
+Exit west 8302
+EKeyvnum -1
+End
+
+
+#8304
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8278
+EKeyvnum -1
+Exit east 8305
+EKeyvnum -1
+Exit south 8330
+EKeyvnum -1
+Exit west 8303
+EKeyvnum -1
+End
+
+
+#8305
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8279
+EKeyvnum -1
+Exit east 8306
+EKeyvnum -1
+Exit south 8331
+EKeyvnum -1
+Exit west 8304
+EKeyvnum -1
+End
+
+
+#8306
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8280
+EKeyvnum -1
+Exit east 8307
+EKeyvnum -1
+Exit south 8332
+EKeyvnum -1
+Exit west 8305
+EKeyvnum -1
+End
+
+
+#8307
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8281
+EKeyvnum -1
+Exit east 8308
+EKeyvnum -1
+Exit south 8333
+EKeyvnum -1
+Exit west 8306
+EKeyvnum -1
+End
+
+
+#8308
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8282
+EKeyvnum -1
+Exit east 8309
+EKeyvnum -1
+Exit south 8334
+EKeyvnum -1
+Exit west 8307
+EKeyvnum -1
+End
+
+
+#8309
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8283
+EKeyvnum -1
+Exit east 8310
+EKeyvnum -1
+Exit south 8335
+EKeyvnum -1
+Exit west 8308
+EKeyvnum -1
+End
+
+
+#8310
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8284
+EKeyvnum -1
+Exit east 8311
+EKeyvnum -1
+Exit south 8336
+EKeyvnum -1
+Exit west 8309
+EKeyvnum -1
+End
+
+
+#8311
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8285
+EKeyvnum -1
+Exit east 8312
+EKeyvnum -1
+Exit south 8337
+EKeyvnum -1
+Exit west 8310
+EKeyvnum -1
+End
+
+
+#8312
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8286
+EKeyvnum -1
+Exit east 8313
+EKeyvnum -1
+Exit south 8338
+EKeyvnum -1
+Exit west 8311
+EKeyvnum -1
+End
+
+
+#8313
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8287
+EKeyvnum -1
+Exit east 8314
+EKeyvnum -1
+Exit south 8339
+EKeyvnum -1
+Exit west 8312
+EKeyvnum -1
+End
+
+
+#8314
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8288
+EKeyvnum -1
+Exit east 8315
+EKeyvnum -1
+Exit south 8340
+EKeyvnum -1
+Exit west 8313
+EKeyvnum -1
+End
+
+
+#8315
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8289
+EKeyvnum -1
+Exit east 8316
+EKeyvnum -1
+Exit south 8341
+EKeyvnum -1
+Exit west 8314
+EKeyvnum -1
+End
+
+
+#8316
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8290
+EKeyvnum -1
+Exit east 8317
+EKeyvnum -1
+Exit south 8342
+EKeyvnum -1
+Exit west 8315
+EKeyvnum -1
+End
+
+
+#8317
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8291
+EKeyvnum -1
+Exit east 8318
+EKeyvnum -1
+Exit south 8343
+EKeyvnum -1
+Exit west 8316
+EKeyvnum -1
+End
+
+
+#8318
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8292
+EKeyvnum -1
+Exit east 8319
+EKeyvnum -1
+Exit south 8344
+EKeyvnum -1
+Exit west 8317
+EKeyvnum -1
+End
+
+
+#8319
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8293
+EKeyvnum -1
+Exit east 8320
+EKeyvnum -1
+Exit south 8345
+EKeyvnum -1
+Exit west 8318
+EKeyvnum -1
+End
+
+
+#8320
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8294
+EKeyvnum -1
+Exit east 8321
+EKeyvnum -1
+Exit south 8346
+EKeyvnum -1
+Exit west 8319
+EKeyvnum -1
+End
+
+
+#8321
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8295
+EKeyvnum -1
+Exit east 8322
+EKeyvnum -1
+Exit south 8347
+EKeyvnum -1
+Exit west 8320
+EKeyvnum -1
+End
+
+
+#8322
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8296
+EKeyvnum -1
+Exit east 8323
+EKeyvnum -1
+Exit south 8348
+EKeyvnum -1
+Exit west 8321
+EKeyvnum -1
+End
+
+
+#8323
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8297
+EKeyvnum -1
+Exit east 8324
+EKeyvnum -1
+Exit south 8349
+EKeyvnum -1
+Exit west 8322
+EKeyvnum -1
+End
+
+
+#8324
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8298
+EKeyvnum -1
+Exit east 8299
+EKeyvnum -1
+Exit south 8350
+EKeyvnum -1
+Exit west 8323
+EKeyvnum -1
+End
+
+
+#8325
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8299
+EKeyvnum -1
+Exit east 8326
+EKeyvnum -1
+Exit south 8351
+EKeyvnum -1
+Exit west 8350
+EKeyvnum -1
+End
+
+
+#8326
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8300
+EKeyvnum -1
+Exit east 8327
+EKeyvnum -1
+Exit south 8352
+EKeyvnum -1
+Exit west 8325
+EKeyvnum -1
+End
+
+
+#8327
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8301
+EKeyvnum -1
+Exit east 8328
+EKeyvnum -1
+Exit south 8353
+EKeyvnum -1
+Exit west 8326
+EKeyvnum -1
+End
+
+
+#8328
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8302
+EKeyvnum -1
+Exit east 8329
+EKeyvnum -1
+Exit south 8354
+EKeyvnum -1
+Exit west 8327
+EKeyvnum -1
+End
+
+
+#8329
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8303
+EKeyvnum -1
+Exit east 8330
+EKeyvnum -1
+Exit south 8355
+EKeyvnum -1
+Exit west 8328
+EKeyvnum -1
+End
+
+
+#8330
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8304
+EKeyvnum -1
+Exit east 8331
+EKeyvnum -1
+Exit south 8356
+EKeyvnum -1
+Exit west 8329
+EKeyvnum -1
+End
+
+
+#8331
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8305
+EKeyvnum -1
+Exit east 8332
+EKeyvnum -1
+Exit south 8357
+EKeyvnum -1
+Exit west 8330
+EKeyvnum -1
+End
+
+
+#8332
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8306
+EKeyvnum -1
+Exit east 8333
+EKeyvnum -1
+Exit south 8358
+EKeyvnum -1
+Exit west 8331
+EKeyvnum -1
+End
+
+
+#8333
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8307
+EKeyvnum -1
+Exit east 8334
+EKeyvnum -1
+Exit south 8359
+EKeyvnum -1
+Exit west 8332
+EKeyvnum -1
+End
+
+
+#8334
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8308
+EKeyvnum -1
+Exit east 8335
+EKeyvnum -1
+Exit south 8360
+EKeyvnum -1
+Exit west 8333
+EKeyvnum -1
+End
+
+
+#8335
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8309
+EKeyvnum -1
+Exit east 8336
+EKeyvnum -1
+Exit south 8361
+EKeyvnum -1
+Exit west 8334
+EKeyvnum -1
+End
+
+
+#8336
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8310
+EKeyvnum -1
+Exit east 8337
+EKeyvnum -1
+Exit south 8362
+EKeyvnum -1
+Exit west 8335
+EKeyvnum -1
+End
+
+
+#8337
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8311
+EKeyvnum -1
+Exit east 8338
+EKeyvnum -1
+Exit south 8363
+EKeyvnum -1
+Exit west 8336
+EKeyvnum -1
+End
+
+
+#8338
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8312
+EKeyvnum -1
+Exit east 8339
+EKeyvnum -1
+Exit south 8364
+EKeyvnum -1
+Exit west 8337
+EKeyvnum -1
+End
+
+
+#8339
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8313
+EKeyvnum -1
+Exit east 8340
+EKeyvnum -1
+Exit south 8365
+EKeyvnum -1
+Exit west 8338
+EKeyvnum -1
+End
+
+
+#8340
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8314
+EKeyvnum -1
+Exit east 8341
+EKeyvnum -1
+Exit south 8366
+EKeyvnum -1
+Exit west 8339
+EKeyvnum -1
+End
+
+
+#8341
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8315
+EKeyvnum -1
+Exit east 8342
+EKeyvnum -1
+Exit south 8367
+EKeyvnum -1
+Exit west 8340
+EKeyvnum -1
+End
+
+
+#8342
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8316
+EKeyvnum -1
+Exit east 8343
+EKeyvnum -1
+Exit south 8368
+EKeyvnum -1
+Exit west 8341
+EKeyvnum -1
+End
+
+
+#8343
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8317
+EKeyvnum -1
+Exit east 8344
+EKeyvnum -1
+Exit south 8369
+EKeyvnum -1
+Exit west 8342
+EKeyvnum -1
+End
+
+
+#8344
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8318
+EKeyvnum -1
+Exit east 8345
+EKeyvnum -1
+Exit south 8370
+EKeyvnum -1
+Exit west 8343
+EKeyvnum -1
+End
+
+
+#8345
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8319
+EKeyvnum -1
+Exit east 8346
+EKeyvnum -1
+Exit south 8371
+EKeyvnum -1
+Exit west 8344
+EKeyvnum -1
+End
+
+
+#8346
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8320
+EKeyvnum -1
+Exit east 8347
+EKeyvnum -1
+Exit south 8372
+EKeyvnum -1
+Exit west 8345
+EKeyvnum -1
+End
+
+
+#8347
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8321
+EKeyvnum -1
+Exit east 8348
+EKeyvnum -1
+Exit south 8373
+EKeyvnum -1
+Exit west 8346
+EKeyvnum -1
+End
+
+
+#8348
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8322
+EKeyvnum -1
+Exit east 8349
+EKeyvnum -1
+Exit south 8374
+EKeyvnum -1
+Exit west 8347
+EKeyvnum -1
+End
+
+
+#8349
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8323
+EKeyvnum -1
+Exit east 8324
+EKeyvnum -1
+Exit south 8375
+EKeyvnum -1
+Exit west 8348
+EKeyvnum -1
+End
+
+
+#8350
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8324
+EKeyvnum -1
+Exit east 8351
+EKeyvnum -1
+Exit south 8376
+EKeyvnum -1
+Exit west 8375
+EKeyvnum -1
+End
+
+
+#8351
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8325
+EKeyvnum -1
+Exit east 8352
+EKeyvnum -1
+Exit south 8377
+EKeyvnum -1
+Exit west 8350
+EKeyvnum -1
+End
+
+
+#8352
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8326
+EKeyvnum -1
+Exit east 8353
+EKeyvnum -1
+Exit south 8378
+EKeyvnum -1
+Exit west 8351
+EKeyvnum -1
+End
+
+
+#8353
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8327
+EKeyvnum -1
+Exit east 8354
+EKeyvnum -1
+Exit south 8379
+EKeyvnum -1
+Exit west 8352
+EKeyvnum -1
+End
+
+
+#8354
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8328
+EKeyvnum -1
+Exit east 8355
+EKeyvnum -1
+Exit south 8380
+EKeyvnum -1
+Exit west 8353
+EKeyvnum -1
+End
+
+
+#8355
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8329
+EKeyvnum -1
+Exit east 8356
+EKeyvnum -1
+Exit south 8381
+EKeyvnum -1
+Exit west 8354
+EKeyvnum -1
+End
+
+
+#8356
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8330
+EKeyvnum -1
+Exit east 8357
+EKeyvnum -1
+Exit south 8382
+EKeyvnum -1
+Exit west 8355
+EKeyvnum -1
+End
+
+
+#8357
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8331
+EKeyvnum -1
+Exit east 8358
+EKeyvnum -1
+Exit south 8383
+EKeyvnum -1
+Exit west 8356
+EKeyvnum -1
+End
+
+
+#8358
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8332
+EKeyvnum -1
+Exit east 8359
+EKeyvnum -1
+Exit south 8384
+EKeyvnum -1
+Exit west 8357
+EKeyvnum -1
+End
+
+
+#8359
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8333
+EKeyvnum -1
+Exit east 8360
+EKeyvnum -1
+Exit south 8385
+EKeyvnum -1
+Exit west 8358
+EKeyvnum -1
+End
+
+
+#8360
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8334
+EKeyvnum -1
+Exit east 8361
+EKeyvnum -1
+Exit south 8386
+EKeyvnum -1
+Exit west 8359
+EKeyvnum -1
+End
+
+
+#8361
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8335
+EKeyvnum -1
+Exit east 8362
+EKeyvnum -1
+Exit south 8387
+EKeyvnum -1
+Exit west 8360
+EKeyvnum -1
+End
+
+
+#8362
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8336
+EKeyvnum -1
+Exit east 8363
+EKeyvnum -1
+Exit south 8388
+EKeyvnum -1
+Exit west 8361
+EKeyvnum -1
+End
+
+
+#8363
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8337
+EKeyvnum -1
+Exit east 8364
+EKeyvnum -1
+Exit south 8389
+EKeyvnum -1
+Exit west 8362
+EKeyvnum -1
+End
+
+
+#8364
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8338
+EKeyvnum -1
+Exit east 8365
+EKeyvnum -1
+Exit south 8390
+EKeyvnum -1
+Exit west 8363
+EKeyvnum -1
+End
+
+
+#8365
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8339
+EKeyvnum -1
+Exit east 8366
+EKeyvnum -1
+Exit south 8391
+EKeyvnum -1
+Exit west 8364
+EKeyvnum -1
+End
+
+
+#8366
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8340
+EKeyvnum -1
+Exit east 8367
+EKeyvnum -1
+Exit south 8392
+EKeyvnum -1
+Exit west 8365
+EKeyvnum -1
+End
+
+
+#8367
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8341
+EKeyvnum -1
+Exit east 8368
+EKeyvnum -1
+Exit south 8393
+EKeyvnum -1
+Exit west 8366
+EKeyvnum -1
+End
+
+
+#8368
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8342
+EKeyvnum -1
+Exit east 8369
+EKeyvnum -1
+Exit south 8394
+EKeyvnum -1
+Exit west 8367
+EKeyvnum -1
+End
+
+
+#8369
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8343
+EKeyvnum -1
+Exit east 8370
+EKeyvnum -1
+Exit south 8395
+EKeyvnum -1
+Exit west 8368
+EKeyvnum -1
+End
+
+
+#8370
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8344
+EKeyvnum -1
+Exit east 8371
+EKeyvnum -1
+Exit south 8396
+EKeyvnum -1
+Exit west 8369
+EKeyvnum -1
+End
+
+
+#8371
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8345
+EKeyvnum -1
+Exit east 8372
+EKeyvnum -1
+Exit south 8397
+EKeyvnum -1
+Exit west 8370
+EKeyvnum -1
+End
+
+
+#8372
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8346
+EKeyvnum -1
+Exit east 8373
+EKeyvnum -1
+Exit south 8398
+EKeyvnum -1
+Exit west 8371
+EKeyvnum -1
+End
+
+
+#8373
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8347
+EKeyvnum -1
+Exit east 8374
+EKeyvnum -1
+Exit south 8399
+EKeyvnum -1
+Exit west 8372
+EKeyvnum -1
+End
+
+
+#8374
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8348
+EKeyvnum -1
+Exit east 8349
+EKeyvnum -1
+Exit south 8400
+EKeyvnum -1
+Exit west 8373
+EKeyvnum -1
+End
+
+
+#8375
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8349
+EKeyvnum -1
+Exit east 8376
+EKeyvnum -1
+Exit south 8401
+EKeyvnum -1
+Exit west 8400
+EKeyvnum -1
+End
+
+
+#8376
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8350
+EKeyvnum -1
+Exit east 8377
+EKeyvnum -1
+Exit south 8402
+EKeyvnum -1
+Exit west 8375
+EKeyvnum -1
+End
+
+
+#8377
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8351
+EKeyvnum -1
+Exit east 8378
+EKeyvnum -1
+Exit south 8403
+EKeyvnum -1
+Exit west 8376
+EKeyvnum -1
+End
+
+
+#8378
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8352
+EKeyvnum -1
+Exit east 8379
+EKeyvnum -1
+Exit south 8404
+EKeyvnum -1
+Exit west 8377
+EKeyvnum -1
+End
+
+
+#8379
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8353
+EKeyvnum -1
+Exit east 8380
+EKeyvnum -1
+Exit south 8405
+EKeyvnum -1
+Exit west 8378
+EKeyvnum -1
+End
+
+
+#8380
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8354
+EKeyvnum -1
+Exit east 8381
+EKeyvnum -1
+Exit south 8406
+EKeyvnum -1
+Exit west 8379
+EKeyvnum -1
+End
+
+
+#8381
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8355
+EKeyvnum -1
+Exit east 8382
+EKeyvnum -1
+Exit south 8407
+EKeyvnum -1
+Exit west 8380
+EKeyvnum -1
+End
+
+
+#8382
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8356
+EKeyvnum -1
+Exit east 8383
+EKeyvnum -1
+Exit south 8408
+EKeyvnum -1
+Exit west 8381
+EKeyvnum -1
+End
+
+
+#8383
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8357
+EKeyvnum -1
+Exit east 8384
+EKeyvnum -1
+Exit south 8409
+EKeyvnum -1
+Exit west 8382
+EKeyvnum -1
+End
+
+
+#8384
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8358
+EKeyvnum -1
+Exit east 8385
+EKeyvnum -1
+Exit south 8410
+EKeyvnum -1
+Exit west 8383
+EKeyvnum -1
+End
+
+
+#8385
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8359
+EKeyvnum -1
+Exit east 8386
+EKeyvnum -1
+Exit south 8411
+EKeyvnum -1
+Exit west 8384
+EKeyvnum -1
+End
+
+
+#8386
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8360
+EKeyvnum -1
+Exit east 8387
+EKeyvnum -1
+Exit south 8412
+EKeyvnum -1
+Exit west 8385
+EKeyvnum -1
+End
+
+
+#8387
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8361
+EKeyvnum -1
+Exit east 8388
+EKeyvnum -1
+Exit south 8413
+EKeyvnum -1
+Exit west 8386
+EKeyvnum -1
+End
+
+
+#8388
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8362
+EKeyvnum -1
+Exit east 8389
+EKeyvnum -1
+Exit south 8414
+EKeyvnum -1
+Exit west 8387
+EKeyvnum -1
+End
+
+
+#8389
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8363
+EKeyvnum -1
+Exit east 8390
+EKeyvnum -1
+Exit south 8415
+EKeyvnum -1
+Exit west 8388
+EKeyvnum -1
+End
+
+
+#8390
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8364
+EKeyvnum -1
+Exit east 8391
+EKeyvnum -1
+Exit south 8416
+EKeyvnum -1
+Exit west 8389
+EKeyvnum -1
+End
+
+
+#8391
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8365
+EKeyvnum -1
+Exit east 8392
+EKeyvnum -1
+Exit south 8417
+EKeyvnum -1
+Exit west 8390
+EKeyvnum -1
+End
+
+
+#8392
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8366
+EKeyvnum -1
+Exit east 8393
+EKeyvnum -1
+Exit south 8418
+EKeyvnum -1
+Exit west 8391
+EKeyvnum -1
+End
+
+
+#8393
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8367
+EKeyvnum -1
+Exit east 8394
+EKeyvnum -1
+Exit south 8419
+EKeyvnum -1
+Exit west 8392
+EKeyvnum -1
+End
+
+
+#8394
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8368
+EKeyvnum -1
+Exit east 8395
+EKeyvnum -1
+Exit south 8420
+EKeyvnum -1
+Exit west 8393
+EKeyvnum -1
+End
+
+
+#8395
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8369
+EKeyvnum -1
+Exit east 8396
+EKeyvnum -1
+Exit south 8421
+EKeyvnum -1
+Exit west 8394
+EKeyvnum -1
+End
+
+
+#8396
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8370
+EKeyvnum -1
+Exit east 8397
+EKeyvnum -1
+Exit south 8422
+EKeyvnum -1
+Exit west 8395
+EKeyvnum -1
+End
+
+
+#8397
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8371
+EKeyvnum -1
+Exit east 8398
+EKeyvnum -1
+Exit south 8423
+EKeyvnum -1
+Exit west 8396
+EKeyvnum -1
+End
+
+
+#8398
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8372
+EKeyvnum -1
+Exit east 8399
+EKeyvnum -1
+Exit south 8424
+EKeyvnum -1
+Exit west 8397
+EKeyvnum -1
+End
+
+
+#8399
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8373
+EKeyvnum -1
+Exit east 8374
+EKeyvnum -1
+Exit south 8425
+EKeyvnum -1
+Exit west 8398
+EKeyvnum -1
+End
+
+
+#8400
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8374
+EKeyvnum -1
+Exit east 8401
+EKeyvnum -1
+Exit south 8426
+EKeyvnum -1
+Exit west 8425
+EKeyvnum -1
+End
+
+
+#8401
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8375
+EKeyvnum -1
+Exit east 8402
+EKeyvnum -1
+Exit south 8427
+EKeyvnum -1
+Exit west 8400
+EKeyvnum -1
+End
+
+
+#8402
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8376
+EKeyvnum -1
+Exit east 8403
+EKeyvnum -1
+Exit south 8428
+EKeyvnum -1
+Exit west 8401
+EKeyvnum -1
+End
+
+
+#8403
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8377
+EKeyvnum -1
+Exit east 8404
+EKeyvnum -1
+Exit south 8429
+EKeyvnum -1
+Exit west 8402
+EKeyvnum -1
+End
+
+
+#8404
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8378
+EKeyvnum -1
+Exit east 8405
+EKeyvnum -1
+Exit south 8430
+EKeyvnum -1
+Exit west 8403
+EKeyvnum -1
+End
+
+
+#8405
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8379
+EKeyvnum -1
+Exit east 8406
+EKeyvnum -1
+Exit south 8431
+EKeyvnum -1
+Exit west 8404
+EKeyvnum -1
+End
+
+
+#8406
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8380
+EKeyvnum -1
+Exit east 8407
+EKeyvnum -1
+Exit south 8432
+EKeyvnum -1
+Exit west 8405
+EKeyvnum -1
+End
+
+
+#8407
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8381
+EKeyvnum -1
+Exit east 8408
+EKeyvnum -1
+Exit south 8433
+EKeyvnum -1
+Exit west 8406
+EKeyvnum -1
+End
+
+
+#8408
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8382
+EKeyvnum -1
+Exit east 8409
+EKeyvnum -1
+Exit south 8434
+EKeyvnum -1
+Exit west 8407
+EKeyvnum -1
+End
+
+
+#8409
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8383
+EKeyvnum -1
+Exit east 8410
+EKeyvnum -1
+Exit south 8435
+EKeyvnum -1
+Exit west 8408
+EKeyvnum -1
+End
+
+
+#8410
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8384
+EKeyvnum -1
+Exit east 8411
+EKeyvnum -1
+Exit south 8436
+EKeyvnum -1
+Exit west 8409
+EKeyvnum -1
+End
+
+
+#8411
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8385
+EKeyvnum -1
+Exit east 8412
+EKeyvnum -1
+Exit south 8437
+EKeyvnum -1
+Exit west 8410
+EKeyvnum -1
+End
+
+
+#8412
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8386
+EKeyvnum -1
+Exit east 8413
+EKeyvnum -1
+Exit south 8438
+EKeyvnum -1
+Exit west 8411
+EKeyvnum -1
+End
+
+
+#8413
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8387
+EKeyvnum -1
+Exit east 8414
+EKeyvnum -1
+Exit south 8439
+EKeyvnum -1
+Exit west 8412
+EKeyvnum -1
+End
+
+
+#8414
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8388
+EKeyvnum -1
+Exit east 8415
+EKeyvnum -1
+Exit south 8440
+EKeyvnum -1
+Exit west 8413
+EKeyvnum -1
+End
+
+
+#8415
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8389
+EKeyvnum -1
+Exit east 8416
+EKeyvnum -1
+Exit south 8441
+EKeyvnum -1
+Exit west 8414
+EKeyvnum -1
+End
+
+
+#8416
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8390
+EKeyvnum -1
+Exit east 8417
+EKeyvnum -1
+Exit south 8442
+EKeyvnum -1
+Exit west 8415
+EKeyvnum -1
+End
+
+
+#8417
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8391
+EKeyvnum -1
+Exit east 8418
+EKeyvnum -1
+Exit south 8443
+EKeyvnum -1
+Exit west 8416
+EKeyvnum -1
+End
+
+
+#8418
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8392
+EKeyvnum -1
+Exit east 8419
+EKeyvnum -1
+Exit south 8444
+EKeyvnum -1
+Exit west 8417
+EKeyvnum -1
+End
+
+
+#8419
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8393
+EKeyvnum -1
+Exit east 8420
+EKeyvnum -1
+Exit south 8445
+EKeyvnum -1
+Exit west 8418
+EKeyvnum -1
+End
+
+
+#8420
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8394
+EKeyvnum -1
+Exit east 8421
+EKeyvnum -1
+Exit south 8446
+EKeyvnum -1
+Exit west 8419
+EKeyvnum -1
+End
+
+
+#8421
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8395
+EKeyvnum -1
+Exit east 8422
+EKeyvnum -1
+Exit south 8447
+EKeyvnum -1
+Exit west 8420
+EKeyvnum -1
+End
+
+
+#8422
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8396
+EKeyvnum -1
+Exit east 8423
+EKeyvnum -1
+Exit south 8448
+EKeyvnum -1
+Exit west 8421
+EKeyvnum -1
+End
+
+
+#8423
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8397
+EKeyvnum -1
+Exit east 8424
+EKeyvnum -1
+Exit south 8449
+EKeyvnum -1
+Exit west 8422
+EKeyvnum -1
+End
+
+
+#8424
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8398
+EKeyvnum -1
+Exit east 8399
+EKeyvnum -1
+Exit south 8450
+EKeyvnum -1
+Exit west 8423
+EKeyvnum -1
+End
+
+
+#8425
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8399
+EKeyvnum -1
+Exit east 8426
+EKeyvnum -1
+Exit south 8451
+EKeyvnum -1
+Exit west 8450
+EKeyvnum -1
+End
+
+
+#8426
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8400
+EKeyvnum -1
+Exit east 8427
+EKeyvnum -1
+Exit south 8452
+EKeyvnum -1
+Exit west 8425
+EKeyvnum -1
+End
+
+
+#8427
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8401
+EKeyvnum -1
+Exit east 8428
+EKeyvnum -1
+Exit south 8453
+EKeyvnum -1
+Exit west 8426
+EKeyvnum -1
+End
+
+
+#8428
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8402
+EKeyvnum -1
+Exit east 8429
+EKeyvnum -1
+Exit south 8454
+EKeyvnum -1
+Exit west 8427
+EKeyvnum -1
+End
+
+
+#8429
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8403
+EKeyvnum -1
+Exit east 8430
+EKeyvnum -1
+Exit south 8455
+EKeyvnum -1
+Exit west 8428
+EKeyvnum -1
+End
+
+
+#8430
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8404
+EKeyvnum -1
+Exit east 8431
+EKeyvnum -1
+Exit south 8456
+EKeyvnum -1
+Exit west 8429
+EKeyvnum -1
+End
+
+
+#8431
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8405
+EKeyvnum -1
+Exit east 8432
+EKeyvnum -1
+Exit south 8457
+EKeyvnum -1
+Exit west 8430
+EKeyvnum -1
+End
+
+
+#8432
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8406
+EKeyvnum -1
+Exit east 8433
+EKeyvnum -1
+Exit south 8458
+EKeyvnum -1
+Exit west 8431
+EKeyvnum -1
+End
+
+
+#8433
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8407
+EKeyvnum -1
+Exit east 8434
+EKeyvnum -1
+Exit south 8459
+EKeyvnum -1
+Exit west 8432
+EKeyvnum -1
+End
+
+
+#8434
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8408
+EKeyvnum -1
+Exit east 8435
+EKeyvnum -1
+Exit south 8460
+EKeyvnum -1
+Exit west 8433
+EKeyvnum -1
+End
+
+
+#8435
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8409
+EKeyvnum -1
+Exit east 8436
+EKeyvnum -1
+Exit south 8461
+EKeyvnum -1
+Exit west 8434
+EKeyvnum -1
+End
+
+
+#8436
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8410
+EKeyvnum -1
+Exit east 8437
+EKeyvnum -1
+Exit south 8462
+EKeyvnum -1
+Exit west 8435
+EKeyvnum -1
+End
+
+
+#8437
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8411
+EKeyvnum -1
+Exit east 8438
+EKeyvnum -1
+Exit south 8463
+EKeyvnum -1
+Exit west 8436
+EKeyvnum -1
+End
+
+
+#8438
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8412
+EKeyvnum -1
+Exit east 8439
+EKeyvnum -1
+Exit south 8464
+EKeyvnum -1
+Exit west 8437
+EKeyvnum -1
+End
+
+
+#8439
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8413
+EKeyvnum -1
+Exit east 8440
+EKeyvnum -1
+Exit south 8465
+EKeyvnum -1
+Exit west 8438
+EKeyvnum -1
+End
+
+
+#8440
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8414
+EKeyvnum -1
+Exit east 8441
+EKeyvnum -1
+Exit south 8466
+EKeyvnum -1
+Exit west 8439
+EKeyvnum -1
+End
+
+
+#8441
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8415
+EKeyvnum -1
+Exit east 8442
+EKeyvnum -1
+Exit south 8467
+EKeyvnum -1
+Exit west 8440
+EKeyvnum -1
+End
+
+
+#8442
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8416
+EKeyvnum -1
+Exit east 8443
+EKeyvnum -1
+Exit south 8468
+EKeyvnum -1
+Exit west 8441
+EKeyvnum -1
+End
+
+
+#8443
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8417
+EKeyvnum -1
+Exit east 8444
+EKeyvnum -1
+Exit south 8469
+EKeyvnum -1
+Exit west 8442
+EKeyvnum -1
+End
+
+
+#8444
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8418
+EKeyvnum -1
+Exit east 8445
+EKeyvnum -1
+Exit south 8470
+EKeyvnum -1
+Exit west 8443
+EKeyvnum -1
+End
+
+
+#8445
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8419
+EKeyvnum -1
+Exit east 8446
+EKeyvnum -1
+Exit south 8471
+EKeyvnum -1
+Exit west 8444
+EKeyvnum -1
+End
+
+
+#8446
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8420
+EKeyvnum -1
+Exit east 8447
+EKeyvnum -1
+Exit south 8472
+EKeyvnum -1
+Exit west 8445
+EKeyvnum -1
+End
+
+
+#8447
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8421
+EKeyvnum -1
+Exit east 8448
+EKeyvnum -1
+Exit south 8473
+EKeyvnum -1
+Exit west 8446
+EKeyvnum -1
+End
+
+
+#8448
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8422
+EKeyvnum -1
+Exit east 8449
+EKeyvnum -1
+Exit south 8474
+EKeyvnum -1
+Exit west 8447
+EKeyvnum -1
+End
+
+
+#8449
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8423
+EKeyvnum -1
+Exit east 8424
+EKeyvnum -1
+Exit south 8475
+EKeyvnum -1
+Exit west 8448
+EKeyvnum -1
+End
+
+
+#8450
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8424
+EKeyvnum -1
+Exit east 8451
+EKeyvnum -1
+Exit south 8476
+EKeyvnum -1
+Exit west 8475
+EKeyvnum -1
+End
+
+
+#8451
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8425
+EKeyvnum -1
+Exit east 8452
+EKeyvnum -1
+Exit south 8477
+EKeyvnum -1
+Exit west 8450
+EKeyvnum -1
+End
+
+
+#8452
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8426
+EKeyvnum -1
+Exit east 8453
+EKeyvnum -1
+Exit south 8478
+EKeyvnum -1
+Exit west 8451
+EKeyvnum -1
+End
+
+
+#8453
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8427
+EKeyvnum -1
+Exit east 8454
+EKeyvnum -1
+Exit south 8479
+EKeyvnum -1
+Exit west 8452
+EKeyvnum -1
+End
+
+
+#8454
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8428
+EKeyvnum -1
+Exit east 8455
+EKeyvnum -1
+Exit south 8480
+EKeyvnum -1
+Exit west 8453
+EKeyvnum -1
+End
+
+
+#8455
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8429
+EKeyvnum -1
+Exit east 8456
+EKeyvnum -1
+Exit south 8481
+EKeyvnum -1
+Exit west 8454
+EKeyvnum -1
+End
+
+
+#8456
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8430
+EKeyvnum -1
+Exit east 8457
+EKeyvnum -1
+Exit south 8482
+EKeyvnum -1
+Exit west 8455
+EKeyvnum -1
+End
+
+
+#8457
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8431
+EKeyvnum -1
+Exit east 8458
+EKeyvnum -1
+Exit south 8483
+EKeyvnum -1
+Exit west 8456
+EKeyvnum -1
+End
+
+
+#8458
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8432
+EKeyvnum -1
+Exit east 8459
+EKeyvnum -1
+Exit south 8484
+EKeyvnum -1
+Exit west 8457
+EKeyvnum -1
+End
+
+
+#8459
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8433
+EKeyvnum -1
+Exit east 8460
+EKeyvnum -1
+Exit south 8485
+EKeyvnum -1
+Exit west 8458
+EKeyvnum -1
+End
+
+
+#8460
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8434
+EKeyvnum -1
+Exit east 8461
+EKeyvnum -1
+Exit south 8486
+EKeyvnum -1
+Exit west 8459
+EKeyvnum -1
+End
+
+
+#8461
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8435
+EKeyvnum -1
+Exit east 8462
+EKeyvnum -1
+Exit south 8487
+EKeyvnum -1
+Exit west 8460
+EKeyvnum -1
+End
+
+
+#8462
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8436
+EKeyvnum -1
+Exit east 8463
+EKeyvnum -1
+Exit south 8488
+EKeyvnum -1
+Exit west 8461
+EKeyvnum -1
+End
+
+
+#8463
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8437
+EKeyvnum -1
+Exit east 8464
+EKeyvnum -1
+Exit south 8489
+EKeyvnum -1
+Exit west 8462
+EKeyvnum -1
+End
+
+
+#8464
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8438
+EKeyvnum -1
+Exit east 8465
+EKeyvnum -1
+Exit south 8490
+EKeyvnum -1
+Exit west 8463
+EKeyvnum -1
+End
+
+
+#8465
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8439
+EKeyvnum -1
+Exit east 8466
+EKeyvnum -1
+Exit south 8491
+EKeyvnum -1
+Exit west 8464
+EKeyvnum -1
+End
+
+
+#8466
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8440
+EKeyvnum -1
+Exit east 8467
+EKeyvnum -1
+Exit south 8492
+EKeyvnum -1
+Exit west 8465
+EKeyvnum -1
+End
+
+
+#8467
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8441
+EKeyvnum -1
+Exit east 8468
+EKeyvnum -1
+Exit south 8493
+EKeyvnum -1
+Exit west 8466
+EKeyvnum -1
+End
+
+
+#8468
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8442
+EKeyvnum -1
+Exit east 8469
+EKeyvnum -1
+Exit south 8494
+EKeyvnum -1
+Exit west 8467
+EKeyvnum -1
+End
+
+
+#8469
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8443
+EKeyvnum -1
+Exit east 8470
+EKeyvnum -1
+Exit south 8495
+EKeyvnum -1
+Exit west 8468
+EKeyvnum -1
+End
+
+
+#8470
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8444
+EKeyvnum -1
+Exit east 8471
+EKeyvnum -1
+Exit south 8496
+EKeyvnum -1
+Exit west 8469
+EKeyvnum -1
+End
+
+
+#8471
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8445
+EKeyvnum -1
+Exit east 8472
+EKeyvnum -1
+Exit south 8497
+EKeyvnum -1
+Exit west 8470
+EKeyvnum -1
+End
+
+
+#8472
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8446
+EKeyvnum -1
+Exit east 8473
+EKeyvnum -1
+Exit south 8498
+EKeyvnum -1
+Exit west 8471
+EKeyvnum -1
+End
+
+
+#8473
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8447
+EKeyvnum -1
+Exit east 8474
+EKeyvnum -1
+Exit south 8499
+EKeyvnum -1
+Exit west 8472
+EKeyvnum -1
+End
+
+
+#8474
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8448
+EKeyvnum -1
+Exit east 8449
+EKeyvnum -1
+Exit west 8473
+EKeyvnum -1
+End
+
+
+#8475
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8449
+EKeyvnum -1
+Exit east 8476
+EKeyvnum -1
+End
+
+
+#8476
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8450
+EKeyvnum -1
+Exit east 8477
+EKeyvnum -1
+Exit west 8475
+EKeyvnum -1
+End
+
+
+#8477
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8451
+EKeyvnum -1
+Exit east 8478
+EKeyvnum -1
+Exit west 8476
+EKeyvnum -1
+End
+
+
+#8478
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8452
+EKeyvnum -1
+Exit east 8479
+EKeyvnum -1
+Exit west 8477
+EKeyvnum -1
+End
+
+
+#8479
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8453
+EKeyvnum -1
+Exit east 8480
+EKeyvnum -1
+Exit west 8478
+EKeyvnum -1
+End
+
+
+#8480
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8454
+EKeyvnum -1
+Exit east 8481
+EKeyvnum -1
+Exit west 8479
+EKeyvnum -1
+End
+
+
+#8481
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8455
+EKeyvnum -1
+Exit east 8482
+EKeyvnum -1
+Exit west 8480
+EKeyvnum -1
+End
+
+
+#8482
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8456
+EKeyvnum -1
+Exit east 8483
+EKeyvnum -1
+Exit west 8481
+EKeyvnum -1
+End
+
+
+#8483
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8457
+EKeyvnum -1
+Exit east 8484
+EKeyvnum -1
+Exit west 8482
+EKeyvnum -1
+End
+
+
+#8484
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8458
+EKeyvnum -1
+Exit east 8485
+EKeyvnum -1
+Exit west 8483
+EKeyvnum -1
+End
+
+
+#8485
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8459
+EKeyvnum -1
+Exit east 8486
+EKeyvnum -1
+Exit west 8484
+EKeyvnum -1
+End
+
+
+#8486
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8460
+EKeyvnum -1
+Exit east 8487
+EKeyvnum -1
+Exit west 8485
+EKeyvnum -1
+End
+
+
+#8487
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8461
+EKeyvnum -1
+Exit east 8488
+EKeyvnum -1
+Exit west 8486
+EKeyvnum -1
+End
+
+
+#8488
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8462
+EKeyvnum -1
+Exit east 8489
+EKeyvnum -1
+Exit west 8487
+EKeyvnum -1
+End
+
+
+#8489
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8463
+EKeyvnum -1
+Exit east 8490
+EKeyvnum -1
+Exit west 8488
+EKeyvnum -1
+End
+
+
+#8490
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8464
+EKeyvnum -1
+Exit east 8491
+EKeyvnum -1
+Exit west 8489
+EKeyvnum -1
+End
+
+
+#8491
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8465
+EKeyvnum -1
+Exit east 8492
+EKeyvnum -1
+Exit west 8490
+EKeyvnum -1
+End
+
+
+#8492
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8466
+EKeyvnum -1
+Exit east 8493
+EKeyvnum -1
+Exit west 8491
+EKeyvnum -1
+End
+
+
+#8493
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8467
+EKeyvnum -1
+Exit east 8494
+EKeyvnum -1
+Exit west 8492
+EKeyvnum -1
+End
+
+
+#8494
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8468
+EKeyvnum -1
+Exit east 8495
+EKeyvnum -1
+Exit west 8493
+EKeyvnum -1
+End
+
+
+#8495
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8469
+EKeyvnum -1
+Exit east 8496
+EKeyvnum -1
+Exit west 8494
+EKeyvnum -1
+End
+
+
+#8496
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8470
+EKeyvnum -1
+Exit east 8497
+EKeyvnum -1
+Exit west 8495
+EKeyvnum -1
+End
+
+
+#8497
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8471
+EKeyvnum -1
+Exit east 8498
+EKeyvnum -1
+Exit west 8496
+EKeyvnum -1
+End
+
+
+#8498
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8472
+EKeyvnum -1
+Exit east 8499
+EKeyvnum -1
+Exit west 8497
+EKeyvnum -1
+End
+
+
+#8499
+Name A large field~
+Desc A large field stretches before you, leading to parts unknown. 
+~
+Sector field~
+Exit north 8473
+EKeyvnum -1
+Exit east 8474
+EKeyvnum -1
+Exit west 8498
+EKeyvnum -1
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 7900 spec_breath_any
+M 7901 spec_cast_meaner
+M 7903 spec_breath_gas
+M 7905 spec_cast_meaner
+M 7907 spec_breath_lightning
+M 8000 spec_charmer
+S
+
+
+
+#RESETS2
+M 0 7902 75 8239 1
+M 0 8000 50 8240 1
+M 0 7902 75 8245 1
+M 0 8000 50 8245 1
+M 0 7902 75 8249 1
+M 0 7903 30 8252 1
+M 0 7903 30 8257 1
+M 0 7903 30 8262 1
+M 0 7903 30 8266 1
+M 0 7900 50 8269 1
+M 0 7901 40 8275 2
+M 0 8000 50 8300 1
+M 0 8000 50 8301 1
+M 0 7904 15 8304 2
+M 0 7904 15 8305 2
+M 0 7902 75 8314 1
+M 0 8000 50 8318 1
+M 0 7900 50 8325 1
+M 0 7903 30 8330 1
+M 0 7902 75 8345 1
+M 0 7900 50 8347 1
+M 0 7904 15 8349 2
+M 0 7904 15 8349 2
+M 0 7902 75 8349 1
+M 0 7901 40 8375 2
+M 0 7900 50 8376 1
+M 0 7903 30 8386 1
+M 0 7903 30 8389 1
+M 0 7902 75 8392 1
+M 0 7900 50 8399 1
+M 0 8000 50 8400 1
+M 0 7901 40 8401 2
+M 0 7901 40 8417 2
+M 0 7902 75 8418 1
+M 0 7902 75 8420 1
+M 0 7901 40 8420 2
+M 0 7902 75 8423 1
+M 0 7901 40 8442 2
+M 0 7902 75 8444 1
+M 0 7902 75 8447 1
+M 0 7900 50 8448 1
+M 0 8000 50 8450 1
+M 0 7902 75 8453 1
+M 0 7902 75 8457 1
+M 0 7901 40 8467 2
+M 0 7900 50 8474 1
+M 0 7905 10 8475 1
+M 0 7902 75 8475 1
+M 0 7901 40 8475 2
+M 0 7901 40 8475 2
+M 0 7900 50 8475 1
+M 0 7900 50 8475 1
+M 0 8000 50 8477 1
+M 0 7900 50 8479 1
+M 0 7901 40 8482 2
+M 0 8000 50 8483 1
+M 0 7902 75 8484 1
+M 0 7900 50 8485 1
+M 0 7905 10 8487 1
+M 0 7902 75 8488 1
+M 0 7901 40 8488 2
+M 0 7900 50 8491 1
+M 0 7900 50 8491 1
+M 0 7902 75 8492 1
+M 0 7901 40 8493 2
+M 0 7902 75 8496 1
+M 0 7900 50 8497 1
+O 0 7900 -1 7900
+M 0 7907 8 7907 1
+M 0 7902 75 7911 1
+M 0 7902 75 7914 1
+M 0 7902 75 7918 1
+M 0 7904 15 7919 2
+M 0 7902 75 7922 1
+M 0 7905 10 7923 1
+M 0 7905 10 7924 1
+M 0 7904 15 7924 2
+M 0 7904 15 7924 2
+M 0 7902 75 7924 1
+M 0 7901 40 7926 2
+M 0 7900 50 7929 1
+M 0 7901 40 7930 2
+M 0 7901 40 7935 2
+M 0 7900 50 7935 1
+M 0 4635 10 7941 1
+M 0 7900 50 7941 1
+M 0 7900 50 7946 1
+M 0 7900 50 7949 1
+M 0 8000 50 7949 1
+M 0 4635 10 7950 1
+M 0 7906 6 7952 2
+M 0 7903 30 7956 1
+M 0 7903 30 7962 1
+M 0 7902 75 7963 1
+M 0 8000 50 7970 1
+M 0 7903 30 7975 1
+M 0 7900 50 7975 1
+M 0 7904 15 7978 2
+M 0 7900 50 7979 1
+M 0 7907 8 7985 1
+M 0 7903 30 7986 1
+M 0 7901 40 7987 2
+M 0 7903 30 7989 1
+M 0 7901 40 7990 2
+M 0 7903 30 7993 1
+M 0 7901 40 7994 2
+M 0 7903 30 7997 1
+M 0 7901 40 7998 2
+M 0 7904 15 7999 2
+M 0 7907 8 8008 1
+M 0 7901 40 8008 2
+M 0 7906 6 8009 2
+M 0 7901 40 8012 2
+M 0 7907 8 8014 1
+M 0 7902 75 8015 1
+M 0 7901 40 8017 2
+M 0 7901 40 8022 2
+M 0 7905 10 8027 1
+M 0 7902 75 8031 1
+M 0 7904 15 8035 2
+M 0 4635 10 8053 1
+M 0 7905 10 8053 1
+M 0 7901 40 8053 2
+M 0 7906 6 8054 2
+M 0 7901 40 8057 2
+M 0 7902 75 8067 1
+M 0 7903 30 8069 1
+M 0 8000 50 8074 1
+M 0 7904 15 8075 2
+M 0 7903 30 8075 1
+M 0 7905 10 8080 1
+M 0 7905 10 8090 1
+M 0 7903 30 8090 1
+M 0 8000 50 8096 1
+M 0 7901 40 8100 2
+M 0 7900 50 8100 1
+M 0 7902 75 8119 1
+M 0 7901 40 8126 2
+M 0 7902 75 8135 1
+M 0 8000 50 8143 1
+M 0 8000 50 8150 1
+M 0 4635 10 8154 1
+M 0 8000 50 8154 1
+M 0 4635 10 8157 1
+M 0 7904 15 8161 2
+M 0 7903 30 8162 1
+M 0 7904 15 8165 2
+M 0 7903 30 8166 1
+M 0 7902 75 8171 1
+M 0 4635 10 8175 1
+M 0 7905 10 8175 1
+M 0 7901 40 8175 2
+M 0 7900 50 8183 1
+M 0 7900 50 8187 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

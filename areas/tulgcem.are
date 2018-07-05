@@ -1,0 +1,1836 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Tulgard Cemetery~
+ShortName   Tulgard Cemetery~
+Builders    rudrik~
+build_restricts 'mobs' ardayne ~
+VNUMs       6600 6699
+AFlags  noteleport noscry use_buildrestricts nogateinto nosummoninto noportalinto~
+LRange      80 91
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Mon Aug 22 17:06:33 2005~
+End
+
+
+
+#MOBILES
+#6600
+Name blank hero~
+ShortD blank hero~
+LongD Blank hero~
+Desc Blank hero
+~
+Race human~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType wrath
+AC -500 -500 -500 -425
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  invisible flying regeneration~
+AffBy2 vicegrip~
+Off    disarm dodge parry~
+Imm    summon charm hunger thirst fear~
+Res    negative disease~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#6601
+Name ghost selbon~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Selbon~
+LongD `#the `Cg`ch`Wo`cs`Ct`^ of Selbon Valcore stands here guarding his remains.~
+Desc Before you is a tall angelic male form.  He has a blinding white aura that 
+beams onto you.  It is so bright you hardly see his feathery wings that 
+almost hit the ground.  He has long strait blond braided hair to the middle 
+of his back.  When his eyes are open you see his glowing blue eyes.  He has 
+a smooth face that almost looks like an artist carved it out of marble.  He 
+looks almost flawless! 
+~
+Race angel~
+Align 3 3
+XPMod 175
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType wrath
+AC -610 -610 -610 -524
+Wealth 1000
+Act    npc dont_wander no_tame cleric~
+AffBy  invisible detect_evil detect_invis detect_hidden sanctuary infrared flying regeneration~
+AffBy2 vicegrip~
+Off    dodge fast parry~
+Imm    summon charm lightning holy disease light scry hunger thirst~
+Res    magic illusion~
+Vuln   negative~
+Form   magical instant_decay non_skinable sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GREET 6601 100~
+END
+
+#6602
+Name ghost zana~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Zana~
+LongD `#the `Cg`ch`Wo`cs`Ct`^ of Zana stands here guarding her remains.~
+Desc A young, half-elven woman is here, before you. She appears thin, with a 
+lightly muscled frame, with skin that looks rather soft and smooth, without 
+a blemish. Her silver hair falls down in waves about her shoulders, ending 
+about halfway down her back; and small pointed ears peek up from under the 
+mass. Her eyes, when open; are an intense sapphire blue that seem to be 
+filled with a strong spirit and will to match. Despite her athletic build, 
+she shows soft curves that belie her human heritage. 
+~
+Race half-elf~
+Align 1 2
+XPMod 175
+Level 91
+Hitroll 0
+HitDice 9d13+445
+ManaDice 4d5+95
+DamDice 10d11+46
+DamType wrath
+AC -610 -610 -610 -500
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  invisible detect_invis sanctuary infrared haste regeneration~
+AffBy2 vicegrip~
+Off    disarm dodge fast kick dirt_kick parry~
+Imm    summon charm disease hunger thirst fear~
+Vuln   poison~
+Form   edible magical instant_decay non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#6603
+Name ghost rewand~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Rewand~
+LongD `#the `Cg`ch`Wo`cs`Ct`^ of Rewand is standing here guarding his remains.~
+Desc ~
+Race werewolf-i~
+Align 0 0
+XPMod 175
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType wrath
+AC -500 -500 -500 -425
+Wealth 1000
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  invisible detect_invis detect_hidden sneak haste dark_vision regeneration~
+Off    bash berserk dodge parry tail~
+Imm    summon charm disease hunger thirst fear~
+Res    slash~
+Vuln   silver iron~
+Form   edible magical instant_decay non_skinable biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#6604
+Name ghost traed~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Traed~
+LongD The `#`Cg`ch`Wo`cs`Ct`^ of `#`wTraed Ta'al Theardar`^ stands here guarding his remains.~
+Desc ~
+Race dagorst~
+Align -1 1
+XPMod 175
+Level 87
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+45
+DamType wrath
+AC -610 -610 -610 -530
+Wealth 1000
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy2 vicegrip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#6605
+Name ghost aglar~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Aglar~
+LongD `#the `Cg`ch`Wo`cs`Ct`^ of Aglar stands here guarding his remains.~
+Desc You see a massive shadow dragon. His scales are dark, almost black and are 
+somehow glittering in the daylight. Their colour makes him almost invisible 
+in the night, despite of his huge figure. His eyes, when open, are yellow 
+and look sharp and aware, not missing the slightest move around him. His 
+wings seem well-developed and a little too big for his body and when spread, 
+you can notice, that they are enormous and make him look even bigger. They 
+appear to be a little darker than his overall shade. You can clearly see, 
+that some of the scales on his right wing and damaged, as from a collision. 
+His monstrous-looking teeth are gleaming white, which makes them contrasting 
+with his body strongly. 
+~
+Race dragon~
+Align 0 0
+XPMod 175
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType wrath
+AC -610 -610 -610 -549
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  invisible detect_invis sanctuary infrared flying haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    bash disarm dodge fast kick dirt_kick parry tail~
+Imm    summon charm bash disease silver hunger thirst fear~
+Res    magic negative~
+Vuln   sound~
+Form   edible magical instant_decay non_skinable sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#6606
+Name ghost bael~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Bael~
+LongD `#the `Cg`ch`Wo`cs`Ct`^ of Bael uth Draco is here guarding his remains.~
+Desc Before you is a demonic male half-elf with snow-white hair.  His hair falls 
+down to the middle of his back and is parted on the top of his head by two 
+horns that are 4 inches in length.  His skin is a dark tan in color.  His 
+features are that of a half-elf, but many are twisted to that of a demons.  
+His ears are very long and pointed. 
+~
+Race half-elf~
+Align -3 -3
+XPMod 175
+Level 91
+Hitroll 5
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType wrath
+AC -610 -610 -610 -488
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  invisible detect_invis sanctuary infrared flying haste regeneration~
+AffBy2 vicegrip~
+Off    berserk dodge kick dirt_kick parry~
+Imm    summon charm disease hunger thirst fear~
+Res    wood~
+Vuln   holy~
+Form   edible magical instant_decay non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#6607
+Name xeal red maned werewolf ghost~
+ShortD the `#`Cg`ch`Wo`cs`Ct`^ of `#`XXeal`^~
+LongD The `#`Cg`ch`Wo`cs`Ct`^ of `#`XXeal`^ stands here guarding his remains.~
+Desc An overwhelmingly large werewolf stands at a height of 7 feet 5 inches when 
+on his hind legs. He has a bulky furry mane about his neck making him look 
+more vicious. He has flashing red fur and, when visible,  Glowing red eyes. 
+The ears on his head are large, and stand up straight making it seem as 
+though he can hear quite well and alert at all times. At the end of his paw 
+like hands are large sharp claws that look as though they can tear through 
+anything. 
+~
+Race werewolf~
+Align 0 0
+Level 89
+Hitroll 0
+HitDice 9d12+435
+ManaDice 9d12+575
+DamDice 10d11+44
+DamType bite
+AC -590 -590 -590 -507
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden sanctuary infrared sneak hide haste dark_vision~
+AffBy2 vicegrip~
+Off    bash berserk dodge parry tail~
+Imm    charm disease~
+Res    slash~
+Vuln   silver iron~
+Form   edible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#6609
+Name jiven pack rat~
+ShortD `#`GJiven`^~
+LongD Jiven the pack rat stands here.~
+Desc ~
+Race human~
+Align 0 0
+Level 81
+Hitroll 0
+HitDice 8d12+405
+ManaDice 3d5+85
+DamDice 9d10+40
+DamType slash
+AC -510 -510 -510 -453
+Wealth 100
+Act    npc scavenger no_tame stay_area wimpy warrior outdoors~
+AffBy  sanctuary regeneration fear~
+Off    disarm dodge fast kick dirt_kick parry~
+Imm    charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#6610
+Name ghost~
+ShortD a ghost of the mist~
+LongD You see a ghost of the mist floating near by.~
+Desc ~
+Race other~
+Align 0 0
+Level 30
+Hitroll -5
+HitDice 5d5+130
+ManaDice 5d6+235
+DamDice 5d4+7
+DamType none
+AC -90 -90 -90 -78
+Wealth 100
+Act    npc no_tame stay_area mage~
+AffBy  sneak flying~
+Off    dodge parry~
+Imm    sleep hunger thirst fear~
+Res    energy~
+Vuln   magic weapon holy~
+Form   magical instant_decay non_skinable undead mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#6611
+Name garik ghost~
+ShortD `#the `Cg`ch`Wo`cs`Ct`^ of Garik~
+LongD The ghost of Garik Knighthire stands here guarding his remains.~
+Desc ~
+Race Golem~
+Align 0 0
+XPMod 175
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType wrath
+AC -610 -610 -610 -506
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden infrared otterlungs dark_vision regeneration~
+Off    bash berserk disarm dodge fast kick dirt_kick parry trip crush~
+Imm    summon charm poison disease drowning sleep hunger thirst fear~
+Res    bash~
+Vuln   acid~
+Form   magical instant_decay non_skinable sentient construct~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#6600
+Name blank weapon~
+Short blank weapon~
+Desc Blank weapon~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 3 28 slash CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade~
+Extra2   nodecay~
+Wear     wield~
+End
+
+#6601
+Name spirit sword mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ sword~
+Desc You see a strange invisable mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values sword 6 13 slash CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6602
+Name spirit staff mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ staff~
+Desc You see a strange invisable mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values staff 15 4 thrust CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6603
+Name spirit axe mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ axe~
+Desc You see a strange invisible mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values axe 3 28 cleave CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6604
+Name spirit whip mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ whip~
+Desc You see a strange invisible mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values whip 9 8 whip CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6605
+Name spirit dagger mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ dagger~
+Desc You see a strange invisible mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 19 3 stab CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6606
+Name spirit mace mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ mace~
+Desc You see a strange invisible mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values mace 6 13 pound CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6607
+Name spirit flail mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ flail~
+Desc You see a strange invisible mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values flail 9 8 smash CL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6608
+Name spirit polearm mist~
+Short `#the `Cs`cp`Wir`ci`Ct`^ polearm~
+Desc You see a strange invisible mist on the ground looks as though you should try to pick it up.~
+Level 81
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values polearm 23 3 thrust CFL
+Weight 1
+Material mist~
+Extra    glow hum invis nonmetal meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#6609
+Name pack back backpack~
+Short `#a large `mleather`^ pack~
+Desc A large leather pack lies here.~
+Level 81
+ItemType container~
+Cost 500
+Durability 5
+Asize 90
+Rsize 50
+Values 500 A 0 200 45
+Weight 90
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take back~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 81 -1 mana 50 0
+Affect modifier -1 81 -1 hitroll 5 0
+Affect modifier -1 81 -1 damroll 5 0
+Affect modifier -1 81 -1 ac -10 0
+ExtraDesc pack back backpack large~
+It looks pretty big on the inside.
+~
+End
+
+#6611
+Name gold plated monocle~
+Short a gold plated monocle~
+Desc A gold plated monocle is lying here.~
+Level 81
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 10 8 0
+Weight 2
+Material gold~
+Wear     take eyes~
+Affect modifier -1 81 -1 memory 5 0
+Affect modifier -1 81 -1 reasoning 5 0
+Affect objectspell 'detect hidden' 0 -1 none 0 0
+Affect objectspell 'detect invis' 0 -1 none 0 0
+End
+
+#0
+
+
+
+#ROOMS
+#6600
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6601
+EFlags door closed~
+Exit south 55408
+End
+
+
+#6601
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6602
+Exit south 6600
+EFlags door closed~
+Exit west 6658
+End
+
+
+#6602
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6646
+Exit east 6603
+Exit west 6601
+End
+
+
+#6603
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6604
+Exit west 6602
+End
+
+
+#6604
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6636
+Exit east 6605
+Exit west 6603
+End
+
+
+#6605
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6606
+Exit west 6604
+End
+
+
+#6606
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6626
+Exit east 6607
+Exit west 6605
+End
+
+
+#6607
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6608
+Exit west 6606
+End
+
+
+#6608
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6609
+Exit west 6607
+End
+
+
+#6609
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6611
+Exit south 6608
+Exit west 6610
+End
+
+
+#6610
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6609
+End
+
+
+#6611
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6613
+Exit south 6609
+Exit west 6612
+End
+
+
+#6612
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6611
+End
+
+
+#6613
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6615
+Exit south 6611
+Exit west 6614
+EFlags door closed~
+End
+
+
+#6614
+Name A Dug Up Grave~
+Desc A big hole has been dug where a body once laid, nothing much else is noticeable at all.
+~
+RoomFlags indoors no_recall noautomap~
+Sector inside~
+Exit east 6613
+EFlags door closed~
+End
+
+
+#6615
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6617
+Exit south 6613
+Exit west 6616
+End
+
+
+#6616
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6615
+End
+
+
+#6617
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit south 6615
+Exit west 6618
+End
+
+
+#6618
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6617
+Exit west 6619
+End
+
+
+#6619
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6618
+Exit south 6620
+Exit west 6628
+End
+
+
+#6620
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6619
+Exit south 6622
+Exit west 6621
+End
+
+
+#6621
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6620
+End
+
+
+#6622
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6620
+Exit south 6624
+Exit west 6623
+End
+
+
+#6623
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6622
+End
+
+
+#6624
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6622
+Exit south 6626
+Exit west 6625
+End
+
+
+#6625
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6624
+End
+
+
+#6626
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6624
+Exit south 6606
+Exit west 6627
+EFlags door closed~
+End
+
+
+#6627
+Name A Shallow Grave~
+Desc A shallow grave recently dug awaits the next unfortunate soul to tempt fate, 
+and lose. 
+~
+RoomFlags indoors no_recall noautomap~
+Sector inside~
+Exit east 6626
+EFlags door closed~
+End
+
+
+#6628
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6619
+Exit west 6629
+End
+
+
+#6629
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6628
+Exit south 6630
+Exit west 6638
+End
+
+
+#6630
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6629
+Exit south 6632
+Exit west 6631
+End
+
+
+#6631
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6630
+End
+
+
+#6632
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6630
+Exit south 6634
+Exit west 6633
+EFlags door closed~
+End
+
+
+#6633
+Name Crypt of Selbon Valcore~
+Desc Here etched in the stone you see written, "Here lies Selbon Valcore 1241 AK 
+- 1279 AK.  Selbon was truly a child of Seandac but towards the end of his 
+life his pain of his family being killed by his Step son Bael created a 
+tainted heart and drove him to greed for power over whelmed him.  He then 
+followed the queen of death, Harpan.  His kindness could never be overcome 
+by evil and then to save his friends returned to his true god, Seandac." 
+~
+RoomFlags indoors noautomap~
+Sector inside~
+Exit east 6632
+EFlags door closed~
+End
+
+
+#6634
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6632
+Exit south 6636
+Exit west 6635
+End
+
+
+#6635
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6634
+End
+
+
+#6636
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6634
+Exit south 6604
+Exit west 6637
+End
+
+
+#6637
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6636
+End
+
+
+#6638
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6629
+Exit west 6639
+End
+
+
+#6639
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6638
+Exit south 6640
+Exit west 6648
+End
+
+
+#6640
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6639
+Exit south 6642
+Exit west 6641
+EFlags door closed~
+End
+
+
+#6641
+Name A Shallow Grave~
+Desc The grave of the one that appears to have rested here has been disturbed, a 
+loose pile of dirt rests to the south of where the body was once buried. 
+~
+RoomFlags indoors no_recall noautomap~
+Sector inside~
+Exit east 6640
+EFlags door closed~
+End
+
+
+#6642
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6640
+Exit south 6644
+Exit west 6643
+End
+
+
+#6643
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6642
+End
+
+
+#6644
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6642
+Exit south 6646
+Exit west 6645
+End
+
+
+#6645
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6644
+End
+
+
+#6646
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6644
+Exit south 6602
+Exit west 6647
+End
+
+
+#6647
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6646
+End
+
+
+#6648
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6691
+EFlags door closed~
+Exit east 6639
+Exit west 6649
+End
+
+
+#6649
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6648
+Exit south 6650
+Exit west 6670
+End
+
+
+#6650
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6649
+Exit south 6652
+Exit west 6651
+End
+
+
+#6651
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6650
+End
+
+
+#6652
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6650
+Exit south 6654
+Exit west 6653
+End
+
+
+#6653
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6652
+End
+
+
+#6654
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6652
+Exit south 6656
+Exit west 6655
+End
+
+
+#6655
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6654
+End
+
+
+#6656
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6654
+Exit south 6658
+Exit west 6657
+EFlags door closed~
+End
+
+
+#6657
+Name Crypt of Traed ta'al Theardar~
+Desc Etched in stone here are the words: Strift Merquse, The Ancient dragon of 
+tulgard who not only filled this graveyard but now has become one with it. 
+Even in his undead state shall he forever seek out the moans of those 
+passing women and the blood of the foes who dare enter his presence. 
+~
+RoomFlags indoors no_recall noautomap~
+Sector inside~
+Exit east 6656
+EFlags door closed~
+End
+
+
+#6658
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6656
+Exit east 6601
+Exit west 6659
+End
+
+
+#6659
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6658
+Exit west 6660
+End
+
+
+#6660
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6661
+Exit east 6659
+Exit west 6682
+End
+
+
+#6661
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6663
+Exit south 6660
+Exit west 6662
+End
+
+
+#6662
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6661
+End
+
+
+#6663
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6665
+Exit south 6661
+Exit west 6664
+End
+
+
+#6664
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6663
+End
+
+
+#6665
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6667
+Exit south 6663
+Exit west 6666
+EFlags door closed~
+End
+
+
+#6666
+Name A shallow grave~
+Desc A shallow grave lies here, recently dug up. 
+~
+RoomFlags indoors no_recall noautomap~
+Sector inside~
+Exit east 6665
+EFlags door closed~
+End
+
+
+#6667
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6669
+Exit south 6665
+Exit west 6668
+End
+
+
+#6668
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6667
+End
+
+
+#6669
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6670
+Exit south 6667
+Exit west 6671
+End
+
+
+#6670
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6649
+Exit west 6669
+End
+
+
+#6671
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6669
+Exit west 6672
+End
+
+
+#6672
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6671
+Exit south 6673
+Exit west 6690
+End
+
+
+#6673
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6672
+Exit south 6675
+Exit west 6674
+End
+
+
+#6674
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6673
+End
+
+
+#6675
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6673
+Exit south 6677
+Exit west 6676
+End
+
+
+#6676
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6675
+End
+
+
+#6677
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6675
+Exit south 6679
+Exit west 6678
+End
+
+
+#6678
+Name Empty crypt~
+Desc Here is an empty crypt waiting for an occupant.
+~
+Sector inside~
+Exit east 6677
+End
+
+
+#6679
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6677
+Exit south 6681
+Exit west 6680
+EFlags door closed~
+End
+
+
+#6680
+Name Crypt of Garik Knighthire~
+Desc Here lies Garik Knighthire, may he rest in peace.
+~
+RoomFlags indoors no_recall noautomap~
+Sector inside~
+Exit east 6679
+EFlags door closed~
+End
+
+
+#6681
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6679
+Exit east 6682
+Exit west 6683
+End
+
+
+#6682
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6660
+Exit west 6681
+End
+
+
+#6683
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6681
+Exit west 6684
+End
+
+
+#6684
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6685
+Exit east 6683
+End
+
+
+#6685
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6686
+Exit south 6684
+End
+
+
+#6686
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6687
+Exit south 6685
+End
+
+
+#6687
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6688
+Exit south 6686
+End
+
+
+#6688
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit north 6689
+Exit south 6687
+End
+
+
+#6689
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6690
+Exit south 6688
+End
+
+
+#6690
+Name Trail along side of the grave stones~
+Desc You find yourself along a trail next to Crypts and graves.  You get an eerie 
+yet comfortable chill down your spine.  This looks like a very well kept and 
+beautiful cemetery.  It looks like this cemetery has been set aside for very 
+important occupants. 
+~
+Sector trail~
+Exit east 6672
+Exit west 6689
+End
+
+
+#6691
+Name ~
+Desc ~
+RoomFlags dark noautomap~
+Sector inside~
+Exit south 6648
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 6601 spec_breath_lightning
+M 6602 spec_cast_druid
+M 6603 spec_werewolf
+M 6604 spec_breath_acid
+M 6605 spec_shadow_dragon
+M 6607 spec_werewolf
+S
+
+
+
+#RESETS2
+M 0 6610 50 6604 1
+M 0 6610 50 6608 1
+M 0 6610 50 6617 1
+M 0 6610 50 6619 1
+M 0 6601 1 6633 1
+E 0 6606 -1 second~
+E 0 6602 -1 wielded~
+M 0 6610 50 6639 1
+M 0 6609 1 6648 1
+E 0 6611 -1 eyes~
+E 0 6609 -1 back~
+M 0 6607 1 6651 1
+E 0 6601 -1 wielded~
+M 0 6604 1 6657 1
+E 0 6604 -1 wielded~
+E 0 6601 -1 second~
+M 0 6610 50 6658 1
+M 0 6610 50 6669 1
+M 0 6611 1 6680 1
+E 0 6605 -1 second~
+E 0 6603 -1 wielded~
+M 0 6610 50 6681 1
+M 0 6610 50 6684 1
+M 0 6610 50 6689 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#6601
+title Selbon's greet~
+author Rudrik~
+code mob seeall
+human > $n Give me a break.
+human > $n I know I was power hungry but I have redeamed myself with Seandac.
+sigh
+~
+disabled false
+last_editor Rudrik~
+last_editdate 1088105315
+END
+
+#0
+
+
+#$

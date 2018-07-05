@@ -1,0 +1,564 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Elkan's Tower~
+ShortName   Elkan's Tower~
+Builders    None~
+VNUMs       11200 11209
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Tue Jun 15 15:59:41 2004~
+End
+
+
+
+#MOBILES
+#11202
+Name butler~
+ShortD a well-dressed man is here~
+LongD A neatly dressed man is standing here.~
+Desc Impeccably dressed and spotless, this man tends to the needs of guests 
+and
+visitors.  His brown hair is close cropped and his face is clean shaven.  He
+wears a white silk shirt, black breeches, and black shoes.  His grey eyes
+betray no hint of emotion.
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc dont_wander scavenger no_tame indoors~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#11204
+Name serving maid~
+ShortD a modestly dressed serving maid~
+LongD A modestly dressed serving maid waits on you~
+Desc This serving wench appears to be in her late teens.  She is modestly 
+dressed
+in matching dress, apron, and kerchief.  She bustles about making sure all
+the guests have as much food and drink as they desire.
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 75
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#11205
+Name chef~
+ShortD a short bald man~
+LongD A short bald man is here muttering something~
+Desc This ancient looking man barely clears 4 feet tall, yet his demeanor 
+shows
+he is used to getting his own way, and will brook no interference.  He is
+spattered and covered head to toe with all kinds of ingredients and spices.
+His head is bald but for a few wisps of white hair.  He mutters to himself
+in some language that only he understands.
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 77
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#11200
+Name bearskin rug~
+Short a bearskin rug~
+Desc A 9 foot long bearskin rug is here~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 2000 EHK 100 100
+Weight 0
+Material unknown~
+End
+
+#11201
+Name treasury key~
+Short `#`WElkan's `Ytreasury key`^~
+Desc `#`WElkan's `Ytreasury key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#11202
+Name leather couch~
+Short soft leather couch~
+Desc A leather couch made of the softest leather is facing the fireplace.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 1500 EHK 100 100
+Weight 0
+Material leather~
+Wear     no_sac~
+End
+
+#11203
+Name oak table chairs~
+Short an oak table and 10 chairs~
+Desc A highly polished table made of solid oak is surrounded by 10 chairs.  
+Make yourself comfortable.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 3500 EHUV 100 100
+Weight 0
+Material wood~
+End
+
+#11207
+Name overstuffed chairs~
+Short an incredibly comfy chair~
+Desc 3 incredibly comfy chairs~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 1500 EHK 100 100
+Weight 0
+Material cloth~
+ExtraDesc overstuffed comfy chairs~
+These chairs are made of the softest cloth.  They are extra heavily padded
+to let the user sink deep into them.  The high arms and back are perfect for
+relaxing or taking a little snooze.
+~
+End
+
+#11209
+Name canopy bed~
+Short a large canopied bed~
+Desc A large canopied bed is here~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 2000 EHK 100 100
+Weight 0
+Material cloth~
+End
+
+#0
+
+
+
+#ROOMS
+#11200
+Name `REntrance`X~
+Desc This room has several pegs along the eastern wall - presumably to hang
+cloaks and such.  There is a small basin of water in an alcove in the
+western wall.  The floor is flagstone and the walls are dressed fieldstone.
+The room is lit, but the source of that light is not immediately evident.
+There is a wooden door in the north wall.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc basin ~
+A pitcher of water sits in a wide, low basin.  Clearly put here for washing 
+the dust from your hands and face. A few small towels are neatly stacked 
+next to the basin.
+~
+ExtraDesc alcove ~
+A pitcher of water sits in a wide, low basin.  Clearly put here for washing 
+the dust from your hands and face. A few small towels are neatly stacked 
+next to the basin.
+~
+ExtraDesc wooden ~
+A thick wooden door strapped with heavy iron bands.  It is designed to keep 
+the elements out, among other things.
+~
+ExtraDesc north ~
+A thick wooden door strapped with heavy iron bands.  It is designed to keep 
+the elements out, among other things.
+~
+ExtraDesc door ~
+A thick wooden door strapped with heavy iron bands.  It is designed to keep 
+the elements out, among other things.
+~
+ExtraDesc pegs ~
+~
+Exit north 11201
+EFlags door closed~
+Exit east 11202
+EFlags door closed~
+Exit down 58939
+End
+
+
+#11201
+Name `RTrap`X~
+Desc You are in a small room.  The walls are lined with lead.  There are no 
+visible exits. Uh oh!
+~
+RoomFlags dark indoors~
+Sector inside~
+End
+
+
+#11202
+Name `RFireplaced Room`X~
+Desc The predominant feature of this room is the huge fireplace that takes up 
+most of the east wall.  Above the door leading to the stairs up is the Crest 
+of the Clan Archaic.  The floor is covered with thick, plush rugs.  A hint 
+of incense is in the air. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc floor ~
+These thick carpets appear very expensive.  They are so plush that the urge 
+to walk barefoot is almost irresistible.
+~
+ExtraDesc carpet ~
+These thick carpets appear very expensive.  They are so plush that the urge 
+to walk barefoot is almost irresistible.
+~
+ExtraDesc rugs ~
+These thick carpets appear very expensive.  They are so plush that the urge 
+to walk barefoot is almost irresistible.
+~
+ExtraDesc fireplace ~
+The eastern wall is almost entirely made up of a fireplace.  A huge log 
+burns here, the scent wafting into the room.
+~
+ExtraDesc door ~
+The door in the north wall leads to a sprial staircase leading up.
+~
+ExtraDesc crest clan archaic~
+Above the door on the north wall is the crest of the Clan Archaic - an open 
+book above a sword, a shield, and a dagger.
+~
+Exit west 11200
+EFlags door closed~
+Exit up 11203
+EFlags door closed~
+End
+
+
+#11203
+Name `RConference/Meeting Room`X~
+Desc In the center of this room is a large, rectangular, oak table around which 
+10 chairs are placed -- 1 at each end and 4 to a side.  The tabletop has 
+been buffed to a high gloss and on the table in front of each chair is a 
+small pipe stand and a goblet.  `1 The same, unseen light source illuminates this room as the Entry.  There 
+are doors on the north and west walls, plus the stairway down.  The door on 
+the west wall is in the northern corner. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc pipe stand~
+Made of a dark metal, this is built to let a pipe rest and cool off in 
+between uses.
+~
+ExtraDesc goblet ~
+A goblet of crystal sits on a small, round, wooden disc.
+~
+Exit north 11204
+EFlags door closed~
+Exit down 11202
+EFlags door closed~
+Exit northwest 11206
+EFlags door closed~
+EKeyvnum 11201
+End
+
+
+#11204
+Name `RDining Room`X~
+Desc The floor of this room is covered by black and white tiles in a checkerboard 
+pattern.  The large table in the center appears big enough to seat 10 or 12 
+people.  The tabletop is smooth ceramic and also in a black and white 
+checkered pattern.  The aroma of hot apples is in the air.  There are doors 
+on the south and east walls.  The eastern doors are in the southeast corner 
+and have no doorknobs, rather, they swing open and shut. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc floor ~
+The floor is laid in alternating black and white ceramic tiles, each about 1
+foot square.  They appear extremely hard and durable.  No scratches mar the
+gleaming surface.
+~
+ExtraDesc table ~
+A large trestle table is in the middle of the room with place settings for
+12 people.  The top is covered in black and white ceramic in a checkerboard
+pattern.  It differs from the floor, however, in that these squares are only
+2 inches square, and there are no seams visible between the tiles.
+Interesting craftsmanship.
+~
+Exit south 11203
+EFlags door closed~
+Exit southeast 11205
+EFlags door closed~
+End
+
+
+#11205
+Name `RKitchen`X~
+Desc On the south wall of this kitchen is a huge hearth.  Each end has a metal 
+stand with an arm that swings out and back over the fire.  Hanging from each 
+end is a large iron kettle.  There is a large wooden table in the center of 
+the room, its surface marred by countless nicks, cuts, and gouges from years 
+of meal preparation.  The walls are lined with shelves and racks containing 
+spices, seasonings, supplies, and savory smackerals from all over the 
+Realms.  The mixture of scents, aromas, fragrances, bouquets, smells, and 
+emanations is enough to make a golems mouth water. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc hearth ~
+Covering almost the entire south wall, this fireplace could easily sleep two
+people head to toe.
+~
+ExtraDesc stand arm~
+Sturdily built and bolted to the floor, each arm ends in a hook to hold a
+kettle or other such cooking pot.
+~
+ExtraDesc kettle iron~
+A very large iron pot bubbles and simmers with delicious fare.
+~
+ExtraDesc shelf shelves racks walls~
+The shelves cover the rest of the walls from floor to ceiling.  They are
+stocked with every imaginable spice and seasoning - and even some beyond
+imagining.
+~
+Exit northwest 11204
+EFlags door closed~
+End
+
+
+#11206
+Name `RBedroom`X~
+Desc This is clearly a bedroom.  A man sized bed is in the far corner, a dresser 
+is against the near wall.  A thick carpet covers the floor and in the far 
+corner is a small heating stove.  There are lamps on each wall, but they are 
+not lit right now.  The door in the north wall leads to a stairway up.  The 
+door to the southeast leads to a short, curved hall. 
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bed ~
+A normal bed.  Nothing special.
+~
+ExtraDesc dresser ~
+Not very full, this contains one set of fine clothes.  Whoever lives here is
+not big on wardrobes.
+~
+ExtraDesc lamps ~
+Regular oil lamps.
+~
+Exit up 11207
+EFlags door closed~
+Exit southeast 11203
+EFlags door closed~
+EKeyvnum 11201
+End
+
+
+#11207
+Name `RLibrary`X~
+Desc This room is very tall, over 10' in height.  Instead of bookshelves, it 
+seems the walls are covered in cubby holes of various sizes.  Into these 
+cubby holes are packed all manner of writings - scrolls bordered in precious 
+metals, tomes and books of indeterminable age, sheafs of notes and papers 
+some hastily scrawled some the work of a lifetime.  `1There are 2 large tables in the middle of the room, each with a number of 
+chairs.  These chairs do not look like they were built for comfort, but for 
+study.  Along the west wall, however, are 3 overstuffed chairs surrounding a 
+small, low table.  These were clearly designed to be comfortable as they 
+form a semi-circle facing a fireplace.  `1The floors are piled with thick carpets, absorbing most of the sound so it 
+is very quiet in here.  There is a door in the east wall and stairs leading 
+down. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc cubby holes~
+These are various sizes from a few inches across and high to a couple of
+feet each way.  They are jammed full of trinkets, scrolls, books, notes, and
+models of all kinds.
+~
+ExtraDesc tables ~
+Two thick wooden tables are here covered in research materials.
+~
+ExtraDesc fireplace ~
+A low long fireplace blazes giving off a cozy glow.  It makes the whole
+place feel warm.
+~
+ExtraDesc floor carpets~
+There are dozens of carpets on the floor of all shapes and sizes.  In some
+areas they are three thick.  The effect is to dampen the sound and keep the
+heat in.  All in all, a very comfortable room.
+~
+Exit north 11209
+EFlags door closed locked nopass hard~
+EKeyvnum 11201
+Exit east 11208
+EFlags door closed~
+Exit down 11206
+EFlags door closed~
+End
+
+
+#11208
+Name `RLaboratory`X~
+Desc The floors and walls of this room are totally bare.  The entire perimeter is 
+lined with lab tables covered with all kinds of paraphenalia.  Strange 
+scents and pungent aromas fill the air, and the sound of bubbling liquid 
+comes from one corner.  There is a door in the west wall, the only break in 
+the tables. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc laboratory tables~
+The tables completely surround the room, except for the door.  They are
+covered with beakers, test tubes, burners, and flasks.  There are
+instruments of metal, wood, and ceramic all about and various containers of
+ingredients and components.
+~
+Exit west 11207
+EFlags door closed~
+End
+
+
+#11209
+Name `RMaster Bedroom`X~
+Desc This large room is semi-circular in shape.  In the southeast corner is a 
+large fireplace, a door is in the middle of the south wall.  In the 
+southeast corner is a small shrine to Anacor.  Dominating the curved 
+northern wall is a large, canopied bed.  At the foot of the bed is an 
+oversized chest.  `1The floor is covered by thick, wool carpets and one large bearskin rug. 
+Walls are adorned with paintings and tapestries.  The overall effect is to 
+make the room appear a bit smaller - although in a cozy sort of way. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+ExtraDesc fireplace ~
+A medium sized fireplace generating a lot of heat and giving off a warm
+golden glow.
+~
+ExtraDesc shrine anacor~
+A small shrine dedicated to the god of Civilization and Learning is in the
+corner.
+~
+ExtraDesc floor carpets wool~
+These thick woll carpets will insulate the room keeping the heat in and the
+chill out.  They also serve to dampen the sound somewhat.  They are
+expensive looking, but attached to the floor somehow and are not moveable.
+~
+ExtraDesc walls paintings tapestry tapestries~
+The paintings and tapestries show a conservative sense of taste.  Mostly
+seascapes, there is one that portrays a high mountaintop with a dragon
+soaring nearby.
+~
+Exit south 11207
+EFlags door closed locked nopass hard~
+EKeyvnum 11201
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 11202 -1 11202
+M 0 11202 1 11202 1
+O 0 11203 -1 11203
+M 0 11204 1 11204 1
+M 0 11205 1 11205 1
+O 0 11207 -1 11207
+O 0 11209 -1 11209
+O 0 11200 -1 11209
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

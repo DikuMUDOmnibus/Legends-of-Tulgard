@@ -1,0 +1,1062 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        NoWhere Important~
+ShortName   NoWhere~
+Builders    delandria~
+VNUMs       37000 37050
+LComment    `#`C[ 40- 55]`^
+LRange      40 50
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:24 2005~
+End
+
+
+
+#MOBILES
+#37000
+Name something~
+ShortD `#Something`^~
+LongD Something is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType wrath
+AC -200 -200 -200 -180
+Wealth 750
+Act    npc no_tame stay_area~
+Off    parry~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#37001
+Name nothing~
+ShortD `#`YNothing`^~
+LongD Nothing is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType wrath
+AC -157 -157 -157 -139
+Wealth 520
+Act    npc no_tame stay_area~
+Off    parry~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#37002
+Name shadow~
+ShortD a `#`sShadow`^~
+LongD A being made of shadow is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 44
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType wrath
+AC -200 -200 -200 -174
+Wealth 640
+Act    npc no_tame stay_area~
+Off    parry~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#37003
+Name it~
+ShortD `#`BIT`^~
+LongD IT is lurking about.~
+Desc ~
+Race human~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType wrath
+AC -250 -250 -250 -212
+Wealth 600
+Act    npc no_tame stay_area~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#37004
+Name invisible strange being~
+ShortD a `#`mstrange`^ being~
+LongD A strange being is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType wrath
+AC -200 -200 -200 -176
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  invisible~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#37005
+Name mist~
+ShortD `#`sa Mist`^~
+LongD `#`sA mist is hovering here.`^~
+Desc ~
+Race Lich~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType wrath
+AC -250 -250 -250 -202
+Wealth 640
+Act    npc no_tame stay_area~
+AffBy  detect_invis detect_hidden otterlungs pass_door~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    mental illusion scry~
+Vuln   holy light~
+Form   edible poison magical non_skinable sentient undead biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#37000
+Name shadow cloak~
+Short a `#`Wt`wr`Wa`wn`Ws`wl`Wu`wc`We`wn`Wt `sShadow `wCloak`^~
+Desc A `#`Wt`wr`Wa`wn`Ws`wl`Wu`wc`We`wn`Wt `sShadow `wCloak`^ is lying here.~
+Level 50
+ItemType armor~
+Cost 560
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 50
+Material cloth~
+Extra    antigood nonmetal burnproof~
+Wear     take about~
+Affect modifier -1 50 -1 hp 2 0
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 damroll 2 0
+Affect modifier -1 50 -1 saves -2 0
+End
+
+#0
+
+
+
+#ROOMS
+#37000
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37036
+EFlags door closed~
+Exit south 37001
+End
+
+
+#37001
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37000
+Exit east 37002
+Exit south 37006
+Exit west 37007
+End
+
+
+#37002
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37003
+Exit south 37005
+Exit west 37001
+End
+
+
+#37003
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37015
+Exit south 37004
+Exit west 37002
+End
+
+
+#37004
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37003
+Exit east 37014
+Exit south 37012
+Exit west 37005
+End
+
+
+#37005
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37002
+Exit east 37004
+Exit south 37011
+Exit west 37006
+End
+
+
+#37006
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37001
+Exit east 37005
+Exit south 37010
+Exit west 37008
+End
+
+
+#37007
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37001
+Exit south 37008
+End
+
+
+#37008
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37007
+Exit east 37006
+Exit south 37009
+End
+
+
+#37009
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37008
+Exit east 37010
+End
+
+
+#37010
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37006
+Exit east 37011
+Exit west 37009
+End
+
+
+#37011
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37005
+Exit east 37012
+Exit west 37010
+End
+
+
+#37012
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37004
+Exit east 37013
+Exit west 37011
+End
+
+
+#37013
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37014
+Exit west 37012
+Exit down 37016
+End
+
+
+#37014
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37015
+Exit south 37013
+Exit west 37004
+End
+
+
+#37015
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 37014
+Exit west 37003
+End
+
+
+#37016
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 37017
+Exit up 37013
+End
+
+
+#37017
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37016
+Exit east 37018
+Exit south 37022
+Exit west 37024
+End
+
+
+#37018
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37019
+Exit south 37021
+Exit west 37017
+End
+
+
+#37019
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 37020
+Exit west 37018
+End
+
+
+#37020
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37019
+Exit west 37021
+End
+
+
+#37021
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37018
+Exit east 37020
+Exit west 37022
+End
+
+
+#37022
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37017
+Exit east 37021
+Exit west 37023
+End
+
+
+#37023
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37024
+Exit east 37022
+Exit west 37026
+End
+
+
+#37024
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37017
+Exit south 37023
+Exit west 37025
+End
+
+
+#37025
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37024
+Exit south 37026
+Exit west 37027
+End
+
+
+#37026
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37025
+Exit east 37023
+Exit west 37028
+End
+
+
+#37027
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37025
+Exit south 37028
+End
+
+
+#37028
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37027
+Exit east 37026
+Exit down 37029
+End
+
+
+#37029
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 37030
+Exit up 37028
+End
+
+
+#37030
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37029
+Exit east 37031
+Exit south 37041
+End
+
+
+#37031
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37032
+Exit south 37040
+Exit west 37030
+End
+
+
+#37032
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37033
+Exit south 37039
+Exit west 37031
+End
+
+
+#37033
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 37034
+Exit south 37035
+Exit west 37032
+End
+
+
+#37034
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 37038
+Exit west 37033
+End
+
+
+#37035
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37033
+Exit east 37038
+Exit south 37047
+Exit west 37039
+End
+
+
+#37036
+Name Nowhere~
+Desc You land with a resounding thud.  Standing up you study your surroundings.  
+Looking up you see nothing but blackness.  To the south you see a thick 
+marble door.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 37000
+EFlags door closed~
+Exit up 37042
+End
+
+
+#37037
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37038
+Exit west 37047
+End
+
+
+#37038
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37034
+Exit south 37037
+Exit west 37035
+End
+
+
+#37039
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37032
+Exit east 37035
+Exit south 37045
+Exit west 37040
+End
+
+
+#37040
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37031
+Exit east 37039
+Exit south 37044
+Exit west 37041
+End
+
+
+#37041
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37030
+Exit east 37040
+Exit south 37043
+End
+
+
+#37042
+Name Nowhere~
+Desc . 
+ 
+And fall......
+~
+RoomFlags indoors~
+Sector cave~
+Exit up 37046
+Exit down 37036
+End
+
+
+#37043
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37041
+Exit east 37044
+End
+
+
+#37044
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37040
+Exit east 37045
+Exit west 37043
+End
+
+
+#37045
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37039
+Exit east 37047
+Exit west 37044
+End
+
+
+#37046
+Name Nowhere~
+Desc . 
+ 
+And fall......
+~
+RoomFlags indoors~
+Sector cave~
+Exit up 37050
+Exit down 37042
+End
+
+
+#37047
+Name Nowhere~
+Desc You are standing inside of a large room.  You do not know where you are.  
+You are nowhere.  There is something all around you yet you do not know what 
+it is.  Does the room look like it is getting smaller?  Are the walls caving 
+in?  Is the ceiling dropping?  Is that hot breath you feel on your back?  
+What is that noise?  There is something watching you!  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 37035
+Exit east 37037
+Exit west 37045
+End
+
+
+#37048
+Name Nowhere~
+Desc Whoops you slipped!
+ 
+You begin to fall.....
+~
+RoomFlags indoors~
+Sector cave~
+Exit up 57021
+Exit down 37050
+End
+
+
+#37049
+Name Nowhere~
+Desc ~
+RoomFlags indoors~
+Sector cave~
+End
+
+
+#37050
+Name Nowhere~
+Desc . 
+ 
+And fall......
+~
+RoomFlags indoors~
+Sector cave~
+Exit up 37048
+Exit down 37046
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 37003 25 37001 5
+M 0 37003 25 37003 5
+M 0 37000 20 37005 5
+M 0 37000 20 37009 5
+M 0 37000 20 37011 5
+M 0 37000 20 37013 5
+M 0 37004 20 37014 5
+M 0 37001 20 37017 5
+M 0 37001 20 37020 5
+M 0 37005 10 37021 2
+M 0 37004 20 37023 5
+M 0 37003 25 37024 5
+M 0 37005 10 37025 2
+M 0 37001 20 37026 5
+M 0 37001 20 37027 5
+M 0 37003 25 37028 5
+M 0 37002 30 37030 5
+E 0 37000 -1 about~
+M 0 37002 30 37032 5
+E 0 37000 -1 about~
+M 0 37004 20 37034 5
+M 0 37004 20 37035 5
+O 0 50050 -1 37036
+M 0 37005 10 37037 2
+M 0 37002 30 37038 5
+E 0 37000 -1 about~
+M 0 37002 30 37039 5
+E 0 37000 -1 about~
+M 0 37003 25 37040 5
+M 0 37005 10 37041 2
+M 0 37002 30 37044 5
+E 0 37000 -1 about~
+M 0 37005 10 37045 2
+M 0 37002 30 37047 5
+E 0 37000 -1 about~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

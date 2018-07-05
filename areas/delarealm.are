@@ -1,0 +1,325 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Delandria's Realm~
+ShortName   Delandria's Realm~
+Builders    delandria~
+VNUMs       11650 11670
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Sun Jun 12 20:30:14 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#11650
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 K 0 11658 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#11651
+Name treasury key~
+Short `#`wSarrie's `yHouse Key`^~
+Desc `#`wSarrie's `yHouse Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#11652
+Name small square cherrywood table~
+Short `#`wa small square `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable`^~
+Desc `#`wa small square `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable is sitting here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#11653
+Name king size royal bed ~
+Short `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it`^~
+Desc `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 150 150
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#11654
+Name child bed ship~
+Short `#`wa young child's `sbed `wshaped like a `yship`^~
+Desc `#`wa young child's `sbed `wshaped like a `yship `wis sitting here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 100 100
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#11655
+Name black leather sofa couch~
+Short `#`wa `sblack `wleather sofa`^~
+Desc `#`wa `sblack `wleather sofa sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 BEHJR 100 100
+Weight 400
+Material leather~
+Extra    nodegrade burnproof norestring~
+End
+
+#11656
+Name marble fountain water~
+Short `#`wa large `sblack marble `wfountain`^~
+Desc `#`wa large `sblack marble `wfountain sits here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nolocate nodegrade burnproof nogetall~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#11650
+Name Opening in the mountain~
+Desc You find yourself inside of an opening in the side of a mountain. Only the 
+light from where you came from lights the room. There is a strange wooden 
+door here. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector cave~
+Exit east 11651
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 11651
+EKeywords door~
+Exit southwest 53247
+End
+
+
+#11651
+Name Hallway~
+Desc The ceiling in this room is at least 15 to 20 feet tall. The walls are made 
+of rock as the home is built into the side of a mountain. The dome shaped 
+ceiling has a huge mural painted on it of a huge pirate ship with black and 
+red sails. It looks like it is sailing into a beautiful sunset. There is a 
+set of stairs leading down farther into the mountain. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit north 11652
+Exit south 11653
+Exit west 11650
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 11651
+EKeywords door~
+Exit down 11654
+End
+
+
+#11652
+Name Den~
+Desc The walls and floor of this room is made of rock but the floor is covered in 
+a large black plush rug. A magical fireplace burns in a niche built into the 
+far northwest corner of the room. The rest of the walls are lined with 
+bookshelves reaching the ceiling, each full of books. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit south 11651
+End
+
+
+#11653
+Name Kitchen~
+Desc The walls here are made of stone and so is the floor. There is a cookstove 
+in the far southeast corner of the room that has a pipe leading into the 
+wall to pipe out the smoke. A small black marble wash basin and work counter 
+is along the west wall of the room. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit north 11651
+End
+
+
+#11654
+Name Hallway~
+Desc The walls and floor is made of rock but there are metal brackets hanging on 
+the walls with lanterns for light. It is slightly chilly down here. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit east 11655
+Exit up 11651
+End
+
+
+#11655
+Name Hallway~
+Desc The walls and floor is made of rock but there are metal brackets hanging on 
+the walls with lanterns for light. It is slightly chilly down here. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit north 11657
+Exit east 11658
+Exit south 11656
+Exit west 11654
+End
+
+
+#11656
+Name Children's Room~
+Desc A small magical fire on the far western wall warms the room. It is grated 
+off so that you cannot accidently get into it. The rock floor is covered by 
+a thick fluffy blue carpet and the bare rock walls have tapestries of ships 
+and sword fighting hanging on them. There is a huge toy box resting on the 
+east wall overflowing with toys. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit north 11655
+End
+
+
+#11657
+Name Spare Bedroom~
+Desc A small magical fireplace warms the air. The walls and floor is made of 
+stone but there is a large red area rug covering the floor. There are no 
+windows as the home is built below the ground. Several lanterns hang from 
+the walls to help light the room. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit south 11655
+End
+
+
+#11658
+Name Master Bedroom~
+Desc You find yourself inside of what looks like the master bedroom. There are 
+several tapestries hanging on the walls to cover the bland looking rock 
+wall. Each has some sort of water scene on it with at least one ship. There 
+is a plush black carpet covering the stone floor. A large floor lantern is 
+resting in the corner of the room by a small bedside table. There is also a 
+large magical fire burning in a niche in the wall on the southern wall of 
+the room. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit west 11655
+End
+
+
+#11659
+Name Treasury Room~
+Desc This is a plan room. There are no windows because the house is built into 
+the side of a mountain. Several crates and shelves line the walls. 
+~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 11656 -1 11651
+O 0 11655 -1 11652
+O 0 11652 -1 11653
+O 0 11654 -1 11656
+O 0 8906 -1 11657
+O 0 11653 -1 11658
+O 0 11650 -1 11659
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

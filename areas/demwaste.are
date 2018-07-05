@@ -1,0 +1,3998 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Demon Wasteland~
+ShortName   Demon Wasteland~
+Builders    ardayne~
+Credits     Ardayne~
+VNUMs       9460 9660
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      50 85
+Security    7
+Colour      ~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Abaddon~
+*LastSaved  Sun Sep 18 20:37:21 2005~
+End
+
+
+
+#MOBILES
+#9460
+Name gargoyle stone grey~
+ShortD a stone gargoyle~
+LongD A large gargoyle is here; He eyes you cautiously as others group around him.~
+Desc Adorned atop this gargoyle's head are two wicked horns curling from either 
+side of his head. His face appears to be somewhat humanoid in appearance, if 
+not for the dark ashen-gray color or sharp fangs protruding from his lips. 
+His eyes when open are an eerie, glowing yellow. His form, mainly humanoid, 
+still maintains it's enigmatic gargoyle properties with his muscular 
+gargoyle legs, clawed feet and slender but long, whip-like forked tail. Down 
+his back are sharp, thin spines of black bone starting from the base of his 
+neck, to mid-tail. His wings are large and leathery with a small little claw 
+on them. 
+~
+Race gargoyle~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType claw
+AC -300 -300 -300 -258
+Wealth 50
+Act    npc no_tame stay_area~
+AffBy  flying dark_vision~
+AffBy2 passwotrace~
+Off    disarm dodge assist_race~
+Imm    poison disease drowning sleep scry hunger thirst~
+Res    pierce slash~
+Vuln   lightning acid~
+Form   edible sentient construct biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#9461
+Name kobold ugly drooling~
+ShortD a kobold~
+LongD A short fat kobold is here, drooling all over itself.~
+Desc A snotty, squat little kobold is here. Dark skin covers his body. Wisps of 
+hair tuft off his nearly bald head. Pointed ears poke from his bulbous head. 
+His eyes glow an eerie red. He smirks amused as his drool falls down over 
+the front of his rusted breastplate. 
+~
+Race kobold~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+285
+ManaDice 5d9+285
+DamDice 6d7+20
+DamType punch
+AC -220 -220 -220 -193
+Wealth 0
+Act    npc scavenger no_tame aggressive stay_area thief~
+AffBy  infrared dark_vision berserk~
+Res    pierce poison~
+Vuln   energy mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9462
+Name rock centipede worm~
+ShortD a rock worm~
+LongD A small rock worm scurrying across the desert is here.~
+Desc This rock worm is similar to a large centipede. It scurries across the 
+ground eating rocks and other items that it finds. 
+~
+Race centipede~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType acbite
+AC -250 -250 -250 -200
+Wealth 0
+Act    npc no_tame stay_area warrior~
+AffBy  dark_vision berserk~
+Off    fast~
+Imm    disease sleep hunger thirst~
+Res    negative holy~
+Vuln   fire cold acid~
+Form   non_skinable insect~
+Part   guts eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#9463
+Name succubi demon female lust luscious succubus~
+ShortD a luscious succubus~
+LongD A luscious succubus is here, taunting you with her supple body.~
+Desc The perfect woman of your dreams is here. Her supple body entices you to 
+join her...  with what you ask? Does it matter? Her eyes gleam wickedly and 
+you're captivated. Nevermind the tail, the talons... the horns or leathery 
+imp-like wings... She's perfect. Or is she...? 
+~
+Race demon~
+Align -3 -3
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType scratch
+AC -350 -350 -350 -297
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden infrared flying dark_vision~
+Off    disarm dodge tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   cold holy~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#9464
+Name lesser demon~
+ShortD a lesser demon~
+LongD A lesser demon wandering about the wasteland aimlessly is here.~
+Desc This demon is almost human like in figure. He stands rather tall and has a 
+dark black skin. His fingernails have grown into razor sharp claws. His eyes 
+are a dark red that pierce into your soul. 
+~
+Race demon~
+Align -3 -3
+Level 66
+Hitroll 10
+HitDice 7d10+340
+ManaDice 7d10+370
+DamDice 7d8+32
+DamType claw
+AC -360 -360 -360 -295
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden infrared flying dark_vision~
+Off    berserk disarm kick parry tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9465
+Name high demon greater~
+ShortD a greater demon~
+LongD A greater demon is here, towering over you.~
+Desc These demons are quite large. They are similar to the lesser demons except 
+they are larger and they don't have human-like legs. The legs on this 
+greater demon are more goat like. They are hoofed and can kick with some 
+fierce damage. 
+~
+Race demon~
+Align -3 -3
+Level 70
+Hitroll 10
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType claw
+AC -400 -400 -400 -332
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden infrared flying dark_vision~
+Off    bash disarm dodge kick tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#9466
+Name demon lord~
+ShortD a demon lord~
+LongD (no default description)~
+Desc ~
+Race demon~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden infrared flying dark_vision~
+Off    tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9467
+Name demon overlord~
+ShortD the demon `#`So`bv`Be`brlo`Br`Sd`^~
+LongD A massively `#`gt`Ge`Yr`yr`rif`yy`Yi`Gn`gg`^ demon `#`So`bv`Be`brlo`Br`Sd`^ is here smokin' a cigar with a smirk.~
+Desc Standing.. sitting.. I don't know.. you decide.. is a Friggen HUGE demon. 
+Huge. Just.. just huge. Bulbous greasy arms sprout.. yeah, sprout from his 
+slimy, greasy body. He looks more like a maggot that's been filled with 
+jelly. Waddling about here and there.. jiggling with every movement.. that 
+Smirk.. Omg.. the smirk. That disgusting smirk is always there as he smokes 
+his cigar.. and the SMELL!! GODS!! What IS that SMELL?! You stand there 
+stupified.. should you hit him? Heck.. if you did i bet your sword would 
+bounce off.. wanna try? 
+~
+Race demon~
+Align -3 -3
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType claw
+AC -610 -610 -610 -530
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden infrared flying dark_vision~
+Off    bash berserk disarm dodge parry tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#9468
+Name thri-kreen thrikreen soldier~
+ShortD a thri-kreen soldier~
+LongD A large thri-kreen soldier stands here proudly.~
+Desc This tall grasshopper like insect is quite strong. His mandibles could 
+probably cut you in half. 
+~
+Race thri-kreen~
+Align -2 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType slash
+AC -400 -400 -400 -324
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  dark_vision~
+Off    bash berserk disarm dodge kick~
+Res    poison disease~
+Vuln   cold~
+Form   edible poison biped insect cold_blood~
+Part   head arms legs heart brains guts hands feet fingers eye eyestalks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9469
+Name thri-kreen thrikreen queen female~
+ShortD a thri-kreen queen~
+LongD A massive thri-kreen queen is here, ordering about the soldiers.~
+Desc This thri-kreen is very, very large. She towers over all the rest of the 
+soldiers. It appears as if the soldiers serve her and take care of her. Her 
+carapace is extraordinarily thick compared to normal thri-kreen. Hurting her 
+might prove difficult. 
+~
+Race thri-kreen~
+Align 0 0
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType bite
+AC -550 -550 -550 -456
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary haste dark_vision regeneration~
+Off    berserk disarm dodge fast parry~
+Res    weapon poison disease~
+Vuln   cold~
+Form   edible poison biped insect cold_blood~
+Part   head arms legs heart brains guts hands feet fingers eye eyestalks~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    female~
+Material unknown
+END
+
+#9470
+Name thrikreen thri-kreen drone~
+ShortD a thri-kreen drone~
+LongD A large thri-kreen drone is here protecting his queen!~
+Desc This tall grasshopper like insect is quite strong. His mandibles could 
+probably cut you in half. 
+~
+Race thri-kreen~
+Align -2 -2
+Level 80
+Hitroll 10
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -445
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  dark_vision~
+Off    bash berserk disarm dodge kick~
+Res    bash poison disease~
+Vuln   cold~
+Form   edible poison biped insect cold_blood~
+Part   head arms legs heart brains guts hands feet fingers eye eyestalks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9471
+Name short fat goblin gremlin~
+ShortD a short goblin~
+LongD A short, fat goblin wallows about here in his own filth.~
+Desc This goblin is short, fat, and disgusting. Enough said? 
+~
+Race goblin~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType grep
+AC -450 -450 -450 -396
+Wealth 469
+Act    npc no_tame stay_area~
+AffBy  dark_vision~
+Off    berserk disarm dodge~
+Imm    poison disease~
+Res    negative~
+Vuln   fire mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#9472
+Name lost adventurer explorer human~
+ShortD a lost explorer~
+LongD A lost explorer stands here, refusing to leave the crevice.~
+Desc ~
+Race human~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType punch
+AC -157 -157 -157 -138
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#9460
+Name rusty short sword shortsword~
+Short a `#`yrusty`^ shortsword~
+Desc A rusty shortsword lays here collecting dust.~
+Level 48
+ItemType weapon~
+Cost 30
+Durability 1
+Asize 0
+Rsize 50
+Values sword 10 4 slash H
+Weight 0
+Material iron~
+Extra    burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 48 -1 damroll 2 0
+Affect modifier -1 48 -1 hitroll 4 0
+Affect modifier -1 48 -1 strength 1 0
+End
+
+#9461
+Name rusted buckler~
+Short a `#`yrusted`^ buckler~
+Desc A rusted buckler is here collecting dust.~
+Level 48
+ItemType armor~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 15 17 16 12 0
+Weight 0
+Material iron~
+Extra    burnproof~
+Extra2   nodecay~
+Wear     take shield~
+Affect modifier -1 48 -1 ac -10 0
+Affect modifier -1 48 -1 quickness 2 0
+End
+
+#9462
+Name voulge iron flaming~
+Short an iron voulge~
+Desc A large polearm engulfed in flames is here.~
+Level 58
+ItemType weapon~
+Cost 698
+Durability 1
+Asize 0
+Rsize 50
+Values polearm 5 12 thrust AEFL
+Weight 0
+Material iron~
+Extra    dark magic burnproof~
+Extra2   nodecay nosecondary~
+Wear     take wield~
+Affect resist -1 58 -1 none 0 scry
+Affect modifier -1 58 -1 damroll 4 0
+End
+
+#9463
+Name chest treasury~
+Short a treasure chest~
+Desc A treasure chest is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 ABCD 9468 100 0
+Weight 0
+Material metal~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9464
+Name iron stilleto dagger acid blade corrosion~
+Short an `#`Xi`Sron `Xs`Stiletto`^~
+Desc An long bladed dagger is here with some acid corrosion on the blade.~
+Level 72
+ItemType weapon~
+Cost 560
+Durability 1
+Asize 0
+Rsize 50
+Values dagger 7 8 acbite DH
+Weight 0
+Material iron~
+Extra    glow evil magic nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect resist -1 72 -1 none 0 acid
+Affect modifier -1 72 -1 hp -2 0
+End
+
+#9465
+Name horned helm great~
+Short a great horned helm~
+Desc A massive horned helm is here.~
+Level 70
+ItemType armor~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 17 18 17 14 0
+Weight 0
+Material unknown~
+Extra    evil nolocate nodegrade burnproof horned~
+Extra2   nodecay~
+Wear     take head~
+ClassAllowances warrior paladin ranger barbarian bard~
+Affect modifier -1 70 -1 hp 10 0
+End
+
+#9466
+Name lava spout spirt~
+Short a lava spout~
+Desc A small lava spout is here, bubbling violently.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9467
+Name ancient book skin~
+Short an `#`RA`rncient `RB`rook of `RS`rkin`^~
+Desc An `#`RA`rncient `RB`rook of `RS`rkin`^ is here.~
+Level 70
+ItemType scroll~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 60 'rocky skin' 'iron skin' 'tough skin' 'stone skin'
+Weight 0
+Material unknown~
+Extra    glow nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#9468
+Name obsidian key skin~
+Short an `#`Xo`Sbsidian`^ key~
+Desc An obsidian key has been left here carelessly.~
+Level 0
+ItemType key~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material obsidian~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take hold no_sac~
+End
+
+#9469
+Name gothic shield gold silver gilded~
+Short a `#`Yg`yi`Xld`ye`Yd`^ `#`Yg`yothic`^ `#`Ys`yhield`^~
+Desc A large gothic shield is here, gilded with gold and silver.~
+Level 80
+ItemType armor~
+Cost 1069
+Durability 1
+Asize 0
+Rsize 50
+Values 26 25 26 21 0
+Weight 0
+Material iron~
+Extra    glow bless antievil nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take shield~
+Affect resist -1 80 -1 none 0 negative
+Affect modifier -1 80 -1 ac -10 0
+ExtraDesc gothic shield gold silver gilded~
+A large gothic shield is here, gilded with gold and silver. Across the 
+center of the shield are two cross swords, and beneath the swords a coiled 
+serpent. 
+~
+End
+
+#9470
+Name lie~
+Short an ancient door~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 0 0 9660 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9471
+Name path~
+Short an ancient tomb~
+Desc An ancient tomb is here, covered in dust.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+ExtraDesc tomb ancient riddle~
+Ancient writings are upon this tomb. They read:
+`1
+`1
+What runs through the woods without a sound?
+`1
+`1
+Open the answer to get your reward.
+~
+End
+
+#9472
+Name portal door exit~
+Short a large portal~
+Desc A large portal is here for you to leave through.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 0 0 9578 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9473
+Name decapitated corpse headless female~
+Short a decapitated corpse~
+Desc A decapitated corpse of a female human is here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9474
+Name decapitated head female~
+Short a decapitated head~
+Desc A decapitated head lays here oozing.~
+Level 81
+ItemType jewelry~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flesh~
+Extra    dark evil magic antigood nonmetal nodegrade burnproof~
+Extra2   nochaoslace~
+Wear     take hold no_sac~
+Affect modifier -1 81 -1 mana 120 0
+Affect modifier -1 81 -1 selfdiscipline 2 0
+Affect modifier -1 81 -1 empathy 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#9460
+Name The Stellar Gateway~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector gateway~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9461
+Exit east 9463
+Exit south 9464
+Exit west 9462
+End
+
+
+#9461
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9465
+Exit east 9469
+Exit south 9460
+Exit west 9467
+End
+
+
+#9462
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9467
+Exit east 9460
+Exit southeast 9464
+End
+
+
+#9463
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9469
+Exit west 9460
+Exit southwest 9464
+End
+
+
+#9464
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9460
+Exit south 9510
+EFlags door closed~
+Exit northeast 9463
+Exit northwest 9462
+End
+
+
+#9465
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9466
+Exit east 9470
+Exit south 9461
+Exit west 9468
+End
+
+
+#9466
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9473
+Exit east 9472
+Exit south 9465
+Exit west 9471
+End
+
+
+#9467
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9468
+Exit east 9461
+Exit south 9462
+End
+
+
+#9468
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9471
+Exit east 9465
+Exit south 9467
+Exit northwest 9476
+End
+
+
+#9469
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9470
+Exit south 9463
+Exit west 9461
+End
+
+
+#9470
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9472
+Exit south 9469
+Exit west 9465
+Exit northeast 9477
+End
+
+
+#9471
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9474
+Exit east 9466
+Exit south 9468
+Exit west 9476
+End
+
+
+#9472
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9475
+Exit east 9477
+Exit south 9470
+Exit west 9466
+End
+
+
+#9473
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9480
+Exit east 9475
+Exit south 9466
+Exit west 9474
+End
+
+
+#9474
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9481
+Exit east 9473
+Exit south 9471
+Exit west 9479
+End
+
+
+#9475
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9483
+Exit east 9478
+Exit south 9472
+Exit west 9473
+End
+
+
+#9476
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9479
+Exit east 9471
+Exit southeast 9468
+End
+
+
+#9477
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9478
+Exit west 9472
+Exit southwest 9470
+End
+
+
+#9478
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9484
+Exit south 9477
+Exit west 9475
+Exit northeast 9493
+End
+
+
+#9479
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9482
+Exit east 9474
+Exit south 9476
+Exit northwest 9487
+End
+
+
+#9480
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9485
+Exit east 9483
+Exit south 9473
+Exit west 9481
+Exit down 12100
+End
+
+
+#9481
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9489
+Exit east 9480
+Exit south 9474
+Exit west 9482
+End
+
+
+#9482
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9488
+Exit east 9481
+Exit south 9479
+Exit west 9487
+End
+
+
+#9483
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9486
+Exit east 9484
+Exit south 9475
+Exit west 9480
+End
+
+
+#9484
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9492
+Exit east 9493
+Exit south 9478
+Exit west 9483
+End
+
+
+#9485
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9496
+Exit east 9486
+Exit south 9480
+Exit west 9489
+End
+
+
+#9486
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9498
+Exit east 9492
+Exit south 9483
+Exit west 9485
+End
+
+
+#9487
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9482
+Exit west 9490
+Exit northeast 9488
+Exit southeast 9479
+End
+
+
+#9488
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9489
+Exit south 9482
+Exit northeast 9497
+Exit southwest 9487
+End
+
+
+#9489
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9497
+Exit east 9485
+Exit south 9481
+Exit west 9488
+End
+
+
+#9490
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9487
+Exit west 9491
+EFlags door closed~
+End
+
+
+#9491
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9490
+EFlags door closed~
+Exit west 9644
+Exit southwest 9645
+Exit northwest 9518
+End
+
+
+#9492
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit south 9484
+Exit west 9486
+Exit southeast 9493
+Exit northwest 9498
+End
+
+
+#9493
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9495
+EFlags door closed~
+Exit west 9484
+Exit up 9494
+Exit southwest 9478
+Exit northwest 9492
+End
+
+
+#9494
+Name Base of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags no_mob indoors~
+Sector mountain~
+Exit east 9519
+Exit down 9493
+End
+
+
+#9495
+Name A Small Cavern~
+Desc This cavern is small, but it houses a very nasty, little creature. 
+~
+Sector inside~
+Exit west 9493
+EFlags door closed~
+End
+
+
+#9496
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9498
+Exit south 9485
+Exit west 9497
+Exit up 9499
+End
+
+
+#9497
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9496
+Exit south 9489
+Exit southwest 9488
+End
+
+
+#9498
+Name Within the Canyon~
+Desc All about you is a barren wasteland. The occasional lava spout erupts from 
+the ground pouring lava out across the canyon. Various skeletons of plants 
+that used to be twist and turn in the wind that sweeps across the land. Most 
+of the creatures that inhabit this canyon are scavengers that wouldn't mind 
+a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit south 9486
+Exit west 9496
+Exit southeast 9492
+End
+
+
+#9499
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9500
+Exit down 9496
+End
+
+
+#9500
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9504
+Exit east 9501
+Exit south 9499
+Exit west 9502
+End
+
+
+#9501
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9505
+Exit west 9500
+End
+
+
+#9502
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9503
+Exit east 9500
+End
+
+
+#9503
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9506
+Exit east 9504
+Exit south 9502
+Exit west 9507
+End
+
+
+#9504
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9515
+Exit east 9505
+Exit south 9500
+Exit west 9503
+End
+
+
+#9505
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9509
+Exit east 9508
+Exit south 9501
+Exit west 9504
+End
+
+
+#9506
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9537
+Exit east 9515
+Exit south 9503
+Exit west 9516
+End
+
+
+#9507
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9516
+Exit east 9503
+End
+
+
+#9508
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+Exit north 9517
+Exit west 9505
+End
+
+
+#9509
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9539
+Exit east 9517
+Exit south 9505
+Exit west 9515
+End
+
+
+#9510
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9464
+EFlags door closed~
+Exit south 9511
+Exit southeast 9513
+Exit southwest 9512
+End
+
+
+#9511
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9510
+Exit east 9513
+Exit south 9514
+Exit west 9512
+End
+
+
+#9512
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9511
+Exit northeast 9510
+Exit southeast 9514
+End
+
+
+#9513
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9511
+Exit southwest 9514
+Exit northwest 9510
+End
+
+
+#9514
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9511
+Exit northeast 9513
+Exit northwest 9512
+End
+
+
+#9515
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9538
+Exit east 9509
+Exit south 9504
+Exit west 9506
+End
+
+
+#9516
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9535
+Exit east 9506
+Exit south 9507
+Exit west 9543
+End
+
+
+#9517
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9540
+Exit east 9544
+Exit south 9508
+Exit west 9509
+End
+
+
+#9518
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9644
+Exit west 9646
+Exit southeast 9491
+Exit northwest 9648
+End
+
+
+#9519
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9520
+Exit east 9522
+Exit south 9521
+Exit west 9494
+End
+
+
+#9520
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9525
+Exit east 9527
+Exit south 9519
+End
+
+
+#9521
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9519
+Exit east 9532
+Exit south 9526
+End
+
+
+#9522
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9527
+Exit east 9523
+Exit south 9532
+Exit west 9519
+End
+
+
+#9523
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9530
+Exit east 9524
+Exit south 9534
+Exit west 9522
+End
+
+
+#9524
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit west 9523
+Exit southwest 9534
+Exit northwest 9530
+End
+
+
+#9525
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9528
+Exit east 9529
+Exit south 9520
+End
+
+
+#9526
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9521
+Exit east 9533
+Exit south 9531
+End
+
+
+#9527
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9529
+Exit east 9530
+Exit south 9522
+Exit west 9520
+End
+
+
+#9528
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit south 9525
+Exit southeast 9529
+End
+
+
+#9529
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit south 9527
+Exit west 9525
+Exit southeast 9530
+Exit northwest 9528
+End
+
+
+#9530
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit south 9523
+Exit west 9527
+Exit southeast 9524
+Exit northwest 9529
+End
+
+
+#9531
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9526
+Exit northeast 9533
+End
+
+
+#9532
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9522
+Exit east 9534
+Exit south 9533
+Exit west 9521
+End
+
+
+#9533
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9532
+Exit west 9526
+Exit northeast 9534
+Exit southwest 9531
+End
+
+
+#9534
+Name On the side of the Mountain~
+Desc You stand on the side of a mountain that extends above the canyon walls of 
+the wasteland. Lava pours down the side of the mountain in very precise 
+streams. Rock outcroppings jut out of the side of the mountain making your 
+journey up or down it quite difficult. 
+~
+RoomFlags indoors~
+Sector mountain~
+Exit north 9523
+Exit west 9532
+Exit northeast 9524
+Exit southwest 9533
+End
+
+
+#9535
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9546
+Exit east 9537
+Exit south 9516
+Exit west 9536
+End
+
+
+#9536
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9545
+Exit east 9535
+Exit south 9543
+Exit west 9552
+End
+
+
+#9537
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9547
+Exit east 9538
+Exit south 9506
+Exit west 9535
+End
+
+
+#9538
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9548
+Exit east 9539
+Exit south 9515
+Exit west 9537
+Exit down 9563
+End
+
+
+#9539
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9549
+Exit east 9540
+Exit south 9509
+Exit west 9538
+End
+
+
+#9540
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9550
+Exit east 9542
+Exit south 9517
+Exit west 9539
+End
+
+
+#9541
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9564
+Exit east 9569
+Exit south 9571
+Exit west 9570
+Exit up 9563
+Exit northeast 9615
+Exit southeast 9635
+Exit southwest 9608
+Exit northwest 9626
+End
+
+
+#9542
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9551
+Exit east 9553
+Exit south 9544
+Exit west 9540
+End
+
+
+#9543
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9536
+Exit east 9516
+End
+
+
+#9544
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9542
+Exit west 9517
+End
+
+
+#9545
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9546
+Exit south 9536
+End
+
+
+#9546
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9558
+Exit east 9547
+Exit south 9535
+Exit west 9545
+End
+
+
+#9547
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9557
+Exit east 9548
+Exit south 9537
+Exit west 9546
+End
+
+
+#9548
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9556
+Exit east 9549
+Exit south 9538
+Exit west 9547
+End
+
+
+#9549
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9555
+Exit east 9550
+Exit south 9539
+Exit west 9548
+End
+
+
+#9550
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9554
+Exit east 9551
+Exit south 9540
+Exit west 9549
+End
+
+
+#9551
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit south 9542
+Exit west 9550
+End
+
+
+#9552
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9536
+End
+
+
+#9553
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit west 9542
+End
+
+
+#9554
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit south 9550
+Exit west 9555
+End
+
+
+#9555
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9561
+Exit east 9554
+Exit south 9549
+Exit west 9556
+End
+
+
+#9556
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 15281
+Exit east 9555
+Exit south 9548
+Exit west 9557
+End
+
+
+#9557
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 9559
+Exit east 9556
+Exit south 9547
+Exit west 9558
+End
+
+
+#9558
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector desert~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit east 9557
+Exit south 9546
+End
+
+
+#9559
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector mountain~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 15286
+Exit east 15281
+Exit south 9557
+End
+
+
+#9561
+Name A Plateau Above the Canyon~
+Desc On top of this plateau you can see throughout the canyon. The plateau is 
+just as barren as the canyon, and a bit more dangerous. The winds are 
+stronger here, and the monsters a bit meaner. The occasional lava spout 
+erupts from the ground pouring lava across the plateau. Various skeletons of 
+plants that used to be twist and turn in the wind. Most of the creatures 
+that inhabit this canyon are scavengers that wouldn't mind a fresh meal... 
+~
+RoomFlags indoors~
+Sector mountain~
+RoomEcho  1 23   5 A strong wind rips across the wasteland.~
+Exit north 15288
+Exit south 9555
+Exit west 15281
+End
+
+
+#9563
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit up 9538
+Exit down 9541
+End
+
+
+#9564
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9541
+Exit northeast 9565
+End
+
+
+#9565
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9566
+Exit west 9578
+EFlags door closed~
+Exit southwest 9564
+End
+
+
+#9566
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9565
+Exit northwest 9567
+End
+
+
+#9567
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northeast 9568
+Exit southeast 9566
+Exit northwest 9572
+End
+
+
+#9568
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9577
+Exit southwest 9567
+End
+
+
+#9569
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9599
+Exit west 9541
+End
+
+
+#9570
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9541
+Exit west 9579
+End
+
+
+#9571
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9541
+Exit south 9591
+End
+
+
+#9572
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit southeast 9567
+Exit southwest 9573
+End
+
+
+#9573
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9574
+Exit northeast 9572
+End
+
+
+#9574
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9573
+Exit northeast 9575
+End
+
+
+#9575
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9576
+Exit southwest 9574
+End
+
+
+#9576
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9577
+Exit west 9575
+End
+
+
+#9577
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9568
+Exit west 9576
+End
+
+
+#9578
+Name A Crevice in the Tunnel Wall~
+Desc This small crevice in the wall of the tunnel is large enough for a human to 
+fit into, but too small for the thrikreens to squeeze into. A large ancient 
+door is to the west. 
+~
+RoomFlags no_mob indoors~
+Sector cave~
+ExtraDesc door ancient riddle dusty~
+You can barely make out the words upon the door. It looks as if it hasn't 
+been touched in ages. The words read: `1 `1 I'm sometimes white, `1 And always wrong. `1 I can break a heart, `1 And hurt the strong. `1 I can build love, `1 And tear it down. `1 I can make a smile, `1 But more often a frown. `1 `1 What am I? `1 `1 Enter the answer to receive your prize. 
+~
+Exit east 9565
+EFlags door closed~
+End
+
+
+#9579
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9580
+Exit east 9570
+End
+
+
+#9580
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9579
+Exit west 9581
+End
+
+
+#9581
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9580
+Exit northwest 9582
+End
+
+
+#9582
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9583
+Exit southeast 9581
+End
+
+
+#9583
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9582
+Exit northwest 9584
+End
+
+
+#9584
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9585
+Exit southeast 9583
+End
+
+
+#9585
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit east 9584
+Exit south 9586
+End
+
+
+#9586
+Name An Entrance to a Cavern~
+Desc As you walk down this tunnel the walls start to widen out into a cavern. The 
+slime starts to get thicker on the walls, and a thick, pungent odor fills 
+the air. A pile of `#`Scorpses`^ is stacked off to your right. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9585
+Exit south 9587
+Exit southeast 9589
+Exit southwest 9590
+End
+
+
+#9587
+Name Center of the Cavern~
+Desc You are standing in the center of the cavern. The ceiling is quite high 
+because standing right in front of you is a large thri-kreen! 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9586
+Exit east 9589
+Exit south 9588
+Exit west 9590
+End
+
+
+#9588
+Name Outskirts of the Cavern~
+Desc Along the outskirts of the cavern the walls are covered in a thick slime. 
+Piles of corpses lay about at random. Thri-kreen young wander about. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9587
+Exit northeast 9589
+Exit northwest 9590
+End
+
+
+#9589
+Name Outskirts of the Cavern~
+Desc Along the outskirts of the cavern the walls are covered in a thick slime. 
+Piles of corpses lay about at random. Thri-kreen young wander about. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9587
+Exit southwest 9588
+Exit northwest 9586
+End
+
+
+#9590
+Name Outskirts of the Cavern~
+Desc Along the outskirts of the cavern the walls are covered in a thick slime. 
+Piles of corpses lay about at random. Thri-kreen young wander about. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9587
+Exit northeast 9586
+Exit southeast 9588
+End
+
+
+#9591
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9571
+Exit northwest 9592
+End
+
+
+#9592
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9593
+Exit southeast 9591
+End
+
+
+#9593
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9592
+Exit southwest 9594
+End
+
+
+#9594
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9595
+Exit northeast 9593
+End
+
+
+#9595
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9594
+Exit south 9596
+End
+
+
+#9596
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9595
+Exit east 9597
+End
+
+
+#9597
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9598
+Exit west 9596
+End
+
+
+#9598
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9597
+End
+
+
+#9599
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9569
+Exit northeast 9600
+End
+
+
+#9600
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9601
+Exit southwest 9599
+End
+
+
+#9601
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9600
+Exit southeast 9602
+End
+
+
+#9602
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9603
+Exit northwest 9601
+End
+
+
+#9603
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9602
+Exit northeast 9604
+End
+
+
+#9604
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9605
+Exit southwest 9603
+End
+
+
+#9605
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9604
+Exit west 9606
+End
+
+
+#9606
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9607
+Exit east 9605
+End
+
+
+#9607
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9606
+End
+
+
+#9608
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9609
+Exit northeast 9541
+End
+
+
+#9609
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9608
+Exit southwest 9610
+End
+
+
+#9610
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9611
+Exit northeast 9609
+End
+
+
+#9611
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9610
+Exit southwest 9612
+End
+
+
+#9612
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9613
+Exit northeast 9611
+End
+
+
+#9613
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9612
+Exit southwest 9614
+End
+
+
+#9614
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northeast 9613
+End
+
+
+#9615
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northeast 9616
+Exit southwest 9541
+End
+
+
+#9616
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9617
+Exit southwest 9615
+End
+
+
+#9617
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9616
+Exit northeast 9618
+End
+
+
+#9618
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9619
+Exit southwest 9617
+End
+
+
+#9619
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9620
+Exit south 9618
+End
+
+
+#9620
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9621
+Exit west 9619
+End
+
+
+#9621
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9620
+Exit east 9622
+End
+
+
+#9622
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9621
+Exit northeast 9623
+End
+
+
+#9623
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northeast 9624
+Exit southwest 9622
+End
+
+
+#9624
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit southeast 9625
+Exit southwest 9623
+End
+
+
+#9625
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northwest 9624
+End
+
+
+#9626
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9627
+Exit southeast 9541
+End
+
+
+#9627
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9628
+Exit south 9626
+End
+
+
+#9628
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9627
+Exit northwest 9629
+End
+
+
+#9629
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit southeast 9628
+Exit northwest 9630
+End
+
+
+#9630
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9631
+Exit southeast 9629
+End
+
+
+#9631
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9630
+Exit west 9632
+End
+
+
+#9632
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9631
+Exit southwest 9633
+End
+
+
+#9633
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northeast 9632
+Exit northwest 9634
+End
+
+
+#9634
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit southeast 9633
+End
+
+
+#9635
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit southeast 9636
+Exit northwest 9541
+End
+
+
+#9636
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9637
+Exit northwest 9635
+End
+
+
+#9637
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9636
+Exit northeast 9638
+End
+
+
+#9638
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9639
+Exit southwest 9637
+End
+
+
+#9639
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9638
+Exit southeast 9640
+End
+
+
+#9640
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9641
+Exit northwest 9639
+End
+
+
+#9641
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9640
+Exit southeast 9642
+End
+
+
+#9642
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit northeast 9643
+Exit northwest 9641
+End
+
+
+#9643
+Name A Large Tunnel~
+Desc This tunnel is quite large. The walls of this tunnel are covered in a green, 
+slimy substance. Large crevices are seen randomly set into the walls. The 
+occasional corpse lays on the ground left from those weary explorers that 
+couldn't make their way out of the tunnels. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit southwest 9642
+End
+
+
+#9644
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9518
+Exit east 9491
+Exit south 9645
+Exit west 9647
+End
+
+
+#9645
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9644
+Exit west 9649
+Exit northeast 9491
+Exit southwest 9650
+End
+
+
+#9646
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9648
+Exit east 9518
+Exit south 9647
+Exit west 9651
+End
+
+
+#9647
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9646
+Exit east 9644
+Exit south 9649
+Exit west 9652
+Exit down 9655
+End
+
+
+#9648
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9646
+Exit southeast 9518
+Exit southwest 9651
+End
+
+
+#9649
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9647
+Exit east 9645
+Exit south 9650
+Exit west 9654
+End
+
+
+#9650
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9649
+Exit northeast 9645
+End
+
+
+#9651
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9646
+Exit south 9652
+Exit northeast 9648
+Exit southwest 9653
+End
+
+
+#9652
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9651
+Exit east 9647
+Exit south 9654
+Exit west 9653
+End
+
+
+#9653
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9652
+Exit northeast 9651
+Exit southeast 9654
+End
+
+
+#9654
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9652
+Exit east 9649
+Exit northwest 9653
+End
+
+
+#9655
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9656
+Exit east 9657
+Exit south 9658
+Exit west 9659
+Exit up 9647
+End
+
+
+#9656
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 9655
+Exit southeast 9657
+Exit southwest 9659
+End
+
+
+#9657
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 9655
+Exit southwest 9658
+Exit northwest 9656
+End
+
+
+#9658
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 9655
+Exit northeast 9657
+Exit northwest 9659
+End
+
+
+#9659
+Name Inside a Cavern~
+Desc This cavern is quite large. The walls of the cavern are made of a granite 
+composite. Many creatures make their home out of it. It shelters them from 
+the elements outside. However, this does not mean that they aren't hungry. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 9655
+Exit northeast 9656
+Exit southeast 9658
+End
+
+
+#9660
+Name A Crevice in the Tunnel Wall~
+Desc You enter into an ancient room. The dust stirs as the door swings open. 
+Across the tomb is a large tomb that has been sealed for years. 
+~
+RoomFlags indoors~
+Sector cave~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 9463 spec_breath_fire
+O 9466 ospec_spitting_fire Load to: a lava spout
+M 9467 spec_breath_any
+S
+
+
+
+#RESETS2
+O 0 7900 -1 9460
+M 0 9464 10 9461 2
+E 0 9464 -1 wielded~
+M 0 9461 20 9463 2
+E 0 9460 -1 wielded~
+E 0 9461 -1 shield~
+M 0 9462 20 9464 2
+M 0 9462 20 9465 2
+M 0 9461 20 9466 2
+E 0 9460 -1 wielded~
+E 0 9461 -1 shield~
+M 0 9461 20 9467 2
+E 0 9460 -1 wielded~
+E 0 9461 -1 shield~
+O 0 9466 -1 9468
+O 0 9466 -1 9470
+O 0 9466 -1 9472
+M 0 9462 20 9473 2
+O 0 9466 -1 9474
+O 0 9466 -1 9482
+M 0 9462 20 9484 2
+O 0 9466 -1 9484
+O 0 9466 -1 9485
+M 0 9462 20 9487 2
+O 0 9466 -1 9488
+M 0 9464 10 9489 2
+E 0 9464 -1 wielded~
+O 0 9466 -1 9490
+M 0 9464 10 9492 2
+E 0 9464 -1 wielded~
+O 0 9473 -1 9493
+M 0 9471 1 9495 1
+E 0 9474 -1 hold~
+O 0 9466 -1 9496
+M 0 9461 20 9498 2
+E 0 9460 -1 wielded~
+E 0 9461 -1 shield~
+O 0 9466 -1 9500
+O 0 9466 -1 9503
+M 0 9462 20 9504 2
+O 0 9463 -1 9511
+P 0 9467 1 9463 1
+M 0 9463 20 9513 2
+E 0 9462 -1 wielded~
+M 0 9463 20 9514 2
+E 0 9462 -1 wielded~
+M 0 9461 20 9515 2
+E 0 9460 -1 wielded~
+M 0 9460 20 9519 2
+M 0 9460 20 9522 2
+M 0 9460 20 9524 2
+M 0 9460 20 9529 2
+M 0 9460 20 9533 2
+M 0 9462 20 9535 2
+O 0 9466 -1 9536
+O 0 9466 -1 9537
+M 0 9462 20 9540 2
+O 0 9466 -1 9540
+M 0 9461 20 9546 2
+E 0 9460 -1 wielded~
+E 0 9461 -1 shield~
+M 0 9461 20 9550 2
+E 0 9460 -1 wielded~
+E 0 9461 -1 shield~
+O 0 9466 -1 9556
+M 0 9468 20 9565 2
+O 0 9470 -1 9578
+M 0 9468 20 9582 2
+M 0 9469 1 9587 1
+M 0 9470 3 9588 1
+M 0 9470 3 9589 1
+M 0 9470 3 9590 1
+M 0 9468 20 9614 2
+M 0 9468 20 9622 2
+M 0 9468 20 9628 2
+M 0 9468 20 9634 2
+M 0 9468 20 9636 2
+M 0 9468 20 9643 2
+M 0 9463 20 9648 2
+E 0 9462 -1 wielded~
+M 0 9463 20 9650 2
+E 0 9462 -1 wielded~
+M 0 9463 20 9653 2
+E 0 9462 -1 wielded~
+M 0 9463 20 9655 2
+E 0 9462 -1 wielded~
+O 0 9471 -1 9660
+P 0 9469 1 9471 1
+O 0 9472 -1 9660
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

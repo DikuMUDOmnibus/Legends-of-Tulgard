@@ -1,0 +1,3359 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Calontir~
+ShortName   Calontir~
+Builders    delandria~
+VNUMs       800 910
+LComment    `#`R[ 65- 85]`^
+LRange      65 85
+Security    8
+Colour      ~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Nov  6 09:57:31 2005~
+End
+
+
+
+#MOBILES
+#800
+Name Banker Changer~
+ShortD the Banker~
+LongD A tall man is standing here.~
+Desc ~
+Race human~
+Align -3 0
+Level 100
+Hitroll 10
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slice
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander stay_area changer~
+Act2   avoids_all_attacks~
+AffBy  sanctuary~
+Imm    summon charm magic weapon~
+Form   edible mammal~
+Part   head arms legs brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#801
+Name trainer tall male muscular malkatar ~
+ShortD a tall muscular malkatar male~
+LongD A tall muscular Malkatar male waits here to train you.~
+Desc ~
+Race malkatar~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander train practice gain~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#802
+Name lay healer priest~
+ShortD the priest~
+LongD A priest of Seandac is here waiting to heal you.~
+Desc This middle-aged man is dressed in the garb of a priest.  Oddly though, he 
+carries a sword at his side.  
+~
+Race human~
+Align 0 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slash
+AC -700 -700 -700 -567
+Wealth 350
+Act    npc dont_wander no_tame stay_area cleric healer~
+Act2   avoids_all_attacks~
+AffBy  slow~
+Off    disarm~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#803
+Name short plump female malkatar shopkeeper~
+ShortD a short plump female malkatar~
+LongD A short plump female Malkatar is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -720
+Wealth 2400
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#804
+Name a thin attractive female malkatar shopkeeper~
+ShortD a thin, attractive female malkatar~
+LongD A thin, attractive female malkatar is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 2000
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#805
+Name attractive female malkatar shopkeeper~
+ShortD an attractive female malkatar~
+LongD An attractive female malkatar with long black hair is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#806
+Name short broad shoulder male malkatar shopkeeper~
+ShortD a short male malkatar~
+LongD A short male malkatar with broad shoulders stands here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#807
+Name muscular male malkatar shopkeeper~
+ShortD a muscular male malkatar~
+LongD A muscular male malkatar is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 2000
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#808
+Name calontir guard~
+ShortD a calontir guard~
+LongD A `#`yCalontir`^ guard is here patrolling the town.~
+Desc ~
+Race human~
+Align 1 3
+XPMod 120
+Level 44
+Hitroll 5
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType pound
+AC -500 -500 -500 -425
+Wealth 680
+Act    npc stay_area~
+Act2   crime_points murder_10_pts~
+Off    bash parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#809
+Name malkatar calontir citizen~
+ShortD a citizen of calontir~
+LongD A citizen of `#`gCalontir`^ is here.~
+Desc ~
+Race human~
+Align 1 3
+XPMod 120
+Level 53
+Hitroll 2
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType punch
+AC -350 -350 -350 -283
+Wealth 341
+Act    npc no_tame stay_area warrior~
+Off    dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#810
+Name calontir herald~
+ShortD a town herald~
+LongD A herald of Calontir stands here.~
+Desc ~
+Race human~
+Align 1 3
+XPMod 120
+Level 70
+Hitroll 2
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType punch
+AC -400 -400 -400 -348
+Wealth 341
+Act    npc dont_wander no_tame stay_area warrior~
+Off    dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#811
+Name short broad shoulder male malkatar shopkeeper~
+ShortD a short male malkatar~
+LongD A short male malkatar with broad shoulders stands here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#812
+Name curvy attractive female malkatar shopkeeper~
+ShortD a curvy female malkatar~
+LongD A curvacious female malkatar is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#813
+Name calontir elite guard~
+ShortD an elite calontir guard~
+LongD An elite `#`yCalontir`^ guard is here patrolling the town.~
+Desc ~
+Race human~
+Align 1 3
+XPMod 120
+Level 72
+Hitroll 5
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType pound
+AC -500 -500 -500 -450
+Wealth 680
+Act    npc stay_area~
+Act2   crime_points murder_5_pts murder_10_pts~
+Off    bash parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#814
+Name unseen_meals_on_wheels~
+ShortD `#A prison guard~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg TICK 814 25~
+END
+
+#815
+Name attractive female malkatar shopkeeper~
+ShortD an attractive female malkatar~
+LongD An attractive female malkatar with long black hair is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#816
+Name short plump female malkatar shopkeeper~
+ShortD a short plump female malkatar~
+LongD A short plump female Malkatar is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -720
+Wealth 2400
+Act    npc dont_wander no_tame stay_area~
+Act2   nohunt letter_courier~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#817
+Name short plump female malkatar shopkeeper~
+ShortD a short plump female malkatar~
+LongD A short plump female Malkatar is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -720
+Wealth 2400
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#818
+Name tall dagorst male shopkeeper~
+ShortD a tall dagorst male~
+LongD A tall dagorst male is standing here picking on a lute.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#800
+Name black leather satchel backpack~
+Short `#`wa `sblack leather `wsatchel`^~
+Desc A black leather bag is on the ground here.~
+Level 20
+ItemType container~
+Cost 500
+Durability 5
+Asize 90
+Rsize 50
+Values 1000 A 0 1000 100
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take back~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 20 -1 strength 2 0
+End
+
+#801
+Name black iron lantern~
+Short a `#`Sblack iron`^ lantern~
+Desc A `#`Sblack iron`^ lantern has been left here.~
+Level 15
+ItemType light~
+Cost 250
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 500 0 0
+Weight 100
+Material iron~
+Extra    burnproof~
+Wear     take~
+Affect modifier -1 15 -1 ac -15 0
+End
+
+#802
+Name wooden fishing pole~
+Short `#`wa long `ywooden `wfishing pole`^~
+Desc A wooden fishing pole has been dropped here.~
+Level 0
+ItemType fishingpole~
+Cost 30
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material wood~
+Wear     take hold~
+End
+
+#803
+Name loaf bread~
+Short `wa `yloaf `wof `ybread`^~
+Desc A loaf of bread is lying here.~
+Level 0
+ItemType food~
+Cost 13
+Durability 5
+Asize 5
+Rsize 50
+Values 15 20 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#804
+Name sturdy shovel~
+Short `#`wa sturdy `sshovel`^~
+Desc A sturdy shovel has been left here.~
+Level 0
+ItemType trash~
+Cost 30
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 45
+Material shovel~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc sturdy shovel~
+This sturdy shovel has a steel blade and a thick wooden handle.
+~
+End
+
+#805
+Name wooden raft~
+Short a wooden raft~
+Desc A wooden raft has been left here.~
+Level 0
+ItemType boat~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 900
+Material wood~
+Wear     take~
+ExtraDesc wooden raft~
+This sturdy raft is made of 5 thick logs lashed together with some sort of 
+natural material.  It is surprisingly light for its size.  
+~
+End
+
+#806
+Name cherry wood desk table~
+Short `#`wA fancy `rcherrywood `wdesk`^~
+Desc `#`wA fancy `rcherrywood `wdesk rests here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 DGJY 100 100
+Weight 0
+Material wood~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#807
+Name barrel beer~
+Short a barrel of beer~
+Desc A beer barrel has been left here.~
+Level 0
+ItemType drinkcontainer~
+Cost 75
+Durability 5
+Asize 160
+Rsize 50
+Values 300 300 beer 0 0
+Weight 160
+Material wood~
+Wear     take~
+End
+
+#808
+Name white granite tombstone~
+Short `#`wa `Wwhite g`sr`wa`Wn`si`wt`We `wtombstone`^~
+Desc `#`wa `Wwhite g`sr`wa`Wn`si`wt`We `wtombstone.`^~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc tombstone ~
+Here lies Grace Hawkinsworth. Lived 33 years. "I told you I was Sick" 
+~
+End
+
+#809
+Name black eye patch~
+Short `#`wa `sblack `weye patch`^~
+Desc `#`wa `sblack `weye patch has been left here.`^~
+Level 1
+ItemType clothing~
+Cost 35
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material leather~
+Wear     take eyes~
+End
+
+#810
+Name gleaming dagger~
+Short `#`wa `Wg`wl`se`Wa`wm`si`Wn`wg `sdagger`^~
+Desc A gleaming dagger is laying here.~
+Level 65
+ItemType weapon~
+Cost 1300
+Durability 5
+Asize 35
+Rsize 50
+Values dagger 15 3 slash G
+Weight 30
+Material iron~
+Extra    antievil burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#811
+Name gleaming sword~
+Short `#`wa `Wg`wl`se`Wa`wm`si`Wn`wg `ssword`^~
+Desc A gleaming sword is laying here.~
+Level 65
+ItemType weapon~
+Cost 1350
+Durability 5
+Asize 35
+Rsize 50
+Values sword 17 3 slash G
+Weight 30
+Material iron~
+Extra    antievil burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#812
+Name gleaming silver breastplate~
+Short `#`wa `Wg`wl`se`Wa`wm`si`Wn`wg `ssilver `wbreastplate`^~
+Desc A gleaming silver breastplate is laying here.~
+Level 60
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 20 20 20 18 0
+Weight 40
+Material silver~
+Extra    antievil burnproof~
+Wear     take torso~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 strength 2 0
+Affect modifier -1 0 -1 hp 4 0
+Affect modifier -1 0 -1 ac -10 0
+End
+
+#813
+Name gleaming greaves leggings~
+Short `#`wa set of `Wg`wl`se`Wa`wm`si`Wn`wg `sgreaves`^~
+Desc A set of gleaming greaves are laying here.~
+Level 65
+ItemType armor~
+Cost 1400
+Durability 5
+Asize 35
+Rsize 50
+Values 16 16 16 13 0
+Weight 30
+Material silver~
+Extra    antievil burnproof~
+Wear     take legs~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 damroll 6 0
+Affect modifier -1 0 -1 hitroll 4 0
+End
+
+#814
+Name gleaming vambraces armguards~
+Short `#`wa set of `Wg`wl`se`Wa`wm`si`Wn`wg `svambraces`^~
+Desc A set of gleaming vambraces are laying here.~
+Level 65
+ItemType armor~
+Cost 1300
+Durability 5
+Asize 200
+Rsize 50
+Values 11 11 11 9 0
+Weight 200
+Material silver~
+Extra    antievil burnproof~
+Wear     take arms~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 ac -4 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 4 0
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 saves -4 0
+End
+
+#815
+Name gleaming bracer~
+Short `#`wa `Wg`wl`se`Wa`wm`si`Wn`wg `sbracer`^~
+Desc A gleaming bracer is laying here.~
+Level 65
+ItemType armor~
+Cost 1100
+Durability 5
+Asize 10
+Rsize 50
+Values 10 10 10 8 0
+Weight 10
+Material silver~
+Extra    antievil burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 ac -2 0
+End
+
+#816
+Name engraved silver anklet~
+Short `#`wan engraved `ss`wi`sl`wv`se`wr anklet`^~
+Desc An engraved anklet has been dropped here.~
+Level 60
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 70
+Material silver~
+Extra    burnproof~
+Wear     take ankle~
+Affect modifier -1 60 -1 ac -10 0
+End
+
+#817
+Name holy robe cleric~
+Short `#`WH`wo`Wl`wy Robe of the `CC`cl`Ce`cr`Ci`cc`^~
+Desc A pile of white cloth is here.~
+Level 60
+ItemType armor~
+Cost 500
+Durability 5
+Asize 5
+Rsize 50
+Values 15 15 15 12 0
+Weight 50
+Material silk~
+Extra    magic bless antievil nonmetal burnproof~
+Wear     take about~
+ClassAllowances cleric~
+Affect modifier -1 60 -1 strength 2 0
+Affect modifier -1 60 -1 mana 50 0
+Affect modifier -1 60 -1 intuition 2 0
+Affect modifier -1 60 -1 selfdiscipline 2 0
+End
+
+#818
+Name soft white leather sandals~
+Short `#`wa pair of soft `Wwhite `wleather sandals`^~
+Desc A pair of white leather sandals have been left here.~
+Level 60
+ItemType armor~
+Cost 1300
+Durability 5
+Asize 10
+Rsize 50
+Values 12 12 12 10 0
+Weight 10
+Material leather~
+Extra    magic antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take feet~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 60 -1 ac -10 0
+Affect modifier -1 60 -1 damroll 6 0
+Affect modifier -1 60 -1 hitroll 4 0
+End
+
+#819
+Name holy shield of seandac~
+Short `#`WH`wo`Wl`wy Shield of `CS`ce`Ca`cn`Cd`ca`Cc`^~
+Desc A shiny shield is on the floor.~
+Level 65
+ItemType armor~
+Cost 1210
+Durability 5
+Asize 200
+Rsize 50
+Values 22 22 22 19 0
+Weight 200
+Material silver~
+Extra    glow magic bless nodegrade burnproof~
+Extra2   nodecay~
+Wear     take shield~
+ClassAllowances mage cleric warrior druid paladin ranger spellfilcher~
+Affect modifier -1 0 -1 saves -4 0
+Affect modifier -1 0 -1 ac -4 0
+Affect modifier -1 0 -1 mana 40 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 selfdiscipline 1 0
+End
+
+#820
+Name ruby gem~
+Short a `#`Rr`ru`Rb`ry`^~
+Desc A beautiful, if small, ruby is here.~
+Level 0
+ItemType gem~
+Cost 6000
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Extra    sellextract~
+Extra2   buried~
+Wear     take hold~
+End
+
+#821
+Name holy mace of seandac~
+Short `#`wa `WH`wo`Wl`wy `wMace of `CS`ce`Ca`cn`Cd`ca`Cc`^~
+Desc A brightly shining `#`Ssteel`^ mace lies here.~
+Level 61
+ItemType weapon~
+Cost 1220
+Durability 5
+Asize 30
+Rsize 50
+Values mace 16 3 blast I
+Weight 40
+Material silver~
+Extra    glow magic antievil~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger~
+Affect modifier -1 61 -1 damroll 2 0
+Affect modifier -1 61 -1 hitroll 2 0
+End
+
+#822
+Name sign~
+Short `#`wa huge marble sign with `Bblue `wand `Wwhite `wflags flying from it`^~
+Desc `#`wA huge marble sign with `Bblue `wand `Wwhite `wflags flying from it stands here.`^~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc sign ~
+Welcome to Calontir! All that we ask is that you follow our town law. Please 
+enjoy your stay. `-signed`- The Mayor. 
+~
+End
+
+#823
+Name banana sweet potion divine heal ~
+Short `#`wSweet `YBanana `wPotion~
+Desc A brown colored potion is here.~
+Level 10
+ItemType potion~
+Cost 100
+Durability 5
+Asize 2
+Rsize 50
+Values 50 heal '' '' ''
+Weight 2
+Material banana~
+Wear     take hold~
+ExtraDesc sweet banana potion divine heal~
+This is a elixir that is brown in color. It smells and tastes like bananas. 
+
+~
+End
+
+#824
+Name peanut strawberry armor potion~
+Short `#`yPeanut `RStrawberry `wPotion`^~
+Desc An amethyst colored potion is here.~
+Level 10
+ItemType potion~
+Cost 200
+Durability 5
+Asize 2
+Rsize 50
+Values 50 armour '' '' ''
+Weight 2
+Material peanut~
+Wear     take~
+ExtraDesc peanut strawberry potion armor armour~
+This is a liquid that is amethyst in color. It smells like butter but tastes 
+like peanuts. 
+~
+End
+
+#825
+Name peppermint shake potion haste~
+Short `#`WP`Re`Wp`Rp`We`Rr`Wm`Ri`Wn`Rt `wShake Potion`^~
+Desc A cyan colored potion is resting here.~
+Level 10
+ItemType potion~
+Cost 100
+Durability 5
+Asize 2
+Rsize 50
+Values 50 haste '' '' ''
+Weight 2
+Material peanut~
+Wear     take hold~
+ExtraDesc shake potion haste peppermint~
+This is a bubbling substance that is cyan in color. It smells and tastes 
+like peppermint. 
+~
+End
+
+#826
+Name lime peppermint tea~
+Short `#`GL`gi`Gm`ge `RP`We`Rp`Wp`Re`Wr`Rm`Wi`Rn`Wt `GT`ge`Ga`^~
+Desc A glass of tea is sitting here.~
+Level 0
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 tea 0 0
+Weight 0
+Material tea~
+Wear     take~
+End
+
+#827
+Name caramel potion refresh~
+Short `#`yCaramel `wPotion`^~
+Desc A rose colored potion is sitting here.~
+Level 10
+ItemType potion~
+Cost 120
+Durability 5
+Asize 0
+Rsize 50
+Values 50 refresh refresh '' ''
+Weight 0
+Material caramel~
+Wear     take~
+ExtraDesc caramel potion refresh~
+This is a smoking, thick tonic that is rose in color. It smells and tastes 
+like caramel. 
+~
+End
+
+#828
+Name mad blueberry sanctuary potion~
+Short `#`wMad `BB`bl`Bu`be`Bb`be`Br`br`By `wPotion`^~
+Desc A purple colored potion is sitting here.~
+Level 10
+ItemType potion~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 50 sanctuary '' '' ''
+Weight 0
+Material blueberry~
+Wear     take~
+ExtraDesc mad blueberry sanctuary potion~
+This is a reflective elixir that is purple in color. It smells and tastes 
+like honey. 
+~
+End
+
+#829
+Name table mahogany rows chairs~
+Short a chair resting by a small mahogany table~
+Desc Rows of small mahogany tables with chairs line the walls here.~
+Level 1
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 30 20000 DG 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#830
+Name sticky sweet honey bun~
+Short `#`wa sticky sweet `yhoney `wbun`^~
+Desc A honey bun is here.~
+Level 0
+ItemType food~
+Cost 16
+Durability 5
+Asize 10
+Rsize 50
+Values 4 8 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#831
+Name deep well~
+Short a deep well~
+Desc A deep well is here, with a bucket for drawing water.~
+Level 1
+ItemType fountain~
+Cost 1
+Durability 5
+Asize 30000
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 30000
+Material earthen~
+Extra    noremove nopurge nodegrade burnproof~
+ExtraDesc deep well bucket~
+A deep well has been dug here.  It has a bucket on a rope for getting water.
+~
+End
+
+#832
+Name long wooden bench~
+Short a long wooden bench~
+Desc A long wooden bench.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 2000
+Rsize 50
+Values 6 10000 EHKN 110 110
+Weight 2000
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc long wooden bench~
+This bench is crafted from oak wood and is finely made.  It is long enough to support four
+people confortably, and looks quite strong.
+~
+End
+
+#833
+Name gleaming helm~
+Short `#`wa `Wg`wl`se`Wa`wm`si`Wn`wg `shelm`^~
+Desc A gleaming helm is laying here.~
+Level 65
+ItemType armor~
+Cost 1300
+Durability 5
+Asize 35
+Rsize 50
+Values 13 13 13 11 0
+Weight 30
+Material silver~
+Extra    antievil burnproof~
+Wear     take head~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard~
+Affect modifier -1 0 -1 intuition -1 0
+Affect modifier -1 0 -1 constitution 2 0
+Affect modifier -1 0 -1 damroll 6 0
+Affect modifier -1 0 -1 hitroll 4 0
+End
+
+#834
+Name thick wool blanket pile straw~
+Short a thick wool blanket covering a pile of straw~
+Desc A thick wool blanket covering a pile of straw.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 2000 EHK 110 110
+Weight 0
+Material wool~
+End
+
+#835
+Name water barrel~
+Short a stubby water barrel~
+Desc A short barrel, rests here filled with clear liquid.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 110
+Material unknown~
+Extra    nodegrade burnproof~
+End
+
+#836
+Name calontir jail key~
+Short `#`wCalontir `sJail `wKey`^~
+Desc An iron key is lying here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material iron~
+Wear     take~
+ExtraDesc calontir jail key~
+This looks like an important key, if found, please return to the Mayor's 
+office. 
+~
+End
+
+#837
+Name hot buttered rum~
+Short a pitcher of `#`yhot buttered rum`^~
+Desc A pitcher of `#`yhot buttered rum`^~
+Level 0
+ItemType drinkcontainer~
+Cost 25
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 rum 0 0
+Weight 0
+Material none~
+Extra    meltdrop~
+Wear     take~
+End
+
+#838
+Name sheer black veil~
+Short `#`wa sheer `sblack `wveil`^~
+Desc A sheer black veil is laying here.~
+Level 10
+ItemType clothing~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material cloth~
+Wear     take face~
+Affect modifier -1 10 -1 hp 4 0
+End
+
+#839
+Name black form fitting silk dress silver braided trim~
+Short `#`wa `sblack `wform fitting dress with `ss`wi`sl`wv`se`wr braided trim`^~
+Desc A black silk dress is on the ground here.~
+Level 11
+ItemType clothing~
+Cost 116
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material silk~
+Wear     take torso~
+Affect modifier -1 11 -1 presence 1 0
+End
+
+#840
+Name black silk slippers~
+Short `#`wa pair of `sblack silk `wslippers`^~
+Desc `#`wa pair of `sblack silk `wslippers have been lying here.`^~
+Level 12
+ItemType armor~
+Cost 200
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 1 2 2 1 0
+Weight 50
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 0 -1 ac -5 0
+End
+
+#841
+Name diamond engagement ring~
+Short `#`wa `Wd`wi`Wa`wm`Wo`wn`Wd `wengagement ring`^~
+Desc A diamond engagement ring is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 900
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take finger~
+Affect modifier -1 5 -1 hp 1 0
+Affect modifier -1 5 -1 damroll 1 0
+Affect modifier -1 5 -1 hitroll 1 0
+ExtraDesc silver wedding band~
+A finely made silver wedding band.  Maybe if you ask nicely an immortal will 
+restring this description to reflect your wedding date etc.  
+~
+End
+
+#842
+Name delicate silver filagree ring~
+Short `#`wa delicate `ssilver filagree `wring`^~
+Desc A silver filagree ring is here.~
+Level 10
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    nodegrade burnproof~
+Wear     take finger~
+Affect modifier -1 10 -1 hp 1 0
+Affect modifier -1 10 -1 damroll 1 0
+Affect modifier -1 10 -1 hitroll 1 0
+End
+
+#843
+Name pair black leather studded boots~
+Short `#`wa pair of `sblack `wleather `ss`wt`su`wd`sd`we`sd `wboots`^~
+Desc A pair of black leather boots are here.~
+Level 65
+ItemType armor~
+Cost 1200
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 40
+Material leather~
+Extra    nonmetal burnproof~
+Extra2   nodecay~
+Wear     take feet~
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 damroll 2 0
+End
+
+#844
+Name heart shaped sapphire ring~
+Short `#`wa heart shaped `Bs`ba`Bp`bp`Bh`bi`Br`be `wring~
+Desc A heart shaped sapphire ring lies here.~
+Level 36
+ItemType armor~
+Cost 900
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 4 4 4 3 1
+Weight 10
+Material platinum~
+Wear     take finger~
+Affect modifier -1 0 -1 strength 2 0
+Affect modifier -1 0 -1 ac -20 0
+Affect modifier -1 0 -1 hitroll 4 0
+Affect modifier -1 0 -1 damroll 3 0
+End
+
+#845
+Name golden navel belly ring~
+Short `#`ya `Yg`yo`Yl`yd`Ye`yn `Yn`ya`Yv`ye`Yl `yring`^~
+Desc A golden navel ring lires here.~
+Level 20
+ItemType armor~
+Cost 400
+Durability 5
+Condition 90
+Asize 25
+Rsize 50
+Values 3 4 4 2 0
+Weight 20
+Material leather~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take waist~
+Affect modifier -1 0 -1 ac -10 0
+End
+
+#846
+Name whole dill pickle~
+Short `#`ga whole dill pickle`^~
+Desc A dill pickle is laying here.~
+Level 0
+ItemType food~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 18 18 0 0 0
+Weight 1
+Material pickle~
+Wear     take hold~
+End
+
+#847
+Name ice cream sundae~
+Short `#`wan `Wi`wc`We `Wc`wr`We`wa`Wm `Ws`wu`Wn`wd`Wa`we`^~
+Desc A puddle of ice cream is here.~
+Level 0
+ItemType food~
+Cost 20
+Durability 5
+Asize 1
+Rsize 50
+Values 18 18 0 0 0
+Weight 1
+Material pickle~
+Wear     take hold~
+End
+
+#848
+Name long flowing silk loose fitting dress maternity~
+Short `#`wa long `Wf`wl`Wo`ww`Wi`wn`Wg `wloose-fitting `Cs`ci`Cl`ck dress`^~
+Desc A silk dress is laying here.~
+Level 11
+ItemType clothing~
+Cost 116
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Wear     take torso~
+Affect modifier -1 0 -1 presence 1 0
+ExtraDesc dress ~
+This dress is extremely soft looking and has lots of material to it.  It 
+hangs down to the ankles and has long sleeves.  
+~
+End
+
+#849
+Name double chocolate chip chunk cookie~
+Short `#`wa double `ychocolate chip `wchunk cookie`^~
+Desc A cookie lays here.~
+Level 0
+ItemType food~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 6
+Material cookie~
+Extra    inventory~
+Wear     take~
+End
+
+#850
+Name chocolate icing cupcake~
+Short `#`wa cupcake with `ychocolate `wicing`^~
+Desc `#`wa cupcake with `ychocolate `wicing is here.`^~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 7 3 0 0 0
+Weight 1
+Material cupcake~
+Wear     take~
+End
+
+#851
+Name basket small~
+Short a small basket~
+Desc a small basket lies here.~
+Level 1
+ItemType container~
+Cost 34
+Durability 5
+Asize 15
+Rsize 50
+Values 10 0 0 30 100
+Weight 20
+Material straw~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#852
+Name parchment letter note~
+Short a piece of parchment~
+Desc A piece of parchment~
+Level 1
+ItemType parchment~
+Cost 11
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 unknown 0 Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#853
+Name cigar blue ribbon~
+Short `#`wa `ycigar `wwith a `Bblue ribbon `waround it`^~
+Desc A cigar is laying here.~
+Level 0
+ItemType tabac_pipe~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#854
+Name cigar pink ribbon~
+Short `#`wa `ycigar `wwith a `Mpink ribbon `waround it`^~
+Desc A cigar is laying here.~
+Level 0
+ItemType tabac_pipe~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#855
+Name pink baby pacifier~
+Short a `#`Mpink`^ baby pacifier~
+Desc A `#`Mpink`^ baby pacifier lies here.~
+Level 1
+ItemType rp~
+Cost 30
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material rubber~
+Wear     take hold~
+End
+
+#856
+Name blue baby pacifier~
+Short a `#`Bblue`^ baby pacifier~
+Desc A `#`Bblue`^ baby pacifier lies here.~
+Level 1
+ItemType rp~
+Cost 30
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material rubber~
+Wear     take hold~
+End
+
+#857
+Name bottle pink baby~
+Short a `#`Mpink`^ baby bottle~
+Desc A `#`Mpink`^ baby bottle lies here, collecting dust.~
+Level 1
+ItemType rp~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material glass~
+Wear     take hold~
+End
+
+#858
+Name bottle blue baby~
+Short a `#`Bblue`^ baby bottle~
+Desc A `#`Bblue`^ baby bottle lies here, collecting dust.~
+Level 1
+ItemType rp~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material glass~
+Wear     take hold~
+End
+
+#859
+Name small leather bag~
+Short `#`wa small `yleather `wbag`^~
+Desc A small leather bag is here.~
+Level 0
+ItemType container~
+Cost 30
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 100 0 0 20 100
+Weight 10
+Material leather~
+Extra    nodegrade burnproof~
+Wear     take hold~
+End
+
+#860
+Name engraved platinum wedding band ring~
+Short `#`wan engraved `spl`wat`sin`wum wedding `sband`^~
+Desc A platinum wedding band is laying here.~
+Level 36
+ItemType armor~
+Cost 900
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 4 4 4 3 1
+Weight 10
+Material platinum~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+Wear     take finger~
+Affect modifier -1 0 -1 strength 2 0
+Affect modifier -1 0 -1 ac -20 0
+Affect modifier -1 0 -1 hitroll 4 0
+Affect modifier -1 0 -1 damroll 3 0
+End
+
+#861
+Name wicker baby basket~
+Short `#`ya wicker baby basket`^~
+Desc A wicker baby basket is here~
+Level 0
+ItemType container~
+Cost 30
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 100 0 0 20 100
+Weight 10
+Material wicker~
+Wear     take hold~
+End
+
+#862
+Name small wooden keg~
+Short a small wooden keg~
+Desc A small wooden keg.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 150 150 beer 0 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+End
+
+#863
+Name heart balloon~
+Short `#`wa large `Rheart `wshaped balloon`^~
+Desc `#`wA large `Rheart `wshaped balloon floats here.`^~
+Level 1
+ItemType trash~
+Cost 21
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material air~
+Wear     take float~
+End
+
+#864
+Name stuffed wolf toy~
+Short `#`wa stuffed `cw`solf `wtoy with a `cblue `wbow around its neck`^~
+Desc `#`wA stuffed `cw`solf `wtoy with a `cblue `wbow around its neck has been dropped here.`^~
+Level 1
+ItemType treasure~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cloth~
+Wear     take hold~
+Affect modifier -1 0 -1 mana 50 0
+End
+
+#865
+Name stuffed bear toy~
+Short `#`wa stuffed `sbear `wtoy with a `Rred `wbow around its neck`^~
+Desc `#`wA stuffed `sbear `wtoy with a `Rred `wbow around its neck has been dropped here.`^~
+Level 1
+ItemType treasure~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cloth~
+Wear     take hold~
+Affect modifier -1 0 -1 mana 50 0
+End
+
+#866
+Name stuffed dragon toy~
+Short `#`wa stuffed `wd`sr`wa`sg`wo`sn `wtoy with a `mpurple `wbow around its neck`^~
+Desc `#`wA stuffed `wd`sr`wa`sg`wo`sn `wtoy with a `mpurple `wbow around its neck has been dropped here.`^~
+Level 1
+ItemType treasure~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cloth~
+Wear     take hold~
+Affect modifier -1 0 -1 mana 50 0
+End
+
+#867
+Name wooden stick pony horse~
+Short `#`wa `ywooden `wstick `Wp`wo`Wn`wy`^~
+Desc A wooden stick with a horse head on it is laying here.~
+Level 1
+ItemType treasure~
+Cost 94
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material wood~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+Affect modifier -1 0 -1 move 40 0
+End
+
+#868
+Name silver flute~
+Short `#`wa `Wg`wl`se`Wa`wm`si`Wn`wg `ssilver `wflute`^~
+Desc `#`wA `Wg`wl`se`Wa`wm`si`Wn`wg `ssilver `wflute is laying here.`^~
+Level 1
+ItemType instrument~
+Cost 150
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Wear     take hold~
+End
+
+#869
+Name cherrywood harp golden ~
+Short `#`wa `rcherrywood `wharp`^~
+Desc `#`wA `rcherrywood `wharp is laying here.`^~
+Level 1
+ItemType instrument~
+Cost 150
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#870
+Name walnut shell lute~
+Short `#`wa `ywalnut shell `wlute`^~
+Desc `#`wa `ywalnut shell `wlute is laying here.~
+Level 1
+ItemType instrument~
+Cost 120
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material walnut~
+Wear     take hold~
+ExtraDesc walnut shell lute~
+A walnut shell has been used to make this lute.  Silkworm silk has been 
+strung across the nutshell for strings, six in all.  This gentle sounding 
+instrument is perfect for accompanying any budding singer.  
+~
+End
+
+#871
+Name wooden tambourine~
+Short `#`wa small `ywooden `stambourine`^~
+Desc `#`wA small `ywooden `stambourine `w is laying here.`^~
+Level 1
+ItemType instrument~
+Cost 130
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#800
+Name Entrance to Calontir~
+Desc Welcome to the beautiful City of Calontir.  Please enjoy your visit and all 
+laws are strictly enforced.
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 801
+Exit east 57490
+Exit south 57570
+Exit west 57488
+End
+
+
+#801
+Name Cobblestone Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 803
+Exit east 802
+Exit south 800
+Exit west 873
+End
+
+
+#802
+Name Guard Headquarters~
+Desc The walls are painted a dark red and there is heavily walked over beige 
+carpet covering the floor. Small flaming braziers in each corner lights up 
+the room. There are several cots spread about the room as well as a large 
+wooden desk in the eastern corner of the room. There are several chunks of 
+wood missing from the desktop. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit west 801
+End
+
+
+#803
+Name Mayor Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit east 804
+Exit south 801
+Exit west 806
+End
+
+
+#804
+Name Mayor Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 855
+Exit east 805
+Exit west 803
+End
+
+
+#805
+Name Mayor Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 808
+Exit east 4862
+Exit west 804
+End
+
+
+#806
+Name Mayor Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 854
+Exit east 803
+Exit west 807
+End
+
+
+#807
+Name Mayor Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 816
+Exit east 806
+Exit west 877
+End
+
+
+#808
+Name Warrior's Ave~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 809
+Exit east 847
+Exit south 805
+Exit west 878
+End
+
+
+#809
+Name Warrior's Ave~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 810
+Exit east 763
+Exit south 808
+Exit west 846
+End
+
+
+#810
+Name Seandac Road~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit east 817
+Exit south 809
+Exit west 811
+End
+
+
+#811
+Name Seandac Road~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 733
+Exit east 810
+Exit west 812
+End
+
+
+#812
+Name Seandac Road~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 6700
+Exit east 811
+Exit south 5705
+Exit west 813
+End
+
+
+#813
+Name Seandac Road~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 850
+Exit east 812
+Exit west 814
+End
+
+
+#814
+Name Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 827
+Exit east 813
+Exit south 815
+Exit west 4854
+End
+
+
+#815
+Name Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 814
+Exit east 764
+Exit south 816
+Exit west 833
+End
+
+
+#816
+Name Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 815
+Exit east 880
+Exit south 807
+Exit west 866
+End
+
+
+#817
+Name Seandac Road~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 818
+Exit west 810
+End
+
+
+#818
+Name Emerald Ave~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 819
+Exit east 845
+Exit south 817
+Exit west 872
+End
+
+
+#819
+Name Emerald Ave~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 820
+Exit east 834
+Exit south 818
+Exit west 851
+End
+
+
+#820
+Name Bridges Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 3974
+Exit south 819
+Exit west 821
+End
+
+
+#821
+Name Bridges Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 732
+Exit east 820
+Exit west 822
+End
+
+
+#822
+Name Bridges Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit east 821
+Exit west 823
+End
+
+
+#823
+Name Bridges Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 849
+Exit east 822
+Exit south 746
+Exit west 824
+End
+
+
+#824
+Name Bridges Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit east 823
+Exit west 825
+End
+
+
+#825
+Name Intersection of Bridges and Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 879
+Exit east 824
+Exit south 826
+End
+
+
+#826
+Name Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 825
+Exit east 853
+Exit south 827
+Exit west 828
+End
+
+
+#827
+Name Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 826
+Exit east 876
+Exit south 814
+Exit west 852
+End
+
+
+#828
+Name Rivers Bend~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 715
+Exit east 826
+Exit west 829
+End
+
+
+#829
+Name Rivers Bend~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 856
+Exit east 828
+Exit south 830
+Exit west 875
+End
+
+
+#830
+Name Rivers Bend~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 829
+Exit east 735
+Exit south 831
+Exit west 731
+End
+
+
+#831
+Name Rivers Bend~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 830
+Exit south 832
+Exit west 848
+End
+
+
+#832
+Name Rivers Bend~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 831
+Exit east 833
+End
+
+
+#833
+Name Rivers Bend~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit north 725
+Exit east 815
+Exit south 709
+Exit west 832
+End
+
+
+#834
+Name Wooden Dock~
+Desc A long wooden floating dock continues north as it sways gently from the 
+movement of the water. There is a good sized pond to your north. 
+~
+Room2Flags territory_2~
+Sector inside~
+Exit north 835
+Exit west 819
+End
+
+
+#835
+Name Wooden Dock~
+Desc A long wooden floating dock continues north as it sways gently from the 
+movement of the water. There is a good sized pond to your north. 
+~
+Room2Flags territory_2~
+Sector inside~
+Exit north 836
+Exit south 834
+End
+
+
+#836
+Name Small Pond~
+Desc You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+RoomFlags no_mob~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 839
+Exit east 837
+Exit south 835
+Exit west 838
+End
+
+
+#837
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 841
+Exit west 836
+End
+
+
+#838
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 840
+Exit east 836
+End
+
+
+#839
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 843
+Exit east 841
+Exit south 836
+Exit west 840
+End
+
+
+#840
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 844
+Exit east 839
+Exit south 838
+Exit west 863
+End
+
+
+#841
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 842
+Exit south 837
+Exit west 839
+End
+
+
+#842
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit south 841
+Exit west 843
+End
+
+
+#843
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 842
+Exit south 839
+Exit west 844
+End
+
+
+#844
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 843
+Exit south 840
+End
+
+
+#845
+Name Calontir General Store~
+Desc The room smells strange, a mixture of fresh baked bread and lamp oil. The 
+walls are filled with different types of supplies for all purposes. The 
+floor is covered in well worn crimson carpet and the walls are made out out 
+wood. There is a simple looking oil lamp hanging from the ceiling to light 
+the room. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit west 818
+End
+
+
+#846
+Name Calontir Armorsmith~
+Desc There is a huge fire blazing in the rear of the building. Several wooden 
+work tables are spread throughout the room. A wide variety of Armor hanging 
+on the wooden walls. The floor is made of dirt. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 809
+End
+
+
+#847
+Name Calontir Weaponsmith~
+Desc There is a huge fire blazing in the rear of the building. Several wooden 
+work tables are spread throughout the room with weapons in various stages of 
+completion laying on them. There are completed weapons displayed on the 
+wooden walls as well as piles of them on the dirt floor. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit west 808
+End
+
+
+#848
+Name The Ruby Blade Tavern~
+Desc Several round tables made out of empty beer barrels are spread throughout 
+the tavern. The floor and walls are made out of wood. For light there is a 
+huge fireplace is burning in the west corner of the room as as well as the 
+several oil lamps hanging on the walls. 
+ 
+This tavern is famous for its hot buttered rum, served in a wooden pitcher with a hot slug of metal dropped in the pitcher.
+~
+RoomFlags no_mob indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 831
+End
+
+
+#849
+Name Calontir Training Grounds~
+Desc Two training poles rest in the middle of the room. There are piles of wooden 
+weapons and rusty armor piled along the walls for training. The floor is 
+plain dirt and the walls are painted white but have been stained buy dirt 
+over time. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit south 823
+End
+
+
+#850
+Name Temple of Seandac~
+Desc A large statue of Seandac stands in the middle of the room. It is almost as 
+high as the ceiling. There is a marble bench at the base of the statue for 
+kneeling. Two small braziers are burning on either side of the statue. The 
+floor is made out of wood and the walls are alabaster white. There is faint 
+scent of lavender in the air. 
+~
+Room2Flags territory_2~
+Sector inside~
+Exit south 813
+End
+
+
+#851
+Name Calontir Apothecary~
+Desc The walls of this building are painted in a sage green color and there is a 
+worn tan colored rug covering a wooden floor. There is a light odor in the 
+air coming from the many different types of potions brewing. In the far 
+western corner of the building is a large brazier lighting the room. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 819
+End
+
+
+#852
+Name Calontir Clothing~
+Desc Several racks of various clothing are throughout the store. The floor is 
+made out of hard wood and the walls are painted a light red, almost pink 
+color. Several oil lamps hang high up on the walls for light. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 827
+End
+
+
+#853
+Name Calontir Jewelry~
+Desc The floor is made out of hard wood and the walls are painted a light beige 
+color. Several oil lamps hang high up on the walls for light. There are 
+enclosed cabinets lining the walls filled with different kinds of jewelry 
+and there is a small work table in the rear of the building. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit west 826
+End
+
+
+#854
+Name Calontir Bank~
+Desc There are no windows at all in this building. The walls are painted plain 
+tan and the floor is made out of wood. Two small lamps hanging on the wall 
+light the room. There is only a tall counter standing in the middle of the 
+room separating you from the rear of the building. 
+~
+RoomFlags indoors bank light~
+Room2Flags territory_2 no_steal~
+Sector inside~
+Exit south 806
+End
+
+
+#855
+Name Mayor's Office~
+Desc There is a large open window on every wall of this office. The walls are 
+painted a soft blue and there is a plush beige carpet covering the floor 
+that looks barely walked on. Several fancy oil lamps are hanging on the 
+walls to light the room. 
+~
+RoomFlags no_mob indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit south 804
+End
+
+
+#856
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 857
+Exit south 829
+Exit west 864
+End
+
+
+#857
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit south 856
+Exit west 865
+Exit northeast 858
+End
+
+
+#858
+Name Small Stream~
+Desc A small stream runs slowly and quietly from the pond to the east going in a 
+westward direction. There are fish swimming up and down the creek. Tall 
+trees hang over the stream shading it in the daylight. It is quit peaceful 
+here. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 859
+Exit southwest 857
+End
+
+
+#859
+Name Small Stream~
+Desc A small stream runs slowly and quietly from the pond to the east going in a 
+westward direction. There are fish swimming up and down the creek. Tall 
+trees hang over the stream shading it in the daylight. It is quit peaceful 
+here. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 860
+Exit west 858
+End
+
+
+#860
+Name Small Stream~
+Desc A small stream runs slowly and quietly from the pond to the east going in a 
+westward direction. There are fish swimming up and down the creek. Tall 
+trees hang over the stream shading it in the daylight. It is quit peaceful 
+here. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit west 859
+Exit northeast 861
+End
+
+
+#861
+Name Small Stream~
+Desc A small stream runs slowly and quietly from the pond to the east going in a 
+westward direction. There are fish swimming up and down the creek. Tall 
+trees hang over the stream shading it in the daylight. It is quit peaceful 
+here. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 862
+Exit southwest 860
+End
+
+
+#862
+Name Small Stream~
+Desc A small stream runs slowly and quietly from the pond to the east going in a 
+westward direction. There are fish swimming up and down the creek. Tall 
+trees hang over the stream shading it in the daylight. It is quit peaceful 
+here. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit west 861
+Exit southeast 863
+End
+
+
+#863
+Name Small Stream~
+Desc A small stream runs slowly and quietly from the pond to the east going in a 
+westward direction. There are fish swimming up and down the creek. Tall 
+trees hang over the stream shading it in the daylight. It is quit peaceful 
+here. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 840
+Exit northwest 862
+End
+
+
+#864
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit north 865
+Exit east 856
+End
+
+
+#865
+Name Small Pond~
+Desc . You are on a small pond. The water gently laps around you. You can see fish 
+of all kinds swimming just under the surface out of your reach. A fishing 
+pole would be nice right now. 
+~
+Room2Flags freshwater_fish territory_2~
+Sector swim~
+Exit east 857
+Exit south 864
+End
+
+
+#866
+Name Calontir Cemetery~
+Desc This is a small and well kept cemetery. There are only about a dozen or so 
+graves here. The tombstones are all exactly alike and made out of white 
+granite. The grass is cut neatly with flowers blooming on each grave. There 
+is a huge mausoleum resting in the far corner of the cemetery. 
+~
+RoomFlags noscry~
+Room2Flags territory_2~
+Sector field~
+Exit east 816
+Exit south 871
+Exit west 867
+End
+
+
+#867
+Name Calontir Cemetery~
+Desc This is a small and well kept cemetery. There are only about a dozen or so 
+graves here. The tombstones are all exactly alike and made out of white 
+granite. The grass is cut neatly with flowers blooming on each grave. There 
+is a huge mausoleum resting in the far corner of the cemetery. 
+~
+RoomFlags noscry~
+Room2Flags territory_2~
+Sector field~
+Exit east 866
+Exit south 870
+Exit west 868
+End
+
+
+#868
+Name Calontir Cemetery~
+Desc This is a small and well kept cemetery. There are only about a dozen or so 
+graves here. The tombstones are all exactly alike and made out of white 
+granite. The grass is cut neatly with flowers blooming on each grave. There 
+is a huge mausoleum resting in the far corner of the cemetery. 
+~
+RoomFlags noscry~
+Room2Flags territory_2~
+Sector field~
+Exit east 867
+Exit south 869
+End
+
+
+#869
+Name Calontir Cemetery~
+Desc This is a small and well kept cemetery. There are only about a dozen or so 
+graves here. The tombstones are all exactly alike and made out of white 
+granite. The grass is cut neatly with flowers blooming on each grave. There 
+is a huge mausoleum here. 
+~
+RoomFlags noscry~
+Room2Flags territory_2~
+Sector field~
+Exit north 868
+Exit east 870
+End
+
+
+#870
+Name Calontir Cemetery~
+Desc This is a small and well kept cemetery. There are only about a dozen or so 
+graves here. The tombstones are all exactly alike and made out of white 
+granite. The grass is cut neatly with flowers blooming on each grave. There 
+is a huge mausoleum resting in the far corner of the cemetery. 
+~
+RoomFlags noscry~
+Room2Flags territory_2~
+Sector field~
+Exit north 867
+Exit east 871
+Exit west 869
+End
+
+
+#871
+Name Calontir Cemetery~
+Desc This is a small and well kept cemetery. There are only about a dozen or so 
+graves here. The tombstones are all exactly alike and made out of white 
+granite. The grass is cut neatly with flowers blooming on each grave. There 
+is a huge mausoleum resting in the far corner of the cemetery. 
+~
+RoomFlags noscry~
+Room2Flags territory_2~
+Sector field~
+Exit north 866
+Exit west 870
+End
+
+
+#872
+Name Tyra's Tea Room~
+Desc The walls are painted a soft rose color and the floor is covered in a 
+darkened hardwood. The only light in the room is coming from the open 
+windows and the lanterns resting on each table. The atmosphere in here is 
+very calming and pleasant. 
+~
+RoomFlags no_mob indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 818
+End
+
+
+#873
+Name Calontir Jail~
+Desc You are in the town's small prison.  The building itself is quite sturdy, 
+with thick stone walls and iron bars on the windows.  A few desks covered 
+with paperwork are here, and some cramped cells are around the main room.  
+An exit to the street is east. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 801
+Exit west 874
+EFlags door closed locked nopass infuriating~
+EKeyvnum 836
+EKeywords door~
+End
+
+
+#874
+Name Jail Cell~
+Desc This prison cell is small, but clean.  The exit is through a thick wooden 
+door to the east, in which is set a small barred window.  A pile of straw 
+and coarse blanket serves as bedding, and there is a tin chamber pot. 
+~
+RoomFlags indoors light~
+Room2Flags territory_2~
+Sector inside~
+Exit east 873
+EFlags door closed locked nopass infuriating~
+EKeyvnum 836
+End
+
+
+#875
+Name Base of a huge tree~
+Desc The walkway here is paved with thousands of stones of different sizes 
+keeping it from getting muddy in the rain. There are all different types of 
+flowers and shrubs growing at the base of the tree. There is a small pond to 
+your north. You can hear water trickling over stones off in the distance. 
+ 
+`#`gThere is a staircase here leading up to a large home built in the limbs of the tree.`^
+~
+Room2Flags territory_2~
+Sector city~
+Exit east 829
+Exit up 64000
+End
+
+
+#876
+Name Pickles and Ice Cream ~
+Desc The room is painted in pastel colors with pictures of balloons and blocks 
+decorating the walls. There is a large light hanging down from the middle of 
+the ceiling in the shape of a stork. The wooden floors are neatly swept. 
+~
+Sector inside~
+Exit west 827
+End
+
+
+#877
+Name Calontir Pigeon Courier~
+Desc Several cages with pigeons line the north wall, and letters are held in 
+small shelves along the south wall. For all the birds here, it appears to be 
+clean and tidy. To send a letter, type SENDLETTER. 
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit east 807
+End
+
+
+#878
+Name Calontir Gifts~
+Desc Rows and rows of flowers line the walls here as well as racks of gifts for 
+all occasions. There is a window on all 4 walls letting in plenty of light 
+and a  large door to the east. The floor is made of hardwood. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 808
+End
+
+
+#879
+Name Mountain Street~
+Desc Buildings of all kinds line the street. Town folks can be seen shuffling 
+about town at almost any hour of the day or night. The walkway is paved with 
+thousands of stones of different sizes keeping it from getting muddy in the 
+rain. Many kinds of flowers and shrubberies are planted along the edge of 
+the walkway. This town is well kept. 
+~
+Room2Flags territory_2~
+Sector city~
+Exit east 729
+Exit south 825
+Exit west 736
+End
+
+
+#880
+Name Calontir Music~
+Desc The noise when you walk into this room is almost unbearable. There are 
+tables and tables of all kinds of intruments all over the store. It makes 
+the store look slightly junky. If you could see the floor from all the 
+instruments, it would be red carpet. 
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit west 816
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 808 spec_territory_guard
+M 813 spec_territory_guard
+S
+
+
+
+#RESETS2
+M 0 808 20 801 2
+M 0 809 20 803 2
+O 0 832 -1 803
+O 0 831 -1 803
+M 0 808 20 805 2
+M 0 813 14 806 2
+M 0 810 10 807 1
+M 0 808 20 807 2
+M 0 809 20 808 2
+M 0 808 20 809 2
+M 0 813 14 810 2
+M 0 809 20 812 2
+O 0 831 -1 812
+M 0 809 20 813 2
+M 0 810 10 814 1
+M 0 813 14 815 2
+M 0 809 20 816 2
+M 0 810 10 817 1
+M 0 809 20 817 2
+M 0 808 20 818 2
+M 0 813 14 819 2
+M 0 809 20 819 2
+M 0 808 20 821 2
+M 0 809 20 822 2
+M 0 808 20 824 2
+M 0 810 10 825 1
+M 0 809 20 826 2
+M 0 808 20 827 2
+M 0 808 20 829 2
+M 0 813 14 830 2
+M 0 809 20 831 2
+M 0 808 20 832 2
+M 0 813 14 835 2
+M 0 806 1 845 1
+G 0 800 -1
+G 0 801 -1
+G 0 803 -1
+G 0 802 -1
+G 0 804 -1
+G 0 805 -1
+G 0 851 -1
+G 0 859 -1
+M 0 807 2 846 1
+G 0 812 -1
+G 0 813 -1
+G 0 814 -1
+G 0 815 -1
+G 0 833 -1
+G 0 843 -1
+M 0 807 2 847 1
+G 0 810 -1
+G 0 811 -1
+G 0 821 -1
+M 0 811 1 848 1
+G 0 862 -1
+G 0 807 -1
+G 0 837 -1
+M 0 801 1 849 1
+M 0 802 1 850 1
+G 0 819 -1
+O 0 7560 -1 850
+M 0 805 1 851 1
+G 0 823 -1
+G 0 824 -1
+G 0 825 -1
+G 0 827 -1
+G 0 828 -1
+M 0 803 1 852 1
+G 0 817 -1
+G 0 809 -1
+G 0 838 -1
+G 0 840 -1
+G 0 839 -1
+G 0 818 -1
+M 0 804 1 853 1
+G 0 816 -1
+G 0 841 -1
+G 0 842 -1
+G 0 844 -1
+G 0 845 -1
+G 0 860 -1
+M 0 800 1 854 1
+O 0 806 -1 855
+O 0 808 -1 867
+O 0 820 -1 867
+O 0 829 -1 872
+M 0 812 1 872 1
+G 0 826 -1
+G 0 830 -1
+O 0 834 -1 874
+O 0 835 -1 874
+M 0 814 1 874 1
+M 0 815 1 876 1
+G 0 846 -1
+G 0 850 -1
+G 0 849 -1
+G 0 847 -1
+G 0 848 -1
+G 0 853 -1
+G 0 854 -1
+G 0 856 -1
+G 0 855 -1
+G 0 857 -1
+G 0 858 -1
+G 0 861 -1
+M 0 816 1 877 1
+G 0 852 -1
+M 0 817 1 878 1
+G 0 866 -1
+G 0 865 -1
+G 0 864 -1
+G 0 863 -1
+G 0 2570 -1
+G 0 597 -1
+G 0 547 -1
+G 0 545 -1
+G 0 544 -1
+G 0 543 -1
+G 0 542 -1
+G 0 867 -1
+M 0 818 1 880 1
+G 0 868 -1
+G 0 869 -1
+G 0 871 -1
+G 0 870 -1
+S
+
+
+
+#SHOPS
+#802
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#803
+buy_type clothing~
+buy_type jewelry~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#804
+buy_type jewelry~
+buy_type gem~
+buy_type treasure~
+buy_type warpstone~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#805
+buy_type scroll~
+buy_type potion~
+buy_type pill~
+buy_type staff~
+buy_type wand~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#806
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#807
+buy_type weapon~
+buy_type armor~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#811
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#812
+buy_type drinkcontainer~
+buy_type food~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#815
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#816
+buy_type parchment~
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#817
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#818
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#814
+title prison food~
+author Delandria~
+code if players > 0
+mob oload 803
+mob echo A slot in the prison door opens.
+mob echo A harsh voice yells through the slot "Dinner time, eat it all up now!"
+drop bread
+mob echo The slot closes with a echoing clanging sound.
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G814`x,`Y814`x,`B874`x,`r5`x,`C0`x:
+             `YMobprog: endif without if, mob 814 prog 814
+`x             Trigger type 'TICK' phrase '25'
+             Call stack info:
+             MOBprog 814 on mob 814 (in room 874), line 5
+`S#############
+
+~
+last_editor Delandria~
+last_editdate 1087773644
+END
+
+#810
+author Delandria~
+code Yell Oyay! Oyay! Citizens of Calontir!
+~
+disabled false
+last_editor Delandria~
+last_editdate 1082313649
+END
+
+#0
+
+
+#$

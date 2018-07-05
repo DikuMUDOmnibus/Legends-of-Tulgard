@@ -1,0 +1,513 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Renyl Estate~
+ShortName   Renyl Estate~
+Builders    None~
+build_restricts 'exits' chunkycheese ~
+build_restricts 'mobprogs' chunkycheese ~
+build_restricts 'objects' chunkycheese ~
+build_restricts 'resets' chunkycheese ~
+build_restricts 'rooms' chunkycheese ~
+VNUMs       9450 9459
+AFlags  noteleport noscry hidden use_buildrestricts~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Aug 21 04:52:56 2005~
+End
+
+
+
+#MOBILES
+#9450
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9459
+Name builder buddy~
+ShortD chunkycheese's builder buddy~
+LongD A helpful builder buddy stands here.~
+Desc ~
+Race dog~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 9459 restore~
+END
+
+#0
+
+
+
+#OBJECTS
+#9450
+Name small bubbling marble fountain~
+Short a small, bubbling marble fountain~
+Desc A small, bubbling marble fountain stands here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000000000 1000000000 water 0 0
+Weight 0
+Material marble~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9451
+Name simple marble bench~
+Short a simple marble bench~
+Desc A simple marble bench sits beneath an oak.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 10000000 BEHK 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9452
+Name a large, marble altar~
+Short a large, marble altar~
+Desc A large, marble altar dominates the center of the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 10000 DGJQ 100 100
+Weight 0
+Material marble~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc large marble altar~
+The altar is bare, save for a large engraving on its surface. The engraving 
+is in the form of human letters, though the language is that spoken by 
+angels. It reads (to those who understand the arciac tongue):- 
+ 
+          `#`YTo the end of the world and the coming blight,
+              If we lose faith in Seandac's might.
+`^
+~
+End
+
+#9453
+Name simply burgundy couch~
+Short a simple, `#`rburgundy`^ couch~
+Desc A simple, `#`rburgundy`^ couch allows for comfortable seating.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 3 100000 BEHKR 100 100
+Weight 0
+Material cloth~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9454
+Name large simple bed~
+Short a large, though simple bed~
+Desc A large, though simple bed sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 10000 BEHKR 100 100
+Weight 0
+Material cloth~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9455
+Name large oak desk~
+Short a large, oak desk~
+Desc A large, oak desk stands here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 100000 ADGJQ 100 100
+Weight 0
+Material oak~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9456
+Name large regal dining table~
+Short a large, regal dining table~
+Desc A large, regal dining table dominates the room here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 7 2147483647 ADGJQ 100 100
+Weight 0
+Material oak~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9457
+Name simple bronze key~
+Short a simple bronze key~
+Desc A simple bronze key lies here.~
+Level 1
+ItemType roomkey~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material bronze~
+Extra    glow nodrop nodegrade burnproof nouncurse~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#9450
+Name A large cozy foyer~
+Desc This large, cozy looking foyer is mostly dominated by a large marble `#`Wstatue`^ 
+present in the center of the well polished and spotless room. Two large iron 
+braziers filled with glowing coals stand on either side of the statue, 
+providing both warmth and light to the room. Three portals allow you passage 
+further into this house. To the north, is a panel of glass, a green garden 
+visible through it. To the west and east, two hallways beckon for further 
+exploration. Centered above all three passages, are stuffed `#`Rdragon`^ heads. 
+Also present upon the north wall, are two large `#`Ybanners`^ that hang on either 
+side of the panelled glass. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc statue ~
+The statue is large; made almost entirely of marble. It shows a man of 
+indeterminate age, with features that bring to mind a malkatar origin. He is 
+garbed completely in armor, allowing only his face to be visible.  In one 
+hand, he holds a greatsword, and in the other, he carries a large kite 
+shield.  All in all, the statue is very commanding, and although it is 
+inanimate, it certainly commands respect. 
+~
+ExtraDesc dragon ~
+Three large dragon heads hang upon the walls, just above the northern, 
+western, and eastern exits. They have been arranged in such a way so as to 
+look down at the statue in the center of the room, almost as if watching him 
+in reverence... or scorn. `1`1The dragon on the northern wall is a mighty `#`Rred`^. It hangs with its teeth 
+bared, each of massive girth and size. Its eyes, obviously fake, are 
+actually delicately cut rubies, that seem to burn with a light of their own. 
+`1`1The dragon on the western wall, is a dark `#`sshadow`^. Or maybe it is a she. It 
+is hard to tell, or to even recognize any features. Though upon closer 
+inspection, it is arranged in much the same way as the red, with its teeth 
+bared, they barely gleam in the light. Its eyes, are two stones of pure 
+onyx, seemingly impenetrable and opaque. `1`1The dragon on the eastern wall, is a glaring `#`Wwhite`^. Cold it seems, even in 
+death, its maw showing a forced sneer. Its scales shimmer like silver, 
+obviously well polished, and its eyes are two diamonds shaped like 
+crescents. 
+~
+ExtraDesc banners ~
+The two banners bear the same crest, namely, a panther and a stag embossed 
+upon a fleur-de-lys. The background is a soft `#`Bblue`^, and the fleur-de-lys is 
+the embroidered of `#`Wa`sr`Wg`se`Wn`st`^. The panther and the stag have their heads turned 
+to each other. Obviously, this is the crest of the owner of this house. 
+~
+Exit north 9451
+EFlags door closed~
+EKeywords panel glass~
+Exit east 9453
+Exit south 57571
+EFlags door closed locked~
+EKeyvnum 9457
+EKeywords oak doors~
+Exit west 9454
+End
+
+
+#9451
+Name A small, heavily scented garden~
+Desc Large flowerbeds are arranged in neat circles around a central bench. There 
+is enough space for each circle to allow for a walk between the scented and 
+varied flowers. Combined with the fact that no flowerbed is the same as any 
+other, this allows for a large plethora of color that pleases the eye of the 
+viewer. A small fountain is present beside the bench, and nothing interrupts 
+the serenity save for the occasional chirping of the birds that nest in the 
+large oak tree present behind the bench, shadowing and cooling it from the 
+sun. 
+~
+Sector forest~
+Exit north 9452
+EFlags door closed~
+Exit east 9455
+EFlags door closed~
+Exit south 9450
+EFlags door closed~
+Exit west 9457
+EFlags door closed~
+End
+
+
+#9452
+Name A shrine~
+Desc This large chamber is bare, save for an altar which dominates its center. 
+White marble, polished to a glow, further reflects the light offered by the 
+large coal braziers that occupy a place of honour on either side of the 
+altar. Small steps lead up to the altar, it being situated upon a pedastel. 
+No other source of light seems to be present, except for the panel of glass 
+on the southern wall that leads into the garden. A small marble staircase 
+leads up to a chamber in the north, while to the west and east, two doorways 
+lead further into the house. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9459
+EFlags door closed~
+EKeywords oak door~
+Exit east 9456
+Exit south 9451
+EFlags door closed~
+EKeywords panel~
+Exit west 9458
+End
+
+
+#9453
+Name A living room~
+Desc Large, comfy looking pieces of furniture occupy most of this room's space. 
+With thick, carpets with intricate designs occupying most of the marble 
+floor. A small watering font is carved on the eastern wall, allowing for 
+quick access to fresh water. Small, strange looking sculptures occupy most 
+of the available surfaces. A large fireplace has been carved into a dragon 
+shaped head on the southern wall, with the fire present within the gaping 
+maw of the dragon. It is large enough to provide both warmth and light. Two 
+doorways lead to the west and north. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9455
+Exit west 9450
+End
+
+
+#9454
+Name A kitchen~
+Desc Although this room is large, it is also hot, though not uncomfortably so. A 
+large oven sits at one corner, allowing for one to cook whatever delicacy 
+one chooses. Plenty of tables and counters ensure that the countless 
+utensils have enough space. A small watering fountain, shaped like a 
+gargoyle's head over a bowl, has been carved into the western wall, allowing 
+for fresh water whenever the need arises. Two doorways lead to the east and 
+north. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9457
+Exit east 9450
+End
+
+
+#9455
+Name A guest bedroom~
+Desc This chamber is furnished in such a way, as to encourage a quick descent 
+into sleep. The furnishing is spartan at best, with only a simple bed 
+situated between two windows on the eastern wall. A panel to the west made 
+of glass allows a view into the garden, and a small, lush red carpet with an 
+intricate dagorst design on it occupies the floor. To the north and south, 
+two doorways lead to different parts of the house. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9456
+Exit south 9453
+Exit west 9451
+EFlags door closed~
+EKeywords panel glass~
+End
+
+
+#9456
+Name An armory~
+Desc Unlike the other chambers of this house, this boasts very little aesthetic 
+beauty. Armor stands boasting many types of armor, from leather to plate, 
+are arranged in a seemingly haphazard manner all across the chamber. Large 
+barrels are present here and there, filled to the brim with arrows. On the 
+walls, large long bows hang down in the place of banners. A large straw 
+dummy, as well as two different bulls eyes allow for personal training. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 3
+Exit south 9455
+Exit west 9452
+End
+
+
+#9457
+Name A dining room~
+Desc A large dining table, big enough to seat at least ten people, dominates the 
+room. Even so, there is also enough space for a two large cabinets to be 
+placed on the eastern wall, divided by the large panel of glass that leads 
+to the garden. Two large, elegantly shaped windows occupy the west wall, 
+allowing for light to filter in by day. Four large braziers occupy the 
+corners of the dining room, allowing for both heat and light at night. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9458
+Exit east 9451
+EFlags door closed~
+EKeywords panel glass~
+Exit south 9454
+End
+
+
+#9458
+Name A study~
+Desc A small fountain is present in the center of the chamber, allowing for easy 
+access to fresh water. The faint bubbling of the fountain is the only sound 
+that can be heard, and that's not bad at all. It is conductive to thought, 
+allowing for the person seated behind the large oak bench to concentrate on 
+his or her chosen tasks. The desk itself seems to be in a state of disarray. 
+Parchments and small books are strewn haphazardly all across its surface. 
+Some of the parchments have even been written on! A large inkpot and quill 
+sit in a small hole in the desk, obviously designed for them. On the 
+northern wall, a large bookcase leaves no room for anything else. Hanging 
+from the ceiling is a large candelbra, boasting many candles that can surely 
+light up the room quickly and easily. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9452
+Exit south 9457
+End
+
+
+#9459
+Name A simple bedroom~
+Desc This bedroom is fairly simple. In fact, it has nothing more except for a 
+carpet on the floor and a large bed on top of that. Two large glass windows 
+occupy the northern wall, giving the room sufficient light in the morning. A 
+small, simple oak chest rest to one side, obviously holding the wardrobe of 
+this room's owner. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 9452
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 9450 -1 9451
+O 0 9451 -1 9451
+O 0 9452 -1 9452
+O 0 9450 -1 9453
+O 0 9453 -1 9453
+O 0 9450 -1 9454
+O 0 9454 -1 9455
+O 0 9456 -1 9457
+O 0 9450 -1 9457
+O 0 9450 -1 9458
+O 0 9455 -1 9458
+O 0 9454 -1 9459
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#9459
+title Restore~
+author Reath~
+code mob restore chunkycheese
+~
+disabled false
+last_editor Reath~
+last_editdate 1124424558
+END
+
+#0
+
+
+#$

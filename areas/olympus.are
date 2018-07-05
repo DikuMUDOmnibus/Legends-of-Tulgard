@@ -1,0 +1,2322 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Olympus~
+ShortName   Olympus~
+Builders    None~
+Credits     `x~
+VNUMs       7600 7699
+LRange      35 70
+Security    8
+Colour      R~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Olympus~
+*LastSaved  Sun Aug 21 13:16:51 2005~
+End
+
+
+
+#MOBILES
+#7601
+Name zeus god~
+ShortD zeus~
+LongD Zeus sits here on a throne.~
+Desc You see before you the greatest of the Olympians.  It seems as if he could
+destroy you with a thought.  Every glance penetrates deep into your soul.
+You now know what true fear is.
+~
+Race unique~
+Align 0 3
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+33
+DamType none
+AC -400 -400 -400 -340
+Wealth 600
+Act    npc dont_wander scavenger no_tame cleric~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm kick parry assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7602
+Name prometheus~
+ShortD prometheus~
+LongD Prometheus is here, playing with a match.~
+Desc This mortal risked the wrath of Zeus to give the gift of fire to humans.  He
+looks up at you and smiles.
+~
+Race unique~
+Align 3 3
+Level 51
+Hitroll 0
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType none
+AC -210 -210 -210 -186
+Wealth 510
+Act    npc dont_wander scavenger no_tame~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7603
+Name hermes~
+ShortD hermes~
+LongD Hermes is busy, delivering a message.~
+Desc This is the messenger of the Gods.  He wears a winged helm and boots, and
+darts from place to place.  He looks very busy, and it seems as if he doesn't
+even notice your presence.
+~
+Race unique~
+Align -2 3
+Level 56
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d5+125
+DamDice 10d4+23
+DamType none
+AC -250 -250 -250 -222
+Wealth 560
+Act    npc scavenger no_tame thief~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil sneak flying~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7604
+Name poseidon~
+ShortD poseidon~
+LongD Poseidon is dining here.~
+Desc He is the brother of Zeus himself, chosen to rule the seas.  He must be
+visiting Mount Olympus.  He nods at you and motions for you to enter and
+have a seat.
+~
+Race unique~
+Align -1 3
+Level 59
+Hitroll 0
+HitDice 6d9+310
+ManaDice 7d10+355
+DamDice 10d4+24
+DamType none
+AC -280 -280 -280 -232
+Wealth 590
+Act    npc dont_wander scavenger no_tame mage~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    dodge assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7605
+Name apollo~
+ShortD apollo~
+LongD Apollo is here, playing a tune.~
+Desc This jovial God is strumming on a lyre.  He smiles at you and asks you to
+join him.  You notice a dangerous looking bow by his side, however, and think
+that he knows more than music.
+~
+Race unique~
+Align 3 3
+Level 58
+Hitroll 0
+HitDice 6d9+310
+ManaDice 6d9+315
+DamDice 5d10+25
+DamType none
+AC -280 -280 -280 -226
+Wealth 580
+Act    npc dont_wander scavenger no_tame~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7606
+Name ares~
+ShortD ares~
+LongD Ares is here, kicking your butt.~
+Desc The God of War is here, studying some maps.  He scowls at you as you enter
+and says 'I am very busy.  What do you want?'
+~
+Race unique~
+Align -2 -3
+Level 59
+Hitroll 0
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 8d6+26
+DamType none
+AC -290 -290 -290 -232
+Wealth 590
+Act    npc dont_wander scavenger aggressive~
+AffBy  invisible detect_invis detect_hidden sanctuary flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7607
+Name athena~
+ShortD athena~
+LongD Athena is relaxing here.~
+Desc Zeus' favorite daughter is sitting on a couch eating grapes.  She smiles at
+you and invites you to join her.
+~
+Race unique~
+Align 0 3
+Level 56
+Hitroll 0
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType none
+AC -260 -260 -260 -234
+Wealth 560
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#7608
+Name hephaestus smith~
+ShortD hephaestus~
+LongD Hephaestus the Smith is here, crafting a fine weapon.~
+Desc This God is the only one who is not physically perfect.  He is lame and very 
+ugly.  You get the impression that he is kind, however, and would go out of 
+his way to help you.  He is attended by his golden maidens. 
+~
+Race unique~
+Align 3 3
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType none
+AC -250 -250 -250 -225
+Wealth 550
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7609
+Name handmaid golden~
+ShortD a Golden Maiden~
+LongD A Handmaid of gold is here, assisting the smith.~
+Desc As you gaze upon this creation, you realize that she is made from solid
+gold.  She seems to be very lifelike as she assists the smith in his work.
+~
+Race unique~
+Align 2 0
+Level 26
+Hitroll 0
+HitDice 4d5+120
+ManaDice 2d5+10
+DamDice 3d7+7
+DamType none
+AC -75 -75 -75 -63
+Wealth 50
+Act    npc dont_wander scavenger warrior~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    bash berserk disarm kick parry rescue assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#7610
+Name soldier~
+ShortD a Soldier~
+LongD A soldier is here, assisting Ares.~
+Desc This man is waiting on Ares.  Although he does not look very strong, you
+realize that Ares would not have any weaklings working for him.
+~
+Race unique~
+Align 1 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -105
+Wealth 250
+Act    npc dont_wander scavenger aggressive~
+AffBy  invisible detect_invis detect_hidden sanctuary flying~
+Off    disarm dodge trip~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7611
+Name musician apprentice~
+ShortD an apprentice musician~
+LongD A musician is here, learning from Apollo.~
+Desc This man has mastered his first profession, and is now studying music from the
+immortal Apollo.
+~
+Race unique~
+Align -1 3
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -94
+Wealth 125
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7612
+Name boy serving servant~
+ShortD a serving boy~
+LongD A servant is here, feeding Athena her grapes.~
+Desc This boy is truly lucky to be able to serve Athena herself.
+~
+Race unique~
+Align -2 3
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType none
+AC -45 -45 -45 -40
+Wealth 25
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7613
+Name hound dog war~
+ShortD a hound of war~
+LongD A large hound snarls at you.~
+Desc This great beast can barely be called a dog.  It has been bred to cause fear
+on the battle field, and you have no doubt that it does its job well.
+~
+Race unique~
+Align -1 -1
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -97
+Wealth 0
+Act    npc dont_wander scavenger aggressive~
+AffBy  invisible detect_invis detect_hidden sanctuary flying~
+Off    disarm dodge trip~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7614
+Name odin~
+ShortD odin~
+LongD Odin is resting here.~
+Desc As you gaze at Odin, you realize how insignificant you truly are.  He towers
+over you, and is so intent on his activities that he barely recognizes your
+presence.
+~
+Race unique~
+Align 0 3
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType none
+AC -300 -300 -300 -246
+Wealth 600
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7615
+Name grocer greengrocer julius shopkeeper~
+ShortD julius the Green Grocer~
+LongD Julius the Green Grocer stands here.~
+Desc This jovial man has devoted his life to selling fruit and other foods to the
+inhabitants of this city.  Although he may seem like a wimp, it would be wise
+not to underestimate him.  He smiles warmly at you and shows you his selection
+of delicious looking foods.
+~
+Race unique~
+Align -1 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 500
+Act    npc dont_wander scavenger~
+Act2   avoids_all_attacks~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7616
+Name alchemist shopkeeper~
+ShortD the Alchemist~
+LongD The ancient, wizened Alchemist stands here.~
+Desc Skilled in all manner of magic, as well as the ancient art of alchemy, he
+stands ready to supply the citizens here (but not you) with all manner of
+arcane supplies.
+~
+Race unique~
+Align 1 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -567
+Wealth 500
+Act    npc dont_wander scavenger~
+Act2   avoids_all_attacks~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7617
+Name clive~
+ShortD clive the Weapons Master~
+LongD Clive the Weapons Master is practicing with his bow and axe.~
+Desc Clive looks VERY big and VERY tough.  All those years in the army must have
+paid off.
+~
+Race unique~
+Align 3 3
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -176
+Wealth 500
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7618
+Name armourer samuel~
+ShortD samuel the Armourer~
+LongD Samuel the Armourer glares at you.~
+Desc Samuel looks just like Clive the Weapons Master: VERY big and VERY tough.
+He doesn't like what you've been doing in his city.
+~
+Race unique~
+Align -3 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -567
+Wealth 340
+Act    npc dont_wander scavenger~
+Act2   avoids_all_attacks~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7619
+Name ra sun god~
+ShortD `#`wRa the Sun God`^~
+LongD Ra the Egyptian Sun God is resting here.~
+Desc Ra is very bright!  It hurts your eyes to look at him, so you can tell little
+about his appearance.  What you can tell, however, suggests that he is no one
+to be trifled with.
+~
+Race rabbit~
+Align 2 3
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -332
+Wealth 600
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge fast trip assist_race~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7620
+Name chimera~
+ShortD a chimera~
+LongD A chimera prowls the cell.~
+Desc This bizarre creature has three heads - one of a goat, one of a lion, and one
+of a dragon.  It growls at you as you enter the cell, then suddenly attacks!
+~
+Race unique~
+Align -1 -3
+Level 34
+Hitroll 0
+HitDice 5d6+205
+ManaDice 5d6+180
+DamDice 4d7+10
+DamType none
+AC -113 -113 -113 -91
+Wealth 50
+Act    npc dont_wander scavenger aggressive~
+AffBy  invisible detect_invis detect_hidden sanctuary flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7621
+Name hera~
+ShortD hera~
+LongD Hera is here.~
+Desc Hera, the wife of Zeus is here.  She smiles at you as you enter and invites you
+to rest and sit for a while.
+~
+Race unique~
+Align -2 3
+Level 59
+Hitroll 0
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 5d10+25
+DamType none
+AC -290 -290 -290 -252
+Wealth 590
+Act    npc dont_wander scavenger cleric~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm kick parry assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#7622
+Name roc~
+ShortD a roc~
+LongD A roc is here.~
+Desc This is a giant bird.  It looks at you quizzically, then makes a noise and
+looks away.
+~
+Race unique~
+Align 1 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -100
+Wealth 250
+Act    npc scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#7623
+Name citizen resident~
+ShortD a citizen~
+LongD A citizen of this town is strolling down the street here.~
+Desc He looks happy and carefree.  He smiles and tips his hat to you.
+~
+Race unique~
+Align -2 3
+Level 35
+Hitroll 0
+HitDice 5d6+205
+ManaDice 3d5+70
+DamDice 4d7+10
+DamType none
+AC -113 -113 -113 -99
+Wealth 3
+Act    npc scavenger thief~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7624
+Name pegasus horse snow white~
+ShortD `#`wa `Wb`we`Wa`wu`Wt`wi`Wf`wu`Wl snow white `wp`We`wg`Wa`ws`Wu`ws`^~
+LongD A large horse with wings is here.~
+Desc This horse is snow white with large wings.  Although it doesn't look very
+threatening, it seems as though it would be dangerous if provoked.
+~
+Race unique~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -166
+Wealth 40
+Act    npc~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    dodge kick trip~
+Res    magic~
+Vuln   cold~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#7625
+Name cook~
+ShortD a Cook~
+LongD A cook is here, hard at work.~
+Desc This man looks as is he has been spending WAY too much time in the kitchen.
+~
+Race unique~
+Align 0 3
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -98
+Wealth 5
+Act    npc dont_wander scavenger~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    disarm dodge trip~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#7626
+Name jailer~
+ShortD the Jailer~
+LongD The jailer is here, watching for intruders.~
+Desc He looks as though he has spent a lot of time underground, guarding the
+prisoners.
+~
+Race unique~
+Align 1 0
+Level 22
+Hitroll 0
+HitDice 4d5+90
+ManaDice 5d6+160
+DamDice 2d7+5
+DamType none
+AC -50 -50 -50 -41
+Wealth 50
+Act    npc dont_wander scavenger mage~
+AffBy  invisible detect_invis detect_hidden sanctuary protect_evil flying~
+Off    dodge assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#7600
+Name aegis plate~
+Short `#`wAeg`si`ws Pl`sa`wtem`sa`wi`sl`^~
+Desc A powerful breast plate has been left here.~
+Level 60
+ItemType armor~
+Cost 1000
+Durability 1
+Asize 500
+Rsize 50
+Values 20 20 20 15 0
+Weight 5
+Material metal~
+Extra    glow magic nodegrade burnproof~
+Extra2   nodecay~
+Wear     take torso~
+Affect modifier -1 60 -1 strength 2 0
+Affect resist -1 60 -1 none 0 lightning
+End
+
+#7601
+Name hammer thunder bolt thunderbolt~
+Short `#`wa huge `st`wh`su`wn`sd`we`sr bolt `wshaped `shammer`^~
+Desc A huge hammer has been carelessly dropped here.~
+Level 60
+ItemType weapon~
+Cost 1000
+Durability 1
+Asize 240
+Rsize 50
+Values mace 7 7 blast G
+Weight 150
+Material metal~
+Extra    magic nodegrade burnproof~
+Extra2   nodecay runic_item~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin~
+Affect modifier -1 60 -1 hitroll 3 0
+Affect modifier -1 60 -1 empathy -1 0
+End
+
+#7602
+Name golden winged helmet~
+Short `#`ya `Yg`yo`Yl`yd`Ye`yn `Yw`yi`Yn`yg`Ye`yd helmet`^~
+Desc A helmet with small wings lies here.~
+Level 50
+ItemType armor~
+Cost 1000
+Durability 1
+Asize 50
+Rsize 50
+Values 13 13 13 10 0
+Weight 50
+Material gold~
+Extra    glow magic nodegrade~
+Extra2   nodecay~
+Wear     take head~
+Affect affects -1 50 -1 none 0 flying
+End
+
+#7603
+Name spear ares~
+Short `Gt`gh`Ge s`gpea`Gr of A`gre`Gs`n~
+Desc A wicked spear rests on the ground here.~
+Level 58
+ItemType weapon~
+Cost 1000
+Durability 1
+Asize 180
+Rsize 50
+Values exotic 15 3 thrust A
+Weight 90
+Material unknown~
+Extra    glow magic nodegrade~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances thief warrior druid paladin ranger barbarian bard monk anti-paladin~
+Affect modifier -1 58 -1 damroll 2 0
+Affect modifier -1 58 -1 hitroll 2 0
+Affect modifier -1 58 -1 ac -10 0
+End
+
+#7604
+Name sandals winged~
+Short `#`wa pair of `swinged `ysandals`^~
+Desc A pair of well made sandals lies here.~
+Level 50
+ItemType armor~
+Cost 1000
+Durability 1
+Asize 50
+Rsize 50
+Values 10 10 10 8 0
+Weight 50
+Material unknown~
+Extra    glow magic nodegrade norestring~
+Extra2   nodecay~
+Wear     take feet~
+Affect objectspell fly 1 -1 none 0 0
+End
+
+#7605
+Name staff ivory~
+Short `#`wan ivory `sstaff`^~
+Desc An ivory staff.~
+Level 15
+ItemType wand~
+Cost 500
+Durability 1
+Asize 80
+Rsize 50
+Values 35 5 5 shield 0
+Weight 80
+Material unknown~
+Extra    glow magic~
+Wear     take hold~
+End
+
+#7606
+Name trident poseidon~
+Short `#`wa gigantic `Yg`yo`Yl`yd`Ye`yn trident`^~
+Desc A huge three pronged spear lies here.~
+Level 57
+ItemType weapon~
+Cost 500
+Durability 1
+Asize 160
+Rsize 50
+Values exotic 2 28 pierce F
+Weight 160
+Material unknown~
+Extra    glow magic antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 57 -1 hitroll 3 0
+Affect modifier -1 57 -1 damroll 3 0
+End
+
+#7607
+Name silver long bow~
+Short `#`wa m`Wa`wg`Wn`wi`Wf`wi`Wc`we`Wn`wt `ss`wi`Wl`sv`we`Wr `wlong `sbow`^~
+Desc A silver bow.~
+Level 47
+ItemType weapon~
+Cost 700
+Durability 1
+Asize 150
+Rsize 50
+Values bow 13 3 pierce L
+Weight 40
+Material silver~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 47 -1 damroll 1 0
+Affect modifier -1 47 -1 hitroll 1 0
+End
+
+#7608
+Name gauntlets flaming~
+Short `#`wa pair of `Rf`rl`Ra`rm`Ri`rn`Rg `sgauntlets`^~
+Desc A pair of metal gauntlets flame here.~
+Level 45
+ItemType armor~
+Cost 1000
+Durability 1
+Asize 60
+Rsize 50
+Values 9 9 9 8 0
+Weight 60
+Material unknown~
+Extra    magic antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hands~
+Affect modifier -1 45 -1 hp 25 0
+Affect resist -1 45 -1 none 0 fire
+End
+
+#7609
+Name pill ambrosia~
+Short `#`Ma`mm`Mb`mr`Mo`ms`Mi`ma`^~
+Desc Some ambrosia lies here.~
+Level 12
+ItemType pill~
+Cost 250
+Durability 1
+Asize 10
+Rsize 50
+Values 30 'cure disease' heal '' ''
+Weight 10
+Material unknown~
+Extra    glow magic antievil nodegrade~
+Extra2   nodecay~
+Wear     take~
+End
+
+#7610
+Name necklace glowing~
+Short `#`wa `Yg`yl`Yo`yw`Yi`yn`Yg `wnecklace`^~
+Desc A necklace with an inner glow lies here.~
+Level 55
+ItemType armor~
+Cost 300
+Durability 1
+Asize 20
+Rsize 50
+Values 9 9 9 7 0
+Weight 20
+Material unknown~
+Extra    magic antievil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 55 -1 mana 25 0
+Affect modifier -1 55 -1 intuition 3 0
+End
+
+#7611
+Name diadem crown lustering sapphires~
+Short `#`wa `Wd`wi`Wa`wd`We`wm made of `Wl`wu`Ws`wt`We`wr`Wi`wn`Wg `Bs`ba`Bp`bp`Bh`bi`Br`be`Bs`^~
+Desc A diadem of sapphires has been dropped here.~
+Level 51
+ItemType jewelry~
+Cost 1000
+Durability 1
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material sapphires~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay~
+Wear     take head~
+Affect modifier -1 51 -1 damroll 3 0
+Affect modifier -1 51 -1 saves -2 0
+Affect modifier -1 51 -1 ac -8 0
+Affect modifier -1 51 -1 hitroll 3 0
+End
+
+#7612
+Name shield glowing~
+Short `#`wa brightly `Yg`yl`Yo`yw`Yi`yn`yg `sshield`^~
+Desc A shield lies here, filling the room with its aura.~
+Level 50
+ItemType armor~
+Cost 500
+Durability 1
+Asize 100
+Rsize 50
+Values 17 17 17 13 0
+Weight 100
+Material unknown~
+Extra    glow magic nodegrade~
+Extra2   nodecay~
+Wear     take shield~
+Affect modifier -1 50 -1 empathy 1 0
+Affect modifier -1 50 -1 agility 3 0
+End
+
+#7613
+Name axe notched~
+Short `#`sa notched axe`^~
+Desc A notched axe.~
+Level 35
+ItemType weapon~
+Cost 750
+Durability 1
+Asize 120
+Rsize 50
+Values axe 2 19 slice E
+Weight 50
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 35 -1 damroll 7 0
+End
+
+#7614
+Name grapes~
+Short `#`wa bunch of `mgrapes`^~
+Desc A bunch of grapes.~
+Level 1
+ItemType food~
+Cost 50
+Durability 1
+Asize 10
+Rsize 50
+Values 20 20 0 0 0
+Weight 10
+Material grapes~
+Wear     take~
+End
+
+#7615
+Name fan peacock feathers~
+Short `#`wa `cfan `wmade of `Cp`ce`wa`Wc`wo`cc`Ck `wfeathers`^~
+Desc A fan made of peacock feathers.~
+Level 6
+ItemType treasure~
+Cost 0
+Durability 1
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material feathers~
+Wear     take hold~
+Affect modifier -1 6 -1 mana 50 0
+End
+
+#7616
+Name lyre~
+Short `#`wa `Wb`we`Wa`wu`Wt`wi`Wf`wu`Wl`wl`Wy `wmade `ylyre`^~
+Desc A lyre is laying here.~
+Level 5
+ItemType instrument~
+Cost 0
+Durability 1
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material wood~
+Wear     take hold~
+End
+
+#7617
+Name nugget gold~
+Short `#`ya `Ygold `ynugget`^~
+Desc A gold nugget lies gleaming here.~
+Level 0
+ItemType warpstone~
+Cost 500
+Durability 1
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material unknown~
+Wear     take hold~
+End
+
+#7618
+Name apple~
+Short `#`wa bright `Rred `wapple`^~
+Desc An apple is here.~
+Level 1
+ItemType food~
+Cost 50
+Durability 1
+Asize 10
+Rsize 50
+Values 20 20 0 0 0
+Weight 10
+Material apple~
+Wear     take~
+End
+
+#7619
+Name plump juicy pear~
+Short `#`wa plump juicy `ypear`^~
+Desc A pear is here.~
+Level 1
+ItemType food~
+Cost 50
+Durability 1
+Asize 10
+Rsize 50
+Values 20 20 0 0 0
+Weight 10
+Material pear~
+Wear     take~
+End
+
+#7620
+Name blood red orange~
+Short `#`wa huge `rb`ylood `rred `yorange`^~
+Desc A orange is here.~
+Level 1
+ItemType food~
+Cost 50
+Durability 1
+Asize 10
+Rsize 50
+Values 20 20 0 0 0
+Weight 10
+Material orange~
+Wear     take~
+End
+
+#7621
+Name kiwi~
+Short `#`ga kiwi`^~
+Desc A kiwi is here.~
+Level 1
+ItemType food~
+Cost 50
+Durability 1
+Asize 10
+Rsize 50
+Values 20 20 0 0 0
+Weight 10
+Material kiwi~
+Wear     take~
+End
+
+#7622
+Name amulet sun~
+Short `#`YT`yh`Ye A`ym`Yu`yl`Ye`yt `Yo`yf `Yt`yh`Ye S`yu`Yn`^~
+Desc A sun shaped medallion is lying here.~
+Level 40
+ItemType jewelry~
+Cost 500
+Durability 1
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    glow magic nodegrade~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 40 -1 mana 50 0
+Affect modifier -1 40 -1 saves -4 0
+Affect modifier -1 40 -1 quickness 2 0
+End
+
+#7623
+Name sun sword~
+Short `#`Yt`yh`Ye `YS`yw`Yo`yr`Yd `yo`Yf `yt`Yh`ye `YS`yu`Yn`n`^~
+Desc A beautiful sword with the rising sun etched on the pommel is lying here.~
+Level 65
+ItemType weapon~
+Cost 500
+Durability 1
+Asize 200
+Rsize 50
+Values sword 4 16 slash A
+Weight 80
+Material unknown~
+Extra    glow magic nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 65 -1 damroll 5 0
+Affect modifier -1 65 -1 hitroll 5 0
+End
+
+#7624
+Name robe deep blue long flowing~
+Short `#`wa `bdeep blue `wlong flowing `srobe`^~
+Desc A deep blue robe is on the ground here.~
+Level 55
+ItemType armor~
+Cost 500
+Durability 1
+Asize 100
+Rsize 50
+Values 14 14 14 11 0
+Weight 100
+Material cloth~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+Wear     take about~
+Affect modifier -1 55 -1 hp 15 0
+End
+
+#7625
+Name wide brimmed hat~
+Short `#`wa wide brimmed `shat`^~
+Desc A hat is lying here.~
+Level 50
+ItemType armor~
+Cost 500
+Durability 1
+Asize 50
+Rsize 50
+Values 13 13 13 10 0
+Weight 50
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+Wear     take head~
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 damroll 2 0
+End
+
+#7626
+Name nectar potion gods~
+Short `#`WN`we`Wc`wt`Wa`wr of the `YG`yo`Yd`ys`^~
+Desc A vial of nectar is lying here.~
+Level 12
+ItemType potion~
+Cost 250
+Durability 1
+Asize 10
+Rsize 50
+Values 30 sanctuary 'giant strength' refresh ''
+Weight 10
+Material unknown~
+Extra    glow magic nodegrade~
+Extra2   nodecay~
+Wear     take~
+End
+
+#7627
+Name key cell~
+Short a Cell key~
+Desc A key has been left here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 1
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take~
+End
+
+#7628
+Name map olympus secret~
+Short a secret map of Olympus~
+Desc A rolled up map is here.~
+Level 1
+ItemType map~
+Cost 0
+Durability 1
+Asize 10
+Rsize 50
+Values A 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take~
+ExtraDesc map olympus secret~
+..
+                              The Secret Map Of
+                               *****OLYMPUS*****
+ 
+                                   (Hermes)
+                                   Bedroom    The Portal
+                                      |           |
+                                   Northern  Hall of Gods
+                                     Hall    /
+                        Western       |    /    Eastern
+              Bedroom----Hall----Second Floor----Hall----Bedroom
+              (Hera)            /     |                 (Poseidon)
+                         Stairway  Southern
+          (Prometheus)       |       Hall                    North
+              Cell    /Throne Room    |                        |  /Up
+                |   /     (Zeus)   Bedroom                     |/
+       Cell-Dungeon-Cell     |                          West---+---East
+  (Chimera)(Jailor)(Chimera) |                                /|
+                             |                          Down/  |
+                  Kitchen    |     Stable                    South
+        (Odin)       |       |       |       (Ra)
+        Guest     Western  Castle  Eastern   Guest      ()Mob Location
+       Quarters----Wing----Entry----Wing----Quarters
+                     |       |       |
+                  Storage   Z|   Storage Room
+                   Room     e|
+                            u|  Believer
+                            s|     |    (Hephaestus)
+                             |  Planning---Smithy
+                            S|  Room(Ares)   |
+                            t|               |  (Clive)
+                 (Alchemist) +--Ares Street--+--Weapon
+                    Mystery  |               |   Shop
+                    Shop-----+               |
+                             |            Armoury
+                   Residence-+-Residence  (Samuel)
+                   (Apollo)  |  (Athena)
+                             |
+             (Julius)Bakery--+
+                             |
+                       **Entrance**
+                            /
+                      Mountain
+~
+End
+
+#0
+
+
+
+#ROOMS
+#7601
+Name Mountain~
+Desc You are on the side a large mountain cliff. A small rugged path heads up the 
+mountain to parts unknown. Rubble covers the ground, and there appears no 
+other way to go over, down, or around the mountain. 
+~
+RoomFlags indoors light~
+Sector gateway~
+Exit up 7602
+EKeyvnum -1
+End
+
+
+#7602
+Name Mountain~
+Desc You are making your way up the mountain.  The rigorous climb has left you
+tired, and you are ready to take a break.
+~
+RoomFlags indoors light~
+Sector air~
+Exit up 7603
+EKeyvnum -1
+Exit down 7601
+EKeyvnum -1
+End
+
+
+#7603
+Name Mountain~
+Desc You have finally reached the top of the mountain.  The air here is so thin
+that you must gasp for breath.  To the north, you see what seems to be the
+entrance to a city.
+~
+RoomFlags indoors light~
+Sector air~
+Exit north 7604
+EKeyvnum -1
+Exit down 7602
+EKeyvnum -1
+End
+
+
+#7604
+Name Entrance~
+Desc You are at the entrance to a huge city.  As you look around, you realize
+that the inhabitants of this city must be very wealthy indeed - you have never
+seen a city with such beautiful buildings.
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7605
+EKeyvnum -1
+Exit south 7603
+EKeyvnum -1
+End
+
+
+#7605
+Name Zeus Street~
+Desc You are walking down a huge street.  You notice that there are not many
+people in this town.  On a corner, you see a sign marked 'Zeus Street'.
+To the west, you see a small store.
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7606
+EKeyvnum -1
+EDesc The street continues.
+~
+Exit south 7604
+EKeyvnum -1
+Exit west 7624
+EKeyvnum -1
+End
+
+
+#7606
+Name Zeus Street~
+Desc You are walking down what appears to be the main street of this city.
+You see large residences to the east and west, while the street continues
+to the north and south.
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7607
+EKeyvnum -1
+Exit east 7625
+EKeyvnum -1
+Exit south 7605
+EKeyvnum -1
+EDesc The street continues.
+~
+Exit west 7626
+EKeyvnum -1
+End
+
+
+#7607
+Name Zeus Street~
+Desc You are on the main street of this town, called Zeus street. There is some
+sort of store to the west.
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7608
+EKeyvnum -1
+Exit south 7606
+EKeyvnum -1
+Exit west 7627
+EKeyvnum -1
+End
+
+
+#7608
+Name Zeus Street~
+Desc You are still on the main thoroughfare of this town.  To the north, you see
+a large castle.  To the east there is a smaller road.
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7609
+EKeyvnum -1
+Exit east 7628
+EKeyvnum -1
+Exit south 7607
+EKeyvnum -1
+End
+
+
+#7609
+Name Castle Entryway~
+Desc You are in the entryway of a large castle.  It is very beautiful, with
+large paintings and a lovely carpet.  You hear jovial laughter to the north,
+while smaller corridors branch off to the east and west.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7610
+EKeyvnum -1
+Exit east 7615
+EKeyvnum -1
+Exit south 7608
+EKeyvnum -1
+Exit west 7611
+EKeyvnum -1
+End
+
+
+#7610
+Name Throne Room~
+Desc You stop dead in your tracks as you enter this room.  Before you is Zeus,
+in all his glory, sitting on a huge golden throne.  You had thought him to be 
+just a myth, but here he is ... you wonder who else lives in this castle.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc throne~
+This huge golden throne looks as if it has been here for ages.  As you study it
+carefully, you notice that it is not firmly attached to the floor ... perhaps
+you could slide it?
+~
+Exit north 7623
+EKeyvnum -1
+Exit south 7609
+EKeyvnum -1
+Exit down 7618
+EFlags door closed~
+EKeyvnum -1
+EKeywords throne trapdoor~
+End
+
+
+#7611
+Name Western Wing~
+Desc You are in the western wing of the castle.  You see the entrance to the
+east, while this hallway continues to the west.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7609
+EKeyvnum -1
+Exit west 7612
+EKeyvnum -1
+End
+
+
+#7612
+Name Western Wing~
+Desc You are in the western wing of the castle.  The hallway continues to the
+north, while there are private rooms to the west and south.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7613
+EKeyvnum -1
+Exit east 7611
+EKeyvnum -1
+Exit south 7630
+EKeyvnum -1
+Exit west 7629
+EKeyvnum -1
+End
+
+
+#7613
+Name Western Wing~
+Desc You are in the western wing of the castle.  This hallway continues to the
+south, and you hear pots and pans rattling to the north.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7614
+EKeyvnum -1
+Exit south 7612
+EKeyvnum -1
+End
+
+
+#7614
+Name Kitchen~
+Desc You have entered the kitchen of this castle, and it is a hotbed of
+activity.  Servants are bustling about, preparing food for the Gods themselves.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7613
+EKeyvnum -1
+End
+
+
+#7615
+Name Eastern Wing~
+Desc You are in the eastern wing of the castle.  The hall continues to the
+east, while the entrance is back to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 7616
+EKeyvnum -1
+Exit west 7609
+EKeyvnum -1
+End
+
+
+#7616
+Name Eastern Wing~
+Desc You are in the eastern wing of the castle.  The hall turns to the north
+here, while there are private rooms to the east and the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7617
+EKeyvnum -1
+Exit east 7631
+EKeyvnum -1
+Exit south 7632
+EKeyvnum -1
+Exit west 7615
+EKeyvnum -1
+End
+
+
+#7617
+Name Eastern Wing~
+Desc You are in the eastern wing of the castle.  You hear animals to the north,
+while the hallway continues to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7633
+EKeyvnum -1
+Exit south 7616
+EKeyvnum -1
+End
+
+
+#7618
+Name Dungeon~
+Desc You are in Zeus's Dungeon.  You wonder what creatures are so terrible that
+even mighty Zeus fears them enough to imprison them.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 7619
+EKeyvnum -1
+Exit up 7610
+EKeyvnum -1
+EKeywords trapdoor throne~
+End
+
+
+#7619
+Name Dungeon~
+Desc You are in Zeus's Dungeon.  There are cells to the north, west, and east. 
+From the east and west, you hear guttural noises.  From the north, nothing ...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 7620
+EFlags door closed locked pickproof~
+EKeyvnum 7627
+EKeywords door~
+Exit east 7622
+EFlags door closed locked pickproof~
+EKeyvnum 7627
+EKeywords door~
+Exit south 7618
+EKeyvnum -1
+Exit west 7621
+EFlags door closed locked pickproof~
+EKeyvnum 7627
+EKeywords door~
+End
+
+
+#7620
+Name Cell~
+Desc You are in a small, cramped, dirty cell.  It is a horrid place.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 7619
+EFlags door closed locked pickproof~
+EKeyvnum 7627
+EKeywords door~
+End
+
+
+#7621
+Name Cell~
+Desc You are in a small, cramped, dirty cell.  It is a horrid place.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 7619
+EFlags door closed locked pickproof~
+EKeyvnum 7627
+EKeywords door~
+End
+
+
+#7622
+Name Cell~
+Desc You are in a small, cramped, dirty cell.  It is a horrid place.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 7619
+EFlags door closed locked pickproof~
+EKeyvnum 7627
+EKeywords door~
+End
+
+
+#7623
+Name Stairway~
+Desc You have come to a large stairway leading up.  To the south, you see the
+throne room of Zeus.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7610
+EKeyvnum -1
+Exit up 7639
+EKeyvnum -1
+End
+
+
+#7624
+Name Bakery~
+Desc You are in the small store which supplies the residents of this town with
+their food.  It smells wonderful in here!
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7605
+EKeyvnum -1
+End
+
+
+#7625
+Name Residence~
+Desc You are in the residence of one of the inhabitants of this town.  She
+looks vaguely familiar, but you can't place her name ...
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 7606
+EKeyvnum -1
+End
+
+
+#7626
+Name Residence~
+Desc You are in the residence of one of the inhabitants of this town.  He looks
+vaguely familiar, but you can't place his name ...
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7606
+EKeyvnum -1
+End
+
+
+#7627
+Name Mystic Shop~
+Desc You are in the store which provides the citizens here with whichever
+arcane objects they may need.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7607
+EKeyvnum -1
+End
+
+
+#7628
+Name Ares Street~
+Desc You are on a smaller road which branches off from the main street.  On a
+sign, you notice that the name of this road is Ares Street.
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 7634
+EKeyvnum -1
+Exit west 7608
+EKeyvnum -1
+End
+
+
+#7629
+Name Guest Quarters~
+Desc You have entered private quarters which are reserved for visitors to the
+castle.  You nearly faint as you recognize the occupant of this chamber as Odin
+himself, patron God of Midgaard.  He must be visiting Zeus.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7612
+EKeyvnum -1
+End
+
+
+#7630
+Name Storage Room~
+Desc You are in a storage room of the castle.  There isn't much here, just a
+few boxes filled with old junk.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7612
+EKeyvnum -1
+End
+
+
+#7631
+Name Guest Quarters~
+Desc You have entered a room reserved for visitors to this castle.  You are
+amazed as you recognize the occupant - Ra, the Egyptian Sun God.  He must be
+visiting Zeus.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 7616
+EKeyvnum -1
+End
+
+
+#7632
+Name Storage Room~
+Desc You are in a storage room of the castle.  There isn't much here, just a lot
+of dust.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 7616
+EKeyvnum -1
+End
+
+
+#7633
+Name Stable~
+Desc You are in the stable of the castle.  Rather than the horses which you
+expected to find, it is filled with a wide variety of creatures which you
+thought were mythical.  Obviously, you were wrong.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 7617
+EKeyvnum -1
+End
+
+
+#7634
+Name Ares Street~
+Desc You have reached the end of Ares Street.  To the south you see an armoury,
+while there is a weapons shop to the east.  To the north, you hear the sounds
+of a blacksmith.
+~
+RoomFlags indoors light~
+Sector city~
+Exit north 7637
+EKeyvnum -1
+Exit east 7636
+EKeyvnum -1
+Exit south 7635
+EKeyvnum -1
+Exit west 7628
+EKeyvnum -1
+End
+
+
+#7635
+Name Armoury~
+Desc This small store is almost empty.  It seems as if there is not much here,
+but the shopkeeper doesn't want to do business with you anyways.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7634
+EKeyvnum -1
+End
+
+
+#7636
+Name Weapon Shop~
+Desc You have entered a small store with a modest selection of weapons.  You
+get the feeling that there is not a very wide selection here, but the
+shopkeeper doesn't want to do business with you anyways.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 7634
+EKeyvnum -1
+End
+
+
+#7637
+Name Smithy~
+Desc This large room is so noisy, you can barely hear yourself think.  All the
+occupants are hard at work, crafting high quality weapons and armor.  Something
+is strange about the west wall, although you can't quite tell what it is.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7634
+EKeyvnum -1
+Exit west 7638
+EFlags door closed~
+EKeyvnum -1
+EKeywords door concealed~
+EDesc You see a concealed door!
+~
+End
+
+
+#7638
+Name The Planning Room~
+Desc You have entered a large room dominated by a huge table with a large map
+on it.  Several men are gathered around the table, studying the map carefully.
+You hear the barking of dogs to the north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 7654
+EKeyvnum -1
+Exit east 7637
+EKeyvnum -1
+End
+
+
+#7639
+Name Second Floor~
+Desc You are on the second floor of this castle.  You are numb from your
+discoveries on the first floor, and wonder what secrets the upper floor of this
+castle holds.  Hallways extend in all directions, and you see a small, closed 
+hatch above you.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7640
+EKeyvnum -1
+Exit east 7643
+EKeyvnum -1
+Exit south 7641
+EKeyvnum -1
+Exit west 7642
+EKeyvnum -1
+Exit up 7648
+EFlags door closed~
+EKeyvnum -1
+EKeywords hatch~
+EDesc You see a sign on the hatch.  It reads 'Private Property. No trespassing!'
+~
+Exit down 7623
+EKeyvnum -1
+End
+
+
+#7640
+Name Northern Hall~
+Desc You are in the northern hallway.  There is a private room to the north,
+and the stairs leading down are to the south.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7647
+EKeyvnum -1
+Exit south 7639
+EKeyvnum -1
+End
+
+
+#7641
+Name Southern Hall~
+Desc You are in the southern hallway.  There is a private room to the south,
+and the stairs leading down are to the north.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7639
+EKeyvnum -1
+Exit south 7644
+EKeyvnum -1
+End
+
+
+#7642
+Name Western Hall~
+Desc You are in the western hallway.  There is a private room to the west, and
+the stairs leading down are to the east.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7639
+EKeyvnum -1
+Exit west 7645
+EKeyvnum -1
+End
+
+
+#7643
+Name Eastern Hall~
+Desc You are in the eastern hallway.  There is a private room to the east, and
+the stairs leading down are to the west.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7646
+EKeyvnum -1
+Exit west 7639
+EKeyvnum -1
+End
+
+
+#7644
+Name Bed Room~
+Desc You are in the bed room of a God!  This one seems to be empty.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7641
+EKeyvnum -1
+End
+
+
+#7645
+Name Bed Room~
+Desc You are in the bed room of a God!
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7642
+EKeyvnum -1
+End
+
+
+#7646
+Name Bed Room~
+Desc You are in the bed room of a God!
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 7643
+EKeyvnum -1
+End
+
+
+#7647
+Name Bed Room~
+Desc You are in the bed room of a God!
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7640
+EKeyvnum -1
+End
+
+
+#7648
+Name Hall of Gods~
+Desc You have entered the most sacred of places, the hall of true Gods.  If you
+are a mortal, it would probably be a good idea to leave NOW!  Exits leave in
+all directions.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7651
+EKeyvnum -1
+Exit down 7639
+EKeyvnum -1
+EKeywords hatch~
+End
+
+
+#7651
+Name The Portal~
+Desc A sign reads: Beware of the unexpected and don't expect too much.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7648
+EKeyvnum -1
+End
+
+
+#7654
+Name The Believer~
+Desc A voice whispers, 'before the time has passed, enjoy your life.'
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7638
+EKeyvnum -1
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 7601 spec_cast_cleric
+M 7602 spec_breath_fire
+M 7603 spec_thief
+M 7604 spec_cast_mage
+M 7605 spec_cast_adept
+M 7607 spec_cast_adept
+M 7608 spec_breath_lightning
+M 7609 spec_guard
+M 7614 spec_breath_any
+M 7619 spec_breath_any
+M 7620 spec_breath_fire
+M 7621 spec_cast_cleric
+M 7622 spec_poison
+M 7626 spec_cast_mage
+S
+
+
+
+#RESETS2
+O 0 7900 -1 7601
+M 0 7623 10 7604 2
+M 0 7623 10 7605 2
+M 0 7623 10 7606 2
+M 0 7623 10 7607 2
+M 0 7623 10 7608 2
+M 0 7601 1 7610 1
+E 0 7600 0 torso~
+E 0 7601 0 wielded~
+G 0 7626 0
+G 0 7609 0
+M 0 7625 4 7614 4
+M 0 7625 4 7614 4
+M 0 7626 1 7618 1
+G 0 7627 0
+M 0 7602 1 7620 1
+G 0 7628 0
+E 0 7608 0 hands~
+M 0 7620 2 7621 1
+M 0 7620 2 7622 1
+M 0 7615 1 7624 1
+G 0 7614 0
+G 0 7618 0
+G 0 7619 0
+G 0 7620 0
+G 0 7621 0
+M 0 7607 1 7625 1
+E 0 7610 0 neck1~
+E 0 7605 0 hold~
+G 0 7626 0
+G 0 7609 0
+M 0 7612 4 7625 4
+E 0 7615 0 hold~
+G 0 7614 0
+M 0 7612 4 7625 4
+E 0 7615 0 hold~
+G 0 7614 0
+M 0 7605 1 7626 1
+E 0 7607 0 wielded~
+G 0 7626 0
+G 0 7609 0
+M 0 7611 4 7626 4
+E 0 7616 0 hold~
+G 0 7621 0
+M 0 7611 4 7626 4
+E 0 7616 0 hold~
+G 0 7621 0
+M 0 7616 1 7627 1
+G 0 7605 0
+G 0 7609 0
+G 0 7626 0
+M 0 7623 10 7628 2
+M 0 7614 1 7629 1
+E 0 7624 0 about~
+E 0 7625 0 head~
+M 0 7619 1 7631 1
+E 0 7622 0 neck1~
+E 0 7623 0 wielded~
+M 0 7622 3 7633 3
+M 0 7622 3 7633 3
+M 0 7624 3 7633 3
+M 0 7624 3 7633 3
+M 0 7623 10 7634 2
+M 0 7618 1 7635 1
+G 0 7604 0
+G 0 7608 0
+G 0 7611 0
+M 0 7617 1 7636 1
+G 0 7607 0
+G 0 7613 0
+M 0 7608 1 7637 1
+E 0 7612 0 shield~
+G 0 7626 0
+G 0 7609 0
+M 0 7609 4 7637 4
+G 0 7617 0
+M 0 7609 4 7637 4
+G 0 7617 0
+M 0 7606 1 7638 1
+E 0 7603 0 wielded~
+G 0 7626 0
+G 0 7609 0
+M 0 7610 4 7638 4
+E 0 7613 0 wielded~
+G 0 7619 0
+M 0 7610 4 7638 4
+E 0 7613 0 wielded~
+G 0 7619 0
+M 0 7621 1 7645 1
+E 0 7611 -1 head~
+G 0 7626 0
+G 0 7609 0
+M 0 7604 1 7646 1
+E 0 7606 0 wielded~
+G 0 7626 0
+G 0 7609 0
+M 0 7603 1 7647 1
+E 0 7604 0 feet~
+E 0 7602 0 head~
+G 0 7626 0
+G 0 7609 0
+M 0 7613 5 7654 5
+M 0 7613 5 7654 5
+M 0 7613 5 7654 5
+S
+
+
+
+#SHOPS
+#7615
+buy_type light~
+buy_type treasure~
+buy_type trash~
+buy_type container~
+buy_type food~
+profit_buy 120
+profit_sell 80
+close_hour 23
+END
+
+#7616
+buy_type pill~
+buy_type potion~
+buy_type wand~
+buy_type staff~
+profit_buy 100
+profit_sell 100
+open_hour 1
+close_hour 23
+END
+
+#7617
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#7618
+buy_type weapon~
+buy_type armor~
+buy_type jewelry~
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#7687
+title troll shifts you over bridge~
+code say Alright, move along then.
+mob transfer $n 7686
+mob echo $N leaves north.
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1040666688
+END
+
+#7686
+title transfer mobs and ask for 100 silver~
+code if isnpc $n
+    snarl $n
+    mob transfer $n 7686
+else
+    say Pay the toll or you're not going anywhere!
+    say 100 silver and not a coin less.
+    glare $n
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1040666813
+END
+
+#0
+
+
+#$

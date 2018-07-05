@@ -1,0 +1,1498 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Nyte's Estate~
+ShortName   Nyte's Estate~
+Builders    none~
+Credits     nyte~
+VNUMs       46200 46269
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Sun Feb 13 21:58:07 2005~
+End
+
+
+
+#MOBILES
+#46200
+Name female malkatar kendara~
+ShortD a beautiful female malkatar~
+LongD A beautiful female malkatar with flowing brown hair stands here.~
+Desc A beautiful female malkatar with flowing brown hair. She looks like she 
+has been working hard, but is still very clean and flawless.
+~
+Race malkatar~
+Align 0 3
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType slap
+AC 80 80 80 69
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#46201
+Name lilith~
+ShortD an attractive female markian with blond hair~
+LongD An attractive female markian with blonde hair is here.~
+Desc A very attractive markian female is here tending to the child.
+~
+Race markian~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType slap
+AC 80 80 80 71
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#46202
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 46202 100~
+END
+
+#46203
+Name unseen_flower_updater~
+ShortD unseen_flower_updater~
+LongD Unseen_flower_updater~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg HOUR 46203 8~
+MProg HOUR 46204 16~
+MProg HOUR 46205 0~
+END
+
+#0
+
+
+
+#OBJECTS
+#46200
+Name table~
+Short a large `#`ywooden`^ table and chairs~
+Desc There is a large wooden table with chairs here.~
+Level 91
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 15 10000 DGJ 0 0
+Weight 0
+Material wood~
+Wear     no_sac~
+End
+
+#46201
+Name wine rack~
+Short an antique wine rack~
+Desc An antique wine rack is here stocked with the finest home-made wines.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 500 AC 0 70 0
+Weight 180
+Material metal~
+Extra2   nodecay nosell~
+Wear     no_sac~
+End
+
+#46202
+Name a painting of nyte~
+Short a painting of nyte~
+Desc A painting of Nyte has been hung here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 0 0 5 0
+Weight 0
+Material unknown~
+ExtraDesc painting ~
+You see a painting of Nyte holding a large shield with a divine looking 
+flame on it. Behind him are two large dragons.
+~
+End
+
+#46204
+Name large bed~
+Short a large feather bed~
+Desc A large feather bed filled with exotic feathers is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 10000 EHKL 100 100
+Weight 2000
+Material unknown~
+Extra    bless nonmetal nolocate burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#46205
+Name a large bed.~
+Short a large feather bed~
+Desc A large feather bed filled with exotic feathers is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 10000 EHKL 100 100
+Weight 2000
+Material unknown~
+Extra    bless nonmetal nolocate burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#46206
+Name some chains with shackles that hang from the ceiling~
+Short some chains with shackles that hang from the ceiling~
+Desc A set of chains with shackles that hang from the ceiling.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 CIL 0 0
+Weight 0
+Material iron~
+Extra    hum evil nolocate burnproof norestring nogetall~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#46207
+Name a wooden table~
+Short a wooden table~
+Desc A small wooden table sits next to the bed.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nolocate norestring~
+Wear     no_sac~
+ExtraDesc whip feather~
+Some tools used by the seductress to "torture you."
+~
+End
+
+#46208
+Name a feather~
+Short a feather~
+Desc An exotic feather.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Extra    nonmetal nolocate~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+End
+
+#46209
+Name `#`rred`^ wine~
+Short some `#`rred`^ wine~
+Desc Some fine home-made `#`rred`^ wine.~
+Level 0
+ItemType drinkcontainer~
+Cost 700
+Asize 0
+Rsize 50
+Values 2 2 'red wine' 0 0
+Weight 15
+Material glass~
+Wear     take hold~
+End
+
+#46210
+Name `#`wwhite`^ wine~
+Short some `#`Wwhite`^ wine~
+Desc Some fine home-made `#`Wwhite`^ wine.~
+Level 0
+ItemType drinkcontainer~
+Cost 700
+Asize 0
+Rsize 50
+Values 2 2 'white wine' 0 0
+Weight 15
+Material glass~
+Wear     take hold~
+End
+
+#46211
+Name a large chest~
+Short a large chest~
+Desc A large chest is here for storing Nyte's goods.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 100000 ACD 0 1000 0
+Weight 1000
+Material wood~
+Extra    hum nolocate burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     no_sac~
+End
+
+#46212
+Name a low-cut `#`mpurple`^ dress~
+Short a low-cut `#`mpurple`^ dress~
+Desc A low-cut `#`mpurple`^ dress is here.~
+Level 91
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow hum bless antievil noremove nonmetal nolocate~
+Extra2   nodecay nosell~
+Wear     torso no_sac~
+End
+
+#46213
+Name a large shield~
+Short a large shield~
+Desc A large shield with a divine flame on it is here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 0 0 5 0
+Weight 0
+Material unknown~
+ExtraDesc shield flame~
+A large shield with a divine flame is here with two glinting swords crossed 
+over it.
+~
+End
+
+#46214
+Name a tight-fighting `#`sblack`^ leather top~
+Short a tight-fighting `#`Sblack`^ leather top~
+Desc A tight-fighting `#`Sblack`^ leather top is here.~
+Level 0
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material leather~
+Wear     torso no_sac~
+End
+
+#46215
+Name fountain of blood~
+Short fountain of blood~
+Desc A fountain of blood.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 blood 0 0
+Weight 0
+Material unknown~
+Extra2   nodecay~
+ExtraDesc fountain blood~
+A fountain of blood is here and flows none stop.
+~
+End
+
+#46216
+Name an armor stand~
+Short an armor stand~
+Desc A sturdy stand for armor and such is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 1000 N 0 0
+Weight 1000
+Material iron~
+Extra    nolocate burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#46218
+Name a painting of an epic battle~
+Short a painting of an epic battle~
+Desc A painting of an epic battle has been hung here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 0 0 5 0
+Weight 0
+Material unknown~
+ExtraDesc painting ~
+You see a picture showing a vampire and angel in a deadly fight. The angel
+heralds a glinting sword over his obviously outplayed foe.
+~
+End
+
+#46219
+Name a pair of `#`sblack`^ leather stockings~
+Short a pair of `#`Sblack`^ leather stockings~
+Desc A pair of `#`Sblack`^ leather stockings is here.~
+Level 88
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material leather~
+Extra    glow hum evil nodrop antigood noremove nopurge nonmetal nolocate burnproof nouncurse nogetall~
+Extra2   nodecay nosell~
+Wear     legs no_sac~
+End
+
+#46220
+Name a wooden table~
+Short a wooden table~
+Desc A small wooden table sits next to the bed.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nolocate norestring~
+Wear     no_sac~
+ExtraDesc nyte ~
+A painting of Nyte slaying a golden dragon.
+~
+End
+
+#46221
+Name a large ceramic bath-tub~
+Short a large ceramic bath-tub~
+Desc A large ceramic bath-tub with a golden lining is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 10000 FI 0 0
+Weight 0
+Material ceramic~
+Extra    hum bless nonmetal nolocate burnproof norestring~
+Extra2   nodecay nosell~
+Wear     no_sac~
+ExtraDesc ceramic tub flowers candles golden~
+A large ceramic bath-tub with a golden lining is here. There are flower 
+pedals and candles surrounding the tub. The lit candles flicker whenever the 
+door is opened.
+~
+End
+
+#46222
+Name a water basin~
+Short a water basin~
+Desc A water basin is here with a well lit mirror hanging above it.~
+Level 0
+ItemType drinkcontainer~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 150
+Material iron~
+Extra    nopurge nolocate burnproof norestring nogetall~
+Extra2   nodecay nosell~
+Wear     no_sac~
+ExtraDesc mirror lit~
+A image appears infront of you as you gaze into the mirror... It is you!
+~
+End
+
+#46223
+Name treasury key~
+Short `#`WNyte's `YTreasury Key`^~
+Desc `#`WNyte's `YTreasury Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#46224
+Name large cherry desk~
+Short a beautiful `#`rcherrywood`^ desk~
+Desc A beautiful `#`rcherrywood`^ desk is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 0 ADGJ 0 0
+Weight 0
+Material wood~
+Extra    nodegrade nogetall~
+Wear     no_sac~
+ExtraDesc desk cherrywood~
+A beautiful `#`rcherrywood`^ desk is here. It looks very expensive and very well made.
+~
+End
+
+#46225
+Name bookshelves bookcase~
+Short a tall book case~
+Desc A tall book case is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Wear     no_sac~
+End
+
+#46226
+Name bed roses rosebed~
+Short a large `#`Rb`re`Rd `ro`Rf `rr`Ro`rs`Re`rs`^~
+Desc A large `#`Rb`re`Rd `ro`Rf `rr`Ro`rs`Re`rs`^ is growing here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 0 FILS 100 100
+Weight 0
+Material flowers~
+Extra    nodegrade~
+Extra2   nodecay~
+ExtraDesc roses bed large~
+A large `#`Rb`re`Rd `ro`Rf `rr`Ro`rs`Re`rs`^ is growing here. The roses are beautiful and the smell is so soothing.
+~
+End
+
+#46227
+Name rose flower rosebloom~
+Short a `#`Ww`wh`Wi`wt`We`^ rose~
+Desc A `#`Ww`wh`Wi`wt`We`^ rose is here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flower~
+Extra    nonmetal burnproof nogetall~
+Extra2   nosell~
+Wear     take hold~
+End
+
+#46228
+Name marble fountain water~
+Short a `#`Sm`wa`sr`wb`sl`we `sf`wo`su`wn`st`wa`si`wn~
+Desc A `#`Sm`wa`sr`wb`sl`we `sf`wo`su`wn`st`wa`si`wn is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material marble~
+Extra    hum nonmetal burnproof nogetall~
+Wear     no_sac~
+ExtraDesc fountain marble~
+A `#`Sm`wa`sr`wb`sl`we `sf`wo`su`wn`st`wa`si`wn`^ is here. The water bubbles endlessly from the top and runs down the sides gathering at a marble basin around the bottom. The water is pure and has a slight sweet taste to it.
+~
+End
+
+#46229
+Name stone bench~
+Short a `#`sstone bench`^~
+Desc A `#`sstone bench`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 0 EHK 100 100
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#46230
+Name rose bush white purple~
+Short a `#`Ww`wh`Wi`wt`We`^ and `#`Mp`mu`Mr`mp`Ml`me`^ rose bush~
+Desc A `#`Ww`wh`Wi`wt`We`^ and `#`Mp`mu`Mr`mp`Ml`me`^ rose bush is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flowers~
+End
+
+#46231
+Name rose bush white yellow rosebush~
+Short a `#`Ww`wh`Wi`wt`We`^ and `#`Yy`ye`Yl`yl`Yo`yw`^ rose bush~
+Desc A `#`Ww`wh`Wi`wt`We`^ and `#`Yy`ye`Yl`yl`Yo`yw`^ rose bush is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flowers~
+End
+
+#46232
+Name a comfy couch~
+Short a big comfy couch~
+Desc A big comfy couch is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 0 EHKR 100 100
+Weight 0
+Material cloth~
+End
+
+#46234
+Name baby crib~
+Short a baby's crib~
+Desc A baby's crib is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 0 EIL 100 100
+Weight 0
+Material wood~
+Extra    nopurge nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#46235
+Name bed buds budbed~
+Short a large bed of buds~
+Desc A large bed of buds has yet to flourish here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 0 FILS 100 100
+Weight 0
+Material flowers~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#46236
+Name rose bud rosebud~
+Short a small bud~
+Desc A small bud is here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flower~
+Extra    nonmetal burnproof nogetall~
+Extra2   nosell~
+Wear     take hold~
+End
+
+#46237
+Name bud bush budbush~
+Short a bush of buds~
+Desc A bush of buds is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flowers~
+End
+
+#46238
+Name marble ivy gazebo~
+Short a `#`Sm`wa`Sr`wb`Sl`we`^ gazebo covered in `#`gi`Gv`gy`^~
+Desc A `#`Sm`wa`Sr`wb`Sl`we`^ gazebo covered in `#`gi`Gv`gy`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 0 FILS 100 200
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc marble ivy white gazebo~
+A `#`Sm`wa`Sr`wb`Sl`we`^ gazebo covered in `#`gi`Gv`gy`^ is here. The `#`gi`Gv`gy`^ has a bunch of `#`Ww`wh`Wi`wt`We`^ flowers scattered across the mesh of vines.
+~
+End
+
+#46239
+Name amaya's bed~
+Short amaya's personal bed~
+Desc Amaya's personal bed is here, made just for her.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 3 100 EILR 100 100
+Weight 0
+Material steel~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#46200
+Name Before the Castle~
+Desc You can see a split in the path. To the west is the guest house. To the east is a large stone wall with a ivy covered entrance. As you look up you can see a towering castle with a balcony above you. The main entrance to the castle is to the north.
+~
+Sector inside~
+ExtraDesc castle ~
+A large tower is towering before you. You can see two large towers before 
+you, one on each side. A deep moat flows underneath you. You can hear it 
+bubbling.
+~
+Exit north 46201
+EFlags door closed locked nopass hard~
+EKeyvnum 46223
+EKeywords door~
+Exit east 46228
+Exit south 56695
+Exit west 46227
+EFlags door closed~
+End
+
+
+#46201
+Name Entry Hall~
+Desc This is the entry way into the castle. You look around and can see 
+trophies of various monsters from the land. To the east and west are the 
+bases of two guard towers. The entrance to the main part of the castle is to 
+the north. The exit is to the south.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc trophy trophies~
+Various skilled monsters that have been slain in the name of good.
+~
+Exit north 46206
+Exit east 46202
+Exit south 46200
+EFlags door closed locked nopass hard~
+EKeyvnum 46223
+Exit west 46203
+End
+
+
+#46202
+Name Base of East Tower~
+Desc This is the base of a massive guard tower. The walls are slightly moist 
+from dew build up forming a slimy coat to the walls. There is a spiraling 
+staircase that winds up. The exit to the Entry Hall is to the west.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46201
+Exit up 46205
+End
+
+
+#46203
+Name Base of West Tower~
+Desc This is the base of a massive guard tower. The walls are slightly moist 
+from dew build up forming a slimy coat to the walls. There is a spiraling 
+staircase that winds up. The exit to the Entry Hall is to the east.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 46201
+Exit up 46204
+End
+
+
+#46204
+Name West Tower~
+Desc You are at the top of one of the guard towers. The view goes for miles 
+over looking the surrounding lands.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 46220
+Exit down 46203
+End
+
+
+#46205
+Name East Tower~
+Desc You are at the top of one of the guard towers. The view goes for miles 
+over looking the surrounding lands.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46220
+Exit down 46202
+End
+
+
+#46206
+Name Main Hall~
+Desc This is the Main Hall. You are surrounded by Family Crests and Shields. 
+On one of the walls there is a fire place that has two large swords crossing 
+over each other above the mantle. There is a large table in the center of 
+the room probably for meetings and such. To the east is the Kitchen and to 
+the west is the Study.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc fireplace swords~
+A large brick fireplace is here with two large swords crossed above the 
+mantle.
+~
+Exit north 46211
+Exit east 46207
+Exit south 46201
+Exit west 46209
+End
+
+
+#46207
+Name Kitchen~
+Desc The kitchen is spotless, probably because there is a kitchen wench on 
+twenty-four hour duty. There is a large stove and icebox against the walls.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46206
+Exit down 46208
+EFlags door~
+End
+
+
+#46208
+Name Cellar~
+Desc Nothing special about this room. There is a wine rack that holds 
+home-made wine. The Kitchen wench gathers the grapes from the vineyard and 
+makes the wine down here. The kitchen is up.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc passage~
+A few cracks form an odd shape in the wall similar to a keyhole.
+~
+Exit north 46218
+EFlags door closed locked~
+EKeyvnum 46217
+EKeywords passage~
+Exit up 46207
+EFlags door~
+End
+
+
+#46209
+Name Study~
+Desc A large elegany looking room. The walls are lined with important 
+documents and drawings of Nyte and his friends. Various memorabilia are 
+lying on a table against the south wall. To the north is the Library and to 
+the east is the Main Hall.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 46210
+EKeyvnum 46223
+EKeywords door~
+Exit east 46206
+End
+
+
+#46210
+Name Library~
+Desc The room is lined with bookshelves and tables covered in scrolls. The 
+books are centuries old and invaluable. Much could be learned from these 
+books and scrolls. To the south is the exit to the Study.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc bookshelves scrolls~
+Many ancient scrolls and books are held here. Many that have never been seen 
+before.
+~
+Exit south 46209
+EKeyvnum 46223
+EKeywords door~
+Exit down 46219
+EFlags door closed locked nopass hard~
+EKeyvnum 46223
+End
+
+
+#46211
+Name Stairway~
+Desc The stairway zigs up the far north side of the castle. The stair way is 
+lined with paintings and different elegant and brightly colored gold and 
+silver shields. One painting is here and is of Nyte and a couple of his 
+friends. The Main Hall is to the south.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 46206
+Exit up 46212
+End
+
+
+#46212
+Name Stairway~
+Desc Large torches line the walls of this towering hallway. To the east and 
+west are two seperate Guest Bedrooms. The southern exit leads into the 
+Master Bedroom.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 46215
+EFlags door~
+Exit south 46213
+EFlags door~
+Exit west 46214
+EFlags door~
+Exit up 46221
+Exit down 46211
+End
+
+
+#46213
+Name Master Bedroom~
+Desc Dark lace curtains cover the windows so that only a fraction of sunlight could peek in.  The majority of the light is cast by a large crystal chandelier that hangs over the center of the room.  The bed is stuffed with rare feathers that come from a bird that is found only in the the most remote regions of the land.  Red velvet hangs from around the posts of the bed.  A stand for armor sits in the corner near the bed.  A painting of Nyte rests on a table next to the bed.  A fire place is on the western wall with a brick mantle that rises high up of the floor. Two large swords with ebony hilts cross above the mantle.  A large chest sits in the corner. The eastern exit is the Master Bathe and the southern exit leads to the balcony.
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc chandelier ~
+An exotic crystal chandelier hangs over the center of the room.
+~
+Exit north 46212
+EFlags door~
+Exit east 46217
+Exit south 46216
+EFlags door~
+End
+
+
+#46214
+Name Guest Bedroom~
+Desc The Guest Bedroom is quite elegant, not quite as elegant as the Master 
+Bedroom. The bed is a round bed in the center of the room with blue and red 
+satin sheets. Large torches line the walls to provide additional light to 
+the room besides that of the large bay window on the western all. At dusk a 
+beautiful sunset can be seen as the sun disappears into the void.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 46212
+EFlags door~
+End
+
+
+#46215
+Name Servants Quarters~
+Desc The servants quarters is brightly lite and quite elegant for a Servants 
+Quarters. The walls are lined with large fluffy beds and satin covers. A 
+curio holds lots of elegant clothing for the servants to choose from and 
+wear.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46212
+EFlags door~
+End
+
+
+#46216
+Name Balcony~
+Desc The balcony is kind of plain. There are two large plants in the corners 
+of the balcony. The view looks over the lands, stretching as far as the eye 
+can see. At night a beautiful night sky filled with stars and the moon can 
+be seen. The Master Bedroom is back north.
+~
+Sector inside~
+Exit north 46213
+EFlags door~
+Exit down 46220
+EFlags door closed~
+End
+
+
+#46217
+Name Master Bath~
+Desc The Master Bathe is brightly lit with a mirror hanging above the water 
+basin. A large ceramic tub with gold lining is in the far northeast corner. 
+It is surrounded by flower pedals and candles that are lit and flicker as 
+the door is opened.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46213
+End
+
+
+#46218
+Name Torture Chamber~
+Desc You are suddenly surrounded by the echos of voices of Nyte's past 
+enemies. You see torture devices of all kinds in every corner and laying all 
+over. `#`rBlood`^ is dripping from some of the instruments.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 46208
+EFlags door closed locked~
+EKeyvnum 46217
+End
+
+
+#46219
+Name Treasury Room~
+Desc This is a small room lite up by a single torch on the wall. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit up 46210
+EFlags door closed locked nopass hard~
+EKeyvnum 46223
+End
+
+
+#46220
+Name Bridge~
+Desc .
+A large wooden bridge is here connecting the two towers. The Balcony is up, 
+and the two towers are east and west.
+~
+RoomFlags noscry~
+Sector inside~
+Exit east 46205
+Exit west 46204
+Exit up 46216
+EFlags door closed~
+End
+
+
+#46221
+Name Roof Top~
+Desc You are on the roof of Nyte's castle. You can see for miles from here. 
+At night the stars would be seen from all around.
+~
+Sector city~
+Exit east 46222
+Exit south 46223
+Exit west 46224
+Exit down 46212
+Exit southeast 46225
+Exit southwest 46226
+End
+
+
+#46222
+Name Roof Top~
+Desc You are on the roof of Nyte's castle. You can see for miles from here. 
+At night the stars would be seen from all around.
+~
+Sector city~
+Exit south 46225
+Exit west 46221
+Exit southwest 46223
+End
+
+
+#46223
+Name Roof Top~
+Desc You are on the roof of Nyte's castle. You can see for miles from here. 
+At night the stars would be seen from all around.
+~
+Sector city~
+RoomEcho 19  6   5 A wolf howls in the distance.~
+Exit north 46221
+Exit east 46225
+Exit west 46226
+Exit northeast 46222
+Exit northwest 46224
+End
+
+
+#46224
+Name Roof Top~
+Desc You are on the roof of Nyte's castle. You can see for miles from here. 
+At night the stars would be seen from all around.
+~
+Sector city~
+Exit east 46221
+Exit south 46226
+Exit southeast 46223
+End
+
+
+#46225
+Name Roof Top~
+Desc You are on the roof of Nyte's castle. You can see for miles from here. 
+At night the stars would be seen from all around.
+~
+Sector city~
+Exit north 46222
+Exit west 46223
+Exit northwest 46221
+End
+
+
+#46226
+Name Roof Top~
+Desc You are on the roof of Nyte's castle. You can see for miles from here. 
+At night the stars would be seen from all around.
+~
+Sector city~
+Exit north 46224
+Exit east 46223
+Exit northeast 46221
+End
+
+
+#46227
+Name Entry Hall~
+Desc The entry hall is well lit. Candles hang from the walls lighting up the whole room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 46240
+Exit east 46200
+EFlags door closed~
+Exit west 46235
+End
+
+
+#46228
+Name Entrance to the Courtyard~
+Desc You are in the entrance into a beautiful courtyard filled with flowers and all different kinds of greenery.
+~
+RoomFlags light~
+Sector inside~
+Exit north 46229
+Exit south 46233
+Exit west 46200
+End
+
+
+#46229
+Name In the Courtyard~
+Desc You are standing in a beautiful courtyard. Birds are chirping and bees are buzzing about from flower to flower. Different flowers are all about.
+~
+RoomFlags light~
+Sector inside~
+Exit east 46230
+Exit south 46228
+End
+
+
+#46230
+Name In the Courtyard~
+Desc You are standing in a beautiful courtyard. Birds are chirping and bees are buzzing about from flower to flower. Different flowers are all about.
+~
+RoomFlags light~
+Sector inside~
+Exit north 46234
+EFlags door closed~
+Exit south 46231
+Exit west 46229
+End
+
+
+#46231
+Name In the Courtyard~
+Desc You are standing in a beautiful courtyard. Birds are chirping and bees are buzzing about from flower to flower. Different flowers are all about.
+~
+RoomFlags light~
+Sector inside~
+Exit north 46230
+Exit south 46232
+End
+
+
+#46232
+Name In the Courtyard~
+Desc You are standing in a beautiful courtyard. Birds are chirping and bees are buzzing about from flower to flower. Different flowers are all about.
+~
+RoomFlags light~
+Sector inside~
+Exit north 46231
+Exit west 46233
+End
+
+
+#46233
+Name In the Courtyard~
+Desc You are standing in a beautiful courtyard. Birds are chirping and bees are buzzing about from flower to flower. Different flowers are all about.
+~
+RoomFlags light~
+Sector inside~
+Exit north 46228
+Exit east 46232
+End
+
+
+#46234
+Name A secret garden~
+Desc You are in a secluded spot built just for people to come and think. 
+Sometimes if you wanna just be alone you can come here, relax and not have a 
+care in the world. Small animals dance all about and the wonderful smell of 
+flowers in full bloom overcomes you. 
+~
+RoomFlags safe law light~
+Sector inside~
+RoomEcho  7  5  15 A bird chirps happily.~
+Exit south 46230
+EFlags door closed~
+EKeywords hidden-door~
+End
+
+
+#46235
+Name Living Room~
+Desc This living room is extremely comfortable. A nice comfy couch and a wooden table are here. A bunch of candles are suspended above the table by a steel chandelier.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 46236
+EFlags door~
+Exit east 46227
+Exit south 46239
+Exit west 46238
+End
+
+
+#46236
+Name Bedroom~
+Desc The bedroom is very quiet. The bed is very comfortable. You could sleep forever. To the west is the baby's room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 46235
+EFlags door~
+Exit west 46237
+End
+
+
+#46237
+Name Amaya's Room~
+Desc You are in Amaya's own personal room. Little angels are all over the walls, as if watching over the sleeping child. A couple dolls are in a toybox in the corner.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 46236
+End
+
+
+#46238
+Name Kitchen~
+Desc A very large kitchen, there is an icebox for food. There is also a large wood heated stove for cooking.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 46235
+End
+
+
+#46239
+Name Bedroom~
+Desc The bedroom is very quiet. The bed is very comfortable. You could sleep forever.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 46235
+End
+
+
+#46240
+Name Bathroom~
+Desc This bathroom is a good size. The floor is black and silver marble, and the tub and water basin are made from ceramic. Flower pedals are scattered around the bathtub.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 46227
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 46200 -1 46206
+M 0 46200 1 46207 1
+E 0 46212 -1 torso~
+O 0 46201 -1 46208
+P 0 46210 -1 46201 15
+P 0 46209 -1 46201 15
+O 0 46218 -1 46209
+O 0 46224 -1 46210
+O 0 46225 -1 46210
+O 0 46202 -1 46211
+O 0 46204 -1 46213
+O 0 46213 -1 46213
+O 0 46216 -1 46213
+O 0 46220 -1 46213
+O 0 46205 -1 46214
+O 0 46221 -1 46217
+O 0 46222 -1 46217
+O 0 46215 -1 46218
+M 0 46202 1 46219 1
+O 0 46227 -1 46228
+O 0 46229 -1 46229
+O 0 46230 -1 46230
+O 0 46228 -1 46231
+O 0 46231 -1 46232
+O 0 46229 -1 46233
+O 0 46237 -1 46234
+O 0 46236 -1 46234
+O 0 46235 -1 46234
+M 0 46203 1 46234 1
+O 0 46238 -1 46234
+O 0 46200 -1 46235
+O 0 46232 -1 46235
+O 0 46204 -1 46236
+M 0 46201 1 46237 1
+O 0 46239 -1 46237
+O 0 46205 -1 46239
+O 0 46234 -1 46239
+O 0 46221 -1 46240
+O 0 46222 -1 46240
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#46205
+title Rose 3~
+author Reath~
+code mob echo A large `#`rb`Re`rd `Ro`rf `Rr`re`Rd `rr`Ro`rs`Re`rs`^ mysteriously blooms.
+mob echo A `#`ww`Wh`wi`Wt`we`^ and `yy`Ye`yl`Yl`yo`Yw`^ rose bush snaps closed with a whispering whoosh.
+if objhere 46231
+mob purge rosebush
+endif
+mob purge budbed
+mob oload 46226
+if objhere 46237
+else
+mob oload 46237
+endif
+drop all
+~
+disabled false
+last_editor Reath~
+last_editdate 1108309416
+END
+
+#46204
+title Rose 2~
+author Reath~
+code mob echo A `#`ww`Wh`wi`Wt`we`^ and `yy`Ye`yl`Yl`yo`Yw`^ rose bush flourishes grandly.
+mob echo A single `#`ww`Wh`wi`Wt`we`^ rose closes itself up solemnly.
+mob purge budbush
+if objhere 46227
+mob purge rosebloom
+endif
+mob oload 46231
+if objhere 46236
+else
+mob oload 46236
+endif
+drop all
+~
+disabled false
+last_editor Reath~
+last_editdate 1108309499
+END
+
+#46203
+title Rose 1~
+author Reath~
+code mob echo A single `#`ww`Wh`wi`Wt`we`^ rose blossoms slowly before the morning light.
+mob echo As it does so, a `#`rb`Re`rd `Ro`rf `Rr`re`Rd `rr`Ro`rs`Re`rs`^ beside it close back up to buds.
+if objhere 46226
+mob purge rosebed
+endif
+if objhere 46235
+else
+mob oload 46235
+endif
+mob oload 46227
+drop all
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1108346065
+END
+
+#46202
+title unseen open gate~
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Nyte
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1091901527
+END
+
+#0
+
+
+#$

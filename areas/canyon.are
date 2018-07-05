@@ -1,0 +1,2918 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Elemental Canyon~
+ShortName   Elemental Canyon~
+Builders    None~
+Credits     Raff~
+VNUMs       9200 9299
+LRange      75 91
+Security    6
+Colour      Y~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Tue Dec 20 12:16:09 2005~
+End
+
+
+
+#MOBILES
+#9201
+Name mountain climber mountainclimber~
+ShortD the mountain climber~
+LongD A mountain climber is making the same trek that you are.~
+Desc He wants to see what's on the other side of the mountain too.
+~
+Race human~
+Align 2 1
+Level 80
+Hitroll 1
+HitDice 8d12+400
+ManaDice 3d5+85
+DamDice 9d9+41
+DamType punch
+AC -500 -500 -500 -445
+Wealth 800
+Act    npc scavenger stay_area warrior~
+AffBy  sanctuary haste dark_vision~
+Off    berserk disarm dodge kick parry assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9202
+Name cyclops~
+ShortD the cyclops~
+LongD A hungry cyclops snarls at you!~
+Desc He looks like he's about to have dinner (maybe it's you?).
+~
+Race Giant~
+Align -3 -2
+Level 82
+Hitroll 7
+HitDice 8d12+410
+ManaDice 3d5+85
+DamDice 9d10+40
+DamType smash
+AC -520 -520 -520 -452
+Wealth 883
+Act    npc dont_wander aggressive stay_area warrior~
+AffBy  infrared dark_vision regeneration~
+Off    area_attack bash berserk kick crush~
+Imm    summon charm~
+Res    weapon fire cold~
+Vuln   mental illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#9203
+Name tiny elemental~
+ShortD a tiny elemental~
+LongD A tiny elemental form wanders about.~
+Desc Rather small for an elemental form, looks like a reject.
+~
+Race unique~
+Align -2 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType peck
+AC -500 -500 -500 -400
+Wealth 0
+Act    npc stay_area~
+AffBy  detect_invis detect_hidden infrared sneak hide flying dark_vision~
+Off    dodge fast assist_vnum~
+Imm    poison disease sleep~
+Res    weapon~
+Vuln   sound~
+Form   magical instant_decay other non_skinable sentient construct mist~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#9204
+Name elemental guardian~
+ShortD the elemental guardian~
+LongD The elemental guardian of the canyon.~
+Desc You can't tell which kind of elemental it is, maybe it's a bit o' all of them?
+~
+Race unique~
+Align -3 0
+XPMod 110
+Level 90
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType wrath
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander aggressive warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared dark_vision regeneration~
+AffBy2 detect_vanish~
+Off    area_attack berserk dodge fast parry crush assist_vnum gore~
+Imm    summon charm poison mental disease drowning sleep illusion fear~
+Res    magic weapon~
+Form   magical other non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers claws horns~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#9205
+Name small elemental~
+ShortD a small elemental~
+LongD A small, rather non-descript elemental.~
+Desc A small elemental, a resident of the canyon.
+~
+Race unique~
+Align -2 0
+Level 81
+Hitroll 0
+HitDice 8d12+400
+ManaDice 8d12+500
+DamDice 9d10+40
+DamType blast
+AC -510 -510 -510 -443
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_hidden infrared flying dark_vision regeneration~
+AffBy2 passwotrace~
+Off    dodge fast assist_vnum~
+Imm    poison mental disease sleep illusion fear~
+Res    negative holy energy~
+Form   magical instant_decay other non_skinable sentient construct mist~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#9206
+Name medium elemental~
+ShortD a medium elemental~
+LongD A medium-sized elemental.~
+Desc A medium elemental, a resident of the canyon.
+~
+Race unique~
+Align -1 0
+Level 83
+Hitroll 0
+HitDice 8d12+415
+ManaDice 3d5+85
+DamDice 9d10+42
+DamType blast
+AC -530 -530 -530 -466
+Wealth 0
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_hidden infrared dark_vision regeneration~
+Off    berserk disarm dodge trip assist_vnum~
+Imm    poison mental disease drowning sleep wood illusion fear~
+Res    weapon~
+Form   magical other non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9207
+Name large elemental~
+ShortD a large elemental~
+LongD A large elemental.~
+Desc A large elemental, a resident of the canyon.~
+Race unique~
+Align -1 0
+Level 86
+Hitroll 0
+HitDice 9d12+425
+ManaDice 9d12+540
+DamDice 10d10+43
+DamType crush
+AC -560 -560 -560 -560
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  detect_invis detect_hidden infrared dark_vision regeneration~
+AffBy2 detect_vanish~
+Off    area_attack berserk disarm fast parry assist_vnum~
+Imm    summon charm poison mental disease drowning sleep wood illusion fear~
+Res    magic weapon lightning energy~
+Vuln   acid~
+Form   magical other non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#9208
+Name earth elemental ruler~
+ShortD the Earth Ruler~
+LongD The Ruler of the earth elementals.~
+Desc He looks as old as the earth itself.  He seems to know all the 
+secrets and knowledge of the Earth.  You can't really tell where 
+he begins and the rock wall ends.
+~
+Race unique~
+Align 1 0
+XPMod 110
+Level 94
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+48
+DamType acbite
+AC -640 -640 -640 -540
+Wealth 1880
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared dark_vision regeneration~
+AffBy2 shadowsight detect_vanish vicegrip~
+Off    area_attack bash berserk disarm dodge fast dirt_kick parry crush assist_vnum~
+Imm    pierce cold lightning poison disease drowning sleep wood illusion fear~
+Res    summon charm magic slash mental~
+Vuln   sound~
+Form   magical other non_skinable sentient construct~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material stone
+END
+
+#9209
+Name fire elemental ruler~
+ShortD the Fire Ruler~
+LongD The Ruler of the fire elementals.~
+Desc As you look at him he seems to blend in with the fire in his throne.
+~
+Race unique~
+Align 3 0
+Level 94
+Hitroll 0
+HitDice 9d13+460
+ManaDice 4d5+100
+DamDice 10d12+49
+DamType flame
+AC -640 -640 -640 -537
+Wealth 1700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared dark_vision regeneration~
+AffBy2 shadowsight detect_vanish vicegrip~
+Off    area_attack berserk disarm dodge fast trip assist_vnum gore~
+Imm    fire poison mental disease sleep hunger thirst fear~
+Res    summon charm magic lightning acid wood illusion~
+Vuln   cold drowning~
+Form   magical instant_decay other non_skinable sentient construct biped~
+Part   head arms legs hands feet fingers horns~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#9210
+Name air elemental ruler~
+ShortD the Air Ruler~
+LongD The Ruler of the air elementals.~
+Desc As you peer at him you seem to be looking at the sky itself.
+~
+Race unique~
+Align 3 0
+Level 94
+Hitroll 0
+HitDice 9d13+460
+ManaDice 4d5+100
+DamDice 10d12+49
+DamType chill
+AC -640 -640 -640 -556
+Wealth 1730
+Act    npc dont_wander stay_area warrior~
+AffBy  invisible detect_invis detect_hidden sanctuary infrared flying pass_door dark_vision regeneration~
+AffBy2 shadowsight detect_vanish vicegrip~
+Off    area_attack berserk disarm dodge fast trip assist_vnum~
+Imm    weapon cold lightning poison disease sleep hunger thirst fear~
+Res    summon charm fire energy mental drowning light illusion~
+Vuln   acid negative~
+Form   magical instant_decay other non_skinable sentient construct mist intangible cold_blood~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#9211
+Name lightning elemental ruler~
+ShortD the Lightning Ruler~
+LongD The Ruler of the lightning elementals.~
+Desc As you examine him there is a blinding flash of light and a deafening boom!
+You rub your eyes and look and the ruler is there grinning at you.
+~
+Race unique~
+Align 2 0
+Level 94
+Hitroll 0
+HitDice 9d13+460
+ManaDice 4d5+100
+DamDice 10d12+49
+DamType shock
+AC -640 -640 -640 -518
+Wealth 1500
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared flying dark_vision regeneration~
+AffBy2 shadowsight detect_vanish~
+Off    area_attack bash berserk disarm dodge fast parry assist_vnum~
+Imm    lightning poison energy disease light sound sleep hunger thirst fear~
+Res    summon charm bash fire cold negative mental drowning~
+Vuln   wood illusion~
+Form   magical instant_decay other non_skinable sentient construct biped cold_blood~
+Part   head arms legs hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#9212
+Name water elemental ruler~
+ShortD the Water Ruler~
+LongD The Ruler of the water elementals.~
+Desc As you look at him he changes to mist, which swirls around you.  Just
+as you get scared, it reforms in elemental form.
+~
+Race unique~
+Align 2 0
+Level 94
+Hitroll 0
+HitDice 9d13+460
+ManaDice 4d5+100
+DamDice 10d12+49
+DamType suction
+AC -640 -640 -640 -563
+Wealth 1650
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs pass_door dark_vision swim regeneration~
+AffBy2 shadowsight detect_vanish vicegrip~
+Off    area_attack bash berserk disarm dodge fast crush~
+Imm    acid poison negative mental disease drowning sound sleep illusion hunger thirst fear~
+Res    summon charm weapon fire cold energy~
+Vuln   lightning~
+Form   magical instant_decay other non_skinable sentient construct blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#9214
+Name water puddle elemental~
+ShortD a puddle~
+LongD A small puddle of water elemental.~
+Desc It trickles along the ground and gets your feet wet.
+~
+Race unique~
+Align -1 0
+Level 87
+Hitroll 0
+HitDice 9d12+430
+ManaDice 4d5+90
+DamDice 10d10+44
+DamType suction
+AC -570 -570 -570 -501
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared otterlungs pass_door dark_vision swim~
+Off    area_attack berserk dodge trip assist_vnum~
+Imm    acid poison disease drowning sleep hunger thirst fear~
+Res    summon charm fire~
+Vuln   lightning~
+Form   magical instant_decay other non_skinable sentient construct blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9215
+Name fire flame elemental~
+ShortD a flame~
+LongD A small flickering flame elemental.~
+Desc It smolders along the grass aimlessly.
+~
+Race unique~
+Align -3 0
+Level 87
+Hitroll 0
+HitDice 9d12+430
+ManaDice 4d5+90
+DamDice 10d10+44
+DamType flame
+AC -570 -570 -570 -456
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared pass_door dark_vision~
+Off    area_attack berserk disarm dodge trip assist_vnum~
+Imm    fire poison disease sleep hunger thirst fear~
+Res    summon charm lightning energy light~
+Vuln   drowning~
+Form   magical instant_decay other non_skinable sentient construct mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9216
+Name snowflake snow flake ice elemental~
+ShortD a small snowflake~
+LongD A frozen snowflake water elemental.~
+Desc It looks a little blue.
+~
+Race unique~
+Align -2 1
+Level 87
+Hitroll 0
+HitDice 9d12+430
+ManaDice 4d5+90
+DamDice 10d10+44
+DamType none
+AC -570 -570 -570 -467
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared otterlungs flying pass_door dark_vision~
+Off    area_attack berserk disarm dodge trip assist_vnum~
+Imm    cold poison disease drowning sleep hunger thirst fear~
+Res    summon charm lightning sound~
+Vuln   fire~
+Form   magical instant_decay other non_skinable sentient construct cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9217
+Name pebble rock earth stone elemental~
+ShortD a small rock~
+LongD A small rock.~
+Desc It seems to be a small living pebble!
+~
+Race unique~
+Align -3 0
+Level 87
+Hitroll 0
+HitDice 9d12+430
+ManaDice 4d5+90
+DamDice 10d10+44
+DamType thwack
+AC -570 -570 -570 -490
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared otterlungs dark_vision~
+Off    area_attack bash berserk dodge dirt_kick assist_vnum~
+Imm    pierce poison disease drowning sleep hunger thirst fear~
+Res    summon charm weapon fire cold~
+Vuln   acid~
+Form   magical other non_skinable sentient construct cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9218
+Name spark lightning energy elemental~
+ShortD a small spark~
+LongD A small spark of electricity fizzles here.~
+Desc Zipping from place to place at the speed of light is tough work.
+~
+Race unique~
+Align -2 0
+Level 87
+Hitroll 0
+HitDice 9d12+430
+ManaDice 4d5+90
+DamDice 10d10+44
+DamType shock
+AC -570 -570 -570 -473
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared flying pass_door dark_vision~
+Off    area_attack berserk dodge fast assist_vnum~
+Imm    lightning poison energy disease sleep hunger thirst fear~
+Res    summon charm fire energy light sound~
+Vuln   wood~
+Form   magical instant_decay other non_skinable sentient construct intangible cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9219
+Name acid blob elemental~
+ShortD a small blob of acid~
+LongD A small blob of acid aimlessly eats away at the stone.~
+Desc The magical blob of acid is a cross between lightning and water.
+~
+Race unique~
+Align 3 0
+Level 89
+Hitroll 0
+HitDice 9d12+440
+ManaDice 4d5+95
+DamDice 10d11+44
+DamType none
+AC -590 -590 -590 -477
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared otterlungs pass_door dark_vision regeneration~
+Off    area_attack bash berserk dodge fast assist_vnum~
+Imm    lightning acid poison disease drowning sleep hunger thirst fear~
+Res    summon charm weapon mental illusion~
+Form   magical instant_decay other non_skinable sentient construct blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9220
+Name lava elemental~
+ShortD a lava beast~
+LongD A lava beast spews from place to place.~
+Desc The magical lava beast is a cross between fire and earth.
+~
+Race unique~
+Align 2 0
+Level 89
+Hitroll 0
+HitDice 9d12+440
+ManaDice 4d5+95
+DamDice 10d11+44
+DamType flame
+AC -590 -590 -590 -489
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared pass_door dark_vision regeneration~
+Off    area_attack berserk disarm dodge fast trip assist_vnum~
+Imm    bash fire poison disease sleep hunger thirst fear~
+Res    summon charm negative mental illusion~
+Vuln   acid~
+Form   magical instant_decay other non_skinable sentient construct blob~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9221
+Name mud elemental~
+ShortD a mud monster~
+LongD A mud monster slops around.~
+Desc The magical mud monster is a cross between water and earth.
+~
+Race unique~
+Align 3 0
+Level 7
+Hitroll 0
+HitDice 2d5+8
+ManaDice 1d4+5
+DamDice 1d8+1
+DamType slime
+AC 35 35 35 30
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared otterlungs sneak pass_door dark_vision regeneration~
+Off    area_attack berserk disarm dodge fast trip assist_vnum~
+Imm    bash cold poison disease sleep hunger thirst fear~
+Res    summon charm mental drowning illusion~
+Vuln   negative~
+Form   magical instant_decay other non_skinable sentient construct blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9222
+Name mist elemental~
+ShortD an elemental mist~
+LongD The air is magically misty here.~
+Desc The magical mist is a cross between water and air.
+~
+Race unique~
+Align -1 0
+Level 89
+Hitroll 0
+HitDice 9d12+440
+ManaDice 4d5+95
+DamDice 10d11+44
+DamType phantasm
+AC -590 -590 -590 -513
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_hidden infrared otterlungs sneak flying pass_door dark_vision swim regeneration~
+Off    area_attack berserk dodge fast parry assist_vnum~
+Imm    fire mental disease drowning sleep illusion hunger thirst fear~
+Res    summon charm weapon cold~
+Vuln   lightning~
+Form   magical instant_decay other non_skinable sentient construct mist intangible cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9223
+Name particle elemental~
+ShortD a particle~
+LongD A sub-atomic particle is too small for you to see.~
+Desc The magical manifestation of energy.
+~
+Race unique~
+Align 0 0
+Level 87
+Hitroll 0
+HitDice 9d12+420
+ManaDice 5d7+250
+DamDice 10d10+43
+DamType radiance
+AC -560 -560 -560 -459
+Wealth 0
+Act    npc stay_area thief~
+AffBy  invisible detect_hidden infrared sneak hide flying pass_door dark_vision regeneration~
+AffBy2 passwotrace~
+Off    area_attack berserk disarm dodge assist_vnum~
+Imm    pierce lightning poison energy disease sleep hunger thirst fear~
+Res    summon charm slash negative mental illusion~
+Vuln   fire iron~
+Form   magical instant_decay other non_skinable sentient construct mist intangible cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9224
+Name dust elemental~
+ShortD a dust cloud~
+LongD A dust cloud blowing by makes you sneeze.~
+Desc The magical dust cloud is a cross between air and earth.
+~
+Race unique~
+Align 3 0
+Level 89
+Hitroll 0
+HitDice 9d12+430
+ManaDice 5d7+255
+DamDice 10d10+45
+DamType drain
+AC -580 -580 -580 -504
+Wealth 0
+Act    npc stay_area thief~
+AffBy  detect_invis detect_hidden infrared flying pass_door dark_vision regeneration~
+Off    area_attack dodge fast dirt_kick trip assist_vnum~
+Imm    fire cold lightning poison disease hunger thirst fear~
+Res    summon charm bash mental illusion~
+Vuln   acid~
+Form   magical instant_decay other non_skinable sentient construct mist cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9225
+Name eddie elemental~
+ShortD an eddie~
+LongD A small eddie current swirls junk around here.~
+Desc The magical eddie current is a manifestation of an air elemental.
+~
+Race unique~
+Align -3 0
+Level 87
+Hitroll 0
+HitDice 9d12+420
+ManaDice 5d7+250
+DamDice 10d10+43
+DamType blast
+AC -560 -560 -560 -448
+Wealth 0
+Act    npc stay_area thief~
+AffBy  detect_invis detect_hidden infrared sneak hide flying pass_door dark_vision regeneration~
+Off    area_attack berserk disarm dodge dirt_kick trip assist_vnum~
+Imm    pierce cold lightning poison disease sleep hunger thirst fear~
+Res    summon charm bash slash mental drowning illusion~
+Vuln   sound~
+Form   magical instant_decay other non_skinable sentient construct mist intangible cold_blood~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9226
+Name blue flame~
+ShortD the Blue Flame~
+LongD The Blue Flame burns mysteriously here.~
+Desc As you look you see what seems to be a face and almost a 
+humanoid figure somehow trapped in the fire.
+~
+Race unique~
+Align 3 0
+Level 89
+Hitroll 0
+HitDice 9d12+435
+ManaDice 9d12+575
+DamDice 10d10+45
+DamType flbite
+AC -590 -590 -590 -525
+Wealth 0
+Act    npc dont_wander stay_area cleric~
+AffBy  detect_hidden sanctuary infrared pass_door dark_vision regeneration~
+Off    disarm dodge trip assist_vnum~
+Imm    fire lightning poison energy disease sleep wood hunger thirst fear~
+Res    slash cold negative mental light illusion~
+Vuln   drowning~
+Form   magical instant_decay other non_skinable sentient construct mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9227
+Name magneto~
+ShortD the Magneto~
+LongD The Magneto considers zapping you for the heck of it.~
+Desc A humanoid figure seems to be trapped in the field of the Magneto.
+~
+Race unique~
+Align 2 0
+Level 89
+Hitroll 0
+HitDice 9d12+430
+ManaDice 10d13+630
+DamDice 10d10+43
+DamType shbite
+AC -580 -580 -580 -522
+Wealth 0
+Act    npc dont_wander stay_area mage~
+AffBy  detect_invis detect_hidden sanctuary infrared dark_vision regeneration~
+AffBy2 no_dispel~
+Off    area_attack berserk dodge fast trip assist_vnum~
+Imm    summon lightning poison negative energy disease sound sleep iron hunger thirst fear~
+Res    magic bash illusion~
+Form   magical instant_decay other non_skinable sentient construct biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9228
+Name ice bandit~
+ShortD the Ice Bandit~
+LongD The Ice Bandit strikes cold fear in your heart.~
+Desc A humanoid figure encased in ice but still apparently alive.
+~
+Race unique~
+Align -3 0
+Level 89
+Hitroll 0
+HitDice 9d12+430
+ManaDice 5d7+255
+DamDice 10d10+45
+DamType frbite
+AC -580 -580 -580 -522
+Wealth 240
+Act    npc dont_wander aggressive stay_area wimpy thief~
+AffBy  detect_hidden sanctuary infrared sneak hide dark_vision regeneration~
+AffBy2 no_dispel~
+Off    area_attack backstab berserk dodge fast dirt_kick parry assist_vnum circle~
+Imm    summon charm pierce cold acid poison disease sleep hunger thirst fear~
+Res    slash lightning negative energy mental illusion~
+Vuln   fire~
+Form   magical instant_decay other non_skinable sentient construct biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 9200 100~
+END
+
+#9229
+Name rock monster~
+ShortD the Rock Monster~
+LongD The Rock Monster considers you in stoney silence.~
+Desc A humanoid figure trapped in stone seems alive.
+~
+Race unique~
+Align 1 0
+Level 89
+Hitroll 0
+HitDice 9d12+440
+ManaDice 4d5+95
+DamDice 10d11+44
+DamType crush
+AC -590 -590 -590 -525
+Wealth 0
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared dark_vision regeneration~
+AffBy2 no_dispel~
+Off    area_attack bash berserk disarm dodge fast dirt_kick parry crush assist_vnum gore~
+Imm    magic poison disease sleep hunger thirst fear~
+Res    weapon fire cold lightning mental drowning illusion~
+Vuln   acid~
+Form   magical instant_decay other non_skinable sentient construct biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9230
+Name hurricane~
+ShortD the Hurricane~
+LongD A Hurricane rages across the sky.~
+Desc A humanoid figure is trapped in the rushing wind.
+~
+Race unique~
+Align 2 0
+Level 89
+Hitroll 0
+HitDice 9d12+435
+ManaDice 9d12+575
+DamDice 10d10+45
+DamType wrath
+AC -590 -590 -590 -531
+Wealth 0
+Act    npc dont_wander stay_area cleric~
+AffBy  detect_hidden sanctuary infrared sneak flying dark_vision regeneration~
+Off    area_attack bash berserk disarm dodge fast parry assist_vnum~
+Imm    cold lightning poison mental disease drowning sleep illusion hunger thirst fear~
+Res    summon charm fire acid~
+Vuln   holy~
+Form   magical instant_decay other non_skinable sentient construct biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9231
+Name magician~
+ShortD an elemental magician~
+LongD An elemental magician seeks magical stones for a spell.~
+Desc The elemental magician has come here in search of the fabled
+Stone of Surrender which can be used to render opponents senseless.
+~
+Race human~
+Align -1 0
+Level 82
+Hitroll 0
+HitDice 8d12+400
+ManaDice 9d13+575
+DamDice 9d9+40
+DamType magic
+AC -510 -510 -510 -423
+Wealth 940
+Act    npc dont_wander stay_area mage~
+AffBy  detect_invis detect_hidden sanctuary infrared haste dark_vision~
+Off    dodge trip~
+Res    summon charm magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9232
+Name rainbow warrior~
+ShortD a rainbow warrior~
+LongD A warrior of the Rainbow Cult swears his loyalty.~
+Desc The Rainbow Cult has received special powers for their service to 
+the elemental forces.
+~
+Race human~
+Align 1 0
+Level 84
+Hitroll 0
+HitDice 8d12+420
+ManaDice 4d5+90
+DamDice 9d10+42
+DamType divine
+AC -540 -540 -540 -475
+Wealth 1050
+Act    npc stay_area cleric warrior~
+AffBy  sanctuary infrared protect_evil sneak haste dark_vision~
+Off    area_attack disarm dodge parry assist_vnum~
+Imm    holy light~
+Res    summon charm magic negative~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#9233
+Name illusionist~
+ShortD an illusionist~
+LongD The illusionist seeks the aid of the elemental forces.~
+Desc He seeks their aid for a powerful new spell of deception.
+
+<wielded>            The Sword of Illusions
+~
+Race human~
+Align -2 0
+Level 85
+Hitroll 0
+HitDice 8d12+415
+ManaDice 9d13+600
+DamDice 9d10+41
+DamType phantasm
+AC -540 -540 -540 -464
+Wealth 1233
+Act    npc dont_wander stay_area mage~
+AffBy  invisible detect_invis detect_hidden infrared pass_door dark_vision~
+AffBy2 shadowsight detect_vanish~
+Off    area_attack disarm dodge fast parry trip~
+Imm    mental illusion scry fear~
+Res    poison negative holy energy disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9234
+Name alchemist~
+ShortD an alchemist~
+LongD An alchemist wanders by in search of magical herbs.~
+Desc Rare herbs are rumored to grow only in the canyon.
+~
+Race human~
+Align 3 0
+Level 82
+Hitroll 0
+HitDice 8d12+400
+ManaDice 5d7+240
+DamDice 9d10+40
+DamType none
+AC -510 -510 -510 -459
+Wealth 763
+Act    npc stay_area thief~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Off    disarm dodge dirt_kick parry trip assist_vnum~
+Imm    poison disease~
+Res    summon charm magic drowning scry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#9235
+Name baby rainbow dragon~
+ShortD a baby rainbow dragon~
+LongD A baby rainbow dragon plays among the elements here.~
+Desc It's only a baby by dragon standards.
+~
+Race dragon~
+Align 1 0
+Level 92
+Hitroll 0
+HitDice 9d13+450
+ManaDice 4d5+100
+DamDice 10d11+47
+DamType radiance
+AC -620 -620 -620 -520
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs flying haste dark_vision swim regeneration~
+AffBy2 no_dispel vicegrip~
+Off    area_attack bash berserk disarm parry tail gore~
+Imm    summon charm bash fire cold lightning acid poison drowning sleep fear~
+Res    magic bash slash negative energy illusion~
+Form   edible magical sentient reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#9236
+Name imp~
+ShortD a little imp~
+LongD A little imp runs along being annoying.~
+Desc The little bugger steals stuff and is generally obnoxious.
+~
+Race demon~
+Align 0 -1
+Level 77
+Hitroll 0
+HitDice 8d11+380
+ManaDice 5d6+220
+DamDice 8d9+39
+DamType claw
+AC -460 -460 -460 -368
+Wealth 0
+Act    npc scavenger stay_area wimpy thief~
+AffBy  detect_hidden infrared sneak hide flying dark_vision~
+Off    dodge fast dirt_kick tail assist_vnum~
+Imm    lightning poison disease hunger thirst~
+Res    negative~
+Vuln   mental illusion~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#9237
+Name HUGE elemental~
+ShortD a HUGE elemental~
+LongD A HUGE elemental form stands here.~
+Desc HUGE, need i say more?
+~
+Race unique~
+Align 2 0
+Level 89
+Hitroll 0
+HitDice 9d12+440
+ManaDice 4d5+95
+DamDice 10d11+44
+DamType crush
+AC -590 -590 -590 -507
+Wealth 0
+Act    npc dont_wander aggressive stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack berserk disarm dodge fast parry trip crush assist_vnum~
+Imm    summon charm bash poison mental disease drowning sleep illusion hunger thirst fear~
+Res    magic weapon fire cold lightning acid~
+Form   magical instant_decay other non_skinable sentient construct biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#9238
+Name vendor~
+ShortD the elixir vendor~
+LongD A vendor is willing to sell you elixirs.~
+Desc I WOULD NOT suggest you attack me ...!
+~
+Race human~
+Align -1 2
+Level 91
+Hitroll 0
+HitDice 9d12+440
+ManaDice 10d14+658
+DamDice 10d10+45
+DamType punch
+AC -600 -600 -600 -540
+Wealth 1800
+Act    npc dont_wander docile no_tame stay_area changer~
+Act2   avoids_all_attacks no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#9201
+Name ring earth~
+Short the earth ring~
+Desc A dark ring which seems to absorb all the light around it lies here.~
+Level 80
+ItemType jewelry~
+Cost 1140
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Extra    magic bless nonmetal burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 strength 2 0
+Affect modifier -1 80 -1 constitution 2 0
+Affect modifier -1 80 -1 saves -4 0
+Affect modifier -1 80 -1 ac -5 0
+End
+
+#9202
+Name breastplate stoney breast plate~
+Short a stoney breastplate~
+Desc A breastplate made of the stone from deep within the earth lies here.~
+Level 80
+ItemType armor~
+Cost 5500
+Durability 5
+Asize 700
+Rsize 50
+Values 28 26 27 20 0
+Weight 700
+Material stone~
+Extra    magic nonmetal burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin anti-paladin~
+Affect modifier -1 80 -1 quickness -2 0
+Affect modifier -1 80 -1 ac -15 0
+Affect modifier -1 80 -1 hp 8 0
+Affect modifier -1 80 -1 saves -4 0
+End
+
+#9203
+Name dagger fiery~
+Short a fiery dagger~
+Desc A dagger made of fire crackles mysteriously here.~
+Level 80
+ItemType weapon~
+Cost 4800
+Durability 5
+Asize 20
+Rsize 50
+Values dagger 14 4 flame A
+Weight 10
+Material fire~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage thief paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 memory 5 0
+Affect modifier -1 80 -1 hitroll 2 0
+Affect modifier -1 80 -1 damroll 2 0
+Affect modifier -1 80 -1 mana 10 0
+End
+
+#9204
+Name cape flame flaming red~
+Short a flame red cape~
+Desc A cape made of ethereal red fiber lies neatly folded on the ground here.~
+Level 80
+ItemType armor~
+Cost 3100
+Durability 5
+Asize 30
+Rsize 50
+Values 16 16 16 13 0
+Weight 60
+Material cloth~
+Extra    glow magic nonmetal burnproof chaos~
+Extra2   nodecay~
+Wear     take back~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 strength 1 0
+Affect modifier -1 80 -1 constitution 1 0
+Affect modifier -1 80 -1 quickness 1 0
+Affect modifier -1 80 -1 agility 1 0
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 saves -4 0
+End
+
+#9205
+Name boots wind~
+Short the wind boots~
+Desc A pair of boots that look fast standing still are here.~
+Level 80
+ItemType armor~
+Cost 3190
+Durability 5
+Asize 10
+Rsize 50
+Values 16 16 16 13 0
+Weight 10
+Material leather~
+Extra    magic nonmetal burnproof~
+Wear     take feet~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 quickness 3 0
+Affect modifier -1 80 -1 agility 3 0
+Affect affects -1 80 -1 none 0 flying
+End
+
+#9206
+Name helmet hurricane~
+Short a hurricane helmet~
+Desc A helmet that looks like it has weathered many storms has been set here.~
+Level 80
+ItemType clothing~
+Cost 3800
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cloth~
+Extra    magic nonmetal~
+Wear     take head~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect affects -1 80 -1 none 0 dark_vision
+Affect resist -1 80 -1 none 0 lightning
+End
+
+#9207
+Name sword lightning bolt~
+Short a sparking lightning sword~
+Desc A lightning bolt fashioned into a sword spits sparks here.~
+Level 80
+ItemType weapon~
+Cost 2200
+Durability 5
+Asize 100
+Rsize 50
+Values sword 14 5 shock GN
+Weight 30
+Material lightning~
+Extra    glow hum magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger bard anti-paladin~
+End
+
+#9208
+Name shield electric~
+Short an electric shield~
+Desc A shield made entirely of energy buzzes here.~
+Level 80
+ItemType armor~
+Cost 2600
+Durability 5
+Asize 80
+Rsize 50
+Values 26 26 26 22 0
+Weight 80
+Material lightning~
+Extra    glow hum magic nonmetal burnproof chaos~
+Extra2   nodecay~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger bard anti-paladin~
+Affect modifier -1 80 -1 saves -5 0
+Affect modifier -1 80 -1 ac -20 0
+Affect modifier -1 80 -1 hitroll 3 0
+End
+
+#9209
+Name girth icy~
+Short an icy girth~
+Desc A girth made of magical ice has been left here.~
+Level 80
+ItemType armor~
+Cost 1540
+Durability 5
+Asize 100
+Rsize 50
+Values 16 16 16 13 0
+Weight 20
+Material ice~
+Extra    magic nonmetal meltdrop nouncurse~
+Extra2   nodecay~
+Wear     take waist~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect resist -1 80 -1 none 0 cold
+Affect vuln -1 80 -1 none 0 fire
+End
+
+#9210
+Name cloak waterfall~
+Short a waterfall cloak~
+Desc A cloak fashioned from a small magical waterfall is here.~
+Level 80
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 60
+Rsize 50
+Values 20 20 20 16 0
+Weight 60
+Material water~
+Extra    magic nonmetal meltdrop burnproof nouncurse~
+Wear     take about~
+ClassAllowances mage cleric druid~
+Affect modifier -1 80 -1 mana 160 0
+Affect affects -1 80 -1 none 0 otterlungs
+End
+
+#9211
+Name amulet elemental~
+Short an elemental amulet~
+Desc An amulet depicting fire, water, lightning, earth, and air lies here.~
+Level 85
+ItemType jewelry~
+Cost 2300
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    magic burnproof~
+Extra2   nodecay~
+Wear     take neck~
+ClassAllowances mage~
+Affect modifier -1 85 -1 mana 180 0
+End
+
+#9212
+Name bracelet elemental~
+Short an elemental bracelet~
+Desc A bracelet made of elemental magic lies here.~
+Level 85
+ItemType jewelry~
+Cost 2450
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    hum magic burnproof~
+Extra2   nodecay~
+Wear     take wrist~
+ClassAllowances warrior paladin ranger bard anti-paladin~
+Affect modifier -1 85 -1 hp 10 0
+Affect modifier -1 85 -1 hitroll 4 0
+Affect modifier -1 85 -1 damroll 4 0
+End
+
+#9213
+Name armbands platinum~
+Short some platinum armbands~
+Desc Some platinum armbands have been left here.~
+Level 80
+ItemType jewelry~
+Cost 1100
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material platinum~
+Extra    magic burnproof~
+Extra2   nodecay~
+Wear     take arms~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 saves -4 0
+Affect modifier -1 80 -1 hitroll 2 0
+Affect modifier -1 80 -1 damroll 2 0
+Affect modifier -1 80 -1 strength 3 0
+End
+
+#9214
+Name legbands platinum~
+Short some platinum legbands~
+Desc A pair of platinum legbands have been left here.~
+Level 80
+ItemType jewelry~
+Cost 1700
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material platinum~
+Extra    magic burnproof~
+Extra2   nodecay~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 saves -4 0
+Affect modifier -1 80 -1 hitroll 2 0
+Affect modifier -1 80 -1 damroll 2 0
+Affect modifier -1 80 -1 strength 3 0
+End
+
+#9215
+Name elemental wand fire~
+Short elemental wand of fire~
+Desc A fire wand lies forgotten on the ground.~
+Level 85
+ItemType wand~
+Cost 1111
+Durability 5
+Asize 70
+Rsize 50
+Values 85 10 1 firestorm 0
+Weight 10
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Wear     take hold~
+End
+
+#9216
+Name staff ice~
+Short an ice staff~
+Desc An ice staff lies forgotten on the ground.~
+Level 85
+ItemType staff~
+Cost 1201
+Durability 5
+Asize 70
+Rsize 50
+Values 85 10 1 'cone cold' 0
+Weight 70
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#9217
+Name rod earthquake~
+Short an elemental rod of earthquake~
+Desc An earthquake rod lies forgotten on the ground.~
+Level 85
+ItemType wand~
+Cost 300
+Durability 5
+Asize 70
+Rsize 50
+Values 85 1 1 earthquake 0
+Weight 10
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#9218
+Name wand air wind~
+Short elemental wand of wind and air~
+Desc An air wand lies forgotten on the ground.~
+Level 85
+ItemType wand~
+Cost 640
+Durability 5
+Asize 70
+Rsize 50
+Values 85 10 1 'cutting wind' 0
+Weight 10
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#9219
+Name wand elemental lightning~
+Short elemental wand of lightning~
+Desc A lightning wand lies forgotten on the ground.~
+Level 85
+ItemType wand~
+Cost 741
+Durability 5
+Asize 70
+Rsize 50
+Values 85 10 1 'chain lightning' 0
+Weight 10
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#9220
+Name stone club two-handed~
+Short a stone club~
+Desc A large stone club lies on the ground.~
+Level 84
+ItemType weapon~
+Cost 730
+Durability 5
+Asize 160
+Rsize 50
+Values mace 12 7 pound F
+Weight 280
+Material stone~
+Extra    nonmetal burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian bard anti-paladin~
+End
+
+#9221
+Name lodestone~
+Short a lodestone~
+Desc A dull red rock lies here amid the weeds.~
+Level 1
+ItemType warpstone~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material stone~
+Extra    magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#9222
+Name crackling energy sphere~
+Short a sphere of pure energy~
+Desc A sphere of crackling energy mysteriously hovers here.~
+Level 1
+ItemType light~
+Cost 50
+Durability 5
+Asize 40
+Rsize 50
+Values 0 0 48 0 0
+Weight 0
+Material energy~
+Extra    glow hum nonmetal burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#9223
+Name energy scroll~
+Short an energy scroll~
+Desc A scroll of energy replacement lies here.~
+Level 85
+ItemType scroll~
+Cost 700
+Durability 5
+Asize 10
+Rsize 50
+Values 20 refresh refresh refresh refresh
+Weight 5
+Material parchment~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#9224
+Name water jug~
+Short a water jug~
+Desc A large but surprisingly light jug of water stands here.~
+Level 1
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 150 150 'untainted water' 0 0
+Weight 20
+Material clay~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#9225
+Name dust~
+Short magic dust~
+Desc A pile of dust of appearance has gathered here.~
+Level 85
+ItemType pill~
+Cost 300
+Durability 5
+Asize 10
+Rsize 50
+Values 42 'detect invis' 'detect hidden' '' ''
+Weight 1
+Material dust~
+Extra    magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#9226
+Name flame lance~
+Short a flame lance~
+Desc A lance of blue flame burns the ground around it.~
+Level 85
+ItemType weapon~
+Cost 902
+Durability 5
+Asize 140
+Rsize 50
+Values exotic 14 5 flame A
+Weight 20
+Material fire~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances warrior~
+Affect modifier -1 85 -1 hitroll 10 0
+Affect modifier -1 85 -1 damroll 8 0
+End
+
+#9227
+Name icicle dagger ice~
+Short an icicle~
+Desc A glowing icicle dagger lies here amid a patch of frost.~
+Level 85
+ItemType weapon~
+Cost 866
+Durability 5
+Asize 10
+Rsize 50
+Values dagger 12 5 chill B
+Weight 4
+Material ice~
+Extra    glow magic nonmetal meltdrop nouncurse~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances thief~
+Affect modifier -1 85 -1 agility 7 0
+End
+
+#9228
+Name avalanche~
+Short the avalanche~
+Desc An avalanche is about to crush you!~
+Level 85
+ItemType weapon~
+Cost 992
+Durability 5
+Asize 160
+Rsize 50
+Values exotic 17 4 blast FN
+Weight 500
+Material stone~
+Extra    nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#9229
+Name morning star~
+Short the morning star~
+Desc A chain with a star on the end lies here.~
+Level 85
+ItemType weapon~
+Cost 740
+Durability 5
+Asize 110
+Rsize 50
+Values flail 9 8 beating 0
+Weight 150
+Material iron~
+Extra    glow magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances cleric paladin anti-paladin~
+Affect modifier -1 85 -1 empathy 7 0
+Affect modifier -1 85 -1 mana 40 0
+End
+
+#9230
+Name shock whip~
+Short the Shock Whip~
+Desc A whip hums innocently to itself.~
+Level 85
+ItemType weapon~
+Cost 1020
+Durability 5
+Asize 100
+Rsize 50
+Values whip 9 8 shock DGM
+Weight 10
+Material energy~
+Extra    glow hum magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#9231
+Name anti-cyclops elixir~
+Short anti-cyclops elixir~
+Desc An elixir to ward off cyclopi has been bought then left behind here.~
+Level 1
+ItemType potion~
+Cost 250
+Durability 5
+Asize 10
+Rsize 50
+Values 15 invisibility '' '' ''
+Weight 10
+Material liquid~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#9201
+Name A Mountain Path~
+Desc You are on a mountain path which ascends a steep mountainside.  The trail
+curves around the mountain so that you cannot really see what lies ahead.
+You do sense great power though coming from the area behind the mountain.
+~
+Sector mountain~
+Exit up 9202
+EKeyvnum -1
+Exit down 52250
+End
+
+
+#9202
+Name A Mountain Path~
+Desc You are on a rocky mountain path leading up and around a steep mountainside.
+You sense a glow from the area beyond the mountain, which you cannot see yet.
+~
+Sector mountain~
+Exit up 9203
+EKeyvnum -1
+Exit down 9201
+EKeyvnum -1
+End
+
+
+#9203
+Name Mountainside Tombs~
+Desc There are a few stone heaps here and there, the tombs of those who did not
+last the arduous journey up the mountain.  Curiously you notice a few
+uncovered bodies which don't seem to have died of exhaustion.  The path curves
+east around the mountain.
+~
+Sector mountain~
+ExtraDesc bodies body dead~
+They look as if their necks have been broken and their flesh, chewed.
+~
+ExtraDesc heaps stones tombs~
+You are sure glad that YOU aren't under one of those piles!
+Many of the tombstones have the same name on them, 'Raff'.  He must come
+here a lot.
+~
+Exit up 9204
+EKeyvnum -1
+Exit down 9202
+EKeyvnum -1
+End
+
+
+#9204
+Name A Blind Curve on the Mountain Path.~
+Desc This looks like a normal mountain path, but it is NOT!  This section of the
+path is habitated by a huge (and of course, man-eating) Cyclops.  The path
+makes its final ascent to an overlook.
+~
+Sector mountain~
+Exit up 9205
+EKeyvnum -1
+Exit down 9203
+EKeyvnum -1
+End
+
+
+#9205
+Name Vista~
+Desc This is a stunning vista overlooking a canyon.  There is a sign here that says:
+
+	BEHOLD -- ELEMENTAL CANYON
+
+Fire leaps up from firepits in the western part of the canyon.  The sky looks
+funny, and the air seems hazy to the northwest.  Electricity sparks
+intermittently in the northeast.  To the east you see a strong, magic-looking
+river flowing through the canyon.  Also to the east you spy a sealed cave entrance
+leading into the canyon wall.  The path descends to the north to another
+overlook.
+~
+Sector mountain~
+Exit north 9206
+EKeyvnum -1
+Exit down 9204
+EKeyvnum -1
+End
+
+
+#9206
+Name The Overlook~
+Desc You see various elemental servants wandering around the canyon.  The noise of
+humming coming from the canyon gets louder.  The path makes a steep descent
+into the canyon here.
+~
+Sector mountain~
+Exit south 9205
+EKeyvnum -1
+Exit down 9207
+EKeyvnum -1
+End
+
+
+#9207
+Name Entrance to Elemental Canyon~
+Desc You are awed by the sounds and sights of great powers at works here.
+Elemental servants bustle back and forth doing the biddings of the elemental
+rulers.  You see a sort of cross roads to the north, and you can climb up to
+the overlook here.
+~
+Sector field~
+Exit north 9209
+EKeyvnum -1
+Exit up 9206
+EKeyvnum -1
+End
+
+
+#9208
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at all.
+In general, it is calm, yet there is always a incessant buzz of things
+going on about.  The canyon continues north and east.
+~
+Sector field~
+Exit north 9211
+EKeyvnum -1
+Exit east 9209
+EKeyvnum -1
+End
+
+
+#9209
+Name Elemental Gateway~
+Desc To the west a path dips and winds among some flowing firepits.  To the
+northeast a path goes toward the river.  Beyond toward the northeast and
+northwest are outcrops which rise up from the canyon floor. To the east there
+is a cave mouth which leads into the canyon wall.  And to the south the path
+leads up, away, and out of the canyon.  Various pure and cross-breeds of
+elemental forms wander the canyon floor, which extends in a wide swath
+northwards.
+~
+Sector field~
+Exit north 9212
+EKeyvnum -1
+Exit east 9210
+EKeyvnum -1
+Exit south 9207
+EKeyvnum -1
+Exit west 9208
+EKeyvnum -1
+End
+
+
+#9210
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always a incessant buzz of
+things going on about.  The canyon floor extends north and west.  There is a
+cave mouth set into the canyon wall to the east.
+~
+Sector field~
+Exit north 9213
+EKeyvnum -1
+Exit east 9220
+EKeyvnum -1
+Exit west 9209
+EKeyvnum -1
+End
+
+
+#9211
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The canyon floor extends off to the north, east,
+and south.
+~
+Sector field~
+Exit north 9214
+EKeyvnum -1
+Exit east 9212
+EKeyvnum -1
+Exit south 9208
+EKeyvnum -1
+End
+
+
+#9212
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The canyon floor extends in all directions.
+~
+Sector field~
+Exit north 9215
+EKeyvnum -1
+Exit east 9213
+EKeyvnum -1
+Exit south 9209
+EKeyvnum -1
+Exit west 9211
+EKeyvnum -1
+End
+
+
+#9213
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The canyon floor extends north, south, and west.
+A path follows a stream to the east.
+~
+Sector field~
+Exit north 9216
+EKeyvnum -1
+Exit east 9228
+EKeyvnum -1
+Exit south 9210
+EKeyvnum -1
+Exit west 9212
+EKeyvnum -1
+End
+
+
+#9214
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about. The canyon floor extends north, east, and south.
+To the west a garden is on fire.
+~
+Sector field~
+Exit north 9217
+EKeyvnum -1
+Exit east 9215
+EKeyvnum -1
+Exit south 9211
+EKeyvnum -1
+Exit west 9237
+EKeyvnum -1
+End
+
+
+#9215
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The canyon floor extends in all directions.
+~
+Sector field~
+Exit north 9218
+EKeyvnum -1
+Exit east 9216
+EKeyvnum -1
+Exit south 9212
+EKeyvnum -1
+Exit west 9214
+EKeyvnum -1
+End
+
+
+#9216
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The Canyon floor extends north, south and west.
+~
+Sector field~
+Exit north 9219
+EKeyvnum -1
+Exit south 9213
+EKeyvnum -1
+Exit west 9215
+EKeyvnum -1
+End
+
+
+#9217
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about. The canyon floor extends east and south.  You can
+climb a rise in the canyon floor to the north.
+~
+Sector field~
+Exit north 9253
+EKeyvnum -1
+Exit east 9218
+EKeyvnum -1
+Exit south 9214
+EKeyvnum -1
+End
+
+
+#9218
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The canyon floor extends east, south, and west.
+~
+Sector field~
+Exit east 9219
+EKeyvnum -1
+Exit south 9215
+EKeyvnum -1
+Exit west 9217
+EKeyvnum -1
+End
+
+
+#9219
+Name The Floor of the Canyon~
+Desc Various elemental forms wander the floor of the canyon.  Some seem to be
+going about their business, while others seem to have no business at
+all.  In general, it is calm, yet there is always an incessant buzz of
+things going on about.  The canyon floor extends south and west.  You can
+climb a rise in the canyon floor to the north.
+~
+Sector field~
+Exit north 9254
+EKeyvnum -1
+Exit south 9216
+EKeyvnum -1
+Exit west 9218
+EKeyvnum -1
+End
+
+
+#9220
+Name Dark Cave~
+Desc You notice a path winding east among some huge boulders.  You feel a powerful
+source of energy from that direction.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 9221
+EKeyvnum -1
+Exit west 9210
+EKeyvnum -1
+End
+
+
+#9221
+Name Darker Caves~
+Desc You can barely see your way even with a light source.  The rocks of the cave
+are even darker than the darkness.  You hear a powerful humming all around
+you.  Cave paths go south and east roughly, its hard to tell exactly when you
+can't see where you are going.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 9222
+EKeyvnum -1
+Exit south 9223
+EKeyvnum -1
+Exit west 9220
+EKeyvnum -1
+End
+
+
+#9222
+Name Darker Caves~
+Desc You can barely see your way even with a light source.  The rocks of the cave
+are even darker than the darkness.  You hear a powerful humming all around
+you.  Cave paths go south and west roughly; it's hard to tell exactly when you
+can't see where you are going.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 9224
+EKeyvnum -1
+Exit west 9221
+EKeyvnum -1
+End
+
+
+#9223
+Name Darker Caves~
+Desc You can barely see your way even with a light source.  The rocks of the cave
+are even darker than the darkness.  You hear a powerful humming all around you.
+Cave paths go north, south and east roughly; it's hard to tell exactly when
+you can't see where you are going.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 9221
+EKeyvnum -1
+Exit east 9224
+EKeyvnum -1
+Exit south 9225
+EKeyvnum -1
+End
+
+
+#9224
+Name Darker Caves~
+Desc You can barely see your way even with a light source.  The rocks of the cave
+are even darker than the darkness.  You hear a powerful humming all around you.
+Cave paths go north, south and west roughly, it's hard to tell exactly when you
+can't see where you are going.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 9222
+EKeyvnum -1
+Exit south 9226
+EKeyvnum -1
+Exit west 9223
+EKeyvnum -1
+End
+
+
+#9225
+Name Darkest Caves~
+Desc Your light doesn't even seem to work here.  Even magical light sources seem
+only to illuminate about a foot ahead of you.  You suddenly realize that the
+path has descended quite a bit but you didn't notice before because of the
+darkness.  You sense a great presence off to the east aways.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 9223
+EKeyvnum -1
+Exit east 9226
+EKeyvnum -1
+End
+
+
+#9226
+Name Darkest Caves~
+Desc Your light doesn't even seem to work here.  Even magical light sources seem
+only to illuminate about a foot ahead of you.  You suddenly realize that the
+path has descended quite a bit but you didn't notice before because of the
+darkness.  You sense a great presence directly to the east.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 9224
+EKeyvnum -1
+Exit east 9227
+EKeyvnum -1
+Exit west 9225
+EKeyvnum -1
+End
+
+
+#9227
+Name Earth Chamber~
+Desc This is the abode of the Earth Ruler.  He decides about earthquakes,
+landslides, and avalanches.  The Earth Ruler sits upon a huge marble throne
+carved into the wall.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc marble throne~
+The ruler notices your stare, and doesn't like it one bit!  The whole
+earth seems to shake with his emotion.
+~
+Exit west 9226
+EKeyvnum -1
+End
+
+
+#9228
+Name By the River~
+Desc The water in the river seems to bubble and froth with magic.  Though it
+splashes playfully on you, it does not seem wet.  The path leads north closer
+to the water. To the west you see a T-intersection.
+~
+Sector field~
+Exit north 9229
+EKeyvnum -1
+Exit west 9213
+EKeyvnum -1
+End
+
+
+#9229
+Name In the River~
+Desc To continue you had to walk right in the river.  Though you walk along in
+water up to your knees, you do not seem to get wet.  A bay stretches out to
+the north and the river goes south.
+~
+Sector swim~
+Exit north 9230
+EKeyvnum -1
+Exit south 9228
+EKeyvnum -1
+End
+
+
+#9230
+Name Elemental Bay~
+Desc The water is crystal clear here and you can see the bottom of the bay 30 feet
+below you.  Then you realize you are walking on the water itself.  Truly
+magical water indeed.  Though you splash through the bay you do not get wet.
+~
+Sector swim~
+Exit north 9233
+EKeyvnum -1
+Exit east 9231
+EKeyvnum -1
+Exit south 9229
+EKeyvnum -1
+End
+
+
+#9231
+Name Elemental Bay~
+Desc The water is crystal clear here and you can see the bottom of the bay 30 feet
+below you.  Then you realize you are walking on the water itself.  Truly
+magical water indeed.  Though you splash through the bay you do not get wet.
+~
+Sector swim~
+Exit north 9234
+EKeyvnum -1
+Exit east 9232
+EKeyvnum -1
+Exit west 9230
+EKeyvnum -1
+End
+
+
+#9232
+Name Elemental Bay~
+Desc The water is crystal clear here and you can see the bottom of the bay 30 feet
+below you.  Then you realize you are walking on the water itself.  Truly
+magical water indeed.  Though you splash through the bay you do not get wet.
+~
+Sector swim~
+Exit north 9235
+EKeyvnum -1
+Exit west 9231
+EKeyvnum -1
+End
+
+
+#9233
+Name Elemental Bay~
+Desc The water is crystal clear here and you can see the bottom of the bay 30 feet
+below you.  Then you realize you are walking on the water itself.  Truly
+magical water indeed.  Though you splash through the bay you do not get wet.
+~
+Sector swim~
+Exit east 9234
+EKeyvnum -1
+Exit south 9230
+EKeyvnum -1
+End
+
+
+#9234
+Name Elemental Bay~
+Desc The water is crystal clear here and you can see the bottom of the bay 30 feet
+below you.  Then you realize you are walking on the water itself.  Truly
+magical water indeed.  Though you splash through the bay you do not get wet.
+~
+Sector swim~
+Exit east 9235
+EKeyvnum -1
+Exit south 9231
+EKeyvnum -1
+Exit west 9233
+EKeyvnum -1
+End
+
+
+#9235
+Name Elemental Bay~
+Desc The water is crystal clear here and you can see the bottom of the bay 30 feet
+below you.  Then you realize you are walking on the water itself.  Truly
+magical water indeed.  Though you splash through the bay you do not get wet.
+~
+Sector swim~
+Exit south 9232
+EKeyvnum -1
+Exit west 9234
+EKeyvnum -1
+Exit down 9236
+EKeyvnum -1
+End
+
+
+#9236
+Name Water Chamber~
+Desc This chamber was magically created here on the floor of the bay.  It looks
+like it's been here for a long, long time.  Though you are 'under water' there
+is no difficulty breathing normally, and oddly you do not feel the pressure of
+the water above you.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit up 9235
+EKeyvnum -1
+End
+
+
+#9237
+Name A Fiery Pathway~
+Desc You tread carefully along a path which dips and turns among geysers of fire.
+Miniature volcanoes spew lava in rivers.  The fire is hot but not altogether
+dangerous.  The path extends east and south.
+~
+RoomFlags light~
+Sector mountain~
+Exit east 9214
+EKeyvnum -1
+Exit south 9238
+EKeyvnum -1
+End
+
+
+#9238
+Name A Fiery Pathway~
+Desc You tread carefully along a path which dips and turns among pits of fire and
+beds of coals.  A garden to the west glows with an everlasting fire.
+~
+RoomFlags light~
+Sector mountain~
+Exit north 9237
+EKeyvnum -1
+Exit west 9242
+EKeyvnum -1
+End
+
+
+#9242
+Name The Burning Gardens~
+Desc Everywhere around you the landscape is afire; the rocks, the shrubs and even
+the air seems to be aflame.  Curiously, the magical fire does not seem to
+consume its hosts.  A path leads east among some fire pits.
+~
+RoomFlags light~
+Sector mountain~
+Exit east 9238
+EKeyvnum -1
+Exit west 9245
+EKeyvnum -1
+End
+
+
+#9245
+Name The Fire Chamber~
+Desc The fire ruler sits upon a throne made of blue flame.  Little flickers of
+flame dance to and fro for the entertainment of the ruler.
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 9242
+EKeyvnum -1
+End
+
+
+#9246
+Name Electric Pathway~
+Desc The pathway glows and hums because of the electricity pulsing through it.
+It seems almost soothing to your weary feet.  To the north there is a
+sunken-in area.  A path leads east also.
+~
+RoomFlags light~
+Sector field~
+Exit north 9248
+EKeyvnum -1
+Exit east 9253
+EKeyvnum -1
+End
+
+
+#9247
+Name The Electric Playground~
+Desc Though there is a seemingly carefree atmosphere here, you sense that
+something much more important takes place near by.  The electric playground
+extends north and east.
+~
+RoomFlags light~
+Sector hills~
+Exit north 9249
+EKeyvnum -1
+Exit east 9248
+EKeyvnum -1
+End
+
+
+#9248
+Name The Electric Playground~
+Desc Though there is a seemingly carefree atmosphere here, you sense that
+something much more important takes place near by.  There is an electric
+path heading away south.  The playground extends north and west.
+~
+RoomFlags light~
+Sector hills~
+Exit north 9250
+EKeyvnum -1
+Exit south 9246
+EKeyvnum -1
+Exit west 9247
+EKeyvnum -1
+End
+
+
+#9249
+Name The Electric Playground~
+Desc Though there is a seemingly carefree atmosphere here, you sense that
+something much more important takes place near by.  The playground continues
+south and east.
+~
+RoomFlags light~
+Sector hills~
+Exit east 9250
+EKeyvnum -1
+Exit south 9247
+EKeyvnum -1
+End
+
+
+#9250
+Name The Electric Playground~
+Desc Though there is a seemingly carefree atmosphere here, you sense that
+something much more important takes place near by.  The playground is
+south and west.  Something more important catches your eye to the east.
+~
+RoomFlags light~
+Sector hills~
+Exit east 9251
+EKeyvnum -1
+Exit south 9248
+EKeyvnum -1
+Exit west 9249
+EKeyvnum -1
+End
+
+
+#9251
+Name Lightning Causeway~
+Desc Up a set of stairs carved into the hill you see intermittent flashes of
+lightning.  A continuous hum also comes form that direction.  To the west
+is the electric playground.
+~
+RoomFlags light~
+Sector hills~
+Exit west 9250
+EKeyvnum -1
+Exit up 9252
+EKeyvnum -1
+End
+
+
+#9252
+Name Lightning Chamber~
+Desc There is some sort of control panel here. Apparently the Lightning Ruler
+observes and controls electric forces from here.  A set of steps carved into
+the hill lead down to a causeway.
+~
+RoomFlags indoors light~
+Sector cave~
+Exit down 9251
+EKeyvnum -1
+End
+
+
+#9253
+Name Mesa West~
+Desc An electric path starts to the west.  The mesa continues to the east.
+Or you can climb down to the canyon floor to the south.
+~
+Sector field~
+Exit east 9254
+EKeyvnum -1
+Exit south 9217
+EKeyvnum -1
+Exit west 9246
+EKeyvnum -1
+End
+
+
+#9254
+Name Mesa East~
+Desc A path starts to the north.  The mesa continues to the west.
+Or you can climb down to the canyon floor to the south.
+~
+Sector field~
+Exit north 9255
+EKeyvnum -1
+Exit south 9219
+EKeyvnum -1
+Exit west 9253
+EKeyvnum -1
+End
+
+
+#9255
+Name Floating in Air~
+Desc Last you knew, you were walking on the mesa.  Abruptly the path dropped
+from beneath your feet much to quick for you to recover.  Instead of
+plunging to your death, you seemingly miss the ground and begin walking
+on air.  The space to the north and east seems just thin air, but you can
+walk there.  The pathway you came from is to the south.
+~
+Sector air~
+Exit north 9257
+EKeyvnum -1
+Exit east 9256
+EKeyvnum -1
+Exit south 9254
+EKeyvnum -1
+End
+
+
+#9256
+Name Floating in Air~
+Desc You look down and see the ground 100 feet below you.  The wind whispering
+in your ear seems to reassure you that this is fine.  To the north aways
+you spy a portal of sorts.  To the west is more thin air.
+~
+Sector air~
+Exit north 9258
+EKeyvnum -1
+Exit west 9255
+EKeyvnum -1
+End
+
+
+#9257
+Name Floating in Air~
+Desc You look down and see the ground 100 feet below you.  The wind whispering
+in your ear seems to reassure you that this is fine.  To the east aways
+you spy a portal of sorts.  To the south is more thin air.
+~
+Sector air~
+Exit east 9258
+EKeyvnum -1
+Exit south 9255
+EKeyvnum -1
+End
+
+
+#9258
+Name Floating in Air~
+Desc You look down and see the ground 100 feet below you.  The wind whispering
+in your ear seems to reassure you that this is fine. There is a portal
+hanging in midair here. It is to the east.  You can float south or west
+if you'd like.
+~
+Sector air~
+ExtraDesc portal~
+Through the portal you see a tunnel.
+~
+Exit east 9259
+EKeyvnum -1
+Exit south 9256
+EKeyvnum -1
+Exit west 9257
+EKeyvnum -1
+End
+
+
+#9259
+Name Windy Tunnel~
+Desc A tunnel leads east.  To the west you can enter a portal. The wind in
+this tunnel is quite fierce, it seems as if it's forced.  
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc portal~
+Through the portal you see nothing but sky.
+~
+Exit east 9260
+EKeyvnum -1
+Exit west 9258
+EKeyvnum -1
+End
+
+
+#9260
+Name Air Chamber~
+Desc Tiny tornadoes come and go and dance along the ground here.  At the back
+of the chamber you notice a huge throne made of swirling clouds.
+A tunnel leads west.
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc throne clouds~
+Although the cloud throne appears solid enough to sit on, I wouldn't try
+it if I were you!
+~
+Exit west 9259
+EKeyvnum -1
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 9216 spec_breath_frost
+M 9217 spec_breath_gas
+M 9218 spec_breath_lightning
+M 9219 spec_breath_acid
+M 9220 spec_breath_fire
+M 9221 spec_breath_gas
+M 9223 spec_breath_lightning
+M 9224 spec_thief
+M 9225 spec_thief
+M 9226 spec_cast_cleric
+M 9227 spec_cast_meaner
+M 9228 spec_thief
+M 9230 spec_cast_cleric
+M 9231 spec_cast_mage
+M 9233 spec_cast_mage
+M 9234 spec_thief
+M 9235 spec_breath_any
+M 9236 spec_thief
+M 9237 spec_breath_any
+M 9204 spec_breath_any
+M 9207 spec_breath_any
+M 9208 spec_breath_gas
+M 9209 spec_breath_fire
+M 9210 spec_breath_frost
+M 9211 spec_breath_lightning
+M 9212 spec_breath_acid
+S
+
+
+
+#RESETS2
+M 0 9231 5 9216 5
+E 0 9215 0 hold~
+M 0 9203 15 9217 15
+M 0 9203 15 9218 15
+M 0 9205 15 9218 15
+M 0 9207 6 9218 6
+M 0 9207 6 9218 6
+E 0 9223 0 hold~
+M 0 9233 7 9218 7
+M 0 9203 15 9219 15
+E 0 9225 0 hold~
+M 0 9236 15 9220 15
+M 0 9220 8 9220 8
+E 0 9222 0 hold~
+M 0 9217 15 9221 15
+M 0 9220 8 9221 8
+M 0 9223 8 9221 8
+M 0 9205 12 9222 12
+E 0 9224 0 hold~
+M 0 9217 15 9222 15
+M 0 9221 8 9222 8
+M 0 9221 8 9222 8
+M 0 9224 8 9222 8
+E 0 9225 0 torso~
+M 0 9217 15 9223 15
+E 0 9217 0 hold~
+M 0 9217 15 9224 15
+M 0 9206 9 9225 9
+E 0 9219 0 hold~
+M 0 9217 15 9225 15
+M 0 9216 5 9225 5
+M 0 9217 15 9226 15
+M 0 9208 1 9227 1
+E 0 9201 0 lfinger~
+E 0 9202 0 torso~
+M 0 9217 15 9227 15
+M 0 9217 15 9227 15
+M 0 9224 8 9227 8
+M 0 9236 15 9228 15
+M 0 9219 8 9228 8
+M 0 9219 8 9229 8
+M 0 9234 6 9230 6
+E 0 9218 0 wielded~
+M 0 9214 15 9230 15
+M 0 9214 15 9231 15
+M 0 9221 8 9231 8
+M 0 9221 8 9231 8
+M 0 9214 15 9232 15
+M 0 9216 5 9232 5
+M 0 9216 5 9232 5
+M 0 9222 8 9232 8
+M 0 9214 15 9233 15
+E 0 9216 0 hold~
+M 0 9205 12 9234 12
+M 0 9214 15 9234 15
+M 0 9214 15 9235 15
+E 0 9224 0 hold~
+M 0 9212 1 9236 1
+E 0 9209 0 waist~
+E 0 9210 0 about~
+M 0 9214 15 9236 15
+M 0 9214 15 9236 15
+M 0 9236 15 9237 15
+M 0 9226 1 9238 1
+E 0 9226 0 wielded~
+M 0 9227 1 9238 1
+E 0 9230 0 wielded~
+M 0 9234 6 9238 6
+E 0 9217 0 wielded~
+M 0 9219 8 9238 8
+M 0 9220 8 9238 8
+M 0 9207 6 9242 6
+M 0 9228 1 9242 1
+E 0 9227 0 wielded~
+M 0 9229 1 9242 1
+E 0 9228 0 wielded~
+M 0 9230 1 9242 1
+E 0 9229 0 wielded~
+M 0 9215 15 9242 15
+M 0 9215 15 9242 15
+E 0 9215 0 hold~
+M 0 9215 15 9242 15
+M 0 9220 8 9242 8
+M 0 9209 1 9245 1
+E 0 9203 0 wielded~
+E 0 9204 0 neck1~
+M 0 9215 15 9245 15
+E 0 9215 0 hold~
+M 0 9215 15 9245 15
+M 0 9215 15 9245 15
+M 0 9206 9 9246 9
+M 0 9236 15 9246 15
+M 0 9218 15 9246 15
+M 0 9219 8 9246 8
+M 0 9218 15 9247 15
+M 0 9218 15 9248 15
+M 0 9223 8 9248 8
+M 0 9235 2 9249 2
+M 0 9218 15 9249 15
+M 0 9205 12 9250 12
+M 0 9218 15 9250 15
+E 0 9219 0 hold~
+M 0 9218 15 9251 15
+M 0 9211 1 9252 1
+E 0 9207 0 wielded~
+E 0 9208 0 shield~
+M 0 9218 15 9252 15
+E 0 9218 0 hold~
+M 0 9218 15 9252 15
+M 0 9233 8 9253 8
+M 0 9223 8 9253 8
+M 0 9206 9 9254 9
+M 0 9222 8 9254 8
+M 0 9233 7 9255 7
+M 0 9236 15 9255 15
+M 0 9225 15 9255 15
+E 0 9218 0 hold~
+M 0 9225 15 9255 15
+E 0 9225 0 hold~
+M 0 9222 8 9255 8
+M 0 9225 15 9256 15
+M 0 9235 2 9257 2
+E 0 9216 0 wielded~
+M 0 9225 15 9257 15
+M 0 9224 8 9257 8
+M 0 9225 15 9258 15
+M 0 9225 15 9259 15
+M 0 9224 8 9259 8
+M 0 9210 1 9260 1
+E 0 9205 0 feet~
+E 0 9206 0 head~
+M 0 9207 6 9260 6
+E 0 9220 0 wielded~
+M 0 9225 15 9260 15
+M 0 9225 15 9260 15
+M 0 9201 3 9201 3
+M 0 9201 3 9202 3
+G 0 9231 0
+M 0 9236 15 9202 15
+M 0 9201 3 9203 3
+M 0 9238 1 9203 1
+G 0 9231 0
+M 0 9202 1 9204 1
+E 0 9213 0 arms~
+E 0 9214 0 legs~
+M 0 9205 12 9207 12
+M 0 9236 15 9207 15
+M 0 9203 15 9208 15
+M 0 9232 8 9208 8
+M 0 9204 1 9209 1
+E 0 9211 0 neck1~
+E 0 9212 0 lwrist~
+M 0 9205 12 9209 12
+M 0 9207 6 9209 6
+M 0 9232 8 9209 8
+E 0 9220 0 wielded~
+M 0 9203 15 9210 15
+M 0 9223 8 9210 8
+M 0 9231 5 9211 5
+E 0 9215 0 hold~
+M 0 9206 9 9212 9
+E 0 9221 0 hold~
+M 0 9216 5 9212 5
+M 0 9222 8 9213 8
+M 0 9203 15 9215 15
+M 0 9203 15 9215 15
+S
+
+
+
+#SHOPS
+#9238
+buy_type potion~
+buy_type pill~
+buy_type poultice~
+profit_buy 115
+profit_sell 75
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#9200
+title ice bandit backstab~
+author Pohjola~
+code pbs $n
+~
+disabled false
+last_editor Pohjola~
+last_editdate 1091897293
+END
+
+#0
+
+
+#$

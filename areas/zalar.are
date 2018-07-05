@@ -1,0 +1,290 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        A small cottage estate~
+ShortName   A small cottage~
+Builders    None~
+VNUMs       8920 8929
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Dec 25 12:30:29 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#8920
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 8921 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#8921
+Name treasury key~
+Short a small `#`Yg`yo`Yl`yd`Ye`yn`^ house `#`skey`^~
+Desc A small `#`Yg`yo`Yl`yd`Ye`yn`^ house `#`skey`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#8922
+Name marble fountain water~
+Short `#`wa large `sblack marble `wfountain`^~
+Desc `#`wa large `sblack marble `wfountain sits here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 99999 99999 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal burnproof nogetall~
+Wear     no_sac~
+End
+
+#8923
+Name black leather sofa couch~
+Short `#`wa `sblack `wleather sofa`^~
+Desc `#`wa `sblack `wleather sofa sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHJR 100 100
+Weight 400
+Material leather~
+Extra    nodegrade burnproof norestring~
+End
+
+#8924
+Name king size royal bed ~
+Short `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it`^~
+Desc `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 200 200
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#8925
+Name long rectangular cherrywood table~
+Short `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable`^~
+Desc `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable is sitting here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#8920
+Name Courtyard~
+Desc You are inside of a large courtyard. It is paved in thousands of tiny 
+multi-colored pebblestones. Thick shrubs outline the courtyard creating a 
+large circular pattern centering around a huge rose marble fountain. There 
+is a door to a house leading to your north. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 8921
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 8921
+EKeywords door~
+End
+
+
+#8921
+Name Living Room~
+Desc A large candleabra hangs from the center of the ceiling creating a soft 
+light. The walls are made out of a light colored pine and the floor is 
+covered in a soft black carpet. Bookshelves line the west wall and there is 
+a gigantic fireplace lining to east wall. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 8924
+Exit east 8922
+Exit south 8920
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 8921
+Exit west 8923
+End
+
+
+#8922
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit west 8921
+End
+
+
+#8923
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 8925
+Exit east 8921
+Exit south 8926
+End
+
+
+#8924
+Name Kitchen~
+Desc The walls are painted a dark grey and the floor is made from a dark colored 
+marble. Several lanterns hang from the walls creating light. There is a 
+large window overlooking the town to your east and a huge cookstove on the 
+north wall. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 8921
+End
+
+
+#8925
+Name Bedroom~
+Desc . The walls in this bedroom are painted a light grey color and there is a 
+darker grey carpet covering the floor. There is a huge bay window that you 
+can rest on to your west that allows you to look outside. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors noscry light~
+Room2Flags storage_room~
+Sector inside~
+Exit south 8923
+End
+
+
+#8926
+Name Master Bedroom~
+Desc You find yourself inside of the houses master bedroom. The walls are painted 
+a rich burgandy color and there is a plush black carpet covering the floor. 
+There is a huge bay window that you can rest on to your east that allows you 
+to look out into the yard. A large floor lantern is resting in the corner of 
+the room by a small bedside table. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 8923
+End
+
+
+#8927
+Name Treasury~
+Desc This room is very plain. The walls are painted white and there is a black 
+carpet covering the floor. Several crates rest about the room. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 8922 -1 8920
+O 0 8923 -1 8921
+O 0 8925 -1 8924
+O 0 8924 -1 8925
+O 0 8924 -1 8926
+O 0 8920 -1 8927
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#8920
+author Delandria~
+code mob transfer $n 8927
+~
+disabled false
+last_editor Delandria~
+last_editdate 1101014062
+END
+
+#0
+
+
+#$

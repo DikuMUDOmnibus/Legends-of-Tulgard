@@ -1,0 +1,2931 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69q
+Name        Atlantis~
+ShortName   Atlantis~
+Builders    ~
+Credits     jaromir~
+VNUMs       8100 8150
+LRange      20 70
+Security    9
+Colour      C~
+colourcode  `
+MapScale    0
+MapLevel    10
+Vnum_offset 0
+*LastSaved  Thu Jun 26 10:13:10 2003~
+End
+
+
+
+#MOBILES
+#8100
+Name fisherman man~
+ShortD the `#`BFisherman`^~
+LongD A Fisherman is fishing here.
+~
+Desc A Fisherman is here fighting with his fish and trying to catch more. His face
+is hidden by his cape but you can see his glowing eyes staring at you. He
+looks very dangerous, however you can't see if he's very strong.
+~
+Race human~
+Align 1 0
+Level 64
+Hitroll 0
+HitDice 6d10+340
+ManaDice 3d5+65
+DamDice 8d7+30
+DamType punch
+AC -340 -340 -340 -282
+Wealth 124
+Act    npc sentinel scavenger wimpy warrior~
+AffBy  sanctuary infrared dark_vision~
+Off    disarm dodge trip assist_vnum~
+Imm    charm bash cold~
+Res    mental disease~
+Vuln   summon negative drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8101
+Name fish~
+ShortD the `#`CFish`^~
+LongD A fish is swimming in the water.
+~
+Desc This is a sweet little fish with one BIG mouth. His teeth are terribly strong,
+trained by shark-attacks. How you would love to see it fight.
+~
+Race water fowl~
+Align -1 0
+Level 72
+Hitroll 0
+HitDice 7d11+370
+ManaDice 3d5+75
+DamDice 8d8+36
+DamType chomp
+AC -420 -420 -420 -357
+Wealth 0
+Act    npc wimpy warrior~
+AffBy  flying haste swim~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon drowning~
+Res    magic weapon cold mental~
+Vuln   bash silver~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8102
+Name sea-horse horse~
+ShortD the `#`GSea`g-h`Go`gr`Gs`ge`^~
+LongD A sea-horse is playing here.
+~
+Desc Ooooh, how sweeeeeet!!!.
+~
+Race water fowl~
+Align 2 3
+Level 68
+Hitroll 0
+HitDice 7d10+355
+ManaDice 3d5+70
+DamDice 7d8+34
+DamType grep
+AC -380 -380 -380 -319
+Wealth 0
+Act    npc scavenger warrior~
+AffBy  flying swim~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon disease~
+Res    magic weapon drowning~
+Vuln   cold silver~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8103
+Name king neptune~
+ShortD `#`WK`Cing `WN`Ceptune`^~
+LongD Neptune, king of Atlantis.
+~
+Desc King Neptune of Atlantis. The most powerful king of the sea. His strength is
+only equalled by the Dark Dragon of Deep Down. The sight of him makes everybody
+smile. Mess with him and you will not survive Atlantis. His magic sword
+Sharkbite is dangerously by his side.
+~
+Race human~
+Align -1 3
+Level 83
+Hitroll 0
+HitDice 8d12+415
+ManaDice 3d5+85
+DamDice 9d10+42
+DamType acbite
+AC -530 -530 -530 -461
+Wealth 1189
+Act    npc sentinel warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil flying pass_door dark_vision~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    bash lightning drowning~
+Res    magic weapon~
+Vuln   acid silver illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#8104
+Name mermaid maid woman~
+ShortD the `#`gM`Ge`Br`bm`Ba`Gi`gd`^~
+LongD A mermaid is standing here, serving Neptune.
+~
+Desc The powerful mermaid bodyguard of King Neptune. If anybody is a bother to King
+Neptune she will kill the enemy. King Neptune has chosen two very beautiful
+mermaids, nobody can take their eyes from them.
+~
+Race water fowl~
+Align -3 3
+Level 58
+Hitroll 0
+HitDice 6d9+315
+ManaDice 2d5+55
+DamDice 5d10+25
+DamType slap
+AC -280 -280 -280 -224
+Wealth 520
+Act    npc sentinel warrior~
+AffBy  flying haste swim~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    bash cold~
+Res    drowning~
+Vuln   holy light sound~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#8105
+Name shell blue glittering~
+ShortD the `#`CS`mh`We`ml`Cl`^~
+LongD A dirty blue glittering Shell is lying here.
+~
+Desc This is, after close examination, a very UGLY shell, just wanting to get 
+killed. It's so VERY VERY weak that you could sacrifice it alive. Oh would 
+you love to kill the shell.
+~
+Race human~
+Align -3 3
+Level 72
+Hitroll 0
+HitDice 7d11+370
+ManaDice 3d5+75
+DamDice 8d8+36
+DamType digestion
+AC -420 -420 -420 -378
+Wealth 0
+Act    npc sentinel aggressive warrior~
+AffBy  regeneration~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon magic drowning~
+Res    charm bash~
+Vuln   cold negative holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8106
+Name treasurer~
+ShortD the `#`CTreasurer`^~
+LongD The Treasurer is standing here begging for money.
+~
+Desc The treasurer looks very poor. His face is made of sadness for wanting more
+money. He has to take care of all of King Neptune his money. And believe me
+that IS a WHOLE LOT.
+~
+Race human~
+Align 0 -1
+Level 72
+Hitroll 0
+HitDice 7d11+370
+ManaDice 3d5+75
+DamDice 8d8+36
+DamType slice
+AC -420 -420 -420 -373
+Wealth 121
+Act    npc scavenger wimpy warrior~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    bash mental drowning~
+Res    summon acid holy~
+Vuln   lightning silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8107
+Name the `#`gjailer`^~
+ShortD the `#`yJailer`^~
+LongD The Jailer is sleeping here behind his desk.
+~
+Desc The jailer is here laughing his guts out at the prisoners. He is trying to
+keep them as hungry as possible. He is always doing push-ups. That is why he
+looks so strong. Be careful he is a very tactical fighter.
+~
+Race human~
+Align 3 2
+Level 58
+Hitroll 0
+HitDice 6d9+315
+ManaDice 2d5+55
+DamDice 5d10+25
+DamType grep
+AC -280 -280 -280 -238
+Wealth 214
+Act    npc sentinel stay_area warrior~
+AffBy  sleep~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon bash illusion~
+Res    charm weapon~
+Vuln   lightning holy mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8108
+Name guard~
+ShortD the `#`gGeneral `yG`Wuard`^~
+LongD The General Guard is sitting here behind his desk.
+~
+Desc Watch out. This is BIG trouble. He is looking after the actions of all guards
+in Atlantis. If something goes wrong, which almost never happens, he will be
+there. Be careful he is a very tactical fighter.
+~
+Race human~
+Align 1 3
+Level 65
+Hitroll 0
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType pierce
+AC -350 -350 -350 -290
+Wealth 981
+Act    npc sentinel warrior~
+AffBy  sanctuary~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    charm magic silver~
+Res    cold holy light~
+Vuln   acid silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8109
+Name atlantis guard~
+ShortD the `#`BAtlantis `GG`guard`^~
+LongD An Atlantis Guard is standing here.
+~
+Desc The faithful guard of Atlantis. He would never give up his Oath of Guardians.
+The second highest rank you can reach in Atlantis. If there is trouble he will
+attack no matter what.
+~
+Race human~
+Align -1 3
+Level 67
+Hitroll -3
+HitDice 7d10+350
+ManaDice 3d5+65
+DamDice 7d8+33
+DamType pound
+AC -370 -370 -370 -318
+Wealth 0
+Act    npc scavenger warrior~
+AffBy  sanctuary~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm drowning~
+Res    bash cold~
+Vuln   poison energy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 8109
+END
+
+#8110
+Name atlantis guard~
+ShortD the `#`GAtlantis `BG`buard`^~
+LongD An Atlantis Guard stands here, guardian the Entrance of Atlantis.
+~
+Desc The faithful guard of Atlantis. He would never give up his Oath of Guardians.
+The second highest rank you can reach in Atlantis. If there is trouble he will
+attack no matter what.
+~
+Race human~
+Align 2 3
+Level 78
+Hitroll -3
+HitDice 8d11+395
+ManaDice 3d5+80
+DamDice 9d9+39
+DamType pound
+AC -480 -480 -480 -393
+Wealth 987
+Act    npc sentinel warrior~
+AffBy  haste~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm bash~
+Res    cold drowning~
+Vuln   light silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+Group 8110
+END
+
+#8111
+Name prisoner~
+ShortD the `#`sPrisoner`^~
+LongD A Prisoner lying here on his bed.
+~
+Desc This used to be a very big man, but now he looks pale and you can count
+his bones. He's got bread and water in his hand and he guards it very well.
+He's here for insulting King Neptune.
+~
+Race human~
+Align -3 -3
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType grep
+AC -200 -200 -200 -180
+Wealth 0
+Act    npc sentinel warrior~
+AffBy  faerie_fire~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    charm drowning~
+Res    magic weapon~
+Vuln   slash acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8112
+Name martinus~
+ShortD `#`cMartinus`^~
+LongD Martinus the priest of Atlantis is standing here.
+~
+Desc This is a very wise man, he is older than anybody in Atlantis with the
+exception of Sage Marid. His whole life he has been gathering his knowledge.
+In his youth he was the student of Marid the sage. Be careful in attacking
+him, he can heal himself a lot faster then you can hurt him.
+~
+Race human~
+Align -3 3
+Level 71
+Hitroll 0
+HitDice 7d11+365
+ManaDice 3d5+70
+DamDice 8d8+35
+DamType wrath
+AC -410 -410 -410 -336
+Wealth 521
+Act    npc sentinel warrior~
+AffBy  detect_invis sanctuary~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm bash~
+Res    magic cold~
+Vuln   acid silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8113
+Name dark dragon~
+ShortD the `#`SDark Dragon`^~
+LongD The giant Dark Dragon is standing here.
+~
+Desc Dark Dragon is a dangerous monster, you should not mock at him if you want
+to live a little longer. He is as strong as the King of Atlantis, Neptune,
+but Dark Dragon abuses his strength. So don't challenge him.
+~
+Race human~
+Align -3 -3
+Level 90
+Hitroll 0
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType acbite
+AC -350 -350 -350 -290
+Wealth 0
+Act    npc sentinel warrior~
+AffBy  faerie_fire poison haste~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    bash acid~
+Res    magic weapon~
+Vuln   cold poison light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#8114
+Name princess chelly~
+ShortD `#`MPrincess `WC`Mh`Re`Ml`Rl`Wy`^~
+LongD Princess Chelly stands here, looking pretty.
+~
+Desc The daughter of King Neptune. She is very beautiful. You think the most
+beautiful girl you have ever seen in Atlantis. You would ask her to marry
+you but she doesn't want scum like you, as she says.
+~
+Race human~
+Align -1 3
+Level 75
+Hitroll 0
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType slap
+AC -450 -450 -450 -364
+Wealth 921
+Act    npc warrior~
+AffBy  sanctuary~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    mental drowning illusion~
+Res    acid holy~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8115
+Name cook ed~
+ShortD `#`yEd`^ the `wCook`^~
+LongD Ed the cook, is cooking here something delicious.
+~
+Desc Ed is a very talented cook, every diner he makes, is VERY delicious. He has
+been working for 20 years for King Neptune. Ed is a fat man who tastes every
+diner he makes.
+~
+Race human~
+Align 2 1
+Level 63
+Hitroll 0
+HitDice 6d10+335
+ManaDice 3d5+60
+DamDice 8d7+29
+DamType chomp
+AC -330 -330 -330 -283
+Wealth 98
+Act    npc sentinel scavenger warrior~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    magic cold~
+Res    summon lightning drowning~
+Vuln   magic holy mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8116
+Name marid sage~
+ShortD `#`cS`ga`cg`ge `sM`ca`gr`ci`sd`^~
+LongD The Sage Marid is standing here behind his counter.
+~
+Desc The sage is a small man with a long beard. His hands look very wrinkled.
+And his eyes are full of power. He looks very week and old but be aware
+of his knowledge of magic. The spells he knows are so devastating that
+he could destroy Atlantis with his own hand.
+~
+Race human~
+Align -3 3
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType wrath
+AC -200 -200 -200 -180
+Wealth 214
+Act    npc sentinel warrior~
+AffBy  detect_invis detect_magic infrared~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm magic weapon~
+Res    poison negative iron~
+Vuln   holy light illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8117
+Name sophia~
+ShortD `#`RSophia`^~
+LongD Sophia is standing here trying to sell some food and some drinks.
+~
+Desc If you want to talk, don't come here. She talks so fast that if you want to
+say anything you would have to wait forever because she keeps talking and
+talking.
+~
+Race human~
+Align 0 2
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType slap
+AC -200 -200 -200 -176
+Wealth 321
+Act    npc sentinel warrior~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm magic weapon~
+Res    acid holy~
+Vuln   cold lightning iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8118
+Name bruce fishman~
+ShortD `#`yBruce`^ the `bFishman`^~
+LongD Bruce the Fishman is standing here.
+~
+Desc You can smell Bruce loves his job. He is wearing a very dirty apron. He is
+very fat because he eats a lot of fish. Bruce can handle a knife with
+enormous speed, he learned that from his job.
+~
+Race human~
+Align 1 2
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType chomp
+AC -200 -200 -200 -172
+Wealth 432
+Act    npc sentinel warrior~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm magic weapon~
+Res    poison holy~
+Vuln   cold disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8119
+Name samuel woodcutter~
+ShortD `#`rSamuel`^ the `ywoodcutter`^~
+LongD Samuel the woodcutter is cutting here some trees.
+~
+Desc A very nice man, always ready to help you if you ask nicely. If he doesn't
+like you he gets angry very quickly. And if he does, you SHOULD be afraid.
+~
+Race human~
+Align -1 2
+Level 70
+Hitroll 0
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType slash
+AC -400 -400 -400 -328
+Wealth 321
+Act    npc sentinel warrior~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    slash cold poison~
+Res    holy drowning light~
+Vuln   bash mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8120
+Name bat~
+ShortD the `#`yBat`^~
+LongD A bat is flying here.
+~
+Desc A bat like any other, YOU think.
+~
+Race bat~
+Align -3 -3
+Level 56
+Hitroll 0
+HitDice 6d9+305
+ManaDice 2d5+55
+DamDice 10d4+24
+DamType bite
+AC -260 -260 -260 -234
+Wealth 0
+Act    npc scavenger aggressive warrior~
+AffBy  curse flying dark_vision~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm~
+Res    cold~
+Vuln   light sound~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8121
+Name giant horrifying rat~
+ShortD a giant, horrifying `#`SRAT`^~
+LongD A giant horrifying rat is running around.
+~
+Desc Well this is a strange creature. You have seen rats before, but this is
+ridiculous. You don't recall him being THIS big.
+~
+Race rat~
+Align 1 -3
+Level 54
+Hitroll 0
+HitDice 5d9+300
+ManaDice 2d5+50
+DamDice 7d6+22
+DamType bite
+AC -240 -240 -240 -194
+Wealth 0
+Act    npc sentinel warrior~
+AffBy  poison~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm illusion~
+Res    bash cold~
+Vuln   fire drowning~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8122
+Name native atlantis~
+ShortD a `#`Ynative`^ of`B Atlantis`^~
+LongD A native of Atlantis is here, boring himself.
+~
+Desc This native acts like every native in Atlantis. Always busy enjoying the
+day. You didn't know it was possible never stop smiling, but this proves it.
+~
+Race human~
+Align 2 0
+Level 60
+Hitroll 0
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -267
+Wealth 431
+Act    npc scavenger wimpy warrior~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon fire light~
+Res    charm poison holy~
+Vuln   lightning disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#8123
+Name parrot~
+ShortD the `#`RP`Ga`Yr`Rr`Go`Yt`^~
+LongD The parrot of sage Marid is here, looking for something to steal.
+~
+Desc You see a sweet parrot with a lot of colours. You think nobody would want
+him to be invisible, yet he is. Not to you though.
+~
+Race song bird~
+Align 3 -3
+Level 52
+Hitroll 0
+HitDice 5d9+290
+ManaDice 2d5+50
+DamDice 6d7+20
+DamType claw
+AC -220 -220 -220 -176
+Wealth 0
+Act    npc scavenger wimpy warrior~
+AffBy  invisible flying~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm bash~
+Res    negative energy~
+Vuln   fire drowning~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8124
+Name gardener~
+ShortD the `#`GGardner`^~
+LongD The gardener is working here in the palace garden.
+~
+Desc This is a man who loves his work, he is all covered in mud and flowers.
+You think if he keeps eating those flowers, he should be very ill very
+soon, but somehow he doesn't.
+~
+Race human~
+Align -1 2
+Level 57
+Hitroll 0
+HitDice 6d9+310
+ManaDice 2d5+55
+DamDice 6d8+24
+DamType punch
+AC -270 -270 -270 -240
+Wealth 527
+Act    npc sentinel warrior~
+AffBy  hide berserk~
+Off    berserk disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm~
+Res    bash cold drowning~
+Vuln   acid holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#8100
+Name metal key~
+Short a metal key~
+Desc A metal key has been left here. It's just screaming 'TAKE ME'.~
+Level 4
+ItemType key~
+Cost 40
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material metal~
+Extra    glow~
+Wear     take~
+ExtraDesc key~
+Aaah... a key, come on, USE it.
+~
+End
+
+#8101
+Name sharkbite sword~
+Short `#`cS`Whark`cb`Site `Ss`cword`^~
+Desc A sword everybody dreams of, is lying here.~
+Level 90
+ItemType weapon~
+Cost 1660
+Asize 200
+Rsize 50
+Values sword 19 3 frbite D
+Weight 200
+Material bone~
+Extra    glow hum magic bless antievil~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian monk~
+Affect modifier -1 90 -1 hitroll 6 0
+Affect modifier -1 90 -1 damroll 6 0
+Affect affects -1 90 -1 none 0 otterlungs
+ExtraDesc sharkbite sword~
+This is the sword of King Neptune from Atlantis.
+~
+End
+
+#8102
+Name diamond jewel key~
+Short a `#`skey`^ with a `Cdiamond `Wjewel`^~
+Desc A key with a diamond jewel has been left here.~
+Level 26
+ItemType key~
+Cost 260
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material diamond~
+Extra    glow~
+Wear     take~
+ExtraDesc key~
+Aaah... a key, come on, USE it.
+~
+End
+
+#8103
+Name black key~
+Short a black key~
+Desc A black key has been left here.~
+Level 26
+ItemType key~
+Cost 260
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material stone~
+Wear     take~
+ExtraDesc key~
+Aaah... a key, come on, USE it.
+~
+End
+
+#8104
+Name shield seaweed~
+Short `#`GS`gea`Gw`geed `Gs`shield`^~
+Desc A shield named 'Seaweed' has been left here.~
+Level 80
+ItemType armor~
+Cost 1620
+Asize 317
+Rsize 50
+Values 26 24 25 20 4
+Weight 317
+Material bone~
+Extra    invis magic antievil nonmetal burnproof~
+Extra2   nodecay~
+Wear     take shield~
+ClassAllowances cleric thief warrior druid paladin ranger~
+Affect modifier -1 80 -1 damroll 2 0
+Affect modifier -1 80 -1 hp 10 0
+Affect modifier -1 80 -1 strength 2 0
+ExtraDesc shield seaweed~
+Very strong shield named 'Seaweed'.
+~
+End
+
+#8105
+Name ice crown~
+Short the `#`CI`Wc`Ce `SC`Wr`Co`Ww`Sn`^~
+Desc A crown made of ice has been left here.~
+Level 80
+ItemType armor~
+Cost 1621
+Asize 110
+Rsize 50
+Values 20 13 22 16 2
+Weight 110
+Material ice~
+Extra    glow magic nodrop antievil~
+Wear     take head~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher monk~
+Affect modifier -1 80 -1 intuition 2 0
+Affect modifier -1 80 -1 mana 40 0
+Affect modifier -1 80 -1 hp 2 0
+Affect modifier -1 80 -1 damroll 4 0
+Affect modifier -1 80 -1 hitroll 4 0
+Affect affects -1 80 -1 none 0 detect_hidden
+Affect resist -1 80 -1 none 0 cold
+ExtraDesc crown~
+A crown made of ice, don't ask me why it doesn't melt.
+~
+End
+
+#8106
+Name pair leather shoes~
+Short some `#`wleather `ys`whoes`^~
+Desc A pair of leather shoes are lying here.~
+Level 70
+ItemType armor~
+Cost 1421
+Asize 127
+Rsize 50
+Values 14 14 14 11 0
+Weight 127
+Material leather~
+Extra    magic antievil~
+Wear     take feet~
+Affect modifier -1 70 -1 move 30 0
+Affect affects2 -1 70 -1 none 0 passwotrace
+ExtraDesc shoes~
+A pair of all fit shoes made of white leather.
+~
+End
+
+#8107
+Name staff control lightning~
+Short a `#`ystaff`w of `Yli`yg`wh`Wt`wn`yi`Yng`^~
+Desc A staff to control lightning is lying here.~
+Level 82
+ItemType staff~
+Cost 1623
+Asize 312
+Rsize 50
+Values 80 5 5 'call lightning' 0
+Weight 312
+Material wood~
+Extra    glow magic antievil~
+Wear     take hold~
+Affect modifier -1 82 -1 mana 60 0
+Affect modifier -1 82 -1 damroll 4 0
+Affect modifier -1 82 -1 hitroll 2 0
+Affect modifier -1 82 -1 hp 2 0
+ExtraDesc staff lightning~
+One staff to control lightning.
+~
+End
+
+#8108
+Name ring wisdom~
+Short the `#`BRi`bn`Wg o`wf `WWi`bsd`Bom`^~
+Desc The ring of wisdom has been left here.~
+Level 82
+ItemType armor~
+Cost 1645
+Asize 11
+Rsize 50
+Values 8 8 8 6 0
+Weight 11
+Material iron~
+Extra    magic antievil~
+Wear     take finger~
+Affect modifier -1 82 -1 empathy 2 0
+Affect modifier -1 82 -1 saves -4 0
+Affect modifier -1 82 -1 ac -4 0
+Affect modifier -1 82 -1 selfdiscipline 2 0
+Affect modifier -1 82 -1 hitroll 4 0
+ExtraDesc ring~
+One ring of wisdom.
+~
+End
+
+#8109
+Name pile coins~
+Short a pile of `#`Ycoins`^~
+Desc A big pile of coins of King Neptune are lying here.~
+Level 24
+ItemType money~
+Cost 240
+Asize 6
+Rsize 50
+Values 100 2 0 0 0
+Weight 6
+Material silver~
+Extra    glow~
+Wear     take~
+ExtraDesc pile coins~
+Oooh, you see a lot of glittering coins.
+~
+End
+
+#8110
+Name black claw~
+Short a `#`SBl`Wac`wk `WCl`Saw`^~
+Desc A very BIG black Claw is lying here.~
+Level 55
+ItemType weapon~
+Cost 1950
+Asize 250
+Rsize 50
+Values exotic 6 4 slash KN
+Weight 250
+Material bone~
+Extra    dark evil antigood~
+Wear     take wield~
+Affect modifier -1 55 -1 hitroll 4 0
+Affect modifier -1 55 -1 damroll 4 0
+Affect modifier -1 55 -1 hp 5 0
+Affect modifier -1 55 -1 constitution 4 0
+Affect modifier -1 55 -1 quickness 4 0
+ExtraDesc black claw~
+This claw is very BIG and it sure looks sharp!
+~
+End
+
+#8112
+Name sage potion~
+Short the `#`gsage`W potion`^~
+Desc A potion, made by the sage is lying here.~
+Level 7
+ItemType potion~
+Cost 650
+Asize 10
+Rsize 50
+Values 30 fly refresh 'giant strength' ''
+Weight 10
+Material glass~
+Wear     take~
+ExtraDesc potion~
+The potion has a small label 'As a giant you will be, the enemy will flee.'.
+~
+End
+
+#8113
+Name green potion~
+Short a `#`Ggreen potion`^~
+Desc A green potion has been left here.~
+Level 9
+ItemType potion~
+Cost 450
+Asize 1
+Rsize 50
+Values 20 'detect magic' 'detect poison' 'detect good' ''
+Weight 1
+Material glass~
+Wear     take~
+ExtraDesc potion~
+Hmmmmmm, it looks very magic... try it!
+~
+End
+
+#8114
+Name unknown potion~
+Short an `Wunknown `spotion`^~
+Desc A unknown potion has been left here.~
+Level 4
+ItemType potion~
+Cost 8000
+Asize 1
+Rsize 50
+Values 30 'cure critical' bless 'remove curse' ''
+Weight 1
+Material glass~
+Wear     take~
+ExtraDesc potion~
+Well, you see somethings unknown.
+~
+End
+
+#8115
+Name dark brown potion~
+Short a `#`ydark brown `spotion`^~
+Desc A dark brown potion is lying here.~
+Level 9
+ItemType potion~
+Cost 9000
+Asize 1
+Rsize 50
+Values 20 haste refresh '' ''
+Weight 1
+Material glass~
+Extra    hum nodrop~
+Wear     take~
+ExtraDesc potion~
+It looks like a delicious potion.
+~
+End
+
+#8116
+Name sandwich~
+Short a sandwich~
+Desc A delicious looking sandwich has been left here.~
+Level 7
+ItemType food~
+Cost 8
+Asize 1
+Rsize 50
+Values 10 10 0 0 0
+Weight 1
+Material food~
+Wear     take~
+End
+
+#8117
+Name sausage~
+Short a sausage~
+Desc A delicious looking sausage is lying here.~
+Level 11
+ItemType food~
+Cost 11
+Asize 5
+Rsize 50
+Values 15 15 0 0 0
+Weight 5
+Material food~
+Wear     take~
+End
+
+#8118
+Name beer~
+Short a bottle of beer~
+Desc A bottle of beer has been left here, smell.~
+Level 13
+ItemType drinkcontainer~
+Cost 33
+Asize 10
+Rsize 50
+Values 30 30 beer 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#8119
+Name very big sharp samuel's axe~
+Short `#`gSamuel's `Ga`sx`Ge`^~
+Desc A very BIG and SHARP axe has been left here.~
+Level 91
+ItemType weapon~
+Cost 1680
+Asize 310
+Rsize 50
+Values axe 2 22 slash D
+Weight 310
+Material mithril~
+Extra    glow~
+Wear     take wield~
+Affect modifier -1 91 -1 damroll 5 0
+Affect modifier -1 91 -1 constitution 4 0
+Affect modifier -1 91 -1 hp 5 0
+ExtraDesc axe~
+It's the axe of Samuel from Atlantis.
+~
+End
+
+#8120
+Name spear~
+Short a `#`Ws`spea`Wr`^~
+Desc A SHARP spear is lying here.~
+Level 54
+ItemType weapon~
+Cost 1721
+Asize 130
+Rsize 50
+Values staff 4 6 pierce D
+Weight 130
+Material steel~
+Extra    glow~
+Wear     take wield~
+Affect modifier -1 54 -1 hitroll 2 0
+Affect modifier -1 54 -1 damroll 4 0
+Affect modifier -1 54 -1 hp 2 0
+Affect modifier -1 54 -1 strength 2 0
+ExtraDesc spear~
+Oooooh... don't touch it, it's so SHARP.
+~
+End
+
+#8121
+Name shell helmet~
+Short a `#`Wshell `Wh`yelmet`^~
+Desc A helmet like a very large shell has been left here.~
+Level 74
+ItemType armor~
+Cost 4210
+Asize 215
+Rsize 50
+Values 18 17 18 15 3
+Weight 215
+Material shell~
+Extra    hum~
+Wear     take head~
+Affect modifier -1 74 -1 hp 10 0
+Affect modifier -1 74 -1 ac -10 0
+ExtraDesc helmet shell~
+This is strange, a helmet like a very large shell.
+~
+End
+
+#8122
+Name ring pearl~
+Short a `#`yring`w with a `Wpearl`^~
+Desc A ring with an expensive pearl has been left here.~
+Level 70
+ItemType armor~
+Cost 1421
+Asize 11
+Rsize 50
+Values 7 6 7 5 1
+Weight 11
+Material pearl~
+Extra    glow~
+Wear     take finger~
+Affect modifier -1 70 -1 saves -2 0
+Affect modifier -1 70 -1 hp 5 0
+Affect modifier -1 70 -1 damroll 2 0
+Affect modifier -1 70 -1 saves 2 0
+Affect modifier -1 70 -1 mana 40 0
+ExtraDesc ring pearl~
+This ring looks very expensive and is glittering like a diamond.
+~
+End
+
+#8123
+Name ivory shield~
+Short an `#`Wiv`wo`Wry `Wsh`yie`Wld`^~
+Desc An ivory shield is lying here.~
+Level 72
+ItemType armor~
+Cost 1521
+Asize 310
+Rsize 50
+Values 24 24 23 18 3
+Weight 310
+Material ivory~
+Extra    glow magic burnproof~
+Wear     take shield no_sac~
+Affect modifier -1 72 -1 hitroll 2 0
+Affect modifier -1 72 -1 hp 3 0
+Affect modifier -1 72 -1 damroll 4 0
+Affect modifier -1 72 -1 mana 60 0
+ExtraDesc ivory shield~
+This shield looks very strong. You are sure nothing can break it.
+~
+End
+
+#8124
+Name ball~
+Short a `#`Wball `^of `Ylight`^~
+Desc A ball of light has been left here.~
+Level 50
+ItemType light~
+Cost 1341
+Asize 124
+Rsize 50
+Values 0 0 999 0 0
+Weight 124
+Material energy~
+Wear     take~
+Affect modifier -1 50 -1 mana 40 0
+Affect modifier -1 50 -1 hitroll 4 0
+End
+
+#8125
+Name spear~
+Short a `#`ss`wpea`sr`^~
+Desc A SHARP spear is lying here.~
+Level 60
+ItemType weapon~
+Cost 6330
+Asize 350
+Rsize 50
+Values staff 2 14 pierce D
+Weight 350
+Material iron~
+Extra    glow~
+Wear     take wield~
+Affect modifier -1 60 -1 hitroll 5 0
+Affect modifier -1 60 -1 damroll 4 0
+ExtraDesc spear~
+Oooooh... don't touch it, it's so SHARP.
+~
+End
+
+#8126
+Name necklace glittering pearls~
+Short a `#`Wg`wl`Wi`wt`Wt`we`Wr`wi`Wn`wg `Wp`Me`Ya`Br`Wl `Wne`Bc`wkl`Ba`Wce`^~
+Desc A nice necklace with glittering pearls has been left here.~
+Level 70
+ItemType armor~
+Cost 1442
+Asize 80
+Rsize 50
+Values 11 11 11 8 3
+Weight 80
+Material pearl~
+Extra    glow~
+Wear     take neck~
+Affect modifier -1 70 -1 mana 60 0
+Affect modifier -1 70 -1 memory 4 0
+Affect modifier -1 70 -1 damroll 3 0
+Affect modifier -1 70 -1 hitroll 2 0
+Affect modifier -1 70 -1 saves -2 0
+End
+
+#8127
+Name fishing-rod~
+Short a `#`Sfishing`w-`yrod`^~
+Desc A fishing-rod has been left here.~
+Level 60
+ItemType fishingpole~
+Cost 1230
+Asize 300
+Rsize 50
+Values 0 0 0 0 0
+Weight 300
+Material wood~
+Wear     take hold~
+End
+
+#8128
+Name pocket knife~
+Short a `#`cpocket `sknife`^~
+Desc A sharp looking pocket knife is lying here.~
+Level 42
+ItemType weapon~
+Cost 1160
+Asize 132
+Rsize 50
+Values dagger 5 4 slice D
+Weight 132
+Material steel~
+Extra    burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 42 -1 damroll 5 0
+Affect modifier -1 42 -1 hitroll 4 0
+End
+
+#8129
+Name pitchfork~
+Short a `#`ypitch`sfork`^~
+Desc A pitchfork is asking to be picked up.~
+Level 57
+ItemType weapon~
+Cost 1312
+Asize 240
+Rsize 50
+Values exotic 9 4 pierce 0
+Weight 240
+Material steel~
+Wear     take wield~
+Affect modifier -1 57 -1 hitroll 2 0
+Affect modifier -1 57 -1 damroll 4 0
+Affect modifier -1 57 -1 constitution 4 0
+End
+
+#8130
+Name fish~
+Short a `#`cfish`^~
+Desc There is a cooked fish lying here.~
+Level 5
+ItemType food~
+Cost 11
+Asize 5
+Rsize 50
+Values 10 10 0 0 0
+Weight 5
+Material food~
+Wear     take~
+End
+
+#8131
+Name red cape~
+Short a `#`Rr`re`Rd `rc`Ra`rp`Re`^~
+Desc A red cape has been left here.~
+Level 65
+ItemType armor~
+Cost 220
+Asize 30
+Rsize 50
+Values 11 11 10 8 3
+Weight 30
+Material wool~
+Wear     take neck~
+Affect modifier -1 65 -1 strength 3 0
+Affect modifier -1 65 -1 quickness 1 0
+Affect modifier -1 65 -1 damroll 3 0
+Affect modifier -1 65 -1 mana 40 0
+Affect modifier -1 65 -1 hp 2 0
+End
+
+#8140
+Name potion blood red~
+Short a `#`rb`Rl`ro`Ro`rd `Rred`^ potion~
+Desc A blood red potion bubbles while you watch.~
+Level 50
+ItemType potion~
+Cost 3250
+Asize 50
+Rsize 50
+Values 50 heal heal heal refresh
+Weight 50
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#8141
+Name potion black~
+Short a `#`sblack`^ potion~
+Desc A black potion bubbles while you watch.~
+Level 50
+ItemType potion~
+Cost 2250
+Asize 50
+Rsize 50
+Values 50 heal heal refresh ''
+Weight 50
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#8142
+Name potion green vile~
+Short a vile `#`ggreen`^ potion~
+Desc A vile green potion bubbles while you watch.~
+Level 50
+ItemType potion~
+Cost 1321
+Asize 50
+Rsize 50
+Values 50 heal refresh '' ''
+Weight 50
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#8143
+Name scallops fresh~
+Short some fresh scallops~
+Desc Some fresh scallops lie here.~
+Level 1
+ItemType food~
+Cost 21
+Asize 0
+Rsize 50
+Values 10 10 0 0 0
+Weight 0
+Material food~
+Wear     take~
+End
+
+#8144
+Name shrimp~
+Short some `#`Mshrimp`^~
+Desc Some shrimp are here, ready to eat.~
+Level 1
+ItemType food~
+Cost 121
+Asize 0
+Rsize 50
+Values 9 9 0 0 0
+Weight 0
+Material food~
+Wear     take~
+End
+
+#8145
+Name lobster boiled~
+Short a `#`yboiled `Rlobster`^~
+Desc A boiled lobster is here, ready to eat.~
+Level 1
+ItemType food~
+Cost 214
+Asize 0
+Rsize 50
+Values 15 15 0 0 0
+Weight 0
+Material food~
+Wear     take~
+End
+
+#8146
+Name shroud dark dragon~
+Short `#`SS`rh`sr`ro`su`rd`^ of the `SDark Dragon`^~
+Desc The Shroud of the Dark Dragon lies here.~
+Level 85
+ItemType armor~
+Cost 1721
+Asize 0
+Rsize 50
+Values 21 21 21 17 0
+Weight 100
+Material scales~
+Extra    magic visdeath burnproof~
+Extra2   nodecay~
+Wear     take about~
+Affect affects -1 85 -1 none 0 hide
+Affect modifier -1 85 -1 constitution 5 0
+Affect modifier -1 85 -1 mana 40 0
+Affect modifier -1 85 -1 ac -4 0
+Affect modifier -1 85 -1 saves -2 0
+Affect modifier -1 85 -1 damroll 4 0
+End
+
+#8147
+Name talisman dark dragon~
+Short the `#`RT`ra`Rl`ri`Rs`rm`Ra`rn`^ of the `#`SDark Dragon`^~
+Desc The Talisman of the Dark Dragon lies here.~
+Level 85
+ItemType armor~
+Cost 1921
+Asize 0
+Rsize 50
+Values 15 14 15 11 0
+Weight 90
+Material unknown~
+Extra    glow hum magic bless antigood visdeath nonmetal nolocate meltdrop nogetall~
+Extra2   nodecay~
+Wear     take neck~
+Affect resist -1 85 -1 none 0 mental
+Affect modifier -1 85 -1 constitution 4 0
+Affect modifier -1 85 -1 selfdiscipline 2 0
+Affect modifier -1 85 -1 mana 20 0
+Affect modifier -1 85 -1 reasoning 4 0
+Affect modifier -1 85 -1 memory 2 0
+Affect modifier -1 85 -1 saves -4 0
+Affect modifier -1 85 -1 hp 4 0
+End
+
+#0
+
+
+
+#ROOMS
+#8100
+Name Beside the sea...~
+Desc You are standing beside the sea. The ground is very mush here. Your feet are
+getting very wet. You can see the waves coming up the ridge, one step foreward
+and you will fall into the sea.
+~
+RoomFlags no_mob~
+Sector underwater~
+ExtraDesc note~
+If you are below level 5, please enter, we LOVE blood, YOUR blood!
+~
+Exit north 59211
+Exit down 8101
+EKeyvnum -1
+EDesc Down is the sea..
+~
+End
+
+
+#8101
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector swim~
+Exit north 8104
+EKeyvnum -1
+EDesc Still the sea.
+~
+Exit east 8103
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8107
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8102
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8102
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8105
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8101
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8108
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8103
+EKeyvnum -1
+EDesc This is getting boring.
+~
+End
+
+
+#8103
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8106
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8102
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8109
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8101
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8104
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+Deep down you see a sunken ship from the late Pirate Weary.
+~
+Sector underwater~
+ExtraDesc ship~
+A rotting ship is lying here, there is a little sign on it.
+~
+ExtraDesc sign~
+Go 2x east!
+~
+Exit north 8107
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8106
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8101
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8105
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8105
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8108
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8104
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8102
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8110
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8106
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8109
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8110
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit south 8103
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8104
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8107
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8101
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8109
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8104
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8108
+EKeyvnum -1
+EDesc Even more sea.
+
+~
+End
+
+
+#8108
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8102
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8107
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8105
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8109
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8109
+Name The sea~
+Desc You are swimming in the sea. I hope you like water because everywhere you
+see... you see water. And it's really hard swimming with your clothes on.
+~
+Sector underwater~
+Exit north 8103
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit east 8108
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit south 8106
+EKeyvnum -1
+EDesc Even more sea.
+~
+Exit west 8107
+EKeyvnum -1
+EDesc Even more sea.
+~
+End
+
+
+#8110
+Name A Vortex~
+Desc GOING DOWN!!!!!!
+~
+RoomFlags dark no_recall~
+Sector underwater~
+Exit down 8111
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8111
+Name A Vortex~
+Desc GOING DOWN!!!!!!
+~
+RoomFlags dark no_recall~
+Sector underwater~
+Exit down 8112
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8112
+Name A Vortex~
+Desc GOING DOWN!!!!!!
+~
+RoomFlags no_recall~
+Sector underwater~
+Exit down 8113
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8113
+Name A Vortex~
+Desc What's this. You have never seen a vortex doing this. There's even a door
+out here, to the north perhaps. You lost track of all directions. There is
+a little note here moving around.
+~
+RoomFlags no_recall~
+Sector underwater~
+ExtraDesc note~
+Look at the Shell, ain't it screaming to get killed?
+~
+Exit north 8114
+EFlags door closed locked pickproof~
+EKeyvnum 8100
+EKeywords door~
+EDesc A locked door.
+~
+End
+
+
+#8114
+Name Entrance to Atlantis~
+Desc Wow, this is BEAUTIFUL, You have never seen anything like it. You feel like
+you never want to leave. By the way you couldn't leave if you even wanted to,
+not this way. There is a board standing here. You can only go north.
+~
+RoomFlags no_mob~
+Sector underwater~
+ExtraDesc board~
+<><><><><><><><><><><><><><><><><>
+<>        W E L C O M E         <>
+<>             I N              <>
+<>       A T L A N T I S        <>
+<><><><><><><><><><><><><><><><><>
+~
+Exit north 8115
+EKeyvnum -1
+EDesc To the north you see the Atlantis Street.
+~
+End
+
+
+#8115
+Name Atlantis Street~
+Desc This is the main street of Atlantis. To the north you notice Atlantis
+Square. To the west is the potion shop and to the east the dining-shop. South
+leads to the Entrance of Atlantis.
+~
+Sector underwater~
+Exit north 8116
+EKeyvnum -1
+EDesc To the north you see Atlantis Square.
+~
+Exit east 8137
+EKeyvnum -1
+EDesc To the east you see the Pub.
+~
+Exit south 8114
+EKeyvnum -1
+EDesc To the south you see the Entrance of Atlantis
+~
+Exit west 8136
+EKeyvnum -1
+EDesc To the east you see the Potions Shop.
+~
+End
+
+
+#8116
+Name Atlantis Square~
+Desc You are standing on the Atlantis Square, this is the crossing of the two
+streets in Atlantis, Atlantis Street and Martinus Street. You see a fountain
+and a plate with inscriptions in the middle. Exits lead in all directions,
+east the Martinus Street, which ends in the Temple of Atlantis. To the west
+the same street. Go north or south for the Atlantis Street.
+~
+Sector underwater~
+ExtraDesc plate inscriptions~
+Enjoy yourself in Atlantis. A lot of thanks to Tharsis who helps me writing
+the descriptions of this area.
+                             Jaromir
+~
+Exit north 8117
+EKeyvnum -1
+EDesc To the north you see Atlantis Street.
+~
+Exit east 8132
+EKeyvnum -1
+EDesc To the east you see Martinus Street.
+~
+Exit south 8115
+EKeyvnum -1
+EDesc To the south you see Atlantis Street.
+~
+Exit west 8130
+EKeyvnum -1
+EDesc To the west you see Martinus Street.
+~
+End
+
+
+#8117
+Name Atlantis Street~
+Desc This is the main street of Atlantis. To the south you notice Atlantis Square
+and to the north you see a nice looking gate. To the west is a house.
+~
+Sector underwater~
+Exit north 8118
+EKeyvnum -1
+EDesc To the north you see the gate of Neptune's Palace.
+~
+Exit south 8116
+EKeyvnum -1
+EDesc To the south you see Atlantis Square.
+~
+Exit west 8139
+EKeyvnum -1
+EDesc To the west you see a House.
+~
+End
+
+
+#8118
+Name The Gate of Neptunes Palace~
+Desc Neptune Palace is a very big building. King Neptune lives very comfortable,
+and he has a lot of servants, running around in the palace. To the north you
+see a lovely garden. To the east you see the dull guards office.
+~
+Sector underwater~
+Exit north 8135
+EKeyvnum -1
+EDesc To the north you see a garden.
+~
+Exit east 8129
+EKeyvnum -1
+EDesc To the east you see the Guards Office.
+~
+Exit south 8117
+EKeyvnum -1
+EDesc To the south you see Atlantis Street.
+~
+End
+
+
+#8119
+Name The Hall~
+Desc You have entered the palace hall. Very few people have seen this hall.
+Everything around here is indescribably beautiful. It's all gold that shines.
+There is very odd carpet lying on the floor, persian perhaps. You try to make
+it fly but it doesn't work. To the north you see King Neptunes throne and to
+the west you spot a kitchen. What a smell! The hall continues to the east.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 8120
+EKeyvnum -1
+EDesc To the north you see Neptunes Throne.
+~
+Exit east 8122
+EKeyvnum -1
+EDesc To the east you see the very same hall.
+~
+Exit south 8135
+EKeyvnum -1
+EDesc To the south you see the garden.
+~
+Exit west 8121
+EKeyvnum -1
+EDesc To the west you see the kitchen of the palace.
+~
+Exit up 8126
+EKeyvnum -1
+EDesc Above you is the bedroom.
+~
+End
+
+
+#8120
+Name Neptunes Throne~
+Desc This is the room where King Neptune receives all his guests. The throne
+is a wooden chair with a very large back, can you imagine someone with such
+a large back or neck? There are two marble candlesticks on both sides of the
+throne. There are all kinds of shields, swords, spears, axes and weapons you
+can't imagine the effect they would have, hanging eeh... everywhere. This is
+one king with a lot victories. Do not attack him, he can kill you with sneeze.
+The only exit is south where you came from.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit south 8119
+EKeyvnum -1
+EDesc To the south you see the hall.
+~
+End
+
+
+#8121
+Name The Kitchen~
+Desc There is a wonderful smell here. Just the sight of all the food and
+especially the smell of it makes you hungry. In the middle you notice a big
+bowl standing on a fire. The cook is whistling a song while he's cooking.
+You think it is 'Paradise city' from... hmmm, you don't remember the group.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit east 8119
+EKeyvnum -1
+EDesc To the east you see the hall.
+~
+End
+
+
+#8122
+Name The Hall~
+Desc You have entered the palace hall. Very few people have seen this hall.
+Everything around here is indescribably beautiful. It's all gold that shines.
+There is very odd carpet lying on the floor, persian perhaps. You try to make
+it fly but it doesn't work. To the north you see a diamond door and to the
+south you see a LARGE table. The hall continues to the west. You can hear
+screams coming from below. Unpleasant jail! But really an honour to see the
+palace.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 8123
+EFlags door closed locked pickproof~
+EKeyvnum 8102
+EKeywords door~
+EDesc To the north you see a heavy door.
+~
+Exit east 8125
+EKeyvnum -1
+EDesc To the east you see the store room.
+~
+Exit south 8124
+EKeyvnum -1
+EDesc To the south you see the dining room.
+~
+Exit west 8119
+EKeyvnum -1
+EDesc To the west you see the same hall.
+~
+Exit down 8127
+EKeyvnum -1
+EDesc Below you is the entrance of the jail.
+~
+End
+
+
+#8123
+Name The Treasure Room~
+Desc Wow, you have never seen this much gold all together in one room. This should
+about be ..ehm... 197325668 gold. You can open the door and put just one foot
+in this room, the rest is gold.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit south 8122
+EKeyvnum -1
+EDesc To the south you see the hall.
+~
+End
+
+
+#8124
+Name The Dining Room~
+Desc This is the dining room of Neptune's palace. You see a large table and a lot
+of chairs. The ceiling is painted with a lot of colours and it looks very nice.
+To the north you notice the palace hall.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 8122
+EKeyvnum -1
+EDesc To the north you see the hall.
+~
+End
+
+
+#8125
+Name The Store Room~
+Desc This is the room where all unused things of the palace is stored. If you
+want anything of value, you would have to search a lifetime and still you
+would not have found anything interesting.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit west 8122
+EKeyvnum -1
+EDesc To the west you see the hall.
+~
+End
+
+
+#8126
+Name Neptunes Bedroom~
+Desc This is a private room, you think. It is very silent here and the bed
+in the middle of the room looks defiant. A painting is hanging right above
+the bed, it looks beautiful.
+~
+RoomFlags indoors~
+Sector underwater~
+ExtraDesc painting~
+It's a painting of a pretty woman, but you don't no who.
+~
+Exit down 8119
+EKeyvnum -1
+EDesc Below you, you see the hall.
+~
+End
+
+
+#8127
+Name Entrance to the Jail~
+Desc Atlantis is a peaceful country, it doesn't accept criminals. If you
+look around here, you see concrete walls and a concrete floor. You are sure it
+is not nice to be here. Still the jailer is working here, aaahmm.... working???
+To the west you see a barred door to the cell.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit west 8128
+EFlags door closed locked pickproof~
+EKeyvnum 8103
+EKeywords door~
+EDesc To the west you see a barred door.
+~
+Exit up 8122
+EKeyvnum -1
+EDesc Above you, the hall.
+~
+End
+
+
+#8128
+Name The Cell~
+Desc What are you DOING here, you are not a criminal, are you? This place is made
+for the people here who desecrating the law. In the corner you see a bed, it
+looks very uncomfortable. If the door is not locked, you can go to the east.
+There is a note scratched on the wall.
+~
+RoomFlags indoors~
+Sector underwater~
+ExtraDesc note~
+If you can't escape from here, ask someone to kill the jailer to get the
+cell key. Then he/she can open the barred door from the other side.
+~
+Exit east 8127
+EFlags door closed locked pickproof~
+EKeyvnum 8103
+EKeywords door~
+EDesc To the east you see the entrance of the jail.
+~
+End
+
+
+#8129
+Name The Guard Office~
+Desc All Atlantis guards come here together to talk with the General guard about
+the behaviour of the people who are living here. If something is wrong, they
+will decide what actions take to. To the wall you notice a large map of
+Atlantis.
+~
+RoomFlags indoors~
+Sector underwater~
+ExtraDesc wall map~
+You see a map, but you don't understand it.
+~
+Exit west 8118
+EKeyvnum -1
+EDesc To the east you see the gate of Neptunes palace.
+~
+End
+
+
+#8130
+Name Martinus Street~
+Desc This street is named by the priest of Atlantis, Martinus. King Neptune is
+respecting him a lot. If you want to see him, look west! The Atlantis square
+is lying east.
+~
+Sector underwater~
+Exit north 8140
+EKeyvnum -1
+EDesc To the north you see a house.
+~
+Exit east 8116
+EKeyvnum -1
+EDesc You see the Atlantis Square.
+~
+Exit south 8138
+EKeyvnum -1
+EDesc You see the Fish Store.
+~
+Exit west 8131
+EKeyvnum -1
+EDesc You see the Temple of Atlantis.
+~
+End
+
+
+#8131
+Name The Temple of Atlantis~
+Desc Welcome in the Temple of Atlantis, you can sleep a little bit here and
+maybe Martinus will heal you. If you rest, look around. This place is, like
+the most places of Atlantis, VERY beautiful. Your eyes are getting tired when
+you see so much gold. The wall, the floor, everything here is glittering.
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit east 8130
+EKeyvnum -1
+EDesc You see the Martinus Street.
+~
+End
+
+
+#8132
+Name Martinus Street~
+Desc This street is named by the priest of Atlantis, Martinus. King Neptune is
+respecting him a lot. The Atlantis square is lying west, and east there is 
+a cemetery.
+~
+Sector underwater~
+Exit north 8142
+EKeyvnum -1
+EDesc You see the edge of the wood.
+~
+Exit east 8133
+EKeyvnum -1
+EDesc You see the a cemetery.
+~
+Exit south 8141
+EKeyvnum -1
+EDesc To the south you see a house.
+~
+Exit west 8116
+EKeyvnum -1
+EDesc You see the Atlantis Square.
+~
+End
+
+
+#8133
+Name The Cemetery~
+Desc This is an awful place. All deceased people of Atlantis are lying here.
+There are rotting flowers on their graves, you think that's why, you can't
+stand the smell here. You notice a very strange grave in a dark spot of
+the cemetery. You can't read the name carved into the stone anymore. From what
+you can make of it, it says "D..k D...on K..l.d .. P..nc. .e..un." Another
+grave says "Tara, your soul will always survive. R.I.P. Your dearest Neptune".
+~
+Sector underwater~
+ExtraDesc grave~
+If you open this grave you can go down.
+~
+Exit north 8143
+EKeyvnum -1
+EDesc You see the edge of the wood.
+~
+Exit west 8132
+EKeyvnum -1
+EDesc You see the Martinus Street.
+~
+Exit down 8134
+EFlags door closed~
+EKeyvnum -1
+EKeywords grave~
+EDesc You can just see the tip of your nose.
+~
+End
+
+
+#8134
+Name Deep Down~
+Desc OOH...NO, the grave closed when you got here and you can't open it. It's
+very dark inside here and then the smell of those corpses,YUCK. There is only
+one exit, below you.
+~
+RoomFlags dark no_mob indoors~
+Sector underwater~
+Exit down 8144
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8135
+Name The Palace Garden~
+Desc A nice garden with nice flowers and trees. In the middle is a pond with some
+ducks. The water of the pond looks very dirty, so don't drink it. The ducks
+are giving a terrible noise, but you can still hear the birds singing, how
+peaceful.
+~
+RoomFlags no_mob~
+Sector underwater~
+Exit north 8119
+EKeyvnum -1
+EDesc You see the hall.
+~
+Exit south 8118
+EKeyvnum -1
+EDesc You see the gate of Neptunes palace.
+~
+End
+
+
+#8136
+Name The Potions Shop~
+Desc You are standing in a strange shop with a magic atmosphere. There are all
+kinds of pots standing on shelves. There's a big counter at the back of the
+room. The ceiling is painted with exciting colours and symbols you will never
+understand the meaning of. You expect they all are some kind of magical spells.
+To the east you see the Atlantis Street.
+~
+RoomFlags no_mob indoors~
+Sector underwater~
+Exit east 8115
+EKeyvnum -1
+EDesc You see the Atlantis Street.
+~
+End
+
+
+#8137
+Name The Pub~
+Desc You are standing in the pub. The smell of the sandwiches and sausages is
+making you drool, delicious. In the left corner you see a cooking range with
+some sausage pans. A little note is hanging here. The only exit is back where
+you came from, the west.
+~
+RoomFlags indoors~
+Sector underwater~
+ExtraDesc note~
+If you want to see what we sell, try list!
+~
+Exit west 8115
+EKeyvnum -1
+EDesc You see the Atlantis Street.
+~
+End
+
+
+#8138
+Name The Fish Store~
+Desc There are all kinds of fish hanging on the wall. The smell of those fish
+really gets to you. Some how Bruce makes those fish smell wonderful. The
+counter is standing in a corner. There is a sign standing before it. To the
+north you go back to Martinus Street.
+~
+RoomFlags indoors~
+Sector underwater~
+ExtraDesc sign~
+If you will see what we sell, try 'list'.
+~
+Exit north 8130
+EKeyvnum -1
+EDesc You see the Martinus Street.
+~
+End
+
+
+#8139
+Name A House~
+Desc This is one of the houses of Atlantis. It is a very simple house with a
+roof made of reed and a wooden floor. This house has exactly ONE room, it's 
+the bedroom, the kitchen and the living-room.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit east 8117
+EKeyvnum -1
+EDesc You see the Atlantis Street.
+~
+End
+
+
+#8140
+Name A House~
+Desc This is one of the houses of Atlantis. It is a very simple house with a roof 
+of reed and a wooden floor. This house has exactly ONE room, it's the bedroom, 
+the kitchen and the living-room together.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit south 8130
+EKeyvnum -1
+EDesc You see the Martinus Street.
+~
+End
+
+
+#8141
+Name A House~
+Desc This is one of the houses of Atlantis. It is a very simple house with a
+roof of reed and a wooden floor. This house has exactly ONE room, it's the
+bedroom, the kitchen and the living-room together.
+~
+RoomFlags indoors~
+Sector underwater~
+Exit north 8132
+EKeyvnum -1
+EDesc You see the Martinus Street.
+~
+End
+
+
+#8142
+Name The edge of the Wood~
+Desc You are standing in a nice looking nature. There are birds singing everywhere
+and you see all sorts of tree. The most trees are not very old, but there is
+one big old oak in the middle. There is a road lying to the east and it looks
+the same as this. To the south you notice the Martinus Street.
+~
+Sector underwater~
+ExtraDesc oak~
+The oak looks as a king in the wood. You see nothing specials on it.
+~
+Exit east 8143
+EKeyvnum -1
+EDesc You see the edge of the wood.
+~
+Exit south 8132
+EKeyvnum -1
+EDesc You see the Martinus Street.
+~
+End
+
+
+#8143
+Name The edge of the Wood~
+Desc You are standing in a nice looking nature. There are birds singing everywhere
+and you see all sorts of trees. There is a road lying to the west and it looks
+the same as this. To the south you notice a Cemetery.
+~
+Sector underwater~
+Exit south 8133
+EKeyvnum -1
+EDesc You see a cemetery.
+~
+Exit west 8142
+EKeyvnum -1
+EDesc You see the edge of the wood.
+~
+End
+
+
+#8144
+Name Deep Down~
+Desc You didn't know Atlantis had such a dreadful place.  Another thing you did 
+not know is that you could get so scared.  There's only one thing on your 
+mind: 'I got to get out of here!  ' 
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit north 8148
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit south 8149
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit west 8145
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit up 8134
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8145
+Name Deep Down~
+Desc You didn't know, Atlantis had such a dreadful place.  Another thing you did 
+not know is that you could get so scared.  There's only one thing on your 
+mind: 'I got to get out of here!  '.  
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit north 8146
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit east 8144
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit south 8150
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8146
+Name Deep Down~
+Desc You didn't know, Atlantis had such a dreadful place. Another thing you did not
+know is that you could get so scared. There's only one thing on your mind:
+'I got to get out of here! '.
+~
+RoomFlags dark no_mob indoors~
+Sector underwater~
+Exit north 8147
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit east 8148
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit south 8145
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit up 8128
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8147
+Name Deep Down~
+Desc You didn't know Atlantis had such a dreadful place.  Another thing you did 
+not know is that you could get so scared.  There's only one thing on your 
+mind: 'I got to get out of here!  '.  
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit south 8146
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8148
+Name Deep Down~
+Desc You didn't know Atlantis had such a dreadful place. Another thing you did not
+know is that you could get so scared. There's only one thing on your mind:
+'I got to get out of here! '.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 8144
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit west 8146
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#8149
+Name Deep Down~
+Desc You didn't know Atlantis had such a dreadful place.  Another thing you did 
+not know is that you could get so scared.  There's only one thing on your 
+mind: 'I got to get out of here!  '.  
+~
+RoomFlags dark indoors~
+Sector underwater~
+Exit north 8144
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit west 8150
+EKeyvnum -1
+EDesc You can't see a thing. 
+~
+End
+
+
+#8150
+Name Deep Down~
+Desc You didn't know Atlantis had such a dreadful place.  Another thing you did 
+not know is that you could get so scared.  There's only one thing on your 
+mind: 'I got to get out of here!  '.  
+~
+RoomFlags dark no_mob indoors~
+Sector underwater~
+Exit north 8145
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit east 8149
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+Exit up 8116
+EKeyvnum -1
+EDesc You can't see a thing.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 8103 spec_cast_undead
+M 8108 spec_guard
+M 8109 spec_guard
+M 8110 spec_guard
+M 8112 spec_cast_adept
+M 8113 spec_breath_gas
+M 8114 spec_cast_cleric
+M 8116 spec_cast_mage
+M 8120 spec_poison
+M 8121 spec_cast_undead
+M 8123 spec_thief
+S
+
+
+
+#RESETS2
+M 0 8100 1 8100 1
+E 0 8127 -1 hold~
+E 0 8131 -1 head~
+M 0 8101 5 8101 1
+M 0 8101 5 8103 1
+M 0 8101 5 8104 1
+M 0 8102 3 8104 1
+M 0 8102 3 8105 1
+M 0 8101 5 8106 1
+M 0 8102 3 8108 1
+M 0 8101 5 8109 1
+M 0 8105 1 8113 1
+G 0 8100 -1
+M 0 8110 2 8114 2
+E 0 8120 -1 wielded~
+E 0 8121 -1 head~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8140 6
+M 0 8110 2 8114 2
+E 0 8120 -1 wielded~
+E 0 8121 -1 head~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8141 6
+M 0 8109 12 8115 2
+E 0 8120 -1 wielded~
+E 0 8121 -1 head~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8141 6
+M 0 8109 12 8115 2
+E 0 8120 -1 wielded~
+E 0 8121 -1 head~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8140 6
+M 0 8109 12 8116 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8140 6
+M 0 8109 12 8116 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8141 6
+M 0 8109 12 8118 2
+E 0 8120 -1 wielded~
+E 0 8121 -1 head~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8141 6
+M 0 8109 12 8118 2
+E 0 8120 -1 wielded~
+E 0 8121 -1 head~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8142 6
+M 0 8103 1 8120 1
+E 0 8101 -1 wielded~
+E 0 8104 -1 shield~
+E 0 8105 -1 head~
+E 0 8106 -1 feet~
+E 0 8107 -1 hold~
+E 0 8108 -1 lfinger~
+M 0 8104 2 8120 2
+E 0 8120 -1 wielded~
+M 0 8104 2 8120 2
+E 0 8120 -1 wielded~
+M 0 8115 1 8121 1
+M 0 8106 1 8122 1
+E 0 8102 -1 hold~
+O 0 8109 0 8123
+M 0 8114 1 8126 1
+E 0 8126 -1 neck1~
+M 0 8107 1 8127 1
+G 0 8103 -1
+M 0 8111 1 8128 1
+M 0 8108 1 8129 1
+E 0 8125 -1 wielded~
+M 0 8109 12 8130 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8142 6
+M 0 8109 12 8130 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8140 6
+M 0 8112 1 8131 1
+M 0 8109 12 8132 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8140 6
+M 0 8109 12 8132 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8141 6
+M 0 8124 1 8135 1
+E 0 8129 -1 wielded~
+M 0 8109 12 8136 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8141 6
+M 0 8109 12 8136 2
+E 0 8120 -1 wielded~
+E 0 8122 -1 lfinger~
+E 0 8123 -1 shield~
+E 0 8124 -1 light~
+G 0 8142 6
+M 0 8116 1 8136 1
+G 0 8112 -1
+G 0 8113 -1
+G 0 8114 -1
+G 0 8115 -1
+M 0 8123 1 8136 1
+M 0 8117 1 8137 1
+G 0 8116 -1
+G 0 8117 -1
+G 0 8118 -1
+M 0 8118 1 8138 1
+E 0 8128 -1 wielded~
+G 0 8145 -1
+G 0 8144 -1
+G 0 8143 -1
+G 0 8130 -1
+M 0 8122 3 8139 1
+E 0 8128 -1 wielded~
+M 0 8122 3 8140 1
+E 0 8128 -1 wielded~
+M 0 8122 3 8141 1
+E 0 8128 -1 wielded~
+M 0 8119 1 8143 1
+E 0 8119 -1 wielded~
+M 0 8120 3 8144 1
+M 0 8121 3 8144 1
+M 0 8120 3 8145 1
+M 0 8121 3 8146 1
+M 0 8120 3 8147 1
+M 0 8113 1 8148 1
+E 0 8110 -1 wielded~
+E 0 8146 -1 about~
+E 0 8147 -1 neck1~
+M 0 8121 3 8150 1
+S
+
+
+
+#SHOPS
+#8116
+buy_type potion~
+profit_buy 105
+profit_sell 75
+close_hour 23
+END
+
+#8117
+buy_type food~
+profit_buy 105
+profit_sell 40
+close_hour 23
+END
+
+#8118
+profit_buy 105
+profit_sell 60
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

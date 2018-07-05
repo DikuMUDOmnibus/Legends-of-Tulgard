@@ -1,0 +1,535 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Moonshadow Clan Hall~
+ShortName   Moonshadow Hall~
+Builders    baridoc~
+VNUMs       1041 1050
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sun Dec 18 16:14:27 2005~
+End
+
+
+
+#MOBILES
+#1041
+Name werewolf healer~
+ShortD a once-fearsome werewolf~
+LongD A werewolf who seems a bit past his prime looks up at you.~
+Desc This tall werewolf has a thick coat of fur that seems once to have been 
+black as the night, but now is salted with grey.  He carries many scars 
+including a split left ear and a pink slash across his snout giving evidence 
+that he did not always practice the healing arts. 
+~
+Race human~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType claw
+AC -1100 -1100 -1100 -935
+Wealth 400
+Act    npc dont_wander no_tame cleric healer~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+Off    disarm dodge parry~
+Imm    summon charm magic disease sound~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1042
+Name werewolf shopkeeper~
+ShortD a compact female `swerewolf`^~
+LongD A compact female `swerewolf`^ stands here watching everything~
+Desc Before you stands a compactly built female werewolf.  She is about six feet 
+six inches tall and has bushy `ybrown`^ fur.  Her eyes glow a fierce `Yyellow`^'in 
+the light and it seems they miss nothing.    
+~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -567
+Wealth 0
+Act    npc dont_wander no_tame warrior changer~
+Off    bash disarm dodge dirt_kick parry trip~
+Imm    summon charm sound fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 1042 banner~
+END
+
+#1043
+Name werewolf guard~
+ShortD a huge reddish brown werewolf~
+LongD `#a huge `rreddish`^ brown werewolf~
+Desc . This huge werewolf is covered in thick brown fur with a deep reddish tint 
+to it.  His canines are easily three inches long and the claws on his 
+human-like fingers are razor sharp.  He moves with the fluid grace of a 
+seasoned fighter.  Clearly not one to mess with lightly. 
+~
+Race human~
+Align 0 0
+Level 125
+Hitroll 0
+HitDice 13d16+610
+ManaDice 5d6+150
+DamDice 13d17+80
+DamType none
+AC -950 -950 -950 -855
+Wealth 1000
+Act    npc dont_wander scavenger no_tame warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared haste~
+Off    disarm dodge fast parry trip assist_guard~
+Imm    charm weapon fire~
+Res    magic~
+Vuln   silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#1044
+Name werewolf trainer~
+ShortD a serene looking werewolf~
+LongD A calm looking werewolf stands ready to teach you.~
+Desc Rather short for a werewolf at just over 6 feet, this female seems to be 
+completely at peace with herself and her surroundings.  Her fur is a 
+luscious coat of silver with blue highlights and it seems to shimmer as she 
+moves. 
+~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander no_tame train practice gain~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1041
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN F 1101 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#1042
+Name firepit~
+Short a large `Rf`Yi`Rr`Ye`Rp`Yi`Rt`^~
+Desc `#A large `Rf`Yi`Rr`Ye`Rp`Yi`Rt`g is here warming the area.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 DGJ 100 100
+Weight 0
+Material flame~
+Extra    nolocate nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc firepit ~
+The warmth being given off by the fire beckons you to rest. 
+~
+End
+
+#1043
+Name cot~
+Short a comfortable cot~
+Desc A row of cots lines one wall~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6000 DGJ 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1044
+Name large pool water~
+Short a large pool of mineral water~
+Desc A pool of steaming mineral water looks extremely good for you.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6000 FI 120 120
+Weight 0
+Material water~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1045
+Name weapon rack~
+Short a large steel weapon rack~
+Desc A large steel weapon rack stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#1046
+Name bubbling stream~
+Short a bubbling stream~
+Desc A softly gurgling stream of water looks refreshing~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc gurgling bubbling stream~
+Unlike the heavily mineraled water in the pool, this water appears fresh and 
+clear. 
+~
+End
+
+#1047
+Name armor rack~
+Short a large wooden armor rack~
+Desc A large wooden armor rack stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#1048
+Name wooden potion cabinet~
+Short a tall wooden potion cabinet~
+Desc A tall wooden potion cabinet is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#1049
+Name hunk bear meat~
+Short a hunk of bear meat~
+Desc A hunk of bear meat looks tasty.~
+Level 0
+ItemType food~
+Cost 15
+Durability 5
+Asize 0
+Rsize 50
+Values 25 35 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#1050
+Name minotaur thigh bone~
+Short a thigh bone of a minotaur~
+Desc A partially gnawed thighbone still has some meat on it.~
+Level 0
+ItemType food~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material unknown~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#1041
+Name Large cavern~
+Desc After climbing the rocky slopes, you enter a low dark cave.  The walls are 
+cut by deep, natural jags and the shadows are deep and foreboding.  There 
+seems to be a darker patch against the back wall.  The silence in here is 
+unnerving to those who don't belong. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Owner Zoreo Ojah Sarrie Rewand Heather~
+Exit north 1042
+Exit south 53086
+End
+
+
+#1042
+Name `rHuge Cavern`^~
+Desc A huge firepit burns steadily in the center of this huge cavern.  The smoke 
+and soot rise into the darkness above.  Just to the right of the curving 
+passage leading south is a low, wide stairway carved into the wall.  It 
+spirals around and around, up and up until it is swallowed by the inky 
+blackness.  The floor of this cavern seems to have been worn almost smooth - 
+a process that must have taken generations. The walls are mostly natural, 
+though they are not jagged or rough.  There are several openings leading off 
+at various intervals around the perimeter. 
+~
+RoomFlags indoors noscry light~
+Sector cave~
+Exit north 1044
+Exit east 1046
+Exit south 1041
+Exit up 1043
+EFlags door closed~
+Exit northeast 1045
+Exit southwest 1047
+Exit northwest 1049
+End
+
+
+#1043
+Name `rA small hollow~
+Desc You are in a small hollow nestled between huge boulders.  They provide a 
+sheltered location safe from all but the harshest of elements. The sky is 
+visible above.  This is a nice quiet place to get away for a short time. Off 
+to one side, between two of the boulders can be seen the very faint glow of 
+a gatestone. This would make an excellent escape route. 
+~
+Sector gateway~
+RoomEcho 20  3   5 A shooting star passes overhead - make a wish!~
+RoomEcho 18  6  15 The sound of crickets chirping can be heard.~
+Exit down 1042
+EFlags door closed~
+End
+
+
+#1044
+Name `rChamber of Healing`^~
+Desc After following a low, twisting tunnel out of the huge cavern for what seems 
+like 15 or 20 yards you find yourself in a natural opening.  The most 
+striking thing is the large pool of steaming water in the center.  The edges 
+of the pool are deeply encrusted with mineral deposits, and wisps of steam 
+rise slowly from the center. A Light spell has apparantly been cast in here 
+and made permanent because a soft glow diffuses the entire room. The soft 
+gurgling of water can be heard, and looking to the back you see a small 
+stream of water bubbling up. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit south 1042
+End
+
+
+#1045
+Name `rHealer's Chamber~
+Desc Another passage twists and turns from the Huge Cavern and ends up in a 
+spacious chamber.  The walls here seem to have been worked by hand as they 
+are mostly smooth.  To one side are a number of cots, to the other several 
+low pallets. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit southwest 1042
+End
+
+
+#1046
+Name `rSupply Shop~
+Desc After leaving the huge cavern, this passageway turns abruptly several times 
+- the effect of which is to keep the light from this chamber from spilling 
+back.  The walls and floor here seem to be hand-cut and smoothed, with 
+several ledges cut into the walls.  These ledges are packed with various 
+equipment and gear, but dont even think of helping yourself, ask first. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 1042
+Exit southeast 1048
+End
+
+
+#1047
+Name `rPractice Chamber`^~
+Desc This chamber is a short walk down a twisty tunnel from the Huge Cavern.  The 
+floor has been worn completely smooth through use, and the walls have been 
+evened out by hand.  The room is well lit and just a bit cool - perfect for 
+rigorous exercise. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit northeast 1042
+End
+
+
+#1048
+Name Storage Room~
+Desc ~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit northwest 1046
+End
+
+
+#1049
+Name Large cavern~
+Desc After climbing the rocky slopes, you enter a low dark cave.  The walls are 
+cut by deep, natural jags and the shadows are deep and foreboding.  There 
+seems to be a darker patch against the back wall.  The silence in here is 
+unnerving to those who don't belong. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit southeast 1042
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 1043 1 1041 1
+O 0 1042 -1 1042
+O 0 1403 -1 1043
+O 0 1044 -1 1044
+O 0 1046 -1 1044
+O 0 1041 -1 1045
+O 0 1043 -1 1045
+M 0 1041 1 1045 1
+M 0 1042 1 1046 1
+G 0 1049 -1
+G 0 3023 -1
+G 0 3199 -1
+G 0 3087 -1
+G 0 3088 -1
+G 0 3155 -1
+M 0 1044 1 1047 1
+S
+
+
+
+#SHOPS
+#1042
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 125
+profit_sell 75
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1042
+title moon banner~
+author Delandria~
+code language native
+sayto $n Wear this banner proudly!
+mob oload 2043
+Give banner $n
+Smile $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1108329841
+END
+
+#0
+
+
+#$

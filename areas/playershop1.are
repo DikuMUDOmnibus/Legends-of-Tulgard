@@ -1,0 +1,676 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Player Shops 1~
+ShortName   Player Shops~
+Builders    None~
+VNUMs       4850 4899
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Jan  8 20:25:14 2006~
+End
+
+
+
+#MOBILES
+#4850
+Name demon massive evil male~
+ShortD a massive male demon~
+LongD A massive male demon is here, eyes glowing `#`rred`^.~
+Desc This demon is terrifyingly huge. Massive black wings fold back behind a rippling chest. 
+Its eyes glow an `#`runholy red`^ as it stares into your soul.
+~
+Race human~
+Align 0 -1
+Level 45
+Hitroll 0
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+18
+DamType none
+AC -180 -180 -180 -144
+Wealth 450
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden dark_vision~
+Imm    magic fire fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4851
+Name burly male angrak~
+ShortD a big burly male angrak~
+LongD A big and burly looking male angrak is standing here.~
+Desc ~
+Race angrak~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#4852
+Name retarded goblin~
+ShortD a retarded goblin~
+LongD A retarded goblin is standing here looking...well, retarded.~
+Desc Goblins are pretty stupid to start with, but this one looks really dumb. 
+There is a confused look on its face.  He appears to be the shopkeeper for 
+this armory. 
+~
+Race goblin~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+Act2   avoids_all_attacks no_random_obj~
+AffBy  dark_vision~
+Imm    poison disease~
+Res    negative~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#4856
+Name fresh face clerical novice~
+ShortD a clerical novice~
+LongD A fresh-faced and eager novice of a clerical order watches the shop.~
+Desc ~
+Race elf~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+AffBy  detect_hidden infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#4858
+Name perky teenage apprentice magi~
+ShortD a perky teenage apprentice magi~
+LongD A perky teenage apprentice magi is standing here.~
+Desc ~
+Race angrak~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material flesh
+END
+
+#4859
+Name young slender dagorst woman~
+ShortD a young, slender dagorst woman~
+LongD A young, slender dagorst woman is standing here.~
+Desc ~
+Race angrak~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material flesh
+END
+
+#4860
+Name male iron golem ~
+ShortD a male iron golem~
+LongD A male, iron golem is standing here.~
+Desc This golem appears to be the shopkeeper of this establishment, he is sitting 
+on a stool motionless with the exception of the eyes that seem to follow 
+your every step. This golem appears to have sat at the stool for a wile as 
+the dust appears to have caked over his head and shoulders, his iron body 
+that maybe once glistened is now dull and foggy. 
+~
+Race angrak~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#4861
+Name cambion~
+ShortD a cambion~
+LongD A female cambion stands here.~
+Desc ~
+Race human~
+Align 0 -1
+Level 45
+Hitroll 0
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+18
+DamType none
+AC -180 -180 -180 -144
+Wealth 450
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden dark_vision~
+Imm    magic fire fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4862
+Name minotaur~
+ShortD a minotaur~
+LongD A minotaur built along the lines of an ox~
+Desc ~
+Race minotaur~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType beating
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander docile stay_area noalign indoors~
+Act2   avoids_all_attacks~
+Res    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#4851
+Name tickle me zaroth doll~
+Short a `#`Y"`CTickle `WMe `CZaroth`Y" `wdoll`^~
+Desc A soft and cuddley `#`Y"`CTickle `WMe `CZaroth`Y" `wdoll`^ lies here.~
+Level 0
+ItemType treasure~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     take hold~
+ExtraDesc doll ~
+Dressed in dark robes, Zaroth seems so soft and cuddley, you just want to 
+give him a big hug. Tickle Me Zaroth looks sad, perhaps he wants you to be 
+his friend. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#4850
+Name Ixliam's Adventurer Supplies~
+Desc Assorted weapons and armor made by the great Ixliam himself lie behind a 
+large counter in this quaint little shop. The wooden oak floor sparkles 
+before you, kept clean by the owner. No speck of dust can be seen anywhere 
+in this shop. 
+~
+RoomFlags no_mob indoors safe law light~
+Room2Flags player_shop~
+Sector inside~
+Exit north 3041
+Exit up 4851
+EFlags door closed locked pickproof nopass~
+EKeywords door~
+End
+
+
+#4851
+Name Ixliam's Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall imp_only nowhere noscry light nofly noscan noautomap noautoexits~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner Ixliam~
+Exit down 4850
+EFlags door closed locked pickproof nopass~
+End
+
+
+#4852
+Name Four Morningstars~
+Desc This shop appears to sell forged crafts. It is rather utilitarian in 
+construction, having just a few sturdy wooden racks for display items, and a 
+long pine counter in the center of the shop. Four smouldering sconces are 
+mounted here, one in each corner of the room, providing just enough light to 
+see. There is a smell of blood in the air as well, but none can be seen. The 
+only other decoration in the shop is a large banner hanging across the back 
+wall. 
+~
+RoomFlags indoors light~
+Room2Flags player_shop~
+Sector inside~
+RoomEcho  0 23   5 A rat scurries across the floor.~
+ExtraDesc banner ~
+This rough banner shows an image of a burning palm tree on a black 
+background. It appears to be made of burlap. 
+~
+ExtraDesc sconce ~
+This is nothing more than an oil-filled goblet fastened to the wall. It has 
+been set aflame and is smoking profusely. 
+~
+ExtraDesc wooden rack~
+These racks look as though they have been crafted solely for holding weapons 
+and armor for display. They are very roughly made. 
+~
+ExtraDesc long pine counter~
+This sturdy counter stands about three and a half feet tall and is 
+unfinished. Carefull touching it unless you enjoy splinters. The top surface 
+looks a bit worn-in. 
+~
+Exit up 4853
+End
+
+
+#4853
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner Saghzk~
+Exit down 4852
+End
+
+
+#4854
+Name Dragons Claw Armory~
+Desc This shop seems to sell both weapons and armor. There are racks hanging off 
+the wall with different types of armor hanging on it and several tables with 
+various types of weapons dispayed on them. Lanterns hanging on the walls 
+provide ample light for the room as well as open windows and a large brazier 
+standing in the rear of the store. A small section of the store in the front 
+has been sectioned off to display various articles of clothing. 
+~
+RoomFlags indoors light~
+Room2Flags player_shop~
+Sector inside~
+Exit east 814
+Exit up 4855
+End
+
+
+#4855
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner melisande~
+Exit down 4854
+End
+
+
+#4856
+Name Selayre's Wares~
+Desc This shop is small and cluttered, with parchments, alembics, and other 
+paraphernalia littering every available surface. The place seems to have a 
+scholarly bent, and the cases displaying wares are very orderly and 
+carefully marked. The wares on display have a distinct clerical bent, for 
+those interested in that sort of thing. A battered plaque declares the name 
+of this shop to be 'Selayre's Wares'. 
+~
+RoomFlags no_mob indoors safe law light~
+Room2Flags player_shop~
+Sector inside~
+Exit west 3021
+Exit up 4857
+End
+
+
+#4857
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner leaghe~
+Exit down 4856
+End
+
+
+#4858
+Name Arcane Emporium~
+Desc A stylish market for academic research and studies. The left wall is 
+brimming with tomes, books and scrolls. The right panel  is covered in 
+scrolls, organized in a savvy method for clients to peruse. Academic 
+professionals and folks simply in need of a potion are greeted by a 
+gracious, perky elven teenage girl who is also a  magi apprentice, that 
+works here to study and earn wages. The colors are spiffy and comfortable, 
+magenta and white tones give the shop a serenity and yet cordial reflection. 
+Behind the oak counter, she has a classy desk to sit at while awaiting for 
+customers. There are many plants, wind-chimes , incense and various candles 
+gives the room a mystical and receptive ambiance when one surveys their 
+surroundings. 
+~
+RoomFlags indoors light~
+Room2Flags player_shop~
+Sector inside~
+Exit west 46181
+Exit up 4859
+End
+
+
+#4859
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner windica~
+Exit down 4858
+End
+
+
+#4860
+Name Ardion's Shop~
+Desc An old dusty shop filled with cobwebs.  This shop appears to be made of 
+thick dark red jarrah wood. A thin cake of dust covers the whole shop from 
+the floor to the walls. Some parts of the wall that contain no dust are 
+growing small moulds, the room is stagnant creating a warm moist atmosphere. 
+Numerous shelves and racks appear to once house armor, arms and scrolls are 
+now virtualy empty with the except of a few items. 
+~
+RoomFlags indoors light~
+Room2Flags player_shop~
+Sector inside~
+Exit north 3009
+Exit up 4861
+End
+
+
+#4861
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner ardion~
+Exit down 4860
+End
+
+
+#4862
+Name Magnificent Masks and More~
+Desc The first think you notice when entering this shop is the gentle wafting 
+scent of cherryblossoms. All along the walls are magnificent displays of a 
+wide variety of iteems. Between the beautiful displays are hanging paintings 
+of dragons, wolf creatures, bats and shadow beings. 
+~
+RoomFlags indoors light~
+Room2Flags player_shop~
+Sector inside~
+Exit west 805
+Exit up 4863
+End
+
+
+#4863
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner zatzu~
+Exit down 4862
+End
+
+
+#4864
+Name Harpan's Little Shop~
+Desc ~
+RoomFlags no_mob indoors safe law light~
+Room2Flags player_shop~
+Sector inside~
+Exit west 27017
+Exit up 4865
+End
+
+
+#4865
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner Rhea~
+Exit down 4864
+End
+
+
+#4866
+Name Phoenix Rising Forge and Enchantments~
+Desc An enormous forge dominates the room, far larger than what any human would 
+be capable of using. The same goes for the blacksmith tools and the anvil. 
+The weapons and armor displayed on the stands and walls vary wildly in size 
+and quality. `+
+`+
+In the far corner of the room an enchanters workshop is set up, with clamps 
+to hold an object in place and magical components neatly arranged on a 
+table, within easy reach. Right next to it a jeweler's bench stands, with 
+various tools, bits of wire, and unfinished pieces strewn all over it. `+
+`+
+A sign hangs by door: `#`y"Custom-made weapons. Enchantments on own equipment. 
+Prices negotiable. Contact Brell or Quedani."`^ 
+~
+RoomFlags no_mob indoors safe law light~
+Room2Flags player_shop~
+Sector inside~
+Exit west 27015
+Exit up 4867
+End
+
+
+#4867
+Name Shop Storage~
+Desc Drop items here and pickup gold.
+~
+RoomFlags no_mob indoors safe no_recall law nowhere noscry light noscan~
+Room2Flags no_area_echoes no_shadowplane storage_room player_shop_storage~
+Sector inside~
+Owner Brell~
+Exit down 4866
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 4850 1 4850 1
+M 0 4852 1 4852 1
+M 0 4851 1 4854 1
+M 0 4856 1 4856 1
+M 0 4858 1 4858 1
+M 0 4860 1 4860 1
+M 0 4859 1 4862 1
+M 0 4861 1 4864 1
+M 0 4862 1 4866 1
+S
+
+
+
+#SHOPS
+#4850
+profit_buy 100
+profit_sell 5
+close_hour 23
+END
+
+#4851
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#4852
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#4856
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#4858
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#4859
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#4860
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#4861
+profit_buy 100
+profit_sell 5
+close_hour 23
+END
+
+#4862
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

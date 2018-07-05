@@ -1,0 +1,839 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Gnome Tower~
+ShortName   Gnome Tower~
+Builders    delandria~
+Credits     Delandria~
+VNUMs       25351 25399
+LComment    `#`Y[8- 20]`^
+LRange      8 20
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#25351
+Name gnome apprentice~
+ShortD a gnome apprentice~
+LongD `#`wa `sgnome `wapprentice is standing here studying a strange object.`^~
+Desc ~
+Race gnome~
+Align 0 3
+XPMod 110
+Level 10
+Hitroll 1
+HitDice 2d5+22
+ManaDice 1d4+5
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 8
+Wealth 100
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  detect_magic infrared~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#25352
+Name gnome master~
+ShortD `#`wMaster of the Tower`^~
+LongD `#`wA very old looking `sgnome `wis standing here reading some papers.`^~
+Desc ~
+Race gnome~
+Align 0 0
+XPMod 110
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType punch
+AC -45 -45 -45 -38
+Wealth 120
+Act    npc dont_wander scavenger no_tame stay_area mage~
+AffBy  detect_magic infrared~
+Res    magic~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material flesh
+END
+
+#25353
+Name gnome ~
+ShortD a gnome~
+LongD `#`wa `sgnome `wwalks by you looking rather busy.`^~
+Desc ~
+Race gnome~
+Align 0 2
+XPMod 110
+Level 8
+Hitroll 1
+HitDice 2d5+12
+ManaDice 2d5+135
+DamDice 1d7+2
+DamType punch
+AC 30 30 30 50
+Wealth 100
+Act    npc no_tame stay_area mage~
+AffBy  detect_magic infrared~
+Res    magic~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#25354
+Name gnome dungeon master~
+ShortD `#`wThe Dungeon Master`^~
+LongD `#`wa male `sgnome `wstands here guarding the cells.`^~
+Desc ~
+Race gnome~
+Align 0 3
+XPMod 110
+Level 10
+Hitroll 1
+HitDice 2d5+22
+ManaDice 1d4+5
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 8
+Wealth 100
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_magic infrared~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#25355
+Name weird looking metal creature~
+ShortD a weird looking metal creature~
+LongD `#`wa weird looking `smetal `wcreature is standing here.`^~
+Desc ~
+Race Golem~
+Align 0 2
+XPMod 110
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType smash
+AC 40 40 40 36
+Wealth 30
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden infrared otterlungs dark_vision regeneration~
+Off    bash~
+Imm    summon charm poison disease drowning sleep hunger thirst~
+Res    bash~
+Vuln   acid~
+Form   magical non_skinable sentient construct~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material metal
+END
+
+#25356
+Name female gnome~
+ShortD a female gnome~
+LongD `#`wA female `sgnome `wis here carrying a basket of junk.`^~
+Desc ~
+Race gnome~
+Align 0 2
+XPMod 110
+Level 8
+Hitroll 1
+HitDice 2d5+12
+ManaDice 2d5+135
+DamDice 1d7+2
+DamType punch
+AC 30 30 30 50
+Wealth 100
+Act    npc no_tame stay_area mage~
+AffBy  detect_magic infrared~
+Res    magic~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#25351
+Name small silver mace~
+Short a small `#`ss`wi`Wl`sv`we`Wr`sy mace`^~
+Desc A small mace has been left here.~
+Level 8
+ItemType weapon~
+Cost 250
+Durability 5
+Asize 60
+Rsize 50
+Values mace 2 6 suction L
+Weight 60
+Material silver~
+Extra    glow hum magic nodegrade~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 8 -1 hitroll 1 0
+Affect modifier -1 8 -1 damroll 1 0
+Affect modifier -1 8 -1 hp 5 0
+End
+
+#25352
+Name small silver whip~
+Short a small `#`ss`wi`Wl`sv`we`Wr`sy whip`^~
+Desc A small silver whip has been left here.~
+Level 10
+ItemType weapon~
+Cost 250
+Durability 5
+Asize 60
+Rsize 50
+Values whip 2 4 frbite B
+Weight 60
+Material silver~
+Extra    glow hum magic nodegrade~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 10 -1 hitroll 1 0
+Affect modifier -1 10 -1 damroll 1 0
+Affect modifier -1 10 -1 hp 5 0
+End
+
+#25353
+Name small silver dagger~
+Short a small `#`ss`wi`Wl`sv`we`Wr`sy dagger`^~
+Desc A small silvery dagger has been left here.~
+Level 20
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 3 5 suction L
+Weight 3
+Material silver~
+Extra    glow hum magic nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 20 -1 hitroll 1 0
+Affect modifier -1 20 -1 damroll 1 0
+Affect modifier -1 20 -1 hp 10 0
+End
+
+#25354
+Name soft silvery grey robe~
+Short a soft `#`ss`wi`Wl`sv`we`Wr`sy grey`^ robe~
+Desc A dark robe lies here.~
+Level 20
+ItemType clothing~
+Cost 625
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    glow magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take about~
+ClassAllowances mage cleric druid paladin spellfilcher bard anti-paladin~
+Affect modifier -1 20 -1 mana 20 0
+Affect modifier -1 20 -1 ac -5 0
+Affect modifier -1 20 -1 hitroll 1 0
+Affect modifier -1 20 -1 damroll 1 0
+End
+
+#25355
+Name small silvery axe~
+Short a small `#`ss`wi`Wl`sv`we`Wr`sy axe`^~
+Desc A small `#`ss`wi`Wl`sv`we`Wr`sy axe`^ has been left here.`^~
+Level 10
+ItemType weapon~
+Cost 250
+Durability 5
+Asize 60
+Rsize 50
+Values axe 3 5 chop 0
+Weight 60
+Material silver~
+Extra    glow hum nodegrade~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard anti-paladin~
+Affect modifier -1 10 -1 hitroll 1 0
+Affect modifier -1 10 -1 damroll 1 0
+Affect modifier -1 10 -1 hp 5 0
+End
+
+#0
+
+
+
+#ROOMS
+#25351
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25352
+Exit south 25353
+End
+
+
+#25352
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25354
+Exit east 25374
+Exit south 25351
+Exit west 25367
+End
+
+
+#25353
+Name Entrance to the Tower~
+Desc You find yourself at the base of a small tower. The floor and walls are made 
+out of a rough looking grey stone. There are lanterns hanging from the walls 
+to light the way. Strange noises can be heard echoing through the halls even 
+as you enter. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25351
+Exit south 25206
+End
+
+
+#25354
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25355
+Exit south 25352
+End
+
+
+#25355
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25356
+Exit south 25368
+Exit west 25354
+End
+
+
+#25356
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 25357
+Exit west 25355
+End
+
+
+#25357
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25356
+Exit east 25369
+Exit south 25358
+End
+
+
+#25358
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25357
+Exit up 25359
+End
+
+
+#25359
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25360
+Exit down 25358
+End
+
+
+#25360
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25361
+Exit east 25370
+Exit south 25359
+End
+
+
+#25361
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 25360
+Exit west 25362
+End
+
+
+#25362
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25371
+Exit east 25361
+Exit west 25363
+End
+
+
+#25363
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25362
+Exit south 25364
+End
+
+
+#25364
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25363
+Exit south 25365
+Exit west 25372
+End
+
+
+#25365
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25364
+Exit up 25366
+End
+
+
+#25366
+Name Dark Stairwell~
+Desc The staircase is dark and you have to feel your way with your hands on the 
+wall. There is a dim light coming from behind a door ahead of you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 25373
+Exit down 25365
+End
+
+
+#25367
+Name Small Lab~
+Desc This room is so covered in junk that you can hardly see the wooden floor. 
+There is a small wooden lab table resting in the center of the room with a 
+single chair beside it. There is a large lantern hanging from the ceiling 
+directly above the table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25352
+End
+
+
+#25368
+Name Small Lab~
+Desc This room is so covered in junk that you can hardly see the wooden floor. 
+There is a small wooden lab table resting in the center of the room with a 
+single chair beside it. There is a large lantern hanging from the ceiling 
+directly above the table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25355
+End
+
+
+#25369
+Name Small Lab~
+Desc This room is so covered in junk that you can hardly see the wooden floor. 
+There is a small wooden lab table resting in the center of the room with a 
+single chair beside it. There is a large lantern hanging from the ceiling 
+directly above the table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 25357
+End
+
+
+#25370
+Name Small Lab~
+Desc This room is so covered in junk that you can hardly see the wooden floor. 
+There is a small wooden lab table resting in the center of the room with a 
+single chair beside it. There is a large lantern hanging from the ceiling 
+directly above the table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 25360
+End
+
+
+#25371
+Name Small Lab~
+Desc This room is so covered in junk that you can hardly see the wooden floor. 
+There is a small wooden lab table resting in the center of the room with a 
+single chair beside it. There is a large lantern hanging from the ceiling 
+directly above the table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 25362
+End
+
+
+#25372
+Name Small Lab~
+Desc This room is so covered in junk that you can hardly see the wooden floor. 
+There is a small wooden lab table resting in the center of the room with a 
+single chair beside it. There is a large lantern hanging from the ceiling 
+directly above the table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25364
+End
+
+
+#25373
+Name Top of the Tower~
+Desc This room is dimly lit with by a small burning in the fireplace and a single 
+candle resting on a wooden table. Upon inspection of the table you notice 
+there are at least a dozen scribbled out drawings laying on it. There are 
+piles of junk spread through out the tower. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 25366
+End
+
+
+#25374
+Name Stone Hallway~
+Desc The floor and walls of the tower are made out of a rough looking grey stone. 
+There are lanterns hanging from the walls to light the way. Strange noises 
+can be heard echoing through the halls. There is a small staircase here that 
+leads down. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 25352
+Exit down 25375
+End
+
+
+#25375
+Name Dungeon~
+Desc The floors and walls down here are made out of the same rough grey stone as 
+throughout the tower. The air down here is cool and wet feeling and you can 
+hear the sound of clanking metal coming from the depths of the dungeon. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25376
+Exit up 25374
+End
+
+
+#25376
+Name Dungeon~
+Desc The floors and walls down here are made out of the same rough grey stone as 
+throughout the tower. The air down here is cool and wet feeling and you can 
+hear the sound of clanking metal coming from the depths of the dungeon. 
+There are cells to your east and west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25379
+Exit east 25377
+EFlags door closed~
+Exit south 25375
+Exit west 25378
+EFlags door closed~
+End
+
+
+#25377
+Name Cell~
+Desc A simple square room with no windows. The only light is that of a small 
+lantern hanging high up on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 25376
+EFlags door closed~
+End
+
+
+#25378
+Name Cell~
+Desc A simple square room with no windows. The only light is that of a small 
+lantern hanging high up on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25376
+EFlags door closed~
+End
+
+
+#25379
+Name Dungeon~
+Desc The floors and walls down here are made out of the same rough grey stone as 
+throughout the tower. The air down here is cool and wet feeling and you can 
+hear the sound of clanking metal coming from the depths of the dungeon. 
+There are cells to your east and west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 25382
+Exit east 25381
+EFlags door closed~
+Exit south 25376
+Exit west 25380
+EFlags door closed~
+End
+
+
+#25380
+Name Cell~
+Desc A simple square room with no windows. The only light is that of a small 
+lantern hanging high up on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25379
+EFlags door closed~
+End
+
+
+#25381
+Name Cell~
+Desc A simple square room with no windows. The only light is that of a small 
+lantern hanging high up on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 25379
+EFlags door closed~
+End
+
+
+#25382
+Name Dungeon~
+Desc The floors and walls down here are made out of the same rough grey stone as 
+throughout the tower. The air down here is cool and wet feeling and you can 
+hear the sound of clanking metal coming from the depths of the dungeon. 
+There are cells to your east and west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25383
+EFlags door closed~
+Exit south 25379
+Exit west 25384
+EFlags door closed~
+End
+
+
+#25383
+Name Cell~
+Desc A simple square room with no windows. The only light is that of a small 
+lantern hanging high up on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 25382
+EFlags door closed~
+End
+
+
+#25384
+Name Cell~
+Desc A simple square room with no windows. The only light is that of a small 
+lantern hanging high up on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 25382
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 25353 16 25351 2
+E 0 25351 -1 wielded~
+M 0 25356 16 25352 2
+M 0 25356 16 25354 2
+M 0 25353 16 25354 2
+E 0 25351 -1 wielded~
+M 0 25353 16 25356 2
+E 0 25351 -1 wielded~
+M 0 25356 16 25357 2
+M 0 25353 16 25358 2
+M 0 25353 16 25359 2
+M 0 25356 16 25360 2
+M 0 25353 16 25361 2
+E 0 25351 -1 wielded~
+M 0 25356 16 25362 2
+M 0 25353 16 25363 2
+M 0 25356 16 25364 2
+M 0 25356 16 25365 2
+M 0 25353 16 25365 2
+M 0 25351 6 25367 1
+E 0 25352 -1 wielded~
+M 0 25351 6 25368 1
+E 0 25352 -1 wielded~
+M 0 25351 6 25369 1
+E 0 25352 -1 wielded~
+M 0 25351 6 25370 1
+E 0 25352 -1 wielded~
+M 0 25351 6 25371 1
+E 0 25352 -1 wielded~
+M 0 25351 6 25372 1
+E 0 25352 -1 wielded~
+M 0 25352 1 25373 1
+E 0 25353 -1 wielded~
+E 0 25354 -1 about~
+M 0 25356 16 25374 2
+M 0 25354 1 25375 1
+E 0 25355 -1 wielded~
+M 0 25355 6 25377 1
+M 0 25355 6 25378 1
+M 0 25355 6 25380 1
+M 0 25355 6 25381 1
+M 0 25355 6 25383 1
+M 0 25355 6 25384 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

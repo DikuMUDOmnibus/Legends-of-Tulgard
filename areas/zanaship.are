@@ -1,0 +1,569 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Red Wanderer~
+ShortName   The Red Wanderer Ship~
+Builders    none~
+VNUMs       25400 25439
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Thu Oct 13 21:03:10 2005~
+End
+
+
+
+#MOBILES
+#25400
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg EXIT 25400 7~
+MProg EXIT 25400 8~
+END
+
+#0
+
+
+
+#OBJECTS
+#25400
+Name bunkbed~
+Short a bunkbed~
+Desc A bunkbed rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4000 DEGHIJKL 100 100
+Weight 0
+Material unknown~
+ExtraDesc bunkbed bed~
+Twin bunkbeds are here aligned on either wall. They are made of feathers and 
+seem quite inviting with white, woolen blankets. 
+~
+End
+
+#25401
+Name poker table~
+Short a poker table~
+Desc A poker table rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6000 DG 100 100
+Weight 0
+Material unknown~
+ExtraDesc poker table~
+A pokertable covered in pokerchips and an always seemingly unfinished game 
+is here. The table is low enough to sit comfortably on the floor if need be. 
+
+~
+End
+
+#25402
+Name some candles~
+Short some candles~
+Desc Some Candles~
+Level 0
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 0
+Material unknown~
+ExtraDesc candle ~
+Some white candles rest atop the poker table eminating a gentle glow. 
+~
+End
+
+#25403
+Name large feather bed with black silk sheets~
+Short a large feather bed with black silk sheets~
+Desc A large feather bed with black silk sheets rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4000 EFHIKL 100 100
+Weight 0
+Material unknown~
+ExtraDesc large feather bed black sheets~
+Before you is a large feather bed with black silk blankets. Resting atop the 
+thick sheets is a deep grey wolf-pelt. 
+~
+End
+
+#25404
+Name carved wooden desk~
+Short a carved wooden desk~
+Desc A carved wooden desk rests here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc carved wooden desk~
+A series of maps and star charts riddle a beautifully carved desk. On the 
+desk is a drawer filled with parchments, inkwells and a quill pen. The 
+intricate carvings of wolves are sister depictions of those upon the 
+armoire. 
+~
+End
+
+#25405
+Name footchest~
+Short a footchest~
+Desc A footchest sits here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 100
+Weight 0
+Material unknown~
+ExtraDesc footchest ~
+Located at the foot of the bed, this little footchest appears to hold 
+various garments and such. 
+~
+End
+
+#25406
+Name armoire~
+Short an armoire~
+Desc An armoire is sitting here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 AC 0 1000 100
+Weight 0
+Material unknown~
+ExtraDesc armoire ~
+Within the armoire are a series of collected weapons. Maces, Hammers,Swords 
+and even Whips don the interior. Upon the exterior is a small rack that 
+holds both polearms and spears. The intricated carvings of wolves are sister 
+carvings of those upon the desk. 
+~
+End
+
+#25407
+Name barrel of water~
+Short a barrel of water~
+Desc A barrel of water rests here.~
+Level 0
+ItemType drinkcontainer~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material unknown~
+ExtraDesc barrel of water~
+Here is a very Large barrel of water, used mainly for long sea courses. 
+Enchanted as it is, the barrel never appears to emtpy. 
+~
+End
+
+#25408
+Name carved steering wheel~
+Short a carved steering wheel~
+Desc A carved steering wheel sits here.~
+Level 0
+ItemType vehicle_controls~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 59039 0 0 0 0
+Weight 0
+Material unknown~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc carved Steering Wheel~
+Standing here proudly is the wheel to steer the mighty ship. Weatherbeaten 
+and worn, it remains as strong as ever in an intricate wheel. Upon the wheel 
+are carven images of wolves and the moon phases. 
+~
+ExtraDesc _TRAVEL~
+Waves lap against the ship as it glides through the ocean.~
+ExtraDesc _TRAVEL~
+Waves lap against the ship as it sails across the ocean.~
+ExtraDesc _TRAVEL~
+Waves lap against the ship as it sails across the water.~
+End
+
+#25409
+Name treasury key~
+Short `#`WShyandai's `Ytreasury key`^~
+Desc `#`WShyandai's `Ytreasury key`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#25410
+Name rope ladder~
+Short a rope ladder~
+Desc A large rope ladder leading off the ship is here.~
+Level 0
+ItemType vehicle_exit~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 59039 0 0 0 0
+Weight 0
+Material rope~
+Extra    nopurge nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#25411
+Name captain chair~
+Short the `#`yCaptain's `yChair`^~
+Desc A large wooden chair with the words "`#`YCaptain`^" engraved on the back is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 BEHK 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate burnproof norestring~
+Extra2   nodecay nochaoslace~
+End
+
+#0
+
+
+
+#ROOMS
+#25400
+Name Bow of the Ship~
+Desc Here, upon the bow is the carved image of a snarling or howling wolf. 
+Somewhat carved in the style of a viking ship, the head acts as the head of 
+the ship staring forth into adventures. Blazing behind the head, donned upon 
+the masts are crimson sails that glow with the suns rays defiantly. Proudly. 
+Almost as if master of the seas itself. 
+~
+RoomFlags indoors light~
+Room2Flags saltwater_fish~
+Sector vehicle~
+Owner Shyandai~
+Exit southeast 25402
+Exit southwest 25401
+End
+
+
+#25401
+Name Deck of the Ship~
+Desc Upon this deck stands a strong balistae armed with pronged harpoons. The 
+deck itself is swabbed clean, compliments of the crew. The ocean view along 
+with the nice sea breeze is almost addicting and intoxicating. 
+~
+RoomFlags indoors light~
+Room2Flags saltwater_fish~
+Sector vehicle~
+Exit east 25402
+Exit south 25403
+Exit northeast 25400
+Exit southeast 25404
+End
+
+
+#25402
+Name Deck of the Ship~
+Desc Upon this deck stands a strong balistae armed with pronged harpoons. The 
+deck itself is swabbed clean, compliments of the crew. The ocean view along 
+with the nice sea breeze is almost addicting and intoxicating. 
+~
+RoomFlags indoors light~
+Room2Flags saltwater_fish~
+Sector vehicle~
+Owner zana nilith~
+Exit south 25404
+Exit west 25401
+Exit southwest 25403
+Exit northwest 25400
+End
+
+
+#25403
+Name Deck of the Ship~
+Desc Upon this deck stands a strong balistae armed with pronged harpoons. The 
+deck itself is swabbed clean, compliments of the crew. The ocean view along 
+with the nice sea breeze is almost addicting and intoxicating. 
+~
+RoomFlags indoors light~
+Room2Flags saltwater_fish~
+Sector vehicle~
+Owner zana nilith~
+Exit north 25401
+Exit east 25404
+Exit down 25409
+EFlags door closed locked infuriating~
+EKeyvnum 25409
+Exit northeast 25402
+Exit southeast 25405
+End
+
+
+#25404
+Name Deck of the Ship~
+Desc Upon this deck stands a strong balistae armed with pronged harpoons. The 
+deck itself is swabbed clean, compliments of the crew. The ocean view along 
+with the nice sea breeze is almost addicting and intoxicating. There is also 
+a hatch that leads down below to the bottom of the ship centered here. It 
+seems to be used often. 
+~
+RoomFlags indoors light~
+Room2Flags saltwater_fish~
+Sector vehicle~
+Owner zana nilith~
+Exit north 25402
+Exit west 25403
+Exit down 25406
+Exit southwest 25405
+Exit northwest 25401
+End
+
+
+#25405
+Name Stern of the Ship~
+Desc As you stand upon the back deck of this sleek ship, a beautiful schene is 
+before and all around you. Ahead of you are deep crimson sails that burn 
+when the sun shines brightest. The steering wheel almost beckons you to test 
+the mobility of the ship. The sea air blows in your hair, peaceful when the 
+oceans are calm. Treacherous and wild when the oceans keep you to her mercy. 
+
+~
+RoomFlags indoors light~
+Room2Flags saltwater_fish~
+Sector vehicle~
+Exit northeast 25404
+Exit northwest 25403
+End
+
+
+#25406
+Name Lower Deck of the Ship~
+Desc Here you've entered the second deck, glancing around you see its mainly used 
+for storage. Barrels of rum, and water along with a barrel or two of food. 
+The ship appears well prepared for any sort of adventure upon which the 
+Captain dares take. 
+~
+RoomFlags indoors light~
+Sector vehicle~
+Exit west 25407
+Exit up 25404
+Exit southwest 25408
+End
+
+
+#25407
+Name Lower Deck of the Ship~
+Desc Here be the crew's quarters. Not shabby or threadbare, the room has several 
+beds lined up. Spaced enough where ever crew member's got enough personal 
+space. A poker table with some candles tell stories of late night games and 
+gambles. The room is lit nicely with some torches upon either wall. 
+~
+RoomFlags indoors light~
+Sector vehicle~
+Exit east 25406
+End
+
+
+#25408
+Name Lower Deck of the Ship~
+Desc Here you've entered the second deck, glancing around you see its mainly used 
+for storage. Barrels of rum, and water along with a barrel or two of food. 
+The ship appears well prepared for any sort of adventure upon which the 
+Captain dares take.
+~
+RoomFlags indoors light~
+Sector vehicle~
+Exit northeast 25406
+End
+
+
+#25409
+Name Captain's Lodge~
+Desc Here is the Captain's lodge. Four torches light the room to a gentle glow, 
+two posted on either side of the door, and the other two directly across 
+from the entrance on either side of an enormous bed. The bed is decorated 
+with black silk blankets and a grey fur pelt. To the west of the entrance is 
+a large wooden desk. To the east is a beautifully carved armoire. At the 
+foot of the bed is a lovely foot chest. The room appears roomy with a 
+beautiful view of the ocean through windows on either side of the bed beside 
+the torches. 
+~
+RoomFlags indoors nowhere light~
+Sector vehicle~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit up 25403
+EFlags door closed locked infuriating~
+EKeyvnum 25409
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 25410 -1 25400
+M 0 25400 3 25400 3
+O 0 25408 -1 25405
+O 0 25411 -1 25405
+O 0 25407 -1 25406
+O 0 25400 -1 25407
+O 0 25401 -1 25407
+O 0 25402 -1 25407
+O 0 25403 -1 25409
+O 0 25406 -1 25409
+O 0 25405 -1 25409
+O 0 25404 -1 25409
+O 0 25403 -1 25409
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#25400
+title Ship Guard~
+author Delandria~
+code mobseeall
+language native
+ if isimmort $n
+  sayto $n Welcome Great One.
+  bow $n
+  mob letpass
+  end
+ endif
+ if name $n Zana
+  sayto $n Welcome aboard Captain!
+  mob letpass
+  end
+ endif
+ if name $n Elkan
+  sayto $n Welcome aboard Archmage!
+  mob letpass
+  end
+ endif
+ if fealty $n Zana
+  sayto $n Welcome to The Red Wanderer!
+  mob letpass
+  end
+ endif
+ if name $n Sarrie
+   sayto $n Welcome Aboard!
+   mob letpass
+   end
+ endif
+ if name $n Imari
+   sayto $n Welcome Aboard!
+   mob letpass
+   end
+ endif
+ if name $n Kahori
+   sayto $n Welcome Aboard!
+   mob letpass
+   end
+ endif
+ if name $n Talintha
+   sayto $n Welcome Aboard!
+   mob letpass
+   end
+ endif
+ if name $n Darakelami
+   sayto $n Welcome Aboard!
+   mob letpass
+   end
+ endif
+ sayto $n Get lost. You are not welcome here!
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1108836067
+END
+
+#0
+
+
+#$

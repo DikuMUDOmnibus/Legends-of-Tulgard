@@ -1,0 +1,792 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Misc/SmallQuest Immortal~
+ShortName   Misc~
+Builders    None~
+VNUMs       3521 3599
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden~
+LRange      0 0
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 27 23:58:24 2005~
+End
+
+
+
+#MOBILES
+#3521
+Name oldstyle santa claus~
+ShortD santa Claus~
+LongD Santa Claus is here, checking on who has been naughty...~
+Desc It's a jolly old man, with red cheeks and a roly-poly belly and a laugh
+as jolly as you can get. Must be Santa Claus!
+~
+Race human~
+Align -2 -3
+Level 44
+Hitroll 0
+HitDice 5d8+260
+ManaDice 5d8+270
+DamDice 6d6+17
+DamType none
+AC -170 -170 -170 -147
+Wealth 440
+Act    npc dont_wander~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg ACT 3521 sits down on santa~
+MProg SPEECH 3522 santa, i want~
+END
+
+#3522
+Name unseen general purpose mob prog person~
+ShortD unseen general purpose mob prog person~
+LongD I am used to trigger mobprogs.~
+Desc ~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -549
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt noautosocial unseen~
+AffBy  invisible detect_invis detect_hidden infrared sneak~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 3525 cut cake~
+END
+
+#3523
+Name oldstyle pile coins~
+ShortD the pile of gold coins~
+LongD A pile of gold coins lies on the ground.~
+Desc A large sparkly pile of gold coins.
+~
+Race unique~
+Align -1 -2
+Level 30
+Hitroll 0
+HitDice 5d6+160
+ManaDice 3d5+65
+DamDice 6d4+9
+DamType none
+AC -105 -105 -105 -91
+Wealth 300
+Act    npc dont_wander thief~
+AffBy  detect_invis detect_hidden infrared~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#3524
+Name leech owner bobu~
+ShortD the pet store owner~
+LongD An odd, wiry man stands behind the counter.~
+Desc An odd, wiry man is here standing behind the counter. He eyes you 
+suspiciously as you look at him. 
+Type <list> to see whats for sale today
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 5
+HitDice 10d13+600
+ManaDice 10d13+600
+DamDice 10d15+200
+DamType punch
+AC -150 -150 -150 -130
+Wealth 200
+Act    npc dont_wander stay_area nopurge~
+AffBy  detect_invis detect_hidden~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3582
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#3599
+Name borlin tall human spirit wizened old ranger~
+ShortD the spirit of an old ranger~
+LongD A tall human spirit of a wizened old ranger is here, hovering around the spring.~
+Desc This tall humanoid figure looks as if he used to be a human but now is 
+nothing more than an ethereal apparition of what he used to be.  His 
+appearance is that of stern features and appearance. 
+~
+Race human~
+Align 1 3
+XPMod 120
+Level 68
+Hitroll 1
+HitDice 7d10+355
+ManaDice 3d5+70
+DamDice 7d8+33
+DamType none
+AC -380 -380 -380 -315
+Wealth 500
+Act    npc no_tame stay_area undead cleric warrior noautosocial~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil sneak flying pass_door haste regeneration~
+Off    bash disarm dodge fast kick parry trip~
+Imm    summon charm poison negative disease sleep wood~
+Res    magic holy~
+Vuln   fire light~
+Form   edible instant_decay non_skinable sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#3521
+Name santa's lap~
+Short santa's lap~
+Desc Santa's lap is here awating the next person in line.~
+Level 1
+ItemType furniture~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 E 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#3523
+Name a small silver key~
+Short a small silver key~
+Desc A key is lying here, shimmering in the light.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    glow hum nonmetal meltdrop nodegrade norestring nogetall~
+Wear     take~
+End
+
+#3524
+Name a small silver key~
+Short a small silver key~
+Desc A key is lying here, shimmering in the light.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    glow hum nonmetal meltdrop nodegrade norestring nogetall~
+Wear     take~
+End
+
+#3525
+Name sign wooden~
+Short a wooden sign~
+Desc A wooden sign is here, with much writing on its surface.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow hum bless antievil nonmetal nodegrade burnproof~
+Extra2   nodecay antichaos~
+ExtraDesc wooden sign~
+By decree of the town mayor, Hassan, all dragons and lycanthropes must be in 
+their human forms while inside of Tulgard. `+
+`+
+Vampires are prohibited inside of the city and will be staked on site. `+
+`+
+Please make sure that you read the signs around town and know the laws. 
+~
+End
+
+#3526
+Name xeal voodoo doll~
+Short a voodoo doll~
+Desc A voodoo doll lies here.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material flesh~
+Extra    evil magic antigood rotdeath nonmetal nolocate burnproof norestring~
+Extra2   nosell~
+Wear     take hold~
+End
+
+#3527
+Name birthday cake~
+Short a `#`Mb`Yi`Wr`Yt`Mh`Yd`Wa`Yy`^ cake~
+Desc A `#`Mb`Yi`Wr`Yt`Mh`Yd`Wa`Yy`^ cake is here.~
+Level 0
+ItemType food~
+Cost 22
+Durability 5
+Asize 0
+Rsize 50
+Values 18 18 0 0 0
+Weight 2
+Material food~
+Wear     take~
+ExtraDesc birthday cake~
+Happy Birthday Zaroth!
+One year closer to kicking the can.
+Have a Good Birthday and don't forget that dentues need cleaning too.
+~
+End
+
+#3528
+Name christmas present package~
+Short a birthday present~
+Desc A birthday present lies here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 A 0 1 -10
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal meltdrop~
+Wear     take~
+End
+
+#3529
+Name dentures~
+Short a pair of dentures~
+Desc A pair of shiny white dentures lie here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material enamel~
+Extra    meltdrop~
+Wear     take face~
+End
+
+#3530
+Name piece of cake~
+Short a piece of birthday cake~
+Desc A piece of birthday cake lies here.~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cake~
+Wear     take~
+End
+
+#3572
+Name tulgard noticeboard~
+Short tulgard noticeboard~
+Desc A large noticeboard hangs on the wall, pieces of paper tacked to it.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 100
+Rsize 50
+Values 0 E 0 100 100
+Weight 0
+Material unknown~
+Extra    glow hum magic bless nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#3573
+Name dull brass neckguard~
+Short `#a `ydull brass`^ neckguard~
+Desc `#a `ydull brass`^ neckguard lies here.~
+Level 65
+ItemType armor~
+Cost 2650
+Durability 5
+Asize 10
+Rsize 50
+Values 12 10 11 8 0
+Weight 30
+Material brass~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take neck~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc dull brass neckguard~
+This simple and rather plain appearing neckguard looks to be made from some 
+sort of dull in colour type of brass.  It has a strange pattern or symbol of 
+some sorts engraved on it. 
+~
+End
+
+#3574
+Name dark green leather tunic~
+Short a dark green leather tunic~
+Desc A dark green leather tunic lies here.~
+Level 65
+ItemType armor~
+Cost 2650
+Durability 5
+Asize 0
+Rsize 50
+Values 21 22 23 16 0
+Weight 30
+Material leather~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take torso~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc dark green leather tunic~
+This decent looking tunic has been made from a sort of leather and been dyed 
+to a dark green.  With leather strippings hanging off the sides of it, and a 
+few chain link straps dangling from the sides, its appearance is rather 
+exotic and looks to be expensive. 
+~
+End
+
+#3575
+Name dark green leather pants~
+Short some dark green leather pants~
+Desc Some dark green leather pants lie here.~
+Level 65
+ItemType armor~
+Cost 2650
+Durability 5
+Asize 0
+Rsize 50
+Values 15 15 17 17 0
+Weight 25
+Material leather~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take legs~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 4 0
+ExtraDesc dark green leather pants~
+This leather pants have been dyed in a dark green dye and polished over with 
+some sort of clear acrylic.  On the belt loops of the pants there is small 
+metal links with holes in them and on the sides the leather is fringed 
+slightly. 
+~
+End
+
+#3576
+Name radiant white broadaxe avenger axe~
+Short a radiant white broadaxe~
+Desc A broadaxe radianting an aura of white lies here.~
+Level 65
+ItemType weapon~
+Cost 3650
+Durability 5
+Asize 0
+Rsize 50
+Values axe 15 4 divine I
+Weight 50
+Material iron~
+Extra    magic antievil antineutral nolocate burnproof~
+Extra2   nochaoslace~
+Wear     take wield~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 damroll 4 0
+ExtraDesc radiant white broadaxe avenger   ~
+This fairly large iron axe seems to glimmer with a white aura of sorts, its 
+blade looks rather shape and looks as if it could slice a tree down in one 
+swipe.  
+~
+End
+
+#3577
+Name dark green leather boots~
+Short some dark green leather boots~
+Desc Some dark green leather boots lie here.~
+Level 65
+ItemType armor~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values 12 14 11 11 0
+Weight 20
+Material leather~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take feet~
+ClassAllowances ranger~
+ExtraDesc dark green leather boots~
+These leather books have been dyed in a dark green dye, the soles of the 
+boots appear to have been nailed together to the leather and have been sewn 
+into many layers.  
+~
+End
+
+#3578
+Name spiraled green stone~
+Short `#a spiraled `ggreen stone`^~
+Desc `#A spiraled `ggreen stone`^ lies here.~
+Level 65
+ItemType gem~
+Cost 2650
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    magic antievil antineutral nolocate burnproof~
+Wear     take float~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 4 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 6 0
+ExtraDesc spiraled green stone~
+This small stone looks irregular and exotic in dimensional features.  
+Spiraling in a strange way and the colour of emerald this little stone looks 
+like it could be quite valuable.  
+~
+End
+
+#3579
+Name flask crystal holy blessed water holywater~
+Short a flask of holy water~
+Desc A flask of holy water swirls about magically here.~
+Level 1
+ItemType treasure~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material holy water~
+Extra    bless norestring~
+Wear     take hold~
+End
+
+#3580
+Name small crystal clear spring~
+Short a small crystal clear spring~
+Desc A small crystal clear spring is here, gushing out of the ground.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material water~
+Extra    burnproof~
+End
+
+#3581
+Name flask crystal wolvesbane silver~
+Short a flask of ground wolvesbane~
+Desc A flask of ground wolvesbane and silver sits here.~
+Level 1
+ItemType treasure~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    norestring~
+Wear     take hold~
+End
+
+#3582
+Name potion justice red~
+Short a `#`Rpotion `wof `Rjustice`^~
+Desc A `#`Rbright red`^ potion is here, `Ch`cu`Cm`cm`Ci`cn`Cg`^ with `Ypower`^.~
+Level 5
+ItemType potion~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 90 'summon justice' 'illusions grandeur' shield ''
+Weight 1
+Material glass~
+Extra    hum norestring~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#3521
+Name `#`YQUEST ROOMS`^~
+Desc ~
+Sector inside~
+End
+
+
+#3522
+Name The White Room~
+Desc Your in a room, surrounded by white walls.  Theres a door to the south, but 
+its locked.  `1`1The walls are slowly closing in.  
+~
+RoomFlags noscry~
+Sector field~
+Exit south 3052
+EFlags door closed locked pickproof nopass~
+EKeyvnum 3523
+End
+
+
+#3523
+Name An odd room.~
+Desc You've walked inside regular looking room. Tanks of weird, leech creatures 
+are lining the shelves on the side. 
+~
+RoomFlags indoors pet_shop noscry light~
+Sector inside~
+End
+
+
+#3524
+Name Symbiote Room~
+Desc ~
+RoomFlags indoors imm_only nowhere noscry~
+Sector inside~
+End
+
+
+#3531
+Name Dark Forest~
+Desc You've entered a dark forest.  The trees around you are baren and mysterious 
+crys can be heard echoing through.  The ground is dark, maggots and spiders 
+crawling everywhere.  
+~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 3523 spec_thief
+S
+
+
+
+#RESETS2
+M 0 3521 1 3521 1
+G 0 541 -1
+G 0 400 -1
+M 0 3524 1 3523 1
+S
+
+
+
+#SHOPS
+#3524
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#3525
+author Echmoro~
+code mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+mob oload 3530
+echo $n cuts the birthday cake.
+mob silently drop all
+mob purge self
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1108271494
+END
+
+#3524
+title Throw Poo~
+author Echmoro~
+disabled false
+last_editor Echmoro~
+last_editdate 1106423904
+END
+
+#3523
+title Testing - AntiBuy~
+author Echmoro~
+code if race $n dwarf
+  sayto $n Sorry mate, I just sold that last one. Perhaps next time.
+else
+  sayto $n I can't sell you that, I only do business with dwarves.
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1085837333
+END
+
+#3522
+title Ask Santa for Gifts~
+author Echmoro~
+code if istarget $q
+  if rand 50
+    sayto $n Well, thats a list of nice items. I'm not sure if I can fit all that in my sleigh.
+  else
+    if rand 50
+      sayto $n Holy Christmas Cookies....you really want that for Christmas? How about a nice rocking horse instead?
+    else
+      if rand 50
+        sayto $n Hold on a minute, who do you think I am. I can't deliver that.
+else
+sayto $n I'll get you that, but only if you've been REALLY good this year.
+      endif
+    endif
+endif
+endif
+mob forget
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G3522`x,`Y3523`x,`B3523`x,`r16`x,`C0`x:
+             `YMobprog: else without if, mob 3523 prog 3522
+`x             Trigger type 'TICK' phrase '33'
+             Call stack info:
+             MOBprog 3522 on mob 3523 (in room 3523), line 16
+`S#############
+
+~
+last_editor Echmoro~
+last_editdate 1108271292
+END
+
+#3521
+title Sit on Santa's Lap~
+author Echmoro~
+code mob remember $n
+mq1 sayto $q Ho Ho Ho, Merry Christmas
+mq2 sayto $q What would you like for Christmas?
+mq2 mob echoat $q Start your gift list with "Santa, I want"
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1103929056
+END
+
+#0
+
+
+#$

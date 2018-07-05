@@ -1,0 +1,598 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Komori Clan~
+ShortName   Komori Clan~
+Builders    none~
+Credits     zatzu delandria damien~
+VNUMs       46400 46419
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+Security    9
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:24 2005~
+End
+
+
+
+#MOBILES
+#46401
+Name intori girl shopkeeper clan komori~
+ShortD an intori girl~
+LongD A busy looking `#`sintori`^ girl~
+Desc ~
+Race human~
+Align 2 0
+Level 101
+Hitroll 10
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 11d12+56
+DamType slice
+AC -710 -710 -710 -596
+Wealth 0
+Act    npc dont_wander train practice healer gain~
+AffBy  sanctuary~
+Imm    summon charm magic weapon~
+Form   edible mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#46402
+Name Solnya~
+ShortD `DSolnya`x~
+LongD Solnya, the `#`RK`ro`wmo`rr`Ri`^ Healer, is here to comfort your wounds.~
+Desc She has an inpartial look on her face as she tends to people's wounds.
+~
+Race human~
+Align 2 0
+Level 101
+Hitroll 10
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 11d12+56
+DamType slice
+AC -710 -710 -710 -596
+Wealth 0
+Act    npc dont_wander train practice healer gain~
+AffBy  sanctuary~
+Imm    summon charm magic weapon~
+Form   edible mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 46401 light~
+END
+
+#46403
+Name trainer dagorst male komori~
+ShortD a lean, shadowy dagorstian male~
+LongD A lean, shadowy dagorstian male is standing here.~
+Desc ~
+Race minotaur~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander train practice gain changer~
+Act2   avoids_all_attacks~
+AffBy  detect_hidden infrared~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46404
+Name unseen ~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 46400 obfuscation~
+END
+
+#0
+
+
+
+#OBJECTS
+#46400
+Name komori clan light ball glowing~
+Short a bright ball of light~
+Desc A bright ball of light is here.~
+Level 5
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 0
+Material etheral~
+Extra    glow rotdeath nonmetal nolocate meltdrop nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold~
+Affect modifier -1 0 -1 ac -30 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Clan 'komori clan'~
+End
+
+#46401
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN F 1101 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#46402
+Name fountain~
+Short an `#`Sobsid`Xi`San fountain`^~
+Desc A `#`Sbe`Xa`Sutiful `Sobs`Xi`Sd`Xi`San fountain`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 999999 999999 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#46403
+Name tree cherry cherryblossom blossom~
+Short tall `#`mc`Mh`merryb`Ml`moss`Mo`mm`X trees`^~
+Desc Many `#`mc`Mh`merryb`Ml`moss`Mo`mm`X trees`^ stand proudly in bloom~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#46404
+Name cherryblossom flower komori~
+Short a `#`Wp`Xe`Wr`Xf`We`Xc`Wt `Mc`mh`Me`mr`Mr`my`Mb`ml`Mo`ms`Ms`mo`Mm `mf`Ml`mower`^~
+Desc A `#`Wp`Xe`Wr`Xf`We`Xc`Wt `Mc`mh`Me`mr`Mr`my`Mb`ml`Mo`ms`Ms`mo`Mm `mf`Ml`mower`^ lies here~
+Level 0
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flower~
+Extra    antigood nonmetal nolocate meltdrop nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take head hold~
+End
+
+#46405
+Name carved black marble bench~
+Short `#`wa carved `#`sb`wl`sa`wc`sk m`wa`sr`wb`sl`we bench`^~
+Desc `#`wa carved `#`sb`wl`sa`wc`sk m`wa`sr`wb`sl`we bench sits here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1000 BEHK 100 100
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#46406
+Name fountain fo fou foun fount blood bloodstone~
+Short a `#`Sb`rl`Soods`rt`Son`re `Sf`ro`Sunta`ri`Sn`^~
+Desc A `#`Wb`Xe`Wa`Xu`Wt`Xi`Wf`Xu`Wl `Sb`rl`Soods`rt`Son`re `Sf`ro`Sunta`ri`Sn`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 blood 0 0
+Weight 0
+Material unknown~
+Extra    evil nodegrade nogetall~
+ExtraDesc fountain ~
+The fountain's basin is rather small, but deep.  It comes up to about 
+mid-thigh height.  Dancing atop the fountain back to back to back are three 
+figures.  One, is a dancing humanoid bat with wings spread and screeching.  
+The second is a dancing humanoid wolf.  It isn't by any means a werewolf as 
+it snarls and howls to the moon.  The third is a seductive woman wielding a 
+katana in one hand, and a set of throwing daggers in her other.  On her face 
+is a wicked smirk.  
+~
+End
+
+#46407
+Name cherry wood desk chair table~
+Short a gorgeous `#`rcherrywood`^ desk~
+Desc A gorgeous `#`rcherrywood`^ desk and chair rests here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 3000 DGJY 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#46408
+Name long rectangular cherrywood table~
+Short a `#`Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wslab table on the floor`^~
+Desc `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wslab table is here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc cherrywood table~
+This is a long rectangular cherrywood slab table. It is resting on a soft 
+plush rug and it is low to the ground. There are no chairs at the table, you 
+sit on the rug. 
+~
+End
+
+#46409
+Name weapon rack~
+Short a large steel weapon rack~
+Desc A large steel weapon rack stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#46410
+Name armor rack~
+Short a large wooden armor rack~
+Desc A large wooden armor rack stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#46411
+Name wooden potion cabinet~
+Short a tall wooden potion cabinet~
+Desc A tall wooden potion cabinet is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 2000 0 0 2000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#46412
+Name futon~
+Short a `#`Wl`Xa`Wr`Xg`We `rc`Somfortable `rf`Suton`^~
+Desc A `#`Wl`Xa`Wr`Xg`We `rc`Somfortable `rf`Suton`^ centers the room~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 3000 EIL 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#46400
+Name Sparring Grounds~
+Desc Within the large spacious room is a somewhat pit lowered about two inches in 
+height.  Along the walls are weapon racks of various sizes that hold various 
+weapons.  The walls are painted with fighting warrior creatures of bat, wolf 
+and shadowy creatures. 
+~
+RoomFlags indoors light~
+Sector inside~
+Clan 'komori clan'
+ExtraDesc flags~
+These flags depict many scenes of wars past.
+~
+Exit north 46401
+End
+
+
+#46401
+Name Courtyard~
+Desc The courtyard is very large.  In the center of it rests a curious fountain.  
+The floor is paved with stone and appears to be well swept and cared for.  
+Before you is a large sliding door leading to the inside of the dojo.  Above 
+the doorway, rests the Komori crest. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 46404
+Exit east 46407
+Exit south 46400
+Exit west 46408
+Exit up 46402
+End
+
+
+#46402
+Name Hallway to the Office~
+Desc You find yourself walking a long hall.  Your footsteps echo with the quiet 
+peacefulness of the dojo.  The wood floors are kept nice and clean.  On the 
+walls are paintings of mountains, wolves, bats and heavy mists. 
+~
+RoomFlags indoors light~
+Sector inside~
+Clan 'komori clan'
+Exit north 46405
+Exit down 46401
+End
+
+
+#46403
+Name Kitchen~
+Desc A large wood fed stove is here in one corner. A large table made out of a 
+wooden slab is in the center. There is an intorian girl here waiting to cook 
+for you. She offers a wide variety of foods to choose from. A couple chop 
+sticks are left over from the last group that was in here. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 46408
+End
+
+
+#46404
+Name Portal Room~
+Desc You enter a small room filled with mist. In the center of it is a large 
+gatestone that can take you to anywhere you could ever dream of going... 
+~
+RoomFlags indoors light~
+Sector gateway~
+Clan 'komori clan'
+Exit south 46401
+End
+
+
+#46405
+Name Office of the Shogun~
+Desc . Upon entering the room you are filled with a tranquil feeling. You see two 
+desks in the room. Hanging from the walls are incense holders and other 
+batlike crests. over by the one desk you notice a pile of jewels. The air in 
+the room is misty and fragrent from the incense. 
+~
+RoomFlags indoors light~
+Sector inside~
+Clan 'komori clan'
+Exit south 46402
+End
+
+
+#46406
+Name Library~
+Desc Along the wall is a large bookshelf.  It's filled with a few important 
+looking scrolls.  The paintings along the walls depict a huge warrioress.  
+She appears to be shifting between a bat, wolf or an ethereal mist all at 
+once. 
+~
+RoomFlags indoors bank light~
+Sector inside~
+Exit east 46408
+End
+
+
+#46407
+Name Grove~
+Desc You find yourself enveloped in a grove full of cherryblossom trees.  The 
+scent of the flowers envelop your mind to a state of calmness.  A breeze 
+blows faintly in the air, through the trees and grass. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46401
+End
+
+
+#46408
+Name Hallway~
+Desc You find yourself walking a long hall.  Your footsteps echo with the quiet 
+peacefulness of the dojo.  The wood floors are kept nice and clean.  On the 
+walls are paintings of mountains, wolves, bats and heavy mists. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 46403
+Exit east 46401
+Exit south 46409
+Exit west 46406
+End
+
+
+#46409
+Name Storage Room~
+Desc You enter into a large storage room. Various armor stands, weapon racks, and 
+potion cabinets are here. Please try to keep this area clean and tidy. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit north 46408
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 46403 1 46400 1
+O 0 46402 -1 46401
+O 0 46412 -1 46401
+O 0 46408 -1 46403
+M 0 46401 1 46403 1
+G 0 27095 -1
+G 0 1620 -1
+G 0 500 -1
+G 0 23639 -1
+G 0 2528 -1
+G 0 3199 -1
+G 0 3087 -1
+G 0 3088 -1
+G 0 421 -1
+G 0 2819 -1
+O 0 46401 -1 46404
+O 0 46407 -1 46405
+M 0 46404 1 46405 1
+O 0 46412 -1 46406
+M 0 46402 1 46407 1
+O 0 46403 -1 46407
+P 0 46404 3 46403 3
+O 0 46405 -1 46407
+O 0 46406 -1 46407
+S
+
+
+
+#SHOPS
+#46401
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#46401
+title Thieves Guild~
+author Delandria~
+code language native
+mob oload 46400
+Give ball $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1112564533
+END
+
+#46400
+title dojo trans~
+code mob transfer $n 12870
+~
+disabled false
+last_editor Delandria~
+last_editdate 1112569806
+END
+
+#0
+
+
+#$

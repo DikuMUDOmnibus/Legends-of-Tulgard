@@ -1,0 +1,847 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Castle of Wod~
+ShortName   Castle of Wod~
+Builders    None~
+Credits     Nakasha Ixliam~
+VNUMs       920 939
+LComment    `#`R[ 85- 91]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#920
+Name spectral figure guard~
+ShortD a spectral guard~
+LongD A spectral figure wearing armor is guarding the passage north.~
+Desc ~
+Race human~
+Align -2 -3
+Level 90
+Hitroll 180
+HitDice 9d13+440
+ManaDice 4d5+95
+DamDice 10d11+45
+DamType slice
+AC -600 -600 -600 -492
+Wealth 900
+Act    npc dont_wander no_tame aggressive stay_area no_hunt warrior~
+Act2   no_tendency~
+AffBy  detect_invis detect_hidden sanctuary infrared haste dark_vision regeneration~
+Off    fast~
+Imm    summon charm sleep~
+Res    weapon~
+Vuln   magic cold holy~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 923 weaponsmaster~
+END
+
+#921
+Name ghost headless wod~
+ShortD `#`wthe `WGhost`w of `WWod`^~
+LongD A headless ghost is flickering in and out of existance.~
+Desc This is a VERY tall ghost of a troll.  He reaches about 10' but is missing 
+his head.  His biceps and chest are giant he look very built and very 
+strong.  His hands and feet are large even for a troll!  Over all he looks 
+like a big fat idiot, and in real life acted like one as well.  
+ 
+And right now, he is killing you.
+~
+Race Lich~
+Align -3 -3
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType drain
+AC -800 -800 -800 -640
+Wealth 0
+Act    npc scavenger no_tame aggressive stay_area undead warrior~
+AffBy  detect_invis detect_hidden sanctuary pass_door haste dark_vision~
+AffBy2 passwotrace vicegrip~
+Off    backstab bash berserk disarm dodge fast kick dirt_kick parry crush circle~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    mental illusion scry~
+Vuln   holy light~
+Form   edible poison magical instant_decay non_skinable sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material etheral
+MProg REPOP 926 100~
+MProg HPCNT 925 30~
+MProg REPOP 924 32~
+END
+
+#922
+Name rotting corpe zombie~
+ShortD a rotting zombie~
+LongD A rotting zombie is roaming the castle.~
+Desc This disgusting creature may once have been a real live human, but now is 
+little more than an undead shell of rotting flesh.  Chunks of flesh are torn 
+out of the body in various place, exposing the bones beneath, and the stench 
+is unbelieveable.
+~
+Race human~
+Align -2 -3
+XPMod 110
+Level 88
+Hitroll 2
+HitDice 9d12+430
+ManaDice 9d12+560
+DamDice 10d10+45
+DamType chomp
+AC -580 -580 -580 -475
+Wealth 0
+Act    npc no_tame aggressive stay_area undead~
+Off    bash~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#923
+Name mysterious elven swordsman~
+ShortD an elven swordsman~
+LongD A mysterious elven swordsman is here.~
+Desc ~
+Race elf~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType punch
+AC -850 -850 -850 -688
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt~
+Act2   allskills~
+AffBy  detect_hidden infrared~
+AffBy2 vicegrip~
+Off    bash berserk disarm dodge fast kick dirt_kick parry~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material human
+END
+
+#0
+
+
+
+#OBJECTS
+#920
+Name coat rack~
+Short a `#`ycoat`^ rack~
+Desc A broken `#`ywooden`^ coat rack stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 40 0 0 30 40
+Weight 10
+Material wood~
+Extra    nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#921
+Name ice stair stairway step elegantly~
+Short a step of an elegantly carved `#`Ci`Wc`Ce`^ stairway~
+Desc An elegantly carved ice stairway leads up here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 30000 BEHR 100 100
+Weight 90
+Material unknown~
+Extra    glow magic nonmetal nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#922
+Name portrait angels~
+Short a portrait of an angel~
+Desc Portraits hang here along the walls, depicting angels.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#923
+Name portrait demons~
+Short a portrait of a demon~
+Desc Portraits hang here along the walls, depicting various demons.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#924
+Name portrait liches~
+Short a portrait of various liches~
+Desc Portraits of various liches, hangs here on the walls.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#925
+Name portrait dragons~
+Short a portrait of dragons~
+Desc Portraits of several dragons is here, hanging on the walls.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#926
+Name statue wod~
+Short a crumbled statue of `#`sWod`^~
+Desc A crumbled statue of `#`sWod`^ stands here covered in cobwebs.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 5000 Q 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#927
+Name statue golem~
+Short a `#`sdecapitated`^ statue of a granite golem with broad shoulders~
+Desc A `#`sdecapitated`^ statue of a granite golem stands here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#928
+Name red instruments~
+Short a `#`Rred`^ intrument~
+Desc Assorted `#`Rred`^ instruments are here, lining the walls and any other available surface.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 100 100
+Weight 20
+Material unknown~
+Extra2   nodecay~
+End
+
+#929
+Name table small black~
+Short a small black table~
+Desc A small black table stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30 ACE 0 30 40
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#930
+Name oak bookshelf shelf~
+Short an `#`yoak`^ bookshelf~
+Desc A small `#`ybookshelf`^ made of `#`yoak`^ stands here covered in dust.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     no_sac~
+End
+
+#931
+Name rotting bed~
+Short a rotting bed~
+Desc An old bed covered in mold is rotting here.~
+Level 1
+ItemType furniture~
+Cost 9900
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK -75 -200
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#932
+Name belt of many pouches~
+Short `#`yBelt of Many `RP`rouches`^~
+Desc `#`yA Belt with Many `RP`rouches`^ is lying here`^.~
+Level 25
+ItemType container~
+Cost 700
+Durability 5
+Asize 3
+Rsize 50
+Values 1000 0 0 500 50
+Weight 3
+Material unknown~
+Extra    magic burnproof~
+Wear     take waist~
+End
+
+#0
+
+
+
+#ROOMS
+#920
+Name Entrance to the Castle~
+Desc The cold and icy pathway leads inside the large castle.  The doors swing on 
+their hinges, broken by an unknown force.  Buried deep in the snow is are 
+the skeletal remains of what appears to be a guard.  
+~
+Sector inside~
+Exit north 921
+EKeywords door~
+Exit south 52965
+End
+
+
+#921
+Name Blasted Ice Room~
+Desc The entire room is made of ice, which appears to have been melted at some 
+point.  Dust covers the floor, with only the small footprints of rats and 
+your own in it.  The remains of a broken chair lie in the corner, and a 
+large iron door lies to the north.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 922
+EFlags door closed~
+EKeywords door~
+Exit south 920
+End
+
+
+#922
+Name Icy Welcome Room~
+Desc A large stain of ancient blood covers the entire floor.  A couch sits in the 
+center of the room, the cushions destroyed by decay and time.  There is a 
+chill in the air as the entire room appears to have been carved from solid 
+ice.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 924
+Exit east 923
+Exit south 921
+EFlags door closed~
+Exit west 925
+End
+
+
+#923
+Name `#`BBlue Base`^~
+Desc . This room is COMPLETLY blue. There isn't anything in this room but the blue 
+stairs look interesting. The stairs lead up and there are open doors to the 
+north and west. 
+~
+Sector inside~
+Exit north 926
+Exit west 922
+Exit up 927
+End
+
+
+#924
+Name Landing~
+Desc This room has one noticable part about it and it is the elegantly carved 
+stairs.  They lead up to the Master's bedroom.  There are also the open 
+exits of north, south, east and west.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 931
+Exit east 926
+Exit south 922
+Exit west 928
+Exit up 930
+End
+
+
+#925
+Name `#`GGreen Base`^~
+Desc This room is COMPLETLY green. There isn't anything in this room but the 
+green stairs look interesting. The stairs lead up and there are open doors 
+to the north and east. 
+~
+Sector inside~
+Exit north 928
+Exit east 922
+Exit up 929
+End
+
+
+#926
+Name Room of Angels~
+Desc This is a beautiful room when you enter you notice a sad music playing in 
+the air but you do not see any instruments or people to play them. This room 
+has many portraits of angels and the people they were before they became 
+angels. the exits you see are to the north, south and west. 
+~
+Sector inside~
+Exit north 935
+Exit south 923
+Exit west 924
+End
+
+
+#927
+Name `#`BBlue look out Tower`^~
+Desc This is a small tower that can see all for not such a large area but it can see on coming people or creatures before it makes it to the entry. the only exit in this room is down
+~
+Sector inside~
+Exit down 923
+End
+
+
+#928
+Name Room of Demons~
+Desc This is a beautiful room when you enter you notice a sad music playing in the air but you do not see any instruments or people to play them. This room has many portraits of demons and the people they were before they became the wicked form they are known as now. the exits you see are to the north, south and east.
+~
+Sector inside~
+Exit north 932
+Exit east 924
+Exit south 925
+End
+
+
+#929
+Name `#`GGreen look out Tower`^~
+Desc This is a small tower that can see all for not such a large area but it can 
+see on coming people or creatures before it makes it to the entry. the only 
+exit in this room is down. 
+~
+Sector inside~
+Exit down 925
+End
+
+
+#930
+Name Master Wod's Bedroom~
+Desc This is the most wonderul room in the whole castle! It is very warm and 
+there is a black stone end table right beside...the BIGGEST bed you ever 
+have seen! The exits are north and down. 
+~
+Sector inside~
+Exit north 939
+Exit down 924
+End
+
+
+#931
+Name Passage Way~
+Desc There is nothing specail about this room at all. It simply leads to the 
+north, south, east, and west. 
+~
+Sector inside~
+Exit north 937
+Exit east 935
+Exit south 924
+Exit west 932
+End
+
+
+#932
+Name Room of Liches~
+Desc This is a beautiful room when you enter you notice a sad music playing in 
+the air but you do not see any instruments or people to play them. This room 
+has many portraits of lichs and the people they were before they became the 
+horrifying twisted beings that can scare the life out of you. the exits you 
+see are to the north, south and west. 
+~
+Sector inside~
+Exit north 933
+Exit east 931
+Exit south 928
+End
+
+
+#933
+Name `#`RRed Base`^~
+Desc . This room is COMPLETLY red. There isn't anything in this room but the red 
+stairs look interesting. The stairs lead up and there are open doors to the 
+south and east. 
+~
+Sector inside~
+Exit east 937
+Exit south 932
+Exit up 934
+End
+
+
+#934
+Name `#`RRed Music Room`^~
+Desc This is a small red room.  There are instruments floating in midair playing 
+themselves!  It appears that this is the room where all the sad sounding 
+music is coming from.  The only exit is down.  
+~
+Sector inside~
+Exit down 933
+End
+
+
+#935
+Name Room of Dragons~
+Desc This is a beautiful room when you enter you notice a sad music playing in 
+the air but you do not see any instruments or people to play them. This room 
+has many portraits of dragons and the people they were before they became 
+the massive creature that dragons are. the exits you see are to the north, 
+south and west. 
+~
+Sector inside~
+Exit north 936
+Exit south 926
+Exit west 931
+End
+
+
+#936
+Name `#`WWhite Base`^~
+Desc . This room is COMPLETLY ice white. There isn't anything in this room but the 
+white ice stairs look interesting. The stairs lead up and there are open 
+doors to the south and west. 
+~
+Sector inside~
+Exit south 935
+Exit west 937
+Exit up 938
+End
+
+
+#937
+Name Room of Golems~
+Desc ~
+Sector inside~
+Exit east 936
+Exit south 931
+Exit west 933
+End
+
+
+#938
+Name `#`WWhite Library`^~
+Desc This is a small library...  A place to work or study or even write a few 
+notes.  It is so small all that can fit beside you is the bookshelf leaning 
+against the wall.  The only exit in this room leads down.  
+~
+Sector inside~
+Exit down 936
+End
+
+
+#939
+Name Personal Bathroom~
+Desc This is a large bathroom with a big fountain in the centre of the room and a 
+shining marble toilet near the corner. the only exit is off to the south. 
+~
+Sector inside~
+Exit south 930
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 921 spec_breath_acid
+M 922 spec_cast_undead
+S
+
+
+
+#RESETS2
+M 0 920 1 920 1
+O 0 920 -1 921
+O 0 719 -1 921
+M 0 922 20 922 2
+M 0 921 1 924 1
+E 0 21 -1 light~
+E 0 7346 -1 feet~
+E 0 12009 -1 torso~
+E 0 12036 -1 floating~
+E 0 29600 -1 wielded~
+E 0 685 -1 second~
+O 0 921 -1 924
+O 0 922 -1 926
+O 0 923 -1 928
+M 0 922 20 929 2
+O 0 931 -1 930
+O 0 929 -1 930
+P 0 2000 3 929 3
+O 0 924 -1 932
+M 0 922 20 934 2
+O 0 928 -1 934
+O 0 925 -1 935
+O 0 927 -1 936
+M 0 922 20 937 2
+O 0 926 -1 937
+M 0 922 20 938 2
+O 0 930 -1 938
+O 0 6135 -1 939
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#926
+title Load potions~
+author Ixliam~
+code mob oload 25201
+wear belt
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+open belt
+put all belt
+cackle
+~
+disabled false
+last_editor Reath~
+last_editdate 1108307435
+END
+
+#925
+title Quaff Heal~
+author Ixliam~
+code get potion belt
+quaff potion
+mob echo The sound of $I cackling echoes in the air!
+mob echo The sound of $I cackling echoes in the air!
+~
+disabled false
+last_editor Reath~
+last_editdate 1117574779
+END
+
+#924
+title Load Serpent Bracelet~
+author Ixliam~
+code mob oload 5097
+wear bracelet
+mob oload 25201
+wear belt
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+mob oload 2552
+open belt
+put all belt
+cackle
+~
+disabled false
+last_editor Reath~
+last_editdate 1108307198
+END
+
+#923
+title Speak Password~
+author Ixliam~
+code mob seeall
+language native
+emote opens the large doors and bows before you.
+mob transfer $n 921
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057426794
+END
+
+#921
+title Enter North~
+author Ixliam~
+code mob seeall
+language native
+if isimmort $n
+ emote opens the large doors and bows before you.
+ mob transfer $n 921
+endif
+if name $n Wod
+ emote opens the large doors and bows before you.
+ mob transfer $n 921
+break
+endif
+emote blocks your entrance to the north.
+sayto $n I said you weren't welcome, now beat it.
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057428295
+END
+
+#920
+title Entrance Greeting~
+author Ixliam~
+code mob seeall
+language native
+if name $n Raims
+ sayto $n Hey Beavis, your not allowed in here, dorkwad.
+ sayto $n Now get lost and don't come back.
+ echoat $n The guard picks you up and throws you a long way.
+ echoaround $n The guard picks Raims up and throws him far into the air.
+mob transfer $n 3000
+break
+endif
+if isimmort $n
+ sayto $n Greetings, Great One.
+ bow $n
+break
+endif
+if name $n Wod
+ sayto $n Greetings, Baron Wod.
+ bow $n
+ break 
+endif
+sayto $n Your not welcome here.
+sayto $n What's the password ?
+glare $n
+ 
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1057427794
+END
+
+#0
+
+
+#$

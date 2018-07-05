@@ -1,0 +1,1623 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Arachnid~
+ShortName   Arachnid~
+Builders    none~
+Credits     Nakasha~
+VNUMs       48200 48299
+LComment    `#`R[ 91-130]`^
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#48200
+Name black widow spider~
+ShortD the `#`sBla`rc`sk Wi`rd`sow`^~
+LongD A Black Widow Spider lurks here waiting for her next prey.~
+Desc ~
+Race scorpion~
+Align 0 -3
+XPMod 120
+Level 98
+Hitroll 0
+HitDice 11d14+525
+ManaDice 5d9+300
+DamDice 11d14+64
+DamType sting
+AC -790 -790 -790 -671
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area thief~
+Act2   no_random_obj~
+Off    area_attack bash disarm parry~
+Imm    summon charm~
+Res    cold~
+Vuln   fire lightning~
+Form   poison instant_decay non_skinable spider~
+Part   head legs heart brains guts tentacles fangs tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg REPOP 48200 35~
+END
+
+#48201
+Name jumping spider~
+ShortD a `#`yju`smp`yin`sg s`ypi`sde`yr`^~
+LongD A jumping spider leaps at you from nowhere!~
+Desc ~
+Race scorpion~
+Align 0 -2
+XPMod 115
+Level 91
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType charge
+AC -650 -650 -650 -533
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  invisible dark_vision~
+Off    dodge tail crush~
+Imm    summon charm~
+Res    lightning mental~
+Vuln   cold~
+Form   poison non_skinable spider~
+Part   head legs brains guts tentacles tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48202
+Name wolf spider~
+ShortD a `#`ywo`sl`yf spi`sd`yer`^~
+LongD A wolf spider waits here.~
+Desc ~
+Race scorpion~
+Align 0 -3
+XPMod 115
+Level 86
+Hitroll 0
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+53
+DamType none
+AC -680 -680 -680 -557
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+Act2   no_random_obj~
+Off    dodge circle~
+Imm    summon charm slash~
+Res    holy light~
+Vuln   lightning acid~
+Form   non_skinable spider~
+Part   head legs heart brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48203
+Name huntsman spider~
+ShortD the `#`WHu`sn`yts`sm`Wan`^~
+LongD A huntsman spider creeps here, looking for it's next victim.~
+Desc ~
+Race scorpion~
+Align 0 -1
+XPMod 115
+Level 83
+Hitroll 0
+HitDice 11d14+505
+ManaDice 11d14+692
+DamDice 11d13+60
+DamType sting
+AC -750 -750 -750 -600
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  haste~
+Off    berserk kick crush~
+Imm    summon charm~
+Res    cold~
+Vuln   fire~
+Form   non_skinable spider~
+Part   head legs heart brains guts fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48204
+Name guardian spider~
+ShortD a guardian~
+LongD A guardian spider is here.~
+Desc ~
+Race scorpion~
+Align 0 -2
+XPMod 115
+Level 81
+Hitroll 0
+HitDice 11d14+505
+ManaDice 11d14+692
+DamDice 11d13+60
+DamType crush
+AC -750 -750 -750 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+Off    dodge crush~
+Imm    summon charm~
+Res    bash~
+Vuln   acid~
+Form   poison non_skinable spider~
+Part   head arms legs brains guts tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48205
+Name prisoner draconian~
+ShortD a draconian prisoner~
+LongD A beaten draconian prisoner is here.~
+Desc ~
+Race draconian~
+Align -2 -1
+XPMod 110
+Level 93
+Hitroll 0
+HitDice 10d14+495
+ManaDice 10d14+675
+DamDice 11d13+58
+DamType beating
+AC -730 -730 -730 -657
+Wealth 1860
+Act    npc no_tame stay_area~
+Off    tail~
+Res    cold lightning~
+Vuln   holy silver~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48206
+Name slythris prisoner~
+ShortD a slythris prisoner~
+LongD A slythris prisoner lies here, weakened.~
+Desc ~
+Race slythris~
+Align 0 0
+XPMod 115
+Level 91
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+630
+DamDice 10d13+54
+DamType punch
+AC -690 -690 -690 -558
+Wealth 1820
+Act    npc no_tame stay_area~
+Off    dirt_kick parry~
+Imm    summon charm~
+Res    light~
+Vuln   energy disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48207
+Name harvestman spider~
+ShortD a `#`YH`sa`Yrv`ses`Ytm`sa`Yn`^ spider~
+LongD A harvestman roams here.~
+Desc ~
+Race scorpion~
+Align 0 -2
+XPMod 115
+Level 82
+Hitroll 0
+HitDice 10d14+490
+ManaDice 10d14+667
+DamDice 11d12+57
+DamType none
+AC -720 -720 -720 -576
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+Off    area_attack parry tail~
+Imm    summon charm~
+Res    cold~
+Vuln   fire~
+Form   poison non_skinable spider~
+Part   head legs brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 48201 15~
+END
+
+#48208
+Name hairy tarantula~
+ShortD a hairy `#`star`want`sula`^~
+LongD A hairy tarantula crawls about here.~
+Desc ~
+Race scorpion~
+Align 0 -3
+XPMod 115
+Level 107
+Hitroll 0
+HitDice 11d15+535
+ManaDice 11d15+743
+DamDice 12d14+66
+DamType bite
+AC -810 -810 -810 -712
+Wealth 0
+Act    npc no_tame stay_area~
+Off    berserk dodge~
+Imm    summon charm~
+Res    mental~
+Vuln   slash~
+Form   poison non_skinable spider~
+Part   head legs heart brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48209
+Name brown recluse~
+ShortD a `#`ybrown `sr`yecluse`^~
+LongD A brown recluse scurries here.~
+Desc ~
+Race scorpion~
+Align 0 -3
+XPMod 115
+Level 89
+Hitroll 0
+HitDice 10d14+495
+ManaDice 10d14+675
+DamDice 11d13+58
+DamType crush
+AC -730 -730 -730 -642
+Wealth 0
+Act    npc no_tame stay_area~
+Off    disarm kick parry crush~
+Imm    summon charm~
+Res    lightning acid~
+Vuln   bash fire~
+Form   poison non_skinable spider~
+Part   head legs heart brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48210
+Name dwarven warrior~
+ShortD a dwarven warrior~
+LongD A dwarven warrior is here, caught in the web.~
+Desc ~
+Race dwarf~
+Align 0 0
+Level 94
+Hitroll 0
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+53
+DamType beating
+AC -680 -680 -680 -544
+Wealth 1860
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared calm plague weaken~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48211
+Name drained elven noble~
+ShortD a drained elven noble~
+LongD This elven noble appears drained of all blood, but is amazingly enough still alive.~
+Desc ~
+Race elf~
+Align 0 0
+XPMod 115
+Level 91
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slap
+AC -650 -650 -650 -552
+Wealth 1820
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_hidden infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48212
+Name dagorst woman~
+ShortD a dagorst woman~
+LongD A captured dagorst woman is here, completely covered in webbing.~
+Desc ~
+Race dagorst~
+Align 0 0
+XPMod 110
+Level 91
+Hitroll 0
+HitDice 9d13+450
+ManaDice 9d13+600
+DamDice 10d12+48
+DamType slap
+AC -630 -630 -630 -510
+Wealth 1820
+Act    npc dont_wander no_tame stay_area~
+Off    dodge parry trip~
+Imm    summon charm~
+Res    energy~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#48200
+Name skull key~
+Short a `#`Wskull `skey`^~
+Desc A skull key lies here, glowing slightly.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow rotdeath nolocate meltdrop~
+Wear     take~
+End
+
+#48201
+Name a dusty chest~
+Short a dusty chest~
+Desc A chest is here, obscured by dust and webbing.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 ABCD 48200 50 0
+Weight 0
+Material unknown~
+End
+
+#48202
+Name a pile of gold~
+Short a pile of `#`Ygold`^~
+Desc A pile of gold lies here temptngly.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1342 42 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#48203
+Name tusk black widow~
+Short `#`sTusk`^ of the `sBla`rc`sk Wi`rd`sow`^~
+Desc A tusk of the black widow lies here, it's point gleaming with venom.~
+Level 91
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 8 10 shbite HLN
+Weight 0
+Material unknown~
+Extra    glow nonmetal nolocate norestring~
+Wear     take wield~
+End
+
+#0
+
+
+
+#ROOMS
+#48200
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48209
+Exit east 48210
+Exit south 48211
+Exit west 48212
+Exit down 48265
+EFlags door closed~
+End
+
+
+#48201
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit east 48213
+Exit west 48210
+Exit southwest 48202
+Exit northwest 48208
+End
+
+
+#48202
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit northeast 48201
+Exit southwest 48203
+End
+
+
+#48203
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48211
+Exit south 48222
+Exit northeast 48202
+Exit northwest 48204
+End
+
+
+#48204
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit southeast 48203
+Exit northwest 48205
+End
+
+
+#48205
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit east 48212
+Exit west 48219
+Exit northeast 48206
+Exit southeast 48204
+End
+
+
+#48206
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit northeast 48207
+Exit southwest 48205
+End
+
+
+#48207
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48216
+Exit south 48209
+Exit southeast 48208
+Exit southwest 48206
+End
+
+
+#48208
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit southeast 48201
+Exit northwest 48207
+End
+
+
+#48209
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48207
+Exit south 48200
+Exit southeast 48210
+Exit southwest 48212
+End
+
+
+#48210
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit east 48201
+Exit west 48200
+Exit southwest 48211
+Exit northwest 48209
+End
+
+
+#48211
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48200
+Exit south 48203
+Exit northeast 48210
+Exit northwest 48212
+End
+
+
+#48212
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+Sector air~
+Exit east 48200
+Exit west 48205
+Exit northeast 48209
+Exit southeast 48211
+End
+
+
+#48213
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit east 48226
+Exit west 48201
+Exit southwest 48224
+Exit northwest 48214
+End
+
+
+#48214
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit southeast 48213
+Exit northwest 48215
+End
+
+
+#48215
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit southeast 48214
+Exit northwest 48216
+End
+
+
+#48216
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48227
+Exit south 48207
+Exit southeast 48215
+Exit southwest 48217
+End
+
+
+#48217
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit northeast 48216
+Exit southwest 48218
+End
+
+
+#48218
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit northeast 48217
+Exit southwest 48219
+End
+
+
+#48219
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit east 48205
+Exit west 48228
+Exit northeast 48218
+Exit southeast 48220
+End
+
+
+#48220
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit southeast 48221
+Exit northwest 48219
+End
+
+
+#48221
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit southeast 48222
+Exit northwest 48220
+End
+
+
+#48222
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+Sector air~
+Exit north 48203
+Exit south 48225
+Exit northeast 48223
+Exit northwest 48221
+End
+
+
+#48223
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit northeast 48224
+Exit southwest 48222
+End
+
+
+#48224
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit northeast 48213
+Exit southwest 48223
+End
+
+
+#48225
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit north 48222
+End
+
+
+#48226
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit west 48213
+End
+
+
+#48227
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit south 48216
+End
+
+
+#48228
+Name caught in the web~
+Desc You find yourself caught in a huge spider's web. Silken web clutches at you 
+as you make your precarious way around it, searching for your escape. Bodies 
+and what's left over can be seen here and there, their demise only too 
+obvious. Each movement you make shakes the web, letting your presence be 
+known to all that occupy this sticky trap. 
+~
+RoomFlags dark indoors~
+Sector air~
+Exit east 48219
+End
+
+
+#48229
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit up 48262
+Exit down 48230
+End
+
+
+#48230
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit up 48229
+Exit southwest 48231
+End
+
+
+#48231
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit northeast 48230
+Exit southeast 48232
+End
+
+
+#48232
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 48233
+Exit south 48254
+Exit down 48237
+Exit northwest 48231
+End
+
+
+#48233
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48236
+EFlags door closed locked~
+EKeyvnum 48200
+EKeywords webbing~
+Exit east 48234
+Exit west 48232
+End
+
+
+#48234
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48235
+EFlags door closed locked~
+EKeyvnum 48200
+EKeywords webbing~
+Exit west 48233
+End
+
+
+#48235
+Name a webbed cell~
+Desc . This cell is made completely of webbed spider silk. It covers every inch of 
+the small room and there seems to be no escaping. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 48234
+EFlags door closed locked~
+EKeyvnum 48200
+End
+
+
+#48236
+Name a webbed cell~
+Desc . This cell is made completely of webbed spider silk. It covers every inch of 
+the small room and there seems to be no escaping. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 48233
+EFlags door closed locked~
+EKeyvnum 48200
+End
+
+
+#48237
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit up 48232
+Exit down 48238
+End
+
+
+#48238
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 48239
+Exit up 48237
+End
+
+
+#48239
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 48240
+Exit south 48238
+End
+
+
+#48240
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 48241
+Exit south 48239
+End
+
+
+#48241
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit south 48240
+Exit up 48242
+End
+
+
+#48242
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit up 48243
+Exit down 48241
+End
+
+
+#48243
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the west as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 48244
+Exit down 48242
+End
+
+
+#48244
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the west as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 48243
+Exit west 48245
+End
+
+
+#48245
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the south as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 48244
+Exit south 48246
+End
+
+
+#48246
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the south as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 48245
+Exit south 48247
+End
+
+
+#48247
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the east as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 48246
+Exit east 48248
+End
+
+
+#48248
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the east as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 48249
+Exit west 48247
+End
+
+
+#48249
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the east as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 48250
+Exit west 48248
+End
+
+
+#48250
+Name a musty passage~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the north as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 48251
+Exit west 48249
+End
+
+
+#48251
+Name a dark passageway~
+Desc The path is difficult to continue on here, as each step seems to cling to 
+you forcing you to struggle on your way. A rustling sound can be heard on 
+towards the west as if something were crawling towards you. Something moves 
+in the webbing covering the walls and upon closer observation millions of 
+tiny spiders can be seen scurrying amongst it. 
+~
+RoomFlags no_mob~
+Sector cave~
+Exit south 48250
+Exit west 48252
+End
+
+
+#48252
+Name before the lair~
+Desc . Silken strands of web completely cover the entrance here. A lifeless clump 
+of bones seems to be in the corner, mummified by the suffocating web around 
+it. A quitness hums in the air expectantly, it's own silence as loud as a 
+scream. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 48251
+Exit west 48253
+End
+
+
+#48253
+Name the lair~
+Desc The smell of death fills this room, the rotting bones and tidbits left over 
+only making the nauseous odor worse. Overhead a bulbous sheer pouch can be 
+seen, it's surface seeming to ripple and move if studied long enough. Spider 
+silk covers every inch of the room with various animals and humanoids 
+skeletons remaining. 
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 48252
+End
+
+
+#48254
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debri can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48232
+Exit south 48255
+End
+
+
+#48255
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48254
+Exit southeast 48256
+End
+
+
+#48256
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48258
+EFlags door closed locked~
+EKeyvnum 48200
+Exit south 48257
+Exit northwest 48255
+End
+
+
+#48257
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit north 48256
+Exit south 48260
+End
+
+
+#48258
+Name a dark hall~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 48256
+EFlags door closed locked~
+EKeyvnum 48200
+Exit northeast 48259
+EFlags door closed~
+End
+
+
+#48259
+Name a deadend~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit southwest 48258
+EFlags door closed~
+End
+
+
+#48260
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48257
+Exit down 48261
+End
+
+
+#48261
+Name a dark entrance~
+Desc This dark opening is dank and musty, the stench of decay and death is almost 
+overpowering. The sound of crumbling bone and debris can be heard under foot 
+as you continue onward. A silver substance seems to cover every inch of 
+these walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit up 48260
+Exit down 53252
+End
+
+
+#48262
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit up 48263
+Exit down 48229
+End
+
+
+#48263
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 48264
+Exit down 48262
+End
+
+
+#48264
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48263
+Exit south 48265
+End
+
+
+#48265
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48264
+Exit south 48266
+Exit up 48200
+EFlags door closed~
+EKeywords webbing~
+End
+
+
+#48266
+Name a sticky path~
+Desc The stench of decay and death is almost overpowering in this narrow cave. 
+The sound of crumbling bone and debris can be heard under foot as you 
+continue onward. A silver substance seems to cover every inch of these 
+walls. Tendrils of it hang loosely from the ceiling, stirring in a 
+nonexistent breeze. It seems to clutch at you and cling. 
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 48265
+Exit down 48267
+End
+
+
+#48267
+Name the harvestman's horde~
+Desc You're trapped now. There seems to be no escaping from this large weaving of 
+web. You've had the unfortunate luck of being captured by the Harvestman. One 
+can only imagine what happens now. 
+~
+RoomFlags dark indoors nochannels nospeak noscan~
+Sector cave~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 48211 1 48204 1
+M 0 48208 3 48206 1
+M 0 48212 1 48208 1
+M 0 48202 5 48208 1
+M 0 48210 1 48210 1
+M 0 48209 3 48222 1
+M 0 48201 5 48223 1
+M 0 48204 5 48230 1
+M 0 48207 5 48231 1
+M 0 48203 5 48232 1
+M 0 48204 5 48233 1
+E 0 48200 -1 hold~
+M 0 48206 1 48235 1
+M 0 48205 1 48236 1
+M 0 48203 5 48238 1
+M 0 48207 5 48239 1
+M 0 48203 5 48240 1
+M 0 48203 5 48243 1
+M 0 48207 5 48244 1
+M 0 48204 5 48245 1
+M 0 48204 5 48249 1
+M 0 48200 1 48253 1
+M 0 48203 5 48256 1
+M 0 48204 5 48257 1
+O 0 48201 -1 48259
+P 0 48202 1 48201 1
+M 0 48207 5 48262 1
+M 0 48207 5 48264 1
+M 0 48204 5 48265 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#48201
+title Harvestman Spider Grabbing~
+author Echmoro~
+code mob seeall
+mob stun $n 6
+mob echoat $n You are grabbed by the Harvestman Spider and flung into its horde.
+mob echoaround $n $n is grabbed by the Harvestman Spider and flung into its horde. Better run, you could be next!
+mob silently mob transfer $n 48267
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1079043757
+END
+
+#48200
+title tusk repop~
+author Nakasha~
+code mob oload 48203
+wear all
+~
+disabled false
+last_editor Nakasha~
+last_editdate 1078682134
+END
+
+#0
+
+
+#$

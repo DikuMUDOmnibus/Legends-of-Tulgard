@@ -1,0 +1,337 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-pre7
+Name        Mikaila's Home~
+ShortName   Mikaila's Home~
+Builders    delandria~
+VNUMs       3220 3299
+AFlags  noteleport noscry hidden~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+*LastSaved  Thu Dec 11 20:46:09 2003~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#3220
+Name rope tree swing~
+Short `#`wa `gtree `wswing`^~
+Desc `#`wa `gtree `wswing hanging from a large oak tree is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 1000 EH 120 120
+Weight 0
+Material rope~
+Extra    noremove nodegrade~
+ExtraDesc rope tree swing~
+A swing made of rope hangs from the tree.  It has a thick slab of wood for a 
+seat big enough for two people.  The rope is thick and sturdy.  
+~
+End
+
+#3221
+Name large white marble fountain~
+Short a large white marble fountain~
+Desc `#`wa large `Ww`wh`Wi`wt`We m`wa`Wr`wb`Wl`we fountain sits here.`^~
+Level 1
+ItemType fountain~
+Cost 1
+Asize 30000
+Rsize 50
+Values -1 -1 water 0 0
+Weight 30000
+Material marble~
+Extra    noremove nopurge nodegrade burnproof~
+End
+
+#3222
+Name rug comfy cushion pillow~
+Short a rug piled high with comfy pillows~
+Desc `#`wA large `rrug `wis spread out here piled high with `rcomfy pillows`w.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 3000 BEHK 130 130
+Weight 0
+Material cloth~
+Extra    nonmetal nolocate nodegrade~
+Extra2   nodecay~
+End
+
+#3223
+Name black leather sofa couch~
+Short `#`wa `sblack `wleather sofa`^~
+Desc `#`wa `sblack `wleather sofa sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 BEHJR 100 100
+Weight 400
+Material leather~
+Extra    nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#3224
+Name king size royal bed ~
+Short `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it`^~
+Desc `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 150 150
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#3225
+Name comfortable full sized bed~
+Short `#`wa `ccomfortable `wfull sized bed`^~
+Desc `#`wa `ccomfortable `wfull sized bed is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 120 120
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#3226
+Name large spa bathtub~
+Short `#`wa large `Cs`cp`Ca `wbathtub`^~
+Desc `#`wa large `Cs`cp`Ca `wbathtub sets in the middle of the room.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 6000 FILS 120 120
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade~
+Extra2   nodecay~
+End
+
+#3227
+Name long rectangular cherrywood table~
+Short `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable`^~
+Desc `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable is sitting here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#3220
+Name Courtyard~
+Desc You find yourself in the courtyard of a small estate.  The ground is covered 
+with cobblestones and there is a small trail leading to the east to a 
+garden.  In the middle of the courtyard you see a large fountain.  
+~
+RoomFlags light~
+Sector field~
+Owner mikaila rewand~
+Exit north 3222
+Exit east 3221
+Exit south 55721
+End
+
+
+#3221
+Name Flower Garden~
+Desc This flower garden is large, it is fully enclosed by tall green shrubs 
+creating privacy.  The grass is lush and bright green and there are flowers 
+of all different colored creating a rainbow look all around you.  In the 
+middle of the garden is a huge oak tree with a swing attached to it.  
+~
+RoomFlags light~
+Sector field~
+Exit west 3220
+End
+
+
+#3222
+Name Foyer~
+Desc You are just inside of the home in the foyer.  The living room is just north 
+of you.  There is a small table beside beside the door as well as a rack to 
+hang your cloak.  The floor is made of polished wood and the walls are 
+painted a soft rose color.  There is a black iron lantern hanging from the 
+ceiling for light.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 3223
+Exit south 3220
+End
+
+
+#3223
+Name Living Room~
+Desc The floor of the living room is made out of the same polished wood and the 
+walls are painted the same rose color.  There are several black iron 
+lanterns hanging from the ceiling for light as well as a large stone 
+fireplace.  A large area rug is covering the floor.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 3225
+Exit east 3226
+Exit south 3222
+Exit west 3224
+End
+
+
+#3224
+Name Library~
+Desc All four walls are covered from floor to ceiling with bookshelves and are 
+filled with different kinds of books.  The floor is made of polished wood 
+but you cannot see the walls because of the bookshelves.  There is a large 
+rug covering the wooden floor and several huge pillows to rest on in the 
+middle of the room.  Beside the pillows is a small table with a black iron 
+lantern resting on it.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 3223
+End
+
+
+#3225
+Name Kitchen~
+Desc The floor in the kitchen is made out of stone.  The walls are painted light 
+brown with gold accents.  There is a huge cookstove in the west corner of 
+the room and along the east wall is a long counter with a double sink.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 3223
+End
+
+
+#3226
+Name Hallway~
+Desc The hallway is short and runs from the living room to the bedrooms.  The 
+floor is made out of the same polished wood and the walls are painted the 
+same rose color.  There is a small black lantern hanging from the ceiling.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 3227
+Exit east 3229
+Exit south 3228
+Exit west 3223
+End
+
+
+#3227
+Name Master Bedroom~
+Desc The floor is made out of polished wood and there is a thick black carpet 
+covering it.  The walls are painted a dark rose color with silver accents.  
+The bed rests in the east corner of the room beside a large bay window.  
+There is a footchest at the end of the bed as well as a tall cherrywood 
+armoire in the west corner of the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 3226
+End
+
+
+#3228
+Name Bedroom~
+Desc The floor is made of polished wood but is covered in a thick black carpet.  
+The walls are painted a soft blue with gold accents.  There is a full sized 
+bed in the east corner of the room as well as a tall armoire made out of 
+cherry wood.  There is a full length mirror hanging on the wall beside it.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 3226
+End
+
+
+#3229
+Name Bathroom~
+Desc The bathroom is almost as large as the bedrooms.  The floor is made out of 
+black and white marble that extends halfway up the wall.  The wall is 
+painted white the rest of the way up.  There is a huge skylight on the 
+ceiling letting you see the sky.  There are several small lanterns hanging 
+on the walls for other light.  In the west corner of the room there is a 
+double 'his & hers' style sink and also a stand up shower.  The toilet is 
+hidden on the east wall behind a small wall.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 3226
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 3221 -1 3220
+O 0 3220 -1 3221
+O 0 3223 -1 3223
+O 0 3222 -1 3224
+O 0 3224 -1 3227
+O 0 3225 -1 3228
+O 0 3226 -1 3229
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,1694 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Crypt~
+ShortName   The Crypt~
+Builders    None~
+VNUMs       2900 2999
+LComment    `#`C[ 15- 50]`^
+Security    9
+Colour      c~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#2901
+Name vicar~
+ShortD the Vicar~
+LongD The vicar sleeps happily here, better not wake him up.~
+Desc The vicar look happy when he sleeps, better not wake him.
+~
+Race human~
+Align -3 3
+XPMod 110
+Level 48
+Hitroll 3
+HitDice 5d8+270
+ManaDice 2d5+40
+DamDice 6d6+17
+DamType none
+AC -180 -180 -180 -162
+Wealth 480
+Act    npc dont_wander cleric warrior~
+AffBy  sanctuary protect_evil~
+Off    dodge~
+Imm    holy~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2902
+Name nun~
+ShortD a Nun~
+LongD A nun smiles at you. ~
+Desc The nun smiles and looks back at you.
+~
+Race human~
+Align -3 3
+Level 25
+Hitroll -1
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+6
+DamType none
+AC -70 -70 -70 -57
+Wealth 250
+Act    npc dont_wander cleric~
+AffBy  slow~
+Off    disarm assist_align~
+Imm    holy~
+Res    light~
+Vuln   slash negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 2902 100~
+END
+
+#2903
+Name Settra tomb king~
+ShortD settra the Tomb King~
+LongD The Tomb King stands here looking at you behind his rotting bandage.~
+Desc Those bandages are becoming a bit old, not mentioning his breath, phew!
+~
+Race human~
+Align -1 -3
+Level 50
+Hitroll 3
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType pound
+AC -200 -200 -200 -160
+Wealth 500
+Act    npc dont_wander undead warrior~
+AffBy  detect_invis dark_vision~
+Off    area_attack bash berserk parry crush~
+Imm    poison disease drowning~
+Res    cold~
+Vuln   fire holy~
+Form   edible sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2904
+Name Heinrich count~
+ShortD heinrich Count of Death~
+LongD `GHeinrich The Count of Death draws his weapon and laughs.`x~
+Desc Heinrich looks back at you with his terrible green eyes.
+~
+Race vampire~
+Align 2 -2
+XPMod 110
+Level 50
+Hitroll 5
+HitDice 5d9+275
+ManaDice 4d5+95
+DamDice 6d6+17
+DamType pierce
+AC -190 -190 -190 -171
+Wealth 500
+Act    npc dont_wander no_tame undead mage warrior~
+AffBy  detect_invis detect_hidden infrared haste dark_vision regeneration~
+Off    bash disarm dodge fast kick dirt_kick parry trip~
+Imm    summon charm sleep illusion hunger thirst fear~
+Res    negative~
+Vuln   fire holy light~
+Form   poison sentient undead biped~
+Part   head arms legs heart brains hands feet fingers ear eye fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg DELAY 2901 100~
+MProg GRALL 2900 100~
+END
+
+#2905
+Name skeleton~
+ShortD a Skeleton~
+LongD The skeleton stands here grinning and champing with its teeth.~
+Desc The skeleton shouts and points at you with a bony finger.
+~
+Race human~
+Align -1 -1
+Level 25
+Hitroll 5
+HitDice 4d5+115
+ManaDice 2d5+10
+DamDice 2d10+7
+DamType bite
+AC -70 -70 -70 -62
+Wealth 250
+Act    npc scavenger aggressive undead warrior~
+Off    disarm dodge dirt_kick parry~
+Imm    poison disease drowning~
+Res    pierce~
+Vuln   bash~
+Form   edible non_skinable sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2906
+Name mummy~
+ShortD a Mummy~
+LongD A mummy stands here breathing through its decomposing chest.~
+Desc The rotting veins creaks as the mummy turns his head to look at you 
+with its empty eye sockets.
+~
+Race human~
+Align -3 -1
+Level 38
+Hitroll 1
+HitDice 5d6+230
+ManaDice 2d5+25
+DamDice 5d6+12
+DamType none
+AC -130 -130 -130 -111
+Wealth 380
+Act    npc undead warrior~
+AffBy  dark_vision~
+Off    bash crush~
+Imm    poison~
+Res    disease~
+Vuln   holy light~
+Form   edible sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2907
+Name zombie~
+ShortD a Zombie~
+LongD A Zombie walks towards you with its hands aiming for your throat.~
+Desc The sight of worms burrowing through its rotting eyes makes you want 
+to run away.
+~
+Race human~
+Align -3 0
+Level 18
+Hitroll -1
+HitDice 3d5+82
+ManaDice 2d4+5
+DamDice 2d7+4
+DamType none
+AC -35 -35 -35 -31
+Wealth 180
+Act    npc undead warrior~
+AffBy  dark_vision~
+Off    berserk dodge crush assist_all~
+Imm    poison disease~
+Res    poison disease~
+Vuln   acid poison~
+Form   edible sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2908
+Name bat~
+ShortD a Bat~
+LongD A giant bat dives towards you showing his sharp white teeth.~
+Desc The giant bat almost the size of a dog, with white razor sharp teeth
+and black leathery wings. The bat dives at you neck! Take cover!
+~
+Race bat~
+Align -2 0
+Level 28
+Hitroll 1
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType bite
+AC -85 -85 -85 -75
+Wealth 280
+Act    npc~
+Act2   no_random_obj~
+AffBy  flying dark_vision~
+Off    berserk dodge fast~
+Res    poison~
+Vuln   light sound~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#2909
+Name snake~
+ShortD a Snake~
+LongD A long enormous snake slithers across the floor in hunt of rats.~
+Desc The snake looks back at you with its pale eyes.
+~
+Race snake~
+Align -2 0
+Level 24
+Hitroll -1
+HitDice 4d5+105
+ManaDice 4d5+105
+DamDice 2d10+6
+DamType bite
+AC -65 -65 -65 -55
+Wealth 240
+Act    npc~
+Act2   no_random_obj~
+AffBy  haste dark_vision~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2910
+Name spider~
+ShortD a Spider~
+LongD A giant hairy spider hangs in a web just above you.~
+Desc The spider looks back at you with its eight eyes.
+~
+Race unique~
+Align -1 0
+Level 18
+Hitroll 5
+HitDice 3d5+79
+ManaDice 3d5+75
+DamDice 2d7+4
+DamType bite
+AC -35 -35 -35 -29
+Wealth 180
+Act    npc~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Res    poison~
+Vuln   fire drowning~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#2911
+Name black rat~
+ShortD a Black Rat~
+LongD A giant black rat scuttles over the floor as you approaches.~
+Desc The rat looks back at you with his red eyes, before showing its yellow teeth.
+~
+Race unique~
+Align 0 0
+Level 17
+Hitroll -1
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType bite
+AC -30 -30 -30 -24
+Wealth 170
+Act    npc scavenger~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Res    poison drowning~
+Vuln   fire cold~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#2912
+Name ghost~
+ShortD a Ghost~
+LongD A ghost is hovering before you making a scary grimace. ~
+Desc Oh well that's it, you'll have nightmares for the rest of your life.
+~
+Race human~
+Align 2 -1
+Level 22
+Hitroll 1
+HitDice 4d5+100
+ManaDice 2d5+5
+DamDice 4d4+6
+DamType none
+AC -55 -55 -55 -47
+Wealth 220
+Act    npc undead warrior~
+AffBy  invisible pass_door dark_vision~
+Off    bash berserk disarm dodge fade parry assist_all~
+Imm    summon charm cold disease~
+Res    charm weapon fire cold~
+Vuln   magic holy~
+Form   edible non_skinable sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2913
+Name bell-ringer~
+ShortD the Bell-ringer~
+LongD The bell-ringer stands here waiting eagerly to strike the bell.~
+Desc The bell ringer looks a lot like Marty Feldman, if you know who that is...
+~
+Race human~
+Align 3 1
+Level 38
+Hitroll 1
+HitDice 5d6+230
+ManaDice 2d5+25
+DamDice 5d6+12
+DamType pound
+AC -130 -130 -130 -109
+Wealth 380
+Act    npc wimpy warrior~
+Off    bash berserk disarm dodge trip assist_guard~
+Imm    summon charm~
+Res    acid~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 2903 100~
+END
+
+#2914
+Name necromancer~
+ShortD a Necromancer~
+LongD A necromancer stands here preparing to cast a spell on you.~
+Desc The necromancer's dark evil eyes examines you closely.
+~
+Race human~
+Align 3 -2
+Level 40
+Hitroll -1
+HitDice 5d6+230
+ManaDice 5d9+275
+DamDice 3d10+12
+DamType drain
+AC -133 -133 -133 -107
+Wealth 400
+Act    npc mage~
+AffBy  detect_invis dark_vision~
+Off    bash disarm dodge trip~
+Imm    negative~
+Res    holy~
+Vuln   pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2915
+Name stork~
+ShortD a large stork~
+LongD A large stork is defending his nest from intruders like you.~
+Desc The stork dives towards you in anger.
+~
+Race unique~
+Align -2 0
+Level 17
+Hitroll -1
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType peck
+AC -30 -30 -30 -24
+Wealth 170
+Act    npc dont_wander aggressive~
+AffBy  flying~
+Off    disarm~
+Vuln   fire~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2916
+Name ghoul~
+ShortD a ghoul~
+LongD A ghoul is leaning over a dead body, chewing on its head.~
+Desc The goul looks back at you and wants you as breakfast.
+~
+Race human~
+Align 0 -2
+Level 27
+Hitroll 1
+HitDice 4d5+115
+ManaDice 2d5+50
+DamDice 3d7+7
+DamType bite
+AC -75 -75 -75 -66
+Wealth 270
+Act    npc scavenger undead thief~
+AffBy  dark_vision~
+Off    berserk dodge~
+Imm    disease~
+Res    poison~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2917
+Name zombie dragon~
+ShortD the Zombie Dragon~
+LongD The zombie dragon lies here.~
+Desc The dragon looks at you with its empty eyes sockets,
+the sight almost makes you want to throw up.
+~
+Race dragonkin~
+Align 3 -2
+Level 50
+Hitroll 5
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType flbite
+AC -200 -200 -200 -168
+Wealth 500
+Act    npc dont_wander undead~
+AffBy  sanctuary infrared flying haste dark_vision slow~
+Off    area_attack bash disarm dodge parry~
+Imm    summon charm fire cold acid~
+Res    magic acid drowning~
+Vuln   cold~
+Form   edible sentient undead dragon~
+Part   head arms legs heart brains guts eye long_tongue wings tail claws horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#2918
+Name believer~
+ShortD a believer~
+LongD A believer sits here praying.~
+Desc The believer is too busy to notice you.
+~
+Race human~
+Align 2 3
+Level 21
+Hitroll -1
+HitDice 4d5+90
+ManaDice 4d5+90
+DamDice 4d4+5
+DamType none
+AC -50 -50 -50 -44
+Wealth 210
+Act    npc scavenger~
+Off    bash kick~
+Res    holy~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2919
+Name adventurer~
+ShortD an adventurer~
+LongD An adventurer just like you is here searching for treasures.~
+Desc The adventurer appears to be quite insane.
+~
+Race human~
+Align -2 1
+Level 38
+Hitroll 1
+HitDice 5d6+230
+ManaDice 2d5+25
+DamDice 5d6+12
+DamType pound
+AC -130 -130 -130 -117
+Wealth 380
+Act    npc wimpy warrior~
+Off    backstab bash berserk disarm dodge parry trip~
+Imm    summon~
+Res    bash~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg DELAY 2905 100~
+MProg GRALL 2904 100~
+END
+
+#2920
+Name gardener~
+ShortD the Gardener~
+LongD The gardener does some gardening.~
+Desc The gardener shows you one of his favorite flowers, awwww ain't it nice.
+~
+Race human~
+Align 1 3
+Level 36
+Hitroll 5
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 5d6+13
+DamType none
+AC -137 -137 -137 -120
+Wealth 400
+Act    npc dont_wander cleric~
+Off    bash disarm dodge crush~
+Imm    summon charm poison~
+Res    light~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2901
+Name sword bones~
+Short `#`wa Sword of `WB`wo`Wn`we`Ws`^~
+Desc A weapon made of yellow bone lies here.~
+Level 50
+ItemType weapon~
+Cost 1231
+Durability 5
+Condition 90
+Asize 25
+Rsize 50
+Values sword 4 12 slash G
+Weight 25
+Material bone~
+Extra    glow antigood~
+Wear     take wield~
+Affect modifier -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 hitroll 4 0
+End
+
+#2902
+Name mace vicar~
+Short `#`wThe `WVicar's `sMace`^~
+Desc A white mace with a cross on it lies here.~
+Level 50
+ItemType weapon~
+Cost 1234
+Durability 5
+Condition 90
+Asize 15
+Rsize 50
+Values mace 1 25 crush I
+Weight 15
+Material steel~
+Extra    glow bless antievil~
+Wear     take wield~
+Affect modifier -1 50 -1 mana 50 0
+End
+
+#2903
+Name sword bloodbane~
+Short `#`sThe `rBlood`sbane`^~
+Desc A black sword is lying in a pool of blood.~
+Level 55
+ItemType weapon~
+Cost 1324
+Durability 5
+Condition 90
+Asize 25
+Rsize 50
+Values sword 3 15 slash 0
+Weight 25
+Material steel~
+Extra    glow hum evil antigood~
+Wear     take wield~
+Affect modifier -1 55 -1 damroll 4 0
+Affect modifier -1 55 -1 hitroll 4 0
+End
+
+#2904
+Name club~
+Short a brass club~
+Desc A heavy looking club made of brass lies here.~
+Level 50
+ItemType weapon~
+Cost 500
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values mace 2 25 smash 0
+Weight 10
+Material brass~
+Wear     take wield~
+Affect modifier -1 50 -1 hp 2 0
+End
+
+#2905
+Name book bible holy scriptures~
+Short a book of holy scriptures~
+Desc A nice looking holy book lies here.~
+Level 5
+ItemType treasure~
+Cost 1234
+Durability 5
+Condition 90
+Asize 5
+Rsize 50
+Values B B B C 0
+Weight 5
+Material paper~
+Extra    antievil~
+Wear     take hold~
+Affect modifier -1 5 -1 presence 3 0
+End
+
+#2906
+Name scimitar~
+Short a rusty scimitar~
+Desc A rusty scimitar lies here.~
+Level 35
+ItemType weapon~
+Cost 1234
+Durability 5
+Condition 90
+Asize 15
+Rsize 50
+Values sword 1 19 cleave 0
+Weight 15
+Material steel~
+Wear     take wield~
+End
+
+#2907
+Name ring~
+Short heinrich's ring~
+Desc A great ruby ring with small bat wings set around it lies here.~
+Level 50
+ItemType treasure~
+Cost 782
+Durability 5
+Condition 90
+Asize 3
+Rsize 50
+Values AD AD AD AD 0
+Weight 3
+Material gold~
+Extra    antigood~
+Wear     take finger~
+Affect modifier -1 50 -1 empathy 4 0
+Affect modifier -1 50 -1 strength -1 0
+Affect modifier -1 50 -1 intuition 4 0
+End
+
+#2908
+Name flail~
+Short a rusty flail~
+Desc A rusty flail lies here.~
+Level 25
+ItemType weapon~
+Cost 200
+Durability 5
+Condition 90
+Asize 20
+Rsize 50
+Values flail 4 6 crush 0
+Weight 20
+Material steel~
+Extra    hum~
+Wear     take wield~
+End
+
+#2909
+Name mace~
+Short `#`wa `rr`su`rn`se `wcovered `smace`^~
+Desc A mace covered with lots of strange runes on it lies here.~
+Level 35
+ItemType weapon~
+Cost 500
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values mace 5 7 smash 0
+Weight 10
+Material steel~
+Extra    nodrop~
+Wear     take wield~
+Affect modifier -1 35 -1 hitroll 3 0
+End
+
+#2910
+Name armour death plate thorax~
+Short `#`sthe `sdeath plate`^~
+Desc The thorax of some giant bird lies here.~
+Level 50
+ItemType armor~
+Cost 5000
+Durability 5
+Condition 90
+Asize 15
+Rsize 50
+Values 12 12 12 12 0
+Weight 15
+Material bone~
+Extra    hum invis antigood~
+Wear     take torso~
+Affect modifier -1 50 -1 mana 50 0
+Affect modifier -1 50 -1 move 50 0
+End
+
+#2911
+Name key~
+Short a small golden key~
+Desc A small golden key lies here.~
+Level 5
+ItemType key~
+Cost 80
+Durability 5
+Condition 90
+Asize 3
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material gold~
+Extra    glow~
+Wear     take~
+End
+
+#2912
+Name holy symbol~
+Short `#`wa `Yg`yo`Yl`yd`Ye`yn `Wh`wo`Wl`wy `wsymbol`^~
+Desc A golden holy symbol lies here.~
+Level 30
+ItemType treasure~
+Cost 800
+Durability 5
+Condition 90
+Asize 5
+Rsize 50
+Values BC BC BC ABC 0
+Weight 5
+Material unknown~
+Extra    glow antievil~
+Wear     take neck~
+Affect modifier -1 30 -1 quickness 2 0
+Affect modifier -1 30 -1 mana 30 0
+End
+
+#2913
+Name key~
+Short a rusty key~
+Desc A rusty key lies here.~
+Level 5
+ItemType key~
+Cost 0
+Durability 5
+Condition 90
+Asize 3
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material steel~
+Wear     take~
+End
+
+#2914
+Name mushroom~
+Short white mushrooms~
+Desc Some small white mushrooms are here.~
+Level 5
+ItemType food~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 5 0 0 A 0
+Weight 1
+Material unknown~
+Wear     take~
+End
+
+#2915
+Name sword hope~
+Short `#`wthe `ssword `wof `Rh`rope`^~
+Desc A sword with a heart at it's pommel lies here.~
+Level 35
+ItemType weapon~
+Cost 765
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values sword 2 15 slice G
+Weight 10
+Material steel~
+Extra    glow antievil~
+Wear     take wield~
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 hitroll 2 0
+End
+
+#2916
+Name secateurs~
+Short a pair of secateurs~
+Desc A pair of secateurs lies here.~
+Level 35
+ItemType weapon~
+Cost 400
+Durability 5
+Condition 90
+Asize 5
+Rsize 50
+Values exotic 4 8 slice 0
+Weight 5
+Material unknown~
+Extra    antievil~
+Wear     take wield~
+Affect modifier -1 35 -1 hitroll 3 0
+Affect modifier -1 35 -1 mana 30 0
+End
+
+#0
+
+
+
+#ROOMS
+#2901
+Name Church entrance.~
+Desc You are stand at an open gate. Beyond the gate a path leads eastward 
+to a small stone church with a square tower and a slate roof. A rare 
+species of ivy crawls over sections of the wall framing the coloured 
+glass windows with ragged patches of green. To the south you see a 
+ancient churchyard with its tombstones and white monuments.
+~
+RoomFlags safe~
+Sector field~
+Exit east 2902
+EKeyvnum -1
+EDesc A path towards the church goes to the east
+~
+Exit south 2930
+EKeyvnum -1
+EDesc A path stretches south to the churchyard
+~
+Exit west 3098
+End
+
+
+#2902
+Name Path.~
+Desc You are standing in the path between the gate and the church.
+~
+Sector field~
+Exit east 2903
+EKeyvnum -1
+EDesc A path 
+~
+Exit west 2901
+EKeyvnum -1
+EDesc A path goes to the church entrance
+~
+End
+
+
+#2903
+Name Vestibule~
+Desc You are standing in the vestibule of the church. To the west the 
+way leads out to a path. To the east some doors lead out to the nave 
+and to the north. The odor of candle wax and wood polish flows out 
+from the nave.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2931
+EFlags door closed~
+EKeyvnum -1
+EDesc To the stairs
+~
+Exit east 2904
+EKeyvnum -1
+EDesc Entrance to the nave
+~
+Exit west 2902
+EKeyvnum -1
+EDesc A path leads out of the church
+~
+End
+
+
+#2904
+Name West Nave.~
+Desc You are standing in the west end of the nave, coloured light filters 
+through the windows and splashes among pews and columns. Most of the 
+walls are covered by ancient wall paintings picturing all sorts of 
+heavenly creatures.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 2905
+EKeyvnum -1
+EDesc The east nave
+~
+Exit west 2903
+EKeyvnum -1
+EDesc Entrance to the vestibule
+~
+End
+
+
+#2905
+Name East Nave.~
+Desc You are standing in the east end of the nave.
+A transept wing opens to the north. A platform with an altar rises 
+to the east. You see a large cross hanging above the altar.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 2906
+EKeyvnum -1
+EDesc The altar.
+~
+Exit west 2904
+EKeyvnum -1
+EDesc The west nave
+~
+End
+
+
+#2906
+Name The Altar.~
+Desc You are standing on a platform and upon it stands a stone altar under a 
+large bright coloured window. The nave stretches out to the west. Narrow 
+openings are in the walls to north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2907
+EKeyvnum -1
+EDesc A corridor
+~
+Exit south 2909
+EKeyvnum -1
+EDesc The staircase down to the crypt
+~
+Exit west 2905
+EKeyvnum -1
+EDesc The east nave
+~
+End
+
+
+#2907
+Name A dimly lit corridor.~
+Desc You are standing in a dim curving corridor. You hear a loud snoring 
+behind a door to the north. A large wool carpet covers the chilly 
+stone floor.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2908
+EKeyvnum -1
+EDesc The vicar's room
+~
+Exit south 2906
+EKeyvnum -1
+EDesc The altar
+~
+End
+
+
+#2908
+Name Vicar's Room~
+Desc You are standing in a small room cluttered with small cute trappings.
+A man with a long black robe sits asleep on a comfortable couch, 
+snoring very loudly. He must be the vicar. The only exit is to the 
+south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 2907
+EKeyvnum -1
+EDesc A corridor
+~
+End
+
+
+#2909
+Name In a Staircase~
+Desc You are in a cylindrical room containing a spiral stone staircase.
+Lots of small white candles light up the room. You see a narrow opening 
+to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2906
+EKeyvnum -1
+EDesc You see a altar to the north
+~
+Exit down 2910
+EKeyvnum -1
+EDesc Staircase to the crypt
+~
+End
+
+
+#2910
+Name The Cellar~
+Desc You are at the bottom of a spiral stone staircase. You see a narrow 
+curving passage leads into darkness to the north. A cold musty odour 
+flows out from the darkness.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2911
+EKeyvnum -1
+EDesc The Crypt entrance
+~
+Exit up 2909
+EKeyvnum -1
+EDesc Staircase to the church
+~
+End
+
+
+#2911
+Name Crypt Entrance~
+Desc You are standing in the crypt entrance. There is a narrow passage 
+leading south. An ancient steel door blocks your way to the north.
+There are dark chambers off to the east and west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2914
+EFlags door closed~
+EKeyvnum 2911
+EDesc You see a door to the north
+~
+Exit east 2912
+EKeyvnum -1
+EDesc Side chamber
+~
+Exit south 2910
+EKeyvnum -1
+EDesc Side chamber
+~
+Exit west 2913
+EKeyvnum -1
+EDesc Staircase to the church
+~
+End
+
+
+#2912
+Name Side Chamber.~
+Desc You are standing in a side chamber of the crypt next to a huge 
+sarcophagus. Cob webs covers the mossy stone walls. The only exit 
+is to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 2911
+EKeyvnum -1
+EDesc Crypt entrance
+~
+End
+
+
+#2913
+Name Side Chamber.~
+Desc You are standing in a sidechamber of the crypt next to a huge sarcophagus.
+Cob webs covers the mossy stone walls. The only exit is to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 2911
+EKeyvnum -1
+EDesc Crypt entrance
+~
+End
+
+
+#2914
+Name Central aisle.~
+Desc You are standing in the central aisle of the crypt, surrounded by an eerie 
+darkness. Green moss covers the ancient stone walls. There are dark chambers 
+off to the west and east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2915
+EKeyvnum -1
+EDesc You see a hall to the north
+~
+Exit east 2918
+EKeyvnum -1
+EDesc You see a dark chamber to the east
+~
+Exit south 2911
+EFlags door closed~
+EKeyvnum -1
+EDesc Crypt entrance
+~
+Exit west 2917
+EKeyvnum -1
+EDesc You see a dark chamber to the east
+~
+End
+
+
+#2915
+Name Hall.~
+Desc You are standing in a large room. Moldering hangings cover the chill walls.
+From a wall an enormous portrait of an tall and elegantly clad man glares
+down at you. There's a brass plate under the painting. You see a stone 
+staircase going down and a way to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc portrait~
+The count looks like a handsome man, but there's something feral and 
+predatory about his features. On his fingers you see a great ruby ring 
+set among black bat wings.
+~
+ExtraDesc brass plate~
+You rub away the dust from the plate and read:
+
+ `D Heinrich von Liech - Count of Death`x~
+Exit south 2914
+EKeyvnum -1
+EDesc Central aisle
+~
+Exit down 2916
+EKeyvnum -1
+EDesc You see the beginning of a corridor at the end of the stairs
+~
+End
+
+
+#2916
+Name A gloomy corridor.~
+Desc You are standing in a gloomy corridor. Yellow boned skeletons stand 
+alongside the grey withering stone walls. You can go east or up the 
+stairs. You think you see some light further ahead...You hear some 
+chanting to the east. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 2919
+EKeyvnum -1
+EDesc You see some light to the east
+~
+Exit up 2915
+EKeyvnum -1
+EDesc Stairs to hall
+~
+Exit down 1400
+End
+
+
+#2917
+Name Side Chamber~
+Desc You are standing in a side chamber of the crypt next to a huge 
+sarcophagus. You try to open it but the lid remains closed. The 
+only exit is to the east. Small mushrooms grow in a dark and moist 
+corner of the room.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 2914
+EKeyvnum -1
+EDesc Central aisle
+~
+End
+
+
+#2918
+Name Side Chamber~
+Desc You are standing in a sidechamber of the crypt next to a huge 
+sarcophagus. You try to open it but the lid remains closed. The 
+only exit is to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 2914
+EKeyvnum -1
+EDesc Central aisle
+~
+End
+
+
+#2919
+Name Sacrificial room.~
+Desc You are standing in a room, black candles are placed alongside the 
+walls spreading their yellow sick light. A black stone altar rises 
+at the northern end of the room. A staircase leads down into utter 
+darkness. A corridor stretches to the west. A foul stench of decay 
+and corruption rises out from the darkness.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 2916
+EKeyvnum -1
+EDesc You see a corridor to the west
+~
+Exit down 2920
+EKeyvnum -1
+EDesc A staircase into darkness...
+~
+End
+
+
+#2920
+Name Staircase.~
+Desc You stand on the top of the staircase, leading down into utter darkness,
+you wonder what hideous things live down there. The foul stench gets 
+stronger.
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 2919
+EKeyvnum -1
+EDesc You see some light at the beginning of the stairs
+~
+Exit down 2921
+EKeyvnum -1
+EDesc Down into darkness...
+~
+End
+
+
+#2921
+Name The Bottom of the Staircase.~
+Desc You stand at the bottom of this giant staircase. A pair of rats looks at 
+you with their glowing small red eyes. A foul stench flows from the east. 
+You see a door to the north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2922
+EFlags door closed~
+EKeyvnum -1
+EDesc You see a door to the north
+~
+Exit east 2924
+EKeyvnum -1
+EDesc Side chamber
+~
+Exit up 2920
+EKeyvnum -1
+EDesc Up the stairs
+~
+End
+
+
+#2922
+Name Hall~
+Desc You are standing in enormous hall. Firmly mounted torches expose the wet 
+and moldy walls. You hear water drip from some unseen roof. Large statues 
+of long forgotten kings look upon you with their stony gaze. It smells like 
+smoke in here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 2923
+EFlags door closed locked pickproof~
+EKeyvnum 2913
+EDesc You see a large metal door to the north
+~
+Exit south 2921
+EKeyvnum -1
+EDesc To the stairs
+~
+End
+
+
+#2923
+Name Heinrich's Chamber~
+Desc You are in chamber of Heinrich, the Count of Death. A huge throne made of
+skulls and other bone parts sits in the centre of the room and upon it rests 
+Heinrich. He doesn't notice you at first, but your trembling makes him 
+annoyed. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 2922
+EFlags door pickproof~
+EKeyvnum -1
+EDesc You see a large hall to the south
+~
+End
+
+
+#2924
+Name Side Chamber.~
+Desc You stand in a sidechamber of the crypt next to a sarcophagus. The stench 
+of decay is overwhelming. The remains of a poor unfortunate adventurer like 
+you lies scattered on the ground. Small mushrooms grow in a dark corner of 
+the room. The only exit is to the west. There's a light breeze from the 
+north...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2925
+EFlags door closed~
+EKeyvnum -1
+Exit west 2921
+EKeyvnum -1
+EDesc To the bottom of the stairs
+~
+End
+
+
+#2925
+Name A secret passage.~
+Desc You are standing in a secret passage going north. Cobwebs and moss covers 
+the grey stone walls. A thick layer of dust covers the floor making the air 
+stuffy and dry. The passage stretches further north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2926
+EKeyvnum -1
+EDesc The passage stretches further north
+~
+Exit south 2924
+EKeyvnum -1
+EDesc To the side chamber
+~
+End
+
+
+#2926
+Name A secret passage.~
+Desc You have come to a point where the passage splits in two directions:
+to the east and to the west. You see some light to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 2925
+EKeyvnum -1
+EDesc Another passage
+~
+Exit west 2927
+EKeyvnum -1
+EDesc and another
+~
+End
+
+
+#2927
+Name A secret passage.~
+Desc You are standing in a passage, there is a light in front of you. Strange 
+ancient hieroglyphics are engraved in the walls. You hear sounds of 
+scampering rats. There are exits to the east and north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 2929
+EKeyvnum -1
+EDesc The Tomb
+~
+Exit east 2926
+EKeyvnum -1
+EDesc You see a passage to the east
+~
+End
+
+
+#2929
+Name The Tomb.~
+Desc You are standing in a tomb.
+Red sick light radiates from a large black chandelier hanging in the 
+ceiling. A huge sarcophagus stands in the middle of the room. The ceiling 
+is covered with black bats looking down at you with their blood red eyes.
+As you walk forth the lid of the sarcophagus is thrown away by some magical 
+force, and out of it rises a mummy so big that he casts you in shadows.
+You feel a very strong motivation to run away.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 2927
+EKeyvnum -1
+EDesc You see a passage to the south
+~
+End
+
+
+#2930
+Name The Churchyard.~
+Desc You are in the churchyard. Lots of beautiful flowers decorate the dull 
+tombstones and monuments. There are some nuns here taking care of the 
+graves. The only exit is to the north.
+~
+Sector field~
+Exit north 2901
+EKeyvnum -1
+EDesc You see a path that leads to the church entrance
+~
+End
+
+
+#2931
+Name Staircase.~
+Desc You are standing in a cylindrical room containing a spiral staircase 
+going up to the tower bell. A wooden door leads out to the vestibule.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 2903
+EFlags door closed~
+EKeyvnum -1
+EDesc You see an open door that leads out to the vestibule
+~
+Exit up 2932
+EKeyvnum -1
+EDesc You see a staircase going upwards
+~
+End
+
+
+#2932
+Name The tower.~
+Desc You are standing in the tower. What a view! A large bell made of brass 
+hangs here. You see some nuns in the churchyard below. A large stork 
+have it's nest here and doesn't like your intrusion.
+~
+Sector inside~
+Exit down 2931
+EKeyvnum -1
+EDesc You see some stairs going down
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 2901 spec_cast_cleric
+M 2903 spec_cast_mage
+M 2904 spec_cast_undead
+M 2909 spec_poison
+M 2910 spec_poison
+M 2914 spec_cast_undead
+M 2916 spec_poison
+S
+
+
+
+#RESETS2
+M 0 2920 1 2902 1
+E 0 2905 0 wielded~
+M 0 2920 1 2902 1
+E 0 2916 0 wielded~
+M 0 2918 5 2904 1
+M 0 2902 2 2905 1
+E 0 2905 0 hold~
+M 0 2918 3 2905 1
+M 0 2901 1 2908 1
+E 0 2902 0 wielded~
+E 0 2912 0 hold~
+M 0 2909 1 2912 1
+M 0 2919 1 2914 1
+E 0 2915 0 wielded~
+M 0 2907 2 2915 1
+E 0 2908 0 wielded~
+M 0 2912 1 2915 1
+M 0 2910 5 2916 1
+E 0 2906 0 wielded~
+O 0 2914 0 2917
+M 0 2909 1 2918 1
+M 0 2914 1 2919 1
+G 0 2913 0
+M 0 2911 3 2921 1
+M 0 2917 1 2922 1
+M 0 2904 1 2923 1
+E 0 2903 0 wielded~
+E 0 2910 0 torso~
+E 0 2907 0 rfinger~
+M 0 2907 2 2924 1
+E 0 2908 0 wielded~
+M 0 2910 1 2925 1
+M 0 2908 1 2926 1
+M 0 2910 1 2926 1
+M 0 2911 2 2927 1
+M 0 2903 1 2929 1
+E 0 2901 0 wielded~
+M 0 2908 6 2929 1
+M 0 2906 2 2929 1
+E 0 2909 0 wielded~
+M 0 2902 3 2930 1
+E 0 2905 0 hold~
+M 0 2913 1 2932 1
+E 0 2904 0 wielded~
+M 0 2915 1 2932 1
+G 0 2911 0
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2905
+code if hastarget $i
+  mob echo cackles insanely and attacks $Q
+  mob kill $q
+else
+  mob forget
+endif
+~
+disabled false
+END
+
+#2904
+code if ispc $n
+  emote draws his sword.
+  say I was here first, the treasure is mine!
+  mob delay 5
+  break
+endif
+~
+disabled false
+END
+
+#2903
+code look $n
+say leave now! I must ring my bell!
+~
+disabled false
+END
+
+#2902
+code say May the gods bless you, my child.
+~
+disabled false
+last_editor Delandria~
+last_editdate 1072053370
+END
+
+#2901
+code if hastarget $i
+  mob echo $I snarls and attacks $Q
+  mob kill $q
+else
+  mob forget
+endif
+~
+disabled false
+END
+
+#2900
+code if ispc $n
+  say Welcome to my chamber, prepare to meet your maker... Draw your weapon and prepare to fight for your life...
+  cackle $n
+  mob delay 5
+  break
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

@@ -1,0 +1,3008 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of the Drow~
+ShortName   Temple of the Drow~
+Builders    nakasha~
+Credits     nakasha~
+VNUMs       2200 2349
+LComment    `#`R[ 45- 91]`^
+LRange      45 91
+Security    8
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:27:42 2005~
+End
+
+
+
+#MOBILES
+#2200
+Name drow noble~
+ShortD a `#`Sdrow `WNoble`^~
+LongD A `#`Sdrow `WNoble`^ wanders here.~
+Desc ~
+Race drow~
+Align 0 -1
+XPMod 110
+Level 44
+Hitroll 0
+HitDice 5d8+270
+ManaDice 6d9+330
+DamDice 6d6+17
+DamType punch
+AC -190 -190 -190 -152
+Wealth 0
+Act    npc no_tame stay_area mage~
+AffBy  detect_magic sanctuary dark_vision regeneration~
+Off    disarm dodge trip~
+Imm    summon charm~
+Res    bash acid mental~
+Vuln   cold holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+Group 1
+END
+
+#2201
+Name drow templeguard~
+ShortD a `#`sdrow `rt`semple`rg`suard`^~
+LongD A `#`sdrow `rt`semple`rg`suard`^ stands here at attention.~
+Desc ~
+Race drow~
+Align -2 -2
+XPMod 120
+Level 56
+Hitroll 0
+HitDice 9d13+440
+ManaDice 5d6+160
+DamDice 10d10+45
+DamType beating
+AC -600 -600 -600 -528
+Wealth 899
+Act    npc dont_wander no_tame stay_area mage warrior~
+AffBy  detect_invis detect_magic detect_hidden sanctuary haste dark_vision berserk~
+Off    dodge kick~
+Imm    summon charm fire~
+Res    bash acid disease~
+Vuln   magic cold lightning holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material flesh
+END
+
+#2202
+Name drow priest~
+ShortD a `#`Sdrow `wp`sriest`^~
+LongD A `#`Sdrow `wp`sriest`^ worships here.~
+Desc ~
+Race drow~
+Align -1 -1
+XPMod 110
+Level 51
+Hitroll 0
+HitDice 6d9+315
+ManaDice 6d9+325
+DamDice 5d10+25
+DamType wrath
+AC -290 -290 -290 -255
+Wealth 542
+Act    npc no_tame stay_area cleric~
+AffBy  detect_magic sanctuary dark_vision regeneration~
+Off    dodge kick parry~
+Imm    summon charm lightning acid~
+Res    magic cold poison~
+Vuln   bash slash light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#2203
+Name drow priestess~
+ShortD a `#`Sdrow P`Wriestess`^~
+LongD A `#`Sdrow P`Wriestess`^ prays here, chanting quietly.~
+Desc ~
+Race drow~
+Align -2 -2
+XPMod 110
+Level 54
+Hitroll 0
+HitDice 7d10+345
+ManaDice 8d11+440
+DamDice 7d8+32
+DamType divine
+AC -370 -370 -370 -333
+Wealth 351
+Act    npc no_tame stay_area mage~
+AffBy  detect_magic dark_vision~
+Off    disarm parry trip~
+Imm    summon charm cold holy~
+Res    mental~
+Vuln   bash acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#2204
+Name drow sentry~
+ShortD a `#`Sdrow`^ sentry~
+LongD A `#`Sdrow`^ sentry patrols here.~
+Desc ~
+Race drow~
+Align -1 -1
+XPMod 110
+Level 69
+Hitroll 0
+HitDice 8d11+385
+ManaDice 2d5+25
+DamDice 8d9+39
+DamType thwack
+AC -460 -460 -460 -368
+Wealth 989
+Act    npc no_tame stay_area thief warrior~
+AffBy  detect_invis detect_magic detect_hidden sanctuary dark_vision berserk regeneration~
+Off    bash berserk dodge~
+Imm    summon charm lightning disease~
+Res    slash acid illusion~
+Vuln   pierce fire holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#2205
+Name drider~
+ShortD a horrendous `#`Sdrider`^~
+LongD A horrendous `#`Sdrider`^ roams here.~
+Desc ~
+Race unique~
+Align -3 -3
+XPMod 110
+Level 58
+Hitroll 0
+HitDice 8d12+420
+ManaDice 4d5+90
+DamDice 9d10+43
+DamType sting
+AC -540 -540 -540 -475
+Wealth 545
+Act    npc scavenger no_tame stay_area wimpy undead warrior~
+AffBy  sanctuary sneak berserk regeneration~
+Off    berserk disarm parry tail crush~
+Imm    summon charm slash~
+Res    bash poison disease~
+Vuln   magic cold lightning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+MProg REPOP 2200 35~
+END
+
+#2206
+Name soul spider~
+ShortD a `#`Ss`rou`sl s`wp`si`wd`se`wr`^~
+LongD A `#`Ss`rou`sl s`wp`si`wd`se`wr`^ lurks here.~
+Desc .
+~
+Race unique~
+Align -3 -3
+XPMod 110
+Level 86
+Hitroll 0
+HitDice 9d12+425
+ManaDice 4d5+90
+DamDice 9d10+43
+DamType drain
+AC -560 -560 -560 -492
+Wealth 521
+Act    npc scavenger no_tame stay_area undead mage thief warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_hidden sanctuary regeneration~
+Off    bash dodge trip~
+Imm    summon charm negative illusion~
+Res    bash cold~
+Vuln   pierce lightning light~
+Form   edible non_skinable animal sentient biped spider mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#2207
+Name minion of lolth~
+ShortD a `#`cMinion `wof `cL`solt`ch`^~
+LongD A `#`cMinion `wof `cL`solt`ch`^ stands here.~
+Desc ~
+Race unique~
+Align -2 -2
+XPMod 115
+Level 87
+Hitroll 0
+HitDice 9d12+420
+ManaDice 10d13+620
+DamDice 9d10+43
+DamType wrath
+AC -560 -560 -560 -498
+Wealth 335
+Act    npc dont_wander scavenger no_tame stay_area mage~
+AffBy  invisible sneak hide haste regeneration~
+Off    bash parry~
+Imm    charm pierce poison~
+Res    summon lightning acid~
+Vuln   bash cold holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2208
+Name statue jade spider jilorb~
+ShortD `#a `gstatue`^ of a `GJ`gi`Gl`go`Gr`gb`^~
+LongD `#A `gstatue`^ of a `GJ`gi`Gl`go`Gr`gb`^ sits here.~
+Desc This statue depicts a beautifully crafted `#`GJ`ga`Gd`ge `sS`Gp`gi`sd`Ge`gr`^.  It seems almost life 
+like.  
+~
+Race unique~
+Align -3 -3
+Level 84
+Hitroll 0
+HitDice 9d12+425
+ManaDice 4d5+90
+DamDice 10d10+43
+DamType divine
+AC -560 -560 -560 -481
+Wealth 121
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden regeneration~
+Off    bash dodge~
+Imm    pierce~
+Res    slash lightning~
+Vuln   magic cold acid light~
+Form   edible poison magical non_skinable sentient construct biped spider~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#2209
+Name sahsxel high drow priestess~
+ShortD `#`SSahsxel`^, `CH`sigh `CP`sriestess`^~
+LongD `#`SSahsxel`^, the `CH`sigh `CP`sriestess`^ stands here in reverence.~
+Desc Hair that shines silver and skin that glows ebony, this drow woman is 
+beautiful in her simplicity.  She stands elegantly, her head bowed and 
+shoulders straight as she prays to her Gods of old.  
+~
+Race drow~
+Align -2 -2
+XPMod 110
+Level 90
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+44
+DamType none
+AC -600 -600 -600 -504
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_magic sanctuary dark_vision regeneration~
+Off    disarm kick parry~
+Imm    summon charm slash~
+Res    magic bash cold~
+Vuln   lightning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#2210
+Name drow priestess worship~
+ShortD a drow priestess, worshipping quietly~
+LongD A drow priestess is here, worshipping quietly.~
+Desc ~
+Race drow~
+Align 3 3
+Level 83
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType none
+AC -550 -550 -550 -473
+Wealth 312
+Act    npc dont_wander no_tame stay_area wimpy mage~
+AffBy  detect_magic dark_vision~
+Off    dodge trip~
+Imm    negative sleep~
+Res    magic cold~
+Vuln   holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2211
+Name drow priest worship~
+ShortD a drow priest, worshipping quietly~
+LongD A drow priest is here, worshipping quietly.~
+Desc ~
+Race drow~
+Align 3 3
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType none
+AC -550 -550 -550 -495
+Wealth 0
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  detect_magic dark_vision~
+Off    disarm dodge dirt_kick trip~
+Imm    negative sleep~
+Res    magic cold energy~
+Vuln   holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2212
+Name oppressor~
+ShortD the `#`soppressor`^~
+LongD The oppressor is here, awaiting a victim.~
+Desc ~
+Race drow~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -320
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  detect_magic dark_vision~
+Off    bash berserk parry~
+Imm    summon cold fear~
+Res    magic pierce~
+Vuln   slash acid holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2213
+Name elven slave~
+ShortD an elven slave~
+LongD An elven slave is here, awaiting his punishment.~
+Desc ~
+Race elf~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType none
+AC -300 -300 -300 -249
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_hidden infrared~
+Off    dodge kick~
+Imm    charm acid mental~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2214
+Name drow noble~
+ShortD a `#`sdrow `WNoble`^~
+LongD A `#`Sdrow `WNoble`^ wanders here.~
+Desc ~
+Race drow~
+Align 0 0
+XPMod 110
+Level 44
+Hitroll 0
+HitDice 5d7+247
+ManaDice 5d7+255
+DamDice 8d4+15
+DamType punch
+AC -153 -153 -153 -125
+Wealth 0
+Act    npc no_tame stay_area mage~
+AffBy  detect_magic dark_vision~
+Off    disarm dodge trip~
+Imm    summon charm~
+Res    bash acid mental~
+Vuln   cold holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2215
+Name drider~
+ShortD a horrendous `#`sdrider`^~
+LongD A horrendous `#`sdrider`^ roams here.~
+Desc ~
+Race unknown~
+Align -3 -3
+XPMod 110
+Level 64
+Hitroll 0
+HitDice 7d10+350
+ManaDice 7d10+350
+DamDice 7d8+34
+DamType sting
+AC -380 -380 -380 -342
+Wealth 0
+Act    npc scavenger no_tame stay_area wimpy undead warrior~
+AffBy  sanctuary sneak berserk regeneration~
+Off    berserk disarm parry tail crush~
+Imm    summon charm slash~
+Res    bash poison disease~
+Vuln   magic cold lightning light~
+Form   edible sentient biped mammal~
+Part   head arms legs brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2200
+Name shadowy gateway portal~
+Short a `#`Ssh`wado`swy `Wg`wa`Wt`we`Ww`wa`Wy`^~
+Desc A `#`Ssh`wado`swy `Wg`wa`Wt`we`Ww`wa`Wy`^ melds into existence, leading to parts unknown.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN AF 2282 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2201
+Name vengeance reaper~
+Short `#`rV`Re`sn`wg`We`Ra`rn`Sc`re `RR`We`wa`sp`Re`rr`^~
+Desc A Vengeance Reaper lies here.~
+Level 75
+ItemType weapon~
+Cost 1816
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 7 9 slice C
+Weight 90
+Material steel~
+Extra    hum dark antigood~
+Wear     take wield~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher monk anti-paladin~
+Affect modifier -1 75 -1 damroll 4 0
+Affect modifier -1 75 -1 hitroll 4 0
+Affect modifier -1 75 -1 strength 2 0
+Affect modifier -1 75 -1 ac -5 0
+End
+
+#2202
+Name dreadbringer dagger dark~
+Short `#`bD`Br`se`wa`Bd`bB`Br`Wi`wn`sg`Be`br`^~
+Desc A dark dagger lies here.~
+Level 80
+ItemType weapon~
+Cost 1890
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 6 10 pierce L
+Weight 60
+Material steel~
+Extra    dark antigood~
+Wear     take wield~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher bard monk anti-paladin~
+Affect modifier -1 80 -1 constitution 3 0
+Affect modifier -1 80 -1 saves -6 0
+Affect modifier -1 80 -1 memory 5 0
+Affect modifier -1 80 -1 selfdiscipline 3 0
+End
+
+#2203
+Name deathseeker~
+Short the `#`cD`we`sa`wt`ch`cS`we`sek`we`cr`^~
+Desc The DeathSeeker lies here.~
+Level 65
+ItemType weapon~
+Cost 3870
+Durability 5
+Asize 0
+Rsize 50
+Values axe 11 5 slash LN
+Weight 100
+Material steel~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 65 -1 strength 4 0
+Affect modifier -1 65 -1 damroll 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 saves -4 0
+Affect modifier -1 65 -1 constitution 4 0
+End
+
+#2204
+Name soulrendor soul rendor whip~
+Short a `#`SS`w`Wo`Ru`rl`sR`re`Rn`Wd`wo`sr`^~
+Desc An evil looking whip lies here.~
+Level 85
+ItemType weapon~
+Cost 1543
+Durability 5
+Asize 0
+Rsize 50
+Values whip 17 4 wrath HN
+Weight 60
+Material leather~
+Extra    dark evil antigood nonmetal nolocate burnproof chaos norestring~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian bard monk anti-paladin~
+Affect modifier -1 85 -1 damroll 6 0
+Affect modifier -1 85 -1 hitroll 6 0
+Affect modifier -1 85 -1 hp 8 0
+Affect modifier -1 85 -1 saves -4 0
+End
+
+#2205
+Name spiderbane spider bane~
+Short `#`yS`sp`wi`Wd`ye`sr`WB`wa`sn`ye`^~
+Desc SpiderBane lies here.~
+Level 87
+ItemType weapon~
+Cost 1231
+Durability 5
+Asize 0
+Rsize 50
+Values polearm 17 4 stab FGH
+Weight 70
+Material unknown~
+Extra    dark antigood~
+Wear     take wield~
+ClassAllowances cleric thief warrior paladin ranger barbarian bard monk anti-paladin~
+Affect modifier -1 87 -1 strength 5 0
+Affect modifier -1 87 -1 constitution 4 0
+Affect modifier -1 87 -1 damroll 4 0
+Affect modifier -1 87 -1 hitroll 6 0
+Affect modifier -1 87 -1 hp 6 0
+Affect modifier -1 87 -1 ac -5 0
+End
+
+#2206
+Name staff awakening~
+Short the `#`sS`Ct`Wa`Cf`sf of `WA`Cw`sa`Wk`Ce`Wn`si`Cn`Wg`^~
+Desc A staff of awakening lies here.~
+Level 85
+ItemType staff~
+Cost 1821
+Durability 5
+Asize 0
+Rsize 50
+Values 85 6 5 'protection magic' 0
+Weight 0
+Material unknown~
+Extra    glow magic antigood nodegrade burnproof~
+Wear     take hold~
+Affect modifier -1 85 -1 strength 4 0
+Affect modifier -1 85 -1 selfdiscipline 4 0
+Affect modifier -1 85 -1 saves -4 0
+Affect modifier -1 85 -1 hp 5 0
+Affect modifier -1 85 -1 mana 100 0
+Affect modifier -1 85 -1 agility -4 0
+End
+
+#2207
+Name eyes of the drider~
+Short the `#`WEyes`^ of the `SDrider`^~
+Desc The `#`WEyes`^ of the `SDrider`^ lie here.~
+Level 40
+ItemType jewelry~
+Cost 621
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material unknown~
+Extra    nonmetal nolocate burnproof~
+Extra2   nosell~
+Wear     take eyes~
+Affect modifier -1 40 -1 hitroll 2 0
+Affect modifier -1 40 -1 damroll 2 0
+Affect objectspell 'detect invis' 0 -1 none 0 0
+End
+
+#2208
+Name key spider~
+Short a `#`sspider `Wkey`^~
+Desc A spider key has been left here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material iron~
+Wear     take hold~
+End
+
+#2209
+Name well viewing~
+Short a `#`cv`Bi`be`cw`Ci`bn`Bg `cwell`^~
+Desc A viewing well is here, it's surface appearing crystaline.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KLN A 645 0
+Weight 1000
+Material unknown~
+Extra    magic nolocate nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc viewing well~
+This well is shallow and wide, surrounded by small granite slabs.  The water 
+in it is crystal clear and doesn't show a ripple across it's surface.  
+Looking in the water, there appears to be a slight glow rising from it's 
+depths.  
+~
+End
+
+#2210
+Name altar marble~
+Short a `#`Sma`Wrb`sle `saltar`^~
+Desc A marble altar inscribed with golden script stands here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 100000 ANQ 130 130
+Weight 2000
+Material marble~
+Extra    hum nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc marble altar~
+This altar is made of the purest midnight marble with a gleaming streak of 
+white running through it's veins.  Inscribed upon its sides, a glowing 
+script of a strange mix of runes and drowish can be seen.  Strewn across it 
+are disintegrating rose petals that are so dark red they appear to be black. 
+ Blood stains litter across it, seeping into the marble surface itself.  
+~
+End
+
+#2211
+Name silken gown silk~
+Short a `#`ms`si`wlk`se`mn `sg`wow`sn`^~
+Desc A silken gown lies here, discarded.~
+Level 75
+ItemType clothing~
+Cost 987
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material silk~
+Extra    magic bless burnproof~
+Wear     take about~
+Affect modifier -1 75 -1 hp 6 0
+Affect modifier -1 75 -1 selfdiscipline 3 0
+Affect modifier -1 75 -1 mana 100 0
+Affect modifier -1 75 -1 strength 3 0
+Affect modifier -1 75 -1 hitroll 3 0
+End
+
+#2212
+Name branding iron~
+Short a `#`Sb`rr`Ra`snd`Ri`rn`sg `siron`^~
+Desc A branding iron lies here, it's tip glowing brightly.~
+Level 50
+ItemType weapon~
+Cost 940
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 8 4 flame A
+Weight 30
+Material iron~
+Extra    glow evil antigood nogetall~
+Wear     take wield~
+Affect modifier -1 50 -1 hp 4 0
+Affect modifier -1 50 -1 saves -4 0
+Affect modifier -1 50 -1 constitution 3 0
+Affect modifier -1 50 -1 strength 4 0
+End
+
+#2213
+Name barred cage hanging large~
+Short a large barred cage~
+Desc A large barred cage dangles here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4000 CFILS 100 100
+Weight 0
+Material iron~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2214
+Name iron maiden~
+Short an `#`siron maiden`^~
+Desc An iron maiden stands here in a corner.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 CFLS 75 75
+Weight 1000
+Material iron~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2215
+Name robe white embroidered~
+Short a `#`Wwhite `We`wmb`Wr`woi`Wd`wer`We`wd `Wr`wob`We`^~
+Desc A white embroidered robe lies here, discarded.~
+Level 60
+ItemType clothing~
+Cost 1921
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cloth~
+Extra    glow magic antigood burnproof~
+Wear     take about~
+ClassAllowances mage cleric warrior paladin ranger barbarian spellfilcher monk anti-paladin~
+Affect affects -1 60 -1 none 0 protect_good
+Affect resist -1 60 -1 none 0 light
+Affect modifier -1 60 -1 hp 8 0
+Affect modifier -1 60 -1 selfdiscipline 4 0
+Affect modifier -1 60 -1 damroll 4 0
+Affect modifier -1 60 -1 strength 4 0
+End
+
+#2216
+Name onyx key~
+Short an `#`Sonyx`^ key~
+Desc An onyx key lies here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material onyx~
+Extra    nolocate meltdrop~
+Wear     take~
+End
+
+#2217
+Name dragonhide dragon hide leg guards~
+Short a pair of `#`gd`Gr`sa`Gg`go`sn`gh`Gi`sd`ge `sleg `sguards`^~
+Desc A pair of dragonhide leg guards lies here.~
+Level 50
+ItemType armor~
+Cost 1110
+Durability 5
+Asize 0
+Rsize 50
+Values 10 13 12 10 0
+Weight 70
+Material dragon~
+Extra    nonmetal burnproof norestring~
+Wear     take legs~
+Affect modifier -1 50 -1 hp 4 0
+Affect modifier -1 50 -1 ac -15 0
+Affect modifier -1 50 -1 saves -4 0
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 strength 4 0
+End
+
+#2218
+Name dragonhide arm guards dragon hide~
+Short a pair of `#`gd`Gr`sa`Gg`go`sn`gh`Gi`sd`ge `sarm guards`^~
+Desc A pair of dragonhide arm guards lies here.~
+Level 50
+ItemType armor~
+Cost 1432
+Durability 5
+Asize 0
+Rsize 50
+Values 10 12 11 10 0
+Weight 60
+Material dragon~
+Extra    nonmetal burnproof~
+Wear     take arms~
+Affect modifier -1 50 -1 hp 6 0
+Affect modifier -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 quickness 3 0
+Affect modifier -1 50 -1 ac -15 0
+Affect modifier -1 50 -1 strength 4 0
+End
+
+#2219
+Name corslet adamantium~
+Short an `#`ma`sdamantiu`mm `Sc`worsle`st`^~
+Desc An adamantium corslet lies here.~
+Level 60
+ItemType armor~
+Cost 1210
+Durability 5
+Asize 0
+Rsize 50
+Values 19 18 19 15 0
+Weight 90
+Material adamantium~
+Extra    bless antigood burnproof~
+Wear     take torso~
+ClassAllowances mage cleric druid paladin spellfilcher bard monk anti-paladin~
+Affect modifier -1 60 -1 selfdiscipline 4 0
+Affect modifier -1 60 -1 ac -10 0
+Affect modifier -1 60 -1 saves -6 0
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 memory 3 0
+Affect modifier -1 60 -1 strength 4 0
+Affect modifier -1 60 -1 reasoning -4 0
+End
+
+#2220
+Name adamantium key~
+Short an adamantium key~
+Desc An adamantium key lies here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material adamantium~
+Wear     take~
+End
+
+#2221
+Name diamond key~
+Short a `#`Wdiamond`^ key~
+Desc A diamond key lies here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material diamond~
+Wear     take~
+End
+
+#2222
+Name shin guards adamantium~
+Short a pair of `#`ma`sdamantiu`mm `ss`whin guard`ss`^~
+Desc A pair of adamantium shin guards lies here.~
+Level 60
+ItemType armor~
+Cost 1120
+Durability 5
+Asize 0
+Rsize 50
+Values 15 13 14 12 0
+Weight 70
+Material adamantium~
+Extra    bless antigood burnproof~
+Wear     take legs~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard monk anti-paladin~
+Affect modifier -1 60 -1 hp 6 0
+Affect modifier -1 60 -1 ac -15 0
+Affect modifier -1 60 -1 quickness 5 0
+Affect modifier -1 60 -1 constitution 4 0
+End
+
+#2223
+Name rucksack spider hide spiderhide~
+Short a `#`ss`wp`si`wd`se`wr `sh`rid`se`^ rucksack~
+Desc A rucksack made of a spider's hide lies here.~
+Level 60
+ItemType container~
+Cost 999
+Durability 5
+Asize 0
+Rsize 50
+Values 500 AC 0 50 0
+Weight 40
+Material spiderhide~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay~
+Wear     take waist~
+Affect modifier -1 60 -1 strength 3 0
+Affect modifier -1 60 -1 hitroll 2 0
+Affect modifier -1 60 -1 damroll 4 0
+Affect modifier -1 60 -1 ac -5 0
+Affect modifier -1 60 -1 hp 6 0
+End
+
+#2224
+Name circlet dim silvery~
+Short the `#`WC`sirclet `wof the `WD`sim`^~
+Desc A silvery circlet lies here.~
+Level 70
+ItemType jewelry~
+Cost 1210
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material silver~
+Extra    dark magic bless antigood nodegrade burnproof~
+Wear     take head~
+Affect modifier -1 70 -1 strength 3 0
+Affect modifier -1 70 -1 agility 4 0
+Affect modifier -1 70 -1 saves -4 0
+Affect modifier -1 70 -1 hp 4 0
+Affect affects -1 70 -1 none 0 hide
+Affect modifier -1 70 -1 memory 3 0
+Affect modifier -1 70 -1 selfdiscipline 4 0
+End
+
+#2225
+Name blackcloud plate mail finely suit crafted~
+Short a `#`sb`Wl`sack`sc`Wl`soud `Wp`slate`^~
+Desc A finely crafted suit of black plate mail lies here.~
+Level 85
+ItemType armor~
+Cost 2103
+Durability 5
+Asize 0
+Rsize 50
+Values 23 22 22 21 0
+Weight 80
+Material unknown~
+Extra    dark evil antigood meltdrop nodegrade burnproof~
+Extra2   nodecay~
+Wear     take torso~
+Affect modifier -1 85 -1 strength 3 0
+Affect modifier -1 85 -1 selfdiscipline 4 0
+Affect modifier -1 85 -1 ac -10 0
+Affect modifier -1 85 -1 saves -4 0
+Affect modifier -1 85 -1 damroll 4 0
+Affect modifier -1 85 -1 hp 4 0
+ExtraDesc blackcloud plate mail suit~
+A finely crafted suit of black plate mail, even blacker than adamantine.  It 
+is inscribed with fanciful images of clouds and nighttime.  
+~
+End
+
+#2226
+Name woven spider web belt~
+Short a woven `#`sspider `Ww`se`Wb`w belt`^~
+Desc A woven spider web belt lies here.~
+Level 80
+ItemType clothing~
+Cost 2341
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow invis nonmetal~
+Wear     take waist~
+Affect modifier -1 80 -1 intuition 3 0
+Affect modifier -1 80 -1 selfdiscipline 3 0
+Affect modifier -1 80 -1 hp 4 0
+Affect modifier -1 80 -1 constitution 3 0
+End
+
+#2227
+Name marble anklet~
+Short a `#`sm`wa`sr`wb`sl`we`s anklet`^~
+Desc A marble anklet lies here.~
+Level 50
+ItemType armor~
+Cost 1172
+Durability 5
+Asize 0
+Rsize 50
+Values 5 3 4 4 0
+Weight 0
+Material marble~
+Extra    dark~
+Wear     take ankle~
+Affect modifier -1 50 -1 strength 3 0
+Affect modifier -1 50 -1 quickness 3 0
+Affect modifier -1 50 -1 ac -10 0
+Affect modifier -1 50 -1 saves -4 0
+Affect modifier -1 50 -1 hp 4 0
+End
+
+#2228
+Name silk slippers~
+Short silk `Ws`wl`Wi`wp`Wp`we`Wr`ws`^~
+Desc A pair of silk slippers lie here.~
+Level 50
+ItemType clothing~
+Cost 1518
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take feet~
+Affect modifier -1 50 -1 move 100 0
+Affect modifier -1 50 -1 quickness 3 0
+Affect modifier -1 50 -1 agility 3 0
+Affect modifier -1 50 -1 hp 4 0
+Affect modifier -1 50 -1 mana 50 0
+Affect modifier -1 50 -1 strength 4 0
+End
+
+#2229
+Name marble girdle~
+Short a `#`sm`wa`sr`wb`sl`we `sgirdle`^~
+Desc A marble girdle lies here.~
+Level 50
+ItemType armor~
+Cost 1218
+Durability 5
+Asize 0
+Rsize 50
+Values 10 9 10 7 0
+Weight 0
+Material marble~
+Wear     take waist~
+Affect modifier -1 50 -1 strength 3 0
+Affect modifier -1 50 -1 hp 4 0
+Affect modifier -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 quickness 5 0
+Affect modifier -1 50 -1 agility 4 0
+Affect modifier -1 50 -1 ac -10 0
+End
+
+#2230
+Name black leather boots~
+Short a pair of `#`sblack leather`^ boots~
+Desc A pair of black leather boots lie here.~
+Level 50
+ItemType armor~
+Cost 982
+Durability 5
+Asize 0
+Rsize 50
+Values 10 9 10 7 0
+Weight 0
+Material unknown~
+Wear     take feet~
+Affect modifier -1 50 -1 strength 3 0
+Affect modifier -1 50 -1 ac -10 0
+Affect modifier -1 50 -1 hitroll 4 0
+Affect modifier -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 hp 6 0
+End
+
+#2231
+Name black hood~
+Short a `#`sblack hood`^~
+Desc A black hood lies here.~
+Level 60
+ItemType clothing~
+Cost 1241
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    dark~
+Wear     take head~
+Affect modifier -1 60 -1 strength 4 0
+Affect modifier -1 60 -1 agility 4 0
+Affect modifier -1 60 -1 saves -4 0
+Affect modifier -1 60 -1 damroll 4 0
+Affect modifier -1 60 -1 hp 6 0
+Affect modifier -1 60 -1 ac -5 0
+End
+
+#2232
+Name jade orb~
+Short a `#`Gj`ga`Gd`ge `Wo`Gr`Wb`^~
+Desc A jade orb lies here, glowing faintly.~
+Level 75
+ItemType armor~
+Cost 987
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 6 6 0
+Weight 0
+Material jade~
+Wear     take float~
+Affect modifier -1 75 -1 strength 3 0
+Affect modifier -1 75 -1 constitution 3 0
+Affect modifier -1 75 -1 intuition 4 0
+Affect modifier -1 75 -1 reasoning 4 0
+Affect modifier -1 75 -1 hp 2 0
+End
+
+#2233
+Name jade amulet~
+Short a `#`gj`Ga`gd`Ge`g a`sm`Gul`se`gt`^~
+Desc A jade amulet has been left here.~
+Level 75
+ItemType jewelry~
+Cost 1245
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material jade~
+Extra    magic bless noremove meltdrop nodegrade~
+Wear     take neck~
+Affect modifier -1 75 -1 constitution 3 0
+Affect modifier -1 75 -1 memory 3 0
+Affect modifier -1 75 -1 reasoning 3 0
+Affect modifier -1 75 -1 mana 25 0
+End
+
+#2234
+Name black pearl diadem~
+Short a `#`Wd`siade`Wm`^ made of `Sblack `wp`se`wa`sr`wl`ss`^~
+Desc A diadem of black pearls lies here.~
+Level 70
+ItemType jewelry~
+Cost 2101
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    dark evil magic antigood nodegrade burnproof~
+Wear     take head~
+Affect modifier -1 70 -1 memory 5 0
+Affect modifier -1 70 -1 reasoning 5 0
+Affect modifier -1 70 -1 selfdiscipline 3 0
+Affect modifier -1 70 -1 presence 3 0
+Affect modifier -1 70 -1 saves -6 0
+Affect modifier -1 70 -1 hp 4 0
+Affect modifier -1 70 -1 mana 120 0
+End
+
+#2235
+Name glowing portal~
+Short a glowing portal~
+Desc A glowing portal is here.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN A 2200 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2349
+Name black diamond wedding band~
+Short an intricately designed `#`Sblack `Wd`Si`Wa`Sm`Wo`Sn`Wd `Ww`we`Wd`wd`Wi`wn`Wg `sband`^~
+Desc A black diamond wedding band lies here.~
+Level 1
+ItemType jewelry~
+Cost 900
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    burnproof~
+Wear     take~
+Affect modifier -1 1 -1 hitroll 1 0
+Affect modifier -1 1 -1 damroll 1 0
+Affect modifier -1 1 -1 hp 1 0
+ExtraDesc silver wedding band~
+Intricately designed with beautiful detailing, this silver wedding band has 
+a small enscription in it reading, "Twenty-First Day of the Mists, Month of 
+the Heat in the Year 580 AK".  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#2200
+Name A dark antechamber~
+Desc A wide archway of solid ivory rises to the ceiling, glowing palely in the 
+shadows.  Steep steps of thick obsidian slopes downward to the south, 
+leading to a wide set of black obsidian doors.  The doors themselves are a 
+rising mass of smooth obsidian, though looking closely, it's clear to see a 
+flowing script tracing along the outer edge of the door and large runes 
+carved deeply into its center.  No doorknob or other way of opening the door 
+can be seen from this side, though it seems to hum with an odd aura of 
+power.  
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 2201
+Exit south 645
+EFlags door closed~
+End
+
+
+#2201
+Name A large corridor~
+Desc . Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  West and east continue along the 
+corridor, while a wide arch of ivory opens towards the south.  
+~
+RoomFlags dark no_mob indoors no_recall noscry~
+Sector inside~
+Exit east 2208
+Exit south 2200
+Exit west 2202
+End
+
+
+#2202
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2201
+Exit west 2203
+End
+
+
+#2203
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and east continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2204
+Exit east 2202
+End
+
+
+#2204
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2205
+Exit south 2203
+End
+
+
+#2205
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2206
+Exit south 2204
+End
+
+
+#2206
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2207
+Exit west 2205
+End
+
+
+#2207
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2212
+Exit south 2213
+EFlags door closed locked hard~
+EKeyvnum 2208
+EKeywords panel~
+Exit west 2206
+End
+
+
+#2208
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  West and east continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2209
+Exit west 2201
+End
+
+
+#2209
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  West and north continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2210
+Exit west 2208
+End
+
+
+#2210
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2211
+Exit south 2209
+End
+
+
+#2211
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  West and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit south 2210
+Exit west 2212
+End
+
+
+#2212
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2211
+Exit west 2207
+End
+
+
+#2213
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit north 2207
+EFlags door closed locked hard~
+EKeyvnum 2208
+Exit up 2214
+End
+
+
+#2214
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2215
+Exit down 2213
+End
+
+
+#2215
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit east 2217
+EFlags door closed nopass~
+Exit up 2226
+Exit down 2214
+End
+
+
+#2216
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2221
+Exit south 2222
+End
+
+
+#2217
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2218
+Exit south 2225
+Exit west 2215
+EFlags door closed nopass~
+End
+
+
+#2218
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  South and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit south 2217
+Exit west 2219
+End
+
+
+#2219
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2218
+Exit west 2220
+End
+
+
+#2220
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2219
+Exit west 2221
+End
+
+
+#2221
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2220
+Exit south 2216
+End
+
+
+#2222
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and east continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2216
+Exit east 2223
+End
+
+
+#2223
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2224
+Exit west 2222
+End
+
+
+#2224
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2225
+Exit west 2223
+End
+
+
+#2225
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2217
+Exit west 2224
+End
+
+
+#2226
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2227
+Exit down 2215
+End
+
+
+#2227
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit south 2228
+EFlags door closed locked nopass~
+EKeyvnum 2216
+EKeywords door~
+Exit up 2238
+Exit down 2226
+End
+
+
+#2228
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2227
+EFlags door closed locked nopass~
+EKeyvnum 2216
+EKeywords panel~
+Exit east 2237
+Exit west 2229
+End
+
+
+#2229
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2228
+Exit west 2230
+End
+
+
+#2230
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2231
+Exit east 2229
+End
+
+
+#2231
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2232
+Exit south 2230
+End
+
+
+#2232
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2233
+Exit south 2231
+End
+
+
+#2233
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2234
+Exit west 2232
+End
+
+
+#2234
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2235
+Exit west 2233
+End
+
+
+#2235
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  South and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit south 2236
+Exit west 2234
+End
+
+
+#2236
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2235
+Exit south 2237
+End
+
+
+#2237
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2236
+Exit west 2228
+End
+
+
+#2238
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2239
+Exit down 2227
+End
+
+
+#2239
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2240
+Exit down 2238
+End
+
+
+#2240
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit west 2241
+EFlags door closed nopass~
+Exit up 2249
+Exit down 2239
+End
+
+
+#2241
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2242
+Exit east 2240
+EFlags door closed nopass~
+Exit south 2248
+End
+
+
+#2242
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2243
+Exit south 2241
+End
+
+
+#2243
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2244
+Exit west 2242
+End
+
+
+#2244
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit south 2245
+Exit west 2243
+End
+
+
+#2245
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and south continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2244
+Exit south 2246
+End
+
+
+#2246
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2245
+Exit west 2247
+End
+
+
+#2247
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  East and west continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2246
+Exit west 2248
+End
+
+
+#2248
+Name A large corridor~
+Desc Pure black obsidian panels form the structure of this large corridor.  It 
+shimmers with its own luster even as no light shines upon its shadowy mass.  
+Emitting a frigid chill, it numbs right to the bone when touched and feels 
+almost slick with moisture.  It's hard to tell where entryways lie or if 
+it's just another slab of obsidian.  North and east continue along the dark 
+corridor.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2241
+Exit east 2247
+End
+
+
+#2249
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2250
+Exit down 2240
+End
+
+
+#2250
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit down 2249
+Exit northeast 2251
+EFlags door closed locked nopass~
+EKeyvnum 2220
+End
+
+
+#2251
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit south 2252
+Exit west 2259
+Exit southwest 2250
+EFlags door closed locked nopass~
+EKeyvnum 2220
+End
+
+
+#2252
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2251
+Exit south 2253
+End
+
+
+#2253
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2252
+Exit west 2254
+End
+
+
+#2254
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2253
+Exit west 2255
+End
+
+
+#2255
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2254
+Exit west 2256
+End
+
+
+#2256
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2257
+Exit east 2255
+Exit northeast 2261
+EFlags door closed locked nopass~
+EKeyvnum 2220
+EKeywords door~
+End
+
+
+#2257
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit north 2258
+Exit south 2256
+End
+
+
+#2258
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2260
+Exit south 2257
+End
+
+
+#2259
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2251
+Exit west 2260
+End
+
+
+#2260
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors no_recall noscry~
+Sector inside~
+Exit east 2259
+Exit west 2258
+End
+
+
+#2261
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark no_mob indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2262
+Exit southwest 2256
+EFlags door closed locked nopass~
+EKeyvnum 2220
+End
+
+
+#2262
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit up 2263
+Exit down 2261
+End
+
+
+#2263
+Name A shadowed tower~
+Desc Rising higher and higher, smooth slabs of granite form this round towered 
+stairway.  Drawings of grotesque battle scenes flow across the grey stone, 
+the stark images seeming surreal in their life-like imagery.  As the winding 
+staircase leads up, new scenes of war can be seen.  Etchings of massive 
+armies of elves slain at the feet of the drow soldiers are depicted in 
+accurate detail, climbing up the walls.  
+~
+RoomFlags dark indoors no_recall noscry antimagic noscan~
+Sector inside~
+Exit down 2262
+Exit southeast 2264
+EFlags door closed locked nopass~
+EKeyvnum 2221
+EKeywords door~
+End
+
+
+#2264
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the sloping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit east 2265
+Exit west 2273
+Exit northwest 2263
+EFlags door closed locked nopass~
+EKeyvnum 2221
+EKeywords door~
+End
+
+
+#2265
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit north 2266
+Exit west 2264
+End
+
+
+#2266
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit north 2267
+Exit south 2265
+Exit up 2280
+EFlags door closed nopass~
+End
+
+
+#2267
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit south 2266
+Exit west 2268
+End
+
+
+#2268
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit east 2267
+Exit west 2269
+End
+
+
+#2269
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit east 2268
+Exit west 2270
+End
+
+
+#2270
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit east 2269
+Exit south 2271
+End
+
+
+#2271
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit north 2270
+Exit south 2272
+End
+
+
+#2272
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit north 2271
+Exit east 2273
+End
+
+
+#2273
+Name A large corridor~
+Desc Pillars of crystalline white marble rise to the slopping ceiling of this 
+large chamber.  Pure jade, the walls gleam with an aura of their own, as 
+they arch over the center of the room forming a domed ceiling.  Glowing from 
+the depths of the jade flooring, a golden script can be seen when looked 
+directly upon.  Emitting a frigid chill, the jade numbs right to the bone 
+when touched and feels almost slick with moisture.  
+~
+RoomFlags dark indoors noscry noscan~
+Sector inside~
+Exit east 2264
+Exit west 2272
+End
+
+
+#2275
+Name A dark turret~
+Desc Light filters through the amethyst stones of this turret, casting shadows 
+that flicker in a purple and red haze.  Statues circle the tower, almost as 
+if they were protecting it.  The tiling is a pure white, almost transparent 
+in it's clearness.  Looking closely, thin trails of silver ruins can be seen 
+crossing over it.  The air seems heavy, almost throbbing in it's heaviness.  
+
+~
+RoomFlags dark indoors no_recall noscry noscan~
+Sector inside~
+Exit west 2276
+Exit northeast 2280
+End
+
+
+#2276
+Name A dark turret~
+Desc Light filters through the amethyst stones of this turret, casting shadows 
+that flicker in a purple and red haze.  Statues circle the tower, almost as 
+if they were protecting it.  The tiling is a pure white, almost transparent 
+in it's clearness.  Looking closely, thin trails of silver ruins can be seen 
+crossing over it.  The air seems heavy, almost throbbing in it's heaviness.  
+
+~
+RoomFlags dark indoors no_recall noscry noscan~
+Sector inside~
+Exit east 2275
+Exit northwest 2277
+End
+
+
+#2277
+Name A dark turret~
+Desc Light filters through the amethyst stones of this turret, casting shadows 
+that flicker in a purple and red haze.  Statues circle the tower, almost as 
+if they were protecting it.  The tiling is a pure white, almost transparent 
+in it's clearness.  Looking closely, thin trails of silver ruins can be seen 
+crossing over it.  The air seems heavy, almost throbbing in it's heaviness.  
+
+~
+RoomFlags dark indoors no_recall noscry noscan~
+Sector inside~
+Exit east 2281
+EFlags door closed~
+Exit northeast 2278
+Exit southeast 2276
+End
+
+
+#2278
+Name A dark turret~
+Desc Light filters through the amethyst stones of this turret, casting shadows 
+that flicker in a purple and red haze.  Statues circle the tower, almost as 
+if they were protecting it.  The tiling is a pure white, almost transparent 
+in it's clearness.  Looking closely, thin trails of silver ruins can be seen 
+crossing over it.  The air seems heavy, almost throbbing in it's heaviness.  
+
+~
+RoomFlags dark indoors no_recall noscry noscan~
+Sector inside~
+Exit east 2279
+Exit southwest 2277
+End
+
+
+#2279
+Name A dark turret~
+Desc Light filters through the amethyst stones of this turret, casting shadows 
+that flicker in a purple and red haze.  Statues circle the tower, almost as 
+if they were protecting it.  The tiling is a pure white, almost transparent 
+in it's clearness.  Looking closely, thin trails of silver ruins can be seen 
+crossing over it.  The air seems heavy, almost throbbing in it's heaviness.  
+
+~
+RoomFlags dark indoors no_recall noscry noscan~
+Sector inside~
+Exit west 2278
+Exit southeast 2280
+End
+
+
+#2280
+Name A dark turret~
+Desc Light filters through the amethyst stones of this turret, casting shadows 
+that flicker in a purple and red haze.  Statues circle the tower, almost as 
+if they were protecting it.  The tiling is a pure white, almost transparent 
+in it's clearness.  Looking closely, thin trails of silver ruins can be seen 
+crossing over it.  The air seems heavy, almost throbbing in it's heaviness.  
+
+~
+RoomFlags dark indoors no_recall noscry noscan~
+Sector inside~
+Exit down 2266
+EFlags door closed nopass~
+Exit southwest 2275
+Exit northwest 2279
+End
+
+
+#2281
+Name An altar room~
+Desc The only light of this room is cast by the gateway that rises from the 
+center.  It's magic light fills the room, making it seem larger then it is.  
+The walls are crafted from black marble that has jewels and fine stones 
+imbedded into it's surface.  The ceiling rises high into the air, it's 
+ending not clear as it seems to ripple back and forth like a dark water.  
+Not a sound can be heard, the silence of the altar room being almost 
+unnatural.  
+~
+RoomFlags dark indoors safe no_recall noscry antimagic nospeak noscan~
+Sector inside~
+Exit west 2277
+EFlags door closed~
+End
+
+
+#2282
+Name Shrine of Lolth~
+Desc Silk lines the walls of this large chamber.  Dark shades of red, black, and 
+violet shimmer from each as if jewels were found embedded into the silken 
+drapes.  A mist of webbing curls from the ceiling in wisps, seeming to blow 
+in a nonexistent breathe.  A faint light permeates the air, but the location 
+of which is unsure.  Crystalline black makes up the hard floor, not a sound 
+being heard upon it when walked on.  An altar sits in the center of this 
+room in all of it's glory.  
+~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit north 2283
+EFlags door closed~
+EKeywords curtain~
+Exit south 2285
+EFlags door closed~
+EKeywords curtain~
+End
+
+
+#2283
+Name a foyer~
+Desc Silk drapes along the walls, the same dark jeweled shades of that of the 
+Shrine.  The ceiling arches over head, it's ending and beginning unclear as 
+a shadowy webbing seems to encompass it.  A faint light permeates the air, 
+but the location of which is unsure.  The breath of silence fills this hall, 
+echoing off of the crystalline black flooring.  A ghost of a breeze can be 
+felt, but where it comes from, only the gods know themselves.  
+~
+RoomFlags indoors no_recall noscry noscan noautoexits~
+Sector inside~
+Exit north 2284
+EFlags door closed~
+Exit east 2290
+EFlags door closed~
+Exit south 2282
+EFlags door closed~
+Exit west 2289
+EFlags door closed~
+End
+
+
+#2284
+Name a small chamber~
+Desc This small chamber is left for those of dedication.  A narrow bed fills the 
+left corner, a small table and lamp beside it.  Taking up the majority of 
+the room is a altar of jade.  Carved into the jade is a large spider and 
+it's webbing, the silken threads shining a silver.  Candles line it, their 
+continuous burning sending shadows to flicker over the spider, causing it to 
+appear as if it were moving.  
+~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit south 2283
+EFlags door closed~
+End
+
+
+#2285
+Name a foyer~
+Desc Silk drapes along the walls, the same dark jeweled shades of that of the 
+Shrine.  The ceiling arches over head, it's ending and beginning unclear as 
+a shadowy webbing seems to encompass it.  A faint light permeates the air, 
+but the location of which is unsure.  The breath of silence fills this hall, 
+echoing off of the crystalline black flooring.  A ghost of a breeze can be 
+felt, but where it comes from, only the gods know themselves.  
+~
+RoomFlags indoors no_recall noscry noscan noautoexits~
+Sector inside~
+Exit north 2282
+EFlags door closed~
+Exit east 2287
+EFlags door closed~
+Exit south 2286
+EFlags door closed~
+Exit west 2288
+EFlags door closed~
+End
+
+
+#2286
+Name a small chamber~
+Desc This small chamber is left for those of dedication.  A narrow bed fills the 
+left corner, a small table and lamp beside it.  Taking up the majority of 
+the room is a altar of jade.  Carved into the jade is a large spider and 
+it's webbing, the silken threads shining a silver.  Candles line it, their 
+continuous burning sending shadows to flicker over the spider, causing it to 
+appear as if it were moving.  
+~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit north 2285
+EFlags door closed~
+End
+
+
+#2287
+Name the hall of anguish~
+Desc ~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit west 2285
+EFlags door closed~
+End
+
+
+#2288
+Name a confessional~
+Desc Narrow wooden panels make up this room, forming it into two sections.  The 
+divider is a dark wood spanned with runes carved into it's surface.  A 
+sliding panel sits a few feet off of the floor, when open revealing a veined 
+metal section.  Light filters through the room from candle tiers that line 
+the walls, casting shadows in each corner.  Uncomfortable looking benches 
+sit in each divided section, seeming to be the only furniture.  
+~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit east 2285
+EFlags door closed~
+End
+
+
+#2289
+Name the hall of suffering~
+Desc Wide and stark, this room is bare other then the few implements of torture 
+that fill it.  Dangling from the ceiling, a large barred cage fills a good 
+part of the room.  Weapons of all sorts line the walls, some of their uses 
+unclear.  In the center of the room, a link chain of bone forms a barrier to 
+a dark pit.  Coming from the pit, a shrill whistling can be heard as a 
+breeze wafts up from it.  
+~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit east 2283
+EFlags door closed~
+End
+
+
+#2290
+Name a confessional~
+Desc Narrow wooden panels make up this room, forming it into two sections.  The 
+divider is a dark wood spanned with runes carved into it's surface.  A 
+sliding panel sits a few feet off of the floor, when open revealing a veined 
+metal section.  Light filters through the room from candle tiers that line 
+the walls, casting shadows in each corner.  Uncomfortable looking benches 
+sit in each divided section, seeming to be the only furniture.  
+~
+RoomFlags indoors no_recall noscry noscan~
+Sector inside~
+Exit west 2283
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 2200 spec_cast_mage
+M 2201 spec_elf_muncher
+M 2203 spec_cast_mage
+M 2204 spec_guard
+M 2206 spec_nasty
+M 2207 spec_cast_mage
+M 2209 spec_cast_cleric
+M 2214 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 2201 30 2200 1
+M 0 2201 30 2203 1
+E 0 2225 -1 torso~
+M 0 2200 22 2203 1
+M 0 2214 1 2204 1
+E 0 2208 -1 hold~
+M 0 2200 22 2205 1
+M 0 2201 30 2205 1
+M 0 2200 22 2207 1
+M 0 2201 30 2209 1
+M 0 2200 22 2209 1
+M 0 2201 30 2211 1
+E 0 2225 -1 torso~
+M 0 2200 22 2211 1
+M 0 2202 1 2217 1
+E 0 2216 -1 hold~
+O 0 2235 -1 2218
+M 0 2201 1 2218 1
+M 0 2202 8 2218 1
+E 0 2217 -1 legs~
+E 0 2203 -1 wielded~
+M 0 2201 30 2221 1
+E 0 2225 -1 torso~
+M 0 2202 6 2221 1
+E 0 2203 -1 wielded~
+M 0 2201 30 2222 1
+M 0 2202 6 2222 1
+E 0 2203 -1 wielded~
+E 0 2216 -1 hold~
+M 0 2201 30 2225 1
+E 0 2225 -1 torso~
+M 0 2202 6 2225 1
+E 0 2203 -1 wielded~
+E 0 2218 -1 arms~
+M 0 2201 30 2230 1
+E 0 2225 -1 torso~
+M 0 2203 8 2230 1
+E 0 2202 -1 sheathed~
+E 0 2215 -1 about~
+M 0 2201 30 2232 1
+M 0 2203 8 2232 1
+E 0 2215 -1 about~
+O 0 2235 -1 2235
+M 0 2201 30 2235 1
+E 0 2225 -1 torso~
+M 0 2203 8 2235 1
+M 0 2201 30 2237 1
+M 0 2203 8 2237 1
+E 0 2202 -1 sheathed~
+E 0 2215 -1 about~
+M 0 2204 6 2241 1
+E 0 2220 -1 hold~
+M 0 2201 30 2242 1
+E 0 2225 -1 torso~
+M 0 2204 6 2243 1
+E 0 2219 -1 torso~
+E 0 2201 -1 wielded~
+O 0 2235 -1 2244
+M 0 2201 30 2244 1
+M 0 2204 6 2245 1
+E 0 2222 -1 legs~
+M 0 2201 30 2246 1
+E 0 2225 -1 torso~
+M 0 2204 6 2247 1
+E 0 2219 -1 torso~
+M 0 2201 30 2248 1
+O 0 2235 -1 2251
+M 0 2201 30 2251 1
+E 0 2225 -1 torso~
+M 0 2205 5 2252 1
+M 0 2201 30 2253 1
+M 0 2205 5 2254 1
+M 0 2201 30 2256 1
+M 0 2205 5 2257 1
+M 0 2201 30 2258 1
+M 0 2215 1 2260 1
+M 0 2205 5 2260 1
+E 0 2221 -1 hold~
+M 0 2201 30 2265 1
+E 0 2225 -1 torso~
+M 0 2206 5 2265 1
+M 0 2207 2 2266 1
+E 0 2204 -1 wielded~
+E 0 2224 -1 head~
+O 0 2235 -1 2267
+M 0 2201 30 2267 1
+M 0 2206 5 2267 1
+E 0 2205 -1 wielded~
+E 0 2223 -1 waist~
+M 0 2201 30 2270 1
+E 0 2225 -1 torso~
+M 0 2206 5 2270 1
+E 0 2223 -1 waist~
+M 0 2207 2 2271 1
+E 0 2204 -1 wielded~
+E 0 2224 -1 head~
+M 0 2201 30 2272 1
+M 0 2206 5 2272 1
+E 0 2205 -1 wielded~
+M 0 2208 4 2275 1
+E 0 2233 -1 neck1~
+E 0 2232 -1 floating~
+M 0 2201 30 2277 1
+M 0 2208 4 2277 1
+E 0 2232 -1 floating~
+M 0 2208 4 2278 1
+E 0 2233 -1 neck1~
+E 0 2232 -1 floating~
+M 0 2201 30 2280 1
+E 0 2225 -1 torso~
+M 0 2208 4 2280 1
+E 0 2232 -1 floating~
+O 0 2200 -1 2281
+O 0 2209 -1 2282
+O 0 2210 -1 2282
+M 0 2209 1 2282 1
+E 0 2211 -1 about~
+E 0 2234 -1 head~
+E 0 2206 -1 hold~
+M 0 2210 1 2284 1
+E 0 2228 -1 feet~
+E 0 2226 -1 waist~
+E 0 2227 -1 rankle~
+M 0 2211 1 2286 1
+E 0 2230 -1 feet~
+E 0 2227 -1 lankle~
+E 0 2229 -1 waist~
+M 0 2212 1 2287 1
+E 0 2231 -1 head~
+E 0 2212 -1 wielded~
+O 0 1855 -1 2287
+O 0 2214 -1 2287
+M 0 2213 1 2289 1
+E 0 27147 -1 torso~
+O 0 2213 -1 2289
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2200
+title Wear Eyes~
+author Ixliam~
+code mob oload 2207
+wear all
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1067995952
+END
+
+#0
+
+
+#$

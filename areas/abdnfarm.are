@@ -1,0 +1,1630 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Abandoned Farm~
+ShortName   Abandoned Farm~
+Builders    none~
+Credits     Brussels~
+VNUMs       5100 5199
+LComment    `#`C[ 20- 35]`^
+LRange      20 35
+Security    7
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#5100
+Name bright red strawberry~
+ShortD a bright red strawberry~
+LongD A bright red strawberry rests here.~
+Desc A strawberry standing on a set of vines stamps here.  He occasionally spits 
+seeds off at the ground, seeming more to pop off of him then just fall off.  
+His skin looks rough and dried.  
+~
+Race unique~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType thwack
+AC -45 -45 -45 -40
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area~
+Act2   no_random_obj~
+Off    berserk fast kick trip crush~
+Imm    disease sleep~
+Res    charm drowning light~
+Vuln   bash fire lightning~
+Form   edible non_skinable construct biped~
+Part   head legs heart guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material pulp
+END
+
+#5101
+Name carrot~
+ShortD a carrot, orange and crinkled~
+LongD A carrot with a floppy green top and wrinkles all over it is here.~
+Desc A carrot has burried itself here, either in wait or to escape the heat.  It 
+seems to be able to pop in and out.  Its outside is wrinkled from lack of 
+water.  
+~
+Race unique~
+Align 0 0
+Level 32
+Hitroll 0
+HitDice 5d6+205
+ManaDice 5d6+180
+DamDice 4d7+10
+DamType none
+AC -113 -113 -113 -98
+Wealth 2
+Act    npc no_tame stay_area warrior~
+AffBy  sleep regeneration~
+Off    bash dodge trip~
+Vuln   fire lightning~
+Form   edible magical other non_skinable~
+Part   head arms eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    neutral~
+Material carrot
+END
+
+#5102
+Name corn stalk~
+ShortD an angry corn stalk~
+LongD A tall corn stalk stands here with a face of kernels.~
+Desc A kernal of corn pops from this living plant flying down into pop corn.  It 
+looks very human at its cob with a face and everything.  
+~
+Race hobgoblin~
+Align 0 0
+Level 28
+Hitroll 0
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType none
+AC -85 -85 -85 -70
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  dark_vision slow~
+Off    trip crush~
+Res    bash negative disease~
+Vuln   fire sound~
+Form   edible non_skinable biped mammal~
+Part   head arms legs feet eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material corn
+END
+
+#5103
+Name a chicken~
+ShortD a chicken~
+LongD A chicken runs around here, looking for grain.~
+Desc ~
+Race bird~
+Align 0 0
+XPMod 110
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType peck
+AC -70 -70 -70 -61
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+Off    trip assist_vnum~
+Imm    summon charm~
+Form   edible animal mammal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 2000 30~
+END
+
+#5104
+Name killer tomatoe~
+ShortD a killer tomatoe~
+LongD A bright, shiny-red killer tomatoe bounces around here.~
+Desc . A bright red, tomatoe fruit stands on large tenticles others whipping 
+about.  Maybe its the big teeth, but something says he ain't happy.  
+~
+Race unique~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType thwack
+AC -117 -117 -117 -99
+Wealth 10
+Act    npc dont_wander no_tame aggressive stay_area mage~
+Off    dodge fast trip~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#5105
+Name baby tomatoe~
+ShortD a crying, baby green tomatoe~
+LongD A crying baby tomatoe dangles from a vine, crying loudly, rests here.~
+Desc A shiny gree tomatoe sits here crying.  It is drug behind the larger red 
+tomatoe on the veins.  It has teeth of its own as well.  The crying slowly 
+becomes more annoying.  
+~
+Race unique~
+Align 0 0
+Level 27
+Hitroll 0
+HitDice 4d5+120
+ManaDice 4d5+120
+DamDice 5d4+7
+DamType none
+AC -80 -80 -80 -71
+Wealth 0
+Act    npc no_tame stay_area~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#5106
+Name farmer~
+ShortD a panicked farmer~
+LongD A panicked farmer runs around here, looking... panicked.~
+Desc ~
+Race human~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -97
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  haste fear~
+Off    disarm kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#5100
+Name water barrel~
+Short a stubby water barrel~
+Desc A short barrel, rests here filled with clear liquid.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 110
+Material unknown~
+Extra    nodegrade burnproof~
+ExtraDesc water barrel~
+A short wooden barrel, with rusted iron rings holding it tight.  Rests here, with a pipe flowing up and overthe house.
+~
+End
+
+#5102
+Name piece dried strawberry~
+Short a piece of `#`rdried strawberry`^ skin~
+Desc A piece of dried strawberry skin is here.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 35
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+ExtraDesc dried strawberry piece~
+A tough piece of skin off of what was probable a straberry is here.  Its 
+probably off a gigantic strawberry.  After some working it with some herbs 
+and tanning oil.  It would probably make some good armor.  
+~
+End
+
+#5103
+Name a plush couch~
+Short a long, plush couch~
+Desc A long couch rests here, perfectly stable.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4000 EH 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal~
+Extra2   nodecay~
+ExtraDesc plush long couch~
+A well furbished couch rests her with interesting hand crafted legs, they’re 
+like claws resting over spherical objects flattened at the bottom.  It seems 
+to just rest about a bit of dust on it.  Not very noticeable.  The pattern 
+on for its cushions are slightly gaudy.  
+~
+End
+
+#5104
+Name a large fire ring~
+Short a large brick firering~
+Desc A large brick firering is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6000 DGJ 100 100
+Weight 0
+Material unknown~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc large fire ring firering brick~
+A large brick fire pit made of brick, stays stationary in the center of this 
+massive room.  It heats up most of the room, and probably into the hall way 
+a bit.  It produces a nice glow the fire seems to still be burning since the 
+place was abandoned.  The pit has rounded benches around it 
+~
+End
+
+#5106
+Name a denim cot~
+Short a denim cot~
+Desc A denim cot lies here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 BEHK 100 100
+Weight 0
+Material denim~
+ExtraDesc denim cot~
+A cot with a soft denim for its material, a pillow with chicken down rests 
+upon the head of it 
+~
+End
+
+#5109
+Name vine whip~
+Short a vine whip~
+Desc A long vine whip is coiled here.~
+Level 25
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values whip 4 6 whip L
+Weight 20
+Material vine~
+Extra    nonmetal~
+Wear     take wield~
+ClassAllowances mage druid ranger~
+ExtraDesc vine whip~
+A snaking thorned vine rests here seeming to radiate softly, it has barbs 
+all over it.  
+~
+End
+
+#5110
+Name a cooked egg~
+Short a cooked egg~
+Desc A shelled cooked egg~
+Level 1
+ItemType food~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1 0 0 0
+Weight 10
+Material egg~
+Wear     take~
+ExtraDesc cooked shelled egg~
+A heavily heated and now cooked egg is inside its shell here.  Seems to have 
+cooked from the convection of the heat.  
+~
+End
+
+#5112
+Name egg box~
+Short an egg box~
+Desc A wooden egg box rests here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30 0 0 10 0
+Weight 150
+Material wood~
+Extra    inventory~
+ExtraDesc wooden egg box~
+A stout, jointed-wooden box, filled with hay is here.  It has two domed 
+marks left in the hay as if something had been taken.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#5100
+Name Down on the Farm~
+Desc The heat here is nearly enough to cause sweating instantly.  Hot enough to 
+cook an egg on cobbled stone road.  A small gate with a white picket fence 
+roughed up slightly is to the east.  The gate blocks the path onto what 
+looks to be the broad side of a house.  A short distance from the gate a 
+dirt path seems to curl around the house and.  
+~
+Sector trail~
+Exit north 59621
+Exit east 5105
+EFlags door closed~
+EKeywords gate~
+Exit south 59702
+Exit west 59620
+End
+
+
+#5101
+Name A Wide Path~
+Desc You are before a simple wide dusty trail.  To the north and west is a white 
+picket fence blocking your path, south is the path towards the farm, and to 
+the east is a big red barn.  
+~
+Sector trail~
+Exit east 5110
+Exit south 5102
+End
+
+
+#5102
+Name A Wide Path~
+Desc You are before a simple wide dusty trail.  To the north and west is a white 
+picket fence blocking your path, south is the path towards the farm, and to 
+the east is a big red barn.  
+~
+Sector trail~
+Exit north 5101
+Exit east 5111
+Exit south 5103
+End
+
+
+#5103
+Name Just Before the Bend~
+Desc This path heads north slowly winding around the house.  To the east is a 
+wall on the outside of the farm house.  Up farther north is continuation of 
+the path, which curves just ahead.  
+~
+Sector trail~
+Exit north 5102
+Exit south 5104
+End
+
+
+#5104
+Name Path Around the House~
+Desc This path heads north slowly Winding around the house.  To the east is a 
+wall on the outside of the farm house.  Up farther north is continuation of 
+the path.  Which curves just ahead.  
+~
+Sector trail~
+Exit north 5103
+Exit south 5105
+End
+
+
+#5105
+Name In The Garden~
+Desc A small house, with a little bit of a bigger smell, stands before you, with 
+white painted siding, and a red roof.  The house has gutters running off the 
+side into a rather large bucket.  To the east is the door to the house.  
+North and south, are paths leading around the house.  
+~
+Sector trail~
+Exit north 5104
+Exit east 5114
+Exit south 5106
+Exit west 5100
+EFlags door closed~
+End
+
+
+#5106
+Name Path Around the House~
+Desc Heading south around the house, it looks probably much the same as the other 
+side does.  Shortly ahead the path curves around the little white house, the 
+picket fence on the west, house on the east.  The path still dirt and 
+looking semi-trodden.  The path continues on southward.  
+~
+Sector trail~
+Exit north 5105
+Exit south 5107
+End
+
+
+#5107
+Name Path Around the House~
+Desc Directly ahead the path turns east around the house to the lesser broad 
+side.  Oddly enough there are no windows to this house.  Something seems to 
+have left some fresh, or at least half fresh prints they seem to to be like 
+someone has lashed the ground with vines.  The path seems to have some 
+danger ahead.  
+~
+Sector trail~
+Exit north 5106
+Exit south 5108
+End
+
+
+#5108
+Name Path to The Garden~
+Desc The path bends sharply, and widens up, around the side of the house.  It 
+continues to what looks like a garden.  A picket fence surrounding the 
+southern half as well.  
+~
+Sector trail~
+Exit north 5107
+Exit east 5117
+Exit south 5109
+End
+
+
+#5109
+Name Path to The Garden~
+Desc You are in the south western corner, a fence in both directions.  East 
+follows a path towards a garden.  North follows the way out of this crazy 
+place.  
+~
+Sector trail~
+Exit north 5108
+Exit east 5118
+End
+
+
+#5110
+Name Around the Bend~
+Desc The path continues closer and closer to the barn, everything looking much 
+the same, except the barn getting closer and closer.  
+~
+Sector trail~
+Exit east 5119
+Exit south 5111
+Exit west 5101
+End
+
+
+#5111
+Name Where Were You Going Again?~
+Desc The path continues closer and closer to the barn, everything looking much 
+the same, except the barn getting closer and closer.  
+~
+Sector trail~
+Exit north 5110
+Exit east 5120
+Exit west 5102
+End
+
+
+#5112
+Name Living Room~
+Desc A very large living room fills up this area.  A couch in the far west 
+stretching all the way across the wall.  In the center a large fire ring.  
+Against the north wall is a big pile of logs.  The entire room his homey 
+windows looking out into the beautiful view, the barn partially visible.  A 
+few chairs are scattered about the room, light enough to move across the 
+hardwood floor, but not enough to even travel a day carrying it on your 
+back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5121
+Exit south 5113
+Exit southeast 5122
+End
+
+
+#5113
+Name Living Room~
+Desc A very large living room fills up this area.  A couch in the far west 
+stretching all the way across the wall.  In the center a large fire ring.  
+Against the north wall is a big pile of logs.  The entire room his homey 
+windows looking out into the beautiful view, the barn partially visible.  A 
+few chairs are scattered about the room, light enough to move across the 
+hardwood floor, but not enough to even travel a day carrying it on your 
+back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5112
+Exit east 5122
+Exit northeast 5121
+End
+
+
+#5114
+Name Front Hall~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit east 5123
+Exit west 5105
+End
+
+
+#5115
+Name Bedroom~
+Desc This room is simple, and bare essentials, a small closet, and a cot rest 
+here.  The wall is simplistically decorated much like the rest of the house. 
+ No windows.  This place just gets weirder and weirder.  The floor boards 
+creak softly, if people were around you probably wouldn’t hear it.  But it 
+simply echoes out.  Dust is everywhere like all the other rooms.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5124
+Exit south 5116
+End
+
+
+#5116
+Name Closet~
+Desc The closet has a single wooden rail and a high top shelf.  They didn’t 
+bother to cover the walls here.  The floor boards look slightly roughed out 
+as well.  Not sanitary, and not looking good either.  Probably should leave. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5115
+End
+
+
+#5117
+Name Path to The Garden~
+Desc East goes torwards a garden of some sort, the north is blocked by the narrow 
+side of a house.  A dirt trail continues, around the property by the looks 
+of it.  The house looks unkempt and the trail seeming to only have your 
+footprints on it.  
+~
+Sector trail~
+Exit east 5126
+Exit south 5118
+Exit west 5108
+End
+
+
+#5118
+Name Path to The Garden~
+Desc The path bends sharply, and widens up, around the side of the house.  It 
+continues to what looks like a garden.  A picket fence surrounding the 
+southern half as well.  
+~
+Sector trail~
+Exit north 5117
+Exit east 5127
+Exit west 5109
+End
+
+
+#5119
+Name TO THE BARN...Still...~
+Desc The path continues closer and closer to the barn, everything looking much 
+the same, except the barn getting closer and closer.  
+~
+Sector trail~
+Exit east 5128
+Exit south 5120
+Exit west 5110
+End
+
+
+#5120
+Name TO THE BARN!~
+Desc The path continues closer and closer to the barn, everything looking much 
+the same, except the barn getting closer and closer.  
+~
+Sector trail~
+Exit north 5119
+Exit east 5129
+Exit west 5111
+End
+
+
+#5121
+Name Living Room~
+Desc A very large living room fills up this area.  A couch in the far west 
+stretching all the way across the wall.  In the center a large fire ring.  
+Against the north wall is a big pile of logs.  The entire room his homey 
+windows looking out into the beautiful view, the barn partially visible.  A 
+few chairs are scattered about the room, light enough to move across the 
+hardwood floor, but not enough to even travel a day carrying it on your 
+back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5130
+Exit south 5122
+Exit west 5112
+Exit southeast 5131
+Exit southwest 5113
+End
+
+
+#5122
+Name Living Room~
+Desc A very large living room fills up this area.  A couch in the far west 
+stretching all the way across the wall.  In the center a large fire ring.  
+Against the north wall is a big pile of logs.  The entire room his homey 
+windows looking out into the beautiful view, the barn partially visible.  A 
+few chairs are scattered about the room, light enough to move across the 
+hardwood floor, but not enough to even travel a day carrying it on your 
+back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5121
+Exit east 5131
+Exit south 5123
+Exit west 5113
+Exit northeast 5130
+Exit northwest 5112
+End
+
+
+#5123
+Name Down the Hall~
+Desc This part of the hall branches in all directions to the north is a living 
+room like area a door to the east blocks your movements.  To the south is a 
+set of doors on opposite sides of the walls.  This part of the hall has a 
+small table with a vase and some wilted flowers.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5122
+Exit east 5132
+Exit south 5124
+Exit west 5114
+End
+
+
+#5124
+Name Down The Hall~
+Desc There are four ways to go from here.  This simple little hallway.  North to 
+were you cam.  East and west to different bedrooms, and to the south the end 
+of the hall.  The house looks much the same, if you didn’t know better you 
+could get lost.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5123
+Exit east 5133
+Exit south 5125
+Exit west 5115
+End
+
+
+#5125
+Name End of The Hall~
+Desc The end of the hall just extra space that was never used.  Its not very far 
+from one end to the other.  Decorated like the rest of the house, just drab. 
+ It’s a simple abrupt stop.  You can always go back north though.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5124
+End
+
+
+#5126
+Name Path to The Garden~
+Desc The path bends sharply, and widens up, around the side of the house.  It 
+continues to what looks like a garden.  A picket fence surrounding the 
+southern half as well.  
+~
+Sector trail~
+Exit east 5135
+Exit south 5127
+Exit west 5117
+End
+
+
+#5127
+Name Path to The Garden~
+Desc The path bends sharply, and widens up, around the side of the house.  It 
+continues to what looks like a garden.  A picket fence surrounding the 
+southern half as well.  
+~
+Sector trail~
+Exit north 5126
+Exit east 5136
+Exit west 5118
+End
+
+
+#5128
+Name Northern path to the barn~
+Desc The path continues closer and closer to the barn, everything looking much 
+the same, except the barn getting closer and closer.  The path continues 
+closer and closer to the barn, everything looking much the same, except the 
+barn getting closer and closer.  
+~
+Sector trail~
+Exit south 5129
+Exit west 5119
+End
+
+
+#5129
+Name Just before the Barn~
+Desc The path continues closer and closer to the barn, everything looking much 
+the same, except the barn getting closer and closer.  The path continues 
+closer and closer to the barn, everything looking much the same, except the 
+barn getting closer and closer.  
+~
+Sector trail~
+Exit north 5128
+Exit east 5138
+EFlags door~
+EKeywords barn~
+Exit west 5120
+End
+
+
+#5130
+Name Living Room~
+Desc A very large living room fills up this area.  A couch in the far west 
+stretching all the way across the wall.  In the center a large fire ring.  
+Against the north wall is a big pile of logs.  The entire room his homey 
+windows looking out into the beautiful view, the barn partially visible.  A 
+few chairs are scattered about the room, light enough to move across the 
+hardwood floor, but not enough to even travel a day carrying it on your 
+back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5131
+Exit west 5121
+Exit southwest 5122
+End
+
+
+#5131
+Name Living Room~
+Desc A very large living room fills up this area.  A couch in the far west 
+stretching all the way across the wall.  In the center a large fire ring.  
+Against the north wall is a big pile of logs.  The entire room his homey 
+windows looking out into the beautiful view, the barn partially visible.  A 
+few chairs are scattered about the room, light enough to move across the 
+hardwood floor, but not enough to even travel a day carrying it on your 
+back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5130
+Exit west 5122
+Exit northwest 5121
+End
+
+
+#5132
+Name The Kitchen~
+Desc . A rather constricted kitchen fills up the room.  An oven and stove top on 
+one side, a counter, and a large cabinet for dry goods.  There is A large 
+washbasin, and on the far side is a door with a thin tight metallic screen.  
+The walls are covered in a tacky wall paper.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 5123
+End
+
+
+#5133
+Name Bedroom~
+Desc This room is simple, and bare essentials, a small closet, and a cot rest 
+here.  The wall is simplistically decorated much like the rest of the house. 
+ No windows.  This place just gets weirder and weirder.  The floor boards 
+creak softly, if people were around you probably wouldn’t hear it.  But it 
+simply echoes out.  Dust is everywhere like all the other rooms.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5134
+Exit west 5124
+End
+
+
+#5134
+Name Closet~
+Desc The closet has a single wooden rail and a high top shelf.  They didn’t 
+bother to cover the walls here.  The floor boards look slightly roughed out 
+as well.  Not sanitary, and not looking good either.  Probably should leave. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5133
+End
+
+
+#5135
+Name Just befor The Garden~
+Desc The Path runs up against the house to the north, and a separate fence around 
+the garden itself, things seem to move around inside the garden.  Vines are 
+tangled about, and vegetables walk AROUND ON LEGS!  Amazing to say the least 
+they even seem to grunt and make sounds, a distant crying to the east.  
+~
+Sector trail~
+Exit east 5144
+Exit south 5136
+Exit west 5126
+End
+
+
+#5136
+Name Just befor The Garden~
+Desc The path leads east and hangs a sharp northward turn towards the barn and a 
+white building behind it.  To the north the way is blocked by a white picket 
+fence.  The path is still dirt.  This looks much like the rest of the 
+bumpkin area.  
+~
+Sector trail~
+Exit north 5135
+Exit east 5145
+Exit west 5127
+End
+
+
+#5137
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5146
+Exit south 5138
+End
+
+
+#5138
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5137
+Exit east 5147
+Exit south 5139
+Exit west 5129
+EFlags door~
+End
+
+
+#5139
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5138
+Exit east 5148
+End
+
+
+#5140
+Name The Foliage Frontier~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit east 5149
+Exit south 5141
+End
+
+
+#5141
+Name Into The Bush~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit north 5140
+Exit east 5150
+Exit south 5142
+End
+
+
+#5142
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5141
+Exit east 5151
+Exit south 5143
+End
+
+
+#5143
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5142
+Exit east 5152
+Exit south 5144
+End
+
+
+#5144
+Name Roughly Hoed Garden~
+Desc This Garden seems simple enough except for the massive amounts of vines 
+everywhere, some seeming to be bigger then your arms, the strangest part is 
+that they’re moving.  You seem to have gone around the universe into a 
+parallel one, turning from normal to just plain odd.  
+~
+Sector field~
+Exit north 5143
+Exit east 5153
+Exit west 5135
+End
+
+
+#5145
+Name Path to The Garden~
+Desc The path leads east and hangs a sharp northward turn towards the barn and a 
+white building behind it.  To the north the way is blocked by a white picket 
+fence.  The path is still dirt.  This looks much like the rest of the 
+bumpkin area.  
+~
+Sector trail~
+Exit east 5154
+Exit west 5136
+End
+
+
+#5146
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 5155
+Exit south 5147
+Exit west 5137
+End
+
+
+#5147
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5146
+Exit east 5156
+Exit south 5148
+Exit west 5138
+End
+
+
+#5148
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5147
+Exit east 5157
+Exit west 5139
+End
+
+
+#5149
+Name The Foliage Frontier~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit east 5158
+Exit south 5150
+Exit west 5140
+End
+
+
+#5150
+Name Into The Bush~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit north 5149
+Exit east 5159
+Exit south 5151
+Exit west 5141
+End
+
+
+#5151
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5150
+Exit east 5160
+Exit south 5152
+Exit west 5142
+End
+
+
+#5152
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5151
+Exit east 5161
+Exit south 5153
+Exit west 5143
+End
+
+
+#5153
+Name Roughly Hoed Garden~
+Desc This Garden seems simple enough except for the massive amounts of vines 
+everywhere, some seeming to be bigger then your arms, the strangest part is 
+that they’re moving.  You seem to have gone around the universe into a 
+parallel one, turning from normal to just plain odd.  
+~
+Sector field~
+Exit north 5152
+Exit east 5162
+Exit west 5144
+End
+
+
+#5154
+Name Path to The Garden~
+Desc The path leads east and hangs a sharp northward turn towards the barn and a 
+white building behind it.  To the north the way is blocked by a white picket 
+fence.  The path is still dirt.  This looks much like the rest of the 
+bumpkin area.  
+~
+Sector trail~
+Exit east 5163
+Exit west 5145
+End
+
+
+#5155
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 5156
+Exit west 5146
+End
+
+
+#5156
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5155
+Exit south 5157
+Exit west 5147
+End
+
+
+#5157
+Name Little Red Barn~
+Desc A simple wooden barn with the grain of the wood flowing downward.  All of 
+its boards are painted red, with the occasional white board from framing 
+doors.  Hay and dirt mingle across the floor.  A cow still stands in a stall 
+in the far south eastern most part, mooing idly.  A massive pile of grain 
+and hay rests on the ground.  The Barn seems to have lost its loft as it is 
+all broken in and the trusses are bare.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 5156
+Exit west 5148
+End
+
+
+#5158
+Name The Foliage Frontier~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit east 5167
+Exit south 5159
+Exit west 5149
+End
+
+
+#5159
+Name Into The Bush~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit north 5158
+Exit east 5168
+Exit south 5160
+Exit west 5150
+End
+
+
+#5160
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5159
+Exit east 5169
+Exit south 5161
+Exit west 5151
+End
+
+
+#5161
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5160
+Exit east 5170
+Exit south 5162
+Exit west 5152
+End
+
+
+#5162
+Name Roughly Hoed Garden~
+Desc This Garden seems simple enough except for the massive amounts of vines 
+everywhere, some seeming to be bigger then your arms, the strangest part is 
+that they’re moving.  You seem to have gone around the universe into a 
+parallel one, turning from normal to just plain odd.  
+~
+Sector field~
+Exit north 5161
+Exit east 5171
+Exit west 5153
+End
+
+
+#5163
+Name Path to The Garden~
+Desc The path leads east and hangs a sharp northward turn towards the barn and a 
+white building behind it.  To the north the way is blocked by a white picket 
+fence.  The path is still dirt.  This looks much like the rest of the 
+bumpkin area.  
+~
+Sector trail~
+Exit east 5172
+Exit west 5154
+End
+
+
+#5164
+Name Chicken Coop~
+Desc A chicken coop of all the things to be in this heat.  The eggs in the nests 
+must be cooked in all this heat.  The wooden planks holding in the heat.  
+The planks seem to have recently dried out.  There is a box made of wood, 
+with a gathering of hay in it, and a few eggs here and their, chicken run 
+about on the floor boards.  
+~
+Sector inside~
+Exit south 5165
+End
+
+
+#5165
+Name Chicken Coop~
+Desc A chicken coop of all the things to be in this heat.  The eggs in the nests 
+must be cooked in all this heat.  The wooden planks holding in the heat.  
+The planks seem to have recently dried out.  There is a box made of wood, 
+with a gathering of hay in it, and a few eggs here and their, chicken run 
+about on the floor boards.  
+~
+Sector inside~
+Exit north 5164
+Exit east 5174
+EFlags door closed~
+Exit south 5166
+End
+
+
+#5166
+Name Chicken Coop~
+Desc A chicken coop of all the things to be in this heat.  The eggs in the nests 
+must be cooked in all this heat.  The wooden planks holding in the heat.  
+The planks seem to have recently dried out.  There is a box made of wood, 
+with a gathering of hay in it, and a few eggs here and their, chicken run 
+about on the floor boards.  
+~
+Sector inside~
+Exit north 5165
+End
+
+
+#5167
+Name The Foliage Frontier~
+Desc An ugly plant seems to live in this room.  Tomatoes of all sizes and shapes 
+are around the area on vines, and runners.  The one that catches your eye is 
+the one trying to bite your leg off!!!  
+~
+Sector field~
+Exit south 5168
+Exit west 5158
+End
+
+
+#5168
+Name Into The Bush~
+Desc The thick vines and bush force you to trudge, and swat away vines, and 
+sometimes escape from the more grabby ones, darkness seems to descend about 
+the area.  Things aren’t looking good around here, whining is heard 
+somewhere around your area.  Something silences it and it starts up again.  
+~
+Sector field~
+Exit north 5167
+Exit south 5169
+Exit west 5159
+End
+
+
+#5169
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5168
+Exit south 5170
+Exit west 5160
+End
+
+
+#5170
+Name Unkempt Garden~
+Desc This room seems a bit denser in foliage then the last.  Vines seeming to 
+mingle more and more.  The seem to all lead east.  The farther east they go 
+the thicker they look.  Maybe you should stick to the west side.  They vines 
+prohibit movement and seem to move more lively now.  
+~
+Sector field~
+Exit north 5169
+Exit south 5171
+Exit west 5161
+End
+
+
+#5171
+Name Roughly Hoed Garden~
+Desc This Garden seems simple enough except for the massive amounts of vines 
+everywhere, some seeming to be bigger then your arms, the strangest part is 
+that they’re moving.  You seem to have gone around the universe into a 
+parallel one, turning from normal to just plain odd.  
+~
+Sector field~
+Exit north 5170
+Exit west 5162
+End
+
+
+#5172
+Name Path to The Garden~
+Desc The path leads east and hangs a sharp northward turn towards the barn and a 
+white building behind it.  To the north the way is blocked by a white picket 
+fence.  The path is still dirt.  This looks much like the rest of the 
+bumpkin area.  
+~
+Sector trail~
+Exit east 5181
+Exit west 5163
+End
+
+
+#5173
+Name Path to The Garden~
+Desc The path around the farm comes to an abrupt end here.  To the west is a 
+small little white building, back south is the return to the path, to the 
+east, is a small fence blocking your path.  North is much the same.  Pretty 
+boring little place.  
+~
+Sector trail~
+Exit south 5174
+End
+
+
+#5174
+Name Path to The Garden~
+Desc To the west there is a small building, as well as door into it.  A small 
+section before the fence lies to the north.  The small building is painted 
+white and black.  Still nothing out of the ordinary.  Other then those 
+walking vegetable, and the abandoned house.  
+~
+Sector trail~
+Exit north 5173
+Exit south 5175
+Exit west 5165
+EFlags door closed~
+End
+
+
+#5175
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5174
+Exit south 5176
+End
+
+
+#5176
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5175
+Exit south 5177
+End
+
+
+#5177
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5176
+Exit south 5178
+End
+
+
+#5178
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5177
+Exit south 5179
+End
+
+
+#5179
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5178
+Exit south 5180
+End
+
+
+#5180
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5179
+Exit south 5181
+End
+
+
+#5181
+Name Path to The Garden~
+Desc The path turns north and the fence continues north and then looks like it 
+turns left.  This place is rather barren and dry, the heat is starting to 
+get to you.  
+~
+Sector trail~
+Exit north 5180
+Exit west 5172
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 5104 -1 5121
+O 0 5106 -1 5133
+M 0 5101 10 5138 2
+M 0 5100 4 5140 1
+M 0 5101 1 5141 1
+M 0 5100 4 5144 1
+M 0 5100 1 5150 1
+M 0 5102 1 5151 1
+M 0 5102 1 5152 1
+M 0 5101 1 5152 1
+M 0 5100 1 5153 1
+M 0 5101 1 5159 1
+M 0 5100 1 5159 2
+M 0 5101 1 5160 1
+M 0 5100 1 5160 1
+M 0 5100 1 5162 1
+M 0 5103 8 5165 3
+O 0 5112 -1 5165
+P 0 5110 9 5112 2
+M 0 5104 1 5167 1
+E 0 5109 -1 wielded~
+M 0 5101 1 5167 1
+M 0 5105 15 5167 7
+M 0 5100 1 5169 1
+M 0 5100 1 5171 1
+M 0 5106 5 5180 1
+O 0 5100 -1 5104
+M 0 5100 10 5106 2
+M 0 5102 10 5111 1
+O 0 5103 -1 5113
+O 0 5106 -1 5115
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

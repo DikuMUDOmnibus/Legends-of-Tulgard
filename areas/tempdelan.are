@@ -1,0 +1,284 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of Jivanor~
+ShortName   Temple of Jivanor~
+Builders    None~
+VNUMs       7520 7529
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#7520
+Name priestess~
+ShortD a priestess of `#`CJivanor`^~
+LongD A priestess of the temple is here.~
+Desc A beautiful human female.  She is wearing a long white robe with purple 
+roses trimming the sleeves and hem.  There is a small tattoo of a red heart 
+on the underside of her wrist.  
+~
+Race human~
+Align -2 -2
+Level 130
+Hitroll 0
+HitDice 13d16+630
+ManaDice 13d17+903
+DamDice 13d17+84
+DamType slash
+AC -1000 -1000 -1000 -870
+Wealth 0
+Act    npc no_tame stay_area cleric~
+AffBy  detect_invis detect_magic detect_hidden dark_vision regeneration~
+Off    berserk disarm dodge fast kick dirt_kick parry trip~
+Imm    summon charm slash poison negative disease drowning sleep hunger thirst fear~
+Res    magic bash cold mental illusion scry~
+Vuln   magic lightning holy light~
+Form   edible poison magical sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#7520
+Name purple rose~
+Short `#`ma `MP`mu`Mr`mp`Ml`me `MR`mo`Ms`me`^~
+Desc A `#`Mp`murple`^ rose is laying here.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material rose~
+Wear     take hold~
+ExtraDesc purple rose~
+This purple rose is a gift from Delandria, the Goddess of love, beauty, 
+romance and youth.  
+~
+End
+
+#7521
+Name holy robes~
+Short `#`wThe `WH`wo`Wl`wy `WR`wo`Wb`we`Ws `wof `CD`ce`Cl`ca`Cn`cd`Cr`ci`Ca`^~
+Desc A set of robes that glow with radiance of beauty rest here.~
+Level 90
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 22 22 22 18 0
+Weight 10
+Material cloth~
+Extra    glow bless nonmetal nolocate burnproof norestring~
+Wear     take about~
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 hp 4 0
+Affect modifier -1 0 -1 memory 5 0
+Affect modifier -1 90 -1 hitroll 10 0
+End
+
+#7522
+Name altar~
+Short an altar to `#`CJivanor`^~
+Desc An altar to `#`CJivanor`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 QR 150 150
+Weight 5000
+Material stone~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#7520
+Name Entrance to the Temple~
+Desc You find yourself just inside the entrace to a large temple.  The 
+temperature is a mild and comfortable and there is a sweet aroma of flowers 
+in the air.  You notice that there are rose vines climbing the walls that 
+seem to be growing out of nowhere.  Soft chanting can be heard throughout 
+the temple.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7521
+Exit south 3041
+End
+
+
+#7521
+Name Temple Foyer~
+Desc You find yourself in the grand foyer of a large temple.  The temperature is 
+a mild and comfortable and there is a sweet aroma of flowers in the air.  
+You notice that there are rose vines climbing the walls that seem to be 
+growing out of nowhere.  There is a large altar to your north.  The soft 
+sounds of chanting can be heard throughout.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7522
+Exit south 7520
+End
+
+
+#7522
+Name Temple Altar~
+Desc You find yourself in the main worship area to a large temple.  The 
+temperature is a mild and comfortable and there is a sweet aroma of flowers 
+in the air.  You notice that there are rose vines climbing the walls that 
+seem to be growing out of nowhere.  Soft chanting can be heard throughout 
+the temple.  There is a hallway to your east and west.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7524
+Exit south 7521
+Exit west 7523
+End
+
+
+#7523
+Name Hallway~
+Desc You are in a long hallway.  The temperature is a mild and comfortable and 
+there is a sweet aroma of flowers in the air.  You notice that there are 
+rose vines climbing the walls that seem to be growing out of nowhere.  Soft 
+chanting can be heard throughout the temple.  The altar is to your east.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7522
+Exit west 7526
+End
+
+
+#7524
+Name Hallway~
+Desc You are in a long hallway.  The temperature is a mild and comfortable and 
+there is a sweet aroma of flowers in the air.  You notice that there are 
+rose vines climbing the walls that seem to be growing out of nowhere.  Soft 
+chanting can be heard throughout the temple.  The altar is to your west.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7525
+Exit west 7522
+End
+
+
+#7525
+Name Hallway~
+Desc You are in a long hallway.  The temperature is a mild and comfortable and 
+there is a sweet aroma of flowers in the air.  You notice that there are 
+rose vines climbing the walls that seem to be growing out of nowhere.  Soft 
+chanting can be heard throughout the temple.  The altar is to your west.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7528
+Exit west 7524
+End
+
+
+#7526
+Name Hallway~
+Desc You are in a long hallway.  The temperature is a mild and comfortable and 
+there is a sweet aroma of flowers in the air.  You notice that there are 
+rose vines climbing the walls that seem to be growing out of nowhere.  Soft 
+chanting can be heard throughout the temple.  The altar is to your east.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7523
+Exit south 7527
+End
+
+
+#7527
+Name Bewitched Room ~
+Desc One look around and you can tell that the room has been bewitched to look 
+like you have just stepped back outside.  The ceiling looks like you are 
+looking up at the sky, dark and full of stars.  The moon shines brightly and 
+there are no clouds.  Around you it looks like you are standing in a forest 
+clearing.  The ground is covered with a soft mossy.  The temperature is a 
+mild and comfortable in here though the air is slightly more humid.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7526
+End
+
+
+#7528
+Name High Priestess Chambers~
+Desc The room is brightly lit with several lanterns on the walls.  There are a 
+multitude of flowers spread throughout the room creating a soft aroma.  A 
+large table sits in the middle of the room surrounded by several chairs.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7525
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 7520 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 7520 2 7521 6
+O 0 7522 -1 7522
+M 0 7520 2 7523 6
+M 0 7520 2 7524 6
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

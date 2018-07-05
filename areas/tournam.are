@@ -1,0 +1,1245 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Tournament Ground~
+ShortName   Tournament~
+Builders    None~
+Credits     Kandahar~
+VNUMs       15100 15159
+LComment    `#`G[  1- 10]`^
+LRange      1 10
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#15101
+Name spectator~
+ShortD a spectator~
+LongD A spectator cranes his head to try to see better.~
+Desc This spectator is here for the tournament.  He has wagered a bet on
+his favourite jouster.  Woe betide him if it loses.  His wife will be
+none too pleased.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d1+1
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType none
+AC 90 90 90 81
+Wealth 20
+Act    npc stay_area wimpy thief indoors~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Vuln   energy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15102
+Name spectator~
+ShortD a spectator~
+LongD A spectator cheers bawdily!~
+Desc This spectator has no compunctions about yelling and cheering the
+knight she most likes on to win the tourney.  
+~
+Race human~
+Align -2 0
+Level 1
+Hitroll 0
+HitDice 1d1+1
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 74
+Wealth 20
+Act    npc stay_area thief indoors~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Res    holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#15103
+Name knight jouster white~
+ShortD a knight~
+LongD A knight of the `WWhite Rose`x jousts with an opponent.~
+Desc This knight of the `WWhite Rose`x is jousting with an opponent from
+the house of the `RRed Rose`x.  He looks extremely formidable.  
+~
+Race human~
+Align -3 0
+Level 4
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d4+5
+DamDice 1d5+1
+DamType thrust
+AC 60 60 60 52
+Wealth 60
+Act    npc stay_area wimpy warrior outdoors~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15104
+Name knight jouster red~
+ShortD a knight~
+LongD A knight of the `RRed Rose`x jousts with an opponent.~
+Desc This knight from the house of the `RRed Rose`x seeks to win thy
+contest of jousting and so seek victory for thine house.  
+~
+Race human~
+Align -2 0
+Level 4
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d4+5
+DamDice 1d5+1
+DamType thrust
+AC 60 60 60 53
+Wealth 60
+Act    npc stay_area wimpy warrior outdoors~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15105
+Name ed lying man~
+ShortD `^Lying Ed~
+LongD Lying Ed tots up his profits for today.~
+Desc This shrewd looking businessman will always wager a bet on something. 
+If the tournament looks to be making him poor, he'll start bets on
+something else.  You can bet that he'll not go home empty handed, for
+sure.  
+~
+Race human~
+Align 1 0
+Level 4
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d4+5
+DamDice 1d6+0
+DamType punch
+AC 70 70 70 63
+Wealth 60
+Act    npc dont_wander stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15106
+Name runaway horse~
+ShortD a runaway horse~
+LongD A runaway horse tramples the lists.~
+Desc This runaway horse has lost its rider.  It is acting very bewildered
+and confused.  
+~
+Race horse~
+Align 2 0
+Level 3
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType none
+AC 80 80 80 67
+Wealth 10
+Act    npc stay_area wimpy thief outdoors~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge fast kick dirt_kick trip~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#15107
+Name groom stablehand~
+ShortD a groom~
+LongD A groom busily mucks out the stables.~
+Desc This groom is employed by the `RRed Rose`x stables to keep all the
+horses and their owners happy.  `RRed Rose`x have a fine reputation which
+they don't want sullied.  
+~
+Race human~
+Align 2 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d1+1
+DamDice 1d5+0
+DamType punch
+AC 80 80 80 67
+Wealth 60
+Act    npc dont_wander wimpy thief warrior~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15108
+Name groom stablehand~
+ShortD a groom~
+LongD A groom busily clears out dirty straw.~
+Desc This groom is employed by the `WWhite Rose`x stables to ensure all the
+horses and their owners are kept happy.  `WWhite Rose`x have an excellent
+reputation which they don't want soiled.  
+~
+Race human~
+Align 1 0
+Level 3
+Hitroll 0
+HitDice 2d4+1
+ManaDice 1d1+1
+DamDice 1d6+0
+DamType punch
+AC 70 70 70 63
+Wealth 60
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15109
+Name runaway horse~
+ShortD a runaway horse~
+LongD A runaway horse tramples the lists.~
+Desc This horse has unseated its rider and now trots around the lists
+looking extremely bewildered.  
+~
+Race horse~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType none
+AC 80 80 80 68
+Wealth 10
+Act    npc stay_area wimpy thief outdoors~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge fast kick dirt_kick trip~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#15110
+Name rider unseated~
+ShortD an unseated rider~
+LongD An unseated rider rubs his back ruefully.~
+Desc This rider has come a cropper.  Not only has he suffered the indignity
+of losing the contest but he has become unseated to boot.  
+~
+Race human~
+Align 1 0
+Level 5
+Hitroll 0
+HitDice 2d4+1
+ManaDice 3d5+60
+DamDice 1d5+0
+DamType punch
+AC 60 60 60 51
+Wealth 60
+Act    npc stay_area wimpy mage outdoors~
+Off    dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15111
+Name rider unseated~
+ShortD an unseated rider~
+LongD An unseated rider dusts himself down.~
+Desc This rider has come a cropper.  Not only has he suffered the indignity
+of losing the contest but he has become unseated to boot.  
+~
+Race human~
+Align 3 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d5+1
+DamType slap
+AC 50 50 50 41
+Wealth 60
+Act    npc stay_area wimpy cleric outdoors~
+Off    disarm kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15112
+Name barmaid busty~
+ShortD a busty barmaid~
+LongD A busty barmaid asks if you want refreshment.~
+Desc This big-eyed beauty could be what or who is drawing the crowds to
+this tent.  Especially when she bends over to pull another mug of ale. 
+The eyes of all her customers fair boggle out at the display.  
+~
+Race human~
+Align 1 0
+Level 250
+Hitroll 0
+HitDice 2d7+96
+ManaDice 4d9+100
+DamDice 1d7+2
+DamType none
+AC 30 30 30 90
+Wealth 50
+Act    npc dont_wander stay_area warrior nopurge~
+Off    disarm dodge trip assist_vnum~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#15150
+Name white stag~
+ShortD a `WGleaming White Stag`X~
+LongD A noble `Wwhite stag`X with long `Ygolden`X horns guards the pass~
+Desc This stag glows with its own inner light. Everything about this stag speaks of nobility.
+~
+Race deer~
+Align 1 3
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType pierce
+AC -1100 -1100 -1100 -968
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_evil detect_invis detect_hidden sanctuary protect_evil regeneration~
+Off    bash dodge fast kick parry trip~
+Imm    summon charm negative holy disease drowning~
+Res    magic disease light~
+Vuln   negative iron~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts ear eye tail horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#15100
+Name cheese slab~
+Short a slab of `Ycheese`x~
+Desc A slab of `Wcreamy `Ycheese `xwith a thick `yrind`x.~
+Level 0
+ItemType pill~
+Cost 180
+Durability 5
+Asize 20
+Rsize 50
+Values 8 frenzy calm '' ''
+Weight 20
+Material cheese~
+Wear     take~
+End
+
+#15101
+Name helm plumed~
+Short a plumed helm~
+Desc A helm with a `Wwhite`x feather.~
+Level 3
+ItemType armor~
+Cost 75
+Durability 5
+Asize 20
+Rsize 50
+Values 1 1 1 0 0
+Weight 20
+Material steel~
+Extra    glow~
+Wear     take head~
+Affect modifier -1 3 -1 quickness -1 0
+Affect modifier -1 3 -1 empathy 1 0
+End
+
+#15102
+Name handkerchief hankie~
+Short a handkerchief~
+Desc A handkerchief looks a bit grubby.~
+Level 3
+ItemType armor~
+Cost 60
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    nodegrade burnproof~
+Wear     take hold~
+End
+
+#15103
+Name helm plumed~
+Short a plumed helm~
+Desc A helm with a `Rred`x feather.~
+Level 3
+ItemType armor~
+Cost 75
+Durability 5
+Asize 20
+Rsize 50
+Values 1 1 1 0 0
+Weight 20
+Material steel~
+Extra    glow~
+Wear     take head~
+Affect modifier -1 3 -1 quickness 1 0
+Affect modifier -1 3 -1 empathy -1 0
+End
+
+#15104
+Name cloak~
+Short a `Ybrightly `Gcol`Mou`Cred `Bcloak`x~
+Desc A `Ybrightly `Gcol`Mou`Cred `Bcloak`x looks a bit dusty.~
+Level 5
+ItemType armor~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 1 1 1 1 0
+Weight 20
+Material satin~
+Extra    glow~
+Wear     take neck~
+Affect modifier -1 5 -1 presence 1 0
+End
+
+#15105
+Name pink potion~
+Short a pink potion~
+Desc A pink potion is barely visible on the ground.~
+Level 1
+ItemType potion~
+Cost 160
+Durability 5
+Asize 20
+Rsize 50
+Values 6 '' 'cure blindness' '' ''
+Weight 20
+Material glass~
+Wear     take~
+End
+
+#15106
+Name lance~
+Short a `Ybrightly `Gfes`Mtoo`Cned `Blance`x~
+Desc A `Ybrightly `Gfes`Mtoo`Cned `Blance`x looks sharp.~
+Level 5
+ItemType wand~
+Cost 540
+Durability 5
+Asize 20
+Rsize 50
+Values 10 5 5 'magic missile' 0
+Weight 20
+Material wood~
+Wear     take hold~
+End
+
+#15107
+Name rose~
+Short a rose~
+Desc A wilted rose.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material rose~
+Wear     take hold~
+Affect modifier -1 1 -1 sex -1 0
+End
+
+#15108
+Name mug ale~
+Short a mug of ale~
+Desc A mug of ale froths busily.~
+Level 1
+ItemType drinkcontainer~
+Cost 25
+Durability 5
+Asize 5
+Rsize 50
+Values 20 20 ale 0 0
+Weight 5
+Material ceramic~
+Wear     take hold~
+Affect modifier -1 1 -1 strength 1 0
+End
+
+#15109
+Name bread food~
+Short `Wfreshly baked bread`x~
+Desc `WFreshly baked bread`x is warm to the touch.~
+Level 1
+ItemType food~
+Cost 35
+Durability 5
+Asize 20
+Rsize 50
+Values 40 40 0 0 0
+Weight 20
+Material bread~
+Wear     take~
+End
+
+#15112
+Name dried meat~
+Short a strip of dried meat~
+Desc A strip of dried meat looks most unappetising.~
+Level 7
+ItemType pill~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 10 'cure light' 'cure blindness' '' ''
+Weight 1
+Material beef~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#15101
+Name A Well-Worn Path~
+Desc This is a well-worn rutted path which continues to the north and leads to 
+the dirt road outside Tulgard to the south.  The path has several 
+hoofprints embedded into the earth.  
+~
+Sector forest~
+Exit north 15102
+EKeyvnum -1
+Exit southwest 7359
+End
+
+
+#15102
+Name A Well-Worn Path~
+Desc This section of the path is deeply rutted with hoofprints and the
+remains of old and dried horse manure.  Clumps of grass sprout along the
+sides of the path only to be pulled out and chewed by passing equines. 
+The path continues to the north and south.  
+~
+RoomFlags no_mob~
+Sector forest~
+Exit north 15103
+EKeyvnum -1
+EDesc The path is well trodden here.
+~
+Exit south 15101
+EKeyvnum -1
+EDesc The path leads back to the main eastern road to the south.
+~
+End
+
+
+#15103
+Name A Well-Worn Path~
+Desc This section of the path is really trampled down with hoofprints and
+footprints alike.  More horse manure lies in the path and shouts and
+cheers can be heard to the north.  The path leads back to the main
+eastern road to the south.  
+~
+RoomFlags no_mob~
+Sector forest~
+Exit north 15104
+EKeyvnum -1
+EDesc The entrance to the tournament ground.
+~
+Exit south 15102
+EKeyvnum -1
+EDesc The path to the south leads ultimately to the main eastern road.  
+~
+End
+
+
+#15104
+Name Entrance to the Tournament Ground~
+Desc This is the entrance to the tournament ground.  The path gets wider
+here and more hoofprints and footprints alike are embedded into the dry
+ground.  Shouts and cheers come from the north where there is a great
+cluster of spectators who appear to be watching something with great
+interest.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15105
+EKeyvnum -1
+EDesc The tournament ground continues to the north.
+~
+Exit south 15103
+EKeyvnum -1
+EDesc A well-worn path lies to the south.
+~
+End
+
+
+#15105
+Name The Tournament Ground~
+Desc The path disintegrates into a widely trodden down area with clumps of
+grass growing intermittently.  Hoofprints and footprints alike weave
+around dried into the ground.  Shouts and cheers come from the north. 
+The grassy area around the lists continues to the east and west and the
+entrance lies to the south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15106
+EKeyvnum -1
+Exit east 15110
+EKeyvnum -1
+Exit south 15104
+EKeyvnum -1
+EDesc The entrance to the tournament ground.
+~
+Exit west 15111
+EKeyvnum -1
+End
+
+
+#15106
+Name The Lists~
+Desc This area is known as the lists.  It is the area where the jousting
+takes place.  It is closed off by means of a rope, which doesn't stop
+spectators from wandering inside it occasionally.  Here the jousts take
+place, usually of two opposing knights at a time, one from the `RRed
+Rose`x and the other from the `WWhite Rose`x houses.  The lists continues
+to the east and north, whereas the spectator area lies outside the rope. 
+~
+Sector field~
+Exit north 15107
+EKeyvnum -1
+Exit east 15119
+Exit south 15105
+EKeyvnum -1
+Exit west 15112
+EKeyvnum -1
+End
+
+
+#15107
+Name The Lists~
+Desc This area is known as the lists.  It is the area where the jousting
+takes place.  It is closed off by means of a rope, which doesn't stop
+spectators from wandering inside it occasionally.  Here the jousts take
+place, usually of two opposing knights at a time, one from the `RRed
+Rose`x and the other from the `WWhite Rose`x houses.  The lists continues
+to the north and south, whereas the spectator area lies outside the rope.
+~
+Sector field~
+Exit north 15108
+EKeyvnum -1
+Exit east 15116
+EKeyvnum -1
+Exit south 15106
+EKeyvnum -1
+Exit west 15125
+End
+
+
+#15108
+Name The Lists~
+Desc This area is known as the lists.  It is the area where the jousting
+takes place.  It is closed off by means of a rope, which doesn't stop
+spectators from wandering inside it occasionally.  Here the jousts take
+place, usually of two opposing knights at a time, one from the `RRed
+Rose`x and the other from the `WWhite Rose`x houses.  The lists continues
+to the east and south, whereas the spectator area lies outside the rope. 
+~
+Sector field~
+Exit north 15109
+EKeyvnum -1
+Exit east 15117
+EKeyvnum -1
+EDesc The lists continues to the east.
+~
+Exit south 15107
+EKeyvnum -1
+Exit west 15113
+EKeyvnum -1
+EDesc The spectator area lies to the west.  
+~
+End
+
+
+#15109
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the north and south.  The grassy
+area around the lists continues to the east and west.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 15124
+Exit east 15118
+EKeyvnum -1
+Exit south 15108
+EKeyvnum -1
+Exit west 15114
+EKeyvnum -1
+End
+
+
+#15110
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the north.  The grassy area
+around the lists continues to the east and west.  The lists lies to the
+north.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15119
+EKeyvnum -1
+EDesc The lists lie to the north.
+~
+Exit east 15121
+Exit west 15105
+EKeyvnum -1
+End
+
+
+#15111
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the north east.  The grassy area
+around the lists continues to the north and east.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15112
+EKeyvnum -1
+Exit east 15105
+EKeyvnum -1
+End
+
+
+#15112
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the east and loud murmurs to the
+west.  The grassy area around the lists continues to the north and south.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 15125
+Exit east 15106
+EKeyvnum -1
+Exit south 15111
+EKeyvnum -1
+Exit west 15122
+EKeyvnum -1
+End
+
+
+#15113
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the east and the stamping of
+hooves comes from the west.  The grassy area around the lists continues
+to the north and south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15114
+Exit east 15108
+EKeyvnum -1
+Exit south 15125
+Exit west 15123
+EFlags door closed~
+EKeyvnum -1
+EKeywords stabledoor~
+EDesc The stables lie to the west.
+~
+End
+
+
+#15114
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the south east.  The grassy area
+around the lists continues to the east and south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit east 15109
+EKeyvnum -1
+Exit south 15113
+End
+
+
+#15115
+Name White Rose Stables~
+Desc These are the stables for the knights of the `WWhite Rose`x.  All
+knights who come to the tournament to joust on behalf of the `WWhite
+Rose`x can stable their mounts here.  The stables are filled with hay for
+the horses and straw and wood shavings lie on the ground.  The grooms for
+these stables are meticulous in their work, picking up manure and
+cleaning out dirty straw regularly.  
+~
+RoomFlags indoors~
+Sector field~
+Exit west 15127
+EFlags door closed~
+EKeywords stabledoor~
+End
+
+
+#15116
+Name The Lists~
+Desc This area is known as the lists.  It is the area where the jousting
+takes place.  It is closed off by means of a rope, which doesn't stop
+spectators from wandering inside it occasionally.  Here the jousts take
+place, usually of two opposing knights at a time, one from the `RRed
+Rose`x and the other from the `WWhite Rose`x houses.  The lists continues
+to the north and south, whereas the spectator area lies outside the rope.
+~
+Sector field~
+Exit north 15117
+EKeyvnum -1
+Exit east 15128
+Exit south 15119
+Exit west 15107
+EKeyvnum -1
+End
+
+
+#15117
+Name The Lists~
+Desc This area is known as the lists.  It is the area where the jousting
+takes place.  It is closed off by means of a rope, which doesn't stop
+spectators from wandering inside it occasionally.  Here the jousts take
+place, usually of two opposing knights at a time, one from the `RRed
+Rose`x and the other from the `WWhite Rose`x houses.  The lists continues
+to the west and south, whereas the spectator area lies outside the rope. 
+~
+Sector field~
+Exit north 15118
+EKeyvnum -1
+Exit east 15127
+Exit south 15116
+EKeyvnum -1
+Exit west 15108
+EKeyvnum -1
+End
+
+
+#15118
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the south.  The grassy area
+around the lists continues to the east and west.  
+~
+RoomFlags indoors~
+Sector city~
+Exit east 15126
+Exit south 15117
+EKeyvnum -1
+EDesc The lists lies to the south.
+~
+Exit west 15109
+EKeyvnum -1
+End
+
+
+#15119
+Name The Lists~
+Desc This area is known as the lists.  It is the area where the jousting
+takes place.  It is closed off by means of a rope, which doesn't stop
+spectators from wandering inside it occasionally.  Here the jousts take
+place, usually of two opposing knights at a time, one from the `RRed
+Rose`x and the other from the `WWhite Rose`x houses.  The lists continues
+to the west and north, whereas the spectator area lies outside the rope. 
+~
+Sector field~
+Exit north 15116
+Exit east 15129
+Exit south 15110
+EKeyvnum -1
+Exit west 15106
+End
+
+
+#15120
+Name none~
+Desc ~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#15121
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the north west.  The grassy area
+around the lists continues to the north and west.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15129
+Exit west 15110
+End
+
+
+#15122
+Name The Wagering Tent~
+Desc This tent has been set up by a scoundrel known to everyone as 'Lying
+Ed'.  Quite why he has got this nickname is unclear.  The tent is
+relatively small and smells of stale beer and other unpleasant aromas. 
+Scraps of paper lie tossed onto the ground and stubs of charcoal have
+been ground into the earth.  
+~
+RoomFlags indoors~
+Sector field~
+Exit east 15112
+EKeyvnum -1
+End
+
+
+#15123
+Name Red Rose Stables~
+Desc These are the stables for the knights of the `RRed Rose`x.  All
+knights who come to the tournament to joust on behalf on the `RRed Rose`x
+can stable their mounts here.  The stables are filled with hay for the
+horses and straw and wood shavings lie on the ground.  The grooms for
+these stables are meticulous in their work, picking up manure and
+cleaning out dirty straw regularly.  
+~
+RoomFlags indoors~
+Sector field~
+Exit east 15113
+EFlags door closed~
+EKeyvnum -1
+EKeywords stabledoor~
+End
+
+
+#15124
+Name The Refreshment Tent~
+Desc This is the area of the tournament ground which seems to be in great
+demand.  The refreshment tent is large and the ground well stamped down
+from the milling around of the spectators who eagerly come here to sample
+the ale and freshly baked bread, before they rush out to see the rest of
+the contests.  
+~
+RoomFlags indoors~
+Sector field~
+Exit south 15109
+End
+
+
+#15125
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the east.  The grassy area
+around the lists continues to the north and south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15113
+Exit east 15107
+Exit south 15112
+End
+
+
+#15126
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the south west.  The grassy area
+around the lists continues to the south and west.  
+~
+RoomFlags indoors~
+Sector field~
+Exit south 15127
+Exit west 15118
+End
+
+
+#15127
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the west and the stamping of
+hooves comes from the east.  The grassy area around the lists continues
+to the north and south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15126
+Exit east 15115
+EFlags door closed~
+EKeywords stabledoor~
+Exit south 15128
+Exit west 15117
+End
+
+
+#15128
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the west.  The grassy area
+around the lists continues to the north and south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15127
+Exit south 15129
+Exit west 15116
+End
+
+
+#15129
+Name The Tournament Ground~
+Desc This is a widely trodden area with clumps of grass growing
+intermittently.  Hoofprints and footprints alike weave around dried into
+the ground.  Shouts and cheers come from the west.  The grassy area
+around the lists continues to the north and south.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 15128
+Exit south 15121
+Exit west 15119
+End
+
+
+#15150
+Name Heavy fog.~
+Desc The fog is very thick here. The path behind you is covered by this magical fog. 
+Ahead, you notice a light guiding you forward. It seems to beckon you onward.
+~
+Sector inside~
+Exit north 15151
+End
+
+
+#15151
+Name A rolling hillside~
+Desc The green hills seem to span on forever. The area is peaceful. The birds sing as the sun is shining brightly. A trail opens up to the north.
+~
+Sector field~
+Exit north 15152
+Exit south 15150
+End
+
+
+#15152
+Name A steep trail downward~
+Desc The hills end abruptly as the ground seems to drop away. There is a steep winding trail that leads down to a sandy beach.
+~
+Sector field~
+Exit south 15151
+Exit down 15153
+End
+
+
+#15153
+Name A steep trail~
+Desc The path winds down this cliff erratically. Although steep, the path is not very difficult.  However, ahead of you is a white stag with golden horns. Just standing there, waiting.
+~
+Sector inside~
+Exit up 15152
+Exit down 15154
+End
+
+
+#15154
+Name The base of the cliff~
+Desc This sandy alcove, neslted peacefully at the base of the cliff seems very peaceful. To the south is a wide cave mouth.
+~
+Sector inside~
+Exit up 15153
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 15101 spec_thief
+M 15102 spec_thief
+M 15105 spec_thief
+M 15110 spec_cast_mage
+M 15111 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 15101 8 15104 1
+E 0 15102 0 hold~
+M 0 15101 8 15105 1
+E 0 15102 0 hold~
+M 0 15106 1 15106 1
+M 0 15111 1 15107 1
+E 0 15104 0 neck1~
+M 0 15103 1 15108 1
+E 0 15101 0 head~
+M 0 15101 8 15109 1
+G 0 15107 0
+M 0 15101 8 15110 1
+G 0 15102 0
+M 0 15101 8 15111 1
+M 0 15101 8 15112 1
+G 0 15102 0
+M 0 15102 3 15114 1
+G 0 15100 0
+M 0 15108 1 15115 1
+M 0 15110 1 15116 1
+E 0 15106 0 hold~
+M 0 15104 1 15117 1
+E 0 15103 0 head~
+M 0 15102 3 15118 1
+G 0 15100 0
+M 0 15109 1 15119 1
+M 0 15105 1 15122 1
+G 0 15105 0
+M 0 15107 1 15123 1
+M 0 15112 1 15124 1
+G 0 15112 0
+G 0 15100 0
+G 0 15108 0
+G 0 15109 0
+M 0 15102 3 15125 1
+G 0 15100 0
+M 0 15101 8 15126 1
+E 0 15102 0 hold~
+M 0 15101 8 15127 1
+E 0 15102 0 hold~
+M 0 15150 1 15153 1
+S
+
+
+
+#SHOPS
+#15112
+profit_buy 110
+profit_sell 95
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

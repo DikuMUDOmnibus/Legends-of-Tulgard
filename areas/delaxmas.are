@@ -1,0 +1,298 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Delandria's Christmas Playland~
+ShortName   Delandria's Christmas Playland~
+Builders    delandria~
+Credits     none~
+VNUMs       2350 2359
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Mon Dec 26 21:05:24 2005~
+End
+
+
+
+#MOBILES
+#2350
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+AffBy2 shadowsight~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 2350 goosefeathers~
+END
+
+#0
+
+
+
+#OBJECTS
+#2350
+Name christmas present gold delandria~
+Short a small wrapped `#`Rc`rh`Rr`ri`Rs`rt`Rm`ra`Rs `Gp`gr`Ge`gs`Ge`gn`Gt`^~
+Desc A small wrapped `#`Rc`rh`Rr`ri`Rs`rt`Rm`ra`Rs `Gp`gr`Ge`gs`Ge`gn`Gt`^~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 1000 0 0 0
+Weight 0
+Material gold~
+Extra    nolocate~
+Wear     take hold~
+ExtraDesc christmas present~
+A christmas present from the Immortals. 
+~
+End
+
+#2351
+Name brightly wrapped christmas present green~
+Short `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Gw`gr`Ga`gp`Gp`ge`Gd `Rchristmas `wpresent from the Immortals.`^~
+Desc `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Gw`gr`Ga`gp`Gp`ge`Gd `Rchristmas `wpresent from the Immortals.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 A 0 500 100
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal nolocate nodegrade norestring~
+Extra2   nodecay~
+Wear     take~
+End
+
+#2352
+Name brightly wrapped christmas present blue~
+Short `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Bw`br`Ba`bp`Bp`be`Bd `Rchristmas `wpresent from the Immortals.`^~
+Desc `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Bw`br`Ba`bp`Bp`be`Bd `Rchristmas `wpresent from the Immortals.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 A 0 500 100
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal nodegrade norestring~
+Extra2   nodecay~
+Wear     take~
+End
+
+#2353
+Name brightly wrapped christmas present yellow~
+Short `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Yw`yr`Ya`yp`Yp`ye`Yd `Rchristmas `wpresent from the Immortals.`^~
+Desc `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Yw`yr`Ya`yp`Yp`ye`Yd `Rchristmas `wpresent from the Immortals.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 A 0 500 100
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal nodegrade norestring~
+Extra2   nodecay~
+Wear     take~
+End
+
+#2354
+Name brightly wrapped christmas present multi~
+Short `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `?w`?r`?a`?p`?p`?e`?d `Rchristmas `wpresent from the Immortals.`^~
+Desc `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `?w`?r`?a`?p`?p`?e`?d `Rchristmas `wpresent from the Immortals.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 A 0 500 100
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal nodegrade norestring~
+Extra2   nodecay~
+Wear     take~
+End
+
+#2355
+Name brightly wrapped christmas present purple~
+Short `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Mw`mr`Ma`mp`Mp`me`Md `Rchristmas `wpresent from the Immortals.`^~
+Desc `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Mw`mr`Ma`mp`Mp`me`Md `Rchristmas `wpresent from the Immortals.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 A 0 500 100
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal nodegrade norestring~
+Extra2   nodecay~
+Wear     take~
+End
+
+#2356
+Name brightly wrapped christmas present cyan~
+Short `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Cw`cr`Ca`cp`Cp`ce`Cd `Rchristmas `wpresent from the Immortals.`^~
+Desc `#`wa `Wb`wr`Wi`wg`Wh`wt`Wl`wy `Cw`cr`Ca`cp`Cp`ce`Cd `Rchristmas `wpresent from the Immortals.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1000 A 0 500 100
+Weight 0
+Material unknown~
+Extra    glow hum rotdeath nonmetal nodegrade norestring~
+Extra2   nodecay~
+Wear     take~
+End
+
+#2357
+Name banner throtyl army~
+Short a `#`sBanner `wfor the `gThrotyl A`Gr`gm`Gy`^~
+Desc A `#`sBanner `wfor the `gThrotyl A`Gr`gm`Gy `is laying here.`^~
+Level 5
+ItemType light~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate meltdrop nodegrade norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+Affect modifier -1 0 -1 hitroll 4 0
+Affect modifier -1 0 -1 damroll 4 0
+End
+
+#2358
+Name banner tulgard army~
+Short a `#`sBanner `wfor the `BTulgard A`br`Bm`by`^~
+Desc A `#`sBanner `wfor the `BTulgard A`br`Bm`by `wis laying here.`^~
+Level 5
+ItemType light~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate meltdrop nodegrade norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take~
+Affect modifier -1 0 -1 hitroll 4 0
+Affect modifier -1 0 -1 damroll 4 0
+End
+
+#0
+
+
+
+#ROOMS
+#2350
+Name Bedroom~
+Desc . The floor is covered in a soft beige carpet.  There is a window on the west 
+wall letting you look out into the deep forests.  There is a gas run lantern 
+hanging from the ceiling to light the room.  A comfortable twinbed is set in 
+the northwest corner.  A desk and chair sits in the southeast corner.  On 
+the north wall is a teak dresser.  The walls have been painted with an 
+oceanic view, ships sailing, casting up their sails, a battle of pirates on 
+the horizon and dragons flying up in the sky.  
+~
+RoomFlags indoors light~
+Sector inside~
+End
+
+
+#2357
+Name Bedroom~
+Desc . The floor is covered in a soft beige carpet.  There is a window on the west 
+wall letting you look out into the deep forests.  There is a gas run lantern 
+hanging from the ceiling to light the room.  A comfortable twinbed is set in 
+the northwest corner.  A desk and chair sits in the southeast corner.  On 
+the north wall is a teak dresser.  The walls have been painted with an 
+oceanic view, ships sailing, casting up their sails, a battle of pirates on 
+the horizon and dragons flying up in the sky.  
+~
+RoomFlags indoors light~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2350
+title mob trans~
+author Ixliam~
+code mob transfer $n 2359
+~
+disabled false
+last_editor Delandria~
+last_editdate 1105912673
+END
+
+#0
+
+
+#$

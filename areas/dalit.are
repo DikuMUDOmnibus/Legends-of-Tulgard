@@ -1,0 +1,3327 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Dalit~
+ShortName   ~
+Builders    mahinae~
+Credits     Talintha Zaroth~
+VNUMs       80301 80450
+AFlags  noteleport nogateinto nosummoninto noportalinto~
+LRange      50 100
+Security    9
+Colour      ~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Thu Nov 10 08:13:19 2005~
+End
+
+
+
+#MOBILES
+#80301
+Name family serpent snake~
+ShortD a family of serpents~
+LongD A family of serpents is nestled here.~
+Desc A family of serpents is nestled here. 
+~
+Race snake~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType bite
+AC -300 -300 -300 -264
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste swim~
+Off    dodge fast~
+Imm    charm poison drowning~
+Form   snake~
+Part   head brains guts eye long_tongue scales~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80302
+Name little mermaid child~
+ShortD a little mermaid child~
+LongD A mermaid child plays here.~
+Desc A mermaid child plays here. 
+~
+Race human~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType punch
+AC -250 -250 -250 -220
+Wealth 300
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_evil detect_invis sanctuary otterlungs swim~
+Off    dodge tail~
+Imm    charm drowning hunger thirst~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80303
+Name seahorse regal~
+ShortD a regal looking seahorse~
+LongD A regal looking seahorse swims here.~
+Desc A regal looking seahorse swims here.
+~
+Race fish~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType smash
+AC -250 -250 -250 -200
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs swim~
+Off    tail assist_all~
+Imm    summon charm drowning~
+Form   non_skinable~
+Part   head heart brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80304
+Name huge green serpent~
+ShortD a huge green serpent~
+LongD A huge green serpent is coiled here.~
+Desc A huge green serpent is coiled here.
+~
+Race snake~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType frbite
+AC -850 -850 -850 -688
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area amphibian~
+AffBy  invisible detect_invis detect_hidden otterlungs hide haste dark_vision swim~
+Off    area_attack dodge fast tail assist_all neck_thrust~
+Imm    charm cold poison drowning sleep~
+Form   snake~
+Part   head arms heart brains guts eye long_tongue tail fangs scales~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 80301 100~
+END
+
+#80305
+Name ancient wise shaman~
+ShortD a ancient and wise shaman~
+LongD A ancient and wise shaman is here.~
+Desc A ancient and wise shaman is here.
+~
+Race human~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 7d10+350
+ManaDice 7d10+350
+DamDice 7d8+34
+DamType slash
+AC -380 -380 -380 -323
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary otterlungs swim~
+Off    tail~
+Imm    charm drowning sleep illusion~
+Res    disease~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80306
+Name merman child~
+ShortD a merman child~
+LongD A merman child is here showing off.~
+Desc A merman child is here showing off.
+~
+Race human~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType punch
+AC 50 50 50 44
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge fast tail~
+Imm    summon charm drowning~
+Vuln   illusion~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80307
+Name old cronies~
+ShortD two old cronies~
+LongD Two old cronies chatter away.~
+Desc Two old cronies are here chatting away.
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType beating
+AC 50 50 50 44
+Wealth 300
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs swim~
+Off    tail~
+Imm    charm drowning~
+Vuln   illusion~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80308
+Name school fish~
+ShortD a school of silverfish~
+LongD A school of silverfish is here.~
+Desc A school of silverfish swims here.
+~
+Race fish~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType bite
+AC -200 -200 -200 -178
+Wealth 200
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge tail~
+Imm    summon drowning thirst~
+Vuln   disease~
+Form   non_skinable~
+Part   head heart brains guts eye fins tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80309
+Name small red crab~
+ShortD a small `#`Rred`^ crab~
+LongD A small `#`Rred`^ crab scuttles along.~
+Desc A small red crab opens and closes its pinchers as it scuttles along. 
+~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType claw
+AC -200 -200 -200 -168
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge~
+Imm    pierce drowning~
+Form   edible sentient crustacean mammal~
+Part   head arms legs heart brains guts feet eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80310
+Name shark~
+ShortD a fierce tiger shark~
+LongD A fierce tiger shark roams here.~
+Desc A fierce tiger shark is here.
+~
+Race human~
+Align -3 -3
+Level 68
+Hitroll 0
+HitDice 7d10+350
+ManaDice 7d10+350
+DamDice 7d8+34
+DamType chomp
+AC -380 -380 -380 -342
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+AffBy  detect_invis detect_hidden hide haste dark_vision berserk~
+Off    bash dodge tail~
+Imm    summon charm drowning illusion scry~
+Vuln   pierce~
+Form   edible sentient mammal fish cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80311
+Name electric eel~
+ShortD a electric eel~
+LongD A electric eel is slithering through.~
+Desc A electric eel is slithering through.
+~
+Race fish~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType shbite
+AC -250 -250 -250 -205
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+AffBy  otterlungs berserk swim~
+Off    dodge tail neck_thrust~
+Imm    fire lightning poison disease drowning~
+Form   non_skinable fish~
+Part   head heart guts eye scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80312
+Name iridescent angelfish school~
+ShortD a school of iridescent angelfish~
+LongD A school of iridescent angelfish is here.~
+Desc A school of beautiful iridescent angelfish is here.
+~
+Race fish~
+Align 0 0
+Level 63
+Hitroll 0
+HitDice 6d10+330
+ManaDice 6d10+350
+DamDice 8d7+29
+DamType none
+AC -330 -330 -330 -283
+Wealth 200
+Act    npc no_tame stay_area~
+AffBy  sanctuary otterlungs swim~
+Off    dodge~
+Imm    charm drowning~
+Vuln   poison disease~
+Form   non_skinable fish cold_blood~
+Part   head heart guts fingers eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80313
+Name grumpy merman~
+ShortD a grumpy merman~
+LongD A grumpy merman is resting here.~
+Desc A mermaid peers grumpily back at you. He snarls as you awaken him.
+~
+Race human~
+Align 0 0
+Level 78
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType claw
+AC 70 70 70 60
+Wealth 400
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs haste swim~
+Off    dodge tail~
+Imm    charm drowning illusion fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80314
+Name mermaid child~
+ShortD a mermaid child~
+LongD A mermaid child is playing here.~
+Desc A mermaid child is playing here. She looks up and giggles at you. 
+~
+Race human~
+Align 0 0
+Level 57
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType none
+AC 80 80 80 67
+Wealth 200
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge tail~
+Imm    charm drowning hunger thirst~
+Vuln   illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80315
+Name outcast merman infuriated~
+ShortD a infuriated merman outcast~
+LongD A infuriated merman outcast is swimming frantically back and forth here.~
+Desc This merman looks wild with his red long hair streaming out from his pinched 
+face. His eyes seem to have taken on the color of his hair in his anger. 
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+375
+ManaDice 8d12+530
+DamDice 8d8+36
+DamType stab
+AC -440 -440 -440 -352
+Wealth 300
+Act    npc dont_wander scavenger no_tame stay_area mage~
+AffBy  sanctuary haste berserk swim~
+AffBy2 vicegrip~
+Off    disarm tail~
+Imm    summon charm poison drowning hunger thirst~
+Vuln   poison disease~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80316
+Name serizos shopkeeper~
+ShortD serizos the shopkeeper~
+LongD Serizos the shopkeeper is here.~
+Desc Serizos beams proudly and displays his wares.
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -680
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary otterlungs haste dark_vision swim~
+AffBy2 shadowsight detect_treeform vicegrip~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80317
+Name liviana shopkeeper~
+ShortD liviana the shopkeeper~
+LongD Liviana the shopkeeper is here.~
+Desc Liviana the shopkeeper is here.
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -748
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+AffBy  detect_invis detect_hidden sanctuary otterlungs dark_vision swim~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80318
+Name happy dolphin~
+ShortD a happy `#`Sdolphin`^~
+LongD A happy `#`Sdolphin`^ swims here.~
+Desc A happy dolphin swims here. It makes a click noise as you approach, 
+encouraging you to move closer. 
+~
+Race human~
+Align 0 0
+Level 68
+Hitroll 0
+HitDice 7d10+350
+ManaDice 7d10+350
+DamDice 7d8+34
+DamType crush
+AC -380 -380 -380 -323
+Wealth 400
+Act    npc docile no_tame stay_area~
+AffBy  otterlungs haste swim~
+Off    dodge tail~
+Imm    summon charm illusion hunger thirst~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#80319
+Name merman child bully~
+ShortD a bullying merman child~
+LongD A bullying merman child is here taunting the other merchildren.~
+Desc A bullying merman child sneers at you as you approach.
+~
+Race human~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 600
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  otterlungs hide haste berserk swim~
+Off    bash kick tail~
+Imm    summon charm drowning illusion hunger thirst fear~
+Vuln   mental~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80320
+Name regal seahorse~
+ShortD a regal seahorse~
+LongD A regal seahorse swims here.~
+Desc A regal seahorse swims here.
+~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType smash
+AC -200 -200 -200 -162
+Wealth 200
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    tail~
+Imm    summon charm drowning~
+Form   edible sentient biped mammal~
+Part   head arms heart brains guts hands eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80321
+Name adult mermaid~
+ShortD a adult mermaid~
+LongD A adult mermaid is here.~
+Desc An adult mermaid is here.
+~
+Race human~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType none
+AC -430 -430 -430 -374
+Wealth 400
+Act    npc no_tame stay_area mage~
+AffBy  sanctuary otterlungs haste swim~
+Off    disarm tail~
+Imm    charm drowning sleep hunger thirst~
+Vuln   illusion~
+Form   sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80322
+Name red coral~
+ShortD red coral~
+LongD Red coral sways here in the current.~
+Desc Red coral sways here in the current.
+~
+Race human~
+Align 0 0
+Level 63
+Hitroll 0
+HitDice 6d10+330
+ManaDice 6d10+350
+DamDice 8d7+29
+DamType shbite
+AC -330 -330 -330 -290
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs swim~
+Off    trip~
+Imm    charm poison mental drowning sound sleep iron illusion hunger thirst fear~
+Vuln   slash~
+Form   poison~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80323
+Name massive black clam~
+ShortD a massive `#`Sblack`^ clam~
+LongD A massive `#`Sblack`^ clam rests here.~
+Desc A massive black clam is here. It opens and closes it shell as people near it 
+to investigate them. 
+~
+Race fish~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 20d10+250
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType chomp
+AC 80 80 80 71
+Wealth 300
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs~
+Imm    charm bash pierce poison drowning illusion hunger thirst fear~
+Form   edible non_skinable crustacean~
+Part   brains guts eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80324
+Name lounging merman~
+ShortD a lounging merman~
+LongD A lounging merman is here resting on a large rock.~
+Desc A merman lounges lazily here. He reads a copy of Merlife Today and lazily 
+swishes his tail through the water. 
+~
+Race human~
+Align 0 0
+Level 67
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType none
+AC 80 80 80 67
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  otterlungs swim~
+Off    dodge tail~
+Imm    charm drowning sleep hunger thirst fear~
+Vuln   illusion~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80325
+Name family sanddollar~
+ShortD a family of sanddollars~
+LongD A family of sanddollars is grouped here.~
+Desc A family of sanddollars is grouped together here.
+~
+Race human~
+Align 0 0
+Level 52
+Hitroll 0
+HitDice 5d9+285
+ManaDice 5d9+285
+DamDice 6d7+20
+DamType suction
+AC -220 -220 -220 -182
+Wealth 200
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge~
+Imm    summon charm poison drowning illusion hunger thirst fear~
+Form   edible crustacean~
+Part   brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80326
+Name a bitter old maid~
+ShortD a bitter old maid~
+LongD A bitter old maid swims here.~
+Desc A bitter looking old maid swims around her home. She looks like she would 
+eagerly tell her tale of woe if asked. 
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+64
+DamType beating
+AC -800 -800 -800 -648
+Wealth 400
+Act    npc dont_wander scavenger no_tame stay_area cleric~
+AffBy  detect_invis detect_hidden otterlungs haste dark_vision swim~
+Off    dodge tail~
+Imm    charm drowning hunger thirst fear~
+Vuln   mental illusion~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 80304 key~
+MProg SPEECH 80305 tale~
+MProg SPEECH 80305 yes~
+END
+
+#80327
+Name hoard moray eels~
+ShortD a hoard of moray eels~
+LongD A hoard of moray eels slithers here.~
+Desc A slithering, disgusting hoard of moray eels circles you. 
+~
+Race fish~
+Align 0 0
+Level 87
+Hitroll 0
+HitDice 20d10+350
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType acbite
+AC 70 70 70 58
+Wealth 200
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  detect_invis detect_hidden otterlungs haste dark_vision swim~
+Off    dodge tail circle~
+Imm    charm lightning acid mental drowning sound hunger thirst fear~
+Vuln   bash pierce~
+Form   non_skinable fish~
+Part   head heart guts fingers eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80328
+Name sly mermaid~
+ShortD a sly looking mermaid~
+LongD A sly looking mermaid waves her tail, beckoning you.~
+Desc This mermaid looks to be nothing but trouble. She has a come-hither smile on 
+her painted mouth and a twinkle in her eye. 
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType claw
+AC -450 -450 -450 -382
+Wealth 0
+Act    npc dont_wander no_tame stay_area mage~
+Act2   allskills~
+AffBy  otterlungs haste swim~
+Off    dodge tail~
+Imm    charm mental drowning illusion hunger thirst fear~
+Vuln   holy~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg ACT 80302 spank~
+MProg SPEECH 80303 yes~
+END
+
+#80329
+Name blue tang~
+ShortD a school of `#`Cblue`^ tang fish~
+LongD A school of `#`Cblue`^ tang fish swims around.~
+Desc A school of blue tang fish swims around. 
+~
+Race human~
+Align 0 0
+Level 57
+Hitroll 0
+HitDice 6d9+305
+ManaDice 6d9+310
+DamDice 6d8+24
+DamType pound
+AC -270 -270 -270 -229
+Wealth 200
+Act    npc no_tame stay_area~
+AffBy  otterlungs haste swim~
+Off    dodge~
+Imm    charm mental drowning hunger thirst fear~
+Form   edible sentient fish~
+Part   head heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80330
+Name adult merman~
+ShortD a adult merman~
+LongD A adult merman swims back and forth here.~
+Desc An adult merman swims back and forth here. 
+~
+Race human~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType stab
+AC -400 -400 -400 -332
+Wealth 300
+Act    npc no_tame stay_area warrior~
+AffBy  otterlungs haste swim~
+Off    dodge tail~
+Imm    summon charm drowning sleep hunger thirst fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80331
+Name tough merman guard~
+ShortD a tough looking merman guard~
+LongD A tough looking merman guard swims here.~
+Desc A tough looking merman guard swims here protecting the castle. 
+~
+Race human~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -435
+Wealth 350
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden haste swim~
+AffBy2 vicegrip~
+Off    dodge tail assist_vnum~
+Imm    mental drowning illusion hunger thirst fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80332
+Name quiet maid~
+ShortD a quiet maid~
+LongD A quiet maid waits here for her queen's order.~
+Desc A quiet maid waits here for her queen's order.
+~
+Race human~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType slap
+AC -400 -400 -400 -332
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  otterlungs sneak haste swim~
+Off    dodge tail~
+Vuln   mental~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80333
+Name jalion king dalit~
+ShortD jalion, King of Dalit~
+LongD Jalion, King of Dalit, sits proudly on his throne.~
+Desc Jalion, King of Dalit, sits proudly in his throne here. He carries a wicked 
+looking trident that has been passed down in his family for ages past. 
+~
+Race human~
+Align 0 0
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType none
+AC -550 -550 -550 -484
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary otterlungs haste swim regeneration~
+Off    dodge tail~
+Imm    charm lightning drowning hunger thirst fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 80306 100~
+END
+
+#80334
+Name sullen maid~
+ShortD a sullen looking maid~
+LongD A sullen looking maid hovers here listening to the queen's yammering.~
+Desc A sullen looking maid hovers here listening to the queen's yammering. She is 
+obviously bored and ready to leave. 
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType claw
+AC -450 -450 -450 -369
+Wealth 400
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs haste berserk swim~
+Off    tail~
+Imm    charm mental drowning hunger thirst fear~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80335
+Name xalia queen dalit~
+ShortD xalia, queen of dalit~
+LongD Xalia, Queen of Dalit, is here babbling away to herself.~
+Desc Xalia, Queen of Dalit, is here babbling away to herself. 
+~
+Race human~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slap
+AC -500 -500 -500 -450
+Wealth 500
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs haste swim~
+Off    tail~
+Imm    summon charm drowning hunger thirst fear~
+Vuln   mental~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80336
+Name queen's pet starfish~
+ShortD the queen's pet starfish~
+LongD The Queen's pet starfish wiggles here.~
+Desc The Queen's pet starfish wiggles here.
+~
+Race human~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType suction
+AC -300 -300 -300 -258
+Wealth 200
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge~
+Imm    summon charm drowning hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80337
+Name pet manta ray~
+ShortD the King's pet `#`Smanta`^ ray~
+LongD The King's pet `#`Smanta`^ ray hovers here.~
+Desc The King's pet manta ray hovers here for attention. 
+~
+Race human~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType suction
+AC -500 -500 -500 -430
+Wealth 250
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary otterlungs haste swim~
+Off    dodge tail~
+Imm    poison drowning hunger thirst fear~
+Form   edible sentient~
+Part   head heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80338
+Name king's advisors~
+ShortD the king's advisors~
+LongD The king's advisors nervously swim back and forth.~
+Desc The King's advisors nervously swim back and forth.
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType beating
+AC -450 -450 -450 -400
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  otterlungs haste swim~
+Off    dodge tail~
+Imm    drowning scry hunger thirst fear~
+Vuln   mental~
+Form   edible sentient mammal~
+Part   head arms heart brains guts hands fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80339
+Name a large `#`ggreen`^ sea turtle~
+ShortD a large `#`Ggreen`^ sea turtle~
+LongD A large `#`Ggreen`^ sea turtle swims here.~
+Desc A large green sea turtle swims here.
+~
+Race human~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType chomp
+AC -450 -450 -450 -387
+Wealth 200
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    bash~
+Imm    charm pierce drowning hunger thirst fear~
+Vuln   disease~
+Form   edible sentient~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80340
+Name warrior~
+ShortD a tiny seahorse warrior~
+LongD A tiny seahorse warrior is here.~
+Desc A tiny seahorse warrior rides here on the back of a regal seahorse. The 
+reins he holds are made with bits of kelp. 
+~
+Race human~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType pierce
+AC -300 -300 -300 -240
+Wealth 0
+Act    npc no_tame stay_area warrior~
+AffBy  otterlungs haste berserk swim~
+Off    dodge~
+Imm    charm hunger thirst fear~
+Vuln   bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#80341
+Name jellyfish~
+ShortD a jellyfish~
+LongD A jellyfish hovers here.~
+Desc A jellyfish floats here aimlessly.
+~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType sting
+AC -200 -200 -200 -170
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  otterlungs swim~
+Off    dodge~
+Imm    charm poison drowning hunger thirst fear~
+Form   sentient~
+Part   heart brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#80301
+Name shiny gold coin~
+Short a shiny gold coin~
+Desc A shiny gold coin has been tucked away here.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 1 0 0 0
+Weight 0
+Material gold~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take~
+End
+
+#80302
+Name pocket~
+Short a pocket~
+Desc ~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 0 0 1 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade~
+Extra2   nodecay~
+ExtraDesc pocket ~
+A small pocket has been carved into the wall here. 
+~
+End
+
+#80303
+Name a snakeskin cloak~
+Short a snakeskin cloak~
+Desc A snakeskin cloak is here.~
+Level 80
+ItemType armor~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 6 6 0
+Weight 10
+Material snakeskin~
+Extra    norestring~
+Wear     take neck~
+Affect modifier -1 80 -1 strength 4 0
+Affect modifier -1 80 -1 quickness 4 0
+Affect modifier -1 80 -1 agility 1 0
+End
+
+#80304
+Name a long stone table~
+Short a long stone table~
+Desc A long stone table is here. It contains the tools of the shaman.~
+Level 1
+ItemType container~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 10 A 0 10 0
+Weight 500
+Material stone~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80305
+Name poultice healing~
+Short a poultice of healing~
+Desc A poultice of healing is here.~
+Level 20
+ItemType poultice~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 20 3 3 heal 0
+Weight 5
+Material poultice~
+Extra    glow meltdrop nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#80306
+Name short emerald wand~
+Short a short emerald wand~
+Desc A short emerald wand is here.~
+Level 65
+ItemType wand~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 50 2 2 sober 0
+Weight 8
+Material emerald~
+Extra    invis nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#80307
+Name long steel spear~
+Short a long steel spear~
+Desc A long steel spear is here.~
+Level 65
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values polearm 4 10 pierce 0
+Weight 20
+Material unknown~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#80308
+Name small shell necklace~
+Short a small shell necklace~
+Desc A necklace made of tiny clamshells is here.~
+Level 55
+ItemType jewelry~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material shell~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 55 -1 presence 2 0
+Affect modifier -1 55 -1 quickness 2 0
+End
+
+#80309
+Name hunk driftwood~
+Short a hunk of driftwood~
+Desc A hunk of driftwood lies here.~
+Level 65
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 6 10 slash F
+Weight 20
+Material wood~
+Extra    norestring~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#80310
+Name ruby comb~
+Short a comb with a small `#`Rruby`^ inset~
+Desc A small hair comb with a `#`Rruby`^ inset is here.~
+Level 65
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 13 13 13 12 0
+Weight 3
+Material ruby~
+Extra2   nodecay~
+Wear     take head~
+End
+
+#80311
+Name algae~
+Short a piece of `#`Galgae`^~
+Desc A piece of `#`Galgae`^ is here.~
+Level 1
+ItemType food~
+Cost 40
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 2
+Material algae~
+Extra    nopurge nonmetal nodegrade~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#80312
+Name sleeping cap~
+Short a sleeping cap~
+Desc A sleeping cap is here.~
+Level 78
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 14 14 14 13 0
+Weight 3
+Material cloth~
+Extra    antievil~
+Extra2   nodecay~
+Wear     take head~
+End
+
+#80313
+Name seaweed~
+Short a strand of `#`gseaweed`^~
+Desc A strand of `#`gseaweed`^ is here.~
+Level 1
+ItemType food~
+Cost 40
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 2
+Material seaweed~
+Extra    nopurge nonmetal nodegrade~
+Extra2   nodecay nosell~
+Wear     take~
+End
+
+#80314
+Name jagged piece sapphire~
+Short a jagged piece of brilliant `#`Csapphire`^~
+Desc A jagged piece of brilliant sapphire is here.~
+Level 75
+ItemType weapon~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 4 13 pierce H
+Weight 10
+Material unknown~
+Extra    hum dark antigood nodegrade norestring~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#80315
+Name hefty club~
+Short a hefty club~
+Desc A hefty club is here.~
+Level 70
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values mace 3 18 smash 0
+Weight 30
+Material unknown~
+Extra    nodegrade norestring~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#80316
+Name a strong quartz bracelet~
+Short strong quartz bracelet~
+Desc A strong looking quartz bracelet is here.~
+Level 57
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 8
+Material unknown~
+Extra    magic norestring~
+Extra2   nodecay~
+Wear     take wrist~
+Affect modifier -1 57 -1 hp 3 0
+Affect modifier -1 57 -1 quickness 2 0
+End
+
+#80318
+Name wooden treasure chest~
+Short a wooden treasure chest~
+Desc ~
+Level 1
+ItemType container~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 25 A 0 20 0
+Weight 250
+Material wood~
+Extra    noremove nonmetal nolocate nodegrade~
+Extra2   nodecay~
+ExtraDesc wooden treasure chest~
+A sunken wooden treasure chest is here.  Perhaps you should look inside.
+~
+End
+
+#80319
+Name pile gold coin~
+Short a pile of gold coins~
+Desc A small pile of gold coins is here.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 10 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take~
+End
+
+#80320
+Name faded pair cotton pants~
+Short a faded pair of cotton pants~
+Desc A faded pair of cotton pants is here.~
+Level 50
+ItemType clothing~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cloth~
+Extra    meltdrop norestring~
+Extra2   nodecay~
+Wear     take legs~
+Affect modifier -1 50 -1 mana 20 0
+Affect modifier -1 50 -1 memory 2 0
+End
+
+#80321
+Name bellychain emerald~
+Short a silver bellychain with a small dangling emerald~
+Desc A silver bellychain with a small dangling emerald is here.~
+Level 73
+ItemType jewelry~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    glow magic~
+Wear     take waist~
+Affect modifier -1 73 -1 agility 4 0
+Affect modifier -1 73 -1 hp 2 0
+End
+
+#80322
+Name small shimmering dagger~
+Short a small shimmering dagger~
+Desc A small shimmering dagger is here.~
+Level 73
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 4 16 pierce B
+Weight 5
+Material metal~
+Extra    glow meltdrop norestring~
+Wear     take wield~
+End
+
+#80323
+Name precious pearl~
+Short a small precious pearl~
+Desc A small precious pearl is here.~
+Level 65
+ItemType gem~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#80324
+Name large flat rock~
+Short a large flat rock~
+Desc A large flat rock looks comfortable to rest on.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 5 600 BEHKR 105 105
+Weight 1000
+Material rock~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#80325
+Name heart locket~
+Short a heart-shaped locket~
+Desc A heart-shaped locket is here.~
+Level 75
+ItemType jewelry~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gold~
+Extra    hum nodegrade~
+Wear     take neck~
+Affect modifier -1 75 -1 presence 4 0
+Affect modifier -1 75 -1 memory 2 0
+End
+
+#80326
+Name seashell bikini top~
+Short a seashell bikini top~
+Desc A bikini top made of two large clam shells is here.~
+Level 50
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 1 0 0
+Weight 5
+Material shell~
+Extra2   nodecay~
+Wear     take torso~
+Affect modifier -1 50 -1 mana 20 0
+End
+
+#80327
+Name gaudy long pearl necklace~
+Short a long, gaudy `#`Wpearl`^ necklace~
+Desc A long, gaudy `#`Wpearl`^ necklace is here.~
+Level 80
+ItemType armor~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 8
+Material unknown~
+Extra    glow hum~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 80 -1 hitroll 4 0
+Affect modifier -1 80 -1 hp 2 0
+End
+
+#80328
+Name copy merlife today~
+Short a copy of `#`BMerlife`^ Today~
+Desc A copy of `#`BMerlife`^ Today has been left here. As you flip through the pages, headlines jump out at you. "Sordid Affair between Gazelia and the Octopus!" "Livy has a crush on Serizos! More details inside on their shop competition and their heated romance."~
+Level 1
+ItemType treasure~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#80329
+Name small gem infused light~
+Short a small gem infused with light~
+Desc A small gem infused with light is here.~
+Level 1
+ItemType light~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 5 0 0
+Weight 3
+Material gem~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#80330
+Name bag woven rope~
+Short a bag of woven ropes~
+Desc A bag of woven ropes is here.~
+Level 50
+ItemType container~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 400 A 0 100 45
+Weight 70
+Material rope~
+Extra    glow nodegrade~
+Extra2   nodecay~
+Wear     take back~
+End
+
+#80331
+Name long rune glow sword~
+Short a longsword with intricate `#`Yglowing`^ runes~
+Desc A longsword with intricate `#`Yglowing`^ runes is here.~
+Level 70
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 0
+Rsize 50
+Values sword 3 17 slash D
+Weight 60
+Material steel~
+Extra    glow hum~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian bard anti-paladin~
+End
+
+#80332
+Name tasteful bracelet polished chrysolite~
+Short a tasteful looking bracelet of polished `#`Gchrysolite`^~
+Desc A tasteful looking bracelet of polished `#`Gchrysolite`^ glitters here.~
+Level 85
+ItemType jewelry~
+Cost 600
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Wear     take wrist~
+Affect modifier -1 85 -1 mana 4 0
+Affect modifier -1 85 -1 memory 3 0
+Affect modifier -1 85 -1 reasoning 2 0
+End
+
+#80333
+Name potion grace~
+Short a small potion of grace~
+Desc A small potion of grace sparkles here.~
+Level 50
+ItemType potion~
+Cost 1200
+Durability 5
+Asize 0
+Rsize 50
+Values 50 heal armour 'true sight' haste
+Weight 5
+Material potion~
+Wear     take hold~
+End
+
+#80334
+Name tiny mermaid earring~
+Short a tiny mermaid earring~
+Desc A dangling earring is here. It has a small representation of a smiling mermaid attached at the bottom.~
+Level 70
+ItemType jewelry~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Wear     take ear~
+Affect modifier -1 70 -1 hp 3 0
+Affect modifier -1 70 -1 agility 2 0
+Affect modifier -1 70 -1 strength 1 0
+End
+
+#80335
+Name jagged obsidian spear~
+Short a jagged obsidian spear~
+Desc A jagged obsidian spear is here.~
+Level 80
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values polearm 5 8 pierce 0
+Weight 10
+Material metal~
+Wear     take wield~
+End
+
+#80336
+Name small coral sofa~
+Short a small coral colored sofa~
+Desc A small coral colored sofa looks very comfortable.~
+Level 1
+ItemType furniture~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values 3 500 EHK 100 100
+Weight 1000
+Material fabric~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80337
+Name small golden throne~
+Short the Queen's small `#`Ygolden`^ throne~
+Desc The Queen's small `#`Ygolden`^ throne glitters brilliantly here.~
+Level 1
+ItemType furniture~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 1 200 EH 100 100
+Weight 3000
+Material gold~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80338
+Name large golden throne~
+Short the King's massive `#`Ygolden`^ throne~
+Desc The King's `#`Ygolden`^ throne is positioned next to the smaller one here.~
+Level 1
+ItemType furniture~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 EH 100 100
+Weight 4000
+Material gold~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80339
+Name gleaming golden trident~
+Short a gleaming `#`Ygolden`^ trident~
+Desc A gleaming `#`Ygolden`^ trident with is here. Intricate runes and scrollwork adorns the handle.~
+Level 85
+ItemType weapon~
+Cost 800
+Durability 5
+Asize 0
+Rsize 50
+Values polearm 4 15 stab N
+Weight 50
+Material metal~
+Extra    glow otterlungs norestring~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#80340
+Name mermaid kiss~
+Short a mermaid's kiss~
+Desc A mermaid's kiss is blown to you.~
+Level 75
+ItemType scroll~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 75 otterlungs '' '' ''
+Weight 3
+Material scroll~
+Extra    glow norestring~
+Wear     take hold~
+End
+
+#80341
+Name pretty silver mirror~
+Short a pretty `#`Ssilver`^ mirror~
+Desc A pretty `#`Ssilver`^ mirror is here.~
+Level 80
+ItemType jewelry~
+Cost 450
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    norestring~
+Extra2   nodecay~
+Wear     take hold~
+Affect modifier -1 80 -1 memory 1 0
+Affect modifier -1 80 -1 presence 5 0
+End
+
+#80342
+Name small vanity~
+Short a small `#`Bblue`^ vanity with drawers~
+Desc A small `#`Bblue`^ vanity with drawers displays the Queen's jewelry and makeup.~
+Level 1
+ItemType container~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values 30 A 0 20 0
+Weight 500
+Material unknown~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80343
+Name delicate amethyst ring~
+Short a delicate `#`Mamethyst`^ ring~
+Desc A delicate `#`Mamethyst`^ ring is here.~
+Level 80
+ItemType armor~
+Cost 600
+Durability 5
+Asize 0
+Rsize 50
+Values 8 8 8 5 0
+Weight 2
+Material amethyst~
+Extra    norestring~
+Extra2   nodecay~
+Wear     take finger~
+Affect modifier -1 80 -1 hitroll 4 0
+Affect modifier -1 80 -1 hitroll 3 0
+End
+
+#80344
+Name clipboard~
+Short a clipboard~
+Desc A clipboard is here.~
+Level 75
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 0
+Rsize 50
+Values mace 3 20 crush 0
+Weight 10
+Material unknown~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin barbarian bard anti-paladin~
+End
+
+#80345
+Name bedroom key~
+Short a key to the royal chambers~
+Desc A key to the royal chambers is here.~
+Level 1
+ItemType key~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material key~
+Extra    nodegrade~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#80346
+Name key gate~
+Short the palace gate key~
+Desc The palace gate key is here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#80347
+Name small seashell~
+Short a small `#`Wseashell`^~
+Desc A small `#`Wseashell`^ is here.~
+Level 1
+ItemType trash~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material shell~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#80348
+Name large pink conch shell~
+Short a large `Mpink`^ conch shell.~
+Desc A large `Mpink`^ conch shell is here.~
+Level 1
+ItemType trash~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material shell~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#80349
+Name coral shortsword~
+Short a `#`Mcoral`^ shortsword~
+Desc A `#`Mcoral`^ shortsword is here.~
+Level 60
+ItemType weapon~
+Cost 250
+Durability 5
+Asize 0
+Rsize 50
+Values sword 2 30 pierce D
+Weight 5
+Material coral~
+Extra    norestring~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances warrior paladin barbarian bard anti-paladin~
+End
+
+#80350
+Name kelp helm~
+Short a `#`Gkelp`^ helm~
+Desc A `#`Gkelp`^ helm is here.~
+Level 60
+ItemType armor~
+Cost 150
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 11 0
+Weight 5
+Material seaweed~
+Extra    norestring~
+Extra2   nodecay~
+Wear     take head~
+End
+
+#0
+
+
+
+#ROOMS
+#80301
+Name Into the whirlpool~
+Desc The warm water is violently pulling you downward into a large whirlpool. 
+Debris swirls around you, following your descent. Colorful fish try vainly 
+to swim against the current. Moving upwards is impossible. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit up 54629
+Exit down 80302
+End
+
+
+#80302
+Name Into the whirlpool~
+Desc The whirlpool has sucked you completely underwater. Fish and debris bump 
+into you as you struggle against the swirling water. Sunlight is still 
+visible at this depth. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit up 80301
+Exit southeast 80303
+End
+
+
+#80303
+Name Into the whirlpool~
+Desc Algae and seaweed sticks to your clothes as you are pulled in farther. You 
+glance upward, hoping for rescue, but you seen only the glint of light on 
+the water as before. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit southwest 80304
+Exit northwest 80302
+End
+
+
+#80304
+Name Into the Whirlpool~
+Desc A small crab swirls downward, clicking its pinchers in frustration. You try 
+to swim away from it to avoid being pinched. The water has completely 
+obscured your view of the light. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit northeast 80303
+Exit northwest 80305
+End
+
+
+#80305
+Name Whirlpool~
+Desc The bottom of the ocean seems closer now. The warm water continues to drag 
+you downward. Below you see sealife swimming unworriedly. The twisting 
+current speeds up, forcing you further down. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit northeast 80306
+Exit southeast 80304
+End
+
+
+#80306
+Name Whirlpool~
+Desc You are at the bottom of the whirlpool. Debris and fish are being ejected 
+from the bottom. You spy the angry crab again clicking its pinchers. Perhaps 
+you can swim away from the whirlpool and back to safety once it ejects you. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit down 80312
+Exit southwest 80305
+End
+
+
+#80307
+Name Underwater Field~
+Desc The underwater field teems with life. Playful, curious dolphins swim around 
+and inspect you. Overhead sunlight shines down and warms the water. More 
+green seaweed grows here and fish stop to nibble on it. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80309
+Exit east 80308
+Exit south 80327
+Exit west 80328
+End
+
+
+#80308
+Name Underwater Field~
+Desc You see a big sign here advertising Liviana's Shop. The writing is in a 
+flowing cursive shop with the hours listed. Under the hours in bold, NO 
+CHILDREN ALLOWED IN SHOP! is posted. The field is spread out around you in 
+all directions. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80310
+Exit east 80341
+Exit south 80342
+Exit west 80307
+End
+
+
+#80309
+Name Underwater Field~
+Desc Red coral fills this portion of the field. Fish nestle down inside it and 
+make their homes. The bright color scares away would-be predators. You think 
+about taking some of the coral but remember red coral is dangerous. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80334
+Exit east 80310
+Exit south 80307
+Exit west 80329
+End
+
+
+#80310
+Name Underwater Field~
+Desc A large rock is here that the merpeople use to sun themselves on. Small 
+plants have been placed around it, making the atmosphere pleasant. Colorful 
+fish hover near the rock. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80335
+Exit east 80337
+Exit south 80308
+Exit west 80309
+End
+
+
+#80311
+Name Onyx Castle~
+Desc This is the foyer of the small onyx castle. Colorful banners stream in from 
+the windows. West leads you back out to the city, and east continues on into 
+the castle. Far ahead you can see two thrones. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80358
+Exit west 80330
+EFlags door closed locked pickproof nopass~
+EKeyvnum 80346
+EKeywords palace gate~
+End
+
+
+#80312
+Name Under the Whirlpool~
+Desc The whirlpool deposits you without ceremony onto a small pebbled pathway. 
+Coral and seaweeds sway gently in the currents. Schools of fish swim 
+unhurriedly through. You can see the pebbled path continues. Way off in the 
+distance, a glimmering structure beckons. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit up 80306
+Exit southeast 80314
+End
+
+
+#80313
+Name Small Cave~
+Desc A small family of serpents has nested in this shallow cave. They raise their 
+heads collectively and bare fangs as they hear noise. The cave walls are 
+smooth, testament to the many years of slick serpent bodies writhing against 
+them. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit south 80319
+End
+
+
+#80314
+Name On a Path~
+Desc A pebbled pathway is here. It curves and winds its way farther into the 
+ocean. Small crabs, eels, and other creatures can be seen travelling along 
+the bottom. Bits of debris are left from the whirlpool. Small bubbles arise 
+from hot vents in the ocean floor. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit southeast 80315
+Exit northwest 80312
+End
+
+
+#80315
+Name At a Junction~
+Desc There is a small junction in the pebbled pathway. Southwards leads off into 
+the sand and ends in a dark cave. In the cave, something shiny can be seen. 
+East continues onto the pathway. The surrounding terrain is rocky, and you 
+can see a few caves ahead. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80318
+Exit south 80316
+Exit northwest 80314
+End
+
+
+#80316
+Name Cave Entrance~
+Desc The cave's entrance is being swarmed by a school of small silverfish. 
+Seaweed hits gently against the rocky outline of the cave. Something glints 
+in the back of the cave. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80315
+Exit south 80317
+End
+
+
+#80317
+Name Inside a Cave~
+Desc This cave is small and confining. Fish swim in and out, and a crab scuttles 
+over a small grouping of rocks. A small pocket can be seen in the wall. 
+Reaching your hand in could be dangerous but worthwhile. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80316
+End
+
+
+#80318
+Name On a Path~
+Desc A sunken coin glimmers here on the ground. As you lean over to pick it up, 
+something swims by quickly overhead. You catch a glimpse of huge fins and 
+shudder at the thought of sharks. You could try to turn back now and avoid 
+the possible danger. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80319
+Exit west 80315
+End
+
+
+#80319
+Name On a Path~
+Desc A small cave can be see to your north. Beady eyes peer out from the 
+darkness, challenging you. Fish skirt around the cave entrance, daring not 
+to swim closer. A long serpent slithers out from the cave, flicks its tongue 
+at you, then is gone. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80313
+Exit east 80320
+Exit west 80318
+End
+
+
+#80320
+Name On a Path~
+Desc The path takes a sharp turn to the southeast here as the ground drops 
+further down into a canyon. The rock walls cast a shadow on the path, making 
+it difficult to find your way. Colorful fish search the ocean floor for 
+food. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit west 80319
+Exit southeast 80321
+End
+
+
+#80321
+Name On a Path~
+Desc Up ahead on the path you see what looks to be a small stone house. You begin 
+to get excited and wonder if the house was built by pirates as a secure 
+location to stash their booty. You hurry along the path to eagerly inspect. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit southeast 80322
+Exit northwest 80320
+End
+
+
+#80322
+Name On a Path~
+Desc A simple stone house lies to the north. The house looks empty of occupants, 
+save for the fish swimming in and out of the open doorway. You can see no 
+hidden treasure from this vantage point. The path continues on down into the 
+canyon. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80323
+Exit east 80324
+Exit northwest 80321
+End
+
+
+#80323
+Name Small Stone House~
+Desc This sturdy stone house is small and welcoming. You find no pile of pirate 
+gold, but notice the sculpted stone furniture. Perhaps the house was once 
+above ground and somehow sank into the ocean. You turn disbelievingly to the 
+door as you hear a faint giggle then shake your head. A giggle? It couldn't 
+be.. You're underwater, and fish don't giggle. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit south 80322
+End
+
+
+#80324
+Name On a Path~
+Desc The pebbled pathway begins to widen here. A small shadowy form can be seen 
+floating in the east. Sounds of giggles travel through the water. You look 
+around in confusion. Straining your eyes, you see a light reflecting off a 
+large dark structure in the distance. 
+~
+RoomFlags no_mob nofly~
+Sector underwater~
+Exit east 80325
+Exit west 80322
+End
+
+
+#80325
+Name On a Path~
+Desc Seaweed sways in the slow current of the water as small fish weave their way 
+through the entangled tendrils. A young mermaid swims back and forth as she 
+plays with a regal looking seahorse. A mermaid?! You thought those didn't 
+exist. Maybe the house wasn't once on land after all.. 
+~
+RoomFlags nofly~
+Sector underwater~
+RoomEcho  1  0  20 A small giggle escapes the mermaid.~
+Exit east 80326
+Exit west 80324
+End
+
+
+#80326
+Name On a Path~
+Desc The pebbled pathway ends abruptly here. It leads to a small field, lush with 
+underwater plantlife and schools of fish. More mermaids are visible as you 
+look around the area in disbelief. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80328
+Exit east 80327
+Exit west 80325
+End
+
+
+#80327
+Name Underwater Field~
+Desc Shops are visible farther into the field. Coral waves in the slow current. 
+You can hear shouting from a nearby bully. Dolphins pass overhead as crabs 
+and other creatures scuttle along on the ocean floor. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80307
+Exit east 80342
+Exit west 80326
+End
+
+
+#80328
+Name Underwater Field~
+Desc Dolphins play in this open field. Mermaids and mermen travel together, going 
+about their day. Gazing up through the water, rays of sunlight are visible. 
+The sunlight warms the water and lights the area. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80329
+Exit east 80307
+Exit south 80326
+End
+
+
+#80329
+Name Underwater Field~
+Desc Faint yelling can be heard from the north. A scan of the area reveals no one 
+so you decide to move on to investigate. This area of the field holds no 
+surprises. Fish swim in and out and the merpeople pass by without a glance. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80331
+Exit east 80309
+Exit south 80328
+End
+
+
+#80330
+Name Castle Entrance~
+Desc The castle entrance is decorated with colorful banners and flowers that 
+contrast with the dark gleam of the onxy walls. Castle guards are here 
+playing a silly game with a captured fish. They ignore you as you approach 
+but look up with a glare as you try to enter the castle. The castle gates 
+lie to the east. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80311
+EFlags door closed locked pickproof nopass~
+EKeyvnum 80346
+EKeywords palace gates~
+Exit west 80352
+End
+
+
+#80331
+Name Underwater Field~
+Desc Loud yelling and crashes can be heard from the house northwest of here. You 
+try peeking into the entrance but the merman screams and throws a book at 
+you. Schools of fish gather and peek curiously into the house. A small cave 
+is to the southeast. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80334
+Exit south 80329
+Exit southeast 80333
+Exit northwest 80332
+End
+
+
+#80332
+Name Small Stone House~
+Desc This small stone house appears to be the home of an outcast from the 
+merpeople city. Items are knocked around the room and float about in the 
+water. The wall has a big scorch mark on it. 
+~
+RoomFlags nofly~
+Sector underwater~
+RoomEcho  0 23  50 A horrible scream echoes through the room.~
+Exit southeast 80331
+End
+
+
+#80333
+Name Small Cave~
+Desc This small cave is empty except for some algae and seaweed that have 
+collected here. You see something wooden sticking up in one corner but move 
+on. Probably just some rotted wood. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit northwest 80331
+End
+
+
+#80334
+Name Underwater Field~
+Desc This portion of the field is home to a very large black clam. It slow opens 
+its massive shell and peers out uninterestedly at your entrance. It closes 
+up as it decides you're positively boring and not worth its time. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80335
+Exit south 80309
+Exit west 80331
+End
+
+
+#80335
+Name Underwater Field~
+Desc Merpeople try to slip past the bully without notice into the shop northward. 
+The fish give him wide berth, unwilling to be caught and used as a toy. 
+Broken toys litter the ground. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80357
+Exit east 80336
+Exit south 80310
+Exit west 80334
+End
+
+
+#80336
+Name Underwater Field~
+Desc Travelling to the east leads to a dark, forbidding passage. To the south, 
+the field brimming with light and sealife awaits. You can hear the mean 
+teasing of the bully from here. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80338
+Exit south 80337
+Exit west 80335
+End
+
+
+#80337
+Name Underwater Field~
+Desc To the south of you, you see a small clean shop with a side entrance. 
+Seaweed sways as merpeople pass by you to enter the shop's entrance. Fish 
+swim in schools and search for food. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80336
+Exit west 80310
+End
+
+
+#80338
+Name On a Dark Pathway~
+Desc No fish have ventured into this dark passage. You glance around wondering 
+what has scared them off. Faint sounds can be heard in the distance. The 
+trail seems to get darker the farther you venture. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80339
+Exit west 80336
+End
+
+
+#80339
+Name On a Dark Pathway~
+Desc A huge cavern looms at the end of the pathway. Something large is heard 
+rustling around. Snapping noises can be heard, it sounds like a bone 
+breaking. Maybe you should turn around now before you hear your own bones. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit west 80338
+Exit northeast 80340
+End
+
+
+#80340
+Name Darkened Cavern~
+Desc The resting serpent lies here in this darkened cavern. Skeletons lie broken 
+around the cavern, evidence of travellers past. Your movement disturbs the 
+serpent, and he coils, ready for you. 
+~
+RoomFlags dark noscry nofly~
+Room2Flags no_shadowplane~
+Sector underwater~
+Exit southwest 80339
+End
+
+
+#80341
+Name Liviana's Shop~
+Desc Liviana looks up as you come in. She smirks and goes back to reading through 
+her copy of Merlife Today. Her wares are out on prim displays. The items are 
+neatly arranged, and nothing is out of order. You have a feeling she runs 
+her entire life like her store. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit west 80308
+End
+
+
+#80342
+Name Underwater Field~
+Desc You see the end of the field towards the east. A family of sand dollars 
+wriggles around on the ocean floor. Houses and shops can be seen in the 
+distance. A large hot vent sends bubbles swirling through the air. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80308
+Exit east 80343
+Exit west 80327
+End
+
+
+#80343
+Name At a Junction~
+Desc The lush field ends here, and another pebbled pathway begins. Looking around 
+you see more houses in the distance and a large black looking structure. 
+Merchildren swim quickly up and down the streets as they play. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80344
+Exit west 80342
+Exit northeast 80346
+Exit southeast 80347
+Exit southwest 80349
+End
+
+
+#80344
+Name Pebbled Path~
+Desc The pebbled pathway leads you downward into a small canyon. Ahead you can 
+see a shimmering onyx castle. Fish swim overhead and try to avoid the guards 
+at the castle. Sand dunes flank the edges of the pathway and spill over into 
+the path. Crabs peek out of their homes. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit west 80343
+Exit southeast 80345
+End
+
+
+#80345
+Name Pebbled Path~
+Desc The pathway splits into two passages. The castle lies to your east and homes 
+are to your south. An irritated, half smushed crab pinches at your boot. You 
+should watch where you step. 
+~
+RoomFlags no_mob nofly~
+Sector underwater~
+Exit south 80353
+Exit southeast 80351
+Exit northwest 80344
+End
+
+
+#80346
+Name Stone House~
+Desc The furniture in this home resembles that of the others. Small pearls are 
+used as handles, and the stone has intricate symbols carved into it. A 
+merman peers out quizzically from his bed at you. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit southwest 80343
+End
+
+
+#80347
+Name Small Junction~
+Desc You are faced with three directions at this small junction. Northwest leads 
+back to the main pathway. East leads into a distinctive limestone home. 
+Southwest leads you to the meeting place of the merpeople. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80350
+Exit southwest 80348
+Exit northwest 80343
+End
+
+
+#80348
+Name Stone Building~
+Desc This stone building seems to be a meeting place for the merpeople. Stone 
+tables and chairs are spread throughout the room, and merpeople sit flirting 
+and talking. Merchildren play a game near the entranceway. A few look up as 
+you enter. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit northeast 80347
+Exit northwest 80349
+End
+
+
+#80349
+Name Stone Building~
+Desc This building hosts a playground for the children. Balls, trained seahorses, 
+and other toys float freely as the children dart about. Two older tired 
+mermaids lounge at the back of the building and talk as they ignore the 
+children. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit northeast 80343
+Exit southeast 80348
+End
+
+
+#80350
+Name Limestone House~
+Desc This limestone house stands out a bit from the other homes in this 
+underwater city. The decor is proper and follows strict lines. Small 
+tributes honoring the occupant line one wall. Strange artifacts sit on the 
+table, tools of the man's trade. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit west 80347
+End
+
+
+#80351
+Name Sandy Path~
+Desc This sandy path leads to a small onyx palace. Northwest leads you back to 
+the main part of the merpeople city. You can see guards swimming around and 
+talking in the distance. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80352
+Exit northwest 80345
+End
+
+
+#80352
+Name Castle Gates~
+Desc The gates of the Dalit castle are wide open. Fish and merpeople swim freely 
+in and out. The guard house is empty. Sounds of boisterous laughter are 
+heard from the east. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80330
+Exit west 80351
+End
+
+
+#80353
+Name Dark Passage~
+Desc This passage to the homes is dark and narrow due to the rock walls 
+shouldering you. Something large brushes against you, and your heart pounds 
+in your chest. Small bones litter the ground. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80345
+Exit south 80354
+End
+
+
+#80354
+Name Dark Passage~
+Desc This dark passage dead ends into two homes. Maniacal screeching can be heard 
+to the north. The house to the west is silent. A long dark shadow passes 
+overhead. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80353
+Exit south 80355
+Exit west 80356
+End
+
+
+#80355
+Name Ramshackle Stone House~
+Desc Faded and ruined bits of finery are piled up in this ramshackle stone house. 
+The owner was obviously in a position of power once. An important looking 
+key hangs on the wall. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80354
+End
+
+
+#80356
+Name Vacant Stone House~
+Desc A slithering, disgusting hoard of moray eels has taken over this home. The 
+owner's belongings lay where he last them as he hurried to get away. The 
+eels slither closer to you as you enter. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80354
+End
+
+
+#80357
+Name Serizos's Store~
+Desc This store is filled to the brim with all sorts of treats. Serizos proudly 
+wipes the displays off and shows you his merchandise. Merpeople lazily swim 
+in and out of the store. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit south 80335
+End
+
+
+#80358
+Name Onyx Castle~
+Desc The glittering onyx walls of this room are lined with pictures of the royal 
+family. Judging by the pictures, all of the queens have been very lovely. 
+Merpeople wander in and out as they seek an audience with the king about 
+various issues. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80361
+Exit east 80359
+Exit west 80311
+End
+
+
+#80359
+Name Waiting Area~
+Desc This is the waiting area for those who wish an audience with the king. 
+Merpeople with their request granted are being guided into the next room. 
+The unlucky ones are being dragged to the castle gates. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit east 80360
+Exit west 80358
+End
+
+
+#80360
+Name Throne Room~
+Desc This is the throne room of the Dalit palace. Two golden thrones command the 
+center of the room and a wide red carpet leads up to them. The king's 
+audience is hushed and awaiting his summons to speak before him. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit south 80362
+Exit west 80359
+End
+
+
+#80361
+Name Parlor~
+Desc A small receiving parlor is here. It has been tastefully decorated in gold 
+and coral huges. Maids slip in and out of the room to wait on the royalty 
+and their guests. An inviting sofa has been positioned against one wall so 
+visitors may observe the Queen's pet starfish. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit south 80358
+End
+
+
+#80362
+Name Small Passageway~
+Desc This passageway connects the throne room to the royal chambers. The king's 
+advisors swim here trying to communicate bits of last minute information to 
+the king. The King's pet manta ray hovers here hoping for attention. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit north 80360
+Exit up 80363
+End
+
+
+#80363
+Name Spiral Staircase~
+Desc This elegant spiraled staircase leads up to the royal chambers. Touches of 
+albaster decorate the walls around the staircase. The handrails have small 
+gems embedded into them. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit down 80362
+Exit northeast 80364
+EFlags door closed locked pickproof nopass~
+EKeyvnum 80345
+EKeywords royal chamber~
+End
+
+
+#80364
+Name Royal Chambers~
+Desc The royal chambers are elegantly decorated in jade tones. A bed formed from 
+soft sponges is nestled in the corner. The Queen's vanity is positioned in 
+front of the open window looking out over the kingdom. 
+~
+RoomFlags nofly~
+Sector underwater~
+Exit southwest 80363
+EFlags door closed locked pickproof nopass~
+EKeyvnum 80345
+EKeywords royal chamber~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 80301 spec_poison
+M 80337 spec_poison
+S
+
+
+
+#RESETS2
+M 0 80308 15 80301 2
+M 0 80339 20 80301 1
+O 0 80311 -1 80303
+M 0 80309 20 80304 2
+M 0 80339 20 80305 1
+M 0 80329 30 80305 2
+M 0 80311 20 80305 1
+O 0 80313 -1 80307
+O 0 80311 -1 80307
+M 0 80329 20 80307 3
+M 0 80340 30 80307 3
+E 0 80350 -1 head~
+E 0 80349 -1 wielded~
+O 0 80313 -1 80308
+O 0 80348 -1 80308
+M 0 80322 1 80309 1
+M 0 80330 30 80309 3
+E 0 80331 -1 wielded~
+M 0 80341 20 80309 2
+M 0 80321 30 80310 2
+M 0 80308 1 80310 1
+O 0 80311 -1 80310
+M 0 80324 1 80310 1
+E 0 80322 -1 wielded~
+E 0 80328 -1 hold~
+O 0 80324 -1 80310
+O 0 80347 -1 80310
+O 0 80313 -1 80312
+O 0 80347 -1 80312
+O 0 80348 -1 80312
+M 0 80301 1 80313 1
+M 0 80309 30 80314 1
+M 0 80312 30 80314 2
+O 0 80302 -1 80317
+P 0 80301 10 80302 1
+M 0 80341 20 80317 1
+O 0 80301 -1 80318
+M 0 80339 20 80318 2
+M 0 80341 20 80319 2
+O 0 80347 -1 80320
+M 0 80312 25 80321 2
+M 0 80339 20 80322 2
+O 0 80301 -1 80323
+M 0 80309 30 80323 1
+O 0 80311 -1 80323
+O 0 80347 -1 80324
+M 0 80341 20 80324 1
+M 0 80302 30 80325 1
+M 0 80303 20 80325 1
+M 0 80312 20 80327 3
+M 0 80308 20 80327 1
+M 0 80309 30 80327 2
+M 0 80314 30 80327 2
+M 0 80306 30 80327 2
+M 0 80321 40 80327 4
+E 0 80321 -1 waist~
+E 0 80322 -1 wielded~
+M 0 80318 10 80328 2
+M 0 80330 30 80328 2
+M 0 80320 20 80329 3
+M 0 80311 10 80329 2
+M 0 80314 30 80329 3
+M 0 80309 20 80329 1
+M 0 80318 5 80329 1
+O 0 80348 -1 80329
+M 0 80331 20 80330 3
+E 0 80335 -1 wielded~
+G 0 80346 -1
+O 0 80347 -1 80330
+M 0 80308 10 80331 3
+M 0 80315 1 80332 1
+E 0 80314 -1 wielded~
+M 0 80309 20 80333 5
+O 0 80311 -1 80333
+O 0 80311 -1 80333
+O 0 80313 -1 80333
+O 0 80313 -1 80333
+O 0 80318 -1 80333
+P 0 80319 2 80318 1
+P 0 80320 1 80318 1
+M 0 80323 1 80334 1
+G 0 80323 -1
+M 0 80319 1 80335 1
+E 0 80315 -1 wielded~
+M 0 80320 30 80335 3
+M 0 80340 30 80335 3
+E 0 80349 -1 wielded~
+E 0 80350 -1 head~
+M 0 80339 20 80336 2
+M 0 80341 20 80336 1
+M 0 80314 30 80337 3
+M 0 80306 30 80337 2
+E 0 80309 -1 wielded~
+E 0 80316 -1 lwrist~
+M 0 80304 1 80340 1
+E 0 80303 -1 neck1~
+M 0 80317 1 80341 1
+G 0 80310 -1
+G 0 80332 -1
+G 0 80333 -1
+G 0 80334 -1
+M 0 80325 5 80342 1
+M 0 80330 30 80342 3
+E 0 80331 -1 wielded~
+M 0 80339 20 80342 2
+M 0 80306 30 80343 3
+E 0 80309 -1 wielded~
+M 0 80314 30 80343 3
+E 0 80308 -1 neck1~
+M 0 80318 10 80343 2
+M 0 80341 20 80343 1
+O 0 80301 -1 80344
+O 0 80313 -1 80344
+M 0 80328 1 80344 1
+G 0 80340 -1
+E 0 80325 -1 neck1~
+M 0 80329 20 80344 3
+M 0 80314 20 80344 2
+M 0 80340 30 80345 3
+E 0 80350 -1 head~
+E 0 80349 -1 wielded~
+M 0 80313 1 80346 1
+E 0 80312 -1 head~
+M 0 80302 30 80348 2
+E 0 80308 -1 neck1~
+M 0 80321 30 80348 4
+M 0 80330 30 80348 2
+E 0 80316 -1 lwrist~
+M 0 80302 30 80349 2
+M 0 80306 35 80349 2
+E 0 80309 -1 wielded~
+M 0 80307 1 80349 1
+E 0 80310 -1 head~
+M 0 80303 30 80349 1
+M 0 80305 1 80350 1
+E 0 80307 -1 wielded~
+O 0 80304 -1 80350
+P 0 80305 1 80304 1
+P 0 80306 1 80304 1
+M 0 80312 20 80352 1
+M 0 80310 10 80353 2
+M 0 80341 20 80353 1
+M 0 80310 10 80354 2
+M 0 80326 1 80355 1
+G 0 80345 -1
+M 0 80339 20 80355 1
+M 0 80327 1 80356 1
+O 0 80311 -1 80356
+O 0 80313 -1 80356
+M 0 80316 1 80357 1
+G 0 80307 -1
+G 0 80326 -1
+G 0 80327 -1
+G 0 80328 -1
+G 0 80329 -1
+G 0 80330 -1
+M 0 80332 20 80359 2
+M 0 80332 20 80360 2
+O 0 80337 -1 80360
+O 0 80338 -1 80360
+M 0 80333 1 80360 1
+E 0 80339 -1 wielded~
+O 0 80348 -1 80360
+O 0 80336 -1 80361
+M 0 80332 20 80361 3
+M 0 80336 1 80361 1
+M 0 80337 1 80362 1
+M 0 80320 30 80362 2
+M 0 80338 1 80362 1
+E 0 80344 -1 wielded~
+M 0 80334 1 80364 1
+M 0 80335 1 80364 1
+E 0 80341 -1 hold~
+O 0 80342 -1 80364
+P 0 80343 1 80342 1
+S
+
+
+
+#SHOPS
+#80316
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#80317
+profit_buy 150
+profit_sell 75
+open_hour 1
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#80306
+title Jalion sitting on throne~
+author Zaroth~
+code if pos $i resting
+  mq1 stand
+endif
+mq3 bow $n
+mq4 sayto $n Hello there, $n.
+mq6 rest throne
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1106001502
+END
+
+#80305
+title bitter old woman tale and key~
+author Zaroth~
+code mob seeall
+mq1 sayto $n So! Someone finally cares enough to hear my tale. I was wronged, mind you, by royalty. They sit up in their castle and pretend they're like gods!
+mq3 pmote $n leans closer to @.
+mq5 sayto $n [talking softly] I used to work for the Queen. Stupid, frivolous lass that she is. She dismissed me! Me! I was her faithful servant for years. And you wanna know WHY she dismissed me? Because I'm prettier than she is! Momma always said so. Here, take this key. It's to the wench's bedroom. I kept it when they tossed me out on my ear.
+mob oload 80345
+mq7 give key $n
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1105950760
+END
+
+#80304
+title bitter old maid greeting~
+author Zaroth~
+code sayto $n So you know of a certain key... hmm? Perhaps if you were to listen to a small tale, it would prove beneficial.
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1105949363
+END
+
+#80303
+title spank reply-yes~
+author Zaroth~
+code mob seeall
+  if sex $n == 1
+    kiss $n
+    whisper $n I'll see you soon then..
+   else
+    sayto $n Sorry, I'm looking for a real man.
+   endif
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1105945262
+END
+
+#80302
+title spank reply~
+author Zaroth~
+code if sex $n == 1
+   whisper $n Hey baby, want to bump fins later if you're not busy?
+else
+  whisper $n I'm after caviar honey, not sardines.
+endif
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1105906672
+END
+
+#80301
+title Serpent Casting utterdark ~
+author Zaroth~
+code mob seeall
+mob cast 'utterdark'
+mob kill $n
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1106011859
+END
+
+#0
+
+
+#$

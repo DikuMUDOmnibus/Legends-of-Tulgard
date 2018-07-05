@@ -1,0 +1,479 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Archaic Empire Clan Hall~
+ShortName   Archaic Empire~
+Builders    None~
+Credits     Ixliam~
+VNUMs       1051 1060
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Thu Oct 20 21:16:57 2005~
+End
+
+
+
+#MOBILES
+#1051
+Name healer angel~
+ShortD a tall female angel~
+LongD A tall female angel stands ready to heal your wounds.~
+Desc Although retired from adventuring, the healer still lends a hand.
+Type 'heal' to see a listing of spells.
+~
+Race angel~
+Align 2 3
+Level 101
+Hitroll 0
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 10d13+55
+DamType divine
+AC -710 -710 -710 -624
+Wealth 1010
+Act    npc dont_wander cleric nopurge healer~
+AffBy  detect_evil detect_invis detect_hidden sanctuary infrared flying~
+Off    dodge fast kick parry rescue~
+Imm    summon charm magic weapon lightning poison holy disease light scry hunger thirst~
+Res    magic illusion~
+Vuln   negative~
+Form   edible magical sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#1052
+Name trainer male man markian~
+ShortD a tall muscular markian male~
+LongD A tall muscular markian man waits here to train you.~
+Desc ~
+Race minotaur~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander train practice gain~
+AffBy  detect_hidden infrared~
+Imm    charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1053
+Name male malkatar shopkeeper archaic~
+ShortD a male malkatar~
+LongD A male malkatar is standing here wiping down a counter.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 1053 banner~
+END
+
+#1054
+Name guard~
+ShortD a large male guard~
+LongD A large decaying dagorst guard stands here at attention, guarding the gate.~
+Desc ~
+Race dagorst~
+Align -1 0
+Level 150
+Hitroll 450
+HitDice 9d12+440
+ManaDice 5d6+210
+DamDice 10d11+44
+DamType pound
+AC -590 -590 -590 -531
+Wealth 1500
+Act    npc dont_wander warrior~
+AffBy  infrared~
+Off    fast~
+Res    weapon fire~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1051
+Name book altar~
+Short an old book upon the altar~
+Desc An altar with an old book upon it is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+ExtraDesc old book altar~
+An old, dusty book, sits upon an altar in the center of the room.  A beam of 
+light surrounds the altar on which it stands.  This old book is of the 
+secrets that the old clan left here before they disbanded.  In this book, 
+are all the secrets to their studies of combat, magic, and items.  
+~
+End
+
+#1052
+Name long wooden bench~
+Short a long wooden bench~
+Desc A long wooden bench is here.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 2000
+Rsize 50
+Values 5 10000 EHKN 130 130
+Weight 2000
+Material iron~
+Extra    noremove burnproof~
+Extra2   nodecay~
+End
+
+#1053
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN F 1101 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#1054
+Name bookcase~
+Short a large bookcase~
+Desc A large bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc bookcase ~
+A large book case made of rotting wood stands here with many books about 
+almost everything.  
+~
+End
+
+#1056
+Name marble fountain~
+Short a marble fountain~
+Desc A marble fountain bubbling with crystal clear water is here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material marble~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1058
+Name stacked pile bricks~
+Short a stacked pile of bricks~
+Desc A stacked pile of bricks is here, giving off a lot of heat.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc stack bricks pile~
+This clearly is the heart of the steam room.  The stack of bricks is about 2 
+and a half feet in all directions.  It is glowing, but not only with heat as 
+there seems to be a very slight aura of magic as well. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#1051
+Name Main Gate~
+Desc A large red stone gate, carved into the side of the mountain stands here.  
+Etched into the large gate is the symbol of a sword and dagger behind a 
+large shield, the symbol of the Archaic Empire.  Two giant stone pillars 
+stands to the side of this large gate, holding up two statues of two fairly 
+large stone statues.  
+~
+RoomFlags light~
+Sector forest~
+Exit east 1052
+Exit northwest 53886
+End
+
+
+#1052
+Name Main Chamber~
+Desc This main chamber is extremely large, and shaped like a dome.  The ceiling 
+is smooth and covered in a painting depicting a human war scene.  The walls 
+are of dark stone, giving this room a dark cave like look.  The floor is 
+bare and rocky.  In the center of the room, a beam of light surrounds a book 
+on a stone alter.  Underneath the altar is another painting, but this one of 
+a sword, a shield, and a dagger.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1053
+Exit east 1057
+Exit south 1055
+Exit west 1051
+Exit northeast 1059
+End
+
+
+#1053
+Name Healer's Chamber~
+Desc This room is completely made of of limestone.  The walls glow of a bright 
+yellow from all the torches lit about the room.  It appears as if many a 
+weary traveler has come here in search of healing.  Many pieces of old rusty 
+equipment lie upon the floor.  Two hallways lead to the north and south, 
+giving way to two fairy large chambers.  
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 130
+Heal 130
+Exit north 1054
+Exit south 1052
+End
+
+
+#1054
+Name Transportation Room~
+Desc This room is large and dark, so dark its hard to see where the walls end.  A 
+gatestone lies in the center glowing brightly in its spot.  
+~
+RoomFlags indoors light~
+Sector gateway~
+Exit south 1053
+End
+
+
+#1055
+Name Training Room~
+Desc This room is large and made up of red stone.  There is a large training ring 
+in the middle of the room, where many hero's through the ages used to train. 
+ There are many training dummy's in this room, used to train skills many 
+different skills.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1052
+Exit east 1058
+Exit south 1056
+End
+
+
+#1056
+Name Library~
+Desc This room is large and has many large book cases all about it.  There seems 
+to be a book case for every event recorded in history, from the the begining 
+of time, to the history of the feylar.  There are several table to sit and 
+study at.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1055
+End
+
+
+#1057
+Name A Small Conference Room~
+Desc This small room is very small and is taken up almost completely by a table 
+and two chairs.  With the furniture, there is barely enough room for two 
+people.  The walls still show signs of the shelves that lined them for years 
+- until very recently apparently. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 1052
+End
+
+
+#1058
+Name Steam Room~
+Desc The walls, floor, and ceiling of this room are made of dressed stone fitted 
+carefully together so nary a space between the stones can be seen.  In the 
+ceiling several vents can be seen, and in the center of floor, a small 
+grate.  In the center of the room is a stacked pile of bricks with a large 
+bucket of water next to it.  The bricks glow with enormous heat making the 
+room itself intensely hot.  There is a wooden bench along each of the walls, 
+a seeming to invitation to sit. 
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc small metal grate~
+A small metal grate is in the middle of the floor, apparantly here to let 
+any condensation drain away.  It is too securely fastened to open, and too 
+narrow to let anyone or anything pass through. 
+~
+Exit west 1055
+End
+
+
+#1059
+Name Storage Room~
+Desc This is the clan storage room.
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit southwest 1052
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1051 spec_cast_adept
+S
+
+
+
+#RESETS2
+M 0 1054 1 1051 1
+O 0 1051 -1 1052
+M 0 1051 1 1053 1
+O 0 1052 -1 1053
+O 0 1056 -1 1053
+O 0 1403 -1 1054
+M 0 1052 1 1055 1
+O 0 1054 -1 1056
+O 0 714 -1 1056
+M 0 1053 1 1057 1
+G 0 10059 -1
+G 0 2528 -1
+G 0 2523 -1
+G 0 23638 -1
+G 0 3199 -1
+G 0 3087 -1
+G 0 3088 -1
+O 0 1052 -1 1058
+O 0 1058 -1 1058
+S
+
+
+
+#SHOPS
+#1053
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1053
+title clan banner~
+author Delandria~
+code language native
+sayto $n Wear this banner proudly!
+mob oload 2040
+Give banner $n
+Smile $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1088213881
+END
+
+#1051
+author Ixliam~
+code nod
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1082030620
+END
+
+#0
+
+
+#$

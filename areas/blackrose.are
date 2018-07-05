@@ -1,0 +1,351 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Blackrose Clan~
+ShortName   Blackrose Hall~
+Builders    none~
+Credits     Shang-ti~
+VNUMs       1300 1349
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:27:42 2005~
+End
+
+
+
+#MOBILES
+#1300
+Name being banshee~
+ShortD a banshee~
+LongD A spectral being kneels, humming softly, before the altar.~
+Desc This is the spectral image of an elven female, shimmering and fading like a 
+light fog.  The figure is garbed in long flowing robes that swirl and twist 
+as though rustling in a breeze.  She hums and the sound is almost inaudibly 
+soft but the it sets your nerves on end, grating upon your ears like 
+dragging chains.  
+~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 0
+Act    npc dont_wander no_tame stay_area train practice undead cleric healer gain~
+AffBy  detect_invis detect_hidden infrared~
+Imm    summon charm magic weapon poison disease~
+Form   edible magical sentient undead biped~
+Part   head arms legs hands feet fingers ear~
+StartP kneeling~
+DefPos kneeling~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#1302
+Name death knight lord soth~
+ShortD a death knight~
+LongD Lord Soth is standing here, protecting the keep.~
+Desc Garbed in an ancient suit of full plate mail, this ancient warrior stands as 
+eternal sentry over his post.  Suspended between the worlds of the dead and 
+the living, his rot seems timeless.  Though it has been ages since the life 
+bloods flowed within his veins, maggots still gorge upon the putrid flesh.  
+A deep penetrating cold emanates from the being, making you shiver.  
+~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -602
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior changer~
+AffBy  detect_invis detect_hidden infrared~
+Imm    summon charm magic weapon poison disease~
+Form   magical sentient undead biped~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 1300 gear~
+END
+
+#1303
+Name giant shopkeeper~
+ShortD a huge giant~
+LongD A huge giant is standing here.~
+Desc ~
+Race Giant~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -616
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible magical sentient~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1300
+Name an old stone table~
+Short an old stone table is here~
+Desc An old stone table is here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    dark nodegrade burnproof~
+ExtraDesc stone ~
+This table is old, bearing the marks of fire and age.  A thick layer of soot and ash rests atop the table, disturbed only by the random tracks of a scurrying rat.
+~
+End
+
+#1301
+Name throne~
+Short the throne~
+Desc A Throne of iron sits here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 DG 75 75
+Weight 0
+Material unknown~
+Extra    nodegrade~
+ExtraDesc throne ~
+At the far end of the room, shrouded in gloom and shadow, rests a large throne.  You can tell it had once been a glorious seat for a great lord.  Now it is a terrifying and horrible thing, blackened and twisted.  It reeks of death and decay and the bitter cold in this room seems to emanate from within the throne itself.  A cold fear creeps down your spine and you almost have the impression of someone or something watching you from atop the throne.
+~
+End
+
+#1302
+Name no name 1302~
+Short an altar~
+Desc A marble altar stands here~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodegrade~
+ExtraDesc altar ~
+This old marble altar rests dejectedly within this room.  It is worn and cracked in spots.  You can see that emblems of some sort had adorned the altar at one time.  They appear to have since been incinerated off, leaving only charred gaping cracks in the stone.
+~
+End
+
+#1303
+Name ring magic carpets~
+Short a ring of magic carpets~
+Desc A ring of magical carpets is floating here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 DGJ 100 100
+Weight 0
+Material carpet~
+Extra    glow nodegrade~
+End
+
+#0
+
+
+
+#ROOMS
+#1300
+Name The Keep~
+Desc The air is thick and damp within this room giving off an odor of old smoke and burned wood.  Charred and blackened, this room bears the evidence of a great and terrible fire.  So intense were the flames that at points the stonework of the great keep itself has been melted and misshapen.  A tall, blackened pillar has collapsed near the center off the room, scattering large chunks of blasted rock throughout.
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1301
+Exit south 1305
+End
+
+
+#1301
+Name The Throne Room~
+Desc The icy fingers of death have laid their mark upon this room permeating an 
+unnatural chill throughout.  Stingingly cold air assaults your nostrils with 
+a strong odor of musty smoke.  This room seems to have been the epicenter of 
+the terrible blaze that razed this keep.  Everything in this room is 
+scorched and blackened.  The once intricately carved stonework, horribly 
+misshapen by searing heat and flame, is now a perversion, a sacrilege to the 
+former glory of the keep.  There is an odd shape etched into the floor in 
+the center of this room.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc shape ~
+There is a growing sadness as you approach the center of this room.  A feeling of mournful sorrow begins to overwhelm and you are suddenly overtaken with grief.  Upon closer inspection you see the shape is actually the outline of a female form, which has been seared into the stone floor.  The woman had been clutching something tightly against her body when she died.  It is only when you recognize the bond between mother and child that the tears begin to flow…
+~
+Exit north 1304
+Exit east 1302
+Exit south 1300
+Exit west 1303
+End
+
+
+#1302
+Name The Shrine~
+Desc You can see upon entering that this was once a room of meditation and 
+prayer.  The ancient warriors of this keep gathered here to worship and pay 
+homage to their gods.  Miraculously, this room seems to have escaped most of 
+the fiery fury that swept throughout this keep, though it has not been able 
+to escape the decaying effects of time.  Most of the pews have collapsed 
+though a few remain, sagging with rot.  There are old moldy tapestries 
+hanging raggedly from the walls.  An old worn red carpet leads to a small 
+altar at the end of the room.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc tapestry ~
+These tapestries are ragged and moldy, most are rotted and faded beyond recognition.  Though one large tapestry seems to have survived the ages rather well.  It hangs above the altar and depicts a great battle between dragons of good and evil.  One silver dragon, with a mounted rider bearing a great silver lance, shines as a beacon of radiance amongst its brothers.
+~
+Exit west 1301
+End
+
+
+#1303
+Name The Stockroom~
+Desc This room had once acted as the keeps armory.  The charred remains of old weapons racks line the walls, most of their contents destroyed or rendered useless by flames.  The remains of burned out barrels are stacked along one fire blackened wall.  You also see some large chests resting near the center of the room they are covered in a thick layer of ash and soot.
+~
+RoomFlags indoors bank light~
+Sector inside~
+Exit east 1301
+Exit southwest 1306
+End
+
+
+#1304
+Name Portal Room~
+Desc ~
+Sector gateway~
+Exit south 1301
+End
+
+
+#1305
+Name Before the Blackrose Keep~
+Desc Standing to the north embeded in the cliffs is the great Blackrose Keep.  
+Skeletal warriors can be seen looking down from the gatehouse, preventing 
+only those deemed worthy of the clan to enter.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1300
+Exit west 52995
+Exit southwest 53076
+End
+
+
+#1306
+Name Storage Room~
+Desc Piles or armor and weapons are here for those who need it. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit northeast 1303
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1300 spec_cast_adept
+S
+
+
+
+#RESETS2
+O 0 1300 -1 1300
+M 0 1302 1 1301 1
+E 0 29653 -1 wielded~
+O 0 1301 -1 1301
+M 0 1300 1 1302 1
+O 0 1302 -1 1302
+O 0 1303 -1 1302
+M 0 1303 1 1303 1
+G 0 3199 -1
+G 0 3024 -1
+G 0 3026 -1
+G 0 2523 -1
+G 0 3023 -1
+G 0 3088 -1
+G 0 3087 -1
+O 0 55729 -1 1304
+S
+
+
+
+#SHOPS
+#1303
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1300
+author Ixliam~
+code nod
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1082030572
+END
+
+#0
+
+
+#$

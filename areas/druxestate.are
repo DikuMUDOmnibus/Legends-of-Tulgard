@@ -1,0 +1,470 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        A Small Mountain Cottage Estate~
+ShortName   ~
+Builders    None~
+VNUMs       80476 80500
+AFlags  noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#80476
+Name no name~
+ShortD a dwarven maid~
+LongD A dwarven maid wanders about, tidying things up.~
+Desc A short, sweet dwarven maid is here, working on reorganizing the house after 
+Drux messes it up. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   avoids_all_attacks murder_100_pts~
+AffBy2 etheral~
+Imm    summon magic weapon sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80477
+Name unseen_treasury_trans_mob~
+ShortD unseen_treasury_trans_mob~
+LongD Unseen_treasury_trans_mob~
+Desc ~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType none
+AC -850 -850 -850 -739
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 80476 touch painting~
+END
+
+#80478
+Name treasury_trans_to_painting~
+ShortD treasury_trans_to_painting~
+LongD Treasury_trans_to_painting~
+Desc ~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType none
+AC -850 -850 -850 -688
+Wealth 0
+Act    npc no_tame stay_area unseen~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 80477 return~
+END
+
+#80479
+Name dog short chubby~
+ShortD a short chubby dog~
+LongD A short chubby dog roams the estate, looking for something to get into.~
+Desc A chubby dog is here, waiting for some treats.
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 78
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#80476
+Name stove wrought iron potbelly~
+Short a wrought-iron potbelly stove~
+Desc A wrought-iron potbelly stove lies here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 ACE 0 40 0
+Weight 0
+Material iron~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#80477
+Name delicious roast~
+Short a delicious roast~
+Desc A delicious roast sits here.~
+Level 1
+ItemType food~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 0 0 0
+Weight 20
+Material meat~
+Extra    nodegrade~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#80478
+Name an exquisite bed~
+Short an exquisite bed~
+Desc An exquisite bed lies here, consuming a decent amount of space.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHK 100 100
+Weight 0
+Material fabric~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#80479
+Name bed elaborate~
+Short a large, elaborate bed~
+Desc A large, elaborate bed rests here, coated with the finest in fabric.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHK 100 100
+Weight 0
+Material fabric~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#80480
+Name treasury key~
+Short `#`WDrux's `Ytreasury key`^~
+Desc `#`WDrux's `Ytreasury key`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#80481
+Name fountain handcrafted~
+Short a handcrafted fountain~
+Desc A handcrafted fountain lies here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 beer 0 0
+Weight 0
+Material stone~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#80482
+Name couch marble~
+Short a marble couch~
+Desc A marble couch rests here with seating for many.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 3000 EH 100 100
+Weight 0
+Material fabric~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#80476
+Name A Path To The Estate~
+Desc Well trimmed shrubs and bushes line the cobblestone walkway leading up to 
+the estate. Small animals scurry through the bushes, looking for a place to 
+hide as people enter and leave. A narrow white picket fence lines the 
+property, giving a quaint setting in which to live. A big pond rests off the 
+walkway to the east, filled with all sorts of freshwater fish. 
+~
+RoomFlags no_mob indoors~
+Room2Flags freshwater_fish~
+Sector inside~
+Exit north 80477
+Exit southwest 54692
+End
+
+
+#80477
+Name The Front Door~
+Desc Approaching the door, the well-done stone work to the house can be done.  
+Intricately laid out stones, perfect in spacing, comprise the foundation in 
+walls. It is completed by a slanting stone roof, which appears quite sturdy 
+in nature. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 80478
+EFlags door closed locked nopass infuriating~
+EKeyvnum 80480
+Exit south 80476
+End
+
+
+#80478
+Name The Living Room~
+Desc A fine polished marble lines the walls of the living room, glistening in any 
+bit of ambient light that may reflect off of it. Solid onyx chairs line the 
+room, adorned by layered multi-colored tiles in the table, inset with the 
+name of the owner. Sturdy torches hang next to the entranceways, providing 
+quite a bit of light to the surrounding area. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 80481
+Exit east 80479
+Exit south 80477
+EFlags door closed locked nopass infuriating~
+EKeyvnum 80480
+Exit west 80480
+End
+
+
+#80479
+Name The Kitchen~
+Desc An old wrought iron potbelly stove rests against the east wall with a 
+makeshift vent going through the exterior wall for ventilation. Scattered 
+about the kitchen are a few cupboards, housing various cooking items and 
+items required to prepare food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 80478
+End
+
+
+#80480
+Name Storage Room~
+Desc A makeshift storage room lies here, with items scattered about..almost like 
+a closet, but not really storing anything that a closet would. Various items 
+many years older than the owner himself lie scattered about on the floor, 
+most of them collecting dust. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80478
+End
+
+
+#80481
+Name A Wide Hallway~
+Desc A small hallway stretches north from the living room, branching off into 
+various other rooms.  More torches hang near the doorways, used to ensure 
+that those who stumble around when half-asleep don't run into things. Extra 
+wide doorways are utilized, more than adequate for a full grown dragon to 
+pass through with their wings tucked in. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 80484
+Exit east 80483
+Exit south 80478
+Exit west 80482
+End
+
+
+#80482
+Name The Master Bedroom~
+Desc Sandstone portraits of Drux and his old friends layer the walls in this 
+bedroom.  A gigantic bed is resting in the middle of it, with weapons racks 
+near the window to the west. A small rack of clerical supplies rests against 
+the north wall, holding everything from pens to empty scrolls and guides to 
+reference as required. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80481
+End
+
+
+#80483
+Name A Guest Room~
+Desc This guest bedroom is meager in accomodations, your typical storage chest 
+and bed lay about the room.  The bed angles to the northeast, with beautiful 
+hand-made bedspreads covering it. A few pictures of friends long since 
+fallen depict vicious war scenes from the times of the Roving Guard. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 80481
+End
+
+
+#80484
+Name A Guest Room~
+Desc This guest bedroom is meager in accomodations, your typical storage chest 
+and bed lay about the room.  The bed angles to the northwest, with beautiful 
+hand-made bedspreads covering it. Handcrafted lamps and vases are scattered 
+on tables near the bed, they appear to be a collection of some sort. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 80481
+End
+
+
+#80485
+Name A Hidden Treasury~
+Desc A huge solid steel treasure chest with fortified lock rests here.
+~
+RoomFlags no_mob indoors noscry light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 80476 1 80478 1
+O 0 80481 -1 80478
+O 0 80482 -1 80478
+O 0 80476 -1 80479
+P 0 80477 1 80476 1
+M 0 80479 1 80481 1
+O 0 80479 -1 80482
+M 0 80477 1 80483 1
+O 0 80478 -1 80483
+O 0 80478 -1 80484
+M 0 80478 1 80485 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#80477
+title treasury trans to painting~
+author Zaroth~
+code mob trans $n 80483
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1106524438
+END
+
+#80476
+title treasury trans~
+author Zaroth~
+code if name $n drux
+  mob trans $n 80485
+endif
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1106533840
+END
+
+#0
+
+
+#$

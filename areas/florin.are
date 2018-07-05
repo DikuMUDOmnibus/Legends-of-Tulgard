@@ -1,0 +1,3036 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World: Florin~
+ShortName   Florin~
+Builders    none~
+Credits     nebseni~
+VNUMs       14201 14329
+LComment    `#`R[ 70-120]`^
+LRange      70 100
+Security    9
+Colour      R~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   StupidWorld~
+Continent   stupid~
+*LastSaved  Sat Aug 20 19:15:15 2005~
+End
+
+
+
+#MOBILES
+#14201
+Name inigo montoya spaniard~
+ShortD inigo Montoya~
+LongD A Spaniard challenges you to a duel.~
+Desc The son of Domingo Montoya stands here holding the sword his father made
+for a six-fingered man, who then killed him in an argument over the price. 
+He has spent twenty years studying swordplay.  
+~
+Race human~
+Align 2 1
+Level 75
+Hitroll 0
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType slap
+AC -450 -450 -450 -364
+Wealth 350
+Act    npc dont_wander aggressive stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste~
+Off    disarm dodge fade fast parry trip~
+Res    slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 14201 100~
+END
+
+#14202
+Name fezzik turk giant~
+ShortD fezzik~
+LongD A giant Turk stands ready to throw a rock at you.~
+Desc Over seven feet tall and weighing over four hundred pounds, Fezzik
+is strong enough to beat any man in hand-to-hand combat.  He spent
+years fighting groups of up to twenty men at a time, but won so
+much he became unpopular.  The only good news for you is that
+Fezzik believes in sporstmanship.
+~
+Race unique~
+Align -1 1
+Level 73
+Hitroll 0
+HitDice 7d11+375
+ManaDice 3d5+75
+DamDice 8d9+36
+DamType beating
+AC -430 -430 -430 -344
+Wealth 400
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste~
+Off    disarm dodge fast parry crush~
+Res    bash~
+Form   edible~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+MProg GRALL 14202 100~
+END
+
+#14203
+Name vizzini sicilian~
+ShortD vizzini~
+LongD A Sicilian challenges you to a battle of wits.~
+Desc Vizzini is cunning, crafty, and clever, filled with deceit,
+guile and chicanery, shrewd, cagey as well as calculating, as
+diabolical as he is vulpine, as tricky as he is untrustworthy...
+he is the slickest, sleekest, sliest and wiliest fellow who has
+yet existed in the history of the earth.
+~
+Race human~
+Align 0 -1
+Level 74
+Hitroll 0
+HitDice 7d11+380
+ManaDice 3d5+75
+DamDice 8d9+37
+DamType punch
+AC -440 -440 -440 -352
+Wealth 450
+Act    npc dont_wander aggressive stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste~
+Off    disarm dodge fade fast parry trip~
+Res    pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 14203 100~
+MProg ACT 14204 get~
+MProg ACT 14204 drink~
+MProg ACT 14204 laugh~
+MProg ACT 14204 look~
+END
+
+#14204
+Name prince humperdinck~
+ShortD prince Humperdinck~
+LongD The heir to the throne of Florin stands before you.~
+Desc Prince Humperdinck is the greatest hunter in the world.  He can
+track a falcon on a cloudy day.  He can track you.
+~
+Race human~
+Align -1 -3
+Level 93
+Hitroll 0
+HitDice 9d13+445
+ManaDice 5d8+265
+DamDice 10d11+47
+DamType scratch
+AC -620 -620 -620 -496
+Wealth 500
+Act    npc stay_area thief~
+AffBy  detect_evil detect_invis detect_magic detect_hidden sanctuary protect_evil protect_good sneak hide haste~
+Off    backstab disarm dodge fade fast kick parry trip~
+Imm    summon charm~
+Res    pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#14205
+Name count rugen man six fingers~
+ShortD count Rugen~
+LongD A man with six fingers on his right hand prepares to torture you.~
+Desc Count Rugen, confidant of Prince Humperdinck, has spent eleven
+years constructing The Machine.  Through his methods of torture,
+he hopes to complete a reference work:  the definitive work on
+pain, at least as we know it now.
+~
+Race human~
+Align -2 -3
+XPMod 200
+Level 112
+Hitroll 0
+HitDice 12d15+565
+ManaDice 5d5+130
+DamDice 12d15+71
+DamType slap
+AC -860 -860 -860 -705
+Wealth 500
+Act    npc dont_wander aggressive stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden sanctuary protect_evil protect_good hide haste~
+Off    bash disarm dodge fade fast dirt_kick trip~
+Res    pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#14206
+Name albino~
+ShortD the Albino~
+LongD An Albino pushes a wheelbarrow past you.~
+Desc With white hair and colorless skin, the Albino is tasked with
+keeping the animals in Prince Humperdinck's Zoo of Death fed
+and free of sickness.
+~
+Race human~
+Align 2 1
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 9d10+43
+DamType scratch
+AC -550 -550 -550 -484
+Wealth 250
+Act    npc dont_wander scavenger stay_area cleric~
+Off    bash berserk dodge trip~
+Imm    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14207
+Name rodent rous rat~
+ShortD an R.O.U.S.~
+LongD A Rodent of Unusual Size lunges for your throat!~
+Desc The Rodent Of Unusual Size (R.O.U.S.) is a pure rat strain,
+weighing about eighty pounds, with the speed of a wolfhound.
+It is carniverous, and capable of frenzy.
+~
+Race dragon~
+Align 1 0
+Level 89
+Hitroll 0
+HitDice 9d12+440
+ManaDice 4d5+95
+DamDice 10d11+44
+DamType wrath
+AC -590 -590 -590 -513
+Wealth 100
+Act    npc scavenger stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_magic infrared sneak hide flying haste dark_vision berserk~
+AffBy2 vicegrip~
+Off    bash berserk dodge tail~
+Imm    summon bash acid sleep~
+Res    magic~
+Vuln   fire lightning acid~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14208
+Name wild dog~
+ShortD a wild dog~
+LongD A wild dog snarls at you.~
+Desc Resembling a wolf, this wild dog bares its sharp teeth at you.
+In comparison to this beast, a pit bull would be a good lap dog.
+~
+Race unique~
+Align 2 0
+XPMod 105
+Level 100
+Hitroll 0
+HitDice 10d13+475
+ManaDice 5d9+275
+DamDice 10d13+54
+DamType chomp
+AC -690 -690 -690 -614
+Wealth 350
+Act    npc stay_area wimpy thief~
+Act2   no_random_obj~
+AffBy  haste~
+Off    dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm~
+Form   edible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14209
+Name cheetah cat~
+ShortD a cheetah~
+LongD A cheetah lunges at your throat.~
+Desc Resembling a leopard, but with some dog-like characteristics,
+the cheetah is one of the fastest animals on earth.  Faster
+than you, at least.
+~
+Race unique~
+Align -2 0
+XPMod 110
+Level 103
+Hitroll 0
+HitDice 10d14+500
+ManaDice 4d5+110
+DamDice 11d13+58
+DamType claw
+AC -730 -730 -730 -627
+Wealth 350
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  haste~
+Off    disarm dodge fade fast kick dirt_kick parry trip~
+Res    charm~
+Form   edible mountable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14210
+Name hummingbird bird~
+ShortD a hummingbird~
+LongD A hummingbird flies past you.~
+Desc The rapid beating of this bird's wings makes a humming sound.
+These birds are noted for their ability to hover and fly upward,
+downward, and backward while still in a horizontal position.
+~
+Race unique~
+Align 0 1
+XPMod 105
+Level 98
+Hitroll 0
+HitDice 10d13+475
+ManaDice 4d5+105
+DamDice 10d13+53
+DamType peck
+AC -680 -680 -680 -544
+Wealth 350
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden flying haste~
+Off    disarm dodge fade fast parry trip~
+Imm    summon charm~
+Form   edible~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#14211
+Name snake anaconda boa~
+ShortD an anaconda~
+LongD A giant snake wraps its body around you.~
+Desc Brought to the Zoo of Death from far across the world, this 20-foot long 
+anaconda can squeeze you to death in an instant.  
+~
+Race dragon~
+Align 0 0
+XPMod 110
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType crush
+AC -800 -800 -800 -704
+Wealth 400
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden infrared protect_evil protect_good hide flying haste dark_vision~
+AffBy2 vicegrip~
+Off    bash disarm fast tail crush~
+Imm    summon charm bash fire cold acid sleep~
+Res    magic~
+Vuln   lightning~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#14212
+Name rhino rhinoceros~
+ShortD a rhinoceros~
+LongD A rhinoceros lumbers past you.~
+Desc This large, thick-skinned mammal has a single horn on its snout,
+but it hardly reminds you of a unicorn.
+~
+Race unique~
+Align -2 0
+XPMod 105
+Level 108
+Hitroll 0
+HitDice 11d14+525
+ManaDice 4d5+120
+DamDice 11d14+63
+DamType charge
+AC -780 -780 -780 -678
+Wealth 400
+Act    npc stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden protect_evil protect_good haste~
+Off    disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon~
+Form   edible mountable~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#14213
+Name crocodile reptile~
+ShortD a crocodile~
+LongD A scaly reptile eyes you as its next meal.~
+Desc This huge reptile's strong jaw can cut you in half in less time
+than it takes you to determine that it's not an alligator.
+~
+Race dragon~
+Align 3 0
+XPMod 105
+Level 105
+Hitroll 0
+HitDice 11d14+510
+ManaDice 4d5+115
+DamDice 11d13+60
+DamType bite
+AC -750 -750 -750 -667
+Wealth 350
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden sanctuary infrared protect_evil protect_good flying haste dark_vision~
+AffBy2 vicegrip~
+Off    disarm dodge fast tail trip crush~
+Imm    summon charm bash acid~
+Res    magic~
+Vuln   cold~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#14214
+Name cobra snake spitting~
+ShortD a spitting cobra~
+LongD A cobra flattens its neck into a hood as you arrive.~
+Desc This highly venomous species of cobra is known for spitting its venom at its 
+prey.  
+~
+Race dragon~
+Align -3 -1
+XPMod 138
+Level 112
+Hitroll 0
+HitDice 11d15+545
+ManaDice 5d5+125
+DamDice 12d14+67
+DamType chomp
+AC -820 -820 -820 -713
+Wealth 450
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden infrared flying haste dark_vision~
+AffBy2 vicegrip~
+Off    backstab disarm dodge fade fast tail crush~
+Imm    summon charm bash cold acid sleep~
+Res    magic~
+Vuln   lightning~
+Form   edible poison sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#14215
+Name spider~
+ShortD a spider~
+LongD A giant spider traps you in its web!~
+Desc This giant spider kills efficiently by trapping its opponents
+and then biting them with its highly venemous fangs.  Ouch.
+~
+Race unique~
+Align -3 -1
+XPMod 140
+Level 114
+Hitroll 0
+HitDice 12d15+555
+ManaDice 5d5+125
+DamDice 12d14+69
+DamType scratch
+AC -840 -840 -840 -756
+Wealth 450
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden haste~
+Off    bash fade fast dirt_kick parry crush~
+Imm    summon~
+Res    charm~
+Form   poison non_skinable mountable~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#14216
+Name death bat~
+ShortD a death bat~
+LongD A venemous bat swoops down from the ceiling towards you.~
+Desc This nocturnal creature is nearly blind, but has learned to use
+its other senses well.  Like Dracula, it has come to suck your blood.
+~
+Race unique~
+Align 2 1
+XPMod 130
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType suction
+AC -800 -800 -800 -672
+Wealth 450
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  blind invisible detect_evil detect_invis detect_magic detect_hidden curse protect_evil protect_good sneak hide flying haste plague~
+Off    backstab bash disarm dodge fade fast parry trip~
+Imm    summon~
+Res    charm~
+Form   poison~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#14217
+Name spider tarantula~
+ShortD a shrieking tarantula~
+LongD A giant spider shrieks at you.~
+Desc The only spider capable of sound, the shrieking tarantula gives
+you just enough warning to turn and see what's about to kill you.
+~
+Race unique~
+Align 0 -1
+XPMod 150
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType none
+AC -800 -800 -800 -672
+Wealth 500
+Act    npc stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_magic detect_hidden protect_evil protect_good sneak hide haste~
+Off    backstab berserk disarm dodge fade fast parry trip~
+Vuln   fire~
+Form   poison non_skinable insect cold_blood~
+Part   head legs heart brains guts eye fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#14218
+Name eagle blood bird~
+ShortD a blood eagle~
+LongD An eagle grabs you with its talons and gnaws at your flesh.~
+Desc The blood eagle is the only bird that thrives on human flesh.
+That's an interesting fact to know as you are torn to pieces by
+this one.
+~
+Race unique~
+Align -3 -1
+XPMod 175
+Level 115
+Hitroll 0
+HitDice 12d15+560
+ManaDice 5d5+125
+DamDice 12d15+70
+DamType none
+AC -850 -850 -850 -722
+Wealth 500
+Act    npc scavenger stay_area warrior~
+Act2   no_random_obj~
+AffBy  invisible detect_evil detect_invis detect_magic detect_hidden sanctuary protect_evil protect_good sneak hide flying haste~
+Off    bash disarm fade fast kick parry rescue trip~
+Res    charm~
+Form   edible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14219
+Name yellin~
+ShortD yellin~
+LongD Yellin stands here guarding the castle gate.~
+Desc Yellin has been charged by Prince Humperdinck with the safety of
+his bride, Princess Buttercup.
+~
+Race human~
+Align 2 1
+Level 79
+Hitroll 0
+HitDice 8d11+400
+ManaDice 3d5+80
+DamDice 9d9+40
+DamType scratch
+AC -490 -490 -490 -416
+Wealth 350
+Act    npc dont_wander stay_area warrior~
+AffBy  sanctuary~
+Off    disarm dodge fade fast parry trip~
+Imm    summon~
+Res    pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14220
+Name miracle max~
+ShortD miracle Max~
+LongD Miracle Max tells you to go away.~
+Desc Miracle Max works miracles.  For a price.
+~
+Race human~
+Align 1 1
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+40
+DamType slap
+AC -500 -500 -500 -445
+Wealth 350
+Act    npc dont_wander stay_area cleric~
+AffBy  detect_invis detect_magic detect_hidden sanctuary haste~
+Off    berserk dodge dirt_kick~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14221
+Name brute member~
+ShortD a member of the brute squad~
+LongD A brute thinks you're where you're not supposed to be.~
+Desc The brute squad has been organized to keep thieves and ruffians
+such as yourself out of Florin.
+~
+Race human~
+Align 0 0
+Level 83
+Hitroll 0
+HitDice 8d12+415
+ManaDice 3d5+85
+DamDice 9d10+42
+DamType punch
+AC -530 -530 -530 -461
+Wealth 350
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden protect_evil protect_good~
+Off    bash fade fast parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#14222
+Name flamespurt~
+ShortD a flamespurt~
+LongD A spurt of flame leaps from the ground!~
+Desc As you watch yet another flamespurt, you realize that it gives off
+a popping sound moments before it erupts.  In most cases, this
+popping sound will give you enough time to avoid it.  But this
+isn't most cases.
+~
+Race unique~
+Align 2 0
+Level 88
+Hitroll 0
+HitDice 9d12+435
+ManaDice 4d5+95
+DamDice 10d10+45
+DamType flame
+AC -580 -580 -580 -510
+Wealth 0
+Act    npc stay_area warrior~
+AffBy  detect_evil detect_magic infrared otterlungs sneak hide flying haste~
+Off    area_attack disarm fade fast~
+Imm    summon charm~
+Res    fire~
+Vuln   cold drowning~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#14223
+Name snow sand~
+ShortD snow sand~
+LongD You'd better grab onto a vine, since you're sinking in this sand so
+quickly that you will never get out alive.~
+Desc Snow sand is commonly mistaken for lightning sand, but it is more dry
+and fine.  Those who fall into snow sand usually die of suffocation.
+You think you'll escape this fate?  Don't hold your breath.
+~
+Race unique~
+Align 2 0
+Level 85
+Hitroll 0
+HitDice 9d12+420
+ManaDice 4d5+90
+DamDice 10d10+42
+DamType suction
+AC -550 -550 -550 -462
+Wealth 0
+Act    npc aggressive stay_area warrior~
+AffBy  invisible detect_evil detect_invis detect_magic detect_hidden sneak hide~
+Off    area_attack disarm fade fast dirt_kick~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#14224
+Name king florin~
+ShortD the King of Florin~
+LongD The ruler of Florin stands before you muttering, "Isn't that nice?"~
+Desc The King is old and frail.  Not much of what once was remains.  The king
+used to command a vast empire, but as his sanity faded, so did his control
+over his people.  His son, Prince Humperdinck, has seized most of the
+control of the land from him, and he is now only a figurehead.
+~
+Race human~
+Align 1 1
+Level 75
+Hitroll 0
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType slap
+AC -450 -450 -450 -400
+Wealth 500
+Act    npc stay_area warrior~
+AffBy  blind weaken~
+Off    disarm dodge parry~
+Imm    summon charm~
+Vuln   mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#14225
+Name queen florin~
+ShortD the Queen of Florin~
+LongD The Queen of Florin is here assisting the King.~
+Desc The Queen of Florin has never had much power.  She focuses her aging
+energies on keeping the ever-more-confused King out of trouble.
+~
+Race human~
+Align -1 1
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d8+36
+DamType claw
+AC -430 -430 -430 -352
+Wealth 500
+Act    npc stay_area cleric~
+Off    rescue assist_race~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14226
+Name princess buttercup~
+ShortD princess Buttercup~
+LongD The most beautiful woman in the world is here.~
+Desc By the time Buttercup was 16, she was in the top 10 most beautiful women
+in the world.  At 21, she *is* the most beautiful woman in the world.
+Buttercup is betrothed to Prince Humperdinck, not because of love, but
+because the law of the land allows him to choose his wife.  Buttercup
+lost her one and only true love, Westley, to the Dread Pirate Roberts,
+and she will never love again.
+~
+Race human~
+Align -3 3
+Level 90
+Hitroll 0
+HitDice 9d13+440
+ManaDice 4d5+95
+DamDice 10d11+45
+DamType none
+AC -600 -600 -600 -534
+Wealth 500
+Act    npc stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden sanctuary protect_evil protect_good haste~
+Off    dodge fast kick dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#14227
+Name bishop~
+ShortD the Bishop of Florin~
+LongD The bishop lisps at you.~
+Desc You see the Bishop of Florin practicing for Prince Humperdinck and
+Princess Buttercup's wedding ceremony.  He is saying, "Mawwiage...
+Mawwiage is what bwings us togethew today.  Mawwiage, that dweam
+wifin a dweam..."
+~
+Race human~
+Align 2 1
+Level 85
+Hitroll 0
+HitDice 8d12+415
+ManaDice 5d7+245
+DamDice 9d10+43
+DamType mental
+AC -540 -540 -540 -437
+Wealth 500
+Act    npc stay_area thief~
+AffBy  detect_evil detect_invis detect_magic detect_hidden sanctuary protect_evil protect_good~
+Off    disarm dodge kick dirt_kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#14201
+Name sword six fingered~
+Short `#`wa `RS`rix-`RF`ringered `sSword`^~
+Desc A sword perfectly balanced for a six-fingered hand lies here.~
+Level 70
+ItemType weapon~
+Cost 1443
+Durability 5
+Asize 6
+Rsize 50
+Values exotic 2 30 slice B
+Weight 60
+Material steel~
+Extra    glow magic bless nodegrade~
+Wear     take wield~
+Affect modifier -1 70 -1 quickness 3 0
+Affect modifier -1 70 -1 intuition 3 0
+Affect modifier -1 70 -1 damroll 3 0
+End
+
+#14202
+Name rock stone boulder~
+Short `#`wa `srock`^~
+Desc This stone has not been left unturned.~
+Level 70
+ItemType weapon~
+Cost 1200
+Durability 5
+Asize 12
+Rsize 50
+Values exotic 5 13 smash 0
+Weight 12
+Material stone~
+Wear     take wield~
+Affect modifier -1 70 -1 damroll 4 0
+Affect modifier -1 70 -1 hp 4 0
+Affect modifier -1 70 -1 hitroll 4 0
+End
+
+#14203
+Name wits marbles~
+Short `#`yWits`^~
+Desc Someone has lost their marbles here.~
+Level 70
+ItemType weapon~
+Cost 4000
+Durability 5
+Asize 1
+Rsize 50
+Values exotic 15 3 drain L
+Weight 50
+Material flesh~
+Extra    glow hum magic bless nodegrade~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 70 -1 presence 5 0
+Affect modifier -1 70 -1 empathy 5 0
+Affect modifier -1 70 -1 mana 50 0
+End
+
+#14205
+Name machine~
+Short `#`yThe Machine`^~
+Desc A water wheel attached to hundreds of suction cups sits here.~
+Level 90
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 20
+Rsize 50
+Values exotic 4 21 none C
+Weight 20
+Material wood~
+Extra    glow hum evil bless antigood nodegrade~
+Extra2   nodecay nosecondary~
+Wear     take wield~
+Affect modifier -1 90 -1 damroll 6 0
+Affect modifier -1 90 -1 hitroll 6 0
+End
+
+#14206
+Name resurrection pill chocolate~
+Short `#`ya resurrection pill`^~
+Desc A chocolate covered lump looks rather tasty.~
+Level 70
+ItemType pill~
+Cost 1421
+Durability 5
+Asize 1
+Rsize 50
+Values 75 fireball fireball fireball 'faerie fire'
+Weight 1
+Material pill~
+Extra    glow hum magic bless~
+Wear     take~
+Affect modifier -1 70 -1 mana 100 0
+End
+
+#14207
+Name holocaust cloak~
+Short `#`wa `sholocaust c`wloak`^~
+Desc A large cloak here looks fireproof.~
+Level 80
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material leather~
+Extra    glow magic bless nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take about~
+Affect resist -1 80 -1 none 0 fire
+Affect modifier -1 80 -1 hp 3 0
+Affect modifier -1 80 -1 constitution 3 0
+Affect modifier -1 80 -1 reasoning 3 0
+End
+
+#14208
+Name key florin castle~
+Short the key to Florin castle~
+Desc This key would fit the gate to a large castle.~
+Level 36
+ItemType key~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material steel~
+Wear     take~
+End
+
+#14209
+Name wheelbarrow barrow~
+Short `#`ya wheelbarrow`^~
+Desc A wheelbarrow has been abandoned here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 CFIL 100 100
+Weight 0
+Material wood~
+Wear     take~
+End
+
+#14210
+Name holder~
+Short `3`wa `yleather `mwine `wholder`^~
+Desc A leather pouch here contains a jug of red wine.~
+Level 20
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 3
+Rsize 50
+Values 20 20 water 0 0
+Weight 3
+Material leather~
+Wear     take~
+End
+
+#14211
+Name goblet~
+Short `#`wa `mwine `ygoblet`^~
+Desc One of these goblets has been poisoned with iocane.~
+Level 10
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 1
+Rsize 50
+Values 10 10 water 100 0
+Weight 1
+Material glass~
+Wear     take~
+End
+
+#14212
+Name cheese apples~
+Short `#`Ycheese `wand `Rapples`^~
+Desc A few apples and some cheese have been sliced here.~
+Level 0
+ItemType food~
+Cost 1
+Durability 5
+Asize 1
+Rsize 50
+Values 5 5 0 0 0
+Weight 1
+Material food~
+Wear     take~
+End
+
+#14213
+Name crown florin~
+Short `#`wThe `YC`yr`Yo`yw`Yn `wof `CF`cl`Co`cr`Ci`cn`^~
+Desc Not very ornate, this simple crown speaks of a simple King.~
+Level 75
+ItemType armor~
+Cost 1401
+Durability 5
+Asize 5
+Rsize 50
+Values 18 18 18 15 0
+Weight 5
+Material gold~
+Wear     take head~
+Affect modifier -1 75 -1 damroll 4 0
+Affect modifier -1 75 -1 hitroll 4 0
+Affect modifier -1 75 -1 strength 2 0
+Affect modifier -1 75 -1 empathy 2 0
+End
+
+#14214
+Name wedding ring~
+Short `#`wA `WW`we`Wd`wd`Wi`wn`Wg `wR`Wi`wn`Wg`^~
+Desc This ring looks suitable for a royal wedding!~
+Level 75
+ItemType armor~
+Cost 500
+Durability 5
+Asize 3
+Rsize 50
+Values 7 8 7 5 0
+Weight 3
+Material gold~
+Wear     take finger~
+Affect modifier -1 75 -1 damroll 5 0
+Affect modifier -1 75 -1 hitroll 5 0
+Affect modifier -1 75 -1 selfdiscipline 4 0
+End
+
+#14215
+Name book princess bride~
+Short The Princess Bride, by S. Morgenstern~
+Desc This book tells a story of true love.~
+Level 35
+ItemType treasure~
+Cost 1000
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material paper~
+Extra    magic~
+Wear     take hold~
+Affect modifier -1 35 -1 age -10 0
+Affect modifier -1 35 -1 empathy 1 0
+Affect modifier -1 35 -1 presence 1 0
+End
+
+#14216
+Name gold coin coins~
+Short Florin gold~
+Desc A large pile of Florin gold is here for the taking!~
+Level 0
+ItemType money~
+Cost 5000
+Durability 5
+Asize 1
+Rsize 50
+Values 250 20 0 0 0
+Weight 1
+Material gold~
+Wear     take~
+End
+
+#14217
+Name true love~
+Short `#`RT`rrue `RL`rove`^~
+Desc Love can cut like a knife.~
+Level 83
+ItemType weapon~
+Cost 2712
+Durability 5
+Asize 6
+Rsize 50
+Values exotic 19 3 none 0
+Weight 60
+Material unique~
+Extra    glow magic bless~
+Wear     take wield~
+Affect modifier -1 83 -1 mana 100 0
+Affect modifier -1 83 -1 quickness 4 0
+Affect modifier -1 83 -1 intuition 4 0
+End
+
+#0
+
+
+
+#ROOMS
+#14201
+Name A Cove~
+Desc This quiet cove is at the base of the Cliffs of Insanity.  A rope
+leads up the thousand-foot sheer climb.
+~
+Sector mountain~
+Exit up 14202
+Exit down 8166
+End
+
+
+#14202
+Name The Cliffs of Insanity~
+Desc You are climbing a rope up a sheer cliff.  Don't look down.
+~
+Sector mountain~
+Exit up 14203
+End
+
+
+#14203
+Name The Cliffs of Insanity~
+Desc You are near the top of a sheer cliff.  Waves crash hundreds of feet
+below, and your strength is fading as you dangle from the rope.
+~
+Sector mountain~
+Exit up 14204
+End
+
+
+#14204
+Name Top of the Cliffs of Insanity~
+Desc You are at the top of a sheer thousand-foot high cliff.  You can see
+the entire city of Florin across the channel below you.  A rope
+attached to a nearby tree provides the only shortcut up this side.
+~
+Sector field~
+ExtraDesc tree~
+An oak tree stands here with a rope about its base.
+~
+ExtraDesc rope~
+This rope is tied to an oak tree and hangs a thousand feet over the
+cliff.
+~
+Exit west 14205
+End
+
+
+#14205
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit east 14204
+Exit west 14206
+End
+
+
+#14206
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit north 14207
+Exit east 14205
+End
+
+
+#14207
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit east 14208
+Exit south 14206
+End
+
+
+#14208
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit north 14209
+Exit west 14207
+End
+
+
+#14209
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit south 14208
+Exit west 14210
+End
+
+
+#14210
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit north 14211
+Exit east 14209
+End
+
+
+#14211
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit east 14212
+Exit south 14210
+End
+
+
+#14212
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit north 14213
+Exit west 14211
+End
+
+
+#14213
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit south 14212
+Exit west 14214
+End
+
+
+#14214
+Name A Rocky Trail~
+Desc This rocky terrain would encourage a swordsman to use the Agrippa
+defense.  Moving your feet could cause you to lose your balance.
+~
+Sector hills~
+Exit east 14213
+Exit west 14215
+End
+
+
+#14215
+Name A Picnic~
+Desc On a rock here Vizzini has laid out a little picnic.  On a small
+handkerchief you can see two wine goblets, a leather wine holder,
+and some cheese and apples.  The spot could not be lovelier: a high
+point on the mountain path with a splendid view all the way back
+to Florin Channel.
+~
+Sector field~
+Exit east 14214
+Exit south 14216
+End
+
+
+#14216
+Name Above the Ravine~
+Desc You stand at the edge of a steep ravine.  You might be able to
+survive a fall down into the ravine, but you'd never climb back up.
+~
+Sector field~
+Exit north 14215
+Exit south 14217
+Exit down 14220
+End
+
+
+#14217
+Name Above the Ravine~
+Desc You stand at the edge of a steep ravine.  You might be able to
+survive a fall down into the ravine, but you'd never climb back up.
+~
+Sector field~
+Exit north 14216
+Exit south 14218
+Exit down 14221
+End
+
+
+#14218
+Name Above the Ravine~
+Desc You stand at the edge of a steep ravine.  You might be able to
+survive a fall down into the ravine, but you'd never climb back up.
+~
+Sector field~
+Exit north 14217
+Exit south 14219
+Exit down 14222
+End
+
+
+#14219
+Name Above the Ravine~
+Desc You stand at the edge of a steep ravine.  You might be able to
+survive a fall down into the ravine, but you'd never climb back up.
+~
+Sector field~
+Exit north 14218
+Exit down 14223
+End
+
+
+#14220
+Name The Ravine Floor~
+Desc The flat ravine floor is the only way to go; climbing up the
+steep sides would be next to impossible.
+~
+Sector field~
+Exit south 14221
+End
+
+
+#14221
+Name The Ravine Floor~
+Desc The flat ravine floor is the only way to go; climbing up the
+steep sides would be next to impossible.
+~
+Sector field~
+Exit north 14220
+Exit south 14222
+End
+
+
+#14222
+Name The Ravine Floor~
+Desc The flat ravine floor is the only way to go; climbing up the
+steep sides would be next to impossible.
+~
+Sector field~
+Exit north 14221
+Exit south 14223
+End
+
+
+#14223
+Name The Ravine Floor~
+Desc The flat ravine floor is the only way to go; climbing up the
+steep sides would be next to impossible.  You detect a whiff of
+sulphur in the air.
+~
+Sector field~
+Exit north 14222
+Exit south 14224
+End
+
+
+#14224
+Name The Edge of the Fire Swamp~
+Desc You stand at the edge of the Florin-Guilder Fire Swamp.  It is a
+common misconception that entering the swamp assures certain death.
+That rumor persists only because nobody has ever survived it.  The
+fire swamp contains three dangers:  flame spurts (which give the
+swamp its name) caused by the buildup of sulphur and other gases;
+snow sand (commonly mistaken for lightning sand, but dry and fine);
+and R.O.U.S.es.
+~
+Sector field~
+Exit north 14223
+Exit south 14226
+End
+
+
+#14225
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit east 14226
+Exit south 14229
+EKeyvnum -1
+Exit west 14227
+End
+
+
+#14226
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14224
+Exit east 14227
+Exit south 14228
+EKeyvnum -1
+Exit west 14225
+End
+
+
+#14227
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit east 14225
+Exit south 14230
+Exit west 14226
+End
+
+
+#14228
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14225
+Exit east 14229
+Exit south 14231
+Exit west 14230
+End
+
+
+#14229
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14226
+Exit east 14230
+Exit south 14233
+EKeyvnum -1
+Exit west 14228
+End
+
+
+#14230
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14227
+Exit east 14228
+Exit south 14232
+EKeyvnum -1
+Exit west 14229
+End
+
+
+#14231
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14228
+Exit east 14232
+Exit south 14234
+Exit west 14233
+End
+
+
+#14232
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14229
+Exit east 14233
+Exit south 14235
+Exit west 14231
+End
+
+
+#14233
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14230
+Exit east 14231
+Exit south 14236
+Exit west 14232
+End
+
+
+#14234
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14231
+Exit east 14235
+Exit south 14237
+Exit west 14236
+End
+
+
+#14235
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14232
+Exit east 14236
+Exit south 14238
+Exit west 14234
+End
+
+
+#14236
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14233
+Exit east 14234
+Exit south 14239
+Exit west 14235
+End
+
+
+#14237
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14234
+Exit east 14238
+Exit south 14240
+Exit west 14239
+End
+
+
+#14238
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14235
+Exit east 14239
+Exit south 14241
+Exit west 14237
+End
+
+
+#14239
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14236
+Exit east 14237
+Exit south 14242
+Exit west 14238
+End
+
+
+#14240
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14237
+Exit east 14241
+Exit south 14231
+EKeyvnum -1
+Exit west 14242
+End
+
+
+#14241
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.  You see a
+break in the foliage to the south.
+~
+Sector forest~
+Exit north 14238
+Exit east 14242
+Exit south 14243
+EFlags door closed~
+EKeyvnum -1
+EKeywords break foliage~
+EDesc You see a break in the foliage to the south.
+~
+Exit west 14240
+End
+
+
+#14242
+Name The Fire Swamp~
+Desc Lush green forests surround you as you walk through the shadowy
+swamp.  Your way is lit by occasional flamespurts, but it is still
+dark enough for someone ... or something ... to hide.
+~
+Sector forest~
+Exit north 14239
+Exit east 14240
+Exit south 14233
+EKeyvnum -1
+Exit west 14241
+End
+
+
+#14243
+Name The Edge of the Fire Swamp~
+Desc Behind you lies the Florin-Guilder Fireswamp.  Ahead of you, across a
+small channel, lies the city of Florin.
+~
+Sector field~
+Exit north 14241
+Exit east 14312
+Exit south 14244
+End
+
+
+#14244
+Name Florin-Guilder Channel~
+Desc This narrow channel connects Guilder, to the northwest, with Florin,
+to the southeast.  The waters here are widely believed to be infested
+with shrieking eels.
+~
+Sector swim~
+Exit north 14243
+Exit east 14245
+Exit south 14245
+End
+
+
+#14245
+Name Florin-Guilder Channel~
+Desc This narrow channel connects Guilder, to the northwest, with Florin,
+to the southeast.  The waters here are widely believed to be infested
+with shrieking eels.
+~
+Sector swim~
+Exit north 14244
+Exit east 14246
+Exit south 14246
+Exit west 14244
+End
+
+
+#14246
+Name Entrance to the Zoo of Death~
+Desc Prince Humperdinck, the world's greatest hunter, designed this Zoo
+to keep animals of all variety, to save him the travel time to hunt
+them in their native habitat.  The Zoo has five levels: enemies of
+speed, enemies of strength, poisoners, enemies of fear, and a cage
+on the fifth level for some animal as fierce and powerful as the
+Prince himself.
+~
+Sector field~
+Exit north 14245
+Exit east 14248
+Exit west 14245
+End
+
+
+#14247
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14250
+Exit south 14248
+End
+
+
+#14248
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14247
+Exit east 14251
+Exit south 14249
+End
+
+
+#14249
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14248
+Exit east 14252
+End
+
+
+#14250
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14253
+Exit south 14251
+Exit west 14247
+End
+
+
+#14251
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14250
+Exit east 14254
+Exit south 14252
+Exit west 14248
+End
+
+
+#14252
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14251
+Exit east 14255
+Exit west 14249
+End
+
+
+#14253
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14256
+Exit south 14254
+Exit west 14250
+End
+
+
+#14254
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14253
+Exit east 14257
+Exit south 14255
+Exit west 14251
+End
+
+
+#14255
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14254
+Exit east 14258
+Exit west 14252
+End
+
+
+#14256
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14259
+Exit south 14257
+Exit west 14253
+End
+
+
+#14257
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14256
+Exit east 14260
+Exit south 14258
+Exit west 14254
+End
+
+
+#14258
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14257
+Exit east 14261
+Exit west 14255
+End
+
+
+#14259
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+A door in the east wall is riddled with claw marks.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14262
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A door in the east wall is riddled with claw marks.
+~
+Exit south 14260
+Exit west 14256
+End
+
+
+#14260
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14259
+Exit south 14261
+Exit west 14257
+End
+
+
+#14261
+Name Zoo of Death - Level 1~
+Desc This level contains enemies of speed.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14260
+Exit west 14258
+End
+
+
+#14262
+Name A Stairway~
+Desc This stairway leads from the first to second level.
+~
+Sector inside~
+Exit west 14259
+Exit down 14275
+End
+
+
+#14263
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14266
+Exit south 14264
+End
+
+
+#14264
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14263
+Exit east 14267
+Exit south 14265
+End
+
+
+#14265
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+A door in the west wall is dented in several places.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14264
+Exit east 14268
+Exit west 14278
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A door in the west wall is dented in several places.
+~
+End
+
+
+#14266
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14269
+Exit south 14267
+Exit west 14263
+End
+
+
+#14267
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14266
+Exit east 14270
+Exit south 14268
+Exit west 14264
+End
+
+
+#14268
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14267
+Exit east 14271
+Exit west 14265
+End
+
+
+#14269
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14272
+Exit south 14270
+Exit west 14266
+End
+
+
+#14270
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14269
+Exit east 14273
+Exit south 14271
+Exit west 14267
+End
+
+
+#14271
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14270
+Exit east 14274
+Exit west 14268
+End
+
+
+#14272
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14275
+Exit south 14273
+Exit west 14269
+End
+
+
+#14273
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14272
+Exit east 14276
+Exit south 14274
+Exit west 14270
+End
+
+
+#14274
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14273
+Exit east 14277
+Exit west 14271
+End
+
+
+#14275
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit south 14276
+Exit west 14272
+End
+
+
+#14276
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14275
+Exit south 14277
+Exit west 14273
+End
+
+
+#14277
+Name Zoo of Death - Level 2~
+Desc This level contains enemies of strength.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14276
+Exit west 14274
+End
+
+
+#14278
+Name A Stairway~
+Desc This stairway leads from the second to third level.
+~
+Sector inside~
+Exit east 14265
+Exit down 14281
+End
+
+
+#14279
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14282
+Exit south 14280
+End
+
+
+#14280
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14279
+Exit east 14283
+Exit south 14281
+End
+
+
+#14281
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14280
+Exit east 14284
+End
+
+
+#14282
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14285
+Exit south 14283
+Exit west 14279
+End
+
+
+#14283
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14282
+Exit east 14286
+Exit south 14284
+Exit west 14280
+End
+
+
+#14284
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14283
+Exit east 14287
+Exit west 14281
+End
+
+
+#14285
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14288
+Exit south 14286
+Exit west 14282
+End
+
+
+#14286
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14285
+Exit east 14289
+Exit south 14287
+Exit west 14283
+End
+
+
+#14287
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14286
+Exit east 14290
+Exit west 14284
+End
+
+
+#14288
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14291
+Exit south 14289
+Exit west 14285
+End
+
+
+#14289
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14288
+Exit east 14292
+Exit south 14290
+Exit west 14286
+End
+
+
+#14290
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14289
+Exit east 14293
+Exit west 14287
+End
+
+
+#14291
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+A door in the east wall is covered with venom.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14294
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A door in the east wall is covered with venom.
+~
+Exit south 14292
+Exit west 14288
+End
+
+
+#14292
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14291
+Exit south 14293
+Exit west 14289
+End
+
+
+#14293
+Name Zoo of Death - Level 3~
+Desc This level contains poisoners.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14292
+Exit west 14290
+End
+
+
+#14294
+Name A Stairway~
+Desc This stairway leads from the third to fourth level.
+~
+Sector inside~
+Exit west 14291
+EKeyvnum -1
+Exit down 14307
+End
+
+
+#14295
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14298
+Exit south 14296
+End
+
+
+#14296
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14295
+Exit east 14299
+Exit south 14297
+End
+
+
+#14297
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+You are in too much of a panic to open the door in the west wall.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14296
+Exit east 14300
+Exit west 14310
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc You are in too much of a panic to open the door in the
+west wall.
+~
+End
+
+
+#14298
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14301
+Exit south 14299
+Exit west 14295
+End
+
+
+#14299
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14298
+Exit east 14302
+Exit south 14300
+Exit west 14296
+End
+
+
+#14300
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14299
+Exit east 14303
+Exit west 14297
+End
+
+
+#14301
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14304
+Exit south 14302
+Exit west 14298
+End
+
+
+#14302
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14301
+Exit east 14305
+Exit south 14303
+Exit west 14299
+End
+
+
+#14303
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14302
+Exit east 14306
+Exit west 14300
+End
+
+
+#14304
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit east 14307
+Exit south 14305
+Exit west 14301
+End
+
+
+#14305
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14304
+Exit east 14308
+Exit south 14306
+Exit west 14302
+End
+
+
+#14306
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14305
+Exit east 14309
+Exit west 14303
+End
+
+
+#14307
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit south 14308
+Exit west 14304
+End
+
+
+#14308
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14307
+Exit south 14309
+Exit west 14305
+End
+
+
+#14309
+Name Zoo of Death - Level 4~
+Desc This level contains enemies of fear.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit north 14308
+Exit west 14306
+End
+
+
+#14310
+Name A Stairway~
+Desc This stairway leads from the fourth to fifth level.
+~
+Sector inside~
+Exit east 14297
+Exit down 14311
+End
+
+
+#14311
+Name The Pit of Despair~
+Desc You are in a large cage on the fifth level of the Zoo of Death,
+reserved for an enemy worthy of Prince Humperdinck.  Are you that enemy?
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit up 14310
+End
+
+
+#14312
+Name Florin City~
+Desc This road leads from the Zoo of Death towards Florin Castle.
+~
+Sector city~
+Exit east 14313
+Exit west 14243
+End
+
+
+#14313
+Name Outside Miracle Max's~
+Desc To the north is a small hut with a thatched roof.
+~
+Sector city~
+Exit north 14314
+Exit east 14315
+Exit west 14312
+End
+
+
+#14314
+Name Miracle Max's House~
+Desc Miracle Max used to work for the King, until Prince Humperdinck
+convinced the king to fire him.  Although the three years have taken
+their toll on his confidence, a little money will refresh his memory.
+~
+RoomFlags indoors~
+Sector city~
+Exit south 14313
+End
+
+
+#14315
+Name Florin City~
+Desc This road leads from the Zoo of Death towards Florin Castle.
+~
+Sector city~
+Exit east 14316
+Exit west 14313
+End
+
+
+#14316
+Name Florin Castle Gate~
+Desc A huge gate stands before you, the only entrance to Florin Castle.
+And there is only one key to the gate.  And Yellin has that key.
+~
+Sector city~
+Exit east 14317
+EFlags door closed locked~
+EKeyvnum 14208
+EKeywords gate~
+EDesc Behind a portcullis stands a large gate, the only 
+entrance to Florin Castle.  There is but one key to the gate.
+~
+Exit west 14315
+End
+
+
+#14317
+Name Entryway to Florin Castle~
+Desc You are just inside the castle gate.  Rather modest for a castle, the 
+hallway still commands your attention with fine art, decorations in gold 
+and silver, and high ceilings.  To the south is the library, or you can go 
+further into the castle to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 14318
+Exit south 14322
+End
+
+
+#14318
+Name Florin Castle Hallway~
+Desc The smell of fine cooking draws your nose to the door to your south.  
+Further ahead of you to the east the passage continues towards a grand 
+throne room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 14319
+Exit south 14323
+Exit west 14317
+End
+
+
+#14319
+Name Florin Castle Hallway~
+Desc You hear the hustle and bustle of a busy kitchen to the south.  Behind you 
+to the west is the gate to the castle, and the throne room is getting 
+closer to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 14320
+Exit south 14324
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc This door swings in either direction to allow easy 
+access to servers with trays full of food.
+~
+Exit west 14318
+End
+
+
+#14320
+Name Florin Castle Hallway~
+Desc You stand in a quiet hallway.  To the south is a plain wooden door, and a 
+giant throne room opens up to the east.  West returns you towards the 
+castle gate.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 14321
+Exit south 14325
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+Exit west 14319
+End
+
+
+#14321
+Name Florin Throne Room~
+Desc This is the seat of power for the Florin Empire.  Although in past years 
+the Florins had attempted to seize even more land by taking over the 
+neighbor country of Guilder, a truce has been in effect for several 
+years.  Large thrones here seat the Florin King and Queen, but it is 
+Prince Humperdink who really runs the country.  His chambers are to the 
+south.  You can leave the throne room to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 14326
+Exit west 14320
+End
+
+
+#14322
+Name Florin Castle Library~
+Desc This must be one of the largest libraries you've ever seen!  Books from 
+all over the world in many different languages line the shelves.  You feel 
+as if you could sit here and read all day.  A bookshelf rests against the 
+south wall.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14317
+Exit south 14327
+EFlags door closed locked~
+EKeyvnum 14215
+EKeywords bookshelf~
+EDesc This bookshelf holds mostly short stories.
+~
+End
+
+
+#14323
+Name Florin Castle Dining Room~
+Desc A large table here could seat hundreds, although the usual meals are only 
+for four.  You hear dishes rattling to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14318
+Exit east 14324
+EKeyvnum -1
+End
+
+
+#14324
+Name Florin Castle Kitchen~
+Desc This kitchen is a bustle of activity.  You step to the side to allow 
+servers to run past you.  You wonder where they are going.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14319
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc This door swings easily in both directions to allow 
+easy access to servers with trays full of food.
+~
+Exit south 14328
+EKeyvnum -1
+Exit west 14323
+End
+
+
+#14325
+Name Princess Buttercup's Chambers~
+Desc A simple room here is the new home of Princess Buttercup.  It is 
+decorated rather blandly, as if the occupant did not care much for 
+beauty.  A window is in the south wall.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc window~
+The window looks out on a courtyard in the castle.  Four white horses 
+whinny below you.  They look rather fast.
+~
+Exit north 14320
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A simple wooden door opens out onto the hallway.
+~
+End
+
+
+#14326
+Name Prince Humperdinck's Chambers~
+Desc A lavishly decorated room speaks of a hunter's skill.  The walls are 
+adorned with trophies of animals from all over the world.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14321
+Exit south 14329
+EKeyvnum -1
+End
+
+
+#14327
+Name Florin Treasure Chamber~
+Desc You find a small secret room here where the treasures of the Florin 
+monarchy are kept!
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14322
+End
+
+
+#14328
+Name Pantry~
+Desc This is the largest pantry you've seen!  Food lines the shelves and hangs 
+from the ceiling.  A servant eyes you warily, seeming to warn you that 
+taking any of the food will land you in the dungeon.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14324
+EKeyvnum -1
+End
+
+
+#14329
+Name The Map Room~
+Desc This room is filled with maps of all shapes and sizes.  From small maps 
+ideal for the hunter or traveler to large scale bas relief maps of the 
+known world, you find the collective knowledge of every explorer here.
+A rolled-up map on the south wall is labeled "Edge City"
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 14324
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 14205 spec_cast_undead
+M 14214 spec_poison
+M 14215 spec_poison
+M 14217 spec_poison
+S
+
+
+
+#RESETS2
+M 0 14201 1 14205 1
+E 0 14201 0 wielded~
+M 0 14202 1 14210 1
+E 0 14202 0 wielded~
+M 0 14203 1 14215 1
+E 0 14203 0 wielded~
+G 0 14211 0
+O 0 14210 0 14215
+O 0 14211 0 14215
+O 0 14212 0 14215
+M 0 14207 1 14225 1
+M 0 14222 5 14225 1
+M 0 14207 10 14226 1
+M 0 14207 10 14227 1
+M 0 14223 5 14227 1
+M 0 14207 10 14229 1
+M 0 14222 5 14229 1
+M 0 14207 10 14231 1
+M 0 14223 5 14231 1
+M 0 14207 10 14232 1
+M 0 14207 10 14233 1
+M 0 14222 5 14233 1
+M 0 14223 5 14235 1
+M 0 14207 10 14237 1
+M 0 14222 5 14237 1
+M 0 14207 10 14238 1
+M 0 14207 10 14239 1
+M 0 14223 5 14239 1
+M 0 14222 5 14241 1
+M 0 14206 1 14246 1
+G 0 14209 0
+M 0 14208 5 14247 1
+M 0 14209 5 14248 1
+M 0 14210 5 14249 1
+M 0 14209 5 14250 1
+M 0 14210 5 14251 1
+M 0 14208 5 14252 1
+M 0 14210 5 14253 1
+M 0 14208 5 14254 1
+M 0 14209 5 14255 1
+M 0 14208 5 14256 1
+M 0 14209 5 14257 1
+M 0 14210 5 14258 1
+M 0 14209 5 14259 1
+M 0 14210 5 14260 1
+M 0 14208 5 14261 1
+M 0 14211 5 14263 1
+M 0 14212 5 14264 1
+M 0 14213 5 14265 1
+M 0 14212 5 14266 1
+M 0 14213 5 14267 1
+M 0 14211 5 14268 1
+M 0 14213 5 14269 1
+M 0 14211 5 14270 1
+M 0 14212 5 14271 1
+M 0 14211 5 14272 1
+M 0 14212 5 14273 1
+M 0 14213 5 14274 1
+M 0 14212 5 14275 1
+M 0 14213 5 14276 1
+M 0 14211 5 14277 1
+M 0 14214 5 14279 1
+M 0 14215 5 14280 1
+M 0 14216 5 14281 1
+M 0 14215 5 14282 1
+M 0 14216 5 14283 1
+M 0 14214 5 14284 1
+M 0 14216 5 14285 1
+M 0 14214 5 14286 1
+M 0 14215 5 14287 1
+M 0 14214 5 14288 1
+M 0 14215 5 14289 1
+M 0 14216 5 14290 1
+M 0 14215 5 14291 1
+M 0 14216 5 14292 1
+M 0 14214 5 14293 1
+M 0 14217 5 14295 1
+M 0 14218 5 14296 1
+M 0 14217 5 14297 1
+M 0 14218 5 14298 1
+M 0 14217 5 14299 1
+M 0 14218 5 14300 1
+M 0 14217 5 14304 1
+M 0 14218 5 14305 1
+M 0 14217 5 14306 1
+M 0 14218 5 14308 1
+M 0 14205 1 14311 1
+E 0 14205 0 wielded~
+M 0 14220 1 14314 1
+G 0 14206 0
+G 0 14207 0
+M 0 14219 1 14316 1
+G 0 14208 0
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14221 10 14316 1
+M 0 14224 1 14321 1
+E 0 14213 0 head~
+M 0 14225 1 14321 1
+M 0 14227 1 14322 1
+G 0 14214 0
+G 0 14214 0
+O 0 14215 0 14322
+M 0 14226 1 14325 1
+E 0 14217 0 wielded~
+M 0 14204 1 14326 1
+O 0 14216 0 14327
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#14204
+code say Haha, you fool, you fell victim to one of the classic blunders, the most famous of which is "Never get involved in a land war in Asia."
+say But only slightly less well known is this:  "Never go in against a Sicilian when DEATH is on the line!"
+laugh
+rofl
+giggle
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1074906112
+END
+
+#14203
+code say Why, it's so simple!
+say I must simply deduce from what I know of you, are you the sort of man who would put the poison in his own goblet?  Or his enemy's?
+say Now a clever man would put the poison into his own goblet, because only a great fool would reach for what was in front of him.
+say I am not a great fool, so I can clearly not choose the wine in front of you.
+say But you must have known I was not a great fool, you would have counted on it!
+say So I can clearly not choose the wine in front of me!
+~
+disabled false
+END
+
+#14202
+code emote throws a rock at you!  It misses by an inch.
+say I didn't have to miss, you know.
+say How about we face each other as God intended.  No weapons,
+say no tricks.  Mano-a-mano.  Sportsmanlike.
+~
+disabled false
+END
+
+#14201
+code say Hello, my name is Inigo Montoya.
+say You killed my father.  Prepare to die.
+~
+disabled false
+END
+
+#0
+
+
+#$

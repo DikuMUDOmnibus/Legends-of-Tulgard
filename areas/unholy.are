@@ -1,0 +1,1997 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Unholy Abbey~
+ShortName   Unholy Abbey~
+Builders    None~
+VNUMs       30800 30899
+LComment    `#`R[ 60- 65]`^
+Security    9
+Colour      r~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Tue Dec 20 19:24:37 2005~
+End
+
+
+
+#MOBILES
+#30800
+Name evil monk~
+ShortD an evil monk~
+LongD A robed monk snarls in hatred when he sees you!~
+Desc The fanatic monks of the Unholy Abbey despise all other people, especially
+intruders in their sanctum! And you can rest assured they will do their
+utmost to eject you!
+~
+Race unique~
+Align 2 -1
+Level 62
+Hitroll 4
+HitDice 6d10+325
+ManaDice 6d10+345
+DamDice 8d6+28
+DamType punch
+AC -320 -320 -320 -288
+Wealth 620
+Act    npc stay_area cleric~
+AffBy  infrared~
+Off    disarm dodge dirt_kick parry~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30801
+Name clay golem~
+ShortD a clay golem~
+LongD A statue fashioned from clay stands motionless here.~
+Desc This statue isn't very well-fashioned, and isn't very attractive. You wonder
+why even the unholy monks would use such art in their abbey. Shrug.
+~
+Race human~
+Align 1 -2
+Level 66
+Hitroll 0
+HitDice 7d10+345
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType magic
+AC -360 -360 -360 -324
+Wealth 660
+Act    npc dont_wander warrior~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge fast dirt_kick parry rescue crush~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#30802
+Name monk master~
+ShortD a master~
+LongD A monk clad in black robes with silver edging sneers contemptously at you.~
+Desc The master monks are the teachers and supervisors of the monks of the abbey,
+and answer only to the abbot himself. They are if anything more diabolical
+than their demented pupils, and twice as deadly.
+~
+Race human~
+Align 0 -1
+Level 65
+Hitroll 2
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 8d7+30
+DamType punch
+AC -350 -350 -350 -283
+Wealth 650
+Act    npc stay_area cleric~
+Off    disarm dodge dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30803
+Name necromancer~
+ShortD a necromancer~
+LongD A frail old man clad in purple robes casts evil incantations here.~
+Desc The abbey employs several necromancers to create their legions of undead,
+with which they one day intend to conquer the kingdom of Malathar. They are
+horrid, twisted, decrepit old men, who have incredible magical powers.
+~
+Race human~
+Align 1 -2
+Level 62
+Hitroll 0
+HitDice 6d10+325
+ManaDice 6d10+345
+DamDice 8d6+28
+DamType pierce
+AC -320 -320 -320 -262
+Wealth 620
+Act    npc stay_area undead cleric~
+AffBy  protect_good~
+Off    disarm dodge dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30804
+Name abbot~
+ShortD the abbot~
+LongD The unholy abbot screams vile curses at you and attacks!~
+Desc The abbot is a vile, despicable old tyrant who rules his damned abbey with
+an iron fist and a lust for conquest and death bordering on the maniacal.
+He may be a shrivelled old man, but he is still immensely powerful.
+~
+Race human~
+Align -1 -2
+Level 67
+Hitroll 4
+HitDice 7d10+345
+ManaDice 7d10+385
+DamDice 7d8+32
+DamType punch
+AC -370 -370 -370 -310
+Wealth 670
+Act    npc stay_area cleric~
+Off    disarm dodge dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#30805
+Name wight~
+ShortD a wight~
+LongD A leering wight leaps to attack you.~
+Desc The necromancers of the abbey have animated the remains of Knights of
+Malathar slain by the monks and transformed them into horrid wights, and
+additionally infusing them with a manic desire to slay everyone they behold.
+~
+Race human~
+Align 3 -1
+Level 65
+Hitroll 2
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType slash
+AC -350 -350 -350 -283
+Wealth 650
+Act    npc stay_area undead warrior~
+Off    disarm dodge dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30806
+Name bone devil~
+ShortD a bone devil~
+LongD A devil that seems to be naught but bones and gristle leers at you.~
+Desc The monks frequently summon devils to aid them in their evil schemes, and
+their favorite is the bone devil, who only demands seven virgins rather than
+the many scores other devils demand.
+~
+Race human~
+Align 3 -1
+Level 68
+Hitroll 5
+HitDice 7d10+355
+ManaDice 3d5+70
+DamDice 7d8+34
+DamType slash
+AC -380 -380 -380 -311
+Wealth 680
+Act    npc stay_area warrior~
+Off    disarm dodge dirt_kick parry~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30807
+Name elven virgin~
+ShortD an elven virgin~
+LongD A screaming, naked young elven maiden is chained to the altar. ~
+Desc The monks capture and sacrifice female elven virgins to summon devils from
+the Hells. This one has gone quite insane from the pain and shock of capture
+and subsequent subjection to the cruel rituals of the monks.
+~
+Race elf~
+Align 0 0
+Level 63
+Hitroll -5
+HitDice 6d10+330
+ManaDice 6d10+350
+DamDice 8d7+29
+DamType punch
+AC -330 -330 -330 -297
+Wealth 90
+Act    npc dont_wander~
+AffBy  detect_hidden infrared weaken~
+Off    disarm dodge~
+Imm    charm~
+Res    charm illusion~
+Vuln   poison disease iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#30808
+Name dwarven dwarf slave~
+ShortD a dwarven slave~
+LongD A dwarf pounds away at a pile of rocks here.~
+Desc The monks may be powerful warriors but they are no engineers, so they capture
+dwarves from the north and use them in this capacity, to expand and strengthen
+their abbey.
+~
+Race dwarf~
+Align 1 0
+Level 66
+Hitroll 0
+HitDice 7d10+345
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType pierce
+AC -360 -360 -360 -313
+Wealth 660
+Act    npc dont_wander warrior~
+AffBy  infrared~
+Off    bash berserk disarm dodge fast dirt_kick parry rescue~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30809
+Name ogre slavemaster master~
+ShortD an ogre slavemaster~
+LongD A huge, scarred ogre cracks his whip at you and orders to to surrender.~
+Desc This overconfident brute is one of many employed by the monks to keep their
+slaves in line. He rashly expects you to just lie down and die for him. Hmmm.
+~
+Race orc~
+Align 2 0
+Level 66
+Hitroll -5
+HitDice 7d10+340
+ManaDice 7d10+370
+DamDice 7d8+32
+DamType whip
+AC -360 -360 -360 -298
+Wealth 660
+Act    npc dont_wander~
+AffBy  infrared weaken~
+Off    disarm dodge~
+Imm    disease~
+Res    poison disease~
+Vuln   mental light illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#30810
+Name paladin~
+ShortD a paladin~
+LongD A paladin shakes his head and struggles to regain consciousness.~
+Desc This hapless fellow was captured by the old Dragon Clan many centuries ago
+and imprisoned here. The new clan has not dared to disturb him, for they
+know of his power.
+~
+Race human~
+Align 3 2
+Level 77
+Hitroll 9
+HitDice 8d11+390
+ManaDice 3d5+80
+DamDice 8d9+39
+DamType punch
+AC -470 -470 -470 -394
+Wealth 770
+Act    npc dont_wander cleric warrior~
+Off    bash berserk disarm dodge fast kick dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#30811
+Name black dragon~
+ShortD a black dragon~
+LongD (Sleeping) A massive black dragon is curled up on the floor here.~
+Desc They aren't called the dragon clan for nothing, pal.
+~
+Race dragonkin~
+Align 3 -2
+Level 73
+Hitroll 5
+HitDice 7d11+375
+ManaDice 3d5+75
+DamDice 8d9+36
+DamType claw
+AC -430 -430 -430 -352
+Wealth 730
+Act    npc dont_wander warrior~
+AffBy  sanctuary infrared flying haste~
+Off    bash berserk disarm dodge~
+Imm    charm fire cold acid~
+Form   edible sentient dragon~
+Part   head arms legs heart brains guts eye long_tongue wings tail claws horns~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#30812
+Name old elf~
+ShortD an old elf~
+LongD An old elf sits upon the rock here.~
+Desc This old elf, one Felthesres by name, is one of the bards of Malathar who has
+vowed to remain here and await the return of the Paladin Grimafax from his
+missions. He has been waiting several centuries, and will be waiting for
+much longer before Grimafax returns.
+~
+Race elf~
+Align 1 -2
+Level 64
+Hitroll 0
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType punch
+AC -340 -340 -340 -299
+Wealth 640
+Act    npc stay_area~
+AffBy  detect_hidden infrared protect_good~
+Off    disarm dodge dirt_kick parry~
+Imm    charm~
+Res    charm illusion~
+Vuln   poison disease iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30813
+Name bone golem~
+ShortD a bone golem~
+LongD A bone golem tirelessly works the bellows here.~
+Desc This creature was created to keep the dragon noises continually echoing
+from the cavern entrance. It will not attack, but it will move to defend
+itself.
+~
+Race human~
+Align -2 -2
+Level 64
+Hitroll 0
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType punch
+AC -340 -340 -340 -275
+Wealth 640
+Act    npc stay_area~
+AffBy  protect_good~
+Off    disarm dodge dirt_kick parry crush~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#30814
+Name wyvern~
+ShortD a wyvern~
+LongD A massive wyvern is hovering just above you.~
+Desc This wyvern is a scout for the monks of the abbey, you surmise. Then again
+it could be a perfectly normal wyvern that just happens to be wearing a
+massive green amulet with "dragon clan" written on it...
+~
+Race wyvern~
+Align -1 -2
+Level 62
+Hitroll 0
+HitDice 6d10+325
+ManaDice 6d10+345
+DamDice 8d7+28
+DamType claw
+AC -320 -320 -320 -288
+Wealth 620
+Act    npc stay_area~
+AffBy  detect_invis detect_hidden protect_good flying~
+Off    bash disarm dodge fast dirt_kick parry~
+Imm    poison~
+Vuln   light~
+Form   edible poison animal mountable dragon~
+Part   head legs heart brains guts feet ear eye wings tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#30815
+Name pit beast~
+ShortD a pit beast~
+LongD A pit beast lunges at you!~
+Desc These savage mutant hounds are horrors feared the world over. Only the monks
+have managed to tame these beasts, much to the displeasure of civilized
+folk everywhere.
+~
+Race dog~
+Align 1 -2
+Level 64
+Hitroll 0
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+30
+DamType bite
+AC -340 -340 -340 -306
+Wealth 640
+Act    npc stay_area~
+Act2   no_random_obj~
+AffBy  protect_good~
+Off    disarm dodge fast dirt_kick parry~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#30800
+Name The Path to the Craggy Tor~
+Desc You are ascending steadily upwards through rough terrain towards a large,
+jagged mountain far to the north. There is a small rock resting here, near
+the path, which could serve as a passable chair. There is a sign nailed to
+a dead tree that hangs over the rock.
+~
+Sector hills~
+ExtraDesc sign~
+This area is for Levels 50+. Be warned.
+~
+Exit north 30801
+EKeyvnum -1
+Exit south 57029
+Exit west 56947
+End
+
+
+#30801
+Name The Path to the Craggy Tor~
+Desc You continue up the path, only vaguely noticing the bleak terrain around
+you as the climb is quite exerting. Birds circle far overhead, taking only
+a casual interest in you. The path bends sharply to the east at this point.
+~
+RoomFlags no_mob~
+Sector hills~
+Exit east 30802
+EKeyvnum -1
+Exit south 30800
+EKeyvnum -1
+End
+
+
+#30802
+Name The Path to the Craggy Tor~
+Desc The path bends back to the north here, heading straight for the base of the
+Tor. However, there appears to be a deep chasm dividing the path from the
+base, and you wonder how you will pass it.
+~
+Sector hills~
+Exit north 30805
+EKeyvnum -1
+Exit west 30801
+EKeyvnum -1
+End
+
+
+#30803
+Name The Edge of the Chasm~
+Desc You are heading round the edge of the chasm. You can see no way across it
+from here, though you could perhaps proceed across or down if you could
+fly. You can still see the Tor, and the abbey at its summit. The black
+shape is still hovering atop it.
+~
+Sector hills~
+Exit north 30808
+EKeyvnum -1
+Exit east 30804
+EKeyvnum -1
+End
+
+
+#30804
+Name The Edge of the Chasm~
+Desc You are heading round the edge of the chasm. You can see no way across it
+from here, though you could perhaps proceed across or down if you could
+fly. You can still see the Tor, and the abbey at its summit. The black
+shape is still hovering atop it.
+~
+Sector hills~
+Exit north 30809
+EKeyvnum -1
+Exit east 30805
+EKeyvnum -1
+Exit west 30803
+EKeyvnum -1
+End
+
+
+#30805
+Name The Edge of the Chasm~
+Desc You reach the edge of the chasm, and stare across at the Tor. Sure enough,
+you can see the abbey, nestled in a small crack that divides the top third
+of the tor in two. It appears to have no doors or windows, and you can't
+see any way across. You think you can see a black shape nestled atop the
+abbey.
+~
+Sector hills~
+Exit north 30810
+EKeyvnum -1
+Exit east 30806
+EKeyvnum -1
+Exit south 30802
+EKeyvnum -1
+Exit west 30804
+EKeyvnum -1
+End
+
+
+#30806
+Name The Edge of the Chasm~
+Desc You are heading round the edge of the chasm. You can see no way across it
+from here, though you could perhaps proceed across or down if you could
+fly. You can still see the Tor, and the abbey at its summit. The black
+shape is still hovering atop it.
+~
+Sector hills~
+Exit north 30811
+EKeyvnum -1
+Exit east 30807
+EKeyvnum -1
+Exit west 30805
+EKeyvnum -1
+End
+
+
+#30807
+Name The Edge of the Chasm~
+Desc You are heading round the edge of the chasm. You can see no way across it
+from here, though you could perhaps proceed across or down if you could
+fly. You can still see the Tor, and the abbey at its summit. The black
+shape is still hovering atop it.
+~
+Sector hills~
+Exit north 30812
+EKeyvnum -1
+Exit west 30806
+EKeyvnum -1
+End
+
+
+#30808
+Name The Edge of the Chasm~
+Desc You are heading round the edge of the chasm. You can see no way across it
+from here, though you could perhaps proceed across or down if you could
+fly. You can still see the Tor, and the abbey at its summit. The black
+shape is still hovering atop it.
+~
+Sector hills~
+Exit north 30813
+EKeyvnum -1
+Exit east 30809
+EKeyvnum -1
+Exit south 30803
+EKeyvnum -1
+End
+
+
+#30809
+Name Flying Above the Chasm~
+Desc You soar into the air and fly over the chasm, which yawns below you,
+descending to a depth of about 200 feet. You can see a small ledge outside
+the abbey to the north.
+~
+Sector air~
+Exit north 30814
+EKeyvnum -1
+Exit east 30810
+EKeyvnum -1
+Exit south 30804
+EKeyvnum -1
+Exit west 30808
+EKeyvnum -1
+Exit down 30820
+EKeyvnum -1
+End
+
+
+#30810
+Name Flying Above the Chasm~
+Desc You soar into the air and fly over the chasm, which yawns below you,
+descending to a depth of about 200 feet. You can see a small ledge outside
+the abbey to the north. You hear what sounds like a dragon roaring far below.
+~
+Sector air~
+Exit north 30815
+EKeyvnum -1
+Exit east 30811
+EKeyvnum -1
+Exit south 30805
+EKeyvnum -1
+Exit west 30809
+EKeyvnum -1
+Exit down 30821
+EKeyvnum -1
+End
+
+
+#30811
+Name Flying Above the Chasm~
+Desc You soar into the air and fly over the chasm, which yawns below you,
+descending to a depth of about 200 feet. You can see a small ledge outside
+the abbey to the north.
+~
+Sector air~
+Exit north 30816
+EKeyvnum -1
+Exit east 30812
+EKeyvnum -1
+Exit south 30806
+EKeyvnum -1
+Exit west 30810
+EKeyvnum -1
+Exit down 30822
+EKeyvnum -1
+End
+
+
+#30812
+Name The Edge of the Chasm~
+Desc You are heading round the edge of the chasm. You can see no way across it
+from here, though you could perhaps proceed across or down if you could
+fly. You can still see the Tor, and the abbey at its summit. The black
+shape is still hovering atop it.
+~
+Sector hills~
+Exit north 30817
+EKeyvnum -1
+Exit south 30807
+EKeyvnum -1
+Exit west 30811
+EKeyvnum -1
+End
+
+
+#30813
+Name The End of the Path~
+Desc The path ends here in a dead end at a high cliff face. You have no choice
+but to turn back.
+~
+Sector hills~
+Exit south 30808
+EKeyvnum -1
+End
+
+
+#30814
+Name Outside the Abbey~
+Desc You are standing on a narrow ledge that runs along the south wall of the
+abbey. You see no doors, windows or other places where you could enter or
+exit. Baffled, you move on.
+~
+Sector hills~
+Exit east 30815
+EKeyvnum -1
+Exit south 30809
+EKeyvnum -1
+End
+
+
+#30815
+Name Outside the Abbey~
+Desc You are standing on a narrow ledge that runs along the south wall of the
+abbey. You see no doors, windows or other places where you could enter or
+exit. You can fly up to the roof from here if you wish, though.
+~
+Sector hills~
+Exit east 30816
+EKeyvnum -1
+Exit south 30810
+EKeyvnum -1
+Exit west 30814
+EKeyvnum -1
+Exit up 30818
+EKeyvnum -1
+End
+
+
+#30816
+Name Outside the Abbey~
+Desc You are standing on a narrow ledge that runs along the south wall of the
+abbey. You see no doors, windows or other places where you could enter or
+exit. Baffled, you move on.
+~
+Sector hills~
+Exit south 30811
+EKeyvnum -1
+Exit west 30815
+EKeyvnum -1
+End
+
+
+#30817
+Name The End of the Path~
+Desc The path ends here in a dead end at a high cliff face. You have no choice
+but to turn back.
+~
+Sector hills~
+Exit south 30812
+EKeyvnum -1
+End
+
+
+#30818
+Name Flying up the Abbey Walls~
+Desc You are flying swiftly upwards, passing parallel to the sheer cliff-like
+walls of the abbey. There appears to be no possible entrance to this place.
+Nor is there any sign of life, save the massive black shape you spied earlier
+perched atop the roof.
+~
+Sector air~
+Exit up 30819
+EKeyvnum -1
+Exit down 30815
+EKeyvnum -1
+End
+
+
+#30819
+Name The Roof of the Abbey~
+Desc The roof is dominated by a huge pile of rocks and assorted rubble, which
+serves as a perch for a rather large black dragon, the Clan's "mascot" for
+want of a better word. Have fun.
+~
+Sector city~
+Exit down 30818
+EKeyvnum -1
+End
+
+
+#30820
+Name The Bottom of the Chasm~
+Desc The floor of the chasm is littered with assorted debris that has accumulated
+over several centuries as many dragon clans rose and fell in the abbey. You
+hear a dread howling that echoes about you.
+~
+Sector hills~
+Exit east 30821
+EKeyvnum -1
+End
+
+
+#30821
+Name The Bottom of the Chasm~
+Desc The floor of the chasm is littered with assorted debris that has accumulated
+over several centuries as many dragon clans rose and fell in the abbey. You
+hear a dread howling that echoes about you. A cavern opens up in front of
+you and bright red eyes glare sullenly at you from within!
+~
+Sector hills~
+Exit north 30823
+EKeyvnum -1
+Exit east 30822
+EKeyvnum -1
+Exit west 30820
+EKeyvnum -1
+End
+
+
+#30822
+Name The Bottom of the Chasm~
+Desc The floor of the chasm is littered with assorted debris that has accumulated
+over several centuries as many dragon clans rose and fell in the abbey. You
+hear a dread howling that echoes about you.
+~
+Sector hills~
+Exit west 30821
+EKeyvnum -1
+End
+
+
+#30823
+Name The Eyes Have It~
+Desc The "eyes" turn out to be red lamps hung from long chains attached to a
+wooden crossbeam set in the ceiling of this cavern. The roaring can still
+be heard, louder than ever. It appears to be emanating from the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30824
+EKeyvnum -1
+Exit south 30821
+EKeyvnum -1
+End
+
+
+#30824
+Name The Bellows Golem~
+Desc You have found the source of the dread howling- a giant bellows, being slowly
+worked by a bone golem. It seems a rather puerile protective measure,
+considering most intelligent adventurers wouldn't be fooled. YOU weren't
+fooled, were you?
+
+A greenish glow is coming from the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30825
+EKeyvnum -1
+Exit south 30823
+EKeyvnum -1
+End
+
+
+#30825
+Name The Portal Chamber~
+Desc You enter a large square room, 40'x40', with a glowing green portal in the
+ceiling. However, a large grate is blocking entry to it. There is a bright
+green padlock depending from the grate. Do you have a key?
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 30824
+EKeyvnum -1
+Exit up 30826
+EKeyvnum 30825
+EKeywords grate~
+End
+
+
+#30826
+Name The Portal~
+Desc The portal is flowing right in front of you. You may enter it if you wish.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30827
+Exit down 30825
+EKeyvnum 30825
+EKeywords grate~
+End
+
+
+#30827
+Name Level One~
+Desc You emerge from the portal into a square room identical to the one you just
+left. Two portals lie here, one green, and one red. A passage runs away to
+the east. A grate with a red lock blocks access upward to the red portal.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 30828
+EKeyvnum -1
+Exit south 30826
+Exit up 30838
+EKeyvnum 30848
+End
+
+
+#30828
+Name The Passage~
+Desc This passage has been recently swept clean, and shows no trace of passage.
+Doors line it to either side, as well as at the eastern end. There is a
+glowing portal to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30829
+Exit east 30831
+EKeyvnum -1
+Exit south 30830
+Exit west 30827
+EKeyvnum -1
+End
+
+
+#30829
+Name A Storage Room~
+Desc You have entered a small room containing all manner of supplies- ropes,
+lanterns, tinderboxes, wineskins, waterskins, sacks, bags, chests and such.
+You can search through the items if you wish, or return to the passage
+outside.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 30828
+End
+
+
+#30830
+Name A Storage Room~
+Desc You have entered a small room containing all manner of supplies- ropes,
+lanterns, tinderboxes, wineskins, waterskins, sacks, bags, chests and such.
+You can search through the items if you wish, or return to the passage
+outside.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30828
+End
+
+
+#30831
+Name The Passage~
+Desc This passage has been recently swept clean, and shows no trace of passage.
+Doors line it to either side, as well as at the eastern end. There is a
+glowing portal to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30832
+Exit east 30834
+EKeyvnum -1
+Exit south 30833
+Exit west 30828
+EKeyvnum -1
+End
+
+
+#30832
+Name An Armory~
+Desc A small room lies beyond the door, filled with all sorts of weapons
+commonly used by monks, especially militant fanatic ones. They are in good
+condition, but appear to be perfectly ordinary.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 30831
+EKeyvnum -1
+End
+
+
+#30833
+Name An Armory~
+Desc A small room lies beyond the door, filled with all sorts of weapons
+commonly used by monks, especially militant fanatic ones. They are in good
+condition, but appear to be perfectly ordinary.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30831
+EKeyvnum -1
+End
+
+
+#30834
+Name A Strange Room~
+Desc You enter a small, dimly-lit room, containing naught but a throne, upon
+which is seated a skeleton. There appears to be nothing else of interest
+in the chamber.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 30831
+Exit down 30835
+EKeywords throne~
+End
+
+
+#30835
+Name A Tunnel~
+Desc You enter a tunnel which is lined with foot- and hand-holds on one wall,
+allowing you to descend. The air is damp and chill, and you shiver.
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit up 30834
+Exit down 30836
+EKeyvnum -1
+End
+
+
+#30836
+Name The Bottom of the Tunnel~
+Desc You reach the bottom and shiver again as a blast of cold air hits you. There
+is nothing in this cramped space save a massive door to the east covered in
+mystic runes.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc door runes~
+The runes read- "RELEASE NOT THE SPIRIT THAT SHALL SLAY US ALL"
+~
+Exit east 30837
+EKeyvnum -1
+Exit up 30835
+EKeyvnum -1
+End
+
+
+#30837
+Name The Tomb~
+Desc The tomb is icy cold, almost dangerously so, and is dominated by a huge
+sarcophagus, inside which rests the corpse of an elven paladin. Maybe it
+wasn't such a good idea releasing him...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 30836
+End
+
+
+#30838
+Name The Portal~
+Desc The red portal floats in front of you. Enter it to continue...
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 30839
+Exit down 30827
+EKeyvnum 30848
+End
+
+
+#30839
+Name The Portal Chamber~
+Desc You emerge into yet another 40'x40' chamber, this one containing a red
+portal and a blue portal behind a grate with a blue lock. Doors lead out
+of this chamber in all directions.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30840
+Exit east 30841
+Exit south 30843
+Exit west 30842
+Exit up 30882
+EKeyvnum 30857
+Exit down 30838
+End
+
+
+#30840
+Name A Long Dark Passage~
+Desc This corridor is pitch-black- even with your light you can scarcely see a
+thing! You think you can feel a door to the north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30844
+Exit south 30839
+End
+
+
+#30841
+Name A Long Dark Passage~
+Desc This corridor is pitch-black- even with your light you can scarcely see a
+thing! You think you can feel a door to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30847
+Exit west 30839
+End
+
+
+#30842
+Name A Long Dark Passage~
+Desc This corridor is pitch-black- even with your light you can scarcely see a
+thing! You think you can feel a door to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30839
+Exit west 30845
+End
+
+
+#30843
+Name A Long Dark Passage~
+Desc This corridor is pitch-black- even with your light you can scarcely see a
+thing! You think you can feel a door to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30839
+Exit south 30846
+End
+
+
+#30844
+Name Barracks~
+Desc You emerge into a room that appears to be some sort of barracks. Normally
+several monks can be found here, practicing their katas and meidtating.
+Perhaps you'll be lucky and find none...
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 30848
+Exit south 30840
+Exit west 30852
+End
+
+
+#30845
+Name Barracks~
+Desc You emerge into a room that appears to be some sort of barracks. Normally
+several monks can be found here, practicing their katas and meidtating.
+Perhaps you'll be lucky and find none...
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30853
+Exit east 30842
+Exit south 30854
+End
+
+
+#30846
+Name A Chamber~
+Desc this appears to be some sort of relaxation chamber- it would seem even
+diabolically evil fanatic megalomanical demon-worshipping monks need to
+relax every now and again. However, in true monk style, the room is devoid
+of furniture- only a few straw mats and some simple tapestries provide any
+comfort.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30843
+EKeyvnum -1
+Exit east 30856
+Exit west 30855
+End
+
+
+#30847
+Name A Study~
+Desc This is apparently the study of one of the master monks. Bookcases full of
+texts detailing ritual sacrifice and such line the walls, and a small desk
+sits in front of them, though it doesn't look as if it gets much use.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30857
+Exit south 30858
+Exit west 30841
+End
+
+
+#30848
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30849
+EKeyvnum -1
+Exit west 30844
+End
+
+
+#30849
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. Belatedly, you notice the floor doesn't feel quite
+right here...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30850
+EKeyvnum -1
+Exit west 30848
+Exit down 30851
+EKeyvnum -1
+End
+
+
+#30850
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. You feel a door to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30859
+EKeyvnum -1
+Exit west 30849
+End
+
+
+#30851
+Name A Pit Trap~
+Desc You stumble into a pit. The fall isn't great, and you quickly leap back up,
+wondering why the monks would make such a harmless trap. Then you notice
+the stench and hear the growling...
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit up 30849
+EKeyvnum -1
+End
+
+
+#30852
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door lies to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30844
+EKeyvnum -1
+Exit west 30860
+End
+
+
+#30853
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30864
+EKeyvnum -1
+Exit south 30845
+End
+
+
+#30854
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30845
+EKeyvnum -1
+Exit south 30866
+End
+
+
+#30855
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30846
+EKeyvnum -1
+Exit west 30868
+End
+
+
+#30856
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30871
+EKeyvnum -1
+Exit west 30846
+End
+
+
+#30857
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30873
+EKeyvnum -1
+Exit south 30847
+End
+
+
+#30858
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30847
+EKeyvnum -1
+Exit south 30875
+End
+
+
+#30859
+Name A Study~
+Desc This is apparently the study of one of the master monks. Bookcases full of
+texts detailing ritual sacrifice and such line the walls, and a small desk
+sits in front of them, though it doesn't look as if it gets much use.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 30874
+Exit west 30850
+End
+
+
+#30860
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30852
+EKeyvnum -1
+Exit west 30861
+End
+
+
+#30861
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be felt to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30860
+EKeyvnum -1
+Exit west 30862
+End
+
+
+#30862
+Name A Study~
+Desc This is apparently the study of one of the master monks. Bookcases full of
+texts detailing ritual sacrifice and such line the walls, and a small desk
+sits in front of them, though it doesn't look as if it gets much use.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 30861
+Exit south 30863
+End
+
+
+#30863
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. There is a door to the north.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30862
+EKeyvnum -1
+Exit south 30864
+End
+
+
+#30864
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. You take another step, and realize there is a pit
+beneath your feet...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30863
+EKeyvnum -1
+Exit south 30853
+Exit down 30865
+EKeyvnum -1
+End
+
+
+#30865
+Name An Acid Pit~
+Desc This pit isn't particularly deep, and you hit the bottom wondering what's
+next. Then you start to feel a mild stinging sensation, followed by a clinking
+sound as your coins start to fall from your money pouch, which is being
+eaten away by acid!
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit up 30864
+EKeyvnum -1
+End
+
+
+#30866
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30854
+EKeyvnum -1
+Exit south 30867
+End
+
+
+#30867
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door lies to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30866
+EKeyvnum -1
+Exit south 30870
+End
+
+
+#30868
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30855
+EKeyvnum -1
+Exit west 30869
+End
+
+
+#30869
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door lies to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30868
+EKeyvnum -1
+Exit west 30870
+End
+
+
+#30870
+Name A Study~
+Desc This is apparently the study of one of the master monks. Bookcases full of
+texts detailing ritual sacrifice and such line the walls, and a small desk
+sits in front of them, though it doesn't look as if it gets much use.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30867
+Exit east 30869
+End
+
+
+#30871
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30872
+EKeyvnum -1
+Exit west 30856
+End
+
+
+#30872
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door lies to the east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30878
+EKeyvnum -1
+Exit west 30871
+End
+
+
+#30873
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30874
+EKeyvnum -1
+Exit south 30857
+End
+
+
+#30874
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. A door can be vaguely made out to the north. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30859
+EKeyvnum -1
+Exit south 30873
+End
+
+
+#30875
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. Suddenly your feet cease to find floor beneath them...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30858
+EKeyvnum -1
+Exit south 30877
+Exit down 30876
+EKeyvnum -1
+End
+
+
+#30876
+Name A Fire Pit~
+Desc You fall into what appears to be a giant BBQ. You cringe and leap in the
+air as your feet encounter burning piles of coal and other materials. It is
+HOT in here!
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit up 30875
+EKeyvnum -1
+End
+
+
+#30877
+Name A Long Black Corridor~
+Desc This corridor is dark, almost supernaturally so, and you make your way along
+slowly and carefully. You see a door to the south.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30875
+EKeyvnum -1
+Exit south 30878
+End
+
+
+#30878
+Name The Necromancers' Labs~
+Desc You walk into a dank, smelly chamber full of tables stacked with body parts.
+Feeble illumination comes from a weak light spell cast on some rods of
+mithril; besides that the room is almost completely dark. Doors lead east,
+west and north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30877
+Exit east 30879
+Exit west 30872
+End
+
+
+#30879
+Name The Cells~
+Desc Here the Necromancers store the results of their twisted experiments on some
+captured elven knights. They howl and scream so much that even their
+creators are scared of them.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30880
+Exit south 30881
+Exit west 30878
+End
+
+
+#30880
+Name A Cell~
+Desc This dismal chamber contains little but a few rags and scraps of flesh and
+bone. Whatever lives here certainly has bad domestic habits.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 30879
+End
+
+
+#30881
+Name A Cell~
+Desc This dismal chamber contains little but a few rags and scraps of flesh and
+bone. Whatever lives here certainly has bad domestic habits.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30879
+End
+
+
+#30882
+Name The Blue Portal~
+Desc This portal leads to the highest tier of the abbey. Be careful- there's no
+turning back now!
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit up 30883
+Exit down 30839
+EKeyvnum 30848
+End
+
+
+#30883
+Name The Final Portal Chamber~
+Desc This 40'x40' room has the usual two portals, save that here there is no
+lock on the one set in the roof. In fact you can walk right into it from
+here should you so desire. Hmmm...
+
+Arched hallways run east, south and north, while a door bars passage westward.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30884
+EKeyvnum -1
+Exit east 30889
+EKeyvnum -1
+Exit south 30894
+EKeyvnum -1
+Exit west 30899
+Exit down 30882
+End
+
+
+#30884
+Name The Arched Corridor~
+Desc you slowly walk along the passage. An eerie feeling comes over you, and you
+shiver. Distant chanting can be heard, as well as the occasional tolling
+of a large bell. You hear more chanting, then a terrible scream. Oh dear...
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30886
+EKeyvnum -1
+Exit south 30883
+EKeyvnum -1
+End
+
+
+#30885
+Name The West Wing of the Unholy Chapel~
+Desc You are standing in the west wing, among pews stained with blood and other
+fluids, most of them unidentifiable. A great cry goes up to the east. You
+peer in that direction and- OH MY GOD!
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 30886
+EKeyvnum -1
+End
+
+
+#30886
+Name The Unholy Chapel~
+Desc It is here that the monks perform their unholy rites, summoning unnameable
+horrors from the deepest pits of hell. You see sick murals covering the
+walls, depicting the sacrifice of youths of all races to perverted, twisted
+demons and devils.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 30888
+EKeyvnum -1
+Exit south 30884
+EKeyvnum -1
+Exit west 30885
+EKeyvnum -1
+End
+
+
+#30888
+Name The Altar~
+Desc You have reached the core of the evil, and the wicked heart that pulses the 
+energy through it. Though you have battled scores of opponents, rarely have 
+you previously encountered such evil. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 30886
+EKeyvnum -1
+End
+
+
+#30889
+Name The Inner Sanctum~
+Desc You have entered the quarters of the Abbot, master of the unholy abbey and
+the foe you have dreaded facing the most. You can stop here to prepare for
+the upcoming battle if you desire.
+~
+RoomFlags dark indoors safe~
+Sector inside~
+Exit east 30890
+Exit west 30883
+EKeyvnum -1
+End
+
+
+#30890
+Name The Quarters of the Abbot~
+Desc These rooms, as you expected, are lavishly appointed with rich tapestries
+and fine furniture from all over the world. You didn't think the abbot would
+live so simply as his followers! You see a bathroom to the east, a study
+to the south and a massive bedchamber to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30891
+EKeyvnum -1
+Exit east 30893
+EKeyvnum -1
+Exit south 30892
+EKeyvnum -1
+Exit west 30889
+End
+
+
+#30891
+Name A Bedchamber~
+Desc This room is dominated by a great pile of rugs and cushions in the center
+of the room, upon which the abbot reclines with whatever servant has taken
+his fancy. At present it appears to be deserted...
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 30890
+EKeyvnum -1
+End
+
+
+#30892
+Name A Study~
+Desc This study is more of a library, filled as it is with scores of grimoires
+detailing the most despicable acts imaginable. A small desk, not dissimilar
+to those you saw the maste rmonks using below, stands in the center of the
+room, near a fireplace which burns magically without requiring fuel.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30890
+EKeyvnum -1
+End
+
+
+#30893
+Name A Bathroom~
+Desc This chamber contains a large bath, which fills with natural spring water
+from some hidden source. It appears to be palatable, surprising in this
+foul place.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 30890
+EKeyvnum -1
+End
+
+
+#30894
+Name Under Construction~
+Desc This section of the abbey is being massively refurbished, for purposes
+unknown to you. Sounds of construction echo all around you, and you proceed
+with a fair deal of caution, not knowing of what mein the laborers may be.
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 30883
+EKeyvnum -1
+Exit south 30896
+EKeyvnum -1
+End
+
+
+#30895
+Name Under Construction~
+Desc This section of the abbey is being massively refurbished, for purposes
+unknown to you. Sounds of construction echo all around you, and you proceed
+with a fair deal of caution, not knowing of what mein the laborers may be.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 30896
+EKeyvnum -1
+End
+
+
+#30896
+Name Under Construction~
+Desc This section of the abbey is being massively refurbished, for purposes
+unknown to you. Sounds of construction echo all around you, and you proceed
+with a fair deal of caution, not knowing of what mein the laborers may be.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30894
+EKeyvnum -1
+Exit east 30897
+EKeyvnum -1
+Exit south 30898
+EKeyvnum -1
+Exit west 30895
+EKeyvnum -1
+End
+
+
+#30897
+Name Under Construction~
+Desc This section of the abbey is being massively refurbished, for purposes
+unknown to you. Sounds of construction echo all around you, and you proceed
+with a fair deal of caution, not knowing of what mein the laborers may be.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 30896
+EKeyvnum -1
+End
+
+
+#30898
+Name Under Construction~
+Desc This section of the abbey is being massively refurbished, for purposes
+unknown to you. Sounds of construction echo all around you, and you proceed
+with a fair deal of caution, not knowing of what mein the laborers may be.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30896
+EKeyvnum -1
+End
+
+
+#30899
+Name An Empty Chamber~
+Desc You open the door and step into an apparently empty chamber. Neither rug
+nor tapestry can be seen, nor chair nor table. There is no other exit besides
+the one you entered. Strange...
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit east 30883
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 30811 spec_breath_acid
+M 30814 spec_breath_fire
+S
+
+
+
+#RESETS2
+M 0 30812 1 30800 1
+M 0 30814 1 30802 1
+M 0 30811 1 30819 1
+M 0 30813 1 30824 1
+M 0 30810 1 30837 1
+M 0 30801 7 30840 1
+M 0 30801 7 30841 1
+M 0 30801 7 30842 1
+M 0 30801 7 30843 1
+M 0 30800 4 30844 1
+M 0 30800 4 30845 1
+M 0 30800 4 30846 1
+M 0 30802 4 30847 1
+M 0 30815 2 30851 2
+M 0 30802 4 30862 1
+M 0 30802 4 30870 1
+M 0 30802 4 30874 1
+M 0 30803 3 30878 1
+M 0 30803 3 30879 1
+M 0 30805 1 30880 1
+M 0 30801 7 30884 1
+M 0 30803 3 30885 1
+M 0 30800 4 30886 1
+M 0 30806 1 30888 1
+M 0 30807 1 30888 1
+M 0 30801 7 30889 1
+M 0 30804 1 30892 1
+M 0 30801 7 30894 1
+M 0 30808 3 30896 3
+M 0 30809 1 30898 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

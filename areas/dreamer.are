@@ -1,0 +1,2356 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Dreamer's Cottage~
+ShortName   ~
+Builders    kyarra reath~
+Credits     Reath~
+VNUMs       80251 80300
+LComment    [ QUEST ]
+AFlags  noteleport noscry hidden~
+LRange      80 91
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Thu Sep  1 23:56:11 2005~
+End
+
+
+
+#MOBILES
+#80251
+Name small malkatar girl~
+ShortD a small malkatar girl~
+LongD A small malkatar girl sleeps here, whimpering occasionally.~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc dont_wander no_tame stay_area update_always~
+Act2   allskills avoids_all_attacks~
+AffBy  sleep~
+AffBy2 no_dispel etheral~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 80257 100~
+MProg COMMAND 80252 sleep cot~
+END
+
+#80252
+Name unseen_dream_watcher_80252~
+ShortD unseen_dream_watcher_80252~
+LongD UNSEEN_DREAM_WATCHER_80252~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 80251 100~
+MProg RANDOM 80260 100~
+MProg LOGOUTROOM 80263 100~
+END
+
+#80253
+Name sleeper hazy body~
+ShortD a hazy body~
+LongD A hazy body sleeps on the cot.~
+Desc ~
+Race other~
+Align 0 0
+Level 1
+Hitroll 200
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sleep haste regeneration~
+Off    dodge parry~
+Res    magic~
+Form   non_skinable~
+StartP standing~
+DefPos sleeping~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DEATH 80257 100~
+END
+
+#80254
+Name girlish doll~
+ShortD a small girlish doll~
+LongD A small doll sits at the table politely.~
+Desc ~
+Race human~
+Align 0 0
+Level 92
+Hitroll 200
+HitDice 9d13+445
+ManaDice 9d13+575
+DamDice 10d11+47
+DamType none
+AC -620 -620 -620 -539
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 80253 100~
+MProg COMMAND 80255 untie doll~
+MProg DEATH 80256 100~
+END
+
+#80255
+Name matronly doll~
+ShortD a tall matronly doll~
+LongD A tall matronly doll prepares something imaginary at a play oven.~
+Desc ~
+Race human~
+Align 0 0
+Level 94
+Hitroll 0
+HitDice 9d13+455
+ManaDice 9d13+600
+DamDice 10d12+49
+DamType none
+AC -640 -640 -640 -563
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  haste~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 80254 10~
+END
+
+#80256
+Name mannered daughter~
+ShortD a mannered daughter~
+LongD A mannered daughter sits here.~
+Desc ~
+Race human~
+Align 0 0
+Level 96
+Hitroll 0
+HitDice 10d13+460
+ManaDice 10d13+620
+DamDice 10d12+51
+DamType none
+AC -660 -660 -660 -541
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 80264 now~
+END
+
+#80257
+Name caring mother~
+ShortD a caring mother~
+LongD A caring mother serves breakfast here.~
+Desc ~
+Race human~
+Align 0 0
+Level 97
+Hitroll 0
+HitDice 10d13+465
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType none
+AC -670 -670 -670 -549
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste berserk~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg RANDOM 80259 100~
+END
+
+#80258
+Name battered malkatar girl~
+ShortD a battered malkatar girl~
+LongD A battered little malkatar girl huddles in a corner.~
+Desc ~
+Race human~
+Align 0 0
+Level 97
+Hitroll 0
+HitDice 10d13+465
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType none
+AC -670 -670 -670 -582
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DEATH 80256 100~
+MProg RANDOM 80261 100~
+END
+
+#80259
+Name frightened malkatar girl~
+ShortD a frightened malkatar girl~
+LongD A fightened little girl huddles here.~
+Desc ~
+Race human~
+Align 0 0
+Level 99
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+630
+DamDice 10d13+54
+DamType none
+AC -690 -690 -690 -579
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DEATH 80256 100~
+MProg GRALL 80262 100~
+END
+
+#80260
+Name chittering rats_quest~
+ShortD a pack of chittering rats~
+LongD A pack of chittering rats scurries underfoot.~
+Desc ~
+Race rat~
+Align 0 0
+Level 99
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+630
+DamDice 10d13+54
+DamType none
+AC -690 -690 -690 -579
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste~
+Imm    mental~
+Form   mammal~
+Part   head heart feet eye tail claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80267
+Name plagued man messenger~
+ShortD a plagued man~
+LongD A plagued man darts to and fro.~
+Desc Here a plagued man edges around a corner carrying a small parchment clutched 
+at his breast. His eyes dart in every direction as he is wracked with 
+coughs. 
+~
+Race Lich~
+Align -3 -3
+XPMod 130
+Level 86
+Hitroll 10
+HitDice 8d12+420
+ManaDice 10d13+620
+DamDice 9d10+42
+DamType phantasm
+AC -550 -550 -550 -495
+Wealth 700
+Act    npc dont_wander no_tame aggressive stay_area mage~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared protect_evil protect_good pass_door plague dark_vision~
+Off    area_attack disarm dodge fade fast~
+Imm    summon charm poison negative drowning sleep scry hunger thirst fear~
+Res    illusion scry~
+Vuln   fire holy light~
+Form   edible poison magical non_skinable sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material bone
+END
+
+#80290
+Name girlish doll~
+ShortD a small girlish doll~
+LongD A small doll stands here.~
+Desc ~
+Race human~
+Align 0 0
+Level 108
+Hitroll 200
+HitDice 20d20+1000
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType none
+AC -800 -800 -800 -664
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   allskills~
+AffBy  haste dark_vision regeneration~
+Off    dodge fade parry~
+Imm    poison disease~
+Res    weapon~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg FIGHT 80290 100~
+MProg SPEECH 80280 prize~
+END
+
+#80291
+Name turbo ninja monkey team~
+ShortD the turbo ninja monkey team~
+LongD The turbo ninja monkey team builds their robot here!~
+Desc ~
+Race human~
+Align 0 0
+Level 1000
+Hitroll 200
+HitDice 20d20+1000
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType none
+AC -800 -800 -800 -664
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  haste dark_vision regeneration~
+Off    dodge fade fast parry~
+Imm    poison disease~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg FIGHT 80291 100~
+END
+
+#80295
+Name demon warrior_1~
+ShortD a demonic warrior~
+LongD A demonic warrior slithers through here.~
+Desc ~
+Race demon~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d9+500
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType none
+AC -300 -300 -300 -264
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_hidden sanctuary infrared flying dark_vision~
+Off    tail~
+Imm    summon charm fire poison disease hunger thirst~
+Res    illusion scry~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80300
+Name unseen_dream_giver~
+ShortD unseen_dream_giver~
+LongD Unseen_Dream_Giver~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 80300 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#80251
+Name simple wooden desk~
+Short a simple wooden desk~
+Desc A simple wooden desk resides here, a parchment resting on it.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc parchment ~
+.            `#`y-=========================================-`^ `1 For Those Who May Be Drawn Here, `1You've probably come because of the dreams. They follow you. They watch you 
+and stalk you like prey. Dreams of this place. Dreams of something dark... 
+something evil.`1 If you are anything like the many that have come before, you have dreamed 
+of the darkness at the top of the stairs. You've dreamed of the sadness and 
+hatred there perhaps? It is not what you think.`1 At the top of those stairs, you will not find a dragon to battle. You will 
+not find a demon to slay. You will find something far more terrifying. You 
+will find a small girl, the light of my life, asleep.`1 Since writing this letter, she has slept like that for three years. For 
+three years, I have watched her slumber and slept fitful nights in this 
+house. Three years I have been haunted with dreams much like yours I am 
+sure... telling me to come... to do something. It tears me apart that I am 
+unable to figure out what she wants.`1 Some thought the answer lie in sleeping next to her... sharing her dream. 
+I have carted away countless victims, souls who face the same dark dreams as 
+she faces. My own husband, an archmagus, has claimed to break this spell is 
+beyond his ability, Gods above help us. If you are wise, you will turn back.`1 If you are not... or perhaps more wise than any before you, I implore 
+you... help my daughter. Help her. Save her soul as I cannot. Though I come 
+each day and tend her, I can do no more. For a mothers eternal love, Help my 
+child. `1`1                                    Mirna                         `1            `#`y-=========================================-`^ 
+~
+End
+
+#80252
+Name cot~
+Short a cot~
+Desc A cot has been set up near the bed.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 0 K 0 0
+Weight 0
+Material unknown~
+End
+
+#80254
+Name weapon_2~
+Short a `#`ys`Yp`we`Ya`yr`^ of `wbl`Wazi`wng`^ `yl`Yi`wg`Yh`yt`^~
+Desc A spear of blazing light~
+Level 1
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 6 20 blast 0
+Weight 0
+Material unknown~
+Extra    glow magic meltdrop~
+Wear     take wield~
+Affect modifier -1 0 -1 ac 100 0
+End
+
+#80255
+Name armor_2~
+Short a `#`ym`Ya`wnt`Yl`ye`^ of light~
+Desc A `#`ym`Ya`wnt`Yl`ye`^ of light~
+Level 0
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow magic meltdrop~
+Wear     take about~
+Affect affects -1 0 -1 none 0 sanctuary
+Affect resist -1 0 -1 none 0 magic
+End
+
+#80256
+Name arrow light weapon_3~
+Short an `#`Ya`yr`Wr`yo`Yw`^ of light~
+Desc An arrow of light shouldn't be here.~
+Level 92
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 10 10 slash E
+Weight 0
+Material unknown~
+Extra    glow magic~
+Wear     take wield~
+End
+
+#80257
+Name hole~
+Short a small hole~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 999 0 G 80260 0
+Weight 0
+Material unknown~
+Extra    nopurge~
+End
+
+#80258
+Name book scriptures power innocence~
+Short (no short description 80258)~
+Desc (no description 80258)~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#80267
+Name black parchment ~
+Short a black parchment~
+Desc A black parchment lies here~
+Level 60
+ItemType scroll~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 80 'spiritual champion' '' '' ''
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#80276
+Name token_mob_10_80276~
+Short token_mob_10_80276~
+Desc Token_mob_10_80276~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80277
+Name token_mob_20_80277~
+Short token_mob_20_80277~
+Desc Token_mob_20_80277~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80278
+Name token_mob_30_80278~
+Short token_mob_30_80278~
+Desc Token_mob_30_80278~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80279
+Name token_mob_40_80279~
+Short token_mob_40_80279~
+Desc Token_mob_40_80279~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80280
+Name token_mob_50_80280~
+Short token_mob_50_80280~
+Desc Token_mob_50_80280~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80281
+Name token_mob_60_80281~
+Short token_mob_60_80281~
+Desc Token_mob_60_80281~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80282
+Name token_mob_70_80282~
+Short token_mob_70_80282~
+Desc Token_mob_70_80282~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80283
+Name token_mob_80_80283~
+Short token_mob_80_80283~
+Desc Token_mob_80_80283~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80284
+Name token_mob_90_80284~
+Short token_mob_90_80284~
+Desc Token_mob_90_80284~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80285
+Name token_mob_100_80285~
+Short token_mob_100_80285~
+Desc Token_mob_100_80285~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80286
+Name token_plr_10_80286~
+Short token_plr_10_80286~
+Desc Token_plr_10_80286~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80287
+Name token_plr_20_80287~
+Short token_plr_20_80287~
+Desc Token_plr_20_80287~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80288
+Name token_plr_30_80288~
+Short token_plr_30_80288~
+Desc Token_plr_30_80288~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80289
+Name token_plr_40_80289~
+Short token_plr_40_80289~
+Desc Token_plr_40_80289~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80290
+Name token_plr_50_80290~
+Short token_plr_50_80290~
+Desc Token_plr_50_80290~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80291
+Name token_plr_60_80291~
+Short token_plr_60_80291~
+Desc Token_plr_60_80291~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80292
+Name token_plr_70_80292~
+Short token_plr_70_80292~
+Desc Token_plr_70_80292~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80293
+Name token_plr_80_80293~
+Short token_plr_80_80293~
+Desc Token_plr_80_80293~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80294
+Name token_plr_90_80294~
+Short token_plr_90_80294~
+Desc Token_plr_90_80294~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80295
+Name token_plr_100_80295~
+Short token_plr_100_80295~
+Desc Token_plr_100_80295~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80296
+Name token_attack_mode_2~
+Short token_attack_mode_2~
+Desc Token_attack_mode_2~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#80297
+Name token_attack_mode_3~
+Short token_attack_mode_3~
+Desc Token_attack_mode_3~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#80299
+Name token_80299_dreamer_watcher~
+Short token_80299_dreamer_watcher~
+Desc Token_80299_dreamer_watcher~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#80300
+Name token_80300_dream_watch~
+Short token_80300_dream_watch~
+Desc Token_80300_dream_watch~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#80251
+Name A Small Entryway~
+Desc Though obviously lovingly tended, this sparse entryway has been neglected 
+recently, leaves from the outside strewn carelessly everywhere. A simple red 
+mat resides in the center of this small room, adding to the homey touches 
+apparent everywhere. 
+~
+Sector inside~
+Exit south 80252
+End
+
+
+#80252
+Name A Cramped House~
+Desc Though cramped with broken and useless clutter, there is an ordered sense to 
+the chaos surrounding a small desk in the center of the room. Fresh flowers 
+have been cast across the floor in an effort to remove the stuffy smell 
+apparent in the space. It is by far and large, a wasted effort. A small 
+staircase along the east wall leads upstairs. 
+~
+Sector inside~
+Exit north 80251
+Exit up 80253
+End
+
+
+#80253
+Name A Small Bedroom~
+Desc Smaller than the room downstairs, this bedroom has had a recent cleaning and 
+a lantern set into the wall keeps the area well lit. A bed, overflowing with 
+fancifully embroidered quilts and downed pillows, faces the largest of the 
+three windows that dominate the north wall. Faint whimpers sound from within 
+the bedding. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 80252
+End
+
+
+#80254
+Name A Doll House~
+Desc Redone in pastel colors, this room resembles the bedroom quite closely if 
+one had seen it in better days. A playful hand has decorated almost every 
+space with light flowers and draped cloth. If not for the broken toys that 
+litter much of the room, this might be a small child's dream. 
+~
+RoomFlags no_recall~
+Sector inside~
+End
+
+
+#80255
+Name Outside A Cottage~
+Desc Not a bird chirps in this somber clearing and little more than the trickle 
+of water coming from a small well breaks the silence. Trees squeeze together 
+too close to allow even sight of anything beyond clearing. A cottage to the 
+south provides the only respite from this utter tranquility. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit south 80256
+End
+
+
+#80256
+Name An Ornate Foyer~
+Desc This foyer is resplendant with homey touches, from the vase of fresh 
+wildflowers to the sprig of holly hanging at the doorstep. Wood paneling 
+worn down beyond the varnish in many places absorbs the little sound that 
+comes across. A second arch leads into the house proper, the smell of fresh 
+cooking leading an appetizing trail. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80255
+Exit south 80257
+End
+
+
+#80257
+Name An All-purpose Room~
+Desc A small set of chairs obviously serves as a makeshift 'sitting room' while a 
+set of chairs gathered around a dining set are the eating place nearest to 
+the kitchen. Obviously space is precious in this small room. Still, nothing 
+is out of place and everything has been meticulously ordered; no more than a 
+hint of dust can be seen on anything standing out. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80256
+Exit up 80258
+Exit down 80259
+EFlags door closed~
+End
+
+
+#80258
+Name A Child's Bedroom~
+Desc This was obviously meant to be a young child's bedroom but everything has 
+found it's way to being put away perfectly. Eery silence and cold drafts 
+crisscross through this perfectly straightened room. Though brimming with 
+colors, everything is of a sedate hue. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit down 80257
+End
+
+
+#80259
+Name A Dank Cellar~
+Desc A small cellar, cold with stale air circulating it lies at the bottom of the 
+stairs. Moisture has caused mold to grow on almost every available surface 
+and the wood supports have begun to give away under the decay. A hole is 
+prominent in one of the wooden walls. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit up 80257
+EFlags door closed~
+End
+
+
+#80260
+Name Behind the Wall~
+Desc Though dark, this area is not nearly as dank as the cellar itself. Faceless 
+stone lies to the south while decaying wooden panels stand as a wall to the 
+north providing little space here. To the east and west the passage 
+continues. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80261
+Exit west 80268
+End
+
+
+#80261
+Name A Hole In the Wall~
+Desc A jagged hole torn into the wood by decades of water freely running across 
+the back of the wooden paneling here has provided an opening to cross 
+between the cellar proper and this small passageway behind the walls. Rat 
+droppings litter almost all of the available space on the floor behind the 
+walls. Water has begun to pool around the base of the hole. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80269
+Exit east 80262
+Exit west 80260
+End
+
+
+#80262
+Name Behind the Wall~
+Desc This stone corner in the corridor has been eroded by water until it forms a 
+smooth curve. Though musky and moss-ridden, the area here has obviously been 
+inhabitted by small animals recently; droppings are apparent and small teeth 
+marks along the wooden planks forming walls to the northwest can be spotted. 
+The path continues along narrow corridors to the north and west. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80263
+Exit west 80261
+End
+
+
+#80263
+Name Behind the Wall~
+Desc This section of the corridor has begun to fall apart. The planks here have 
+been reinforced multiple times but water damage is even now eroding them 
+away yet again. To the west the wall, damaged again, is beginning to 
+crumble. To the east is a stone wall covered in moss and a steady trickle of 
+water. North and south the path continues narrowly. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80264
+Exit south 80262
+End
+
+
+#80264
+Name Behind the Wall~
+Desc Carved into the surrounding stone at sharp angles, this turn branches to the 
+south and east. The ground has been littered with rat droppings and small 
+wood chips. Trickles of water can be seen running down the wall and across 
+the floor towards meeting of two wooden walls to the southwest. To the sound 
+a narrow path continues and to the west the path broadens a bit. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit south 80263
+Exit west 80265
+End
+
+
+#80265
+Name Behind the Wall~
+Desc This area, much larger than either of the cavities to the east or west, has 
+been carved out of the stone foundations. Smoothed into a semicircle behind 
+the wooden planks that form a wall to the south, two corridors branch out 
+east and west. Small creaks and chirping sounds echo quietly through the 
+area and cold breezes blow in. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80264
+Exit west 80266
+End
+
+
+#80266
+Name Behind the Wall~
+Desc The stone in this area of the wall has begun to crumble and holes in the 
+lower portion seem similar to small dens. To the south a small passage opens 
+to another corner while to the east the entire passage widens. Little 
+scurrying noises echo through the entire passageway. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80265
+Exit south 80267
+End
+
+
+#80267
+Name Behind the Wall~
+Desc This extremely thin passage is littered with rat droppings. Wood paneling 
+well past it's prime peels and cracks to the east while eroded stone to the 
+west braces the structure overhead. To the north and south bends in this 
+dismally lit passage might be seen. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80266
+Exit south 80268
+End
+
+
+#80268
+Name Behind the Wall~
+Desc This corner has long been eroded by water. Mold has seeped into almost every 
+space that it can gain a foothold in and the smell is nothing short of 
+deathly. Everywhere faint creaks and chirps echo. To the east and north the 
+thin passage continues. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80267
+Exit east 80260
+End
+
+
+#80269
+Name A Dank Cellar~
+Desc A small cellar, cold with stale air circulating it lies at the bottom of the 
+stairs. Moisture has caused mold to grow on almost every available surface 
+and the wood supports have begun to give away under the decay. A hole is 
+prominent in one of the wooden walls. 
+~
+RoomFlags no_recall~
+Sector inside~
+Exit south 80261
+End
+
+
+#80270
+Name A Huge Study~
+Desc Man studying
+a book - Ghaa'thmada's Sciptures of Innocence and Power
+Small note at bottom marks various astrological information and possibly a birthdate.
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80273
+Exit east 80274
+Exit south 80271
+Exit west 80272
+End
+
+
+#80271
+Name A Small Nook~
+Desc Girl pretending to sleep... whispering about daddy's plans
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80270
+End
+
+
+#80272
+Name A Set of Bookshelves~
+Desc Books on demonology
+~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80270
+End
+
+
+#80273
+Name A Set of Bookshelves~
+Desc Books on the mind
+~
+RoomFlags no_recall~
+Sector inside~
+Exit south 80270
+End
+
+
+#80274
+Name A Set of Bookshelves~
+Desc Books on curses
+ A Blessing is like a beacon, beautiful and glorious; meant to be seen. A curse is like a fog, dark and dreary; it is so insidious because it hides.
+~
+RoomFlags no_recall~
+Sector inside~
+Exit west 80270
+End
+
+
+#80275
+Name Outside A Dark Tower~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80276
+End
+
+
+#80276
+Name Within A Dark Tower~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit west 80275
+Exit down 80277
+End
+
+
+#80277
+Name Within the First Circle~
+Desc Students rushing about (kids) - need Journeymaster's robe to continue on - Buttwhooped by a guard if you're missin it.
+~
+RoomFlags no_recall~
+Sector inside~
+Exit up 80276
+Exit down 80280
+Exit northeast 80278
+Exit southeast 80279
+End
+
+
+#80278
+Name An Experiment Room~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit southwest 80277
+End
+
+
+#80279
+Name A Study~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit northwest 80277
+End
+
+
+#80280
+Name Within The Second Circle~
+Desc Students rushing about (young) - need 3 pieces this time - buttwhooped by 2 guards!
+~
+RoomFlags no_recall~
+Sector inside~
+Exit up 80277
+Exit down 80283
+Exit southwest 80282
+Exit northwest 80281
+End
+
+
+#80281
+Name A Study~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit southeast 80280
+End
+
+
+#80282
+Name An Experiment Room~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit northeast 80280
+End
+
+
+#80283
+Name Within The Third Circle~
+Desc Students rushing about - need 5 pieces this time - buttwhooped by 3 guards!
+~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80285
+Exit west 80284
+Exit up 80280
+Exit down 80286
+End
+
+
+#80284
+Name A Huge Library~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80283
+End
+
+
+#80285
+Name A Small Library~
+Desc ~
+RoomFlags no_recall~
+Sector inside~
+Exit west 80283
+End
+
+
+#80286
+Name The Council Room~
+Desc Oh... you walked in lookin like daddy... this is gonna hurt somethin special...
+~
+RoomFlags no_recall~
+Sector inside~
+Exit up 80283
+End
+
+
+#80287
+Name A Hall of Mirrors~
+Desc Time to play the "how much were YOU paying attention game!"
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80288
+Exit east 80290
+Exit south 80289
+Exit west 80291
+Exit northeast 80294
+Exit southeast 80295
+Exit southwest 80293
+Exit northwest 80292
+End
+
+
+#80288
+Name Before A Mirror~
+Desc Angry Reflection - Want me free? Bring me a Broken Dream.
+~
+RoomFlags no_recall~
+Sector inside~
+Exit south 80287
+End
+
+
+#80289
+Name Before A Mirror~
+Desc Afraid - Want me free? Bring me a Dark Memory
+~
+RoomFlags no_recall~
+Sector inside~
+Exit north 80287
+End
+
+
+#80290
+Name Before A Mirror~
+Desc Blissfully Unaware - Want me free? Bring me a Cold Truth
+~
+RoomFlags no_recall~
+Sector inside~
+Exit west 80287
+End
+
+
+#80291
+Name Before A Mirror~
+Desc Sad - Want me free? Bring me a Reason to Live
+~
+RoomFlags no_recall~
+Sector inside~
+Exit east 80287
+End
+
+
+#80292
+Name Before A Mirror~
+Desc Coldly Logical - Want me free? Bring me a Secret Wish
+~
+RoomFlags no_recall~
+Sector inside~
+Exit southeast 80287
+End
+
+
+#80293
+Name Before A Mirror~
+Desc Animal - Want me free? Bring me a Glimmer of Humanity
+~
+RoomFlags no_recall~
+Sector inside~
+Exit northeast 80287
+End
+
+
+#80294
+Name Before A Mirror~
+Desc Saint - Want me free? Bring me a Little Girl's Pain
+~
+RoomFlags no_recall~
+Sector inside~
+Exit southwest 80287
+End
+
+
+#80295
+Name Before A Mirror~
+Desc Insane - Want me free? Bring me a Thirst for Knowledge
+~
+RoomFlags no_recall~
+Sector inside~
+Exit northwest 80287
+End
+
+
+#80296
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 80254 spec_cast_mage
+M 80267 spec_cast_mage
+S
+
+
+
+#RESETS2
+O 0 80251 -1 80252
+M 0 80251 1 80253 1
+O 0 80252 -1 80253
+M 0 80254 1 80254 1
+M 0 80255 1 80254 1
+M 0 80252 50 80255 1
+M 0 80252 50 80256 1
+M 0 80257 1 80257 1
+M 0 80252 50 80257 1
+M 0 80256 1 80257 1
+M 0 80252 20 80258 1
+M 0 80258 1 80259 1
+M 0 80252 50 80259 1
+O 0 80257 -1 80259
+M 0 80259 1 80260 1
+M 0 80252 50 80260 1
+M 0 80252 50 80261 1
+M 0 80252 50 80262 1
+M 0 80252 50 80263 1
+M 0 80252 50 80264 1
+M 0 80252 50 80265 1
+M 0 80252 50 80266 1
+M 0 80252 50 80267 1
+M 0 80252 50 80268 1
+M 0 80252 50 80269 1
+M 0 80252 50 80270 1
+M 0 80252 50 80271 1
+M 0 80252 50 80272 1
+M 0 80252 50 80273 1
+M 0 80252 50 80274 1
+M 0 80252 50 80275 1
+M 0 80252 50 80276 1
+M 0 80252 50 80277 1
+M 0 80252 50 80278 1
+M 0 80252 50 80279 1
+M 0 80252 50 80280 1
+M 0 80252 50 80281 1
+M 0 80252 50 80282 1
+M 0 80252 50 80283 1
+M 0 80252 50 80284 1
+M 0 80252 50 80285 1
+M 0 80252 50 80286 1
+M 0 80252 50 80287 1
+M 0 80252 50 80288 1
+M 0 80252 50 80289 1
+M 0 80252 50 80290 1
+M 0 80252 50 80291 1
+M 0 80252 50 80292 1
+M 0 80252 50 80293 1
+M 0 80252 50 80294 1
+M 0 80252 50 80295 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#80300
+title Dream_Giver~
+author Reath~
+code mob seeall
+if players > 0
+mob remember $r
+if hastoken $q 80300
+end
+endif
+if rand 20
+and level $q > 85
+if pos $q 'sleeping'
+or pos $q 'resting'
+if rand 20
+mq3 mob echoat $q `#`sDark`^ `#`wsh`Wado`wws`^ writhe and shiver around you...
+else
+if rand 25
+mq1 mob echoat $q A `#`ycottage`^ door opens to the south and `#`sdarkness`^ greets you...
+mq3 mob echoat $q A man's `#`Ylaughter`^ resounds from inside...
+else
+if rand 33
+mq1 mob echoat $q Someone whispers behind you '`#`cDaddy's coming`^.'...
+mq3 mob echoat $q Heavy `#`rbreathing`^ begins across your neck...
+else
+if rand 50
+mq1 mob echoat $q A `#`Ccold`^ `cwind`^ blows up your spine...
+mq3 mob echoat $q A woman cries somewhere in the distance...
+else
+mq1 mob echoat $q `#`RClaws`^ tear into your `#`yflesh`^!!!
+mq3 mob echoat $q A child screams out beside you in `#`sterror`^!!!
+endif
+endif
+endif
+endif
+mob oload 80300
+mob ttimer 80300 $i 3
+mob tgive token $n
+endif
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1118455092
+END
+
+#80299
+title AI_Plr_Life_Tracking~
+author Reath~
+code mob junk all.token_plr
+ 
+if hpcnt $n <= 10
+mob oload 80286
+end
+endif
+ 
+if hpcnt $n <= 20
+mob oload 80287
+end
+endif
+ 
+if hpcnt $n <= 30
+mob oload 80288
+end
+endif
+ 
+if hpcnt $n <= 40
+mob oload 80289
+end
+endif
+ 
+if hpcnt $n <= 50
+mob oload 80290
+end
+endif
+ 
+if hpcnt $n <= 60
+mob oload 80291
+end
+endif
+ 
+if hpcnt $n <= 70
+mob oload 80292
+end
+endif
+ 
+if hpcnt $n <= 80
+mob oload 80293
+end
+endif
+ 
+if hpcnt $n <= 90
+mob oload 80294
+end
+endif
+ 
+if hpcnt $n <= 100
+mob oload 80295
+end
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1106593438
+END
+
+#80298
+title AI_Mob_Life_Tracking~
+author Reath~
+code mob junk all.token_mob
+ 
+if hpcnt $i <= 10
+mob oload 80276
+end
+endif
+ 
+if hpcnt $i <= 20
+mob oload 80277
+end
+endif
+ 
+if hpcnt $i <= 30
+mob oload 80278
+end
+endif
+ 
+if hpcnt $i <= 40
+mob oload 80279
+end
+endif
+ 
+if hpcnt $i <= 50
+mob oload 80280
+end
+endif
+ 
+if hpcnt $i <= 60
+mob oload 80281
+end
+endif
+ 
+if hpcnt $i <= 70
+mob oload 80282
+end
+endif
+ 
+if hpcnt $i <= 80
+mob oload 80283
+end
+endif
+ 
+if hpcnt $i <= 90
+mob oload 80284
+end
+endif
+ 
+if hpcnt $i <= 100
+mob oload 80285
+end
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1106584743
+END
+
+#80293
+title bug ix~
+author Reath~
+code mob seeall
+mob trans $i 3000
+emote leaves east.
+mob trans self reath
+~
+disabled false
+last_editor Reath~
+last_editdate 1125251726
+END
+
+#80292
+author Reath~
+code if !wears $n weapon_2
+say Yup, you have it!
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1115029337
+END
+
+#80291
+title AI_Setup_2~
+author Reath~
+code If hpcnt $i <= 40
+  If hastoken $i 80296
+  else
+    mob mload 80295
+    mob echo $I chants 'Envita Demonas'.
+    mob echo A demonic warrior forms from the shadows and attacks!
+    mob force warrior_1 rescue $i
+kill rosa
+    mob oload 80296
+    mob ttimer $i 80296 1
+  endif
+else 
+  If rand 45
+    If hastoken $i 80297
+    else
+      mob echo $I chants 'Arsladi Prismas'.
+      mob oload 80256
+      mob oload 80297
+      mob transfer self 80296
+      mob cast 'decay' weapon_3
+      wear weapon_3 
+      mob transfer self $n
+      hurl $n
+    endif
+  else 
+    If rand 20
+    and wears $n 80256
+      mob echo $I chants 'Prismas Infernas'.
+      mob echoat $n $I smiles as an arrow of light incinerates in your flesh!
+      mob remove $n 80256
+      mob junk token_attack_mode_3
+      mob echoaround $n $I smiles as an arrow of light explodes in $N's flesh!
+      mob damage 100 150 lethal
+    endif
+  endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1117910998
+END
+
+#80290
+title AI_Setup_1~
+author Reath~
+code mob seeall
+ 
+if hpcnt $n >= 100
+and hastoken $i 80293
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 90
+and hastoken $i 80292
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 80
+and hastoken $i 80291
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 70
+and hastoken $i 80290
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 60
+and hastoken $i 80289
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 50
+and hastoken $i 80288
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 40
+and hastoken $i 80287
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+if hpcnt $n >= 30
+and hastoken $i 80286
+and !hastoken $i 80296
+mob oload 80296
+endif
+ 
+ 
+if hpcnt $i < 90
+and hastoken $i 80285
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 80
+and hastoken $i 80284
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 70
+and hastoken $i 80283
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 60
+and hastoken $i 80282
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 50
+and hastoken $i 80281
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 40
+and hastoken $i 80280
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 30
+and hastoken $i 80279
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 20
+and hastoken $i 80278
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+if hpcnt $i < 10
+and hastoken $i 80277
+and !hastoken $i 80297
+mob oload 80297
+endif
+ 
+mob call 80298 $n null null
+ 
+mob call 80299 $n null null
+ 
+if hastoken $i 80296
+and !wears $i weapon_2
+mob echo Energy blazes as $I focuses her will.
+mob echo $I forms the energy into a spear with a word.
+mob oload 80254 1 wield
+endif
+ 
+if hastoken $i 80297
+and !wears $i armor_2
+mob echo $I is shrouded in shards of light!
+mob echo $I shapes the light with a word.
+mob oload 80255 1 wear
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1115614239
+END
+
+#80286
+title AI_Life_Checking~
+author Reath~
+code if hpcnt $n <= 100
+and hastoken $i 80295
+end
+endif
+ 
+if hpcnt $n <= 100
+and hastoken $i 80294
+end
+endif
+ 
+if hpcnt $n <= 100
+and hastoken $i 80293
+end
+endif
+ 
+if hpcnt $n <= 90
+and hastoken $i 80292
+end
+endif
+ 
+if hpcnt $n <= 80
+and hastoken $i 80291
+end
+endif
+ 
+if hpcnt $n <= 70
+and hastoken $i 80290
+end
+endif
+ 
+if hpcnt $n <= 60
+and hastoken $i 80289
+end
+endif
+ 
+if hpcnt $n <= 50
+and hastoken $i 80289
+end
+endif
+ 
+if hpcnt $n <= 40
+and hastoken $i 80288
+end
+endif
+ 
+if hpcnt $n <= 30
+and hastoken $i 80287
+end
+endif
+ 
+if hpcnt $n <= 20
+and hastoken $i 80286
+end
+endif
+ 
+mob damage $n 50 100 lethal
+mob cast heal $i
+mob echoat $n $I smiles as energy flows from you into her!
+mob echoaround $n White energy flows from $N to $I!
+~
+disabled false
+last_editor Reath~
+last_editdate 1106597829
+END
+
+#80280
+title Wheel of Goodies~
+author Reath~
+code if rand 20
+say Potion
+else if rand 25
+say spell\language
+else if rand 33
+say Experience
+else if rand 50
+say Gold!!!
+else
+say Let em choose
+endif
+endif
+endif
+endif
+endif
+~
+disabled true
+disabled_text `S#############
+             Disabling mobprog `G80280`x,`Y80290`x,`B30008`x,`r11`x,`C0`x:
+             `YMobprog: endif without if, mob 80290 prog 80280
+`x             Trigger type 'SPEECH' phrase 'prize'
+             Call stack info:
+             MOBprog 80280 on mob 80290 (in room 30008), line 11
+`S#############
+
+~
+last_editor Reath~
+last_editdate 1122350457
+END
+
+#80264
+author Reath~
+code say OK
+mob endprison $n
+~
+disabled false
+last_editor Reath~
+last_editdate 1116193628
+END
+
+#80263
+author Reath~
+disabled false
+last_editor Reath~
+last_editdate 1115029519
+END
+
+#80262
+title Rats_Start~
+author Reath~
+code mob seeall
+if room $i == 80260
+whisper $n Daddy says rats will get me if I play back here
+emote searches the darkness.
+whisper $n he says rats like little girls toesies.
+mq1 mob echo A commotion comes from behind the wall to the north.
+mq1 emote starts looking around nervously.
+mq2 mob echo A scream is followed by a rush of heat through the wall.
+mq2 whisper $n The rats are coming! The rats are coming!
+mq2 emote screams.
+mq3 emote runs through the shadows.
+mq3 mob trans self 80265
+mob at 80260 mob mload 80260
+mob at 80261 mob mload 80260
+mob at 80262 mob mload 80260
+mob at 80263 mob mload 80260
+mob at 80264 mob mload 80260
+mob at 80265 mob mload 80260
+mob at 80266 mob mload 80260
+mob at 80267 mob mload 80260
+mob at 80268 mob mload 80260
+end
+endif
+if mobexists rats_quest
+whisper $n Rats! Rats everywhere! Chewing and gnawing, clawing and biting.
+emote whimpers.
+else
+sayto $n [in a small and forlorn voice]Daddy said the rats would get me.
+smote A small tear rolls down *'s cheek.
+mq2 sayto $n I heard him.. through the wall.[her face grows cold as she draws away] Daddy said my gift was precious. I won't let him take it.
+mq2 pmote $n pushes past @ and the scene blurs.
+mq4 mob transfer $i 80260
+mq4 mob transfer $n 80270
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1108403508
+END
+
+#80261
+author Reath~
+code if rand 5
+say Daddy says good girls shouldn't go in the basement...
+else
+if rand 5
+say Daddy doesn't like it when I spy.[she shivers]Daddy says good girls eat their porrrige.
+else 
+if rand 5
+say If I'm good perhaps I'll get to come up.
+emote glances up.
+say It's soo cold. I wasn't that bad.
+emote bursts into tears.
+endif
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1107806062
+END
+
+#80260
+title Voluntary_Leaving~
+author Reath~
+code if players > 0
+and !isimmort $n
+mob remember $r
+if pos $q resting
+or pos $q sleeping
+mob echoat $q You feel the dream drift away from you...
+mob at 80253 mob purge sleeper
+mob at 80253 mob echo $Q falls out of the haze on the cot!
+mob transfer $q 80253
+~
+disabled false
+last_editor Reath~
+last_editdate 1115033928
+END
+
+#80259
+author Reath~
+code if rand 3
+sayto daughter I said eat your porrige dear.
+mob force daughter sayto mother [in a fearful tone]Yes Ma'am.
+else 
+if rand 3
+sayto daughter Mind your dress dear.
+mob force daughter emote nods rigidly.
+mob force daughter sayto mother [in a quavering voice]I do ma'am. I do.
+else 
+if rand 3
+sayto daughter Don't forget you have chores to do dear.
+mob force daughter emote looks terrified.
+mob force daughter sayto mother [her voice cracking]Never that ma'am. Never that!
+endif
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1107801428
+END
+
+#80258
+title Sleeper_Remembers_Host~
+author Reath~
+code mob remember $n
+~
+disabled false
+last_editor Reath~
+last_editdate 1107793352
+END
+
+#80257
+title Sleeper_Killed~
+author Reath~
+code mob echoat $q You feel something tear at your very soul!
+mob echo The haze dissolves!
+mob trans $q $i
+if charhere $q
+mob echoaround $q $Q tumbles out of it!
+mob damage $q 500 500 
+mob oload 80300
+mob ttimer $i 80300 3
+mob forget
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1107793271
+END
+
+#80256
+title Kick Out!~
+author Reath~
+code mq1 mob echoat $n Everything begins to blur as a girl screams in the distance...
+ 
+mq4 mob damage 500 500
+mq5 mob trans $n 80253
+~
+disabled false
+last_editor Reath~
+last_editdate 1107759941
+END
+
+#80255
+title Doll_House_End~
+author Reath~
+code if pos $i sitting
+emote rubs her wrists.
+stand
+say [in a more human voice] Mommy says good girls don't keep secrets.
+mq1 say Mommy says good girls don't have a reason to keep secrets.
+mq2 sayto $n [her eyes meeting yours] Mommy doesn't know my secrets.
+mq3 say I don't even know my secrets anymore.
+mq3 emote breaks into tears and everything begins to dissolve.
+mq4 mob echo With a lurch it begins to reform into another scene.
+mq4 mob trans $n 80255
+if mobhere 80255
+else
+mq4 mob mload 80255
+endif
+mq4 sit
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1107759571
+END
+
+#80254
+title Doll_House_Mother~
+author Reath~
+code if rand 30
+say [in a cold tone]Good girls learn to speak only when spoken to.
+else if rand 50
+say [without looking over her shoulder] Best that you struggle against the wind rather than expect to get out of my punishment child.
+else
+sayto doll Perhaps if you learn to be bidable this will be the last time [with a shrewd glance] I doubt it.
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G80254`x,`Y80255`x,`B80254`x,`r7`x,`C2`x:
+             `YMobprog: endif without if, mob 80255 prog 80254
+`x             Trigger type 'RANDOM' phrase '10'
+             Call stack info:
+             MOBprog 80252 on mob 80251 (in room 80253), line 4
+             MOBprog 80254 on mob 80255 (in room 80254), line 7
+`S#############
+
+~
+last_editor Reath~
+last_editdate 1107758928
+END
+
+#80253
+title Doll_House~
+author Reath~
+code if rand 10
+and pos $i sitting
+if rand 50
+say [pleading quietly] Untie me please? I won't be bad. I'll be a good girl.
+else
+emote struggles against a set of delicate chains holding her hands together in her lap.
+endif
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1107757998
+END
+
+#80252
+title Enter_The_Dream~
+author Reath~
+code mob seeall
+if mobhere sleeper
+  mob echoat $n It would be near impossible to sleep here with the snores coming from the cot.
+  end
+endif
+mob echoat $n You feel yourself drift away.
+mob echoaround $n As $N falls onto the cot $s body grows hazy.
+mob trans $n 80254
+mob mload 80253
+mob force sleeper sleep cot
+~
+disabled false
+last_editor Reath~
+last_editdate 1107802054
+END
+
+#80251
+title Dreamer_Watcher_Program~
+author Reath~
+code If players > 1
+mq1 mob echoat $n Everything begins to blur as a girl screams in the distance...
+mq4 mob damage 500 500
+mq5 mob trans $n 80253
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1105341987
+END
+
+#0
+
+
+#$

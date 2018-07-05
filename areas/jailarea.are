@@ -1,0 +1,2676 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Kralthraz Prison~
+ShortName   Kralthraz Prison~
+Builders    None~
+Credits     Echmoro~
+VNUMs       10200 10394
+LComment    `#`S[ `RPRISON`S]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      R~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#10200
+Name gate guard prison~
+ShortD gate guard~
+LongD A large, well armed prison guard stands here, watching the door closely.~
+Desc ~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -530
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    dodge kick~
+Imm    summon charm sleep illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material human
+END
+
+#10201
+Name prison receptionist~
+ShortD prison receptionist~
+LongD A receptionist sits here behind a large wooden desk.~
+Desc ~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -162
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge~
+Imm    summon charm mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10202
+Name prison guard~
+ShortD a prison guard~
+LongD A large, well-armed prison guard stands here, keeping order.~
+Desc ~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -530
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   allow_feed~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    dodge kick~
+Imm    summon charm sleep illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material human
+MProg PREKILL 10213 100~
+END
+
+#10203
+Name parole officer rozalyn~
+ShortD the parole officer~
+LongD Rozalyn the parole officer is here to listen to your plea.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -609
+Wealth 0
+Act    npc dont_wander no_tame stay_area train gain~
+Act2   allskills avoids_all_attacks crime_points murder_50_pts murder_100_pts~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge~
+Imm    summon charm mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 10201 100~
+MProg BRIBE 10203 750000~
+MProg BRIBE 10204 250000~
+MProg SPEECH 10208 execution~
+MProg PREKILL 10213 100~
+MProg BRIBE 10205 500000~
+END
+
+#10204
+Name prison guard~
+ShortD a prison guard~
+LongD A large, burly prison guard is here, watching over the prisoners.~
+Desc ~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -530
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    dodge kick~
+Imm    summon charm sleep illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material human
+MProg EXIT 10210 south~
+MProg PREKILL 10213 100~
+END
+
+#10205
+Name a rock~
+ShortD a rock~
+LongD A rock sits here, waiting to be broken.~
+Desc A rock is here, just waiting to be broken up.  `1Use the `RBreak Rock`x command.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg COMMAND 10209 break rock~
+MProg PREKILL 10211 100~
+END
+
+#10300
+Name unseen_cell_guard~
+ShortD a prison guard~
+LongD Unseen Prison Cell Watcher~
+Desc ~
+Race human~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg LOGINROOM 10202 100~
+MProg TICK 10202 100~
+MProg LOGINROOM 10202 1~
+MProg TICK 10200 25~
+END
+
+#10301
+Name unseen_door_opener~
+ShortD unseen door opener~
+LongD Unseen Door Opener~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_invis detect_hidden sanctuary~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg TICK 10212 50~
+MProg TICK 10207 100~
+MProg TICK 10206 100~
+END
+
+#10302
+Name unseen_prison_opener~
+ShortD unseen prison opener~
+LongD Unseen_prison_opener~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_invis detect_hidden sanctuary~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#10200
+Name ratty bed flea-ridden mattres~
+Short a ratty bed~
+Desc A small flea-ridden mattress lies here.~
+Level 1
+ItemType furniture~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 3 999 BEHK 140 140
+Weight 100
+Material cloth~
+Extra    nodegrade~
+End
+
+#10201
+Name prison key~
+Short a prison key~
+Desc A intricate prison key lies here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material steel~
+Extra    inventory nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#10202
+Name water bowl~
+Short a water bowl~
+Desc A small stone bowl is in the corner full of water.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 1000 water 0 0
+Weight 0
+Material water~
+End
+
+#10203
+Name prison pants~
+Short `#`sblack `cand `Wwhite `ss`wt`sr`wi`sp`we`sd `cprisoner pants`^~
+Desc A pair of `#`sblack `cand `Wwhite `ss`wt`sr`wi`sp`we`sd `cprisoner pants`^ are here.~
+Level 0
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove inventory rotdeath nonmetal nodegrade burnproof norestring~
+Wear     take legs~
+ExtraDesc prison pants~
+PROPERTY OF KRALTHRAZ PRISON
+ 
+         CONVICT
+ 
+IF FOUND OUTSIDE PRISON
+ 
+ KILL OR REPORT THEM
+~
+End
+
+#10204
+Name prison shirt~
+Short `#`sblack `cand `Wwhite `ss`wt`sr`wi`sp`we`sd `cprisoner shirt`^~
+Desc A `#`sblack `cand `Wwhite `ss`wt`sr`wi`sp`we`sd `cprisoner's shirt`^ is here.~
+Level 0
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove inventory rotdeath nonmetal nodegrade burnproof norestring~
+Wear     take torso~
+ExtraDesc prison shirt~
+PROPERTY OF KRALTHRAZ PRISON
+ 
+         CONVICT
+ 
+IF FOUND OUTSIDE PRISON
+ 
+ KILL OR REPORT THEM
+~
+End
+
+#10205
+Name prison rules sheet~
+Short a sheet of prison rules~
+Desc A sheet of paper from Kralthraz Prison is here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow rotdeath nonmetal meltdrop burnproof norestring~
+Wear     take hold~
+ExtraDesc prison rules sheet~
+Rules of Kralthraz Prison - Disobedience Could be Death
+ 
+1. All prisoners will maintain peace and order while in the prison.
+2. Any attempt at escape will result in execution.
+3. If you are found with anything contraband (weapons, items) you
+   will be put in solitary confinement (i.e. The Hole).
+You will also be allowed to meet with your parole officer during
+   in your cell before the doors close or you will be punished severely.
+5. You will be required to work in the rock fields busting rocks for new
+   road construction. The doors will open to the rock fields, so plan on
+   being in there when they do.
+6. You will be allowed to exercise in the excercise pen. The doors will
+   open to that area at the appropriate time.
+7. You will also be allowed to meet with your parole officer and 
+   normal hours. 
+8. Visitors may be allowed provided the warden is allowing it at that time.
+ 
+Welcome to the Kralthraz Prison Complex. Making your life a living Hell.
+~
+End
+
+#10206
+Name crate box wooden~
+Short a hammer crate~
+Desc A large box with no top lies here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 1000 0
+Weight 50
+Material unknown~
+End
+
+#10207
+Name hammer sledge rock~
+Short a sledge hammer~
+Desc A large, heavy hammer lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material metal~
+Extra    meltdrop norestring nogetall~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#10200
+Name Run down Beach~
+Desc You walk onto a very desolate beach.  Up above you, the clouds are as thick 
+and black as smoke.  Moans and wails can be heard over the tremendous roar 
+of the waves clashing on nearby rockcliffs.  
+`1There is a small dirt trail that leads up the side of the hills.
+~
+Room2Flags no_area_echoes~
+Sector trail~
+Exit north 10213
+Exit east 10201
+Exit south 54958
+Exit west 10202
+End
+
+
+#10201
+Name Run down Beach~
+Desc You walk further down the beach and notice that there is nothing but rocks 
+and sand.  On the east side there are large cliffs of rock that look like 
+they are trying to escape the island.  Loud thunderous roars of the waves 
+smash into the cliffside.  
+~
+Room2Flags no_area_echoes~
+Sector field~
+Exit north 10212
+Exit east 10203
+Exit west 10200
+End
+
+
+#10202
+Name Run down Beach~
+Desc You walk further down the beach and notice that there is nothing but rocks 
+and sand.  On the east side there are large cliffs of rock that look like 
+they are trying to escape the island.  Loud thunderous roars of the waves 
+smash into the cliffside.  
+~
+Room2Flags no_area_echoes~
+Sector field~
+Exit north 10211
+Exit east 10200
+Exit west 10205
+End
+
+
+#10203
+Name Ontop of the Cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10209
+Exit east 10204
+Exit west 10201
+End
+
+
+#10204
+Name Ontop of the Cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10210
+Exit east 10223
+Exit west 10203
+End
+
+
+#10205
+Name Ontop of the Cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10208
+Exit east 10202
+Exit west 10206
+End
+
+
+#10206
+Name Ontop of the Cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10207
+Exit east 10205
+Exit west 10221
+End
+
+
+#10207
+Name Climbing the Hill~
+Desc Your climb up a hill that seems to stretch forever.  The grass is very dark, 
+with many dry patches scattered throughout.  Rocks and dead trees litter the 
+hillside.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10220
+Exit east 10208
+Exit south 10206
+Exit west 10222
+End
+
+
+#10208
+Name Climbing the Hill~
+Desc Your climb up a hill that seems to stretch forever.  The grass is very dark, 
+with many dry patches scattered throughout.  Rocks and dead trees litter the 
+hillside.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10219
+Exit east 10211
+Exit south 10205
+Exit west 10207
+End
+
+
+#10209
+Name Climbing the Hill~
+Desc Your climb up a hill that seems to stretch forever.  The grass is very dark, 
+with many dry patches scattered throughout.  Rocks and dead trees litter the 
+hillside.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10216
+Exit east 10210
+Exit south 10203
+Exit west 10212
+End
+
+
+#10210
+Name Climbing the Hill~
+Desc Your climb up a hill that seems to stretch forever.  The grass is very dark, 
+with many dry patches scattered throughout.  Rocks and dead trees litter the 
+hillside.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10217
+Exit east 10224
+Exit south 10204
+Exit west 10209
+End
+
+
+#10211
+Name Climbing the Hill~
+Desc Your climb up a hill that seems to stretch forever.  The grass is very dark, 
+with many dry patches scattered throughout.  Rocks and dead trees litter the 
+hillside.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10218
+Exit east 10213
+Exit south 10202
+Exit west 10208
+End
+
+
+#10212
+Name Climbing the Hill~
+Desc Your climb up a hill that seems to stretch forever.  The grass is very dark, 
+with many dry patches scattered throughout.  Rocks and dead trees litter the 
+hillside.  
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10215
+Exit east 10209
+Exit south 10201
+Exit west 10213
+End
+
+
+#10213
+Name On a thin dirt trail~
+Desc You are slowly ascending on a thin dirt trail.  The hills to your east and 
+west are very rough looking.  The trail seems to extend very high up the 
+large hill.  Behind you, the beach looks very desolate and like a wasteland. 
+ 
+~
+Room2Flags no_area_echoes~
+Sector trail~
+Exit north 10214
+Exit east 10212
+Exit south 10200
+Exit west 10211
+End
+
+
+#10214
+Name Infront of very large metal gates~
+Desc You finally make it to the top of the hill and are greeting by very large 
+black gates.  The gates are hinged onto a very large grey wall with barred 
+windows scattered in uniform across the wall.  `1 The wind blows very strongly against the walls and the wall stretches, 
+almost endless to the east and west.  
+~
+Room2Flags no_area_echoes~
+Sector trail~
+Exit north 10244
+EFlags door closed locked pickproof~
+Exit east 10215
+Exit south 10213
+Exit west 10218
+End
+
+
+#10215
+Name Southern Prison Wall~
+Desc You are infront of a huge stone wall that seems to stretch forever upward.  
+Looking up, lightning flashes and lights up the sky which is black as the 
+night.  `1You can hear soft yells and sometimes an arm reaches out of the prison 
+window.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit east 10216
+Exit south 10212
+Exit west 10214
+End
+
+
+#10216
+Name Southern Prison Wall~
+Desc You are infront of a huge stone wall that seems to stretch forever upward.  
+Looking up, lightning flashes and lights up the sky which is black as the 
+night.  `1You can hear soft yells and sometimes an arm reaches out of the prison 
+window.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit east 10217
+Exit south 10209
+Exit west 10215
+End
+
+
+#10217
+Name Southern Prison Wall~
+Desc You are infront of a huge stone wall that seems to stretch forever upward.  
+Looking up, lightning flashes and lights up the sky which is black as the 
+night.  `1You can hear soft yells and sometimes an arm reaches out of the prison 
+window.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit east 10226
+Exit south 10210
+Exit west 10216
+End
+
+
+#10218
+Name Southern Prison Wall~
+Desc You are infront of a huge stone wall that seems to stretch forever upward.  
+Looking up, lightning flashes and lights up the sky which is black as the 
+night.  `1You can hear soft yells and sometimes an arm reaches out of the prison 
+window.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit east 10214
+Exit south 10211
+Exit west 10219
+End
+
+
+#10219
+Name Southern Prison Wall~
+Desc You are infront of a huge stone wall that seems to stretch forever upward.  
+Looking up, lightning flashes and lights up the sky which is black as the 
+night.  `1You can hear soft yells and sometimes an arm reaches out of the prison 
+window.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit east 10218
+Exit south 10208
+Exit west 10220
+End
+
+
+#10220
+Name Southern Prison Wall~
+Desc You are infront of a huge stone wall that seems to stretch forever upward.  
+Looking up, lightning flashes and lights up the sky which is black as the 
+night.  `1You can hear soft yells and sometimes an arm reaches out of the prison 
+window.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit east 10219
+Exit south 10207
+Exit west 10225
+End
+
+
+#10221
+Name Ontop of the Cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+`1To the west is more rocks, wit heavy waves clashing upon them.
+It doesn't look very friendly and if someone jumped, they'd probably die instantly.
+~
+Sector hills~
+Exit north 10222
+Exit east 10206
+End
+
+
+#10222
+Name Edge of the hill~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+`1To the west is more rocks, wit heavy waves clashing upon them.
+It doesn't look very friendly and if someone jumped, they'd probably die instantly.
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10225
+Exit east 10207
+Exit south 10221
+End
+
+
+#10223
+Name Ontop of the Cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+To the east is more rocks, wit heavy waves clashing upon them.
+It doesn't look very friendly and if someone jumped, they'd probably die instantly.
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10224
+Exit west 10204
+End
+
+
+#10224
+Name Edge of the cliff~
+Desc Your standing ontop of the large cliff on the edge of the beach.  The water 
+rushes in and out smash against the rocks beneath you.  The sky is still 
+dark and lightning can be seen jumping around.  
+To the east is more rocks, wit heavy waves clashing upon them.
+It doesn't look very friendly and if someone jumped, they'd probably die instantly.
+~
+Room2Flags no_area_echoes~
+Sector hills~
+Exit north 10226
+Exit south 10223
+Exit west 10210
+End
+
+
+#10225
+Name Corner of the Great Wall~
+Desc Your at the corner of the huge stone wall.  The wall makes a sharp turn and 
+begins to head northward.  It still very high with barred windows like the 
+other wall.  There is very little room for you to walk across as the wall is 
+build right to the edge of the cliff.  Below there is just water and jagged 
+rocks looking for its next victim.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 10227
+Exit east 10220
+Exit south 10222
+Exit west 54876
+End
+
+
+#10226
+Name Corner of the Great Wall~
+Desc Your at the corner of the huge stone wall.  The wall makes a sharp turn and 
+begins to head northward.  It still very high with barred windows like the 
+other wall.  There is very little room for you to walk across as the wall is 
+build right to the edge of the cliff.  Below there is just water and jagged 
+rocks looking for its next victim.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 10231
+Exit east 54878
+Exit south 10224
+Exit west 10217
+End
+
+
+#10227
+Name Along the West Wall~
+Desc Your floating above the water next to the west wall.  It stretches upwards 
+almost endlessly The roar of waves crashing upon the rocks sends mist up at 
+you.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 10228
+Exit south 10225
+Exit west 54876
+End
+
+
+#10228
+Name Along the West Wall~
+Desc Your floating above the water next to the west wall.  It stretches upwards 
+almost endlessly The roar of waves crashing upon the rocks sends mist up at 
+you.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 10229
+Exit south 10227
+Exit west 54876
+End
+
+
+#10229
+Name Along the West Wall~
+Desc Your floating above the water next to the west wall.  It stretches upwards 
+almost endlessly The roar of waves crashing upon the rocks sends mist up at 
+you.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 10230
+Exit south 10228
+Exit west 54876
+End
+
+
+#10230
+Name Along the West Wall~
+Desc Your floating above the water next to the west wall.  It stretches upwards 
+almost endlessly The roar of waves crashing upon the rocks sends mist up at 
+you.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 10235
+Exit south 10229
+Exit west 54876
+End
+
+
+#10231
+Name Along the East Wall~
+Desc Your floating above the water next to the east wall.  It stretches upwards 
+almost endlessly.  The roar of the waves crashing up the rocks sends mist up 
+at you.  
+~
+Sector city~
+Exit north 10232
+Exit east 54878
+Exit south 10226
+End
+
+
+#10232
+Name Along the East Wall~
+Desc Your floating above the water next to the east wall.  It stretches upwards 
+almost endlessly.  The roar of the waves crashing up the rocks sends mist up 
+at you.  
+~
+Sector city~
+Exit north 10233
+Exit east 54878
+Exit south 10231
+End
+
+
+#10233
+Name Along the East Wall~
+Desc Your floating above the water next to the east wall.  It stretches upwards 
+almost endlessly.  The roar of the waves crashing up the rocks sends mist up 
+at you.  
+~
+Sector city~
+Exit north 10234
+Exit east 54878
+Exit south 10232
+End
+
+
+#10234
+Name Along the East Wall~
+Desc Your floating above the water next to the east wall.  It stretches upwards 
+almost endlessly.  The roar of the waves crashing up the rocks sends mist up 
+at you.  
+~
+Sector city~
+Exit north 10243
+Exit east 54878
+Exit south 10233
+End
+
+
+#10235
+Name Northern Corner of Prison~
+Desc Your floating at the northern corner of the prison.  The two stone walls 
+meet here and look to stretch for eternity in either direction.  The water 
+beneath you is black and ripples can be seen.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+Exit east 10236
+Exit south 10230
+Exit west 54876
+End
+
+
+#10236
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+Exit east 10237
+Exit west 10235
+End
+
+
+#10237
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+Exit east 10238
+Exit west 10236
+End
+
+
+#10238
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+Exit east 10239
+Exit west 10237
+End
+
+
+#10239
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+Exit east 10240
+Exit west 10238
+End
+
+
+#10240
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+EFlags oneway~
+Exit east 10241
+Exit west 10239
+End
+
+
+#10241
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+EFlags oneway~
+Exit east 10242
+Exit west 10240
+End
+
+
+#10242
+Name Northern Wall of Prison~
+Desc The wall stretches up towards the sky with many barred windows on it.  The 
+pitch blackness of water is beneath you and the black sky is above you.  
+Lightning and thunder rip through the sky but no rain begins to fall.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+EFlags oneway~
+Exit east 10243
+Exit west 10241
+End
+
+
+#10243
+Name Northern Corner of Prison~
+Desc Your floating at the northern corner of the prison.  The two stone walls 
+meet here and look to stretch for eternity in either direction.  The water 
+beneath you is black and ripples can be seen.  
+~
+Room2Flags no_area_echoes~
+Sector city~
+Exit north 54796
+EFlags oneway~
+Exit east 54878
+EFlags oneway~
+Exit south 10234
+Exit west 10242
+End
+
+
+#10244
+Name Inside the Prison~
+Desc You've just made it past the large gates.  On your left and right are 
+offices full of armed guards.  To the north is a hallway extends quite a bit 
+before branching off.  At the end of the hallway is a large metal door.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10247
+Exit east 10245
+Exit south 10214
+EFlags door closed locked pickproof~
+Exit west 10246
+End
+
+
+#10245
+Name Guard Office~
+Desc You've entered a large office with stone walls.  There are torches placed on 
+the walls to light the room.  Spears, Swords, and armor are hanging nearby 
+on racks looking like they are just dying to be used.  There are some chairs 
+around the and a window with a quiver and bow nearby.  
+~
+RoomFlags no_recall antimagic~
+Sector inside~
+Exit west 10244
+End
+
+
+#10246
+Name Receptionist Desk~
+Desc You walk into a medium sized room with many torches on the walls.  The walls 
+are covered in wooden panels and there is no window.  The walls are barren 
+and sometimes a rat can be seen scampering across the floor.  
+~
+RoomFlags no_recall antimagic~
+Sector inside~
+Exit east 10244
+End
+
+
+#10247
+Name Hallway~
+Desc Your inside a large stone hallway thats not very well lit.  The floor is 
+very hard and rough, as are the walls.  They are made of grey stone and 
+there are doorways on the east and west side.  There is a large metal door 
+north of you, it is black and looks very rusted.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10250
+EFlags door closed locked pickproof nopass~
+EKeyvnum 10201
+EKeywords door~
+Exit east 10248
+EFlags door closed locked~
+Exit south 10244
+Exit west 10249
+EFlags door closed~
+End
+
+
+#10248
+Name Storage Room~
+Desc You've entered a large stone room with many lockers placed about.  There are 
+shelves of various objects like bows and swords all locked behind a wooden 
+wall.  
+~
+RoomFlags no_recall antimagic~
+Sector inside~
+Exit west 10247
+EFlags door closed locked~
+End
+
+
+#10249
+Name Change Room~
+Desc You've entered a small stone room with metal shelves attach to the walls.  
+On the shelves are many orange coloured jumpsuits.  In the center of the 
+room is a large stone bench.  There are 2 torches in the room on the north 
+and south walls that provide dim lighting.  
+~
+RoomFlags no_recall antimagic~
+Sector inside~
+Exit east 10247
+EFlags door closed~
+End
+
+
+#10250
+Name Ground floor inside prison~
+Desc Your on the ground level of a huge stone prison.  Directly infront of you is 
+a fenced off area where the is no roof.  The only light from the sky that 
+can be seen are flashes of lightning.  To your east and west are walkways 
+with many prisoner cells on each side.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit east 10252
+Exit south 10247
+EFlags door closed locked pickproof nopass~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10251
+End
+
+
+#10251
+Name Ground Level~
+Desc Your on the ground level of the prison, behind you, there is a prison cell.  
+There is a walkway east and west from where you are.  The bars on the cell 
+are black and rusted.  You can see the outdoor just to the north, fenced 
+off.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit east 10250
+Exit south 10288
+EFlags door closed locked pickproof nopass~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10254
+End
+
+
+#10252
+Name Ground Level~
+Desc Your on the ground level of the prison, behind you, there is a prison cell.  
+There is a walkway east and west from where you are.  The bars on the cell 
+are black and rusted.  You can see the outdoor just to the north, fenced 
+off.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit east 10253
+Exit south 10291
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10250
+End
+
+
+#10253
+Name Ground Level~
+Desc Your on the ground level of the prison, behind you, there is a prison cell.  
+There is a walkway east and west from where you are.  The bars on the cell 
+are black and rusted.  You can see the outdoor just to the north, fenced 
+off.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit east 10256
+Exit south 10292
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10252
+End
+
+
+#10254
+Name Ground Level~
+Desc Your on the ground level of the prison, behind you, there is a prison cell.  
+There is a walkway east and west from where you are.  The bars on the cell 
+are black and rusted.  You can see the outdoor just to the north, fenced 
+off.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit east 10251
+Exit south 10289
+EFlags door closed locked~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10255
+End
+
+
+#10255
+Name Turn on Walkway~
+Desc The walkway your currently on turns to the north.  On the south and west 
+walls are more prison cells.  They have rusted black bars, you can see much 
+of the outdoor field from here, despite some parts being blocked by the 
+metal fencing.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10257
+Exit east 10254
+Exit south 10290
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10310
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10256
+Name Turn on the Walkway~
+Desc The walkway you are on currently turns north.  To the east and south are 
+prison cells with rusted black bars.  The ground beneath you is hard and 
+cold.  You can see the fenced off outdoor field, but it is blocked off by 
+metal fencing.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10261
+Exit east 10294
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit south 10293
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10253
+End
+
+
+#10257
+Name Ground Level~
+Desc The walkway runs north and south from here.  To the east is an open field 
+thats been fenced off and to your west is a prison cell.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10258
+Exit south 10255
+Exit west 10309
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10258
+Name Ground Level~
+Desc The walkway runs north and south from here.  To the east is an open field 
+thats been fenced off and to your west is a prison cell.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10259
+Exit south 10257
+Exit west 10308
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10259
+Name Ground Level~
+Desc The walkway runs north and south from here.  To the east is an open field 
+thats been fenced off and to your west is a prison cell.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10266
+Exit south 10258
+Exit west 10307
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10261
+Name Ground Level~
+Desc The walkway runs north and south from here.  To the west is an open field 
+thats been fenced off and to your east is a prison cell.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10262
+Exit east 10295
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit south 10256
+End
+
+
+#10262
+Name Ground Level~
+Desc The walkway runs north and south from here.  To the west is an open field 
+thats been fenced off and to your east is a prison cell.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10263
+Exit east 10296
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit south 10261
+End
+
+
+#10263
+Name Ground Level~
+Desc The walkway runs north and south from here.  To the west is an open field 
+thats been fenced off and to your east is a prison cell.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10265
+Exit east 10297
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit south 10262
+End
+
+
+#10265
+Name Ground Level~
+Desc You've reached another turn in the walkway.  To the north and east are 
+prison cells that overlook the exercise pen.  The stone walkway continues 
+west.  
+~
+RoomFlags no_recall noscry antimagic light~
+Sector inside~
+Exit north 10299
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit east 10298
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit south 10263
+Exit west 10271
+End
+
+
+#10266
+Name Ground Level~
+Desc You've reached another turn in the walkway.  To the north and west are 
+prison cells that overlook the exercise pen.  The stone walkway continues 
+east.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10305
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit east 10267
+Exit south 10259
+Exit west 10306
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10267
+Name Along the walkway~
+Desc The walkway continues east and west.  To your north is a prison cell and the 
+south is the exercise pen.  The walkway continues east and west.  To your 
+north is the office of the Parole officer.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10304
+EFlags door pickproof~
+Exit east 10268
+Exit west 10266
+End
+
+
+#10268
+Name Along the walkway~
+Desc The walkway continues east and west.  To your north is a prison cell and the 
+south is the exercise pen.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10303
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit east 10269
+Exit west 10267
+End
+
+
+#10269
+Name Gates to Excercise Pen~
+Desc To the north lies the rock fields where prisoners are allowed to break rocks 
+for the future road construction projects throught the world.  To the south 
+lies the exercise pen, and the walkway continues east and west 
+~
+RoomFlags indoors safe no_recall noscry antimagic light~
+Sector inside~
+Exit north 10320
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+Exit east 10270
+Exit south 10272
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit west 10268
+End
+
+
+#10270
+Name Along the walkway~
+Desc The walkway continues east and west.  To your north is a prison cell and the 
+south is the exercise pen.  
+~
+RoomFlags indoors no_recall noscry antimagic light noscan~
+Sector inside~
+Exit north 10301
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit east 10271
+Exit west 10269
+End
+
+
+#10271
+Name Along the walkway~
+Desc The walkway continues east and west.  To your north is a prison cell and the 
+south is the exercise pen.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector inside~
+Exit north 10300
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+Exit east 10265
+Exit west 10270
+End
+
+
+#10272
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_mob no_recall antimagic~
+Sector field~
+Exit north 10269
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+Exit east 10273
+Exit south 10286
+Exit west 10274
+Exit southeast 10285
+Exit southwest 10287
+End
+
+
+#10273
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit east 10276
+Exit south 10285
+Exit west 10272
+Exit southeast 10284
+Exit southwest 10286
+End
+
+
+#10274
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit east 10272
+Exit south 10287
+Exit west 10275
+Exit southeast 10286
+Exit southwest 10277
+End
+
+
+#10275
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit east 10274
+Exit south 10277
+Exit southeast 10287
+End
+
+
+#10276
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit south 10284
+Exit west 10273
+Exit southwest 10285
+End
+
+
+#10277
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10275
+Exit east 10287
+Exit south 10278
+Exit northeast 10274
+Exit southeast 10280
+End
+
+
+#10278
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10277
+Exit east 10280
+Exit northeast 10287
+End
+
+
+#10280
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10287
+Exit east 10281
+Exit west 10278
+Exit northeast 10286
+Exit northwest 10277
+End
+
+
+#10281
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10286
+Exit east 10282
+Exit west 10280
+Exit northeast 10285
+Exit northwest 10287
+End
+
+
+#10282
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10285
+Exit east 10283
+Exit west 10281
+Exit northeast 10284
+Exit northwest 10286
+End
+
+
+#10283
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10284
+Exit west 10282
+Exit northwest 10285
+End
+
+
+#10284
+Name Exercise Pen~
+Desc Your on the edge of the excercise pen, fenced off from the prison cells.  
+The sky is dark and sometimes flashes of lightning can be seen.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10276
+Exit south 10283
+Exit west 10285
+Exit southwest 10282
+Exit northwest 10273
+End
+
+
+#10285
+Name Inside Exercise Pen~
+Desc Your inside a large pen, fenced off from the rest of the prison.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10273
+Exit east 10284
+Exit south 10282
+Exit west 10286
+Exit northeast 10276
+Exit southeast 10283
+Exit southwest 10281
+Exit northwest 10272
+End
+
+
+#10286
+Name Inside Exercise Pen~
+Desc Your inside a large pen, fenced off from the rest of the prison.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10272
+Exit east 10285
+Exit south 10281
+Exit west 10287
+Exit northeast 10273
+Exit southeast 10282
+Exit southwest 10280
+Exit northwest 10274
+End
+
+
+#10287
+Name Inside Exercise Pen~
+Desc Your inside a large pen, fenced off from the rest of the prison.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit north 10274
+Exit east 10286
+Exit south 10280
+Exit west 10277
+Exit northeast 10272
+Exit southeast 10281
+Exit southwest 10278
+Exit northwest 10275
+End
+
+
+#10288
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit north 10251
+EFlags door closed locked pickproof nopass~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10289
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit north 10254
+EFlags door closed locked~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10290
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit north 10255
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10291
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit north 10252
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10292
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit north 10253
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10293
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit north 10256
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10294
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit west 10256
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10295
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit west 10261
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10296
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit west 10262
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10297
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit west 10263
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10298
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit west 10265
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10299
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit south 10265
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10300
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit south 10271
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10301
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit south 10270
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10303
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit south 10268
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10304
+Name Parole Office~
+Desc You are inside a small, grungy prison cell.  The walls are barren and grey.  
+A few scratch marks can be seen, and a series of lines.  The office is stark 
+and sparingly decorated.  A large desk is here, covered with papers and 
+sketches of criminals.  The floor is covered with a dark green carpet, and a 
+large oil lantern mounted on the wall fills the room with light.  
+~
+RoomFlags indoors bank safe no_recall law noscry antimagic light noscan~
+Sector inside~
+Exit south 10267
+EFlags door pickproof~
+End
+
+
+#10305
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit south 10266
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10306
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit east 10266
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10307
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit east 10259
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10308
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit east 10258
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10309
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit east 10257
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10310
+Name Prison Cell~
+Desc Your inside a small, grungy prison cell.  The walls are barren and grey.  A 
+few scratch marks can be seen, and a series of lines.  
+~
+RoomFlags no_mob indoors no_recall noscry antimagic nofly~
+Sector inside~
+Exit east 10255
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+EKeywords door~
+End
+
+
+#10311
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall noscry antimagic light~
+Sector field~
+Exit north 10312
+Exit east 10318
+Exit south 10320
+Exit west 10314
+End
+
+
+#10312
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic light~
+Sector field~
+Exit north 10313
+Exit east 10319
+Exit south 10311
+Exit west 10315
+End
+
+
+#10313
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic light~
+Sector field~
+Exit east 10317
+Exit south 10312
+Exit west 10316
+End
+
+
+#10314
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic light~
+Sector field~
+Exit north 10315
+Exit east 10311
+End
+
+
+#10315
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic light~
+Sector field~
+Exit north 10316
+Exit east 10312
+Exit south 10314
+End
+
+
+#10316
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic~
+Sector field~
+Exit east 10313
+Exit south 10315
+End
+
+
+#10317
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags indoors no_recall noscry antimagic light~
+Sector field~
+Exit south 10319
+Exit west 10313
+End
+
+
+#10318
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic light~
+Sector field~
+Exit north 10319
+Exit west 10311
+End
+
+
+#10319
+Name Rock Yard~
+Desc You've entered yet another open area with lots of rocks of all shapes and 
+sizes on the ground.  
+~
+RoomFlags no_recall antimagic light~
+Sector field~
+Exit north 10317
+Exit south 10318
+Exit west 10312
+End
+
+
+#10320
+Name Rock Supplies~
+Desc You've entered a large room with many large boxes placed there and there.  
+The floors are cold and grey.  To the north is a large work yard, piled up 
+with many rocks.  
+~
+RoomFlags no_recall antimagic~
+Sector inside~
+Exit north 10311
+Exit south 10269
+EFlags door closed locked pickproof~
+EKeyvnum 10201
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 10300 spec_prison_guard
+M 10200 spec_guard
+M 10202 spec_prison_guard
+M 10204 spec_prison_guard
+S
+
+
+
+#RESETS2
+M 0 10200 1 10244 1
+M 0 10202 20 10251 1
+M 0 10202 20 10252 1
+M 0 10202 20 10255 1
+M 0 10202 20 10256 1
+M 0 10202 20 10258 1
+M 0 10202 20 10262 1
+M 0 10202 20 10265 1
+M 0 10202 20 10266 1
+M 0 10202 20 10268 1
+M 0 10301 2 10269 1
+E 0 10201 -1 hold~
+M 0 10300 200 10288 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10288
+O 0 10200 -1 10288
+M 0 10300 200 10289 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10289
+O 0 10200 -1 10289
+M 0 10300 200 10290 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10290
+O 0 10200 -1 10290
+M 0 10300 200 10291 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10291
+O 0 10200 -1 10291
+M 0 10300 200 10292 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10292
+O 0 10200 -1 10292
+M 0 10300 200 10293 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10293
+O 0 10200 -1 10293
+M 0 10300 200 10294 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10294
+O 0 10200 -1 10294
+M 0 10300 200 10295 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10295
+O 0 10200 -1 10295
+M 0 10300 200 10296 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10296
+O 0 10200 -1 10296
+M 0 10300 200 10297 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10297
+O 0 10200 -1 10297
+M 0 10300 200 10298 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10298
+O 0 10200 -1 10298
+M 0 10300 200 10299 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10299
+O 0 10200 -1 10299
+M 0 10300 200 10300 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10300
+O 0 10200 -1 10300
+M 0 10300 200 10301 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10301
+O 0 10200 -1 10301
+M 0 10300 200 10303 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10303
+O 0 10200 -1 10303
+M 0 10203 1 10304 1
+M 0 10300 200 10305 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10305
+O 0 10200 -1 10305
+M 0 10300 200 10306 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10306
+O 0 10200 -1 10306
+M 0 10300 200 10307 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10307
+O 0 10200 -1 10307
+M 0 10300 200 10308 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10308
+O 0 10200 -1 10308
+M 0 10300 200 10309 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10309
+O 0 10200 -1 10309
+M 0 10300 200 10310 1
+E 0 10201 -1 hold~
+O 0 10202 -1 10310
+O 0 10200 -1 10310
+M 0 10205 20 10312 3
+M 0 10205 20 10313 3
+M 0 10205 20 10314 3
+M 0 10205 20 10315 3
+M 0 10205 20 10316 3
+O 0 10202 -1 10317
+M 0 10205 20 10317 3
+M 0 10205 20 10318 3
+M 0 10205 20 10319 3
+M 0 10204 1 10320 1
+O 0 10206 -1 10320
+P 0 10207 20 10206 20
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#10214
+author Echmoro~
+disabled false
+END
+
+#10213
+title Anti-Kill~
+author Echmoro~
+code mob preventattack
+if vnum $i != 10205
+  say What do you think your doing?
+  say I'll teach you to mess with me!
+  mob echoat $n The guard begins to beat you, inflicting harm and damage.
+  mob echoaround $n The guard begins to beat $n furiously as $e falls to the floor.
+  mob damage $n 30 60
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1059182634
+END
+
+#10212
+title Area Echo Time~
+author Echmoro~
+code if hour >= 18
+  if hour < 20
+mob zecho Rock Yard Closing soon! Finish up and head out!
+mob zoecho Rock Yard Closing soon! Finish up and head out!
+  endif
+endif
+if hour >= 11
+  if hour < 13
+    mob zecho Excercise Yard closing! Get back to your cells!
+    mob zoecho Excercise Yard closing! Get back to your cells!
+  endif
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057015493
+END
+
+#10211
+title No Attacking Rocks~
+author Echmoro~
+code mob preventattack
+mob echoat $n You'd likely break something trying that.
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1056517356
+END
+
+#10210
+title Finish Cracking Rocks~
+author Echmoro~
+code if carries $n hammer
+  sayto $n Your seriously not thinking of leaving with that hammer are you?
+  sayto $n Return it to the box or you won't leave.
+else
+  if wears $n hammer
+    sayto $n Your not thinking of hurting anyone with that are you?
+    sayto $n Put the hammer back in the box or you won't leave this room.
+  else
+    if hpcnt $n <= 15
+      sayto $n Back to bed! We need you rested for more rock breaking.
+      cackle
+      mob letpass
+    else
+      sayto $n You call that work?! A dog could break rocks better than you![cracks his whip]Back to work or you'll never leave!
+      glare $n
+    endif
+  endif
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1056551816
+END
+
+#10209
+title Crack Rocks~
+author Echmoro~
+code if wears $n hammer
+  mob echoat $n You hit the rocks hard, with the darkness looming over you.
+  mob echoaround $n $N hits the rocks hard, beads of sweat dropping off $m.
+  mob inflict $n 15 40
+  mob stun $n 6
+  if rand 25
+    mob echo The rock splits apart and crumbles to dust.
+    mob purge $i
+  endif
+else
+  mob echoat $n You'd likely break something trying to do that.
+  mob echoat $n Maybe a hammer would be a good idea...
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G10209`x,`Y10205`x,`B10315`x,`r0`x,`C0`x:
+             `YMobprog: invalid if_check (if) '$n', mob 10205 prog 10209
+`x             Trigger type 'COMMAND' phrase 'break rock'
+             Call stack info:
+             MOBprog 10209 on mob 10205 (in room 10315), line 0
+`S#############
+
+~
+last_editor Echmoro~
+last_editdate 1105419540
+END
+
+#10208
+title Execute Criminal~
+author Ixliam~
+code sayto $n It is only one life (karn) you lose, and it will be swift and fast.
+sayto $n I think there is room for you now.
+mob transfer $n 10399
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056221895
+END
+
+#10207
+title Open Exercise Pen~
+author Ixliam~
+code if hour >= 13
+  close south
+  lock south
+  end
+endif
+if hour >= 9
+  unlock south
+  open south
+  end
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057015615
+END
+
+#10206
+title Open Rock Breaking Room~
+author Ixliam~
+code if hour >= 20
+  close north
+  lock north
+  end
+endif
+if hour >= 14
+  unlock north
+  open north
+  end
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057015685
+END
+
+#10205
+title Release Murder 5000 gold~
+author Ixliam~
+code language native
+if hastheft $n == 0
+ if hasmurder $n < 49
+  mob endprison $n
+  break
+  end
+ endif
+endif
+sayto $n This really won't help you any.
+give 5000 gold $n
+end
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056170280
+END
+
+#10204
+title Release Theft 2500 Gold~
+author Ixliam~
+code language native
+if hasmurder $n == 0
+ mob endprison $n
+ break
+ end
+endif
+sayto $n Nice try, but it is not enough
+give 2500 gold $n
+end
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056170265
+END
+
+#10203
+title Release Murder & Theft 7500 gold~
+author Ixliam~
+code language native
+if hasmurder $n > 49
+ sayto $n I told you I couldn't help, but this sure does!
+ break
+ end
+endif
+mob endprison $n
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056170679
+END
+
+#10202
+title Unlock & Lock Cell Doors~
+author Ixliam~
+code if hour >= 20
+  close door
+  lock door
+end
+endif
+If hour >= 9
+  unlock door
+  open door
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057934142
+END
+
+#10201
+title Parole Officer Greet~
+author Ixliam~
+code language native
+if ispc $n
+ sayto $n Hello $n, please come in. I am Rozalyn, your parole officer.
+ sayto $n Lets see if I can help you out any.
+if hasmurder $n > 49
+  sayto $n I'm afraid I won't be able to help you.
+  sayto $n Your murders have landed you in more than I can help you with.
+sayto $n I hate to inform you, but you have been set for execution.
+mob transfer $n 10399
+  break
+  end
+ endif
+if hastheft $n = 0
+  sayto $n Well, for your murderous ways, it will be pretty expensive.
+  sayto $n It will cost you 5000 gold to get out of here today.
+sayto $n I'm sure you don't have it on you, but you can contact your
+  sayto $n bank from here [type bank]. Just give me the gold and I can
+  sayto $n speed your way out of here.
+sayto $n You can always chose execution. Just say 'EXECUTION' to chose that way out.
+  smile $n
+   break
+   end
+  endif
+ 
+if hastheft $n > 1
+   if hasmurder $n > 1
+    sayto $n I see you have been very busy stealing and robbing.
+    sayto $n I can get you out of here today, but it will be 7500 gold.
+   sayto $n I'm sure you don't have it on you, but you can contact your
+   sayto $n bank from here [type bank]. Just give me the gold and I can
+   sayto $n speed your way out of here
+   smile $n
+sayto $n You can always chose execution. Just say 'EXECUTION' to chose that way out.
+   break
+   end
+   endif
+  sayto $n Your robberies have cost people a good bit of heartache.
+  sayto $n I can get you out of here today, but it will be expensive.
+  sayto $n For a mere 2500 gold, I can speed your way back home.
+  sayto $n I'm sure you don't have it on you, but you can contact your
+  sayto $n bank from here [type bank]. Just give me the gold and I can
+ sayto $n have you released and the charges dropped.
+  smile $n
+sayto $n You can always chose execution. Just say 'EXECUTION' to chose that way out.
+ break
+ end
+ endif
+sayto $n It appears you really don't need my help afterall.
+smile $n
+end
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056341176
+END
+
+#10200
+title Food Program~
+author Ixliam~
+code if players > 0
+ mob oload 3164
+ mob echo A slot in the prison door opens.
+mob echo A harsh voice yells through the slot "Dinner time, eat it all up now!"
+drop bread
+mob echo The slot closes with a echoing clanging sound.
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1056145134
+END
+
+#0
+
+
+#$

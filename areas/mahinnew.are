@@ -1,0 +1,779 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        New area~
+ShortName   ~
+Builders    mahinae~
+VNUMs       80646 80774
+AFlags  olconly noteleport noscry hidden~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Mon Aug 22 22:58:54 2005~
+End
+
+
+
+#MOBILES
+#80646
+Name skinny brown mutt dog~
+ShortD a skinny brown mutt~
+LongD A skinny brown mutt is standing here begging for food.~
+Desc This little mutt has seen better days. Its unremarkable brown body quivers 
+excited when someone nears it. It seems to have figured out that cocking its 
+ears forward and whining pathetically is the best way to get food. 
+~
+Race dog~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType bite
+AC -95 -95 -95 -78
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+Off    trip~
+Form   animal~
+Part   head legs heart brains guts feet ear eye long_tongue tail claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#80647
+Name lriec~
+ShortD lriec~
+LongD Lriec sits here, halfway enveloped by shadows.~
+Desc Lriec lounges here. His dark eyes are sharp and calculating. His long curly 
+black hair has been pulled back in a tight ponytail at the nape of his neck 
+and held by leather strands. His leather is well oiled and worked. He moves 
+slowly but the rippling muscles seen on his arms display his controlled 
+strength. You feel uncomfortable as he shrewdly looks you over. You think he 
+may be a dangerous person to attempt to deal with. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -731
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Off    circle~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80648
+Name young child~
+ShortD a young child~
+LongD A young child wanders about, looking for something to do.~
+Desc A young child plays here in the dirt. His raggedy clothes are covered in 
+filth. He looks up and smirks at you as you pass. 
+~
+Race human~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType punch
+AC -117 -117 -117 -104
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Imm    summon charm sleep scry~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 80646 10~
+END
+
+#80649
+Name ulerian~
+ShortD ulerian~
+LongD Ulerian leans against his counters here.~
+Desc This short, fat angrak has greasy, limp red hair. When he spreads his mouth 
+in an evil grin, gaps between his teeth are visible. When he speaks he makes 
+sucking noises through the gaps. All in all he looks like a very unsavory 
+character. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -714
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80650
+Name ziulo~
+ShortD ziulo~
+LongD Ziulo sits here with his feet propped up on the desk.~
+Desc Ziulo, the proprietor of the tiny inn, is here. His greasy black hair comes 
+down in ringlets which get in the way of his beady eyes. His girth is large. 
+He looks like he makes a tidy profit turning over the rooms. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -756
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80651
+Name surly prostitute~
+ShortD a surly prostitute~
+LongD A surly prostitute strolls along here.~
+Desc This woman has seen better days. Her body is gaunt and her features are 
+hard. It's hard to guess the woman's age from the early wrinkles and sickly 
+body. Her smile and language are calculated to draw the males but it seems 
+she'd had little luck in her profession judging by her shabby clothes. 
+~
+Race human~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType claw
+AC -250 -250 -250 -200
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80652
+Name prostitute~
+ShortD a prostitute~
+LongD A prostitute mills here.~
+Desc Traces of beauty still exist on this female's face. Her is curled around her 
+face, and her corset is laced tightly to show off her figure. She appears to 
+be new to soliciting and is slowly starting show the fatigue and hardness. 
+~
+Race human~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType bite
+AC -250 -250 -250 -207
+Wealth 50
+Act    npc no_tame stay_area~
+Off    dirt_kick~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80653
+Name big husky~
+ShortD a big husky~
+LongD A big husky roams about here, looking for something to eat.~
+Desc The dog before you has a big white and gray fluffy fur coat.  Streamlined in 
+nature, its muscular legs are more than adequate to give it the speed 
+required to hunt prey. 
+~
+Race human~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType none
+AC -157 -157 -157 -130
+Wealth 0
+Act    npc no_tame stay_area~
+Off    fast~
+Imm    charm~
+Form   edible sentient biped mammal~
+Part   head arms heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80686
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#80659
+Name crackling bonfire~
+Short a crackling `#`Rb`Yo`Rn`Yf`Ri`Yr`Re`^~
+Desc A crackling `#`Rb`Yo`Rn`Yf`Ri`Yr`Re`^ has been built here.~
+Level 1
+ItemType light~
+Cost 1
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 1
+Material wood~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80660
+Name cadaver corpse table~
+Short a cadaver laid out on a table~
+Desc A cadaver is laid out here on a granite table.~
+Level 1
+ItemType container~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 100 A 0 100 0
+Weight 1000
+Material flesh~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+ExtraDesc cadaver ~
+The deceased seems to have become an experiment for the doctor. The body 
+been thoroughly dissected in parts and the discoveries noted on a small pad 
+near the left foot. The poor man's chest seems to be able to be popped open 
+at the breastplate. 
+~
+ExtraDesc pad ~
+"Subject appeared to live as a strolling minstrel until entering my abode. 
+He is approximately 56 inches in height and 185 pounds, hair color red, eyes 
+black. Cause of death was a blow to the head. Future reference: rocks seem 
+to make a good weapon." 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#80646
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit east 80647
+End
+
+
+#80647
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. The channel 
+seems to widen up ahead. 
+~
+Sector swamp~
+Exit east 80648
+Exit west 80646
+End
+
+
+#80648
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit north 80651
+Exit east 80649
+Exit west 80647
+End
+
+
+#80649
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit north 80650
+Exit west 80648
+End
+
+
+#80650
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit south 80649
+Exit west 80651
+End
+
+
+#80651
+Name Swamp~
+Desc The water darkens in this area momentarily as the depth increases. Up ahead 
+the bayou begins to curl lazily through the thickening trees. Something 
+large can be heard flapping its wings. A turtle is suddenly snatched off one 
+a piece of driftwood and snapped in half by a large black bird. 
+~
+Sector swamp~
+Exit east 80650
+Exit south 80648
+Exit northwest 80652
+End
+
+
+#80652
+Name Swamp~
+Desc Twisting and turning up into a boggy area. Stone buildings laid out in a 
+star. 
+ 
+ Small graveyard with ghosts. 
+ 
+ Ask Bo if he wants any specific items. 
+ 
+ hehe ask about Zandramas the necromancer 
+~
+Sector swamp~
+Exit east 80653
+Exit southeast 80651
+End
+
+
+#80653
+Name Swamp~
+Desc As you paddle slowly through the water, fallen dead trees and other debris 
+block any possible passages except directly forward and backward. A 
+cottonmouth is barely visible as it skims through the water. Silver fish can 
+be seen darting hastily away from the snake as it disrupts them. 
+~
+Sector swamp~
+Exit north 80654
+Exit west 80652
+End
+
+
+#80654
+Name Swamp~
+Desc Overhead the trees form a canopy.  Snatches of sky are seen briefly as the 
+trees bend under the breezes. The air is still and oppressive. Nothing seems 
+to be living in this stretch of the hot water. As you travel forwards, your 
+boat gently scrapes against the remains of trees under the water. 
+~
+Sector swamp~
+Exit north 80655
+Exit south 80653
+End
+
+
+#80655
+Name Swamp~
+Desc You can see a small stretch of muddy shore to your east. A long dull white 
+object protrudes from the mud. The mud curiously bulges upwards in one 
+section near the object as if something was hidden under it. Something large 
+has left long streaks of tracks in the sucking mud. 
+~
+Sector swamp~
+Exit south 80654
+Exit northwest 80656
+End
+
+
+#80656
+Name Swamp~
+Desc The water abruptly stops here at a muddy shore. An alligator lies silently 
+in a far corner and watches you. A long copper pole has been stabbed into 
+the mud and anchored in place somehow for you to tie your boat to. As you 
+exit the boat, mud sucks at your feet and threatens to trap you in place. 
+~
+Sector swamp~
+Exit west 80657
+Exit southeast 80655
+End
+
+
+#80657
+Name On the shore~
+Desc The shore slopes up sharply, and it is difficult to keep your footing as the 
+mud pulls at you. A dead fish rots at the edge of the water. One of its eyes 
+has fallen out onto the surface and flies surround it. Darkly colored frogs 
+sit at various places and croak out their displeasure at your intrusion. 
+~
+Sector swamp~
+Exit north 80661
+Exit east 80656
+Exit west 80658
+End
+
+
+#80658
+Name Away from the water~
+Desc The land here begins to slowly firm up as you move away from the water. 
+Large predatory birds circle overhead, and the smell of death lingers in the 
+air. Looking around you see the remains of a small animal as two buzzards 
+fight over the remains. 
+~
+Sector swamp~
+Exit north 80662
+Exit east 80657
+Exit west 80659
+End
+
+
+#80659
+Name Before a bonfire~
+Desc The heavy smell of smoke in the air chokes you as you enter this clearing. 
+Wood has been piled up in the center to make a towering bonfire. Large rocks 
+have been placed in a circle around the bonfire. They look as if they are 
+used for seating. 
+~
+RoomFlags light~
+Sector swamp~
+Exit north 80663
+Exit east 80658
+Exit west 80660
+End
+
+
+#80660
+Name Before an altar~
+Desc A colossal stone altar dominates the area here. The stone has been scorched 
+badly by something. Dark stains mar the level surface of the altar. On the 
+sides of the altar, circles and figures have been crudely engraved. The 
+grass has been trampled down and only sparse sprouts grace the hard packed 
+ground. 
+~
+Sector swamp~
+Exit east 80659
+End
+
+
+#80661
+Name Corner of the swamp~
+Desc To the south of you lies the quiet dark water. Ahead to your northwest lies 
+a small path into the woods. Through the trees you can see a large clearing 
+with some stone structures. Every once in a while you hear a voice travel on 
+the wind. 
+~
+Sector swamp~
+Exit south 80657
+Exit west 80662
+Exit northwest 80664
+End
+
+
+#80662
+Name Before a path~
+Desc The trees crowd tightly together and forces you to choose between a path 
+directly ahead of you or back to the open area from which you came. The path 
+seems to be of finely ground rocks and sand. It is slightly squishy 
+underfoot. 
+~
+Sector swamp~
+Exit north 80664
+Exit east 80661
+Exit south 80658
+Exit west 80663
+End
+
+
+#80663
+Name Swamp~
+Desc To the south of you you can see tendrils of smoke curling through the trees. 
+The glint of water is visible beyond the massive bonfire. To your northeast 
+lies a path to what looks like a small village. 
+~
+Sector swamp~
+Exit east 80662
+Exit south 80659
+Exit northeast 80664
+End
+
+
+#80664
+Name Into the pathway~
+Desc finely ground something or other as the path
+ 
+bleak stone buildings with carvings from what looks like acid etching, pitted in places
+~
+Sector swamp~
+Exit north 80665
+Exit south 80662
+Exit southeast 80661
+Exit southwest 80663
+End
+
+
+#80665
+Name Pathway~
+Desc The path slowly opens up into a wide, cleared area ahead of you. The trees 
+are thinned out and the path is marked with heavy black boulders on each 
+side. Ahead you can see a large stone structure rising up above the tree 
+tops. 
+~
+Sector swamp~
+Exit north 80666
+Exit south 80664
+End
+
+
+#80666
+Name Before a building~
+Desc Directly ahead of you is a large stone building. It seems primitively built 
+but sturdy. The ground here is soft, and you can see evidence of where the 
+building has slowly sunk into the ground a bit farther as time passes. The 
+path curves around the building to the east and west and directly into the 
+building. 
+~
+Sector city~
+Exit north 80669
+Exit east 80667
+Exit south 80665
+Exit west 80668
+End
+
+
+#80667
+Name East of a building~
+Desc ~
+Sector city~
+Exit west 80666
+End
+
+
+#80668
+Name West of a building~
+Desc This path leads west from a large stone building and the exit from the 
+village. The path has been cleared away by rough strokes of a machette and 
+is not very aesthetically pleasing. Up ahead you can see the tops of a few 
+small huts. 
+~
+Sector city~
+Exit east 80666
+Exit west 80670
+End
+
+
+#80669
+Name Inside a building~
+Desc The heavy stench of decay fills your nostrils in this building.  A large 
+granite slab table is the prominent feature in this one room building. A 
+cadaver seems to be displayed on the table. Bent over the table is a small 
+man hard at work. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 80666
+End
+
+
+#80670
+Name On a path~
+Desc The ground around these huts is muddy and filthy. Meal scraps and other 
+trash is heaped outside of the various huts. Flies swarm over the decay, and 
+a few children who seem not to care about the filth are playing outdoors. 
+~
+Sector city~
+Exit north 80671
+Exit east 80668
+Exit south 80673
+Exit west 80672
+End
+
+
+#80671
+Name Inside a hut~
+Desc This hut seems to double as a store and a home. A low counter runs along one 
+side of the room. Carefully laid out on it are various skulls, wands, and 
+other instruments. A creaky rocking chair sits at the end of the counter. It 
+seems to be where you pay. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 80670
+End
+
+
+#80672
+Name Inside a hut~
+Desc This large hut's roof is sagging under the weight of collected rainwater. A 
+big black stove dominates one corner of the room. Wobbley tables have been 
+erected, and various foods and potions steam on them. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80670
+End
+
+
+#80673
+Name Inside a hut~
+Desc This one room hut is almost completely bare aside from a few essentials. A 
+thin pallet has been constructed under the hut's window. A small table and 
+stool sit across from it. Eating utinsels have been carefully spaced out on 
+the table. Clothing has been neatly folded and set on a shelf. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 80670
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 80659 -1 80659
+O 0 80660 -1 80669
+M 0 80648 1 80670 1
+M 0 80649 1 80671 1
+M 0 80646 3 80672 1
+S
+
+
+
+#SHOPS
+#80649
+profit_buy 115
+profit_sell 90
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#80646
+title child thief for 80648~
+author Mahinae~
+code mob seeall
+mob swipe $n gold 15
+mob swipe $n silver 15
+mob echoat $n A small child stands bumps into you as you pass.
+mob echoaround $n A small child bumps into $n as they pass.
+~
+disabled false
+last_editor Mahinae~
+last_editdate 1123727008
+END
+
+#0
+
+
+#$

@@ -1,0 +1,3272 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Kanoni~
+ShortName   ~
+Builders    mahinae~
+Credits     Mahinae Zaroth~
+VNUMs       80501 80625
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto newbie_area_resets~
+LRange      5 20
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+AreaEcho  0 23   5 A distant chirping of birds can be heard echoing through the trees.~
+*LastSaved  Tue Nov 22 15:20:48 2005~
+End
+
+
+
+#MOBILES
+#80501
+Name hatchling baby~
+ShortD a baby hatchling~
+LongD A baby hatchling is in the nest, trying to stand up.~
+Desc A small, fuzzy baby hatchling is before you.  Various teals and grays swirl 
+through the thin fur-like coating that is starting to develop.  Small webbed 
+feet barely support its frail body, making its movements somewhat erratic. 
+~
+Race human~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType slash
+AC 50 50 50 43
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80502
+Name bluejay~
+ShortD a chirping `#`Cbluejay`^~
+LongD A chirping `#`Cbluejay`^ flits around here.~
+Desc This bluejay is singing its little heart out. Its sleek blue feathers puff 
+out with pride as it notices you listening to its song. 
+~
+Race human~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType pierce
+AC 50 50 50 40
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  flying~
+Off    dodge~
+Imm    bash~
+Vuln   disease~
+Form   edible sentient bird~
+Part   head arms legs heart brains guts feet eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80503
+Name white squirrel~
+ShortD a `#`Wwhite`^-bellied squirrel~
+LongD A `#`Wwhite`^-bellied squirrel twitches his tail at you.~
+Desc This small squirrel has a soft white belly. His body and tail are a dark 
+chesnut brown. His tail twitches as he looks at you. His small dark eyes 
+watch your every move. 
+~
+Race human~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType bite
+AC 40 40 40 35
+Wealth 0
+Act    npc no_tame stay_area~
+Off    fast~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#80504
+Name rabid opossum~
+ShortD a rabid opossum~
+LongD A rabid opossum snarls angrily.~
+Desc A rabid opossum has backed into the corner here. Her sharp teeth are bared 
+and gnashing at anything that comes close to her. Foam drips from her mouth. 
+Her silver and white fur is matted down with dirt and blood. 
+~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType bite
+AC 10 10 10 8
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  berserk~
+Off    berserk~
+Vuln   bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80505
+Name caterpillar~
+ShortD a fuzzy `#`Gcaterpillar`^~
+LongD A fuzzy `#`Gcaterpillar`^ crawls along here.~
+Desc This tiny caterpillar wriggles along here. Its back is covered in tiny fuzzy 
+hairs. It looks like it would be a cute pet, except that it would be 
+squished easily. Oh well. 
+~
+Race human~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType slime
+AC 50 50 50 41
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  slow~
+Off    trip~
+Imm    mental~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80506
+Name termite~
+ShortD a winged `#`ytermite`^~
+LongD A winged `#`ytermite`^ munches at wood.~
+Desc This termite has little translucent wings attached to its body. Its antennae 
+stick out straight, the microscopic sensors on them searching out more food. 
+Its fat waist bulges out. 
+~
+Race human~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType acbite
+AC 35 35 35 30
+Wealth 0
+Act    npc no_tame stay_area~
+Imm    summon charm poison mental~
+Vuln   pierce~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80507
+Name skunk~
+ShortD a small stinky skunk~
+LongD A small stinky skunk has curled up here.~
+Desc A small stinky skunk peers out at you. It waves its tail at you and you 
+catch a whiff of something horrid. 
+~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType drain
+AC 10 10 10 8
+Wealth 0
+Act    npc no_tame stay_area~
+Off    tail~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80508
+Name raccoon~
+ShortD a chattering `#`Sraccoon`^~
+LongD A chattering `#`Sraccoon`^ scurries around here.~
+Desc This furry mammal peers back at you curiously. His bushy ringed tail fluffs 
+out and his bandit's mask clearly identify him as a raccoon. 
+~
+Race human~
+Align 0 0
+Level 17
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType none
+AC -30 -30 -30 -26
+Wealth 100
+Act    npc no_tame stay_area~
+AffBy  haste~
+Off    fast~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80509
+Name prairie dog~
+ShortD a prairie dog~
+LongD A prairie dog ducks back into his burrow.~
+Desc This prairie dog has short yellow, bushy fur that hides his small ears. His 
+tiny black tail is curled close to his body. His dirty white feet carry him 
+swiftly back into his burrow as his bark-like call warns the others. 
+~
+Race human~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 45
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    dodge~
+Imm    charm~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#80510
+Name vulture~
+ShortD a huge vulture~
+LongD A huge vulture feeds on the carcass.~
+Desc A huge, disease ridden vulture is here. Its black feathers are dull and 
+filled with pests. A scrap of carrion is dangling in its horrible beak. 
+~
+Race human~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType peck
+AC 35 35 35 28
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  flying~
+Off    berserk~
+Imm    disease~
+Form   edible sentient~
+Part   head legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80511
+Name harried mother redbird~
+ShortD a harried mother `#`Rredbird`^~
+LongD A harried mother `#`Rredbird`^ dangles worms over her babies.~
+Desc A harried redbird mother flies over her babies and tries to drop worms into 
+their crying beaks. She ignores you as you approach. Her foremost concern is 
+hushing her chicks. 
+~
+Race human~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType peck
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  flying~
+Off    dodge~
+Imm    sleep fear~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#80512
+Name hoard squalling redbird~
+ShortD a hoard of squalling `#`Rredbirds`^~
+LongD A hoard of squalling `#`Rredbirds`^ huddles together here.~
+Desc A hoard of baby redbirds is here. Their incessant squalling is aggravating 
+their mother. They peer up at you and chirp unhappily. 
+~
+Race human~
+Align 0 0
+Level 8
+Hitroll 0
+HitDice 2d5+8
+ManaDice 2d5+18
+DamDice 1d7+2
+DamType bite
+AC 30 30 30 24
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary~
+Off    trip~
+Imm    charm fear~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#80513
+Name small determined redbird~
+ShortD a small determined `#`Rredbird`^~
+LongD A small determined `#`Rredbird`^ flaps his wings wildly and tries to fly.~
+Desc A small but determined redbird flaps crazily here. He hops a few times, 
+trying to imitate his mother in flight. He almost makes it to the air but 
+falls flat on his fuzzy behind. 
+~
+Race human~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType peck
+AC 35 35 35 29
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  sanctuary~
+Off    dodge~
+Imm    charm~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80514
+Name motherly avian~
+ShortD a motherly looking avian~
+LongD A motherly looking avian is here looking after the hatchlings.~
+Desc A motherly looking avian is here. Her feathers are a brilliant gold with 
+light touches of dusky blue. Her bird-like face holds nothing but concern 
+and warmth for the small hatchlings. 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType slash
+AC -20 -20 -20 -17
+Wealth 70
+Act    npc dont_wander no_tame stay_area~
+Off    dodge~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80515
+Name rabble delicate blue butterflies~
+ShortD a rabble of delicately winged `#`Cblue`^ butterflies~
+LongD A rabble of delicately winged `#`Cblue`^ butterflies hovers here.~
+Desc A rabble of butterflies hovers here. Their delicate wings are blue with 
+satiny white edges. They float gracefully through the air, never landing for 
+long. 
+~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType drain
+AC 10 10 10 8
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  flying~
+Off    fast~
+Imm    charm~
+Vuln   fire disease~
+Form   edible sentient biped insect~
+Part   head arms legs heart brains guts hands feet eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#80516
+Name aged avian dusky wings~
+ShortD an aged avian with dusky wings~
+LongD An aged avian with dusky wings looks out over the lands.~
+Desc An aged avian stands here. His face is weary, bordering on haggard. Infinite 
+wisdom pools in the depths of his eyes. His wings are no longer brilliant, 
+and they hang limply against his back. Scars mark his body, and feathers no 
+longer grow in some spots on his body. Overall, he is not much to look at, 
+but you realize he has accomplished more in this lifetime than most will in 
+many. 
+~
+Race human~
+Align 3 3
+Level 18
+Hitroll 0
+HitDice 3d5+79
+ManaDice 3d5+75
+DamDice 2d7+4
+DamType pierce
+AC -35 -35 -35 -28
+Wealth 200
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary~
+Off    disarm~
+Imm    charm negative holy fear~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 80501 100~
+MProg SPEECH 80502 no~
+MProg SPEECH 80503 yes~
+END
+
+#80517
+Name black spider~
+ShortD a small black spider~
+LongD A small black spider weaves his web here.~
+Desc A small black spider weaves delicate gossamar here. His body is compact, his 
+legs long and spindly. 
+~
+Race human~
+Align 0 0
+Level 8
+Hitroll 0
+HitDice 2d5+8
+ManaDice 2d5+18
+DamDice 1d7+2
+DamType bite
+AC 30 30 30 24
+Wealth 0
+Act    npc stay_area~
+Act2   allskills~
+AffBy  sneak~
+Off    fast~
+Imm    disease~
+Vuln   bash pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#80518
+Name adult avian~
+ShortD an adult avian~
+LongD An adult avian is here, sleeping in a small nest.~
+Desc This avian woman is a bit sleepy, and appears to be resting quite well. 
+Well-coloured plumage decorates her worn, and tired body. 
+~
+Race human~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType none
+AC -30 -30 -30 -26
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80519
+Name ill-tempered avian wife~
+ShortD an ill-tempered avian wife~
+LongD An ill-tempered avian wife is screaming at her husband here.~
+Desc A loud-mouthed, irate avian woman is here. Her eyes are fiery with passion, 
+her feathers ruffled. She is currently screaming obscenities at her 
+unfortunate husband. 
+~
+Race human~
+Align 0 0
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d12+3
+DamType slap
+AC -15 -15 -15 -12
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_evil detect_invis detect_hidden berserk~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#80520
+Name cowering avian male~
+ShortD a cowering avian male~
+LongD A cowering avian male is trying to hide here.~
+Desc An unfortunate avian male is here. He has his feathered hands clamped over 
+his ears as he tries to block out his wife's screaming. The poor man has no 
+idea what he has done wrong. 
+~
+Race human~
+Align 0 0
+Level 13
+Hitroll 0
+HitDice 2d5+50
+ManaDice 2d5+50
+DamDice 2d5+3
+DamType bite
+AC -10 -10 -10 -8
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+Off    dodge~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#80521
+Name raving avian~
+ShortD a raving avian~
+LongD A raving avian flaps insanely around the room.~
+Desc A crazy avian is flying all around the room here. He constantly rams into 
+the walls, shakes his head, then flies again. His wings are torn and dirty. 
+His body is thin and sickly. 
+~
+Race human~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType claw
+AC 0 0 0 0
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+AffBy  flying~
+Off    berserk~
+Imm    summon charm~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80522
+Name burdened avian healer~
+ShortD a burdened avian healer~
+LongD A burdened avian healer walks slowly among the sick.~
+Desc A weary avian healer walks through his charges. Stress lines his face as he 
+quietly talks to the sick. His wings are a pristine white that his thin dark 
+robes constrast with. 
+~
+Race human~
+Align 3 3
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType pierce
+AC -25 -25 -25 -21
+Wealth 75
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary regeneration~
+Off    fast~
+Imm    holy mental sleep illusion~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80523
+Name excited avian scientist~
+ShortD an excited avian scientist~
+LongD An excited avian scientist mumbles to himself.~
+Desc An excited avian scientist is here. He bends over his table and mumbles 
+something about calcium to himself. He straightens and yells "YES! I got 
+it!" 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType pound
+AC -20 -20 -20 -16
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+Off    trip~
+Imm    summon~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80524
+Name disgusting roach~
+ShortD a disgusting roach~
+LongD A disgusting roach crawls around.~
+Desc A nasty black roach crawls around here and infests the area. 
+~
+Race human~
+Align 0 0
+Level 8
+Hitroll 0
+HitDice 2d5+8
+ManaDice 2d5+18
+DamDice 1d7+2
+DamType bite
+AC 30 30 30 27
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  sneak~
+Imm    charm mental disease~
+Vuln   bash slash~
+Form   edible sentient biped insect~
+Part   head arms legs heart brains guts feet eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#80525
+Name small avian boy~
+ShortD a small avian boy~
+LongD A small avian boy plays here.~
+Desc A small avian boy is here. His feathered body is compact, and his voice is 
+still squeaky when he talks excitedly. His little overalls bulge with small 
+hidden toys. 
+~
+Race human~
+Align 0 0
+Level 11
+Hitroll 0
+HitDice 2d5+22
+ManaDice 2d5+30
+DamDice 1d10+2
+DamType beating
+AC 5 5 5 4
+Wealth 75
+Act    npc no_tame stay_area~
+AffBy  sneak~
+Off    dodge~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#80526
+Name young avian girl~
+ShortD a young avian girl~
+LongD A happy avian girl giggles here.~
+Desc A young avian girl giggles softly as she sees you. Her feathers are soft, 
+and a youthful light spills around her. 
+~
+Race human~
+Align 0 0
+Level 11
+Hitroll 0
+HitDice 2d5+22
+ManaDice 2d5+30
+DamDice 1d10+2
+DamType slap
+AC 5 5 5 4
+Wealth 0
+Act    npc no_tame stay_area~
+Off    trip~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#80527
+Name avian woman~
+ShortD an avian woman~
+LongD An avian woman stands here.~
+Desc An avian woman is before you. Her long feathers are a light blue. By avian 
+standards, she is pretty. She smiles as you near. 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType none
+AC -20 -20 -20 -17
+Wealth 95
+Act    npc no_tame stay_area~
+Off    fast~
+Imm    summon~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80528
+Name avian man~
+ShortD an avian man~
+LongD An avian man stands here.~
+Desc An adult avian male is here. His feathers and other features are fully 
+developed. He moves through the trees, stopping occassionally to chat. 
+~
+Race human~
+Align 0 0
+Level 17
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType punch
+AC -30 -30 -30 -25
+Wealth 100
+Act    npc no_tame stay_area~
+Off    berserk~
+Imm    summon~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80529
+Name aderyn~
+ShortD aderyn~
+LongD Aderyn stands proudly behind her wares.~
+Desc This smiling avian proudly beams over her goods. She has worked hard to 
+establish herself and is proud of her position. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -714
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Off    crush~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80530
+Name sad molt teenage avian~
+ShortD a sad eyed, molting teenage avian girl~
+LongD A sad eyed, molting teenage avian girl sighs heavily as she gazes out the window.~
+Desc An unhappy avian teenager is here. Her feathers are molting, leaving her a 
+bit pathetic looking. She can frequently be found curled up in front of her 
+window, daydreaming about the boy she hopelessly loves. 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType slap
+AC -20 -20 -20 -17
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80531
+Name stiff avian man~
+ShortD a stiff-backed avian man~
+LongD A stiff-backed avian man dusts here.~
+Desc A stiff-backed avian man is frantically dusting here. He peers at each of 
+his chairs in turn, trying to make sure he gets all of the dust. His 
+brilliant blue feathers seem to be shaped uniformly. 
+~
+Race human~
+Align 0 0
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d12+3
+DamType punch
+AC -15 -15 -15 -12
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80532
+Name avian toddler~
+ShortD a mischievous avian toddler~
+LongD A mischievous avian toddler wobbles around here.~
+Desc This avian toddler has trouble written all over him. A wide smile spreads as 
+he spies new things to get into. His wings are a sunny yellow, his eyes a 
+light brown. 
+~
+Race human~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 41
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#80533
+Name fussing avian parents~
+ShortD fussing avian parents~
+LongD Fussing avian parents lean over the eggs here.~
+Desc Avian parents lean over the nest and peer in at the eggs. They cluck 
+fretfully to each other as they worry about their eggs. Somehow they both 
+keep an eye on their toddler so he doesn't stray far. 
+~
+Race human~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType punch
+AC -25 -25 -25 -22
+Wealth 100
+Act    npc dont_wander no_tame stay_area~
+Off    dodge~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80534
+Name yosiale mayor kanoni~
+ShortD yosiale, mayor of kanoni~
+LongD Yosiale, Mayor of Kanoni waddles around here.~
+Desc Judging by the girth of this avian's belly, he has never missed a meal in 
+his life and never refuses seconds. Gaudy orange feathers grace his fat 
+body. The feathers look a bit greasy. The avian appears jovial, just a bit 
+fat and unkempt. 
+~
+Race human~
+Align 0 0
+Level 19
+Hitroll 0
+HitDice 3d5+82
+ManaDice 3d5+80
+DamDice 2d7+5
+DamType crush
+AC -40 -40 -40 -34
+Wealth 200
+Act    npc dont_wander no_tame stay_area~
+Off    crush~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80535
+Name jastair~
+ShortD jastair~
+LongD Jastair stands here preening his wings.~
+Desc Jastair, love of the young teenager downstairs, stands here. His feathers 
+are a glossy black, but closer inspection reveals a few pests have settled 
+in them. He flashes a practiced smile at you as he notices you checking him 
+out. He wears tacky jewelry and reeks of bad cologne. 
+~
+Race human~
+Align -1 0
+Level 17
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType none
+AC -30 -30 -30 -25
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+Off    trip~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80536
+Name avian teenage bum~
+ShortD a teenaged avian bum~
+LongD A teenaged avian bum lounges here in the filth.~
+Desc This teenaged bum is a friend of Jastair's. His youthful face lacks any 
+intelligence. He is easily riled at this age and has zero motivation except 
+the alcohol and girls. He wallows here in the filth he and his friends have 
+created. 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -17
+Wealth 10
+Act    npc dont_wander no_tame stay_area~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80537
+Name snoring avian teenager~
+ShortD a snoring avian teenager~
+LongD A snoring avian teenager is sprawled here.~
+Desc This male avian teenager is sprawled out over his dirty nest. His wings are 
+ruffled and stained with a smelly substance. Loud snores roll out of him. 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -17
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80538
+Name studying cleric~
+ShortD a studying cleric~
+LongD A studying cleric is bent over a scroll.~
+Desc This holy man is bent over a large scroll. His eyes are a vivid blue and are 
+a little watery from peering at the inscriptions. His wings are a light 
+yellow. 
+~
+Race human~
+Align 0 0
+Level 13
+Hitroll 0
+HitDice 2d5+50
+ManaDice 2d5+50
+DamDice 2d5+3
+DamType pierce
+AC -10 -10 -10 -8
+Wealth 40
+Act    npc dont_wander no_tame stay_area cleric~
+Res    holy~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80539
+Name mage scorched wing~
+ShortD an avian mage with scorched wings~
+LongD An avian mage with scorched wings sits quietly and studies.~
+Desc This avian mage looks like she has had a small accident with her fireball 
+spell. Her wings are a little crispy around the edges, and soot marks her 
+face. She furrows her brow and leans closer to her book. 
+~
+Race human~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType slap
+AC -25 -25 -25 -22
+Wealth 40
+Act    npc dont_wander no_tame stay_area mage~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80540
+Name pacing avian druid~
+ShortD a pacing avian druid~
+LongD An avian druid paces slowly back and forth.~
+Desc This avian druid is pacing slowly back and forth. His long silver wings 
+brush the floor as he walks. He looks like he has seen a few rough nights 
+judging by the scars encircling his arms. 
+~
+Race human~
+Align 0 0
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d12+3
+DamType slash
+AC -15 -15 -15 -12
+Wealth 20
+Act    npc dont_wander no_tame stay_area~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80541
+Name squinting mole~
+ShortD a squinting mole~
+LongD A squinting mole burrows in the dirt.~
+Desc This unhappy mole tries to burrow itself further in the dirt as you approach 
+with a light.  His little brown body quivers as he frantically claws. His 
+fearful eyes try to squint shut against the harsh light. 
+~
+Race human~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType bite
+AC 40 40 40 32
+Wealth 0
+Act    npc no_tame stay_area~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#80542
+Name dozing pink snake~
+ShortD a dozing `#`Mpink`^ snake~
+LongD A dozing `#`Mpink`^ snake is curled up here.~
+Desc This pink snake looks relatively harmless upon first glance. Small white 
+fangs jut out of its narrow mouth. Its skin is smooth and unblemished. 
+~
+Race human~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType drain
+AC -20 -20 -20 -18
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    tail~
+Imm    poison~
+Form   edible sentient snake~
+Part   head arms heart brains guts ear eye scales~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#80543
+Name bent avian elder~
+ShortD a bent avian elder~
+LongD A bent avian elder bows his head in prayer.~
+Desc This bent avian elder wears heavy wooden prayer beads and robes of 
+starlight. The wind has tousled his feathers and rosied his cheeks. He 
+continues to pray as you approach. 
+~
+Race human~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType none
+AC -45 -45 -45 -37
+Wealth 100
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary~
+Off    fast~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80544
+Name ladybug cute~
+ShortD a cute `#`RL`xa`Rd`xy`Rb`xu`Rg`^~
+LongD A cute `#`RL`xa`Rd`xy`Rb`xu`Rg`^ scuttles along here.~
+Desc This small winged wonder is coated with a delicate red shell, having black 
+and white dots.  Quite speedy in nature, it's capable of moving around 
+erratically without an issue to evade predators that may wish to kill it. 
+~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 9
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  flying haste~
+Off    fast~
+Imm    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#80545
+Name lv_checker_kanoni~
+ShortD lv_checker_kanoni~
+LongD Lv_checker_kanoni~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXIT 80504 north~
+MProg EXIT 80504 down~
+END
+
+#0
+
+
+
+#OBJECTS
+#80501
+Name putrid carcass~
+Short a putrid carcass~
+Desc A putrid carcass has been left here.~
+Level 1
+ItemType container~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 50 0 0 10 0
+Weight 500
+Material body~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80502
+Name rotting hand~
+Short a rotting hand~
+Desc A rotting hand has fallen off the carcass.~
+Level 1
+ItemType food~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3 0 0 0
+Weight 5
+Material food~
+Wear     take~
+End
+
+#80503
+Name butterfly amber~
+Short a small butterfly encased in amber~
+Desc A small butterfly encased in amber has dropped here.~
+Level 1
+ItemType jewelry~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material amber~
+Wear     take neck~
+End
+
+#80504
+Name large nest~
+Short a large nest made with twigs and leaves~
+Desc A large nest made with twigs and leaves is home to the crying chicks.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 1 50 FIQ 100 100
+Weight 100
+Material twig~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80505
+Name small holy book~
+Short a small holy book~
+Desc A small holy book is here. A page on how to create peace between all the races is marked with a brilliant red bookmark.~
+Level 18
+ItemType scroll~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 18 'cure light' calm '' ''
+Weight 3
+Material scroll~
+Extra    glow antievil antineutral~
+Wear     take hold~
+ClassAllowances cleric~
+End
+
+#80506
+Name small nest~
+Short a small nest~
+Desc A small nest has been built in the corner.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 1 150 CEHLQ 100 100
+Weight 200
+Material bed~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80507
+Name small silver fork~
+Short a small silver fork~
+Desc A small silver fork is here.~
+Level 14
+ItemType weapon~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 1 10 stab 0
+Weight 2
+Material silver~
+Wear     take wield~
+End
+
+#80508
+Name comfortable pallet~
+Short a row of comfortable looking pallets~
+Desc A row of comfortable looking pallets is here.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 3 200 EFHILR 105 100
+Weight 5
+Material pallet~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80509
+Name short strand prayer beads~
+Short a short strand of wooden prayer beads~
+Desc A short strand of wooden prayer beads has been left here.~
+Level 16
+ItemType armor~
+Cost 80
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 2 1 0
+Weight 2
+Material bead~
+Extra    antievil~
+Wear     take wrist~
+Affect affects -1 16 -1 none 0 detect_evil
+End
+
+#80510
+Name nasty green potion~
+Short a nasty looking `#`Ggreen`^ potion~
+Desc A nasty looking `#`Ggreen`^ potion, one of the scientist's failures, is here.~
+Level 10
+ItemType potion~
+Cost 85
+Durability 5
+Asize 0
+Rsize 50
+Values 10 'cure light' starvation '' ''
+Weight 5
+Material potion~
+Wear     take~
+End
+
+#80511
+Name stained white lab coat~
+Short a stained white lab coat~
+Desc A stained white lab coat has been left here. What looks to be the remains of the owner's lunch is smeared on it.~
+Level 5
+ItemType clothing~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material cloth~
+Wear     take torso~
+End
+
+#80512
+Name cozy yellow sofa~
+Short a cozy `#`Yyellow`^ sofa~
+Desc A cozy `#`Yyellow`^ sofa is here.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 3 200 EHKQ 100 100
+Weight 500
+Material cloth~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80513
+Name cushy silver armchair~
+Short a cushy `#`Ssilver`^ armchair~
+Desc A cushy `#`Ssilver`^ armchair is here.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 1 150 EHKQ 100 100
+Weight 300
+Material cloth~
+End
+
+#80514
+Name set jacks~
+Short a set of jacks~
+Desc A child's set of jacks has been forgotten here.~
+Level 11
+ItemType weapon~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 2 4 stab 0
+Weight 3
+Material stone~
+Wear     take wield~
+End
+
+#80515
+Name pink pinafore~
+Short a `#`Mpink`^ pinafore~
+Desc A girl's `#`Mpink`^ pinafore is here.~
+Level 11
+ItemType clothing~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material cloth~
+Wear     take torso~
+End
+
+#80516
+Name broken bottle~
+Short a broken bottle~
+Desc A broken bottle lies here.~
+Level 10
+ItemType weapon~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 1 10 stab 0
+Weight 3
+Material glass~
+Wear     take wield~
+End
+
+#80517
+Name chocolate bonbon~
+Short a chocolate bonbon~
+Desc A chocolate bonbon melts here.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 1
+Material chocolate~
+Wear     take~
+End
+
+#80518
+Name sugar gumdrop~
+Short a sugar covered gumdrop~
+Desc A sugar covered gumdrop has been left here.~
+Level 1
+ItemType food~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 1
+Material candy~
+Wear     take~
+End
+
+#80519
+Name lady white linen handkerchief~
+Short a lady's `#`Wwhite`^ linen handkerchief~
+Desc A lady's `#`Wwhite`^ linen handkerchief has been dropped here. Small stitches form a red rose in the corner.~
+Level 1
+ItemType clothing~
+Cost 75
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cloth~
+Wear     take hold~
+End
+
+#80520
+Name stubby fragrant cigar~
+Short a fragrant stubby cigar~
+Desc A fragrant stubby cigar is here.~
+Level 1
+ItemType tabac_pipe~
+Cost 60
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 2
+Material cigar~
+Wear     take hold~
+End
+
+#80521
+Name long pink ribbon~
+Short a long `#`Mpink`^ hair ribbon~
+Desc A long `#`Mpink`^ hair ribbon is here.~
+Level 1
+ItemType clothing~
+Cost 75
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material ribbon~
+Wear     take head~
+Affect vuln -1 1 -1 none 0 charm
+End
+
+#80522
+Name pink love potion~
+Short a `#`Mlove`^ potion~
+Desc A `#`Mlove`^ potion in a heart shaped vial is here.~
+Level 15
+ItemType potion~
+Cost 70
+Durability 5
+Asize 0
+Rsize 50
+Values 15 'charm person' '' '' ''
+Weight 3
+Material potion~
+Extra    norestring~
+Wear     take hold~
+End
+
+#80523
+Name long tapered feather~
+Short a long tapered feather~
+Desc A long tapered feather has dropped here. The tip of it looks quite sharp.~
+Level 5
+ItemType projectile~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values arrow 5 1 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
+Weight 2
+Material feather~
+Wear     take hold~
+End
+
+#80524
+Name feather duster~
+Short a feather duster~
+Desc A feather duster has been left here.~
+Level 14
+ItemType weapon~
+Cost 25
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 1 11 beating 0
+Weight 2
+Material feather~
+Extra    norestring~
+Wear     take wield~
+End
+
+#80525
+Name vase wildflower table~
+Short a pretty vase of wildflowers on a table~
+Desc A pretty vase of wildflowers sits here on a polished table.~
+Level 1
+ItemType trash~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material wood~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80526
+Name cozy nest~
+Short a cozy nest~
+Desc A cozy nest made of vines and leaves fills the corner.~
+Level 1
+ItemType container~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 500 0 0 100 0
+Weight 500
+Material vine~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80527
+Name blue baby rattle~
+Short a `#`Bblue`^ baby rattle~
+Desc A `#`Bblue`^ baby rattle is here.~
+Level 1
+ItemType treasure~
+Cost 25
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material wood~
+Extra    hum~
+Wear     take hold~
+End
+
+#80528
+Name blue egg~
+Short a pale blue avian egg~
+Desc A pale blue avian egg is here.~
+Level 1
+ItemType food~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 10
+Material egg~
+Wear     take~
+End
+
+#80529
+Name staff jewel encrusted~
+Short a jewel encrusted staff~
+Desc A jewel encrusted staff lies here, collecting dust.~
+Level 19
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values staff 3 4 thwack 0
+Weight 0
+Material wood~
+Wear     take wield~
+End
+
+#80530
+Name green bottle beer~
+Short a green bottle of beer~
+Desc A green bottle of beer has been dropped here.~
+Level 1
+ItemType drinkcontainer~
+Cost 2
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 beer 0 0
+Weight 2
+Material beer~
+Wear     take hold~
+End
+
+#80531
+Name heavy bottle whiskey~
+Short a heavy burgandy bottle of whiskey~
+Desc A heavy burgandy bottle of whiskey has fallen here.~
+Level 1
+ItemType drinkcontainer~
+Cost 2
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 whisky 0 0
+Weight 0
+Material whiskey~
+Wear     take hold~
+End
+
+#80532
+Name colorful cup juice~
+Short a colorful cup of juice~
+Desc A colorful cup of juice sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 5
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 'starfruit juice' 0 0
+Weight 1
+Material juice~
+Wear     take hold~
+End
+
+#80533
+Name blue scroll~
+Short a brilliant `#`Cblue`^ scroll~
+Desc A brilliant `#`Cblue`^ scroll is here.~
+Level 16
+ItemType scroll~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 16 'pass door' blink '' ''
+Weight 3
+Material scroll~
+Wear     take hold~
+End
+
+#80534
+Name short yellowed scroll~
+Short a short `#`yyellowed`^ scroll~
+Desc A short `#`yyellowed`^ scroll is here.~
+Level 13
+ItemType scroll~
+Cost 20
+Durability 5
+Asize 0
+Rsize 50
+Values 13 'dispel evil' 'destroy magic' '' ''
+Weight 2
+Material scroll~
+Wear     take hold~
+End
+
+#80535
+Name curled green scroll~
+Short a curled `#`Ggreen`^ scroll~
+Desc A curled `#`Ggreen`^ scroll is here.~
+Level 14
+ItemType scroll~
+Cost 40
+Durability 5
+Asize 0
+Rsize 50
+Values 14 'create food' 'create spring' '' ''
+Weight 3
+Material scroll~
+Wear     take hold~
+End
+
+#80536
+Name pile acorns~
+Short a pile of acorns~
+Desc A pile of acorns is half hidden here.~
+Level 1
+ItemType food~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 0 0 0
+Weight 2
+Material acorn~
+Wear     take~
+End
+
+#80537
+Name soft starlight robe~
+Short a soft robe made of `#`Wstarlight`^~
+Desc A soft robe made of `#`Wstarlight`^ is here.~
+Level 20
+ItemType armor~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 3
+Material starlight~
+Wear     take torso~
+Affect modifier -1 20 -1 saves 1 0
+End
+
+#80538
+Name glittering mineral~
+Short a glittering mineral~
+Desc A glittering mineral is embedded in the soil.~
+Level 1
+ItemType treasure~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material mineral~
+Wear     take hold~
+End
+
+#80539
+Name spiderweb~
+Short a piece of `#`Ssilver`^ spiderweb~
+Desc A piece of `#`Ssilver`^ spiderweb has been left here.~
+Level 1
+ItemType rp~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material web~
+Wear     take hold~
+End
+
+#80540
+Name bundle broken twigs~
+Short a bundle of broken twigs~
+Desc A bundle of broken twigs has been left here.~
+Level 1
+ItemType piece~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 80541 80540 80544 0 0
+Weight 3
+Material twig~
+Wear     take hold~
+End
+
+#80541
+Name long red vine~
+Short a long `#`rred`^ vine~
+Desc A long `#`rred`^ vine is curled up here.~
+Level 1
+ItemType piece~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 80540 80540 80544 0 0
+Weight 0
+Material vine~
+Wear     take hold~
+End
+
+#80542
+Name vivid pink egg~
+Short a vivid `#`Mpink`^ egg~
+Desc A vivid `#`Mpink`^ egg is nestled here.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 5
+Material egg~
+Wear     take hold~
+End
+
+#80543
+Name a soft tiny blanket~
+Short a soft `#`Yyellow`^ blanket~
+Desc A soft `#`Yyellow`^ blanket is here.~
+Level 1
+ItemType clothing~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material cloth~
+Wear     take torso~
+End
+
+#80544
+Name whip vine~
+Short a `#`Gvine`^ whip~
+Desc A `#`Gvine`^ whip lies here, waiting to be used.~
+Level 6
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values whip 1 5 none H
+Weight 8
+Material vine~
+Wear     take wield~
+End
+
+#0
+
+
+
+#ROOMS
+#80501
+Name At the bottom of a mountain~
+Desc A tall mountain filled with trees dominates the landscape before you. The 
+ground here is rocky and holds little vegetation. In the distance you can 
+see lush grasses around the trees. Birds call out warnings as you approach. 
+Prairie dogs can be seen ducking back into their burrows. 
+~
+Sector inside~
+Exit east 80502
+Exit south 55580
+End
+
+
+#80502
+Name Traveling up a mountain~
+Desc The ground slowly begins to climb upwards here. Small green grasses dot the 
+terrain, contrasting with the dull brown of the rocks. Along the side of the 
+road a small carcass is visible. Vultures swarm the carcass, fighting over 
+what little meat is left. More vultures swarm overhead, calling for their 
+chance at the remains. 
+~
+Sector inside~
+Exit east 80503
+Exit west 80501
+End
+
+
+#80503
+Name Before a colossal tree~
+Desc A colossal tree blocks the way further up the mountain. A small hole allows 
+entrance at the bottom of the massive structure. A cursory glance inside the 
+tree reveals that the tree has been hollowed out. Chirping birds and 
+movement can be detected further up the tree. There is no way to go except 
+up the tree or back down the mountain. 
+~
+Sector inside~
+Exit west 80502
+Exit up 80504
+End
+
+
+#80504
+Name In a massive tree~
+Desc The inside walls of the tree are smooth except for small knotholes where 
+bugs and woodpeckers have left their mark. Tiny bits of sap seep out of the 
+holes and dribble down the walls to congeal on the floor. A caterpillar is 
+trying to wriggle its way into one of the holes to find a new home. 
+~
+Sector inside~
+Exit up 80505
+Exit down 80503
+End
+
+
+#80505
+Name Inside the tree~
+Desc More amber sap is visible on the carved walls of the tree. Closer inspection 
+of the sap reveals that small insects have been immobilized for life in some 
+of the pockets. Pecking is faintly heard from the outside of the tree. An 
+open hole shows a flash of feathers as the woodpecker flies away. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 80507
+Exit up 80506
+Exit down 80504
+End
+
+
+#80506
+Name On a long branch~
+Desc The massive tree branches off here. It looks possible to jump to the next 
+tree from the eastern branch. Pitiful squawking can be hearing coming from 
+above. A few downy feathers drift down slowly from above. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80510
+Exit up 80509
+Exit down 80505
+End
+
+
+#80507
+Name Inside a branch~
+Desc Although the trunk of the tree is quite sturdy, this limb veering off looks 
+delicate and unable to support much weight. Small bugs travel past easily, 
+but the limb creaks as you experimentally step forward. A crack forms 
+underfoot and the limb groans under the stress. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80505
+Exit west 80508
+End
+
+
+#80508
+Name Inside a branch~
+Desc The limb ends here abruptly. The branch bends dangerously under your weight, 
+and sharp cracks are heard as the wood splinters. Squirrels and other 
+creatures scurry back to the sturdy trunk that promises safety. A pile of 
+acorns, the squirrel's cache, crunches under your feet as you try to 
+backpeddle. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80507
+End
+
+
+#80509
+Name The top nest~
+Desc The top of the tree is home to a nest of small crying chicks and one harried 
+mother. The babies squabble in their nest as they ignore her attempts to 
+feed them with wriggling worms clamped in her beak. One chick has fallen out 
+of the nest and is determinedly flapping his tiny wings, trying to get back 
+in. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 80506
+End
+
+
+#80510
+Name Branching off~
+Desc This long, durable branch trails off to the next tree over. Green leaves 
+stick out in all directions and flutter in the wind. A canopy of branches 
+and leaves link under the branch, making it impossible to see the ground or 
+shimmy downward. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80511
+Exit west 80506
+End
+
+
+#80511
+Name Further along the branch~
+Desc The end of the branch approaches. The distance between this branch and the 
+next tree's looks like it could be crossed easily. The faint crying of the 
+redbirds reaches your ears from the west. Talking can be heard from the 
+north. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80513
+Exit west 80510
+Exit northeast 80512
+End
+
+
+#80512
+Name Small Tree Home~
+Desc A nest made of various sizes of branches and sticks rests firmly on the 
+branch here. Tight interwoven straw lines it, giving it a nice cushion for 
+the eggs and baby hatchlings that will eventually end up there. A few stray 
+smaller branches stick out of the sides, not all that uncommon amongst nests 
+of this sort, designed to provide a bit of warmth, and protection from the 
+elements. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit southwest 80511
+End
+
+
+#80513
+Name A massive tree~
+Desc You stumble as you jump across the gap from the last tree's branch to this 
+tree. A knot protruding from the trunk provides you a steady handhold. 
+Flying squirrels cross the gap without a second thought. The bark on this 
+tree trunk is silvery and flakey. Strips peel off easily in your hand. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 80511
+Exit up 80517
+Exit down 80514
+End
+
+
+#80514
+Name Inside the tree~
+Desc The slick silvery walls of the trunk make getting hand and foot holds nearly 
+impossible. Liquid amber oozes out of the silver walls, making footing even 
+more treacherous. The orange liquid contrasts with the silver walls, making 
+the small cracks seem to almost glow. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80513
+Exit down 80515
+End
+
+
+#80515
+Name Inside the tree~
+Desc Delicately woven silver spider webs cross the inside of the tree and blend 
+with the walls in places. Black spiders carefully spin their ways through 
+the inside of the trunk as they make new strands of delicate gossamar. 
+Tangled bits of web catch in your hair as you move through the room 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80514
+Exit down 80516
+Exit northwest 80523
+End
+
+
+#80516
+Name Inside the bottom of the tree~
+Desc Sticky amber has pooled here at the bottom of the tree. The sparkling liquid 
+appears to be at least a foot deep. Small insects try to crawl out of the 
+liquid, but more unsuspecting ones light on liquid and become stuck. Through 
+the amber you can see something large and dark. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80515
+End
+
+
+#80517
+Name Inside the tree~
+Desc The silver walls of the tree trunk are peeling, creating graceful, delicate 
+curves of bark that form an arch overhead.  Tiny, brilliantly colored 
+butterflies flit slowly through the room. A lantern shines out of one 
+corner, lighting your way. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 80518
+Exit down 80513
+Exit northeast 80519
+End
+
+
+#80518
+Name On the treetop~
+Desc You emerge out of the tree and stand atop its majestic branches. Birds of 
+several colorful species flock around you in the cool, brisk air. The small 
+butterflies have found their way up here also. An aged avian looks out over 
+the distant lands. A city can be seen in the far west. 
+~
+Sector inside~
+Exit down 80517
+End
+
+
+#80519
+Name On a tree branch~
+Desc The majestic tree extends a long branch here. Squirrels and other wildlife 
+playfully scamper along the branch as it sways gently in the soft wind. 
+Caterpillars inch along, and birds hop along behind you curiously. The 
+footing is sure and steady under you. 
+~
+Sector inside~
+Exit northeast 80520
+Exit southwest 80517
+End
+
+
+#80520
+Name On a tree branch~
+Desc The leaves and branches have been carefully trimmed back here to allow 
+passage to the next tree over. The silvery branch continues to the northeast 
+where faint bickering can be heard. Birds peer in, but do not dare to cross 
+the threshold to the small home. 
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit northeast 80521
+Exit southeast 80522
+Exit southwest 80519
+End
+
+
+#80521
+Name Small Tree Home~
+Desc The furniture in this small home is in complete disarray. Cooking utensils 
+fly through the air and gouge the silver walls as the wife angrily grabs and 
+launches them at the poor husband. Amber leaks out of the tiny gouges and 
+drips onto the floor. More screaming is heard from the wife as she notices 
+the additional amber. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit southwest 80520
+End
+
+
+#80522
+Name On the neighboring tree limb~
+Desc This wide limb connects to the next massive tree trunk. Underfoot, small 
+crunching noises are heard. Termites and other pests gnaw their way through 
+the once beautiful tree. This limb is still sturdy as the termites have not 
+yet managed to eat all the way through the silvery wood. 
+~
+Sector inside~
+Exit southeast 80524
+Exit northwest 80520
+End
+
+
+#80523
+Name Small Tree Home~
+Desc A proud avian has made his home here. Orange amber leaks out of the 
+reflective silver walls of the branch and makes a fine coating on his 
+possessions. Lanterns have been strung up throughout the room and the light 
+sparkles off the silver and orange. A small picture is mounted above his 
+bed. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit southeast 80515
+End
+
+
+#80524
+Name In a large rotting tree~
+Desc The hollowed out belly of the trunk is marred with pest holes and dangling 
+spiderwebs. Dirty amber slicks down the walls, and countless insects find 
+themselves trapped in the sticky substance. A woodpecker has pecked a 
+massive hole in the trunk, allowing a glimpse of the outside. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80525
+Exit down 80526
+Exit northwest 80522
+End
+
+
+#80525
+Name Inside a tree~
+Desc Termites, roaches, and other pests crawl out of the dark holes in the dirty 
+walls. The walls are crusted with dark tree sap that has trapped many 
+insects. A beetle lies on the floor. He has been turned over on his shiny 
+black shell and cannot flip over. Passerby glance at the beetle but do not 
+stop to help. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80531
+Exit down 80524
+End
+
+
+#80526
+Name Inside a rotting tree~
+Desc Dead birds litter the dirty, sticky floor around the middle opening of the 
+tree. Maggots writhe over the decaying bodies. Musty, rank air flows through 
+the dark belly of the tree. Cries of the ailing float on the wind, their 
+cries going unheeded. Spiders swoop down and feast upon the writhing 
+maggots. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80524
+Exit down 80527
+End
+
+
+#80527
+Name Inside a rotting tree~
+Desc A crazed avian, his mind broken by illness, has made his home here. Broken 
+toys and artifacts are crammed into the small area. The space is confining 
+and the dusty air makes breathing laborious. Scurrying rodents can be heard 
+in the darkness as they crawl in the walls and around the avian's 
+possessions. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80529
+Exit up 80526
+Exit down 80528
+End
+
+
+#80528
+Name Base of a Rotten Tree~
+Desc The trunk of the unhealthy tree ends abruptly here. Its sides sink down into 
+the moist earth. The scent of the earth fills your nostrils as you move in 
+the bottom of the base. Tree roots begin at the base and curl deep into the 
+earth. It looks like you may be able to enter one of the roots. 
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit up 80527
+Exit down 80547
+End
+
+
+#80529
+Name Branching out~
+Desc The rotting tree leans a sickly limb against the next tree here. The dark 
+wood is fragmented and oozing with illness. Birds swoop down, picking up the 
+wriggling insects that crawl along the branch to the next tree. The branch 
+creaks under the stress of your weight, and you quickly run for the other 
+tree. 
+~
+Sector inside~
+Exit east 80530
+Exit west 80527
+End
+
+
+#80530
+Name On a branch~
+Desc This sturdy, wide branch is attached to the next tree. Birds perch on the 
+limb and sing cheerfully as they peck at the bugs that fall from the other 
+tree. This tree looks decidedly more healthy than the last. Talking can be 
+heard coming from the tree trunk. 
+~
+Sector inside~
+Exit east 80536
+Exit west 80529
+End
+
+
+#80531
+Name Inside a tree~
+Desc Sick birds perch in the termite created holes in the slick walls. They 
+huddle together here for comfort. One chirps feebly at you for attention as 
+you enter. Avians pass through here, heading to the healer at the top of the 
+tree. Worms and other insects pass safely here as the birds are too sick to 
+inspect them for a meal. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80532
+Exit down 80525
+End
+
+
+#80532
+Name Top of a tree~
+Desc Sickly avians bed down at the top of this tree. Their pallets are stained 
+and rank. Their healer leans over them, his prayer book clasped against his 
+chest. He tries to soothe his charges as they let loose horrible cries in 
+their pain. Dark soot marks the walls and floats through the air from the 
+many candles. This place has obviously been touched by disease and despair. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 80533
+Exit down 80531
+End
+
+
+#80533
+Name On a vine bridge~
+Desc This bridge leading away from the ill avians is made of tightly woven vines. 
+It stretches through the air and swings precariously in the wind. Birds try 
+to perch on the bridge but the movement is too jarring for them. Small holes 
+in the vines allow you a view of the distant ground. 
+~
+Sector inside~
+Exit east 80532
+Exit southwest 80534
+End
+
+
+#80534
+Name On a vine bridge~
+Desc The bridge curves sharply in the wind, throwing your course off. The bridge 
+is anchored to the west by sturdy pikes. You scramble forward to get out of 
+the harsh wind and to settle your stomach, made queasy by the violent 
+movement of the bridge. 
+~
+Sector inside~
+Exit west 80535
+Exit northeast 80533
+End
+
+
+#80535
+Name A small enclosed hut~
+Desc Further exploration of the tree trunk has been barred by a thatched floor. 
+This small avian home stands alone on this tree. Strange smells drift out of 
+the doorway and assault the senses. Failed attempts have been thrown with 
+abandon into the corner. The smell seems to be a result of all the broken 
+vials and potions mixing together. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80534
+End
+
+
+#80536
+Name Into an archway~
+Desc A small archway is cut into the side of the tree trunk to allow easy access 
+to the hollowed out inside. A small plaque has been firmly attached to the 
+trunk. An elegant inscription reads "Welcome home, friends. " This tree 
+seems to be the main residential area of the avian village. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 80537
+Exit west 80530
+End
+
+
+#80537
+Name Common Room~
+Desc The archway leads to this cozy common room. Small hanging lanterns light the 
+cheerful room for the families of avians wander in and out. Comfortable 
+furniture has been placed against the sparkling amber coated walls. A sense 
+of a strong community is evident here as the families interact with each 
+other. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 80536
+Exit up 80538
+Exit down 80539
+End
+
+
+#80538
+Name Small Home~
+Desc This small avian home is filled with scents of wildflowers that the children 
+have brought their mother. A pretty orange rug adorns the floor, and the 
+walls are decorated with the children's drawings. A small framed portrait is 
+above the doorway. It shows the happy family snuggled together. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 80540
+Exit down 80537
+End
+
+
+#80539
+Name Aderyn's Delights~
+Desc A small store has been established at the base of this tree. Aderyn's 
+Delights boasts a small clean counter with shelves of stock lined up neatly. 
+Brightly colored pictures line the walls. Smiling customers and family are 
+the primary focus of the pictures. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 80537
+End
+
+
+#80540
+Name Small Home~
+Desc This small home is littered with shed feathers and candy wrappers. A twig 
+and vine nest has been made under the large window. Romance novels line the 
+shelves on the northern wall. Jewelry crowds a tiny mirrored vanity. 
+Parchment lines a brown trashcan tucked into the corner. On one of the 
+parchments you can read "Dear Jastiar". 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  0 23   2 A soft sigh echos through the room. ~
+Exit up 80541
+Exit down 80538
+End
+
+
+#80541
+Name Small Home~
+Desc The avian home is pristine, with completely scrubbed walls and floors. No 
+trace of dirt can be found in the space. A contraption catches the orange 
+amber as it seeps out of the walls and diverts it outside. The furniture is 
+neatly arranged and looks rather stiff. Perfectly hung rows of tasteful 
+pictures line one wall to create a conversation piece. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 80544
+Exit up 80542
+Exit down 80540
+End
+
+
+#80542
+Name Small Home~
+Desc Baby toys fill the floors of this avian home. A rattle peeks out from under 
+the couch, and clothes are draped over the back of it. Through the large 
+window, lush fields of sunflowers can be seen when the sun is shining 
+brightly down. Birds and other animals occasionally stop in to inspect the 
+avian toddler and the new eggs. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 80543
+Exit down 80541
+End
+
+
+#80543
+Name Library~
+Desc A big wooden table cluttered with scrolls of all shapes and sizes lines the 
+walls of the room, conserving space and adding a bit of odd decor to it. 
+Benches and chairs are scattered about, worn down from many years of 
+studying by the scholars. Various bottles, flasks, and stacks of parchment 
+coat the table as well, with notes and things of that sort attached to the 
+wall in some fashion, leaving the area in general disarray. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 80546
+Exit down 80542
+End
+
+
+#80544
+Name Jastair's Lair~
+Desc This space seems small and cramped due to the fancy looking nest that 
+spreads out. Touches of satin are woven with the vines and leaves to make 
+it. A lack of other furniture leads one to suspect the nest is the most 
+important feature to this owner. Empty alcohol bottles litter the floor next 
+to the bed. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 80541
+Exit northwest 80545
+End
+
+
+#80545
+Name Small Dirty Home~
+Desc Empty alcohol bottles and burned out cigars line the floor of this home. The 
+furniture is dirty and well used. Pin ups of avian girls crowd the walls. It 
+looks like someone has thrown a party recently. Dishes are piled high in the 
+sink, and a rank smell comes from the garbage. 
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  0 23   2 A loud snore rumbles through the room.~
+ExtraDesc pin-up ~
+This pin-up features a half clothed avian woman. Her feathers are a saucy 
+red, and her robes are arranged carefully to not actually show anything 
+naughty. 
+~
+Exit southeast 80544
+End
+
+
+#80546
+Name Small Treetop Home~
+Desc The view from this treetop home is lovely. One can see for miles on a clear 
+day. In the distance, the light of Tulgard are visible. The mayor of Kanoni 
+resides here in this home. His too-small nest has been built into one 
+corner, and his desk into the other. Small holes shaped into the wall are 
+perfect for ranged weaponry, and spotting attacks just the same.  Defending 
+the avian village is a must, and is overseen first and foremost by Yosiale. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 80543
+End
+
+
+#80547
+Name Into the Root~
+Desc A small opening in the dirty brown root allows you entrance here. Visibility 
+inside the root is poor as the light is completely blocked from the tree. 
+The air is filled with the moist scent of earth. Scurrying animals and 
+insects can be heard inside the roots. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit up 80528
+Exit southwest 80548
+End
+
+
+#80548
+Name Deeper in the tunnels~
+Desc A small tunnel running along the roots splits off here in a few directions.  
+Moles have been hard at work developing a well-established tunnel network 
+for transportation and safety. Small bugs roam through the tunnels, 
+scurrying about randomly. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 80552
+Exit northeast 80547
+Exit southeast 80549
+End
+
+
+#80549
+Name Deeper Yet~
+Desc Deeper into the tunnel network things are more packed, fortified against the 
+shifting earth above it. Packed clay lines the walls, with various claw 
+marks visible from a distance. Various hunks of minerals can barely be seen 
+packed in the clay as well, something quite uncommon for this area. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 80550
+Exit northwest 80548
+End
+
+
+#80550
+Name A Twist In The Tunnel~
+Desc Branching off in various directions, this is a wider junction of the tunnel 
+network.  Randoms scraps of items long left behind slowly rot away.  Various 
+small animals and insects that live within the tunnel network appear to 
+frequent this section, the floor of it tightly packed down. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 80549
+Exit east 80553
+Exit south 80551
+Exit southwest 80558
+End
+
+
+#80551
+Name End Of The Tunnel~
+Desc This tunnel, running parallel to a gigantic root next to it, appears to stop 
+here.  Deep clay marks in various directions show no signs of further 
+advancement possible.  Small piles of dirt lie near the end of the tunnel, 
+obvious attempts at expanding it. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 80550
+End
+
+
+#80552
+Name End of a Root~
+Desc The tendril of the root comes to a stop here at a sudden dead end. The 
+root's walls close in and end in a small point. A faint rustling can be 
+heard towards the end of the root. Soft hissing follows the rustling as a 
+snake situates itself. 
+~
+RoomFlags dark~
+Sector inside~
+Exit north 80548
+End
+
+
+#80553
+Name Dead End~
+Desc A tendril of the root dead ends here due to a small cave in of dirt and 
+rocks. The dirt is becoming muddy due to the amount of water seeping through 
+the ground. Small bugs crawl deep into the soil as they dig out new homes. A 
+small mineral deposit glints at the end of the root. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 80550
+End
+
+
+#80554
+Name Before a Hazy Outline~
+Desc As you are placed gently upon the ground by the bird, the thick silver fog 
+cloaks you. The land  is hushed in a kind of reverence. No birds can be 
+heard chirping, and the wind carries only its  own wuthering. Reaching out 
+through the fog you find your path clear. A hazy outline of a tree is  
+before you. The tree appears to be the only creature in the area besides 
+yourself. 
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+ExtraDesc tree ~
+It looks as if you could pass your hands through the hazy tree trunk and 
+enter it. 
+~
+Exit east 80555
+End
+
+
+#80555
+Name Short Marble Hall~
+Desc You pass through the trunk of the tree into an unexpected marble hallway. 
+The apparition of the tree trunk closes soundlessly behind you. Testing the 
+see through wall reveals you can easily slide your hands through the 
+barrier. Although the hall is enclosed, wind wuthers through the entire 
+length. Runes are marked on the walls. This is obviously a sacred place. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 80556
+Exit west 80554
+End
+
+
+#80556
+Name Before a Golden Door~
+Desc The marbled hall ends here, and a wide golden door before you pulses with a 
+glow. Looking at the  door is almost painful as the gold shines clearly. A 
+simple iron knob allows the door to be  opened. There is no lock. Your hand 
+is oddly steady as you reach for the knob, as if you know what rests on the 
+other side means you no harm. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc golden door~
+This beautiful golden door pulses with energy and light. The knob is aged 
+but well oiled. The  entranceway is clearly cared for. 
+~
+Exit east 80557
+EFlags door closed~
+Exit west 80555
+End
+
+
+#80557
+Name Into the Wind and Starlight~
+Desc You emerge in a world that is at a constant twilight. Silver flecks of 
+stardust swirl around the  nebulous clouds in the darkened sky. Golden 
+colors stream through the air. A warm, soft wind swirls around you as the 
+golden door closes. Arcane runes made with onyx pebbles weigh down the green 
+grass. A large altar is at the top of the grassy hill. A robed avian stands 
+at the altar with his head bowed in prayer. 
+~
+RoomFlags indoors light~
+Sector inside~
+End
+
+
+#80558
+Name A Stretch Of Tunnel~
+Desc This narrow stretch of tunnel connects to the main tunnel network to the 
+northeast, and to unknown parts heading southwest.  Small piles of tiny 
+objects lie here, more than likely pillaged from someone who carelessly left 
+them about. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit northeast 80550
+Exit southwest 80559
+End
+
+
+#80559
+Name The Bend~
+Desc The bend in the tunnel extends somewhat northeast, with a path tracing back 
+to the west. Quite unlike the tunnel section to the northeast, it has an odd 
+shape to it, as if something not so skilled at digging was doing the work. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 80560
+Exit northeast 80558
+End
+
+
+#80560
+Name The Dog Leg~
+Desc This stretch of tunnel fans that out east and west is well constructed, and 
+able to take plenty of abuse and travel by those that inhabit the tunnel 
+network. Various small bugs can be heard slowly shifting through the tunnel 
+at all hours of night, and day. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 80559
+Exit west 80561
+End
+
+
+#80561
+Name The Dog Leg~
+Desc This stretch of tunnel fans that out east and west is well constructed, and 
+able to take plenty of abuse and travel by those that inhabit the tunnel 
+network. Various small bugs can be heard slowly shifting through the tunnel 
+at all hours of night, and day. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 80560
+Exit southwest 80562
+End
+
+
+#80562
+Name A Slight Bend~
+Desc The slight shift in direction in this tunnel comes from the beginning in the 
+west, heading deeper into the tunnels off to the northeast.  Listening 
+carefully, chirping crickets can barely be heard in the distance. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 80563
+Exit northeast 80561
+End
+
+
+#80563
+Name Another Flat Stretch~
+Desc Nothing is really out of the ordinary, or exciting about this section of 
+tunnel.  Claw marks are seen quite well, as if the weight of the one moving 
+forced them to sink into the packed dirt floor. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 80562
+Exit west 80564
+End
+
+
+#80564
+Name A Connecting Root~
+Desc A few cheerful sunbeams are visible. This root must lead above ground 
+somewhere. You have traveled for many miles underground and wonder where you 
+will be let out. The sunlight is a welcome relief for your strained eyes. 
+You can again hear birds chirping in the distant, and the underground 
+creatures crawl back into the deep root system to escape the light. 
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit east 80563
+Exit up 42415
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 80540 spec_cast_druid
+S
+
+
+
+#RESETS2
+M 0 80509 1 80501 1
+M 0 80510 1 80502 1
+O 0 80501 -1 80502
+P 0 80502 1 80501 1
+M 0 80528 1 80502 1
+M 0 80505 2 80504 1
+O 0 80503 -1 80505
+M 0 80527 2 80505 1
+M 0 80528 2 80505 1
+M 0 80515 2 80507 2
+M 0 80544 2 80507 2
+M 0 80508 1 80507 1
+M 0 80503 2 80508 1
+O 0 80536 -1 80508
+O 0 80504 -1 80509
+M 0 80511 1 80509 1
+M 0 80512 1 80509 1
+M 0 80513 1 80509 1
+M 0 80502 2 80511 1
+M 0 80508 2 80511 1
+M 0 80507 1 80511 1
+O 0 80504 -1 80512
+M 0 80501 15 80512 5
+M 0 80514 1 80512 1
+M 0 80503 2 80513 1
+M 0 80544 2 80513 2
+M 0 80517 3 80515 2
+M 0 80528 2 80515 1
+M 0 80526 2 80515 1
+M 0 80525 2 80516 1
+O 0 80540 -1 80516
+M 0 80502 3 80517 1
+M 0 80515 2 80517 1
+M 0 80505 2 80517 1
+M 0 80515 3 80518 1
+M 0 80516 1 80518 1
+E 0 80505 -1 hold~
+M 0 80526 1 80518 1
+M 0 80508 1 80519 1
+M 0 80505 4 80519 2
+M 0 80503 2 80519 1
+M 0 80519 1 80521 1
+E 0 80507 -1 wielded~
+M 0 80520 1 80521 1
+M 0 80506 1 80522 1
+M 0 80504 1 80522 1
+O 0 80506 -1 80523
+M 0 80518 1 80523 1
+O 0 80539 -1 80524
+M 0 80504 2 80524 1
+M 0 80524 3 80524 1
+M 0 80505 1 80524 1
+M 0 80517 3 80524 3
+M 0 80506 3 80525 2
+M 0 80524 5 80525 2
+M 0 80504 1 80526 1
+M 0 80506 3 80526 3
+M 0 80521 1 80527 1
+E 0 80516 -1 wielded~
+M 0 80524 2 80527 2
+M 0 80544 3 80530 3
+O 0 80543 -1 80532
+M 0 80504 1 80532 1
+M 0 80507 1 80532 1
+M 0 80522 1 80532 1
+E 0 80509 -1 rwrist~
+O 0 80508 -1 80532
+M 0 80523 1 80535 1
+E 0 80511 -1 torso~
+O 0 80510 -1 80535
+O 0 80512 -1 80537
+O 0 80513 -1 80537
+M 0 80525 3 80537 2
+E 0 80514 -1 wielded~
+M 0 80526 3 80537 2
+E 0 80515 -1 torso~
+M 0 80527 3 80537 2
+M 0 80528 3 80537 2
+O 0 80525 -1 80538
+M 0 80526 2 80538 1
+M 0 80505 2 80538 1
+M 0 80527 1 80538 1
+M 0 80529 1 80539 1
+G 0 80517 -1
+G 0 80518 -1
+G 0 80519 -1
+G 0 80520 -1
+M 0 80525 1 80539 1
+M 0 80526 1 80539 1
+M 0 80528 1 80539 1
+M 0 80527 1 80539 1
+O 0 80506 -1 80540
+M 0 80530 1 80540 1
+E 0 80521 -1 head~
+E 0 80522 -1 hold~
+O 0 80523 -1 80540
+O 0 80506 -1 80541
+M 0 80531 1 80541 1
+E 0 80524 -1 wielded~
+O 0 80526 -1 80542
+P 0 80528 2 80526 2
+M 0 80532 1 80542 1
+E 0 80527 -1 hold~
+M 0 80533 1 80542 1
+O 0 80532 -1 80542
+M 0 80538 1 80543 1
+E 0 80534 -1 hold~
+M 0 80539 1 80543 1
+E 0 80533 -1 hold~
+M 0 80540 1 80543 1
+E 0 80535 -1 hold~
+M 0 80535 1 80544 1
+E 0 80530 -1 hold~
+M 0 80536 2 80545 2
+M 0 80537 1 80545 1
+M 0 80524 1 80545 1
+O 0 80530 -1 80545
+O 0 80530 -1 80545
+O 0 80531 -1 80545
+M 0 80534 1 80546 1
+E 0 80529 -1 wielded~
+M 0 80515 2 80546 2
+O 0 80541 -1 80546
+M 0 80541 1 80547 1
+M 0 80541 2 80550 2
+M 0 80524 1 80550 1
+M 0 80517 1 80550 1
+M 0 80542 1 80552 1
+M 0 80525 1 80553 1
+M 0 80506 2 80553 1
+M 0 80524 1 80553 1
+O 0 80538 -1 80553
+O 0 80542 -1 80554
+M 0 80543 1 80557 1
+E 0 80537 -1 torso~
+M 0 80541 2 80558 2
+S
+
+
+
+#SHOPS
+#80529
+profit_buy 150
+profit_sell 75
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#80504
+title lvs check for Kanoni~
+author Zaroth~
+code mob seeall
+  if level $n < 26
+    mob letpass
+  endif
+end
+  if level $n > 91
+    mob letpass
+  endif
+end
+mob echoat $n You try to enter, but a strange force prevents you from doing so.
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1108512783
+END
+
+#80503
+title falcon yes answer~
+author Zaroth~
+code mob echo A bright smile lights up the avian's face.
+
+say You believe in the sanctity of wind as we avians do! There is a place, a special place, that our elder goes to pay homage to the wind. I do wish I could visit one day. Oh, here's Rohiel. He aids our village during attacks.
+
+mob echoat $n Rohiel the falcon caws once loudly and grips you in his talons much to the surprise of the avian and yourself.
+
+mob echoat $n He lifts to the air and flaps off with you dangling in his clutch.
+
+mob echoaround $n Rohiel the falcon caws once loudly and grips $n in his talons much to the surprise of the avian and $n.
+
+mob echoaround $n He lifts to the air and flaps off with $n dangling in his clutch.
+
+mob transfer $n 80554
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1107811017
+END
+
+#80502
+title falcon no answer~
+author Zaroth~
+code emote back to his view with a small sigh.
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1107810602
+END
+
+#80501
+title falcon speech~
+author Zaroth~
+code mob seeall
+language native
+say Listen to the wind. It brings us news of our fellow beings and the world. It's a constant force that guides and protects us. Do you hear the calling?
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1107810551
+END
+
+#0
+
+
+#$

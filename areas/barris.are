@@ -1,0 +1,336 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Barris Weathered Keep Estate~
+ShortName   A Weathered Keep~
+Builders    kyarra~
+VNUMs       2620 2629
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Tue Nov  1 07:42:02 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#2620
+Name padded chair~
+Short a comfortable padded chair is here at the desk~
+Desc A comfortable padded chair is here at the desk.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 0 BEHK 100 100
+Weight 0
+Material unknown~
+End
+
+#2621
+Name bench long black~
+Short a long, black iron bench~
+Desc A long, black iron bench is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 10
+Asize 0
+Rsize 50
+Values 4 20 BEHK 100 100
+Weight 0
+Material iron~
+Extra    nodegrade nogetall~
+Extra2   nodecay noidentify~
+End
+
+#2623
+Name table scarred~
+Short a well-scarred table is here.~
+Desc A well-scarred table is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 0 BDGJ 100 100
+Weight 0
+Material wood~
+End
+
+#2624
+Name large comfortable bed~
+Short a large comfortable bed~
+Desc A large comfortable bed is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 0 BEHK 100 100
+Weight 0
+Material unknown~
+End
+
+#2625
+Name workbench~
+Short a workbench crammed with tools.~
+Desc A workbench crammed with tools is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 0 A 100 100
+Weight 0
+Material unknown~
+End
+
+#2626
+Name old worn desk~
+Short an old and worn desk is here, scattered with papers.~
+Desc An old and worn desk is here, scattered with papers.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 0 BDGJ 100 100
+Weight 0
+Material wood~
+End
+
+#2628
+Name small table chairs~
+Short a small table with rickety chairs~
+Desc A small table with rickety chairs is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 0 BDGJ 100 100
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#2620
+Name A Rocky Path~
+Desc A narrow and rocky path twists between larger boulders, leading up a short 
+incline. Atop a small mound is a weathered keep with a watchtower, built 
+from crudely hewn sandstone. A faded pennant hangs limply atop the 
+watchtower, any insignia now bleached away by exposure to the elements. The 
+path climbs south and ends at a pair of sturdy wooden doors, the only 
+visible entrance to the structure. 
+~
+Sector inside~
+Owner Barris~
+Exit north 59018
+EFlags door closed~
+Exit south 2621
+EFlags door closed~
+End
+
+
+#2621
+Name Main Hall~
+Desc This sizable hall represents most of the space in the keep, with smaller 
+rooms to the east and south. The stone walls are partly covered by worn 
+tapestries, and solid support beams of dark wood add to the impression of 
+security. Except for a small bench along the west wall, the hall is empty.  
+~
+RoomFlags indoors~
+Sector inside~
+Owner Barris~
+Exit north 2620
+EFlags door closed~
+Exit east 2622
+Exit south 2623
+End
+
+
+#2622
+Name Base of the Tower~
+Desc This room is at the bottom of the watchtower attached to the keep. The main 
+hall lies to the east, and cramped barracks are to the south. The walls of 
+this room are bare sandstone, with a slate floor. A stone trapdoor with an 
+iron ring set in it is close to the west well. Against the north wall is an 
+iron ladder, leading up to the watchtower. Since there is no furniture in 
+the room, it looks quite bare. 
+~
+Sector inside~
+Owner Barris~
+Exit south 2624
+Exit west 2621
+Exit up 2628
+Exit down 2627
+EFlags door closed~
+End
+
+
+#2623
+Name Kitchen~
+Desc This room may once have served as a mess hall or a kitchen, though the 
+cooking implements look rather primitive. A small firepit against the west 
+wall was likely used for cooking. Bare shelves adorn the other walls, and a 
+solid but well-scarred table is the only noteworthy piece of furniture in 
+the room. 
+~
+Sector inside~
+Owner Barris~
+Exit north 2621
+Exit east 2624
+Exit south 2625
+End
+
+
+#2624
+Name Barracks~
+Desc At one time, this room likely held cramped accommodations for a few 
+soldiers. Rust marks on the sandstone walls indicate where bunk beds were 
+securely attached. However, the bunk beds are not present now - they have 
+been replaced with a larger, more comfortable bed. The large bed, unmade, is 
+the only item in the room. 
+~
+Sector inside~
+Owner Barris~
+Exit north 2622
+Exit west 2623
+End
+
+
+#2625
+Name Workshop~
+Desc This room is a workshop, though it doesn't seem to have seen any use 
+recently. A long workbench is against the west wall, with every manner of 
+tool present - hammers, chisels, sledges, tongs, files, saws, and so on. 
+There is even a light anvil against the south wall, mounted on a stone 
+block. Most light repair work on wood, stone or metal could be done here, 
+given sufficient time. The tools are not extensive enough to do serious 
+smithing or large construction projects, though. 
+~
+Sector inside~
+Exit north 2623
+Exit east 2626
+EFlags door closed~
+End
+
+
+#2626
+Name Command Post~
+Desc This small but private room once served the commander of the keep. The east 
+wall has a tattered and faded map of the surrounding desert posted. An old 
+desk is here, stained with ancient ink and spattered with blobs of candle 
+wax. A padded chair, clearly much newer, is behind the desk, while a lantern 
+provides a warm illumination to the room. 
+~
+Sector inside~
+Owner Barris~
+Exit west 2625
+EFlags door closed~
+End
+
+
+#2627
+Name Armoury~
+Desc Dark, dry and cool this subterranean chamber has an iron ladder against the 
+east wall, leading back up to the keep. Hooks and racks line the walls, used 
+to store spare weapons and armor for the keep's defenders. 
+~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Owner Barris~
+Exit up 2622
+EFlags door closed~
+End
+
+
+#2628
+Name Watchtower~
+Desc Above the rest of the keep, this tower chamber has small windows to allow 
+the occupants to look out in all directions. An iron ladder on the north 
+wall allows both ascent to the tower roof and descent to the base of the 
+tower. There are hooks on the walls, but whatever implements they held are 
+long since gone. A small table is in the center of this room, with a few 
+rickety looking chairs surrounding it. 
+~
+Sector inside~
+Exit up 2629
+Exit down 2622
+End
+
+
+#2629
+Name Top of a Watchtower~
+Desc Under the open sky, the roof of the watchtower allows an excellent view of 
+the surrounding desert in all directions. Crumbling crenellations reach 
+about waist high, and prevent the careless from falling. In the northeast 
+corner of the roof, a pennant hangs from a slightly rusted iron pole. The 
+banner was once blue, but is too tattered and faded from exposure to bear a 
+recognizable emblem. 
+~
+Sector inside~
+Owner Barris~
+Exit down 2628
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 2621 -1 2621
+O 0 2623 -1 2623
+O 0 2624 -1 2624
+O 0 2625 -1 2625
+O 0 2626 -1 2626
+O 0 2620 -1 2626
+O 0 2628 -1 2628
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

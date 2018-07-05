@@ -1,0 +1,802 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Zatzu Estate~
+ShortName   Komori Dojo~
+Builders    none~
+Credits     Rashka~
+VNUMs       12170 12199
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+AreaEcho  1 23  20 A loud roar echoes through the estate.~
+*LastSaved  Wed Jan 11 13:32:54 2006~
+End
+
+
+
+#MOBILES
+#12170
+Name gate guardian keyholder~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12170 100~
+END
+
+#12171
+Name intori girl shopkeeper clan komori~
+ShortD an intori girl~
+LongD A busy looking `#`sintori`^ girl~
+Desc ~
+Race human~
+Align 2 0
+Level 101
+Hitroll 10
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 11d12+56
+DamType slice
+AC -710 -710 -710 -596
+Wealth 0
+Act    npc dont_wander train practice healer gain~
+Act2   nohunt avoids_all_attacks no_random_obj~
+AffBy  sanctuary~
+AffBy2 no_dispel mute~
+Imm    summon charm magic weapon~
+Form   edible mammal~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12170
+Name treasury key~
+Short a `#`RD`ra`Si`Xm`Sy`ro`S'`rs `Rr`royal `Re`rmblem`^~
+Desc A `#`RD`ra`Si`Xm`Sy`ro`S'`rs `Rr`royal `Re`rmblem`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#12171
+Name Sushi~
+Short some `#`Xassorted `Rs`rush`Ri`^~
+Desc A plate of assorted sushi is here.~
+Level 1
+ItemType food~
+Cost 35
+Durability 1
+Asize 0
+Rsize 50
+Values 20 20 0 0 0
+Weight 0
+Material none~
+Wear     take~
+End
+
+#12172
+Name mists~
+Short the `#`ms`cw`Sirli`cn`mg `Ri`rn`Sc`Xen`Ss`re `Ss`Xmok`Se`^~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 ABG G 12171 0
+Weight 0
+Material oak~
+Extra    nonmetal nolocate nodegrade nogetall~
+Extra2   nodecay regrowing~
+End
+
+#12173
+Name futon~
+Short a `#`Wl`Xa`Wr`Xg`We `rc`Somfortable `rf`Suton`^~
+Desc A `#`Wl`Xa`Wr`Xg`We `rc`Somfortable `rf`Suton`^ centers the room~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 3000 EIL 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#12174
+Name nightstand night~
+Short a `#`Sb`Xl`Sack n`Xi`Sghtst`Xa`Snd`^~
+Desc A carved `#`Sb`Xl`Sack stone n`Xi`Sghtst`Xa`Snd`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10000 AC 0 100 0
+Weight 0
+Material obsidion~
+Extra    nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+ExtraDesc nightstand ~
+The small black nightstand is about waist high.  It is made entirely out of
+obsidian stone.  Resting atop the nightstand is a massive
+`Wm`Xi`Wr`Xr`Wo`Xr.
+~
+ExtraDesc mirror ~
+Resting atop the nightstand is a round silver mirror set in an ebony frame.
+A closer examination might reveal that arcane runes have been scratched onto
+the frame, suggesting the occupant uses the mirror for something besides
+looking at himself.  You continue staring dreamily into the mirror...
+Hmmm...  Narcisstic?
+~
+End
+
+#12175
+Name drawings~
+Short the `#`Rs`rw`Si`Xrli`Sn`rg `Rs`rh`Sa`Xdo`Sw`rs`^~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 ABG G 12176 0
+Weight 0
+Material oak~
+Extra    nonmetal nolocate nodegrade nogetall~
+Extra2   nodecay regrowing~
+End
+
+#12176
+Name comfortable looking futon~
+Short a `#`rc`Ro`Wm`Xfo`Wrt`Xa`Wbl`Xe`r-`Wlo`Xok`Wi`Rn`rg `Sfuton`^~
+Desc A `#`rc`Ro`Wm`Xfo`Wrt`Xa`Wbl`Xe`r-`Wlo`Xok`Wi`Rn`rg `Sfuton`^ fit for royalty is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 3 300 BDGK 100 100
+Weight 0
+Material feather~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#12177
+Name portrait cherryblossom trees~
+Short the `#`Ww`Xa`Wft`Xin`Wg w`Xi`Wn`Xd`Ws`^~
+Desc A `#`Rp`rortrait`^ of `#`mc`Mh`me`Mrr`myblo`Mss`mom `Strees`^ hangs here on a wall.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 ABG G 12191 0
+Weight 0
+Material oak~
+Extra    nonmetal nolocate nodegrade nogetall~
+Extra2   nodecay regrowing~
+End
+
+#12178
+Name fountain fo fou foun fount blood bloodstone~
+Short a `#`Sb`rl`Soods`rt`Son`re `Sf`ro`Sunta`ri`Sn`^~
+Desc A `#`Wb`Xe`Wa`Xu`Wt`Xi`Wf`Xu`Wl `Sb`rl`Soods`rt`Son`re `Sf`ro`Sunta`ri`Sn`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 30000 30000 blood 0 0
+Weight 0
+Material unknown~
+Extra    evil nodegrade nogetall~
+ExtraDesc fountain ~
+The fountain's basin is rather small, but deep.  It comes up to about 
+mid-thigh height.  Dancing atop the fountain back to back to back are three 
+figures.  One, is a dancing humanoid bat with wings spread and screeching.  
+The second is a dancing humanoid wolf.  It isn't by any means a werewolf as 
+it snarls and howls to the moon.  The third is a seductive woman wielding a 
+katana in one hand, and a set of throwing daggers in her other.  On her face 
+is a wicked smirk.  
+~
+End
+
+#12179
+Name smoked fish white rice bowl~
+Short a `#`Ssmoked`^ fish and a `#`rbowl`^ of `#`Wwhite r`Xi`Wc`Xe`^~
+Desc A `#`Ssmoked`^ fish and a `#`rbowl`^ of `#`Wwhite r`Xi`Wc`Xe`^ steams here.~
+Level 1
+ItemType food~
+Cost 23
+Durability 1
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material food~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#12180
+Name flower perfect cherryblossom~
+Short a `#`Wp`Xe`Wr`Xf`We`Xc`Wt `mc`Mh`merryb`Ml`moss`Mo`mm`S flower`^~
+Desc A small `#`mc`Mh`merryb`Ml`moss`Mo`mm`S flower`^ is here giving off a wonderful fragrance.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material flower~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#12181
+Name tree cherry cherryblossom blossom~
+Short tall `#`mc`Mh`merryb`Ml`moss`Mo`mm`X trees`^~
+Desc Many `#`mc`Mh`merryb`Ml`moss`Mo`mm`X trees`^ stand proudly in bloom~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#12182
+Name wall closet~
+Short a `#`Swall closet`^~
+Desc A large `#`Swall closet`^ is here on the right wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 90000 AC 0 90000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#12183
+Name wooden cabinet~
+Short a large `#`ywooden`^ cabinet~
+Desc A large `#`ywooden`^ cabinet hangs off the wall.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 90000 AC 0 90000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#12184
+Name ring signet komori~
+Short a `#`RR`red`^ and `#`SB`Xl`Sack `RS`ri`Sg`Xn`Se`rt`^ with a `#`rB`Sat `rE`Smblem`^~
+Desc A `#`RR`red`^ and `#`SB`Xl`Sack `RS`ri`Sg`Xn`Se`rt`^ with a `#`rB`Sat `rE`Smblem`^ gleams here enigmatically.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unholy~
+Extra    antigood antineutral nonmetal nolocate nodegrade chaos norestring~
+Extra2   nodecay nosell regrowing~
+Wear     take finger~
+ClassAllowances barbarian~
+End
+
+#12185
+Name ring signet komori~
+Short a `#`Rr`red`^ and `#`Sb`Xl`Sack `Rs`ri`Sg`Xn`Se`rt`^ with a `#`rb`Sat `re`Smblem`^~
+Desc A `#`Rr`red`^ and `#`Sb`Xl`Sack `Rs`ri`Sg`Xn`Se`rt`^ with a `#`rb`Sat `re`Smblem`^ gleams here enigmatically.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unholy~
+Extra    nonmetal nolocate nodegrade chaos norestring~
+Extra2   nodecay nosell regrowing~
+Wear     take finger~
+End
+
+#12186
+Name warm pool lined glazed terracotta~
+Short a warm pool lined with `#`rterracotta`^~
+Desc A warm pool lined with glazed `#`rterracotta`^ is set in the floor.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 50000 CFI 100 100
+Weight 0
+Material water~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#12187
+Name long rectangular cherrywood table~
+Short a `#`Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wslab table on the floor`^~
+Desc `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wslab table is here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc cherrywood table~
+This is a long rectangular cherrywood slab table. It is resting on a soft 
+plush rug and it is low to the ground. There are no chairs at the table, you 
+sit on the rug. 
+~
+End
+
+#12188
+Name sashimi~
+Short some `#`Xassorted `Ms`mashim`Mi`^~
+Desc A plate of assorted sashimi is here.~
+Level 1
+ItemType food~
+Cost 35
+Durability 1
+Asize 0
+Rsize 50
+Values 20 20 0 0 0
+Weight 0
+Material none~
+Wear     take~
+End
+
+#12189
+Name oak shelf~
+Short an `#`yo`rak `ys`rhelf`^~
+Desc An `#`yo`rak `ys`rhelf`^ is here beside the cabinet.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 90000 AC 0 90000 0
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#12170
+Name a small clearing~
+Desc You've entered a small clearing and find yourself standing before a very 
+large stone formation. Right in front of the stone formation, is a small 
+shrine made out of rocks. Incense smoke coming from the rock shrine wafts 
+around the area in a soothing fashion. You forget why you've come... Eerily, 
+you sense that someone is watching.. 
+~
+RoomFlags indoors light~
+Sector field~
+RoomEcho  0 23  50 You feel a pair of `#`RE`ry`Se`rs`^ watching your every move.~
+Exit south 59895
+End
+
+
+#12171
+Name a lush forest~
+Desc The oak forest here is lush and rich with both flora and fauna. Birds flit 
+from tree to tree as squirrels and lizards scurry about. There are two worn 
+trails, one toward the north, and one down to the south into the open 
+clearing. 
+~
+RoomFlags indoors light~
+Sector mountain~
+RoomEcho  0 23  16 some `#`Bb`birds`^ chirp in jovial tunes.~
+Exit north 12172
+EFlags door closed nopass~
+EKeywords gate~
+End
+
+
+#12172
+Name the courtyards~
+Desc ~
+Sector inside~
+Exit north 12173
+EFlags door closed obvious~
+EKeywords sliding~
+Exit south 12171
+EFlags door closed nopass~
+EKeywords gate~
+End
+
+
+#12173
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit north 12186
+Exit east 12175
+Exit south 12172
+EFlags door closed obvious~
+EKeywords sliding~
+Exit west 12174
+End
+
+
+#12174
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit east 12173
+Exit south 12177
+Exit northwest 12183
+EFlags door closed obvious~
+EKeywords sliding~
+End
+
+
+#12175
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit south 12179
+Exit west 12173
+Exit northeast 12182
+EFlags door closed obvious~
+EKeywords sliding~
+End
+
+
+#12176
+Name A child's room~
+Desc The room here is rather large and spacious. It's very warm and snug. The 
+room appears to be rounded, with no sharp corners of any kind. There are 
+silvery runes of protection etched about the top portion of the wall. The 
+floor is very soft and covered in a carpet of rugs. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit northeast 12185
+End
+
+
+#12177
+Name a guest room~
+Desc ~
+Sector inside~
+Exit north 12174
+Exit west 12184
+EFlags door closed obvious~
+EKeywords sliding~
+Exit southeast 12178
+End
+
+
+#12178
+Name the bath house~
+Desc ~
+Sector inside~
+Exit northwest 12177
+End
+
+
+#12179
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit north 12175
+Exit east 12181
+EFlags door closed obvious~
+EKeywords sliding~
+Exit southwest 12180
+End
+
+
+#12180
+Name the training room~
+Desc ~
+Sector inside~
+Exit northeast 12179
+End
+
+
+#12181
+Name a spare bedroom~
+Desc ~
+Sector inside~
+Exit west 12179
+EFlags door closed obvious~
+EKeywords sliding~
+End
+
+
+#12182
+Name the banquet hall~
+Desc ~
+Sector inside~
+Exit southwest 12175
+EFlags door closed obvious~
+EKeywords sliding~
+End
+
+
+#12183
+Name the cherryblossom grove~
+Desc ~
+RoomFlags indoors light~
+Sector hills~
+Exit southeast 12174
+EFlags door closed obvious~
+EKeywords sliding~
+End
+
+
+#12184
+Name a spare bedroom~
+Desc ~
+Sector inside~
+Exit east 12177
+EFlags door closed obvious~
+EKeywords sliding~
+End
+
+
+#12185
+Name Alchemist Laboratory~
+Desc The alchemist who once worked in here must have been Very messy indeed.. 
+Potions, scrolls and all other sorts are everywhere along tables and such. 
+There are various notes and parchments written in some odd language that are 
+scattered and piled about messily. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector cave~
+Exit southwest 12176
+End
+
+
+#12186
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit north 12192
+Exit east 12188
+Exit south 12173
+Exit west 12187
+End
+
+
+#12187
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit east 12186
+Exit northwest 12191
+EFlags door closed nopass~
+EKeywords sliding~
+End
+
+
+#12188
+Name a long corridor~
+Desc ~
+Sector inside~
+Exit west 12186
+Exit northeast 12189
+EFlags door closed nopass~
+EKeywords sliding~
+End
+
+
+#12189
+Name the Daimyo's bedroom~
+Desc ~
+Room2Flags freshwater_fish~
+Sector inside~
+Exit southwest 12188
+EFlags door closed nopass~
+EKeywords sliding~
+End
+
+
+#12190
+Name A small murky cave~
+Desc The heat within this cave is ungodly as well as the stench. In a small pool 
+of murky brown water shapes move underneath of it. Very little light from 
+outside trails into this place. 
+~
+Sector cave~
+End
+
+
+#12191
+Name A luxurious guestroom~
+Desc ~
+Sector inside~
+Exit southeast 12187
+EFlags door closed nopass~
+EKeywords sliding~
+End
+
+
+#12192
+Name a shrine room~
+Desc ~
+Sector inside~
+Exit south 12186
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 12172 -1 12170
+O 0 12178 -1 12172
+O 0 12177 -1 12176
+O 0 12186 -1 12178
+O 0 12173 -1 12181
+O 0 12174 -1 12181
+P 0 12185 1 12174 1
+M 0 12171 1 12182 1
+O 0 12187 -1 12182
+G 0 12171 -1
+G 0 12188 -1
+G 0 12179 -1
+O 0 12181 -1 12183
+P 0 12180 6 12181 3
+O 0 12173 -1 12184
+O 0 12174 -1 12184
+P 0 12185 1 12174 1
+O 0 12183 -1 12185
+O 0 12182 -1 12185
+O 0 12189 -1 12185
+O 0 12176 -1 12189
+O 0 12175 -1 12189
+O 0 12174 -1 12189
+P 0 12184 1 12174 1
+M 0 4122 2 12190 1
+O 0 12176 -1 12191
+O 0 12174 -1 12191
+S
+
+
+
+#SHOPS
+#12171
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#12170
+author Delandria~
+code mobseeall
+ language native
+ if isimmort $n
+   bow $n
+   mob letpass
+   end
+ endif
+ if name $n Kann
+   mob letpass
+   end
+ endif
+if fealty $n Kann
+   mob letpass
+   end
+ endif
+sayto $n Get lost, you are not welcome here!
+pkill $n
+~
+disabled false
+last_editor Baridoc~
+last_editdate 1101047546
+END
+
+#0
+
+
+#$

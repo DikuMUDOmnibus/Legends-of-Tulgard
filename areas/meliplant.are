@@ -1,0 +1,1117 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Plantation House~
+ShortName   Plantation House~
+Builders    bobette~
+VNUMs       9300 9399
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Sep 24 13:33:44 2005~
+End
+
+
+
+#MOBILES
+#9300
+Name adorable miniature horse pennie~
+ShortD pennie~
+LongD `#`wan adorable miniature `rhorse `wis here.`^~
+Desc The most adorable tiny horse is before you. She has dark copper colored fur 
+and she looks well groomed. 
+~
+Race horse~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType pound
+AC 50 50 50 45
+Wealth 0
+Act    npc dont_wander~
+Off    fast kick~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#9301
+Name pudgy miniature pot belly pig miss piggy~
+ShortD miss Piggy~
+LongD `#`wa pudgy miniature `ypot belly pig`^~
+Desc The cutest little piggy is before you. She has perfect peach colored skin 
+and short little legs. Her little fat belly makes her wobble as she walks. 
+~
+Race pig~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType pound
+AC 50 50 50 45
+Wealth 0
+Act    npc dont_wander~
+Off    bash~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#9300
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 K 0 9350 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9301
+Name marble fountain water~
+Short `#`wa large `sblack marble `wfountain`^~
+Desc `#`wa large `sblack marble `wfountain sits here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nolocate nodegrade burnproof nogetall~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#9302
+Name rope tree swing~
+Short `#`wa `gtree `wswing`^~
+Desc `#`wa `gtree `wswing hanging from a large oak tree is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 1000 EH 100 100
+Weight 0
+Material rope~
+Extra    noremove nodegrade~
+ExtraDesc rope tree swing~
+A swing made of rope hangs from the tree.  It has a thick slab of wood for a 
+seat big enough for two people.  The rope is thick and sturdy.  
+~
+End
+
+#9303
+Name rocking chair~
+Short `#`wa comfy `ywooden `wrocking chair`^~
+Desc `#`wfour comfy `ywooden `wrocking chairs sit here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 2000 DGJ 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9304
+Name comfortable leather couch~
+Short a comfortable looking couch made of leather~
+Desc `#`wA comfortable looking couch made of `yleather `wsits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 1000 EHKN 100 100
+Weight 0
+Material leather~
+Extra    noremove nodegrade~
+End
+
+#9305
+Name cherrywood wooden desk~
+Short a desk made of cherrywood~
+Desc An ornately `#`rcarved`x desk made of `rcherrywood`^ lies here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 2000 ADGJQ 100 100
+Weight 0
+Material cherrywood~
+Extra    nodegrade burnproof~
+End
+
+#9306
+Name long rectangular cherrywood table~
+Short `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable`^~
+Desc `#`wa long rectangular `Rc`rh`Re`rr`Rr`ry`Rw`ro`Ro`rd `wtable is sitting here.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#9307
+Name black marble fireplace~
+Short `#`wa `sblack m`wa`sr`wb`sl`we `wfireplace`^~
+Desc `#`wa `sblack m`wa`sr`wb`sl`we `wfireplace is here warming the room.`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 9999
+Rsize 50
+Values 10 1000 FIL 100 100
+Weight 9999
+Material brick~
+Extra    nopurge burnproof~
+End
+
+#9308
+Name school desks~
+Short a school desk~
+Desc Five rows of school desk are lined up here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 8 4000 DGJ 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#9309
+Name cookie jar bear~
+Short `#`wa little `ycookie `wjar shaped like a `sbear`^~
+Desc `#`wa `ycookie `wjar shaped like a `sbear `wis here sitting on the counter.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 100 AC 0 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#9310
+Name kitchen cabinet~
+Short a cabinet~
+Desc `#`wA set of `ycabinets `wlining the walls is here.`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5000 AC 0 5000 100
+Weight 0
+Material oldstyle~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#9311
+Name king size royal bed ~
+Short `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it`^~
+Desc `#`wa king sized bed with thick `sf`wl`su`wf`sf`wy `sblack `wbedspread on it sits here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 150 150
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#9312
+Name wooden cabinet crate~
+Short a huge wooden crate~
+Desc A huge wooden crate rests here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 1000
+Rsize 50
+Values 2000 0 0 6000 100
+Weight 1000
+Material wood~
+Extra    noremove nopurge nolocate nodegrade norestring~
+Extra2   nodecay~
+End
+
+#9313
+Name comfortable full sized bed~
+Short `#`wa `ccomfortable `wfull sized bed`^~
+Desc `#`wa `ccomfortable `wfull sized bed is here.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 1
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 120 120
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#9314
+Name treasury key~
+Short `#`WMelisande's `YHouse Key`^~
+Desc `#`WMelisande's `YHouse Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#9300
+Name A large iron and stone gate~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9301
+End
+
+
+#9301
+Name Courtyard~
+Desc You are inside of a large courtyard. It is paved in thousands of tiny 
+multi-colored pebblestones. Thick shrubs outline the courtyard creating a 
+large circular pattern centering around a huge black marble fountain. There 
+is a door to a house leading to your north and a path leading to the east 
+and west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9315
+Exit east 9302
+Exit south 9300
+Exit west 9307
+End
+
+
+#9302
+Name Cobblestone Walkway~
+Desc A cobblestone walkway. There is a path leading east and west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9303
+Exit south 9314
+Exit west 9301
+End
+
+
+#9303
+Name Small Pond~
+Desc This end of the pond is shaded heavily by the large trees to the south, 
+providing ample shade during hot and sunny days.  A light gust of wind 
+creates ripples across the usually still water, providing a nice effect and 
+decent spot to go fishing. 
+~
+RoomFlags indoors light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit north 9306
+Exit east 9304
+Exit west 9302
+End
+
+
+#9304
+Name Small Pond~
+Desc The trees extending from the west run along the southern corner of this 
+pond, extending as far as one can see to the west, providing ample shade.  
+During the daytime, bigger fish can somewhat be seen swimming near the 
+surface, looking for something to eat.  Small birds can be seen flying above 
+the trees on careful inspection, their squawks quite noticeable compared to 
+the other animals that live in the area. 
+~
+RoomFlags indoors light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit north 9305
+Exit west 9303
+End
+
+
+#9305
+Name Small Pond~
+Desc A continuation of the pond from the west, this area is a bit deeper than 
+most.  Small fish can be seen trying to eat low flying bugs, and those 
+resting on lily pads near the east edge by the weedbed.  Hybrid multicolored 
+reeds adorn the area, adding a bit of color and contrast to the surroundings 
+nearby. 
+~
+RoomFlags indoors light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit south 9304
+Exit west 9306
+End
+
+
+#9306
+Name Small Pond~
+Desc This end of the pond is shaded heavily by the large trees to the south, 
+providing ample shade during hot and sunny days.  A light gust of wind 
+creates ripples across the usually still water, providing a nice effect and 
+decent spot to go fishing. 
+~
+RoomFlags indoors light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit east 9305
+Exit south 9303
+End
+
+
+#9307
+Name Cobblestone Walkway~
+Desc A cobblestone walkway. There is a path leading east and west. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9301
+Exit west 9308
+End
+
+
+#9308
+Name Petting Zoo~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9310
+Exit east 9307
+Exit south 9312
+Exit west 9309
+End
+
+
+#9309
+Name Petting Zoo~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9311
+Exit east 9308
+End
+
+
+#9310
+Name Petting Zoo~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9308
+Exit west 9311
+End
+
+
+#9311
+Name Petting Zoo~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9310
+Exit south 9309
+End
+
+
+#9312
+Name Playground~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9308
+Exit west 9313
+End
+
+
+#9313
+Name Orchard~
+Desc Acres and acres of lush green grass is spread throughout the orchard. 
+Several different trees are spread about the orchard with an occasional 
+piece of fruit on the ground where it fell off a tree. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9312
+End
+
+
+#9314
+Name Vegetable Garden~
+Desc Rows and rows of plump vegetables are growing in the ground here. The ground 
+is soft to the step and there is a small fence surrounding the garden. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9302
+End
+
+
+#9315
+Name Front Porch~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9316
+EFlags door closed~
+Exit south 9301
+End
+
+
+#9316
+Name Foyer~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9322
+Exit east 9317
+Exit south 9315
+EFlags door closed~
+Exit west 9318
+End
+
+
+#9317
+Name Den~
+Desc A large candleabra hangs from the center of the ceiling creating a soft 
+light. The walls are made out of a light colored pine and the floor is 
+covered in a soft black carpet. Bookshelves line the north wall and there is 
+a gigantic fireplace lining to east wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9316
+End
+
+
+#9318
+Name Hallway~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9320
+Exit east 9316
+Exit south 9321
+Exit west 9319
+End
+
+
+#9319
+Name Nurse's Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9318
+End
+
+
+#9320
+Name Library~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9318
+End
+
+
+#9321
+Name School Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9318
+End
+
+
+#9322
+Name Hallway~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9324
+Exit east 9323
+Exit south 9316
+Exit up 9328
+End
+
+
+#9323
+Name Head Matron's Office~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9322
+End
+
+
+#9324
+Name Hallway~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9327
+Exit east 9325
+Exit south 9322
+Exit west 9326
+End
+
+
+#9325
+Name Dining Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9324
+End
+
+
+#9326
+Name Kitchen~
+Desc There seems to be a constant smell of baking bread in the kitchen even when 
+there isnt anyone in here cooking.  There is a large cookpit in the western 
+corner of the room and a large butcher block on the northern side of the 
+kitchen with several drying herbs hanging above it.  There are cabinets 
+lining the walls above the table and on the southern wall as well. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit east 9324
+End
+
+
+#9327
+Name Altar~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9324
+End
+
+
+#9328
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9334
+Exit east 9329
+Exit south 9338
+Exit west 9332
+Exit down 9322
+End
+
+
+#9329
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9335
+Exit east 9330
+Exit south 9339
+Exit west 9328
+Exit up 9341
+End
+
+
+#9330
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9336
+Exit east 9331
+Exit south 9340
+Exit west 9329
+End
+
+
+#9331
+Name Playroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9330
+End
+
+
+#9332
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9333
+Exit east 9328
+Exit south 9337
+Exit west 9356
+End
+
+
+#9333
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9332
+End
+
+
+#9334
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9328
+End
+
+
+#9335
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9329
+End
+
+
+#9336
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9330
+End
+
+
+#9337
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9332
+End
+
+
+#9338
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9328
+End
+
+
+#9339
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9329
+End
+
+
+#9340
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9330
+End
+
+
+#9341
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9348
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 9314
+EKeywords door~
+Exit west 9342
+Exit down 9329
+End
+
+
+#9342
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9345
+Exit east 9341
+Exit south 9347
+Exit west 9343
+End
+
+
+#9343
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9344
+Exit east 9342
+Exit south 9346
+End
+
+
+#9344
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9343
+End
+
+
+#9345
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9342
+End
+
+
+#9346
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9343
+End
+
+
+#9347
+Name Bedroom~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9342
+End
+
+
+#9348
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9349
+Exit west 9341
+EFlags door closed locked nopass hard infuriating~
+EKeyvnum 9314
+EKeywords door~
+End
+
+
+#9349
+Name Hallway~
+Desc The hallway is lit by lanterns hanging on the wall. The floor is made out of 
+a darkened wood and the walls are painted white. There is bedrooms all 
+around you. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9352
+Exit east 9350
+Exit south 9353
+Exit west 9348
+End
+
+
+#9350
+Name Master Bedroom~
+Desc You find yourself inside of the houses master bedroom. The walls are painted 
+a rich burgandy color and there is a plush black carpet covering the floor. 
+There is a huge bay window that you can rest on to your east that allows you 
+to look out into the yard. A large floor lantern is resting in the corner of 
+the room by a small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9351
+Exit west 9349
+End
+
+
+#9351
+Name Closet~
+Desc This is a closet. It is full of stuff. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit north 9350
+End
+
+
+#9352
+Name Trayce's Room~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9349
+End
+
+
+#9353
+Name Rhea's Room~
+Desc The walls in this bedroom are painted a light blue color and there is a 
+beige carpet covering the floor. There is a huge bay window that you can 
+rest on that allows you to look out into the yard. A small lantern is 
+resting on the top of small bedside table. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9349
+End
+
+
+#9354
+Name Forge~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9355
+End
+
+
+#9355
+Name Treasury~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit north 9354
+End
+
+
+#9356
+Name bathroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9332
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 9301 -1 9301
+M 0 9300 1 9309 1
+M 0 9301 1 9311 1
+O 0 9302 -1 9312
+O 0 9303 -1 9315
+O 0 9304 -1 9317
+O 0 9307 -1 9317
+O 0 9304 -1 9320
+O 0 9308 -1 9321
+O 0 9305 -1 9323
+O 0 9306 -1 9325
+O 0 7550 -1 9327
+O 0 9313 -1 9333
+O 0 9313 -1 9334
+O 0 9313 -1 9335
+O 0 9313 -1 9336
+O 0 9313 -1 9337
+O 0 9313 -1 9338
+O 0 9313 -1 9339
+O 0 9313 -1 9340
+O 0 9313 -1 9344
+O 0 9313 -1 9345
+O 0 9313 -1 9346
+O 0 9313 -1 9347
+O 0 9311 -1 9350
+O 0 9313 -1 9352
+O 0 9313 -1 9353
+O 0 9300 -1 9355
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

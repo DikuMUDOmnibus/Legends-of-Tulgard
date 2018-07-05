@@ -1,0 +1,200 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-pre7
+Name        Knights of the Black Hand~
+ShortName   Blackhand~
+Builders    None~
+VNUMs       1250 1255
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Tue Jan 20 12:23:38 2004~
+End
+
+
+
+#MOBILES
+#1250
+Name demon figure~
+ShortD a demon engulfed in blue flame~
+LongD A demon engulfed in blue flame stands here.~
+Desc ~
+Race demon~
+Align 0 0
+Level 140
+Hitroll 20
+HitDice 14d17+675
+ManaDice 6d9+330
+DamDice 14d19+92
+DamType none
+AC -1090 -1090 -1090 -937
+Wealth 500
+Act    npc dont_wander train practice mage healer gain~
+AffBy  detect_evil detect_good infrared flying pass_door dark_vision regeneration~
+Off    dodge parry tail~
+Imm    magic weapon fire negative disease sleep~
+Res    summon charm mental wood illusion scry~
+Vuln   holy light iron~
+Form   edible magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 1250 gear~
+END
+
+#1251
+Name shopkeeper grey ghost~
+ShortD a grey-robed shopkeeper~
+LongD A shopkeeper clad in thick grey robes stands silently here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 2000
+Act    npc dont_wander no_tame changer~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#1250
+Name Entrance to the Stronghold of the Black Hand~
+Desc PHHHEEEWWWW!!!  A horrid stench comes from the north, it smells worse than 
+your mothers cooking.  A large stone stronghold lies to the north, reeking 
+of something terrible, and a pool of water lies to the south.  
+~
+Sector cave~
+Exit north 1251
+Exit south 33458
+End
+
+
+#1251
+Name Main Antechamber~
+Desc This room reeks of death and decay.  It looks like it hasn't been cleaned in 
+5000 years.  You feel like it would be a good place to rest, only if you can 
+find a place amongst all the trash and filth in here.  
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 130
+Heal 130
+LockerQuant 1
+LockerInitRent 5
+LockerOngoRent 100
+LockerWeight 5000
+LockerCapacity 1000
+LockerPickProof 3
+Exit north 1253
+Exit south 1250
+Exit west 1252
+End
+
+
+#1252
+Name Potion's & Portents of Doom~
+Desc The walls of this room are lined with multiple shelves and cases used to 
+display the wares which are available for purchase.  There are many odd 
+objects, the purposes of which are not readily evident by appearances alone. 
+ 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 1251
+End
+
+
+#1253
+Name Portal Room~
+Desc This is the portal room, it is quite bright in here from the light from the 
+gatestone.  
+~
+RoomFlags light~
+Sector gateway~
+Exit south 1251
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1250 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 1250 1 1251 1
+M 0 1251 1 1252 1
+G 0 1004 -1
+G 0 1002 -1
+G 0 1001 -1
+G 0 1000 -1
+O 0 55729 -1 1253
+S
+
+
+
+#SHOPS
+#1251
+buy_type potion~
+buy_type scroll~
+buy_type wand~
+profit_buy 100
+profit_sell 80
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1250
+author Ixliam~
+code language native
+mob oload 1250
+sayto $n Hold our banner firmly, and never let it fall.
+give banner $n
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1055207242
+END
+
+#0
+
+
+#$

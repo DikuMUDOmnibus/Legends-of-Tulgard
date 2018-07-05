@@ -1,0 +1,3564 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Mines~
+ShortName   The Mines~
+Builders    ixliam~
+VNUMs       65000 80000
+AFlags  noteleport hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Wed Nov  2 13:44:07 2005~
+End
+
+
+
+#MOBILES
+#65000
+Name huge black rock worm~
+ShortD a rock worm~
+LongD A huge black worm is eating the stone here.~
+Desc This huge worm is black in color and very grotesque.  It has a mouth of sorts 
+at one end, and is using it to devour some rocks here.
+~
+Race centipede~
+Align 0 0
+Level 44
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType chomp
+AC -200 -200 -200 -170
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    bash assist_vnum~
+Res    bash pierce~
+Vuln   cold~
+Form   edible poison animal insect snake~
+Part   head legs brains eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#65001
+Name cave spider~
+ShortD a cave spider~
+LongD A large cave spider is hanging from the ceiling.~
+Desc This large spider is the color of stone and dirt. Large fangs dripping with 
+poison extend from its head as it looks for its next meal. 
+~
+Race centipede~
+Align 0 0
+Level 46
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType bite
+AC -200 -200 -200 -170
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden sneak hide haste dark_vision~
+Off    bash assist_vnum~
+Imm    poison~
+Res    bash pierce~
+Vuln   cold~
+Form   edible poison non_skinable animal insect snake~
+Part   head legs brains guts eye fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#65002
+Name gravorg~
+ShortD a gravorg~
+LongD A large gravorg is here, hiding in the shadows.~
+Desc A gravorg is a 10-foot-long, four-legged animal that vaguely resembles a 
+sloth. Its fur is a mixture of white, gray, and black hairs. This coloration 
+makes it look like a lump of stone. The gravorg is 10-foot-long with four 
+large legs, and vaguely resembles a sloth. Its fur is a mixture of white, 
+gray, and black hairs. This coloration makes it look like a lump of stone 
+when motionless. 
+~
+Race centipede~
+Align 0 0
+Level 48
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType chomp
+AC -200 -200 -200 -170
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden hide dark_vision~
+Off    berserk tail crush assist_vnum~
+Res    bash pierce~
+Form   edible sentient biped mammal snake~
+Part   head legs heart brains guts feet eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#65003
+Name huge black rock worm~
+ShortD a rock worm~
+LongD A huge black worm is eating the stone here.~
+Desc This huge worm is black in color and very grotesque.  It has a mouth of sorts 
+at one end, and is using it to devour some rocks here.
+~
+Race centipede~
+Align 0 0
+Level 48
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType chomp
+AC -200 -200 -200 -170
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    bash assist_vnum~
+Res    bash pierce~
+Vuln   cold~
+Form   edible poison animal insect snake~
+Part   head legs brains eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#65004
+Name huge black rock worm~
+ShortD a rock worm~
+LongD A huge black worm is eating the stone here.~
+Desc This huge worm is black in color and very grotesque.  It has a mouth of sorts 
+at one end, and is using it to devour some rocks here.
+~
+Race centipede~
+Align 0 0
+Level 44
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType chomp
+AC -200 -200 -200 -170
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    bash assist_vnum~
+Res    bash pierce~
+Vuln   cold~
+Form   edible poison animal insect snake~
+Part   head legs brains eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#65005
+Name undead beholder~
+ShortD an undead beholder~
+LongD A rotting beholder is floating here.~
+Desc This looks like a typical beholder, save that it is grey, rotting, and
+several eyestalks are missing.  A milky film covers the main eye, making it
+look quite sickly.  
+~
+Race Lich~
+Align 0 -3
+Level 75
+Hitroll 60
+HitDice 7d11+375
+ManaDice 8d12+530
+DamDice 8d8+36
+DamType bite
+AC -440 -440 -440 -356
+Wealth 600
+Act    npc no_tame aggressive stay_area undead mage~
+AffBy  detect_invis detect_hidden sanctuary protect_good pass_door haste dark_vision~
+Off    area_attack dodge fade fast assist_vnum~
+Imm    summon charm poison negative mental disease~
+Res    magic cold~
+Vuln   holy silver~
+Form   edible poison magical sentient undead~
+Part   heart brains guts eye eyestalks scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material 'decaying flesh'
+MProg GRALL 9810 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#65000
+Name dirt~
+Short a pile of dirt~
+Desc A pile of dirt is here.~
+Level 0
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material dirt~
+Extra    nonmetal nolocate~
+End
+
+#65001
+Name gold ore~
+Short some gold ore~
+Desc A clump of gold ore is here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material gold~
+Wear     take hold~
+End
+
+#65002
+Name copper ore~
+Short some copper ore~
+Desc A clump of copper ore is here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 120
+Material copper~
+Wear     take hold~
+End
+
+#65003
+Name silver ore~
+Short some silver ore~
+Desc A clump of silver ore is here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 170
+Material silver~
+Wear     take hold~
+End
+
+#65004
+Name iron ore~
+Short some iron ore~
+Desc A clump of iron ore is here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material iron~
+Wear     take hold~
+End
+
+#65005
+Name mithril ore~
+Short some mithril ore~
+Desc A clump of mithril ore is here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material mithril~
+Wear     take hold~
+End
+
+#65006
+Name adamantium ore~
+Short some adamantium ore~
+Desc A clump of adamantium ore is here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 110
+Material adamantium~
+Wear     take hold~
+End
+
+#65007
+Name diamond~
+Short a rough diamond~
+Desc A rough diamond lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material diamond~
+Wear     take hold~
+End
+
+#65008
+Name garnet~
+Short a small garnet~
+Desc A small garnet lies here~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65009
+Name rose quartz gem~
+Short a small rose quartz gem~
+Desc A small rose quartz gem lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65010
+Name amethyst~
+Short an amethyst gemstone~
+Desc An amethyst gemstone lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65011
+Name onyx gem~
+Short an onyx gem~
+Desc An onyx gem lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65012
+Name bloodstone~
+Short a bloodstone~
+Desc A bloodstone lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65013
+Name emerald~
+Short an emerald~
+Desc A small emerald is here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65014
+Name ruby~
+Short a ruby~
+Desc A small ruby lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65015
+Name sapphire~
+Short a sapphire~
+Desc A small sapphire lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65016
+Name topaz~
+Short a topaz gemstone~
+Desc A small topaz gemstone lies here.~
+Level 0
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Wear     take hold~
+End
+
+#65017
+Name dark glowing vampiric ore~
+Short some strange dark ore~
+Desc A strange clump of ore lies here.~
+Level 1
+ItemType ore~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material vampiric~
+Extra    dark evil~
+Wear     take hold~
+End
+
+#70000
+Name mine cart~
+Short a `#`Smine cart`^~
+Desc A mine cart for transporing ore is here, waiting to be boarded.~
+Level 0
+ItemType vehicle~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 70000 1000 F 0 0
+Weight 0
+Material iron~
+Extra    nopurge nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+End
+
+#70001
+Name steering wheel~
+Short a steering wheel~
+Desc A small steering wheel is attached to the cart.~
+Level 0
+ItemType vehicle_controls~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 70000 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+ExtraDesc _TRAVEL~
+`x
+~
+End
+
+#70002
+Name ladder~
+Short a small ladder~
+Desc A small ladder leads out of the mine cart.~
+Level 0
+ItemType vehicle_exit~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 70000 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+End
+
+#0
+
+
+
+#ROOMS
+#65000
+Name Mine Entrance~
+Desc Large wooden beams extend into the dark entrance of the mine shaft. Long ago 
+abandoned, the mines offer the wary adventurer the chance for riches, or 
+death. Light trickles in from the outside, and the air is filled with dust 
+from dirt and rocks. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags no_shadowplane~
+Sector cave~
+Exit north 65001
+Exit up 56438
+End
+
+
+#65001
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65002
+Exit south 65000
+End
+
+
+#65002
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65005
+Exit east 65004
+Exit south 65001
+Exit west 65003
+End
+
+
+#65003
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Sector cave~
+Exit east 65002
+Exit south 65097
+Exit down 65006
+End
+
+
+#65004
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Sector cave~
+Exit east 65117
+Exit south 65089
+Exit west 65002
+End
+
+
+#65005
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65009
+Exit east 65076
+Exit south 65002
+Exit west 65142
+Exit down 65061
+End
+
+
+#65006
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65007
+Exit south 65012
+Exit west 65008
+Exit up 65003
+End
+
+
+#65007
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65015
+Exit south 65006
+Exit west 65065
+End
+
+
+#65008
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65026
+Exit east 65006
+Exit south 65027
+Exit west 65025
+Exit down 65028
+End
+
+
+#65009
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65010
+Exit south 65005
+Exit west 65062
+End
+
+
+#65010
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65139
+Exit east 65090
+Exit south 65009
+Exit down 65011
+End
+
+
+#65011
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65099
+Exit up 65010
+End
+
+
+#65012
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65006
+Exit south 65013
+End
+
+
+#65013
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65012
+Exit south 65014
+End
+
+
+#65014
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65013
+Exit west 65091
+End
+
+
+#65015
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65016
+Exit west 65007
+End
+
+
+#65016
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65017
+Exit south 65015
+End
+
+
+#65017
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65018
+Exit south 65016
+End
+
+
+#65018
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65019
+Exit south 65017
+End
+
+
+#65019
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65020
+Exit south 65018
+End
+
+
+#65020
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65019
+Exit west 65021
+End
+
+
+#65021
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65078
+Exit east 65020
+Exit west 65022
+End
+
+
+#65022
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65023
+Exit east 65021
+Exit down 65066
+End
+
+
+#65023
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65024
+Exit south 65022
+End
+
+
+#65024
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65023
+End
+
+
+#65025
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65030
+Exit east 65008
+Exit south 65031
+Exit west 65029
+Exit down 65032
+End
+
+
+#65026
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65035
+Exit south 65008
+End
+
+
+#65027
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65008
+End
+
+
+#65028
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65008
+End
+
+
+#65029
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65034
+Exit east 65025
+Exit south 65075
+Exit west 65033
+End
+
+
+#65030
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65074
+Exit south 65025
+Exit west 65102
+End
+
+
+#65031
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65025
+Exit east 65073
+End
+
+
+#65032
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65084
+Exit west 65071
+Exit up 65025
+End
+
+
+#65033
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65029
+End
+
+
+#65034
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65082
+Exit south 65029
+End
+
+
+#65035
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65036
+Exit west 65026
+Exit down 65068
+End
+
+
+#65036
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65037
+Exit west 65035
+End
+
+
+#65037
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65038
+Exit west 65036
+End
+
+
+#65038
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65037
+Exit west 65039
+End
+
+
+#65039
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65038
+Exit down 65040
+End
+
+
+#65040
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65041
+Exit up 65039
+End
+
+
+#65041
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65042
+Exit east 65040
+Exit south 65044
+Exit west 65043
+Exit down 65045
+End
+
+
+#65042
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65041
+End
+
+
+#65043
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65048
+Exit east 65041
+Exit south 65046
+Exit west 65047
+End
+
+
+#65044
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65041
+End
+
+
+#65045
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65069
+Exit up 65041
+End
+
+
+#65046
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65043
+Exit east 65049
+Exit south 65052
+Exit west 65050
+Exit down 65051
+End
+
+
+#65047
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65043
+End
+
+
+#65048
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65043
+End
+
+
+#65049
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65046
+End
+
+
+#65050
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65046
+End
+
+
+#65051
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65056
+Exit east 65055
+Exit south 65054
+Exit west 65057
+Exit up 65046
+Exit down 65053
+End
+
+
+#65052
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65046
+End
+
+
+#65053
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65051
+End
+
+
+#65054
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65051
+End
+
+
+#65055
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65060
+Exit south 65058
+Exit west 65051
+Exit down 65059
+End
+
+
+#65056
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65051
+End
+
+
+#65057
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65051
+End
+
+
+#65058
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65055
+End
+
+
+#65059
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65055
+End
+
+
+#65060
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65055
+End
+
+
+#65061
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65108
+Exit south 65081
+Exit up 65005
+End
+
+
+#65062
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65009
+Exit south 65063
+Exit west 65116
+End
+
+
+#65063
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65062
+Exit east 65098
+Exit west 65174
+Exit down 65064
+End
+
+
+#65064
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65063
+End
+
+
+#65065
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65007
+End
+
+
+#65066
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65067
+Exit up 65022
+End
+
+
+#65067
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65066
+End
+
+
+#65068
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65035
+End
+
+
+#65069
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65070
+Exit west 65045
+End
+
+
+#65070
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65069
+End
+
+
+#65071
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65072
+Exit east 65032
+End
+
+
+#65072
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65086
+Exit south 65071
+Exit west 65085
+End
+
+
+#65073
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65031
+Exit down 65087
+End
+
+
+#65074
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65030
+End
+
+
+#65075
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65029
+End
+
+
+#65076
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65077
+Exit west 65005
+End
+
+
+#65077
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65076
+End
+
+
+#65078
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65079
+Exit east 65080
+Exit south 65021
+End
+
+
+#65079
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65078
+End
+
+
+#65080
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65078
+End
+
+
+#65081
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65061
+Exit south 65141
+Exit down 65103
+End
+
+
+#65082
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65083
+Exit west 65034
+End
+
+
+#65083
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65082
+End
+
+
+#65084
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65032
+End
+
+
+#65085
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65072
+End
+
+
+#65086
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65072
+End
+
+
+#65087
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65088
+Exit up 65073
+End
+
+
+#65088
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65087
+End
+
+
+#65089
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65004
+End
+
+
+#65090
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags dark indoors nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65126
+Exit west 65010
+End
+
+
+#65091
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65014
+Exit west 65092
+End
+
+
+#65092
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65091
+Exit south 65093
+End
+
+
+#65093
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65092
+Exit south 65094
+End
+
+
+#65094
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65093
+Exit east 65095
+End
+
+
+#65095
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65096
+Exit west 65094
+End
+
+
+#65096
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65095
+Exit west 65119
+End
+
+
+#65097
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65003
+Exit east 65187
+Exit south 65176
+Exit west 65118
+Exit down 65177
+End
+
+
+#65098
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65105
+Exit west 65063
+End
+
+
+#65099
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65011
+Exit south 65100
+End
+
+
+#65100
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65099
+Exit east 65132
+Exit south 65101
+Exit west 65133
+End
+
+
+#65101
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65100
+End
+
+
+#65102
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65030
+End
+
+
+#65103
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65081
+Exit down 65104
+End
+
+
+#65104
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65113
+Exit up 65103
+End
+
+
+#65105
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65098
+Exit south 65106
+End
+
+
+#65106
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65105
+Exit east 65107
+End
+
+
+#65107
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65106
+End
+
+
+#65108
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65109
+Exit east 65110
+Exit south 65061
+End
+
+
+#65109
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65108
+End
+
+
+#65110
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65111
+Exit west 65108
+End
+
+
+#65111
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65112
+Exit south 65110
+End
+
+
+#65112
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65111
+End
+
+
+#65113
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65114
+Exit south 65104
+End
+
+
+#65114
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65115
+Exit south 65113
+End
+
+
+#65115
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65114
+Exit west 65131
+End
+
+
+#65116
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65062
+Exit south 65120
+End
+
+
+#65117
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65206
+Exit west 65004
+End
+
+
+#65118
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65134
+Exit east 65097
+Exit south 65136
+Exit west 65135
+End
+
+
+#65119
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65096
+End
+
+
+#65120
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65116
+Exit east 65121
+Exit down 65122
+End
+
+
+#65121
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65173
+Exit west 65120
+End
+
+
+#65122
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65123
+Exit up 65120
+End
+
+
+#65123
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65122
+Exit east 65125
+Exit west 65124
+End
+
+
+#65124
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65123
+End
+
+
+#65125
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65123
+End
+
+
+#65126
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65127
+Exit west 65090
+End
+
+
+#65127
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65128
+Exit west 65126
+End
+
+
+#65128
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65130
+Exit east 65129
+Exit south 65127
+End
+
+
+#65129
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65128
+End
+
+
+#65130
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65128
+End
+
+
+#65131
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65115
+End
+
+
+#65132
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65100
+End
+
+
+#65133
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65100
+End
+
+
+#65134
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65118
+End
+
+
+#65135
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65118
+Exit west 65137
+End
+
+
+#65136
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65118
+Exit south 65147
+End
+
+
+#65137
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65135
+Exit west 65138
+End
+
+
+#65138
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65137
+End
+
+
+#65139
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65140
+Exit south 65010
+End
+
+
+#65140
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65139
+End
+
+
+#65141
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65081
+End
+
+
+#65142
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65005
+Exit west 65143
+End
+
+
+#65143
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65142
+Exit west 65144
+End
+
+
+#65144
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65143
+Exit south 65178
+Exit west 65145
+End
+
+
+#65145
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65172
+Exit east 65144
+Exit west 65146
+End
+
+
+#65146
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65145
+Exit west 65194
+End
+
+
+#65147
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65136
+Exit south 65148
+End
+
+
+#65148
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65147
+Exit south 65149
+Exit west 65180
+End
+
+
+#65149
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65148
+Exit south 65150
+End
+
+
+#65150
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65149
+Exit east 65181
+Exit south 65151
+End
+
+
+#65151
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65150
+Exit south 65152
+End
+
+
+#65152
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65151
+Exit south 65153
+End
+
+
+#65153
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65152
+Exit east 65154
+End
+
+
+#65154
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65155
+Exit west 65153
+End
+
+
+#65155
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65156
+Exit south 65154
+Exit west 65166
+End
+
+
+#65156
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65157
+Exit south 65155
+End
+
+
+#65157
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65158
+Exit south 65156
+End
+
+
+#65158
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65159
+Exit south 65157
+End
+
+
+#65159
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65160
+Exit south 65158
+End
+
+
+#65160
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65161
+Exit south 65159
+End
+
+
+#65161
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65162
+Exit south 65160
+End
+
+
+#65162
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65163
+Exit south 65161
+End
+
+
+#65163
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65164
+Exit south 65162
+End
+
+
+#65164
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65165
+Exit south 65163
+End
+
+
+#65165
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65168
+Exit south 65164
+End
+
+
+#65166
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65155
+Exit west 65167
+End
+
+
+#65167
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65166
+End
+
+
+#65168
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65169
+Exit south 65165
+End
+
+
+#65169
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65170
+Exit south 65168
+End
+
+
+#65170
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65171
+Exit south 65169
+End
+
+
+#65171
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65170
+Exit west 65182
+End
+
+
+#65172
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65189
+Exit south 65145
+End
+
+
+#65173
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65121
+End
+
+
+#65174
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65175
+Exit east 65063
+End
+
+
+#65175
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65174
+End
+
+
+#65176
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65097
+Exit east 65188
+End
+
+
+#65177
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65097
+End
+
+
+#65178
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65144
+Exit down 65179
+End
+
+
+#65179
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit up 65178
+End
+
+
+#65180
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65148
+End
+
+
+#65181
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65150
+End
+
+
+#65182
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65171
+Exit west 65183
+End
+
+
+#65183
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65182
+Exit down 65184
+End
+
+
+#65184
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65185
+Exit up 65183
+End
+
+
+#65185
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65184
+Exit south 65186
+End
+
+
+#65186
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65185
+Exit south 65196
+End
+
+
+#65187
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65097
+End
+
+
+#65188
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65176
+End
+
+
+#65189
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65172
+Exit west 65190
+End
+
+
+#65190
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65189
+Exit west 65191
+End
+
+
+#65191
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65190
+Exit south 65192
+End
+
+
+#65192
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65191
+Exit south 65193
+End
+
+
+#65193
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65192
+Exit east 65195
+End
+
+
+#65194
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65146
+End
+
+
+#65195
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit west 65193
+End
+
+
+#65196
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65186
+Exit south 65197
+End
+
+
+#65197
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65196
+Exit down 65198
+End
+
+
+#65198
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65199
+Exit up 65197
+End
+
+
+#65199
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65200
+Exit south 65198
+End
+
+
+#65200
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65201
+Exit south 65199
+End
+
+
+#65201
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65202
+Exit south 65200
+End
+
+
+#65202
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65203
+Exit south 65201
+End
+
+
+#65203
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65204
+Exit south 65202
+End
+
+
+#65204
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65205
+Exit south 65203
+End
+
+
+#65205
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65204
+End
+
+
+#65206
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65207
+Exit south 65117
+End
+
+
+#65207
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit east 65209
+Exit south 65208
+Exit west 65206
+End
+
+
+#65208
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65207
+End
+
+
+#65209
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit north 65210
+Exit west 65207
+End
+
+
+#65210
+Name In the Mines~
+Desc Water slowly drips from the sides of the mine, and bits of broken rock and 
+dirt cover the floor. The hopes of many a person have been lost and found 
+here, as the mines can bring both riches... and death. 
+~
+RoomFlags indoors light nofly~
+Room2Flags mine~
+Sector cave~
+Exit south 65209
+End
+
+
+#70000
+Name In a Mine Cart~
+Desc This small but useful mine cart sits on a set of tracks running though the 
+mine. It looks like it would be useful for hauling ore and gems to the 
+surface. 
+~
+RoomFlags dark indoors~
+Sector vehicle~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 65001 spec_poison
+M 65005 spec_cast_mean
+S
+
+
+
+#RESETS2
+O 0 70001 -1 70000
+O 0 70002 -1 70000
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

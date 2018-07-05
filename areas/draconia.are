@@ -1,0 +1,2335 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Dragon Tower~
+ShortName   Dragon Tower~
+Builders    None~
+Credits     wench~
+VNUMs       4100 4199
+LComment    `#`R[ 60- 91]`^
+LRange      60 91
+Security    8
+Colour      G~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Thu Aug 25 21:48:53 2005~
+End
+
+
+
+#MOBILES
+#4100
+Name dragon baby hatchling~
+ShortD the dragon hatchling~
+LongD A dragon hatchling is here, chewing on a bone.~
+Desc This small dragon hisses at you as you enter the room.  Although it is only a
+few feet long, its sharp teeth make you think twice about petting it.
+~
+Race dragon~
+Align -3 -2
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType slash
+AC -300 -300 -300 -264
+Wealth 70
+Act    npc dont_wander no_tame aggressive stay_area noalign~
+AffBy  infrared flying haste dark_vision~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge tail trip assist_vnum~
+Imm    summon charm bash sleep~
+Res    charm magic bash~
+Vuln   pierce~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#4101
+Name draconian~
+ShortD the Draconian~
+LongD The Draconian is standing here.~
+Desc This horrible creature is a bizarre cross between a man and a dragon.  He 
+has black scales and a seven foot wingspan.  He scowls at you and hefts his 
+spear as you enter the room.
+~
+Race baaz draconian~
+Align -2 -2
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType claw
+AC -300 -300 -300 -258
+Wealth 100
+Act    npc dont_wander scavenger aggressive~
+Off    tail~
+Res    lightning~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4102
+Name lord crypt master~
+ShortD the dragon master~
+LongD The lord of this crypt is here.~
+Desc He doesn't look happy to see you.
+~
+Race Lich~
+Align 3 -3
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType drain
+AC -500 -500 -500 -435
+Wealth 270
+Act    npc dont_wander scavenger aggressive~
+AffBy  detect_invis detect_hidden pass_door~
+Off    disarm dodge fade parry trip~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    mental illusion scry~
+Vuln   holy light~
+Form   edible poison magical sentient undead biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4103
+Name man mage wizard~
+ShortD a powerful mage~
+LongD A man is here, studying some books.~
+Desc A powerful looking mage is standing in this room studying his spells.  You are
+surprised at the fact that he is human, and realize that he must be very
+powerful to have been accepted by the creatures which live here.
+~
+Race human~
+Align 1 -2
+Level 85
+Hitroll 0
+HitDice 8d12+415
+ManaDice 9d13+600
+DamDice 9d10+41
+DamType punch
+AC -540 -540 -540 -448
+Wealth 30
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden sanctuary protect_good haste~
+Off    disarm dodge kick dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4104
+Name oldstyle cleric draconian~
+ShortD the holy Draconian~
+LongD A Draconian is here, deep in thought.          ~
+Desc A Draconian stands here, dressed in simple robes.  Around his neck you 
+notice a golden medallion in the shape of a five headed dragon.  
+~
+Race aurak draconian~
+Align 3 -2
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+40
+DamType claw
+AC -500 -500 -500 -450
+Wealth 20
+Act    npc dont_wander scavenger aggressive cleric~
+Off    tail~
+Res    fire~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4105
+Name draconian king~
+ShortD the Draconian King~
+LongD A Draconian wearing fine clothes is here, pondering his greatness.          ~
+Desc The king of the draconians sits here on a golden throne.  He looks as 
+though he could crush your head with a single blow.  Yet you sense that he 
+is controlled by a greater power. 
+~
+Race sivak draconian~
+Align 3 -2
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType claw
+AC -650 -650 -650 -559
+Wealth 40
+Act    npc dont_wander scavenger~
+AffBy  flying~
+AffBy2 vicegrip~
+Off    tail~
+Res    cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4106
+Name concubine draconian~
+ShortD a concubine~
+LongD A concubine is resting here. ~
+Desc This is a concubine of the king.  She is lounging here, wearing nothing at 
+all.  You find yourself strangely repulsed as she draws a knife and 
+prepares to defend herself. 
+~
+Race draconian~
+Align -2 -1
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType slash
+AC -450 -450 -450 -369
+Wealth 5
+Act    npc dont_wander~
+AffBy  flying~
+Off    tail~
+Res    fire cold lightning acid~
+Vuln   holy silver~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4107
+Name cyclops bodyguard~
+ShortD a cyclops bodyguard~
+LongD A cyclops bodyguard is here, staring at you menacingly.~
+Desc This creature has devoted its life to defending the king.  Your intrusion has
+not pleased it.
+~
+Race cyclops~
+Align 0 -2
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType beating
+AC -400 -400 -400 -356
+Wealth 180
+Act    npc dont_wander aggressive~
+AffBy  detect_invis detect_hidden sanctuary dark_vision~
+Off    bash berserk disarm dodge kick dirt_kick parry crush assist_vnum~
+Vuln   poison mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4120
+Name tiamat dragon~
+ShortD `#`RTiamat`^~
+LongD A five headed dragon hisses at you as you enter this room.~
+Desc You see before you the master of this Tower, Tiamat.  She frowns at you as she
+prepares to make you pay for your insolence ... with your lives!
+~
+Race dragon~
+Align 1 -3
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType bite
+AC -800 -800 -800 -680
+Wealth 520
+Act    npc dont_wander scavenger no_tame aggressive warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_good flying pass_door haste dark_vision~
+AffBy2 passwotrace detect_treeform detect_vanish vicegrip~
+Off    area_attack bash berserk dodge kick dirt_kick parry tail crush assist_vnum~
+Imm    summon charm bash fire sleep~
+Res    magic cold lightning acid poison~
+Form   edible sentient reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4121
+Name great red dragon~
+ShortD the Great Red Dragon~
+LongD A red dragon is here, contemplating your existence. ~
+Desc This huge red dragon dominates the chamber.  As you turn to flee, he grins at
+you and invites you to stay ... forever! 
+~
+Race dragon~
+Align 2 -3
+Level 108
+Hitroll 0
+HitDice 11d14+520
+ManaDice 11d14+717
+DamDice 11d14+63
+DamType bite
+AC -780 -780 -780 -655
+Wealth 450
+Act    npc dont_wander scavenger aggressive~
+AffBy  detect_invis detect_hidden infrared flying haste dark_vision~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge tail trip crush assist_race~
+Imm    summon charm bash fire sleep~
+Res    charm magic bash~
+Vuln   pierce cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material skil
+END
+
+#4122
+Name black dragon~
+ShortD the Great Black Dragon~
+LongD A black dragon is here, laughing at your insolence. ~
+Desc This huge black wyrm laughs at your puny weapons.  You realize that he is not
+going to roll over and die for you.
+~
+Race dragon~
+Align -2 -2
+Level 90
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType bite
+AC -600 -600 -600 -486
+Wealth 390
+Act    npc dont_wander scavenger aggressive~
+AffBy  detect_invis detect_hidden sanctuary infrared flying haste dark_vision~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge tail trip crush assist_race~
+Imm    summon charm bash acid sleep~
+Res    charm magic bash~
+Vuln   pierce lightning~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4123
+Name white dragon~
+ShortD the Great White Dragon~
+LongD A white dragon is here, waiting for you. ~
+Desc This dragon towers over you.  Recalling your previous experiences with white
+dragons, you are not afraid.  She smiles at you and says 'I think you will find
+me a greater challenge than my offspring.'
+~
+Race dragon~
+Align 0 -3
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType bite
+AC -500 -500 -500 -440
+Wealth 370
+Act    npc dont_wander scavenger aggressive~
+AffBy  detect_invis detect_hidden sanctuary flying haste dark_vision~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge tail trip crush assist_race~
+Imm    summon charm bash cold sleep~
+Res    charm magic bash~
+Vuln   pierce fire~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4125
+Name green dragon~
+ShortD the Ancient Green Dragon~
+LongD A green dragon is here, looking distraught. ~
+Desc This huge beast appears to be the most directly related to the draconians. 
+She looks at you with sorrow in her eyes and says 'You have slaughtered my 
+children.  Prepare to die.'
+~
+Race dragon~
+Align -2 -3
+Level 77
+Hitroll 0
+HitDice 8d11+385
+ManaDice 8d11+420
+DamDice 9d9+38
+DamType bite
+AC -470 -470 -470 -390
+Wealth 410
+Act    npc dont_wander scavenger aggressive~
+AffBy  detect_invis detect_hidden sanctuary infrared flying haste dark_vision~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge tail trip assist_race~
+Imm    summon charm bash poison sleep~
+Res    charm magic bash~
+Vuln   pierce mental~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4126
+Name hydra~
+ShortD a large hydra~
+LongD A hydra is here, blocking the doorway. ~
+Desc A hydra is here, guarding the entrance to a sealed vault.  You have the feeling
+it isn't happy to see you.
+~
+Race dragon~
+Align 0 -2
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType acbite
+AC -430 -430 -430 -387
+Wealth 180
+Act    npc dont_wander scavenger aggressive~
+AffBy  infrared flying haste dark_vision~
+Off    area_attack bash tail~
+Imm    summon charm bash sleep~
+Res    magic~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4127
+Name intori slave~
+ShortD an intori slave~
+LongD An intori slave is here, hard at work.~
+Desc He looks like he's under a lot of stress.  He would probably like it if you
+left him alone.
+~
+Race intori~
+Align -2 0
+Level 60
+Hitroll 0
+HitDice 6d9+315
+ManaDice 5d5+140
+DamDice 8d6+26
+DamType none
+AC -290 -290 -290 -232
+Wealth 5
+Act    npc dont_wander thief~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4140
+Name zombie draconian~
+ShortD a Draconian zombie~
+LongD A Draconian zombie is here, staring at nothing in particular.~
+Desc This used to be one of the warriors of this tribe.  He was denied his final
+rest, however, and now guards this corridor tirelessly as a zombie.
+~
+Race Lich~
+Align 2 -1
+Level 82
+Hitroll 0
+HitDice 8d12+405
+ManaDice 8d12+500
+DamDice 9d10+41
+DamType drain
+AC -520 -520 -520 -436
+Wealth 75
+Act    npc dont_wander scavenger aggressive~
+AffBy  detect_invis detect_hidden pass_door~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    mental illusion scry~
+Vuln   holy light~
+Form   edible poison magical sentient undead biped cold_blood~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4141
+Name phase dragon~
+ShortD the phase dragon~
+LongD A Phase Dragon is darting around the room.          ~
+Desc This small dragon looks like he's up to no good. 
+~
+Race dragon~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType scratch
+AC -350 -350 -350 -311
+Wealth 100
+Act    npc scavenger stay_area wimpy~
+AffBy  flying haste dark_vision~
+AffBy2 vicegrip~
+Off    area_attack bash dodge fade tail~
+Imm    summon charm bash sleep~
+Res    magic~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4142
+Name draconian fool~
+ShortD the draconian fool~
+LongD A Fool is here, making fun of you.          ~
+Desc This dragon man looks VERY foolish, dressed in a green and blue striped 
+suit.  As you enter the room, he points at you and laughs. 
+~
+Race lightning draconian~
+Align 3 0
+Level 5
+Hitroll 0
+HitDice 2d4+1
+ManaDice 1d4+5
+DamDice 1d5+1
+DamType none
+AC 60 60 60 54
+Wealth 25
+Act    npc stay_area wimpy thief~
+AffBy  flying~
+Off    tail~
+Res    lightning~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4143
+Name oldstyle queen draconian~
+ShortD the Draconian Queen~
+LongD A Female Draconian sits, here, looking very important.          ~
+Desc This draconian looks VERY busy as she orders her slaves around.  You think 
+it might be a good idea to leave her alone. 
+~
+Race kapak draconian~
+Align 0 -1
+Level 88
+Hitroll 0
+HitDice 9d12+430
+ManaDice 9d12+560
+DamDice 10d10+45
+DamType none
+AC -580 -580 -580 -481
+Wealth 200
+Act    npc dont_wander scavenger~
+Off    tail~
+Res    poison~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#4100
+Name spear jagged~
+Short a jagged spear~
+Desc A jagged spear has been left here.~
+Level 60
+ItemType weapon~
+Cost 987
+Durability 5
+Asize 150
+Rsize 50
+Values exotic 5 11 pierce 0
+Weight 150
+Material steel~
+Wear     take wield~
+End
+
+#4101
+Name dagger silver~
+Short a silver dagger~
+Desc A silver dagger is lying here.~
+Level 83
+ItemType weapon~
+Cost 2000
+Durability 5
+Asize 10
+Rsize 50
+Values dagger 3 26 pierce 0
+Weight 10
+Material silver~
+Extra    burnproof~
+Wear     take wield~
+Affect modifier -1 83 -1 saves -2 0
+End
+
+#4102
+Name knife tooth dragon~
+Short a dragon's tooth knife~
+Desc A dangerous looking knife made from a dragon's tooth has been left here.~
+Level 85
+ItemType weapon~
+Cost 3200
+Durability 5
+Asize 80
+Rsize 50
+Values dagger 9 8 pierce 0
+Weight 30
+Material oldstyle~
+Extra    nonmetal burnproof~
+Wear     take wield~
+Affect modifier -1 85 -1 damroll 2 0
+Affect modifier -1 85 -1 quickness 1 0
+End
+
+#4103
+Name bracelet dragon~
+Short a dragon skin bracelet~
+Desc A scaly bracelet lies on the ground.~
+Level 15
+ItemType armor~
+Cost 1170
+Durability 5
+Asize 100
+Rsize 50
+Values 6 6 6 3 0
+Weight 100
+Material oldstyle~
+Wear     take wrist~
+End
+
+#4104
+Name belt silk black~
+Short a black silk belt~
+Desc A black belt made of the finest silk is hanging here.~
+Level 85
+ItemType armor~
+Cost 280
+Durability 5
+Asize 250
+Rsize 50
+Values 17 17 17 13 0
+Weight 250
+Material silk~
+Wear     take waist~
+Affect modifier -1 85 -1 intuition 2 0
+End
+
+#4110
+Name belt silk white~
+Short a white silk belt~
+Desc A white belt made of the finest silk is hanging here.~
+Level 80
+ItemType armor~
+Cost 834
+Durability 5
+Asize 250
+Rsize 50
+Values 16 16 16 10 0
+Weight 200
+Material silk~
+Wear     take waist~
+Affect modifier -1 80 -1 strength 2 0
+End
+
+#4111
+Name bracelet platinum~
+Short a platinum bracelet.~
+Desc A tarnished platinum bracelet has been dropped here.~
+Level 80
+ItemType armor~
+Cost 450
+Durability 5
+Asize 50
+Rsize 50
+Values 11 12 11 9 0
+Weight 50
+Material platinum~
+Extra    glow~
+Wear     take wrist~
+End
+
+#4120
+Name symbol holy~
+Short a holy symbol~
+Desc A golden holy symbol is here.~
+Level 80
+ItemType jewelry~
+Cost 270
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material gold~
+Extra    glow~
+Wear     take neck~
+Affect modifier -1 80 -1 mana 50 0
+End
+
+#4121
+Name robe black~
+Short a plain black robe~
+Desc A black robe is hanging on a hook on the wall.~
+Level 85
+ItemType armor~
+Cost 560
+Durability 5
+Asize 30
+Rsize 50
+Values 21 21 21 18 0
+Weight 30
+Material cloth~
+Extra    burnproof~
+Wear     take about~
+Affect modifier -1 85 -1 damroll 2 0
+End
+
+#4122
+Name sword emerald~
+Short an emerald sword~
+Desc An emerald long sword is leaning against the wall.~
+Level 89
+ItemType weapon~
+Cost 1800
+Durability 5
+Asize 240
+Rsize 50
+Values sword 13 6 slash E
+Weight 80
+Material steel~
+Extra    glow burnproof~
+Extra2   nodecay~
+Wear     take wield~
+End
+
+#4123
+Name club stone~
+Short a stone club~
+Desc A heavy looking stone club is here.~
+Level 65
+ItemType weapon~
+Cost 150
+Durability 5
+Asize 180
+Rsize 50
+Values mace 10 6 crush 0
+Weight 180
+Material stone~
+Wear     take wield~
+End
+
+#4124
+Name ring diamond~
+Short a diamond ring~
+Desc A diamond ring lies gleaming on the ground.~
+Level 70
+ItemType jewelry~
+Cost 900
+Durability 5
+Asize 60
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material diamond~
+Wear     take finger~
+Affect modifier -1 70 -1 damroll 3 0
+Affect modifier -1 70 -1 hitroll 3 0
+End
+
+#4130
+Name ring copper~
+Short a copper ring~
+Desc A copper ring is here.~
+Level 60
+ItemType jewelry~
+Cost 560
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material copper~
+Wear     take finger~
+Affect modifier -1 60 -1 empathy 2 0
+Affect modifier -1 60 -1 strength 2 0
+End
+
+#4131
+Name key steel~
+Short a steel key~
+Desc A steel key.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4132
+Name key ruby~
+Short a ruby key~
+Desc A ruby key.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4133
+Name key white~
+Short a white key~
+Desc A white key.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4134
+Name key grey~
+Short a grey key~
+Desc A grey key is resting on the ground here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4137
+Name key stone~
+Short a stone key~
+Desc A stone key.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4140
+Name key black~
+Short a black key~
+Desc A black key.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4141
+Name key platinum~
+Short a platinum key~
+Desc A platinum key.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4142
+Name shield crested~
+Short a crested shield~
+Desc A large crested shield draws your attention.~
+Level 85
+ItemType armor~
+Cost 390
+Durability 5
+Asize 200
+Rsize 50
+Values 28 28 28 28 0
+Weight 200
+Material oldstyle~
+Extra    glow nodegrade burnproof~
+Wear     take shield~
+Affect modifier -1 85 -1 strength 10 0
+End
+
+#4143
+Name wand golden~
+Short a golden wand~
+Desc A golden wand has been dropped here.~
+Level 80
+ItemType wand~
+Cost 150
+Durability 5
+Asize 50
+Rsize 50
+Values 91 10 10 'dispel magic' 0
+Weight 50
+Material wood~
+Extra    glow~
+Wear     take hold~
+End
+
+#4144
+Name staff silver~
+Short a silver staff~
+Desc A silver staff.~
+Level 60
+ItemType staff~
+Cost 980
+Durability 5
+Asize 50
+Rsize 50
+Values 85 20 20 'chain lightning' 0
+Weight 50
+Material wood~
+Extra    glow magic~
+Wear     take hold~
+End
+
+#4145
+Name staff dragon~
+Short the staff of the dragon~
+Desc A powerful oak staff has been left here.~
+Level 80
+ItemType staff~
+Cost 340
+Durability 5
+Asize 50
+Rsize 50
+Values 91 10 10 'fire breath' 0
+Weight 50
+Material oak~
+Extra    glow magic~
+Wear     take hold~
+End
+
+#4146
+Name mail scale~
+Short scale mail~
+Desc A set of scale mail has been abandoned here.~
+Level 60
+ItemType armor~
+Cost 900
+Durability 5
+Asize 200
+Rsize 50
+Values 15 15 15 12 0
+Weight 200
+Material steel~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#4150
+Name staff black~
+Short a black staff~
+Desc You notice the faint outline of a staff.~
+Level 80
+ItemType staff~
+Cost 530
+Durability 5
+Asize 250
+Rsize 50
+Values 80 3 3 'energy drain' 0
+Weight 250
+Material wood~
+Extra    glow antigood~
+Wear     take hold~
+End
+
+#4151
+Name potion cyan~
+Short a cyan potion~
+Desc A small cyan potion has been left here.~
+Level 20
+ItemType potion~
+Cost 56
+Durability 5
+Asize 10
+Rsize 50
+Values 110 blindness teleport 'chain lightning' weaken
+Weight 10
+Material oldstyle~
+Wear     take~
+End
+
+#4152
+Name potion magenta~
+Short a magenta potion~
+Desc A magenta potion.~
+Level 60
+ItemType potion~
+Cost 58
+Durability 5
+Asize 10
+Rsize 50
+Values 80 'cure critical' 'protection evil' '' ''
+Weight 10
+Material glass~
+Extra    nodrop~
+Wear     take~
+End
+
+#4154
+Name gauntlets spiked~
+Short a pair of spiked gauntlets~
+Desc A pair of spiked gauntlets.~
+Level 88
+ItemType armor~
+Cost 650
+Durability 5
+Asize 100
+Rsize 50
+Values 17 18 17 14 0
+Weight 100
+Material steel~
+Extra    glow~
+Extra2   nodecay~
+Wear     take hands~
+ClassAllowances cleric thief warrior paladin barbarian anti-paladin~
+Affect modifier -1 88 -1 damroll 2 0
+Affect modifier -1 88 -1 strength 4 0
+End
+
+#4160
+Name scimitar golden~
+Short a golden scimitar~
+Desc A golden scimitar.~
+Level 60
+ItemType weapon~
+Cost 1800
+Durability 5
+Asize 100
+Rsize 50
+Values sword 3 18 slash DHL
+Weight 100
+Material steel~
+Extra    glow burnproof~
+Wear     take wield~
+Affect modifier -1 60 -1 empathy 1 0
+Affect modifier -1 60 -1 presence 1 0
+End
+
+#4161
+Name brooch diamond~
+Short a diamond brooch~
+Desc A diamond brooch.~
+Level 25
+ItemType jewelry~
+Cost 980
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material diamond~
+Extra    magic~
+Wear     take neck~
+Affect modifier -1 25 -1 mana 25 0
+End
+
+#4170
+Name scroll~
+Short a runed scroll~
+Desc A runed scroll.~
+Level 80
+ItemType scroll~
+Cost 345
+Durability 5
+Asize 10
+Rsize 50
+Values 80 barkskin 'protection evil' shield ''
+Weight 10
+Material parchment~
+Extra    magic~
+Wear     take hold~
+End
+
+#4171
+Name gloves dragon~
+Short a pair of dragon skin gloves~
+Desc A pair of dragon skin gloves are lying on the ground.~
+Level 85
+ItemType armor~
+Cost 400
+Durability 5
+Asize 50
+Rsize 50
+Values 21 21 21 18 0
+Weight 50
+Material dragonskin~
+Extra    burnproof~
+Wear     take hands~
+Affect modifier -1 85 -1 quickness 2 0
+End
+
+#4175
+Name helm dragon~
+Short a helm of dragon kind~
+Desc A helm made of a dragon's skull is lying on the ground.~
+Level 80
+ItemType armor~
+Cost 800
+Durability 5
+Asize 150
+Rsize 50
+Values 20 20 20 15 0
+Weight 150
+Material bone~
+Extra    burnproof~
+Wear     take head~
+Affect modifier -1 80 -1 hp 15 0
+End
+
+#4176
+Name fur cloak~
+Short a fur cloak~
+Desc A large mound of fur is lying here.~
+Level 91
+ItemType armor~
+Cost 456
+Durability 5
+Asize 100
+Rsize 50
+Values 22 21 21 18 0
+Weight 100
+Material fur~
+Extra    nodegrade burnproof~
+Wear     take about~
+Affect modifier -1 91 -1 hp 10 0
+Affect modifier -1 91 -1 hitroll 3 0
+Affect modifier -1 91 -1 damroll 3 0
+End
+
+#4180
+Name leggings dragon scale~
+Short a pair of dragon scale leggings~
+Desc A pair of dragon scale leggings is lying on the ground.~
+Level 75
+ItemType armor~
+Cost 899
+Durability 5
+Asize 150
+Rsize 50
+Values 18 18 18 18 0
+Weight 150
+Material dragonscale~
+Wear     take legs~
+End
+
+#4181
+Name sleeves dragon scale~
+Short a set of dragon scale sleeves~
+Desc A set of dragon scale sleeves is lying on the ground.~
+Level 75
+ItemType armor~
+Cost 700
+Durability 5
+Asize 120
+Rsize 50
+Values 18 18 18 18 0
+Weight 120
+Material dragonscale~
+Wear     take arms~
+End
+
+#4185
+Name whip dragon tail~
+Short a dragon tailed whip~
+Desc A dragon tailed whip is lying on the ground.~
+Level 88
+ItemType weapon~
+Cost 908
+Durability 5
+Asize 140
+Rsize 50
+Values whip 7 12 whip 0
+Weight 120
+Material leather~
+Extra    hum antigood~
+Wear     take wield~
+Affect modifier -1 88 -1 damroll 2 0
+Affect modifier -1 88 -1 hitroll 2 0
+End
+
+#4186
+Name hammer copper~
+Short a copper hammer~
+Desc A copper hammer is lying on the ground.~
+Level 60
+ItemType weapon~
+Cost 750
+Durability 5
+Asize 120
+Rsize 50
+Values mace 6 10 crush N
+Weight 120
+Material copper~
+Wear     take wield~
+End
+
+#4187
+Name dagger silver~
+Short a silver dagger~
+Desc A silver dagger is lying here.~
+Level 5
+ItemType weapon~
+Cost 360
+Durability 5
+Asize 10
+Rsize 50
+Values dagger 2 4 pierce 0
+Weight 10
+Material silver~
+Wear     take wield~
+End
+
+#4198
+Name bracer darkness~
+Short `#`SBracer `wof `SDarkness`^~
+Desc A glowing dark bracer is lying upon the ground.~
+Level 90
+ItemType armor~
+Cost 340
+Durability 5
+Asize 1
+Rsize 50
+Values 22 22 22 18 0
+Weight 1
+Material darkness~
+Extra    glow magic antigood nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take wrist~
+Affect modifier -1 90 -1 hitroll 5 0
+Affect modifier -1 90 -1 damroll 4 0
+End
+
+#4199
+Name key gold tarnished~
+Short a tarnished gold key~
+Desc A tarnished gold key lies here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#4101
+Name The Tower Gates~
+Desc You are at the entrance to a tall tower.  Lightning flashes periodically and
+it is raining.  You think it might be a good idea to turn back into the grove.
+~
+Sector forest~
+ExtraDesc gate~
+The gate is tall and secure.  Whoever built it values privacy.
+~
+Exit north 4102
+EFlags door closed locked~
+EKeyvnum 4131
+EKeywords gate steel~
+EDesc You see a large steel gate.  Beyond is the Foyer of the Tower.
+~
+Exit south 55378
+End
+
+
+#4102
+Name The Foyer~
+Desc This is the entrance to the Tower.  The hallway continues to the north,
+leading towards a staircase.  You notice a grim painting on the wall,  and 
+quickly look away.
+~
+RoomFlags no_mob indoors~
+Sector inside~
+ExtraDesc painting~
+This painting depicts the grisly death of a foolish human.  You hope you do 
+not share his fate.
+~
+Exit north 4103
+EKeyvnum -1
+EDesc You see a long hallway. 
+~
+Exit south 4101
+EKeyvnum -1
+EDesc You see the gate. 
+~
+End
+
+
+#4103
+Name Hallway~
+Desc This hallway seems to stretch on forever.  You notice a stairway in  
+the distance. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4104
+EKeyvnum -1
+EDesc The hall continues. 
+~
+Exit south 4102
+EKeyvnum -1
+EDesc You see the foyer. 
+~
+End
+
+
+#4104
+Name Hallway~
+Desc You trudge down the hallway.  You notice doors to the east and west. 
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc inscription~
+It says "STORAGE"
+~
+ExtraDesc sign~
+The sign says "NURSERY" in bold letters.     
+~
+Exit north 4107
+EKeyvnum -1
+EDesc The hall continues. 
+~
+Exit east 4105
+EKeyvnum -1
+EKeywords door~
+EDesc You see a door.  You notice a sign. 
+~
+Exit south 4103
+EKeyvnum -1
+EDesc The hall continues.
+~
+Exit west 4106
+EKeyvnum -1
+EKeywords oak~
+EDesc You see an oak door.  There is an inscription on it. 
+~
+End
+
+
+#4105
+Name Nursery~
+Desc It looks like a tornado has been through here.  Toys are scattered everywhere,
+and a small group of dragon hatchlings are fighting over a bone. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4123
+EFlags door pickproof~
+EKeyvnum 4197
+EKeywords door stone~
+EDesc You see a large stone door.
+~
+Exit west 4104
+EKeyvnum -1
+EDesc You see the hallway. 
+~
+End
+
+
+#4106
+Name Storage Room~
+Desc This room is covered with dust, it looks as if no one has been here in ages.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc dust~
+As you look closely at the dust, you notice the outline of a trapdoor!       
+~
+Exit east 4104
+EKeyvnum -1
+EDesc You see the hallway. 
+~
+Exit down 4108
+EKeyvnum -1
+EKeywords trapdoor~
+EDesc You see nothing special. 
+~
+End
+
+
+#4107
+Name End of the Hallway~
+Desc You have finally reached the end of the hallway.  A huge staircase leads up.
+You see a sign at the base of the staircase. 
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign~
+The sign reads:
+    This area is kind of tough.  You probably shouldn't go up these stairs 
+    alone if you are under 18th level, or at all if you under 14th level.  
+    Have fun! -- Wench
+~
+Exit south 4104
+EKeyvnum -1
+EDesc The hall continues. 
+~
+Exit up 4110
+EKeyvnum -1
+EDesc The second floor.
+~
+End
+
+
+#4108
+Name Guardian's Room~
+Desc You climb down the rickety stairs and find yourself face to face with a 
+gargantuan hydra.  How fast can you climb UP stairs? 
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 4109
+EFlags door closed~
+EKeyvnum 4134
+EKeywords grey~
+EDesc A large grey door.
+~
+Exit up 4106
+EKeyvnum -1
+EKeywords door trap trapdoor~
+EDesc You see the storage room. 
+~
+End
+
+
+#4109
+Name The Treasure Room~
+Desc You have made it past the hydra into the vault.  You are astounded by 
+the treasure here.  Not only are you now rich, you can probably rest here
+safely.  The west wall seems to have a large door made entirely of ruby.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+Exit north 4108
+EFlags door closed~
+EKeyvnum 4134
+EKeywords grey~
+EDesc You see nothing special. 
+~
+Exit west 4118
+EFlags door closed locked~
+EKeyvnum 4132
+EKeywords door ruby~
+EDesc You see a ruby door!
+~
+End
+
+
+#4110
+Name The Second Floor~
+Desc You have made it up to the second floor.  You hear hissing and see several
+dragon men rushing you.  You wonder how long you will be staying here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 4111
+EKeyvnum 1
+EDesc You see the court.
+~
+Exit down 4107
+EKeyvnum -1
+EDesc You see the first floor.
+~
+End
+
+
+#4111
+Name The Court~
+Desc You have entered what seems to be a large court.  The people guarding it
+don't seem happy to see you ...
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4110
+EKeyvnum -1
+EDesc You see nothing special.
+~
+Exit east 4112
+EKeyvnum -1
+EKeywords door wooden~
+EDesc You see a wooden door. 
+~
+Exit south 4113
+EKeyvnum -1
+EDesc You see the court.
+~
+End
+
+
+#4112
+Name Hall O' Pleasure~
+Desc You stop dead in your tracks as you enter this ornately decorated room - it
+is populated with the king's harem.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4111
+EKeyvnum -1
+EDesc You see the Court.
+~
+End
+
+
+#4113
+Name The Court~
+Desc You are continuing down the hall.  To the east and west you see ornate doors.
+~
+Sector inside~
+Exit north 4111
+EKeyvnum -1
+EDesc You see the court.
+~
+Exit east 4114
+EKeyvnum 4140
+EKeywords door black~
+EDesc You see a black door.
+~
+Exit south 4116
+EKeyvnum -1
+EDesc You see the court.
+~
+Exit west 4115
+EKeyvnum 4133
+EKeywords door white~
+EDesc You see a white door.
+~
+End
+
+
+#4114
+Name The Library~
+Desc You have entered a huge room, filled with books.  A peaceful man is
+sitting at a table, studying.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4113
+EKeyvnum 4140
+EKeywords door black~
+EDesc You see the court.
+~
+End
+
+
+#4115
+Name The Sanctum~
+Desc This small room is modestly decorated with small dragon icons.  Its sole
+occupant is deep in thought.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4113
+EKeyvnum 4133
+EKeywords door white~
+EDesc You see the Court.
+~
+End
+
+
+#4116
+Name The Court Ends~
+Desc You have reached the end of the court.  A huge Draconian is sitting in a
+chair here.  As you enter, he motions with his hand and you are rushed by three
+of his bodyguards.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4113
+EKeyvnum -1
+EDesc You see the court.
+~
+Exit east 4117
+EKeyvnum -1
+EDesc You see a private chamber.
+~
+End
+
+
+#4117
+Name bedroom~
+Desc This is the personal room of the draconian king.  It is not empty.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4116
+EKeyvnum -1
+EDesc You see Court.
+~
+End
+
+
+#4118
+Name Entrance to the Crypt~
+Desc You have entered a large room which smells heavily of reptile.  You wonder
+what awaits you here.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 4109
+EFlags door closed locked~
+EKeyvnum 4132
+EKeywords door ruby~
+EDesc You see the Treasure Vault.
+~
+Exit west 4119
+EKeyvnum -1
+EDesc You see the Crypt.
+~
+End
+
+
+#4119
+Name Crypt~
+Desc You are in a large room which continues to the west.  You notice many
+coffins here.  Open coffins reveal remains of something other than man.  
+The smell of reptile is very strong here.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 4118
+EKeyvnum -1
+EDesc You see the entrance.
+~
+Exit west 4122
+EKeyvnum -1
+EDesc You see nothing special.
+~
+End
+
+
+#4120
+Name The Lair~
+Desc You have entered a large room dominated by a great white dragon.  It growls
+at you before it attacks.
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 4135
+EDesc You the cave opening.
+~
+End
+
+
+#4121
+Name A Lair~
+Desc You have entered a large room dominated by a great black dragon.  It looks
+as though it is amused by your presence.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 4141
+EDesc You the cave opening.
+~
+End
+
+
+#4122
+Name The Crypt Ends~
+Desc You have come to the end of the Crypt.  It seems deserted.  There is a 
+strange coffin lying against the wall.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc coffin~
+A coffin lies a against the east wall.  It is closed.
+~
+Exit east 4119
+EKeyvnum -1
+EDesc You see the Crypt.
+~
+Exit west 4132
+EFlags door closed locked~
+EKeywords coffin~
+End
+
+
+#4123
+Name Entrance to the Great Hall~
+Desc You have entered a huge hall.  It has been carefully decorated with
+beautiful tapestries depicting a great battle between dragons and men.  The
+dragons appear to be the victors.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4124
+EKeyvnum -1
+EDesc The Hall continues.
+~
+Exit west 4105
+EKeyvnum 4197
+EKeywords door stone~
+EDesc You see the Nursery.
+~
+End
+
+
+#4124
+Name The Great Hall~
+Desc You are working your way down the Hall.  To the north, you notice a smaller
+passageway, while the main hall continues to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4125
+EKeyvnum -1
+EDesc You see a narrow passageway.
+~
+Exit east 4129
+EKeyvnum -1
+EDesc You see the Hall.
+~
+End
+
+
+#4125
+Name A Narrow Passageway~
+Desc This Passageway branches off from the main hall and leads somewhere ... where?
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4126
+EKeyvnum -1
+EDesc You see a large Lair.  It looks dangerous.
+~
+Exit south 4124
+EKeyvnum -1
+EDesc You see the great hall.
+~
+End
+
+
+#4126
+Name Lair~
+Desc You have entered a large lair with bones strewn about the ground.  You
+notice the source of these as you come face to face with a rather large red
+dragon.  You notice a trap door in the floor.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 4125
+EKeyvnum -1
+EDesc The narrow passageway.
+~
+Exit down 4127
+EKeyvnum -1
+EKeywords door trap trapdoor~
+EDesc You see a trap door.
+~
+End
+
+
+#4127
+Name Underground Tunnel~
+Desc You have entered an underground tunnel.  It is dark and dirty, and you find
+yourself wishing you were back in Midgaard.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 4128
+EKeyvnum -1
+EDesc You see the tunnel.
+~
+Exit up 4126
+EKeyvnum -1
+EKeywords door trap trapdoor~
+EDesc You see the red dragon's lair.
+~
+End
+
+
+#4128
+Name Underground Tunnel~
+Desc This tunnel has come to a dead end.  You feel nervous about being trapped here.
+~
+RoomFlags dark no_mob indoors~
+Sector cave~
+Exit south 4127
+EKeyvnum -1
+EDesc You see the tunnel.
+~
+End
+
+
+#4129
+Name The Great Hall Ends.~
+Desc You have come to the end of the great hall.  You see before you a huge
+golden door, it must be at least twenty feet tall!  It has beautiful etchings
+of dragons.  You see a sign on the door.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign~
+Congratulations on making it this far!  Watch out, it gets a little
+    nasty here... :) - Wench
+~
+Exit east 4130
+EFlags door closed locked pickproof~
+EKeyvnum 4199
+EKeywords door great golden~
+EDesc You see a great golden door.
+~
+Exit west 4124
+EKeyvnum -1
+EDesc You see the hall.
+~
+End
+
+
+#4130
+Name THE Lair~
+Desc You have entered a huge lair.  You feel that something big lives here or at least did.  The golden door lies back to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4129
+EFlags door closed locked pickproof~
+EKeyvnum 4199
+EKeywords door golden great~
+EDesc You see a great golden door.
+~
+End
+
+
+#4131
+Name The End...~
+Desc You have reached the final lair.  It is dominated by a huge five headed
+dragon.  You suddenly realize that you have SERIOUS problems...
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 4143
+EFlags door nopass~
+EKeyvnum 4141
+EDesc You see the top of the mountain.
+~
+End
+
+
+#4132
+Name Stairwell~
+Desc This is an old decrepit stairwell that leads to the wine cellar.  It looks
+like it hasn't been used for decades.  Well, at least not by anything living.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 4122
+EDesc The crypt~
+Exit down 4133
+EDesc A wine cellar~
+End
+
+
+#4133
+Name Wine cellar~
+Desc This is the old wine cellar of the Dragon Tower.  The shelves are empty.
+Nothing living has been in here for a long time.  You see a tunnel leading
+off to the east and boy does it smell bad.  Kinda of like rotting flesh.
+~
+RoomFlags dark~
+Sector cave~
+Exit east 4134
+EDesc A tunnel
+~
+Exit up 4132
+EDesc The stairwell
+~
+End
+
+
+#4134
+Name Tunnel~
+Desc This tunnel seems to stretch for miles.  You try to distinguish the end but
+your eyes soon tire from the strain.  The smell here has increased two fold.
+The tunnel continues to go to the east.  The wine cellar lies back to the 
+west.
+~
+RoomFlags dark~
+Sector cave~
+Exit north 4135
+EDesc A cave opening
+~
+Exit east 4136
+EDesc A tunnel
+~
+Exit west 4133
+EDesc A tunnel
+~
+End
+
+
+#4135
+Name A cave opening~
+Desc You stand at the opening of a giant cave.  There are many bones strewn across
+the room.  Some human, some indistinguishable.  It smells very bad in here.
+You can hear movement in the cave to the north.  The tunnel goes back to the
+south.
+~
+RoomFlags dark~
+Sector cave~
+Exit north 4120
+EDesc The lair
+~
+Exit south 4134
+EDesc The tunnel
+~
+End
+
+
+#4136
+Name The End of the tunnel~
+Desc You have finally come to the end of the tunnel.  Back to the west lies
+the miles of tunnels you have walked through.  You see the faint outline of
+a trapdoor above you.  A bridge over an underground river lies to the south.
+~
+RoomFlags dark~
+Sector cave~
+Exit south 4137
+EDesc bridge
+~
+Exit west 4134
+EDesc The tunnel
+~
+Exit up 4102
+EDesc trapdoor
+~
+End
+
+
+#4137
+Name The Bridge~
+Desc You are walking along an old wooden bridge.  Its not that secure.  You 
+might want to hurry along.  To the south, on the other side of the bridge,
+lies a small opening.
+~
+RoomFlags dark indoors~
+Sector field~
+Exit north 4136
+EDesc The tunnel end
+~
+Exit south 4138
+EDesc A small opening
+~
+End
+
+
+#4138
+Name A small opening~
+Desc You are standing in a small opening.  To the north lies the old wooden
+bridge.  To your south the you can see a clearing.  You can see sunlight
+again.  What a welcome relief!
+~
+RoomFlags dark indoors~
+Sector field~
+Exit north 4137
+EDesc bridge
+~
+Exit south 4139
+EDesc clearing
+~
+End
+
+
+#4139
+Name Clearing~
+Desc You stand out in a clearing.  Mountains are all around you.  There is a 
+well in the middle of the clearing.  Lying against the well is a sign.  A
+path leads up the mountain.  The small opening is back to the north.
+~
+Sector field~
+ExtraDesc sign~
+The sign reads:
+         This is a bottomless pit cleverly disguised as a well.  People have
+fallen in and never been heard from again.  Trust me, you don't want to go 
+down there.
+                        The All Powerful Well Keeper
+~
+ExtraDesc well~
+You peer over the side of the well.  It looks VERY, VERY deep.  It appears
+to be ENDLESS.
+~
+Exit north 4138
+EDesc the small opening
+~
+Exit up 4140
+EDesc A path
+~
+Exit down 4144
+EDesc The well
+~
+End
+
+
+#4140
+Name A path~
+Desc This path leads up the side of the mountain.  A clearing lies below you.
+There is a cave opening to the west.  The path continues up the mountain.
+~
+Sector mountain~
+Exit west 4141
+EDesc cave opening
+~
+Exit up 4142
+EDesc the path continues
+~
+Exit down 4139
+EDesc clearing
+~
+End
+
+
+#4141
+Name A cave opening~
+Desc You stand before a huge cave opening.  You hearing heavy breathing from
+within the cave.  There are a few skeletons lying about.  The cave lies to 
+the south.  The path is back to the east.
+~
+Sector cave~
+Exit east 4140
+EDesc the path
+~
+Exit south 4121
+EDesc A lair
+~
+End
+
+
+#4142
+Name The path continues~
+Desc The path continues up the mountain to the top.  The path also goes down.
+Thats it, nothing more to see.
+~
+Sector mountain~
+Exit up 4143
+EDesc top of the mountain
+~
+Exit down 4140
+EDesc path
+~
+End
+
+
+#4143
+Name The top of the mountain~
+Desc You are standing at the top of the mountain.  It feels more like the top of
+the world.  To your north lies a huge platinum door.  You hear very pronounced
+grumbling from behind the doors.  It sounds like something huge and hungry.
+But if you don't have the key you don't have to worry because you can't get in.
+If you do have the key I would suggest not going in.  Some believe the Five
+Headed dragon Tiamat was imprisoned here by the gods.  But who believes in 
+fairy tales.  Well, if you're scared, you can always go down the mountain.
+~
+Sector mountain~
+ExtraDesc door platinum~
+A huge platinum door separates you from harm~
+Exit north 4131
+EFlags door closed locked nopass~
+EKeyvnum 4141
+EKeywords door platinum~
+EDesc The platinum door
+~
+Exit down 4142
+EDesc The path continues
+~
+End
+
+
+#4144
+Name Well~
+Desc O
+ h
+   !
+
+     N
+      o
+       !
+
+   I warned you!  You have fallen into the bottomless pit.  You life flashes
+right before your eyes.  Pretty pathetic isn't it?  Next time you'll know
+to listen to the God of Laughs.
+~
+RoomFlags no_summon no_mob~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 4100 spec_breath_any
+M 4103 spec_cast_meaner
+M 4104 spec_cast_cleric
+M 4105 spec_breath_any
+M 4120 spec_breath_any
+M 4121 spec_breath_fire
+M 4122 spec_breath_acid
+M 4123 spec_breath_frost
+M 4125 spec_breath_gas
+M 4126 spec_poison
+M 4127 spec_thief
+M 4140 spec_cast_undead
+M 4141 spec_breath_gas
+M 4142 spec_thief
+M 4143 spec_breath_any
+S
+
+
+
+#RESETS2
+M 0 4100 12 4101 1
+G 0 4131 0
+M 0 4100 12 4102 1
+M 0 4100 12 4103 2
+M 0 4100 12 4103 2
+M 0 4101 7 4103 2
+E 0 4100 0 wielded~
+M 0 4101 7 4104 3
+E 0 4100 0 wielded~
+M 0 4101 7 4104 3
+E 0 4100 0 wielded~
+M 0 4101 7 4104 3
+E 0 4100 0 wielded~
+M 0 4100 12 4105 4
+M 0 4100 12 4105 4
+M 0 4100 12 4105 4
+M 0 4100 12 4105 4
+M 0 4100 12 4106 1
+M 0 4100 12 4107 1
+M 0 4127 5 4107 2
+M 0 4126 1 4108 1
+G 0 4134 0
+G 0 4143 0
+G 0 4123 0
+E 0 4144 0 hold~
+M 0 4101 7 4110 2
+E 0 4100 0 wielded~
+M 0 4107 20 4110 5
+E 0 4186 0 wielded~
+M 0 4107 20 4111 5
+E 0 4160 -1 wielded~
+M 0 4107 20 4111 5
+E 0 4186 0 wielded~
+M 0 4106 5 4112 5
+E 0 4187 0 wielded~
+M 0 4106 5 4112 5
+G 0 4133 0
+E 0 4187 0 wielded~
+M 0 4106 5 4112 5
+G 0 4140 0
+E 0 4187 0 wielded~
+M 0 4106 5 4112 5
+E 0 4187 0 wielded~
+M 0 4103 1 4114 1
+E 0 4121 -1 about~
+E 0 4150 0 hold~
+G 0 4151 0
+E 0 4161 0 neck1~
+M 0 4142 5 4114 1
+M 0 4104 1 4114 1
+E 0 4120 0 neck1~
+E 0 4123 -1 wielded~
+E 0 4111 0 lwrist~
+E 0 4110 0 waist~
+G 0 4170 0
+G 0 4152 0
+M 0 4105 1 4116 1
+E 0 4122 0 wielded~
+E 0 4176 0 about~
+E 0 4142 0 shield~
+E 0 4154 0 hands~
+G 0 4132 0
+M 0 4107 20 4116 5
+E 0 4146 -1 torso~
+M 0 4107 20 4116 5
+E 0 4146 -1 torso~
+M 0 4107 20 4116 5
+E 0 4146 -1 torso~
+M 0 4142 5 4116 4
+M 0 4142 5 4116 4
+M 0 4143 1 4117 1
+E 0 4103 0 lwrist~
+E 0 4104 0 waist~
+E 0 4101 0 wielded~
+M 0 4127 5 4117 4
+M 0 4127 5 4117 4
+M 0 4141 2 4117 2
+M 0 4140 8 4118 2
+M 0 4140 8 4118 2
+M 0 4140 8 4119 2
+M 0 4140 8 4119 2
+M 0 4123 1 4120 1
+E 0 4146 0 torso~
+M 0 4122 1 4121 1
+E 0 4180 0 legs~
+M 0 4102 1 4122 1
+E 0 4102 0 wielded~
+E 0 4181 0 arms~
+E 0 4171 0 hands~
+M 0 4121 1 4126 1
+E 0 4175 0 head~
+E 0 4145 0 hold~
+G 0 4199 0
+M 0 4125 1 4130 1
+G 0 4141 0
+G 0 4185 0
+E 0 4161 0 neck1~
+M 0 4120 1 4131 1
+G 0 4198 0
+M 0 4140 8 4132 1
+M 0 4140 8 4133 1
+M 0 4140 8 4134 1
+M 0 4140 8 4136 1
+M 0 4100 12 4139 1
+M 0 4100 12 4141 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

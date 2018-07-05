@@ -1,0 +1,3740 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Menzoberranzan~
+ShortName   Menzoberranzan~
+Builders    nakasha~
+Credits     Ixliam & Silaenca~
+VNUMs       620 699
+LComment    `#`Y[  ALL  ]`^
+LRange      0 0
+Security    9
+Colour      S~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Tue Oct 11 16:11:51 2005~
+End
+
+
+
+#MOBILES
+#620
+Name medusa woman snake~
+ShortD a greater medusa~
+LongD A woman with snakes for hair and a lower body of a large snake is here.~
+Desc The greater medusa is covered with fine scales over her entire body.  
+Instead of a lower torso and legs, she has a serpentine body 20' long like a 
+large snake.  She is a terrifying sight to behold.  
+~
+Race snake~
+Align -3 -3
+Level 65
+Hitroll 0
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType bite
+AC -350 -350 -350 -294
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden haste dark_vision~
+AffBy2 passwotrace vicegrip~
+Off    dodge fast parry tail gaze~
+Imm    poison~
+Res    magic~
+Vuln   light~
+Form   edible poison sentient biped snake cold_blood~
+Part   head arms legs heart brains guts hands fingers ear eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg EXALL 620 0~
+MProg GRALL 622 100~
+END
+
+#621
+Name unseen force~
+ShortD an unseen force~
+LongD Unseen Force~
+Desc ~
+Race human~
+Align -3 -3
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_hidden protect_good dark_vision~
+AffBy2 passwotrace detect_vanish vicegrip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 621 2~
+MProg GRALL 622 100~
+END
+
+#622
+Name elf elven slave~
+ShortD an elven slave~
+LongD A wretched elven slave is standing here.~
+Desc ~
+Race elf~
+Align 0 3
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 72
+Wealth 20
+Act    npc no_tame stay_area~
+AffBy  infrared~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+Group 2
+END
+
+#623
+Name black bat~
+ShortD a black bat~
+LongD A small black bat is flying about here.~
+Desc ~
+Race bat~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType bite
+AC 70 70 70 59
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  flying dark_vision~
+Off    dodge fast~
+Vuln   light~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#624
+Name drop shopkeeper d'franth~
+ShortD `#`^D'`^Franth~
+LongD `#`^D'`^Franth the weaponsmith is standing behind the counter.~
+Desc ~
+Race drow~
+Align 2 -3
+Level 90
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType none
+AC -600 -600 -600 -534
+Wealth 1800
+Act    npc dont_wander no_tame stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  detect_magic infrared dark_vision~
+AffBy2 passwotrace vicegrip~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#625
+Name armorsmith drow a'tritzdi~
+ShortD `#`^A'`^Tritzdi the armorsmith~
+LongD `#`^A'`^Tritzdi the armorsmith is standing behind the counter.~
+Desc ~
+Race drow~
+Align 2 -3
+Level 90
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType none
+AC -600 -600 -600 -534
+Wealth 1800
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_magic infrared dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#626
+Name drow cityguard~
+ShortD a `#`Sdrow `^cityguard~
+LongD A `#`Sdrow cityguard`^ is here, maintaining order.~
+Desc ~
+Race drow~
+Align -3 -3
+Level 30
+Hitroll 5
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -76
+Wealth 545
+Act    npc stay_area wimpy warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs protect_good haste dark_vision~
+Off    berserk disarm fast kick dirt_kick parry rescue assist_guard assist_vnum~
+Imm    summon charm poison~
+Res    magic disease~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+Group 1
+Helpgroup 2
+END
+
+#627
+Name a drifter~
+ShortD a drifter~
+LongD A drifter sits in the shadows here.~
+Desc A dark cloak covers most of this man, but it's clear to see he is well armed 
+and agile.  He carries a pack with him and looks to be willing to trade 
+something for a few silver.  
+~
+Race human~
+Align -1 0
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+33
+DamType pierce
+AC -300 -300 -300 -249
+Wealth 400
+Act    npc dont_wander no_tame stay_area mage thief~
+AffBy  detect_invis detect_hidden sanctuary sneak regeneration~
+Off    backstab disarm dodge fast kick dirt_kick parry circle~
+Imm    summon charm magic slash~
+Res    fire light~
+Vuln   cold disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#628
+Name lhrao~
+ShortD lhrao~
+LongD Lhrao is here, standing behind the bar.~
+Desc ~
+Race drow~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 9d13+445
+ManaDice 9d13+575
+DamDice 10d11+47
+DamType none
+AC -620 -620 -620 -545
+Wealth 1800
+Act    npc dont_wander no_tame stay_area changer~
+Act2   avoids_all_attacks~
+AffBy  detect_magic infrared dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#629
+Name drider~
+ShortD a monsterous `#`sdrider`^~
+LongD A monsterous `#`sdrider`^ crouches here.~
+Desc This monsterous creature is halfdrow and halfspider.  Spindly spider legs 
+jut from a drowish chest.  The face of a man is viewed, but the numerous 
+eyes of a spider peer at you eerily.  
+~
+Race unique~
+Align 0 0
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType none
+AC -550 -550 -550 -451
+Wealth 0
+Act    npc no_tame stay_area warrior~
+AffBy  detect_invis detect_magic detect_hidden sanctuary sneak haste dark_vision berserk regeneration~
+AffBy2 detect_vanish vicegrip~
+Off    bash berserk disarm dodge fast kick parry tail assist_race circle~
+Imm    weapon bash cold holy illusion scry~
+Res    pierce slash light~
+Vuln   summon fire energy disease~
+Form   edible sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#630
+Name agathfal~
+ShortD agathfal, the drow~
+LongD Agathfal is here, sorting his magical collectibles.~
+Desc ~
+Race drow~
+Align 0 0
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType none
+AC -650 -650 -650 -565
+Wealth 1900
+Act    npc dont_wander no_tame stay_area mage changer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#631
+Name frishkhrol~
+ShortD a lanky, grey haired drow~
+LongD A lanky, grey haired drow is here, polishing stones.~
+Desc ~
+Race drow~
+Align 0 0
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType none
+AC -650 -650 -650 -526
+Wealth 1800
+Act    npc dont_wander no_tame stay_area changer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_magic detect_hidden sanctuary dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#632
+Name kulzan~
+ShortD a silver robed male drow~
+LongD A silver robed male drow stands here.~
+Desc ~
+Race drow~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType none
+AC -1100 -1100 -1100 -891
+Wealth 2000
+Act    npc dont_wander no_tame stay_area changer~
+Act2   avoids_all_attacks~
+AffBy  detect_magic dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#633
+Name drow sentinel~
+ShortD a `#`Sdrow`^ sentinel~
+LongD A `#`Sdrow`^ sentinel is here, guarding the street.~
+Desc ~
+Race drow~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -435
+Wealth 732
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  detect_magic sanctuary sneak hide haste dark_vision~
+Off    disarm dodge fast kick parry trip~
+Imm    summon charm~
+Res    magic cold poison~
+Vuln   bash holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+Group 2
+Helpgroup 1
+END
+
+#634
+Name vault guard~
+ShortD a drowish guard~
+LongD A drowish guard stands here at attention.~
+Desc ~
+Race drow~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType pierce
+AC -400 -400 -400 -348
+Wealth 0
+Act    npc dont_wander no_tame stay_area mage warrior~
+AffBy  invisible detect_invis detect_magic detect_hidden hide haste dark_vision~
+Off    disarm dodge fast kick parry trip~
+Imm    summon charm slash cold poison~
+Res    magic acid holy~
+Vuln   bash disease light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#635
+Name a drow priestess~
+ShortD a beautiful drow priestess~
+LongD A beautiful drow priestess is here, chanting softly.~
+Desc This drows skin is a flawless ashen shade.  She is dangerously beautiful 
+with long white hair flowing down to her waist.  
+~
+Race drow~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType none
+AC -500 -500 -500 -435
+Wealth 0
+Act    npc dont_wander no_tame stay_area healer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_magic detect_hidden haste dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 623 100~
+MProg BRIBE 624 5000~
+END
+
+#636
+Name orc slave~
+ShortD a shackled orc slave~
+LongD A shackled orc slave is here.~
+Desc ~
+Race orc~
+Align 0 0
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -240
+Wealth 0
+Act    npc scavenger no_tame stay_area pet warrior~
+AffBy  infrared~
+Off    bash berserk kick parry~
+Imm    bash slash lightning~
+Res    cold~
+Vuln   pierce fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#637
+Name goblin slave~
+ShortD a hunched goblin slave~
+LongD A hunched goblin slave stands here.~
+Desc ~
+Race goblin~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType slap
+AC -200 -200 -200 -174
+Wealth 0
+Act    npc no_tame stay_area wimpy pet thief~
+AffBy  detect_hidden dark_vision berserk regeneration~
+Imm    poison disease~
+Res    negative~
+Vuln   fire mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#638
+Name hobgoblin slave~
+ShortD a squat hobgoblin slave~
+LongD A squat hobgoblin slave is shackled here.~
+Desc ~
+Race hobgoblin~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType claw
+AC -157 -157 -157 -127
+Wealth 0
+Act    npc no_tame stay_area pet warrior~
+AffBy  dark_vision regeneration~
+Off    bash berserk dodge trip~
+Imm    slash cold~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#639
+Name human slave~
+ShortD a bedraggled human slave~
+LongD A bedraggled human slave is shackled here.~
+Desc ~
+Race human~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 6d10+335
+ManaDice 7d11+380
+DamDice 8d7+28
+DamType punch
+AC -340 -340 -340 -275
+Wealth 0
+Act    npc no_tame stay_area pet mage~
+Off    disarm dodge kick parry trip~
+Imm    magic slash holy disease~
+Res    acid illusion~
+Vuln   bash slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#640
+Name short, stout drow~
+ShortD a short, stout drow~
+LongD A short, stout drow stands behind a counter here.~
+Desc ~
+Race drow~
+Align 0 0
+Level 130
+Hitroll 0
+HitDice 13d16+630
+ManaDice 13d17+903
+DamDice 13d18+85
+DamType none
+AC -1000 -1000 -1000 -830
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_magic dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#641
+Name phath, the slave master~
+ShortD phath, the slave master~
+LongD Phath, the slave master is here, offering his slaves.~
+Desc ~
+Race drow~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType none
+AC -1100 -1100 -1100 -924
+Wealth 2800
+Act    npc dont_wander no_tame stay_area changer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_magic detect_hidden dark_vision~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#642
+Name drow citizen~
+ShortD a `#`sdrow`^ citizen~
+LongD A `#`sdrow`^ citizen wanders here.~
+Desc ~
+Race drow~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType punch
+AC -95 -95 -95 -76
+Wealth 600
+Act    npc no_tame stay_area wimpy mage~
+AffBy  detect_magic dark_vision regeneration~
+Off    kick parry~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#643
+Name robed female drow~
+ShortD a robed female `#`Sdrow`^~
+LongD A robed female `#`Sdrow`^ roams here.~
+Desc This female drow looks fit and agile.  She appears as if she would be 
+willing to train you if you wanted.  
+~
+Race drow~
+Align 0 0
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType none
+AC -650 -650 -650 -559
+Wealth 0
+Act    npc no_tame stay_area train practice gain~
+Act2   avoids_all_attacks~
+AffBy  detect_magic dark_vision~
+Imm    summon charm~
+Res    magic~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#644
+Name drow innkeeper~
+ShortD a `#`sdrow`^ innkeeper~
+LongD A `#`sdrow`^ innkeeper stands here.~
+Desc ~
+Race drow~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType punch
+AC -250 -250 -250 -215
+Wealth 0
+Act    npc dont_wander no_tame stay_area train mage gain changer~
+AffBy  detect_invis detect_magic detect_hidden dark_vision~
+AffBy2 detect_vanish~
+Off    dodge kick parry~
+Imm    summon charm fire disease~
+Res    magic pierce silver~
+Vuln   lightning acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#620
+Name boulders~
+Short loose boulders~
+Desc Some loose boulders are along the northern cave wall.~
+Level 40
+ItemType trash~
+Trap 261 1 96 0
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra2   trap~
+End
+
+#621
+Name statue elf~
+Short a statue of an elf~
+Desc A stone statue of a terrified elven warrior stands here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5000
+Material stone~
+Extra    noremove nopurge nonmetal nolocate nodegrade burnproof nouncurse norestring nogetall~
+Extra2   nodecay~
+ExtraDesc statue ~
+The expression on his face is one of pure terror.  He is in a running 
+postion, as if he was leaving from the north, and then looked back.  It 
+seems as if was almost being attacked and was fleeing from something 
+horrible.  
+~
+End
+
+#622
+Name ice-laced whip~
+Short an `#`Ci`Wc`Ce`W-`Cl`wa`Cc`we`Cd`^ whip~
+Desc An `#`Ci`Wc`Ce`W-`Cl`wa`Cc`we`Cd`^ whip lies here.~
+Level 65
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 40
+Rsize 50
+Values whip 12 4 whip BEL
+Weight 11
+Material magic~
+Extra    glow dark nodegrade~
+Extra2   nodecay nosell~
+Wear     take wield~
+End
+
+#623
+Name drow chainmail~
+Short `#`sDrow chainmail`^~
+Desc `#`sDrow chainmail`^ lies here.~
+Level 65
+ItemType armor~
+Cost 1000
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values 21 21 21 16 0
+Weight 40
+Material adamantium~
+Extra    hum dark magic antigood~
+Extra2   nodecay~
+Wear     take torso~
+Affect modifier -1 65 -1 mana 100 0
+Affect modifier -1 65 -1 strength 2 0
+Affect modifier -1 65 -1 reasoning 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 empathy -2 0
+End
+
+#624
+Name adamantium key~
+Short an adamantium key~
+Desc A dark jagged-looking key lies here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material adamantium~
+Extra    dark nodrop antigood noremove rotdeath nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#625
+Name slave collar~
+Short a drow slave collar~
+Desc A slave collar used by drow lies here.~
+Level 30
+ItemType armor~
+Cost 290
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 5 4 0
+Weight 20
+Material adamantium~
+Extra    noremove nodegrade burnproof~
+Wear     take neck~
+Affect modifier -1 30 -1 hp 6 0
+End
+
+#626
+Name longsword adamantium~
+Short an `#`madamantium longsword`^~
+Desc An adamantium longsword lies here.~
+Level 25
+ItemType weapon~
+Cost 890
+Durability 5
+Asize 0
+Rsize 50
+Values sword 4 6 slash H
+Weight 60
+Material adamantium~
+Extra    dark evil antigood nodegrade chaos~
+Extra2   nodecay~
+Wear     take wield hold~
+ClassAllowances thief warrior ranger barbarian spellfilcher anti-paladin knight~
+End
+
+#627
+Name adamantium dagger~
+Short an `#`madamantium dagger`^~
+Desc An adamantium dagger lies here.~
+Level 25
+ItemType weapon~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 5 3 pierce H
+Weight 40
+Material adamantium~
+Extra    dark evil antigood nodegrade chaos~
+Wear     take wield hold~
+ClassAllowances mage thief warrior ranger barbarian spellfilcher anti-paladin knight~
+End
+
+#628
+Name adamantium spiked mace~
+Short an `#`madamantium spiked mace`^~
+Desc An adamantium spiked mace lies here.~
+Level 25
+ItemType weapon~
+Cost 759
+Durability 5
+Asize 0
+Rsize 50
+Values mace 5 5 crush LN
+Weight 10
+Material adamantium~
+Extra    dark evil antigood nodegrade chaos~
+Wear     take wield hold~
+ClassAllowances cleric warrior druid barbarian anti-paladin knight~
+End
+
+#629
+Name adamantium staff~
+Short an `#`madamantium staff`^~
+Desc An staff made from adamantium lies here.~
+Level 25
+ItemType weapon~
+Cost 975
+Durability 5
+Asize 0
+Rsize 50
+Values staff 2 14 crush FLN
+Weight 10
+Material adamantium~
+Extra    dark evil antigood nodegrade chaos~
+Wear     take wield hold~
+ClassAllowances mage cleric warrior druid paladin spellfilcher anti-paladin knight~
+End
+
+#630
+Name adamantium flail~
+Short an `#`madamantium flail`^~
+Desc An adamantium flail lies here.~
+Level 25
+ItemType weapon~
+Cost 756
+Durability 5
+Asize 0
+Rsize 50
+Values flail 7 3 crush M
+Weight 10
+Material adamantium~
+Extra    dark evil antigood nodegrade chaos~
+Wear     take wield hold~
+ClassAllowances cleric warrior druid barbarian anti-paladin knight~
+End
+
+#631
+Name adamantium chainmail~
+Short `#`madamantium chainmail`^~
+Desc Some black chainmail lies here.~
+Level 45
+ItemType armor~
+Cost 1500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 10 10 0
+Weight 3
+Material adamantium~
+Extra    dark evil magic antigood nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take torso~
+End
+
+#632
+Name drow helm fearsome adamantium~
+Short a fearsome `#`Shelm of the drow`^~
+Desc A fearsome looking helm lies here.~
+Level 60
+ItemType armor~
+Cost 1366
+Durability 5
+Asize 0
+Rsize 50
+Values 10 11 11 11 0
+Weight 30
+Material adamantium~
+Extra    dark evil antigood nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take head~
+ClassAllowances mage cleric thief warrior ranger spellfilcher anti-paladin~
+Affect modifier -1 60 -1 intuition -1 0
+Affect modifier -1 60 -1 constitution 2 0
+Affect modifier -1 60 -1 damroll 6 0
+Affect modifier -1 60 -1 hitroll 4 0
+End
+
+#633
+Name leggings spider queen drow~
+Short leggings of the `#`SSpider `SQueen`^~
+Desc Some black leggings with intricate carvings of spiders on them lies here.~
+Level 60
+ItemType armor~
+Cost 2750
+Durability 5
+Asize 35
+Rsize 50
+Values 16 16 16 13 0
+Weight 30
+Material adamantium~
+Extra    dark evil antigood noremove nodegrade burnproof~
+Extra2   nodecay~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior barbarian anti-paladin knight~
+Affect modifier -1 60 -1 hp 2 0
+Affect modifier -1 60 -1 damroll 6 0
+Affect modifier -1 60 -1 hitroll 4 0
+End
+
+#634
+Name drow black boots~
+Short a pair of `#`Sblack drow boots`^~
+Desc A pair of black boots lies here.~
+Level 30
+ItemType armor~
+Cost 590
+Durability 5
+Asize 20
+Rsize 50
+Values 5 5 5 5 0
+Weight 30
+Material leather~
+Extra    antigood nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take feet~
+Affect affects -1 30 -1 none 0 sneak
+End
+
+#635
+Name drow gloves night~
+Short some `#`Sdrowish gloves of the night`^~
+Desc A pair of dark grey gloves lies here.~
+Level 80
+ItemType armor~
+Cost 3000
+Durability 5
+Asize 10
+Rsize 50
+Values 16 15 17 13 0
+Weight 10
+Material leather~
+Extra    bless antigood nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hands~
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 quickness 2 0
+Affect modifier -1 0 -1 agility 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 strength 2 0
+ExtraDesc gloves~
+These grey leather gloves are more that what they seemed on first 
+inspection.  They are magical, maybe the creation of some great wizard.  
+~
+End
+
+#636
+Name shadow potion~
+Short a `#`Sshadow`^ potion~
+Desc A `#`Sshadow`^ potion lies here.~
+Level 20
+ItemType potion~
+Cost 3000
+Durability 5
+Asize 0
+Rsize 50
+Values 50 'unholy aura' '' '' ''
+Weight 0
+Material unknown~
+Extra    dark evil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#637
+Name adamantium shield~
+Short an `#`madamantium shield`^~
+Desc A black shield has been left here.~
+Level 20
+ItemType armor~
+Cost 393
+Durability 5
+Asize 20
+Rsize 50
+Values 7 6 6 7 0
+Weight 150
+Material adamantium~
+Extra    dark evil antigood nodegrade burnproof~
+Extra2   nodecay~
+Wear     take shield~
+ClassAllowances cleric warrior ranger barbarian anti-paladin~
+End
+
+#638
+Name boots of the spider queen~
+Short boots of the `#`SSpider Queen`^~
+Desc Some boots of the `#`SSpider Queen`^ lie here.~
+Level 65
+ItemType armor~
+Cost 3500
+Durability 5
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 40
+Material unknown~
+Extra    dark magic antigood noremove nonmetal burnproof~
+Extra2   nodecay~
+Wear     take feet~
+Affect modifier -1 65 -1 quickness 4 0
+Affect modifier -1 65 -1 agility 4 0
+Affect modifier -1 65 -1 mana 50 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+Affect affects -1 65 -1 none 0 hide
+Affect affects -1 65 -1 none 0 pass_door
+End
+
+#639
+Name potion of protection~
+Short a potion of protection~
+Desc A potion of protection lies here.~
+Level 20
+ItemType potion~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 20 'protection magic' 'protection cold' 'protection fire' 'protection acid'
+Weight 10
+Material unknown~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay~
+Wear     take~
+End
+
+#640
+Name nightshadow lance~
+Short `#`SNi`wgh`WtSh`wad`Sow `WL`wa`Wn`wc`We`^~
+Desc `#`SNi`wgh`WtSh`wad`Sow `WL`wa`Wn`wc`We`^ lies here.~
+Level 65
+ItemType weapon~
+Cost 610
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values polearm 19 3 chill BF
+Weight 70
+Material unknown~
+Extra    dark nolocate meltdrop~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 65 -1 hp 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 4 0
+End
+
+#641
+Name lightflayer halbred~
+Short a `#`WLi`wgh`ytFl`way`Wer`^ halbred~
+Desc A `#`WLi`wgh`ytFl`way`Wer`^ halbred lies here.~
+Level 70
+ItemType weapon~
+Cost 600
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values polearm 9 8 cleave CF
+Weight 60
+Material unknown~
+Extra    glow hum antigood nolocate~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 70 -1 hp 4 0
+Affect modifier -1 70 -1 hitroll 6 0
+Affect modifier -1 70 -1 damroll 6 0
+End
+
+#642
+Name adamantium face mask spider queen~
+Short a `#`SMask `wof the `SSpider `SQueen`^~
+Desc A mask looking the the face of a horrible spider lies here.~
+Level 40
+ItemType armor~
+Cost 1800
+Durability 5
+Asize 4
+Rsize 50
+Values 6 6 6 6 0
+Weight 20
+Material adamantium~
+Extra    dark evil magic antigood noremove nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take face~
+Affect modifier -1 40 -1 quickness 1 0
+Affect modifier -1 40 -1 hitroll 2 0
+Affect modifier -1 40 -1 damroll 2 0
+Affect modifier -1 40 -1 agility 1 0
+Affect modifier -1 40 -1 hp 2 0
+End
+
+#643
+Name adamantium ankle guard~
+Short an `#`madamantium ankle guard`^~
+Desc A black ankle guard lies here.~
+Level 30
+ItemType armor~
+Cost 375
+Durability 5
+Asize 0
+Rsize 50
+Values 3 3 3 3 0
+Weight 20
+Material adamantium~
+Extra    dark evil antigood nodegrade burnproof~
+Extra2   nodecay~
+Wear     take ankle~
+Affect modifier -1 0 -1 quickness 1 0
+End
+
+#644
+Name spider's kiss dagger~
+Short `#`sSp`wide`sr's `rK`Ri`rs`Rs `sDagger`^~
+Desc `#`sSp`wide`sr's `rK`Ri`rs`Rs `sDagger`^ lies here.~
+Level 75
+ItemType weapon~
+Cost 790
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values dagger 2 30 slice DH
+Weight 40
+Material unknown~
+Extra    dark evil antigood noremove nolocate meltdrop burnproof chaos~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 75 -1 quickness 2 0
+Affect modifier -1 75 -1 agility 2 0
+Affect modifier -1 75 -1 hp 4 0
+End
+
+#645
+Name drow cloak~
+Short a `#`SCloak `^of the `SDrow`^~
+Desc A well-made black cloak lies here.~
+Level 50
+ItemType armor~
+Cost 800
+Durability 5
+Asize 5
+Rsize 50
+Values 12 12 12 10 0
+Weight 20
+Material adamantium~
+Extra    dark evil antigood nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take about~
+Affect modifier -1 0 -1 quickness 2 0
+Affect modifier -1 0 -1 damroll 4 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#646
+Name knapsack~
+Short a `#`yW`ry`yv`re`yr`rn`yHide`^ knapsack~
+Desc A `#`yW`ry`yv`re`yr`rn`yHide`^ knapsack lies here.~
+Level 57
+ItemType container~
+Cost 999
+Durability 5
+Asize 5
+Rsize 50
+Values 500 AC 0 50 0
+Weight 50
+Material wyvernhide~
+Extra    dark antigood nonmetal nolocate~
+Wear     take waist~
+Affect modifier -1 57 -1 strength 2 0
+Affect modifier -1 57 -1 hitroll 4 0
+Affect modifier -1 57 -1 move -40 0
+Affect modifier -1 57 -1 quickness 1 0
+Affect modifier -1 57 -1 selfdiscipline 2 0
+ExtraDesc wyvern knapsack~
+A small knapsack made from the `#`yhide`^ of a `#`rW`yy`rv`ye`rr`yn`^.  
+~
+End
+
+#647
+Name worn tattered scroll~
+Short a worn and tattered scroll~
+Desc A worn and tattered scroll lies here.~
+Level 60
+ItemType scroll~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 75 vicegrip '' '' ''
+Weight 10
+Material parchment~
+Extra    glow invis magic nonmetal nolocate meltdrop nogetall~
+Wear     take hold~
+End
+
+#648
+Name granite fountain~
+Short a granite fountain~
+Desc A towering granite fountain is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 30000
+Material granite~
+Extra    glow nodegrade~
+Extra2   nodecay~
+ExtraDesc towering granite fountain~
+Painstakingly chisled, the top tier of this fountain depicts Lloth, the 
+Spider Queen herself in all her glory.  Water falls from her feet, arching 
+down into a second tier before tumbling into the fountains depths.  The grey 
+stone gleams in the darkness, reflecting the streets shadows.  
+~
+End
+
+#649
+Name obsidian warpstone~
+Short a smooth piece of `#`Sobsidian`^~
+Desc A smooth piece of `#`Sobsidian`^ is here.~
+Level 1
+ItemType warpstone~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material obsidian~
+Extra    glow magic nolocate nodegrade~
+Wear     take hold~
+End
+
+#650
+Name anti-poison potion~
+Short an anti-poison potion~
+Desc An anti-poison potion lies here.~
+Level 30
+ItemType potion~
+Cost 4000
+Durability 5
+Asize 0
+Rsize 50
+Values 55 'poison immunity' 'resist poison' 'cure poison' ''
+Weight 10
+Material glass~
+Extra    glow~
+Wear     take~
+End
+
+#651
+Name shadow crystal~
+Short a `#`Ss`wh`sa`wd`so`ww `Wcrystal`^~
+Desc A `#`Ss`wh`sa`wd`so`ww `Wcrystal^ is here.~
+Level 50
+ItemType gem~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material crystal~
+Extra    glow magic rotdeath nonmetal nolocate meltdrop~
+Wear     take float~
+ClassAllowances mage cleric druid paladin ranger spellfilcher anti-paladin~
+Affect modifier -1 50 -1 mana 100 0
+ExtraDesc shadow crystal~
+This crystal is small and round. When looked closely at, shadows can be seen, dancing within it.
+~
+End
+
+#652
+Name colourless stone~
+Short a colourless stone~
+Desc A colourless stone lies here.~
+Level 40
+ItemType gem~
+Cost 3000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material quartz~
+Extra    glow invis magic nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 40 -1 strength 2 0
+Affect modifier -1 40 -1 selfdiscipline 1 0
+Affect modifier -1 40 -1 mana 40 0
+Affect modifier -1 40 -1 constitution 1 0
+End
+
+#653
+Name hard black stone~
+Short a hard, `#`Sblack`^ stone~
+Desc A hard, `#`Sblack`^ stone is here.~
+Level 40
+ItemType gem~
+Cost 3000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material adamant~
+Extra    hum dark nonmetal nolocate chaos~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 40 -1 strength 2 0
+Affect modifier -1 40 -1 mana 40 0
+Affect modifier -1 40 -1 agility 1 0
+Affect modifier -1 40 -1 selfdiscipline 1 0
+End
+
+#654
+Name diamond~
+Short a `#`Wt`wr`Wa`wn`Ws`wl`Wu`wc`We`wn`Wt `Cdiamond`^~
+Desc A `#`Wt`wr`Wa`wn`Ws`wl`Wu`wc`We`wn`Wt `Cdiamond`^ lies here.~
+Level 50
+ItemType gem~
+Cost 6000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material diamond~
+Extra    glow hum magic nolocate meltdrop nodegrade~
+Wear     take float~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 50 -1 strength 2 0
+Affect modifier -1 50 -1 constitution 1 0
+Affect modifier -1 50 -1 reasoning 1 0
+Affect modifier -1 50 -1 quickness 2 0
+End
+
+#655
+Name amulet of power~
+Short the `#`mA`Cmulet`^ of `#`CP`mower`^~
+Desc The `#`mA`Cmulet`^ of `#`CP`mower`^ lies here.~
+Level 40
+ItemType jewelry~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    hum magic rotdeath nolocate meltdrop~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 40 -1 strength 2 0
+Affect modifier -1 40 -1 hp 6 0
+End
+
+#656
+Name amulet of inner vision~
+Short the `#`WAmulet`^ of `SV`bision`^~
+Desc The `#`WAmulet`^ of `SV`bision`^ lies here.~
+Level 40
+ItemType jewelry~
+Cost 4000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    glow magic~
+Wear     take neck~
+Affect objectspell 'detect hidden' 40 -1 none 0 0
+End
+
+#657
+Name staff of shining~
+Short the `#`SS`wtaff`^ of `#`WShining`^~
+Desc The `#`SS`wtaff`^ of `#`WShining`^ lies here.~
+Level 50
+ItemType gem~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material unknown~
+Extra    glow antievil antineutral~
+Wear     take hold~
+Affect affects -1 50 -1 none 0 detect_evil
+Affect affects -1 50 -1 none 0 dark_vision
+Affect modifier -1 50 -1 hp 6 0
+End
+
+#658
+Name staff of gloaming~
+Short the `#`SS`wtaff`^ of `#`SG`Wl`wo`Wa`sm`wi`Wn`Sg`^~
+Desc The `#`SS`wtaff`^ of `#`SG`Wl`wo`Wa`sm`wi`Wn`Sg`^ lies here.~
+Level 50
+ItemType treasure~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material unknown~
+Extra    dark antigood antineutral~
+Wear     take hold~
+Affect affects -1 50 -1 none 0 detect_evil
+Affect modifier -1 50 -1 hp 6 0
+Affect modifier -1 50 -1 constitution 2 0
+End
+
+#659
+Name scroll of perception~
+Short a scroll of perception~
+Desc A scroll of perception lies here.~
+Level 40
+ItemType scroll~
+Cost 3000
+Durability 5
+Asize 0
+Rsize 50
+Values 40 'true sight' 'detect magic' 'detect good' 'detect evil'
+Weight 10
+Material parchment~
+Wear     take~
+End
+
+#660
+Name scroll of journey~
+Short a scroll of journey~
+Desc A scroll of journey lies here.~
+Level 20
+ItemType scroll~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values 25 'pass door' fly refresh mirage
+Weight 10
+Material parchment~
+Wear     take~
+End
+
+#661
+Name scroll of combustion~
+Short a scroll of combustion~
+Desc A scroll of combustion lies here.~
+Level 20
+ItemType scroll~
+Cost 60000
+Durability 5
+Asize 0
+Rsize 50
+Values 20 'improved fireball' 'improved fireball' 'improved fireball' ''
+Weight 10
+Material parchment~
+Wear     take~
+End
+
+#662
+Name elven skin rug~
+Short an elven `#`yskin`^ rug~
+Desc An elven `#`yskin`^ rug lies here.~
+Level 1
+ItemType furniture~
+Cost 15000
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 BEHKR 75 75
+Weight 30
+Material elven skin~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hold~
+ExtraDesc elven skin rug~
+This rug is remarkably soft and plush due to the ancient curing techniques 
+used by the drow.  It is the perfect outline of an Elven female.  
+~
+End
+
+#663
+Name steel vault~
+Short a huge steel vault~
+Desc ~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 ABCD 664 100 0
+Weight 5000
+Material steel~
+Extra    nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#664
+Name vault key~
+Short a thin, steel key~
+Desc A thing, steel key lies here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material steel~
+Extra    rotdeath visdeath nolocate nogetall~
+Wear     take hold~
+End
+
+#665
+Name robe woven out of spider web~
+Short a `#`Wrobe`^ woven from `ws`sp`wi`sd`we`sr`ws `Wweb`^~
+Desc A robe woven from spider web lies here, forgotten.~
+Level 70
+ItemType armor~
+Cost 900
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values 15 15 15 14 0
+Weight 30
+Material web~
+Extra    glow hum magic nonmetal~
+Extra2   nodecay nosell~
+Wear     take about~
+ClassAllowances mage cleric druid paladin ranger spellfilcher monk anti-paladin~
+Affect modifier -1 70 -1 quickness 2 0
+Affect modifier -1 70 -1 reasoning 2 0
+Affect modifier -1 70 -1 empathy -3 0
+Affect modifier -1 70 -1 mana 75 0
+End
+
+#666
+Name wrist sheathe~
+Short a `#`Sblack`^ leather wrist `#`ys`Sheathe`^~
+Desc A `#`Sblack`^ leather wrist `#`ys`Sheathe`^ lies here.~
+Level 65
+ItemType container~
+Cost 590
+Durability 5
+Asize 0
+Rsize 50
+Values 3 0 0 3 0
+Weight 30
+Material leather~
+Extra    dark antigood nonmetal~
+Extra2   nodecay~
+Wear     take wrist~
+Affect modifier -1 65 -1 constitution 2 0
+Affect modifier -1 65 -1 memory 1 0
+Affect modifier -1 65 -1 presence -2 0
+ExtraDesc black leather wrist sheathe~
+This sheathe is made of a smooth black leather.  It's small enough to tuck 
+under the wrists and lower arms, and not be noticed when covered.  It looks 
+as if a small dagger or knife could fit in them easily.  
+~
+End
+
+#667
+Name black onyx bracer~
+Short a `#`Sblack `wo`sn`wy`sx`^ bracer~
+Desc A `#`Sblack `wo`sn`wy`sx`^ bracer lies here.~
+Level 60
+ItemType armor~
+Cost 600
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 8 8 8 6 0
+Weight 10
+Material onyx~
+Extra    hum dark magic antigood~
+Extra2   nodecay~
+Wear     take wrist~
+ClassAllowances mage cleric druid ranger spellfilcher bard anti-paladin~
+Affect modifier -1 60 -1 mana 40 0
+Affect modifier -1 60 -1 strength 2 0
+Affect modifier -1 60 -1 selfdiscipline 2 0
+Affect modifier -1 60 -1 empathy -2 0
+Affect modifier -1 60 -1 constitution 2 0
+End
+
+#668
+Name black onyx ring~
+Short a `#`Sblack `wo`sn`wy`sx`^ ring~
+Desc A `#`Sblack `wo`sn`wy`sx`^ ring lies here.~
+Level 60
+ItemType jewelry~
+Cost 660
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material onyx~
+Extra    hum dark magic antigood~
+Extra2   nodecay~
+Wear     take finger~
+ClassAllowances mage cleric druid ranger spellfilcher bard anti-paladin~
+Affect modifier -1 60 -1 quickness 2 0
+Affect modifier -1 60 -1 constitution 2 0
+Affect modifier -1 60 -1 mana 70 0
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 memory 2 0
+End
+
+#669
+Name black onyx arm guard~
+Short a `#`Sblack `wo`sn`wy`sx`^ arm guard~
+Desc A `#`Sblack `wo`sn`wy`sx`^ arm guard lies here.~
+Level 60
+ItemType armor~
+Cost 1000
+Durability 5
+Condition 90
+Asize 0
+Rsize 50
+Values 15 15 15 12 0
+Weight 30
+Material onyx~
+Extra    hum dark magic antigood~
+Extra2   nodecay~
+Wear     take arms~
+ClassAllowances mage cleric druid ranger spellfilcher bard anti-paladin~
+Affect modifier -1 60 -1 mana 50 0
+Affect modifier -1 60 -1 quickness 2 0
+Affect modifier -1 60 -1 presence 2 0
+End
+
+#670
+Name mushrooms with moss sauce~
+Short a bowl of mushrooms covered with moss sauce~
+Desc A bowl of mushrooms covered with moss sauce lies here.~
+Level 1
+ItemType food~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 18 21 0 0 0
+Weight 10
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take~
+End
+
+#671
+Name cup of roathe's milk~
+Short a cup of roathe's `#`Wmilk`^~
+Desc A cup of roathe's `#`Wmilk`^ lies here.~
+Level 0
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 10 40 milk 0 0
+Weight 10
+Material unknown~
+Extra    nodegrade~
+Wear     take~
+End
+
+#672
+Name roathe chops~
+Short a plate of roathe chops~
+Desc A plate of roathe chops lies here.~
+Level 1
+ItemType food~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 21 27 0 0 0
+Weight 20
+Material roathe~
+Extra    nodegrade~
+Wear     take~
+End
+
+#673
+Name roathe's cheese~
+Short a slab of roathe's cheese~
+Desc A slab of roathe's cheese lies here.~
+Level 1
+ItemType food~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 18 22 0 0 0
+Weight 20
+Material cheese~
+Wear     take~
+End
+
+#674
+Name snifter of brandy~
+Short a snifter of brandy~
+Desc A snifter of brandy lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 600
+Durability 5
+Asize 0
+Rsize 50
+Values 10 40 brandy 0 0
+Weight 10
+Material brandy~
+Extra    nodegrade~
+Wear     take~
+End
+
+#675
+Name flask of red wine~
+Short a flask of `#`rred`^ wine~
+Desc A flask of `#`rred`^ wine lies here.~
+Level 0
+ItemType drinkcontainer~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 10 40 'red wine' 0 0
+Weight 10
+Material wine~
+Extra    nodegrade~
+Wear     take~
+End
+
+#676
+Name flask of white wine~
+Short a flask of `#`Wwhite`^ wine~
+Desc A flask of `#`Wwhite`^ wine lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 10 40 'white wine' 0 0
+Weight 10
+Material wine~
+Wear     take~
+End
+
+#677
+Name jivval~
+Short a small `#`yp`wo`yu`wc`yh`^ of `#`cJ`bi`Bv`Cv`ba`cl`^~
+Desc A small `#`yp`wo`yu`wc`yh`^ of `#`cJ`bi`Bv`Cv`ba`cl lies here.`^~
+Level 30
+ItemType pill~
+Cost 850
+Durability 5
+Asize 0
+Rsize 50
+Values 30 'second wind' refresh frenzy ''
+Weight 20
+Material unknown~
+Extra    glow magic nonmetal nodegrade~
+Wear     take hold~
+End
+
+#678
+Name roathe jerky~
+Short a strip of dried roathe jerky~
+Desc A strip of dried roathe jerky lies here.~
+Level 1
+ItemType food~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 20 25 0 0 0
+Weight 10
+Material roathe~
+Extra    nodegrade~
+Wear     take~
+End
+
+#679
+Name firkin of water~
+Short a `#`yf`wi`yr`wk`yi`wn`^ of `#`Bwater`^~
+Desc A `#`yf`wi`yr`wk`yi`wn`^ of `#`Bwater`^ lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 100 100 water 0 0
+Weight 30
+Material water~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#680
+Name piwafwi~
+Short a long, flowing piwafwi~
+Desc A long, flowing piwafwi lies here, forgotten.~
+Level 1
+ItemType clothing~
+Cost 250
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material cloth~
+Extra    hum dark magic nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     take about~
+Affect modifier -1 1 -1 strength 2 0
+Affect modifier -1 1 -1 selfdiscipline 4 0
+Affect modifier -1 1 -1 mana 50 0
+ExtraDesc piwafwi ~
+This piwafwi is long and flowing, appearing to be as a normal cloak.  Yet 
+it's shade is undetermanable, as the colours shift and change in the light 
+and darkness.  It is strong and durable, shielding one from the elements.  
+~
+End
+
+#681
+Name haversack backpack~
+Short a `#`sdark `yl`se`ya`st`yh`se`yr haversack`^~
+Desc A `#`sdark `yl`se`ya`st`yh`se`yr haversack`^ lies here.~
+Level 1
+ItemType container~
+Cost 550
+Durability 5
+Asize 0
+Rsize 50
+Values 500 A 0 70 80
+Weight 50
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take back~
+End
+
+#682
+Name circlet of shadows~
+Short the `#`SCirclet `wof `SShadows`^~
+Desc The `#`SCirclet `wof `SShadows`^ lies here.~
+Level 70
+ItemType jewelry~
+Cost 800
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material mithril~
+Extra    glow hum magic antigood~
+Extra2   nodecay~
+Wear     take head~
+AttuneFlags attunable equal_level infuriating~
+Affect modifier -1 70 -1 mana 150 0
+Affect modifier -1 70 -1 strength 2 0
+Affect modifier -1 70 -1 selfdiscipline 3 0
+End
+
+#683
+Name spider plate~
+Short `#`SSpider Plate`^~
+Desc `#`SSpider Plate`^ lies here.~
+Level 70
+ItemType armor~
+Cost 600
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values 22 22 22 16 0
+Weight 100
+Material adamantite~
+Extra    hum dark magic antigood rotdeath meltdrop~
+Wear     take shield~
+ClassAllowances mage cleric warrior barbarian anti-paladin knight~
+AttuneFlags attunable equal_level infuriating~
+Affect modifier -1 70 -1 strength 3 0
+Affect modifier -1 70 -1 ac -4 0
+Affect modifier -1 70 -1 damroll 2 0
+Affect modifier -1 70 -1 hitroll 2 0
+End
+
+#684
+Name deadly nightshade~
+Short `#`mDeadly `sNi`mgh`stS`mha`sde`^~
+Desc `#`mDeadly `sNi`mgh`stS`mha`sde`^ lies here.~
+Level 60
+ItemType weapon~
+Cost 400
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values sword 2 30 slash DH
+Weight 60
+Material adamantite~
+Extra    hum evil magic antigood nolocate meltdrop~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 60 -1 damroll 4 0
+Affect modifier -1 60 -1 hitroll 6 0
+Affect modifier -1 60 -1 empathy -2 0
+Affect modifier -1 60 -1 intuition -1 0
+End
+
+#685
+Name soultaker~
+Short `#`SSo`rul`sT`rak`ser`^~
+Desc `#`SSo`rul`sT`rak`ser`^ lies here.~
+Level 70
+ItemType weapon~
+Cost 900
+Durability 5
+Condition 95
+Asize 0
+Rsize 50
+Values mace 8 7 pound C
+Weight 50
+Material unknown~
+Extra    dark nodrop antigood nolocate burnproof chaos~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 70 -1 hp 4 0
+Affect modifier -1 70 -1 hitroll 6 0
+Affect modifier -1 70 -1 damroll 6 0
+End
+
+#686
+Name adamantium horned helm~
+Short an `#`madamantium`^ horned helm~
+Desc An `#`madamantium`^ horned helm lies here.~
+Level 70
+ItemType armor~
+Cost 800
+Durability 5
+Asize 0
+Rsize 50
+Values 16 16 16 13 0
+Weight 40
+Material adamantium~
+Extra    hum dark horned~
+Extra2   nodecay~
+Wear     take head~
+Affect modifier -1 70 -1 strength 2 0
+Affect modifier -1 70 -1 hitroll 4 0
+Affect modifier -1 70 -1 damroll 6 0
+Affect modifier -1 70 -1 ac -4 0
+End
+
+#687
+Name no name 687~
+Short (no short description 687)~
+Desc (no description 687)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#620
+Name Hidden Tunnel~
+Desc A dark cave tunnel goes down into the darkness here.  Damp with the smell of 
+mold and mildew, it appears to have been carved deep into the very earth 
+itself.  The dark limestone is covered with some small lichens and scrub 
+vegetation, aching out a wretched existance in this land of eternal night.  
+~
+RoomFlags dark~
+Sector cave~
+Exit up 55456
+Exit down 621
+End
+
+
+#621
+Name Dark Tunnel~
+Desc The tunnel bored into the solid limestone winds its way east, deeper into 
+the ground, and fresh air can be felt as it slopes up.  Puddles of water can 
+be seen in small depressions in the ground, and the walls of the tunnel 
+glisten with a liquid sheen.  
+~
+RoomFlags dark~
+Sector cave~
+Exit north 4509
+Exit east 622
+Exit up 620
+End
+
+
+#622
+Name Dark Tunnel~
+Desc The tunnel bored into the solid limestone winds its way deeper into the 
+ground, and fresh air can be felt as to the west.  Puddles of water can be 
+seen in small depressions in the ground, and the walls of the tunnel glisten 
+with a liquid sheen.  
+~
+RoomFlags dark~
+Sector cave~
+Exit west 621
+Exit down 623
+End
+
+
+#623
+Name Dark Tunnel~
+Desc The strata of the tunnel changes here to a dark black stone with flecks of 
+red and gold embedded in it.  Countless chisel marks are apparent in the 
+walls, and drips of water fall from the ceiling, landing on the floor.  A 
+cold chill is in the air as you find yourself deeper inside the tunnel, 
+which slopes up and also continues to the west.  
+~
+RoomFlags dark~
+Sector cave~
+Exit west 624
+Exit up 622
+End
+
+
+#624
+Name Dark Tunnel~
+Desc The dark black stone tunnel heads both north and east from here.  Countless 
+chisel marks are apparent in the walls, and drips of water fall from the 
+ceiling, landing on the floor.  The temperature this deep leaves a slight 
+chill in the air.  
+~
+RoomFlags dark nowhere noscan noautoexits~
+Sector cave~
+Exit north 625
+Exit east 623
+Exit west 663
+EFlags door closed nopass~
+End
+
+
+#625
+Name Dark Tunnel~
+Desc The dark black stone tunnel slopes down as well as bearing off to the south 
+from here.  Countless chisel marks are apparent in the walls, and drips of 
+water fall from the ceiling, landing on the floor.  The temperature this 
+deep leaves a slight chill in the air.  
+~
+RoomFlags dark~
+Sector cave~
+Exit south 624
+Exit down 626
+End
+
+
+#626
+Name Dark Tunnel~
+Desc The dark black stone tunnel slopes at an angle up and down, as well as a 
+small tunnel to the north.  From here.  Countless chisel marks are apparent 
+in the walls, and drips of water fall from the ceiling, landing on the 
+floor.  The temperature this deep leaves a slight chill in the air.  
+~
+RoomFlags dark~
+Sector cave~
+Exit north 627
+Exit up 625
+Exit down 628
+End
+
+
+#627
+Name Dark Tunnel~
+Desc The dark black stone tunnel slopes down as well as bearing off to the south 
+from here.  Countless chisel marks are apparent in the walls, and drips of 
+water fall from the ceiling, landing on the floor.  The temperature this 
+deep leaves a slight chill in the air.  
+~
+RoomFlags dark~
+Sector cave~
+Exit south 626
+Exit down 628
+End
+
+
+#628
+Name Large Tunnel~
+Desc Sharp obsidian spikes protrude from the walls as this area of the tunnel 
+opens up, the ceiling of the tunnel soaring high into the air, further than 
+you can see.  Large obsidian columns line the passageway to the north, 
+rising high into the sky beyond your sight.  The passageway narrows and 
+slopes up as it heads towards the surface.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 629
+Exit up 626
+End
+
+
+#629
+Name Before the City~
+Desc Large adamantium gates block the entrance into Menzoberranzan, City of the 
+Drow.  Large obsidian columns line the entrance, and on the ground can be 
+seen several remains of what appears to be ancient statues which have 
+crumbled to dust.  Pieces of stone hands, feet, and an occasional head can 
+be seen lying about.  
+~
+RoomFlags dark indoors no_recall noscan~
+Sector cave~
+ExtraDesc gate ~
+The adamantium gates appear to be able to withstand any force sent against them. Stronger than any metal, adamantium can withstand even a blast of dragonfire.
+~
+Exit north 630
+EFlags door closed locked nopass infuriating~
+EKeyvnum 624
+EKeywords gate~
+Exit south 628
+End
+
+
+#630
+Name Inside the Entrance~
+Desc You are at the entrance to the great Drow city of Menzoberranzan.  Large 
+adamantium gates leading out of the city lie to the south.  To the north 
+runs Lolth Street, leading into the very heart of the city.  No light can be 
+seen in the buildings ahead, for the drow do not need any light.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 631
+Exit south 629
+EFlags door closed locked nopass infuriating~
+EKeyvnum 624
+EKeywords gate~
+End
+
+
+#631
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 632
+Exit south 630
+End
+
+
+#632
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 633
+Exit south 631
+End
+
+
+#633
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 634
+Exit south 632
+End
+
+
+#634
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 635
+Exit south 633
+End
+
+
+#635
+Name Intersection of Lolth & Sithus~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  East and west takes you along Sithus way.  Paved in obsidian 
+brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 636
+Exit east 646
+Exit south 634
+Exit west 653
+End
+
+
+#636
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 637
+Exit south 635
+End
+
+
+#637
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 638
+Exit south 636
+End
+
+
+#638
+Name Lolth Street~
+Desc This is the center of the great city of Menzoberranzan.  Lloth street runs 
+north and south, while K'tar Street runs east and west.  The great Temple of 
+Lolth looms to the north, the center of worship of the Goddess Lolth.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 639
+Exit east 660
+Exit south 637
+Exit west 687
+End
+
+
+#639
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 640
+Exit south 638
+End
+
+
+#640
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc west door~
+A crest of The `#`WMoon `SSpider`^ has been carved deep into the wood of this door.  
+
+~
+Exit north 641
+Exit east 724
+Exit south 639
+Exit west 721
+EFlags door closed~
+End
+
+
+#641
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen hereself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Fang street intersects here, leading west and east to the more 
+worn part of this great city.  Paved in obsidian brick, the street is black 
+as midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 642
+Exit east 665
+Exit south 640
+Exit west 684
+Exit down 24000
+End
+
+
+#642
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen herself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight, 
+continuing north and south.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 643
+Exit south 641
+Exit west 722
+EFlags door closed~
+End
+
+
+#643
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen herself.  The main 
+street in Menzoberranzan leads directly towards the great Temple of Lolth to 
+the north.  Paved in obsidian brick, the street is black as midnight, 
+continuing north and south.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 644
+Exit south 642
+End
+
+
+#644
+Name Lolth Street~
+Desc You are on Lolth Street, named after the Spider Queen herself.  Tall 
+obsidian columns extend high into the air, leading north into the great 
+Temple of Lolth.  Past them, you see your first glimpse of the Temple, 
+towering over the city.  Paved in obsidian brick, the street is black as 
+midnight.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 645
+Exit east 676
+Exit south 643
+Exit west 677
+End
+
+
+#645
+Name Before the Temple~
+Desc To the north up a large flight of solid obsidian stairs lies the Temple of 
+the Drow.  It plunges high into the sky, standing as a sheer testament to 
+the might of the Drow.  Made of the purest obsidian, it glistens in the 
+darkness, reflecting the very city itself on its mirror-like walls.  
+Gleaming obsidian pillars stand to each side of the stairs.  A `#`splaque`^ has 
+been chisled into them, the words upon them glowing eerily.  
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc pillars plaque~
+`#`wChisled into the first pillar..`s`1
+Cast your fate aside, 
+lend your judgement to the darkness. 
+for she knows what is truely just... 
+`1`wChisled into the second pillar..`s`1
+To Walk Apart From House And Queen Is To Walk Into The Grave`^
+~
+Exit north 2200
+EFlags door closed~
+Exit south 644
+End
+
+
+#646
+Name Sithus Way~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  There are some 
+trees and bushes along the edges of the street.  Small shops line the 
+streets in all directions, and you see and hear many people in those 
+directions.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 659
+Exit east 647
+Exit west 635
+End
+
+
+#647
+Name Sithus Way~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  There are some 
+trees and bushes along the edges of the street.  Small shops line the 
+streets in all directions, and you see and hear many people in those 
+directions.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 648
+Exit west 646
+End
+
+
+#648
+Name Intersection of Sithus and Widow~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  There are some 
+trees and bushes along the edges of the street.  Small shops line the 
+streets in all directions, and you see and hear many people in those 
+directions.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 649
+Exit west 647
+Exit northeast 693
+End
+
+
+#649
+Name Inn of the Black Widow~
+Desc You are in the reception area of a small inn.  A wooden desk faces the west 
+entry, upon it a book and an inkwell.  The common room is off to the south, 
+and you see a staircase heading up, probably to the guest rooms.  From the 
+furnishings, the inn seems a bit on the expensive side.  
+~
+RoomFlags indoors inn~
+Sector inside~
+Exit south 652
+Exit west 648
+Exit up 651
+End
+
+
+#650
+Name Kulzan's Staves and Scrolls~
+Desc This room is narrow and dank with a strong smell of burning incense.  A 
+glass front bookcase fills the western wall, with several parchments and 
+books filling it's depths.  A sturdy table is set in the middle of the room, 
+with papers and scrolls scattered over it.  On the eastern wall, racks of 
+staves can be seen hanging from the wall.  
+~
+RoomFlags dark~
+Sector inside~
+Exit north 677
+End
+
+
+#651
+Name A well lit foyer~
+Desc Several lamps illuminate this narrow foyer.  Although small, it appears to 
+be furnished rather nicely with several paintings hanging on the paneled 
+walls.  It's floor is made up of a dark hardwood covered by a thick rug.  A 
+long, thin table stretches the length of one wall, a vase of bright flowers 
+is upon it.  A doorway is to the south and a set of stairs leads down from 
+here.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 695
+EFlags door closed locked easy~
+Exit down 649
+End
+
+
+#652
+Name The Common Room~
+Desc This common room is not as large as most, but then again the entire inn 
+seems to be on the small side.  What it lacks in size, however, seems to be 
+made up for in comfort.  There are padded chairs all around the tables, and 
+all of the furnishings and decorations look quite expensive.  A finely 
+polished wooden bar dominates the west wall, and a large brick fireplace is 
+set in the east.  There is an exit back to the reception area to the north.  
+
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 649
+End
+
+
+#653
+Name Sithus Way~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  There are some 
+trees and bushes along the edges of the street.  Small shops line the 
+streets in all directions, and you see and hear many people in those 
+directions.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 635
+Exit west 654
+End
+
+
+#654
+Name Sithus Way~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  There are some 
+trees and bushes along the edges of the street.  Small shops line the 
+streets in all directions, and you see and hear many people in those 
+directions.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 658
+Exit east 653
+Exit west 655
+End
+
+
+#655
+Name Intersection of Sithus and Drider~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  There are some 
+trees and bushes along the edges of the street.  Small shops line the 
+streets in all directions, and you see and hear many people in those 
+directions.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 654
+Exit west 656
+Exit northwest 688
+End
+
+
+#656
+Name slave shop~
+Desc A stale pungent odor emits from this small shop.  Seeing it's rough state of 
+repair lends a reason why.  Cages of all shapes and sizes fill the building, 
+most littered with dirty piles of straw.  Rough looking slaves of several 
+races can be seen inside most of the cages, or roaming around with chains on 
+their hands and ankles.  A large slab sits in the middle of the room, with 
+shackles along it's head and foot.  Whips and other torturing devices can be 
+seen stored beside it.  
+~
+RoomFlags dark pet_shop~
+Sector inside~
+Exit east 655
+End
+
+
+#657
+Name menzo slave/pet storage~
+Desc You should not be here ...  Leave before you get caught!  (besides, you 
+can't kill pets) 
+~
+Sector inside~
+End
+
+
+#658
+Name Menzoberranzan City Bank~
+Desc A teller both stretches across the eastern wall of this narrow room.  Across 
+from them are a few desks and booths.  Built into the northern wall, is a 
+huge steel vault.  It looks strong and durable, with a wheel connecting to 
+the door for sealing it.  A guard stands at the vault door, protecting it at 
+all times.  
+~
+RoomFlags indoors bank light~
+Sector inside~
+Exit south 654
+End
+
+
+#659
+Name Phoukral's All-Purpose Possessions~
+Desc Boxes and crates of odds and ends fill the back of this room.  A few shelves 
+along the walls can be seen containing all kinds off possessions.  Sitting 
+in the front of the room is a small desk strewn with papers and wrappings.  
+In front of the eastern wall, a large granite table sits, displaying several 
+musty mushrooms and types of fish.  
+~
+Sector inside~
+Exit south 646
+End
+
+
+#660
+Name K'Tar Street~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  West will take you back to the main street while 
+east continues along K'Tar Street.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 726
+EFlags door closed~
+Exit east 661
+Exit west 638
+End
+
+
+#661
+Name Intersection of K'Tar and Widow~
+Desc Here the street forks, leading off to Widow Drive.  Crushed red bloodstone 
+has been spread around on the ground to cover the dirt, making the ground 
+appear to be covered with blood.  Several trees and bushes grow along the 
+edges of the street.  Small shops and houses line the streets in all 
+directions.  East will lead you to a busy store, while to the west, K'Tar 
+Street continues.  Southeast and northeast will lead you to along Widow 
+Drive.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 662
+Exit west 660
+Exit northeast 670
+Exit southeast 694
+End
+
+
+#662
+Name Protective Measures~
+Desc Various kinds of armor are positioned lovingly on ornate stands, drawing 
+your attention to them.  Several sets of adamantium chainmail hang from the 
+walls, the fabled armor of the drow.  A few boots are on shelves in the 
+northeast corner, and beside them is a rack of cloaks.  On the east side of 
+the shop stands a large counter where you can purchase these fine goods from 
+the shopkeeper.  
+~
+RoomFlags dark~
+Sector inside~
+Exit west 661
+End
+
+
+#663
+Name Hidden Room~
+Desc The dark black stone tunnel heads back east from here.  Countless chisel 
+marks are apparent in the walls, and drips of water fall from the ceiling, 
+landing on the floor.  The temperature this deep leaves a slight chill in 
+the air.  
+~
+RoomFlags dark noscry noscan noautoexits~
+Sector inside~
+Exit east 624
+EFlags door closed nopass~
+End
+
+
+#664
+Name Drider Street~
+Desc . Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Small shops and houses line the streets in all directions.  Drider street 
+continues along a bend to the northeast and farther south.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 688
+Exit northeast 686
+End
+
+
+#665
+Name Fang Street~
+Desc This street of Menzoberranzan is more narrow and appears to be quite 
+tattered compared to the other main roads.  Doorways can be seen leading to 
+the north and south, but they all seem to be boarded up or barred.  A few 
+trees and bushes line the dark streets, struggling to survive.  The street 
+continues on to the east, while west leads back to Lolth Street.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 8920
+Exit east 666
+Exit west 641
+End
+
+
+#666
+Name Fang Street~
+Desc This street of Menzoberranzan is more narrow and appears to be quite 
+tattered compared to the other main roads.  Doorways leading north and south 
+can be seen, but they are all boarded up.  A few trees and bushes struggle 
+to grow along the dark streets.  Heading east seems to lead to a wider area, 
+while west is just as dark and dank.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 667
+Exit west 665
+End
+
+
+#667
+Name Intersection of Fang and Widow~
+Desc . You come to a fork in the road where Fang Street and Widow Drive connect.  
+The dirt street is covered with crushed red bloodstone, making the ground 
+appear to be covered with blood.  To the east, a wide door can be seen 
+leading to what seems to be a tavern.  Northeast and southeast leads you 
+farther along Widow Drive, while west leads to a more narrow street.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 668
+Exit west 666
+Exit northeast 671
+Exit southeast 669
+End
+
+
+#668
+Name Lhrao's Tavern~
+Desc This appears to be a small tavern with a bar filling the length of the 
+entire eastern wall.  A few booths and tables fill the rest of the room, 
+leaving a small square in the center for those wishing to dance.  Behind the 
+bar, a large mirror hangs, reflecting the grey tone of the stone flooring 
+and walls.  A wide door lies to the west, leading out to the dark streets.  
+~
+Sector inside~
+Exit west 667
+End
+
+
+#669
+Name Widow Drive~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  Heading northwest and south leads you along 
+Widow Drive.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 670
+Exit northwest 667
+End
+
+
+#670
+Name Widow Drive~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  Widow Drive continues on north and southwest 
+from here.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 669
+Exit southwest 661
+End
+
+
+#671
+Name Widow Drive~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  Widow Drive continues on north and southwest 
+from here.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 672
+Exit southwest 667
+End
+
+
+#672
+Name Widow Drive~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  Heading northwest and south leads you along 
+Widow Drive.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 671
+Exit northwest 674
+End
+
+
+#673
+Name Agathfal's Corner of Scrolls and Concoctions~
+Desc Shelf upon shelf line the walls in this narrow building.  Each stocked with 
+a different form of magical potions, scrolls, tomes, and more.  A tall drow 
+can be seen, moving about the room, muttering to himself as he sorts through 
+all of his collection.  A heavy door to the west leads back to the street.  
+~
+Sector inside~
+Exit west 674
+End
+
+
+#674
+Name Intersection of Slither and Widow~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Looking up, it's possible to see the dark tower of Lolth rising high into 
+the air in the northwest.  A shop can be seen to the east, while a fork in 
+the road leads southeast to Widow Drive.  West leads back along Slither 
+Lane.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 673
+Exit west 675
+Exit southeast 672
+End
+
+
+#675
+Name Slither Lane~
+Desc . Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Small shops and houses line the streets in all directions.  
+Several trees and bushes grow along the edges of the street.  Looking up, 
+it's possible to see the dark tower of Lolth rising high into the air in the 
+northwest.  Slither Lane continues east and west.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 674
+Exit west 676
+End
+
+
+#676
+Name Slither Lane~
+Desc . Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Small shops and houses line the streets in all directions.  
+Several trees and bushes grow along the edges of the street.  Looking up, 
+it's possible to see the dark tower of Lolth rising high into the air in the 
+northwest.  West leads back to the main street of Menzoberranzan while east 
+continues on down Slither Lane.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 675
+Exit west 644
+End
+
+
+#677
+Name Slither Lane~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Small shops and houses line the streets in all directions.  
+Several trees and bushes grow along the edges of the street.  Looking up, 
+it's possible to see the dark tower of Lolth rising high into the air in the 
+northeast.  East leads back to the main street of Menzoberranzan while west 
+continues on down Slither Lane.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 644
+Exit south 650
+Exit west 678
+End
+
+
+#678
+Name Slither Lane~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Small shops and houses line the streets in all directions.  
+Several trees and bushes grow along the edges of the street.  Looking up, 
+it's possible to see the dark tower of Lolth rising high into the air in the 
+northeast.  Slither Lane continues east and west.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 728
+Exit east 677
+Exit west 679
+End
+
+
+#679
+Name Intersection of Slither and Drider~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Looking up, it's possible to see the dark tower of Lolth rising high into 
+the air in the northeast.  A shop can be seen to the west, while a fork in 
+the road leads southwest to Drider Street.  East leads back along Slither 
+Lane.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 678
+Exit west 680
+Exit southwest 692
+End
+
+
+#680
+Name Frishkhrol's Rare Gems and Fine Jewels~
+Desc This room is small, but elegantly furnished.  Thick drapes line the walls, 
+and a small area is set off to the side with plush chairs.  The back of the 
+room consists of a large glass counter, where beautiful gems and jewels are 
+displayed.  Frishkhrol, the drow proprietor of this shop, is here waiting 
+upon his costumers.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 679
+End
+
+
+#681
+Name A Shabby Building~
+Desc This building is small and in disrepair.  To the east, the door hangs off of 
+it's hinges and several holes can be seen in the walls and ceiling itself.  
+Littered across the dirt floor, a few items show that this building was 
+recently used as a shelter.  A few rats scurry about, unafraid of your 
+intrusion into their dark home.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 682
+EFlags door closed obvious~
+End
+
+
+#682
+Name Intersection of Fang and Drider~
+Desc You come to a fork in the road where Fang Street connects to Drider Street.  
+The dirt street is covered with crushed red bloodstone, making the ground 
+appear to be covered with blood.  To the west, a small building, that looks 
+to be falling apart can be seen.  Northwest and southwest leads you farther 
+along Drider Street, while east seems to lead to a more narrow road.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 683
+Exit west 681
+EFlags door closed obvious~
+Exit southwest 690
+Exit northwest 691
+End
+
+
+#683
+Name Fang Street~
+Desc This street of Menzoberranzan is more narrow and appears to be quite 
+tattered compared to the other main roads.  Doorways leading north and south 
+can be seen, but they appear to be boarded up for the most part.  Trees and 
+bushes struggle to grow along the dark streets.  The battered street 
+continues east, but to the west it seems to widen a bit.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 684
+Exit west 682
+End
+
+
+#684
+Name Fang Street~
+Desc This street of Menzoberranzan is more narrow and appears to be quite 
+tattered compared to the other main roads.  Doorways can be seen leading to 
+the north and south, but they all seem to be boarded up or barred.  A few 
+trees and bushes line the dark streets, struggling to survive.  The street 
+continues on to the west, while to the east it seems to lead to a more open 
+road.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 641
+Exit west 683
+End
+
+
+#685
+Name Implements of Death~
+Desc Weapons line the walls and large racks of adamantium weapons of all shapes 
+and sizes lie on the floor.  The drow weapons shops are filled with a 
+magical energy that you can almost feel.  A large counter lies to the west 
+where you may purchase any manner of weapon they have available.  
+~
+RoomFlags dark~
+Sector inside~
+Exit east 686
+End
+
+
+#686
+Name Intersection of K'tar & Drider~
+Desc Here the street forks, leading off to Drider Street.  Crushed red bloodstone 
+has been spread around on the ground to cover the dirt, making the ground 
+appear to be covered with blood.  Several trees and bushes grow along the 
+edges of the street.  Small shops and houses line the streets in all 
+directions.  West leads to a busy store, while to the east, K'Tar Street 
+continues.  Northwest and southwest will lead you to Drider Street.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit east 687
+Exit west 685
+Exit southwest 664
+Exit northwest 689
+End
+
+
+#687
+Name K'Tar Street~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  East leads back to the main street while west 
+continues along K'Tar Street.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 727
+Exit east 638
+Exit west 686
+End
+
+
+#688
+Name Drider Street~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Small shops and houses line the streets in all directions.  Drider street 
+continues along a bend to the southeast and farther north.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 664
+Exit southeast 655
+End
+
+
+#689
+Name Drider Street~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Small shops and houses line the streets in all directions.  Drider street 
+continues along a bend to the southeast and farther north.  A stone cover is 
+here, covering a small opening in the ground.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 690
+Exit down 10401
+EFlags door closed~
+EKeywords stone~
+Exit southeast 686
+End
+
+
+#690
+Name Drider Street~
+Desc . Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Small shops and houses line the streets in all directions.  Drider street 
+continues along a bend to the northeast and farther south.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 689
+Exit northeast 682
+End
+
+
+#691
+Name Drider Street~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Small shops and houses line the streets in all directions.  Drider street 
+continues along a bend to the southeast and farther north.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 692
+Exit southeast 682
+End
+
+
+#692
+Name Drider Street~
+Desc Crushed red bloodstone is spread around on the ground here, covering the 
+dirt lane.  Several trees and bushes grow along the edges of the street.  
+Small shops and houses line the streets in all directions.  Drider street 
+continues along a bend to the northeast and farther south.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 691
+Exit northeast 679
+End
+
+
+#693
+Name Widow Drive~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  Widow Drive continues on north and southwest 
+from here.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 694
+Exit southwest 648
+End
+
+
+#694
+Name Widow Drive~
+Desc Crushed red bloodstone has been spread around on the ground to cover the 
+dirt, making the ground appear to be covered with blood.  Several trees and 
+bushes grow along the edges of the street.  Small shops and houses line the 
+streets in all directions.  Heading northwest and south leads you along 
+Widow Drive.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit south 693
+Exit northwest 661
+End
+
+
+#695
+Name Guest room~
+Desc A large bed seems to dominate this small guest room.  Along the western wall 
+a table and chairs sits under a narrow window that looks out on the street.  
+A wide fireplace fills the eastern wall, with a large painting hanging over 
+its mantle.  Sconces line the paneled walls, along with a few other 
+paintings.  The only exit is north, leading to the foyer.  
+~
+RoomFlags indoors light inn~
+Sector inside~
+Exit north 651
+EFlags door closed locked easy~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 626 spec_elf_muncher
+S
+
+
+
+#RESETS2
+O 0 50050 -1 623
+O 0 50050 -1 627
+O 0 620 -1 627
+O 0 621 -1 628
+M 0 620 1 629 1
+E 0 622 -1 wielded~
+G 0 624 -1
+M 0 622 20 630 2
+E 0 625 -1 neck1~
+M 0 621 1 630 1
+E 0 624 -1 hold~
+M 0 633 20 630 1
+E 0 623 -1 torso~
+E 0 669 -1 arms~
+E 0 666 -1 lwrist~
+E 0 668 -1 lfinger~
+E 0 684 -1 wielded~
+M 0 623 20 631 1
+O 0 50050 -1 632
+M 0 622 20 632 2
+E 0 625 -1 neck1~
+M 0 626 20 633 1
+E 0 626 -1 wielded~
+E 0 626 -1 second~
+M 0 623 20 633 1
+M 0 622 20 634 2
+E 0 625 -1 neck1~
+M 0 642 20 635 1
+M 0 633 20 635 1
+E 0 623 -1 torso~
+E 0 641 -1 wielded~
+E 0 667 -1 rwrist~
+M 0 623 20 635 1
+M 0 622 20 636 2
+E 0 625 -1 neck1~
+M 0 623 20 637 1
+M 0 622 20 638 2
+E 0 625 -1 neck1~
+M 0 633 20 638 1
+E 0 623 -1 torso~
+E 0 667 -1 rwrist~
+E 0 640 -1 wielded~
+M 0 642 20 639 1
+M 0 623 20 639 1
+M 0 622 20 640 2
+E 0 625 -1 neck1~
+M 0 623 20 641 1
+M 0 626 20 641 1
+E 0 626 -1 wielded~
+E 0 626 -1 second~
+O 0 648 -1 641
+M 0 633 20 641 1
+E 0 623 -1 torso~
+E 0 666 -1 rwrist~
+E 0 685 -1 wielded~
+M 0 622 20 642 2
+E 0 625 -1 neck1~
+M 0 623 20 643 1
+M 0 642 20 644 1
+M 0 622 20 644 2
+E 0 625 -1 neck1~
+M 0 633 20 644 1
+E 0 684 -1 wielded~
+E 0 669 -1 arms~
+E 0 623 -1 torso~
+M 0 623 20 645 1
+M 0 635 1 645 1
+E 0 665 -1 about~
+E 0 642 -1 face~
+M 0 642 20 647 1
+M 0 633 20 648 1
+E 0 666 -1 rwrist~
+E 0 623 -1 torso~
+E 0 684 -1 wielded~
+M 0 644 1 649 1
+M 0 632 1 650 1
+G 0 649 -1
+G 0 658 -1
+G 0 657 -1
+G 0 659 -1
+G 0 660 -1
+G 0 661 -1
+G 0 3088 -1
+O 0 23601 -1 652
+M 0 633 20 655 1
+E 0 623 -1 torso~
+E 0 685 -1 wielded~
+M 0 641 1 656 1
+M 0 639 1 657 1
+M 0 638 1 657 1
+M 0 637 1 657 1
+M 0 636 1 657 1
+O 0 663 -1 658
+P 0 682 1 663 1
+P 0 683 1 663 1
+M 0 634 1 658 1
+E 0 664 -1 hold~
+E 0 644 -1 wielded~
+E 0 623 -1 torso~
+E 0 622 -1 sheathed~
+E 0 686 -1 head~
+M 0 640 1 659 1
+G 0 662 -1
+G 0 681 -1
+G 0 680 -1
+G 0 677 -1
+G 0 679 -1
+G 0 19558 -1
+G 0 19561 -1
+G 0 678 -1
+G 0 27097 -1
+G 0 27102 -1
+M 0 626 20 660 1
+E 0 626 -1 wielded~
+E 0 627 -1 second~
+M 0 633 20 661 1
+E 0 623 -1 torso~
+E 0 668 -1 rfinger~
+E 0 644 -1 wielded~
+M 0 625 1 662 1
+G 0 638 -1
+G 0 633 -1
+G 0 642 -1
+G 0 632 -1
+G 0 635 -1
+G 0 634 -1
+G 0 631 -1
+G 0 637 -1
+G 0 643 -1
+M 0 629 1 663 1
+M 0 642 20 665 1
+M 0 628 1 668 1
+G 0 27048 -1
+G 0 27096 -1
+G 0 27095 -1
+G 0 27049 -1
+G 0 27081 -1
+G 0 670 -1
+G 0 673 -1
+G 0 672 -1
+G 0 27069 -1
+G 0 671 -1
+G 0 3085 -1
+G 0 676 -1
+G 0 675 -1
+G 0 674 -1
+O 0 3081 -1 668
+O 0 3080 -1 668
+O 0 3079 -1 668
+M 0 630 1 673 1
+G 0 1000 -1
+G 0 1001 -1
+G 0 1002 -1
+G 0 1004 -1
+G 0 650 -1
+G 0 636 -1
+G 0 639 -1
+M 0 633 20 674 1
+E 0 623 -1 torso~
+E 0 669 -1 arms~
+E 0 641 -1 wielded~
+M 0 643 1 678 1
+M 0 642 20 678 1
+O 0 50050 -1 679
+M 0 633 20 679 1
+E 0 644 -1 wielded~
+E 0 623 -1 torso~
+E 0 668 -1 rfinger~
+E 0 667 -1 rwrist~
+M 0 631 1 680 1
+G 0 651 -1
+G 0 652 -1
+G 0 653 -1
+G 0 654 -1
+G 0 655 -1
+G 0 656 -1
+M 0 627 1 681 1
+G 0 647 -1
+E 0 646 -1 waist~
+M 0 624 1 685 1
+G 0 627 -1
+G 0 630 -1
+G 0 628 -1
+G 0 629 -1
+G 0 626 -1
+M 0 626 20 686 1
+E 0 626 -1 wielded~
+E 0 626 -1 second~
+M 0 633 20 686 1
+E 0 623 -1 torso~
+E 0 684 -1 wielded~
+M 0 642 20 687 1
+M 0 642 20 691 1
+O 0 50050 -1 694
+O 0 16253 -1 695
+O 0 16246 -1 695
+O 0 16201 -1 695
+S
+
+
+
+#SHOPS
+#624
+buy_type armor~
+buy_type weapon~
+profit_buy 130
+profit_sell 65
+close_hour 23
+END
+
+#625
+buy_type armor~
+buy_type clothing~
+profit_buy 125
+profit_sell 75
+close_hour 23
+END
+
+#627
+buy_type scroll~
+profit_buy 100
+profit_sell 100
+open_hour 1
+close_hour 23
+END
+
+#628
+buy_type food~
+profit_buy 100
+profit_sell 75
+close_hour 24
+END
+
+#630
+buy_type staff~
+buy_type potion~
+profit_buy 100
+profit_sell 100
+close_hour 24
+END
+
+#631
+buy_type jewelry~
+buy_type pill~
+buy_type wand~
+profit_buy 100
+profit_sell 100
+close_hour 24
+END
+
+#632
+buy_type scroll~
+buy_type potion~
+profit_buy 100
+profit_sell 100
+close_hour 24
+END
+
+#640
+buy_type food~
+buy_type container~
+buy_type light~
+profit_buy 100
+profit_sell 100
+close_hour 24
+END
+
+#641
+profit_buy 100
+profit_sell 100
+close_hour 24
+END
+
+#0
+
+
+#MOBPROGS
+#624
+title priestess teaches orbit~
+author Reath~
+code if hasskill $n orbit > 5
+junk 5000 silver
+junk 50 gold
+sayto $n The temple will benefit from your kindness.
+ end
+endif
+if hasskill $n flail < 100
+junk 5000 silver
+junk 5000 silver
+sayto $n The temple will benefit from your kindness.
+thank $n
+ end
+endif
+if hasskill $n flail > 99
+ sayto $n Orbitting is the art of allowing the flail to guide you.
+ sayto $n Allow it to flow naturally, like a snake. A snake does not
+ sayto $n seek out its prey, it guards against them and lashes out as 
+ sayto $n they come too close. Go young one, think on this.
+mob setskill $n orbit 15
+junk 5000 silver
+junk 50 gold
+ end
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1122508498
+END
+
+#623
+title priestess greet~
+author Ixliam~
+code if hasskill $n flail == 100
+and hasskill $n orbit == 0
+    sayto $n With some practice even you might be skilled with a flail I think.
+    sayto $n And with a little donation? Who knows, mayhaps there's something I could teach.
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G623`x,`Y633`x,`B686`x,`r0`x,`C0`x:
+             `YMobprog: invalid if_check (if) 'mob', mob 633 prog 623
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 623 on mob 633 (in room 686), line 0
+`S#############
+
+~
+last_editor Reath~
+last_editdate 1127677542
+END
+
+#622
+title Close Gate~
+author Ixliam~
+code mob seeall
+close gate
+lock gate
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1039882924
+END
+
+#621
+title Open Gate~
+author Ixliam~
+code mob seeall
+unlock gate
+open gate
+mob letpass
+~
+disabled false
+last_editor Silaenca~
+last_editdate 1045634709
+END
+
+#620
+title Medusa Guard~
+author Ixliam~
+code mob seeall
+close gate
+lock gate
+language drow
+if isimmort $n
+ sayto $n Welcome to the City of Menzoberranzan, Great One.
+unlock gate
+open gate
+ mob letpass
+ end
+endif
+if race $n drow
+  sayto $n I welcome you back to your homeland, $n.
+unlock gate
+open gate
+mob letpass
+ end
+endif
+if race $n duergar
+  language dwarven
+ sayto $n Welcome $n. The drow always welcome Duergars to thier city.
+unlock gate
+open gate
+mob letpass
+ end
+endif
+if isevil $n
+ sayto $n I sense a darkness inside you, $n. You may pass.
+unlock gate
+open gate
+ mob letpass
+ end
+endif
+if isgood $n
+ sayto $n You are not welcome here! You will DIE!!!
+ mob cast poison $n
+mob kill $n
+ end
+endif
+sayto $n You are not permitted here. Leave or be destroyed!
+emote blocks the passage to the north.
+end
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1108350205
+END
+
+#0
+
+
+#$

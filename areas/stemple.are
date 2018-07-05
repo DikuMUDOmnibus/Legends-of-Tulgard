@@ -1,0 +1,4097 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of Enochalile~
+ShortName   Enochalile~
+Builders    ardayne~
+Credits     Ardayne~
+VNUMs       62300 62499
+LComment    [ 95-115 ]
+LRange      90 100
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Tue Sep 27 18:44:09 2005~
+End
+
+
+
+#MOBILES
+#62300
+Name ghost massive silver frost dragon morliana~
+ShortD a `#`Ws`Xi`Wl`Xv`We`Xr`^ frost-dragon~
+LongD A massive `#`Ws`Xi`Wl`Xv`We`Xr`^ female frost-dragon stands here and glares at you.~
+Desc Towering above you at about eighty feet in height is a massive frost dragon 
+gleaming with glittering silver scales. Her misty form is ice cold and soft 
+to the touch. She has a narrow, delicate looking face that holds two soft 
+eyes of a dazzling blue when seen. Her neck is long and slim. Her body is 
+sleek but firm. Her tail is twice the length of her long body. Behind her 
+are two large silvery wings of what appears to be starlight in it's ghostly 
+form. 
+~
+Race dragon~
+Align 0 3
+XPMod 200
+Level 101
+Hitroll 0
+HitDice 10d14+490
+ManaDice 4d5+110
+DamDice 11d12+56
+DamType bite
+AC -710 -710 -710 -631
+Wealth 1500
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_good flying haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack bash berserk disarm dodge dirt_kick parry tail trip~
+Imm    summon charm bash cold sleep~
+Res    magic~
+Vuln   fire~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#62301
+Name paranoid thief~
+ShortD a paranoid thief~
+LongD A paranoid thief thinks you are going to steal his treasures.~
+Desc This thief is extremely paranoid. He sees you and thinks you are trying to 
+steal from his treasure chest and attacks! 
+~
+Race human~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 9d12+440
+ManaDice 9d12+575
+DamDice 10d11+45
+DamType beating
+AC -600 -600 -600 -516
+Wealth 690
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  detect_invis detect_hidden sanctuary haste~
+AffBy2 vicegrip~
+Off    backstab dodge dirt_kick parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 62301 100~
+END
+
+#62302
+Name wandering angel~
+ShortD a wandering angel~
+LongD A wandering angel walks right past you talking to himself.~
+Desc ~
+Race angel~
+Align -3 3
+Level 98
+Hitroll 0
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType divine
+AC -680 -680 -680 -578
+Wealth 1638
+Act    npc no_tame stay_area cleric~
+AffBy  detect_evil detect_invis detect_hidden sanctuary infrared flying haste~
+AffBy2 vicegrip~
+Off    area_attack disarm dodge parry rescue~
+Imm    summon charm lightning holy disease light scry hunger thirst~
+Res    magic illusion~
+Vuln   negative~
+Form   magical sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#62303
+Name no name~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race angel~
+Align -3 3
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType divine
+AC -610 -610 -610 -549
+Wealth 1345
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_evil detect_invis detect_hidden infrared flying~
+AffBy2 detect_vanish~
+Off    disarm dodge parry rescue~
+Imm    summon charm lightning holy disease light scry hunger thirst~
+Res    magic illusion~
+Vuln   negative~
+Form   magical sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#62304
+Name golden protector fire dragon~
+ShortD the `#`YG`yo`Wld`ye`Yn`^ Protector~
+LongD The Golden Protector stands here proudly.~
+Desc This large gold dragon is one of the protectors of the sacred chamber. His 
+scales are a solid gold with flecks of topaz gleaming on them. His eyes, 
+when open, are a deep blue. He wields a weapon that has brought his wraith 
+upon all that attack him. 
+~
+Race dragon~
+Align 0 3
+Level 100
+Hitroll 50
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType chomp
+AC -680 -680 -680 -591
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_invis detect_hidden sanctuary infrared flying haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge parry tail trip~
+Imm    summon charm bash fire sleep~
+Res    magic weapon~
+Vuln   cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg DEATH 62303 100~
+END
+
+#62305
+Name bronze protector lightning dragon~
+ShortD the `#`yBr`xon`yze`^ Protector~
+LongD The Bronze Protector stands here quietly by himself.~
+Desc This large bronze dragon was choosen as a protector for his strength, 
+courage, and commitment. His shiny bronze scales have flecks of rubies on 
+them. His eyes, when open, are a dark green. He wields the weapon of a great 
+cleric. 
+~
+Race dragon~
+Align 0 3
+Level 100
+Hitroll 50
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType chomp
+AC -680 -680 -680 -612
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary infrared flying haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack bash tail~
+Imm    summon charm bash lightning sleep~
+Res    magic~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg DEATH 62304 100~
+END
+
+#62306
+Name copper protector acid dragon~
+ShortD the `#`yCo`Ypp`yer`^ Protector~
+LongD The Copper Protector stands here looking about angrily.~
+Desc This large copper dragon stands here before you. His scales are made from 
+copper, and his eyes are a deep coal black. He attacks you for entering into 
+his chamber. 
+~
+Race dragon~
+Align 0 3
+Level 100
+Hitroll 50
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType chomp
+AC -680 -680 -680 -605
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area cleric~
+AffBy  sanctuary infrared flying haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge parry tail trip~
+Imm    summon charm bash acid sleep~
+Res    magic~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg DEATH 62305 100~
+END
+
+#62307
+Name silver dragon protector cold ice~
+ShortD the `#`SS`wi`Wlv`we`Sr`^ Protector~
+LongD The Silver Protector stands here calmly before you.~
+Desc A large silver dragon stands here calmly before you. His scales are made of 
+a pure silver, with flecks of sapphire all across his body. He wears the 
+ring of the pure of heart. 
+~
+Race dragon~
+Align 0 3
+Level 100
+Hitroll 50
+HitDice 10d13+470
+ManaDice 10d13+620
+DamDice 10d13+52
+DamType chomp
+AC -680 -680 -680 -571
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary infrared flying haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    area_attack bash disarm dodge kick parry tail~
+Imm    summon charm bash cold sleep~
+Res    magic~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg DEATH 62306 100~
+END
+
+#62308
+Name orifiel angel keeper protector strong~
+ShortD orifiel~
+LongD Orifiel, the Keeper of the Sacred Chamber, stands here.~
+Desc ~
+Race angel~
+Align 0 3
+Level 115
+Hitroll 0
+HitDice 12d15+565
+ManaDice 12d15+793
+DamDice 12d15+72
+DamType shbite
+AC -870 -870 -870 -713
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_hidden infrared flying~
+AffBy2 vicegrip~
+Off    rescue~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   magical sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg ACT 62307 puts a `#`bt`ba`mn`mzan`mi`bt`be `yj`ye`ww`ye`yl`^ in a tall column.~
+END
+
+#62309
+Name demon rosaline taint ghost~
+ShortD the taint of Rosaline~
+LongD This large female ghost glares at you, and suddenly you want to return home to mommy.~
+Desc A demonic woman is here with long, flowing raven-black hair. Her hair 
+cascades down her back in soft waves, shimmering with health in the light. 
+Set upon her face are two almond shaped eyes, a nicely set nose and sly 
+looking lips. Her face is setup softly with her high cheekbones, making it 
+quite easy on the eyes.  Her lips are a fierce blood red, her eyes lined in 
+black, defining them both in a complimenting way. When seen within her mouth 
+are fanged humanoid teeth. Within her eyes are two orbs of a greenish yellow 
+hue, standing out even more so with the black liner. Making her eyes almost 
+glow like greenish fire. They glow eerily and even as shadows pass over 
+them, their brilliance never falters or fades. Her bodily frame is dainty, 
+but still looks like it could handle a great deal of physical wear.  She is 
+slightly muscular but only in a complimenting way.  Her body is pieced 
+together generously with a supple torso, a slim waist and lusciously rounded 
+hips.  Her strong thighs help keep her posture elegant and graceful in all 
+she does. Behind her trails a very long, prehensile tail.  She only stands 
+at about 5'5''. Upon her back are massive raven-feathered wings. Spread 
+completely, each wing has a span of 18 ft. and remains glossy as a raven or 
+crow's with good health. 
+~
+Race demon~
+Align -3 -3
+XPMod 120
+Level 115
+Hitroll 50
+HitDice 12d15+575
+ManaDice 5d5+130
+DamDice 12d15+73
+DamType claw
+AC -880 -880 -880 -774
+Wealth 2000
+Act    npc dont_wander no_tame stay_area undead warrior~
+AffBy  detect_invis detect_hidden detect_good sanctuary infrared flying pass_door haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    bash berserk disarm dodge dirt_kick parry tail trip~
+Imm    summon charm fire poison disease scry hunger thirst~
+Res    illusion~
+Vuln   cold holy mental~
+Form   poison magical sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#62310
+Name menacing imp~
+ShortD a menacing imp~
+LongD A short menacing male imp stares at you icily.~
+Desc A short menacing male imp stares at you icily. His skin is a burnt red and 
+smolders as he moves about. He's dragging about a sword, and he can't quite 
+seem to keep it up. 
+~
+Race cambion~
+Align 0 -3
+Level 100
+Hitroll 10
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType bite
+AC -700 -700 -700 -567
+Wealth 960
+Act    npc no_tame stay_area~
+AffBy  sneak pass_door dark_vision~
+Off    dodge parry trip~
+Imm    summon charm fire poison~
+Vuln   lightning holy~
+Form   poison sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#62311
+Name guardian temple maze golem~
+ShortD a temple guardian~
+LongD A large temple guardian wanders the halls of the maze.~
+Desc A large temple guardian wanders these halls. This large golem wanders about 
+aimlessly trying to prevent someone from finding the Sacred Chamber. He is 
+quite large and well made. I don't think it would be a good idea to stand in 
+his way too long. 
+~
+Race Golem~
+Align 0 3
+Level 95
+Hitroll 20
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType crush
+AC -650 -650 -650 -565
+Wealth 1000
+Act    npc no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs sneak pass_door haste dark_vision regeneration~
+AffBy2 vicegrip~
+Off    bash~
+Imm    summon charm poison holy disease drowning sleep hunger thirst~
+Res    bash~
+Vuln   acid~
+Form   magical sentient construct~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material stone
+END
+
+#62320
+Name unseen stripper~
+ShortD unseen_token_stripper~
+LongD (unseen_token_stripper)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 62302 100~
+END
+
+#62321
+Name mihazael angel guardian~
+ShortD `#`xMihazael, the guardian`^~
+LongD Mihazael, the guardian of Seandac, stands here proudly.~
+Desc Mihazael stands here proudly before you. His hair is a silky blonde, and his 
+eyes when open are a soft blue. His robe is pure white. He spent years 
+serving under Seandac in his army. He slayed many, but now has retired to 
+protect Seandac himself. 
+~
+Race angel~
+Align 0 3
+XPMod 110
+Level 110
+Hitroll 25
+HitDice 11d14+505
+ManaDice 11d14+692
+DamDice 11d13+59
+DamType wrath
+AC -750 -750 -750 -622
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric noautosocial~
+Act2   no_random_obj~
+AffBy  detect_evil detect_invis detect_hidden sanctuary infrared flying haste regeneration~
+AffBy2 detect_vanish vicegrip~
+Off    berserk dodge fast kick dirt_kick parry rescue trip~
+Imm    summon charm lightning holy disease light scry hunger thirst~
+Res    magic weapon illusion~
+Vuln   negative~
+Form   magical sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#62322
+Name priest cleric kreav~
+ShortD a priest of `#`YKreav`^~
+LongD A priest of Kreav is here, with a stern yet sympathetic look on his face.~
+Desc A stout young man, he wears a yellow and black robe. 
+~
+Race human~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -574
+Wealth 0
+Act    npc dont_wander cleric healer~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#62300
+Name shimmering blue portal~
+Short a shimmering blue portal~
+Desc A shimmering blue portal is here tempting you to enter.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 M A 62400 0
+Weight 0
+Material unknown~
+Extra    glow nodegrade nogetall~
+Extra2   nodecay~
+End
+
+#62301
+Name angelic finger sheathe~
+Short an `#`CA`Xn`Cg`Xe`Cl`Xi`Cc`^ finger sheathe~
+Desc An `#`CA`Xn`Cg`Xe`Cl`Xi`Cc`^ finger sheathe lays here.~
+Level 80
+ItemType armor~
+Cost 1342
+Durability 5
+Asize 0
+Rsize 50
+Values 9 8 9 7 0
+Weight 1
+Material unknown~
+Extra    glow bless antievil inventory nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take finger no_sac~
+ClassAllowances mage cleric thief warrior druid paladin ranger barbarian spellfilcher bard monk~
+AttuneFlags attunable easy~
+Affect modifier -1 80 -1 damroll 2 0
+Affect modifier -1 80 -1 hitroll 2 0
+Affect modifier -1 80 -1 mana 100 0
+Affect modifier -1 80 -1 hp 10 0
+ExtraDesc angelic finger sheathe~
+An angelic finger sheathe lays here. As you look at it longer you notice 
+that a soft blue aura glows from it. It covers the entire length of your 
+finger with hinges at each of the joints of your finger. It's made of a 
+pearlescent material similar to that of ebony. 
+~
+End
+
+#62302
+Name fist heavens mace~
+Short `#`sF`xi`ss`xt of the `CH`ce`sa`xv`se`cn`Cs`^~
+Desc A large almost fist like mace lays here.~
+Level 90
+ItemType weapon~
+Cost 6000
+Durability 5
+Asize 0
+Rsize 50
+Values mace 13 6 shbite GL
+Weight 5
+Material ivory~
+Extra    invis bless inventory nonmetal nolocate burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield no_sac~
+Affect modifier -1 90 -1 damroll 4 0
+Affect modifier -1 90 -1 hitroll 4 0
+Affect modifier -1 90 -1 strength 2 0
+ExtraDesc fist heavens mace~
+A large fist like mace lays here. It glows with a soft blue aura, almost 
+straight from the heavens. It's made from a substance that has never been 
+seen in this realm. 
+~
+End
+
+#62303
+Name shimmering red portal~
+Short a shimmering red portal~
+Desc A shimmering `#`Rr`re`Rd`^ portal is here enticing you to enter.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 999 0 0 62407 0
+Weight 0
+Material unknown~
+Extra    hum evil nonmetal nodegrade burnproof nogetall~
+Extra2   nodecay~
+Wear     no_sac~
+ExtraDesc shimmering red portal~
+A shimmering `#`Rr`re`Rd`^ portal is here enticing you to enter. As you peer deep 
+inside, you can almost see what looks like a burial chamber. 
+~
+End
+
+#62304
+Name massive two-handed sword~
+Short a massive two-handed sword~
+Desc A massive two-handed sword lays here.~
+Level 87
+ItemType weapon~
+Cost 590
+Durability 5
+Asize 0
+Rsize 50
+Values sword 9 8 chop F
+Weight 150
+Material steel~
+Extra    glow evil antigood inventory nodegrade burnproof~
+Extra2   nodecay nosecondary~
+Wear     take wield no_sac~
+ExtraDesc massive two-handed sword~
+A massive two-handed sword lays here. It's typically used by the damned. 
+Most aren't strong enough to wield it and use it properly. 
+~
+End
+
+#62305
+Name small dilapidated treasure chest~
+Short a small dilapidated treasure chest~
+Desc A small dilapidated treasure chest is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 ABC 0 5 0
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     no_sac~
+ExtraDesc small dilapidated treasure chest~
+A small dilapidated treasure chest is here. It looks like it hasn't been 
+opened in a very long time. Do you dare open it? 
+~
+End
+
+#62306
+Name small marble key~
+Short a small marble key~
+Desc A small marble key has fallen here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material marble~
+Extra    rotdeath nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take hold no_sac~
+ExtraDesc small marble key~
+A small marble key is here. It's old and dusty. Doesn't look like it's of 
+much importance. 
+~
+End
+
+#62307
+Name pile gold~
+Short a pile of `#`Ygold`^~
+Desc A good sized pile of gold is here.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1334 50 0 0 0
+Weight 10
+Material gold~
+Wear     take~
+End
+
+#62308
+Name shimmering red portal~
+Short a shimmering red portal~
+Desc A shimmering `#`Rr`re`Rd`^ portal is here enticing you to enter.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 999 0 0 62327 0
+Weight 0
+Material unknown~
+Extra    hum evil nonmetal nodegrade burnproof nogetall~
+Extra2   nodecay~
+Wear     no_sac~
+ExtraDesc shimmering red portal~
+A shimmering `#`Rr`re`Rd`^ portal is here enticing you to enter. As you peer deep 
+inside, you can almost see what looks like a burial chamber. 
+~
+End
+
+#62309
+Name heavenly dirk glimmer dagger~
+Short a `#`WH`ce`Ca`xve`Cn`cl`Wy D`ci`Cr`Wk`^~
+Desc A faint glimmer in the shape of a small dagger catches your eye.~
+Level 91
+ItemType weapon~
+Cost 4992
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 17 4 frbite BM
+Weight 45
+Material unknown~
+Extra    invis bless antievil nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield no_sac~
+Affect modifier -1 91 -1 hitroll 2 0
+Affect modifier -1 91 -1 damroll 2 0
+ExtraDesc heavenly dagger glimmer dirk~
+A faint glimmer in the shape of a small dagger catches your eye. As you 
+examine it closer you can see a heavenly aura glows from it. As you wrap 
+your hand around it, your hand turns wickedly cold. 
+~
+End
+
+#62310
+Name musty potion~
+Short a musty potion~
+Desc An old musty potion lays here, gathering dust.~
+Level 5
+ItemType potion~
+Cost 390
+Durability 5
+Asize 0
+Rsize 50
+Values 70 'snake essence' 'eyes of the nature' 'wind shield' ''
+Weight 5
+Material liquid~
+Wear     take hold no_sac~
+End
+
+#62311
+Name no name 62311~
+Short (no short description 62311)~
+Desc (no description 62311)~
+Level 5
+ItemType potion~
+Cost 460
+Durability 5
+Asize 0
+Rsize 50
+Values 0 '' '' '' ''
+Weight 5
+Material liquid~
+Wear     take hold no_sac~
+End
+
+#62312
+Name silver dragonscale bracer~
+Short a `#`Ws`xilver `Wd`xragonscale `Wb`xracer`^~
+Desc A silver dragonscale bracer lays here, glimmering a brilliant silver.~
+Level 82
+ItemType armor~
+Cost 4050
+Durability 5
+Asize 0
+Rsize 50
+Values 13 13 13 10 0
+Weight 50
+Material unknown~
+Extra    antievil inventory nonmetal nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take wrist no_sac~
+Affect modifier -1 82 -1 hitroll 8 0
+Affect modifier -1 82 -1 damroll 8 0
+End
+
+#62313
+Name golden bracer~
+Short a `#`Yg`yo`Yl`yd`Ye`yn `Yb`yrace`Yr`^~
+Desc A shining golden bracer lays here.~
+Level 82
+ItemType armor~
+Cost 700
+Durability 5
+Asize 0
+Rsize 50
+Values 11 10 11 7 0
+Weight 50
+Material unknown~
+Extra    antievil inventory nonmetal nolocate nodegrade burnproof~
+Extra2   nochaoslace nosell~
+Wear     take wrist no_sac~
+Affect modifier -1 82 -1 intuition 3 0
+Affect modifier -1 82 -1 reasoning 4 0
+Affect modifier -1 82 -1 saves -5 0
+Affect modifier -1 82 -1 mana 100 0
+ExtraDesc shining golden bracer~
+A bright golden bracer is here. It glows with a holy aura. It radiates with a strong feeling of strength and power.
+~
+End
+
+#62314
+Name no name 62314~
+Short (no short description 62314)~
+Desc (no description 62314)~
+Level 89
+ItemType armor~
+Cost 650
+Durability 5
+Asize 300
+Rsize 50
+Values 20 19 20 15 0
+Weight 300
+Material unknown~
+Extra    bless antievil inventory nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take torso no_sac~
+Affect modifier -1 89 -1 hitroll 4 0
+Affect modifier -1 89 -1 ac -10 0
+Affect modifier -1 89 -1 constitution 3 0
+Affect modifier -1 89 -1 damroll 3 0
+End
+
+#62315
+Name shadow crystal stud earring~
+Short a `#`Ss`xh`Wad`xo`Sw crystal `Ws`Xt`Wu`Xd`^~
+Desc A shadow crystal stud lays here.~
+Level 80
+ItemType jewelry~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material crystal~
+Extra    magic nonmetal nolocate burnproof norestring~
+Extra2   nodecay~
+Wear     take ear~
+Affect objectspell 'augment hearing' 80 -1 none 0 0
+Affect modifier -1 80 -1 damroll 4 0
+Affect modifier -1 80 -1 hitroll 2 0
+End
+
+#62316
+Name no name 62316~
+Short (no short description 62316)~
+Desc (no description 62316)~
+Level 81
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    magic nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take no_sac float~
+End
+
+#62317
+Name part1 token_temple~
+Short token_temple_part1~
+Desc (no description 62317)~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath~
+End
+
+#62318
+Name part2 token_temple~
+Short token_temple_part2~
+Desc (no description 62318)~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath~
+End
+
+#62319
+Name part3 token_temple~
+Short token_temple_part3~
+Desc (no description 62319)~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath~
+End
+
+#62320
+Name part4 token_temple~
+Short token_temple_part4~
+Desc (no description 62320)~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath~
+End
+
+#62321
+Name piece1 half gold setting right~
+Short half of a `#`Yg`yo`Yl`yd `Wset`yti`Yng`^~
+Desc The right-half of a gold setting used for surrounding a jewel of some sort.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 62322 62321 62325 0 0
+Weight 0
+Material unknown~
+Extra    inventory nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take no_sac~
+End
+
+#62322
+Name piece2 half gold setting left~
+Short half of a `#`Yg`yo`Yl`yd `Yse`ytt`Wing`^~
+Desc The left-half of a gold setting that is used for surrounding a jewel of some sort.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 62321 62321 62325 0 0
+Weight 0
+Material unknown~
+Extra    inventory nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take no_sac~
+End
+
+#62323
+Name piece3 half tanzanite stone right~
+Short half of a `#`Mtan`mza`bni`Bte`^ stone~
+Desc The shine of this stone half catches your eye. It's blue colour which shimmers in a slightly purplish hue is magnificient indeed.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 62324 62323 62326 0 0
+Weight 0
+Material unknown~
+Extra    inventory nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take no_sac~
+End
+
+#62324
+Name piece4 tanzanite left half stone~
+Short half of a `#`Bta`bnz`man`Mite`^ stone~
+Desc The shine of this stone half catches your eye. It's blue colour which shimmers in a slightly purplish hue is magnificient indeed.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 62323 62323 62326 0 0
+Weight 0
+Material unknown~
+Extra    inventory nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take no_sac~
+End
+
+#62325
+Name half1 gold setting shines~
+Short a `#`Yg`yo`Yl`yd `Ys`ye`Wtti`yn`Yg`^~
+Desc This gold setting is ready to have a jewel combined with it.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 62326 62325 62327 0 0
+Weight 0
+Material unknown~
+Extra    inventory rotdeath nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take no_sac~
+End
+
+#62326
+Name half2 tanzanite stone whole~
+Short a `#`Bt`ba`mn`Mzan`mi`bt`Be`^ stone~
+Desc The shine of this stone catches your eye. It's blue colour which shimmers in a slightly purplish hue is magnificient indeed.~
+Level 0
+ItemType piece~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 62325 62325 62327 0 0
+Weight 0
+Material unknown~
+Extra    inventory nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take no_sac~
+End
+
+#62327
+Name tanzanite jewel gold setting~
+Short a `#`Bt`ba`mn`Mzan`mi`bt`Be `Yj`ye`Ww`ye`Yl`^~
+Desc A blue jewel with a purplish hue catches your eye.~
+Level 85
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material tanzanite~
+Extra    glow magic bless nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take hold no_sac~
+Affect modifier -1 85 -1 hp 4 0
+Affect modifier -1 85 -1 mana 60 0
+Affect modifier -1 85 -1 saves -6 0
+ExtraDesc tanzanite jewel gold setting~
+This jewel is very rare indeed. The blue colour of this jewel shines with a 
+purplish hue. The energy radiates from it. The combination of this jewel and 
+it's setting is quite awe inspiring. 
+~
+End
+
+#62328
+Name altar seandac~
+Short an altar of seandac~
+Desc An `#`Saltar`^ of `#`CS`ce`xa`Wn`xd`ca`Cc`^.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 QR 100 100
+Weight 0
+Material unknown~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#62329
+Name column niche~
+Short a tall column~
+Desc ~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 0 0 1 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc column niche~
+A small niche has been formed by a crack in one of the columns. 
+~
+End
+
+#62330
+Name a tanzanite pendant~
+Short a `#`Bt`ba`mn`Mzan`mi`bt`Be `Yp`ye`Wn`xd`Wa`yn`Yt`^~
+Desc A pendant made from a blue stone lays here.~
+Level 91
+ItemType jewelry~
+Cost 700
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material tanzanite~
+Extra    glow magic nonmetal nolocate meltdrop burnproof norestring~
+Extra2   nodecay~
+Wear     take neck no_sac~
+Affect resist -1 91 -1 none 0 iron
+Affect resist -1 91 -1 none 0 wood
+Affect modifier -1 91 -1 mana 100 0
+ExtraDesc tanzanite pendant stone blue necklace~
+A pendant made from a blue stone lays here. The stone is a deep blue colour 
+with a purplish hue. The stone is set in a gold setting and hung from a 
+solid gold chain. A small symbol is engraved on the front of the gem. It 
+appears to be a broken sword. 
+~
+End
+
+#62331
+Name demon hide fullplate plate~
+Short a set of `#`Rd`re`Sm`xo`Sn`xh`Si`rd`Re`^ fullplate~
+Desc This hide of a demon has been worked into a set of fullplate.~
+Level 91
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30 30 30 23 0
+Weight 300
+Material demon hide~
+Extra    glow magic antigood noremove nonmetal nolocate meltdrop nodegrade burnproof nouncurse chaos norestring~
+Extra2   nodecay nosell~
+Wear     take torso no_sac~
+AttuneFlags attunable hard~
+Affect modifier -1 91 -1 hp -4 0
+Affect modifier -1 91 -1 saves -6 0
+Affect modifier -1 91 -1 damroll 8 0
+Affect modifier -1 91 -1 hitroll 8 0
+ExtraDesc demon hide fullplate plate~
+This demonhide has been worked into an insanely strong set of fullplate 
+armor. The instant you wear this armor it links with your very soul. 
+~
+End
+
+#62332
+Name brilliant mithril armor~
+Short brilliant mithril armor~
+Desc (no description 62332)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#62333
+Name brilliant breastplate sunlight~
+Short a brilliant `#`Xb`Sre`Was`Xtp`Wla`St`Xe`^ of `#`ys`Yu`yn`Yl`yi`Wg`yh`Yt`^~
+Desc A brilliant breastplate of sunlight gleams here.~
+Level 91
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30 30 30 23 0
+Weight 0
+Material unknown~
+Extra    magic bless antievil nonmetal nolocate meltdrop burnproof~
+Extra2   nodecay~
+Wear     take torso no_sac~
+Affect modifier -1 91 -1 selfdiscipline 3 0
+Affect modifier -1 91 -1 ac -15 0
+Affect modifier -1 91 -1 hitroll 2 0
+Affect modifier -1 91 -1 damroll 2 0
+End
+
+#62334
+Name key flaming cobra~
+Short a cobra entwining a flaming key~
+Desc A small key lays here burning, it seems a small cobra has wrapped around it.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate meltdrop nodegrade burnproof norestring~
+Wear     take hold no_sac~
+End
+
+#62335
+Name dagger twisted demon horn flame silver~
+Short a `#`st`ww`Wist`we`sd `Rd`remon `Rh`rorn`^~
+Desc A twisted demon horn immolated in silvery flames lays here.~
+Level 91
+ItemType weapon~
+Cost 4992
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 14 5 wrath HI
+Weight 45
+Material unknown~
+Extra    dark evil invis magic antigood nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield no_sac~
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+End
+
+#62336
+Name dagger twisted demon horn flame silver~
+Short a `#`st`ww`Wist`we`sd `Rd`remon `Rh`rorn`^~
+Desc A twisted demon horn immolated in silvery flames lays here.~
+Level 91
+ItemType weapon~
+Cost 4992
+Durability 1
+Asize 0
+Rsize 50
+Values dagger 14 5 wrath HI
+Weight 45
+Material unknown~
+Extra    dark evil invis magic antigood nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+Wear     take wield no_sac~
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#62300
+Name Before the Temple~
+Desc As you look up you see the temple towering before you. Ivy and other vines 
+grow all around it and through every crack and crevace. The air around you 
+is hot and humid taking your breath away. You can see a light shining from 
+the top of the temple. Two large statues stand on opposite sides of the 
+entrance way. Their eyes seem to follow you as you walk into the temple. 
+~
+Sector field~
+Exit north 62301
+EFlags door closed~
+Exit south 53581
+End
+
+
+#62301
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62349
+Exit south 62300
+EFlags door closed~
+Exit west 62302
+End
+
+
+#62302
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62301
+Exit west 62303
+End
+
+
+#62303
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62306
+Exit east 62302
+Exit west 62304
+EFlags door closed~
+End
+
+
+#62304
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62303
+EFlags door closed~
+Exit west 62305
+End
+
+
+#62305
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62304
+End
+
+
+#62306
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62303
+Exit west 62307
+End
+
+
+#62307
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62308
+Exit east 62306
+End
+
+
+#62308
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62307
+Exit west 62310
+End
+
+
+#62309
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62310
+End
+
+
+#62310
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62311
+Exit east 62308
+Exit south 62309
+End
+
+
+#62311
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62312
+Exit south 62310
+End
+
+
+#62312
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62313
+Exit south 62311
+End
+
+
+#62313
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62314
+EFlags door closed~
+Exit east 62315
+Exit south 62312
+End
+
+
+#62314
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62321
+Exit south 62313
+EFlags door closed~
+End
+
+
+#62315
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62316
+Exit west 62313
+End
+
+
+#62316
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62317
+Exit west 62315
+End
+
+
+#62317
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62318
+Exit south 62316
+End
+
+
+#62318
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62317
+Exit west 62319
+End
+
+
+#62319
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62318
+Exit west 62320
+End
+
+
+#62320
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62322
+Exit east 62319
+End
+
+
+#62321
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 62314
+End
+
+
+#62322
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62323
+Exit south 62320
+End
+
+
+#62323
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62324
+Exit west 62322
+End
+
+
+#62324
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62328
+Exit west 62323
+End
+
+
+#62325
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62329
+Exit west 62326
+End
+
+
+#62326
+Name Corridor in the Temple~
+Desc As you walk into this room, you can notice that the ivy and other vegetation 
+that had dominated the walls is now starting to receed. The room has a 
+slight reddish glow about it. You shiver slightly as you continue forward. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62325
+Exit west 62327
+End
+
+
+#62327
+Name Before the Catacombs~
+Desc As you enter the room all you can see is a massive red portal that dominates 
+the room. The walls are cleaner than the rest of the temple. The energy from 
+the portal prevents any living material from surviving for an extended 
+period of time. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 62326
+End
+
+
+#62328
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62329
+EFlags door closed~
+Exit south 62330
+Exit west 62324
+End
+
+
+#62329
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62328
+EFlags door closed~
+Exit west 62325
+End
+
+
+#62330
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62328
+Exit east 62331
+End
+
+
+#62331
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62348
+Exit south 62332
+Exit west 62330
+End
+
+
+#62332
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62331
+Exit west 62333
+End
+
+
+#62333
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62332
+Exit south 62334
+End
+
+
+#62334
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62333
+Exit south 62335
+End
+
+
+#62335
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62334
+Exit west 62336
+End
+
+
+#62336
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62335
+Exit south 62337
+End
+
+
+#62337
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62336
+Exit east 62343
+EFlags door closed~
+Exit south 62340
+Exit west 62338
+End
+
+
+#62338
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62339
+Exit east 62337
+End
+
+
+#62339
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62338
+End
+
+
+#62340
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62337
+Exit east 62341
+End
+
+
+#62341
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62342
+Exit west 62340
+End
+
+
+#62342
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62341
+End
+
+
+#62343
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62344
+EFlags door~
+Exit west 62337
+EFlags door closed~
+End
+
+
+#62344
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62346
+Exit south 62345
+Exit west 62343
+EFlags door~
+End
+
+
+#62345
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62344
+End
+
+
+#62346
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62347
+Exit south 62344
+End
+
+
+#62347
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62346
+End
+
+
+#62348
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62331
+End
+
+
+#62349
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62350
+Exit south 62301
+End
+
+
+#62350
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62351
+Exit west 62349
+End
+
+
+#62351
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62350
+Exit east 62352
+End
+
+
+#62352
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62353
+Exit west 62351
+End
+
+
+#62353
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62354
+Exit south 62352
+End
+
+
+#62354
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62355
+Exit south 62353
+End
+
+
+#62355
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62356
+Exit west 62354
+End
+
+
+#62356
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62355
+Exit east 62357
+End
+
+
+#62357
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62358
+Exit west 62356
+End
+
+
+#62358
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62362
+Exit south 62359
+Exit west 62357
+End
+
+
+#62359
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62358
+Exit west 62360
+EFlags door closed~
+End
+
+
+#62360
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62359
+EFlags door closed~
+Exit west 62361
+End
+
+
+#62361
+Name A Hidden Corridor~
+Desc This corridor hasn't been entered in ages. The walls are mold and mildew 
+covered. You can see skeletons of former treasure hunters that didn't quite 
+make it out alive. Perhaps you should turn back while you still can. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62360
+End
+
+
+#62362
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62363
+Exit south 62358
+End
+
+
+#62363
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62362
+Exit west 62364
+End
+
+
+#62364
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62363
+Exit south 62365
+Exit west 62366
+End
+
+
+#62365
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62364
+End
+
+
+#62366
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62367
+Exit east 62364
+End
+
+
+#62367
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62366
+Exit west 62368
+End
+
+
+#62368
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62372
+Exit east 62367
+Exit west 62369
+End
+
+
+#62369
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62368
+Exit south 62370
+End
+
+
+#62370
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62369
+Exit south 62371
+End
+
+
+#62371
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62370
+End
+
+
+#62372
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62373
+Exit south 62368
+End
+
+
+#62373
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62374
+Exit west 62372
+End
+
+
+#62374
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62375
+Exit west 62373
+End
+
+
+#62375
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62374
+Exit east 62376
+End
+
+
+#62376
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62377
+Exit west 62375
+End
+
+
+#62377
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62378
+Exit south 62376
+End
+
+
+#62378
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62377
+Exit west 62379
+End
+
+
+#62379
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62380
+Exit east 62378
+End
+
+
+#62380
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62381
+Exit south 62379
+End
+
+
+#62381
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62382
+Exit south 62380
+End
+
+
+#62382
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62383
+Exit south 62381
+Exit west 62386
+End
+
+
+#62383
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62384
+Exit west 62382
+End
+
+
+#62384
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62383
+Exit south 62385
+End
+
+
+#62385
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62384
+End
+
+
+#62386
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62382
+Exit south 62387
+End
+
+
+#62387
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62386
+Exit west 62388
+End
+
+
+#62388
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62387
+Exit west 62389
+End
+
+
+#62389
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62390
+Exit east 62388
+Exit south 62393
+End
+
+
+#62390
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62391
+Exit south 62389
+Exit west 62392
+End
+
+
+#62391
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 62390
+End
+
+
+#62392
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62390
+End
+
+
+#62393
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62389
+Exit east 62394
+End
+
+
+#62394
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62395
+Exit west 62393
+End
+
+
+#62395
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62394
+Exit east 62396
+Exit west 62398
+End
+
+
+#62396
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62397
+Exit west 62395
+End
+
+
+#62397
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62396
+End
+
+
+#62398
+Name Corridor in the temple~
+Desc As you walk along this corridor you can see the walls have been consumed by 
+ivy and other vines. Water drips from the ceiling. When it hits you can hear 
+it echo down the corridor. Rats and other various creatures scurry across 
+the floor. You can't tell if that is a wall or a hidden door. Best keep your 
+eyes open or you might miss something. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62395
+Exit south 62399
+EFlags door closed locked pickproof nopass~
+EKeyvnum 62306
+End
+
+
+#62399
+Name Corridor in the temple~
+Desc As you enter the room you are overcome by a feeling of calm and bliss. The 
+main focus of the room is the large blue portal in the center of the room. 
+The portal glows with a holy aura. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 62398
+EFlags door closed locked pickproof nopass~
+EKeyvnum 62306
+End
+
+
+#62400
+Name Central Hallway~
+Desc All around you is a large marble hall. This is the center of the temple. All 
+of the energy eminates from this room. The walls are pure white and silver 
+marble. Four large columns extend at the corners of the room. Above the 
+hallways that extend all around you are intricate holy runes. A powerful 
+glow eminates from each hallway. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit north 62401
+Exit east 62403
+Exit south 62402
+Exit west 62404
+Exit up 62463
+EFlags door closed~
+End
+
+
+#62401
+Name A Marble Hallway~
+Desc As you walk down this marble hall made of white and silver marble, columns 
+extend from the floor all the way up to the ceiling. Intricate holy runes 
+mark random places on the marble. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit north 62461
+Exit south 62400
+End
+
+
+#62402
+Name A Marble Hallway~
+Desc As you walk down this marble hall made of white and silver marble, columns 
+extend from the floor all the way up to the ceiling. Intricate holy runes 
+mark random places on the marble. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit north 62400
+Exit south 62462
+End
+
+
+#62403
+Name A Marble Hallway~
+Desc As you walk down this marble hall made of white and silver marble, columns 
+extend from the floor all the way up to the ceiling. Intricate holy runes 
+mark random places on the marble. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit east 62406
+Exit west 62400
+End
+
+
+#62404
+Name A Marble Hallway~
+Desc As you walk down this marble hall made of white and silver marble, columns 
+extend from the floor all the way up to the ceiling. Intricate holy runes 
+mark random places on the marble. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit east 62400
+Exit west 62405
+End
+
+
+#62405
+Name The End of the Hallway~
+Desc You reach the end of this particular hallway. The marble walls come to an 
+abrupt stop in front of you with one large rune. The rune glows as you walk 
+toward it. Two large columns extend up to the ceiling on opposing sides of 
+the large, glowing rune. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit east 62404
+End
+
+
+#62406
+Name The End of the Hallway~
+Desc You reach the end of this particular hallway. The marble walls come to an 
+abrupt stop in front of you with one large rune. The rune glows as you walk 
+toward it. Two large columns extend up to the ceiling on opposing sides of 
+the large, glowing rune. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit west 62403
+End
+
+
+#62407
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62408
+Exit east 62410
+Exit south 62409
+Exit west 62416
+Exit down 62460
+EFlags door closed locked nopass~
+EKeyvnum 62334
+End
+
+
+#62408
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62414
+Exit south 62407
+End
+
+
+#62409
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62407
+Exit south 62415
+End
+
+
+#62410
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62440
+EFlags door closed~
+Exit east 62411
+Exit west 62407
+End
+
+
+#62411
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62441
+EFlags door closed~
+Exit east 62412
+Exit west 62410
+End
+
+
+#62412
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62442
+EFlags door closed~
+Exit east 62413
+Exit west 62411
+End
+
+
+#62413
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62443
+EFlags door closed~
+Exit west 62412
+End
+
+
+#62414
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 62432
+Exit south 62408
+Exit west 62428
+End
+
+
+#62415
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62409
+Exit east 62424
+Exit west 62420
+End
+
+
+#62416
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62436
+EFlags door closed~
+Exit east 62407
+Exit west 62417
+End
+
+
+#62417
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62437
+EFlags door closed~
+Exit east 62416
+Exit west 62418
+End
+
+
+#62418
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62438
+EFlags door closed~
+Exit east 62417
+Exit west 62419
+End
+
+
+#62419
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62439
+EFlags door closed~
+Exit east 62418
+End
+
+
+#62420
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62444
+EFlags door closed~
+Exit east 62415
+Exit west 62421
+End
+
+
+#62421
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62445
+EFlags door closed~
+Exit east 62420
+Exit west 62422
+End
+
+
+#62422
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62446
+EFlags door closed~
+Exit east 62421
+Exit west 62423
+End
+
+
+#62423
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62447
+EFlags door closed~
+Exit east 62422
+End
+
+
+#62424
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62448
+EFlags door closed~
+Exit east 62425
+Exit west 62415
+End
+
+
+#62425
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62449
+EFlags door closed~
+Exit east 62426
+Exit west 62424
+End
+
+
+#62426
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62450
+EFlags door closed~
+Exit east 62427
+Exit west 62425
+End
+
+
+#62427
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62451
+EFlags door closed~
+Exit west 62426
+End
+
+
+#62428
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62452
+EFlags door closed~
+Exit east 62414
+Exit west 62429
+End
+
+
+#62429
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62453
+EFlags door closed~
+Exit east 62428
+Exit west 62430
+End
+
+
+#62430
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62454
+EFlags door closed~
+Exit east 62429
+Exit west 62431
+End
+
+
+#62431
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62455
+EFlags door closed~
+Exit east 62430
+End
+
+
+#62432
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62456
+EFlags door closed~
+Exit east 62433
+Exit west 62414
+End
+
+
+#62433
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62457
+EFlags door closed~
+Exit east 62434
+Exit west 62432
+End
+
+
+#62434
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62458
+EFlags door closed~
+Exit east 62435
+Exit west 62433
+End
+
+
+#62435
+Name In the Catacombs~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+Age old skeletons hang from the walls and litter the floor. Various arcaic 
+designs have been etched into the brick in the walls. You can see a small 
+stream of water running down towards the center of the catacombs. A torch 
+barely hangs from the wall. The torch gives a soft glow about the room. It's 
+very dark, and you wonder the when the last time you saw the light of day 
+was. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 62459
+EFlags door closed~
+Exit west 62434
+End
+
+
+#62436
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62416
+EFlags door closed~
+End
+
+
+#62437
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62417
+EFlags door closed~
+End
+
+
+#62438
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62418
+EFlags door closed~
+End
+
+
+#62439
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62419
+EFlags door closed~
+End
+
+
+#62440
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62410
+EFlags door closed~
+End
+
+
+#62441
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62411
+EFlags door closed~
+End
+
+
+#62442
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62412
+EFlags door closed~
+End
+
+
+#62443
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62413
+EFlags door closed~
+End
+
+
+#62444
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62420
+EFlags door closed~
+End
+
+
+#62445
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62421
+EFlags door closed~
+End
+
+
+#62446
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62422
+EFlags door closed~
+End
+
+
+#62447
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62423
+EFlags door closed~
+End
+
+
+#62448
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62424
+EFlags door closed~
+End
+
+
+#62449
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62425
+EFlags door closed~
+End
+
+
+#62450
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62426
+EFlags door closed~
+End
+
+
+#62451
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62427
+EFlags door closed~
+End
+
+
+#62452
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62428
+EFlags door closed~
+End
+
+
+#62453
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62429
+EFlags door closed~
+End
+
+
+#62454
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62430
+EFlags door closed~
+End
+
+
+#62455
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62431
+EFlags door closed~
+End
+
+
+#62456
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62432
+EFlags door closed~
+End
+
+
+#62457
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62433
+EFlags door closed~
+End
+
+
+#62458
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62434
+EFlags door closed~
+End
+
+
+#62459
+Name Inside a Tomb~
+Desc The walls drip with water that has accumulated from the moisture in the air. 
+A single large sarcophagus sits in the center of the room. Various items lay 
+scattered across the floor. The items belonged to the body that lies in the 
+sarcophagus. A few random spiderwebs hang from the walls. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 62435
+EFlags door closed~
+End
+
+
+#62460
+Name A large prison cell~
+Desc You enter into a room that is quite large. As you look around all you can 
+see is stone walls with water dripping down them. There are some scattered 
+human bones laying about the room. You notice bars over the entrance to the 
+room above you. Perhaps this is a prison cell for something big. Might wanna 
+be careful of what is being kept down here by those imps. 
+~
+RoomFlags light~
+Sector inside~
+Exit up 62407
+EFlags door closed locked nopass~
+EKeyvnum 62334
+End
+
+
+#62461
+Name The End of the Hallway~
+Desc You reach the end of this particular hallway. The marble walls come to an 
+abrupt stop in front of you with one large rune. The rune glows as you walk 
+toward it. Two large columns extend up to the ceiling on opposing sides of 
+the large, glowing rune. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit south 62401
+End
+
+
+#62462
+Name The End of the Hallway~
+Desc You reach the end of this particular hallway. The marble walls come to an 
+abrupt stop in front of you with one large rune. The rune glows as you walk 
+toward it. Two large columns extend up to the ceiling on opposing sides of 
+the large, glowing rune. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit north 62402
+End
+
+
+#62463
+Name The Main Antechamber~
+Desc This room leads the the four main rooms on this floor and the peak of the 
+temple is above you. The walls are no longer made from white and silver 
+marble, but now are made from pure white marble. From this room you can see 
+a holy aura glow from all around you. Four main columns extend upwards, and 
+above each entrance is a large glowing rune. Above you is an chamber 
+dedicated to Seandac. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+ExtraDesc north ice~
+Above the entrance to the northern room is a large rune. The rune is an age 
+old arcaic symbol for ice. 
+~
+ExtraDesc south fire~
+Above the entrance to the southern room is a large rune. The rune is an age 
+old arcaic symbol for fire. 
+~
+ExtraDesc west lightning~
+Above the entrance to the western room is a large rune. The rune is an age 
+old arcaic symbol for lightning. 
+~
+ExtraDesc east acid~
+Above the entracne to the eastern room is a large rune. The rune is an age old arcaic symbol for acid.
+~
+ExtraDesc column niche~
+As you look around you notice the incredible craftmanship of the columns. 
+One of them has a small indent in the shape of a jewel. 
+~
+Exit north 62466
+Exit east 62464
+Exit south 62467
+Exit west 62465
+Exit up 62468
+Exit down 62400
+EFlags door closed~
+End
+
+
+#62464
+Name Chamber of Acid~
+Desc As you look around this room you see beautiful marble walls. Upon closer 
+inspection you notice that the walls are pitted and etched from a strong 
+acid. In the center of the room is a proud protector of the sacred chamber. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit west 62463
+End
+
+
+#62465
+Name Chamber of Lightning~
+Desc As you look around you can see that the walls are made from a beautiful 
+marble. As you look across the floor you notice some iron embedded into the 
+floor. In the center of the room is a proud protector of the sacred chamber. 
+
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit east 62463
+End
+
+
+#62466
+Name Chamber of Ice~
+Desc As you enter into this room you are overcome by a sharp chill. The walls are 
+covered in ice. The ice flows smoothly down the walls and across the floor. 
+In the center of the room stands a proud protector of the sacred chamber. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit south 62463
+End
+
+
+#62467
+Name Chamber of Fire~
+Desc As you enter into the room you can see that the walls are made of a 
+beautiful marble. Upon closer inspection you can see that the marble has 
+been severly scorched. In the center of the room stands a proud protector of 
+the sacred chamber. 
+~
+RoomFlags indoors no_recall noscry light~
+Sector inside~
+Exit north 62463
+End
+
+
+#62468
+Name The Chamber of Silence~
+Desc You climb up into the peak of the temple. The room is filled with a feeling 
+of serenity. Candles are lit following a red carpet that leads to an altar. 
+Candles float in two large basins on opposing sides of the altar. A large 
+white shield with two black swords across the front of it hang above the 
+altar. White curtains with black tassels hang from the marble walls. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+ExtraDesc shield tassels swords~
+A large white shield hangs here. Two large, black broadswords hang across 
+the front of it. The edge of the shield has an intricate gold inlay. 
+~
+Exit down 62463
+End
+
+
+#62469
+Name The Sacred Chamber~
+Desc You enter into a large room. The tip of this room comes to a point because 
+you are at the top of the temple. Four large windows allow you to see the 
+entire valley. Two large banners flow down the far wall. A large desk sits 
+between the two banners. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 62301
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 62300 spec_breath_frost
+M 62301 spec_thief
+M 62302 spec_cast_cleric
+M 62304 spec_gold_dragon
+M 62305 spec_breath_lightning
+M 62306 spec_breath_acid
+M 62307 spec_breath_frost
+M 62309 spec_cast_cleric
+M 62321 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 62306 1 62464 1
+E 0 62315 -1 rear~
+M 0 62305 1 62465 1
+E 0 62302 -1 wielded~
+M 0 62307 1 62466 1
+E 0 62301 -1 rfinger~
+M 0 62304 1 62467 1
+E 0 62333 -1 torso~
+O 0 62328 -1 62468
+M 0 62320 1 62468 1
+M 0 62321 1 62469 1
+E 0 62330 -1 neck1~
+E 0 62334 -1 hold~
+M 0 62311 30 62301 2
+M 0 62311 30 62307 2
+M 0 62311 30 62315 2
+M 0 62301 4 62321 1
+E 0 62309 -1 wielded~
+O 0 62305 -1 62321
+P 0 62307 1 62305 1
+M 0 62311 30 62323 2
+O 0 62303 -1 62327
+M 0 62311 30 62331 2
+M 0 62311 30 62337 2
+O 0 62305 -1 62342
+P 0 62310 1 62305 1
+M 0 62301 3 62342 1
+E 0 62335 -1 wielded~
+O 0 62305 -1 62347
+P 0 62306 1 62305 1
+P 0 62307 1 62305 1
+M 0 62301 4 62347 1
+E 0 62335 -1 wielded~
+M 0 62311 30 62355 2
+M 0 62311 30 62366 2
+M 0 62311 30 62382 2
+M 0 62311 30 62395 2
+O 0 62300 -1 62399
+M 0 62302 10 62405 2
+M 0 62302 10 62406 2
+O 0 62308 -1 62407
+M 0 62310 30 62411 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62414 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62415 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62415 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62418 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62422 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62425 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62430 3
+E 0 62304 -1 wielded~
+M 0 62310 30 62434 3
+E 0 62304 -1 wielded~
+M 0 62300 1 62455 1
+E 0 62312 -1 lwrist~
+M 0 62309 1 62460 1
+E 0 62331 -1 torso~
+M 0 62302 10 62461 2
+M 0 62302 10 62462 2
+M 0 62308 1 62463 1
+O 0 62329 -1 62463
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#62307
+title Magic key!~
+author Reath~
+code mob seeall
+mob silently get jewel column
+mob echo A flash of light dissolves the room into another.
+mob purge jewel
+mob gtransfer $n 62469
+~
+disabled false
+last_editor Reath~
+last_editdate 1116207397
+END
+
+#62306
+title Silver Piece~
+author Reath~
+code mob oload 62324
+~
+disabled false
+last_editor Reath~
+last_editdate 1116204264
+END
+
+#62305
+title Copper Piece~
+author Reath~
+code mob oload 62323
+~
+disabled false
+last_editor Reath~
+last_editdate 1116204356
+END
+
+#62304
+title Bronze Piece~
+author Reath~
+code mob oload 62322
+~
+disabled false
+last_editor Reath~
+last_editdate 1116204343
+END
+
+#62303
+title Gold Piece~
+author Reath~
+code mob oload 62321
+~
+disabled false
+last_editor Reath~
+last_editdate 1116204313
+END
+
+#62302
+title Stop people from keeping pieces~
+author Reath~
+code mob seeall
+mob remove $n 62321
+mob remove $n 62322
+mob remove $n 62323
+mob remove $n 62324
+mob remove $n 62325
+mob remove $n 62326
+~
+disabled false
+last_editor Reath~
+last_editdate 1116204806
+END
+
+#62301
+title backstab thief~
+author Delandria~
+code growl $n
+pbs $n
+circle
+circle
+~
+disabled false
+last_editor Delandria~
+last_editdate 1113700500
+END
+
+#0
+
+
+#$

@@ -1,0 +1,1190 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World: Smurf Village~
+ShortName   Smurf Village~
+Builders    ~
+Credits     generic~
+VNUMs       8500 8529
+LComment    `#`C[ 20- 50]`^
+LRange      20 50
+Security    9
+Colour      G~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   StupidWorld~
+*LastSaved  Sat Aug 20 19:14:33 2005~
+End
+
+
+
+#MOBILES
+#8501
+Name smurf~
+ShortD a smurf~
+LongD A smurf is singing and walking along.~
+Desc A cute little blue smurf with a white hat and white boots.  You have a sudden
+urge to crush him.
+~
+Race human~
+Align -1 25
+Level 20
+Hitroll 0
+HitDice 3d5+82
+ManaDice 2d5+30
+DamDice 2d7+5
+DamType punch
+AC -40 -40 -40 -36
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8502
+Name smurf~
+ShortD a smurf~
+LongD A smurf is here, picking berries.~
+Desc A small smurf is quietly picking berries.  He seems to hardly notice you.
+~
+Race human~
+Align -1 25
+Level 23
+Hitroll 0
+HitDice 4d5+95
+ManaDice 2d5+30
+DamDice 4d4+6
+DamType punch
+AC -55 -55 -55 -48
+Wealth 1
+Act    npc dont_wander wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8503
+Name oldstyle brainy smurf~
+ShortD brainy Smurf~
+LongD Brainy Smurf is here, mumbling something to himself.~
+Desc Brainy Smurf has on his usual glasses.  Brainy Smurf isn't liked much by the
+other smurfs.  They fear his knowledge.  Knowledge is power!
+~
+Race human~
+Align 3 25
+Level 30
+Hitroll 0
+HitDice 5d5+130
+ManaDice 3d5+60
+DamDice 2d12+8
+DamType slice
+AC -90 -90 -90 -77
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8504
+Name handy smurf~
+ShortD handy Smurf~
+LongD Handy Smurf is building something here.~
+Desc Handy is always building something.  He never takes a break.  Why don't you
+give him a break, like all of his bones.
+~
+Race human~
+Align 2 25
+Level 25
+Hitroll 0
+HitDice 4d5+105
+ManaDice 2d5+40
+DamDice 2d10+6
+DamType crush
+AC -65 -65 -65 -57
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8505
+Name sleepy smurf~
+ShortD sleepy Smurf~
+LongD Sleepy Smurf is sleep walking here.~
+Desc Sleepy never gets enough sleep.  You would think he goes to college.  I wonder
+if he has ever stayed up a whole night without sleeping.
+~
+Race human~
+Align -2 25
+Level 30
+Hitroll 0
+HitDice 5d5+130
+ManaDice 3d5+60
+DamDice 2d12+8
+DamType wrath
+AC -90 -90 -90 -77
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8506
+Name hefty smurf~
+ShortD hefty Smurf~
+LongD Hefty Smurf is lifting weights here.~
+Desc Hefty is a total health nut.  He lifts weights, eats right, and exercises all
+the time.  Won't do him much good when he's DEAD.
+~
+Race human~
+Align 0 25
+Level 36
+Hitroll 0
+HitDice 5d6+230
+ManaDice 3d5+85
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -118
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8507
+Name oldstyle grumpy smurf~
+ShortD grumpy Smurf~
+LongD Grumpy Smurf is here, swearing.~
+Desc Grumpy has never been happy in his whole life.  So why don't you just end it?
+~
+Race human~
+Align 2 25
+Level 35
+Hitroll 0
+HitDice 5d6+205
+ManaDice 3d5+70
+DamDice 4d7+10
+DamType beating
+AC -113 -113 -113 -97
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8508
+Name jokey smurf~
+ShortD jokey Smurf~
+LongD Jokey Smurf is here, holding a present.~
+Desc Jokey loves to give people presents.  Too bad the present explodes when opened.
+Oh well, to each his own.
+~
+Race human~
+Align -3 25
+Level 34
+Hitroll 0
+HitDice 5d6+195
+ManaDice 3d5+70
+DamDice 6d4+10
+DamType chill
+AC -110 -110 -110 -95
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8509
+Name smurfette~
+ShortD smurfette~
+LongD Smurfette is here, looking beautiful.~
+Desc Smurfette is the cutest little smurf you've ever seen.  If only she were your
+size.  I wonder how much she charges the other smurfs.
+~
+Race human~
+Align 0 25
+Level 36
+Hitroll 0
+HitDice 5d6+220
+ManaDice 3d5+80
+DamDice 3d10+12
+DamType drain
+AC -125 -125 -125 -110
+Wealth 1
+Act    npc stay_area wimpy thief~
+AffBy  detect_invis detect_hidden~
+Off    backstab disarm dodge dirt_kick trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#8510
+Name papa smurf~
+ShortD papa Smurf~
+LongD Papa Smurf is practicing magic here.~
+Desc Yep, its Papa Smurf all right.  Red hat and boots and the funny little white
+beard.  Papa Smurf treats his fellow smurfs with dignity and respect.  That
+is why Papa Smurf is so popular among the ladies.
+~
+Race human~
+Align 2 25
+Level 45
+Hitroll 0
+HitDice 5d7+247
+ManaDice 5d9+300
+DamDice 3d12+14
+DamType wrath
+AC -153 -153 -153 -123
+Wealth 2
+Act    npc stay_area wimpy mage~
+Off    disarm dodge dirt_kick parry assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8511
+Name gargamel~
+ShortD gargamel~
+LongD Gargamel is here, cursing out the smurfs.~
+Desc Gargamel has never done anything right in his life.  He has caught smurfs
+before but always lets them escape.  He brings true meaning to the word moron.
+~
+Race human~
+Align -1 -25
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 4d10+18
+DamType pound
+AC -200 -200 -200 -170
+Wealth 2
+Act    npc dont_wander wimpy cleric~
+Off    disarm kick parry assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8512
+Name azreal cat~
+ShortD azreal~
+LongD Azreal is here, licking himself.~
+Desc Gargamel's worthless cat.  He is just about as dumb as Gargamel.  He should
+just grab a smurf in his teeth and chew away.
+~
+Race human~
+Align -1 -25
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType claw
+AC -137 -137 -137 -109
+Wealth 1
+Act    npc dont_wander wimpy~
+Act2   no_random_obj~
+Off    disarm dodge trip assist_vnum~
+Imm    summon~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#8500
+Name bunch berries smurfberries~
+Short a `#`Bbunch`^ of `bs`Bm`bu`Br`bf`Bb`be`Br`br`Bi`be`Bs`^~
+Desc A bunch of delicious looking smurfberries lie here.~
+Level 25
+ItemType pill~
+Cost 1680
+Durability 5
+Asize 20
+Rsize 50
+Values 8 '' '' 'change sex' ''
+Weight 20
+Material berry~
+Wear     take~
+End
+
+#8501
+Name glasses~
+Short a pair of `#`Cglasses`^~
+Desc An odd pair of glasses has been left here.~
+Level 30
+ItemType clothing~
+Cost 653
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material oldstyle~
+Extra    glow~
+Wear     take eyes~
+Affect modifier -1 30 -1 quickness 3 0
+Affect modifier -1 30 -1 empathy 3 0
+Affect modifier -1 30 -1 constitution 3 0
+End
+
+#8502
+Name blue red hat~
+Short a blue and red hat~
+Desc A blue and red hat has been left here.~
+Level 30
+ItemType armor~
+Cost 510
+Durability 5
+Asize 20
+Rsize 50
+Values 8 6 7 5 0
+Weight 20
+Material oldstyle~
+Wear     take head~
+End
+
+#8503
+Name axe small~
+Short a small `#`sa`Bx`se`^~
+Desc A small axe has been dropped here.~
+Level 35
+ItemType weapon~
+Cost 1231
+Durability 5
+Asize 20
+Rsize 50
+Values axe 2 18 slash M
+Weight 20
+Material oldstyle~
+Wear     take wield~
+Affect modifier -1 35 -1 quickness 3 0
+Affect modifier -1 35 -1 strength 3 0
+Affect modifier -1 35 -1 hitroll 3 0
+End
+
+#8504
+Name necklace~
+Short a small `#`sn`Be`sc`Bk`sl`Ba`sc`Be`^~
+Desc A small necklace is lying on the ground.~
+Level 40
+ItemType armor~
+Cost 821
+Durability 5
+Asize 20
+Rsize 50
+Values 5 4 5 2 0
+Weight 20
+Material oldstyle~
+Extra    glow~
+Wear     take neck~
+Affect modifier -1 40 -1 presence 3 0
+Affect modifier -1 40 -1 constitution 2 0
+Affect modifier -1 40 -1 selfdiscipline 2 0
+Affect modifier -1 40 -1 memory 2 0
+Affect modifier -1 40 -1 saves -4 0
+End
+
+#8505
+Name pink potion~
+Short a `#`Mp`Ri`Mn`Rk `Mpotion`^~
+Desc A pink potion is barely visible on the ground.~
+Level 30
+ItemType potion~
+Cost 50
+Durability 5
+Asize 20
+Rsize 50
+Values 40 '' 'cure blindness' '' ''
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#8506
+Name wand~
+Short a small `#`sw`ya`sn`yd`^~
+Desc A small wand lies on the ground.~
+Level 35
+ItemType wand~
+Cost 540
+Durability 5
+Asize 20
+Rsize 50
+Values 40 1 1 'flame lance' 0
+Weight 20
+Material oldstyle~
+Extra    magic nodegrade burnproof~
+Wear     take hold~
+End
+
+#8507
+Name key~
+Short a tiny `#`skey`^~
+Desc A tiny key is lying on the ground.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values B 0 0 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#8508
+Name smurf well smurfy~
+Short a `#`Bsmurf `swell`^~
+Desc A small smurfy well is here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9999999 9999999 water 0 0
+Weight 0
+Material oldstyle~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#8509
+Name small key~
+Short a small `#`skey`^~
+Desc A key to Gargamel's door lies here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values B 0 0 0 0
+Weight 20
+Material oldstyle~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#8501
+Name Dimly Lit Path~
+Desc This path is made of crushed granite with curious blue streaks in it.
+The path continues north to a village, or south to the eastern road.
+~
+Sector forest~
+Exit north 8502
+EKeyvnum -1
+EDesc The path continues toward the village.
+~
+Exit south 7925
+End
+
+
+#8502
+Name Dimly Lit Path~
+Desc This section of the road is badly worn and frequently traversed.  There is
+faint singing to the north.  The path back to the road lies to the south.
+~
+RoomFlags no_mob~
+Sector forest~
+Exit north 8503
+EKeyvnum -1
+EDesc The path continues toward the village.
+~
+Exit south 8501
+EKeyvnum -1
+EDesc The dimly lit path.
+~
+End
+
+
+#8503
+Name Dimly Lit Path~
+Desc This section of the road is badly worn and frequently traversed.  Singing is
+getting stronger to the north.  The path back to the road lies to the south.
+~
+Sector forest~
+Exit north 8504
+EKeyvnum -1
+EDesc The entrance to smurf village.
+~
+Exit south 8502
+EKeyvnum -1
+EDesc The dimly lit path.
+~
+End
+
+
+#8504
+Name Entrance to Smurf Village~
+Desc You stand at the entrance to a tiny village.  You can see across the whole
+village easily.  Little blue creatures with white hats and boots and little 
+fluffy tails scamper about.  They sing continuously.  The singing is getting
+on your nerves and you have the urge to squash them.
+~
+Sector field~
+Exit north 8505
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit south 8503
+EKeyvnum -1
+EDesc Dimly Lit Path
+~
+End
+
+
+#8505
+Name Smurfy Road~
+Desc You are way too big to be using this road.  But who cares.  Who's gonna stop
+you?  These little blue smurfs?  The singing is growing intense.  Your ears
+are starting to ring.  Smurfy Road continues to the north, west, and east.
+There is still time to turn back and go south.
+~
+Sector city~
+Exit north 8506
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit east 8510
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit south 8504
+EKeyvnum -1
+EDesc Entrance to smurf village
+~
+Exit west 8511
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8506
+Name Smurfy Road~
+Desc You continue to travel down Smurfy Road.  Isn't it just smurfy?  Smurfy road
+continues its smurfy path to the smurfy north, smurfy west, and smurfy south.
+A smurfy home lies to the smurfy east.
+~
+Sector city~
+Exit north 8507
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit east 8520
+EKeyvnum -1
+EDesc Smurfy Home
+~
+Exit south 8505
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit west 8512
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8507
+Name Smurfy Road~
+Desc Oh boy, another smurfy road!  Smurfy Road goes north and south here.  There
+is a smurfy, mushroom home to the west.  A beautiful smurfberry patch is to
+the east.
+~
+Sector city~
+Exit north 8508
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit east 8516
+EKeyvnum -1
+EDesc Smurfberry Patch
+~
+Exit south 8506
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit west 8529
+EKeyvnum -1
+EDesc A Smurfy Home
+~
+End
+
+
+#8508
+Name Smurfy Road~
+Desc Smurfy Road continues to smurf here.  It smurfs to the south and smurfs to
+an end to the north.  A smurfberry patch is to the east.  A stone path lies
+to the west.
+~
+Sector city~
+Exit north 8509
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit east 8517
+EKeyvnum -1
+EDesc Smurfberry patch
+~
+Exit south 8507
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit west 8513
+EKeyvnum -1
+EDesc A stone path
+~
+End
+
+
+#8509
+Name Smurfy Road~
+Desc A smurfy well lies here in the middle of Smurfy Road.  A fence separates
+the smurfs from harm to the north.  A berry patch is to the east.  Smurfy
+Road continues to to the south and west.
+~
+Sector city~
+ExtraDesc smurfy well~
+A small well is here.  Just the right size if you're a smurf.  But big
+enough for you to get some water from.  I'm sure the smurfs wont mind.
+~
+Exit east 8518
+EKeyvnum -1
+EDesc Smurfberry Patch
+~
+Exit south 8508
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit west 8514
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8510
+Name Smurfy Road~
+Desc A corner of smurfy road is where you stand.  A smurfy fence blocks passage
+to the east or south.  A smurfy home is to the north.  Smurfy Road goes back
+to the west.
+~
+Sector city~
+Exit north 8519
+EKeyvnum -1
+EDesc Smurfy Home
+~
+Exit west 8505
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8511
+Name Smurfy Road~
+Desc Western corner of Smurfy Road.  You can continue to smurf down the road
+to the east and north.  You can also smurf into a smurfy home to the south.
+~
+Sector city~
+Exit north 8512
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit east 8505
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit south 8521
+EKeyvnum -1
+EDesc Smurfy Home
+~
+End
+
+
+#8512
+Name Smurfy Road~
+Desc There's no place like smurf.  There's no place like smurf.  Sorry wrong
+movie.  A smurfy home is to the west.  Papa Smurf's backyard is to the
+north but you can't go there.  Smurfy Road continues to the south and
+east.
+~
+Sector city~
+Exit east 8506
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit south 8511
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit west 8522
+EKeyvnum -1
+EDesc Smurfy Home
+~
+End
+
+
+#8513
+Name Stone Path~
+Desc You are walking along a cute little stone path.  To the south lies Papa
+Smurf's house.  A Smurfy house is to the west.  Smurfy road is to the east.
+Everything is so peaceful here.  You could stay forever.
+~
+Sector city~
+Exit east 8508
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit south 8525
+EFlags door~
+EKeyvnum 8507
+EKeywords door~
+EDesc Papa Smurf's House
+~
+Exit west 8523
+EKeyvnum -1
+EDesc Smurfy House
+~
+End
+
+
+#8514
+Name Smurfy Road~
+Desc Yet another part of Smurfy Road.  Hey if you go west its the last
+section of Smurfy Road.  You can go back to the smurfy well to the east.
+~
+Sector city~
+Exit east 8509
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit west 8515
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8515
+Name Smurfy Road~
+Desc The last piece of Smurfy Road.  You can go back to Smurfy Road to the east.
+A nice, beautiful, smurfy, mushroom home is to the south.  In the distance to
+the north you can see Gargamel's Castle.
+~
+Sector city~
+Exit north 8526
+EKeyvnum -1
+EDesc Path to Gargamel's Castle
+~
+Exit east 8514
+EKeyvnum -1
+EDesc Smurfy Road
+~
+Exit south 8524
+EKeyvnum -1
+EDesc Smurfy Home
+~
+End
+
+
+#8516
+Name Smurfberry Patch~
+Desc Delicious smurfberries grow here.  You could probably eat a year's worth of
+smurfberries in one sitting.  Smurfy Road is back to the west.  Another
+smurfberry patch is to the north.
+~
+Sector city~
+Exit north 8517
+EKeyvnum -1
+EDesc Smurfberry Patch
+~
+Exit west 8507
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8517
+Name Smurfberry Patch~
+Desc Another patch of smurfberries is growing here.  The smell is driving your
+nostrils crazy.  It almost, ALMOST, makes you forget all the singing going
+on.  Smurfy Road is to the west, while smurfberry patches are to the north
+and south.
+~
+Sector city~
+Exit north 8518
+EKeyvnum -1
+EDesc Smurfberry Patch
+~
+Exit south 8516
+EKeyvnum -1
+EDesc Smurfberry Patch
+~
+Exit west 8508
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8518
+Name Smurfberry Patch~
+Desc The northernmost of the smurfberry patches grows here.  It looks just
+as scrumptious as all the rest.  Just take a few; they'll never know.  Smurfy
+Road is to the west.  A smurfberry patch is to the south.
+~
+Sector city~
+Exit south 8517
+EKeyvnum -1
+EDesc Smurfberry Patch
+~
+Exit west 8509
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8519
+Name Brainy Smurf's Home~
+Desc You rip the roof of the home to get a good look inside.  You see
+many smurfy books.  The print is so small you couldn't even read it
+with a magnifying glass.  I wonder if Brainy Smurf minds if you
+destroy his home?  Smurfy Road is back to the south.
+~
+Sector city~
+Exit south 8510
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8520
+Name Handy Smurf's Home~
+Desc This home was well built.  Of course, until you rip it apart you big meany
+you.  Tools are all over the place.  Too small for you to use.  Smurfy Road is
+back to the west.
+~
+Sector city~
+Exit west 8506
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8521
+Name Hefty Smurf's Home~
+Desc Hefty is anything but wimpy.  So is his house.  It actually took you a 
+couple of minutes to destroy his house.  Better watch out -- he might be
+a little mad at you.  Smurfy Road is back to the north.
+~
+Sector city~
+Exit north 8511
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8522
+Name Sleepy Smurf's Home~
+Desc Be vewy vewy quiet.  Sleepy Smurf is probably sleeping.  You see so many
+beds you can't even tell if he is here.  Maybe you should quietly go back to
+Smurfy Road to the east.
+~
+Sector city~
+Exit east 8512
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8523
+Name Grumpy Smurf's Home~
+Desc This is Grumpy Smurf's home.  He is pissed at you.  Of course, he is pissed
+at everyone.  So don't take it bad.  Maybe you'd better leave before he really
+gets mad.  Smurfy Road to the east is your only salvation.
+~
+Sector city~
+Exit east 8513
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8524
+Name Jokey Smurf's Home~
+Desc You pull the top of his house and it explodes in your face.  That Jokey
+Smurf, what a kidder.  You can hear his laughter as you wipe the ashes off
+your face.  You better get even.  Smurfy Road is to the north.
+~
+Sector city~
+Exit north 8515
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8525
+Name Papa Smurf's Home~
+Desc It's the home of the leader of the smurfs.  Papa Smurf has a nicely decorated
+home.  He takes pride in his work.  You could get to know him or just squash
+him.  If Papa Smurf is not here he is probably at Smurfette's putting the
+moves on her.  A stone path lies to the north.
+~
+Sector city~
+Exit north 8513
+EFlags door~
+EKeyvnum 8507
+EKeywords door~
+EDesc Stone Path
+~
+End
+
+
+#8526
+Name Path to Gargamel's Castle~
+Desc You are walking along a path to Gargamel's Castle to the North.
+Smurfy Road lies to the south.
+~
+Sector city~
+Exit north 8527
+EKeyvnum -1
+EDesc Outside Gargamel's Castle
+~
+Exit south 8515
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#8527
+Name Outside Gargamel's Castle~
+Desc You are standing outside Gargamel's Castle.  You can hear him screaming at
+Azreal from inside.  You can also him cursing out those wretched smurfs.
+His Castle is to the north while Smurfy Road is to the south.
+~
+Sector city~
+Exit north 8528
+EFlags door~
+EKeyvnum 8509
+EKeywords door~
+EDesc Gargamel's Castle
+~
+Exit south 8526
+EKeyvnum -1
+EDesc Path to Gargamel's Castle
+~
+End
+
+
+#8528
+Name Gargamel's Castle~
+Desc This is Gargamel's Castle.  His big black kettle is in the middle of the room.
+Where else would he put it?  The place has only one room.
+~
+Sector city~
+Exit south 8527
+EFlags door~
+EKeyvnum 8509
+EKeywords door~
+EDesc Outside Gargamel's Castle
+~
+End
+
+
+#8529
+Name Smurfette's House~
+Desc This house is conveniently next to Papa Smurfs.  Makes it easier for Papa
+Smurf to sneak over at night.  I hope he uses protection.  I would hate to
+have little smurfs running around.  The only exit is to the east.
+~
+Sector city~
+Exit east 8507
+EKeyvnum -1
+EDesc Smurfy Road
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 8501 spec_thief
+M 8502 spec_thief
+M 8503 spec_thief
+M 8504 spec_thief
+M 8505 spec_thief
+M 8506 spec_thief
+M 8507 spec_thief
+M 8508 spec_thief
+M 8509 spec_thief
+M 8510 spec_cast_mage
+M 8511 spec_cast_cleric
+M 8512 spec_poison
+S
+
+
+
+#RESETS2
+M 0 8501 8 8504 1
+G 0 8502 10
+M 0 7903 30 8505 1
+M 0 8501 8 8505 1
+M 0 8501 8 8507 1
+M 0 8501 8 8508 1
+G 0 8502 10
+O 0 8508 1 8509
+M 0 8501 8 8509 1
+M 0 8501 8 8510 1
+G 0 8502 10
+M 0 8501 8 8511 1
+M 0 8501 8 8512 1
+G 0 8502 10
+M 0 8502 3 8516 1
+G 0 8500 10
+M 0 8502 3 8517 1
+G 0 8500 10
+M 0 8502 3 8518 1
+G 0 8500 10
+M 0 8503 1 8519 1
+E 0 8501 8 head~
+M 0 8504 1 8520 1
+E 0 8503 8 wielded~
+M 0 8506 1 8521 1
+E 0 8503 8 wielded~
+M 0 8505 1 8522 1
+M 0 8507 1 8523 1
+M 0 8508 1 8524 1
+M 0 8510 1 8525 1
+G 0 8505 10
+G 0 8509 8
+M 0 8511 1 8528 1
+E 0 8506 8 hold~
+M 0 8512 1 8528 1
+M 0 8509 1 8529 1
+E 0 8504 8 neck1~
+G 0 8507 8
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

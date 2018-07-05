@@ -1,0 +1,1445 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        City of Solanthus~
+ShortName   City of Solanthus~
+Builders    delandria~
+Credits     Delandria~
+VNUMs       8951 9199
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Krynn~
+*LastSaved  Sat Oct  8 10:47:30 2005~
+End
+
+
+
+#MOBILES
+#8951
+Name shopkeeper druen solanthus male malkatar~
+ShortD `#`wDruen uth Matarin`^~
+LongD A proud looking male malkatar stands here behind the bar.~
+Desc A tall male malkatar with dark brown hair and bright blue eyes. He is a 
+middle aged man, at least in his 50's with slightly graying hair at his 
+temples. 
+~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#8951
+Name cleft spires stone pillar~
+Short `#`wThe Cleft Spires`^~
+Desc A large pillar of stone that has been cleaved in half rests here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 5000 EH 100 100
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc cleft spires pillar~
+A pillar of stone nearly fifty feet high and one hundred feet wide rises 
+from the ground here. It is made of a natural rock formation that appears to 
+have been cleaved in half, with the result that both sideds of the formation 
+tilt outward. `+
+`+
+`#`yThere is a brass sign standing beside it.`^ 
+~
+ExtraDesc sign ~
+Legend claims that the stone pillars have stood proudly, in this relatively 
+flat region, for a millennia. When humans first began to settle the land, 
+their king was told by a wise man that the god Paladine would send a 
+lightning bolt flying from the heavens and wherever the bolt landed would be 
+the place to build his kingdom. That night, a storm raged and an enormous 
+bolt of lightning streaked from the sky and struck the ground. The people 
+traveled in the direction of the bolt, searching for the place the god had 
+marked. When they came to the rock formation that looked like it had been 
+split in two, they knew this was the sign from Paladine. The people built 
+their village, which would eventually grow to become Solanthus. 
+~
+End
+
+#8952
+Name deep well~
+Short a stone fountain~
+Desc `#`wA very large impressive `sstone `wfountain`^~
+Level 1
+ItemType fountain~
+Cost 1
+Durability 1
+Asize 30000
+Rsize 50
+Values 30000 30000 'untainted water' 0 0
+Weight 30000
+Material earthen~
+Extra    noremove nopurge nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#8953
+Name round wooden table~
+Short a chair at a table~
+Desc Several round wooden tables are here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 5000 BDEGHJKWY 100 100
+Weight 0
+Material wood~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#8954
+Name smooth black marble fountain~
+Short a smooth black marble fountain~
+Desc `#`sa large fountain made of smooth black marble is here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 50000 50000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+ExtraDesc fountain ~
+A large fountain stands here. It looks like it is an extension of the floor 
+as it is made of the same black marble. At the very top of the fountain 
+where the water flows are two crossed swords. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#8951
+Name North Gate~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit south 8952
+End
+
+
+#8952
+Name Bridge into the city~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8951
+Exit south 8953
+Exit west 9058
+End
+
+
+#8953
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8952
+Exit east 8967
+Exit south 8954
+Exit west 8961
+End
+
+
+#8954
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8953
+Exit south 8955
+End
+
+
+#8955
+Name Town Square~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8954
+Exit east 9044
+Exit south 8956
+Exit west 9043
+End
+
+
+#8956
+Name Cleft Spires~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8955
+Exit east 9001
+Exit south 8957
+Exit west 9002
+End
+
+
+#8957
+Name ~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 8956
+Exit south 8958
+End
+
+
+#8958
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8957
+Exit east 9053
+Exit south 8959
+Exit west 9054
+End
+
+
+#8959
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8958
+Exit east 9021
+Exit south 8960
+Exit west 9024
+End
+
+
+#8960
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8959
+Exit east 9051
+Exit west 9052
+End
+
+
+#8961
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8953
+Exit west 8962
+End
+
+
+#8962
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8961
+Exit south 9045
+Exit west 8963
+End
+
+
+#8963
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8962
+Exit west 8964
+End
+
+
+#8964
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8963
+Exit south 9008
+Exit west 8965
+End
+
+
+#8965
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8964
+Exit west 8966
+End
+
+
+#8966
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8965
+Exit south 8973
+End
+
+
+#8967
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8968
+Exit west 8953
+End
+
+
+#8968
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8969
+Exit west 8967
+End
+
+
+#8969
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8970
+Exit west 8968
+End
+
+
+#8970
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8971
+Exit south 8997
+Exit west 8969
+End
+
+
+#8971
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8972
+Exit west 8970
+End
+
+
+#8972
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit south 8976
+Exit west 8971
+End
+
+
+#8973
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8966
+Exit east 9062
+Exit south 8974
+Exit west 9061
+End
+
+
+#8974
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8973
+Exit east 9063
+Exit south 8975
+Exit west 9060
+End
+
+
+#8975
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8974
+Exit east 9006
+Exit west 8979
+End
+
+
+#8976
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8972
+Exit south 8977
+Exit west 9064
+End
+
+
+#8977
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8976
+Exit south 8978
+End
+
+
+#8978
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8977
+Exit east 8984
+Exit west 8998
+End
+
+
+#8979
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8975
+Exit south 8980
+End
+
+
+#8980
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8979
+Exit south 8981
+End
+
+
+#8981
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8980
+Exit south 8982
+End
+
+
+#8982
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8981
+Exit south 8983
+End
+
+
+#8983
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8982
+Exit east 9014
+End
+
+
+#8984
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit south 8985
+Exit west 8978
+End
+
+
+#8985
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8984
+Exit south 8986
+End
+
+
+#8986
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8985
+Exit south 8987
+Exit west 9059
+End
+
+
+#8987
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8986
+Exit south 8988
+End
+
+
+#8988
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8987
+Exit west 8989
+End
+
+
+#8989
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8988
+Exit west 8990
+End
+
+
+#8990
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8989
+Exit west 8991
+End
+
+
+#8991
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8992
+Exit east 8990
+Exit south 9015
+End
+
+
+#8992
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8993
+Exit south 8991
+End
+
+
+#8993
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8994
+Exit south 8992
+End
+
+
+#8994
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8995
+Exit south 8993
+End
+
+
+#8995
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8996
+Exit east 8998
+Exit south 8994
+Exit west 8999
+End
+
+
+#8996
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8997
+Exit south 8995
+End
+
+
+#8997
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8970
+Exit south 8996
+End
+
+
+#8998
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8978
+Exit west 8995
+End
+
+
+#8999
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8995
+Exit west 9000
+End
+
+
+#9000
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8999
+Exit west 9001
+End
+
+
+#9001
+Name Town Square~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9044
+Exit east 9000
+Exit west 8956
+End
+
+
+#9002
+Name Town Square~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9043
+Exit east 8956
+Exit west 9003
+End
+
+
+#9003
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9002
+Exit west 9004
+End
+
+
+#9004
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9003
+Exit west 9005
+End
+
+
+#9005
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9007
+Exit east 9004
+Exit south 9009
+Exit west 9006
+End
+
+
+#9006
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9005
+Exit west 8975
+End
+
+
+#9007
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9008
+Exit south 9005
+End
+
+
+#9008
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8964
+Exit south 9007
+End
+
+
+#9009
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9005
+Exit south 9010
+End
+
+
+#9010
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9009
+Exit south 9011
+End
+
+
+#9011
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9010
+Exit south 9012
+End
+
+
+#9012
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9011
+Exit south 9016
+Exit west 9013
+End
+
+
+#9013
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9012
+Exit west 9014
+End
+
+
+#9014
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9013
+Exit west 8983
+End
+
+
+#9015
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 8991
+Exit east 9046
+Exit south 9018
+End
+
+
+#9016
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9012
+Exit south 9017
+End
+
+
+#9017
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9016
+Exit east 9029
+Exit northeast 9022
+Exit southwest 9025
+End
+
+
+#9018
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9015
+Exit west 9035
+Exit southeast 9027
+Exit northwest 9019
+End
+
+
+#9019
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit southeast 9018
+Exit northwest 9020
+End
+
+
+#9020
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9047
+Exit southeast 9019
+Exit northwest 9021
+End
+
+
+#9021
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9048
+Exit west 8959
+Exit southeast 9020
+End
+
+
+#9022
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit northeast 9023
+Exit southwest 9017
+End
+
+
+#9023
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit west 9050
+Exit northeast 9024
+Exit southwest 9022
+End
+
+
+#9024
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8959
+Exit west 9049
+Exit southwest 9023
+End
+
+
+#9025
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9056
+Exit northeast 9017
+Exit southwest 9026
+End
+
+
+#9026
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit northeast 9025
+End
+
+
+#9027
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit west 9057
+Exit southeast 9028
+Exit northwest 9018
+End
+
+
+#9028
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit northwest 9027
+End
+
+
+#9029
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9030
+Exit west 9017
+End
+
+
+#9030
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9031
+Exit south 9042
+Exit west 9029
+End
+
+
+#9031
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9032
+Exit west 9030
+End
+
+
+#9032
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9065
+Exit east 9033
+Exit west 9031
+End
+
+
+#9033
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9034
+Exit west 9032
+End
+
+
+#9034
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9035
+Exit south 9036
+Exit west 9033
+End
+
+
+#9035
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9018
+Exit west 9034
+End
+
+
+#9036
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9034
+Exit south 9037
+End
+
+
+#9037
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9036
+Exit west 9038
+End
+
+
+#9038
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9037
+Exit west 9039
+End
+
+
+#9039
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9038
+Exit west 9040
+End
+
+
+#9040
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 9039
+Exit west 9041
+End
+
+
+#9041
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9042
+Exit east 9040
+End
+
+
+#9042
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 9030
+Exit east 9055
+Exit south 9041
+End
+
+
+#9043
+Name Town Square~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 8955
+Exit south 9002
+End
+
+
+#9044
+Name Town Square~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit south 9001
+Exit west 8955
+End
+
+
+#9045
+Name Temple of Three Holy Knights~
+Desc There is a light smell of incense in the air drifting out of the three 
+shrines here. The floors are made of a smooth black marble and the ceiling 
+here stands over 10 feet high. When you look up you see there is a large 
+painting of a several knights in battle on the ceiling. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 8962
+Exit east 9066
+Exit south 9068
+Exit west 9067
+End
+
+
+#9046
+Name City Hall~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9015
+End
+
+
+#9047
+Name Armor Shop~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9020
+End
+
+
+#9048
+Name Weapon Shop~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9021
+End
+
+
+#9049
+Name General Store~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9024
+End
+
+
+#9050
+Name Clothing~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9023
+End
+
+
+#9051
+Name Potions~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 8960
+End
+
+
+#9052
+Name Empty Shop~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8960
+End
+
+
+#9053
+Name Bank~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 8958
+End
+
+
+#9054
+Name Bakery~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8958
+End
+
+
+#9055
+Name Temple of Shinare~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9042
+End
+
+
+#9056
+Name Guard Post~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9025
+End
+
+
+#9057
+Name Guard Post~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9027
+End
+
+
+#9058
+Name Guard Post~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8952
+End
+
+
+#9059
+Name Temple of Mishakal~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc sign ~
+`#`CTemple of the `BB`bl`Bu`be `BF`bl`Ba`bm`Be`^
+~
+Exit east 8986
+End
+
+
+#9060
+Name Warehouse~
+Desc Stacks and stacks of crates, both empty and full line the walls of the 
+warehouse. There are piles of what looks like large 100 pound sacks of grain 
+or sugar piled in the middle of the room on top of pallets. The floor is 
+wooden but swept clean. The walls of this warehouse are at least 15 feet 
+tall and there are several windows high on the walls, almost at the ceiling. 
+
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8974
+End
+
+
+#9061
+Name Warehouse~
+Desc Stacks and stacks of crates, both empty and full line the walls of the 
+warehouse. There are piles of what looks like large 100 pound sacks of grain 
+or sugar piled in the middle of the room on top of pallets. The floor is 
+wooden but swept clean. The walls of this warehouse are at least 15 feet 
+tall and there are several windows high on the walls, almost at the ceiling. 
+
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8973
+End
+
+
+#9062
+Name Warehouse~
+Desc Stacks and stacks of crates, both empty and full line the walls of the 
+warehouse. There are piles of what looks like large 100 pound sacks of grain 
+or sugar piled in the middle of the room on top of pallets. The floor is 
+wooden but swept clean. The walls of this warehouse are at least 15 feet 
+tall and there are several windows high on the walls, almost at the ceiling. 
+
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 8973
+End
+
+
+#9063
+Name Warehouse~
+Desc Stacks and stacks of crates, both empty and full line the walls of the 
+warehouse. There are piles of what looks like large 100 pound sacks of grain 
+or sugar piled in the middle of the room on top of pallets. The floor is 
+wooden but swept clean. The walls of this warehouse are at least 15 feet 
+tall and there are several windows high on the walls, almost at the ceiling. 
+
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 8974
+End
+
+
+#9064
+Name Seraphema's Silver Emporium~
+Desc ~
+Sector inside~
+Exit east 8976
+End
+
+
+#9065
+Name Dog and Duck Tavern~
+Desc The atmosphere inside this tavern is warm and cozy. There is a blazing fire 
+burning in the hearth. It takes up an entire side of the tavern it is so 
+large. The wooden floor is clean and highly polished and there is a small 
+stage for entertainment in one corner of the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc stage ~
+There are several gashes on the floor of this small wooden stage. A few 
+instruments are laying on the stage, waiting to be used. 
+~
+Exit south 9032
+End
+
+
+#9066
+Name Shrine to Kiri-Jolith~
+Desc The scent of incense is pleasant to the nose as you enter this holy shrine. 
+Different statues of what look like knights line the walls leading to the 
+end of the room where an even larger altar to the God Kiri-Jolith stands. 
+The only light in the room comes from two blazing braziers standing on 
+either side of the altar. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9045
+End
+
+
+#9067
+Name Shrine to Paladine~
+Desc The scent of incense is pleasant to the nose as you enter this holy shrine. 
+Different statues of what look like knights line the walls leading to the 
+end of the room where an even larger altar to the God Paladine stands. The 
+only light in the room comes from two blazing braziers standing on either 
+side of the altar. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9045
+End
+
+
+#9068
+Name Shrine to Habbakuk~
+Desc The scent of incense is pleasant to the nose as you enter this holy shrine. 
+Different statues of what look like knights line the walls leading to the 
+end of the room where an even larger altar to the God Habbakuk stands. The 
+only light in the room comes from two blazing braziers standing on either 
+side of the altar. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9045
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 8951 -1 8956
+O 0 8952 -1 8957
+O 0 8954 -1 9045
+M 0 8951 1 9065 1
+O 0 8953 -1 9065
+S
+
+
+
+#SHOPS
+#8951
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

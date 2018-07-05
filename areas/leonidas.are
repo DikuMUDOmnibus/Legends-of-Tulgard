@@ -1,0 +1,870 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Leonidas's Estate~
+ShortName   Leonidas's Estate~
+Builders    mahinae leonidas~
+VNUMs       12800 12840
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      5 91
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Fri Dec  2 18:59:51 2005~
+End
+
+
+
+#MOBILES
+#12800
+Name imp~
+ShortD a small little imp~
+LongD A small little imp bounces about giggling.~
+Desc Giggling and hopping about is a tiny little imp.  She's here to wait on
+all
+of your needs and does so willingly..  If not a bit tricksy!
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+Off    tail~
+Imm    magic weapon~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+END
+
+#12801
+Name slave~
+ShortD a man-slave~
+LongD A man-servant stands here waiting for an order~
+Desc This is a strapping young malkatar man.  He awaits your orders with a
+dashing smile.
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 74
+Wealth 0
+Act    npc stay_area~
+Act2   avoids_all_attacks~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12802
+Name demon~
+ShortD a lesser demon~
+LongD A lesser demon is here cleaning~
+Desc A lesser demon scurries about cleaning and repairing all that needs to
+be
+done.
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 73
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+Off    tail~
+Imm    magic weapon~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#12803
+Name demon~
+ShortD a mane~
+LongD A mane wanders here cleaning wherever it goes~
+Desc Here stands a mane, a lesser demon.  It cleans everything around it with
+dedication and fear of the consequences if it fails.
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+Off    tail~
+Imm    magic weapon~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#12804
+Name hellhound~
+ShortD a `#`rh`Re`Sl`Xl`rh`Ro`Su`Xn`rd`^~
+LongD A snarling `#`rh`Re`Sl`Xl`rh`Ro`Su`Xn`rd`^ wanders here~
+Desc A snarling `#`rh`Re`Sl`Xl`rh`Ro`Su`Xn`rd`^ paces and snorts.  Growling at anything that moves.
+~
+Race demon~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc no_tame~
+Act2   avoids_all_attacks~
+AffBy2 passwotrace~
+Off    tail~
+Imm    magic weapon~
+Form   edible poison magical sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12800
+Name bed~
+Short a `#`Sm`Xa`Ss`Xs`Si`Xv`Se fe`Xa`Sther `Wbed`^~
+Desc A `#`Sm`Xa`Ss`Xs`Si`Xv`Se canopy fe`Xa`Sther `Wbed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 BEHLQ 100 100
+Weight 10000
+Material unknown~
+Extra    evil antigood antineutral noremove nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay antilaw~
+ExtraDesc bed ~
+This bed is massively huge.  It is a four-post feather bed with a large
+canopy of very thin black silk.  Black silk and linen blankets cover this
+bed elegantly.  Complete with a small, grey feylar headed blanket.  The
+black-marble headboard is decorated with imps and demons set up around a
+family crest of Seles.
+~
+End
+
+#12801
+Name fireplace~
+Short a huge `#`rr`Ro`Ya`Wr`Yi`Rn`rg `Sfireplace`^~
+Desc A huge `#`rr`Ro`Ya`Wr`Yi`Rn`rg `Sfireplace`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 GJ 0 0
+Weight 0
+Material unknown~
+Extra    glow nolocate~
+Extra2   nodecay~
+ExtraDesc fireplace ~
+The fireplace has a thick onyx mantle.  It is held up by two twin dragons on
+either side.  They are as dark as the very walls from which the sprout from.
+Inset within their eyes are two red jeweled orbs that seem to glow.  Are
+they watching you or is that merely a trick of the fire?
+~
+End
+
+#12802
+Name desk~
+Short an `#`So`Xb`Ssid`Xi`San desk`^~
+Desc An `#`So`Xb`Ssid`Xi`San desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 200 DG 0 0
+Weight 0
+Material unknown~
+Extra    evil antigood antineutral nopurge nonmetal nodegrade chaos norestring nogetall~
+Extra2   nodecay antilaw~
+ExtraDesc desk ~
+The desk is very long and thick.  It is made out of solid obsidian stone
+flecked with gold.  The handles are set with blood-red rubies and the crest
+of Seles.
+~
+End
+
+#12803
+Name spring~
+Short a relaxing `#`Whot `Cspring`^~
+Desc A very relaxing `#`Whot `Cs`cp`Cr`ci`Cn`cg`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 CFI 0 0
+Weight 0
+Material unknown~
+Extra    evil antigood antineutral nonmetal nogetall~
+Extra2   nodecay antilaw~
+End
+
+#12804
+Name demonic throne~
+Short a `#`rd`Re`rm`Ro`rn`Ri`rc`S throne`^~
+Desc An `#`Sin`Wt`Simidating `rd`Re`rm`Ro`rn`Ri`rc`S throne`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 EH 0 0
+Weight 0
+Material unknown~
+Extra    evil magic antigood antineutral nonmetal nolocate chaos norestring nogetall~
+Extra2   nodecay nochaoslace antilaw antichaos~
+ExtraDesc demonic ~
+Towering before you on the right side of the lifted platform is a massive 
+throne of black marble and obsidian.  On the backrest of the intimidating 
+chair rests the Crest of Seles..  The insigna of the Demon Queen.  The 
+armrests are formed into the liknes of two serpentine demonic faces.  Their 
+wicked faces are inset with ruby eyes that appear to watch your every move.  
+
+~
+End
+
+#12805
+Name skeletal~
+Short an `#`Ws`Xk`We`Xl`We`Xt`Wa`Xl`S throne`^~
+Desc An `#`Som`Wi`Snous `Ws`Xk`We`Xl`We`Xt`Wa`Xl`S throne`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 EH 0 0
+Weight 0
+Material unknown~
+Extra    evil magic antigood antineutral nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc skeletal ~
+This throne settled on the left side of the raised platform seems more
+ominous then the other.  It has a shroud of mystery and silent fear then the
+pure chaotic madness of the first.  On the backrest of the mighty chair
+there rests the Crest of the Emperor.  An insigna made specifically for one
+man.  The great Lich King..  Companion to the Demon Empress.  The throne
+appears to be made of skulls, bones and other such rotting material and
+fossilized to remain solid.  The armrests are made of various skulls both
+fanged, sharp-toothed and deranged.
+~
+End
+
+#12806
+Name fountain~
+Short a `#`Sm`Wa`Srble f`Wo`Sunta`Wi`Sn`^~
+Desc A `#`Sblack m`Wa`Srble f`Wo`Sunta`Wi`Sn`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -2 -2 blood 0 0
+Weight 0
+Material unknown~
+Extra    evil magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc fountain ~
+The fountain is huge.  It is carved entirely out of a solid piece of marble.
+Countless gargoyle-like creatures cover it.  Blood trickles from their
+mouths, eyes and wounds as some of the demons appear to be battling.  The
+basin is large but not deep.  It is filled to nearly the brim with fresh
+blood.
+~
+End
+
+#12807
+Name fountain~
+Short an `#`Sobsid`Xi`San fountain`^~
+Desc A `#`Sbe`Xa`Sutiful `Sobs`Xi`Sd`Xi`San fountain`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 blood 0 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc fountain ~
+The fountain is carved into the likness of a large angel who leans back in
+agony.  Sticking out of her chest is a large jagged sword.  Blood trickles
+down her slender, pain-struck body, filling the obsidian basin.  Her wings
+are half plucked of feathers and in one of her arms is a broken sword.
+~
+End
+
+#12808
+Name shackles~
+Short some `#`mheavy `Sshackles`^~
+Desc Some `#`Sthick, `mheavy `Sshackles`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 CFILS 0 0
+Weight 0
+Material unknown~
+Extra    magic nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12809
+Name coffin~
+Short an `#`We`Xl`We`Xg`Wa`Xn`Wt `Scoffin`^~
+Desc An `#`We`Xl`We`Xg`Wa`Xn`Wt `Scoffin`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EIL 0 0
+Weight 0
+Material unknown~
+Extra    magic antigood antineutral nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay~
+End
+
+#12810
+Name maiden~
+Short a `#`rd`Re`rm`Ro`rn`Ri`rc`S i`Xr`Son maiden`^~
+Desc A `#`Swicked `rd`Re`rm`Ro`rn`Ri`rc`S i`Xr`Son maiden`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 CFI -5 0
+Weight 0
+Material unknown~
+Extra    evil magic noremove nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc maiden ~
+The demonic iron maiden that stands before you is carved into the image of a
+tormented demon. Lined inside the case are countless barbed needles. Once
+closed, the needles penetrate your skin just enough so that movement is
+hindered.. or your skin will be torn off by the barbs. Wicked isn't it?
+~
+End
+
+#12811
+Name table~
+Short a `#`rbl`Ro`rodi`Re`rd`S table`^~
+Desc An `#`Sint`Xi`Smidating `rbl`Ro`rodied`S table`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 EHK -5 0
+Weight 0
+Material unknown~
+Extra    glow dark evil magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc table ~
+The cold table sits menacingly on its own. Bloodstands from several
+centuries of countless torments cover the top. Thick straps of chain and
+leather don where someone might place their wrists, ankles, waist and neck.
+~
+End
+
+#12812
+Name stocks~
+Short a set of `#`Spainful`^ stocks~
+Desc A set of `#`Sp`Xa`Sinful`^ stocks~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 10000 CFIS -5 0
+Weight 0
+Material unknown~
+Extra    evil magic noremove nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12813
+Name table~
+Short a `#`sb`Xl`Sack stone`^ table~
+Desc A long `#`sb`Xl`Sack stone`^ table~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 DG 0 0
+Weight 0
+Material unknown~
+Extra    evil magic nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12814
+Name desk~
+Short a `#`ydesk`^ of `#`Sb`Xl`Sack wood`^~
+Desc An `#`Se`Xl`Segant`Xl`Sy`^ carved `#`ydesk`^ of `#`Sb`Xl`Sack wood`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 DGJ 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc desk ~
+Standing regally is a desk made entirely out of black wood.  Its wood type
+is entirely unknown and appears to be more magical then natural.  There are
+carved decorations of many intricate runes.  The origination of the runes
+are as much of a mystery as the wood type of the desk.  The desk handles are
+made of black marble flecked and swirled with gold.
+~
+End
+
+#12815
+Name bed~
+Short a `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^ of feathers~
+Desc A huge `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^ of feathers~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHLQ 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay nochaoslace~
+End
+
+#12816
+Name nightstand~
+Short a `#`Sb`Xl`Sack n`Xi`Sghtst`Xa`Snd`^~
+Desc A carved `#`Sb`Xl`Sack stone n`Xi`Sghtst`Xa`Snd`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10000 C 0 100 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc nightstand ~
+The small black nightstand is about waist high.  It is made entirely out of
+obsidian stone.  Resting atop the nightstand is a massive
+`Wm`Xi`Wr`Xr`Wo`Xr.
+~
+ExtraDesc mirror ~
+Resting atop the nightstand is a round silver mirror set in an ebony frame.
+A closer examination might reveal that arcane runes have been scratched onto
+the frame, suggesting the occupant uses the mirror for something besides
+looking at himself.  You continue staring dreamily into the mirror...
+Hmmm...  Narcisstic?
+~
+End
+
+#12817
+Name bed~
+Short a `#`Wc`Xo`Wm`Xf`Wy `Sfeatherbed`^~
+Desc A `#`Sc`Xa`Snopied `Wc`Xo`Wm`Xf`Wy `Sfeatherbed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12818
+Name nightstand~
+Short an `#`So`Xb`Ssidian n`Xi`Sghtst`Xa`Snd`^~
+Desc An `#`So`Xb`Ssidian n`Xi`Sghtst`Xa`Snd`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 C 0 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc nightstand ~
+The nightstand is made entirely out of obsidian.  It is carved beautifully.
+Gold is flecked with the black stone to give it a lovelier look.  The
+handles are made of actual gold to match the golden mist sprinkled within
+the stone.
+~
+ExtraDesc bed ~
+The bed is huge and comfortable.  From the wall up above the bed fall long
+velvet drapes, covering it like an intimate canopy.
+~
+End
+
+#12819
+Name desk~
+Short an `#`So`Xb`Ssidian desk`^~
+Desc An `#`Sin`Xt`Sricat`Xe`Sly carved `So`Xb`Ssidian desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 DG 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12820
+Name bed~
+Short a `#`Sc`Xa`Snopied bed of b`Xl`Sack lin`Xe`Sn`^~
+Desc A huge `#`Sc`Xa`Snopied bed of b`Xl`Sack lin`Xe`Sn`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12821
+Name desk~
+Short a `#`Sb`Xl`Sack m`Xa`Srbl`Xe`S desk`^~
+Desc A `#`Scarved b`Xl`Sack m`Xa`Srbl`Xe`S desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 DG 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12822
+Name wardrobe~
+Short a `#`Sb`Xl`Sack m`Xa`Srbl`Xe`S wardrobe`^~
+Desc A `#`Scarved `Sb`Xl`Sack m`Xa`Srbl`Xe`S wardrobe`^~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 C 0 1000 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc wardrobe ~
+The carved wardrobe is made entirely out of black marble.  The smooth stone
+is flecked with gold.  Set in the two door handles of the wardrobe are
+smooth rubies.
+~
+End
+
+#12823
+Name bed~
+Short a `#`Wm`Xa`Ws`Xs`Wi`Xv`We`S bed`^~
+Desc A `#`Wm`Xa`Ws`Xs`Wi`Xv`We `Ss`Xi`Smple-looking bed`^ with `#`Sblack
+linen`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12824
+Name bed~
+Short a `#`Wm`Xa`Ws`Xs`Wi`Xv`We `Sking bed`^~
+Desc A `#`Wm`Xa`Ws`Xs`Wi`Xv`We `Sc`Xa`Snopied king bed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12825
+Name desk~
+Short an `#`Sobs`Xi`Sd`Xi`San desk`^~
+Desc A `#`Scarved obs`Xi`Sd`Xi`San desk`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 1000 DG 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12826
+Name bed~
+Short a `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^~
+Desc A very `#`Wc`Xo`Wm`Xf`Wo`Xr`Wt`Xa`Wb`Xl`We`S bed`^ waits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    magic nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12827
+Name portrait~
+Short a `#`Slarge `rp`Ro`rrtra`ri`Rt`^~
+Desc A `#`Slarge `rp`Ro`rrtra`ri`Rt`^ hangs off the wall~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 A 0 1000 0
+Weight 0
+Material unknown~
+Extra    nonmetal nolocate nodegrade norestring nogetall~
+Extra2   nodecay~
+ExtraDesc portrait ~
+The mural upon the portrait shows the fall of the origional Archangel
+Rosaline..  And the transformation of Harpan to the great being called the
+Demon Queen.  It also depicts how a great angel came to confront her..
+Seandac's new Archangel.
+~
+End
+
+#12828
+Name bed~
+Short a `#`Wm`Xa`Ws`Xs`Wi`Xv`We`S king bed`^~
+Desc A `#`Scomfortable `Wm`Xa`Ws`Xs`Wi`Xv`We`S king bed`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 EHL 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+ExtraDesc bed ~
+The bed is huge. Clearly massive in size and made for the utemost comfort.
+Black linen blankets cover the bed nicely.
+~
+End
+
+#12829
+Name table~
+Short a `#`Sm`Xa`Srble table`^~
+Desc A huge `#`Sm`Xa`Srble table`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 10000 DG 0 0
+Weight 0
+Material unknown~
+Extra    nopurge nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay~
+End
+
+#12830
+Name treasury key~
+Short `#`yKey to `RBlood Fortress`^~
+Desc `#`yKey to `RBlood Fortress`^ is here~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#12833
+Name altar~
+Short a `#`Swicked-looking `ra`Rl`rt`Ra`rr`^~
+Desc A `#`rD`Re`rm`Ro`rn`Ri`rc`S Altar of `RH`rarpan`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 Q 0 0
+Weight 0
+Material unknown~
+Extra    hum evil magic antigood noremove nonmetal nolocate nodegrade chaos norestring nogetall~
+Extra2   nodecay nochaoslace~
+ExtraDesc altar ~
+Glancing upon this demonic altar, you find it is made out of the smouldering
+corpses of imps, demons and other cursed creatures.  They all contort
+together to create the unholy artifact.  Atop the altar stands the carved
+image of Harpan herself.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#12800
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

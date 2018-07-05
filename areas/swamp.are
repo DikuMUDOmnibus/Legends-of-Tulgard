@@ -1,0 +1,1647 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Maelndo~
+ShortName   ~
+Builders    mahinae~
+VNUMs       80646 80774
+AFlags  olconly noteleport noscry hidden~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Thu Jan  5 00:57:13 2006~
+End
+
+
+
+#MOBILES
+#80646
+Name skinny brown mutt dog~
+ShortD a skinny brown mutt~
+LongD A skinny brown mutt is standing here begging for food.~
+Desc This little mutt has seen better days. Its unremarkable brown body quivers 
+excited when someone nears it. It seems to have figured out that cocking its 
+ears forward and whining pathetically is the best way to get food. 
+~
+Race dog~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType bite
+AC -95 -95 -95 -78
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+Off    trip~
+Form   animal~
+Part   head legs heart brains guts feet ear eye long_tongue tail claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#80647
+Name lriec~
+ShortD lriec~
+LongD Lriec sits here, halfway enveloped by shadows.~
+Desc Lriec lounges here. His dark eyes are sharp and calculating. His long curly 
+black hair has been pulled back in a tight ponytail at the nape of his neck 
+and held by leather strands. His leather is well oiled and worked. He moves 
+slowly but the rippling muscles seen on his arms display his controlled 
+strength. You feel uncomfortable as he shrewdly looks you over. You think he 
+may be a dangerous person to attempt to deal with. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -731
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Off    circle~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80648
+Name young child~
+ShortD a young child~
+LongD A young child wanders about, looking for something to do.~
+Desc A young child plays here in the dirt. His raggedy clothes are covered in 
+filth. He looks up and smirks at you as you pass. 
+~
+Race human~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType punch
+AC -117 -117 -117 -104
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Imm    summon charm sleep scry~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 80646 10~
+END
+
+#80649
+Name ulerian~
+ShortD ulerian~
+LongD Ulerian leans against his counters here.~
+Desc This short, fat angrak has greasy, limp red hair. When he spreads his mouth 
+in an evil grin, gaps between his teeth are visible. When he speaks he makes 
+sucking noises through the gaps. All in all he looks like a very unsavory 
+character. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -714
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80650
+Name ziulo~
+ShortD ziulo~
+LongD Ziulo sits here with his feet propped up on the desk.~
+Desc Ziulo, the proprietor of the tiny inn, is here. His greasy black hair comes 
+down in ringlets which get in the way of his beady eyes. His girth is large. 
+He looks like he makes a tidy profit turning over the rooms. 
+~
+Race human~
+Align 0 0
+Level 115
+Hitroll 0
+HitDice 12d15+555
+ManaDice 12d15+776
+DamDice 12d15+70
+DamType slash
+AC -850 -850 -850 -756
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80651
+Name surly prostitute~
+ShortD a surly prostitute~
+LongD A surly prostitute strolls along here.~
+Desc This woman has seen better days. Her body is gaunt and her features are 
+hard. It's hard to guess the woman's age from the early wrinkles and sickly 
+body. Her smile and language are calculated to draw the males but it seems 
+she'd had little luck in her profession judging by her shabby clothes. 
+~
+Race human~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType claw
+AC -250 -250 -250 -200
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80652
+Name prostitute~
+ShortD a prostitute~
+LongD A prostitute mills here.~
+Desc Traces of beauty still exist on this female's face. Her is curled around her 
+face, and her corset is laced tightly to show off her figure. She appears to 
+be new to soliciting and is slowly starting show the fatigue and hardness. 
+~
+Race human~
+Align 0 0
+Level 55
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType bite
+AC -250 -250 -250 -207
+Wealth 50
+Act    npc no_tame stay_area~
+Off    dirt_kick~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80653
+Name black bird~
+ShortD a large black bird~
+LongD A large black bird is flapping overhead.~
+Desc This bird's feathers are a glossy black that shines under the light. From 
+its beak dangles a scrap of flesh. As it looks down at you, you imagine you 
+can see a gleam of wickedness in its eye. 
+~
+Race bird~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType peck
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+AffBy  flying~
+Form   non_skinable~
+Part   head legs heart brains guts feet eye wings tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#80665
+Name old man~
+ShortD an old man~
+LongD An old man stands here with his back to the wall.~
+Desc This old man has pure white hair. It is dirty and looks like chunks of it 
+have been literally ripped out of his head. His scalp is bloody and full of 
+sores. His eyes are wild and crazed. As he turns to you he screams, "You 
+don't know what I see! You don't know! Don't know! Don't KNOW!" 
+~
+Race human~
+Align 0 0
+Level 130
+Hitroll 0
+HitDice 13d16+630
+ManaDice 13d17+903
+DamDice 13d18+85
+DamType wrath
+AC -1000 -1000 -1000 -850
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared dark_vision regeneration~
+AffBy2 shadowsight detect_treeform detect_vanish~
+Off    area_attack berserk disarm dodge trip~
+Imm    summon charm poison negative drowning sleep scry hunger thirst fear~
+Res    magic~
+Vuln   mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80686
+Name frail hunchback man~
+ShortD a frail looking hunchback~
+LongD A frail looking hunchback peers closely at a corpse.~
+Desc This little old man ignores you as you approach. His hands are gnarled with 
+arthritis and are covered in darkened splatters. His eyes are a blurred 
+silver blue but he manages to move his knife over the body with ease. His 
+back has a large hump on it as if the weight of all his years has dragged 
+him down. 
+~
+Race human~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType stab
+AC -550 -550 -550 -495
+Wealth 200
+Act    npc dont_wander no_tame stay_area~
+Res    mental~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80687
+Name young beautiful woman~
+ShortD a young beautiful woman~
+LongD A young beautiful woman stands here.~
+Desc A young, beautiful woman is before you. Her face is disturbingly devoid of 
+all emotions. When she speaks she sounds like a little old woman. She reeks 
+of sulphur, and a curious light fills her eyes when you near her potions. 
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType slash
+AC -800 -800 -800 -712
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80688
+Name calysia~
+ShortD calysia~
+LongD Calysia stands here behind the counter.~
+Desc Calysia stands before you. She is swaddled in a long black velvet robe 
+knotted tightly at her waist. Her hair has been cut short and curls down to 
+just below the robe's collar. A heavy pendant lies upon her breast. It is 
+the only adornment she wears. 
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType slash
+AC -800 -800 -800 -640
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#80689
+Name thin slythris banker~
+ShortD a thin slythris banker~
+LongD A thin slythris banker stands here.~
+Desc This banker looks very bored with his job but his eyes light up with greed 
+when someone hands him a large deposit. He spends his days counting the 
+precious gold coins that pass through his hands. 
+~
+Race slythris~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType slash
+AC -800 -800 -800 -648
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge changer~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80690
+Name beggar child~
+ShortD a beggar child~
+LongD A little beggar child stands here.~
+Desc This little beggar child looks like all of the rest. His clothes are 
+basically dirty scraps that have been tied around him. His ribs protrude 
+obscenely from underneath the thin garments. His dirtied toes peek out from 
+half rotted shoes. 
+~
+Race human~
+Align 0 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC -70 -70 -70 -56
+Wealth 0
+Act    npc no_tame stay_area~
+Res    charm~
+Vuln   mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80691
+Name silent bartender~
+ShortD a silent bartender~
+LongD A silent bartender stands behind the counter.~
+Desc This slight male bartender stands before you in complete silence. His eyes 
+lack vitality, and he seems resigned to his fate. Upon closer inspection, 
+you realize he will tell no one's secrets for his tongue has been violently 
+cut out. 
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType slash
+AC -800 -800 -800 -680
+Wealth 0
+Act    npc dont_wander no_tame stay_area nopurge~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#80692
+Name scorpion~
+ShortD a scorpion~
+LongD A scorpion is curled here.~
+Desc ~
+Race scorpion~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType sting
+AC -200 -200 -200 -178
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon poison mental hunger thirst fear~
+Form   non_skinable~
+Part   head legs brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#80659
+Name crackling bonfire~
+Short a crackling `#`Rb`Yo`Rn`Yf`Ri`Yr`Re`^~
+Desc A crackling `#`Rb`Yo`Rn`Yf`Ri`Yr`Re`^ has been built here.~
+Level 1
+ItemType light~
+Cost 1
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 -1 0 0
+Weight 1
+Material wood~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80660
+Name cadaver corpse table~
+Short a cadaver laid out on a table~
+Desc A cadaver is laid out here on a granite table.~
+Level 1
+ItemType container~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 100 A 0 100 0
+Weight 1000
+Material flesh~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+ExtraDesc cadaver ~
+The deceased seems to have become an experiment for the doctor. The body 
+been thoroughly dissected in parts and the discoveries noted on a small pad 
+near the left foot. The poor man's chest seems to be able to be popped open 
+at the breastplate. 
+~
+ExtraDesc pad ~
+"Subject appeared to live as a strolling minstrel until entering my abode. 
+He is approximately 56 inches in height and 185 pounds, hair color red, eyes 
+black. Cause of death was a blow to the head. Future reference: rocks seem 
+to make a good weapon." 
+~
+End
+
+#80661
+Name hunchback book~
+Short a bound diary~
+Desc ~
+Level 70
+ItemType scroll~
+Cost 1
+Durability 1
+Asize 0
+Rsize 50
+Values 70 'morbid rememberance' '' '' ''
+Weight 5
+Material paper~
+Extra    nogetall~
+Extra2   nosell~
+Wear     take hold~
+ExtraDesc book ~
+Subject suffered from an open head wound immediately before death. Cause of 
+this head wound was my quartz paperweight. Subject had many bizarre 
+utterances before he died completely. The spell was completed immediately 
+after his death with satisfactory results. 
+~
+End
+
+#80662
+Name massive stone altar~
+Short a massive stone altar~
+Desc A massive stone altar has been erected here.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 1
+Asize 0
+Rsize 50
+Values 1 300 EHQR -10 -50
+Weight 20000
+Material unknown~
+Extra    nopurge nodegrade~
+Extra2   nodecay~
+End
+
+#80663
+Name slender birch branch~
+Short a slender birch branch encased in ice~
+Desc A slender birch branch encased in ice has fallen here.~
+Level 91
+ItemType wand~
+Cost 1000
+Durability 1
+Asize 0
+Rsize 50
+Values 91 15 15 etherfreeze 0
+Weight 4
+Material wood~
+Extra    glow magic norestring~
+Wear     take hold~
+ClassAllowances mage cleric spellfilcher~
+End
+
+#80664
+Name short humming maple branch~
+Short a short humming maple branch~
+Desc A short humming maple branch has been left here.~
+Level 80
+ItemType wand~
+Cost 1000
+Durability 1
+Asize 0
+Rsize 50
+Values 90 10 10 wyldfire 0
+Weight 3
+Material maple~
+Extra    hum magic norestring~
+Wear     take hold~
+ClassAllowances mage cleric spellfilcher~
+ExtraDesc short humming maple branch~
+This branch vibrates with pure power. It pulses as if a life is trapped 
+inside it. It almost singes your fingers as you touch it. 
+~
+End
+
+#80665
+Name blackened wand~
+Short a `#`sblackened`^ wand~
+Desc A blackened wand is here.~
+Level 91
+ItemType wand~
+Cost 1300
+Durability 1
+Asize 0
+Rsize 50
+Values 91 10 10 sunfire 0
+Weight 4
+Material unknown~
+Extra    magic norestring~
+Wear     take hold~
+ClassAllowances mage cleric spellfilcher~
+ExtraDesc blackened wand~
+The outside of this wand is black and ashy. The tip of it glows brilliantly 
+as if a hot substance is slowly churning inside it. 
+~
+End
+
+#80666
+Name broken skull~
+Short a broken skull~
+Desc A broken skull hovers in the air.~
+Level 91
+ItemType treasure~
+Cost 3000
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material unknown~
+Extra    magic norestring~
+Extra2   nosell~
+Wear     take float~
+Affect immune -1 91 -1 none 0 holy
+Affect immune -1 91 -1 none 0 scry
+ExtraDesc broken skull~
+The left eye socket of this skull has been crushed downwards. Its grin is 
+riddled with missing teeth. A tentative touch reveals the skull is covered 
+in a light slimey substance. 
+~
+End
+
+#80667
+Name queer colored dr. bogual's pick-me-up elixir~
+Short a `#`?q`?u`?e`?e`?r`^ colored elixir~
+Desc A `#`?q`?u`?e`?e`?r`^ colored elixir has been left here.~
+Level 10
+ItemType potion~
+Cost 155
+Durability 5
+Asize 0
+Rsize 50
+Values 50 refresh refresh regeneration ''
+Weight 2
+Material exlir~
+Extra    norestring~
+Wear     take hold~
+ExtraDesc queer colored exlir dr. bogual's pick-me-up~
+Dr. Bogual's Pick-me-up elixir has been left here. The colors inside the 
+bottle are metallic looking and emit a funny smell. 
+~
+End
+
+#80668
+Name potion of greatness~
+Short a potion of `#`Ygreatness`^~
+Desc A potion of `#`Ygreatness`^ glows here.~
+Level 15
+ItemType potion~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 50 prayer lucidity '' ''
+Weight 2
+Material gold~
+Wear     take hold~
+End
+
+#80669
+Name short pink potion~
+Short a short `#`Mpink`^ potion~
+Desc A short `#`Mpink`^ potion has been left here.~
+Level 20
+ItemType potion~
+Cost 350
+Durability 5
+Asize 0
+Rsize 50
+Values 50 'resist weapons' 'battle rage' '' ''
+Weight 2
+Material liquid~
+End
+
+#80670
+Name blackened jade necklace~
+Short a blackened jade necklace~
+Desc A blackened jade necklace is here.~
+Level 50
+ItemType jewelry~
+Cost 800
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material jade~
+Extra    dark antigood antineutral chaos~
+Wear     take neck~
+Affect vuln -1 50 -1 none 0 illusion
+Affect modifier -1 50 -1 presence 3 0
+ExtraDesc blackened jade necklace~
+Thin but strong black chains support the heavy chunk of jade that swings 
+from this necklace. The oval of jade has been scorched badly. A deeply 
+etched rune has been set on the back of the jade. 
+~
+End
+
+#80671
+Name serpent slave bracelet~
+Short a `#`gs`Ge`gr`Gp`ge`Gn`gt`^ slave bracelet~
+Desc A `#`gs`Ge`gr`Gp`ge`Gn`gt`^ slave bracelet has been left here.~
+Level 35
+ItemType jewelry~
+Cost 500
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Wear     take wrist~
+ExtraDesc serpent slave bracelet~
+The lithe form of a serpent coiling forms the wrist part of this slave 
+bracelet. The serpent's tongue curls out until the tips of it attach to a 
+thin golden wire that runs along the top of the wearer's hand. This chain 
+connects to an engraved ring worn on the middle finger. 
+~
+End
+
+#80672
+Name set of flexible wristguards~
+Short a set of flexible wristguards~
+Desc A set of flexible wristguards have been left here.~
+Level 55
+ItemType armor~
+Cost 400
+Durability 1
+Asize 0
+Rsize 50
+Values 7 7 7 6 0
+Weight 10
+Material leather~
+Extra    nonmetal~
+Wear     take wrist~
+Affect modifier -1 55 -1 hp 2 0
+Affect modifier -1 55 -1 hitroll 2 0
+ExtraDesc flexible wristguard~
+This set of wristguards is made up of strips of leather that wrap neatly 
+around the wrist. The leather is a well oiled dark brown. Small straps poke 
+out at the end. It looks as if you lace them together and tie them so the 
+guards will stay on. 
+~
+End
+
+#80673
+Name goblet red liquid~
+Short a goblet of red liquid~
+Desc A goblet of red liquid is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 4 4 bloodwine 0 0
+Weight 2
+Material metal~
+Wear     take hold~
+End
+
+#80674
+Name jug of spiced tea~
+Short a jug of spiced tea~
+Desc A jug of spiced tea is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 300
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10 'spiced tea' 0 0
+Weight 5
+Material metal~
+Wear     take hold~
+End
+
+#80675
+Name a mug of beer~
+Short a mug of beer~
+Desc A mug of beer is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 100
+Durability 1
+Asize 0
+Rsize 50
+Values 4 4 beer 0 0
+Weight 2
+Material glass~
+Wear     take hold~
+End
+
+#80676
+Name chef's special~
+Short the chef's special~
+Desc The chef's special sits here.~
+Level 1
+ItemType food~
+Cost 100
+Durability 1
+Asize 0
+Rsize 50
+Values 10 10 0 A 0
+Weight 4
+Material food~
+Wear     take hold~
+End
+
+#80677
+Name meat and potato dish~
+Short a meat and potato dish~
+Desc A meat and potato dish sits here.~
+Level 1
+ItemType food~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 20 30 0 0 0
+Weight 0
+Material food~
+Extra    nonmetal~
+End
+
+#0
+
+
+
+#ROOMS
+#80646
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit east 80647
+End
+
+
+#80647
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. The channel 
+seems to widen up ahead. 
+~
+Sector swamp~
+Exit east 80648
+Exit west 80646
+End
+
+
+#80648
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit north 80651
+Exit east 80649
+Exit west 80647
+End
+
+
+#80649
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit north 80650
+Exit west 80648
+End
+
+
+#80650
+Name Swamp~
+Desc The water here has turned a bright green from the pollen. Peat moss drapes 
+over the large trees and trails down into the water. Some of the trees have 
+broken off at various sections of the trunk and have fallen into the water. 
+Sometimes faint rustles can be heard overhead, usually preceding a snake 
+dropping into the warm water. The air here is humid and heavy. 
+~
+Sector swamp~
+Exit south 80649
+Exit west 80651
+End
+
+
+#80651
+Name Swamp~
+Desc The water darkens in this area momentarily as the depth increases. Up ahead 
+the bayou begins to curl lazily through the thickening trees. Something 
+large can be heard flapping its wings. A turtle is suddenly snatched off one 
+a piece of driftwood and snapped in half by a large black bird. 
+~
+Sector swamp~
+Exit east 80650
+Exit south 80648
+Exit northwest 80652
+End
+
+
+#80652
+Name Swamp~
+Desc Twisting and turning up into a boggy area. Stone buildings laid out in a 
+star. 
+ 
+ Small graveyard with ghosts. 
+ 
+ Ask Bo if he wants any specific items. 
+ 
+ hehe ask about Zandramas the necromancer 
+~
+Sector swamp~
+Exit east 80653
+Exit southeast 80651
+End
+
+
+#80653
+Name Swamp~
+Desc As you paddle slowly through the water, fallen dead trees and other debris 
+block any possible passages except directly forward and backward. A 
+cottonmouth is barely visible as it skims through the water. Silver fish can 
+be seen darting hastily away from the snake as it disrupts them. 
+~
+Sector swamp~
+Exit north 80654
+Exit west 80652
+End
+
+
+#80654
+Name Swamp~
+Desc Overhead the trees form a canopy.  Snatches of sky are seen briefly as the 
+trees bend under the breezes. The air is still and oppressive. Nothing seems 
+to be living in this stretch of the hot water. As you travel forwards, your 
+boat gently scrapes against the remains of trees under the water. 
+~
+Sector swamp~
+Exit north 80655
+Exit south 80653
+End
+
+
+#80655
+Name Swamp~
+Desc You can see a small stretch of muddy shore to your east. A long dull white 
+object protrudes from the mud. The mud curiously bulges upwards in one 
+section near the object as if something was hidden under it. Something large 
+has left long streaks of tracks in the sucking mud. 
+~
+Sector swamp~
+Exit south 80654
+Exit northwest 80656
+End
+
+
+#80656
+Name Swamp~
+Desc The water abruptly stops here at a muddy shore. An alligator lies silently 
+in a far corner and watches you. A long copper pole has been stabbed into 
+the mud and anchored in place somehow for you to tie your boat to. As you 
+exit the boat, mud sucks at your feet and threatens to trap you in place. 
+~
+Sector swamp~
+Exit west 80657
+Exit southeast 80655
+End
+
+
+#80657
+Name On the shore~
+Desc The shore slopes up sharply, and it is difficult to keep your footing as the 
+mud pulls at you. A dead fish rots at the edge of the water. One of its eyes 
+has fallen out onto the surface and flies surround it. Darkly colored frogs 
+sit at various places and croak out their displeasure at your intrusion. 
+~
+Sector swamp~
+Exit north 80661
+Exit east 80656
+Exit west 80658
+End
+
+
+#80658
+Name Away from the water~
+Desc The land here begins to slowly firm up as you move away from the water. 
+Large predatory birds circle overhead, and the smell of death lingers in the 
+air. Looking around you see the remains of a small animal as two buzzards 
+fight over the remains. 
+~
+Sector swamp~
+Exit north 80662
+Exit east 80657
+Exit west 80659
+End
+
+
+#80659
+Name Before a bonfire~
+Desc The heavy smell of smoke in the air chokes you as you enter this clearing. 
+Wood has been piled up in the center to make a towering bonfire. Large rocks 
+have been placed in a circle around the bonfire. They look as if they are 
+used for seating. 
+~
+RoomFlags light~
+Sector swamp~
+Exit north 80663
+Exit east 80658
+Exit west 80660
+End
+
+
+#80660
+Name Before an altar~
+Desc A colossal stone altar dominates the area here. The stone has been scorched 
+badly by something. Dark stains mar the level surface of the altar. On the 
+sides of the altar, circles and figures have been crudely engraved. The 
+grass has been trampled down and only sparse sprouts grace the hard packed 
+ground. 
+~
+Sector swamp~
+Exit east 80659
+End
+
+
+#80661
+Name Corner of the swamp~
+Desc To the south of you lies the quiet dark water. Ahead to your northwest lies 
+a small path into the woods. Through the trees you can see a large clearing 
+with some stone structures. Every once in a while you hear a voice travel on 
+the wind. 
+~
+Sector swamp~
+Exit south 80657
+Exit west 80662
+Exit northwest 80664
+End
+
+
+#80662
+Name Before a path~
+Desc The trees crowd tightly together and forces you to choose between a path 
+directly ahead of you or back to the open area from which you came. The path 
+seems to be of finely ground rocks and sand. It is slightly squishy 
+underfoot. 
+~
+Sector swamp~
+Exit north 80664
+Exit east 80661
+Exit south 80658
+Exit west 80663
+End
+
+
+#80663
+Name Swamp~
+Desc To the south of you you can see tendrils of smoke curling through the trees. 
+The glint of water is visible beyond the massive bonfire. To your northeast 
+lies a path to what looks like a small village. 
+~
+Sector swamp~
+Exit east 80662
+Exit south 80659
+Exit northeast 80664
+End
+
+
+#80664
+Name Into the pathway~
+Desc finely ground something or other as the path
+ 
+bleak stone buildings with carvings from what looks like acid etching, pitted in places
+~
+Sector swamp~
+Exit north 80665
+Exit south 80662
+Exit southeast 80661
+Exit southwest 80663
+End
+
+
+#80665
+Name Pathway~
+Desc The path slowly opens up into a wide, cleared area ahead of you. The trees 
+are thinned out and the path is marked with heavy black boulders on each 
+side. Ahead you can see a large stone structure rising up above the tree 
+tops. 
+~
+RoomFlags no_mob~
+Sector swamp~
+Exit north 80666
+Exit south 80664
+End
+
+
+#80666
+Name Before a building~
+Desc Directly ahead of you is a large stone building. It seems primitively built 
+but sturdy. The ground here is soft, and you can see evidence of where the 
+building has slowly sunk into the ground a bit farther as time passes. The 
+path curves around the building to the east and west and directly into the 
+building. 
+~
+RoomFlags light~
+Sector city~
+Exit north 80669
+Exit east 80667
+Exit south 80665
+Exit west 80668
+End
+
+
+#80667
+Name Faint Path~
+Desc To your west lies a stone building. To your east lies the swamp. A faint 
+trail is visible heading off into the east, only detectable by the 
+disruption of foliage. Periodic screeching can be heard from a nearby area. 
+~
+Sector swamp~
+Exit east 80674
+Exit west 80666
+End
+
+
+#80668
+Name West of a building~
+Desc This path leads west from a large stone building and the exit from the 
+village. The path has been cleared away by rough strokes of a machette and 
+is not very aesthetically pleasing. Up ahead you can see the tops of a few 
+small huts. The path continues on to the north to the heart of the small 
+village 
+~
+RoomFlags light~
+Sector city~
+Exit north 80677
+Exit east 80666
+Exit west 80670
+End
+
+
+#80669
+Name Inside a building~
+Desc The heavy stench of decay fills your nostrils in this building.  A large 
+granite slab table is the prominent feature in this one room building. A 
+cadaver seems to be displayed on the table. Bent over the table is a small 
+man hard at work. He carves at the corpse then scribbles in a small book. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 80666
+End
+
+
+#80670
+Name On a path~
+Desc The ground around these huts is muddy and filthy. Meal scraps and other 
+trash is heaped outside of the various huts. Flies swarm over the decay, and 
+a few children who seem not to care about the filth are playing outdoors. 
+~
+RoomFlags light~
+Sector city~
+Exit north 80671
+Exit east 80668
+Exit south 80673
+Exit west 80672
+End
+
+
+#80671
+Name Inside a hut~
+Desc This hut seems to double as a store and a home. A low counter runs along one 
+side of the room. Carefully laid out on it are various skulls, wands, and 
+other instruments. A creaky rocking chair sits at the end of the counter. It 
+seems to be where you pay. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 80670
+End
+
+
+#80672
+Name Inside a hut~
+Desc This large hut's roof is sagging under the weight of collected rainwater. A 
+big black stove dominates one corner of the room. Wobbley tables have been 
+erected, and various foods and potions steam on them. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 80670
+End
+
+
+#80673
+Name Inside a hut~
+Desc This one room hut is almost completely bare aside from a few essentials. A 
+thin pallet has been constructed under the hut's window. A small table and 
+stool sit across from it. Eating utinsels have been carefully spaced out on 
+the table. Clothing has been neatly folded and set on a shelf. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 80670
+End
+
+
+#80674
+Name In a swamp~
+Desc Overhead the branches lace together tightly, effectively blocking out any 
+possible sunlight.  The plants that grow here are sparse and few animals 
+stop to nibble at them. The air is heavy and sweat slides down the back of 
+your shirt. A general unease has settled over the area. 
+~
+RoomFlags dark~
+Sector swamp~
+Exit east 80675
+Exit west 80667
+End
+
+
+#80675
+Name Before a cave~
+Desc The faint path ends abruptly in front of a darkened cave front to the east. 
+Terrible noises are emitted from inside the cave. The area around it is 
+completely void of animals. Plants and trees grow here but seem wilted and 
+dead. Brittle branches clack loudly against one another as they move in an 
+unfelt wind. 
+~
+RoomFlags dark~
+Sector swamp~
+Exit east 80676
+Exit west 80674
+End
+
+
+#80676
+Name Inside a cave~
+Desc The room in this small cave is freezing. The stone walls are streaked with 
+crusted blood handprints. A path has been worn from one side of the room to 
+the other as if someone has been pacing back and forth. One of the walls is 
+defaced with writing possibly painted on with blood. 
+~
+RoomFlags dark~
+Sector cave~
+Exit west 80675
+End
+
+
+#80677
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 80678
+Exit east 80687
+Exit south 80668
+End
+
+
+#80678
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit north 80679
+Exit south 80677
+Exit west 80681
+End
+
+
+#80679
+Name ~
+Desc ~
+RoomFlags light~
+Sector city~
+Exit east 80680
+Exit south 80678
+End
+
+
+#80680
+Name Calysia's Wares~
+Desc This storefront is paneled with rich, dark wood. A low counter has been 
+polished neatly and velvet squares have been laid out to display various 
+wares. A stern guard stands at attention near the doorway and keeps track of 
+all who enter. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 80679
+End
+
+
+#80681
+Name ~
+Desc ~
+Sector city~
+Exit east 80678
+Exit west 80682
+End
+
+
+#80682
+Name ~
+Desc ~
+Sector city~
+Exit north 80684
+Exit east 80681
+Exit west 80683
+End
+
+
+#80683
+Name ~
+Desc ~
+Sector city~
+Exit east 80682
+Exit west 80685
+End
+
+
+#80684
+Name The Scorpion's Tail~
+Desc bar
+drew
+~
+RoomFlags indoors light~
+Sector city~
+Exit south 80682
+Exit down 80696
+EFlags door closed locked infuriating~
+End
+
+
+#80685
+Name ~
+Desc ~
+Sector city~
+Exit east 80683
+Exit west 80686
+End
+
+
+#80686
+Name First Maelndo Bank~
+Desc This bank's working area is small and cramped. Papers are everywhere, and 
+there seems to be no rhyme or reason to their filing system. A small counter 
+is at the far end of the room. A long line of frustrated people winds out 
+from it. 
+~
+RoomFlags indoors bank safe~
+Sector city~
+Exit east 80685
+End
+
+
+#80687
+Name Webb Street~
+Desc ~
+Sector city~
+Exit east 80688
+Exit west 80677
+End
+
+
+#80688
+Name Webb Street~
+Desc ceremony/resting area to east
+~
+Sector city~
+Exit east 80689
+Exit west 80687
+Exit northeast 80690
+Exit southeast 80694
+End
+
+
+#80689
+Name Webb Street~
+Desc ceremony area
+~
+Sector city~
+Exit east 80695
+Exit west 80688
+End
+
+
+#80690
+Name Webb Street~
+Desc ~
+Sector city~
+Exit east 80691
+Exit southwest 80688
+End
+
+
+#80691
+Name Webb Street~
+Desc ~
+Sector city~
+Exit west 80690
+Exit southeast 80692
+End
+
+
+#80692
+Name Webb Street~
+Desc ~
+Sector city~
+Exit west 80695
+Exit southwest 80693
+Exit northwest 80691
+End
+
+
+#80693
+Name Webb Street~
+Desc ~
+Sector city~
+Exit west 80694
+Exit northeast 80692
+End
+
+
+#80694
+Name Webb Street~
+Desc ~
+Sector city~
+Exit east 80693
+Exit northwest 80688
+End
+
+
+#80695
+Name Webb Street~
+Desc resting area
+~
+RoomFlags safe~
+Sector city~
+Mana 105
+Exit east 80692
+Exit west 80689
+End
+
+
+#80696
+Name ~
+Desc ~
+RoomFlags indoors~
+Sector inside~
+Exit up 80684
+EFlags door closed locked infuriating~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 80692 spec_poison
+S
+
+
+
+#RESETS2
+M 0 80653 1 80651 1
+O 0 80659 -1 80659
+O 0 80662 -1 80660
+M 0 80690 10 80666 1
+M 0 80686 1 80669 1
+O 0 80660 -1 80669
+O 0 80661 -1 80669
+M 0 80648 1 80670 1
+M 0 80649 1 80671 1
+G 0 80663 -1
+G 0 80664 -1
+G 0 80665 -1
+M 0 80687 1 80672 1
+G 0 80667 -1
+G 0 80668 -1
+G 0 80669 -1
+M 0 80646 3 80672 1
+M 0 80665 1 80676 1
+E 0 80666 -1 floating~
+M 0 80688 1 80680 1
+G 0 80670 -1
+G 0 80671 -1
+G 0 80672 -1
+M 0 80690 10 80683 1
+M 0 80691 1 80684 1
+G 0 80673 -1
+G 0 80674 -1
+G 0 80675 -1
+G 0 80676 -1
+G 0 80677 -1
+M 0 80689 1 80686 1
+M 0 80690 10 80690 1
+M 0 80690 10 80693 1
+M 0 80692 2 80696 1
+S
+
+
+
+#SHOPS
+#80649
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#80687
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#80688
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#80691
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#80647
+title Broken Skull Loader~
+author Reath~
+code if rand 1
+ mob oload 80666
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1128046535
+END
+
+#80646
+title child thief for 80648~
+author Mahinae~
+code mob seeall
+mob swipe $n gold 15
+mob swipe $n silver 15
+mob echoat $n A small child stands bumps into you as you pass.
+mob echoaround $n A small child bumps into $n as they pass.
+~
+disabled false
+last_editor Mahinae~
+last_editdate 1123727008
+END
+
+#0
+
+
+#$

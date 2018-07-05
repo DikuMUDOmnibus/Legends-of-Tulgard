@@ -1,0 +1,473 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Loric Estate~
+ShortName   ~
+Builders    None~
+build_restricts 'all' bthebuilder ~
+VNUMs       4350 4360
+AFlags  noteleport noscry hidden use_buildrestricts~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+*LastSaved  Thu Oct 27 10:58:13 2005~
+End
+
+
+
+#MOBILES
+#4350
+Name snakes~
+ShortD Thousands of albino snakes~
+LongD `#`ST`^`whous`^`Sand`^`ws of alb`^`Sino sn`^`wakes sq`^`Suir`^`wm on th`^`Se fl`^`woo`^`sr h`^`were`^`S.`^~
+Desc `#`ST`^`whousands of large, pale white snakes squirm about on the floor here in a feeding frenzy`^`S.`^ 
+~
+Race slythris~
+Align 0 0
+Level 90
+Hitroll 200
+HitDice 9d12+435
+ManaDice 5d7+260
+DamDice 10d11+44
+DamType bite
+AC -590 -590 -590 -519
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area amphibian thief update_always~
+AffBy  detect_hidden haste regeneration~
+Off    backstab berserk tail assist_race~
+Imm    summon charm bash~
+Vuln   slash fire energy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos resting~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#4359
+Name snakes~
+ShortD Thousands of albino snakes~
+LongD `#`ST`^`whous`^`Sand`^`ws of alb`^`Sino sn`^`wakes sq`^`Suir`^`wm on th`^`Se fl`^`woo`^`sr h`^`were`^`S.`^~
+Desc `#`ST`^`whousands of large, pale white snakes squirm about on the floor here in a feeding frenzy`^`S.`^ 
+~
+Race slythris~
+Align 0 0
+Level 90
+Hitroll 200
+HitDice 9d12+435
+ManaDice 5d7+260
+DamDice 10d11+44
+DamType bite
+AC -590 -590 -590 -519
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area amphibian thief update_always unseen~
+Off    backstab berserk tail assist_race~
+Imm    summon charm bash~
+Vuln   slash fire energy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos resting~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#4360
+Name builder buddy~
+ShortD a builder buddy~
+LongD A builder buddy is here to help.~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 4350 restore~
+MProg SPEECH 4351 object load~
+MProg SPEECH 4352 mob load~
+END
+
+#0
+
+
+
+#OBJECTS
+#4350
+Name moon~
+Short moon~
+Desc A portal into the Onyx Tower stands here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2147483647 A A 4350 0
+Weight 0
+Material unknown~
+Extra    glow invis~
+Extra2   nodecay~
+ExtraDesc portal ~
+. Though no enterance to the Dark Onyx Tower is visible, this lone archway connected to the Tower seems to have something to do with it. The archway is unrecognizable except for a riddle that shines brightly when even the most meager of light is flashed near it.
+`1
+I with borrowed silver shine,
+What you see is none of mine.
+First I show you but a quarter,
+ Like the bow that guards the Tartar;
+ Then the half, and then the whole,
+Ever dancing round the pole;
+And true it is, I chiefly owe My beauty to the shades below.
+`1
+What am I?
+`1
+~
+End
+
+#4351
+Name crib~
+Short baby crib child~
+Desc `^`SA childs crib rests here in the corner.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 50 A 0 50 0
+Weight 0
+Material unknown~
+Extra    evil invis antigood nogetall~
+Extra2   nodecay~
+ExtraDesc crib A childs crib~
+. 
+`^`SThis dark crib is crib is a abomination of all that is good and innocent in the children that might possibly fit in it. The dark wood of the crib is surrounded by twisted depictions of evil, and the same arcane symbols that seem to be prominent around the rest of the large tower. The fact alone that it stands so close to the evil radiating diamond in the center of the room; could not be good for any child.. The sheer amount of negative energy that flows from the tower being enough to twist any child.`^
+ 
+~
+End
+
+#4352
+Name scrying pool~
+Short scrying pool~
+Desc `^`SA`^ `^`Csc`^`cr`^`Wyi`^`Cn`^`cg po`^`Wo`^`Cl`^`S swirls in the center of the room.`^~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5000 M A 4358 0
+Weight 0
+Material unknown~
+Extra    evil antigood nogetall~
+End
+
+#4353
+Name scroll~
+Short a hanging scroll~
+Desc `#`yA large scroll with`^`r bright caligraphy`^ `yhas been pinned to the wall here`^.~
+Level 92
+ItemType parchment~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 unknown 0 Weight 0
+Material unknown~
+Extra    evil antigood nodegrade nogetall~
+Extra2   nodecay~
+ExtraDesc scroll ~
+`#`RY`^`you now trespass upon the Tower of the Lich Loric, who once defied the gods and was stripped of both body and soul. I, Ssethril Naerlathe have liberated this wretched being from his unnatural existence, and claimed his home for my own. You are welcome within my household, just as you are welcome into my dungeon.. Do not roam my home without expecting any form of retribution`^`R.`^
+~
+End
+
+#4354
+Name fountain~
+Short a snake fountain~
+Desc `#`SA gi`^`wan`^`Wt sn`^`Sak`^`we st`^`Wat`^`Sue`^`w tri`^`Wc`^`Skl`^`wes w`^`Wat`^`Ser`^`w fro`^`Wm hi`^`Ss mou`^`wth`^`W in`^`Sto `wa p`^`Woo`^`Sl`^~
+Level 92
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+ExtraDesc fountain snake~
+`^`SA`^`w giant statue of a snake stretches upwards towards the ceiling here. It depicts a somewhat fearsome resemblance to the deadly King Cobras that wander Arthos The giant white marble cobra stands as a ominous beacon of what cruelty and evil nature can bring. His thick body shimmers lightly with thousands of miniscule pearl colored scales that move with his body like thin armored plates. His mouth is stuck open as he gazes downward with eyes made of giant sparkling rubies, a neverending flow of mountain water falling down from between his giant fangs and into the small pool far below`^`S.`^
+~
+End
+
+#4359
+Name fountain~
+Short a snake fountain~
+Desc `#`SA gi`^`wan`^`Wt sn`^`Sak`^`we st`^`Wat`^`Sue`^`w tri`^`Wc`^`Skl`^`wes w`^`Wat`^`Ser`^`w fro`^`Wm hi`^`Ss mou`^`wth`^`W in`^`Sto `wa p`^`Woo`^`Sl`^~
+Level 92
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+ExtraDesc fountain snake~
+`^`SA`^`w giant statue of a snake stretches upwards towards the ceiling here. It depicts a somewhat fearsome resemblance to the deadly King Cobras that wander Arthos The giant white marble cobra stands as a ominous beacon of what cruelty and evil nature can bring. His thick body shimmers lightly with thousands of miniscule pearl colored scales that move with his body like thin armored plates. His mouth is stuck open as he gazes downward with eyes made of giant sparkling rubies, a neverending flow of mountain water falling down from between his giant fangs and into the small pool far below`^`S.`^
+~
+End
+
+#0
+
+
+
+#ROOMS
+#4350
+Name `1 `^`rThe Museum`^~
+Desc `^`ST`^`whe Foyer and main hall to the huge and eerily lit tower seems to be an odd 
+mix of a library and freakish museum. Prominent in the room are the stuffed 
+bodies of some of the more interesting and lesser known creatures in 
+Arthos.. From a dissected Thri-Kreen to a Sahuagin warrior. Each are stuffed 
+and mounted behind polished steel and wood; with a plaque under each exhibit 
+listing a small history of the race. Books of the history of the world and 
+the dieties are littered about the room; stacked on tables, chairs, and even 
+some parts of the soft black carpeted floor. Giant Black marble columns with 
+golden veins spiral upwards towards the ceiling at every corner of the 
+triangular shaped tower`^`S.`^ 
+~
+RoomFlags indoors~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit north 4359
+Exit up 4351
+Exit down 4357
+End
+
+
+#4351
+Name `1 `^`r Summoning Room`^~
+Desc `^`ST`^`whe summoning room is a large spherical room carved from what appears to be 
+one giant white marble stone. The walls, the floor, and the gold and silver 
+inlaid symbols in the black tile floor all appear to be flawless; as if 
+crafted by some powerful magic. A giant dias of obsidion rests in the very 
+center of the room; surrounded by perfectly crafted, small arcane runes of 
+binding and holding. Whatever is summoned here, it seems the master of the 
+binding and holding. A giant ebony axe has been embedded into the floor into 
+floor in the center most room; destroying the largest rune`^`S.`^ 
+~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit up 4352
+Exit down 4350
+End
+
+
+#4352
+Name `rScrying Room`^~
+Desc `^`ST`^`whe sound of rushing water greets your ears as you enter the large, oval 
+shaped, scrying room. The floor seems to be on a constant slope downwards, 
+leading into a small pit in the center of the room that overlooks a large 
+pool of water. Surrounding the pool of water are a few comfortable pillows 
+lined out in a semi circle; so one could easily stare into the pool of water 
+for hours in relative comfort`^`S.`^ 
+~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit up 4353
+Exit down 4351
+End
+
+
+#4353
+Name `1 `^`rChart Room`^~
+Desc `^`ST`^`whis room is lined with large wall sized charts; some of geographic orgin, 
+while others are more arcane. The maps line the sides of the room, covering 
+the dark and gloomy onyx walls and making this room one of the more pleasant 
+in the otherwise loathesome Onyx Tower. Small candles seem to burn by 
+magical means upon the desks in the large room; flames constantly flicking 
+and dancing upon their wicks to play dancing shadows on the walls`^`S.`^` 
+~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit up 4354
+Exit down 4352
+End
+
+
+#4354
+Name `1 `^`rThe Masters Bedroom`^~
+Desc `#`SQ`^`wuite and serene, the bedroom of the master of the Tower radiates with a great feel of peace and relaxation. A large dresser made from ebony sits at the corner of this octagonal shaped room. Each of the dressers are adorned with six white and red candles that have long ago melted down into pools of hardened wax. The center of the bedroom raises gently on a platform dais, upon which a giant harem of exotic pillows and silken blankets serve as a sleeping area. A large boxed off sand garden is situated in each corners of the room, which appears to have been raked over with the long willow reed sitting beside them. The walls are covered in large murals that depict the deep swamps in the southern lands of Arthos`^`S.`^
+~
+RoomFlags safe noscry antimagic~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit up 4355
+Exit down 4353
+End
+
+
+#4355
+Name `1 `^`rSpiral Staircase`^~
+Desc `#`ST`^`whis grand staircase leads up towards the very top of the tower. Handwoven 
+tapestries line the walls going up the stairway; Every other tapestry 
+depicting a red and brown eye, or a giant white King Cobra. Large 
+crystalized skulls of Trolls have been set on pedestals at each corner of 
+the spiraling staircase, and a window that looks out over the frozen 
+mountains that the tower is situated on. The air becomes harder to breath as 
+the elevation rises with the tower, the chill almost painfull`^`S.`^ 
+~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit up 4356
+Exit down 4354
+End
+
+
+#4356
+Name `1 `^`rTop of the Onyx Tower`^~
+Desc `#`SH`^`were at the top of the tower all of the magic that binds the giant spiralling structure together is confined to this room. A giant fiery red diamond that flickers with a dark aura of evil, sits on large dais. Surrounding the room are giant animal totems that face towards the center of the room, the snake totem closest to the center. The dark marble floor is covered in a thin layer of dust, and spiderwebs around the diamond on the dais, showing that no one has been in this room for ages. A great sense of power emminates from this room, strengthening and fortifying the already almost impenetrable walls tower. Off in the corner, strangely enough, a ebony crib rests close to the ground almost out of site`^`S.`^
+~
+RoomFlags noscry antimagic~
+Sector inside~
+Owner bthebuilder Ssethril~
+Exit down 4355
+End
+
+
+#4357
+Name `#`rSnake Pit`^~
+Desc `^`SD`^`wark and gloomy, the dungeon of the large spiraling tower seems to go on 
+forever. The ceiling is lined with hundreds of powerful runes of binding and 
+holding, preventing the use of magical escape while the thick wooden and 
+iron doors prevent any means of physical escape. Cages and torture devices 
+line the sides of the room for unruly prisoners; while the inside of the 
+dungeon has been carved out into a fighting pit, and filled with thousands 
+of snakes`^`S.`^  
+~
+RoomFlags noscry antimagic~
+Sector inside~
+Owner bthebuilder ssethril~
+RoomEcho  5 10  10 The snakes in the dungeon pit slither and hiss hungrily.~
+Exit up 4350
+End
+
+
+#4358
+Name `1 `^`rBefore the Dark Onyx Tower`^~
+Desc `^`SB`^`wefore you, carved from the peaks of one of the icy mountains, looms a dark 
+onyx tower spiralling upwards into the clouds themselves. Giant and twisted 
+cyprus trees cling to the rock and melting snow of the moutain, surrounding 
+the monsterous tower and bathing the enterance in shadows. Other then the 
+sound of the harsh winds that wear the tower smooth, naught but a disturbing 
+silence can be heard near the large tower. The few animals that can survive 
+in the harsh enviroment of the snowy mountains can be neither seen nor heard 
+near the tower`^`S.`^ 
+~
+Sector inside~
+Owner bthebuilder ssethril~
+End
+
+
+#4359
+Name `rThe Treasury`^~
+Desc `1
+`^`SW`^`while most of the dark Tower has been left untouched by the new owner, the treasury has drastically changed. Steel racks line the walls holding glimmering weapons from Angelic blades to gigantic pole arms. Tomes and books detailing the arcane line a small corner in burnt crisps, while they are replaced with dozens of priceless jewels and gems on the tables set around the room`^`S.`^
+~
+RoomFlags private antimagic~
+Room2Flags storage_room~
+Sector inside~
+Owner bthebuilder ssethril~
+Exit south 4350
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 4353 -1 4350
+O 0 4354 -1 4351
+O 0 4352 -1 4352
+O 0 4351 -1 4356
+M 0 4350 1 4357 1
+O 0 4350 -1 4358
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#4352
+title mload~
+author Reath~
+code if name $n 'Bthebuilder'
+mob mload 4359
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1128901707
+END
+
+#4351
+title oload~
+author Reath~
+code if name $n 'Bthebuilder'
+mob oload 4359
+drop all
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1128901660
+END
+
+#4350
+title Restore~
+author Reath~
+code . if name $n 'Bthebuilder'
+mob restore bthebuilder
+endif
+~
+disabled false
+last_editor Reath~
+last_editdate 1128901628
+END
+
+#0
+
+
+#$

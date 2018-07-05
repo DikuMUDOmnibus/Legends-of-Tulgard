@@ -1,0 +1,1319 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Academy West~
+ShortName   `CAcademy`^~
+Builders    None~
+Credits     Zivilyn~
+VNUMs       20100 20129
+LComment    `#`Y[  ALL  ]`^
+Security    2
+Colour      C~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Tue Sep 13 21:47:38 2005~
+End
+
+
+
+#MOBILES
+#20100
+Name Will-O-Wisp academy guard~
+ShortD a Will-O-Wisp~
+LongD A Will-O-Wisp~
+Desc Desc A small ball of light hovers here before the great gates of some type of castle. It twinkles with delight as you approach making a soft humming sound.
+~
+Race human~
+Align 3 -3
+Level 56
+Hitroll 30
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType cleave
+AC -260 -260 -260 -226
+Wealth 560
+Act    npc dont_wander~
+AffBy  sanctuary haste~
+Off    disarm dodge kick parry~
+Imm    summon charm magic fire poison negative mental disease drowning~
+Res    summon charm bash cold lightning poison disease light~
+Vuln   acid energy~
+Form   edible other sentient construct biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+MProg EXALL 20100 0~
+END
+
+#20101
+Name lord verminaard~
+ShortD `#`RLord `sVerminaard`^~
+LongD `#`RLord `sVerminaard `wis standing here glaring at you.`^~
+Desc Verminaard is a fearsome sight indeed.  Although he is short, he is very 
+well muscled, and has been trained diligently in the art of battle.  
+~
+Race human~
+Align 0 -3
+Level 75
+Hitroll 250
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType thrust
+AC -450 -450 -450 -360
+Wealth 900
+Act    npc dont_wander~
+AffBy  haste~
+Imm    summon charm~
+Res    poison~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#20102
+Name mrulik Gnash~
+ShortD `#`GM`grulik G`Gnash`^~
+LongD `#`GM`grulik G`Gnash `wthe leader of the `gOgre `sArmy `wis here.`^~
+Desc Mrulik Gnash, leader of the Ogre Army, is a behemoth of an ogre. Nearly 8' tall, and about 550 lbs. of muscle, he could easily kill anyone one on one. His black, greasy hair hangs over his small, beady eyes.
+~
+Race troll~
+Align 3 -2
+Level 56
+Hitroll 200
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType smash
+AC -300 -300 -300 -249
+Wealth 600
+Act    npc dont_wander~
+AffBy  infrared dark_vision~
+Off    dodge kick dirt_kick trip crush assist_race~
+Imm    summon charm~
+Res    bash cold poison disease~
+Vuln   fire acid~
+Form   edible poison animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs tusks~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#20103
+Name lesiato~
+ShortD `#`MLesatio`^~
+LongD `#`MLesatio`w, a master in all things is here offering her help to you.`^~
+Desc Lesiato, a woman of great beauty stands here in the red and blue robes of
+the academy offering her healing hand.  
+~
+Race human~
+Align -3 2
+Level 110
+Hitroll 10
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType punch
+AC -800 -800 -800 -712
+Wealth 230
+Act    npc dont_wander train practice healer gain changer~
+Off    bash disarm kick parry~
+Imm    summon charm magic weapon iron~
+Form   mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GREET 20102 99~
+MProg SPEECH 20103 gear~
+END
+
+#20104
+Name master healer~
+ShortD the Master Healer~
+LongD The master healer is here, shrouded in robes.~
+Desc The Master Healer is completely covered in thick black robes. His physical features are unable to be determined. He sits at the table writing in ancient text books.
+~
+Race human~
+Align 1 -3
+Level 45
+Hitroll 40
+HitDice 10d10+10
+ManaDice 10d10+10
+DamDice 10d10+10
+DamType divine
+AC -300 -300 -300 -300
+Wealth 450
+Act    npc dont_wander healer~
+AffBy  sanctuary~
+Off    disarm kick~
+Imm    summon charm magic weapon~
+Form   undead~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#20105
+Name altron Deselius~
+ShortD `#`BA`bltron `bD`Beselius`^~
+LongD `#`BA`bltron `bD`Beselius`w, `wa young handsome soldier is standing here.`^~
+Desc Altron Deselius is a handsome young Soldier.  He has been promoted to Lord 
+Verminaard's assistant, and will do anything he can to be promoted even 
+further.  
+~
+Race human~
+Align 2 -3
+Level 65
+Hitroll 300
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType charge
+AC -350 -350 -350 -297
+Wealth 650
+Act    npc dont_wander warrior~
+AffBy  infrared~
+Imm    summon charm~
+Res    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#20106
+Name velkyn~
+ShortD `#`sVelkyn`^~
+LongD `#`sVelkyn `wis here, trying to go unnoticed`^~
+Desc A man, blending in with the shadows, no, part of the shadows stands proudly before you.
+~
+Race human~
+Align 1 -3
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType none
+AC -450 -450 -450 -360
+Wealth 0
+Act    npc dont_wander~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#20107
+Name chot Uth Greal~
+ShortD `#`sC`Rhot U`wth `RG`sreal`^~
+LongD `#`sC`Rhot U`wth `RG`sreal`w, leader of the `RMinotaur `sArmy`w, is here.`^~
+Desc Towering over the battlefield, Chot Uth Greal is a force to be reckoned with. Standing over 8' tall, and built like a hill giant, just his looks can intimidate most men.
+~
+Race minotaur~
+Align 2 -2
+Level 62
+Hitroll 200
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -420
+Wealth 550
+Act    npc dont_wander~
+AffBy  detect_hidden infrared~
+Imm    summon charm poison~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#20108
+Name sleet ancient white dragon~
+ShortD `#`WS`wl`We`we`Wt`^~
+LongD `#`WS`wl`We`we`Wt, `wthe ancient white dragon, is here.`^~
+Desc A massive white dragon, scales glistening like icicles, is here. 
+~
+Race dragon~
+Align -3 0
+Level 68
+Hitroll 200
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType frbite
+AC -400 -400 -400 -356
+Wealth 0
+Act    npc dont_wander scavenger~
+AffBy  infrared flying~
+Off    dodge tail~
+Imm    summon charm cold disease~
+Res    bash~
+Vuln   pierce fire~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#20109
+Name krill Thrul~
+ShortD `#`sK`wrill `wT`shrul`^~
+LongD `#`sK`wrill `wT`shrul`w, a commander of the `gOgre `sArmy`w, is here.`^~
+Desc Krill Thrul is a large ogre helping to command the Ogre Army. He is nearly 7 and a half feet tall, and very well muscled. He seeks to impress his commanders any way possible.
+
+~
+Race troll~
+Align 2 -1
+Level 50
+Hitroll 200
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType crush
+AC -200 -200 -200 -162
+Wealth 500
+Act    npc dont_wander scavenger stay_area~
+AffBy  infrared dark_vision regeneration~
+Imm    summon charm~
+Res    bash disease~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs tusks~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#20110
+Name spewn gnoll~
+ShortD `#`GS`gp`Ge`gw`Gn `wthe `gGnoll`^~
+LongD `#`GS`gp`Ge`gw`Gn `wthe `gGnoll `wis standing here.`^~
+Desc Spewm is a very large gnoll who knows his business well. He is nicknamed the Nasty Foam O' the Mouth for obvious reasons.
+ 
+~
+Race gnoll~
+Align 2 0
+Level 62
+Hitroll 80
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType thwack
+AC -500 -500 -500 -410
+Wealth 500
+Act    npc dont_wander stay_area~
+AffBy  detect_hidden dark_vision~
+Imm    summon~
+Res    bash cold disease~
+Vuln   fire silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#20111
+Name alys herrod~
+ShortD `#`MA`mlys `mH`Merrod`^~
+LongD `#`MA`mlys `mH`Merrod`w, a female soldier is standing here.`^~
+Desc With her penetrating ice blue eyes, it is difficult to see Alys Herrod as a 
+cold-hearted commander.  Her golden hair flows down to her hips, near her 
+scabbard.  
+~
+Race human~
+Align 1 -1
+Level 70
+Hitroll 250
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType thrust
+AC -400 -400 -400 -324
+Wealth 560
+Act    npc dont_wander~
+Off    kick~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#20112
+Name gazsh hren~
+ShortD `#`RG`razsh `rH`Rren`^~
+LongD `#`RG`razsh H`Rren `wa commander of the Minotaur Army, is here.`^~
+Desc . Gazsh Hren is a rather short, but thickly muscled minotaur commander of the 
+Minotuar Armies.  He is contantly sent to do the higher commander's dirty 
+work, and will stop at nothing to gain recognition within the army.  
+~
+Race minotaur~
+Align -1 -1
+Level 55
+Hitroll 200
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 10d4+23
+DamType crush
+AC -250 -250 -250 -202
+Wealth 550
+Act    npc dont_wander~
+AffBy  detect_hidden infrared~
+Off    bash berserk kick dirt_kick assist_race~
+Imm    summon charm poison~
+Vuln   bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#20113
+Name dragon viper~
+ShortD `#`RViper`^~
+LongD `RViper`w, a young `sblack dragon `wis here.`#~
+Desc ~
+Race dragon~
+Align 2 0
+Level 71
+Hitroll 300
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType acbite
+AC -450 -450 -450 -378
+Wealth 600
+Act    npc dont_wander scavenger stay_area~
+AffBy  infrared flying~
+Off    dodge tail crush~
+Imm    summon charm acid~
+Res    bash fire~
+Vuln   pierce~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#20114
+Name furnace dragon~
+ShortD `RF`ru`Rr`rn`Ri`rc`Re`w, a young `rred dragon`^~
+LongD `RF`ru`Rr`rn`Ri`rc`Re`w, a young `rred dragon `wis here.`^~
+Desc Furnace, a young red dragon, is here. His scales gleam red, but are black in some spots, possibly a half-breed. He is very aggressive, and quite ruthless. His intentions are unknown.
+~
+Race dragon~
+Align 1 0
+Level 62
+Hitroll 200
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType flbite
+AC -400 -400 -400 -360
+Wealth 700
+Act    npc dont_wander stay_area~
+AffBy  infrared flying~
+Off    berserk tail~
+Imm    summon charm fire~
+Res    bash fire~
+Vuln   pierce cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#20115
+Name emerald dragon~
+ShortD `#`GE`gm`Ge`gr`Ga`gl`Gd `ythe `GD`gr`Ga`gg`Go`gn`^~
+LongD `#`GE`gm`Ge`gr`Ga`gl`Gd`w, an adult `ggreen dragon`^.~
+Desc Emerald is a large, adult green dragon. She resents serving anyone, but puts up with it because she knows death is her only alternative.
+~
+Race dragon~
+Align -1 0
+Level 77
+Hitroll 350
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType chomp
+AC -550 -550 -550 -456
+Wealth 900
+Act    npc dont_wander~
+AffBy  infrared flying~
+Off    dodge parry tail crush~
+Res    bash fire~
+Vuln   pierce~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    female~
+Material unknown
+END
+
+#20116
+Name scout team human~
+ShortD the scout team~
+LongD A scout team of the Human Army is here.~
+Desc The scout team consists of five members of the Human Army. The are lightly armed, but with so many of them moving about, they are hard to hit. They are all dressed to blend with their surroundings.
+~
+Race human~
+Align -2 0
+Level 35
+Hitroll 200
+HitDice 1d1+744
+ManaDice 0d0+0
+DamDice 1d1+144
+DamType charge
+AC -500 -500 -500 -500
+Wealth 350
+Act    npc dont_wander scavenger~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#20117
+Name regiment human army~
+ShortD the Regiment of the Human Army~
+LongD A regiment of the Human Army is here.~
+Desc An entire regiment of the Human Army consisting of maybe 20 men.
+~
+Race human~
+Align 0 -1
+Level 50
+Hitroll 200
+HitDice 1d1+1449
+ManaDice 0d0+0
+DamDice 20d20+180
+DamType charge
+AC -350 -350 -350 -350
+Wealth 500
+Act    npc dont_wander scavenger~
+Off    disarm~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#20118
+Name cavalry~
+ShortD a cavalry regiment~
+LongD A cavalry regiment of the Human Army is here.~
+Desc A cavalry regiment of the human army.
+~
+Race human~
+Align -3 0
+Level 50
+Hitroll 200
+HitDice 1d1+2999
+ManaDice 0d0+0
+DamDice 1d1+259
+DamType charge
+AC -400 -400 -400 -400
+Wealth 500
+Act    npc dont_wander~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#20119
+Name sabbeth panther~
+ShortD `#`sa black panther`^~
+LongD `#`wa beautiful `Ws`sl`we`We`sk black p`wa`sn`wt`sh`we`sr is here.`^~
+Desc A beautiful `Dblack`x panther.
+~
+Race cat~
+Align 1 0
+Level 75
+Hitroll 60
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType bite
+AC -450 -450 -450 -396
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  sanctuary dark_vision~
+Off    berserk dodge fast parry tail~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#20120
+Name soldier~
+ShortD `#`ra `Rs`roldier`^~
+LongD `#`wA `Rs`roldier `wstands here looking about`^~
+Desc A soldier stands before you.  He wears light armor, and wields a simple 
+sword.  
+~
+Race human~
+Align -1 0
+XPMod 120
+Level 67
+Hitroll 75
+HitDice 7d10+345
+ManaDice 7d10+385
+DamDice 7d8+33
+DamType slash
+AC -370 -370 -370 -296
+Wealth 50
+Act    npc dont_wander scavenger~
+Off    dodge kick~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#20128
+Name thorn the blacksmith~
+ShortD `#`RThorn`^~
+LongD Thorn, a dwarven blacksmith is here minding the forge.~
+Desc A large Dwarf is here.  He is covered in ash from his forge.  
+~
+Race dwarf~
+Align 3 0
+Level 70
+Hitroll 250
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType blast
+AC -400 -400 -400 -356
+Wealth 300
+Act    npc dont_wander~
+AffBy  infrared~
+Off    bash dodge parry~
+Imm    summon charm~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#20129
+Name wolf nightsong were-wolf~
+ShortD `#`sNightsong `wthe `sWere-Wolf`^~
+LongD A beautiful `#`sblack wolf`^ is here.~
+Desc A beautiful `Dblack`x wolf is here. It looks solemn, almost sad...
+~
+Race werewolf~
+Align 2 0
+Level 63
+Hitroll 250
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType bite
+AC -350 -350 -350 -304
+Wealth 0
+Act    npc dont_wander no_tame stay_area pet~
+Act2   no_random_obj~
+AffBy  detect_hidden infrared dark_vision~
+Off    dodge fade fast tail~
+Imm    summon charm~
+Res    magic disease~
+Vuln   holy silver iron~
+Form   edible animal biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#20100
+Name rosewood chest academy clan hall~
+Short a `#`rrosewood`^ chest~
+Desc A `#`rrosewood`^ chest is here.~
+Level 1
+ItemType container~
+Cost 588
+Durability 5
+Asize 100
+Rsize 50
+Values 1000 0 0 100 100
+Weight 30
+Material wood~
+Extra    inventory nopurge nonmetal nolocate nodegrade burnproof~
+Wear     take~
+End
+
+#20101
+Name marble fountain~
+Short `Wa `wmarble `Wfountain`^~
+Desc `#A `WMarble `Wfountain`^ is full of water here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 10000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+End
+
+#20105
+Name campfire~
+Short a `rcampfire`x~
+Desc A `rcampfire`x is here.~
+Level 54
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 8 10000 DGJ 10 10
+Weight 0
+Material unknown~
+End
+
+#20106
+Name long granite bench~
+Short a long granite bench~
+Desc `wa long granite bench is here.`^~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 2000
+Rsize 50
+Values 4 10000 EHKN 110 110
+Weight 2000
+Material granite~
+Extra    nonmetal nodegrade~
+End
+
+#20107
+Name red dragon scale~
+Short `#`wa `Rred d`rr`Ra`rg`Ro`rn `sscale`^~
+Desc A scale from a red dragon is lying here.~
+Level 60
+ItemType treasure~
+Cost 1002
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material scale~
+Extra    nodegrade burnproof~
+Wear     take ear~
+Affect modifier -1 0 -1 ac -10 0
+End
+
+#20108
+Name ruined sword of deception~
+Short `#`wa `sR`wu`si`wn`se`wd `sSword `wof `RD`re`Rc`re`Rp`rt`Ri`ro`Rn`^~
+Desc A glowing, humming sword is lying here.~
+Level 70
+ItemType weapon~
+Cost 1318
+Durability 5
+Asize 35
+Rsize 50
+Values sword 2 32 slash EG
+Weight 60
+Material iron~
+Extra    glow hum antigood burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian anti-paladin knight~
+Affect modifier -1 70 -1 damroll 2 0
+Affect modifier -1 70 -1 hitroll 2 0
+Affect modifier -1 70 -1 quickness 2 0
+Affect modifier -1 70 -1 strength 1 0
+End
+
+#20109
+Name bronzed face mask~
+Short `#`wa `ybronzed `wface `smask`^~
+Desc `#`wa mask made of `ybronze `wis lying here`^~
+Level 50
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 4
+Rsize 50
+Values 9 9 9 6 0
+Weight 10
+Material bronze~
+Extra    magic~
+Wear     take face~
+Affect modifier -1 0 -1 quickness 1 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 agility 1 0
+Affect modifier -1 0 -1 hp 2 0
+End
+
+#20110
+Name wooden spear tipped bone~
+Short `#`wa `ywooden `sspear `wtipped with `Wb`wo`Wn`we`^~
+Desc A wooden spear with a bone tip is lying here.~
+Level 84
+ItemType weapon~
+Cost 2245
+Durability 5
+Asize 100
+Rsize 50
+Values polearm 17 4 beating EF
+Weight 90
+Material wood~
+Extra    nonmetal~
+Wear     take wield~
+Affect modifier -1 0 -1 damroll 10 0
+Affect modifier -1 0 -1 hitroll 8 0
+Affect modifier -1 0 -1 presence -2 0
+End
+
+#20111
+Name gauntlets of ogre power~
+Short `#`wsome `ygauntlets `wof `gOgre `sPower`^~
+Desc Some sturdy looking gauntlets are on the ground here.~
+Level 45
+ItemType armor~
+Cost 1200
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 11 11 0
+Weight 20
+Material leather~
+Extra    burnproof~
+Wear     take hands~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher anti-paladin~
+Affect modifier -1 0 -1 strength 4 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#20122
+Name table small~
+Short a small table~
+Desc A small table is here.~
+Level 1
+ItemType furniture~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 BDEK 100 100
+Weight 0
+Material wood~
+End
+
+#0
+
+
+
+#ROOMS
+#20100
+Name Entrance to the grounds~
+Desc Coming east off of the fork in the road you encounter a large gate.  The
+ancient gate is covered in huge vines that run across the walls the gate
+connects to.  This place seems to be hidden, only showing a bit of its
+ancient work in a few places among the forest.  A small dirt path continues
+forward past the gates and into the short, but wide building that stands
+before you.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 20101
+Exit west 20189
+End
+
+
+#20101
+Name The Main Hallway~
+Desc You now stand in the main hallway..  In every direction save the way you
+came can be found a training room.  Each room has its own level of training,
+the most easy at your left, the hard to your right, and the very hardest
+above you.  Pick wisely where you shall go and train today.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 20104
+EFlags door closed~
+Exit east 20103
+Exit south 20100
+Exit west 20102
+Exit up 20105
+Exit down 20110
+End
+
+
+#20102
+Name Lessor Arts~
+Desc Coming west from the main hall you enter the training room of the lessor
+arts.  A few small creatures hang about the walls and sit around the room
+waiting to begin your training.  
+~
+RoomFlags indoors~
+Sector inside~
+Mana 125
+Heal 140
+Exit east 20101
+End
+
+
+#20103
+Name Greater Arts~
+Desc Walking east from the main hall you come into the greater arts.  This is
+the last stage you will train at before you take your final test at the
+master arts.  A mage and a warrior stand in front of you waiting to begin
+your training.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 20101
+End
+
+
+#20104
+Name Higher Arts~
+Desc Coming north from the main hall you enter the higher level training room.
+Several large creatures stand in front of you wearing armor and wielding
+weapons awaiting your attack.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 20101
+EFlags door closed~
+End
+
+
+#20105
+Name Master Arts~
+Desc Walking up the marble stairs you come to the last stage of your training
+as a young being.  Here you will finish your stay at the Academy and receive
+a token that shows the population of your achieved goals.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 20101
+End
+
+
+#20106
+Name Entrance to the Academy~
+Desc You are standing at the entrance the the Academy. Tall marble walls 
+surround the Academy protecting it from anyone that may wish to destroy the 
+valuable archives that make up the history of the world. These halls are where 
+all races can come in peace to learn their histories.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 20189
+Exit south 3031
+End
+
+
+#20107
+Name A blank walled room~
+Desc ~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#20108
+Name Red Rose Sky~
+Desc All around you, red roses constantly fall from above.  Everywhere you
+look you can see a rose, you even notice the ground on which you rest is
+made up of nothing but beautiful red roses.  The smell comes to you, its
+sweet sent pleasing, and the red color entoxicating.  
+~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#20109
+Name `GChislev's Prison`^~
+Desc ~
+RoomFlags dark no_mob indoors solitary no_recall imm_only nowhere noscry antimagic light nofly noscan noautomap noautoexits~
+Sector inside~
+End
+
+
+#20110
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 20112
+Exit east 20113
+Exit up 20101
+End
+
+
+#20111
+Name `R A Swirling Pool of Light`x~
+Desc ~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#20112
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 20114
+Exit south 20110
+End
+
+
+#20113
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 20114
+Exit east 20115
+Exit west 20110
+End
+
+
+#20114
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 20116
+Exit south 20113
+Exit west 20112
+End
+
+
+#20115
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 20116
+Exit east 20118
+Exit west 20113
+End
+
+
+#20116
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 20117
+Exit south 20115
+Exit west 20114
+End
+
+
+#20117
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 20118
+Exit west 20116
+End
+
+
+#20118
+Name Basement Storage Area~
+Desc You are standing in the storage area for the Academy but there is nothing 
+stored here.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 20117
+Exit west 20115
+End
+
+
+#20119
+Name ~
+Desc ~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#20125
+Name Spewm's Beef Shop~
+Desc Upon entering the shop you see a small counter at the far end. Upon
+this counter is several forms of meat for display. Behind the counter
+a small butchery has been set up. Food lines the walls to the right
+and left.
+~
+RoomFlags indoors safe law~
+Sector inside~
+Exit north 3303
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 20108 spec_breath_frost
+M 20113 spec_breath_acid
+M 20114 spec_breath_fire
+M 20115 spec_cast_mage
+M 20129 spec_werewolf
+S
+
+
+
+#RESETS2
+M 0 20120 20 20100 2
+M 0 20112 1 20100 1
+M 0 20120 20 20101 2
+M 0 20120 20 20102 1
+M 0 20109 1 20102 1
+E 0 20111 -1 hands~
+M 0 20120 20 20103 2
+M 0 20102 1 20103 1
+E 0 20111 -1 hands~
+M 0 20129 1 20104 1
+M 0 20119 1 20105 1
+M 0 20105 1 20106 1
+M 0 20111 1 20106 1
+M 0 20110 1 20112 1
+E 0 20109 -1 face~
+M 0 20107 1 20113 1
+E 0 20110 -1 wielded~
+M 0 20114 1 20118 1
+G 0 20107 -1
+M 0 20110 1 20125 1
+G 0 3152 0
+S
+
+
+
+#SHOPS
+#20103
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#20108
+title language gnoll greet~
+author Silaenca~
+code mob seeall
+mob lang native
+if !hasskill $n gnoll > 5
+peer $n
+sayto $n For 20 gold, I'll teach you my tongue.
+endif
+~
+disabled false
+last_editor Silaenca~
+last_editdate 1047275239
+END
+
+#20107
+code if clan $n BlackRose
+  say Ahh... May these boots bring you speed...
+  mob oload 20129
+  give boot $n
+else
+  say I think not... They are not for you...
+endif
+~
+disabled false
+END
+
+#20106
+code if clan $n BlackRose
+     say Welcome.  Please take this, it will help you.
+     MOB OLOAD 20125
+     give ring $n
+else
+     say "Leave this place at once.  You do not belong here."
+endif
+~
+disabled false
+END
+
+#20103
+author Nuitari~
+code if clan $n academy
+MOB OLOAD 2114
+say Here you are, $n.
+give robe $n
+break
+endif
+say You do not belong within these walls. Leave now!
+glare $n
+break
+endif
+~
+disabled false
+last_editor Majere~
+last_editdate 1022168565
+END
+
+#20102
+code if clan $n academy
+bow
+say Hello $n, how may I help you?
+Remember, young one..  Each room holds dangers of different kind.. Pick with great care.
+break
+endif
+~
+disabled false
+END
+
+#20101
+code if level $n > 51
+     bow
+     say Greetings, Divine One!
+else
+     nod $n
+     say Greetings traveller.
+endif
+~
+disabled false
+END
+
+#20100
+code if isimmort $n
+bow $n
+say We are honored by your presence!
+MOB TRANSFER $n 20189
+break
+endif
+if clan $n academy
+say Enter.
+MOB ECHOAT $n You enter the Academy.
+MOB TRANSFER $n 20189
+MOB ECHO $n enters the Academy.
+break
+endif
+MOB ECHOAT $n A Will-O-Wisp stops you from entering.
+MOB ECHOAROUND $n tries to enter the hall, but is stopped by A Will-O-Wisp.
+break
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

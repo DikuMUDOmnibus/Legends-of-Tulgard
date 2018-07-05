@@ -1,0 +1,667 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Vinadra's Venalena~
+ShortName   Vinadra's Venalena~
+Builders    vinadra bobette~
+build_restricts 'all' bobette ~
+VNUMs       9400 9449
+AFlags  noteleport noscry hidden use_buildrestricts nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    8
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Nov 19 20:12:01 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#9400
+Name Celebration Hall~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9401
+EFlags door closed~
+Exit south 9403
+EFlags door closed~
+End
+
+
+#9401
+Name Wedding Chapel~
+Desc Pilasters carved like thick bundles of reeds are spaced evenly along the 
+pristine, whitewashed walls of this chapel. At the top of each pilaster, the 
+spreading fingers of a fan vault expand, covered in `#`ygold leaf`^ and radiating 
+out across the arched ceiling. Set between the ridges forming the vault is a 
+`#`bmidnight blue`^ mosaic spangled with shining `#`ss`wi`Wlv`we`sr`^ shards that sparkle like 
+`#`ss`wt`Wa`wr`ss`^ in a night sky. The floor is set with an equally magnificent mosaic, 
+its pieces placed to resemble a bed of tiny `#`Wwhite`^ flowers, each with a fleck 
+of `#`Ygold`^ at the center. A `#`ygilt`^ archway in the western wall holds a panelled 
+doorway, while narrow panes of stained glass are set in the eastern wall, 
+scattering colorful patches across the chapel. A broad aisle is formed by 
+two sets of benches, with a slightly raised dais at the northern end of the 
+chapel. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9404
+Exit west 9400
+EFlags door closed~
+End
+
+
+#9402
+Name Herb Garden~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit south 9406
+EFlags door closed~
+EKeywords half-door~
+End
+
+
+#9403
+Name Meditation Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9400
+EFlags door closed~
+Exit east 9404
+EFlags door closed~
+End
+
+
+#9404
+Name Antechamber~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9401
+Exit east 9405
+EFlags door closed~
+EKeywords gateway~
+Exit south 9408
+Exit west 9403
+EFlags door closed~
+End
+
+
+#9405
+Name Courtyard~
+Desc Columns like bundled reeds ring this courtyard, which is open to the sky 
+above to admit sunlight and rain alike. A narrow roofway covers the 
+perimeter of the courtyard, offering shade and shelter alike. A white 
+curtain embroidered with coiling vines flutters lightly in the southern 
+doorway. Two corridors lead north and east, each lined with many doors, 
+although a wrought-iron gateway has been locked across the entry to each 
+corridor. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9409
+EFlags door closed~
+EKeywords curtain~
+Exit west 9404
+EFlags door closed~
+EKeywords gateway~
+End
+
+
+#9406
+Name Herb Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9402
+EFlags door closed~
+EKeywords half-door~
+Exit east 9407
+EFlags door closed~
+End
+
+
+#9407
+Name Apothecary~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9408
+Exit south 9412
+EFlags door closed~
+Exit west 9406
+EFlags door closed~
+End
+
+
+#9408
+Name Court~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 9404
+Exit east 9409
+Exit south 9413
+Exit west 9407
+End
+
+
+#9409
+Name Shrine~
+Desc This room is cool and pleasant, the thick adobe walls sheltering from wind 
+and outdoor temperatures alike. Delicately `#`ygilt`^ columns support the shallow 
+vaults of the ceiling, which is brightly `#`Wwhitewashed`^ like the walls. The 
+floor is covered in hexagonal tiles, glazed the color of `#`yhoney`^ so that they 
+gleam lightly. A thick `#`Wcurtain`^ embroidered with coiling `#`yvines`^ hangs in a 
+small archway to the north, while a more substantial door of wood has been 
+set into a doorway leading southeast. A large window with many panes fills 
+most of the eastern wall, its central panes shaped into a `#`Ysunburst`^ that 
+catches the beams of the rising sun. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9405
+EFlags door closed~
+EKeywords curtain~
+Exit west 9408
+Exit southeast 9415
+EFlags door closed~
+EKeywords doorway~
+End
+
+
+#9410
+Name Patient Ward~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9411
+EFlags door closed~
+End
+
+
+#9411
+Name Treatment Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9412
+EFlags door closed~
+Exit west 9410
+EFlags door closed~
+End
+
+
+#9412
+Name Waiting Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9407
+EFlags door closed~
+Exit east 9413
+Exit south 9418
+EFlags door closed~
+Exit west 9411
+EFlags door closed~
+EKeywords curtain~
+End
+
+
+#9413
+Name Road~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 9408
+Exit south 9419
+Exit west 9412
+End
+
+
+#9414
+Name Office~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9420
+EFlags door~
+End
+
+
+#9415
+Name Religion Classroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9421
+EFlags door closed~
+Exit northwest 9409
+EFlags door closed~
+EKeywords door~
+End
+
+
+#9416
+Name Garden~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit south 9423
+End
+
+
+#9417
+Name Maternity Ward~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9418
+EFlags door closed~
+EKeywords curtain~
+End
+
+
+#9418
+Name Birthing Room~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9412
+EFlags door closed~
+Exit west 9417
+EFlags door closed~
+EKeywords curtain~
+End
+
+
+#9419
+Name Road~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 9413
+Exit east 9420
+Exit south 9426
+End
+
+
+#9420
+Name School Entry~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9414
+EFlags door~
+Exit east 9421
+Exit south 9427
+EFlags door closed~
+Exit west 9419
+End
+
+
+#9421
+Name School Hall~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9415
+EFlags door closed~
+Exit east 9422
+EFlags door~
+Exit south 9428
+EFlags door closed~
+Exit west 9420
+Exit up 9446
+End
+
+
+#9422
+Name Library~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9421
+EFlags door~
+End
+
+
+#9423
+Name Garden~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit north 9416
+Exit east 9424
+EFlags door closed~
+EKeywords half-door~
+End
+
+
+#9424
+Name Kitchen~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9425
+EFlags door closed~
+EKeywords counter~
+Exit south 9431
+EFlags door closed~
+EKeywords door~
+Exit west 9423
+EFlags door closed~
+EKeywords half-door~
+End
+
+
+#9425
+Name Soup Kitchen~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9432
+Exit west 9424
+EFlags door closed~
+EKeywords counter~
+End
+
+
+#9426
+Name Road~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 9419
+Exit south 9433
+End
+
+
+#9427
+Name Nursery~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9420
+EFlags door closed~
+Exit south 9434
+EFlags door closed~
+EKeywords gate~
+End
+
+
+#9428
+Name Creche~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9421
+EFlags door closed~
+End
+
+
+#9429
+Name Park~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit south 9436
+End
+
+
+#9430
+Name Antechamber~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9431
+EFlags door~
+Exit south 9437
+End
+
+
+#9431
+Name Hall~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9424
+EFlags door closed~
+EKeywords door~
+Exit east 9432
+Exit south 9438
+EFlags door closed~
+EKeywords door~
+Exit west 9430
+EFlags door~
+End
+
+
+#9432
+Name Entry~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9425
+Exit east 9433
+Exit south 9439
+EFlags door closed~
+Exit west 9431
+End
+
+
+#9433
+Name Road~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 9426
+Exit south 9440
+Exit west 9432
+End
+
+
+#9434
+Name Playground~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit north 9427
+EFlags door closed~
+EKeywords gate~
+Exit east 9435
+Exit south 9441
+End
+
+
+#9435
+Name Park~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit east 9436
+Exit south 9442
+Exit west 9434
+End
+
+
+#9436
+Name Park~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit north 9429
+Exit south 9443
+Exit west 9435
+End
+
+
+#9437
+Name Bath~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9430
+End
+
+
+#9438
+Name Bedroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9431
+EFlags door closed~
+End
+
+
+#9439
+Name Bedroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9432
+EFlags door closed~
+End
+
+
+#9440
+Name Road~
+Desc ~
+RoomFlags indoors light~
+Sector city~
+Exit north 9433
+Exit east 9441
+End
+
+
+#9441
+Name Park~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit north 9434
+Exit east 9442
+Exit west 9440
+End
+
+
+#9442
+Name Park~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit north 9435
+Exit east 9443
+Exit west 9441
+End
+
+
+#9443
+Name Park~
+Desc ~
+RoomFlags indoors light~
+Sector field~
+Exit north 9436
+Exit west 9442
+End
+
+
+#9444
+Name SewingClassroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit south 9446
+EFlags door closed~
+End
+
+
+#9445
+Name Dance and Music Classroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit east 9446
+EFlags door closed~
+End
+
+
+#9446
+Name School Landing~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9444
+EFlags door closed~
+Exit east 9447
+EFlags door closed~
+Exit south 9448
+EFlags door closed~
+Exit west 9445
+EFlags door closed~
+Exit down 9421
+End
+
+
+#9447
+Name Business Classroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit west 9446
+EFlags door closed~
+End
+
+
+#9448
+Name Art Classroom~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Exit north 9446
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

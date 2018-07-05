@@ -1,0 +1,104 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Del's Area~
+ShortName   Del's Area~
+Builders    None~
+VNUMs       1350 1388
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    8
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Thu May 13 19:13:55 2004~
+End
+
+
+
+#MOBILES
+#1350
+Name dai~
+ShortD dai~
+LongD A small baby feylar is here, crawling around.~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 81
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy2 fear_magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg PREKILL 1350 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#1350
+Name First room.~
+Desc This is MY VNUMS.. my precioussss....
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#1350
+title Prevnet Dai's Death~
+author Echmoro~
+code mob echoat $n I don't think her parents would be happy if you did that.
+mob preventattack
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1065966008
+END
+
+#0
+
+
+#$

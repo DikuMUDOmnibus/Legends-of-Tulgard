@@ -1,0 +1,305 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Black Talon Clan Hall~
+ShortName   Black Talon Guild~
+Builders    None~
+VNUMs       5790 5799
+AFlags  noteleport noscry hidden nogateinto nosummoninto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#5790
+Name half elven shopkeeper~
+ShortD a half elven male~
+LongD A tall half-elven male is standing here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#5791
+Name markian female healer~
+ShortD a female markian~
+LongD A markian female is here to heal your wounds.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric healer~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#5792
+Name tall male angrak shopkeeper~
+ShortD a tall male angrak trainer~
+LongD A tall male angrak trainer stands here, teaching offensive fight strategies.~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -720
+Wealth 2400
+Act    npc dont_wander no_tame stay_area train practice gain changer~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#5790
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN F 1100 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#5791
+Name fountain~
+Short an `#`Sobsid`Xi`San fountain`^~
+Desc A `#`Sbe`Xa`Sutiful `Sobs`Xi`Sd`Xi`San fountain`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 999999 999999 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#5792
+Name large sleeping cots~
+Short a large sleeping cot~
+Desc Several large sleeping cots line the walls here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 10 4000 EHK 110 110
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#5790
+Name Entrance to the Guild Hall~
+Desc ~
+RoomFlags indoors light~
+Sector inside~
+Clan talon
+Exit north 5791
+Exit south 54017
+End
+
+
+#5791
+Name Grand Hall of the Talon~
+Desc You are standing in the middle of a large open room. The ceiling reaches at 
+least 10 feet in height and there is a large dome in the middle of it. A 
+huge crystal light hangs down by a golden chain from the dome creating 
+plenty of light. The floors are made out of a grey marble and gleam as if 
+they have just been polished. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 5793
+Exit east 5792
+Exit south 5790
+Exit west 5794
+End
+
+
+#5792
+Name A Quiet Room of Healing~
+Desc Soft incense is burning creating a calm atmosphere. There are pillows spread 
+around the room and a warm firepit burning in the middle of the room. Smoke 
+billows up through the chimney. The only light in here is from the firepit. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 5791
+End
+
+
+#5793
+Name Portal Room~
+Desc There is nothing in this room but a set of stairs in the far northwest 
+corner leading upwards into another part of the building. There is no 
+artificial light in this room, only what comes from the one window against 
+the northern wall. The floor and walls are made out of wood and there is a 
+large portal floating in the middle of the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 5791
+Exit up 5796
+End
+
+
+#5794
+Name Supply Shop~
+Desc Shelves of empty potion bottles and blank scrolls line the shelves here and 
+large wooden crates rest on the floor. There is a large lantern hanging on 
+one of the walls for light. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 5791
+Exit south 5795
+End
+
+
+#5795
+Name Storage Room~
+Desc Armor and weapons are stored  here for the guilds use as well as other 
+things that might be needed. 
+~
+RoomFlags indoors light~
+Room2Flags storage_room~
+Sector inside~
+Exit north 5794
+End
+
+
+#5796
+Name Sleeping Quarters~
+Desc This is a small dark room. There is a thin dark colored carpet on the floor 
+and no windows at all. For light, there is only a single torch on the wall 
+burning very dimly. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 5793
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 5792 1 5791 1
+O 0 5791 -1 5791
+M 0 5791 1 5792 1
+O 0 5790 -1 5793
+M 0 5790 1 5794 1
+G 0 803 -1
+G 0 23639 -1
+G 0 23609 -1
+G 0 5707 -1
+G 0 3085 -1
+G 0 3199 -1
+G 0 3087 -1
+G 0 3088 -1
+O 0 5792 -1 5796
+S
+
+
+
+#SHOPS
+#5790
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#5791
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,115 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        FREE FOR ESTATES2~
+ShortName   FREE FOR ESTATES2~
+Builders    none~
+Credits     none~
+VNUMs       2350 2359
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Thu Dec 22 12:29:08 2005~
+End
+
+
+
+#MOBILES
+#2350
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+AffBy2 shadowsight~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 2350 goosefeathers~
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#2357
+Name Bedroom~
+Desc . The floor is covered in a soft beige carpet.  There is a window on the west 
+wall letting you look out into the deep forests.  There is a gas run lantern 
+hanging from the ceiling to light the room.  A comfortable twinbed is set in 
+the northwest corner.  A desk and chair sits in the southeast corner.  On 
+the north wall is a teak dresser.  The walls have been painted with an 
+oceanic view, ships sailing, casting up their sails, a battle of pirates on 
+the horizon and dragons flying up in the sky.  
+~
+RoomFlags indoors light~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2350
+title mob trans~
+author Ixliam~
+code mob transfer $n 2359
+~
+disabled false
+last_editor Delandria~
+last_editdate 1105912673
+END
+
+#0
+
+
+#$

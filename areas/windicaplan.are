@@ -1,0 +1,1412 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Ferox-Caladon Plantation~
+ShortName   Ferox-Caladon Plantation~
+Builders    None~
+VNUMs       13000 13030
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#13000
+Name thalassa elven teenage stablegirl~
+ShortD `#`wThalassa, the stable girl`^~
+LongD An elven teenage stablegirl with long honey ringlets is here.~
+Desc ~
+Race human~
+Align 3 3
+Level 95
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+600
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -585
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign noautosocial~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared dark_vision~
+Off    bash berserk disarm dodge kick dirt_kick assist_race assist_guard assist_vnum~
+Imm    summon charm magic weapon scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 13000 100~
+MProg SPEECH 13001 mason~
+END
+
+#13001
+Name graceful white mare horse zariel~
+ShortD a graceful white mare~
+LongD A graceful `#`Wwhite`^ mare.~
+Desc Snow white mare with four matching black stockings and a broad black blaze 
+on her face.  Her graceful mane and tail are also the same color black. 
+~
+Race horse~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc docile no_tame stay_area pet~
+Form   mountable~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#13002
+Name river black stallion horse~
+ShortD a magnificent black stallion~
+LongD A Magnificent `#`SBlack`^ Stallion is here.~
+Desc Blue black stallion with four matching white stockings and a thin white 
+blaze on his face.  His mane and tail are elegant and long. 
+~
+Race horse~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc docile no_tame stay_area pet~
+Form   mountable~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#13003
+Name pot bellied pig small~
+ShortD a black and white pot bellied pig~
+LongD A black and white pot bellied pig, stands here.~
+Desc ~
+Race pig~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 2d5+1
+DamDice 1d5+0
+DamType chomp
+AC 80 80 80 100
+Wealth 0
+Act    npc no_tame stay_area wimpy noalign~
+AffBy  flying swim~
+Form   edible animal biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg GREET 13002 50~
+END
+
+#13004
+Name large brown cow~
+ShortD a brown cow~
+LongD A large `#`ybrown`^ cow is standing here.~
+Desc ~
+Race pig~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d99+1
+DamDice 1d6+1
+DamType crush
+AC 50 50 50 70
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  calm~
+Off    kick dirt_kick tail~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye tail~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#13005
+Name cute calf~
+ShortD a cute calf~
+LongD A cute calf with a `#`Mpink`^ nose.~
+Desc ~
+Race pig~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d99+1
+DamDice 1d6+1
+DamType crush
+AC 50 50 50 70
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  calm~
+Off    kick dirt_kick tail~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye tail~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#13006
+Name hummingbird bird~
+ShortD a hummingbird~
+LongD A hummingbird flies past you.~
+Desc The rapid beating of this bird's wings makes a humming sound.
+These birds are noted for their ability to hover and fly upward,
+downward, and backward while still in a horizontal position.
+~
+Race unique~
+Align 0 1
+XPMod 105
+Level 98
+Hitroll 0
+HitDice 10d13+475
+ManaDice 4d5+105
+DamDice 10d13+53
+DamType peck
+AC -680 -680 -680 -544
+Wealth 350
+Act    npc stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden flying haste~
+Off    disarm dodge fade fast parry trip~
+Imm    summon charm~
+Form   edible~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#13007
+Name saba dog~
+ShortD `#`wSaba`^~
+LongD Saba, an old dog with a big heart is here, she loves to have her head patted.~
+Desc This dog looks very relaxed and happy.  His owner takes very good care of 
+him.  
+~
+Race dog~
+Align 0 0
+XPMod 110
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType chomp
+AC -70 -70 -70 -58
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    fast~
+Imm    charm~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#13008
+Name parthenia black cat~
+ShortD `#`wParthenia`^~
+LongD Parthenia, a long haired `#`sblack cat`^ with `#`ggreen`^ eyes is here.~
+Desc ~
+Race cat~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+100
+DamDice 1d4+0
+DamType scratch
+AC 90 90 90 90
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#13000
+Name antique canopy bed white violet ~
+Short an antique canopy bed, white and violet bedding~
+Desc An antique canopy bed, white and violet bedding~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHKL 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#13001
+Name large four poster bed purple green ~
+Short a large four-poster bed with royal purple and dark green bedding.~
+Desc A large four-poster bed with royal purple and dark green bedding sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1000 EHK 100 100
+Weight 0
+Material unknown~
+ExtraDesc canopy bed~
+This canopy bed is a fin example of antique.  The cast iron four poster 
+bedstead with particularly attractive cast iron panel decoration and 
+finished in green verdigris.  The silk flowing sheet from the top to the 
+bottom is in an emerald green, as is the bedding and pillows.  It is very 
+inviting and lovely. 
+~
+End
+
+#13002
+Name fountain pig~
+Short a pig-shaped fountain~
+Desc A pig-shaped fountain bubbles here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material unknown~
+ExtraDesc fountain pig~
+A small plaque at the base reads the following:
+ 
+================================================
+|                                              |
+|                                              |
+|         In Loving Memory of Lily             |
+|                                              |
+|                                              |
+================================================
+ 
+~
+End
+
+#13003
+Name antique elvish sofa~
+Short a green antique elvish sofa~
+Desc A green antique elvish sofa looks very comfortable.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 EHK 100 100
+Weight 0
+Material cloth~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13004
+Name elvish desk~
+Short a sturdy, antique elvish desk with a framed drawing of windica set on it.~
+Desc A sturdy, antique elvish desk with a framed drawing of Windica set on it.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 5000 DEGH 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13005
+Name treasury key~
+Short `#`WWindica's `YHouse Key`^~
+Desc `#`WWindica's `YHouse Key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#13006
+Name fireplace~
+Short a blazing fireplace~
+Desc A fireplace beckons you to sit by it.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 ADGJQ 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13007
+Name elvish desk~
+Short a sturdy, antique elvish desk with a framed drawing of elemir set on it.~
+Desc A sturdy, antique elvish desk with a framed drawing of Elemir set on it.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 5000 DEGH 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13008
+Name large swing~
+Short a large, attractive swing~
+Desc A large, attractive swing is along the back wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 EHK 100 100
+Weight 0
+Material unknown~
+ExtraDesc swing ~
+A large, attractive swing is along the back wall, inviting you to sit. 
+~
+End
+
+#13009
+Name entranceway gazebo~
+Short the entanceway to a gazebo~
+Desc An ivy-covered entranceway to a gazebo opens out here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 13029 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#13010
+Name long rectangular antique elven table~
+Short a long rectangular antique elven made table~
+Desc A long rectangular antique elven made table sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc table ~
+A large table with a fruit bowl on it, containing apples, bananas, oranges. 
+The table again would be an elvish antique. 
+~
+End
+
+#13011
+Name antique armoire elven dresser~
+Short an antique armoire adorned with a portrait of windica and elemir from their wedding day~
+Desc An antique armoire adorned with a portrait of Windica and Elemir from their wedding day.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 C 0 500 100
+Weight 0
+Material unknown~
+End
+
+#13012
+Name wicker swing~
+Short a lovely wicker swing~
+Desc A lovely wicker swing is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1000 EH 100 100
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+Extra2   nodecay~
+End
+
+#13013
+Name bed of flowers~
+Short a colorful and delightful flowerbed~
+Desc A colorful and delightful flowerbed~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 2000 DEFGHI 100 100
+Weight 0
+Material flowers~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#13014
+Name treehouse~
+Short a large and decorative treehouse~
+Desc A large and decorative treehouse is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 2000 DEFGHI 100 100
+Weight 0
+Material flowers~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#13015
+Name bookcase~
+Short an enourmous bookcase~
+Desc An enourmous bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13016
+Name coffee table~
+Short a coffee table with a vase of lillies~
+Desc A Coffee table with a vase of Lillies is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 0 EH 100 100
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13017
+Name magical harp~
+Short a magical harp~
+Desc A magical harp that plays bedtime songs and stories~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13018
+Name white chest~
+Short a soft white chest~
+Desc A soft white chest full of lovely dresses of every color is here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#13019
+Name toy chest~
+Short a toy chest~
+Desc A Toy Chest, overflowing with beloved trinkets is here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13020
+Name doll house~
+Short a doll house~
+Desc A Doll House full of dolls, furniture and clothes.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#13021
+Name small table~
+Short a small table~
+Desc A small table with toys, puzzles and games spread all over it.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material cherrywood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#13022
+Name cupboard~
+Short a cupboard~
+Desc A cupboard full of neatly arranged dishes~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#13023
+Name basin~
+Short a basin for washing dishes~
+Desc A basin for washing dishes is here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+ExtraDesc basin ~
+A basin for washing dishes, set underneath a windowsill that contains a 
+planter full of colorful flowers. 
+~
+End
+
+#13024
+Name antique clawfoot bathtub~
+Short an immense antique clawfoot bathtub~
+Desc An immense antique clawfoot bathtub is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 FI 100 100
+Weight 0
+Material ceramic~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#13025
+Name antique vanity table mirror.~
+Short an antique vanity table with a mirror~
+Desc An antique vanity table with a mirror.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 0 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#13026
+Name small wicker bench~
+Short a small wicker bench~
+Desc A small wicker bench sits on the edge of the pond here.~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 2000
+Rsize 50
+Values 4 10000 BEHKN 100 100
+Weight 2000
+Material wood~
+Extra    noremove nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#13027
+Name arch out~
+Short an arch leading out~
+Desc An ivy-covered arch leading back out takes up the southern wall.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 13018 0
+Weight 0
+Material unknown~
+End
+
+#13028
+Name antique bed white black bedding~
+Short an antique bed, white and black bedding~
+Desc An antique bed, white and black bedding.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 EHKL 100 100
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Extra2   nodecay~
+End
+
+#13030
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 13007 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#13000
+Name Lush Path~
+Desc A lush path with various types of trees lining the sides, giving adequate 
+shade across the entire path. The sounds of various animals can be heard all 
+throughout, giving a feeling of serenity. 
+~
+RoomFlags indoors noscry light~
+Sector trail~
+Exit north 13003
+Exit south 13001
+EFlags door closed nopass~
+EKeyvnum 13005
+EKeywords door~
+End
+
+
+#13001
+Name Lobby~
+Desc This short hallway is brightly lit as if by magical means.  The floor is 
+covered with a sea-foam green rug and appears well travelled. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13000
+EFlags door closed nopass~
+EKeyvnum 13005
+Exit east 13002
+Exit south 13004
+Exit west 13005
+End
+
+
+#13002
+Name Comfortable Room~
+Desc A quaint and inviting room that illuminates a pleasant feeling. Open windows 
+to the south and north grant a soft breeze which assists the incense and 
+candles to promote the aroma. A fireplace on the west wall provides warmth 
+in the cold months, a silky homemade afghan provides a comforting area for 
+those wishing to relax. On the east wall are portraits, one of a elvish 
+gentleman, with the words inscribed at the bottom, North Ferox. Next to this 
+one is a breath-taking Elven lady with flowing blond hair, inscribed is her 
+name, Rainia Aquilo Ferox. Next to these is a portrait of an elvish girl 
+with a platinum ponytail with an elvish man with silver hair and bangs, 
+sitting with them are four children, one young half-elven girl, two older 
+teenage elven girls and a teenage elvish boy. Names on the bottom of the 
+portrait are: Elemir Caladon and Wife, Windica Ferox Caladon with their 
+children, Aquilo, Rainia and Devon and Lillia.  On an opposite wall is a 
+portrait of Galaphile, Melisande and Rhea. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit west 13001
+End
+
+
+#13003
+Name Lush Path~
+Desc A lush path with various types of trees lining the sides, giving adequate 
+shade across the entire path. The sounds of various animals can be heard all 
+throughout, giving a feeling of serenity. 
+~
+RoomFlags indoors noscry light~
+Sector trail~
+Exit north 46184
+Exit south 13000
+End
+
+
+#13004
+Name Hallway with Stairs~
+Desc This short hallway is brightly lit as if by magical means.  The floor is 
+covered with a sea-foam green rug and appears well travelled. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13001
+Exit east 13009
+Exit west 13010
+Exit up 13019
+End
+
+
+#13005
+Name Hallway~
+Desc This short hallway is brightly lit as if by magical means.  The floor is 
+covered with a sea-foam green rug and appears well travelled. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13006
+Exit east 13001
+Exit south 13007
+Exit west 13008
+End
+
+
+#13006
+Name Elemir's Study~
+Desc When you enter this room you feel slightly cooler than you did from the 
+hallway.  The walls are a cool grey-blue, hung on them only a few small 
+portraits, some just plain black.  A sturdy desk is directly in front of you 
+on the north wall, upon it a wire-framed drawing.  In the south-west corner 
+is a large comfortable recliner, the cushion seemingly already melding to 
+the physical shape of its owner.  On the west wall is a tall bookshelf, 
+filled with a few books with dark covers and rolled parchments.  Near the 
+bookshelf in the south-east corner on a pedastol is a statue of Harpan. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 13005
+End
+
+
+#13007
+Name Windica's Study~
+Desc This room is elegantly decorated from top to bottom.  The walls are a warm 
+sandy pink.  The south wall holds portraits of friends and family.  There is 
+an antique ivory desk with a chair against the west wall.  The desk is 
+neatly organized with a few books, papers, ink and quills.  Near the desk in 
+the corner is a pedastol, upon it a statue of the deity Kreav.   A long 
+bookshelf is against the north wall, full of books large and small, their 
+covers all different colours.  To the west is what looks like a play area on 
+a shaggy pink carpet, a playpen sitting in the middle of it.  Sewn onto the 
+longer side of the pen is a yellow bear with a pink bow on its head, its 
+arms open ready for a hug. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13005
+End
+
+
+#13008
+Name Library~
+Desc A bookcase along the left and right walls hold the tones, novels, scrolls, 
+librams, books and magical references for studying or relaxing with a good 
+novel.  A small fireplace burns on the far wall bathing the room in a golden 
+glow. This room contains a lived in feeling, giving it a relaxed and serene 
+atmosphere. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit east 13005
+End
+
+
+#13009
+Name Washing Room~
+Desc A light tone greets you upon entering, bright yellows and a lavender trim 
+adorn the walls, with small paintings of birds and flowers. An open window 
+provides the sweet scented breeze that flows through. A relaxing spa of 
+sorts with the candles and aroma from the bath salts that Windica created 
+from flowers. A vase of flowers sits upon the basin, normally full of 
+various flavors. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit west 13004
+End
+
+
+#13010
+Name Country Kitchen~
+Desc A country style kitchen with cyan and yellow colorings on the walls. An open 
+window above the wash basin for cleaning dishes provides a cool breeze and 
+the windchimes to sing with the melody. This room appears to be quite lived 
+in and a simple atmosphere, yet anyone can tell there is an abundance of 
+love in this home. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit east 13004
+Exit south 13011
+EFlags door closed~
+EKeywords door~
+End
+
+
+#13011
+Name Walkway to Stables~
+Desc A pathway to the estate stables, a lush bed of grass squishes under your 
+step as you walk.  Peering about, you see various trees, weeping willows, 
+pines and two very old oak trees set on either side of the entrance to the 
+barn.  A forest surrounds the path on either side, giving it a protected and 
+calm feeling.  Birds chirp happily from the tree branches and there are many 
+nests full of baby birds in the limbs of the oak trees. 
+~
+RoomFlags indoors noscry light~
+Sector trail~
+Exit north 13010
+EFlags door closed~
+EKeywords door~
+Exit east 13018
+Exit west 13012
+Exit southeast 13027
+Exit southwest 13028
+End
+
+
+#13012
+Name Stables~
+Desc The horses greet you with a friendly neigh as they hang their heads over 
+their stall doors, hoping you brought a carrot or apple.  There is a 
+pounding noise from a stall, as a horse paws in anticipation of a treat.  
+Chickens peck about on the ground at stray pieces of feed that have fallen.  
+There are tiny little holes about the base of the stalls, where the little 
+mice that escaped the yellow-eyed cat have built their homes.  The wood that 
+was used to build the barn has a lovely scent to it.  The colors are a tan 
+and green. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13013
+Exit east 13011
+Exit south 13014
+Exit west 13015
+End
+
+
+#13013
+Name Stall~
+Desc This is a large stall, as they all are.  The owner obviously prefers the 
+horses to be comfortable while contained.  The ground is plush with bright 
+yellow hay as bedding.  A hay rack is bolted to the back right corner, with 
+an opening to the hayloft.  A back door gives the occupant a method of going 
+outdoors as it wishes.  This enables the horses to get in during bad 
+weather, or stay outdoors in pleasant weather.  A couple of horseflies 
+flutter about the stall, waiting for the perfect moment to pester the horse. 
+ A large feed bucket is on the wall attached to the hallway, and a magical 
+water trough keeps the horse content. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 13012
+End
+
+
+#13014
+Name Stall~
+Desc This is a large stall, as they all are.  The owner obviously prefers the 
+horses to be comfortable while contained.  The ground is plush with bright 
+yellow hay as bedding.  A hay rack is bolted to the back right corner, with 
+an opening to the hayloft.  A back door gives the occupant a method of going 
+outdoors as it wishes.  This enables the horses to get in during bad 
+weather, or stay outdoors in pleasant weather.  A couple of horseflies 
+flutter about the stall, waiting for the perfect moment to pester the horse. 
+ A large feed bucket is on the wall attached to the hallway, and a magical 
+water trough keeps the horse content. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13012
+End
+
+
+#13015
+Name Stables~
+Desc The horses greet you with a friendly neigh as they hang their heads over 
+their stall doors, hoping you brought a carrot or apple.  There is a 
+pounding noise from a stall, as a horse paws in anticipation of a treat.  
+Chickens peck about on the ground at stray pieces of feed that have fallen.  
+There are tiny little holes about the base of the stalls, where the little 
+mice that escaped the yellow-eyed cat have built their homes.  The wood that 
+was used to build the barn has a lovely scent to it.  The colors are a tan 
+and green.  A ladder is here that can bring you to the hayloft for some 
+relaxing serenity time. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13017
+Exit east 13012
+Exit south 13016
+Exit up 13026
+End
+
+
+#13016
+Name Stall~
+Desc This is a large stall, as they all are.  The owner obviously prefers the 
+horses to be comfortable while contained.  The ground is plush with bright 
+yellow hay as bedding.  A hay rack is bolted to the back right corner, with 
+an opening to the hayloft.  A back door gives the occupant a method of going 
+outdoors as it wishes.  This enables the horses to get in during bad 
+weather, or stay outdoors in pleasant weather.  A couple of horseflies 
+flutter about the stall, waiting for the perfect moment to pester the horse. 
+ A large feed bucket is on the wall attached to the hallway, and a magical 
+water trough keeps the horse content. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13015
+End
+
+
+#13017
+Name Stall~
+Desc This is a large stall, as they all are.  The owner obviously prefers the 
+horses to be comfortable while contained.  The ground is plush with bright 
+yellow hay as bedding.  A hay rack is bolted to the back right corner, with 
+an opening to the hayloft.  A back door gives the occupant a method of going 
+outdoors as it wishes.  This enables the horses to get in during bad 
+weather, or stay outdoors in pleasant weather.  A couple of horseflies 
+flutter about the stall, waiting for the perfect moment to pester the horse. 
+ A large feed bucket is on the wall attached to the hallway, and a magical 
+water trough keeps the horse content. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 13015
+End
+
+
+#13018
+Name Gazebo~
+Desc An elegant, yet simple gazebo made from the same cypress wood as the Stables 
+sits in the center of this clearing. The scent is intoxicating. There are 
+plants hanging from the sides all the way around, a few small trees in pots 
+sit in the corners and around the exterior. Rosebushes surround the 
+entryway, a variety of colors and shapes. Most prominent are the white and 
+yellow blossoms which dazzle the eyes. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit west 13011
+End
+
+
+#13019
+Name Hallway~
+Desc This short hallway is brightly lit as if by magical means.  The floor is 
+covered with a sea-foam green rug and appears well travelled. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit east 13020
+Exit west 13022
+Exit down 13004
+End
+
+
+#13020
+Name Hallway~
+Desc This short hallway is brightly lit as if by magical means.  The floor is 
+covered with a sea-foam green rug and appears well travelled. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13021
+Exit south 13025
+Exit west 13019
+End
+
+
+#13021
+Name Master Bedroom~
+Desc . Warm tones glow from the walls, plants hang about and sit in pots. A wind 
+chime with faeries sings softly as the breeze from the open window touches 
+it. An antique vanity sits in a corner, with a large mirror. The silk that 
+hangs from the canopy drifts with the breeze, giving the room a romantic and 
+serene feeling. Incense and candles provide a tantalizing aroma. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 13020
+End
+
+
+#13022
+Name Hallway~
+Desc This short hallway is brightly lit as if by magical means.  The floor is 
+covered with a sea-foam green rug and appears well travelled. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13024
+Exit east 13019
+Exit south 13023
+End
+
+
+#13023
+Name Devon's room~
+Desc This room is cozy enough for anyone to rest in, but obviously is decorated 
+for a little boy.  Three of the walls are painted in earth tones, a warm 
+brown accented with greenleaf patterns near the roof.  The three walls hold 
+pictures of a black-scaled dragon, the name 'Void' scribed below it.  Some 
+pictures hold the picture of another dragon in blue tone and a female, each 
+picture with the name 'Morliana' scribed under them.  Other pictures hung on 
+the walls are of what seems to be a family.  The largest eastern wall holds 
+a scene painted of a battle ship and pirate ship in action, smoke rising 
+from their cannons and pirates swinging across ropes to the battle ship for 
+a raid. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13022
+End
+
+
+#13024
+Name Playroom~
+Desc The ceiling is painted like the sky, blue with clouds, tiny faeries sitting 
+and playing on them.  The walls are painted like an open glade, with forests 
+in the background, a pond with reeds and willows, bees and birds flying, 
+even a brown rabbits and squirrels picking up berries, nuts and playing with 
+one another.  The area is filled with playroom items, from a toychest to a 
+doll house, and even a table and chairs. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 13022
+End
+
+
+#13025
+Name Lillia's Room~
+Desc The walls are covered with drawings of faeries, unicorns, butterflies,  
+various birds puppies and kittens. The colors are a violet and pink. A 
+window allows her to peek out onto the grounds and see her critter friends.  
+This room is every little girl's dream. There is also a nightlight in the 
+form of a little faerie. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 13020
+End
+
+
+#13026
+Name Hayloft~
+Desc A peaceful place for relaxing and watching the horses from small windows 
+that look down into their stalls. A window on the west wall is open to the 
+paddock to watch the horses graze on the sweet, lush grass. Piegons and 
+chickens live up here and fly about at visitors. The aroma is sweet from the 
+hay. 
+~
+RoomFlags no_mob indoors noscry light~
+Sector inside~
+Exit down 13015
+End
+
+
+#13027
+Name Small Pond~
+Desc Weeping willows surround the pond, ducks and geese swim about, occasionally 
+diving down to get a fish. The grass is lush and sweet smelling. The water  
+in the pond is clear and the fish can be seen darting around with each  
+other. A serene spot for fishing, or having a picnic. 
+~
+RoomFlags indoors noscry light~
+Room2Flags freshwater_fish~
+Sector swim~
+Exit northwest 13011
+End
+
+
+#13028
+Name Flower Garden~
+Desc Entering this garden area you are overwhelmed by a warm breeze wafting the 
+scent of sweet flowers in your direction.  The garden is full of various 
+flowers nicely planted in the ground.  A large tree with a tree house with 
+swings hanging from it  shades the garden nicely, its branches swaying in 
+the breeze creating an enchanting rippling effect around the area with 
+sunlight. 
+~
+RoomFlags indoors noscry light~
+Sector field~
+Exit northeast 13011
+End
+
+
+#13029
+Name Inside a Gazebo~
+Desc This cypress wood made Gazebo is charming and tranquil. Various plants  hang 
+from the ceiling. The open window areas provide a cool breeze as  the shade 
+from the surrounding trees delivers a canopy from the sun. A  birdcage sits 
+in a corner with two small yellow birds that chirp  blissfully at company. A 
+large, attractive swing is along the back wall,  for anyone wishing to take 
+a break. A spot for a spontaneous lunch,  breakfast, simply relaxing or a 
+romantic get-a-way. 
+~
+RoomFlags indoors light~
+Sector inside~
+End
+
+
+#13030
+Name Treasury~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 13002 -1 13000
+M 0 13007 1 13001 1
+O 0 13003 -1 13002
+O 0 13006 -1 13002
+O 0 13004 -1 13006
+O 0 13007 -1 13007
+O 0 13006 -1 13008
+O 0 13015 -1 13008
+O 0 13016 -1 13008
+O 0 13024 -1 13009
+O 0 13025 -1 13009
+O 0 13010 -1 13010
+O 0 13022 -1 13010
+O 0 13023 -1 13010
+O 0 13002 -1 13011
+M 0 13006 3 13011 1
+M 0 13000 1 13012 1
+M 0 13004 1 13013 1
+M 0 13005 1 13013 1
+M 0 13003 1 13015 1
+M 0 13001 1 13016 1
+M 0 13002 1 13017 1
+O 0 13009 -1 13018
+M 0 13006 3 13018 1
+M 0 13008 1 13019 1
+O 0 13001 -1 13021
+O 0 13011 -1 13021
+O 0 13028 -1 13023
+O 0 13019 -1 13024
+O 0 13020 -1 13024
+O 0 13021 -1 13024
+O 0 13000 -1 13025
+O 0 13017 -1 13025
+O 0 13018 -1 13025
+O 0 13026 -1 13027
+M 0 13006 3 13027 1
+O 0 13012 -1 13028
+O 0 13013 -1 13028
+O 0 13014 -1 13028
+O 0 13027 -1 13029
+O 0 13008 -1 13029
+O 0 13030 -1 13030
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#13002
+title piggy squeal~
+author Delandria~
+code squeal $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1108346845
+END
+
+#13001
+title treasury trans~
+author Delandria~
+code mob seeall
+mob transfer $n 13030
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1109544087
+END
+
+#13000
+title Welcome~
+author Delandria~
+code language native
+curtsey
+sayto $n Welcome to the Plantation!
+~
+disabled false
+last_editor Delandria~
+last_editdate 1105297977
+END
+
+#0
+
+
+#$

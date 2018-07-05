@@ -1,0 +1,745 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Crypt Coven Clan Hall~
+ShortName   The Crypt~
+Builders    None~
+Credits     Delandria~
+VNUMs       1400 1449
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+AreaEcho  1 23  30 Water drips down the dark stone walls of the crypt.~
+*LastSaved  Sun Dec 18 16:08:10 2005~
+End
+
+
+
+#MOBILES
+#1400
+Name ancient vampire~
+ShortD the ancient vampire~
+LongD An ancient vampire stands ready to train you in combat.~
+Desc This ancient creature is as evil as they get.  The look of absolute
+malice in its eyes is beyond description.  The vampire is dressed in dark
+clothing, and has pale white skin with black hair and eyes.  
+~
+Race vampire~
+Align 0 -3
+XPMod 120
+Level 120
+Hitroll 4
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType drain
+AC -900 -900 -900 -747
+Wealth 810
+Act    npc dont_wander no_tame stay_area train practice undead no_hunt gain~
+Act2   allskills avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_hidden detect_good infrared haste dark_vision regeneration~
+Off    bash disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm poison negative mental disease drowning sleep illusion hunger thirst fear~
+Res    cold lightning negative energy~
+Vuln   fire holy light~
+Form   poison instant_decay sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#1402
+Name mistress pandora healer~
+ShortD `#Pandora~
+LongD Pandora stands here, tending to your wounds.~
+Desc ~
+Race vampire~
+Align -1 0
+Level 100
+Hitroll 90
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+54
+DamType blast
+AC -700 -700 -700 -630
+Wealth 600
+Act    npc dont_wander no_tame undead cleric noalign healer~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil haste dark_vision regeneration~
+Off    area_attack bash disarm dodge fast kick dirt_kick parry trip~
+Imm    summon charm magic weapon poison negative disease drowning sleep illusion hunger thirst fear~
+Res    charm fire cold poison negative~
+Vuln   fire holy light~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 1400 banner~
+END
+
+#1403
+Name young boy~
+ShortD a young boy~
+LongD A young boy with bite marks on his neck and arms is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc no_tame stay_area no_hunt noalign~
+Act2   allow_feed~
+Imm    summon charm magic poison negative energy mental disease drowning sleep scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#1404
+Name ancient vampire banker~
+ShortD the vampire banker~
+LongD A vampire banker is here, awaiting your transaction.~
+Desc This ancient creature is as evil as they get.  The look of absolute
+malice in its eyes is beyond description.  The vampire is dressed in dark
+clothing, and has pale white skin with black hair and eyes.  
+~
+Race vampire~
+Align 0 -3
+XPMod 120
+Level 120
+Hitroll 4
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType drain
+AC -900 -900 -900 -747
+Wealth 810
+Act    npc dont_wander no_tame stay_area undead no_hunt changer~
+AffBy  detect_evil detect_invis detect_hidden detect_good infrared haste dark_vision regeneration~
+Off    bash disarm dodge fade fast kick dirt_kick parry trip~
+Imm    summon charm poison negative mental disease drowning sleep illusion hunger thirst fear~
+Res    cold lightning negative energy~
+Vuln   fire holy light~
+Form   poison instant_decay sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#1400
+Name Vault sarcophagus coffin~
+Short `#`wa large `sStone `wSarcophagus`^~
+Desc A`#`w large `sStone `wSarcophagus`^ is here~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 FIL 130 130
+Weight 0
+Material stone~
+Extra    evil nopurge nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1401
+Name vampire coven light ball glowing vampiric~
+Short a glowing ball of light~
+Desc A glowing ball of vampiric light is here.~
+Level 5
+ItemType light~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 0
+Material etheral~
+Extra    glow antigood antineutral rotdeath nonmetal nolocate meltdrop nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take hold~
+Affect modifier -1 0 -1 ac -30 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#1402
+Name dark marble statue slim drowish woman honour~
+Short a `#`sdark marble`^ statue of a slim drowish woman~
+Desc A dark marble statue of a slim drowish woman stands here in honour.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 50000 DGQ 120 120
+Weight 0
+Material marble~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc dark marble statue slim drowish woman~
+The dark marble of this statue depicts the image of Luhka Erarath, one of 
+the Elders to The Coven.  Carved in her honour, the likeness is striking, 
+each line chisled expertly.  
+~
+End
+
+#1403
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN F 1101 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#1404
+Name enormous stone table~
+Short an enormous stone table~
+Desc An enormous stone table with many chairs around it is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 5000
+Rsize 50
+Values 200 20000 BDGN 130 130
+Weight 10000
+Material stone~
+Extra    dark nonmetal nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+ExtraDesc enormous stone table~
+This table is large enough to seat an entire army of men, but there are only 
+about thirty seats around it.  The table is made out of a slate-like stone.  
+
+~
+End
+
+#1405
+Name scroll journal book parchment~
+Short an ancient scroll~
+Desc An ancient scroll sealed with a vampiric seal.~
+Level 1
+ItemType treasure~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material parchment~
+Extra    dark evil antigood antineutral inventory rotdeath nonmetal nolocate meltdrop norestring~
+Wear     take~
+ExtraDesc scroll journal parchment book~
+From the Journal of Lecroix Desdicardo of the 3rd Generation.  `+
+`+
+"For to darkness I was born, and in darkness I will remain.  We shall be as 
+a mere shadow upon the world, a figment of their dreams, but a reality worse 
+than their nightmares."  - Lecroix Desdicardo`+
+`+
+Where shall I begin my friend, to tell of what you have become, or rather 
+what has been awakened inside of you.  I have walked the paths of night for 
+many millennia now, I have seen many kingdoms rise and fall, and wars the 
+threatened to destroy the entire knowne world.  Yet I have not seen a 
+sunrise or the light of day for so long, I have forgotten what it even 
+appears like.  I only see it now in flickers of dreams and in paintings of 
+great masters.  `+
+`+
+Over the many cycles of my existance, both my power and strength have grown 
+beyond measure, but also has my solitude.  I shun the world and keep to my 
+studies, attempting to put into words for those who are new to the unlife 
+that which they must know to survive.  For though our powers and abilities 
+are great, in other ways we are weaker than normal man.  `+
+`+
+Holy items and weapons can severly hurt us, and the sunlight will kill us in 
+a very short time.  As we grow older and stronger, or the closer we are to 
+the original source of all of us, the more powerfull we will become.  We can 
+transform at will into an invisible cloud of mist, a large wolf, or a bat.  
+We can restore our energy through the blood inside of us.  We can hypnotize 
+and stun our prey.  Some very ancient and powerfull vampires are even 
+rumored to be able to incinerate lesser vampires and are able to walk in the 
+sunlight.  In my lifetime of 1200 years, I have never encountered one of 
+these, but only heard the whispers of rumors.  `+
+`+
+What you must know, and always remember, is that you must not reveal your 
+true nature to those who are not of our kind.  If the world knew of our true 
+power and existance, they would hunt us down and wipe us out.  So, we 
+maintain the illusion of life.  We dare not hint of our true nature to 
+others, save those we choose to give the Dark Gift to.  So, over the 
+centuries, the Coven of the Blood has arisen to teach and instruct, and to 
+protect our interests.  Thus, were these laws laid down.  Those who disobey 
+are usually destroyed.  `+
+`+
+`RMasquerade`x - Never reveal our true nature to those not of the blood.  `+
+`+
+`RDomain`x - Elders are the guiding force among vampires.  All owe them respect 
+and admiration.  `+
+`+
+`RProgeny`x - Only Sire another with the permission of an Elder or Regent.  `+
+`+
+`RAccounting`x - Until Progeny are released, their sins are the Sire's to 
+endure.  `+
+`+
+`RDestruction`x - The right of destruction belongs only to the Elders.  To kill
+another vampire means your own destruction.  `+
+
+`RMotto`x - To will, to know, to dare, to keep silent.  To only give the Dark 
+Gift to those who are worthy to receive it.  `+
+`+
+I have seen those who have not joined or submitted to the will of the Coven. 
+ To my knoledge, they did not exist in this world for very long.  If your 
+Sire did not tell you these things, then now you know and have been made 
+aware of them.  Protect our secrets at all costs, as the world must not know 
+what we know.  If they did, we would cease to exist.  `+
+`+
+`BSigned - `cLecroix Desdicardo`+
+`x
+~
+End
+
+#1406
+Name wooden stake~
+Short a wooden stake~
+Desc A very sharp wooden stake lies here.~
+Level 0
+ItemType treasure~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stake~
+Wear     take hold~
+End
+
+#1407
+Name blood fountain~
+Short a fountain of `#`Rb`rloo`Rd`^~
+Desc A fountain of blood is here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 blood 0 0
+Weight 0
+Material black onyx~
+Extra    glow evil nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#1400
+Name A damp and smelly crypt~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags dark no_mob indoors safe light~
+Room2Flags no_clan~
+Sector cave~
+Exit north 1401
+Exit up 2916
+End
+
+
+#1401
+Name A damp and smelly crypt~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit north 1402
+Exit east 1407
+Exit south 1400
+Exit west 1406
+End
+
+
+#1402
+Name A damp and smelly crypt~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit north 1403
+Exit east 1404
+Exit south 1401
+Exit west 1405
+End
+
+
+#1403
+Name A damp and smelly crypt~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector gateway~
+Exit north 1410
+Exit east 1408
+Exit south 1402
+Exit west 1409
+End
+
+
+#1404
+Name Tomb~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 1402
+End
+
+
+#1405
+Name Tomb~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 1402
+End
+
+
+#1406
+Name Tomb~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 1401
+End
+
+
+#1407
+Name Tomb~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 1401
+End
+
+
+#1408
+Name Tomb~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 1403
+End
+
+
+#1409
+Name Tomb~
+Desc The tomb walls are carved from stone and there are several torches on the 
+walls lighting the way.  The air is damp and filled with the smell of decay. 
+ Dust covers the floor and it appears no living being has been here in ages. 
+ 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 1403
+End
+
+
+#1410
+Name Coven of the Blood Entrance~
+Desc An evil presence fills the room as before you lies the entrance to the Coven 
+stronghold, the dark and mysterious Coven of Vampires.  A large stone 
+passageway runs north and south, covered with mystical runes preventing 
+those who are not members of the Coven from entering.  
+~
+RoomFlags dark indoors noscan~
+Sector cave~
+Exit north 1411
+Exit south 1403
+End
+
+
+#1411
+Name Hall of the Dead~
+Desc The hall runs north and south through the darkness.  Rooms lie to the east 
+and west, and the air in the hall is still as the dead.  A large blood-red 
+carpet runs the length of the hall, spilling into the darkness ahead.  
+~
+RoomFlags indoors noscry light~
+Room2Flags no_area_echoes~
+Sector inside~
+Clan vampire
+Exit north 1415
+Exit east 1413
+Exit south 1410
+Exit west 1412
+End
+
+
+#1412
+Name Room of Traditions~
+Desc Cut right from solid stone, the room is stark and bare save for the writing 
+on the walls.  The writing contains the rules of the Coven, and a dire 
+warning to those who would choose to disobey.  `+
+`+
+These are the traditions of the `RCoven of the Blood.  `x `+
+`+
+Without them, all kindred might have perished.  Remember them.  Honor them.  
+`+
+`RMasquerade`x - Never reveal our true nature to those not of the blood.  `+
+`RDomain`x - Elders are the guiding force among vampires.  All owe them respect 
+and admiration`+
+`RProgeny`x - Only Sire another with the permission of an Elder or Regent.`+
+`RAccounting`x - Until Progeny are released, their sins are the Sire's to 
+endure.  `+
+`RDestruction`x - The right of destruction belongs only to the Elders.  To kill 
+another vampire means your own destruction.  `+
+`RMotto`x - To will, to know, to dare, to keep silent.  To only give the Dark 
+Gift to those who are worthy to receive it.  `+
+ 
+~
+RoomFlags indoors noscry light noautomap~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit east 1411
+Exit northwest 1419
+End
+
+
+#1413
+Name Training Room~
+Desc Various weapons line the walls of this round room.  Large polearms are 
+suspended from hooks in the walls, swords lie in racks mounted along the 
+edges of the room.  Several shields, axes, maces and other weapons and armor 
+hang from the walls.  
+~
+RoomFlags indoors light~
+Room2Flags no_area_echoes~
+Sector inside~
+Clan vampire
+Exit west 1411
+End
+
+
+#1414
+Name ~
+Desc ~
+Sector inside~
+Exit south 1411
+End
+
+
+#1415
+Name Hall of the Dead~
+Desc The hall runs north and south through the darkness.  Rooms lie to the east 
+and west, and the air in the hall is still as the dead.  A large blood-red 
+carpet runs the length of the hall, spilling into the darkness ahead.  
+~
+RoomFlags indoors noscry light~
+Room2Flags no_area_echoes~
+Sector inside~
+Clan vampire
+Exit north 1418
+Exit east 1417
+Exit south 1411
+Exit west 1416
+End
+
+
+#1416
+Name Coven Storage Room~
+Desc The walls of this room are lined with multiple shelves and cases used to 
+display the wares which are available for purchase.  There are many odd 
+objects, the purposes of which are not readily evident by appearances alone. 
+ 
+~
+RoomFlags indoors noscry light~
+Room2Flags no_area_echoes storage_room~
+Sector inside~
+Exit east 1415
+End
+
+
+#1417
+Name Chamber of Healing~
+Desc Warm healing powers fill the room, allowing you to rest and recover from the 
+world of the living.  Six stone pillars line the walls, and between them are 
+slabs of solid marble for you to rest upon.  
+~
+RoomFlags indoors noscry light~
+Room2Flags no_area_echoes~
+Sector inside~
+Mana 130
+Heal 130
+Exit west 1415
+End
+
+
+#1418
+Name The Inner Circle~
+Desc This immense room is the meeting place for the Inner Circle of the Coven.  
+Several magical globes of light are along the walls, and a rich carpet with 
+a map of the world lies on the floor.  Several statues of ancient vampires 
+are in small alcoves in the walls, and the ceiling is covered with ancient 
+vampiric runes.  
+~
+RoomFlags indoors safe noscry light noscan~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit south 1415
+End
+
+
+#1419
+Name Bank and Storage~
+Desc Fifty large steel vaults line the walls of this otherwise bland room.  The 
+first vault belongs to the Coven itself (address as locker1), while the rest 
+are available to its members for personal storage.  Behind a large counter 
+is the banker, providing transactions for members of the clan into their 
+personal accounts.  
+~
+RoomFlags indoors bank safe nowhere noscry light~
+Room2Flags no_area_echoes~
+Sector inside~
+Clan vampire
+Exit southeast 1412
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1400 spec_cast_undead
+M 1404 spec_cast_undead
+S
+
+
+
+#RESETS2
+O 0 1407 -1 1402
+O 0 1407 -1 1402
+O 0 1403 -1 1403
+O 0 1400 -1 1404
+O 0 1400 -1 1405
+O 0 1400 -1 1406
+O 0 1400 -1 1407
+O 0 1400 -1 1408
+O 0 1400 -1 1409
+O 0 7500 0 1410
+M 0 1400 1 1413 1
+M 0 1403 1 1415 1
+M 0 1402 1 1417 1
+G 0 3199 -1
+G 0 3087 -1
+G 0 3088 -1
+O 0 1402 -1 1418
+O 0 1404 -1 1418
+O 0 1407 -1 1418
+M 0 1404 1 1419 1
+S
+
+
+
+#SHOPS
+#1402
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1400
+title Give gear~
+author Ixliam~
+code language native
+sayto $n Wear this banner proudly!
+mob oload 2044
+Give banner $n
+Smile $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1088214692
+END
+
+#0
+
+
+#$

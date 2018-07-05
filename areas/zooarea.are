@@ -1,0 +1,1390 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Zoo~
+ShortName   The Zoo~
+Builders    delandria~
+Credits     delandria nakasha~
+VNUMs       3670 3710
+LRange      70 85
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#3670
+Name chimpanzee~
+ShortD a chimpanzee~
+LongD A `#`ychimpanzee`^ plays in the trees here.`^~
+Desc These apes have a thick black coat and a flat bare face. Their arms dangle 
+at their sides, longer than the legs. 
+~
+Race other~
+Align 0 0
+Level 72
+Hitroll 0
+HitDice 7d11+365
+ManaDice 7d11+365
+DamDice 8d8+36
+DamType pound
+AC -420 -420 -420 -336
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3671
+Name baboon~
+ShortD a baboon~
+LongD A `#`sbaboon`^ is here, cleaning itself.~
+Desc These monkeys have long, dense, silky fur which is gray in males and 
+brownish in females. Mature males have a silver-gray cape or mane over the 
+head, neck and shoulders. All adults have red, hairless skin on the face and 
+rump. 
+~
+Race other~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType pound
+AC -430 -430 -430 -348
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash parry trip~
+Imm    summon bash~
+Res    charm cold energy~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains hands feet fingers eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3672
+Name gorilla~
+ShortD a gorilla~
+LongD A `#`ygorilla`^ stands here, looking proud.~
+Desc ~
+Race other~
+Align 0 0
+Level 75
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType pound
+AC -450 -450 -450 -382
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    disarm dodge~
+Imm    summon bash~
+Res    mental light~
+Vuln   fire poison disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3673
+Name orangutan~
+ShortD an orangutan~
+LongD An `#`yorangutan`^ is here, watching you.~
+Desc These apes have long reddish-brown hair, very long arms and a large, heavy 
+body. 
+~
+Race other~
+Align 0 0
+Level 74
+Hitroll 0
+HitDice 7d11+375
+ManaDice 7d11+375
+DamDice 8d9+37
+DamType pound
+AC -440 -440 -440 -374
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Imm    summon~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3674
+Name red kangaroo~
+ShortD a red kangaroo~
+LongD A `#`rred Kangaroo`^ is here hopping up and down.~
+Desc ~
+Race other~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType pound
+AC -400 -400 -400 -348
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3675
+Name panda bear~
+ShortD a panda bear~
+LongD A `#`sp`wa`sn`wd`sa bear`^ is here eating on some leaves.~
+Desc ~
+Race other~
+Align 0 0
+Level 71
+Hitroll 0
+HitDice 7d11+360
+ManaDice 7d11+360
+DamDice 8d8+35
+DamType crush
+AC -410 -410 -410 -369
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Imm    summon~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3676
+Name grizzly bear~
+ShortD a grizzly bear~
+LongD A large `#`sgrizzly bear`^ is here.~
+Desc ~
+Race other~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType crush
+AC -430 -430 -430 -348
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Imm    summon~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3677
+Name polar bear~
+ShortD a polar bear~
+LongD A large `#`Wpolar bear`^ is here.~
+Desc ~
+Race other~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType crush
+AC -430 -430 -430 -356
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Imm    summon~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3678
+Name red fox~
+ShortD a red fox~
+LongD A `#`rred fox`^ is here pacing in the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType bite
+AC -400 -400 -400 -352
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3679
+Name grey wolf~
+ShortD a grey wolf~
+LongD A `#`sgrey wolf`^ is here pacing in the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType bite
+AC -400 -400 -400 -344
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3680
+Name spotted hyena~
+ShortD a spotted hyena~
+LongD A `#`wsp`so`wt`st`we`sd h`wy`se`wn`sa`^ is here.~
+Desc ~
+Race other~
+Align 0 0
+Level 72
+Hitroll 0
+HitDice 7d11+365
+ManaDice 7d11+365
+DamDice 8d8+36
+DamType bite
+AC -420 -420 -420 -365
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3681
+Name hippopotamus~
+ShortD a hippopotamus~
+LongD A `#`whippopotamus`^ is here.~
+Desc ~
+Race other~
+Align 0 0
+Level 76
+Hitroll 0
+HitDice 8d11+380
+ManaDice 8d11+400
+DamDice 8d9+39
+DamType crush
+AC -460 -460 -460 -368
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Imm    summon~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3682
+Name elephant~
+ShortD a large elephant~
+LongD A large `#`welephant`^ is here eating peanuts.~
+Desc ~
+Race other~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType crush
+AC -500 -500 -500 -415
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Imm    summon~
+Vuln   lightning disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#3683
+Name lizard~
+ShortD a lizard~
+LongD A `#`glizard`^ is here slinking about his cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 72
+Hitroll 0
+HitDice 7d11+365
+ManaDice 7d11+365
+DamDice 8d8+36
+DamType bite
+AC -420 -420 -420 -361
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3684
+Name stripped snake~
+ShortD a stripped snake~
+LongD A `#`ss`rt`sr`ri`sp`rp`se`rd `ssnake`^ is slithering around here.~
+Desc ~
+Race other~
+Align 0 0
+Level 71
+Hitroll 0
+HitDice 7d11+360
+ManaDice 7d11+360
+DamDice 8d8+35
+DamType bite
+AC -410 -410 -410 -356
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3685
+Name large crocodile~
+ShortD a large crocodile~
+LongD A large `#`gcrocodile`^ is here slinking about the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 78
+Hitroll 0
+HitDice 8d11+390
+ManaDice 8d11+440
+DamDice 9d9+39
+DamType bite
+AC -480 -480 -480 -422
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3686
+Name rhino~
+ShortD a rhino~
+LongD A huge `#`wrhino`^ is here pacing in the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 78
+Hitroll 0
+HitDice 8d11+390
+ManaDice 8d11+440
+DamDice 9d9+39
+DamType pound
+AC -480 -480 -480 -398
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3687
+Name lynx~
+ShortD a lynx~
+LongD A `#`wlynx`^ is standing here.~
+Desc ~
+Race other~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType claw
+AC -430 -430 -430 -387
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3688
+Name jaguar~
+ShortD a jaguar~
+LongD A large `#`sjaguar`^ is here pacing the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType claw
+AC -430 -430 -430 -382
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3689
+Name large lion~
+ShortD a large lion~
+LongD A large `#`ylion`^ is here letting out a loud roar.~
+Desc ~
+Race other~
+Align 0 0
+Level 76
+Hitroll 0
+HitDice 8d11+380
+ManaDice 8d11+400
+DamDice 8d9+39
+DamType claw
+AC -460 -460 -460 -391
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3690
+Name tiger~
+ShortD a tiger~
+LongD A large `#`ytiger`^ is here pacing in the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 76
+Hitroll 0
+HitDice 8d11+380
+ManaDice 8d11+400
+DamDice 8d9+39
+DamType claw
+AC -460 -460 -460 -377
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3691
+Name leopard~
+ShortD a leopard~
+LongD A large `#`wleopard`^ is here.~
+Desc ~
+Race other~
+Align 0 0
+Level 74
+Hitroll 0
+HitDice 7d11+375
+ManaDice 7d11+375
+DamDice 8d9+37
+DamType claw
+AC -440 -440 -440 -369
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3692
+Name cheetah~
+ShortD a cheetah~
+LongD A `#`ycheetah`^ is here pacing in the cage.~
+Desc ~
+Race other~
+Align 0 0
+Level 73
+Hitroll 0
+HitDice 7d11+370
+ManaDice 7d11+370
+DamDice 8d9+36
+DamType claw
+AC -430 -430 -430 -356
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3693
+Name giraffe~
+ShortD a tall giraffe~
+LongD A tall `#`ygiraffe`^ stands here.~
+Desc ~
+Race other~
+Align 0 0
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType smash
+AC -400 -400 -400 -336
+Wealth 0
+Act    npc dont_wander stay_area~
+Act2   no_random_obj~
+Off    bash berserk parry~
+Imm    bash mental~
+Vuln   cold disease~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#3694
+Name zoo customer~
+ShortD a zoo customer~
+LongD A customer of the zoo is here enjoying the animals.~
+Desc ~
+Race human~
+Align 0 0
+Level 85
+Hitroll 0
+HitDice 8d12+420
+ManaDice 8d12+530
+DamDice 10d10+42
+DamType punch
+AC -550 -550 -550 -445
+Wealth 750
+Act    npc no_tame stay_area~
+Off    bash berserk dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#3670
+Name sign~
+Short a large wooden sign~
+Desc `#`yA large wooden sign is stuck in the ground here.`^~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc sign ~
+Welcome to the Calontir Zoo! Please enjoy your stay and do not feed the 
+animals. `-signed`- The Zoo Staff 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#3670
+Name Zoo Entrance~
+Desc You have found the zoo. The rumble of different animals can be distintcly 
+heard here. The cobbled path is worn and often used. A sprinkling of straw 
+litters it here and there, the occasional wrapper or stray cup to join. The 
+east leads deeper into the zoo. 
+~
+Sector inside~
+Exit north 57648
+Exit east 3671
+Exit south 57810
+Exit west 57728
+End
+
+
+#3671
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main entrance appears 
+to be to the west while the main path continues on towards the east. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3672
+Exit west 3670
+End
+
+
+#3672
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main entrance appears 
+to be to the west while the main path continues on to the northeast and 
+southeast. The wild call of the primates can be heard from the east. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3673
+Exit west 3671
+Exit northeast 3677
+Exit southeast 3689
+End
+
+
+#3673
+Name The Chimpanzee Cage~
+Desc A divider stretches to the sides and over head almost like a large trellis. 
+The roar of the primates is almost deafening as they shriek and call out as 
+you pass under. The chimps can be seen swinging on hanging vines or hanging 
+from the limbs of trees. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3674
+Exit west 3672
+End
+
+
+#3674
+Name Baboons~
+Desc A divider stretches to the sides and over head almost like a large trellis. 
+The baboons watch closely as you pass underneath, as if you were the one put 
+on display here. Other times they ignore you completely. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3675
+Exit west 3673
+End
+
+
+#3675
+Name The Gorilla Cage~
+Desc A divider stretches to the sides and over head almost like a large trellis. 
+The sound of large fists pounding on chests define this section as the 
+gorilla home. They sit in groups, cleaning each other or idly playing. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3676
+Exit west 3674
+End
+
+
+#3676
+Name The Orangutan Pin~
+Desc A divider stretches to the sides and over head almost like a large trellis. 
+The orangutans lope about or sit and watch as you pass by. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3675
+End
+
+
+#3677
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The path continues to the 
+northeast and southwest and to the east is the open pin for the giraffes. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3709
+Exit northeast 3678
+Exit southwest 3672
+End
+
+
+#3678
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. Everywhere you look are 
+different sized pins caging the different felines. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3708
+Exit east 3679
+Exit southwest 3677
+End
+
+
+#3679
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. Everywhere you look are 
+different sized pins caging the different felines. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3706
+Exit east 3680
+Exit south 3707
+Exit west 3678
+End
+
+
+#3680
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. Everywhere you look are 
+different sized pins caging the different felines. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3705
+Exit east 3681
+Exit south 3704
+Exit west 3679
+End
+
+
+#3681
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. Everywhere you look are 
+different sized pins caging the different felines. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3703
+Exit west 3680
+Exit southeast 3682
+End
+
+
+#3682
+Name Main Walkway~
+Desc . The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main path continues 
+to the northwest and the south. The rhinos can be found to the west. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3683
+Exit west 3702
+Exit northwest 3681
+End
+
+
+#3683
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main path continues 
+to the north and south. An open walkway leads east into what can only be 
+described as the reptile den. To the west is a large pit housing the 
+elephants. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3682
+Exit east 3698
+Exit south 3684
+Exit west 3699
+End
+
+
+#3684
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main path continues 
+to the north and southwest. Westward is a large pit that seems to be the 
+home of a fittingly large hungry-hippo. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3683
+Exit west 3697
+Exit southwest 3685
+End
+
+
+#3685
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. To the south the chaotic 
+laughter of some beast can be heard, but the main path continues to the west 
+and on to the northeast. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3696
+Exit west 3686
+Exit northeast 3684
+End
+
+
+#3686
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. To the south is the foxes 
+lair and the north is the home of wolves. The main path continues on to the 
+west and east. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3694
+Exit east 3685
+Exit south 3695
+Exit west 3687
+End
+
+
+#3687
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main path continues 
+to the west and the east. You seem to have found yourself at the bear den. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3692
+Exit east 3686
+Exit south 3693
+Exit west 3688
+End
+
+
+#3688
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main path continues 
+to the northwest and on to the east. You seem to have found yourself at the 
+bear den. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3687
+Exit south 3691
+Exit northwest 3689
+End
+
+
+#3689
+Name Main Walkway~
+Desc The rumble of different animals can be distintcly heard here. The cobbled 
+path is worn and often used. A sprinkling of straw litters it here and 
+there, the occsional wrapper or stray cup to join. The main path continues 
+to the northwest and southeast while to the east the area for the kangaroos 
+can be found. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3690
+Exit southeast 3688
+Exit northwest 3672
+End
+
+
+#3690
+Name Red Kangaroo~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3689
+End
+
+
+#3691
+Name Panda Bears~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3688
+End
+
+
+#3692
+Name Polar Bears~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3687
+End
+
+
+#3693
+Name Grizzly Bears~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3687
+End
+
+
+#3694
+Name Grey Wolf~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3686
+End
+
+
+#3695
+Name Red Fox~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3686
+End
+
+
+#3696
+Name Spotted Hyena~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3685
+End
+
+
+#3697
+Name Hippopotamuses~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3684
+End
+
+
+#3698
+Name Turtles~
+Desc You've found yourself in the Reptile Den. Built into the walls are panels of 
+glass cages of all shapes and sizes. A myriad of species and types of 
+turtles can be found here. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3700
+Exit east 3710
+Exit south 3701
+Exit west 3683
+End
+
+
+#3699
+Name Elephant Cage~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3683
+End
+
+
+#3700
+Name Snakes~
+Desc You've found yourself in the Reptile Den. Snakes.. are everywhere. Not much 
+seperates you from these venomous creatures. Housed by glass-panels built 
+into the walls, you can easily observe as they slither about or soak up the 
+sun. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3698
+End
+
+
+#3701
+Name Lizards~
+Desc You've found yourself in the Reptile Den. Lizards of all kinds can be seen 
+here not doing much of anything. They pretty much just lay there in there 
+glassed-in cages. You would think they were dead ...almost. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3698
+End
+
+
+#3702
+Name Rhinos~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3682
+End
+
+
+#3703
+Name Lynx~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3681
+End
+
+
+#3704
+Name Jaguars~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3680
+End
+
+
+#3705
+Name Lions~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3680
+End
+
+
+#3706
+Name Leopards~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3679
+End
+
+
+#3707
+Name Tigers~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3679
+End
+
+
+#3708
+Name Cheetah~
+Desc You are inside of a large animal cage. The floor is made of stone and there 
+is a layer of straw covering it. A large water hole is in one corner of the 
+cage and in the other corner is a large container of food. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3678
+End
+
+
+#3709
+Name Giraffes~
+Desc This large area is reserved for the giraffes. Three to four can be usually 
+found here as they go about there daily business. They can be seen moseying 
+along or stretching to eat the leaves from the trees that grow inside. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3677
+End
+
+
+#3710
+Name Crocodiles~
+Desc You've found yourself in the Reptile Den. This area is sectioned off around 
+a pond big enough to house two to three crocodiles. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3698
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 3694 18 3672 3
+M 0 3670 3 3673 2
+M 0 3671 3 3674 2
+M 0 3672 4 3675 3
+M 0 3673 3 3676 3
+M 0 3694 18 3678 3
+M 0 3694 18 3681 3
+M 0 3694 18 3683 3
+M 0 3694 18 3685 3
+M 0 3694 18 3688 3
+M 0 3674 2 3690 2
+M 0 3675 3 3691 2
+M 0 3677 3 3692 3
+M 0 3676 3 3693 2
+M 0 3679 3 3694 3
+M 0 3678 3 3695 3
+M 0 3680 3 3696 3
+M 0 3681 3 3697 3
+M 0 3682 3 3699 3
+M 0 3684 3 3700 3
+M 0 3683 3 3701 3
+M 0 3686 3 3702 3
+M 0 3687 3 3703 3
+M 0 3688 3 3704 3
+M 0 3689 3 3705 3
+M 0 3691 3 3706 3
+M 0 3690 3 3707 3
+M 0 3692 3 3708 3
+M 0 3693 3 3709 3
+M 0 3685 3 3710 3
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

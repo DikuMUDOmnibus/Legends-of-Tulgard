@@ -1,0 +1,4554 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Azarad~
+ShortName   `cAzarad`^~
+Builders    None~
+Credits     Morgion~
+VNUMs       48000 48199
+LComment    `#`Y[  ALL  ]`^
+Security    9
+Colour      G~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Thu Sep 22 01:58:58 2005~
+End
+
+
+
+#MOBILES
+#48000
+Name minotaur Guard~
+ShortD a minotaur guard~
+LongD A minotaur guard of `#`cAzarad`^ stands here.~
+Desc ~
+Race minotaur~
+Align 2 -3
+Level 17
+Hitroll 0
+HitDice 3d5+79
+ManaDice 2d4+5
+DamDice 3d4+4
+DamType slash
+AC -30 -30 -30 -26
+Wealth 170
+Act    npc dont_wander warrior~
+Off    disarm parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48001
+Name minotaur guard~
+ShortD a minotaur guard~
+LongD A minotaur guard is here trying to sleep.~
+Desc A tired looking guard is here.
+~
+Race minotaur~
+Align 3 -3
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType slash
+AC 0 0 0 0
+Wealth 120
+Act    npc dont_wander~
+Off    disarm parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48002
+Name mercenary guard~
+ShortD a mercenary guard~
+LongD A `#`cAzaradian`^ guard is here watching out for troublemakers.~
+Desc ~
+Race human~
+Align 3 -3
+Level 14
+Hitroll 0
+HitDice 4d5+90
+ManaDice 2d5+5
+DamDice 2d8+5
+DamType slash
+AC -45 -45 -45 -40
+Wealth 150
+Act    npc dont_wander warrior~
+AffBy  protect_good~
+Off    berserk disarm assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48003
+Name diltram Miypil~
+ShortD diltram miypil~
+LongD The Shopkeeper Diltram Miypil stands here selling weapons.~
+Desc He looks like a very wealthy man.
+~
+Race human~
+Align -2 3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 2000
+Act    npc dont_wander~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48004
+Name thief~
+ShortD a thief~
+LongD A thief is here hidding in the shadows~
+Desc She is hiding in the Shadows..
+~
+Race kender~
+Align -2 -3
+Level 53
+Hitroll 30
+HitDice 5d9+295
+ManaDice 4d5+120
+DamDice 7d6+22
+DamType stab
+AC -240 -240 -240 -206
+Wealth 550
+Act    npc scavenger stay_area thief~
+AffBy  invisible infrared pass_door haste~
+Off    disarm dodge dirt_kick parry~
+Res    slash~
+Vuln   mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#48005
+Name minotaur warrior~
+ShortD an armored minotaur~
+LongD A heavily armored minotaur is patrolling the streets.~
+Desc He is a very strong looking minotaur.
+~
+Race minotaur~
+Align 2 -3
+Level 58
+Hitroll 0
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType charge
+AC -300 -300 -300 -255
+Wealth 600
+Act    npc warrior~
+AffBy  protect_evil~
+Off    bash berserk disarm dodge parry assist_guard~
+Imm    holy~
+Res    weapon~
+Vuln   magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#48006
+Name orc~
+ShortD an orc~
+LongD A large orc walks here.~
+Desc The orc drools as you look at it.  
+~
+Race orc~
+Align -2 -3
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 8
+Wealth 40
+Act    npc stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48007
+Name large minotaur~
+ShortD a large minotaur~
+LongD A large minotaur guard is standing here.~
+Desc The minotaur snorts at you in contempt.  
+~
+Race minotaur~
+Align -3 -3
+Level 40
+Hitroll 0
+HitDice 5d7+245
+ManaDice 2d5+30
+DamDice 3d12+14
+DamType charge
+AC -145 -145 -145 -118
+Wealth 350
+Act    npc stay_area warrior~
+AffBy  protect_evil~
+Off    bash disarm dodge parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48008
+Name child~
+ShortD a child~
+LongD A child is wandering around here.~
+Desc A poor child stands before you wearing dirty clothing. 
+~
+Race human~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType none
+AC 80 80 80 70
+Wealth 0
+Act    npc stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48009
+Name wealthy lady~
+ShortD a lady~
+LongD A wealthy-looking lady looks about in panic here.~
+Desc A very wealthy lady looks very fearful.
+~
+Race human~
+Align 0 3
+Level 16
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType slap
+AC -95 -95 -95 -83
+Wealth 300
+Act    npc stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#48010
+Name agailo shopkeeper~
+ShortD `#`wAgailo`^~
+LongD Agailo stands here waiting to take your order.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48011
+Name priest cleric anacor~
+ShortD `#`wa priest of `cAnacor`^~
+LongD A priest of Anacor is here, he is chanting softly to himself.~
+Desc He holds the symbol of Anacor in his hand.
+~
+Race human~
+Align -2 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -574
+Wealth 0
+Act    npc dont_wander cleric healer~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48012
+Name lich dravar~
+ShortD `SDravar the lich`x~
+LongD The great lich `#`SDravar`^ is here, having taken over Azarad.~
+Desc He is dressed in very fine clothing.
+~
+Race Lich~
+Align 2 -3
+Level 110
+Hitroll 60
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType slash
+AC -800 -800 -800 -680
+Wealth 600
+Act    npc dont_wander warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil pass_door~
+Off    disarm dodge parry~
+Imm    summon charm poison negative disease drowning sleep hunger thirst fear~
+Res    mental illusion scry~
+Vuln   holy light~
+Form   edible poison magical sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48013
+Name dark magi~
+ShortD a dark magi~
+LongD A figure in dark black robes stands here.~
+Desc Many glittering symbols are etched on the robes of the magi.
+~
+Race human~
+Align 1 -3
+Level 65
+Hitroll 45
+HitDice 6d10+335
+ManaDice 7d11+380
+DamDice 8d7+28
+DamType none
+AC -340 -340 -340 -278
+Wealth 450
+Act    npc dont_wander mage~
+AffBy  protect_evil~
+Off    dodge assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48014
+Name oldstyle shopkeeper~
+ShortD the shopkeeper~
+LongD The shopkeeper stands here.~
+Desc You see a woman on a stool behind her counter.
+~
+Race human~
+Align 1 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -560
+Wealth 2000
+Act    npc dont_wander indoors noautosocial~
+AffBy  detect_invis~
+Off    disarm dodge trip assist_vnum~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+END
+
+#48015
+Name man old~
+ShortD an old man~
+LongD An old man is walking slowly here.~
+Desc ~
+Race human~
+Align 3 3
+Level 16
+Hitroll 45
+HitDice 3d5+79
+ManaDice 3d5+75
+DamDice 2d7+4
+DamType none
+AC -35 -35 -35 -31
+Wealth 100
+Act    npc~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48016
+Name Merchant~
+ShortD a merchant~
+LongD A merchant is here trying to sell his goods~
+Desc He is dressed in average clothing.
+~
+Race elf~
+Align 3 0
+Level 23
+Hitroll 25
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC -70 -70 -70 -62
+Wealth 250
+Act    npc dont_wander mage~
+AffBy  infrared~
+Off    dodge~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48017
+Name troll~
+ShortD a large troll guard~
+LongD A large troll guard is standing here.~
+Desc A horrid stench surronds this ugly troll.
+~
+Race troll~
+Align 2 -3
+Level 50
+Hitroll 50
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType charge
+AC -200 -200 -200 -166
+Wealth 500
+Act    npc stay_area warrior~
+AffBy  protect_evil~
+Off    bash disarm parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48018
+Name thief figure~
+ShortD a thief~
+LongD A dark figure lurks in the shadows.~
+Desc You can see nothing about them.
+~
+Race human~
+Align -1 -3
+Level 3
+Hitroll 40
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType punch
+AC 70 70 70 59
+Wealth 30
+Act    npc scavenger~
+AffBy  infrared~
+Res    slash poison disease~
+Vuln   mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+MProg GREET 48002 60~
+END
+
+#48019
+Name orge~
+ShortD a orc woman~
+LongD A orc woman is here.~
+Desc She is clutching a large elf leg in her mouth.
+~
+Race orc~
+Align -2 -3
+Level 13
+Hitroll 15
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType slap
+AC -20 -20 -20 -16
+Wealth 60
+Act    npc dont_wander~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#48020
+Name elder mage~
+ShortD an elder mage~
+LongD An elder mage is selling scrolls here.~
+Desc He is wearing black robes.
+~
+Race half-elf~
+Align 1 0
+Level 100
+Hitroll 1
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -574
+Wealth 2000
+Act    npc dont_wander~
+AffBy  infrared~
+Imm    magic weapon~
+Res    charm poison~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48021
+Name shopkeeper~
+ShortD a shopkeeper~
+LongD A shopkeeper is here selling items~
+Desc ~
+Race human~
+Align 3 0
+Level 100
+Hitroll 1
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 2000
+Act    npc dont_wander~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 48000 80~
+END
+
+#48022
+Name no name~
+ShortD an innkeeper~
+LongD An innkeeper is here, renting out rooms.~
+Desc ~
+Race human~
+Align -2 3
+Level 10
+Hitroll 10
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 8
+Wealth 200
+Act    npc dont_wander~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+InnBuy   100
+InnSell  100
+InnOpen  0
+InnClose 23
+InnRoom 48111 10
+InnRoom 48155 10
+InnRoom 48156 10
+InnRoom 48157 10
+Material unknown
+END
+
+#48023
+Name flantilo~
+ShortD `#Flantilo`^~
+LongD Flantilo stands behind a counter.~
+Desc ~
+Race human~
+Align 1 0
+Level 100
+Hitroll 1
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 2000
+Act    npc dont_wander~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48024
+Name banker~
+ShortD the banker~
+LongD A banker stands here waiting for your money~
+Desc He looks very rich...
+~
+Race human~
+Align 3 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 0
+Act    npc dont_wander changer~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48025
+Name talham~
+ShortD `#Talham`^~
+LongD Talham stands behind a counter selling potions.~
+Desc He wears glasses.
+~
+Race human~
+Align -1 0
+Level 100
+Hitroll 1
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 2000
+Act    npc dont_wander~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48026
+Name rhagilo~
+ShortD `#Rhagilo`^~
+LongD Rhagilo is sitting behind the counter.~
+Desc His hands are all full of dirt.
+~
+Race human~
+Align 0 3
+Level 100
+Hitroll 1
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 2000
+Act    npc dont_wander~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48027
+Name achven~
+ShortD `#Achven`^~
+LongD Achven stands behind the counter here.~
+Desc He is very rich looking.
+~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 1
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -581
+Wealth 2000
+Act    npc dont_wander~
+AffBy  infrared~
+Imm    magic weapon~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 48003 60~
+END
+
+#48028
+Name orc jailer~
+ShortD the orc jailer~
+LongD The large orc jailer is here.~
+Desc He has an eye patch.
+~
+Race orc~
+Align -2 -3
+Level 50
+Hitroll 60
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType punch
+AC -200 -200 -200 -172
+Wealth 400
+Act    npc dont_wander~
+AffBy  infrared~
+Off    berserk disarm dodge parry trip~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg EXALL 48028 west~
+MProg EXALL 48028 3~
+END
+
+#48029
+Name mayor~
+ShortD the mayor of `#Azarad~
+LongD The mayor of `#Azarad is locked up here.~
+Desc He looks pretty beat-up.  
+~
+Race human~
+Align -1 -3
+Level 53
+Hitroll 53
+HitDice 5d9+290
+ManaDice 5d9+290
+DamDice 6d7+21
+DamType punch
+AC -230 -230 -230 -188
+Wealth 0
+Act    npc dont_wander aggressive warrior~
+Off    dodge parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48030
+Name trainer~
+ShortD the trainer~
+LongD There is a trainer walking around, ready to improve your combat skills.~
+Desc ~
+Race minotaur~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander train practice gain~
+AffBy  detect_hidden infrared~
+Imm    charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48031
+Name cleric hiddukel~
+ShortD a cleric of `#`SHiddukel`^~
+LongD A cleric of `#`SHiddukel`^ is here.~
+Desc ~
+Race human~
+Align -1 -3
+Level 60
+Hitroll 1
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType none
+AC -300 -300 -300 -267
+Wealth 50
+Act    npc dont_wander healer~
+AffBy  sanctuary~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48032
+Name jeweller~
+ShortD the jeweller~
+LongD The jeweller is standing behind the desk.~
+Desc He is fat and has a content although watchful look on his face.
+~
+Race gnome~
+Align -3 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -623
+Wealth 2000
+Act    npc dont_wander nopurge~
+AffBy  infrared~
+Off    dodge~
+Imm    magic weapon~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48033
+Name bartender~
+ShortD the bartender~
+LongD A bartender stands behind the counter waiting to serve you.~
+Desc A tired looking Bartender who hates trouble in his bar.
+~
+Race unique~
+Align 1 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType beating
+AC -700 -700 -700 -560
+Wealth 2000
+Act    npc dont_wander nopurge~
+Off    dodge fast dirt_kick trip~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48034
+Name cleric~
+ShortD a priestess of `#`rGraal`^~
+LongD A priestess of `#`rGraal`^ is here.~
+Desc She holds the symbol of Graal in her hands.
+~
+Race human~
+Align 0 -3
+Level 100
+Hitroll 60
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -595
+Wealth 0
+Act    npc dont_wander cleric healer~
+Act2   avoids_all_attacks~
+AffBy  sanctuary~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#48035
+Name Strong worker~
+ShortD a strong worker~
+LongD A strong worker stands here moving boxes~
+Desc He is very strong.
+~
+Race human~
+Align -3 3
+Level 20
+Hitroll 50
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType pound
+AC -95 -95 -95 -79
+Wealth 200
+Act    npc dont_wander warrior~
+Off    dodge kick dirt_kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48036
+Name man~
+ShortD a man~
+LongD A man is here, looking very nervous.~
+Desc He doesn't look rich or poor.
+~
+Race human~
+Align -1 0
+Level 13
+Hitroll 15
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType none
+AC -20 -20 -20 -17
+Wealth 90
+Act    npc stay_area~
+Off    kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48037
+Name young minotaur~
+ShortD a young minotaur~
+LongD A young minotaur stands here.~
+Desc ~
+Race minotaur~
+Align 2 -3
+Level 10
+Hitroll 35
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType charge
+AC -45 -45 -45 -36
+Wealth 90
+Act    npc stay_area~
+Off    parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48038
+Name elf~
+ShortD an elf~
+LongD An elf is here, wandering around.~
+Desc ~
+Race elf~
+Align 0 3
+Level 21
+Hitroll 37
+HitDice 4d5+105
+ManaDice 2d5+40
+DamDice 2d10+6
+DamType punch
+AC -65 -65 -65 -56
+Wealth 370
+Act    npc stay_area~
+AffBy  infrared sneak~
+Off    dirt_kick trip~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#48039
+Name girl little orc~
+ShortD a little orc girl~
+LongD A little orc girl is here playing with her doll.~
+Desc She is so cute.... for an orc.
+~
+Race orc~
+Align 3 -3
+Level 5
+Hitroll 5
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType slap
+AC 50 50 50 40
+Wealth 0
+Act    npc stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#48040
+Name guard orc~
+ShortD a orc guard~
+LongD A orc guard is here, watching you closely.~
+Desc ~
+Race orc~
+Align -1 -3
+Level 48
+Hitroll 50
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType slash
+AC -200 -200 -200 -162
+Wealth 380
+Act    npc stay_area warrior~
+AffBy  protect_evil~
+Off    dodge parry assist_guard assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48041
+Name mercenary~
+ShortD a mercenary~
+LongD A mercenary soldier is here, protecting the captured city.~
+Desc ~
+Race human~
+Align 0 -3
+Level 21
+Hitroll 35
+HitDice 5d6+215
+ManaDice 2d5+18
+DamDice 4d7+11
+DamType slash
+AC -117 -117 -117 -101
+Wealth 175
+Act    npc dont_wander warrior~
+AffBy  protect_evil~
+Off    kick parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48042
+Name young warrior~
+ShortD a young warrior~
+LongD A young warrior is here.~
+Desc He looks very young.
+~
+Race human~
+Align 2 -3
+Level 10
+Hitroll 20
+HitDice 4d5+90
+ManaDice 2d5+5
+DamDice 2d8+5
+DamType none
+AC -45 -45 -45 -37
+Wealth 100
+Act    npc stay_area warrior~
+Off    kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48043
+Name orc guard~
+ShortD a minotaur guard~
+LongD A minotaur guard of `#`SAzarad`^ is here watching out for trouble.~
+Desc He is very strong.
+~
+Race human~
+Align -3 -3
+Level 48
+Hitroll 80
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType slash
+AC -200 -200 -200 -172
+Wealth 400
+Act    npc stay_area warrior~
+AffBy  protect_evil~
+Off    bash disarm parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48045
+Name Japlion Halsawern~
+ShortD `#`GJaplion`^~
+LongD `#`GJaplion Halsawern`^, veteran warrior, stands at attention.~
+Desc He has many scars.  
+~
+Race human~
+Align -3 3
+Level 65
+Hitroll 65
+HitDice 7d10+340
+ManaDice 3d5+65
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -311
+Wealth 650
+Act    npc dont_wander warrior~
+AffBy  haste~
+Off    bash berserk disarm dodge dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#48046
+Name civil instigator~
+ShortD an instigator~
+LongD An instigator stirs up trouble here.~
+Desc ~
+Race human~
+Align 0 0
+Level 40
+Hitroll 30
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType slash
+AC -137 -137 -137 -110
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48047
+Name granger~
+ShortD Granger~
+LongD Granger, head of the rebellion, plots here~
+Desc This man has been hardened by life. His swarthy appearance is somehow 
+violent without any motion. Eyes that have become darkened by many battles 
+rest upon the map carved into the table and occasionally his lips silently 
+form plans. 
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 50
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType none
+AC -800 -800 -800 -640
+Wealth 0
+Act    npc no_tame stay_area~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#48119
+Name old lady~
+ShortD an old Lady~
+LongD An Old Lady sits behind the counter.~
+Desc She is very wrinkly.
+~
+Race half-elf~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -602
+Wealth 2000
+Act    npc dont_wander~
+AffBy  infrared~
+Imm    magic weapon~
+Res    charm poison~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#48000
+Name sword Azaradian~
+Short a standard issue `#`cAzaradian`^ sword~
+Desc A Azaradian sword lies here.~
+Level 17
+ItemType weapon~
+Cost 128
+Durability 5
+Asize 25
+Rsize 50
+Values sword 2 10 slash 0
+Weight 25
+Material unknown~
+Wear     take wield~
+Affect modifier -1 17 -1 damroll 2 0
+End
+
+#48001
+Name jug beer~
+Short a jug of beer~
+Desc A jug of beer has been carelessly dumped here.~
+Level 1
+ItemType drinkcontainer~
+Cost 30
+Durability 5
+Asize 4
+Rsize 50
+Values 10 10 beer 0 0
+Weight 4
+Material beer~
+Wear     take hold~
+End
+
+#48002
+Name silver mace~
+Short a `#`Wsilver`^ mace~
+Desc A silvery mace lies here.~
+Level 20
+ItemType weapon~
+Cost 154
+Durability 5
+Asize 65
+Rsize 50
+Values mace 2 12 smash 0
+Weight 65
+Material silver~
+Wear     take wield~
+Affect modifier -1 20 -1 mana 20 0
+End
+
+#48003
+Name sharp polearm~
+Short a `#`Wsharp`^ polearm~
+Desc A Sharp looking polearm lies here~
+Level 50
+ItemType weapon~
+Cost 749
+Durability 5
+Asize 80
+Rsize 50
+Values polearm 4 14 pierce DF
+Weight 12
+Material unknown~
+Extra    glow~
+Wear     take wield~
+Affect modifier -1 50 -1 damroll 2 0
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 hp 4 0
+End
+
+#48004
+Name battle mace~
+Short a `#`Sbattle`^ mace~
+Desc A battle mace lies here gathering dust.~
+Level 50
+ItemType weapon~
+Cost 310
+Durability 5
+Asize 0
+Rsize 50
+Values mace 4 12 smash I
+Weight 10
+Material unknown~
+Wear     take wield~
+Affect modifier -1 50 -1 mana 40 0
+Affect modifier -1 50 -1 damroll 2 0
+Affect modifier -1 50 -1 hitroll 2 0
+End
+
+#48005
+Name thieves dagger~
+Short the dagger of `#`Rthieves`^~
+Desc A Dark dagger lies here~
+Level 53
+ItemType weapon~
+Cost 1100
+Durability 5
+Asize 35
+Rsize 50
+Values dagger 3 14 pierce D
+Weight 3
+Material steel~
+Extra    magic~
+Wear     take wield~
+ClassAllowances thief spellfilcher~
+Affect modifier -1 53 -1 hitroll 2 0
+Affect modifier -1 53 -1 damroll 2 0
+Affect modifier -1 53 -1 quickness 2 0
+End
+
+#48006
+Name sword harpan~
+Short `#`sa sword of `cH`sarpan`^~
+Desc A blackened sword with the symbol of Harpan is laying here.~
+Level 58
+ItemType weapon~
+Cost 1196
+Durability 5
+Asize 65
+Rsize 50
+Values sword 2 28 divine E
+Weight 18
+Material unknown~
+Extra    hum dark antigood nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances warrior bard anti-paladin~
+Affect modifier -1 58 -1 hitroll 4 0
+Affect modifier -1 58 -1 damroll 4 0
+End
+
+#48007
+Name bracer chaos~
+Short `#`Wbracer`w of `Schaos`^~
+Desc A very valuable looking bracer lies here~
+Level 40
+ItemType armor~
+Cost 468
+Durability 5
+Asize 15
+Rsize 50
+Values 6 6 6 4 0
+Weight 5
+Material steel~
+Extra    antigood~
+Wear     take wrist~
+Affect modifier -1 40 -1 hitroll 2 0
+Affect modifier -1 40 -1 hp 6 0
+End
+
+#48008
+Name emerald ring~
+Short an `#`Gemerald`^ ring~
+Desc A valuable looking ring has been left here.~
+Level 50
+ItemType jewelry~
+Cost 1274
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material emerald~
+Extra    magic~
+Wear     take finger~
+Affect modifier -1 50 -1 mana 80 0
+Affect modifier -1 50 -1 ac -5 0
+End
+
+#48009
+Name oak desk~
+Short a large oak desk~
+Desc A large oak desk covered with papers is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 ACD 0 100 0
+Weight 0
+Material oak~
+End
+
+#48010
+Name studded leather gloves~
+Short a pair of `#`sstudded `yleather `sgloves`^~
+Desc A pair of studded leather gloves lies here.~
+Level 11
+ItemType armor~
+Cost 147
+Durability 5
+Asize 30
+Rsize 50
+Values 2 2 2 1 0
+Weight 3
+Material oldstyle~
+Wear     take hands~
+Affect modifier -1 11 -1 hitroll 2 0
+End
+
+#48011
+Name bracer leather enchanted~
+Short an `#`Yenchanted`^ leather bracer~
+Desc A leather bracer with mystic symbols sits here.~
+Level 14
+ItemType armor~
+Cost 162
+Durability 5
+Condition 90
+Asize 12
+Rsize 50
+Values 2 2 2 1 0
+Weight 2
+Material leather~
+Extra    glow magic~
+Wear     take wrist~
+Affect modifier -1 14 -1 hitroll 2 0
+ExtraDesc bracer~
+This bracer is covered with runes of protection and luck in combat.
+~
+End
+
+#48012
+Name leather gloves~
+Short some `#`yleather`^ gloves~
+Desc Some leather gloves lie here.~
+Level 30
+ItemType armor~
+Cost 490
+Durability 5
+Asize 25
+Rsize 50
+Values 6 6 6 5 0
+Weight 2
+Material leather~
+Wear     take hands~
+Affect modifier -1 30 -1 hitroll 4 0
+End
+
+#48013
+Name a scroll of {#{gearthquake{^~
+Short a scroll of `#`GEarthquake`^~
+Desc A Scroll rolls around here.~
+Level 44
+ItemType scroll~
+Cost 690
+Durability 5
+Asize 10
+Rsize 50
+Values 44 earthquake '' '' ''
+Weight 1
+Material unknown~
+Wear     take hold~
+End
+
+#48014
+Name lightning scroll~
+Short a scroll of `#`CLightning`^~
+Desc A scroll rolls around the floor here.~
+Level 35
+ItemType scroll~
+Cost 588
+Durability 5
+Asize 10
+Rsize 50
+Values 35 'lightning bolt' '' '' ''
+Weight 1
+Material oldstyle~
+Wear     take~
+ExtraDesc scroll githyanki~
+The scroll has writings on it that you cannot comprehend.
+~
+End
+
+#48015
+Name complicated scroll~
+Short a complicated scroll~
+Desc A complicated scroll lies here.~
+Level 70
+ItemType scroll~
+Cost 4874
+Durability 5
+Asize 15
+Rsize 50
+Values 70 'lightning breath' 'acid breath' '' ''
+Weight 1
+Material scroll papper~
+Wear     take hold~
+End
+
+#48016
+Name Azaradian robe~
+Short a `#`cAzaradian`^ robe~
+Desc A robe lies here.~
+Level 40
+ItemType armor~
+Cost 421
+Durability 5
+Asize 35
+Rsize 50
+Values 13 13 13 10 0
+Weight 3
+Material unknown~
+Wear     take about~
+Affect modifier -1 40 -1 quickness 1 0
+Affect modifier -1 40 -1 agility 1 0
+Affect modifier -1 40 -1 constitution 1 0
+End
+
+#48017
+Name black shield~
+Short a `#`sblack`^ shield~
+Desc A black shield lies here.~
+Level 18
+ItemType armor~
+Cost 183
+Durability 5
+Asize 45
+Rsize 50
+Values 6 6 6 4 0
+Weight 6
+Material steel~
+Wear     take shield~
+Affect modifier -1 18 -1 saves -2 0
+End
+
+#48018
+Name steel helmet~
+Short a `#`ssteel`^ helmet~
+Desc A helmet made from steel lies here.~
+Level 36
+ItemType armor~
+Cost 383
+Durability 5
+Asize 50
+Rsize 50
+Values 9 9 9 7 0
+Weight 3
+Material steel~
+Wear     take head~
+Affect modifier -1 36 -1 empathy 1 0
+Affect modifier -1 36 -1 reasoning 1 0
+Affect modifier -1 36 -1 saves -2 0
+End
+
+#48019
+Name spiced potatoes~
+Short an order of `#`Rs`rp`Ri`rc`Re`rd`^ potatoes~
+Desc An order of spiced potatoes is here.~
+Level 1
+ItemType food~
+Cost 25
+Durability 5
+Asize 3
+Rsize 50
+Values 12 13 0 0 0
+Weight 2
+Material potato~
+Extra    inventory nonmetal~
+Wear     take~
+ExtraDesc spiced potatoes order~
+An order of yummy spiced potatoes.
+~
+End
+
+#48020
+Name map Azarad ~
+Short a map of the great Azarad~
+Desc A rolled up map lies here.~
+Level 0
+ItemType map~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+ExtraDesc map~
+~
+End
+
+#48021
+Name potion recall~
+Short a potion of `#`yrecall`^~
+Desc A potion is here humming~
+Level 11
+ItemType potion~
+Cost 112
+Durability 5
+Asize 3
+Rsize 50
+Values 11 'word of recall' '' '' ''
+Weight 2
+Material unknown~
+Extra    hum~
+Wear     take hold~
+End
+
+#48022
+Name potion stealth~
+Short a potion of `#`ssteal`wth`^~
+Desc A sneaky potion rolls around.~
+Level 20
+ItemType potion~
+Cost 644
+Durability 5
+Asize 1
+Rsize 50
+Values 20 invisibility fly 'see invisible' ''
+Weight 2
+Material unknown~
+Wear     take hold~
+End
+
+#48023
+Name potion power~
+Short a potion of `#`Rpower`^~
+Desc A potion lies here~
+Level 17
+ItemType potion~
+Cost 173
+Durability 5
+Asize 2
+Rsize 50
+Values 17 'giant strength' '' '' ''
+Weight 2
+Material unknown~
+Wear     take hold~
+End
+
+#48024
+Name potion divine healing~
+Short a potion of `#`cdivine healing`^~
+Desc A potion lies here.~
+Level 16
+ItemType potion~
+Cost 250
+Durability 5
+Asize 2
+Rsize 50
+Values 16 heal heal '' ''
+Weight 2
+Material unknown~
+Wear     take hold~
+End
+
+#48025
+Name Azaradian prison chains~
+Short `#`cAzaradian`^ prison chains~
+Desc Some chains lie here.~
+Level 1
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 78
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material metal~
+Extra    noremove~
+Wear     take ankle~
+Affect modifier -1 1 -1 move -300 0
+End
+
+#48027
+Name necklace heart~
+Short a `#`Ygold `Rheart-shaped `^necklace~
+Desc A beautiful necklace lies here~
+Level 35
+ItemType jewelry~
+Cost 375
+Durability 5
+Asize 15
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Extra    glow~
+Wear     take neck~
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 hitroll 2 0
+Affect modifier -1 35 -1 saves -2 0
+ExtraDesc necklace heart~
+A red heart hangs from the end of the gold chain, making it a perfect gift 
+for someone you love.  
+~
+End
+
+#48034
+Name Azaradian war banner~
+Short a `#`sAzaradian`^ warbanner~
+Desc A warbanner lies here~
+Level 35
+ItemType light~
+Cost 59
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 24 0 0
+Weight 2
+Material unknown~
+Extra    glow~
+Wear     take float~
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 hitroll 2 0
+Affect modifier -1 35 -1 presence 1 0
+End
+
+#48035
+Name wooden doll~
+Short a `#`ywooden`^ doll~
+Desc A doll lies on the ground~
+Level 3
+ItemType treasure~
+Cost 5
+Durability 5
+Asize 13
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Wear     take hold~
+End
+
+#48036
+Name minotaur cloak~
+Short a cloak of the `#`SMinotaur`^ guard~
+Desc A cloak lies here gathering dust~
+Level 50
+ItemType armor~
+Cost 690
+Durability 5
+Asize 15
+Rsize 50
+Values 12 12 12 10 0
+Weight 5
+Material cloth~
+Wear     take about~
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 damroll 2 0
+Affect modifier -1 50 -1 saves -2 0
+Affect modifier -1 50 -1 move 40 0
+End
+
+#48037
+Name standard issue flail~
+Short a standard issue `#`Yf`flail`^~
+Desc A flail lies here~
+Level 35
+ItemType weapon~
+Cost 298
+Durability 5
+Asize 0
+Rsize 50
+Values flail 3 12 smash 0
+Weight 8
+Material steel~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian knight~
+Affect modifier -1 35 -1 damroll 6 0
+End
+
+#48038
+Name steel vambrances chaos~
+Short `#`Ssteel`^ vambrances of `#`Schaos`^~
+Desc A set of vambrances lie here~
+Level 50
+ItemType armor~
+Cost 898
+Durability 5
+Asize 50
+Rsize 50
+Values 12 12 12 10 0
+Weight 12
+Material steel~
+Extra    magic antigood~
+Wear     take arms~
+Affect modifier -1 50 -1 hitroll 6 0
+Affect modifier -1 50 -1 damroll 6 0
+End
+
+#48039
+Name fountain water~
+Short a fountain~
+Desc A large fountain is here, gurgling out a stream of water.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material oldstyle~
+End
+
+#48040
+Name steel toe boots~
+Short some steel toe `#`Wboots`^~
+Desc Some heavy boots lie here.~
+Level 45
+ItemType armor~
+Cost 572
+Durability 5
+Asize 72
+Rsize 50
+Values 9 9 9 7 0
+Weight 10
+Material steel~
+Wear     take feet~
+Affect modifier -1 45 -1 move 80 0
+Affect modifier -1 45 -1 quickness 1 0
+Affect modifier -1 45 -1 agility 1 0
+End
+
+#48041
+Name shield~
+Short a `#`SMinotaur`^ shield~
+Desc A shield lies here~
+Level 15
+ItemType armor~
+Cost 162
+Durability 5
+Asize 50
+Rsize 50
+Values 5 5 5 3 0
+Weight 8
+Material unknown~
+Wear     take shield~
+Affect modifier -1 15 -1 saves -2 0
+End
+
+#48042
+Name spear war~
+Short the `#`GSpear`^ of `#`SWar`^~
+Desc A long spear lies on the ground.~
+Level 65
+ItemType weapon~
+Cost 780
+Durability 5
+Asize 0
+Rsize 50
+Values polearm 2 24 stab E
+Weight 60
+Material unknown~
+Extra    burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger knight~
+Affect modifier -1 65 -1 hitroll 6 0
+Affect modifier -1 65 -1 damroll 6 0
+End
+
+#48043
+Name minotaur belt~
+Short a `#`Sminotaur`^ belt~
+Desc A belt of the minotaur lies here.~
+Level 25
+ItemType container~
+Cost 274
+Durability 5
+Asize 3
+Rsize 50
+Values 1000 AC 0 100 0
+Weight 3
+Material unknown~
+Extra    magic burnproof~
+Wear     take waist~
+Affect modifier -1 25 -1 ac -5 0
+Affect modifier -1 25 -1 saves -2 0
+Affect modifier -1 25 -1 constitution 1 0
+End
+
+#48044
+Name barbed leather whip~
+Short `#`wa `rb`wa`srb`re`wd `swhip`^~
+Desc A leather whip studded with many stone barbs lies coiled here.~
+Level 35
+ItemType weapon~
+Cost 348
+Durability 5
+Asize 0
+Rsize 50
+Values whip 2 17 whip 0
+Weight 3
+Material leather~
+Wear     take wield~
+Affect modifier -1 35 -1 hitroll 2 0
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 agility 1 0
+End
+
+#48045
+Name gilded battle axe~
+Short a `#`rgilded`^ battle axe~
+Desc A large axe with a broad, copper-gilded blade lies here.~
+Level 40
+ItemType weapon~
+Cost 416
+Durability 5
+Asize 0
+Rsize 50
+Values axe 5 10 cleave F
+Weight 20
+Material unknown~
+Wear     take wield~
+Affect modifier -1 40 -1 damroll 6 0
+End
+
+#0
+
+
+
+#ROOMS
+#48000
+Name Outside of Azarad~
+Desc To the south of you is the City of Azarad.  A moat wraps around the
+city provided some defense, and as if that isn't enough, the city has a
+large wall as well.  The road to the south goes to the nothern gate, and
+from there all the way to the center of the city.  
+~
+Sector field~
+Exit north 56285
+Exit south 48001
+End
+
+
+#48001
+Name Near the City of Azarad~
+Desc You stand near the City of Azarad.  To the south is a Bridge over the
+Moat, that goes to a small Island in the center.  Two Guard Houses are on
+either side of you to the west, and to the east.  Inside each of them sounds
+of Men can be heard.  
+~
+Sector city~
+Exit north 48000
+Exit east 48003
+Exit south 48004
+Exit west 48002
+End
+
+
+#48002
+Name In a Guard Post~
+Desc You are in a small circular room with an opening on one side, to the
+east.  A large oak table is in one corner of the room with a few chairs
+around it to provide rest for tired guards.  Small slits in the walls in
+various points allow for arrows to be shot out.  Only exit is to the east.  
+~
+Sector inside~
+Exit east 48001
+End
+
+
+#48003
+Name In a Guard Post~
+Desc You are in a small circular room with an opening on one side, to the
+west.  A large oak table is in one corner of the room with a few chairs
+around it to provide rest for tired guards.  Small slits in the walls in
+various points allow for arrows to be shot out.  Only exit is to the west.  
+~
+Sector inside~
+Exit west 48001
+End
+
+
+#48004
+Name On a Bridge~
+Desc You stand on the draw bridge that allows passage from one side of the
+moat to the other.  Large silver chains connect to a pully system that
+allows the bridge to be lowered and raised, should the need arise.  You can
+walk towards Azarad to the South, or leave to the North.  
+~
+Sector city~
+Exit north 48001
+Exit south 48005
+End
+
+
+#48005
+Name On an Small Island~
+Desc You stand on a small island in the center of the moat, a barracks is also
+located here to provide extra security to the cities people.  Two bridges on
+the north and south side of this island connect it to the rest of the world
+and to Azarad.  On the western side there is green grass growing.  You
+can go north or south to leave the island or venture inside the Barracks to
+the east.  
+~
+Sector city~
+Exit north 48004
+Exit east 48006
+Exit south 48007
+End
+
+
+#48006
+Name A Barracks~
+Desc You stand in a large room with bunks lining the walls.  Some of the bunks
+are in use, others simply hold someone's belongings.  Nothing eles seems to
+stand out in this room, although it is rather dark.  You can leave to the
+west.  
+~
+Sector inside~
+Exit west 48005
+End
+
+
+#48007
+Name On a Bridge~
+Desc You stand on the draw bridge that allows passage from one side of the
+moat to the other.  Large silver chains connect to a pully system that
+allows the bridge to be lowered and raised, should the need arise.  You can
+walk inside Azarad to the South, or leave to the North.  
+~
+Sector city~
+Exit north 48005
+Exit south 48008
+End
+
+
+#48008
+Name The Northern Gates of Azarad~
+Desc Before you stands the city of Azarad, large iron gates are in the open
+position, as if to welcome travelers into the city.  Guards walk along the
+city walls, some shouting orders to each other, some simply standing at
+their post.  To enter the city go south, to leave go north.  
+~
+Sector city~
+Exit north 48007
+Exit south 48009
+End
+
+
+#48009
+Name Skull Street~
+Desc You are at the start of Skull Street, the Main street of this City.  Shops
+and houses line the road, and at the very end of the road there is Cleft
+Spires.  Wall road branches off of here from either side to the west and too
+the east and follows the wall all around the city, some houses and shops can
+be found along there.  
+~
+Sector city~
+Exit north 48008
+Exit east 48051
+Exit south 48010
+Exit west 48052
+End
+
+
+#48010
+Name Skull Street~
+Desc You are standing on Skull Street, the main street of Azarad.  On the
+west side of the street is a Temple of Margok, Clerics can be seen walking
+about in that direction.  On the opposite side of the street is a resident's
+house.  To the north you can see large iron gates in the open position, that
+is presently the fastest way out of the city.  Far down the street to the
+south, large Cleft spires can be seen.  
+~
+Sector city~
+Exit north 48009
+Exit east 48125
+Exit south 48011
+Exit west 48079
+End
+
+
+#48011
+Name Skull Street~
+Desc You are standing on Skull Street, the main street of Azarad.  On the
+west side of the street is a a wall of the Temple of Margok, Clerics can
+be seen walking about in that direction.  On the opposite side of the street
+is a resident's house.  To the north you can see large iron gates in the
+open position, that is presently the fastest way out of the city.  Far down
+the street to the south, large Cleft spires can be seen.  
+~
+Sector city~
+Exit north 48010
+Exit east 48124
+Exit south 48012
+End
+
+
+#48012
+Name Skull Street~
+Desc On the west side of the street is a Weapon's shop selling various types
+of weapons for those who have chosen to take a more violent path in life. 
+On the east side of the street is the home of a wealthy resident, this is
+noted due to the large size of the house.  Skull street continues north and
+south from here.  
+~
+Sector city~
+Exit north 48011
+Exit east 48122
+Exit south 48013
+Exit west 48121
+End
+
+
+#48013
+Name Center of Azarad~
+Desc Before you stands Cleft spires, they rise up from the ground and are used
+in celebrations.  All around it is the Market place, although the majority
+of the shops lies to the south of the spires.  From here Skull Street goes
+north, orc Street goes west and Decay street can take you to the eastern
+side of the city.  
+~
+Sector city~
+Exit north 48012
+Exit east 48026
+Exit south 48114
+Exit west 48014
+End
+
+
+#48014
+Name orc Street~
+Desc You are at the Start or end of orc street, depending on your direction.
+A large building is to the north and has several guards standing at the
+entrance, this is the city bank.  To the south is a less important building,
+it is the location of a leather shop run by an elder woman.  You can go to
+either of the buildings, down orc street to the west or you can go to the
+Center of the town to the east.  
+~
+Sector city~
+Exit north 48136
+Exit east 48013
+Exit south 48137
+Exit west 48015
+End
+
+
+#48015
+Name orc Street~
+Desc You stand on a quiet stretch of orc street, no major buildings are on
+either side of the street and thus no reason for people to travel here.  You
+can go east or west down the street.  
+~
+Sector city~
+Exit east 48014
+Exit west 48016
+End
+
+
+#48016
+Name orc Street~
+Desc A building to the north has a large sign with the words "Flantilo's
+Foods" indicats the location of the largest food store in the city.  A
+normal sized house lies on the opposite side of the street as well, nothing
+unique about it.  The road here is worn down rather lots compared to other
+locations, you can go west or east down orc street or enter a building.  
+~
+Sector city~
+Exit north 48112
+Exit east 48015
+Exit south 48113
+Exit west 48017
+End
+
+
+#48017
+Name Orc Street~
+Desc You stand on orc Street, one of the longest streets in Azarad, it
+goes east to the gates and west to the Center of town.  North of here is the
+Inn of Sorrow, possibly the most run down building in town and a very bad
+excuse for an inn.  You can enter the inn or continue on down the street in
+either direction.  
+~
+Sector city~
+Exit north 48110
+Exit east 48016
+Exit west 48018
+End
+
+
+#48018
+Name orc Street~
+Desc You stand on orc Street, one of the longest streets in Azarad, it
+goes east to the gates and west to the Center of town.  Various shops and
+different sized houses line this street.  Two houses are north and south of
+you.  
+~
+Sector city~
+Exit north 48108
+Exit east 48017
+Exit south 48109
+Exit west 48019
+End
+
+
+#48019
+Name orc Street~
+Desc You stand on orc Street, one of the longest streets in Azarad, it
+goes east to the gates and west to the Center of town.  Various shops and
+different sized houses line this street.  Two small houses are to the north
+and south of you, probably one of the poorer families that live here.  
+~
+Sector city~
+Exit north 48107
+Exit east 48018
+Exit south 48106
+Exit west 48020
+End
+
+
+#48020
+Name orc Street~
+Desc You Stand just inside the western gates of Azarad.  This road
+stretches all the way from here down to the market, located in the center of
+town.  Branching out to the north and south of here is wall road, it circles
+the city just inside the wall.  You can go in any direction from here.  
+~
+Sector city~
+Exit north 48063
+Exit east 48019
+Exit south 48064
+Exit west 48021
+End
+
+
+#48021
+Name Western Gate of Azarad~
+Desc Before you stands two large iron gates, each fully pushed open allowing
+all to enter.  Guards man the walls and a couple stand at attention by the
+gate preventing any thieves and such from entering, atleast through the
+gate.  To the west is a draw bridge providing dry passage across the moat
+and to the east orc Street begins.  
+~
+Sector city~
+Exit east 48020
+Exit west 48022
+End
+
+
+#48022
+Name On a Bridge~
+Desc You stand on the draw bridge that allows passage from one side of the
+moat to the other.  Large silver chains connect to a pully system that
+allows the bridge to be lowered and raised, should the need arise.  You can
+walk towards Azarad to the East, or leave to the West.
+~
+Sector city~
+Exit east 48021
+Exit west 48023
+End
+
+
+#48023
+Name Outskirts of Azarad~
+Desc You stand near the City of Azarad.  To the east is a Bridge over the
+Moat, that goes to a small Island in the center.  Two Guard Houses are on
+either side of you to the south, and to the north.  Inside each of them
+sounds of Men can be heard.  
+~
+Sector city~
+Exit north 48024
+Exit east 48022
+Exit south 48025
+Exit west 56365
+End
+
+
+#48024
+Name A Guard Post~
+Desc You are in a small circular room with an opening on one side, to the
+east.  A large oak table is in one corner of the room with a few chairs
+around it to provide rest for tired guards.  Small slits in the walls in
+various points allow for arrows to be shot out.  Only exit is to the south.
+~
+Sector inside~
+Exit south 48023
+End
+
+
+#48025
+Name A Guard Post~
+Desc You are in a small circular room with an opening on one side, to the
+east.  A large oak table is in one corner of the room with a few chairs
+around it to provide rest for tired guards.  Small slits in the walls in
+various points allow for arrows to be shot out.  Only exit is to the north.
+~
+Sector inside~
+Exit north 48023
+End
+
+
+#48026
+Name Sword Street~
+Desc You are standing on Decay Street, a very long street.  All along it is
+various shops and houses, most visible is the City hall.  To the west is the
+market place, many merchants have set up a shop trying to sell goods.  The
+road beneath your feet is very worn, but it is still in good condition.  You
+can go east or west from here.  
+~
+Sector city~
+Exit east 48027
+Exit west 48013
+End
+
+
+#48027
+Name Decay Street~
+Desc To the north is City hall, that is where the Lord Mayor lives and makes
+decisions that will effect the cities future.  A few guards have been posted
+to keep an eye out, but aside from that this part of town is rather quiet. 
+Decay Street continues east and west from here.  
+~
+Sector city~
+Exit north 48077
+Exit east 48028
+Exit west 48026
+End
+
+
+#48028
+Name Decay Street~
+Desc Just south of you is the famous "Talham's Potions", many people travel
+many miles to buy his potions and thus has caused the owner to become rather
+wealthy.  To the north is City Hall, although its entrance is to the west. 
+Large windows peer out onto the street and very fine furniture and artwork
+is visible inside through the large windows.  
+~
+Sector city~
+Exit east 48029
+Exit south 48115
+Exit west 48027
+End
+
+
+#48029
+Name Decay Street~
+Desc There is a large crack running across the road here, its origin is
+unknown.  It seems to be recent for the rocks interior that is exposed is
+very dirt free.  The road warps downwards slightly in two points, most
+likely due to heavy travel.  A small shop is located just to the south of
+here and orc Street continues east and west.  
+~
+Sector city~
+Exit east 48030
+Exit south 48116
+Exit west 48028
+End
+
+
+#48030
+Name Decay Street~
+Desc On either side of the street are two normal sized houses, sounds of
+children can be heard in both.  The eastern city gates can be seen in the
+distance, also, to the west the market place can be seen.  
+~
+Sector city~
+Exit north 48118
+Exit east 48031
+Exit south 48117
+Exit west 48029
+End
+
+
+#48031
+Name Decay Street~
+Desc Two rather interesting shops have their entrance here.  To the south the
+Mage Shop sells varios spell components and scrolls, although it is frowned
+upon by the residents, it manages to remain open.  To the North is Achven's
+Armory, one of the finest shops in town, the armor he sells is both high in
+quality and cost.  
+~
+Sector city~
+Exit north 48120
+Exit east 48032
+Exit south 48119
+Exit west 48030
+End
+
+
+#48032
+Name Decay Street~
+Desc You stand at the edge of Decay Street, to the east is the city gates and
+to the west Decay street lies.  Wall road is north and south of here, it
+circles the city along the wall passing every gate.  
+~
+Sector city~
+Exit north 48038
+Exit east 48033
+Exit south 48075
+Exit west 48031
+End
+
+
+#48033
+Name Eastern Gate of Azarad~
+Desc Two large iron gates are here, both fully open welcoming tired adventures
+inside.  Guards stand watch over all who enter and leave the city, making
+sure no criminals enter or avoid punishment.  A draw bridge to the east is
+conneted to the wall by two high quality silver chains and is ready to be
+brought up at a moments notice.  orc Street lies to the west of here.  
+~
+Sector city~
+Exit east 48034
+Exit west 48032
+End
+
+
+#48034
+Name On a Bridge~
+Desc You stand on the draw bridge that allows passage from one side of the
+moat to the other.  Large silver chains connect to a pully system that
+allows the bridge to be lowered and raised, should the need arise.  You can
+walk towards Azarad to the West, or leave to the East.
+~
+Sector city~
+Exit east 48035
+Exit west 48033
+End
+
+
+#48035
+Name Outskirts of Azarad~
+Desc Standing before you to the west is the great city of Azarad.  A moat, draw bridge, wall and many guards all provide security for its inhabitents. A road continues off to the east.
+~
+Sector city~
+Exit north 48036
+Exit east 56367
+Exit south 48037
+Exit west 48034
+End
+
+
+#48036
+Name A Guard Post~
+Desc You are in a small circular room with an opening on one side, to the
+east.  A large oak table is in one corner of the room with a few chairs
+around it to provide rest for tired guards.  Small slits in the walls in
+various points allow for arrows to be shot out.  Only exit is to the south.
+~
+Sector inside~
+Exit south 48035
+End
+
+
+#48037
+Name A Guard Post~
+Desc You are in a small circular room with an opening on one side, to the
+east.  A large oak table is in one corner of the room with a few chairs
+around it to provide rest for tired guards.  Small slits in the walls in
+various points allow for arrows to be shot out.  Only exit is to the north. 
+~
+Sector inside~
+Exit north 48035
+End
+
+
+#48038
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A Large building to the west has a sign on it labled
+"Jail", you can go inside and have a look at who's in jail or just continue
+along wall road north or south to Decay Street.  
+~
+Sector city~
+Exit north 48039
+Exit south 48032
+Exit west 48138
+End
+
+
+#48039
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A small training room is located west of here to help
+train young warriors.  Wall road continues north and south.  
+~
+Sector city~
+Exit north 48040
+Exit south 48038
+Exit west 48141
+End
+
+
+#48040
+Name Wall Road~
+Desc You are on Wall Road, which is surrounded by the outer city wall and the 
+various small buildings that line the street.  To the west lies an ancient 
+ruined temple, completly collapsed and destroyed.  The road continues to the 
+north and south.  
+~
+Sector city~
+Exit north 48042
+Exit south 48039
+End
+
+
+#48042
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A small side street branches off of here and houses
+can be seen along its side.  Wall road continues north and south.  
+~
+Sector city~
+Exit north 48043
+Exit south 48040
+Exit west 48142
+End
+
+
+#48043
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues south and north.  
+~
+Sector city~
+Exit north 48044
+Exit south 48042
+End
+
+
+#48044
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around. A very fine Jewelery shop is located to the west, only the wealthy can afford to buy goods there.  Wall road continues north and south.
+~
+Sector city~
+Exit north 48045
+Exit south 48043
+Exit west 48076
+End
+
+
+#48045
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues south and west.  
+~
+Sector city~
+Exit south 48044
+Exit west 48046
+End
+
+
+#48046
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A bar for wealthy people is south of here, you know
+its for wealthy people only because of a sign stating that.  Wall road
+continues east and west.  
+~
+Sector city~
+Exit east 48045
+Exit south 48149
+Exit west 48047
+End
+
+
+#48047
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A House lies to the south and has larger then average
+windows.  Wall road continues east and west.  
+~
+Sector city~
+Exit east 48046
+Exit south 48150
+Exit west 48048
+End
+
+
+#48048
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A small house that is in good condition lies to the
+south.  Wall road continues east and west.  
+~
+Sector city~
+Exit east 48047
+Exit south 48154
+Exit west 48049
+End
+
+
+#48049
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A large house is to the south, a wealthy person must
+live their for it to be the size it is.  Wall road continues east and west. 
+~
+Sector city~
+Exit east 48048
+Exit south 48152
+Exit west 48050
+End
+
+
+#48050
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A house is to the south and sounds of people inside
+can be heard.  Wall road continues east and west.  
+~
+Sector city~
+Exit east 48049
+Exit south 48151
+Exit west 48051
+End
+
+
+#48051
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  To the west is Skull street and to the east Wall road
+continues.  
+~
+Sector city~
+Exit east 48050
+Exit west 48009
+End
+
+
+#48052
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is a small house to the south, it looks in bad
+repair.  Wall road continues west and east across Skull Street.  
+~
+Sector city~
+Exit east 48009
+Exit south 48126
+Exit west 48053
+End
+
+
+#48053
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is a small house to the south, it looks in bad
+repair.  Wall road continues east and west.  
+~
+Sector city~
+Exit east 48052
+Exit south 48127
+Exit west 48054
+End
+
+
+#48054
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A small side street branches off of here and goes
+south, many houses are seen along it.  Wall Road continues east and west.  
+~
+Sector city~
+Exit east 48053
+Exit south 48128
+Exit west 48055
+End
+
+
+#48055
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  This corner of town is mainly warehouses and one is
+located to the south.  Wall Road continues west and east.
+~
+Sector city~
+Exit east 48054
+Exit south 48082
+Exit west 48056
+End
+
+
+#48056
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  This corner of town is mainly warehouses and one is
+located to the south.  Wall Road continues west and east.  
+~
+Sector city~
+Exit east 48055
+Exit south 48081
+Exit west 48057
+End
+
+
+#48057
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  This corner of town is mainly warehouses and one is
+located right in front of you, but it has no entrance here.  Wall Road
+continues east and south.  
+~
+Sector city~
+Exit east 48056
+Exit south 48058
+End
+
+
+#48058
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  This corner of town is mainly warehouses and one is
+located to the east.  Wall Road continues north and south.
+~
+Sector city~
+Exit north 48057
+Exit east 48080
+Exit south 48059
+End
+
+
+#48059
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  This corner of town is mainly warehouses and one is
+located to the east.  Wall Road continues north and south.
+~
+Sector city~
+Exit north 48058
+Exit east 48083
+Exit south 48060
+End
+
+
+#48060
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  This corner of town is mainly warehouses and one is
+located to the east.  Wall Road continues north and south.  
+~
+Sector city~
+Exit north 48059
+Exit east 48084
+Exit south 48061
+End
+
+
+#48061
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  The road continues north and south.  
+~
+Sector city~
+Exit north 48060
+Exit east 48180
+Exit south 48062
+End
+
+
+#48062
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  You can go east to Agailo's Tavern or down Wall road
+north or south.  
+~
+Sector city~
+Exit north 48061
+Exit east 48135
+Exit south 48063
+End
+
+
+#48063
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  You can go north further down wall road or go to
+orc street just south of here.  
+~
+Sector city~
+Exit north 48062
+Exit south 48020
+End
+
+
+#48064
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A small shop is to the east, it looks very run down. 
+Wall road joins up with orc street to the north and continues south.  
+~
+Sector city~
+Exit north 48020
+Exit east 48105
+Exit south 48065
+End
+
+
+#48065
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A scroll shop has been set up to the east by a elder
+mage, he sells high quality scrolls for a rather cheap price.  Wall road
+continues south and north.  
+~
+Sector city~
+Exit north 48064
+Exit east 48104
+Exit south 48066
+End
+
+
+#48066
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A very fine inn is visible to the east, it is the
+most recomended inn in all of Azarad.  You can enter the inn or go along
+wall road.  
+~
+Sector city~
+Exit north 48065
+Exit east 48102
+Exit south 48067
+End
+
+
+#48067
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A side street connects to wall road here as well, you
+can follow the street by going east or you can stay on wall road and go
+north or south.  
+~
+Sector city~
+Exit north 48066
+Exit east 48094
+Exit south 48068
+End
+
+
+#48068
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A park is to the east, green grass and and trees can
+be seen along with several of the towns peole.  Wall road continues north
+and south.  
+~
+Sector city~
+Exit north 48067
+Exit east 48093
+Exit south 48069
+End
+
+
+#48069
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues north and east.
+~
+Sector city~
+Exit north 48068
+Exit east 48070
+End
+
+
+#48070
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A side street connects to wall road here as well, you
+can follow the street by going north or you can stay on wall road and go
+east or west.  
+~
+Sector city~
+Exit north 48086
+Exit east 48071
+Exit west 48069
+End
+
+
+#48071
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  A temple to the God Shinare is located north of here.
+Wall road continues east and west.  
+~
+Sector city~
+Exit north 48085
+Exit east 48072
+Exit south 56447
+Exit west 48070
+End
+
+
+#48072
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues west and east.
+~
+Sector city~
+Exit east 48073
+Exit west 48071
+End
+
+
+#48073
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues west and east.  
+~
+Sector city~
+Exit east 48074
+Exit west 48072
+End
+
+
+#48074
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues west and east.  
+~
+Sector city~
+Exit east 48075
+Exit west 48073
+End
+
+
+#48075
+Name Wall Road~
+Desc You are standing on wall road, the road is shadded by the large wall and
+buildings all around.  There is no entrances to any buildings here, wall
+road continues west and north to Decay Street.  
+~
+Sector city~
+Exit north 48032
+Exit west 48074
+End
+
+
+#48076
+Name Jeweler~
+Desc You stand inside of a Jeweler shop, a few very valuable items are on
+display behind the counter.  A shopkeeper sits on a stool behind the counter
+and watching you carefully, a door is to the east.  
+~
+Sector inside~
+Exit east 48044
+End
+
+
+#48077
+Name City Hall~
+Desc You stand in the center of a large circular domed room.  Chandilers hang
+from the ceiling from four parts of the ceiling and provide light.  Members
+of city council rush around getting their work done and a large office is
+east of here.  A few guards stand at the entrance to make sure no unwanted
+guests enter.  
+~
+Sector inside~
+Exit east 48078
+Exit south 48027
+End
+
+
+#48078
+Name The Lord Mayor's Office~
+Desc On the far side of the room stands a large desk carved from very fine
+wood.  Lots of papers are scattered about on top of the desk, some have
+fallen to the ground.  The ceiling is high and the walls long, this is a
+very large room.  You can go to the center of city hall west of here.  
+~
+RoomFlags no_mob~
+Sector inside~
+Exit west 48077
+End
+
+
+#48079
+Name Temple of Anacor~
+Desc A huge altar made from black granite marble is standing in front of you and 
+behind it is a ten foot tall sitting statue of Anacor, the God of wisdom and 
+civilization.  The back of the altar opens into a a beautiful atrium. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 48010
+End
+
+
+#48080
+Name A Warehouse~
+Desc You are in a large Warehouse, boxes are stacked all the way to the
+ceiling and many workers scramble about moving them.  A large door faces
+wall road and allows easy entry and exit.  
+~
+Sector inside~
+Exit west 48058
+End
+
+
+#48081
+Name A Warehouse~
+Desc You are in a large Warehouse, boxes are stacked all the way to the
+ceiling and many workers scramble about moving them.  A large door faces
+wall road and allows easy entry and exit.  
+~
+Sector inside~
+Exit north 48056
+End
+
+
+#48082
+Name A Warehouse~
+Desc You are in a large Warehouse, boxes are stacked all the way to the
+ceiling and many workers scramble about moving them.  A large door faces
+wall road and allows easy entry and exit.  
+~
+Sector inside~
+Exit north 48055
+End
+
+
+#48083
+Name A Warehouse~
+Desc You are in a large Warehouse, boxes are stacked all the way to the
+ceiling and many workers scramble about moving them.  A large door faces
+wall road and allows easy entry and exit.  
+~
+Sector inside~
+Exit west 48059
+End
+
+
+#48084
+Name A Warehouse~
+Desc You are in a large Warehouse, boxes are stacked all the way to the
+ceiling and many workers scramble about moving them.  A large door faces
+wall road and allows easy entry and exit.  
+~
+Sector inside~
+Exit west 48060
+End
+
+
+#48085
+Name Temple of Graal~
+Desc A huge altar made from white polished marble is standing in front of you and 
+behind it is a ten foot tall sitting statue of Graal, the keeper of 
+tradition and one of the warrior gods of the pantheon.  The back of the 
+altar opens into a a beautiful atrium, above which can be seen a rainbow. 
+~
+RoomFlags indoors safe~
+Sector inside~
+Exit south 48071
+End
+
+
+#48086
+Name A Side Street~
+Desc You are on a small street that continues north or south to wall Road,
+houses are all around you.  A small patch of green grass is in front of all
+the houses, and a tree is at the end of the Street.  
+~
+Sector city~
+Exit north 48087
+Exit east 48092
+Exit south 48070
+Exit west 48091
+End
+
+
+#48087
+Name End of a Street~
+Desc You are at the end of a side street, you can enter 3 houses from here or
+return to wall road to the south.  A small tree is at the end of the street
+and grass is in front of each house.  
+~
+Sector city~
+Exit north 48090
+Exit east 48089
+Exit south 48086
+Exit west 48088
+End
+
+
+#48088
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit east 48087
+End
+
+
+#48089
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit west 48087
+End
+
+
+#48090
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48087
+End
+
+
+#48091
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit east 48086
+End
+
+
+#48092
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit west 48086
+End
+
+
+#48093
+Name A Small Opening~
+Desc You are inside a sort of park, its an open green space with trees and
+grass.  There are a few walk ways and a pond located on the far side.  Its a
+very peacefully looking spot, wall road is west of here.  
+~
+Sector inside~
+Exit west 48068
+End
+
+
+#48094
+Name A Side Street~
+Desc You are on a small street that continues east or west to wall Road,
+houses are all around you.  A small patch of green grass is in front of all
+the houses, and a tree is at the end of the Street.  
+~
+Sector city~
+Exit north 48101
+Exit east 48095
+Exit south 48100
+Exit west 48067
+End
+
+
+#48095
+Name End of a Side Street~
+Desc You are at the end of a side street, you can enter 3 houses from here or
+return to wall road to the west.  A small tree is at the end of the street
+and grass is in front of each house.  
+~
+Sector city~
+Exit north 48098
+Exit east 48096
+Exit south 48099
+Exit west 48094
+End
+
+
+#48096
+Name A Large House~
+Desc You stand in a Large house, that of a wealthy man.  A fireplace is in the
+far room and a rather large kitchen is on the opposite side of the house. 
+Directly in front of you is a flight of stairs rising to the second floor.  
+~
+Sector inside~
+Exit west 48095
+Exit up 48097
+End
+
+
+#48097
+Name Upstairs in a House~
+Desc You are upstairs in a large house, several beds are located in different
+rooms.  One being the master bedroom, which contains the largest bed.  You
+can go down the stairs from here.  
+~
+Sector inside~
+Exit east 48158
+EFlags door closed~
+Exit down 48096
+End
+
+
+#48098
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48095
+End
+
+
+#48099
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48095
+End
+
+
+#48100
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48094
+End
+
+
+#48101
+Name Inside a House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48094
+End
+
+
+#48102
+Name Inn of the Skull~
+Desc You are inside a very fine Inn, a large counter is located at the far
+wall and an Inn keeper stands behind it waiting for someone to purchase a
+room.  There is a room located east of here and it looks very impressive,
+the door is facing Wall road west of here.  
+~
+Sector inside~
+Exit east 48103
+Exit west 48066
+End
+
+
+#48103
+Name A Room~
+Desc A large bed is in the corner of the room, a night stand is beside it. 
+One rather large window faces outside and has a wonderfull view of orc
+Street from here.  A table and two chairs are in the opposite corner of the
+bed and seem very new.  
+~
+Sector inside~
+Mana 150
+Heal 150
+Exit west 48102
+End
+
+
+#48104
+Name A Scroll Shop~
+Desc Shelves behind the counter are all lined with various coloured scrolls
+ranging from a bright green down to pitch black ones.  An elder woman sits
+behind the counter wearing glasses and squinting at something.  
+~
+Sector inside~
+Exit west 48065
+End
+
+
+#48105
+Name Armor Shop~
+Desc A large pile of rusty armor sits in the center of the floor, a few items
+have been seperated and priced by the shopkeeper.  These items were probably
+just found, most of them are covered in dirt.  The shopkeeper keeps a close
+eye on his items, to make sure nobody ventures to far with one without
+paying.  
+~
+Sector inside~
+Exit west 48064
+End
+
+
+#48106
+Name A Small House~
+Desc You are standing in a small sized house in fair repair.  A bedroom is off
+to your left and the kitchen is just ahead of you.  There are no windows in
+any of the rooms to provid light, but there are some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48019
+End
+
+
+#48107
+Name A Small House~
+Desc You are standing in a small sized house in fair repair.  A bedroom is off
+to your left and the kitchen is just ahead of you.  There are no windows in
+any of the rooms to provid light, but there are some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48019
+End
+
+
+#48108
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48018
+End
+
+
+#48109
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48018
+End
+
+
+#48110
+Name Inn of Sorrow~
+Desc You are inside a very run down Inn, the Inn of Sorrow.  A drunken Inn keeper 
+stands behind a counter spilling beer everywhere and a couple of passed out 
+humans lay on the floor.  This is sure a rough place, a room is spotted 
+north of here.  Only other exit is to the south.   Type LIST to see what 
+rooms are avilable to rent. 
+~
+RoomFlags light inn~
+Sector inside~
+Exit south 48017
+End
+
+
+#48111
+Name A Shabby Room~
+Desc The smell in this room is awfull, bugs are all over the walls and the bed
+smells like vomite.  There are no windows, just a candle sitting on a very
+dirty night stand.  Perhaps it would be best to leave here, exit is to the
+south.  
+~
+Sector inside~
+Mana 120
+Heal 120
+Exit south 48110
+End
+
+
+#48112
+Name Flantilo's Foods~
+Desc You stand in a very bright shop, large windows facing the street along
+with several lanterns provide excellent lighting.  Flantilo stands behind
+the counter waiting for you to buy something, he has various fruits and
+other foods out on stands for sale.  
+~
+Sector inside~
+Exit south 48016
+End
+
+
+#48113
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48016
+End
+
+
+#48114
+Name The Market~
+Desc All around you is small shops set up by merchants trying to sell their
+goods, some good, some bad.  The ground in this area is very worn down, you
+can hardly make out the seperate stones that form the ground here.  You can
+stay and look for a good deal as long as you want or go north to the center
+of town.  
+~
+Sector inside~
+Exit north 48013
+End
+
+
+#48115
+Name Talham's Potions~
+Desc All around you are various potions in all different colours.  A few have
+been hand selected by Talham to be put up for sale.  
+~
+Sector inside~
+Exit north 48028
+End
+
+
+#48116
+Name Rhagilo's Herbs~
+Desc The room you are in smells like dirt, dirt is seen everywhere.  Some pots 
+line the walls growing herbs and there is a herb garden out back, which is 
+seen through the window.  Rhagilo sits on a stool behind a counter waiting 
+for someone to purchase some herbs.  
+~
+Sector inside~
+Exit north 48029
+End
+
+
+#48117
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48030
+End
+
+
+#48118
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48030
+End
+
+
+#48119
+Name A Mage Shop~
+Desc You stand in a small dark room, the only light is that of a burning
+candle on a small oak desk.  An old lady sits behind the counter on a
+rocking chair and waits to make a sale.  A large selection of magical items
+are all around you.  
+~
+Sector inside~
+Exit north 48031
+End
+
+
+#48120
+Name Achven's Armory~
+Desc Achven sits behind a very old looking counter on a stool.  His armor for 
+sale is located on several shelfs behind him and have prices.  A small sign 
+by the door says "No Kender Allowed".  You can buy something or leave to the 
+south.  
+~
+Sector inside~
+Exit south 48031
+End
+
+
+#48121
+Name Weapon Shop~
+Desc You stand in a large shop, weapons line the shelves behind the
+shopkeeper, some are worthless while others are fantastic.  Diltram has put
+a few aside that he will sell to those who venture into his shop.  A small
+lantern provides most of the light in here.  You can buy something or return
+to Skull Street from here.  
+~
+Sector inside~
+Exit east 48012
+End
+
+
+#48122
+Name A Large House~
+Desc You stand in a Large house, that of a wealthy man.  A fireplace is in the
+far room and a rather large kitchen is on the opposite side of the house. 
+Directly in front of you is a flight of stairs rising to the second floor.  
+~
+Sector inside~
+Exit west 48012
+Exit up 48123
+End
+
+
+#48123
+Name Upstairs in a House~
+Desc You are upstairs in a large house, several beds are located in different
+rooms.  One being the master bedroom, which contains the largest bed.  You
+can go down the stairs from here.  
+~
+Sector inside~
+Exit down 48122
+End
+
+
+#48124
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit west 48011
+End
+
+
+#48125
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit west 48010
+End
+
+
+#48126
+Name A Small House~
+Desc You are standing in a small sized house in fair repair.  A bedroom is off
+to your left and the kitchen is just ahead of you.  There are no windows in
+any of the rooms to provid light, but there are some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48052
+End
+
+
+#48127
+Name A Small House~
+Desc You are standing in a small sized house in fair repair.  A bedroom is off
+to your left and the kitchen is just ahead of you.  There are no windows in
+any of the rooms to provid light, but there are some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48053
+End
+
+
+#48128
+Name A Side Street~
+Desc You are on a small street that continues south or north to wall Road,
+houses are all around you.  A small patch of green grass is in front of all
+the houses, and a tree is at the end of the Street.  
+~
+Sector inside~
+Exit north 48054
+Exit east 48139
+Exit south 48129
+Exit west 48130
+End
+
+
+#48129
+Name End of a Street~
+Desc You are at the end of a side street, you can enter 3 houses from here or
+return to wall road to the north.  A small tree is at the end of the street
+and grass is in front of each house.  
+~
+Sector inside~
+Exit north 48128
+Exit east 48132
+Exit south 48131
+Exit west 48133
+End
+
+
+#48130
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit east 48128
+End
+
+
+#48131
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48129
+End
+
+
+#48132
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit west 48129
+End
+
+
+#48133
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit east 48129
+End
+
+
+#48134
+Name A Shop~
+Desc You stand in a small shop, a young boy sits behind the counter.  A small
+number of items are on a shelf behind the counter and have prices on them. 
+A candle is burning on the counter and is nearly out.  You can leave to the
+east.  
+~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#48135
+Name Agailo's Tavern~
+Desc You stand in a large room with tables lining the walls and two circular
+ones in the center.  A fire bruns brightly at the far wall and there is a
+note on the counter reading "Will be back in a few", Ahailo isn't here right
+now.  
+~
+Sector inside~
+Exit west 48062
+End
+
+
+#48136
+Name A Bank~
+Desc Before you sits a large oak desk, two guards stand on either side and a
+money changer sits behind it.  This is the Bank of Azarad and the extra
+security is needed incase someone decides to steal the money.  You can hand
+some money over to this trusty changer or you can laeve to the south.  
+~
+RoomFlags indoors bank law~
+Sector inside~
+Exit south 48014
+End
+
+
+#48137
+Name A Leather Shop~
+Desc The smell of leather surrounds you, there is no escape for it.  Leather
+hats, leather boots and every other thing you could dream of is in this
+shop.  The shopkeeper is currently making more items to sell while he waits
+for you to make a selection.  A small candle is burning on the counter,
+providing light to view the wares.  You can buy something or leave to the
+north.  
+~
+Sector inside~
+Exit north 48014
+End
+
+
+#48138
+Name The Jail~
+Desc You stand in the Jail of Azarad, the place where bad people end up.  A
+cell is located west of here, although it is highly advised that you do not
+enter, there may be dangerous criminals inside.  A stool is on the far side
+of the wall and some keys hang above it.  
+~
+Sector inside~
+Exit east 48038
+Exit west 48140
+End
+
+
+#48139
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit west 48128
+End
+
+
+#48140
+Name Inside a Jail Cell~
+Desc You are in a large, but very dirt, jail cell.  The smell of vomit lingers
+in the air and causes most in the cell to get sick.  Nothing but some large
+iron bars keep the criminals from escaping.  
+~
+RoomFlags no_mob~
+Sector inside~
+Exit east 48138
+End
+
+
+#48141
+Name Training Room~
+Desc You stand in an old Warehouse, all around you are dumbies and punching
+bags.  A trainer in the center of the room is teaching many new skills and
+increasing their power.  A large door is east of here.  
+~
+Sector inside~
+Exit east 48039
+End
+
+
+#48142
+Name A Side Street~
+Desc You are on a small street that continues north or south to wall Road,
+houses are all around you.  A small patch of green grass is in front of all
+the houses, and a tree is at the end of the Street.  
+~
+Sector city~
+Exit north 48143
+Exit east 48042
+Exit south 48144
+Exit west 48145
+End
+
+
+#48143
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48142
+End
+
+
+#48144
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48142
+End
+
+
+#48145
+Name End of a Street~
+Desc You are at the end of a side street, you can enter 3 houses from here or
+return to wall road to the south.  A small tree is at the end of the street
+and grass is in front of each house.  
+~
+Sector city~
+Exit north 48148
+Exit east 48142
+Exit south 48147
+Exit west 48146
+End
+
+
+#48146
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit east 48145
+End
+
+
+#48147
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48145
+End
+
+
+#48148
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit south 48145
+End
+
+
+#48149
+Name A Bar~
+Desc You stand inside of a bar, it is in fair repair and nothing noticable
+seems to be wrong with it.  A barternder is behind the bar offering everyone
+inside drinks.  
+~
+Sector inside~
+Exit north 48046
+End
+
+
+#48150
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48047
+End
+
+
+#48151
+Name A House~
+Desc You are standing in a normal sized house in fair repair.  A bedroom is
+off to your left and the kitchen is just ahead of you.  Small windows are in
+each room providing some light, there are also some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48050
+End
+
+
+#48152
+Name A Large House~
+Desc You stand in a Large house, that of a wealthy man.  A fireplace is in the
+far room and a rather large kitchen is on the opposite side of the house. 
+Directly in front of you is a flight of stairs rising to the second floor.  
+~
+Sector inside~
+Exit north 48049
+Exit up 48153
+End
+
+
+#48153
+Name Upstairs in a House~
+Desc You are upstairs in a large house of a wealthy family.  A window so the
+south provides a good view of the Temple.  A bed is located in the far
+corner and beside that there is a night stand.  
+~
+Sector inside~
+Exit down 48152
+End
+
+
+#48154
+Name A Small House~
+Desc You are standing in a small sized house in fair repair.  A bedroom is off
+to your left and the kitchen is just ahead of you.  There are no windows in
+any of the rooms to provid light, but there are some candle holders for
+visibility at night.  Only exit is back the way you came.  
+~
+Sector inside~
+Exit north 48048
+End
+
+
+#48155
+Name A Shabby Room~
+Desc The smell in this room is awfull, bugs are all over the walls and the bed
+smells like vomite.  There are no windows, just a candle sitting on a very
+dirty night stand.  Perhaps it would be best to leave here, exit is to the
+south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 120
+Heal 120
+Exit south 48110
+End
+
+
+#48156
+Name A Shabby Room~
+Desc The smell in this room is awfull, bugs are all over the walls and the bed
+smells like vomite.  There are no windows, just a candle sitting on a very
+dirty night stand.  Perhaps it would be best to leave here, exit is to the
+south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 120
+Heal 120
+Exit south 48110
+End
+
+
+#48157
+Name A Shabby Room~
+Desc The smell in this room is awfull, bugs are all over the walls and the bed
+smells like vomite.  There are no windows, just a candle sitting on a very
+dirty night stand.  Perhaps it would be best to leave here, exit is to the
+south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 120
+Heal 120
+Exit south 48110
+End
+
+
+#48158
+Name Heart of the Rebellion~
+Desc In this small hole the last hope of the people of Azarad has been gathered. 
+Amongst the rotted boards maps of underground routes, notes of the movements 
+and plans of a people have been tacked to every surface. In the midst of 
+this chaos is a table sparsely clean with a map of the city torn into it. 
+~
+Sector inside~
+Exit west 48097
+EFlags door closed~
+End
+
+
+#48180
+Name A Warehouse~
+Desc You are in a large Warehouse, boxes are stacked all the way to the
+ceiling and many workers scramble about moving them.  A large door faces
+wall road and allows easy entry and exit.
+~
+Sector inside~
+Exit west 48061
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 48012 spec_cast_meaner
+M 48013 spec_cast_mage
+M 48016 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 48039 10 48128 1
+E 0 48035 0 hands~
+M 0 48036 10 48128 1
+M 0 48039 10 48129 1
+E 0 48035 0 hands~
+M 0 48036 10 48129 1
+M 0 48039 10 48130 1
+E 0 48035 0 hands~
+M 0 48036 10 48130 1
+M 0 48019 20 48130 1
+M 0 48019 20 48131 1
+M 0 48036 10 48132 1
+M 0 48036 10 48133 1
+M 0 48010 1 48135 1
+G 0 48001 -1
+G 0 48019 -1
+M 0 48024 1 48136 1
+M 0 48014 1 48137 1
+G 0 48012 0
+G 0 48010 0
+G 0 48011 0
+M 0 48028 1 48138 1
+M 0 48036 10 48139 1
+M 0 48019 20 48139 1
+M 0 48029 1 48140 1
+E 0 48025 0 legs~
+M 0 48030 1 48141 1
+M 0 48019 20 48143 1
+M 0 48019 20 48144 1
+M 0 48019 20 48147 1
+M 0 48019 20 48148 1
+M 0 48033 1 48149 1
+G 0 3044 -1
+G 0 10030 -1
+G 0 27171 -1
+G 0 27172 -1
+G 0 3042 -1
+G 0 3045 -1
+G 0 28054 -1
+M 0 48019 20 48150 1
+M 0 48019 20 48151 1
+M 0 48019 20 48154 1
+M 0 48046 1 48158 1
+M 0 48047 1 48158 1
+M 0 48035 24 48180 4
+M 0 48041 20 48001 1
+M 0 48002 12 48002 2
+E 0 48002 0 wielded~
+M 0 48002 12 48003 2
+E 0 48002 0 wielded~
+M 0 48041 20 48004 1
+M 0 48000 2 48005 2
+E 0 48000 0 wielded~
+M 0 48001 5 48006 5
+M 0 48041 20 48008 2
+E 0 48037 0 wielded~
+M 0 48040 20 48009 1
+E 0 48036 0 neck1~
+M 0 48037 20 48009 1
+E 0 48034 0 light~
+M 0 48036 10 48009 1
+M 0 48018 8 48009 1
+M 0 48017 3 48009 1
+M 0 48004 1 48009 1
+E 0 48005 0 wielded~
+M 0 48039 10 48010 1
+E 0 48035 0 hands~
+M 0 48018 8 48011 1
+M 0 48017 3 48011 1
+E 0 48038 0 arms~
+M 0 48015 5 48011 1
+M 0 48005 1 48011 1
+E 0 48006 0 wielded~
+M 0 48042 5 48012 1
+M 0 48040 20 48012 1
+E 0 48036 0 neck1~
+M 0 48006 20 48012 5
+M 0 48043 6 48013 1
+E 0 48043 0 waist~
+M 0 48042 5 48013 1
+O 0 48039 0 48013
+M 0 48040 20 48013 1
+E 0 48036 0 neck1~
+M 0 48039 10 48013 1
+E 0 48035 0 hands~
+M 0 48015 5 48013 1
+M 0 48015 5 48013 1
+M 0 48009 5 48013 1
+M 0 48008 10 48013 2
+M 0 48006 20 48013 5
+M 0 48007 2 48013 1
+E 0 48007 0 lwrist~
+O 0 7570 -1 48013
+M 0 48042 5 48014 1
+M 0 48039 10 48014 1
+E 0 48035 0 hands~
+M 0 48037 20 48014 1
+E 0 48034 0 light~
+M 0 48015 5 48014 1
+M 0 48006 20 48014 5
+M 0 48040 20 48015 1
+E 0 48036 0 neck1~
+M 0 48009 5 48015 1
+M 0 48008 10 48015 1
+M 0 48039 10 48016 1
+E 0 48035 0 hands~
+M 0 48037 20 48016 1
+E 0 48034 0 light~
+M 0 48015 5 48016 1
+M 0 48008 10 48016 1
+M 0 48043 6 48017 1
+E 0 48043 0 waist~
+M 0 48040 20 48017 1
+E 0 48036 0 neck1~
+M 0 48039 10 48018 1
+E 0 48035 0 hands~
+M 0 48037 20 48018 1
+E 0 48034 0 light~
+M 0 48015 5 48018 1
+M 0 48040 20 48020 1
+E 0 48036 0 neck1~
+M 0 48037 20 48020 1
+E 0 48034 0 light~
+M 0 48041 20 48021 2
+E 0 48037 0 wielded~
+M 0 48041 20 48023 2
+E 0 48037 0 wielded~
+M 0 48041 20 48024 1
+E 0 48037 0 wielded~
+M 0 48041 20 48025 1
+E 0 48037 0 wielded~
+M 0 48042 5 48026 1
+M 0 48037 20 48026 1
+E 0 48034 0 light~
+M 0 48006 20 48026 5
+M 0 48040 20 48027 1
+E 0 48036 0 neck1~
+M 0 48018 8 48027 1
+M 0 48009 5 48027 1
+M 0 48008 10 48027 1
+M 0 48008 10 48028 1
+M 0 48018 8 48030 1
+M 0 48009 5 48030 1
+M 0 48007 2 48030 1
+E 0 48007 0 lwrist~
+M 0 48043 6 48032 1
+E 0 48043 0 waist~
+M 0 48038 20 48032 1
+M 0 48041 20 48033 2
+E 0 48037 0 wielded~
+M 0 48041 20 48035 2
+E 0 48037 0 wielded~
+M 0 48041 20 48036 1
+M 0 48041 20 48037 1
+M 0 48040 20 48038 1
+E 0 48036 0 neck1~
+M 0 48038 20 48040 1
+M 0 48040 20 48042 1
+E 0 48036 0 neck1~
+M 0 48038 20 48042 1
+M 0 48040 20 48045 1
+E 0 48036 0 neck1~
+M 0 48038 20 48045 1
+M 0 48038 20 48047 1
+M 0 48040 20 48049 1
+E 0 48036 0 neck1~
+M 0 48039 10 48050 1
+E 0 48035 0 hands~
+M 0 48037 20 48050 1
+E 0 48034 0 light~
+M 0 48036 10 48051 1
+M 0 48039 10 48052 1
+E 0 48035 0 hands~
+M 0 48036 10 48053 1
+M 0 48018 8 48053 1
+M 0 48037 20 48054 1
+E 0 48034 0 light~
+M 0 48043 6 48058 1
+E 0 48043 0 waist~
+M 0 48037 20 48060 1
+E 0 48034 0 light~
+M 0 48018 8 48060 1
+M 0 48040 20 48061 1
+E 0 48036 0 neck1~
+M 0 48040 20 48065 1
+E 0 48036 0 neck1~
+M 0 48018 8 48066 1
+M 0 48040 20 48067 1
+E 0 48036 0 neck1~
+M 0 48040 20 48070 1
+E 0 48036 0 neck1~
+M 0 48040 20 48072 1
+E 0 48036 0 neck1~
+M 0 48018 8 48072 1
+M 0 48043 6 48073 1
+E 0 48043 0 waist~
+M 0 48037 20 48073 1
+E 0 48034 0 light~
+M 0 48040 20 48074 1
+E 0 48036 0 neck1~
+M 0 48018 8 48074 1
+M 0 48037 20 48075 1
+E 0 48034 0 light~
+M 0 48032 1 48076 1
+G 0 48027 0
+M 0 48013 2 48077 2
+M 0 48012 1 48078 1
+E 0 48008 -1 lfinger~
+O 0 48009 -1 48078
+M 0 48011 1 48079 1
+M 0 48035 24 48080 4
+M 0 48035 24 48081 4
+M 0 48035 24 48082 4
+M 0 48035 24 48083 4
+M 0 48035 24 48084 4
+M 0 48034 1 48085 1
+M 0 48043 6 48089 1
+E 0 48043 0 waist~
+M 0 48045 1 48093 1
+E 0 48042 0 wielded~
+M 0 48040 20 48093 1
+E 0 48036 0 neck1~
+M 0 48040 20 48094 1
+E 0 48036 0 neck1~
+M 0 48039 10 48094 1
+E 0 48035 0 hands~
+M 0 48019 20 48101 1
+M 0 48020 1 48104 1
+G 0 48013 0
+G 0 48015 0
+G 0 48014 0
+M 0 48021 1 48105 1
+G 0 48016 0
+G 0 48018 0
+G 0 48017 0
+M 0 48022 1 48110 1
+M 0 48023 1 48112 1
+G 0 3064 -1
+G 0 10057 -1
+G 0 27085 -1
+G 0 27069 -1
+G 0 27070 -1
+M 0 48040 20 48114 1
+E 0 48036 0 neck1~
+M 0 48017 3 48114 1
+M 0 48016 1 48114 1
+M 0 48009 5 48114 1
+M 0 48037 20 48115 1
+E 0 48034 0 light~
+M 0 48025 1 48115 1
+G 0 48021 0
+G 0 48022 0
+G 0 48024 0
+G 0 48023 0
+M 0 48026 1 48116 1
+M 0 48037 20 48117 1
+E 0 48034 0 light~
+M 0 48019 20 48117 1
+M 0 48019 20 48118 1
+M 0 48119 1 48119 1
+G 0 1778 -1
+G 0 15710 -1
+G 0 22724 -1
+M 0 48027 1 48120 1
+G 0 48040 0
+G 0 48041 0
+M 0 48003 1 48121 1
+G 0 48003 0
+G 0 48004 0
+G 0 48044 -1
+G 0 48045 -1
+M 0 48019 20 48127 1
+S
+
+
+
+#SHOPS
+#48003
+buy_type weapon~
+profit_buy 350
+profit_sell 100
+close_hour 23
+END
+
+#48010
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+close_hour 23
+END
+
+#48014
+buy_type armor~
+profit_buy 115
+profit_sell 35
+close_hour 23
+END
+
+#48020
+buy_type scroll~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#48021
+buy_type armor~
+profit_buy 120
+profit_sell 70
+close_hour 23
+END
+
+#48023
+buy_type food~
+profit_buy 110
+profit_sell 25
+close_hour 23
+END
+
+#48025
+buy_type potion~
+profit_buy 150
+profit_sell 65
+close_hour 23
+END
+
+#48026
+buy_type pill~
+profit_buy 140
+profit_sell 80
+close_hour 23
+END
+
+#48027
+buy_type armor~
+profit_buy 200
+profit_sell 70
+close_hour 23
+END
+
+#48032
+buy_type jewelry~
+profit_buy 130
+profit_sell 50
+close_hour 23
+END
+
+#48033
+buy_type food~
+profit_buy 110
+profit_sell 25
+close_hour 23
+END
+
+#48119
+buy_type staff~
+buy_type wand~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#48028
+code say You can't go in there, thats a Jail cell!
+~
+disabled false
+END
+
+#48003
+code say Welcome to my Shop $n!
+~
+disabled false
+END
+
+#48002
+code steal coin $n
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022866801
+END
+
+#48001
+code say Hullo $n!
+shak $n
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022867200
+END
+
+#48000
+code say Welcome to my shop, I have Everything you need!
+~
+disabled false
+END
+
+#0
+
+
+#$

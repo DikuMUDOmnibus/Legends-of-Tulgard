@@ -1,0 +1,2684 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Laka'Rhi'Nata~
+ShortName   Laka'Rhi'Nata~
+Builders    none~
+Credits     Draven~
+VNUMs       51800 51899
+LComment    `#`R[ 35- 75]`^
+LRange      35 75
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:33 2005~
+End
+
+
+
+#MOBILES
+#51800
+Name terrance the Tinkerer~
+ShortD terrance the Tinkerer~
+LongD Terrance the Tinkerer stands here, hawking his wares.~
+Desc From the look of him, Terrance seems to be a gypsy.  From experience,
+you know there aren't many gypsies in this part of the world, and you wonder
+how he came to be here.  Nonetheless, he's got a cart full of items, so why
+not take a look at what he's got?  
+
+~
+Race human~
+Align 2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -560
+Wealth 1000
+Act    npc dont_wander update_always~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#51801
+Name Submittant Lazy~
+ShortD a Lazy Submittant~
+LongD A lazy submittant strolls here, admiring the gardens and neglecting her studies.~
+Desc ~
+Race human~
+Align 1 2
+Level 38
+Hitroll 38
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 3d10+12
+DamType scratch
+AC -130 -130 -130 -111
+Wealth 250
+Act    npc dont_wander cleric~
+AffBy  protect_evil~
+Off    dodge kick~
+Imm    summon holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51802
+Name Guard Temple~
+ShortD a Temple Guard~
+LongD A Laka'Rhi'Nata Temple guard stands here, watching you warily.~
+Desc He's big.  Really big.
+He's strong.  Really strong.
+Better not mess with the ladies of the Order while he's around.
+~
+Race human~
+Align 1 3
+Level 40
+Hitroll 40
+HitDice 5d7+242
+ManaDice 2d5+30
+DamDice 4d8+14
+DamType none
+AC -140 -140 -140 -123
+Wealth 400
+Act    npc dont_wander warrior~
+AffBy  haste~
+Off    bash parry~
+Imm    summon~
+Res    charm holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#51803
+Name dock hand~
+ShortD a Dock Hand~
+LongD A dock hand hurries by you, trying to prepare the ferry.~
+Desc ~
+Race human~
+Align -3 0
+Level 36
+Hitroll 36
+HitDice 5d6+210
+ManaDice 3d5+75
+DamDice 4d7+11
+DamType charge
+AC -117 -117 -117 -95
+Wealth 130
+Act    npc dont_wander scavenger thief~
+Off    dodge trip~
+Imm    summon~
+Res    drowning~
+Vuln   mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#51804
+Name priestess~
+ShortD a Priestess~
+LongD A Laka'Rhi'Nata Order Priestess is here, passing on her blessings.~
+Desc ~
+Race human~
+Align 3 1
+Level 43
+Hitroll 43
+HitDice 5d7+245
+ManaDice 5d7+250
+DamDice 3d12+14
+DamType divine
+AC -150 -150 -150 -130
+Wealth 430
+Act    npc dont_wander cleric~
+AffBy  protect_evil~
+Off    dodge~
+Imm    summon charm holy~
+Res    poison negative disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51805
+Name pilgrim praying~
+ShortD a Praying Pilgrim~
+LongD A pilgrim sits here, praying on a bench.~
+Desc ~
+Race human~
+Align -1 1
+Level 37
+Hitroll 37
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType thwack
+AC -125 -125 -125 -105
+Wealth 25
+Act    npc dont_wander~
+Off    fast kick~
+Res    holy~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51806
+Name pilgrim chapel~
+ShortD a Pilgrim~
+LongD A pilgrim is here, being blessed by the Priestesses.~
+Desc ~
+Race human~
+Align 2 0
+Level 40
+Hitroll 40
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType beating
+AC -130 -130 -130 -104
+Wealth 100
+Act    npc dont_wander~
+AffBy  sanctuary~
+Off    kick~
+Res    summon holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#51807
+Name choir member~
+ShortD a Choir Member~
+LongD A Laka'Rhi'Nata Choir Member is here, practicing her songs.~
+Desc ~
+Race human~
+Align 1 1
+Level 47
+Hitroll 47
+HitDice 5d8+255
+ManaDice 5d8+265
+DamDice 8d4+16
+DamType slap
+AC -160 -160 -160 -132
+Wealth 170
+Act    npc dont_wander cleric~
+Off    dodge trip~
+Imm    holy~
+Res    summon charm negative disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51808
+Name boy kitchen~
+ShortD a kitchen boy~
+LongD A Kitchen Boy scurries by, helping to prepare food.~
+Desc ~
+Race human~
+Align -2 1
+Level 49
+Hitroll 49
+HitDice 5d6+230
+ManaDice 3d5+85
+DamDice 5d6+13
+DamType none
+AC -133 -133 -133 -113
+Wealth 100
+Act    npc wimpy thief~
+Off    dodge kick~
+Res    holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#51809
+Name girl kitchen~
+ShortD a Kitchen Girl~
+LongD A Kitchen Girl scurries by, helping to prepare food.~
+Desc ~
+Race human~
+Align -2 1
+Level 49
+Hitroll 49
+HitDice 5d6+230
+ManaDice 3d5+85
+DamDice 5d6+13
+DamType none
+AC -133 -133 -133 -119
+Wealth 100
+Act    npc wimpy thief~
+Off    dodge kick~
+Res    holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#51810
+Name worker stockhouse~
+ShortD a Stockhouse Worker~
+LongD A Stockhouse Worker runs by, carrying supplies.~
+Desc ~
+Race human~
+Align -3 1
+Level 53
+Hitroll 53
+HitDice 5d9+295
+ManaDice 2d5+50
+DamDice 6d7+21
+DamType punch
+AC -230 -230 -230 -197
+Wealth 530
+Act    npc warrior~
+AffBy  haste~
+Off    bash berserk dodge~
+Imm    summon~
+Res    holy disease~
+Vuln   mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#51811
+Name pilgrim male~
+ShortD a Male Pilgrim~
+LongD A Male Pilgrim is here, spending the night.~
+Desc ~
+Race human~
+Align 2 2
+Level 56
+Hitroll 56
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType punch
+AC -260 -260 -260 -221
+Wealth 350
+Act    npc dont_wander~
+Off    dodge~
+Imm    cold~
+Res    lightning holy~
+Vuln   poison negative disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#51812
+Name pilgrim female~
+ShortD a Female Pilgrim~
+LongD A Female Pilgrim is here, spending the night.~
+Desc ~
+Race human~
+Align 2 2
+Level 56
+Hitroll 56
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType scratch
+AC -260 -260 -260 -208
+Wealth 350
+Act    npc dont_wander~
+Off    dodge~
+Imm    cold~
+Res    lightning holy~
+Vuln   poison negative disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51813
+Name tithe collector~
+ShortD the Tithe Collector~
+LongD The tithe collector stands here, asking for your donations.~
+Desc The tithe collector for the Laka'Rhi'Nata has chose, as his post, the
+spot in front of the Portrait of Crane.  As people come by, he simply asks
+for their tithes, and as a reward, gives them a glimpse of the ancient
+portrait of the first Laka'Rhi.  
+
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType none
+AC -800 -800 -800 -680
+Wealth 0
+Act    npc dont_wander~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 detect_treeform detect_vanish~
+Imm    summon charm magic weapon~
+Form   edible other sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye horns scales tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 51800 100~
+MProg BRIBE 51801 5~
+END
+
+#51814
+Name spirit crane~
+ShortD the Spirit of Crane~
+LongD The Spirit of Crane hovers here, forlorn and lost.~
+Desc ~
+Race human~
+Align 1 3
+Level 70
+Hitroll 70
+HitDice 7d10+355
+ManaDice 7d10+355
+DamDice 7d8+34
+DamType divine
+AC -390 -390 -390 -312
+Wealth 700
+Act    npc dont_wander aggressive cleric~
+AffBy  sanctuary flying pass_door haste~
+Off    berserk dodge~
+Imm    summon charm poison holy disease sleep~
+Res    weapon~
+Vuln   fire~
+Form   magical non_skinable mist~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51815
+Name guard gallery~
+ShortD a Gallery Guard~
+LongD A Temple Gallery Guard stands here, protecting the ladies of the Order.~
+Desc ~
+Race human~
+Align -1 3
+Level 63
+Hitroll 63
+HitDice 6d10+340
+ManaDice 3d5+65
+DamDice 8d7+30
+DamType none
+AC -340 -340 -340 -289
+Wealth 630
+Act    npc dont_wander warrior~
+AffBy  sanctuary~
+Off    bash disarm parry~
+Imm    summon holy~
+Res    charm poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#51816
+Name submittant~
+ShortD a Submittant~
+LongD A Submittant is here, hard at work on her studies.~
+Desc ~
+Race human~
+Align 1 3
+Level 66
+Hitroll 66
+HitDice 7d10+340
+ManaDice 7d10+370
+DamDice 7d8+32
+DamType scratch
+AC -360 -360 -360 -288
+Wealth 660
+Act    npc dont_wander cleric~
+AffBy  protect_evil~
+Off    dodge~
+Imm    summon holy~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51817
+Name priestess resting~
+ShortD a Resting Priestess~
+LongD A Priestess is here, resting quietly in her room.~
+Desc ~
+Race human~
+Align 2 2
+Level 69
+Hitroll 69
+HitDice 7d10+355
+ManaDice 7d10+355
+DamDice 7d8+34
+DamType slap
+AC -390 -390 -390 -315
+Wealth 690
+Act    npc dont_wander cleric~
+AffBy  protect_evil~
+Off    dodge trip~
+Imm    holy~
+Res    summon charm poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51818
+Name tahari advisor chief~
+ShortD tahari the Chief Advisor~
+LongD Tahari, the Chief Advisor stands here, screening the Laka'Rhi's visitors.~
+Desc ~
+Race human~
+Align -3 2
+Level 73
+Hitroll 73
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType slap
+AC -450 -450 -450 -382
+Wealth 730
+Act    npc dont_wander scavenger warrior~
+AffBy  sanctuary protect_evil haste~
+Off    area_attack bash berserk disarm parry~
+Imm    summon holy~
+Res    poison negative disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51819
+Name palatina laka'rhi~
+ShortD laka'Rhi Palatina~
+LongD Laka'Rhi Palatina sits here, relaxing in her private chambers.~
+Desc ~
+Race human~
+Align 2 3
+Level 77
+Hitroll 77
+HitDice 8d11+385
+ManaDice 8d11+420
+DamDice 8d9+39
+DamType none
+AC -470 -470 -470 -385
+Wealth 770
+Act    npc dont_wander cleric~
+AffBy  sanctuary protect_evil haste~
+Off    disarm dodge kick parry~
+Imm    summon charm holy~
+Res    poison negative disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#51820
+Name octaviana~
+ShortD octaviana, Crane Reborn~
+LongD Octaviana is here, wasting away in this cell.~
+Desc ~
+Race human~
+Align 0 3
+Level 76
+Hitroll 75
+HitDice 8d11+395
+ManaDice 9d12+575
+DamDice 9d9+38
+DamType magic
+AC -490 -490 -490 -421
+Wealth 0
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden sanctuary pass_door haste dark_vision~
+AffBy2 detect_treeform detect_vanish~
+Off    area_attack dodge trip~
+Imm    summon charm poison holy disease sleep~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 51802 100~
+END
+
+#51821
+Name spirit unquiet~
+ShortD an Unquiet Spirit~
+LongD An unquiet spirit hovers here, screaming her agony.~
+Desc ~
+Race human~
+Align -1 0
+Level 40
+Hitroll 40
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+13
+DamType wrath
+AC -133 -133 -133 -111
+Wealth 100
+Act    npc aggressive undead~
+AffBy  detect_invis detect_hidden flying pass_door dark_vision~
+AffBy2 passwotrace~
+Off    area_attack berserk dodge fast~
+Imm    charm poison disease sleep~
+Res    summon weapon~
+Vuln   fire~
+Form   instant_decay non_skinable undead mist intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#51822
+Name bob captain~
+ShortD captain Bob~
+LongD Captain Bob is here, trying to fix his boat...again...~
+Desc He looks to be quite the salty chap.  Gruff and rude, he looks as
+though he'd just as soon stab you as take you across the lake.  But... 
+Money changes everything...  
+
+~
+Race human~
+Align -1 0
+Level 90
+Hitroll 0
+HitDice 1d1+1
+ManaDice 1d1+1
+DamDice 1d1+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander update_always~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Imm    summon charm magic weapon~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 51803 100~
+MProg BRIBE 51804 5~
+END
+
+#0
+
+
+
+#OBJECTS
+#51800
+Name dream dagger runic~
+Short the `#`BD`Cr`We`Ca`Bm`^ Dagger~
+Desc A dagger lies here, glowing light blue.~
+Level 40
+ItemType weapon~
+Cost 500
+Durability 5
+Asize 5
+Rsize 50
+Values dagger 5 5 frbite BD
+Weight 20
+Material silver~
+Extra    glow magic nolocate nodegrade burnproof~
+Extra2   nodecay runic_item~
+Wear     take wield~
+Affect modifier -1 40 -1 hitroll 2 0
+Affect modifier -1 40 -1 damroll 2 0
+Affect modifier -1 40 -1 mana 40 0
+End
+
+#51801
+Name rutabaga~
+Short a rutabaga~
+Desc A rutabaga lies here...better take it before it rots.~
+Level 1
+ItemType food~
+Cost 15
+Durability 5
+Asize 3
+Rsize 50
+Values 10 10 0 0 0
+Weight 3
+Material vegetable~
+Wear     take~
+End
+
+#51802
+Name wine strawberry~
+Short A flask of Strawberry Wine~
+Desc A leather flask with it's rim stained pink lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 30
+Durability 5
+Asize 7
+Rsize 50
+Values 10 10 'red wine' 0 0
+Weight 7
+Material wine~
+Wear     take~
+End
+
+#51803
+Name hat pilgrim~
+Short a pilgrim's hat~
+Desc A rough, old leather hat lies here.~
+Level 25
+ItemType armor~
+Cost 15
+Durability 5
+Asize 4
+Rsize 50
+Values 6 6 6 5 0
+Weight 10
+Material leather~
+Extra    nonmetal~
+Wear     take head~
+Affect modifier -1 25 -1 ac -5 0
+Affect modifier -1 25 -1 hp 2 0
+End
+
+#51804
+Name oar~
+Short a boat oar~
+Desc An old boat oar lies here...it looks like it's beginning to rot.~
+Level 36
+ItemType weapon~
+Cost 15
+Durability 5
+Asize 15
+Rsize 50
+Values exotic 3 10 beating F
+Weight 150
+Material wood~
+Extra    nonmetal~
+Wear     take wield~
+Affect modifier -1 36 -1 hitroll 2 0
+Affect modifier -1 36 -1 damroll 2 0
+Affect modifier -1 36 -1 ac -5 0
+End
+
+#51805
+Name novel romance~
+Short A romance novel~
+Desc A tattered paperback romance novel lies here.~
+Level 1
+ItemType trash~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Wear     take hold~
+End
+
+#51806
+Name helm crane's~
+Short Crane's Helm~
+Desc A strange silver helmet lies here, glowing a pale blue.~
+Level 68
+ItemType armor~
+Cost 1500
+Durability 5
+Asize 6
+Rsize 50
+Values 19 19 19 14 0
+Weight 60
+Material silver~
+Extra    glow magic horned~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger bard anti-paladin~
+Affect modifier -1 68 -1 empathy 4 0
+Affect modifier -1 68 -1 presence 3 0
+End
+
+#51807
+Name dream reaver sword~
+Short the `#`BD`Cr`We`Ca`Bm`^ Reaver~
+Desc A silver sword lies here, glowing a pale blue.~
+Level 63
+ItemType weapon~
+Cost 5000
+Durability 5
+Asize 6
+Rsize 50
+Values sword 3 16 frbite BCD
+Weight 60
+Material silver~
+Extra    magic bless~
+Wear     take wield~
+ClassAllowances warrior paladin ranger bard knight~
+Affect modifier -1 63 -1 quickness 2 0
+Affect modifier -1 63 -1 hitroll 2 0
+End
+
+#51808
+Name mace tahari's~
+Short `#`RT`rahari's `sM`wace`^~
+Desc A very sturdy-looking mace lies here.~
+Level 68
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 6
+Rsize 50
+Values mace 5 13 thwack G
+Weight 90
+Material iron~
+Extra    glow magic~
+Wear     take wield~
+ClassAllowances cleric druid paladin ranger bard anti-paladin~
+Affect modifier -1 68 -1 mana 100 0
+Affect modifier -1 68 -1 hitroll 4 0
+End
+
+#51809
+Name robe of righteousness~
+Short Robe of Righteousness~
+Desc A beautiful silk robe lies here, getting dirty.~
+Level 75
+ItemType armor~
+Cost 2000
+Durability 5
+Asize 15
+Rsize 50
+Values 19 19 19 15 0
+Weight 150
+Material silk~
+Extra    glow hum magic bless antievil nonmetal burnproof~
+Wear     take about~
+ClassAllowances mage cleric druid paladin spellfilcher bard~
+Affect modifier -1 75 -1 move 80 0
+Affect modifier -1 75 -1 mana 120 0
+End
+
+#51810
+Name staff serpent~
+Short Serpent Staff~
+Desc A strange staff, carved like writhing snakes, lies here.~
+Level 75
+ItemType staff~
+Cost 450
+Durability 5
+Asize 4
+Rsize 50
+Values 75 22 7 'giant strength' 0
+Weight 40
+Material wood~
+Extra    glow hum magic nonmetal burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid monk~
+Affect modifier -1 75 -1 saves -10 0
+End
+
+#51811
+Name ball soul octaviana's~
+Short `#`CO`cctaviana's `RS`roul`^~
+Desc A strange ball, glowing blue, lies on the ground here.~
+Level 62
+ItemType gem~
+Cost 850
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material crystal~
+Extra    glow magic rotdeath nonmetal burnproof nouncurse~
+Extra2   nodecay nochaoslace~
+Wear     take float~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 62 -1 move 40 0
+Affect modifier -1 62 -1 mana 40 0
+Affect modifier -1 62 -1 hp 4 0
+Affect modifier -1 62 -1 intuition 2 0
+End
+
+#51812
+Name herbs magic~
+Short some herbs~
+Desc Some herbs with vibrant yellow flowers lie here.~
+Level 55
+ItemType pill~
+Cost 350
+Durability 5
+Asize 1
+Rsize 50
+Values 55 heal '' '' ''
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#51813
+Name beach portal~
+Short the beach portal~
+Desc A magical portal stands here, leading back to the mainland.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 MN A 51801 0
+Weight 0
+Material unknown~
+Extra    glow magic nonmetal burnproof~
+Wear     no_sac~
+End
+
+#51814
+Name staff vengeance~
+Short a `#`CStaff`^ of `CV`cen`sgea`cnc`Ce`^~
+Desc The staff of vengeance lies here.~
+Level 90
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values staff 3 30 divine CFL
+Weight 100
+Material wood~
+Extra    glow noremove nonmetal nolocate nodegrade burnproof nogetall~
+Extra2   nodecay nosell~
+Wear     take wield~
+AttuneFlags equal_level~
+End
+
+#0
+
+
+
+#ROOMS
+#51800
+Name Edge of a Dense Forest~
+Desc You stand at the edge of a dense forest.  Behind you, the trees seem like a 
+wall, cutting you off from all but what lies ahead.  Before you, there is an 
+inviting sandy beach, and beyond that, a beautiful, crystal clear lake.  
+From here, you may either return into the forest and to the main road, or 
+continue on toward the lake.  
+~
+RoomFlags no_mob~
+Sector forest~
+Exit north 51801
+Exit east 54656
+Exit south 54736
+Exit west 54654
+End
+
+
+#51801
+Name On the Beach~
+Desc You stand on the sandy beach of the Crystalline Lake.  Clear, blue water 
+shines before you, and the eternally shifting sand rests beneath your feet.  
+Close by, you can see a boat dock and a tired-looking ferryboat tied to the 
+dock's moorings.  Out on the lake, you can see a small island upon which 
+rests perhaps the most majestic and etherial temple you've ever seen.  
+Perhaps you can find the ferryboat's captain and bribe your way across the 
+lake...   
+~
+Sector field~
+Exit north 51802
+Exit south 51800
+End
+
+
+#51802
+Name On the dock~
+Desc You stand on an old, creaking dock.  Moored to it's rotting pillars is
+a sad-looking ferryboat.  Cap'n Bob, the ferry's owner, is busily attending
+to his vessel.  You can see the temple on the island out in the middle of
+the Crystalline Lake; perhaps if you ask nice enough and give him enough
+money, he'll take you across.  
+
+~
+RoomFlags no_mob~
+Sector field~
+Exit south 51801
+End
+
+
+#51803
+Name Island Docks~
+Desc You've finally made it to the island in the middle of the Crystalline
+Lake, although you don't know exactly how you've made it.  Cap'n Bob's boat
+was far from seaworthy, and the docks on this side of the lake are no better
+than the ones you just left.  From here, you may go north and explore the
+temple.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit north 51804
+End
+
+
+#51804
+Name On A RockY Beach~
+Desc You stand on a rocky beach just beyond the island's docks.   To the
+left of you, the beach extends for a few more feet, and to the right of you,
+a tinkerer with a cart has somehow made it across the lake to sell his
+wares.   From here, you may go east and haggle with the tinkerer, or
+west and explore the beach.  
+
+~
+Sector field~
+Exit north 51807
+Exit east 51806
+Exit south 51803
+Exit west 51805
+End
+
+
+#51805
+Name On a sandy beach~
+Desc Well, there's not much to do here, unless you're into gazing at the
+temple on the island or letting your feet dangle in the cool water of the
+lake.  Why not just get on with it and go back to the path.  
+
+~
+Sector field~
+Exit east 51804
+End
+
+
+#51806
+Name A more rocky section of beach~
+Desc This part of the beach is considerably more rocky than the rest.  There
+is a cart nearby, sitting precariously on the severely tilted ground. 
+Looking at it, you wonder how anything could remain here and remain upright.
+ 
+~
+RoomFlags no_mob~
+Sector field~
+Exit west 51804
+End
+
+
+#51807
+Name The Courtyard path~
+Desc You stand on a path leading to the temple.  Up ahead, a grand courtyard
+opens up before you, filled with benches, trees and flowers.  Beyond the
+courtyard, you can see the great oaken door of the temple itself.  
+
+~
+Sector field~
+Exit north 51808
+Exit south 51804
+End
+
+
+#51808
+Name The Laka'Rhi'Nata Grand Courtyard~
+Desc Plants and trees of all kinds surround you on all sides.  A garden the
+likes of this is rarely seen anywhere, and by simply looking, you can tell
+the Sisters of the Laka'Rhi take great pride in their horticulture. 
+Fountains and benches are nestled here and there, some just next to the
+path, some almost out of sight, seemingly lost in the garden's glorious
+tangles.  Just ahead is the massive door to the temple, and behind you lies
+the beach.  
+
+~
+Sector field~
+Exit north 51809
+EFlags door closed~
+Exit south 51807
+End
+
+
+#51809
+Name Inside the door to the temple~
+Desc You stand just inside the door of the temple, inside it's musty, dank
+vestibule.  The main chapel lies spread out before you, filled will pilgrims
+and Laka'Rhi Priestesses.  To either side, there are small rooms used for
+private prayer.  
+
+~
+Sector inside~
+Exit north 51812
+Exit east 51811
+EFlags door closed~
+Exit south 51808
+EFlags door closed~
+Exit west 51810
+EFlags door closed~
+End
+
+
+#51810
+Name Prayer Closet~
+Desc You stand in a small room which is actually no larger than a broom
+closet.  A small bench has been placed along one wall, and a sculpture of a
+golden crane has been set against the other.  As you look around, it becomes
+obvious that this room is reserved for private prayer.  
+
+~
+Sector inside~
+Exit east 51809
+EFlags door closed~
+End
+
+
+#51811
+Name Prayer Closet~
+Desc You stand in a small room which is actually no larger than a broom
+closet.  A small bench has been placed alon one wall, and a sculpture of a
+golden crane has been set against the other.  As you look around, it becomes
+obvious that this room is reserved for private prayer.  
+
+~
+RoomFlags safe~
+Sector inside~
+Exit west 51809
+EFlags door closed~
+End
+
+
+#51812
+Name Chapel Center Aisle~
+Desc You stand in the magnificent center aisle of the Laka'Rhi'Nata main
+chapel.  Looking ahead of you, you can see that it extends before you all
+the way to the pulpit, where the current Laka'Rhi, Palatina, delivers her
+teachings.  A few rows of pews line either side of the aisle, filled with
+Priestesses and pilgrims.  
+
+~
+Sector inside~
+Exit north 51815
+Exit east 51814
+Exit south 51809
+Exit west 51813
+End
+
+
+#51813
+Name Chapel Pew~
+Desc You stand between two rows of pews situated in the main chapel. 
+Pilgrims mill all around you, resting on the pews, praying, and recieving
+blessings from the Priestesses.  Another row of pews is directly in front of
+you, and the main aisle is to your right.  
+
+~
+Sector inside~
+Exit north 51816
+Exit east 51812
+End
+
+
+#51814
+Name Chapel Pew~
+Desc You stand between two rows of pews situated in the main chapel. 
+Pilgrims mill all around you, resting on the pews, praying, and recieving
+blessings from the Priestesses.  Another row of pews is in front of you, and
+the main aisle is to your left.   
+~
+Sector inside~
+Exit north 51817
+Exit west 51812
+End
+
+
+#51815
+Name Chapel Center Aisle~
+Desc You stand in the magnificent center aisle of the Laka'Rhi'Nata main
+chapel.  Looking ahead of you, you can see that it extends before you all
+the way to the pulpit, where the current Laka'Rhi, Palatina, delivers her
+teachings.  A few rows of pews line either side of the aisle, filled with
+Priestesses and pilgrims.  
+
+~
+Sector inside~
+Exit north 51818
+Exit east 51817
+Exit south 51812
+Exit west 51816
+End
+
+
+#51816
+Name Chapel Pew~
+Desc You stand before a row of pews situated in the main chapel.  Pilgrims
+mill all around you, resting on the pews, praying and recieving blessings
+from the Priestesses.  Another row of pews lies behind you, and the main
+aisle is to your right.  
+
+~
+Sector inside~
+Exit east 51815
+Exit south 51813
+End
+
+
+#51817
+Name Chapel Pew~
+Desc You stand before a row of pews situated in the main chapel.  Pilgrims
+mill all around you, resting on the pews, praying, and recieving blessings
+from the Priestesses.  Another row of pews lies behind you, and the main
+aisle is to your left.  
+
+~
+Sector inside~
+Exit south 51814
+Exit west 51815
+End
+
+
+#51818
+Name Chapel Center Aisle~
+Desc You stand in the magnificent center aisle of the Laka'Rhi'Nata main
+chapel.  Looking ahead of you, you can see that it extends before you all
+the way to the pulpit.  A few rows of choir benches line either side of the
+aisle.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit north 51825
+Exit east 51822
+Exit south 51815
+Exit west 51819
+End
+
+
+#51819
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two more rows of benches to your
+left, and the main aisle is to your right.  
+
+~
+Sector inside~
+Exit north 51826
+Exit east 51818
+Exit west 51820
+End
+
+
+#51820
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There is a row of benches to your left, and a
+row of benches to your right; the main aisle is further to your right.  
+
+~
+Sector inside~
+Exit north 51827
+Exit east 51819
+Exit west 51821
+End
+
+
+#51821
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your right,
+and the main aisle is further to your right.  
+
+~
+Sector inside~
+Exit north 51828
+Exit east 51820
+End
+
+
+#51822
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your right,
+and the main aisle is to your left.  
+
+~
+Sector inside~
+Exit north 51829
+Exit east 51823
+Exit west 51818
+End
+
+
+#51823
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There is a row of benches to your right, and a
+row of benches to your left; the main aisle is further to your left.  
+
+~
+Sector inside~
+Exit north 51830
+Exit east 51824
+Exit west 51822
+End
+
+
+#51824
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your left, and
+the main aisle is further to your left.  
+
+~
+Sector inside~
+Exit north 51831
+Exit west 51823
+End
+
+
+#51825
+Name Chapel Center Aisle~
+Desc You stand in the magnificent center aisle of the Laka'Rhi'Nata main
+chapel.  As you step across the floor here, it sounds strangely hollow
+compared to the rest of the floor.  Looking behind you, you can see that the
+aisle extends all the way back to the main chapel door, and to the pulpit
+directly in front of you.  A few rows of choir benches line either side of
+the aisle.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit north 51832
+Exit east 51829
+Exit south 51818
+Exit west 51826
+Exit down 51895
+EFlags door closed~
+End
+
+
+#51826
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your left, and
+the main aisle is to your right.  
+
+~
+Sector inside~
+Exit north 51833
+EFlags door closed~
+Exit east 51825
+Exit south 51819
+Exit west 51827
+End
+
+
+#51827
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There is a row of benches to your left, and a
+row of benches to your right; the main aisle is further to your right.  
+~
+Sector inside~
+Exit east 51826
+Exit south 51820
+Exit west 51828
+End
+
+
+#51828
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your right,
+and the main aisle is further to your right.  
+
+~
+Sector inside~
+Exit east 51827
+Exit south 51821
+End
+
+
+#51829
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your right,
+and the main aisle is to your left.  
+
+~
+Sector inside~
+Exit north 51834
+EFlags door closed~
+Exit east 51830
+Exit south 51822
+Exit west 51825
+End
+
+
+#51830
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There is a row of benches to your right, and a
+row of benches to your left; the main aisle is further to your left.  
+
+~
+Sector inside~
+Exit east 51831
+Exit south 51823
+Exit west 51829
+End
+
+
+#51831
+Name Chapel Choir Loft~
+Desc You stand between two rows of choir benches.  Hymnals are scattered
+about here and there, and the occasional Priestess or Submittant can be
+found practicing her hymns.  There are two rows of benches to your left, and
+the main aisle is further to your left.  
+
+~
+Sector inside~
+Exit south 51824
+Exit west 51830
+End
+
+
+#51832
+Name Chapel Pulpit~
+Desc This pulpit is large compared to any you have seen before.  It has
+golden cranes attached to it's front, and there are several shelves on it's
+back containing papers, hymnals and the Laka'Rhi prayer book.  The chapel's
+main aisle extends behind you, and there is a small space in front of you,
+as well.  
+
+~
+Sector inside~
+Exit north 51835
+Exit south 51825
+End
+
+
+#51833
+Name Choir Loft Closet~
+Desc This closet isn't much to look at.  Old choir robes and out-dated
+hymnals lie scattered around everywhere.  There is a thick coat of dust on
+everything, and just looking at the dust makes you want to sneeze.  
+
+~
+Sector inside~
+Exit south 51826
+EFlags door closed~
+End
+
+
+#51834
+Name Choir Loft Closet~
+Desc This closet isn't much to look at.  Old choir robes and out-dated
+hymnals lie scattered around everywhere.  THere is a thick coat of dust on
+everything, and just looking at the dust makes you want to sneeze.  
+
+~
+Sector inside~
+Exit south 51829
+EFlags door closed~
+End
+
+
+#51835
+Name Behind the Pulpit~
+Desc You stand behind the pulpit of the Laka'Rhi'Nata.  There are two large
+leather chairs here, perhaps where the Laka'Rhi Palatina and Chief Advisor
+Tahari rest prior to and after a sermon.  There are huge shelves of ancient
+books to your right and left, as well as large doors.  The pulpit is just
+behind you along with the chapel's center aisle.  
+
+~
+Sector inside~
+Exit east 51837
+Exit south 51832
+Exit west 51836
+End
+
+
+#51836
+Name Laka'Rhi'Nata Library~
+Desc You stand before what serves as the temple library.  There aren't may
+books here, but the books they have are very important.  Most, however, are
+books that show the Laka'Rhi order in a good light.  There is a door to your
+right, and the stack of books is directly in front of you.  
+
+~
+Sector inside~
+Exit east 51835
+Exit up 51863
+End
+
+
+#51837
+Name Laka'Rhi'Nata Library~
+Desc You stand before what serves as the temple library.  There aren't many
+books here, but the books they have are very important.  Most, however, are
+books that show the Laka'Rhi order in a good light.  There is a door to your
+left, and the stack of books is directly in front of you.  
+
+~
+Sector inside~
+Exit west 51835
+Exit up 51865
+End
+
+
+#51838
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51841
+Exit east 51839
+Exit up 51862
+Exit northeast 51842
+End
+
+
+#51839
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51842
+Exit east 51840
+Exit west 51838
+End
+
+
+#51840
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51843
+Exit west 51839
+Exit up 51866
+Exit northwest 51842
+End
+
+
+#51841
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51844
+Exit east 51842
+Exit south 51838
+End
+
+
+#51842
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51845
+Exit east 51843
+Exit south 51839
+Exit west 51841
+Exit northeast 51846
+Exit southeast 51840
+Exit southwest 51838
+Exit northwest 51844
+End
+
+
+#51843
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51846
+Exit south 51840
+Exit west 51842
+End
+
+
+#51844
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit east 51845
+Exit south 51841
+Exit southeast 51842
+End
+
+
+#51845
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit north 51849
+Exit east 51846
+Exit south 51842
+Exit west 51844
+End
+
+
+#51846
+Name Inside the Laka'Rhi'Nata kitchen~
+Desc You stand in the busy kitchen of the Laka'Rhi'Nata.  Young boys and
+girls scurry about, chopping vegetables, preparing meat, and delivering
+trays of steaming food.  You consider a quick bite off one of the trays
+until you spy the kitchen's overseer, a very large, very stern-looking
+woman.  
+
+~
+Sector inside~
+Exit south 51843
+Exit west 51845
+Exit southwest 51842
+End
+
+
+#51847
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+Sector inside~
+Exit east 51848
+End
+
+
+#51848
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+Sector inside~
+Exit north 51853
+Exit east 51849
+Exit west 51847
+End
+
+
+#51849
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit north 51854
+Exit east 51850
+Exit south 51845
+Exit west 51848
+End
+
+
+#51850
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+Sector inside~
+Exit north 51855
+Exit east 51851
+Exit west 51849
+End
+
+
+#51851
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+Sector inside~
+Exit west 51850
+End
+
+
+#51852
+Name Inside the Laka'Rhi'Nata Storage House~
+Desc You stand inside a frail-looking wooden building designed to store the
+foodstuffs for the ladies of the Laka'Rhi order.  A few cattle stand in
+their stalls, mooing at you as you pass by.  In here, as well, pigs and
+chickens roam free.  There are barrels of vegetables lining the walls, and
+sacks of grain are propped haphazardly everywhere.  
+
+~
+Sector inside~
+Exit north 51857
+Exit east 51853
+EFlags door closed~
+End
+
+
+#51853
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit north 51859
+EFlags door closed~
+Exit east 51854
+Exit south 51848
+Exit west 51852
+EFlags door closed~
+End
+
+
+#51854
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit east 51855
+Exit south 51849
+Exit west 51853
+End
+
+
+#51855
+Name The Laka'Rhi'Nata Inner Bailey~
+Desc You are standing in the inside the temple's inner bailey.  It is paved
+with rough stones, and pieces of grass poke up between the stones here and
+there.  Livestock, such as pigs and chickens, seem to have free reign here,
+as you must dodge them with almost every step.  
+
+~
+Sector inside~
+Exit north 51860
+Exit east 51856
+Exit south 51850
+Exit west 51854
+End
+
+
+#51856
+Name Female pilgrim's quarters~
+Desc This is a room for a female pilgrim that has no where else to stay. 
+For a minimum donation to the temple, a woman can spend the night here in a
+semi-clean, semi-warm bed, and at least have some warm food in her sotmach. 
+From the looks of the place, perhaps they should ask for a little bit more
+of a donation from the pilgrims that use this room.  
+
+~
+Sector inside~
+Exit north 51861
+Exit west 51855
+End
+
+
+#51857
+Name Inside the Laka'Rhi'Nata Storage House~
+Desc You stand inside a frail-looking wooden building designed to store the
+foodstuffs for the ladies of the Laka'Rhi order.  A few cattle stand in
+their stalls, mooing at you as you pass by.  In here, as well, pigs and
+chickens roam free.  There are barrels of vegetables lining the walls, and
+sacks of grain are propped haphazardly everywhere.  
+
+~
+Sector inside~
+Exit east 51858
+Exit south 51852
+End
+
+
+#51858
+Name Inside the Laka'Rhi'Nata Storage House~
+Desc You stand inside a frail-looking wooden building designed to store the
+foodstuffs for the ladies of the Laka'Rhi order.  A few cattle stand in
+their stalls, mooing at you as you pass by.  In here, as well, pigs and
+chickens roam free.  There are barrels of vegetables lining the walls, and
+sacks of grain are propped haphazardly everywhere.  
+
+~
+Sector inside~
+Exit east 51859
+Exit west 51857
+End
+
+
+#51859
+Name Inside the Laka'Rhi'Nata Storage House~
+Desc You stand inside a frail-looking wooden building designed to store the
+foodstuffs for the ladies of the Laka'Rhi order.  A few cattle stand in
+their stalls, mooing at you as you pass by.  In here, as well, pigs and
+chickens roam free.  There are barrels of vegetables lining the walls, and
+sacks of grain are propped haphazardly everywhere.  
+
+~
+Sector inside~
+Exit south 51853
+EFlags door closed~
+Exit west 51858
+End
+
+
+#51860
+Name Male pilgrim's quarters~
+Desc This is a room for a male pilgrim that has no where else to stay.  For a
+minimum donation to the temple, a man can spend the night here in a
+semi-clean, semi-warm bed, and at least have some warm food in his stomach. 
+From the looks of the place, perhaps they should ask for a little bit more
+of a donation from the pilgrims that use this room.  
+
+~
+Sector inside~
+Exit east 51861
+Exit south 51855
+End
+
+
+#51861
+Name Pilgrim washroom~
+Desc This dirty little room is what passes as a washroom for the pilgrims
+who stay in the rooms to the west and south of here.  From the looks of
+things here, you would get dirtier trying to clean up than you were to start
+with.  
+
+~
+Sector inside~
+Exit south 51856
+Exit west 51860
+End
+
+
+#51862
+Name Laka'Rhi'Nata Hall of Portraits~
+Desc You stand in an ornate marble hallway, extends to your left.  On
+either side of you hangs portraits of Laka'Rhis come and gone, some ancient,
+some more modern.  There is a door leading to a staircase going down behind
+you, and a long, balconied hall with many doors extends out before you.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit east 51863
+Exit south 51868
+Exit down 51838
+End
+
+
+#51863
+Name Laka'Rhi'Nata Hall of Portraits~
+Desc You stand in an ornate marble hallway, extending to your left.  On
+either side of you hangs portraits of Laka'Rhis come and gone, some ancient,
+some more modern.  There is a door leading to a staircase going down behind
+you.  
+
+~
+Sector inside~
+Exit east 51864
+Exit west 51862
+Exit down 51836
+End
+
+
+#51864
+Name Laka'Rhi'Nata Hall of Portraits~
+Desc You stand in the center of the Hall of Portraits.  This is a holy place
+for the order; it's the spot they reserve to honor Crane, the very first
+Laka'Rhi.  Her portrait adorns the wall, and the floor just below it is worn
+from many knees bent in prayer.  There is a door opening on to a staircase
+that leads up behind you, and the Hall of Portraits spreads to your left and
+right.  
+
+~
+Sector inside~
+Exit east 51865
+Exit west 51863
+Exit up 51891
+End
+
+
+#51865
+Name Laka'Rhi'Nata Hall of Portraits~
+Desc You stand in an ornate marble hallway, extending to your left.  On
+either side of you hangs portraits of Laka'Rhis come and gone, some ancient,
+some more modern.  There is a door leading to a staircase going down behind
+you.  
+
+~
+Sector inside~
+Exit east 51866
+Exit west 51864
+Exit down 51837
+End
+
+
+#51866
+Name Laka'Rhi'Nata Hall of Portraits~
+Desc You stand in an ornate marble hallway, extending to your left.  On
+either side of you hangs portraits of Laka'Rhis come and gone, some ancient,
+some more modern.  There is a door leading to a staircase going down behind
+you, and a long, balconied hallway with many doors extends out before you.  
+
+~
+RoomFlags no_mob~
+Sector inside~
+Exit south 51869
+Exit west 51865
+Exit down 51840
+End
+
+
+#51867
+Name Submittant's Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit east 51868
+EFlags door closed~
+End
+
+
+#51868
+Name Submittant Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+left, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+right, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51862
+Exit south 51872
+Exit west 51867
+EFlags door closed~
+End
+
+
+#51869
+Name Priestess Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+right, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+left, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51866
+Exit east 51870
+EFlags door closed~
+Exit south 51873
+End
+
+
+#51870
+Name Priestess' Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit west 51869
+EFlags door closed~
+End
+
+
+#51871
+Name Submittant's Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit east 51872
+EFlags door closed~
+End
+
+
+#51872
+Name Submittant Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+left, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+right, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51868
+Exit south 51876
+Exit west 51871
+EFlags door closed~
+End
+
+
+#51873
+Name Priestess Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+right, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+left, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51869
+Exit east 51874
+EFlags door closed~
+Exit south 51877
+End
+
+
+#51874
+Name Priestess' Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit west 51873
+EFlags door closed~
+End
+
+
+#51875
+Name Submittant's Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit east 51876
+EFlags door closed~
+End
+
+
+#51876
+Name Submittant Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+left, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+right, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51872
+Exit south 51880
+Exit west 51875
+EFlags door closed~
+End
+
+
+#51877
+Name Priestess Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+right, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+left, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51873
+Exit east 51878
+EFlags door closed~
+Exit south 51881
+End
+
+
+#51878
+Name Priestess' Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit west 51877
+EFlags door closed~
+End
+
+
+#51879
+Name Submittant's Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit east 51880
+EFlags door closed~
+End
+
+
+#51880
+Name Submittant Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+left, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+right, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51876
+Exit south 51884
+Exit west 51879
+EFlags door closed~
+End
+
+
+#51881
+Name Priestess Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+right, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+left, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51877
+Exit east 51882
+EFlags door closed~
+Exit south 51885
+End
+
+
+#51882
+Name Priestess' Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit west 51881
+EFlags door closed~
+End
+
+
+#51883
+Name Submittant's Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit east 51884
+EFlags door closed~
+End
+
+
+#51884
+Name Submittant Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+left, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+right, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51880
+Exit south 51888
+Exit west 51883
+EFlags door closed~
+End
+
+
+#51885
+Name Priestess Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+right, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+left, you find an ornate wooden door, which is closed.  The hall stretches
+out before you, and behind you is the Laka'Rhi'Nata Hall of Portraits.  
+
+~
+Sector inside~
+Exit north 51881
+Exit east 51886
+EFlags door closed~
+Exit south 51889
+End
+
+
+#51886
+Name Priestess' Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit west 51885
+EFlags door closed~
+End
+
+
+#51887
+Name Submittant's Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit east 51888
+EFlags door closed~
+End
+
+
+#51888
+Name Submittant Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+left, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+right, you find an ornate wooden door, which is closed.  
+
+~
+Sector inside~
+Exit north 51884
+Exit west 51887
+EFlags door closed~
+End
+
+
+#51889
+Name Priestess Gallery~
+Desc You stand in a long hallway.  If you look over the balcony to your
+right, you can see the magnificent Laka'Rhi'Nata temple's chapel.  To your
+left, you find an ornate wooden door, which is closed.  
+
+~
+Sector inside~
+Exit north 51885
+Exit east 51890
+EFlags door closed~
+End
+
+
+#51890
+Name Priestess' Room~
+Desc This room, while sparse, seems as though it would be comfortable. 
+There is a small bed along one wall, and a small chest of drawers along
+another wall near a small, open window.  
+
+~
+Sector inside~
+Exit west 51889
+EFlags door closed~
+End
+
+
+#51891
+Name Laka'Rhi Palatina's Audience Chamber~
+Desc You stand in the opulent audience chamber of Palatina, the current
+Laka'Rhi.  This is the place where Palatina meets pilgrims and ambassadors
+to speak with them, either about religious or political matters.  There is a
+highly-decorated door to the north, but it seems to be locked.  
+
+~
+Sector inside~
+Exit north 51892
+EFlags door closed~
+Exit down 51864
+End
+
+
+#51892
+Name Palatina's Sitting Room~
+Desc You find yourself in Palatina's private sitting room.  This is by far
+the most opulent room in the temple.  Velvet cushioned chairs fill the room,
+and thick, plush carpet covers the floor.  The windows are heavily draped
+with rich damask, and the walls are painted a bright blue.  There seems to
+be another room up ahead, and the door to the Audience chamber is behind
+you.  
+
+~
+Sector inside~
+Exit north 51893
+Exit south 51891
+EFlags door closed~
+End
+
+
+#51893
+Name Palatina's Private Chambers~
+Desc You stand in the private bedroom of Laka'Rhi Palatina.  The room is
+magnificent to behold, and you think about the poor pilgrims, sleeping in
+such dirty rooms and wonder why some of this wealth can't be spent on them. 
+Behind you is the Laka'Rhi's sitting room, and there seems to be some kind
+of trap door in the ceiling above your head.  Perhaps that's what the ladder
+is for that's propped up agains the far wall...  
+
+~
+Sector inside~
+Exit south 51892
+Exit up 51894
+EFlags door closed~
+End
+
+
+#51894
+Name Octaviana's Cell~
+Desc This dismal place seems to be a secret prison cell of some kind.  When
+you first glimpsed this magnificent temple, you would never have dreamed
+such a horrible place existed somewhere inside.  This is the place where
+Palatina, fearful of losing her position as Laka'Rhi, has placed Crane
+Reborn, Octaviana.  
+
+~
+Sector inside~
+Exit down 51893
+EFlags door closed~
+End
+
+
+#51895
+Name Laka'Rhi'Nata Catacombs~
+Desc You stand in the dank, smelly underground catacombs of the
+Laka'Rhi'Nata.  The earthly remains of the Laka'Rhi's of the past lie here,
+most nothing more than bone and a few scraps of material.  A cool wind blows
+through the catacombs, chilling you to the bone.  
+
+~
+Sector inside~
+Exit east 51896
+Exit up 51825
+EFlags door closed~
+End
+
+
+#51896
+Name Laka'Rhi'Nata Catacombs~
+Desc You stand in the dank, smelly underground catacombs of the
+Laka'Rhi'Nata.  The earthly remains of the Laka'Rhi's of the past lie here,
+most nothing more than bone and a few scraps of material.  A cool wind blows
+through the catacombs, chilling you to the bone.  
+
+~
+Sector inside~
+Exit east 51897
+Exit west 51895
+End
+
+
+#51897
+Name Laka'Rhi'Nata Catacombs~
+Desc You stand in the dank, smelly underground catacombs of the
+Laka'Rhi'Nata.  The earthly remains of the Laka'Rhi's of the past lie here,
+most nothing more than bone and a few scraps of material.  A cool wind blows
+through the catacombs, chilling you to the bone.  
+
+~
+Sector inside~
+Exit east 51898
+Exit west 51896
+End
+
+
+#51898
+Name Laka'Rhi'Nata Catacombs~
+Desc You stand in the dank, smelly underground catacombs of the
+Laka'Rhi'Nata.  The earthly remains of the Laka'Rhi's of the past lie here,
+most nothing more than bone and a few scraps of material.  A cool wind blows
+through the catacombs, chilling you to the bone.  
+
+~
+Sector inside~
+Exit south 51899
+Exit west 51897
+End
+
+
+#51899
+Name Laka'Rhi'Nata Catacombs~
+Desc You stand in the dank, smelly underground catacombs of the
+Laka'Rhi'Nata.  The earthly remains of the Laka'Rhi's of the past lie here,
+most nothing more than bone and a few scraps of material.  A cool wind blows
+through the catacombs, chilling you to the bone.  
+
+~
+Sector inside~
+Exit north 51898
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 51801 spec_cast_cleric
+M 51803 spec_thief
+M 51804 spec_cast_cleric
+M 51808 spec_thief
+M 51809 spec_thief
+M 51814 spec_cast_cleric
+M 51816 spec_cast_cleric
+M 51817 spec_cast_cleric
+M 51819 spec_cast_cleric
+M 51820 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 51822 1 51802 1
+M 0 51803 2 51802 2
+E 0 51804 0 wielded~
+O 0 51813 -1 51805
+M 0 51800 1 51806 1
+G 0 51802 0
+G 0 51803 0
+G 0 51801 0
+M 0 51801 2 51807 2
+G 0 51805 0
+M 0 51802 2 51808 2
+E 0 51800 0 wielded~
+M 0 51805 2 51810 1
+M 0 51805 2 51811 1
+M 0 51804 2 51813 1
+M 0 51806 2 51813 1
+M 0 51806 2 51817 1
+M 0 51804 2 51817 1
+M 0 51807 12 51819 1
+M 0 51807 12 51820 1
+M 0 51807 12 51821 1
+M 0 51807 12 51822 1
+M 0 51807 12 51823 1
+M 0 51807 12 51824 1
+M 0 51807 12 51826 1
+M 0 51807 12 51827 1
+M 0 51807 12 51828 1
+M 0 51807 12 51829 1
+M 0 51807 12 51830 1
+M 0 51807 12 51831 1
+M 0 51808 10 51838 2
+M 0 51809 10 51839 2
+M 0 51808 10 51840 2
+M 0 51809 10 51841 2
+M 0 51808 10 51842 2
+M 0 51809 10 51842 2
+M 0 51809 10 51843 2
+M 0 51808 10 51844 2
+M 0 51809 10 51845 2
+M 0 51808 10 51846 2
+M 0 51810 3 51852 3
+M 0 51812 2 51856 1
+M 0 51811 1 51860 1
+M 0 51815 5 51862 1
+E 0 51807 0 wielded~
+M 0 51813 1 51864 1
+M 0 51815 5 51866 2
+E 0 51807 0 wielded~
+M 0 51816 3 51867 1
+G 0 51812 0
+M 0 51817 3 51874 1
+G 0 51812 0
+M 0 51816 3 51875 1
+G 0 51812 0
+M 0 51817 3 51882 1
+G 0 51812 0
+M 0 51817 3 51886 1
+G 0 51812 0
+M 0 51816 3 51887 1
+M 0 51812 2 51887 1
+M 0 51815 5 51888 1
+E 0 51806 0 head~
+M 0 51815 5 51889 1
+E 0 51806 0 head~
+M 0 51818 1 51891 1
+E 0 51808 0 wielded~
+M 0 51819 1 51893 1
+E 0 51809 0 about~
+E 0 51810 0 hold~
+M 0 51820 1 51894 1
+G 0 51811 0
+M 0 51821 3 51895 1
+M 0 51821 3 51897 1
+M 0 51821 3 51899 1
+S
+
+
+
+#SHOPS
+#51800
+profit_buy 120
+profit_sell 60
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#51804
+code if ispc $n
+say Thank you...ALL ABOARD!!!
+mob echo The ship moves across the water, creaking loudly.
+mob echo You look down to your feet, and notice a few leaks sprouting.
+mob echo Thank goodness this isn't a long trip...
+mob transfer all 51803
+mob force all look
+endif
+break
+~
+disabled false
+END
+
+#51803
+code if ispc $n
+say So...you want to cross the lake?
+say Well, I'm the only one who can take you...but it'll cost ya...
+say Five silver, and you'll be on the island in no time.
+endif
+break
+~
+disabled false
+END
+
+#51802
+code if ispc $n
+say Finally, someone to free me!
+say Go ahead...kill me...get it over with...
+endif
+break
+~
+disabled false
+END
+
+#51801
+code if ispc $n
+ say Ahhh, thank you so much for your generous donation!
+mob echo The Tithe collector pulls back the curtain, and you only
+mob echo get a second to glimpse the beautiful portrait behind it before
+mob echo the frustrated spirit of Crane attacks!
+mob mload 51814
+endif
+break
+~
+disabled false
+END
+
+#51800
+code if ispc $n
+say Ahh, come to look at the pretty pictures?
+say How would you like to glimpse the ancient Laka'Rhi Crane?
+say But for a pittance, I will draw back the curtain,
+say and you may gaze upon her beautiful face.
+say Come now...five silver is not much to ask to help
+say the Temple and our fine sisters...
+endif
+break
+~
+disabled false
+END
+
+#0
+
+
+#$

@@ -1,0 +1,144 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World: Neverland Ranch~
+ShortName   Neverland Ranch~
+Builders    none~
+Credits     Ixliam~
+VNUMs       5300 5399
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+*LastSaved  Tue Aug  3 20:03:42 2004~
+End
+
+
+
+#MOBILES
+#5300
+Name michael jackson~
+ShortD `#`WM`Yichael `WJ`Yackson`^~
+LongD A pale man in strange clothing is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType beating
+AC -200 -200 -200 -164
+Wealth 950
+Act    npc scavenger no_tame stay_area wimpy~
+Off    berserk disarm fast kick dirt_kick parry~
+Imm    charm disease~
+Res    magic~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material plastic
+END
+
+#5301
+Name bubbles monkey~
+ShortD `#`YBubbles the `YMonkey`^~
+LongD A monkey dressed in childrens clothing is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Act2   no_random_obj~
+Off    tail~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#5300
+Name Entrance to Neverland Ranch~
+Desc ~
+Sector inside~
+Exit north 5301
+EFlags door closed~
+EKeywords gate~
+End
+
+
+#5301
+Name Path to Neverland~
+Desc ~
+Sector inside~
+Exit north 5302
+Exit south 5300
+EFlags door closed~
+End
+
+
+#5302
+Name Path to Neverland~
+Desc ~
+Sector inside~
+Exit south 5301
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#5301
+author Ixliam~
+disabled false
+END
+
+#0
+
+
+#$

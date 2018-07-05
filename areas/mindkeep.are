@@ -1,0 +1,1792 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Mind Keep~
+ShortName   Mind Keep~
+Builders    None~
+Credits     Vincent~
+VNUMs       3800 3899
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      90 110
+Security    9
+Colour      r~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Sep  3 06:39:42 2005~
+End
+
+
+
+#MOBILES
+#3801
+Name enigma~
+ShortD a walking Enigma~
+LongD A riddle come to life roams here~
+Desc As you look at it, you realise that it is a riddle come to life. It must have been created 
+by the wizard who once ruled here. 
+~
+Race unique~
+Align 0 0
+Level 91
+Hitroll 10
+HitDice 100d40+4000
+ManaDice 50d20+1000
+DamDice 12d15+10
+DamType pierce
+AC -1100 -1100 -1100 -350
+Wealth 306
+Act    npc stay_area undead warrior~
+AffBy  sanctuary haste~
+Off    dodge parry~
+Imm    summon charm~
+Res    negative~
+Form   instant_decay non_skinable sentient biped~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#3802
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align 0 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3801 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3802 match~
+END
+
+#3803
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align -3 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3804 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3812 stars~
+MProg SPEECH 3812 star~
+END
+
+#3804
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align -2 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3805 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3813 shield~
+END
+
+#3805
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align -3 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3806 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3814 salt~
+END
+
+#3806
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align -2 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3807 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3815 house~
+END
+
+#3807
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align -2 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3808 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3816 penguin~
+END
+
+#3808
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align 3 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3809 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3817 blood~
+END
+
+#3809
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align 0 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3810 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3818 tree~
+MProg SPEECH 3818 trees~
+END
+
+#3810
+Name Riddlemaster~
+ShortD a riddle Master~
+LongD A riddle Master stands here to ask you a question~
+Desc You see a person, you are not sure if it's a man or a woman. As you look into it's eyes, you see nothing
+You realise that this must have been created specially for a task. You wonder how you could possibly get 
+a response from him. Maybe you should ask him what the riddle is.
+~
+Race unique~
+Align 1 0
+Level 91
+Hitroll 500
+HitDice 100d40+9000
+ManaDice 1d1+9999
+DamDice 40d40+200
+DamType none
+AC -5000 -5000 -5000 -4000
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_hidden sanctuary haste~
+Off    backstab bash disarm fast~
+Imm    summon charm magic weapon bash~
+Form   intangible~
+Part   head arms legs heart brains guts hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 3811 riddle~
+MProg DELAY 3803 100~
+MProg SPEECH 3819 butter~
+END
+
+#0
+
+
+
+#OBJECTS
+#3801
+Name non sword~
+Short the sword that is not~
+Desc A sword that is not really a sword is here.~
+Level 80
+ItemType weapon~
+Cost 450000
+Durability 5
+Asize 100
+Rsize 50
+Values sword 4 18 slash CDEFG
+Weight 100
+Material etherealness~
+Extra    magic noremove rotdeath nonmetal nolocate nodegrade burnproof~
+Extra2   nosecondary nochaoslace nosell~
+Wear     take wield~
+Affect modifier -1 80 -1 presence 2 0
+ExtraDesc sword~
+This sword is a riddle in itself. It does not appear to be a sword, but there
+is nothing else it can be. Just like the enigma you took it from, it defies
+logic at first glance.
+~
+ExtraDesc non-sword~
+THis sword is a riddle in itself. It does not appear to be a sword, but there
+is nothing else it can be. Just like the enigma you took it from, it defies 
+logic at first glance.
+~
+End
+
+#3802
+Name dry bones~
+Short a jumble of bones~
+Desc Some dried and weathered bones lie here~
+Level 20
+ItemType trash~
+Cost 1
+Durability 5
+Asize 5000
+Rsize 50
+Values 0 0 0 0 0
+Weight 5000
+Material bone~
+ExtraDesc dry bones~
+You stumble upon the dry bones of a weary adventurer who has tried his luck
+here. A chill runs up your spine as you realise that you too could end up 
+like this.
+~
+End
+
+#3803
+Name aura knowledge~
+Short `#`YAura of `YKnowledge`^~
+Desc An `#`YAura of `YKnowledge`^ is floating here.~
+Level 20
+ItemType jewelry~
+Cost 0
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 12
+Material corundeum~
+Extra    glow magic inventory nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take float~
+Affect modifier -1 20 -1 empathy 3 0
+Affect modifier -1 20 -1 intuition 3 0
+Affect modifier -1 20 -1 reasoning 3 0
+Affect modifier -1 20 -1 selfdiscipline 3 0
+Affect modifier -1 20 -1 hp 5 0
+End
+
+#3804
+Name cloak mystery~
+Short `#`cCloak of `cMystery`^~
+Desc A strange cloak with shifting colors lies here.~
+Level 20
+ItemType armor~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10 10 10 0
+Weight 10
+Material satin~
+Extra    glow invis nonmetal nolocate~
+Wear     take about~
+Affect affects -1 20 -1 none 0 'invisible hide'
+ExtraDesc cloak of mystery~
+This is a strange cloak indeed, as you look at it, you find yourself wondering
+where it went. It would appear that this cloak is somehow fading into the 
+background. As you look at it longer, you feel your stomach protesting
+~
+End
+
+#3805
+Name portal~
+Short a portal to Tulgard. many colors swirl before your eyes.....~
+Desc `#A portal to `^Tulgard is standing here.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 10000
+Rsize 50
+Values -1 KMN AB 3000 0
+Weight 10000
+Material magic~
+Extra    magic nopurge nonmetal burnproof~
+Extra2   nodecay nochaoslace~
+End
+
+#3806
+Name warning sign~
+Short a warning sign~
+Desc A large warning sign is here, staked into the ground.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 10000
+Rsize 50
+Values 0 0 0 0 0
+Weight 10000
+Material unknown~
+Extra    noremove nopurge burnproof~
+Extra2   nodecay nochaoslace~
+ExtraDesc sign~
+=========================================
+=   This area is for very high level   =
+= adventurers, level 80+ or groups     =
+= who can handle that. BE WARNED!!!    =
+=                                      =
+= But those who are smart, more brains =
+= than brawn, can conquer the maze and =
+=   the riddle, and get treasuers of   =
+=       great power! LEVEL 10+         =
+=========================================
+~
+End
+
+#0
+
+
+
+#ROOMS
+#3801
+Name The entry to the maze~
+Desc You are standing at the entry of a maze, from it you sense a great danger, and great rewards.
+~
+RoomFlags no_mob~
+Sector city~
+Exit north 3802
+EDesc The entry to the Maze
+~
+Exit south 59718
+End
+
+
+#3802
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3803
+EDesc Further into the maze
+~
+Exit south 3801
+EDesc The entry to the Maze
+~
+Exit west 3806
+EDesc Further into the maze
+~
+End
+
+
+#3803
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3804
+EDesc Further into the maze
+~
+Exit west 3802
+EDesc Further into the maze
+~
+End
+
+
+#3804
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3805
+EDesc Further into the maze
+~
+Exit west 3803
+EDesc Further into the maze
+~
+End
+
+
+#3805
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3815
+EDesc Further into the maze
+~
+Exit west 3804
+EDesc Further into the maze
+~
+End
+
+
+#3806
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3802
+EDesc Further into the maze
+~
+Exit west 3807
+EDesc Further into the maze
+~
+End
+
+
+#3807
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3806
+EDesc Further into the maze
+~
+Exit west 3808
+EDesc Further into the maze
+~
+End
+
+
+#3808
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3809
+EDesc Further into the maze
+~
+Exit east 3807
+EDesc Further into the maze
+~
+End
+
+
+#3809
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3822
+EDesc Further into the maze
+~
+Exit south 3808
+EDesc Further into the maze
+~
+End
+
+
+#3810
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3821
+EDesc Further into the maze
+~
+End
+
+
+#3811
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3812
+EDesc Further into the maze
+~
+End
+
+
+#3812
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3813
+EDesc Further into the maze
+~
+Exit west 3811
+EDesc Further into the maze
+~
+End
+
+
+#3813
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3814
+EDesc Further into the maze
+~
+Exit west 3812
+EDesc Further into the maze
+~
+End
+
+
+#3814
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3817
+EDesc Further into the maze
+~
+Exit west 3813
+EDesc Further into the maze
+~
+End
+
+
+#3815
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3816
+EDesc Further into the maze
+~
+Exit south 3805
+EDesc Further into the maze
+~
+End
+
+
+#3816
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3829
+EDesc Further into the maze
+~
+Exit south 3815
+EDesc Further into the maze
+~
+End
+
+
+#3817
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3828
+EDesc Further into the maze
+~
+Exit south 3814
+EDesc Further into the maze
+~
+End
+
+
+#3818
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3827
+EDesc Further into the maze
+~
+Exit west 3819
+EDesc Further into the maze
+~
+End
+
+
+#3819
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3818
+EDesc Further into the maze
+~
+End
+
+
+#3820
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3825
+EDesc Further into the maze
+~
+End
+
+
+#3821
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3824
+EDesc Further into the maze
+~
+Exit south 3810
+EDesc Further into the maze
+~
+End
+
+
+#3822
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3823
+EDesc Further into the maze
+~
+Exit south 3809
+EDesc Further into the maze
+~
+End
+
+
+#3823
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3824
+EDesc Further into the maze
+~
+Exit south 3822
+EDesc Further into the maze
+~
+End
+
+
+#3824
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit south 3821
+EDesc Further into the maze
+~
+Exit west 3823
+EDesc Further into the maze
+~
+End
+
+
+#3825
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3834
+EDesc Further into the maze
+~
+Exit east 3826
+EDesc You have allmost reached your goal, to your east, you see the tower.
+~
+Exit south 3820
+EDesc Further into the maze
+~
+End
+
+
+#3826
+Name At the base of the tower~
+Desc You are at the base of the tower.  Feeling relieved that you have survived 
+the maze, you are still worried about what lies ahead.  From the rumours you 
+have heard, the only way to survive is to think fast and answer true.  
+~
+RoomFlags nowhere~
+Sector field~
+Exit west 3825
+EDesc Back into the maze
+~
+Exit up 3851
+EDesc To the first room of the tower
+~
+End
+
+
+#3827
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3832
+EDesc Further into the maze
+~
+Exit east 3828
+EDesc Further into the maze
+~
+Exit south 3818
+EDesc Further into the maze
+~
+End
+
+
+#3828
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3831
+EDesc Further into the maze
+~
+Exit south 3817
+EDesc Further into the maze
+~
+Exit west 3827
+EDesc Further into the maze
+~
+End
+
+
+#3829
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3830
+EDesc Further into the maze
+~
+Exit south 3816
+EDesc Further into the maze
+~
+End
+
+
+#3830
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3843
+EDesc Further into the maze
+~
+Exit south 3829
+EDesc Further into the maze
+~
+End
+
+
+#3831
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3842
+EDesc Further into the maze
+~
+Exit south 3828
+EDesc Further into the maze
+~
+End
+
+
+#3832
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit south 3827
+EDesc Further into the maze
+~
+Exit west 3833
+EDesc Further into the maze
+~
+End
+
+
+#3833
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3832
+EDesc Further into the maze
+~
+Exit west 3834
+EDesc Further into the maze
+~
+End
+
+
+#3834
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3833
+EDesc Further into the maze
+~
+Exit south 3825
+EDesc Further into the maze
+~
+End
+
+
+#3835
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3838
+EDesc Further into the maze
+~
+Exit west 3836
+EDesc Further into the maze
+~
+End
+
+
+#3836
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3837
+EDesc Further into the maze
+~
+Exit east 3835
+EDesc Further into the maze
+~
+End
+
+
+#3837
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3850
+EDesc Further into the maze
+~
+Exit south 3836
+EDesc Further into the maze
+~
+End
+
+
+#3838
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3839
+EDesc Further into the maze
+~
+Exit south 3835
+EDesc Further into the maze
+~
+End
+
+
+#3839
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3840
+EDesc Further into the maze
+~
+Exit west 3838
+EDesc Further into the maze
+~
+End
+
+
+#3840
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3841
+EDesc Further into the maze
+~
+Exit west 3839
+EDesc Further into the maze
+~
+End
+
+
+#3841
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3842
+EDesc Further into the maze
+~
+Exit west 3840
+EDesc Further into the maze
+~
+End
+
+
+#3842
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit south 3831
+EDesc Further into the maze
+~
+Exit west 3841
+EDesc Further into the maze
+~
+End
+
+
+#3843
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit north 3844
+EDesc Further into the maze
+~
+Exit south 3830
+EDesc Further into the maze
+~
+End
+
+
+#3844
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit south 3843
+EDesc Further into the maze
+~
+Exit west 3845
+EDesc Further into the maze
+~
+End
+
+
+#3845
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3844
+EDesc Further into the maze
+~
+Exit west 3846
+EDesc Further into the maze
+~
+End
+
+
+#3846
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3845
+EDesc Further into the maze
+~
+Exit west 3847
+EDesc Further into the maze
+~
+End
+
+
+#3847
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3846
+EDesc Further into the maze
+~
+Exit west 3848
+EDesc Further into the maze
+~
+End
+
+
+#3848
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3847
+EDesc Further into the maze
+~
+Exit west 3849
+EDesc Further into the maze
+~
+End
+
+
+#3849
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3848
+EDesc Further into the maze
+~
+Exit west 3850
+EDesc Further into the maze
+~
+End
+
+
+#3850
+Name In the maze~
+Desc As you look around, you can see nothing but your immediate surroundings. 
+You notice the exits from this room and the high walls, that seem quite
+impregnable.
+~
+RoomFlags nowhere~
+Sector field~
+Exit east 3849
+EDesc Further into the maze
+~
+Exit south 3837
+EDesc Further into the maze
+~
+End
+
+
+#3851
+Name The first level of the tower~
+Desc You find yourself on the first level of the tower.  An eerie chill creeps up 
+your spine.  As you look around you become aware of a pair of eyes.  As you 
+quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3826
+EDesc The base of the tower
+~
+End
+
+
+#3852
+Name The second level of the tower~
+Desc You find yourself on the second level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3851
+End
+
+
+#3853
+Name The third level of the tower~
+Desc You find yourself on the second level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3852
+End
+
+
+#3854
+Name The fourth level of the tower~
+Desc You find yourself on the second level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3853
+End
+
+
+#3855
+Name The fifth level of the tower~
+Desc You find yourself on the second level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3854
+End
+
+
+#3856
+Name The sixth level of the tower~
+Desc You find yourself on the second level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3855
+End
+
+
+#3857
+Name The seventh level of the tower~
+Desc You find yourself on the second level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3856
+End
+
+
+#3858
+Name The eighth level of the tower~
+Desc You find yourself on the eighth level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3857
+End
+
+
+#3859
+Name The ninth level of the tower~
+Desc You find yourself on the ninth level of the tower.  An eerie chill creeps 
+up your spine.  As you look around you become aware of a pair of eyes.  As 
+you quickly turn, you see a man looking at you.  
+~
+RoomFlags no_summon no_mob indoors~
+Sector inside~
+Exit down 3858
+End
+
+
+#3860
+Name The tenth level of the tower~
+Desc You have made it to the top.  You are in an open room, with windows 
+overlooking the maze From what you see, you deduce that this must be the 
+room of the wizard.  
+~
+RoomFlags no_summon no_mob indoors no_recall~
+Sector inside~
+Exit down 3859
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 3806 0 3801
+O 0 3802 0 3805
+O 0 3802 0 3808
+M 0 3801 5 3810 1
+E 0 3801 0 wielded~
+E 0 3804 0 about~
+O 0 3802 0 3810
+O 0 3802 0 3814
+O 0 3802 0 3818
+M 0 3801 5 3820 1
+E 0 3801 0 wielded~
+E 0 3804 0 about~
+O 0 3802 0 3820
+O 0 3802 0 3825
+O 0 3802 0 3829
+M 0 3801 5 3830 1
+E 0 3801 0 wielded~
+E 0 3804 0 about~
+O 0 3802 0 3832
+O 0 3802 0 3834
+O 0 3802 0 3838
+M 0 3801 5 3840 1
+E 0 3801 0 wielded~
+E 0 3804 0 about~
+O 0 3802 0 3842
+O 0 3802 0 3844
+O 0 3802 0 3847
+M 0 3801 5 3850 1
+E 0 3801 0 wielded~
+E 0 3804 0 about~
+O 0 3802 0 3850
+M 0 3802 1 3851 1
+M 0 3803 1 3852 1
+M 0 3804 1 3853 1
+M 0 3805 1 3854 1
+M 0 3806 1 3855 1
+M 0 3807 1 3856 1
+M 0 3808 1 3857 1
+M 0 3809 1 3858 1
+M 0 3810 1 3859 1
+O 0 3805 0 3860
+O 0 3803 0 3860
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#3819
+code *level 8
+if hastarget $i
+	say You have answered the final question, I will now transport you to the last room, where you can claim your prize.
+	mob transfer $n 3860
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3818
+code *level 7
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3859
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3817
+code *level 6
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3858
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3816
+code *level 5
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3857
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3815
+code *level 4
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3856
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3814
+code *level 3
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3855
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3813
+code *level 2
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3854
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3812
+code *level 1
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3853
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3811
+code *level 9
+if players == 1
+say The ninth riddle is: With fingers alone, I can make you drop things in your hands. With flies, I can make you lose concentration. With balls, I can make all of you fat. If I am neither a wizard nor a witch, what am I?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090185384
+END
+
+#3810
+code *level 8
+if players == 1
+say The eigth riddle is: Dies half its life. Lives the rest. Dances without music. Breathes without breath. What is it?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090185246
+END
+
+#3809
+code *level 7
+if players == 1
+say The seventh riddle is: I am a vessel and a stone, When I am hot my temper is known, I have my own money as well as a bank, If I take a bath the devil you can thank, I have no mercy when I am cold, If I am bad ill will shall unfold, I can be thirsty and have shot many eyes, In the dead of night as the curdling hound cries. What am I?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090184801
+END
+
+#3808
+code *level 6
+if players == 1
+say The sixth riddle is: I bring joy in the darkest of climates. I am a politician, elaborately dressed. I am a bird, tearing swiftly downwards. The floor down beneath me greeting me with zest. What am I ?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090184667
+END
+
+#3807
+code *level 5
+if players == 1
+say The fifth riddle is: Round, I am a swing. Open, I am inviting. Full, I am winning. Green, I am steaming. What am I ?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090184478
+END
+
+#3806
+code *level 4
+if players == 1
+say The fourth riddle is: Once I was as one with water, full of scaly fish; But, by a new decision, Fate has changed my nature. Having suffered fiery pangs, I now gleam white, like ashes or bright snow. What am I?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090186986
+END
+
+#3805
+code *level 3
+if players == 1
+say The third riddle is: On the battlefield I shudder, Under thrust of mace and sword, A crest emblazoned on my chest, With pride I serve my lord. Many battles I have seen, On fields of grass and mud, And though I'm scarred from fighting I've not shed a drop of blood. What am I ?
+	mob remember $n
+	mob delay 100
+	break
+endif
+ 
+What am I?
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090183888
+END
+
+#3804
+code *level 2
+if players == 1
+say The second riddle is: At night they come without being fetched, And by day they are lost without being stolen. What are they ?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090183557
+END
+
+#3803
+code if hastarget $i
+	say your time to answer has expired, so now so shall you
+	mob kill $n
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3802
+code *level 1
+if hastarget $i
+	say You have answered correctly. I will now transfer you to the next room
+	mob transfer $n 3852
+	mob forget
+	break
+endif
+~
+disabled false
+END
+
+#3801
+code *level 1
+if players == 1
+say You are in a cold house in the winter. It is dark. You have one match. There is a candle and there is a wood burning stove. Which do you light first ?
+	mob remember $n
+	mob delay 100
+	break
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1090183387
+END
+
+#0
+
+
+#$

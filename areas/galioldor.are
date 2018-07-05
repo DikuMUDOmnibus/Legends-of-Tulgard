@@ -1,0 +1,2208 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Galioldor~
+ShortName   Galioldor~
+Builders    delandria~
+Credits     Delandria~
+VNUMs       46100 46199
+LComment    `#`Y[  ALL  ]`^
+LRange      0 0
+Security    9
+Colour      g~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:24 2005~
+End
+
+
+
+#MOBILES
+#46100
+Name strong and healthy horse~
+ShortD a strong and healthy horse~
+LongD A strong and healthy horse~
+Desc ~
+Race horse~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    fast kick~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#46101
+Name cow~
+ShortD a fat milking cow~
+LongD A fat milking cow is standing here.~
+Desc ~
+Race minotaur~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType pound
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+AffBy  detect_hidden infrared~
+Off    kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#46102
+Name bull~
+ShortD a mean looking bull~
+LongD A mean looking bull is standing here.~
+Desc ~
+Race minotaur~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType pound
+AC -20 -20 -20 -16
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    fast kick gore~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#46103
+Name chicken~
+ShortD a chicken~
+LongD A small white chicken is pecking the ground here.~
+Desc ~
+Race chicken~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType peck
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   no_random_obj~
+AffBy  haste~
+Off    fast~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#46104
+Name Galioldor elven shopkeeper gathering place ~
+ShortD an elven barkeeper~
+LongD An elven barkeeper stands behind the bar waiting to serve you.~
+Desc ~
+Race elf~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType none
+AC -800 -800 -800 -696
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    summon charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46105
+Name luna shopkeeper Galioldor~
+ShortD luna~
+LongD Luna is standing here waiting to serve you.~
+Desc ~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#46106
+Name valloria shopkeeper Galioldor~
+ShortD valloria~
+LongD Valloria stands here waiting for your order~
+Desc ~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#46107
+Name elven citizen~
+ShortD an elven citizen~
+LongD An elven citizen is walking about here.~
+Desc This citizen is busy running errands and has no time to stop and chat with 
+you.  
+~
+Race elf~
+Align 1 0
+Level 26
+Hitroll 17
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -84
+Wealth 17
+Act    npc stay_area~
+AffBy  infrared~
+Off    bash~
+Imm    acid~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#46108
+Name elven noble~
+ShortD an elven noble~
+LongD An elven noble dressed in fine clothing is here.~
+Desc ~
+Race elf~
+Align 1 0
+XPMod 101
+Level 33
+Hitroll 17
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -95
+Wealth 17
+Act    npc no_tame stay_area~
+AffBy  infrared~
+Off    bash~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#46109
+Name dog hound~
+ShortD small dog~
+LongD A small dog is here checking you out.~
+Desc A small dog is here.
+~
+Race dog~
+Align 0 0
+XPMod 110
+Level 11
+Hitroll 0
+HitDice 3d5+65
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType chomp
+AC -20 -20 -20 10
+Wealth 0
+Act    npc scavenger stay_area noalign~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    fast~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46110
+Name riven shopkeeper Galioldor ~
+ShortD riven~
+LongD Riven stands here showing off his wares.~
+Desc ~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46111
+Name field mouse~
+ShortD a field mouse~
+LongD A Field mouse scurries about.~
+Desc ~
+Race fido~
+Align 0 3
+Level 10
+Hitroll 1
+HitDice 2d5+22
+ManaDice 1d4+5
+DamDice 2d4+2
+DamType bite
+AC 10 10 10 8
+Wealth 100
+Act    npc scavenger no_tame stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_invis~
+Off    dodge parry~
+Imm    charm~
+Vuln   magic~
+Form   edible poison animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#46112
+Name tarnkin shopkeeper Galioldor~
+ShortD tarnkin~
+LongD Tarnkin is standing here waiting to serve you.~
+Desc ~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46113
+Name edwin shopkeeper Galioldor~
+ShortD edwin~
+LongD Edwin is standing here waiting to serve you.~
+Desc ~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46114
+Name warehouse worker Galioldor~
+ShortD an elven warehouse worker~
+LongD An elven worker is here.~
+Desc ~
+Race elf~
+Align -3 3
+Level 20
+Hitroll 50
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType pound
+AC -95 -95 -95 -79
+Wealth 200
+Act    npc dont_wander warrior~
+AffBy  infrared~
+Off    dodge kick dirt_kick~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46115
+Name emu~
+ShortD a tall emu~
+LongD A tall emu is grazing here.~
+Desc ~
+Race horse~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    fast kick~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#46116
+Name male elf letter~
+ShortD a tall male elf~
+LongD A tall male elf is standing here.~
+Desc ~
+Race elf~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander~
+Act2   nohunt letter_courier~
+AffBy  detect_hidden infrared~
+Imm    charm~
+Res    illusion~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#46117
+Name elven druid~
+ShortD an elven druid~
+LongD An elven druid is here enjoying his surrounding.~
+Desc An elven druid is standing here enjoying his surroundings.
+~
+Race elf~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -623
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm magic weapon~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GRALL 46100 100~
+MProg GRALL 46101 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#46100
+Name elven wine~
+Short a bottle of elven wine~
+Desc A bottle of elven made wine lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 10 15 'elvish wine' 0 0
+Weight 60
+Material glass~
+Wear     take~
+End
+
+#46101
+Name roast chicken~
+Short a roast chicken~
+Desc A roast chicken is lying here.~
+Level 1
+ItemType food~
+Cost 23
+Durability 5
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#46102
+Name carton milk~
+Short a carton of milk~
+Desc A carton of milk is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 40
+Durability 5
+Asize 3
+Rsize 50
+Values 20 15 milk 0 0
+Weight 3
+Material milk~
+Wear     take~
+End
+
+#46103
+Name thin ivy belt~
+Short `#`ga `Gt`gh`Gi`gn `Givy b`ge`Gl`gt`^~
+Desc `#`ga `Gt`gh`Gi`gn `Givy b`ge`Gl`gt `gis lying here`^~
+Level 10
+ItemType container~
+Cost 200
+Durability 5
+Asize 5
+Rsize 50
+Values 150 A 0 100 100
+Weight 3
+Material ivy~
+Extra    burnproof~
+Wear     take waist~
+End
+
+#46104
+Name redwood bow~
+Short `ga fine `Sbow `gmade of `rredwood`^~
+Desc A fine bow made of redwood lay here.~
+Level 30
+ItemType weapon~
+Cost 600
+Durability 5
+Asize 0
+Rsize 50
+Values bow 6 4 pierce 0
+Weight 30
+Material silver~
+Extra    magic bless burnproof~
+Wear     take wield~
+End
+
+#46105
+Name elven forest blade sword~
+Short `GE`glven `GF`gorest `GB`glade`^~
+Desc An elven blade is lying here.~
+Level 23
+ItemType weapon~
+Cost 466
+Durability 5
+Asize 45
+Rsize 50
+Values sword 2 12 slice C
+Weight 100
+Material steel~
+Extra    burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian anti-paladin~
+End
+
+#46106
+Name cheese slab~
+Short a slab of `Ycheese`x~
+Desc A slab of `Wcreamy `Ycheese `xwith a thick `yrind`x.~
+Level 0
+ItemType pill~
+Cost 180
+Durability 5
+Asize 20
+Rsize 50
+Values 8 frenzy '' '' ''
+Weight 20
+Material cheese~
+Wear     take~
+End
+
+#46107
+Name small fire~
+Short a small fire~
+Desc A small fire is burning here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 7 999999 ADGJ 110 110
+Weight 0
+Material fire~
+Extra    nonmetal burnproof~
+ExtraDesc small fire~
+A pile of small logs and sticks is burning merrily here.
+~
+End
+
+#46108
+Name elven cloak~
+Short an `#`GE`gl`Gv`ge`Gn C`gl`Go`ga`Gk`^~
+Desc A `#`gdark green`^ cloak has been left here.~
+Level 24
+ItemType armor~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values 6 6 6 5 0
+Weight 5
+Material cotton~
+Extra    magic nonmetal~
+Wear     take about~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 0 -1 quickness 1 0
+Affect modifier -1 0 -1 agility 1 0
+Affect modifier -1 0 -1 hitroll 2 0
+ExtraDesc dark green cloak~
+An elven made cloak.  It is very dark green.
+~
+End
+
+#46109
+Name blood red potion~
+Short a `#`Rblood red`^ potion~
+Desc A `#`Rblood red`^ potion is here.~
+Level 15
+ItemType potion~
+Cost 315
+Durability 5
+Condition 90
+Asize 2
+Rsize 50
+Values 40 'giant strength' '' '' ''
+Weight 2
+Material water~
+Extra    magic burnproof~
+Wear     take hold~
+ExtraDesc blood red potion~
+This blood red potion is in a short glass vial.  It has a few dwarven 
+runes on it.
+~
+End
+
+#46110
+Name black potion~
+Short a `#`Sblack potion`^~
+Desc A `#`Sblack potion`^ is lying here.~
+Level 10
+ItemType potion~
+Cost 100
+Durability 5
+Asize 1
+Rsize 50
+Values 35 'protection evil' '' '' ''
+Weight 1
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#46111
+Name thick milky potion~
+Short a thick milky potion~
+Desc A thick milky looking potion is sitting here.~
+Level 10
+ItemType potion~
+Cost 300
+Durability 5
+Asize 8
+Rsize 50
+Values 26 'stone skin' shield '' ''
+Weight 8
+Material unknown~
+Wear     take~
+End
+
+#46112
+Name magic torch~
+Short `#`wa magical `Rf`rl`Ra`rm`Ri`rn`Rg `wtorch`^~
+Desc `wa magical `Rf`rl`Ra`rm`Ri`rn`Rg `wtorch is lying on the ground.`^~
+Level 10
+ItemType light~
+Cost 250
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 999 0 0
+Weight 10
+Material unknown~
+Wear     take hold~
+End
+
+#46113
+Name diamond encrusted mace druid ranger~
+Short `#`wa mace made from `Cd`ci`Ca`cm`Co`cn`Cd`cs `wand `Rr`ru`Rb`ri`Re`rs`^~
+Desc A large mace made of diamonds and rubies lies here, its beauty radiating around you.~
+Level 37
+ItemType weapon~
+Cost 800
+Durability 5
+Asize 0
+Rsize 50
+Values mace 3 12 crush E
+Weight 30
+Material diamon~
+Extra    magic bless nonmetal burnproof~
+Wear     take wield~
+ClassAllowances druid ranger~
+End
+
+#46114
+Name soft flowing robe druid ranger~
+Short `#`Ga `gs`Wof`Gt `Wf`glo`Ww`gin`Gg `gr`Wob`Ge`^~
+Desc A soft looking robe is lying here, almost blending in with its surroundings.~
+Level 40
+ItemType armor~
+Cost 421
+Durability 5
+Asize 35
+Rsize 50
+Values 13 13 13 10 0
+Weight 3
+Material cotton~
+Extra    bless~
+Wear     take about~
+ClassAllowances druid ranger~
+Affect modifier -1 0 -1 quickness 1 0
+Affect modifier -1 0 -1 agility 1 0
+Affect modifier -1 0 -1 constitution 1 0
+End
+
+#46115
+Name wooden staff ivy leaves druid ranger~
+Short `#`wa `ywooden staff `wengraved with `Gi`gvy `Gl`geaves`^~
+Desc A wooden staff has been dropped here.~
+Level 60
+ItemType weapon~
+Cost 900
+Durability 5
+Asize 20
+Rsize 50
+Values staff 11 5 pound FL
+Weight 10
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Wear     take wield~
+ClassAllowances druid ranger~
+Affect modifier -1 60 -1 mana 120 0
+Affect modifier -1 60 -1 hitroll 5 0
+Affect modifier -1 60 -1 damroll 5 0
+End
+
+#46116
+Name ring engraved wood ranger druid~
+Short `#`wa `gring `wmade of `gengraved `ywood`^~
+Desc A wooden ring lies here.~
+Level 15
+ItemType jewelry~
+Cost 200
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material wood~
+Wear     take finger~
+ClassAllowances druid ranger~
+Affect modifier -1 0 -1 mana 20 0
+Affect modifier -1 15 -1 strength 3 0
+End
+
+#46117
+Name mace redwood druid ranger~
+Short `#`wa `gl`rarge `wmace made from `rr`gedwood`^~
+Desc A large mace made from redwood lies here.~
+Level 37
+ItemType weapon~
+Cost 800
+Durability 5
+Asize 0
+Rsize 50
+Values mace 3 12 crush E
+Weight 30
+Material wood~
+Extra    magic bless nonmetal burnproof~
+Wear     take wield~
+ClassAllowances druid ranger~
+End
+
+#46118
+Name elven made boots~
+Short some `#`GE`gl`Gv`ge`Gn b`goots`^~
+Desc A pair of elven made boots have been left here.~
+Level 24
+ItemType armor~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 5 6 0
+Weight 5
+Material unknown~
+Extra    magic nonmetal burnproof~
+Wear     take feet~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 24 -1 hitroll 2 0
+Affect modifier -1 24 -1 agility 2 0
+Affect modifier -1 24 -1 quickness 2 0
+Affect modifier -1 24 -1 mana 50 0
+End
+
+#46119
+Name elven gloves~
+Short a pair of `#`GE`gl`Gv`ge`Gn `ggl`Go`gve`Gs`^~
+Desc A pair of `#`GE`gl`Gv`ge`Gn made `ggl`Go`gve`Gs`^ lie here.~
+Level 20
+ItemType armor~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 4 4 4 3 0
+Weight 5
+Material cotton~
+Extra    magic burnproof~
+Wear     take hands~
+Affect modifier -1 20 -1 selfdiscipline 2 0
+Affect modifier -1 20 -1 memory 2 0
+Affect modifier -1 20 -1 hitroll 2 0
+End
+
+#46120
+Name elven vest~
+Short an `#`GE`gl`Gv`ge`Gn v`gest`^~
+Desc An Elven made vest lies here.~
+Level 24
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 8 8 8 6 0
+Weight 50
+Material cotton~
+Extra    magic burnproof~
+Wear     take torso~
+Affect modifier -1 24 -1 mana 50 0
+Affect modifier -1 24 -1 selfdiscipline 2 0
+Affect modifier -1 24 -1 hitroll 2 0
+Affect modifier -1 24 -1 quickness 1 0
+End
+
+#46121
+Name elven rucksack~
+Short an `#`GE`gl`Gv`ge`Gn r`guck`Gs`gack`^~
+Desc An Elven made rucksack lies here.~
+Level 1
+ItemType container~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 200 A 0 200 100
+Weight 40
+Material leather~
+Extra    magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take back~
+End
+
+#46122
+Name canteen ~
+Short a small `#`Scanteen`^~
+Desc A small `#`Scanteen`^ lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 50
+Durability 5
+Asize 0
+Rsize 50
+Values 90 100 water 0 0
+Weight 20
+Material unknown~
+Extra    glow~
+Wear     take hold~
+End
+
+#46123
+Name fading parchment~
+Short a `#`wf`Wa`yd`wi`Wn`yg `wparchment`^~
+Desc A fading parchment lies here on the ground.~
+Level 1
+ItemType treasure~
+Cost 22
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material parchment~
+Extra    nonmetal~
+Extra2   nosell~
+Wear     take hold~
+ExtraDesc fading parchment~
+The ingredients required for a balm of minor healing are:
+  1 part flaxweed
+  1 part dolian buds
+Combine said ingredients in a mortar and grind with a pestle.
+~
+End
+
+#46124
+Name rock mortar pestle~
+Short a `#`Srock`^ mortar and pestle~
+Desc A rock mortar and pestle sit here.~
+Level 1
+ItemType mortar~
+Cost 124
+Durability 5
+Asize 0
+Rsize 50
+Values 50 0 0 15 10
+Weight 0
+Material rock~
+Extra    norestring~
+Wear     take hold~
+End
+
+#46125
+Name got_the_apply_parchment~
+Short got_the_apply_parchment~
+Desc Got_the_apply_parchment~
+Level 1
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#46126
+Name parchment letter note~
+Short a piece of parchment~
+Desc A piece of parchment~
+Level 1
+ItemType parchment~
+Cost 11
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 human 0 Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#46100
+Name Entrance to Galioldor~
+Desc You are entering the quiet and peaceful Galioldor.  Large trees tower over 
+you shading the town from the harsh sun.  
+~
+Sector city~
+Exit north 46101
+Exit south 57064
+End
+
+
+#46101
+Name Intersection of Pine and Sycamore~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+Sycamore Street and Pine Street intersect here.  To the east you can see 
+several elves standing about.  
+~
+Sector city~
+Exit north 46102
+Exit east 46166
+Exit south 46100
+Exit west 46105
+End
+
+
+#46102
+Name Pine Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46103
+Exit south 46101
+End
+
+
+#46103
+Name Pine Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46104
+Exit east 46180
+Exit south 46102
+End
+
+
+#46104
+Name Intersection of Oak Ave and Pine Street ~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46179
+Exit south 46103
+Exit west 46112
+End
+
+
+#46105
+Name Sycamore Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46101
+Exit west 46106
+End
+
+
+#46106
+Name Sycamore Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46105
+Exit west 46107
+End
+
+
+#46107
+Name Sycamore Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+Sycamore Street intersects with Arbor Street here.  
+~
+Sector city~
+Exit north 46108
+Exit east 46106
+End
+
+
+#46108
+Name Arbor Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46109
+Exit south 46107
+Exit west 46185
+End
+
+
+#46109
+Name Arbor Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  The 
+weapons shop is to your east.  
+~
+Sector city~
+Exit north 46110
+Exit east 46114
+Exit south 46108
+Exit west 46151
+End
+
+
+#46110
+Name Intersection of Oak Ave and Pine Street ~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  Arbor 
+Street and Oak Ave intersect here.  
+~
+Sector city~
+Exit east 46111
+Exit south 46109
+Exit west 46113
+End
+
+
+#46111
+Name Oak Ave~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46165
+Exit east 46112
+Exit west 46110
+End
+
+
+#46112
+Name Oak Ave~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46104
+Exit west 46111
+End
+
+
+#46113
+Name Oak Ave~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  Oak 
+Ave and Vallenwood Street intersect here.  
+~
+Sector city~
+Exit north 46115
+Exit east 46110
+End
+
+
+#46114
+Name Armorsmith's Shop~
+Desc This shop has been built onto an old tree stump.  There are racks of weapons 
+throughout the room.  
+~
+Sector inside~
+Exit west 46109
+End
+
+
+#46115
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46116
+Exit east 46117
+Exit south 46113
+End
+
+
+#46116
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46118
+Exit south 46115
+Exit west 46142
+End
+
+
+#46117
+Name Elven Home~
+Desc You find yourself inside of the home of a wealthy Elven family.  
+~
+Sector inside~
+Exit west 46115
+End
+
+
+#46118
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46119
+Exit east 46138
+Exit south 46116
+End
+
+
+#46119
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46120
+Exit east 46148
+Exit south 46118
+Exit west 46129
+End
+
+
+#46120
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46121
+Exit east 46137
+Exit south 46119
+End
+
+
+#46121
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46122
+Exit south 46120
+Exit west 46128
+End
+
+
+#46122
+Name Vallenwood Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46123
+Exit east 46135
+Exit south 46121
+End
+
+
+#46123
+Name Intersection of Vallenwood St. and Pine St.~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+Vallenwood and Pine Street intersect here.  
+~
+Sector city~
+Exit north 46124
+Exit east 46139
+Exit south 46122
+End
+
+
+#46124
+Name Stables~
+Desc You find yourself in a small stable.  There are horses sheltered here as 
+well as cows and other livestock.  
+~
+Sector city~
+Exit north 46125
+Exit south 46123
+Exit west 46127
+End
+
+
+#46125
+Name Stables~
+Desc You find yourself in a small stable.  There are horses sheltered here as 
+well as cows and other livestock.  
+~
+Sector city~
+Exit south 46124
+Exit west 46126
+End
+
+
+#46126
+Name Stables~
+Desc You find yourself in a small stable.  There are horses sheltered here as 
+well as cows and other livestock.  
+~
+Sector city~
+Exit east 46125
+Exit south 46127
+End
+
+
+#46127
+Name Stables~
+Desc You find yourself in a small stable.  There are horses sheltered here as 
+well as cows and other livestock.  
+~
+Sector city~
+Exit north 46126
+Exit east 46124
+End
+
+
+#46128
+Name The Gathering Place~
+Desc Looking around you see several oaken barrels piled in the corners.  There is 
+a large vallenwood tree growing through the middle of the tavern.  The 
+barkeeper is located behind a bar surrounding the tree.  
+~
+Sector inside~
+Exit east 46121
+End
+
+
+#46129
+Name Vineyard~
+Desc You stand inside of a large field.  There are acres upon acres of grapes for 
+as far as you can see.  
+~
+Sector city~
+Exit east 46119
+Exit south 46130
+Exit west 46134
+End
+
+
+#46130
+Name Vineyard~
+Desc You stand inside of a large field.  There are acres upon acres of grapes for 
+as far as you can see.  
+~
+Sector city~
+Exit north 46129
+Exit south 46131
+Exit west 46133
+End
+
+
+#46131
+Name Vineyard~
+Desc You stand inside of a large field.  There are acres upon acres of grapes for 
+as far as you can see.  
+~
+Sector city~
+Exit north 46130
+Exit west 46132
+End
+
+
+#46132
+Name Vineyard~
+Desc You stand inside of a large field.  There are acres upon acres of grapes for 
+as far as you can see.  
+~
+Sector city~
+Exit north 46133
+Exit east 46131
+End
+
+
+#46133
+Name Vineyard~
+Desc You stand inside of a large field.  There are acres upon acres of grapes for 
+as far as you can see.  
+~
+Sector city~
+Exit north 46134
+Exit east 46130
+Exit south 46132
+End
+
+
+#46134
+Name Vineyard~
+Desc You stand inside of a large field.  There are acres upon acres of grapes for 
+as far as you can see.  
+~
+Sector inside~
+Exit east 46129
+Exit south 46133
+End
+
+
+#46135
+Name Abandoned Warehouse~
+Desc You find yourself in a large abandoned warehouse.  Several puddles cover the 
+floor in many places and you can hear the sound of water dripping from the 
+multiple holes in the roof.  
+~
+Sector inside~
+Exit south 46136
+Exit west 46122
+End
+
+
+#46136
+Name Abandoned Warehouse~
+Desc You find yourself in a large abandoned warehouse.  Several puddles cover the 
+floor in many places and you can hear the sound of water dripping from the 
+multiple holes in the roof.  
+~
+Sector inside~
+Exit north 46135
+Exit south 46137
+End
+
+
+#46137
+Name Abandoned Warehouse~
+Desc You find yourself in a large abandoned warehouse.  Several puddles cover the 
+floor in many places and you can hear the sound of water dripping from the 
+multiple holes in the roof.  
+~
+Sector inside~
+Exit north 46136
+Exit west 46120
+End
+
+
+#46138
+Name Edwin's Potions~
+Desc There are potions brewing all over the room and you cant tell if the smell 
+is making you want to be sick or if it is his prices.  
+~
+Sector inside~
+Exit west 46118
+End
+
+
+#46139
+Name Pine Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46161
+Exit east 46140
+Exit west 46123
+End
+
+
+#46140
+Name Pine Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46141
+Exit south 46150
+Exit west 46139
+End
+
+
+#46141
+Name Intersection of Maple St. and Pine St.~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  Maple 
+Street and Pine Street intersect here.  
+~
+Sector city~
+Exit south 46143
+Exit west 46140
+End
+
+
+#46142
+Name Elven Home~
+Desc The room is very small and home-like.  There is a small oaken table in the 
+far east corner.  The windows are open letting in the sounds from the 
+street.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 46116
+End
+
+
+#46143
+Name Maple Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46141
+Exit south 46144
+End
+
+
+#46144
+Name Maple Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46143
+Exit south 46145
+End
+
+
+#46145
+Name Maple Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46144
+Exit south 46146
+End
+
+
+#46146
+Name Intersection of Ivy St. and Maple St.~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  Ivy 
+Street and Maple Street intersect here.  
+~
+Sector city~
+Exit north 46145
+Exit east 46184
+Exit west 46147
+End
+
+
+#46147
+Name Ivy Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46146
+Exit south 46162
+Exit west 46148
+End
+
+
+#46148
+Name Ivy Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46147
+Exit west 46119
+End
+
+
+#46149
+Name Elven Home~
+Desc This home is built very roughly.  It has several holes in the roof and floor 
+as well as a busted out window.  It looks as if it is deserted.  
+~
+Sector inside~
+Exit west 46172
+End
+
+
+#46150
+Name Luna's Dairies~
+Desc The room is filled with dairy products off all kinds.  There are wheels of 
+cheese stacked against the walls and Luna's pet cow has it's own bed made up 
+in the far western corner of the shop.  
+~
+Sector inside~
+Exit north 46140
+End
+
+
+#46151
+Name A small garden~
+Desc You find yourself standing inside of a small garden.  There are herbs and 
+flowers growing all around you.  The trees are all lush and full of 
+greenery, blocking out the sun and the winds are soft and cool here in the 
+shade.  
+~
+RoomFlags no_mob safe light~
+Sector field~
+Mana 110
+Heal 110
+Exit east 46109
+End
+
+
+#46157
+Name Chicken house~
+Desc You find yourself inside of a large chicken house.  The heat is horrible in 
+here causing the smell to intensify.  
+~
+Sector city~
+Exit south 46158
+End
+
+
+#46158
+Name Pastures~
+Desc You look upon acres of rolling fields.  There are animals of all sorts 
+grazing here.  
+~
+Sector city~
+Exit north 46157
+Exit east 46159
+Exit south 46161
+End
+
+
+#46159
+Name Pastures~
+Desc You look upon acres of rolling fields. There are animals of all sorts grazing here.
+~
+Sector city~
+Exit south 46160
+Exit west 46158
+End
+
+
+#46160
+Name Pastures~
+Desc You look upon acres of rolling fields.  There are animals of all sorts 
+grazing here.  
+~
+Sector city~
+Exit north 46159
+Exit west 46161
+End
+
+
+#46161
+Name Pastures~
+Desc You look upon acres of rolling fields.  There are animals of all sorts 
+grazing here.  
+~
+Sector city~
+Exit north 46158
+Exit east 46160
+Exit south 46139
+End
+
+
+#46162
+Name Fern Ave~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46147
+Exit south 46163
+End
+
+
+#46163
+Name Fern Ave~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46162
+Exit east 46164
+Exit south 46165
+End
+
+
+#46164
+Name Galioldor Pigeon Courier~
+Desc Several cages with pigeons line the north wall, and letters are held in 
+small shelves along the south wall. For all the birds here, it appears to be 
+clean and tidy. To send a letter, type SENDLETTER. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 46163
+End
+
+
+#46165
+Name Fern Ave~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46163
+Exit south 46111
+End
+
+
+#46166
+Name Sycamore Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  To 
+the east you notice a temple deticated to the Goddess Chislev.  There are 
+several elves standing outside of the temple kneeling in prayer.  
+~
+Sector city~
+Exit east 46167
+Exit west 46101
+End
+
+
+#46167
+Name Sycamore Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  To 
+the north is the temple of Chislev.  
+~
+Sector city~
+Exit east 46168
+Exit west 46166
+End
+
+
+#46168
+Name Sycamore Street~
+Desc Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+Sycamore Street intersects with Palm Street here.  
+~
+Sector city~
+Exit north 46170
+Exit west 46167
+End
+
+
+#46169
+Name Temple~
+Desc You find yourself inside of a large temple deticated to the Goddess Chislev. 
+ There are living flowers growing in all corners of the temple as well a 
+large oak tree that is growing in the center of the room.  The alter is 
+located at the base of the tree.  
+~
+RoomFlags no_mob safe light~
+Sector inside~
+End
+
+
+#46170
+Name Palm Ave~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46171
+Exit south 46168
+End
+
+
+#46171
+Name Palm Ave~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46172
+Exit south 46170
+End
+
+
+#46172
+Name Palm Ave~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46173
+Exit east 46149
+Exit south 46171
+End
+
+
+#46173
+Name Palm Ave~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46174
+Exit south 46172
+End
+
+
+#46174
+Name Palm Ave~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 56984
+Exit south 46173
+Exit west 46175
+End
+
+
+#46175
+Name Side Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit east 46174
+Exit west 46176
+End
+
+
+#46176
+Name Moss Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46181
+Exit east 46175
+Exit south 46177
+End
+
+
+#46177
+Name Moss Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46176
+Exit east 46178
+Exit south 46179
+End
+
+
+#46178
+Name Weaponsmith Shop~
+Desc The shop is open and spacious.  It is very clean for a weapons shop.  There 
+are a few racks of weapons in various locations throughout the store.  The 
+weaponsmith is in the back of the shop carving out a new bow.  
+~
+Sector inside~
+Exit west 46177
+End
+
+
+#46179
+Name Oak Ave~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46177
+Exit west 46104
+End
+
+
+#46180
+Name Elven Home~
+Desc The room is very small and home-like.  There is a small oaken table in the 
+far east corner.  The windows are open letting in the sounds from the 
+street.  
+~
+Sector inside~
+Exit west 46103
+End
+
+
+#46181
+Name Moss Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 46183
+Exit east 4858
+Exit south 46176
+Exit west 46182
+End
+
+
+#46182
+Name Valloria's Supplies~
+Desc The room looks like a junk pile with piles of stuff lying around everywhere. 
+ You are sure to find what you are looking here.  
+~
+Sector inside~
+Exit east 46181
+End
+
+
+#46183
+Name Intersection of Ivy Street and Moss Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  Ivy 
+Street and Moss street intersect here.  
+~
+Sector city~
+Exit south 46181
+Exit west 46184
+End
+
+
+#46184
+Name Ivy Street~
+Desc . Large trees tower over you shading the town from the sun and providing 
+shelter from the elements.  You can hear the wildlife all around you.  
+~
+Sector city~
+Exit north 734
+Exit east 46183
+Exit south 13003
+Exit west 46146
+End
+
+
+#46185
+Name Elven Home~
+Desc The room is very small and home-like.  There is a small oaken table in the 
+far east corner.  The windows are open letting in the sounds from the 
+street.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 46108
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 46109 spec_fido
+S
+
+
+
+#RESETS2
+M 0 46108 20 46101 2
+M 0 46107 20 46104 2
+E 0 46104 -1 wielded~
+M 0 46107 20 46107 2
+E 0 46104 -1 wielded~
+M 0 46109 20 46108 3
+M 0 46108 20 46110 2
+M 0 46108 20 46112 2
+M 0 46107 20 46113 2
+E 0 46104 -1 wielded~
+M 0 46112 1 46114 1
+G 0 46108 -1
+G 0 46118 -1
+G 0 46119 -1
+G 0 46120 -1
+G 0 46103 -1
+M 0 46108 20 46115 2
+M 0 46109 20 46116 3
+M 0 46108 20 46119 2
+M 0 46108 20 46122 2
+M 0 46109 20 46123 3
+M 0 46107 20 46123 2
+E 0 46104 -1 wielded~
+M 0 46100 6 46124 2
+M 0 46100 6 46125 2
+M 0 46100 6 46126 2
+M 0 46100 6 46127 2
+M 0 46104 1 46128 1
+G 0 3024 -1
+G 0 3121 -1
+G 0 46100 -1
+G 0 46101 -1
+G 0 676 -1
+G 0 675 -1
+G 0 674 -1
+M 0 46111 8 46130 2
+M 0 46111 8 46131 2
+M 0 46111 8 46132 2
+M 0 46111 8 46134 2
+M 0 46114 4 46135 12
+M 0 46114 4 46136 12
+M 0 46114 4 46137 12
+M 0 46113 1 46138 1
+G 0 46109 -1
+G 0 46110 -1
+G 0 46111 -1
+M 0 46109 20 46141 3
+M 0 46107 20 46141 2
+E 0 46104 -1 wielded~
+M 0 46108 20 46143 2
+M 0 46107 20 46144 2
+E 0 46104 -1 wielded~
+M 0 46109 20 46146 3
+M 0 46107 20 46146 2
+E 0 46104 -1 wielded~
+M 0 46105 1 46150 1
+G 0 46102 -1
+G 0 46106 -1
+M 0 46117 1 46151 1
+G 0 46124 -1
+G 0 46117 -1
+G 0 46114 -1
+G 0 46116 -1
+G 0 46115 -1
+M 0 46103 3 46157 3
+M 0 46101 2 46158 2
+M 0 46115 4 46158 2
+M 0 46101 2 46159 2
+M 0 46102 1 46159 1
+M 0 46101 2 46160 2
+M 0 46115 4 46160 2
+M 0 46101 2 46161 2
+M 0 46116 1 46164 1
+G 0 46126 -1
+M 0 46107 20 46168 2
+E 0 46104 -1 wielded~
+M 0 46108 20 46171 2
+M 0 46107 20 46174 2
+E 0 46104 -1 wielded~
+M 0 46109 20 46176 3
+M 0 46110 1 46178 1
+G 0 46105 -1
+G 0 46113 -1
+M 0 46106 1 46182 1
+G 0 46121 -1
+G 0 46112 -1
+G 0 46122 -1
+M 0 46107 20 46183 2
+E 0 46104 -1 wielded~
+M 0 46107 1 46185 1
+S
+
+
+
+#SHOPS
+#46104
+profit_buy 100
+close_hour 23
+END
+
+#46105
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#46106
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#46110
+buy_type weapon~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#46112
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#46113
+buy_type potion~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#46116
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#46117
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#46101
+title give apply parchment~
+author Silaenca~
+code mob seeall
+language native
+ if hastoken $n 46125
+ sayto $n Oh, hello again.
+ sayto $n I do hope my parchment helped you.
+ sfond $n
+else
+ if hasskill $n apply > 0
+ or hasskill $n forage > 0
+ sfond $n
+ sayto $n I have a special scroll for you.
+ mob oload 46123
+ mob oload 46125
+ mob echoat $n An elven druid hands you a fading parchment.
+ mob echoaround $n An elven druid hands $n a fading parchment.
+ mob silent give parchment $n
+ mob tgive 46125 $n
+endif
+end
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G46101`x,`Y46117`x,`B46151`x,`r3`x,`C2`x:
+             `YMobprog: invalid if_check (or), mob 46117 prog 46101
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 46101 on mob 46117 (in room 46151), line 3
+`S#############
+
+~
+last_editor Zaroth~
+last_editdate 1109475275
+END
+
+#46100
+title elvish language greet~
+author Silaenca~
+code mob seeall
+language native
+if !hasskill $n elven > 5
+smile $n
+sayto $n Would you like to learn the language of the Elves?
+endif
+~
+disabled false
+last_editor Zaroth~
+last_editdate 1109475427
+END
+
+#0
+
+
+#$

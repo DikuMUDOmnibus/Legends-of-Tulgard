@@ -1,0 +1,2771 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Pyramid~
+ShortName   Pyramid~
+Builders    None~
+VNUMs       8700 8759
+LRange      10 50
+Security    9
+Colour      C~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#8700
+Name oldstyle asp snake~
+ShortD a horrible asp~
+LongD A small, poisonous asp slithers over your feet.~
+Desc The asp is a small, smooth-scaled snake the color of worn pottery.
+The poison bite of this snake has felled many a mighty pharoah.
+~
+Race snake~
+Align 2 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType none
+AC 10 10 10 8
+Wealth 0
+Act    npc aggressive stay_area wimpy~
+Act2   no_random_obj~
+Off    dodge fast assist_vnum~
+Res    pierce~
+Vuln   slash cold~
+Form   edible sentient biped mammal~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#8701
+Name cobra snake~
+ShortD a hooded cobra snake~
+LongD A cobra snake rears up and opens its fearsome hood.~
+Desc The cobra snake waves back and forth before you, its hood displaying brilliant
+colors designed to serve notice to its prey that it is about to strike.
+~
+Race unique~
+Align 2 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc aggressive stay_area~
+Act2   no_random_obj~
+Off    dodge fast~
+Res    pierce~
+Vuln   slash cold~
+Form   edible poison sentient snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8702
+Name mongoose~
+ShortD a wily little mongoose~
+LongD A small mongoose slinks along the ground, hunting snakes.~
+Desc The mongoose is a wily rodent, a quick hunter of nasty poisonous snakes.
+She sniffs you and appears to be looking for food in your hand.
+~
+Race unique~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType scratch
+AC -25 -25 -25 -20
+Wealth 0
+Act    npc stay_area~
+AffBy  detect_hidden infrared~
+Off    dodge fast~
+Res    poison~
+Vuln   mental illusion~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet fingers ear eye tail claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#8703
+Name pyramid watcher~
+ShortD a pyramid watcher~
+LongD The pyramid watcher protects the tombs from intruders.~
+Desc The pyramid watcher has made a pledge to destroy any would-be looters of
+the tombs of the pharoahs.  He is clad from head to foot in utilitarian
+sand-colored clothing.
+~
+Race human~
+Align 3 0
+Level 29
+Hitroll 0
+HitDice 5d5+140
+ManaDice 2d5+15
+DamDice 2d12+8
+DamType beating
+AC -90 -90 -90 -79
+Wealth 145
+Act    npc dont_wander warrior~
+Off    disarm dodge assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8704
+Name tomb thief~
+ShortD a tomb thief~
+LongD A sneaky tomb thief moves about in search of treasure.~
+Desc The thief brushes against you briefly, then slinks back into the shadows.
+~
+Race human~
+Align 0 -3
+Level 27
+Hitroll 0
+HitDice 4d5+115
+ManaDice 2d5+50
+DamDice 3d7+7
+DamType stab
+AC -75 -75 -75 -66
+Wealth 270
+Act    npc stay_area wimpy thief~
+AffBy  detect_hidden sneak hide~
+Off    dodge trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#8705
+Name oldstyle ali baba thief~
+ShortD ali Baba~
+LongD Ali Baba is here, hunting for the pharoah's tomb.~
+Desc You see a tall, full-bearded man with a mischevious glint in his eye.  Ali Baba
+has made his life from stealing things from others, including many items stolen
+recently from under the nose of the hapless guardians of this pyramid.  Someday
+he might get caught, but not today...
+~
+Race human~
+Align -3 0
+Level 33
+Hitroll 0
+HitDice 5d6+160
+ManaDice 3d5+65
+DamDice 6d4+9
+DamType punch
+AC -105 -105 -105 -88
+Wealth 333
+Act    npc scavenger stay_area thief~
+AffBy  infrared sneak hide~
+Off    dodge dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8706
+Name oldstyle magic carpet~
+ShortD the magic carpet~
+LongD A small woven carpet lies under your feet.~
+Desc The carpet is simply beautiful, made from intricately woven silken material.  
+It seems to rise up at the touch of your feet.  Wait, it is rising, a few feet
+above the ground!  In fact, it seems to be ALIVE!
+~
+Race unique~
+Align 1 1
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType slap
+AC -137 -137 -137 -112
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis infrared flying~
+Off    dodge fast trip~
+Imm    cold lightning poison mental disease drowning sleep illusion hunger thirst fear~
+Vuln   slash fire~
+Form   magical sentient construct mountable~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8707
+Name oldstyle mummy corpse~
+ShortD a mummy~
+LongD A mummy reaches for you, disturbed by your presence.~
+Desc You only see the disfigured, rotting features of decaying human flesh,
+animated by the distempered spirit of a long-deceased person.
+~
+Race unique~
+Align -3 -3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType none
+AC -95 -95 -95 -78
+Wealth 0
+Act    npc stay_area~
+AffBy  infrared~
+Off    disarm dodge trip~
+Imm    charm poison mental disease sleep hunger thirst fear~
+Res    summon cold negative~
+Vuln   fire acid holy~
+Form   edible magical non_skinable sentient undead biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8708
+Name oldstyle sand man sandman~
+ShortD a sandman~
+LongD A sandman rises up from the desert floor.~
+Desc The sandman is exactly that -- some sort of strange being formed from the sands
+of the desert floor.  It seems quite large and strong and at home in the heat
+and sandy winds.
+~
+Race unique~
+Align 3 0
+Level 36
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType phantasm
+AC -117 -117 -117 -104
+Wealth 0
+Act    npc scavenger stay_area~
+AffBy  infrared sneak hide pass_door regeneration slow~
+AffBy2 passwotrace~
+Off    dodge trip assist_vnum~
+Imm    fire lightning poison disease hunger thirst~
+Res    weapon~
+Vuln   acid negative drowning sound~
+Form   magical instant_decay other non_skinable sentient intangible blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#8709
+Name efreeti~
+ShortD the `#`Ref`rr`se`re`Rti`^~
+LongD The efreeti stands here, sheathed in a column of fire.~
+Desc The efreeti is a mighty being formed from living fire.  He gazes down at you 
+with disdain and scorn, arms folded across his mighty chest.
+~
+Race unique~
+Align 3 -3
+XPMod 120
+Level 48
+Hitroll 0
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+18
+DamType flame
+AC -180 -180 -180 -147
+Wealth 555
+Act    npc dont_wander aggressive~
+AffBy  detect_invis detect_hidden infrared flying pass_door~
+AffBy2 detect_treeform detect_vanish~
+Off    bash berserk crush~
+Imm    fire poison negative disease sleep hunger thirst fear~
+Res    weapon lightning illusion~
+Vuln   cold holy drowning~
+Form   magical instant_decay other non_skinable sentient mist intangible~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#8710
+Name oldstyle caryatid column~
+ShortD a caryatid~
+LongD A sandstone column stands here, carved into a feminine figure.~
+Desc The column has been carved into a set of four shapely women, each facing
+outward into the room.  The sandstone of the caryatid is smooth with age,
+but you can still make out a deadly stone sword in the hands of each figure.
+~
+Race unique~
+Align 3 0
+Level 24
+Hitroll 0
+HitDice 4d5+110
+ManaDice 2d5+10
+DamDice 2d10+6
+DamType slash
+AC -65 -65 -65 -54
+Wealth 0
+Act    npc dont_wander warrior~
+AffBy  detect_hidden infrared slow~
+Off    bash assist_vnum~
+Imm    summon charm pierce poison mental disease sleep illusion hunger thirst~
+Res    slash fire cold lightning drowning~
+Vuln   bash negative sound~
+Form   magical non_skinable sentient construct biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#8711
+Name oldstyle djinn genie~
+ShortD the djinn~
+LongD The djinn issues forth from the confines of a small lamp.~
+Desc The djinn is a mighty being formed from the air itself and frequently
+imprisoned in a small lamp, used to do the bidding of those who find him.
+He smiles down at you congenially, arms folded across his blue-tinged 
+skin, and strokes his goatee.
+~
+Race unique~
+Align -3 1
+XPMod 120
+Level 46
+Hitroll 0
+HitDice 5d7+250
+ManaDice 6d9+300
+DamDice 3d12+15
+DamType none
+AC -157 -157 -157 -139
+Wealth 460
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden infrared flying pass_door~
+Off    dodge~
+Imm    summon charm cold lightning drowning sleep hunger thirst~
+Res    magic~
+Vuln   poison disease~
+Form   edible magical instant_decay non_skinable sentient mist cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#8712
+Name oldstyle hieracosphinx sphinx~
+ShortD a hieracosphinx~
+LongD A hieracosphinx looks at you cunningly.~
+Desc The hieracosphinx are cunning, small, but nasty creatures, having the heads
+of birds, mighty wingspans, and a full set of four paws to rend their victims
+to pieces.  They tend to be quite jealous of the sharper wits of their older
+cousins.
+~
+Race unique~
+Align 3 0
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 5d6+150
+DamDice 4d6+9
+DamType claw
+AC -100 -100 -100 -90
+Wealth 0
+Act    npc aggressive stay_area~
+AffBy  detect_invis infrared flying~
+Off    dodge fast assist_vnum~
+Imm    lightning~
+Res    pierce~
+Vuln   mental illusion~
+Form   edible magical animal sentient mountable mammal~
+Part   head legs heart brains guts feet ear eye wings tail claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#8713
+Name oldstyle gynosphinx sphinx~
+ShortD a gynosphinx~
+LongD A gynosphinx sits here, befuddled by a riddle.~
+Desc The gynosphinx is a crafty but gentle creature, having the body of a
+beautiful dark-skinned woman from the waist up, a feathery set of wings
+and the hind legs of a mighty cat.  Right now she is confused, having 
+just heard a puzzling riddle from a cousin criosphinx.
+~
+Race unique~
+Align 1 3
+Level 34
+Hitroll 0
+HitDice 5d6+195
+ManaDice 5d7+255
+DamDice 4d6+9
+DamType claw
+AC -110 -110 -110 -93
+Wealth 190
+Act    npc dont_wander wimpy mage~
+AffBy  detect_invis sanctuary infrared~
+Off    disarm dodge kick~
+Res    poison negative disease~
+Vuln   cold~
+Form   edible magical animal sentient centaur mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#8714
+Name oldstyle criosphinx sphinx~
+ShortD a criosphinx~
+LongD A criosphinx calmly watches you.~
+Desc The criosphinx is a calm and friendly creature, having the head of a ram atop
+the body of a well-furred feline with eagle-like wings.  He delights in riddles,
+and in poking occasional fun at his easily confused lesser cousins.
+~
+Race unique~
+Align 2 0
+Level 36
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType claw
+AC -120 -120 -120 -96
+Wealth 230
+Act    npc dont_wander~
+AffBy  detect_invis infrared~
+Off    bash disarm kick assist_vnum~
+Imm    mental~
+Res    bash~
+Vuln   sound~
+Form   edible magical animal sentient mountable mammal~
+Part   head legs heart brains guts feet fingers ear eye wings claws horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8715
+Name oldstyle androsphinx sphinx~
+ShortD an androsphinx~
+LongD A mighty androsphinx tosses its lion-like mane.~
+Desc The mighty androsphinx is a huge creature, with the body of a lion whose
+face  is quite man-like, perhaps even handsome, and a massive pair of feathered
+wings.  Tales are told of pharoahs that were rendered permanently deaf by the 
+mighty roar of this sphinx.
+~
+Race unique~
+Align 3 1
+Level 38
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+230
+DamDice 5d6+12
+DamType none
+AC -133 -133 -133 -109
+Wealth 0
+Act    npc dont_wander cleric~
+AffBy  detect_invis detect_hidden infrared~
+Off    bash dodge kick assist_vnum~
+Imm    sound~
+Res    magic~
+Vuln   pierce~
+Form   edible magical animal sentient mountable mammal~
+Part   head legs heart brains guts feet ear eye wings tail claws~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#8716
+Name oldstyle great sphinx~
+ShortD the great sphinx~
+LongD A mighty sphinx rests here in the sand, dormant now for centuries.
+The great sphinx appears to be indestructible!~
+Desc The great sphinx towers tens of feet above you, resting here in a state of 
+dormancy.  It has become almost indistinguishable from the sand that surrounds
+it, although you can still make out the features of the handsome face that once
+advised many rulers.
+~
+Race unique~
+Align 0 1
+XPMod 110
+Level 41
+Hitroll 0
+HitDice 5d7+240
+ManaDice 5d7+240
+DamDice 4d8+14
+DamType none
+AC -140 -140 -140 -117
+Wealth 0
+Act    npc dont_wander~
+AffBy  detect_invis detect_magic detect_hidden sanctuary infrared protect_evil dark_vision regeneration~
+AffBy2 detect_treeform detect_vanish~
+Off    disarm dodge crush assist_vnum~
+Imm    fire lightning poison disease drowning hunger thirst fear~
+Res    slash cold~
+Vuln   bash negative~
+Form   magical non_skinable animal sentient construct mountable cold_blood~
+Part   head legs feet ear eye wings claws~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#8717
+Name oldstyle ramses mummy~
+ShortD ramses the Damned~
+LongD You have awakened the mighty servant to the pharoahs, Ramses.~
+Desc As your light spills over his face and body, you can see his features begin
+to fill out, swell, and harden, until an apparently healthy man stands before
+you, clad only in the raiments he was left in when he last slept.  His hair is
+a soft black, his skin a deep chocolate, and his tall frame is totally still, 
+his chest not even moving to breathe.
+~
+Race unique~
+Align -1 -3
+XPMod 120
+Level 50
+Hitroll 0
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+19
+DamType wrath
+AC -210 -210 -210 -189
+Wealth 600
+Act    npc dont_wander aggressive cleric~
+AffBy  detect_invis detect_magic detect_hidden sanctuary infrared protect_evil~
+AffBy2 detect_treeform detect_vanish~
+Off    disarm kick parry assist_vnum~
+Imm    summon charm poison mental disease drowning illusion hunger thirst fear~
+Res    cold lightning negative sound~
+Vuln   fire holy light~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#8700
+Name egyptian mace~
+Short an `#`Ye`Rgy`Mpt`Bia`Gn `ymace`^~
+Desc A `#`?h`?ie`?rog`?ylph-en`?gra`?ve`?d `ymace`^ has been left here.~
+Level 29
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 100
+Rsize 50
+Values mace 3 8 crush 0
+Weight 100
+Material sandstone~
+Extra    magic nonmetal nodegrade~
+Wear     take wield~
+Affect modifier -1 29 -1 mana 60 0
+Affect modifier -1 29 -1 intuition 2 0
+ExtraDesc egyptian mace~
+The mace is formed from solid sandstone, and engraved in strange hieroglyphs.
+~
+End
+
+#8701
+Name sand robe~
+Short a `#`ysand-colored`^ robe~
+Desc A `#`ysand-colored`^ robe has been left here.~
+Level 26
+ItemType armor~
+Cost 215
+Durability 5
+Asize 50
+Rsize 50
+Values 7 7 7 5 0
+Weight 50
+Material cloth~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 26 -1 ac -10 0
+Affect modifier -1 26 -1 agility -2 0
+Affect modifier -1 26 -1 quickness -2 0
+Affect modifier -1 26 -1 selfdiscipline 2 0
+Affect modifier -1 26 -1 presence 2 0
+ExtraDesc sand robes~
+The robes are colored a sandy off-white, and are in fact caked and covered
+with sand as well.  You don't seem to be able to remove all of the sand, no
+matter how much you try.
+~
+End
+
+#8702
+Name obsidian dirk~
+Short an `#`bobsidian`^ dirk~
+Desc A flat dirk made of chipped obsidian lies here.~
+Level 33
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 10
+Rsize 50
+Values dagger 3 8 pierce E
+Weight 10
+Material stone~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take wield~
+ExtraDesc obsidian dirk~
+The blade of the dirk is black, glassy obsidian, chipped razor sharp.
+~
+End
+
+#8703
+Name cloth turban~
+Short a `#`sdirty cloth turban`^~
+Desc A dirty cloth turban has been forgotten here.~
+Level 33
+ItemType clothing~
+Cost 100
+Durability 5
+Asize 100
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material cloth~
+Extra    magic nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 33 -1 quickness 1 0
+Affect modifier -1 33 -1 hp 6 0
+ExtraDesc cloth turban~
+The turban used to be white cloth, now it is covered with oil and dirt from
+the head and hair of its previous owner, who must not have bathed much.
+~
+End
+
+#8704
+Name cloth wrappings~
+Short some `#`ycloth wrappings`^~
+Desc Long cloth wrappings lie on the ground in a pile.~
+Level 31
+ItemType clothing~
+Cost 145
+Durability 5
+Asize 150
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material cloth~
+Extra    evil magic antigood antineutral nonmetal~
+Extra2   nodecay~
+Wear     take arms~
+Affect modifier -1 31 -1 saves -4 0
+Affect modifier -1 31 -1 damroll 2 0
+Affect modifier -1 31 -1 hitroll 2 0
+Affect modifier -1 31 -1 ac -5 0
+ExtraDesc cloth wrappings~
+The cloth wrappings are old, wrinkled, and stink of embalming fluid.
+~
+End
+
+#8705
+Name bottle fluid~
+Short a bottle of embalming fluid~
+Desc A dusty bottle lies here on the ground.~
+Level 3
+ItemType potion~
+Cost 30
+Durability 5
+Asize 50
+Rsize 50
+Values 3 poison drunkenness '' ''
+Weight 20
+Material glass~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc bottle fluid~
+The bottle is dusty and the fluid has a strange sickly-sweet smell to it.
+~
+End
+
+#8706
+Name jar formaldehyde~
+Short a jar of formaldehyde~
+Desc A small jar lies here on the ground.~
+Level 22
+ItemType potion~
+Cost 188
+Durability 5
+Asize 60
+Rsize 50
+Values 22 'chaotic poison' '' '' ''
+Weight 20
+Material glass~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc jar formaldehyde~
+The jar is sticky and smells really bad.
+~
+End
+
+#8707
+Name small ball fire~
+Short a `#`Rsmall ball of fire`^~
+Desc A `#`Rsmall ball of fire`^ hovers in the air before your eyes.~
+Level 51
+ItemType pill~
+Cost 720
+Durability 5
+Asize 100
+Rsize 50
+Values 51 'improved fireball' 'improved fireball' 'improved fireball' 'improved fireball'
+Weight 5
+Material fire~
+Extra    glow magic antigood nonmetal nodegrade burnproof~
+Wear     take float~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+Affect modifier -1 51 -1 mana -120 0
+Affect modifier -1 51 -1 strength 3 0
+Affect modifier -1 51 -1 quickness 3 0
+Affect modifier -1 51 -1 agility 3 0
+ExtraDesc ball fire~
+The ball of fire is hot to the touch and very very bright.
+~
+End
+
+#8708
+Name stone scimitar~
+Short a `#`wstone`^ scimitar~
+Desc A curved scimitar made of stone rests on the ground.~
+Level 24
+ItemType weapon~
+Cost 100
+Durability 5
+Asize 180
+Rsize 50
+Values sword 2 10 slash EH
+Weight 180
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+Wear     take wield~
+Affect modifier -1 24 -1 hitroll 2 0
+Affect modifier -1 24 -1 damroll 2 0
+Affect modifier -1 24 -1 selfdiscipline 1 0
+ExtraDesc stone scimitar~
+The scimitar is formed from solid stone, chipped and carved to perfection,
+with a sharp, cold blade that is marred only by a few nicks here and there.
+~
+End
+
+#8709
+Name stone key~
+Short a stone key~
+Desc A stone key has been dropped here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 150
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material oldstyle~
+Extra    nonmetal nodegrade~
+Wear     take~
+ExtraDesc stone key~
+The key is made from stone, but is otherwise unremarkable.
+~
+End
+
+#8710
+Name stone sarcophagus~
+Short a mighty stone sarcophagus~
+Desc A mighty stone sarcophagus lies in the center of the tomb.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 500 ABCD 8709 500 100
+Weight 0
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc stone sarcophagus~
+The sarcophagus is engraved on the sides with the images of pharoahs,
+great wars fought long ago, mighty pyramids being constructed...
+
+A raised image atop the sarcophagus is formed in the visage of one of
+the mighty pharoahs, painted in gold and studded with precious gems.
+
+You see a small keyhole in the side of the sarcophagus.
+~
+End
+
+#8711
+Name dust~
+Short some ancient `#`sdust`^~
+Desc A small pile of dust is being scattered by the breeze.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material dust~
+Extra    nonmetal burnproof~
+Wear     take~
+ExtraDesc dust~
+The dust is old.  As you sift it through your hands you find tiny chips
+of aged bone inside -- it must be the ancient remains of something.
+~
+End
+
+#8712
+Name scarab~
+Short a small `#`Gemerald `sscarab`^~
+Desc A small emerald scarab lies here on the ground.~
+Level 33
+ItemType warpstone~
+Cost 300
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material emerald~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc scarab~
+The scarab is intricately detailed, down to the tiny hairs on its
+insectile legs and the faceting of the emeralds in its eyes.
+~
+End
+
+#8713
+Name lamp~
+Short a `#`Ylamp`^~
+Desc A small, tarnished, battered lamp has been dropped here.~
+Level 48
+ItemType staff~
+Cost 400
+Durability 5
+Asize 100
+Rsize 50
+Values 48 12 1 'resist magic' 0
+Weight 20
+Material brass~
+Extra    glow hum magic nodegrade burnproof~
+Wear     take hold~
+Affect modifier -1 48 -1 ac -5 0
+Affect modifier -1 48 -1 damroll 2 0
+Affect modifier -1 48 -1 hitroll 2 0
+Affect modifier -1 48 -1 saves -2 0
+Affect modifier -1 48 -1 mana 20 0
+ExtraDesc lamp~
+The lamp is quite old and tarnished.  You rub at it to get some of the
+grime off, but it doesn't seem like anybody is home.
+~
+End
+
+#8714
+Name ankh~
+Short an `#`Yankh`^~
+Desc A small brass ankh has been left here.~
+Level 34
+ItemType weapon~
+Cost 260
+Durability 5
+Asize 90
+Rsize 50
+Values exotic 2 11 divine I
+Weight 30
+Material brass~
+Extra    magic bless antievil antineutral nodegrade burnproof~
+Extra2   nochaoslace~
+Wear     take wield~
+Affect modifier -1 34 -1 mana -80 0
+Affect modifier -1 34 -1 selfdiscipline 4 0
+Affect modifier -1 34 -1 intuition 2 0
+Affect modifier -1 34 -1 memory 2 0
+ExtraDesc ankh~
+The ankh is a small brass symbol of an ancient religion.
+It glows with a soft bright light that is soothing to you.
+~
+End
+
+#8715
+Name book riddles~
+Short a book of riddles~
+Desc A medium-sized parchment book with well-worn pages lies here.~
+Level 36
+ItemType scroll~
+Cost 444
+Durability 5
+Asize 150
+Rsize 50
+Values 36 'eyes of the nature' 'poison rain' 'imbue with fire' 'vitality drain'
+Weight 150
+Material parchment~
+Extra    magic noremove nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric druid spellfilcher bard~
+Affect modifier -1 36 -1 reasoning 6 0
+Affect modifier -1 36 -1 mana -80 0
+ExtraDesc book riddles~
+The book has well-worn pages, containing many befuddling riddles
+to surprise, confuse, and amuse you.  You find yourself bewildered
+by its contents and put it down to sort your head out.
+~
+End
+
+#8716
+Name lion paw~
+Short a `#`sl`yi`so`yn's `sp`ya`sw`^~
+Desc The mighty paw of a lion-like creature has been dropped here.~
+Level 38
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 200
+Rsize 50
+Values exotic 4 6 claw CEHL
+Weight 120
+Material bronze~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+Affect modifier -1 38 -1 mana 30 0
+Affect modifier -1 38 -1 agility 1 0
+ExtraDesc lion paw~
+The massive paw has straps on it formed of bronze, so that it will
+fit snugly over your hand.  As you put it on, it melds with your hand,
+becoming an extension of your arm.
+~
+End
+
+#8717
+Name answer~
+Short the answer~
+Desc A small piece of parchment covered in hieroglyphics lies here.~
+Level 41
+ItemType key~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material parchment~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances druid paladin bard anti-paladin~
+Affect modifier -1 41 -1 mana -80 0
+Affect modifier -1 41 -1 selfdiscipline 7 0
+ExtraDesc answer hieroglyphics~
+You cannot decipher the strange hieroglyphics that cover the
+sheet of parchment.
+~
+End
+
+#8718
+Name treasure~
+Short the treasure of the sphinx~
+Desc The massive treasure of the sphinx lies here in a big pile.~
+Level 1
+ItemType money~
+Cost 0
+Durability 5
+Asize 200
+Rsize 50
+Values 80 122 0 0 0
+Weight 200
+Material oldstyle~
+Extra    nodegrade~
+Wear     take~
+ExtraDesc treasure~
+The treasure is incredibly large, filled with gold coins and valuables, more 
+wealth than you could ever possibly imagine accumulated in one place.
+~
+End
+
+#8719
+Name pile sand~
+Short a pile of sand~
+Desc You see a small pile of sand.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 129 0 0 0 0
+Weight 10
+Material oldstyle~
+Extra    nodegrade burnproof~
+Wear     take~
+ExtraDesc pile sand~
+You think you see some coins and valuables glinting amongst the grains of sand.
+~
+End
+
+#8720
+Name curse mummy~
+Short the `#`ccurse`^ of the `#`wm`su`wm`sm`wy`^~
+Desc Some fortunate soul has escaped the mummy's curse, for now.~
+Level 50
+ItemType scroll~
+Cost 555
+Durability 5
+Asize 10
+Rsize 50
+Values 13 'destroy living' 'black death' 'scorpion claw' 'heavy withering'
+Weight 10
+Material parchment~
+Extra    evil magic nodrop noremove~
+Wear     take hold~
+Affect modifier -1 50 -1 strength -3 0
+Affect modifier -1 50 -1 quickness -3 0
+Affect modifier -1 50 -1 intuition -3 0
+Affect modifier -1 50 -1 hp -50 0
+Affect modifier -1 50 -1 move -100 0
+Affect affects -1 50 -1 none 0 curse
+ExtraDesc curse mummy~
+Rumor has it that whomever disturbs the grave of the mummy shall be 
+cursed for all eternity, and that the descendents of that person shall
+likewise be cursed for ten generations to follow.
+~
+End
+
+#8721
+Name small elixir~
+Short a small elixir~
+Desc A small glass elixir lies under your feet.~
+Level 48
+ItemType potion~
+Cost 480
+Durability 5
+Asize 20
+Rsize 50
+Values 16 armour 'stone skin' sanctuary shield
+Weight 20
+Material glass~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc small elixir~
+The elixir is deceptively small.  Something tells you that its
+contents are truly quite potent.  Perhaps too potent for ordinary
+mortals to attempt to consume.
+~
+End
+
+#8722
+Name golden mask~
+Short a `#`Yg`yol`Yden m`yas`Yk`^~
+Desc A beautiful, intricately detailed mask has been forgotten here.~
+Level 51
+ItemType armor~
+Cost 550
+Durability 5
+Asize 100
+Rsize 50
+Values 13 13 13 10 0
+Weight 20
+Material gold~
+Extra    magic nodegrade burnproof~
+Extra2   nochaoslace~
+Wear     take face~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard monk anti-paladin knight~
+AttuneFlags attunable hard~
+Affect modifier -1 51 -1 hp 4 0
+Affect modifier -1 51 -1 mana 40 0
+Affect modifier -1 51 -1 saves -2 0
+Affect modifier -1 51 -1 move 40 0
+ExtraDesc golden mask~
+This beautiful mask was shaped from solid gold and magically enchanted
+to perfectly fit the face of any who choose to wear it, its golden features
+and turquoise highlights even moving to match the expressions of the face
+of the wearer.
+~
+End
+
+#8723
+Name cracked diamond~
+Short a `#`ccra`Cc`cked `Cdia`cm`Cond`^~
+Desc A small, cracked diamond has been forgotten here.~
+Level 1
+ItemType warpstone~
+Cost 3000
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Extra    nonmetal nolocate meltdrop nodegrade burnproof nouncurse nogetall~
+Extra2   buried~
+Wear     take hold~
+ExtraDesc diamond~
+Aha!
+
+You see a multifaceted gemstone, which strangely reflects no
+light, making it very hard to see when it lies on the ground.
+~
+End
+
+#8724
+Name sun wand~
+Short a `#`Rb`Yl`Wa`Rz`Yi`Wn`Rg `Ys`Wu`Rn`^ wand~
+Desc A small length of brass shines here with its own light.~
+Level 51
+ItemType wand~
+Cost 555
+Durability 5
+Asize 100
+Rsize 50
+Values 51 15 5 'holy beam' 0
+Weight 10
+Material brass~
+Extra    glow magic nodegrade burnproof~
+Wear     take hold~
+ClassAllowances cleric druid ranger~
+Affect modifier -1 51 -1 presence 6 0
+ExtraDesc sun wand~
+This small brass shaft is a holy weapon used by the ancient people of 
+this land to defend against the deadliest of foes.  It shines with the 
+brilliant blazing light of the sun.
+~
+End
+
+#8725
+Name sandy ring~
+Short a `#`ysandy-colored`^ ring~
+Desc A small sandy-colored ring has been carelessly dropped here.~
+Level 51
+ItemType jewelry~
+Cost 400
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    hum magic noremove nonmetal nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 51 -1 memory 6 0
+Affect modifier -1 51 -1 reasoning 6 0
+Affect affects -1 51 -1 none 0 weaken
+Affect affects -1 51 -1 none 0 faerie_fire
+ExtraDesc sandy ring~
+The ring is small, smooth, sandy-colored and unremarkable, save that
+it gives off a continuous low humming noise that tickles your fingertips.
+~
+End
+
+#8726
+Name golden sphinx~
+Short a small `#`Ygolden `ysphinx`^~
+Desc A small golden sphinx glints in the light.~
+Level 51
+ItemType treasure~
+Cost 488
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material gold~
+Extra    magic nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid spellfilcher bard~
+Affect modifier -1 51 -1 reasoning 6 0
+ExtraDesc golden sphinx~
+The golden sphinx is incredibly detailed and very small, fitting easily
+into the palm of your hand.  You can even make out the expression
+of wisdom and peace on its face.
+~
+End
+
+#8727
+Name spinhxian leggings~
+Short a pair of `#`Ys`Wp`Yh`Wi`Yn`Wx`Yi`Wa`Yn`^ leggings~
+Desc Massive leggings formed from the body of a sphinx stand here.~
+Level 51
+ItemType clothing~
+Cost 462
+Durability 5
+Asize 200
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material cloth~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take legs~
+Affect modifier -1 51 -1 ac -10 0
+Affect modifier -1 51 -1 strength 3 0
+Affect modifier -1 51 -1 mana -60 0
+Affect modifier -1 51 -1 hp -6 0
+Affect modifier -1 51 -1 selfdiscipline 4 0
+ExtraDesc sphinxian leggings~
+These magically fashioned leggings impart the strength and stamina
+of the mightiest of the ancient sphinxes.  You feel ancient power 
+emanating from them; they seem to be almost alive.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#8700
+Name The Great Eastern Desert~
+Desc A vast desert stretches for miles, the sands constantly shifting around you.
+Rising out of the sand to the east you see a mighty pyramid.
+~
+Sector desert~
+ExtraDesc pyramid~
+The massive pyramid rises out of the sand, a monument to long-dead pharoahs.
+~
+Exit north 8700
+EKeyvnum -1
+EDesc Nothing but sand as far as the eye can see.
+~
+Exit south 8700
+EKeyvnum -1
+EDesc Nothing but sand as far as the eye can see.
+~
+End
+
+
+#8701
+Name At the Base of the Pyramid~
+Desc The mighty pyramid towers above you out of the hot desert sands, made from 
+huge blocks of stone that have been coated over with a rough sandy 
+plaster-like substance.  The face of the pyramid is steep, but you think you 
+might be able to climb it.  
+~
+Sector desert~
+ExtraDesc pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+Exit north 59650
+Exit east 59732
+Exit south 59812
+Exit west 59730
+Exit up 8702
+EKeyvnum -1
+EDesc The steep slope of the pyramid rises up before you.
+~
+End
+
+
+#8702
+Name Climbing the Great Pyramid~
+Desc Hot air rises off the sides of the pyramid, and the wind chokes you with a 
+flurry of sand and dust.  So far you have made it halfway up the side.  The 
+walls of the pyramid are quite steep.  
+~
+Sector desert~
+ExtraDesc pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+Exit north 8703
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the northern side.
+~
+Exit south 8704
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the southern side.
+~
+Exit down 8701
+EKeyvnum -1
+EDesc Far below you are the burning sands of the desert.
+~
+End
+
+
+#8703
+Name Climbing the Great Pyramid~
+Desc Hot air rises off the sides of the pyramid, and the wind chokes you with a 
+flurry of sand and dust.  The walls of the pyramid are quite steep, and you 
+are having trouble keeping from sliding down into the sands below.  
+~
+Sector desert~
+ExtraDesc pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+Exit east 8705
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the eastern side.
+~
+Exit west 8702
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the western side.
+~
+End
+
+
+#8704
+Name Climbing the Great Pyramid~
+Desc Hot air rises off the sides of the pyramid, and the wind chokes you with a 
+flurry of sand and dust.  The walls of the pyramid are quite steep, and you 
+are having trouble keeping from sliding down into the sands below.  
+~
+Sector desert~
+ExtraDesc pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+Exit east 8705
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the eastern side.
+~
+Exit west 8702
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the western side.
+~
+End
+
+
+#8705
+Name Climbing the Great Pyramid~
+Desc Here on the eastern side of the pyramid there is a little more shelter from 
+the heat and wind.  The stone side is not nearly so slippery smooth from the 
+ravages of time, and you think you may be able to even reach the top from 
+here.  
+~
+Sector desert~
+ExtraDesc pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+Exit north 8703
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the northern side.
+~
+Exit south 8704
+EKeyvnum -1
+EDesc If you are daring you could try to skirt around to the southern side.
+~
+Exit up 8706
+EKeyvnum -1
+EDesc You see the apex of the pyramid many yards above you.
+~
+End
+
+
+#8706
+Name The Apex of the Great Pyramid~
+Desc Bathed in sweat, you have managed to reach the summit of the great pyramid.  
+The four sides of the pyramid slope sharply down into the hot sands in all 
+four cardinal directions.  A plaque has been set into the sandy stones 
+beneath your feet.  
+~
+Sector desert~
+ExtraDesc stones~
+As you look closer you can make out a crack in the center of the stones
+beneath your feet.  With some effort you might be able to lift that 
+section up and get inside!
+~
+ExtraDesc plaque~
+The plaque reads:
+This area (Great Pyramid) written by Andersen.
+~
+Exit down 8708
+EFlags door closed~
+EKeyvnum -1
+EKeywords stones~
+EDesc You see some sandy stones pressed closely together to form a hard surface.
+~
+End
+
+
+#8708
+Name A Ladder~
+Desc You are climbing an ancient ladder that leads down into the depths of the 
+pyramid.  The air around is thick with layers of dust and a strange musty 
+smell.  Above you you see tiny beams of light coming through the stones of 
+the ceiling.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+ExtraDesc stones~
+As you look closer you can make out a crack in the center of the stones
+above your head.  With some effort you might be able to lift that 
+section up and get outside!
+~
+Exit up 8706
+EFlags door closed~
+EKeyvnum -1
+EKeywords stones~
+EDesc You see the sandy stones of the ceiling.
+~
+Exit down 8709
+EKeyvnum -1
+EDesc You see a small dusty chamber.
+~
+End
+
+
+#8709
+Name A Musty Chamber~
+Desc You are standing in a dank, musty chamber just inside the pyramid.  
+Footprints and other strange marks are set into the dusty floor here.  It 
+would seem that some of the tenants of this monument are still alive.  Exits 
+lead in all directions.  The door to the west is covered with inscriptions.  
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc door stone~
+The stone door is covered in strange inscriptions and hieroglyphs that warn
+you not to proceed any further.
+~
+ExtraDesc sigils hieroglyphs inscriptions writing~
+You cannot understand the strange glyphs that cover the door, but most of
+them seem to depict scenes of fire and massive creatures of apparently
+tremendous strength.  You have a feeling that the glyphs are serving as a
+warning.
+~
+Exit north 8712
+EKeyvnum -1
+EDesc You see a tiny crawlway raised about three feet off the ground.
+~
+Exit east 8739
+EKeyvnum -1
+EDesc A dust-covered hallway leads off to the east.
+~
+Exit south 8724
+EKeyvnum -1
+EDesc You see a small crack in the wall through which you might be able to slide.
+~
+Exit west 8710
+EFlags door closed~
+EKeyvnum -1
+EKeywords door stone~
+EDesc You see a large stone door, covered in sigils and hieroglyphs.
+~
+Exit up 8708
+EKeyvnum -1
+EDesc A small rickety ladder leads up.
+~
+End
+
+
+#8710
+Name The Fire Pool~
+Desc This room is dominated by a massive raised pool that is filled with not 
+water but flames of intense heat.  The multicoloured flames lick out at you, 
+searching for things to burn.  The pool proceeds to the west into a small 
+chamber.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit east 8709
+EFlags door closed~
+EKeyvnum -1
+EKeywords door stone~
+EDesc You see a large stone door.
+~
+Exit west 8711
+EKeyvnum -1
+EDesc You see a small chamber filled with fire.
+~
+End
+
+
+#8711
+Name The Chamber of the Efreet~
+Desc You make your way across the fire pool, and into a small stone chamber.  
+Here the flames are nearly as high as your head, singeing your face and 
+evaporating your sweat instantaneously.  
+~
+RoomFlags indoors~
+Sector noswim~
+Exit east 8710
+EKeyvnum -1
+EDesc The pool of fire ends to the east.
+~
+End
+
+
+#8712
+Name A Tiny Crawlway~
+Desc You have to go down onto your hands and knees to fit inside this tiny space. 
+ The crawlway is thick with sand and dust, and markings of the passage of 
+other creatures.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 8713
+EKeyvnum -1
+EDesc The crawlway continues to the north.
+~
+Exit south 8709
+EKeyvnum -1
+EDesc The crawlway ends to the south in a musty chamber.
+~
+End
+
+
+#8713
+Name A Tiny Crawlway~
+Desc You are on your hands and knees, inside a small crawlway that winds through 
+the inside of the pyramid.  The crawlway is thick with sand, dust, and 
+markings of the passage of other creatures.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 8712
+EKeyvnum -1
+EDesc The crawlway continues to the south.
+~
+Exit west 8714
+EKeyvnum -1
+EDesc The crawlway continues to the west.
+~
+End
+
+
+#8714
+Name A Tiny Crawlway~
+Desc You are on your hands and knees, inside a small crawlway that winds through 
+the inside of the pyramid.  The crawlway is thick with sand, dust, and 
+markings of the passage of other creatures.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 8713
+EKeyvnum -1
+EDesc The crawlway continues to the east.
+~
+Exit west 8715
+EKeyvnum -1
+EDesc The crawlway gets a little tighter to the west.
+~
+End
+
+
+#8715
+Name A Tightening in the Crawlway~
+Desc Here you are forced to slide on your belly through a particularly tight 
+section of the crawlway, as the stones of the pyramid close together about 
+you.  Below you is a small, slippery-looking hole that plummets into 
+blackness.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 8714
+EKeyvnum -1
+EDesc The crawlway gets a little larger to the east.
+~
+Exit south 8716
+EKeyvnum -1
+EDesc The crawlway continues to diminish in size to the south.
+~
+Exit down 8717
+EKeyvnum -1
+EDesc The hole looks very slippery and very dark.
+~
+End
+
+
+#8716
+Name The Crawlway's End~
+Desc The crawlway shrinks away to nothing as the sandy stones of the pyramid 
+close together into a space through which only a snake could fit.  There is 
+barely enough space to turn around and make your way back through the tiny 
+crawlway to the north.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 8715
+EKeyvnum -1
+EDesc The crawlway gets a little larger to the north.
+~
+End
+
+
+#8717
+Name A Slippery Hole~
+Desc The sides of this hole are slippery-smooth.  You lower yourself in, and 
+proceed to move downward...  When suddenly you lose your purchase!  You fall 
+for what seems like an eternity, and smash into the stones below...  Under 
+the Hole You are in a small chamber underneath the slippery hole, far below 
+the pyramid now.  The floor is strewn with bones.  To the south is a small 
+rocky crevasse.  
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+ExtraDesc u up~
+The hole looks far too slippery to climb back up.
+~
+ExtraDesc bones~
+The bones have whitened and cracked in the dry air, apparently the remains 
+of adventurers, thieves, and creatures that did not survive the fall.
+~
+Exit south 8719
+EKeyvnum -1
+EDesc You see a rocky crevasse that proceeds deep under the pyramid.
+~
+End
+
+
+#8718
+Name Under the Hole~
+Desc You are in a small chamber underneath the slippery hole, far below the 
+pyramid now.  The floor is strewn with bones.  To the south is a small rocky 
+crevasse.  
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc u up~
+The hole looks far too slippery to climb back up.
+~
+ExtraDesc bones~
+The bones have whitened and cracked in the dry air, apparently the remains 
+of adventurers, thieves, and creatures that did not survive the fall.
+~
+Exit south 8719
+EKeyvnum -1
+EDesc You see a rocky crevasse that proceeds deep under the pyramid.
+~
+End
+
+
+#8719
+Name A Rough Crevasse~
+Desc You are now exploring deep within a strange rocky crevasse that plunges down 
+into the rock on which the pyramid was constructed.  To the south you see 
+the flickering light of a fire, and the crevasse proceeds downward.  
+~
+RoomFlags dark~
+Sector cave~
+ExtraDesc rough~
+As you look through the rough terrain, your eyes catch a small glint of light!
+~
+Exit north 8718
+EKeyvnum -1
+EDesc You see a small stone chamber littered with bones.
+~
+Exit south 8720
+EKeyvnum -1
+EDesc You see the flickering light of a small fire.
+~
+Exit down 8721
+EKeyvnum -1
+EDesc The crevasse continues downward into total darkness.
+~
+End
+
+
+#8720
+Name A Small Fire~
+Desc Here a small fire burns in a nook in the rocks, providing some warmth and 
+comforting light in the cold, dark, dry air.  Standing here is a 
+strange-looking old man, who stares at you balefully.  
+~
+RoomFlags indoors light~
+Sector cave~
+ExtraDesc man old~
+The old man looks like he has been trapped down here far too long, and
+has begun to lose his mind.  He moves about slowly, cackling to himself.
+
+He turns to you and shouts, 'nope measse!  nope measse!', then turns 
+back and stares into the fire.
+
+'What a strange person,' you think to yourself.
+~
+Exit north 8719
+EKeyvnum -1
+EDesc You see a massive crevasse that plunges into darkness.
+~
+End
+
+
+#8721
+Name Down the Crevasse~
+Desc The crevasse proceeds downward into the dark depths of the earth.  The air 
+about you is now cold and quite dry, and your light source gutters in a cool 
+breeze that wafts up from below.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit up 8719
+EKeyvnum -1
+EDesc It is too dark for you to see any further along the crevasse.
+~
+Exit down 8722
+EKeyvnum -1
+EDesc It is too dark for you to see any further along the crevasse.
+~
+End
+
+
+#8722
+Name At the Crevasse's End~
+Desc Here the crevasse comes to an abrupt end.  A chilling wind howls at your 
+face from a black shape to the south, but the light from your source is too 
+dim to see exactly what it is.  
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc black shape~
+Wind howls about your ears like the roar of a tiger.  As your eyes
+adjust to the light the shape to the south almost seems to take the
+form of a massive animal head.
+~
+ExtraDesc tiger head animal sesame~
+You are now certain that the wind is the cold breath of some unearthly
+giant animal, whose voice rumbles lowly on the breeze, and whose
+massive jaws could easily swallow you whole.
+
+You move closer for a better look, when suddenly a pair of eyes flashes.
+A cold voice echoes: 'SEEK YE THE DIAMOND... IN THE ROUGH...'
+
+... Then all is silent.
+~
+Exit south 8723
+EFlags door closed locked hard~
+EKeyvnum 8723
+EKeywords sesame~
+EDesc You see a strange-looking black shape.
+~
+Exit up 8721
+EKeyvnum -1
+EDesc It is too dark for you to see anything along the crevasse.
+~
+End
+
+
+#8723
+Name The Vault of the Lamp~
+Desc The jaws of the massive stone tiger part wide to reveal a great vault.  An 
+arched ceiling lies far above your head...  And all about you is a low 
+guttural rumbling noise and a chill wind.  Giant heaps of ancient treasure, 
+gold coins, and valuables surround you on all sides.  
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc treasure gold coins valuables~
+You reach for some of the tasty goodies, when you hear a loud rumbling
+sound and see a bright flash of light...
+
+Then the words: 'TAKE ONLY THE LAMP... TOUCH NOTHING ELSE.'
+
+... All is silent once again.
+~
+Exit north 8722
+EFlags door closed locked hard~
+EKeyvnum 8723
+EDesc Through the jaws of the tiger you see the blackness of the crevasse.
+~
+Exit up 8701
+EFlags door closed locked hard~
+End
+
+
+#8724
+Name A Crack in the Wall~
+Desc You exhale, and squeeze yourself into the narrow crack in the wall.  Dust 
+fills your eyes as you disturb it, and chunks of mortar and stone mixed with 
+a touch of sand fall on you as you scrape your way through.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 8709
+EKeyvnum -1
+EDesc You see a musty chamber.
+~
+Exit south 8725
+EKeyvnum -1
+EDesc You see a tomb.
+~
+End
+
+
+#8725
+Name A Looted Tomb~
+Desc The floor of this small tomb is littered with the lids of smashed 
+sarcophagi, bits of treasure dropped by thieves and looters, and corpses 
+pulled from their resting places.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 8724
+EKeyvnum -1
+EDesc You see a small crack in the wall through which you might be able to slide.
+~
+Exit east 8733
+EKeyvnum -1
+EDesc To the east is another tomb.
+~
+Exit west 8726
+EKeyvnum -1
+EDesc To the west is another tomb.
+~
+End
+
+
+#8726
+Name A Demolished Tomb~
+Desc This tomb has been utterly destroyed by thieves and looters in search of the 
+treasures of the pharoahs.  Nothing of interest remains in this room, except 
+a large stone coffin that leans against the western wall.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc coffin lid~
+The coffin is sculpted into the form of a man, standing several heads above
+you, and clad in the garments of pharoahs.  It has apparently been untouched
+by the ravages of time and the activities of looters.  Several markings on the 
+side indicate spots where unsuccessful attempts were made to open the coffin.
+
+You can't see any way to open it.
+~
+ExtraDesc man garments pharoah~
+As you look closer at the figure sculpted into the stone coffin you notice a
+small marking carved into its chest.  It looks like a scarab or small beetle
+would fit into the small space, if properly sized.
+
+Hmm.
+~
+Exit east 8725
+EKeyvnum -1
+EDesc To the east is another tomb.
+~
+Exit west 8727
+EFlags door closed locked pickproof~
+EKeyvnum 8712
+EKeywords coffin lid~
+EDesc You see a large stone coffin.
+~
+End
+
+
+#8727
+Name A Stairway~
+Desc You stand now at the head of a stairway that goes down into darkness.  The 
+steps and walls are smooth sandy stone, covered with a thick layer of dust.  
+Some inscriptions are carved into the wall here.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc inscriptions~
+You blow dust away from the inscriptions to read:
+'Beware the curse of the mummy.'
+~
+ExtraDesc coffin lid~
+On this side the coffin lid is smooth featureless stone.
+~
+Exit east 8726
+EFlags door closed locked pickproof~
+EKeyvnum -1
+EKeywords coffin lid~
+EDesc You see the backside of the coffin lid, featureless stone.
+~
+Exit down 8728
+EKeyvnum -1
+EDesc It is too dark to see down the stairway.
+~
+End
+
+
+#8728
+Name A Stairway~
+Desc You are on a stairway that disappears into darkness in both directions.  The 
+smooth, uneven steps of the stairway have not been travelled in what appears 
+to be centuries.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit up 8727
+EKeyvnum -1
+EDesc It is too dark to see up the stairway.
+~
+Exit down 8729
+EKeyvnum -1
+EDesc It is too dark to see down the stairway.
+~
+End
+
+
+#8729
+Name A Stairway~
+Desc You stand now at the base of the uneven stairway.  The walls, floor, and 
+ceiling of this small landing are covered with strange hieroglyphics.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc walls floor ceiling hieroglyphics~
+The hieroglyphics are covered with a thick layer of dust.  You clear the
+dust away with your hand, and find that you cannot comprehend them.
+~
+Exit south 8730
+EFlags door closed~
+EKeyvnum -1
+EKeywords stone~
+EDesc You see a seam in the stone wall.
+~
+Exit up 8728
+EKeyvnum -1
+EDesc It is too dark to see up the stairway.
+~
+End
+
+
+#8730
+Name The Ancient Hall~
+Desc Here the air is deathly still, motes of dust thickly obscuring your vision.  
+Several stone statues line the walls of the hall, depicting the gods of an 
+ancient society.  Strange glyphs and sigils cover the walls, a peculiar 
+pictorial form of written language that you don't understand.  Some steps 
+lead to a raised dais to the south.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc writings glyphs sigils hieroglyphics symbols~
+You don't understand the meaning of these symbols.
+~
+Exit north 8729
+EFlags door closed~
+EKeyvnum -1
+EKeywords stone~
+EDesc You see a seam in the stone wall.
+~
+Exit south 8731
+EKeyvnum -1
+EDesc You see a small raised dais.
+~
+End
+
+
+#8731
+Name A Raised Dais~
+Desc You are at the southern end of the ancient hall, the dust and darkness 
+absorbing your light so that you cannot see past the steps of the dais.  A 
+low pedestal rests here.  You see something written into the face of it.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc pedestal writings~
+The writings are covered in sand and worn nearly away by the passage
+of time: 'I am Ramses the Damned, once counselor and aide to the mightiest
+of pharoahs and queens of this land.  Much time has passed since I last
+walked the earth.  Disturb my rest at your peril.'
+~
+Exit north 8730
+EKeyvnum -1
+EDesc You cannot see past the steps of the dais.
+~
+Exit down 8732
+EFlags door closed~
+EKeyvnum -1
+EKeywords tomb~
+EDesc You see a seam in the stone floor.
+~
+End
+
+
+#8732
+Name The Tomb of Ramses~
+Desc You stand in an empty tomb, a cubicle no more then ten feet to a side.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit up 8731
+EFlags door closed~
+EKeyvnum -1
+EKeywords tomb~
+EDesc That leads back the way you came.
+~
+End
+
+
+#8733
+Name A Ransacked Tomb~
+Desc This tomb has been completely ransacked and destroyed by the actions of 
+pyramid thieves and looters.  The floor is littered with junk.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8734
+EKeyvnum -1
+EDesc To the east is a low-ceilinged tunnel.
+~
+Exit west 8725
+EKeyvnum -1
+EDesc To the west is another tomb.
+~
+End
+
+
+#8734
+Name A Tunnel~
+Desc The low-ceilinged tunnel runs east-west.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 8735
+EKeyvnum -1
+EDesc You cannot see into the darkness of the low tunnel.
+~
+Exit west 8733
+EKeyvnum -1
+EDesc You see a tomb.
+~
+End
+
+
+#8735
+Name A Fork in the Tunnel~
+Desc Here the tunnel forks off through a gaping hole down in the southern wall, 
+continuing onward to the east and west as well.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc s south hole~
+The hole is low, at the floor of the southern wall.
+~
+Exit east 8736
+EKeyvnum -1
+EDesc You cannot see into the darkness of the low tunnel.
+~
+Exit west 8734
+EKeyvnum -1
+EDesc You cannot see into the darkness of the low tunnel.
+~
+Exit down 8746
+EKeyvnum -1
+EDesc Through the hole you see rubble and sand.
+~
+End
+
+
+#8736
+Name A Tunnel~
+Desc The low-ceilinged tunnel makes a turn to the west and ends to the north as 
+it spills out into a dusty hallway.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 8742
+EKeyvnum -1
+EDesc The mouth of the tunnel is stone that has been torn away by looters.
+~
+Exit west 8735
+EKeyvnum -1
+EDesc You cannot see into the darkness of the low tunnel.
+~
+End
+
+
+#8737
+Name A Dank Chamber~
+Desc This chamber has a dank, dusty, musty smell to it.  Small footprints in the 
+dust betray the recent passage of some sort of creatures.  A hole in the 
+floor lies to the west and a stairway is to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8738
+EKeyvnum -1
+EDesc You see a spiral stone stairway.
+~
+Exit west 8712
+EKeyvnum -1
+EDesc You see only blackness through the hole in the floor.
+~
+End
+
+
+#8738
+Name A Spiral Stairway~
+Desc Some dusty, broken stone stairs here spiral slowly in a constricted space 
+down towards a dusty hallway.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 8737
+EKeyvnum -1
+EDesc The stairs spiral up into a dank chamber.
+~
+End
+
+
+#8739
+Name A Dust-Covered Hallway~
+Desc This hallway is covered with dust that has accumulated over the centuries 
+that the pyramid has stood.  Small markings and footprints in the dust 
+betray the recent passage of others -- perhaps thieves?  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8740
+EKeyvnum -1
+EDesc The hallway proceeds to the east towards a strange smell.
+~
+Exit west 8709
+EKeyvnum -1
+EDesc The hallway proceeds towards the west towards a musty smell.
+~
+End
+
+
+#8740
+Name A Smelly Chamber~
+Desc This small chamber has a sickly putrescent smell to it, the smell of 
+formaldehyde and other ointments used to preserve the corpses of those who 
+died ages ago.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8741
+EKeyvnum -1
+EDesc You see a dusty hallway.
+~
+Exit west 8739
+EKeyvnum -1
+EDesc You a dusty hallway.
+~
+End
+
+
+#8741
+Name A Dust-Covered Hallway~
+Desc This hallway is covered with a thick, choking dust that rises up to obscure 
+your light source and sting your eyes.  Small marks and footprints in the 
+dust betray the recent passage of others.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8742
+EKeyvnum -1
+EDesc The hallway turns to the north.
+~
+Exit west 8740
+EKeyvnum -1
+EDesc You smell something peculiar over there.
+~
+End
+
+
+#8742
+Name A Turn in the Hallway~
+Desc You are standing in an elbow turn in a dust-covered stone hallway, that dead 
+ends to the north and continues on to the west.  To the south the stones of 
+the pyramid have been torn asunder by thieves, making a low-ceilinged 
+tunnel.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 8743
+EKeyvnum -1
+EDesc The hallway ends to the north.
+~
+Exit south 8736
+EKeyvnum -1
+EDesc The tunnel is dark.
+~
+Exit west 8741
+EKeyvnum -1
+EDesc The dust-covered hallway continues to the west.
+~
+End
+
+
+#8743
+Name A Dead End~
+Desc The dust-covered hallway has come to an abrupt end at a stony, featureless 
+wall.  Here and there are signs of the recent passage of others in the dust. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc cracks~
+The cracks look like you might be able to pull away some pieces of
+the floor, perhaps even fit your body through the space you make.
+~
+Exit south 8742
+EKeyvnum -1
+EDesc The dusty hall continues to the south.
+~
+Exit down 8744
+EFlags door closed~
+EKeyvnum -1
+EKeywords floor~
+EDesc The floor is quite dusty, and made of stone.  You see some cracks.
+~
+End
+
+
+#8744
+Name The Tomb Entrance~
+Desc You are in a small, dark chamber that has stood undisturbed for many years.  
+To the north stands a massive stone tomb, which is covered in hieroglyphics 
+and gold-lined carvings that mark it as the final resting place of the 
+mighty pharoahs of this land.  
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+ExtraDesc tomb~
+The tomb looks like it has stood for many years, much like the pyramid
+which encloses it.  It is covered in small hieroglyphics.
+~
+ExtraDesc hieroglyphics carvings~
+The markings indicate that this tomb is indeed the tomb of the greatest
+pharoahs of the ancient civilization that built this massive pyramid.
+~
+Exit north 8745
+EFlags door closed~
+EKeyvnum -1
+EKeywords tomb~
+EDesc You see the tomb of the pharoahs.
+~
+Exit up 8743
+EFlags door closed~
+EKeyvnum -1
+EKeywords ceiling~
+EDesc The stone ceiling has some cracks in it, through which a dim light streams.
+~
+End
+
+
+#8745
+Name The Tomb of the Pharoahs~
+Desc Great golden sarcophogai line the walls of this massive tomb.  It has 
+withstood the passage of time intact, untouched by the hands of thieves and 
+looters.  The treasures taken by the pharoahs to their graves still lie 
+before your feet.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc treasures~
+The treasures are dusty and fragile, but still seem quite valuable.
+You decide not to take them out of respect for the ancient dead.
+~
+Exit south 8744
+EFlags door closed~
+EKeyvnum -1
+EKeywords tomb~
+EDesc That way leads back out of the tomb.
+~
+End
+
+
+#8746
+Name A Rubble-Strewn Hallway~
+Desc This hallway formerly had a beautiful arch to the ceiling, now collapsed 
+under the weight of the slowly settling stones of the pyramid.  Now, a 
+massive pile of rubble leads up into a hole high in the northern portion of 
+the hallway.  To the south, through the rubble and fallen stones you see a 
+sandstone crypt.  
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit south 8747
+EKeyvnum -1
+EDesc You see a sandstone crypt.
+~
+Exit up 8735
+EKeyvnum -1
+EDesc >From here you see only darkness.
+~
+End
+
+
+#8747
+Name A Sandstone Crypt~
+Desc This small crypt is lit by a hole in the wall to the south, through which 
+sand pours from the desert outside.  A hot wind blows in from the desert, 
+drying your skin instantly.  To the east and north the arched hallway 
+continues.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 8746
+EKeyvnum -1
+EDesc The arched hallway collapses into rubble shortly to the north.
+~
+Exit east 8748
+EKeyvnum -1
+EDesc You see a beautifully arched hallway.
+~
+Exit south 8753
+EKeyvnum -1
+EDesc You see a lot of sand.
+~
+End
+
+
+#8748
+Name An Arched Hall~
+Desc This hallway has a beautiful arch to it, formed painstakingly and 
+exquisitely out of the sandy stones of the pyramid.  The dust that covers 
+most of the rest of the pyramid interior is not present here, scoured away 
+by the blowing of the desert winds that howl about your ears.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8749
+Exit west 8747
+EKeyvnum -1
+EDesc The arched hall proceeds into a sandstone crypt.
+~
+End
+
+
+#8749
+Name An Arched Hall~
+Desc This hallway has a beautiful arch to it, formed painstakingly and 
+exquisitely out of the sandy stones of the pyramid.  To the east is a small, 
+golden-coloured crypt, and the hall proceeds to the south and west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 8750
+EKeyvnum -1
+EDesc A small golden crypt lies to the east.
+~
+Exit south 8751
+EKeyvnum -1
+EDesc The arched hall proceeds to the south.
+~
+Exit west 8748
+End
+
+
+#8750
+Name A Golden Crypt~
+Desc You stand inside a small crypt with walls and ceiling made of golden bricks 
+that obscure the large sandy stones of the pyramid.  Small rugs and 
+tapestries are scattered about the floor here, and they appear to have been 
+used recently.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc rug rugs tapestry tapestries~
+The rugs and tapestries are very fine and worn with age, their colors
+now faded.  They depict scenes of life in an ancient desert city.
+~
+ExtraDesc bricks~
+The small golden bricks are very smooth and also quite soft.
+~
+Exit west 8749
+EKeyvnum -1
+EDesc You see an arched hall.
+~
+End
+
+
+#8751
+Name An Arched Hall~
+Desc This hallway has a beautiful arch to it, formed painstakingly and 
+exquisitely out of the sandy stones of the pyramid.  The arched hall 
+proceeds to the north and ends to the south in a small vault.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 8749
+EKeyvnum -1
+EDesc The arched hall continues to the north.
+~
+Exit south 8752
+EKeyvnum -1
+EDesc You see a small vault from which a shining light issues.
+~
+End
+
+
+#8752
+Name A Shining Vault~
+Desc The stones of the pyramid here take on a strange, twinkling quality, almost 
+seeming to shine with an internal light.  As you look closer you see tiny 
+glass-like glittery particles within the stones, that reflect the light from 
+your light source so perfectly that they seem to shine.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc particles glass~
+The glassy particles reflect and refract your light source in a myriad
+of dazzling colours that dance across your eyes and make you giggle.
+~
+Exit north 8751
+EKeyvnum -1
+EDesc You see a hall with a beautifully arched ceiling.
+~
+End
+
+
+#8753
+Name A Massive Sand Dune~
+Desc You stand now on a massive sand dune on the southern side of the pyramid.  
+At the foot of the sand dune to the north you see a small hole where the 
+stones of the pyramid have collapsed.  Not far to the south is a massive 
+roiling sandstorm; the wind from the storm howls and bites at your face even 
+here.  
+~
+RoomFlags no_mob~
+Sector desert~
+ExtraDesc sand dune sandstorm~
+The sand is very white, and very sandy.  There sure is a lot of it.
+~
+Exit north 8747
+EKeyvnum -1
+EDesc You see a small hole leading back into the pyramid.
+~
+Exit south 8754
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+End
+
+
+#8754
+Name A Swirling Sandstorm~
+Desc You are caught in the midst of a massive sandstorm.  Howling winds buffet 
+you from all sides, and the sand tears at your skin, blinding you and 
+choking you.  You have lost all sense of direction.  
+~
+Sector desert~
+ExtraDesc sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+Exit north 8754
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit east 8753
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit south 8754
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit west 8755
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+End
+
+
+#8755
+Name A Swirling Sandstorm~
+Desc You are caught in the midst of a massive sandstorm.  Howling winds buffet 
+you from all sides, and the sand tears at your skin, blinding you and 
+choking you.  You have lost all sense of direction.  
+~
+Sector desert~
+ExtraDesc sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+Exit north 8756
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit east 8754
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit south 8755
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit west 8755
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+End
+
+
+#8756
+Name A Swirling Sandstorm~
+Desc You are caught in the midst of a massive sandstorm.  Howling winds buffet 
+you from all sides, and the sand tears at your skin, blinding you and 
+choking you.  You have lost all sense of direction.  
+~
+Sector desert~
+ExtraDesc sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+Exit north 8755
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit east 8757
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit south 8756
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit west 8756
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+End
+
+
+#8757
+Name A Swirling Sandstorm~
+Desc You are caught in the midst of a massive sandstorm.  Howling winds buffet 
+you from all sides, and the sand tears at your skin, blinding you and 
+choking you.  You have lost all sense of direction.  
+~
+Sector desert~
+ExtraDesc sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+Exit north 8758
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit east 8756
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit south 8757
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit west 8757
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+End
+
+
+#8758
+Name A Massive Sand Dune~
+Desc Somehow you managed to make your way through the howling winds of the 
+sandstorm, and clamber up on this sand dune.  You can see the storm to the 
+north of you, and presumably the pyramid is somewhere beyond it.  Nothing 
+but flat, featureless, open dunes of sand lie in every other direction.  
+~
+Sector desert~
+ExtraDesc sand dune~
+The sand is very white, and very sandy.  There sure is a lot of it.
+~
+ExtraDesc riddle~
+A vision forms before your eyes, in glowing hieroglyphic symbols.
+~
+ExtraDesc hieroglyphics symbols~
+Like most of the ancient hieroglyphics of this land, the symbols are
+totally incomprehensible to you.  Perhaps the Sphinx has the answer
+to this ancient riddle.
+~
+Exit north 8757
+EKeyvnum -1
+EDesc You see only a wall of whirling, blowing, dry sand.
+~
+Exit south 8759
+EFlags door closed locked pickproof nopass~
+EKeyvnum 8717
+EKeywords riddle~
+EDesc On the southern side of the sand dune is a small hole in the sand.
+For some reason you seem unable to get to it.
+~
+End
+
+
+#8759
+Name Through the Hole in the Sand~
+Desc You squeeze through the small hole in the sand and land in a small white 
+chamber.  Above you is a small hole, reachable by climbing up the small 
+sandy slope down which you slid.  
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit up 8753
+EKeyvnum -1
+EDesc You see a sand dune.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 8700 spec_poison
+M 8701 spec_poison
+M 8704 spec_nasty
+M 8705 spec_thief
+M 8709 spec_breath_fire
+M 8711 spec_breath_steam
+M 8713 spec_cast_mage
+M 8715 spec_cast_cleric
+M 8716 spec_breath_any
+M 8717 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 8700 6 8702 2
+M 0 8701 4 8703 2
+M 0 8700 6 8705 1
+M 0 8702 3 8706 1
+M 0 8703 6 8709 2
+E 0 8700 0 wielded~
+M 0 8703 6 8709 2
+E 0 8701 0 about~
+M 0 8709 1 8711 1
+E 0 8707 -1 floating~
+M 0 8700 6 8713 2
+M 0 8702 3 8716 1
+O 0 8723 0 8719
+M 0 8706 1 8723 1
+M 0 8711 1 8723 1
+E 0 8713 0 hold~
+M 0 8704 6 8725 1
+M 0 8707 4 8725 2
+E 0 8704 -1 arms~
+G 0 8706 0
+M 0 8707 4 8725 2
+E 0 8704 -1 arms~
+G 0 8705 0
+M 0 8702 3 8726 1
+M 0 8704 6 8726 1
+M 0 8717 1 8732 1
+G 0 8719 0
+G 0 8721 0
+G 0 8721 0
+E 0 8720 -1 hold~
+E 0 8722 -1 face~
+M 0 8704 6 8733 1
+M 0 8704 6 8734 1
+M 0 8704 6 8735 1
+M 0 8703 6 8737 2
+E 0 8700 0 wielded~
+M 0 8703 6 8737 2
+E 0 8701 0 about~
+M 0 8707 4 8737 1
+E 0 8704 -1 arms~
+M 0 8700 6 8740 1
+M 0 8703 6 8740 2
+E 0 8700 0 wielded~
+M 0 8703 6 8740 2
+E 0 8701 0 about~
+M 0 8701 4 8741 2
+M 0 8707 4 8741 1
+E 0 8704 -1 arms~
+M 0 8704 6 8742 1
+M 0 8705 1 8743 1
+E 0 8703 0 head~
+E 0 8702 0 wielded~
+M 0 8710 2 8745 2
+E 0 8708 0 wielded~
+G 0 8709 0
+O 0 8710 0 8745
+P 0 8711 1 8710 1
+P 0 8712 1 8710 1
+M 0 8715 1 8747 1
+E 0 8716 -1 wielded~
+M 0 8712 3 8748 1
+M 0 8712 3 8749 1
+M 0 8713 2 8750 2
+M 0 8713 2 8750 2
+E 0 8714 -1 wielded~
+M 0 8712 3 8751 1
+M 0 8714 2 8752 2
+M 0 8714 2 8752 2
+G 0 8715 0
+R 0 8754 4
+M 0 8708 4 8754 1
+R 0 8755 4
+M 0 8708 4 8755 1
+R 0 8756 4
+M 0 8708 4 8756 1
+R 0 8757 4
+M 0 8708 4 8757 1
+M 0 8716 1 8758 1
+E 0 8717 0 hold~
+O 0 8718 0 8759
+O 0 8724 0 8759
+O 0 8725 0 8759
+O 0 8726 0 8759
+O 0 8727 0 8759
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

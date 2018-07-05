@@ -1,0 +1,2372 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Basalt Fortress~
+ShortName   `rBasalt Fortress`^~
+Builders    None~
+Credits     Shang-ti~
+VNUMs       1700 1799
+LComment    `#`Y[ 10- 25]`^
+LRange      10 25
+Security    7
+Colour      r~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:27:42 2005~
+End
+
+
+
+#MOBILES
+#1750
+Name duergar child~
+ShortD a duergar child~
+LongD A young duergar is playing here.~
+Desc A young duergar stands here, staring at you in awe.  
+~
+Race duergar~
+Align 2 0
+Level 4
+Hitroll 4
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType none
+AC 60 60 60 54
+Wealth 0
+Act    npc scavenger stay_area wimpy~
+AffBy  infrared~
+Off    trip~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg GREET 1750 15~
+END
+
+#1751
+Name duergar male~
+ShortD a male duergar~
+LongD A stout duergar male looks over the children here.~
+Desc An adult duergar male stands here, watching the children play.  
+~
+Race duergar~
+Align 0 0
+Level 12
+Hitroll 12
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType punch
+AC 0 0 0 0
+Wealth 12
+Act    npc scavenger stay_area wimpy~
+AffBy  infrared~
+Off    berserk kick~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1751 15~
+END
+
+#1752
+Name duergar female~
+ShortD a female duergar~
+LongD A stocky female duergar is here, attending the chores.~
+Desc An adult female duergar is too busy doing the needed chores to pay you any 
+mind.  
+~
+Race duergar~
+Align 0 0
+Level 11
+Hitroll 11
+HitDice 2d5+22
+ManaDice 2d5+30
+DamDice 1d10+2
+DamType slap
+AC 5 5 5 4
+Wealth 11
+Act    npc scavenger stay_area wimpy~
+AffBy  infrared~
+Off    kick trip~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GREET 1752 10~
+END
+
+#1753
+Name duergar guard~
+ShortD a duergar guard~
+LongD A strong duergar is guarding this area.~
+Desc This duergar is devoted to keeping the fortress free of intruders.  He looks 
+you over, then motions for you to be on your way.  
+~
+Race duergar~
+Align 3 0
+XPMod 115
+Level 10
+Hitroll 14
+HitDice 3d5+60
+ManaDice 1d5+5
+DamDice 1d12+3
+DamType none
+AC -15 -15 -15 -12
+Wealth 14
+Act    npc dont_wander warrior~
+AffBy  infrared dark_vision~
+Off    kick~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1753 100~
+END
+
+#1754
+Name duergar cleric~
+ShortD a duergar cleric~
+LongD A cleric of the duergar is here paying his penance to Reorx.~
+Desc This duergar is paying penance to Reorx by punching each of the metal plates 
+in the floor.  He pays no attention to your presence as he makes his way 
+around the dias.  
+~
+Race duergar~
+Align -2 0
+XPMod 115
+Level 13
+Hitroll 15
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 1d12+3
+DamType none
+AC -20 -20 -20 -17
+Wealth 150
+Act    npc dont_wander cleric~
+AffBy  infrared dark_vision~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1754 100~
+END
+
+#1755
+Name duergar cook~
+ShortD the duergar cook~
+LongD A large duergar is here preparing food.~
+Desc This bloody duergar seems to have lived through many a fierce battle with 
+ease.  He sees you looking at him, and grins evily.  
+~
+Race duergar~
+Align 1 0
+Level 19
+Hitroll 19
+HitDice 3d5+79
+ManaDice 2d5+25
+DamDice 2d7+4
+DamType none
+AC -35 -35 -35 -30
+Wealth 190
+Act    npc dont_wander scavenger aggressive thief~
+AffBy  infrared hide~
+Off    backstab disarm dodge parry trip~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1756
+Name duergar soldier~
+ShortD a duergar soldier~
+LongD A soldier of the duergar army looks like he wants to fight you.~
+Desc This strong soldier is practicing his skills of combat here.  When he sees 
+you looking at him, he stops and glares angrily at you.  
+~
+Race duergar~
+Align -2 0
+XPMod 115
+Level 18
+Hitroll 18
+HitDice 3d5+82
+ManaDice 2d4+5
+DamDice 2d7+4
+DamType none
+AC -35 -35 -35 -31
+Wealth 180
+Act    npc stay_area warrior~
+AffBy  infrared dark_vision~
+Off    trip~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1756 40~
+END
+
+#1757
+Name duergar officer~
+ShortD a duergar officer~
+LongD A duergar officer glares at your intrusion.~
+Desc This warrior shows more skill than the other soldiers do, practicing just a 
+bit more determined than they do.  As you look at him, he fakes a blow to 
+your knee and a jab to the thoat then grins.  
+~
+Race duergar~
+Align 1 0
+XPMod 115
+Level 20
+Hitroll 20
+HitDice 4d5+90
+ManaDice 2d5+5
+DamDice 2d8+5
+DamType none
+AC -45 -45 -45 -36
+Wealth 200
+Act    npc dont_wander warrior~
+AffBy  infrared dark_vision~
+Off    kick parry~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1757 100~
+END
+
+#1758
+Name duergar commander~
+ShortD the duergar commander~
+LongD The commander of the duergar garrison is at attention here.~
+Desc This duergar stands here, watching the progress of all his soldiers.  He 
+takes your continued existance here as a threat and moves to attack!  
+~
+Race duergar~
+Align 3 0
+XPMod 115
+Level 20
+Hitroll 22
+HitDice 4d5+100
+ManaDice 2d5+5
+DamDice 4d4+6
+DamType none
+AC -55 -55 -55 -44
+Wealth 220
+Act    npc dont_wander aggressive warrior~
+AffBy  infrared dark_vision~
+Off    disarm parry~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1758 100~
+END
+
+#1759
+Name ortan duergar nobleman~
+ShortD lord `#Ortan`^~
+LongD Ortan is here, glaring at your intrusion into his chambers.~
+Desc Ortan, Lord of the fortress, stands up at your arrival.  He looks at you, 
+smiles and nods in greeting.  He seems rather impressed at your ability to 
+make it into his private chambers unbound and consious.  
+~
+Race duergar~
+Align -3 0
+XPMod 115
+Level 25
+Hitroll 25
+HitDice 4d5+105
+ManaDice 5d6+190
+DamDice 4d4+6
+DamType none
+AC -65 -65 -65 -52
+Wealth 250
+Act    npc dont_wander mage~
+AffBy  detect_invis sanctuary infrared haste~
+Off    dodge parry~
+Res    poison disease~
+Vuln   drowning~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 1759 100~
+END
+
+#1792
+Name Ishan~
+ShortD ishan the dealer~
+LongD The dealer for the bazaar, Ishan, stands here.~
+Desc This young duergar has an eye for quality and is a master of cutting a deal. 
+ He looks you over and smiles.  
+~
+Race duergar~
+Align 2 0
+Level 100
+Hitroll 0
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType beating
+AC -700 -700 -700 -567
+Wealth 1000
+Act    npc dont_wander warrior~
+AffBy  sanctuary infrared haste~
+Off    bash berserk disarm dodge fast dirt_kick parry~
+Imm    summon charm magic weapon poison disease~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1792 100~
+END
+
+#1793
+Name Palo the smith~
+ShortD the blacksmith `#Palo`^~
+LongD Palo the blacksmith hammers away on a hunk of copper here.~
+Desc The smith is feverishly hammering away on a large plate of copper.  He works 
+as easily as he would a pile of clay.  He looks up and nods at you.  
+~
+Race duergar~
+Align 1 0
+Level 100
+Hitroll 0
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType beating
+AC -700 -700 -700 -623
+Wealth 1000
+Act    npc dont_wander warrior~
+AffBy  sanctuary infrared haste~
+Off    bash berserk disarm dodge fast dirt_kick parry~
+Imm    summon charm magic weapon poison disease~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1793 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#1760
+Name bronze skirt~
+Short a `#`ybronze`^ skirt~
+Desc A skirt made of hammered `#`ybronze`^ has been dropped here.~
+Level 15
+ItemType armor~
+Cost 45
+Durability 5
+Asize 1500
+Rsize 50
+Values 4 4 4 3 0
+Weight 150
+Material bronze~
+Wear     take legs~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+End
+
+#1761
+Name basalt bracer~
+Short a `#`Sbasalt`^ bracer~
+Desc A bracer made of `#`Sbasalt`^ has been discarded here.~
+Level 18
+ItemType armor~
+Cost 23
+Durability 5
+Asize 50
+Rsize 50
+Values 2 2 3 2 0
+Weight 50
+Material basalt~
+Extra    burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+End
+
+#1762
+Name basalt boots~
+Short some `#`Sbasalt`^ boots~
+Desc A pair of sturdy `#`Sbasalt`^ boots lie here.~
+Level 15
+ItemType armor~
+Cost 36
+Durability 5
+Asize 100
+Rsize 50
+Values 3 3 3 1 0
+Weight 80
+Material basalt~
+Extra    burnproof~
+Wear     take feet~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+End
+
+#1763
+Name basalt vambraces~
+Short a set of `#`Sbasalt`^ vambraces~
+Desc Some thick `#`Sbasalt`^ vambraces have been set here.~
+Level 22
+ItemType armor~
+Cost 172
+Durability 5
+Asize 1700
+Rsize 50
+Values 5 4 6 3 0
+Weight 170
+Material basalt~
+Extra    hum magic burnproof~
+Wear     take arms~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 22 -1 damroll 1 0
+End
+
+#1764
+Name basalt door shield~
+Short a `#`Sbasalt`^ door shield~
+Desc A very large shield hewn from `#`Sbasalt`^ is lying here.~
+Level 22
+ItemType armor~
+Cost 172
+Durability 5
+Asize 350
+Rsize 50
+Values 7 7 7 7 0
+Weight 350
+Material basalt~
+Extra    hum magic burnproof~
+Wear     take shield~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 22 -1 move -25 0
+Affect modifier -1 22 -1 hp 5 0
+End
+
+#1765
+Name copper buckler~
+Short a `#`rcopper`^ buckler~
+Desc A small `#`rcopper`^ buckler has been dropped here.~
+Level 15
+ItemType armor~
+Cost 40
+Durability 5
+Asize 80
+Rsize 50
+Values 5 5 5 3 0
+Weight 80
+Material copper~
+Wear     take shield~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+End
+
+#1766
+Name copper gauntlets~
+Short a pair of `#`rcopper`^ gauntlets~
+Desc A fine set of `#`rcopper`^ gauntlets have been dropped here.~
+Level 20
+ItemType armor~
+Cost 160
+Durability 5
+Asize 50
+Rsize 50
+Values 4 4 4 3 0
+Weight 50
+Material copper~
+Wear     take hands~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 20 -1 damroll 1 0
+Affect modifier -1 20 -1 hitroll 1 0
+End
+
+#1767
+Name basalt breastplate~
+Short a `#`Sbasalt`^ breastplate~
+Desc A heavy breastplate crafted from `#`Sbasalt`^ is lying here.~
+Level 22
+ItemType armor~
+Cost 170
+Durability 5
+Asize 300
+Rsize 50
+Values 7 5 8 5 0
+Weight 300
+Material basalt~
+Extra    magic burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 22 -1 hp 20 0
+End
+
+#1768
+Name copper helmet~
+Short a `#`rcopper`^ helmet~
+Desc A gleaming `#`rcopper`^ helmet has been dropped here.~
+Level 22
+ItemType armor~
+Cost 180
+Durability 5
+Asize 120
+Rsize 50
+Values 5 5 5 4 0
+Weight 70
+Material copper~
+Extra    glow magic~
+Wear     take head~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 22 -1 hitroll 1 0
+End
+
+#1769
+Name copper ringmail~
+Short some `#`rcopper`^ ringmail~
+Desc A pile of `#`rcopper`^ ringmail lies here.~
+Level 20
+ItemType armor~
+Cost 195
+Durability 5
+Asize 100
+Rsize 50
+Values 6 6 6 5 0
+Weight 210
+Material copper~
+Wear     take torso~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 20 -1 hitroll 1 0
+End
+
+#1770
+Name damascus steel girth~
+Short a `#`Sd`wa`Sm`wa`Ss`wc`Su`ws `ws`St`we`Se`wl`^ girth~
+Desc A beautiful `#`Ssteel`^ girth is lying here.~
+Level 25
+ItemType armor~
+Cost 230
+Durability 5
+Asize 30
+Rsize 50
+Values 5 5 5 4 0
+Weight 30
+Material steel~
+Wear     take waist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 25 -1 damroll 2 0
+Affect modifier -1 25 -1 hitroll 1 0
+End
+
+#1771
+Name damascus steel anklet~
+Short a `#`Sd`wa`Sm`wa`Ss`wc`Su`ws `ws`St`we`Se`wl`^ anklet~
+Desc An ornate `#`Ssteel`^ anklet has been discarded here.~
+Level 25
+ItemType armor~
+Cost 195
+Durability 5
+Asize 10
+Rsize 50
+Values 3 3 3 3 0
+Weight 10
+Material steel~
+Extra    burnproof~
+Wear     take ankle~
+Affect modifier -1 25 -1 move 30 0
+Affect modifier -1 25 -1 hitroll 1 0
+End
+
+#1772
+Name basalt morningstar~
+Short a `#`Sbasalt`^ morningstar~
+Desc A short `#`Sblack`^ morningstar has been left here.~
+Level 20
+ItemType weapon~
+Cost 78
+Durability 5
+Asize 1720
+Rsize 50
+Values mace 2 9 thwack 0
+Weight 250
+Material basalt~
+Extra    magic nonmetal burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian bard anti-paladin knight~
+Affect modifier -1 20 -1 damroll 2 0
+Affect modifier -1 20 -1 quickness 4 0
+Affect modifier -1 20 -1 selfdiscipline 2 0
+End
+
+#1773
+Name bronze mallet~
+Short a `#`ybronze`^ mallet~
+Desc A small `#`ybronze`^ mallet is sitting here.~
+Level 15
+ItemType weapon~
+Cost 50
+Durability 5
+Asize 130
+Rsize 50
+Values mace 3 6 smash 0
+Weight 220
+Material bronze~
+Extra    bless~
+Wear     take wield~
+ClassAllowances cleric thief warrior paladin ranger barbarian bard anti-paladin knight~
+Affect modifier -1 15 -1 hitroll 1 0
+End
+
+#1774
+Name copper javelin~
+Short a `#`rcopper`^ javelin~
+Desc A long javelin made of `#`rcopper`^ is resting here.~
+Level 10
+ItemType weapon~
+Cost 50
+Durability 5
+Asize 50
+Rsize 50
+Values staff 2 5 thrust DF
+Weight 180
+Material copper~
+Extra    bless~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian bard anti-paladin knight~
+End
+
+#1775
+Name brass cleaver~
+Short a `#`Ybrass`^ chef's knife~
+Desc A large `#`Ybrass`^ chef's knife is lying here, ready to slice and dice.~
+Level 19
+ItemType weapon~
+Cost 53
+Durability 5
+Asize 40
+Rsize 50
+Values dagger 3 3 stab 0
+Weight 10
+Material brass~
+Extra    noremove~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher bard anti-paladin knight~
+Affect modifier -1 19 -1 damroll 2 0
+Affect modifier -1 19 -1 strength 2 0
+End
+
+#1776
+Name damascus warhammer~
+Short a `#`Sd`wa`Sm`wa`Ss`wc`Su`ws`^ warhammer~
+Desc A massive warhammer has been dropped here.~
+Level 23
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 70
+Rsize 50
+Values mace 2 13 crush 0
+Weight 350
+Material steel~
+Extra    glow magic nodrop bless~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian bard anti-paladin knight~
+Affect modifier -1 23 -1 damroll 4 0
+Affect modifier -1 23 -1 quickness 1 0
+End
+
+#1777
+Name damascus javelin~
+Short a `#`Sd`wa`Sm`wa`Ss`wc`Su`ws`^ javelin~
+Desc A sharp javelin has been left here.~
+Level 25
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 30
+Rsize 50
+Values staff 4 6 thrust F
+Weight 180
+Material steel~
+Extra    magic nodrop bless~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard anti-paladin knight~
+Affect modifier -1 25 -1 hitroll 2 0
+Affect modifier -1 25 -1 damroll 2 0
+Affect modifier -1 25 -1 quickness 3 0
+End
+
+#1778
+Name heat staff~
+Short the `#`Rs`Yt`Ra`Yf`Rf`^ of `#`Yh`Re`Ya`Rt`^~
+Desc A `#`Sbasalt`^ staff is here radiating heat.~
+Level 20
+ItemType staff~
+Cost 600
+Durability 5
+Asize 120
+Rsize 50
+Values 45 20 20 'heat metal' 0
+Weight 120
+Material basalt~
+Extra    glow magic nonmetal burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid paladin spellfilcher bard anti-paladin~
+End
+
+#1779
+Name tourmaline choker~
+Short a `#`mtourmaline`^ choker~
+Desc A choker set with `#`mtourmaline`^ gemstones is lying here.~
+Level 25
+ItemType jewelry~
+Cost 450
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gem~
+Extra    magic nonmetal~
+Wear     take neck~
+ClassAllowances mage druid spellfilcher bard~
+Affect modifier -1 25 -1 hitroll 1 0
+Affect modifier -1 25 -1 mana 20 0
+End
+
+#1780
+Name jacinth teardrop gem~
+Short a `#`Yjacinth`^ teardrop~
+Desc A bright `#`Yyellow`^ gem has been forgotten here.~
+Level 25
+ItemType gem~
+Cost 540
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gem~
+Extra    magic nonmetal nouncurse~
+Wear     take face~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 25 -1 mana 30 0
+Affect modifier -1 25 -1 hitroll 2 0
+End
+
+#1781
+Name sacrificial lava pit~
+Short a sacrificial pit~
+Desc A pit filled with `#`Rlava`^ bubbles rapidly here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 A 1728 0
+Weight 0
+Material lava~
+Extra    magic~
+Wear     no_sac~
+End
+
+#1782
+Name steel chest~
+Short a `#`Ssteel`^ chest~
+Desc A large `#`Ssteel`^ chest with a small lock is here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 5000 ABCD 1783 170000 0
+Weight 1000
+Material steel~
+Extra    lock invis~
+End
+
+#1783
+Name steel duergar key~
+Short the noble's key~
+Desc A `#`Ssteel`^ key has been left lying here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material steel~
+Wear     take hold~
+End
+
+#1784
+Name basalt desk~
+Short the noble's desk~
+Desc A huge `#`Sbasalt`^ desk sits in the middle of this room.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 3000
+Rsize 50
+Values 500 ACD 1783 5000 0
+Weight 3000
+Material basalt~
+Extra    lock magic~
+Wear     no_sac~
+End
+
+#1785
+Name duergar weapon rack~
+Short a weapon rack~
+Desc The weapons rack for the soldiers stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 1000 0 0 1000 0
+Weight 1000
+Material wood~
+Extra    invis~
+End
+
+#1786
+Name duergar armor rack~
+Short an armor rack~
+Desc The armor rack used by the soldiers stands here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 1000 0 0 1000 0
+Weight 1000
+Material wood~
+Extra    invis~
+Wear     no_sac~
+End
+
+#1787
+Name lava geyser~
+Short a geyser of `#`Rlava`^~
+Desc A geyser of `#`Rmolten lava`^ spouts up out of the ground here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 CFIL -200 0
+Weight 0
+Material fire~
+Extra    magic~
+Wear     no_sac~
+End
+
+#1788
+Name hot bath pool~
+Short a hot bath pool~
+Desc The `#`Csteaming-hot`^ pool of the bath house looks inviting.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 CFIL 110 120
+Weight 0
+Material water~
+Extra    magic~
+Wear     no_sac~
+End
+
+#1789
+Name dwarf statue~
+Short a statue of a proud `#`RDwarf`^~
+Desc A statue of a proud `#`RDwarf`^ stands atop the dias here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 10000
+Rsize 50
+Values 100 10000 ADGJ 150 -50
+Weight 10000
+Material bronze~
+Extra    magic~
+Wear     no_sac~
+End
+
+#1790
+Name basalt key~
+Short a `#`Sbasalt`^ key~
+Desc A key made of basalt lies discarded here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material basalt~
+Wear     take hold~
+End
+
+#1791
+Name lava sheet~
+Short a sheet of `#`Rlava`^~
+Desc A sheet of `#`Rmolten lava`^ flows endlessly from a crack in the wall.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material lava~
+Extra    glow~
+End
+
+#1795
+Name stone bunk~
+Short a stone bunk~
+Desc A hard stone bunk offers little comfort.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 1 5000 EHK 25 25
+Weight 1000
+Material basalt~
+Wear     no_sac~
+End
+
+#1796
+Name copper bunk~
+Short a copper bunk~
+Desc A `#`rcopper`^ bunk for the officer is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 17000
+Rsize 50
+Values 1 5000 EHK 110 110
+Weight 17000
+Material unknown~
+Wear     no_sac~
+End
+
+#1797
+Name obsidian monolith~
+Short an obsidian monolith~
+Desc A huge `#`bobsidian monolith`^ stands here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 3000
+Rsize 50
+Values 0 0 0 0 0
+Weight 3000
+Material obsidian~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#1700
+Name Before the Basalt Fortress~
+Desc Large columns of flame rage all around you in this fiery inferno.  The
+path you are on seems to be rather safe from the lava flows that bubble up
+from the smoldering grounds.  The air here is thick with the scent of
+brimstone and sulfur, adding to the difficulty of breathing the hot air.  To
+your south stands a mighty fortress formed from the basalt that has cooled
+enough to be worked with tools.  The clang of weapons and shouts of fighting
+can be heard as well as the screeches of children playing.  To the north
+leads back into the mountains.
+~
+RoomFlags no_mob~
+Sector mountain~
+Exit south 1702
+EFlags door closed~
+Exit northwest 53736
+End
+
+
+#1701
+Name Guard Post~
+Desc This is a small alcove in which the guard can stand watch.  There is an
+empty hook on the wall.  The only exit leads east into the checkpoint.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 1702
+End
+
+
+#1702
+Name Check Point inside the Gate~
+Desc This small room is used by the guards to watch all those who enter the
+fortress.  Lava flows through a thin fissure in the floor, bubbling as it
+gives off putrid gasses.  The short, arched portals to the east and west
+lead to guard posts.  The massive bronze doors to the north lead out of the
+fortress.  The copper door to the south leads further inside.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1700
+EFlags door closed~
+Exit east 1703
+Exit south 1709
+EFlags door closed~
+Exit west 1701
+End
+
+
+#1703
+Name Guard Post~
+Desc This is an cramped room intended for a guard to keep watch of the
+checkpoint to the west.  There is some writing on the wall here.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc writting~
+Scratched into the wall are lots of hashmarks and the words 'intruders
+killed'.  
+~
+Exit west 1702
+End
+
+
+#1704
+Name Common Warrens~
+Desc At the west end of the warrens the homes of the duergar line the way.  They
+are not really separate homes, but rather one long building with three
+floors on each side of the street.  The construction here seems rather
+utilitarian but very well-kept by the duergar.  From here the warrens continue
+to the east.  To the south the street leads into the main hall of the
+commons.  
+~
+RoomFlags indoors~
+Sector city~
+Exit east 1705
+Exit south 1716
+End
+
+
+#1705
+Name Common Warrens~
+Desc This area is in the very center of the warrens.  All around here are duergar
+going about thier daily lives.  It seems that Lord Ortan provides well
+enough for his common folk as these warrens attest.  The warrens spread out
+to the east and to the west.  High above you there hangs a banner stretching
+across the street.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc banner~
+The large banner reads 'Hail Mighty Lord Ortan'.
+~
+Exit east 1706
+Exit west 1704
+End
+
+
+#1706
+Name Common Warrens~
+Desc Here at the east end of the warrens the homes are full of families of
+duergar.  The large buildings to either side of the street here are hewn from
+basalt, like most of the other constructs within the fortress.  The street
+through the warrens heads off the the west, and to the south the way leads
+to the Commons Hall.  
+~
+RoomFlags indoors~
+Sector city~
+Exit south 1718
+Exit west 1705
+End
+
+
+#1707
+Name Bend in the Hall~
+Desc Off to the east a large hallway leads a long way to what appears to be a
+guard station.  Nearby to the south you can spy an intersection.  There are
+windows carved into the north and east walls here as well.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc window~
+Outside of this window, lava bursts out of the ground in tall streams,
+setting the very rock around it aflame.  The form of a dragon can be seen
+flying high over the horizon.  
+~
+Exit east 1708
+Exit south 1720
+End
+
+
+#1708
+Name Basalt Hallway~
+Desc This hallway stretches off quite a ways to the east and west.  A sheet of
+lava flowing from a crack along the wall provides a reddish illumination to
+the hall.  
+~
+RoomFlags indoors~
+Sector city~
+Exit east 1709
+Exit west 1707
+End
+
+
+#1709
+Name Inner Guard Post~
+Desc This expansive room serves as the main guard post for the fortress. 
+Cutting through here from the east and west is a long, illuminated hallway. 
+There is a short copper door engraved with odd characters to the north.  The
+passage to the south is illuminated by a bright light, and the strong smell
+of sulfur issues from there as well.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc door~
+The short copper door is engraved with all sorts of characters and
+symbols of an unknown language.  
+~
+Exit north 1702
+EFlags door closed~
+Exit east 1710
+Exit south 1722
+Exit west 1708
+End
+
+
+#1710
+Name Basalt Hallway~
+Desc This hallway stretches off quite a ways to the east and west.  A sheet of
+lava flowing from a crack along the wall provides a reddish illumination to
+the hall.  
+~
+RoomFlags indoors~
+Sector city~
+Exit east 1711
+Exit west 1709
+End
+
+
+#1711
+Name Bend in the Hall~
+Desc The hallway takes a sharp bend here.  Small holes cut into the north and
+east walls serve as windows.  The floors, walls, and ceiling all are hewn
+from basalt, with no visible seams anywhere.  The hall heads off to the west
+a long way, and to the south to an intersection.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc window~
+Through this rough cut hole you see a vast plain of lava littered with
+massive boulders.  The sky looks as if it is on fire as well, with shades of
+reds and yellows instead of the normal blues and whites.  
+~
+Exit south 1724
+Exit west 1710
+End
+
+
+#1712
+Name Soldiers' Barracks~
+Desc This room serves as barracks for the duergar Soldiers.  The only comfort
+that it offers is that of a stone bunk to sleep in.  The only exit is
+through the door to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1725
+EFlags door closed~
+End
+
+
+#1713
+Name Soldiers' Barracks~
+Desc This room serves as barracks for the duergar Soldiers.  The only comfort
+that it offers is that of a stone bunk to sleep in.  The only exit is
+through the door to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1726
+EFlags door closed~
+End
+
+
+#1714
+Name Officer's Quarters~
+Desc This room is the private quarters of one of the duergar Army officers. 
+Spartan accommodations are all this room posesses.  The only obvious exit
+from here is to the south through the door.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1727
+EFlags door closed~
+End
+
+
+#1715
+Name Commons Bath House~
+Desc This is the steaming bath house for all of the duergar who live here in the
+fortress.  The large pool in the floor streams off long ribbons of steam
+into the air, and it looks rather relaxing.  A set of wide steps leads down
+into the pool, and within there is a stone ledge ringing the sides on which
+you can sit.  The exit is east from here, but why leave?  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 1716
+End
+
+
+#1716
+Name Commons Hall West~
+Desc The west end of Commons Hall branches off at this point.  To the west
+there is a bath house for public use.  Northward leads into the duergar
+warrens, and the Commons Hall extends eastward.  There is a small picture
+painted on the south wall here.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc south~
+This picture shows a few duergar fighters training in an open area 
+containing a rack of weapons and a rack of armor.  
+~
+ExtraDesc picture~
+This picture shows a few duergar fighters training in an open area 
+containing a rack of weapons and a rack of armor.  
+~
+Exit north 1704
+Exit east 1717
+Exit west 1715
+End
+
+
+#1717
+Name Commons Hall~
+Desc This area is the junction between the Commons Hall and the duergar Market. 
+The vast hall stretches off to the east and west, while the market lies a
+short distance to the south.  A gigantic mural adorns the north wall here.  
+~
+RoomFlags indoors no_portal arena antimagic light~
+Sector city~
+ExtraDesc wall~
+This mural depicts a regal looking duergar standing in front of a large army 
+of duergar soldiers.  Written in gold lettering along the bottom is the 
+phrase 'Hail mighty Lord Ortan!  He shall valiantly lead us to glory across 
+Krynn'.  
+~
+ExtraDesc north~
+This mural depicts a regal looking duergar standing in front of a large army 
+of duergar soldiers.  Written in gold lettering along the bottom is the 
+phrase 'Hail mighty Lord Ortan!  He shall valiantly lead us to glory across 
+Krynn'.  
+~
+ExtraDesc mural~
+This mural depicts a regal looking duergar standing in front of a large army 
+of duergar soldiers.  Written in gold lettering along the bottom is the 
+phrase 'Hail mighty Lord Ortan!  He shall valiantly lead us to glory across 
+Krynn'.  
+~
+Exit east 1718
+Exit south 1730
+Exit west 1716
+End
+
+
+#1718
+Name Commons Hall East~
+Desc This vast area is home to the common duergar that live within the fortress
+under the rule of Lord Ortan.  The shouts and laughter of the duergar can be
+heard as they carry on thier daily lives within these Commons.  There huge
+door set in the east wall granting exit from here.  To the north, a corridor
+leads into the warrens.  The hall continues to the west.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 1706
+Exit east 1719
+EFlags door closed~
+Exit west 1717
+End
+
+
+#1719
+Name Guard Post~
+Desc This is the guard post at the entrance to the duergar Commons, where the
+duergar make thier homes.  A finely wrought brass door leads into the Commons
+to the west.  A tall archway heads out east into the main hall of the
+fortress.  The room is illuminated by the ceiling that glows a bright red
+far above you.  There are small alcoves cut into the north and south walls
+for the guards to stand watch over all who enter and leave this area.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+ExtraDesc ceiling~
+The ceiling rises 30 feet above you here.  It shines with a bright red
+glow that illuminates this room bright as daylight.  
+~
+ExtraDesc brass~
+This door is made from polished wrought brass with a lustre that could
+easily be mistaken for gold.  
+~
+ExtraDesc door~
+This door is made from polished wrought brass with a lustre that could
+easily be mistaken for gold.  
+~
+ExtraDesc alcove~
+This looks roughly carved into the wall, just large enough for one of the
+duergar guards to stand inside of it.  
+~
+Exit east 1720
+Exit west 1718
+EFlags door closed~
+End
+
+
+#1720
+Name Entrance to the Commons~
+Desc Here, a tall archway leads west to a guard post.  The main hallway
+continues north and south from here as well.  In huge letters carved in the
+rock above the archway are the words 'duergar Commons'.  
+~
+RoomFlags no_mob indoors~
+Sector city~
+Exit north 1707
+Exit south 1732
+Exit west 1719
+End
+
+
+#1721
+Name Before the Sacrificial Pit~
+Desc A trough cut into the floor here allows lava to flow into a wide pit. 
+The pit bubbles with fury and fervor, making the air waver under it's
+intense heat.  A small copper plaque is set in the floor before the pit. 
+The only exit heads east following the trough.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc plaque~
+The plaque reads 'Bodily sacrifice shall show the way'.  
+~
+Exit east 1722
+End
+
+
+#1722
+Name At the Lava Geyser~
+Desc A large geyser of lava spouts ten feet into the air here, illuminating
+the area with a bright hellish light.  The lava collects in a trough and
+feeds into the room to the west.  Exits lead north south and west.  A tall
+iron door is set deep into the east wall.  The air is acrid with gasses
+here.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc trough~
+A two foot wide trough is carved into the floor.  It feeds lava from the
+base of the geyser into the room to the west.  
+~
+Exit north 1709
+Exit east 1723
+EFlags door closed~
+Exit south 1734
+Exit west 1721
+End
+
+
+#1723
+Name Shrine of Reorx~
+Desc This is a holy shrine dedicated to the dwarven god Reorx.  The very walls 
+themselves glow dull red with an inner heat.  Set into the floor are random 
+tiles of copper, brass, bronze, iron, steel, silver, gold, and platinum.  
+Placed atop a raised basalt dias at the east end of the shrine is a large 
+statue of Reorx.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc copper~
+A highly polished copper tile is set into the floor before the dias.
+~
+ExtraDesc brass~
+A lustreous brass tile is set into the floor before the dias.  
+~
+ExtraDesc bronze~
+A glowing bronze tile is set into the floor before the dias.
+~
+ExtraDesc iron~
+A smooth tile wrought from iron is set into the floor before the dias.
+~
+ExtraDesc steel~
+A gleaming steel tile is set into the floor before the altar.
+~
+ExtraDesc silver~
+Light glints off of a silver tile set in the floor before the dias.
+~
+ExtraDesc gold~
+A splendorous gold tile is set into the floor before the dias.
+~
+ExtraDesc platinum~
+The most brilliant tile made from platinum is set into the floor before
+the dias.  
+~
+Exit west 1722
+EFlags door closed~
+End
+
+
+#1724
+Name Entrance to the Barracks~
+Desc The large hallway comes to a three-way intersection here.  The main
+branch continues north and south, while a smaller, more ornate hallway heads
+off east.  Set into the east wall above the entrance to the ornate hallway
+is a large steel plate.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc plate~
+The plate reads 'Barracks Wing'.
+~
+ExtraDesc steel~
+The plate reads 'Barracks Wing'.  
+~
+Exit north 1711
+Exit east 1725
+Exit south 1736
+End
+
+
+#1725
+Name Barracks Hall~
+Desc This hallway is more stately than the main hallway of the fortress.  The
+hall runs east and west, while there are plain stone doors to the north and
+south.  Carved into each door are the words 'Soldier Barracks'.  
+~
+RoomFlags no_mob indoors~
+Sector city~
+Exit north 1712
+EFlags door closed~
+Exit east 1726
+Exit south 1737
+EFlags door closed~
+Exit west 1724
+End
+
+
+#1726
+Name Barracks Hall~
+Desc You have come to the end of the corridor.  There is a nicely crafted
+obsidian door set in the east wall.  Plain basalt doors lead to rooms to the
+north and south.  The hallway continues off to the west.  A sign on the east
+wall catches your eye.  Carved into the doors to the north and south are the
+words 'Soldier Barracks'.  
+~
+RoomFlags no_mob indoors~
+Sector city~
+ExtraDesc sign~
+This small sign reads 'War Room and Officer Quarters'.
+~
+Exit north 1713
+EFlags door closed~
+Exit east 1727
+EFlags door closed~
+Exit south 1738
+EFlags door closed~
+Exit west 1725
+End
+
+
+#1727
+Name Commander's War Room~
+Desc This room is home to the Commander of the duergar Army.  There are various
+maps hanging on the walls here, showing most of the lands in detail.  The
+Commander uses this room for strategic planning and to brief the officers
+before battles.  Documents here show how to construct and operate seige
+engines to breach castle walls.  Doors lead north, south, east, and west
+from here.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc documents~
+You see intricate plans to build and operate a catapult, trebuchet, 
+ballista, and battering ram.  
+~
+ExtraDesc maps~
+These maps show in detail the terrain and settlements of most of the lands 
+of the world. Blackmoor, Azarad, and Tulgard catch your eye, for under these 
+maps are outlined plans for thier seige.  
+~
+Exit north 1714
+EFlags door closed~
+Exit east 1728
+EFlags door closed locked~
+EKeyvnum 1790
+Exit south 1739
+EFlags door closed~
+Exit west 1726
+EFlags door closed~
+End
+
+
+#1728
+Name Lord Ortan's Private Chambers~
+Desc You have made your way into the chambers of Ortan, Lord of this fortress.
+It is richly appointed throughout with many detailed reliefs and carved
+statues.  Most stunning of all is the large basalt desk in the center of the
+room.  The legs are wonderful figurines of duergar women with upstretched arms
+holding on high a tabletop resembling a huge anvil.  The only exit from here
+is a door in the west wall.  
+~
+RoomFlags indoors no_portal~
+Sector inside~
+ExtraDesc reliefs~
+The reliefs set upon the walls are carved from fine quartz and hematite. 
+Each depicts a battle scene in which the duergar are obviously overpowering and
+slaughtering thier foes.  
+~
+ExtraDesc statues~
+There are many statues of copper, brass, and bronze about the room. Most are of duergar women in half-naked poses.
+~
+Exit west 1727
+EFlags door closed locked~
+EKeyvnum 1790
+End
+
+
+#1729
+Name Ishan's Bazaar~
+Desc Inside of the large canvas tent, Ishan the dealer has displayed his wares
+upon small tables draped with colorful spreads.  From the looks of it, he
+deals in the more arcane of items such as potions, scrolls and magical
+items.  All of the cloths and fabrics within this bazaar are indeed exotic,
+a drastic change from the rest of the scenery within this fortress.  The
+only exit is to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc fabrics~
+These lavish fabrics are made of spidersilk and hand-spun cotton.  All of
+them are dyed rich, vibrant colors.  
+~
+ExtraDesc cloth~
+These cloths are woven from multi-colored threads in metalic hues.  
+~
+Exit east 1730
+End
+
+
+#1730
+Name The duergar Market~
+Desc Before you is an immense monolith cleaved smooth from a massive slab of
+obsidian.  It serves as a kiosk, as there are notes and fliers fastened to
+it in many places.  This whole area is bustling with activity.  To the east
+a short building is adorned with a sign depicting an anvil.  Off to the
+west, a tent has been raised and many items lay upon tables within.  To the
+south come the smells of cooking, and heading north leads to the Commons
+Hall.  
+~
+RoomFlags indoors~
+Sector city~
+ExtraDesc fliers~
+The many notes here are concerned with things such as lost and found
+items and announcements of special events.  One message catches your eye, it
+reads 'Attention Cook!  Lord Ortan wishes the return of his key.  He has
+urgent need of it.  ' 
+~
+ExtraDesc notes~
+The many notes here are concerned with things such as lost and found
+items and announcements of special events.  One message catches your eye, it
+reads 'Attention Cook!  Lord Ortan wishes the return of his key.  He has
+urgent need of it.  ' 
+~
+ExtraDesc kiosk~
+The many notes here are concerned with things such as lost and found
+items and announcements of special events.  One message catches your eye, it
+reads 'Attention Cook!  Lord Ortan wishes the return of his key.  He has
+urgent need of it.  ' 
+~
+Exit north 1717
+Exit east 1731
+Exit south 1741
+Exit west 1729
+End
+
+
+#1731
+Name Commons Smithy~
+Desc Palo's smithy is housed here, the place in which he crafts his fine
+wares.  There is a small pool of lava in the corner used to heat up the
+metals before he hammers and shapes them into armors and weapons.  Next to
+the lava pool is a large anvil that is very worn from ages of use.  Hanging
+on the walls are different armor pieces crafted from copper, brass, and
+bronze.  There are many weapons hanging here as well, made of the same raw
+materials as the armor.  The only exit is the doorway to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+RoomEcho  0 23  80 A shower of `#`Rsparks`^ fly from the anvil as Palo hammers away.~
+ExtraDesc weapons~
+Everything that Palo crafts seems to be made of either brass, bronze, or
+copper.  
+~
+ExtraDesc armor~
+Everything that Palo crafts seems to be made of either brass, bronze, or
+copper.  
+~
+ExtraDesc anvil~
+The anvil looks heavily beaten and dented by countless hammerblows.  It
+looks very heavy.  
+~
+ExtraDesc pool~
+A small raised trough contains some molten lava.  It is used by Palo to
+heat the raw metals before he begins to hammer them.  
+~
+ExtraDesc lava~
+A small raised trough contains some molten lava.  It is used by Palo to
+heat the raw metals before he begins to hammer them.  
+~
+Exit west 1730
+End
+
+
+#1732
+Name Bend in the Hall~
+Desc From here the hallway heads north to an intersection and off to the east
+a long way.  The din of battle can be heard comming from the eastern
+hallway.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 1720
+Exit east 1733
+End
+
+
+#1733
+Name Basalt Hallway~
+Desc This hallway stretches off quite a ways to the east and west.  A sheet of
+lava flowing from a crack along the wall provides a reddish illumination to
+the hall.  
+~
+RoomFlags indoors~
+Sector city~
+Exit east 1734
+Exit west 1732
+End
+
+
+#1734
+Name Southern Guard Post~
+Desc This room serves as a small post for the duergar guards.  There is a long
+hallway that heads off to the east and west.  A bright reddish light blazes
+in the area to the north, and a constant hot breeze issues forth from there
+as well.  The portal to the south leads outside into what appears to be a
+large, walled-in area.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 1722
+Exit east 1735
+Exit south 1744
+Exit west 1733
+End
+
+
+#1735
+Name Basalt Hallway~
+Desc This hallway stretches off quite a ways to the east and west.  A sheet of
+lava flowing from a crack along the wall provides a reddish illumination to
+the hall.  
+~
+RoomFlags indoors~
+Sector city~
+Exit east 1736
+Exit west 1734
+End
+
+
+#1736
+Name Bend in the Hall~
+Desc The hallway bends to the north and to the west here.  From the westward
+hall you hear the telltale clangs and shouts of fighting.  The hall leads to
+an intersection a short distance north.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 1724
+Exit west 1735
+End
+
+
+#1737
+Name Soldiers' Barracks~
+Desc This room serves as barracks for the duergar Soldiers.  The only comfort
+that it offers is that of a stone bunk to sleep in.  The only exit is
+through the door to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1725
+EFlags door closed~
+End
+
+
+#1738
+Name Soldiers' Barracks~
+Desc This room serves as barracks for the duergar Soldiers.  The only comfort
+that it offers is that of a stone bunk to sleep in.  The only exit is
+through the door to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1726
+EFlags door closed~
+End
+
+
+#1739
+Name Officer's Quarters~
+Desc This room is the private quarters of one of the duergar Army officers. 
+Spartan accommodations are all this room posesses.  The only obvious exit
+from here is to the north through the door.  
+~
+Sector inside~
+Exit north 1727
+EFlags door closed~
+End
+
+
+#1740
+Name Mess Hall~
+Desc This is the west end of the mess hall.  There are many short tables set
+up here for use by the duergar.  The whole area is very organized and clean. 
+There is not much else of note here, save for some postings on the wall to
+the west.  The only exit is to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc west~
+A help wanted ad catches your eye....  'Wanted, cleaner to work in the
+Dry Stores once weekly, very little pay.  Ask the cook for details'.  
+~
+ExtraDesc wall~
+A help wanted ad catches your eye....  'Wanted, cleaner to work in the
+Dry Stores once weekly, very little pay.  Ask the cook for details'.  
+~
+ExtraDesc postings~
+A help wanted ad catches your eye....  'Wanted, cleaner to work in the
+Dry Stores once weekly, very little pay.  Ask the cook for details'.  
+~
+Exit east 1741
+End
+
+
+#1741
+Name Mess Hall~
+Desc This area has many dinning tables set up for the duergar who come here to
+eat and socialize.  It is very tidy here, not one thing seems to be out of
+place or dirty.  The smell of roasted meats lingers in the air.  The mess
+hall continues to the west, and an exit heads east to the duergar Market.  To
+the east is a door.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc door~
+On the door is inscribed 'Kitchen, cooks only!  ' 
+~
+ExtraDesc tables~
+These tables are all short, crafted to seat the duergar who dwell within the
+fortress.  
+~
+Exit north 1730
+Exit east 1742
+EFlags door closed~
+Exit west 1740
+End
+
+
+#1742
+Name The Kitchen~
+Desc You are inside of the kitchen.  It is large enough to cook for a hundred
+people at one time.  There are dozens of lava heated ovens along the wall to
+the north, as well as a large kettle suspended over a pit of fire.  Along
+the east wall are racks of spices and utensils, all kept orderly and labled.
+The only exit is through the door to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc utensils~
+The cook has fine cooking utensils organized upon the racks here.  There
+are pots and pans crafted of pure copper, as well as spoons, wisks, and
+tongs.  
+~
+ExtraDesc spices~
+You see salt, pepper, cinnamon, garlic, and a myriad of other spices used
+by the cook to season his foods.  
+~
+ExtraDesc racks~
+These racks are made of copper and contain all the necessary ingredients
+for the cook to make his meals with.  
+~
+ExtraDesc kettle~
+The kettle is currently empty, but it is large enough to cook soup for an
+entire army of hungry soldiers.  
+~
+ExtraDesc ovens~
+These are empty at the moment, but all are still very hot and ready to
+cook food for the populace of the fortress.  
+~
+Exit south 1746
+EFlags door closed locked pickproof~
+EKeyvnum 1790
+Exit west 1741
+EFlags door closed~
+End
+
+
+#1743
+Name Practice Yard~
+Desc This area is used by the duergar soldiers to practice thier fighting skills.
+It is enclosed by high basalt walls on all sides.  
+~
+RoomFlags indoors~
+Sector field~
+Exit east 1744
+Exit south 1747
+End
+
+
+#1744
+Name Practice Yard~
+Desc This area is used by the duergar soldiers to practice thier fighting skills.
+It is enclosed by high basalt walls on all sides.  
+A portal to the north leads back into the fortress proper.
+~
+RoomFlags no_mob indoors~
+Sector field~
+Exit north 1734
+Exit east 1745
+Exit south 1748
+Exit west 1743
+End
+
+
+#1745
+Name Practice Yard~
+Desc This area is used by the duergar soldiers to practice thier fighting skills.
+It is enclosed by high basalt walls on all sides.  
+~
+RoomFlags indoors~
+Sector field~
+Exit south 1749
+Exit west 1744
+End
+
+
+#1746
+Name Dry Stores~
+Desc This is a small, dark room used to keep root vegetables and jarred foods.
+There isn't much else of note in here.  
+~
+RoomFlags dark indoors no_portal nowhere~
+Sector inside~
+Exit north 1742
+EFlags door closed locked pickproof~
+EKeyvnum 1790
+End
+
+
+#1747
+Name Practice Yard~
+Desc This area is used by the duergar soldiers to practice thier fighting skills.
+It is enclosed by high basalt walls on all sides.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 1743
+Exit east 1748
+End
+
+
+#1748
+Name Practice Yard~
+Desc This area is used by the duergar soldiers to practice thier fighting skills.
+It is enclosed by high basalt walls on all sides.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 1744
+Exit east 1749
+Exit west 1747
+End
+
+
+#1749
+Name Practice Yard~
+Desc This area is used by the duergar soldiers to practice thier fighting skills.
+It is enclosed by high basalt walls on all sides.  
+~
+RoomFlags indoors~
+Sector field~
+Exit north 1745
+Exit west 1748
+End
+
+
+#1756
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1750 spec_thief
+M 1754 spec_cast_cleric
+M 1755 spec_thief
+M 1759 spec_cast_mage
+M 1792 spec_breath_fire
+M 1793 spec_breath_fire
+S
+
+
+
+#RESETS2
+M 0 1753 8 1701 1
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+M 0 1753 8 1703 1
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+M 0 1751 5 1704 1
+M 0 1752 5 1704 1
+M 0 1750 10 1704 2
+M 0 1750 10 1704 2
+M 0 1751 5 1705 1
+M 0 1752 5 1705 1
+M 0 1750 10 1705 2
+M 0 1750 10 1705 2
+M 0 1750 10 1706 2
+M 0 1750 10 1706 2
+M 0 1751 5 1706 1
+M 0 1752 5 1706 1
+O 0 1791 0 1708
+M 0 1753 8 1709 2
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+M 0 1753 8 1709 2
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+O 0 1791 0 1710
+O 0 1795 0 1712
+M 0 1756 8 1712 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+O 0 1795 0 1713
+M 0 1756 8 1713 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+O 0 1796 0 1714
+M 0 1757 2 1714 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1769 0 torso~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+E 0 1766 0 hands~
+E 0 1772 0 wielded~
+M 0 1750 10 1715 2
+M 0 1750 10 1715 2
+M 0 1751 5 1715 1
+M 0 1752 5 1715 1
+O 0 1788 0 1715
+M 0 1753 8 1719 2
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+M 0 1753 8 1719 2
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+O 0 1781 0 1721
+O 0 1787 0 1722
+O 0 1789 0 1723
+M 0 1754 1 1723 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+M 0 1758 1 1727 1
+E 0 1760 0 legs~
+E 0 1764 0 shield~
+E 0 1763 0 arms~
+E 0 1768 0 head~
+E 0 1762 0 feet~
+E 0 1767 0 torso~
+E 0 1766 0 hands~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+E 0 1776 0 wielded~
+M 0 1759 1 1728 1
+E 0 1760 0 legs~
+E 0 1770 0 waist~
+G 0 1771 0
+G 0 1778 0
+G 0 1783 0
+E 0 1777 0 wielded~
+O 0 1784 0 1728
+P 0 1771 1 1784 1
+P 0 1779 1 1784 1
+M 0 1792 1 1729 1
+G 0 3082 -1
+G 0 3144 -1
+G 0 19569 -1
+G 0 1000 -1
+G 0 3033 -1
+G 0 3137 -1
+G 0 3141 -1
+O 0 1797 0 1730
+M 0 1793 1 1731 1
+G 0 1760 0
+G 0 1765 0
+G 0 1773 0
+G 0 1774 0
+O 0 1791 0 1733
+M 0 1753 8 1734 2
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+M 0 1753 8 1734 2
+E 0 1760 0 legs~
+E 0 1774 0 wielded~
+O 0 1791 0 1735
+O 0 1795 0 1737
+M 0 1756 8 1737 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+O 0 1795 0 1738
+M 0 1756 8 1738 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+O 0 1796 0 1739
+M 0 1757 2 1739 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1769 0 torso~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+E 0 1766 0 hands~
+E 0 1772 0 wielded~
+M 0 1756 8 1740 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+M 0 1750 10 1741 2
+M 0 1750 10 1741 2
+M 0 1751 5 1741 1
+M 0 1752 5 1741 1
+M 0 1755 1 1742 1
+E 0 1775 0 wielded~
+E 0 1760 0 legs~
+E 0 1762 0 feet~
+G 0 1790 0
+M 0 1756 8 1743 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+M 0 1756 8 1745 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+O 0 1782 0 1746
+P 0 1780 1 1782 1
+P 0 1771 1 1782 1
+O 0 1785 0 1747
+P 0 1773 11 1785 1
+P 0 1774 10 1785 1
+M 0 1756 8 1748 1
+E 0 1760 0 legs~
+E 0 1765 0 shield~
+E 0 1762 0 feet~
+E 0 1773 0 wielded~
+E 0 1761 0 rwrist~
+E 0 1761 0 lwrist~
+O 0 1786 0 1749
+P 0 1765 13 1786 1
+P 0 1769 3 1786 1
+S
+
+
+
+#SHOPS
+#1792
+buy_type potion~
+buy_type scroll~
+buy_type wand~
+buy_type staff~
+profit_buy 250
+profit_sell 80
+close_hour 23
+END
+
+#1793
+buy_type armor~
+buy_type weapon~
+profit_buy 190
+profit_sell 80
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1793
+title Palo greeting~
+author Habbakuk~
+code say Make it quick, there is work to be done.
+grumble
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022867882
+END
+
+#1792
+title Ishan sales pitch~
+author Habbakuk~
+code say Welcome $n, can I help you?
+smile
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022867520
+END
+
+#1759
+title Ortan greet~
+author Habbakuk~
+code nod $n
+mq1 say >$n What do you have to report from Tulgard?
+mq3 eye
+mq6 peer $n
+mq10 say >$n Hold, you are not one of my spies.....
+mq12 smirk $n
+mq15 say >$n What business DO you have here then?
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1023130774
+END
+
+#1758
+title commander shout~
+author Habbakuk~
+code gasp
+say >$n What do you think you are doing here?!
+mq2 yell Guards! Guards! We have an intruder!
+mq4 yell Guards!
+mq8 say >$n You will never leave here alive!
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1023131069
+END
+
+#1757
+title officer greet~
+author Habbakuk~
+code yawn
+mq 4 say >$n I hope you have a really good reason for being here.
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022870916
+END
+
+#1756
+title soldier challenge~
+author Habbakuk~
+code say >$n Come to test your mettle with me?
+mq3 grin $n
+mq6 say >$n I could beat you bound and blindfolded!
+mq8 laugh
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022869861
+END
+
+#1754
+title cleric greet~
+author Habbakuk~
+code mq1 nod $n
+mq3 say >$n Praise Reorx!
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022871984
+END
+
+#1753
+title guard attention~
+author Habbakuk~
+code emote snaps to attention.
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022868258
+END
+
+#1752
+title female greet~
+author Habbakuk~
+code mq1 sigh
+mq3 say Those blasted kids!
+mq4 grumble
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022873188
+END
+
+#1751
+title male greet~
+author Habbakuk~
+code mq2 glare $n
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022872938
+END
+
+#1750
+title child laugh~
+author Habbakuk~
+code mq1 dance
+mq2 giggle
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1022872410
+END
+
+#1729
+author Habbakuk~
+disabled false
+END
+
+#0
+
+
+#$

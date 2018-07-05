@@ -1,0 +1,470 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Leaghe's Estate~
+ShortName   Leaghe's Estate~
+Builders    None~
+Credits     Nakasha~
+VNUMs       1260 1299
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    8
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Thu Sep  2 15:37:50 2004~
+End
+
+
+
+#MOBILES
+#1260
+Name stija mother~
+ShortD stija~
+LongD Leaghe’s mother, Stija wanders around, looking for something to do.~
+Desc This is Leaghe’s mother, Stija.  She was once very beautiful, and is still 
+an attractive woman, aging gracefully.  Her hair is long, and is a rich 
+chestnut brown that is just beginning to see streaks of grey.  Her hands are 
+rough and calloused, with swollen knuckles, indicating she is no stranger to 
+hard work.  
+~
+Race human~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -512
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks~
+AffBy  infrared dark_vision~
+Imm    summon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ENTRY 1260 100~
+MProg GREET 1260 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#1260
+Name wooden bench black wood~
+Short a black wooden bench~
+Desc Some black wooden benches sitting low to the ground is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 5000 DGJR 100 100
+Weight 70
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1261
+Name simple table highbacked chairs~
+Short a table with highbacked chairs~
+Desc A simple table with matching highbacked chairs sits here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 4000 DGJ 100 100
+Weight 0
+Material wood~
+End
+
+#1262
+Name a yellow cotton dress~
+Short a pretty yellow cotton dress~
+Desc A pretty yellow cotton dress lies here.~
+Level 1
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Wear     take about~
+End
+
+#1263
+Name tome history~
+Short a tome on history~
+Desc A tome on history lies here.~
+Level 1
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take hold~
+ExtraDesc tome on history~
+This book is a comprehensive volume on the history of the realm.  
+Unfortunately, the historian who wrote it was so boring no one could 
+possibly read it without falling asleep.  Still, it looks good on the shelf. 
+ 
+~
+End
+
+#1264
+Name carved wooden bookshelf~
+Short a carved wooden bookshelf~
+Desc A carved wooden bookshelf sits here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 20 0
+Weight 90
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1265
+Name a philosophical treatise~
+Short a philosophical treatise~
+Desc A philosophical treatise lies here, ready to be read.~
+Level 1
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take hold~
+ExtraDesc philosophical treatise~
+Quickly scanning the pages of this text, you discern that the author 
+questions the nature of existence.  He suggests that all of us are just 
+fictional characters in a role-playing game.  Obviously, this book is a load 
+of crap.  
+~
+End
+
+#1266
+Name book religion~
+Short a book on religion~
+Desc A book on religion lies here, waiting to be read.~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+ExtraDesc book on religion~
+This book describes all the major gods and goddesses of the realm: Anuir, 
+Delandria, Ixliam, Lena, Lucian, Nakasha, Ohri, and Shang-Ti.  A detailed 
+description of their beliefs, holidays, and customs makes this book quite 
+comprehensive.  
+~
+End
+
+#1267
+Name cistern~
+Short a cistern~
+Desc A cistern sits here.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#1268
+Name treasury key~
+Short `#`WLeaghe's `Ytreasury key`^~
+Desc `#`WLeaghe's `Ytreasury key `gis here.`^~
+Level 0
+ItemType roomkey~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#1260
+Name The old library~
+Desc A low sturdy building constructed of granite is here.  Years ago, this 
+building was a library, but it was eventually abandoned.  Repair work is now 
+evident, though - the old library is now inhabited.  To the north, solid 
+ebony-wood double doors are flanked by gray stone columns.  An `#`sinscription`^ 
+is carved above the doors.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc inscription ~
+The inscription reads, `#`W‘Belief is Power’`^.  
+~
+ExtraDesc ebony doors~
+These solid doors are made of a black wood and bound with copper.  
+~
+Exit north 1261
+EFlags door closed~
+Exit south 56034
+End
+
+
+#1261
+Name Main hall~
+Desc This spacious room has a floor of polished marble tiles.  Pleasant but 
+unimaginative tapestries hang from the walls, and low benches have been 
+placed near the walls.  The high ceiling in this chamber has a skylight of 
+opaque glass, allowing light to stream in during the day.  To the south is a 
+set of double-doors.  Open archways lead north and west, while a small pine 
+door is to the east.  
+~
+RoomFlags indoors light~
+Sector inside~
+Owner leaghe imari sakura~
+ExtraDesc ebony doors~
+These solid doors are made of a black wood and bound with copper.  
+~
+Exit north 1263
+Exit east 1262
+EFlags door closed obvious~
+Exit south 1260
+EFlags door closed~
+Exit west 1265
+End
+
+
+#1262
+Name A guest room~
+Desc . This is a small chamber set aside for use by visitors.  A small fireplace 
+is set against the east wall.  The furnishings here are typical of an 
+average bedroom.  The only exit is through the west door.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 1261
+EFlags door closed obvious~
+End
+
+
+#1263
+Name A pantry~
+Desc Though it may not be the original purpose of this room, it is currently 
+being used as a pantry.  The great fireplace on the west wall is used for 
+cooking, and the shelves and cupboards are filled with cooking utensils.  In 
+the corner is a hinged stone that goes down to the cellar.  An open archway 
+is to the south, and small wooden doors are to the north and east.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc fireplace ~
+This is a large fireplace, lined with brick.  A few charred logs still 
+smolder here.  A spit has been set up to roast meat here, and a cast-iron 
+cooking pot rests nearby.  
+~
+Exit north 1268
+EFlags door closed locked hard~
+EKeyvnum 1268
+Exit east 1264
+EFlags door closed~
+Exit south 1261
+Exit down 1269
+EFlags door closed~
+End
+
+
+#1264
+Name Stija’s Room~
+Desc This homey little room belongs to Stija, Leaghe’s mother.  A knitting basket 
+lies near a comfortable bed, and a few books lie on a comfortable chair, 
+awaiting a reader.  A cheery lamp illuminates this room.  The only exit is 
+through a wooden door to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 1263
+EFlags door closed~
+End
+
+
+#1265
+Name The library~
+Desc This is the main room of the library, where one can sit and read a bit if so 
+desired.  Tall shelves line the walls, filled with old books.  
+Unfortunately, most of this section is devoted to history - and it seems as 
+if only the most boring books were included.  The library extends to the 
+north and south, with an open archway to the east for those who wish to 
+exit.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1266
+EFlags door closed~
+Exit east 1261
+Exit south 1267
+End
+
+
+#1266
+Name Philosophy section~
+Desc One of the side rooms in the library, the books on the shelves here seem to 
+be devoted primarily to philosophy and existential theory.  Scanning the 
+volumes, you notice titles like ‘The Nature of Good and Evil’, ‘The 
+Conundrum of Conscious Thought’, and ‘What is a Soul?  ’.  The main section 
+of the library is to the south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 1265
+EFlags door closed~
+End
+
+
+#1267
+Name Religious Studies~
+Desc One of the side rooms in the library, the books on the shelves here seem to 
+be devoted primarily to theological discussions.  Books are included on a 
+number of deities and religions, including a few frankly erotic volumes.  
+All of the major religions that you are familiar with seem to be represented 
+here.  The main section of the library is to the north.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 1265
+End
+
+
+#1268
+Name Leaghe's room~
+Desc The owner of the estate, Leaghe, claims this room for his personal use.  It 
+contains a sprawling bed with rumpled covers, as well as a large desk and 
+chair.  The desk is strewn with indecipherable notes and scraps of paper, a 
+testimony to the studious nature of the occupant.  The only exit apparent is 
+a wooden door to the south.  
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit south 1263
+EFlags door closed locked hard~
+EKeyvnum 1268
+End
+
+
+#1269
+Name Cellar~
+Desc This area is cool and dark, perfect for storing perishable food items.  A 
+few barrels and crates have been discarded here.  A large pit carved in the 
+stone floor here is actually a cistern, which provides a supply of fresh 
+water.  
+~
+RoomFlags indoors~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit up 1263
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 1260 -1 1261
+O 0 773 -1 1262
+O 0 723 -1 1262
+O 0 1261 -1 1263
+M 0 1260 1 1263 1
+E 0 1262 -1 about~
+O 0 772 -1 1264
+O 0 704 -1 1264
+O 0 730 -1 1264
+O 0 714 -1 1265
+O 0 1264 -1 1265
+P 0 1263 1 1264 1
+O 0 1264 -1 1266
+P 0 1265 1 1264 1
+O 0 1264 -1 1267
+O 0 769 -1 1268
+O 0 710 -1 1268
+O 0 704 -1 1268
+O 0 1267 -1 1269
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#1260
+title stija's greeting~
+author Nakasha~
+code say > $n Hello, welcome to my home.
+smile $n
+say > $n If you're looking for my son, Leaghe, he's probably in the library.
+end
+endif
+~
+disabled false
+last_editor Shang-ti~
+last_editdate 1063250869
+END
+
+#0
+
+
+#$

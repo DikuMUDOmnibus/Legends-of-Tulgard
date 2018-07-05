@@ -1,0 +1,2833 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        City of Danaan~
+ShortName   City of Danaan~
+Builders    delandria~
+Credits     Delandria~
+VNUMs       2521 2593
+LComment    `#`Y[  ALL  ]`^
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#2521
+Name tavern keeper~
+ShortD a tavern keeper~
+LongD `wA tavern keeper is here waiting to serve you.`^~
+Desc . The Tavern keeper has served many a drink in his time in the realm.  He has 
+a medium build and has long straight black hair that is pulled back into a 
+long braid.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 2521 nightshade~
+MProg SPEECH 2523 livian~
+END
+
+#2522
+Name madam nazmeya~
+ShortD `#`wMadam Nazmeya`^~
+LongD `#`cMadam Nazmeya `wstands here dressed in her finest silk robe.`^~
+Desc ~
+Race dagorst~
+Align -1 0
+Level 120
+Hitroll 90
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d15+74
+DamType blast
+AC -900 -900 -900 -720
+Wealth 600
+Act    npc dont_wander cleric noalign healer~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil haste regeneration~
+Imm    summon charm magic weapon poison negative disease drowning~
+Res    charm fire cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GRALL 2522 100~
+END
+
+#2523
+Name tamad the baker~
+ShortD `#`wTamad the Baker`^~
+LongD `#`wTamad the `yBaker `wstands here kneeding some dough.`^~
+Desc A tall man with dark hair.  He is dressed in a black tunic and a white 
+apron.  A white turban rests on his head.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2524
+Name a grouchy looking male dagorst~
+ShortD `#`wa grouchy male Dagorst`^~
+LongD `#`wA grouchy looking Dagorst male is here cleaning his nails with a sharp knife.`^~
+Desc A tall man with dark hair.  He is dressed in a black tunic and a white 
+apron.  A white turban rests on his head.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2525
+Name zara the alchemist~
+ShortD `#`cZ`wara `wthe `cA`wlchemist`^~
+LongD `#`cZ`wara `wthe `cA`wlchemist stands here stirring a potion.`^~
+Desc . A beautiful Dagorst female with long dark hair and blue eyes.  She is 
+wearing a red silk sari and an expensive looking jeweled collar.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2526
+Name jin ~
+ShortD `#`wJin the shopkeeper`^~
+LongD `#`rJin `wthe shopkeeper is here polishing a pair of earrings.`^~
+Desc . A beautiful Dagorst female with long dark hair and blue eyes.  She is 
+wearing a red silk sari and an expensive looking jeweled collar.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Act2   avoids_all_attacks~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2527
+Name sultan guard~
+ShortD `#`wa `Broyal `wguard of the Sultan`^~
+LongD `#`wa `Broyal `wguard of the Sultan is here, standing at attention.`^~
+Desc ~
+Race dagorst~
+Align 1 0
+XPMod 120
+Level 42
+Hitroll 1560
+HitDice 8d11+385
+ManaDice 3d5+80
+DamDice 8d9+39
+DamType pound
+AC -460 -460 -460 -404
+Wealth 680
+Act    npc stay_area~
+AffBy  detect_hidden~
+Off    bash parry~
+Imm    charm~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2528
+Name aakmed banker~
+ShortD `#`sAakmed `wthe banker`^~
+LongD `#`sAakmed `wthe banker stands here waiting for your money.`^~
+Desc He looks very rich...
+~
+Race dagorst~
+Align 3 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType punch
+AC -700 -700 -700 -595
+Wealth 0
+Act    npc dont_wander stay_area changer~
+Act2   avoids_all_attacks~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2529
+Name shanahan the seamstress~
+ShortD `#`mShanahan `wthe Seamstress`^~
+LongD `#`mShanahan `wthe Seamstress stands here measuring some cloth out.`^~
+Desc ~
+Race dagorst~
+Align -1 0
+Level 120
+Hitroll 90
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d15+74
+DamType blast
+AC -900 -900 -900 -720
+Wealth 600
+Act    npc dont_wander stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil haste regeneration~
+Imm    summon charm magic weapon poison negative disease drowning~
+Res    charm fire cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2530
+Name sitar the seamster~
+ShortD `#`wSitar the Seamster`^~
+LongD `#`wSitar the Seamster stands here cutting some cloth out.`^~
+Desc ~
+Race dagorst~
+Align -1 0
+Level 120
+Hitroll 90
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d15+74
+DamType blast
+AC -900 -900 -900 -720
+Wealth 600
+Act    npc dont_wander stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil haste regeneration~
+Imm    summon charm magic weapon poison negative disease drowning~
+Res    charm fire cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2531
+Name dagorst female~
+ShortD `#`wa dagorstian female`^~
+LongD `#`wA `cdagorstian `wfemale is standing here.`^~
+Desc ~
+Race dagorst~
+Align 1 -3
+XPMod 125
+Level 39
+Hitroll 2
+HitDice 7d11+375
+ManaDice 3d5+75
+DamDice 8d9+36
+DamType punch
+AC -430 -430 -430 -365
+Wealth 341
+Act    npc no_tame stay_area warrior~
+Off    dodge kick~
+Res    poison disease~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#2532
+Name assassin dark cloaked figure~
+ShortD `#`wan assassin`^~
+LongD `#`wa `sdark figure `wwrapped in a cloak is here.`^~
+Desc ~
+Race dagorst~
+Align 1 0
+XPMod 120
+Level 42
+Hitroll 1560
+HitDice 8d12+400
+ManaDice 3d5+85
+DamDice 9d9+41
+DamType pound
+AC -500 -500 -500 -445
+Wealth 680
+Act    npc stay_area~
+AffBy  detect_hidden~
+Off    bash parry~
+Imm    charm~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2533
+Name priestess~
+ShortD a priestess of `#`CJivanor`^~
+LongD A `#`CP`criestess`^ of the temple is here.~
+Desc A beautiful human female.  She is wearing a long white robe with purple 
+roses trimming the sleeves and hem.  There is a small tattoo of a red heart 
+on the underside of her wrist.  
+~
+Race human~
+Align -2 -2
+Level 130
+Hitroll 0
+HitDice 13d16+630
+ManaDice 13d17+903
+DamDice 13d17+84
+DamType slash
+AC -1000 -1000 -1000 -870
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric healer~
+AffBy  detect_invis detect_magic detect_hidden dark_vision regeneration~
+Off    berserk disarm dodge fast kick dirt_kick parry trip~
+Imm    summon charm slash poison negative disease drowning sleep hunger thirst fear~
+Res    magic bash cold mental illusion scry~
+Vuln   magic lightning holy light~
+Form   edible poison magical sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2534
+Name sultan~
+ShortD the sultan~
+LongD The `#`sSultan`^ is here sitting on a large pillow.~
+Desc ~
+Race dagorst~
+Align 1 0
+XPMod 120
+Level 93
+Hitroll 1560
+HitDice 9d13+450
+ManaDice 2d5+30
+DamDice 10d11+47
+DamType pound
+AC -620 -620 -620 -558
+Wealth 680
+Act    npc dont_wander no_tame stay_area thief warrior~
+AffBy  detect_evil detect_invis detect_hidden haste regeneration~
+AffBy2 vicegrip~
+Off    bash dodge kick parry~
+Imm    charm fire~
+Res    disease~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#2535
+Name trainer male man dagorst tall muscular~
+ShortD a tall muscular dagorstian male~
+LongD `#`wA tall muscular dagorstian man waits here to train you.`^~
+Desc ~
+Race dagorst~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander train practice gain~
+Act2   avoids_all_attacks~
+AffBy  detect_hidden infrared~
+Imm    charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2536
+Name a grouchy looking male dagorst~
+ShortD `#`wa grouchy male Dagorst`^~
+LongD `#`wA grouchy looking Dagorst male is here cleaning his nails with a sharp knife.`^~
+Desc A tall man with dark hair.  He is dressed in a black tunic and a white 
+apron.  A white turban rests on his head.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 2000
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2537
+Name tall muscular male dagorst~
+ShortD `#`wa tall muscular male dagorst`^~
+LongD `#`wa tall muscular male dagorst is here polishing a dagger.`^~
+Desc A tall man with dark hair.  He is dressed in a black tunic and a white 
+apron.  A white turban rests on his head.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2538
+Name giana shopkeeper~
+ShortD `#`wGiana`^~
+LongD `#`wGiana stands here petting her prized camel.`^~
+Desc . A beautiful Dagorst female with long dark hair and blue eyes.  She is 
+wearing a red silk sari and an expensive looking jeweled collar.  
+~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2539
+Name aliana shopkeeper~
+ShortD `#`wAliana`^~
+LongD `#`wAliana is standing here taming a small dog.`^~
+Desc ~
+Race dagorst~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Imm    summon charm magic weapon~
+Res    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#2540
+Name camel~
+ShortD `#`wa `ycamel`^~
+LongD A large `#`ycamel`^ is standing here.~
+Desc The camel is a very strong mammal with wide, padded feet.  Thick leathery
+pads cover it's knees and chest.  Bushy eyebrows and long rows of eyelashes
+protect it's eyes from the sands.  Over 7 feet tall at it's hump, and
+weighing in excess of 1600 pounds, this dromedary would prove a formidable
+opponent.  `x 
+~
+Race centaur~
+Align 3 0
+Level 20
+Hitroll 30
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType chomp
+AC -45 -45 -45 -36
+Wealth 0
+Act    npc stay_area pet outdoors~
+Act2   no_random_obj~
+AffBy  detect_evil detect_good infrared~
+Imm    wood~
+Res    disease~
+Vuln   fire~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts ear eye tail~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#2541
+Name store guard~
+ShortD `#`wa really large store `sguard`^~
+LongD `#`wa really large store `sguard `wis standing here.`^~
+Desc ~
+Race dagorst~
+Align 1 0
+XPMod 120
+Level 50
+Hitroll 1560
+HitDice 8d11+385
+ManaDice 3d5+80
+DamDice 8d9+39
+DamType pound
+AC -460 -460 -460 -404
+Wealth 680
+Act    npc dont_wander stay_area~
+Act2   avoids_all_attacks~
+AffBy  detect_hidden~
+Off    bash parry~
+Imm    summon charm magic weapon bash~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg EXALL 2541 1~
+END
+
+#2542
+Name dagorst harem girl~
+ShortD `#`wa `sdagorstian `rharem `wgirl`^~
+LongD `#`wa `sdagorstian `rharem `wgirl is here.`^~
+Desc You find yourself looking at a young dagorstian female with charcoal black 
+hair that hangs around her shoulders in tight bouncy unruly curls. She is 
+just 5'3" tall but there is a lot packed into her small body.  Her feminine 
+build is very shapely and voluptuous and her skin is slightly tanned.  When 
+seen, her eyes are a bright green and tend to sparkle when she is up to 
+mischief.  She seems to carries herself with an elegant grace though she 
+seems to be quite friendly and playful.  There is a small tattoo around her 
+ankle of a small dagger with a rose entwined around it. 
+~
+Race dagorst~
+Align 1 -3
+XPMod 125
+Level 60
+Hitroll 2
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -243
+Wealth 341
+Act    npc dont_wander no_tame stay_area mage~
+Off    dodge kick~
+Res    poison disease~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#2543
+Name male man dagorst tall muscular letter~
+ShortD a tall muscular dagorstian male~
+LongD A tall muscular dagorstian man waits here to help you.~
+Desc ~
+Race dagorst~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -630
+Wealth 0
+Act    npc dont_wander~
+Act2   nohunt letter_courier~
+AffBy  detect_hidden infrared~
+Imm    charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2521
+Name featherbed bed~
+Short a fluffy bed made out of feathers~
+Desc A comfortable featherbed is sitting here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 2 1000 EHK 125 125
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#2522
+Name glass burning sand house special~
+Short `#`wa glass of the Burning Sand's house `cs`wpecial`^~
+Desc A glass of a clear strong smelling liquid sets here.~
+Level 0
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 250
+Rsize 50
+Values 4 4 'local specialty' 0 0
+Weight 250
+Material oldstyle~
+Wear     take hold~
+End
+
+#2523
+Name steak stake~
+Short a `#`ysteak`^ on a `#`ystake`^~
+Desc Some delicious `#`ysteak`^ on a `#`ystake`^ is sitting here.~
+Level 0
+ItemType food~
+Cost 40
+Durability 5
+Asize 1
+Rsize 50
+Values 15 30 0 0 0
+Weight 1
+Material steak~
+Wear     take hold~
+End
+
+#2524
+Name rug comfy cushion~
+Short a `#`rrug piled high with`^ comfy cushions`^~
+Desc A rug, piled high with`#`y comfy cushions`^, lies here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 3000 BEHK 130 130
+Weight 0
+Material unknown~
+End
+
+#2525
+Name hot bath pool~
+Short a hot bath pool~
+Desc A `#`Csteaming-hot`^ pool of water is here. It looks inviting.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 CFIL 110 120
+Weight 0
+Material water~
+Extra    nodegrade~
+End
+
+#2526
+Name desert waterskin skin~
+Short `#`ya desert waterskin`^~
+Desc A waterskin lies here.~
+Level 10
+ItemType drinkcontainer~
+Cost 30
+Durability 5
+Asize 3
+Rsize 50
+Values 50 50 water 0 0
+Weight 3
+Material skin~
+Extra    burnproof~
+Wear     take~
+End
+
+#2527
+Name black iron lantern~
+Short `#`wa `sblack iron `wlantern covered with `Rj`re`Rw`re`Rl`rs`^~
+Desc A `#`Sblack iron`^ lantern has been left here.~
+Level 10
+ItemType light~
+Cost 100
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 150 0 0
+Weight 100
+Material iron~
+Extra    burnproof~
+Wear     take~
+Affect modifier -1 10 -1 move 40 0
+End
+
+#2528
+Name roast chicken~
+Short `#`ya roast chicken`^~
+Desc A roast chicken is lying here.~
+Level 1
+ItemType food~
+Cost 23
+Durability 5
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#2529
+Name bottle goat milk~
+Short `#`wa `Wbottle `wof goat `Wmilk`^~
+Desc A bottle of milk is sitting here.~
+Level 1
+ItemType drinkcontainer~
+Cost 30
+Durability 5
+Asize 50
+Rsize 50
+Values 20 20 milk 0 0
+Weight 50
+Material oldstyle~
+Wear     take hold~
+End
+
+#2530
+Name date pie~
+Short `#`wa sweet pie made from `ydates`^~
+Desc `#`wa sweet pie made from `ydates `wis lying here.`^~
+Level 1
+ItemType food~
+Cost 20
+Durability 5
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material pie~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#2531
+Name blank scroll~
+Short a blank scroll~
+Desc A blank scroll is here.~
+Level 1
+ItemType scroll~
+Cost 70
+Durability 5
+Asize 0
+Rsize 50
+Values 1 '' '' '' ''
+Weight 0
+Material paper~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#2532
+Name empty potion~
+Short an empty potion~
+Desc A potion bottle is here.~
+Level 1
+ItemType potion~
+Cost 70
+Durability 5
+Asize 0
+Rsize 50
+Values 1 '' '' '' ''
+Weight 0
+Material clay~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#2533
+Name altar~
+Short an altar to `#`CJivanor`^~
+Desc An altar to `#`CJivanor`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 QR 150 150
+Weight 5000
+Material stone~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#2534
+Name hip belt silver bells~
+Short `#`wa hip belt lined with `ss`wi`sl`wv`se`wr bells`^~
+Desc A silver belt is lying here, it is covered in bells.~
+Level 15
+ItemType container~
+Cost 500
+Durability 5
+Asize 5
+Rsize 50
+Values 700 A 0 100 100
+Weight 10
+Material cloth~
+Extra    burnproof~
+Wear     take waist~
+Affect modifier -1 15 -1 hitroll 1 0
+Affect modifier -1 15 -1 damroll 1 0
+End
+
+#2535
+Name silver anklet bells~
+Short `#`wan anklet with `ss`wi`sl`wv`se`wr bells`^~
+Desc `#`wan anklet with `ss`wi`sl`wv`se`wr bells has slipped off someones ankle here.`^~
+Level 15
+ItemType jewelry~
+Cost 750
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take ankle~
+Affect modifier -1 15 -1 ac -5 0
+Affect modifier -1 15 -1 hp 2 0
+Affect modifier -1 15 -1 saves -2 0
+Affect modifier -1 15 -1 hitroll 2 0
+Affect modifier -1 15 -1 damroll 2 0
+End
+
+#2536
+Name silver choker bells~
+Short `#`wa choker with `ss`wi`sl`wv`se`wr bells`^~
+Desc `#`wa choker with `ss`wi`sl`wv`se`wr bells is laying here.`^~
+Level 15
+ItemType jewelry~
+Cost 750
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take neck~
+Affect modifier -1 0 -1 ac -5 0
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 saves -2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+End
+
+#2537
+Name silver bracelet bells~
+Short `#`wa `ss`wi`sl`wv`se`wr bracelet with dangling bells`^~
+Desc `#`wa `ss`wi`sl`wv`se`wr bracelet with dangling bells lays here.`^~
+Level 25
+ItemType jewelry~
+Cost 750
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take wrist~
+Affect modifier -1 25 -1 damroll 3 0
+Affect modifier -1 25 -1 hitroll 3 0
+End
+
+#2538
+Name pair silver zills~
+Short `#`wa pair of `ss`wi`sl`wv`se`wr zills`^~
+Desc `#`wa pair of `ss`wi`sl`wv`se`wr zills are on the ground here.`^~
+Level 5
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take finger~
+Affect modifier -1 5 -1 hp 1 0
+Affect modifier -1 5 -1 damroll 1 0
+Affect modifier -1 5 -1 hitroll 1 0
+End
+
+#2539
+Name midriff baring beaded vest~
+Short `#`wa midriff baring `Rb`re`sa`Rd`re`Rd `wvest`^~
+Desc `#`wa small vest is laying on the floor.`^~
+Level 14
+ItemType armor~
+Cost 250
+Durability 5
+Condition 90
+Asize 12
+Rsize 50
+Values 2 2 2 1 0
+Weight 2
+Material cloth~
+Wear     take torso~
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#2540
+Name silk beaded sari~
+Short `#`wa silk `Rb`re`wa`sd`re`Rd `wsari`^~
+Desc `#`wa silk `Rb`re`wa`sd`re`Rd `wsari is lying on the floor.`^~
+Level 24
+ItemType armor~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6 6 4 0
+Weight 14
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#2541
+Name long flowing tiered skirt~
+Short `#`wa long flowing `Rt`ri`we`sr`re`Rd `wskirt`^~
+Desc `#`wa long flowing `Rt`ri`we`sr`re`Rd `wskirt has been left here.`^~
+Level 20
+ItemType armor~
+Cost 450
+Durability 5
+Asize 1
+Rsize 50
+Values 5 7 3 4 0
+Weight 1
+Material cloth~
+Wear     take legs~
+Affect modifier -1 0 -1 constitution 1 0
+Affect modifier -1 0 -1 damroll 1 0
+End
+
+#2542
+Name pair of silk harem pants~
+Short `#`wa pair of `Rs`ri`wl`sk `Rh`ra`wr`se`Rm `wpants`^~
+Desc `#`wa pair of `Rs`ri`wl`sk `Rh`ra`wr`se`Rm `wpants have been left here.`^~
+Level 20
+ItemType armor~
+Cost 450
+Durability 5
+Asize 1
+Rsize 50
+Values 5 7 3 4 0
+Weight 1
+Material cloth~
+Wear     take legs~
+Affect modifier -1 0 -1 constitution 1 0
+Affect modifier -1 0 -1 damroll 1 0
+End
+
+#2543
+Name silk tunic~
+Short `#`wa `Rs`ri`wl`sk `Rt`ru`wn`si`Rc`^~
+Desc `#`wa `Rs`ri`wl`sk `Rt`ru`wn`si`Rc `whas been left here.`^~
+Level 20
+ItemType armor~
+Cost 250
+Durability 5
+Condition 90
+Asize 12
+Rsize 50
+Values 2 2 2 1 0
+Weight 2
+Material cloth~
+Wear     take torso~
+Affect modifier -1 20 -1 hitroll 2 0
+End
+
+#2544
+Name black silk slippers~
+Short `#`wa pair of `sblack silk `wslippers`^~
+Desc `#`wa pair of `sblack silk `wslippers have been lying here.`^~
+Level 12
+ItemType armor~
+Cost 200
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 1 2 2 1 0
+Weight 50
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 0 -1 ac -5 0
+End
+
+#2545
+Name goat cheese~
+Short `#`wa piece of goat `Ycheese`^~
+Desc `#`wa piece of goat `Ycheese `whas been left here.`^~
+Level 0
+ItemType food~
+Cost 15
+Durability 5
+Asize 10
+Rsize 50
+Values 10 10 0 0 0
+Weight 10
+Material cheese~
+Wear     take~
+End
+
+#2546
+Name jeweled collar~
+Short `#`wan elegant `Mj`me`Mw`me`Ml`me`Md `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 5 -1 damroll 5 0
+Affect modifier -1 5 -1 hitroll 5 0
+End
+
+#2547
+Name jeweled collar~
+Short `#`wan elegant `Yj`ye`Yw`ye`Yl`ye`Yd `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2548
+Name jeweled collar~
+Short `#`wan elegant `Bj`be`Bw`be`Bl`be`Bd `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2549
+Name jeweled collar~
+Short `#`wan elegant `Gj`ge`Gw`ge`Gl`ge`Gd `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2550
+Name jeweled collar~
+Short `#`wan elegant `Cj`ce`Cw`ce`Cl`ce`Cd `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2551
+Name jeweled collar~
+Short `#`wan elegant `?j`?e`?w`?e`?l`?e`?d `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2552
+Name potion divine healing~
+Short a potion of `#`cdivine healing`^~
+Desc A potion lies here.~
+Level 16
+ItemType potion~
+Cost 250
+Durability 5
+Asize 2
+Rsize 50
+Values 16 heal heal '' ''
+Weight 2
+Material unknown~
+Wear     take hold~
+End
+
+#2553
+Name potion true sight~
+Short a potion of true sight~
+Desc A potion of true sight is here.~
+Level 4
+ItemType potion~
+Cost 290
+Durability 5
+Asize 10
+Rsize 50
+Values 10 'detect invis' 'detect magic' 'detect hidden' ''
+Weight 10
+Material glass~
+Extra    magic~
+Wear     take hold~
+End
+
+#2554
+Name black leather sandals~
+Short `#`wa pair of `sblack leather `wsandals`^~
+Desc `#`wa pair of `sblack leather `wsandals have been left here.`^~
+Level 12
+ItemType armor~
+Cost 200
+Durability 5
+Condition 90
+Asize 30
+Rsize 50
+Values 1 2 2 1 0
+Weight 50
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 0 -1 ac -5 0
+End
+
+#2555
+Name curved black dagger~
+Short `#`wa `wCurved `SBlack Dagger`^~
+Desc A small curved black dagger lies on the ground here.~
+Level 65
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 75
+Rsize 50
+Values dagger 4 12 flame AE
+Weight 15
+Material iron~
+Extra    burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher anti-paladin~
+Affect modifier -1 65 -1 damroll 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 agility 3 0
+End
+
+#2556
+Name jeweled curved scimitar~
+Short `#`wa `Rj`re`Rw`re`Rl`re`Rd `wcurved `sscimitar`^~
+Desc A curved scimitar embedded with jewels is laying here.~
+Level 65
+ItemType weapon~
+Cost 1318
+Durability 5
+Asize 35
+Rsize 50
+Values sword 16 3 slash EG
+Weight 30
+Material iron~
+Extra    burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances thief warrior paladin spellfilcher anti-paladin~
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#2557
+Name black leather breastplate~
+Short `#`sa Black Leather Breastplate`^~
+Desc A breastplate lies here.~
+Level 50
+ItemType armor~
+Cost 1300
+Durability 5
+Asize 16
+Rsize 50
+Values 17 17 20 12 0
+Weight 40
+Material leather~
+Extra    bless burnproof~
+Wear     take torso~
+Affect modifier -1 0 -1 ac -15 0
+End
+
+#2558
+Name black leather leggings~
+Short `#`sa pair of black leather leggings`^~
+Desc A pair of black leather leggings are on the ground here.~
+Level 62
+ItemType armor~
+Cost 1245
+Durability 5
+Asize 30
+Rsize 50
+Values 15 15 15 12 0
+Weight 30
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+Affect modifier -1 0 -1 agility 4 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+End
+
+#2559
+Name black leather bracer~
+Short `#`sa black leather bracer`^~
+Desc A black leather bracer is waits to be worn.~
+Level 65
+ItemType armor~
+Cost 1100
+Durability 5
+Asize 10
+Rsize 50
+Values 10 10 10 8 0
+Weight 10
+Material leather~
+Extra    burnproof~
+Wear     take wrist~
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 65 -1 ac -2 0
+End
+
+#2560
+Name black leather armguards~
+Short `#`sa pair of black leather armguards`^~
+Desc A pair of black leather armguards are on the ground here.~
+Level 65
+ItemType armor~
+Cost 1231
+Durability 5
+Asize 200
+Rsize 50
+Values 11 11 11 9 0
+Weight 200
+Material leather~
+Extra    burnproof~
+Wear     take arms~
+Affect modifier -1 0 -1 ac -4 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 4 0
+Affect modifier -1 0 -1 hp 2 0
+Affect modifier -1 0 -1 saves -4 0
+End
+
+#2561
+Name black leather helmet~
+Short `#`sa black leather helmet`^~
+Desc A black leather helmet is on the ground here.~
+Level 65
+ItemType armor~
+Cost 1366
+Durability 5
+Asize 35
+Rsize 50
+Values 13 13 13 11 0
+Weight 30
+Material leather~
+Extra    burnproof~
+Wear     take head~
+Affect modifier -1 0 -1 intuition -1 0
+Affect modifier -1 0 -1 constitution 2 0
+Affect modifier -1 0 -1 damroll 6 0
+Affect modifier -1 0 -1 hitroll 4 0
+End
+
+#2562
+Name silk boxer shorts~
+Short `#`wa `Rs`re`Rx`ry `wpair of `Ws`wi`Wl`wk `Rb`rox`re`Rr`rs`^~
+Desc A pair of boxer shorts have been left here.~
+Level 10
+ItemType clothing~
+Cost 220
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Wear     take legs~
+Affect modifier -1 10 -1 presence 1 0
+End
+
+#2563
+Name sexy silk pajama bottoms~
+Short `#`wa pair of `Rs`re`Rx`ry `Ws`wi`Wl`wk `Rp`ra`Rj`ra`Rm`ra `Wb`wo`Wt`wt`Wo`wm`Ws`^~
+Desc A pair of silk pajama bottoms are on the ground here.~
+Level 10
+ItemType clothing~
+Cost 220
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Wear     take legs~
+Affect modifier -1 0 -1 presence 1 0
+End
+
+#2564
+Name sexy silk pajama top~
+Short `#`wa `Rs`re`Rx`ry `Ws`wi`Wl`wk `Rp`ra`Rj`ra`Rm`ra `Wt`wo`Wp`^~
+Desc A silk pajama top is on the ground here.~
+Level 10
+ItemType clothing~
+Cost 220
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Wear     take torso~
+Affect modifier -1 0 -1 presence 1 0
+End
+
+#2565
+Name soft silk robe~
+Short `#`wa soft `Ws`wi`Wl`wk `Rr`ro`Rb`re`^~
+Desc A soft looking silk robe is on the ground here.~
+Level 10
+ItemType clothing~
+Cost 220
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Wear     take about~
+Affect modifier -1 0 -1 presence 1 0
+End
+
+#2566
+Name black velvet robes~
+Short `#`wa `SB`wlack `sV`welvet `SR`wobe`^~
+Desc A fine set of black robes are here.~
+Level 90
+ItemType armor~
+Cost 1800
+Durability 5
+Asize 0
+Rsize 50
+Values 22 22 22 18 0
+Weight 10
+Material velvet~
+Extra    magic nonmetal nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take about~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher anti-paladin~
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 hp 4 0
+Affect modifier -1 0 -1 memory 5 0
+End
+
+#2567
+Name dagger of the sultan~
+Short `#`wthe `sdagger `wof the `sSultan`^~
+Desc A large dagger with a glowing white blade is on the ground here.~
+Level 90
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 13 5 stab DG
+Weight 25
+Material metal~
+Extra    glow nolocate nodegrade burnproof~
+Extra2   nodecay~
+Wear     take wield~
+Affect modifier -1 90 -1 hitroll 3 0
+Affect modifier -1 90 -1 damroll 3 0
+Affect modifier -1 90 -1 strength 3 0
+End
+
+#2568
+Name jeweled collar~
+Short `#`wan elegant `Rj`re`Rw`re`Rl`re`Rd `wcollar`^~
+Desc A jewelled collar is laying on the ground here.~
+Level 5
+ItemType jewelry~
+Cost 10000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material jewel~
+Extra    noremove nodegrade burnproof nouncurse norestring~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 damroll 5 0
+Affect modifier -1 0 -1 hitroll 5 0
+End
+
+#2569
+Name diamond stud earring~
+Short `#`wa `Wd`wi`Wa`wm`Wo`wn`Wd `sstud `wearring`^~
+Desc A diamond earring has been dropped here.~
+Level 45
+ItemType jewelry~
+Cost 250
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material diamond~
+Extra    magic nodegrade~
+Extra2   nodecay~
+Wear     take ear~
+Affect modifier -1 45 -1 damroll 4 0
+Affect modifier -1 45 -1 hitroll 4 0
+End
+
+#2570
+Name small gift box~
+Short `#`wa small `Rg`ri`Rf`rt `wbox`^~
+Desc A small gift box is laying here.~
+Level 0
+ItemType container~
+Cost 30
+Durability 5
+Condition 90
+Asize 10
+Rsize 50
+Values 10 AC 0 10 100
+Weight 10
+Material cardboard~
+Wear     take hold~
+End
+
+#2571
+Name soft white cloth turban~
+Short `#`wa soft `Ww`wh`Wi`wt`We `wcloth `Wt`wurban`^~
+Desc A soft looking piece of cloth is here.~
+Level 20
+ItemType armor~
+Cost 300
+Durability 5
+Asize 80
+Rsize 50
+Values 5 5 5 4 0
+Weight 5
+Material cloth~
+Extra    nodegrade burnproof~
+Wear     take head~
+End
+
+#2572
+Name baggy cloth harem pants~
+Short `#`wa pair of baggy `sc`wl`so`wt`sh `wharem `sp`wants`^~
+Desc A pair of baggy harem pants are here.~
+Level 20
+ItemType armor~
+Cost 450
+Durability 5
+Asize 1
+Rsize 50
+Values 5 7 3 4 0
+Weight 1
+Material cloth~
+Wear     take legs~
+Affect modifier -1 0 -1 constitution 1 0
+Affect modifier -1 0 -1 damroll 1 0
+End
+
+#2573
+Name soft cotton desert tunic~
+Short `#`wa soft `sc`wo`st`wt`so`wn desert `st`wunic`^~
+Desc A soft cotton tunic is here.~
+Level 20
+ItemType armor~
+Cost 250
+Durability 5
+Condition 90
+Asize 12
+Rsize 50
+Values 2 2 2 1 0
+Weight 2
+Material cloth~
+Wear     take torso~
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#2574
+Name assasin thin black cloak ~
+Short `#`wA thin `sblack `wc`sl`wo`sa`wk`^~
+Desc An assassin's cloak covers the floor.~
+Level 50
+ItemType armor~
+Cost 1500
+Durability 5
+Asize 5
+Rsize 50
+Values 12 12 12 10 0
+Weight 50
+Material silk~
+Extra    magic nodegrade~
+Wear     take about~
+Affect modifier -1 0 -1 quickness 2 0
+Affect modifier -1 0 -1 damroll 4 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#2575
+Name soft black cloth turban~
+Short `#`wa soft `sb`wl`sa`wc`sk `wcloth `Wt`wurban`^~
+Desc A soft looking piece of cloth is here.~
+Level 20
+ItemType armor~
+Cost 300
+Durability 5
+Asize 80
+Rsize 50
+Values 5 5 5 4 0
+Weight 5
+Material cloth~
+Extra    nodegrade burnproof~
+Wear     take head~
+End
+
+#2576
+Name silver dangling filagree earring ~
+Short `#`wa `ss`wi`sl`wv`se`wr dangling `sfilagree `wearring`^~
+Desc A silver filagree earring is laying here.~
+Level 15
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material silver~
+Extra    glow magic~
+Wear     take ear~
+Affect modifier -1 15 -1 hitroll 2 0
+Affect modifier -1 15 -1 damroll 2 0
+End
+
+#2577
+Name parchment letter note~
+Short a piece of parchment~
+Desc A piece of parchment~
+Level 1
+ItemType parchment~
+Cost 11
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 human 0 Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#2578
+Name dagger of marksmanship~
+Short `#`wa `sDagger `wof `sMar`wksm`sans`whip`^~
+Desc A perfect looking dagger is laying here.~
+Level 55
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 13 3 suction L
+Weight 0
+Material platinum~
+Extra    magic antigood nolocate nodegrade chaos norestring~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage thief spellfilcher anti-paladin~
+Affect modifier -1 55 -1 hitroll 2 0
+Affect modifier -1 55 -1 damroll 2 0
+Affect modifier -1 55 -1 hp 2 0
+End
+
+#2579
+Name stone fountain~
+Short a stone fountain~
+Desc A stone fountain sits here, bubbling happily.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 20000 20000 water 0 0
+Weight 0
+Material stone~
+Extra    glow nodegrade~
+Extra2   nodecay~
+End
+
+#2580
+Name heavy ball chain shackles~
+Short a set of heavy iron shackles~
+Desc Hanging off the wall is a set of heavy `#`siron`^ shackles.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 CFILS 100 100
+Weight 10000
+Material unknown~
+Extra    nopurge nonmetal nodegrade norestring nogetall~
+Extra2   nodecay~
+ExtraDesc shackles ~
+Glancing at these shackles, they appear very thick and harsh. Strong enough 
+to hold just about any creature. There is a chain connected to a collar as 
+well heavy chains connected to wrist and ankle holds.
+~
+End
+
+#2581
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 2538 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#2582
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 2538 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#2521
+Name Entrance to the City of Danaan~
+Desc Entering the city of Danaan there is nothing to meet you but sand all around 
+you.  To your north you can see a guard post and a dirt road.  
+~
+RoomFlags light~
+Sector city~
+Exit east 2522
+Exit west 58921
+End
+
+
+#2522
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+The town is to your east and there is a guard tent to your south.  
+~
+RoomFlags light~
+Sector city~
+Exit east 2523
+Exit south 2544
+Exit west 2521
+End
+
+
+#2523
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There is a deep well here for fresh drinking water.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2543
+Exit east 2524
+Exit west 2522
+End
+
+
+#2524
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+A large bon fire is burning brightly here and there are several places to 
+rest around it.  To your east you can see a tent larger than any of the 
+others.  There are guards standing around it.  
+~
+RoomFlags light~
+Sector city~
+Exit east 2525
+Exit south 2526
+Exit west 2523
+End
+
+
+#2525
+Name Sultan's Tent~
+Desc This is the largest tent in the town.  It is almost as large as the inn.  
+The floor is covered in plush rugs and there is a fire burning in the middle 
+of the tent.  Fluffy pillows are located throughout the tent as well as 
+trays of food and drink.  Whoever lives here is very wealthy.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit west 2524
+End
+
+
+#2526
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2524
+Exit east 2570
+Exit south 2527
+Exit west 755
+End
+
+
+#2527
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2526
+Exit east 2564
+Exit south 2528
+Exit west 743
+End
+
+
+#2528
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There are two larger tents here.  They look like a business.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2527
+Exit east 2545
+Exit south 2529
+Exit west 2546
+End
+
+
+#2529
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2528
+Exit east 2530
+End
+
+
+#2530
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit east 2531
+Exit west 2529
+End
+
+
+#2531
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There are two larger tents here.  They look like a business.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2547
+Exit east 2532
+Exit south 2548
+Exit west 2530
+End
+
+
+#2532
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2533
+Exit east 2549
+Exit west 2531
+End
+
+
+#2533
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2534
+Exit east 2569
+Exit south 2532
+Exit west 2565
+End
+
+
+#2534
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There are two larger tents here.  They look like a business.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2535
+Exit east 2550
+Exit south 2533
+Exit west 2551
+End
+
+
+#2535
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2536
+Exit south 2534
+End
+
+
+#2536
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There is a large tent to your east, it looks like a business.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2537
+Exit east 2552
+Exit south 2535
+End
+
+
+#2537
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There is a large tent to your north.  Several people are walking in and out 
+of it carrying towels and wearing robes.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2553
+Exit south 2536
+Exit west 2538
+End
+
+
+#2538
+Name Dirt Road~
+Desc . You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There is a large tent to your north but to your south there is actually a 
+two story building.  The crowd of people here is large.  There is a tavern 
+to your south and a tent made out of black canvas to your north.  Several 
+half naked ladies are standing around it.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2554
+Exit east 2537
+Exit south 2555
+Exit west 2539
+End
+
+
+#2539
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit east 2538
+Exit west 2540
+End
+
+
+#2540
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There are two larger tents here.  They look like a business.  The smell of 
+fresh bread is in the air.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2557
+Exit east 2539
+Exit south 2558
+Exit west 2541
+End
+
+
+#2541
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+~
+RoomFlags light~
+Sector city~
+Exit east 2540
+Exit west 2542
+End
+
+
+#2542
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There are two larger tents here.  To your west there is a tent that looks 
+like a business and to your north there is a large tent that looks like it 
+is a a temple.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2559
+Exit east 2541
+Exit south 2543
+Exit west 2560
+End
+
+
+#2543
+Name Dirt Road~
+Desc You are on a hard packed dirt road.  There are very few actual buildings 
+around.  Most all of the houses and businesses are tents of various types.  
+There is a deep well here for fresh drinking water.  
+~
+RoomFlags light~
+Sector city~
+Exit north 2542
+Exit east 756
+Exit south 2523
+End
+
+
+#2544
+Name Guards Tent~
+Desc This tent smells of dirt and sweat.  There are cots all over with sleeping 
+guards.  The floor is covered with thick ragged looking rugs and there is a 
+small fire in the middle of the tent.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2522
+End
+
+
+#2545
+Name Sitar's Clothing for Men~
+Desc The tent is an average sized tent.  It is made of red and white striped 
+canvas and the floor is covered in black carpet.  There are several tables 
+along the walls piled high with many kinds of fancy fabric.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit west 2528
+End
+
+
+#2546
+Name Shanahan's Exotic Clothing ~
+Desc The tent is an average sized tent.  It is made of red and white striped 
+canvas and the floor is covered in black carpet.  There are several tables 
+along the walls piled high with many kinds of fancy fabric.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit east 2528
+End
+
+
+#2547
+Name Dathan's Weaponry~
+Desc This tent looks just like the one to the south only it has weapons in it 
+instead of armor.  The room is brightly lit.  Light is glinting off the 
+newly polished weapons.  There are shelves and tables spread throughout the 
+room containing different types of weapons.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit south 2531
+End
+
+
+#2548
+Name Dathan's Armory~
+Desc This tent is brightly lit making the various armor glint in the light.  
+There are shelves and tables spread throughout the room containing different 
+types of armor.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit north 2531
+End
+
+
+#2549
+Name Training Field~
+Desc You find yourself standing in the middle of a large arena.  It is in a 
+circle and it is staked out with spears.  There is a man standing here 
+waiting for you.  
+~
+RoomFlags no_mob indoors light~
+Sector city~
+Exit west 2532
+End
+
+
+#2550
+Name Empty Tent~
+Desc This is a large empty tent..  It looks like some has just moved out.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 2534
+End
+
+
+#2551
+Name Empty Tent~
+Desc This is a large empty tent..  It looks like some has just moved out.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 2534
+End
+
+
+#2552
+Name Zara's Scroll's and Potions~
+Desc The tent is simply furnished.  The air smells sweet and spicy.  There is a 
+table in the back of the tent covered in different herbs and potions in the 
+making.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit west 2536
+End
+
+
+#2553
+Name Public Bath Tent~
+Desc The tent is hot and humid from the bath.  The floor is covered in carpets to 
+keep from getting your feet dirty and there are several screens along the 
+wall for privacy.  The water in the basin stays a constant temperature.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit south 2537
+End
+
+
+#2554
+Name A large and spacious tent~
+Desc There is a sweet and calming fragrance in the air.  The floors are covered 
+in plush carpets and there are several pillows around for you to rest on.  
+The lighting is dim with only a small fire in the corner of the tent.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit north 2556
+EFlags door closed~
+EKeywords door~
+Exit south 2538
+End
+
+
+#2555
+Name The Burning Sands Tavern~
+Desc The tent floor is covered with plush carpeting and pillows.  The tables are 
+setting low and the customers are all sitting on the ground.  There is a 
+tall bar in the back of the tent and several half dressed ladies are dancing 
+around.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit north 2538
+Exit up 2561
+End
+
+
+#2556
+Name A Darkened Room~
+Desc You find yourself in a small room in the backside of the tent.  The room is 
+extremely dark and the only light is a small lantern resing in the corner.  
+The floor is covered by thick carpeting..  
+~
+Sector inside~
+Exit south 2554
+EFlags door closed~
+End
+
+
+#2557
+Name Hamad's Tavern~
+Desc This is a small tent compared to most.  There are a couple of tables and 
+chairs for people to eat at.  It is rather hot in here and the room is 
+mostly filled with Hamad's baking supplies in the rear of the tent.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit south 2540
+End
+
+
+#2558
+Name A large Tent~
+Desc This tent is large but it is filled to the roof with boxes of junk.  You 
+would see that the floor is covered in old stained carpets if you could see 
+the floor through the boxes.  There is a counter in the middle of the tent.  
+
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit north 2540
+End
+
+
+#2559
+Name Temple of Jivanor~
+Desc This tent is made of all white canvas.  There is a flaming torch on either 
+side of the altar and the floor is covered in a crimson colored cloth.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Mana 110
+Heal 110
+Exit south 2542
+End
+
+
+#2560
+Name Jin's Jewelry and Dancewear~
+Desc This tent is large and spacious.  There are several tables along the walls 
+filled with different things for sale.  In the rear of the room there are 
+several ladies dancing and trying out the wares.  The floor is made of wood 
+instead of carpet and there are several lanterns lighting the room.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Exit east 2542
+End
+
+
+#2561
+Name Darkened Hallway~
+Desc You are standing in the hallway.  There are two rooms to your north and 
+south.  The walls and floors are made of the same kind of wood and there is 
+a single lantern on the wall that is dimly lighting the hallway.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 2562
+EFlags door closed~
+EKeywords door~
+Exit south 2563
+EFlags door closed~
+EKeywords door~
+Exit down 2555
+End
+
+
+#2562
+Name A small bedroom~
+Desc This room is a small but cozy bedroom.  The walls are made of a darkened 
+wood and there is a small lantern on a bedside table to light the room.  The 
+floors are made of the same wood as the walls.  
+~
+RoomFlags light~
+Sector inside~
+Exit south 2561
+EFlags door closed~
+End
+
+
+#2563
+Name A small bedroom~
+Desc This room is a small but cozy bedroom.  The walls are made of a darkened 
+wood and there is a small lantern on a bedside table to light the room.  The 
+floors are made of the same wood as the walls.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 2561
+EFlags door closed~
+End
+
+
+#2564
+Name Aakmed's Loans~
+Desc There is nothing inside of this tent except a single counter and a large 
+vault.  The floor is made of wood and there is a single lantern hanging from 
+the wall.  
+~
+RoomFlags indoors bank law light~
+Room2Flags no_steal~
+Sector inside~
+Exit west 2527
+End
+
+
+#2565
+Name Giana's Corral~
+Desc This really isnt a tent but a covered pavillion with several stalls housing 
+different animals.  The floor is covered in straw and there is a slight 
+stink in the air from the animals.  
+~
+RoomFlags indoors pet_shop light~
+Sector inside~
+Exit east 2533
+End
+
+
+#2566
+Name ~
+Desc ~
+RoomFlags imm_only nowhere noscry noscan~
+Sector inside~
+End
+
+
+#2567
+Name Aliana's Fine Collars~
+Desc This is a large tent made out of thick light colored canvas. The floor is 
+covered in soft black and crimson carpets. There is a counter in the middle 
+of the tent and several tables showing off many different kinds of collars. 
+~
+RoomFlags indoors nowhere noscry antimagic light~
+Sector inside~
+Exit west 2569
+End
+
+
+#2568
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#2569
+Name Entrance to a large tent~
+Desc This is a large tent made out of thick light colored canvas. The floor is 
+covered in soft black and crimson carpets. To the back of the tent is a 
+counter and several tables showing off many different kinds of collars. 
+~
+RoomFlags no_mob safe~
+Sector inside~
+Exit east 2567
+Exit west 2533
+End
+
+
+#2570
+Name Danaan Pigeon Courier~
+Desc Several cages with pigeons line the north wall, and letters are held in 
+small shelves along the south wall. For all the birds here, it appears to be 
+clean and tidy. To send a letter, type SENDLETTER. 
+~
+Sector inside~
+Exit west 2526
+End
+
+
+#2571
+Name Back room~
+Desc This room is dark and has no window. There are crates stacked along the 
+walls and a door leading down. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 2572
+EFlags door closed~
+EKeywords door~
+End
+
+
+#2572
+Name Basement~
+Desc This is the basement of the tavern. It is cramped and very cold. There is 
+some straw thrown about on the floor as well as a couple bags of rice. 
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit up 2571
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 2533 spec_cast_cleric
+M 2534 spec_nasty
+S
+
+
+
+#RESETS2
+M 0 2532 25 2523 5
+E 0 2574 -1 about~
+M 0 2527 30 2524 5
+M 0 2534 1 2525 1
+E 0 2566 -1 about~
+E 0 2567 -1 wielded~
+M 0 2531 25 2526 5
+M 0 2532 25 2529 5
+E 0 2569 -1 rear~
+M 0 2527 30 2529 5
+M 0 2531 25 2531 5
+M 0 2532 25 2532 5
+E 0 2569 -1 lear~
+M 0 2531 25 2535 5
+M 0 2527 30 2535 5
+M 0 2532 25 2537 5
+M 0 2527 30 2538 5
+M 0 2531 25 2539 5
+M 0 2532 25 2541 5
+M 0 2527 30 2542 5
+M 0 2531 25 2543 5
+O 0 2579 -1 2543
+M 0 2527 30 2544 5
+M 0 2530 1 2545 1
+G 0 2554 -1
+G 0 2543 -1
+G 0 2542 -1
+G 0 2562 -1
+G 0 2572 -1
+G 0 2573 -1
+G 0 2571 -1
+G 0 2575 -1
+M 0 2529 1 2546 1
+G 0 2544 -1
+G 0 2539 -1
+G 0 2540 -1
+G 0 2541 -1
+G 0 2563 -1
+G 0 2564 -1
+G 0 2565 -1
+M 0 2537 1 2547 1
+G 0 2555 -1
+G 0 2556 -1
+M 0 2536 1 2548 1
+G 0 2557 -1
+G 0 2558 -1
+G 0 2559 -1
+G 0 2560 -1
+G 0 2561 -1
+M 0 2535 1 2549 1
+M 0 2525 1 2552 1
+G 0 2532 -1
+G 0 2531 -1
+G 0 2552 -1
+G 0 2553 -1
+O 0 2525 -1 2553
+M 0 2522 1 2554 1
+O 0 2524 -1 2554
+M 0 2521 1 2555 1
+G 0 2522 -1
+G 0 2523 -1
+O 0 2524 -1 2555
+M 0 2542 1 2556 1
+E 0 2544 -1 feet~
+E 0 2536 -1 neck1~
+E 0 2536 -1 neck2~
+E 0 2538 -1 lfinger~
+E 0 2538 -1 rfinger~
+E 0 2537 -1 lwrist~
+E 0 2537 -1 rwrist~
+E 0 2535 -1 lankle~
+E 0 2535 -1 rankle~
+E 0 2534 -1 waist~
+E 0 2542 -1 legs~
+E 0 2540 -1 about~
+E 0 2539 -1 torso~
+E 0 2578 -1 wielded~
+M 0 2523 1 2557 1
+G 0 2545 -1
+G 0 2528 -1
+G 0 2530 -1
+G 0 2529 -1
+M 0 2524 1 2558 1
+G 0 2527 -1
+G 0 2526 -1
+O 0 2533 -1 2559
+M 0 2533 1 2559 1
+M 0 2526 1 2560 1
+G 0 2538 -1
+G 0 2537 -1
+G 0 2536 -1
+G 0 2535 -1
+G 0 2534 -1
+G 0 2576 -1
+G 0 2570 -1
+O 0 2521 -1 2562
+O 0 2521 -1 2563
+M 0 2528 1 2564 1
+M 0 2538 1 2565 1
+M 0 2540 1 2566 1
+M 0 2539 1 2567 1
+G 0 2568 -1
+G 0 2551 -1
+G 0 2550 -1
+G 0 2549 -1
+G 0 2548 -1
+G 0 2546 -1
+G 0 2547 -1
+M 0 2541 1 2569 1
+M 0 2543 1 2570 1
+G 0 2577 -1
+O 0 2581 -1 2571
+O 0 2580 -1 2572
+S
+
+
+
+#SHOPS
+#2521
+buy_type jewelry~
+buy_type treasure~
+buy_type scroll~
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#2523
+buy_type food~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2524
+buy_type drinkcontainer~
+buy_type light~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2525
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2526
+buy_type jewelry~
+buy_type armor~
+buy_type treasure~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2529
+buy_type clothing~
+buy_type armor~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2530
+buy_type clothing~
+buy_type jewelry~
+buy_type armor~
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2536
+buy_type armor~
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#2537
+buy_type weapon~
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#2538
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#2539
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#2543
+profit_buy 100
+profit_sell 50
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#2541
+author Delandria~
+code language native
+if race $n dagorst
+ say Welcome $n.
+ mob letpass
+ end
+endif
+sayto $n Your not welcome here!
+emote shoves you away.
+end
+~
+disabled false
+last_editor Delandria~
+last_editdate 1081558232
+END
+
+#2523
+title mob transfer~
+author Delandria~
+code mob transfer $n 2010
+~
+disabled false
+last_editor Delandria~
+last_editdate 1103476591
+END
+
+#2522
+author Delandria~
+code say Welcome traveler. How may Madam Nazmeya serve you?
+say Type 'HEAL' to see a list of services.
+smile $n
+~
+disabled false
+last_editor Delandria~
+last_editdate 1067138627
+END
+
+#2521
+title mob transfer~
+author Delandria~
+code mob transfer $n 2571
+~
+disabled false
+last_editor Delandria~
+last_editdate 1103427180
+END
+
+#0
+
+
+#$

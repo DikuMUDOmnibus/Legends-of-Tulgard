@@ -1,0 +1,238 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Player Shops~
+ShortName   ~
+Builders    none~
+Credits     Ixliam~
+VNUMs       46011 46099
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      1 1
+Security    9
+Colour      C~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:34:24 2005~
+End
+
+
+
+#MOBILES
+#46011
+Name emu~
+ShortD a slender emu~
+LongD (no default description)~
+Desc ~
+Race bird~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head legs heart brains guts hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#46012
+Name cyan bloodbane~
+ShortD cyan bloodbane~
+LongD A large green dragon is here.~
+Desc ~
+Race dragon~
+Align -3 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType slash
+AC -700 -700 -700 -574
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared flying~
+Imm    poison~
+Res    charm bash fire~
+Vuln   pierce cold~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#46013
+Name supplier~
+ShortD the supplier~
+LongD Aryn's supplier is here.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -560
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign nopurge indoors~
+AffBy  detect_invis detect_hidden sanctuary dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#46011
+Name ornate silver key~
+Short an `#`Sornate silver key`^~
+Desc An `#`Sornate silver key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material adamantium~
+Extra    glow nodrop nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#46012
+Name a four-post bed large ~
+Short a four-post bed~
+Desc A large four-post bed sits here, with `#`Wsilk`^ drapes.~
+Level 1
+ItemType furniture~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 3 1000 BEHK 200 200
+Weight 100
+Material wood~
+Extra    glow~
+End
+
+#46013
+Name chest of drawers~
+Short a small chest of drawers~
+Desc A small chest of drawers stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 ABCD 46011 100 0
+Weight 100
+Material wood~
+Extra    noremove~
+End
+
+#46014
+Name fireplace~
+Short a `#`Rblazing`^ fireplace~
+Desc A `#`Rblazing`^ fireplace is here, warming the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 9999
+Rsize 50
+Values 1 1000 FILO -80 -50
+Weight 9999
+Material brick~
+Extra    glow nopurge burnproof~
+End
+
+#46015
+Name aryn map shop sign~
+Short a map shop sign~
+Desc A sign is hanging outside Aryn's Map & Parchment Shop.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+ExtraDesc sign~
+`#`Y**************************************`^
+`Y*     `RAryn's Maps & Parchments       `Y*`^
+`Y*                                    *`^
+`Y*     `cSupplying Tulgard with `Y        `Y*`^
+`Y*   `cthe finest maps in the world.    `Y*`^
+`#`Y**************************************`^
+~
+End
+
+#0
+
+
+
+#ROOMS
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#46013
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

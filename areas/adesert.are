@@ -1,0 +1,2940 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        The Desert Oasis~
+ShortName   ~
+Builders    none~
+Credits     Myretha~
+VNUMs       10100 10199
+LComment    `#`C[ 30- 60]`^
+Security    9
+Colour      y~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Fri Dec 23 22:55:59 2005~
+End
+
+
+
+#MOBILES
+#10100
+Name abdul~
+ShortD abdul~
+LongD Abdul, a happy-go-lucky shopkeeper, stands here ready to haggle. ~
+Desc ~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -166
+Wealth 500
+Act    npc dont_wander~
+AffBy  detect_invis dark_vision~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10101
+Name scorpion~
+ShortD the `#`Ys`rc`Yo`rr`Yp`ri`Yo`rn`^~
+LongD `#A `rs`Yc`ro`Yr`rp`Yi`ro`Yn`^ lies here in wait.~
+Desc `rThe scorpion waits for you to make your move.`x
+~
+Race lizardman~
+Align 2 0
+Level 37
+Hitroll 37
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType sting
+AC -125 -125 -125 -102
+Wealth 370
+Act    npc stay_area~
+Act2   no_random_obj~
+AffBy  hide dark_vision~
+Off    backstab fast tail assist_vnum~
+Res    poison~
+Vuln   cold~
+Form   edible poison animal mountable cold_blood~
+Part   head legs heart brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#10102
+Name mp10103 mp10104 dune~
+ShortD a `#`ymagical force`^~
+LongD `~
+Desc ~
+Race unique~
+Align 3 0
+Level 200
+Hitroll 0
+HitDice 14d132+1100
+ManaDice 52d10+100
+DamDice 7d7+29
+DamType none
+AC -240 -240 -240 -80
+Wealth 0
+Act    npc dont_wander unseen~
+Act2   no_random_obj~
+AffBy  invisible~
+Imm    summon charm magic weapon~
+Form   non_skinable~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 10105 sacred scarab~
+MProg RANDOM 10106 5~
+END
+
+#10103
+Name camel~
+ShortD the `#`ycamel`^~
+LongD An ugly, wild `#`ycamel`^ spits as it paws at the ground.~
+Desc The camel is a very strong mammal with wide, padded feet.  Thick leathery
+pads cover it's knees and chest.  Bushy eyebrows and long rows of eyelashes
+protect it's eyes from the sands.  Over 7 feet tall at it's hump, and
+weighing in excess of 1600 pounds, this dromedary would prove a formidable
+opponent.  `x 
+~
+Race dog~
+Align 3 0
+Level 30
+Hitroll 30
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType chomp
+AC -95 -95 -95 -78
+Wealth 300
+Act    npc stay_area outdoors~
+Act2   no_random_obj~
+AffBy  haste berserk~
+Off    disarm fast dirt_kick assist_vnum gore~
+Res    bash fire cold~
+Form   edible other animal mountable mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#10104
+Name cobra snake king~
+ShortD a `#`sKing Cobra`^~
+LongD A `#`sking cobra`^ slithers through the `ysands`^.~
+Desc The largest of all venomous snakes, the King Cobra is also potentially
+one of the most deadly.  Possessing powerful neurotoxic venom, they're a
+formidable predator and have been known to kill elephants.  Fortunately, the
+King Cobra is usually non-aggressive...  Unless threatened.  `x 
+~
+Race snake~
+Align -3 0
+Level 35
+Hitroll 35
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType bite
+AC -117 -117 -117 -97
+Wealth 350
+Act    npc stay_area~
+Act2   no_random_obj~
+AffBy  regeneration~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10105
+Name savina nomad~
+ShortD savina~
+LongD Savina, a desert nomad, stands here languidly looking about.~
+Desc Wearing a richly embroidered blue robe, she stands languidly, her long
+black tresses blowing in the breeze. 
+~
+Race human~
+Align -2 0
+Level 50
+Hitroll 50
+HitDice 5d8+270
+ManaDice 6d9+330
+DamDice 6d6+17
+DamType magic
+AC -190 -190 -190 -161
+Wealth 500
+Act    npc mage~
+AffBy  haste~
+Off    area_attack berserk dodge fade fast parry~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#10106
+Name mp10106 dune~
+ShortD the `#`ysand dune`^~
+LongD A `#`ysand dune`^ shifts aimlessly.~
+Desc ~
+Race unique~
+Align 2 0
+Level 35
+Hitroll 35
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -101
+Wealth 350
+Act    npc dont_wander scavenger no_tame stay_area noalign~
+Act2   no_random_obj~
+Off    area_attack bash disarm dodge fast dirt_kick trip crush~
+Imm    summon charm fire cold drowning~
+Res    lightning wood silver iron~
+Vuln   magic negative holy energy sound~
+Form   other non_skinable blob~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+MProg RANDOM 10106 7~
+END
+
+#10107
+Name mp10107 peekaboo~
+ShortD ~
+LongD `~
+Desc ~
+Race unique~
+Align 2 0
+Level 200
+Hitroll 0
+HitDice 14d132+1100
+ManaDice 52d10+100
+DamDice 7d7+29
+DamType none
+AC -240 -240 -240 -80
+Wealth 0
+Act    npc dont_wander unseen~
+AffBy  invisible~
+Imm    summon charm magic weapon~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg ACT 10107 charge~
+END
+
+#10108
+Name mp10108 peekaboo~
+ShortD ~
+LongD `~
+Desc ~
+Race unique~
+Align 3 0
+Level 200
+Hitroll 0
+HitDice 14d132+1100
+ManaDice 52d10+100
+DamDice 7d7+29
+DamType none
+AC -240 -240 -240 -80
+Wealth 0
+Act    npc dont_wander unseen~
+AffBy  invisible~
+Imm    summon charm magic weapon~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg ACT 10108 charge~
+MProg ACT 10108 climb~
+END
+
+#10109
+Name bengal tiger~
+ShortD the `#`rb`yengal `st`yiger`^~
+LongD A `#`rbengal tiger`s stalks`^ here.~
+Desc A tiger can consume as much as 88 pounds of meat in one feeding...  How
+much did you weigh?  
+~
+Race cat~
+Align 1 0
+Level 40
+Hitroll 40
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType claw
+AC -137 -137 -137 -112
+Wealth 400
+Act    npc aggressive stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#10110
+Name elephant~
+ShortD an `#`selephant`^~
+LongD A very large `#`selephant`^ wanders aimlessly here.~
+Desc One of the largest creatures, the elephant can reach a length of 20 feet,
+a height of 10 feet, and a weight topping 11,000 lbs....  Perhaps staying
+out of it's way would be the smart thing to do...  
+~
+Race bear~
+Align -3 0
+Level 45
+Hitroll 45
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType crush
+AC -157 -157 -157 -139
+Wealth 450
+Act    npc stay_area~
+Off    berserk disarm crush~
+Res    bash cold~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail tusks~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#10111
+Name locust~
+ShortD a `#`ylocust swarm`^~
+LongD A `#`yswarm of locusts`^ hovers here.~
+Desc Descending like a black cloud, the swarm quickly overtakes everything in
+it's path.  
+~
+Race song bird~
+Align -3 0
+Level 37
+Hitroll 37
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType digestion
+AC -125 -125 -125 -106
+Wealth 370
+Act    npc stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible non_skinable insect~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#10112
+Name hyena~
+ShortD a `#`rhyena`^~
+LongD A `#`rhyena`^ prowls here.~
+Desc The spotted hyena licks her chops at the sight of you.
+~
+Race cat~
+Align -3 0
+Level 50
+Hitroll 50
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -170
+Wealth 500
+Act    npc dont_wander aggressive stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#10183
+Name peacock~
+ShortD `#a `Bpeacock`^~
+LongD A `#`Bbrightly plumed peacock`^ struts his stuff here.~
+Desc A peacock prouldy displays his fabulous feathers.  
+~
+Race song bird~
+Align -1 0
+Level 37
+Hitroll 37
+HitDice 5d6+220
+ManaDice 5d6+210
+DamDice 3d10+12
+DamType peckb
+AC -125 -125 -125 -102
+Wealth 370
+Act    npc wimpy outdoors~
+AffBy  flying~
+Off    dodge fast gore~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg RANDOM 10100 5~
+END
+
+#10184
+Name peahen~
+ShortD a feisty `#`cmother peahen`^~
+LongD A `#`cdrab peahen`^ pecks at the dirt here.~
+Desc A peahen is drab in comparison to her male counterpart. 
+~
+Race song bird~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType peck
+AC -117 -117 -117 -100
+Wealth 350
+Act    npc outdoors~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#10185
+Name monkey~
+ShortD a `#`rsilly monkey`^~
+LongD A `#`rsilly monkey`^ looks for trouble here.~
+Desc A lively monkey looks around with a sly look in his eye. 
+~
+Race human~
+Align -1 0
+Level 45
+Hitroll 0
+HitDice 5d7+247
+ManaDice 4d5+95
+DamDice 8d4+15
+DamType none
+AC -153 -153 -153 -134
+Wealth 450
+Act    npc scavenger thief outdoors~
+Act2   no_random_obj~
+Off    tail gore~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg RANDOM 10101 5~
+END
+
+#10186
+Name gecko~
+ShortD a `#`Grabid gecko`^~
+LongD A small `#`Ggreen gecko`^ looks for bugs to eat.~
+Desc The gecko looks around hungrily, hoping for a bug to eat.  
+~
+Race lizardman~
+Align 2 0
+Level 40
+Hitroll 40
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType chomp
+AC -137 -137 -137 -123
+Wealth 400
+Act    npc outdoors~
+Off    dodge fade tail~
+Res    poison~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#10100
+Name bunch bananas~
+Short a small bunch of `#`Ybananas`^~
+Desc A small bunch of `#`Ybananas`^ lies here.~
+Level 35
+ItemType food~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 5 5 0 0 0
+Weight 5
+Material none~
+Wear     take hold~
+End
+
+#10101
+Name haunch mutton~
+Short a haunch of mutton~
+Desc A haunch of mutton sits here.~
+Level 1
+ItemType food~
+Cost 0
+Durability 5
+Asize 10
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material none~
+Wear     take hold~
+End
+
+#10102
+Name spring water deep well~
+Short `#a `Ccrystal `cclear `Cspring`^~
+Desc A `#`ccrystal clear spring`^ pools here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 10000
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 1000
+Material water~
+Extra    noremove nopurge nodegrade burnproof~
+End
+
+#10103
+Name sand dune~
+Short `#`ya sand dune`^~
+Desc A sand dune shifts aimlessly.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material sand~
+End
+
+#10104
+Name sand dune~
+Short `#`ya sand dune`^~
+Desc A sand dune shifts aimlessly.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 E 0 50 50
+Weight 0
+Material sand~
+End
+
+#10105
+Name tattered scroll~
+Short `#`ra badly tattered scroll`^~
+Desc A badly tattered scroll has been tossed negligently away.~
+Level 45
+ItemType scroll~
+Cost 1213
+Durability 5
+Asize 0
+Rsize 50
+Values 45 plantation 'create spring' '' ''
+Weight 10
+Material papyrus~
+Extra    magic~
+Wear     take hold~
+ExtraDesc tattered scroll~
+`wUnrolling the scroll, you see strange runes: "`rSsAcCaRrEaDb`w"`x
+ 
+`wPerhaps if you could just unscramble the runes and speak the 
+magical phrase...`x
+~
+End
+
+#10106
+Name desert scimitar~
+Short `#`R a deadly desert scimitar`^~
+Desc A deadly scimitar lies here.~
+Level 35
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 8
+Rsize 50
+Values sword 2 18 flbite A
+Weight 8
+Material metal~
+Extra    glow magic bless~
+Wear     take wield~
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 hitroll 2 0
+End
+
+#10107
+Name colorful basket~
+Short a `#`Yc`Bo`Ml`Wo`Gu`Yr`Bf`Mul`^ basket~
+Desc A `#`Yc`Bo`Ml`Wo`Gu`Yr`Bf`Mul`^ basket sits here.~
+Level 35
+ItemType container~
+Cost 50
+Durability 5
+Asize 10
+Rsize 50
+Values 50 A 0 75 25
+Weight 10
+Material copper~
+Extra    burnproof~
+Wear     take hold~
+End
+
+#10108
+Name flatbread bread~
+Short a `#`wpiece`^ of`y flatbread`^~
+Desc A piece of flatbread lies here.~
+Level 1
+ItemType food~
+Cost 43
+Durability 5
+Asize 0
+Rsize 50
+Values 7 7 0 0 0
+Weight 20
+Material food~
+Wear     take~
+End
+
+#10109
+Name banana leaf~
+Short a `#`Gbanana leaf`^~
+Desc A rolled up banana leaf lies here.~
+Level 35
+ItemType container~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 10 A 0 20 50
+Weight 5
+Material unknown~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#10110
+Name sacred scarab necklace~
+Short `#`Rthe sacred scarab necklace`^~
+Desc An interesting necklace lies here.~
+Level 50
+ItemType jewelry~
+Cost 1000
+Durability 5
+Asize 16
+Rsize 50
+Values 0 0 0 0 0
+Weight 16
+Material metal~
+Extra    glow magic bless~
+Wear     take neck~
+Affect vuln -1 50 -1 none 0 cold
+Affect affects -1 50 -1 none 0 haste
+End
+
+#10111
+Name rug comfy cushion~
+Short a `#`rrug piled high with`^ comfy cushions`^~
+Desc A rug, piled high with`#`y comfy cushions`^, lies here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 4 2000 BEHK 130 130
+Weight 0
+Material unknown~
+End
+
+#10112
+Name desert waterskin~
+Short `#`ya desert waterskin`^~
+Desc A waterskin lies here.~
+Level 30
+ItemType drinkcontainer~
+Cost 20
+Durability 5
+Asize 3
+Rsize 50
+Values 50 50 water 0 0
+Weight 3
+Material skin~
+Extra    burnproof~
+Wear     take~
+End
+
+#10113
+Name bolt silk~
+Short a bolt of `#`Wwhite silk`^~
+Desc A bolt of the purest `#`Wwhite silk`^ lies here.~
+Level 40
+ItemType trash~
+Cost 100
+Durability 5
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material silk~
+Wear     take~
+End
+
+#10114
+Name desert robe~
+Short a `#`Wgleaming `wwhite desert`W robe`^~
+Desc A pile of cloth lies here.~
+Level 45
+ItemType armor~
+Cost 900
+Durability 5
+Asize 15
+Rsize 50
+Values 17 17 17 16 0
+Weight 15
+Material cotton~
+Extra    bless antievil~
+Wear     take torso~
+End
+
+#10115
+Name hammock~
+Short a nice comfy `#`bhammock`^~
+Desc A hammock has been stretched here.~
+Level 45
+ItemType furniture~
+Cost 300
+Durability 5
+Asize 100
+Rsize 50
+Values 3 1500 EHK 120 120
+Weight 100
+Material hemp~
+Extra    burnproof~
+Wear     take~
+End
+
+#10117
+Name tree~
+Short a `#`Ybanana `Gtree`^~
+Desc A large leafy tree stands here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 100 50
+Weight 0
+Material unknown~
+End
+
+#10126
+Name savina's breastplate runic~
+Short `#`BSavina's Breastplate`^~
+Desc A breastplate lies here.~
+Level 50
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 16
+Rsize 50
+Values 17 17 17 12 0
+Weight 40
+Material mithril~
+Extra    bless nolocate nodegrade burnproof~
+Extra2   nodecay nochaoslace runic_item~
+Wear     take torso~
+Affect modifier -1 50 -1 ac -15 0
+End
+
+#10127
+Name scimitar savina~
+Short `#`BSavina's Scimitar`^~
+Desc An enchanted scimitar lies here.~
+Level 50
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 12
+Rsize 50
+Values sword 10 4 flbite AG
+Weight 12
+Material unknown~
+Extra    burnproof~
+Wear     take wield~
+Affect modifier -1 50 -1 hitroll 4 0
+Affect modifier -1 50 -1 damroll 4 0
+End
+
+#10128
+Name goatskin purse~
+Short a goatskin purse~
+Desc A small purse lies here.~
+Level 50
+ItemType container~
+Cost 500
+Durability 5
+Asize 30
+Rsize 50
+Values 1000 AC 0 5000 90
+Weight 30
+Material skin~
+Extra    burnproof~
+Wear     take hold back~
+Affect modifier -1 50 -1 constitution 1 0
+Affect modifier -1 50 -1 saves -2 0
+Affect modifier -1 50 -1 ac -5 0
+End
+
+#0
+
+
+
+#ROOMS
+#10100
+Name Deep In the Desert~
+Desc Sand.  The universe has withered, until the sands are all that seem to 
+exist.  Horizon to horizon, the world has become a shifting, roiling entity. 
+ It's tendrils seem to creep into every pore, every crevice, searing all.  A 
+small *sign* has been tacked to a weathered pole.  `x 
+~
+Sector desert~
+ExtraDesc sign~
+`W ****************************`x
+`W/                            `W\`x
+`W\         `yTHE DESERT         `W/`x
+`W/                            `W\`x
+`W\          `yBuilt by:         `W/`x
+`W/      `yMyretha of Creatia    `W\`x
+`W\                            `W/`x
+`W/ `rhttp://creatia.funcity.org `W\`x
+`W\                            `W/`x
+`W ****************************`x
+~
+Exit north 10101
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10103
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10182
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10101
+Name Deep in the Desert~
+Desc The desert wind blows the glittering sands across the harsh landscape.
+The sands burn, by day, their yellow golden surface holding the fierce heat
+of the burning sun. By night, their shadowed face lies hiding in the bitter
+cold light of an austere uncaring moon. 
+~
+Sector desert~
+Exit south 10100
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10102
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10102
+Name Deep in the Desert~
+Desc Nothing remains of reality... Only the sands. Smothering, stabbing, it
+seeks to reshape all that is. Chaos in it's purest form. Bleached bones of
+woebegotten creatures lie half buried within the dunes. The sands shift as
+if to reclaim their bounty.  
+~
+Sector desert~
+Exit east 10101
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10103
+Name Deep in the Desert~
+Desc The shifting sands continue as far as the eye can see in all
+directions.  By day, the naked sun bleaches the sand to a shimmery pale
+color.  By night the sands sparkle, as bitter cold holds sway.   
+~
+Sector desert~
+Exit east 10137
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10100
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10104
+Name Deep in the Desert~
+Desc Daylight scorches these forsaken lands, burning hotter than the very
+fires of hell.  Nothing save the moon, can hide from the malignant sun's
+ferocious heat.  As daylight descends and the moon does rise, a chilling
+cold seeps into these lands.  The eternal battle between the sun and
+moon.  Of such things, legends were born.   
+~
+Sector desert~
+Exit west 10106
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10105
+Name Deep in the Desert~
+Desc Sand is everywhere.  It penetrates the pores of every living thing. 
+The heat is unbelievable, drawing out moisture and making dehydration a
+serius threat to all who pass.  When the sun goes down, it is just as
+cold as it was hot by day.   
+~
+Sector desert~
+ExtraDesc sand~
+The sands sparkle and glisten as the desert winds blow over
+their shifting surface.  
+~
+Exit east 10107
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10181
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10182
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10106
+Name Deep in the Desert~
+Desc Sheets of shifting sands.  Dunes raise as in worship to the ferocious
+sun above and are just as quickly laid low beneath it's constant
+vigilance.  The fiery heat and the chilling cold, an eternal struggle
+shapes and reshapes the battlefield upon which it is played.   
+~
+Sector desert~
+Exit east 10104
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10110
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10107
+Name Deep in the Desert~
+Desc The sand drifts in immense dunes, whose golden hues shimmer and tower
+over you, blocking sight in all directions. The winds blow over the tops of
+the dunes, creating a cascading curtain of crystal granules.
+~
+Sector desert~
+ExtraDesc sand~
+The sands sparkle and glisten as the desert winds blow over
+their shifting surface.   
+~
+Exit north 10137
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10109
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10180
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10105
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10108
+Name Deep in the Desert~
+Desc From horizon to horizon... Sand. The howling winds drive needle-like
+grains of sand, hiding the sun between sheets of grit. By night, the sands
+are no less restless.  
+~
+Sector desert~
+Exit north 10110
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10109
+Name Deep in the Desert~
+Desc The sands burn by day, and freeze by night. Their ochre grains
+interspersed with grains of clear crystal, which reflect the light back upon
+weary travellers.  
+~
+Sector desert~
+ExtraDesc sand~
+The sands sparkle and glisten as the desert winds blow over
+their shifting surface.  
+~
+Exit west 10107
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10110
+Name Deep in the Desert~
+Desc Direction is meaningless. There is no north, no south, no up, no down.
+There is only forward through the sands. White globs of bleached bones
+litter the sand, morosely depicting the fate of those who have passed
+before.  
+~
+Sector desert~
+Exit north 10136
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10106
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10108
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10112
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10111
+Name Deep in the Desert~
+Desc It is less windy here and strangely quiet. The grains of sand are larger
+than in other parts of the desert, more like small pebbles. During the day
+the heat bounces off all surfaces in waves. At night it is bone  
+chillingly cold.
+~
+Sector desert~
+ExtraDesc sand~
+The sands are ochre sandstone, with every other grain a splinter of
+clear crystal, which reflects the rays of the burning sun back at you from
+below. 
+~
+Exit north 10113
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10179
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10112
+Name Deep in the Desert~
+Desc Shifting in constant metamorphosis, the sand dunes blow aimlessly
+throughout the desert plain. By daylight, the malignant sun envelopes each
+grain in its fiery heat. By night, the sands are cooled by the moon's
+uncaring touch.  
+~
+Sector desert~
+Exit east 10110
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10160
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10161
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10113
+Name Deep in the Desert~
+Desc The motion of the undulating sands slows almost to a standstill, here.
+It is heavier and even dryer. This is the heart of the desert, ponderous and
+oppressive. The   heat   lays like an anvil upon the chest of any
+creature daring to try breathing here. 
+~
+Sector desert~
+Exit north 10115
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10178
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10111
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10142
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10114
+Name Deep in the Desert~
+Desc Sand. From horizon to horizon, the desert stretches endlessly. With
+travelers have left naught but their bones behind hidden within the dunes.
+As the howling winds seek to reshape the landscape about, gleaming white
+skeletal remains can be spied upon occasion.  
+~
+Sector desert~
+Exit north 10116
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10161
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10115
+Name Deep in the Desert~
+Desc Even the sand is different here. It is dryer and rougher. The grains
+of sand are larger than in other parts of the desert, more like small
+pebbles. During the day heat bounces off all surfaces in waves. At night it
+is bone chillingly cold.  
+~
+Sector desert~
+Exit north 10117
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10177
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10113
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10116
+Name Deep in the Desert~
+Desc The universe has dwindled to a chaotic swirl of biting, grainy sand.
+Needles of grit puncture every surface, grinding down even the most hardy of
+souls. The world outside is forgotten while held in the desert arms.  
+~
+Sector desert~
+Exit east 10138
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10114
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10162
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10117
+Name Deep in the Desert~
+Desc The motion of the undulating sands slows almost to a standstill, here.
+It is heavier and even dryer. This is the heart of the desert, ponderous and
+oppressive. The   heat   lays like an anvil upon the chest of any
+creature daring to attempt breathing here. 
+~
+Sector desert~
+Exit east 10176
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10115
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10148
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10118
+Name Deep in the Desert~
+Desc Shifting and reshaping, the sand dunes scamper in reckless abandon
+about the desert. Raising their adoring faces to the sun as if in worship,
+the dunes seem to be leveled once again by the uncaring moon.  
+~
+Sector desert~
+Exit north 10120
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10162
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10163
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10119
+Name Deep in the Desert~
+Desc The motion of the undulating sands slows almost to a halt, here.  It
+is heavier and dryer in this area.  This is the heart of the desert,
+ponderous and oppressive.  The   heat   lays like an anvil upon the
+chest of any foolish creature attempting to breathe.   
+~
+Sector desert~
+Exit south 10148
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10151
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10120
+Name Deep in the Desert~
+Desc Sets of footprints appear infrequently in the sand, as though someone
+or some THING had passed this way before. As the howling winds blow across
+the desert, any trail has long since been obliterated.  
+~
+Sector desert~
+Exit east 10146
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10118
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10122
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10121
+Name Deep in the Desert~
+Desc The motion of the undulating sands slows almost to a halt.  It is
+heavier and dryer here.    Heat   lays like an anvil on the chest of
+any creature foolish enough to attempt to breathe here.   
+~
+Sector desert~
+Exit north 10123
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10151
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10154
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10122
+Name Deep in the Desert~
+Desc The sands of the desert swelter, by day, beneath the onslaught of the
+sun's ferocious heat. By night, the desert suffers under the cold gaze of
+the apathetic moon.  
+~
+Sector desert~
+Exit north 10124
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10120
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10164
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10123
+Name Deep in the Desert~
+Desc Even the sand is different here. It is dryer and rougher. The grains
+of sand are larger than in other parts of the desert, more like small
+pebbles. During the day, heat wafts up from all surfaces. At night, it is
+bone chillingly cold.  
+~
+Sector desert~
+Exit north 10175
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10121
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10125
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10124
+Name QUICKSAND!!!~
+Desc Bordered by the shifting sand dunes, a pool of quicksand lies in wait
+to drag wanderers into its dark depths! Thankfully, the pool is small and
+allows travel around it.  
+~
+Sector desert~
+Exit east 10152
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10122
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10165
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10125
+Name Deep in the Desert~
+Desc The sand is different here, dryer and rougher. The grains are larger
+too, almost small pebbles. During the day heat wafts up from all surfaces.
+At night it is   bone chillingly cold.  
+~
+Sector desert~
+Exit north 10174
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10123
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10154
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10126
+Name Deep in the Desert~
+Desc The howling winds return. The air becomes a churning whirlwind of sandy
+grit. Breath is almost impossible. The heat unbearable. Great dunes rise to
+the northwest, blocking the view of the horizon.  
+~
+Sector desert~
+Exit east 10155
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10127
+Name Deep in the Desert~
+Desc Sand, golden yellow sand as far as the eye can see.  Sand dunes rise up
+in all directions, casting a small shade in the early hours of the day.   
+~
+Sector desert~
+Exit north 10129
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10174
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10128
+Name The Desert~
+Desc The sands glitter, beneath the boiling ferocity of the sun.  Great,
+golden dunes rise to the northwest, sparkling in the day's light.   The
+tracks of previous travellers are just visible, disappearing over the dunes.
+ 
+~
+Sector desert~
+Exit north 10166
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10130
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 59899
+End
+
+
+#10129
+Name Deep in the Desert~
+Desc The sand is different here, dryer and rougher. Who knew there could be
+so many kinds of sand? The grains here are larger, almost pebbles. During
+the day, heat wafts up from all surfaces. At night, it is bone chillingly
+cold.  
+~
+Sector desert~
+Exit north 10172
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10173
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10127
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10158
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10130
+Name Deep in the Desert~
+Desc The sands glitter, beneath the boiling ferocity of the sun. Huge golden
+dunes rise to the northwest, sparkling in the day's light. The tracks of
+previous travellers are just visible, disappearing over the dunes.
+~
+Sector desert~
+Exit north 10167
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10156
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10155
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10128
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10131
+Name Deep in the Desert~
+Desc The sand is different here, dryer and rougher. Who knew sand could be
+so many different textures? The grains are larger here, almost pebbles.
+During the day heat wafts up from all surfaces.   At night it is bone
+chillingly cold.
+~
+Sector desert~
+Exit east 10172
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10158
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10159
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10132
+Name Deep in the Desert~
+Desc The universe is nothing more than a swirl of biting grains of sand
+born by a searing hot wind.  The world outside is forgotten.  Only the
+hardiest souls, who have a good supply of water, will survive.   
+~
+Sector desert~
+Exit north 10168
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10156
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10167
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10133
+Name Deep in the Desert~
+Desc It is dryer and rougher here, the sand taking on yet another texture. 
+ During the day heat wafts up in undulating waves.  At night chill
+fingers stretch across the terain.   
+~
+Sector desert~
+Exit north 10171
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10159
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10135
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10134
+Name Deep in the Desert~
+Desc The motion of the undulating sands has slowed. It is heavier and dryer
+here. Heat lays like an anvil upon the chest of any creature attempting to
+breathe here.
+~
+Sector desert~
+Exit north 10169
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10168
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10135
+Name Deep in the Desert~
+Desc The universe is nothing more than a swirl of biting grains of sand
+carried by an intensely hot wind. The world outside is forgotten. Only the
+hardy will survive, and then only if they have an ample supply of water.
+~
+Sector desert~
+Exit north 10170
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10133
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10169
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10136
+Name Deep in the Desert~
+Desc Things are different here, drier and hotter. The air is still, and the
+grains of sand are larger and more coarse. Bits of bone can be distinguished
+amongst the sand. There is a price for not being prepared in this sort of
+terrain. The air smells of dust and death.  
+~
+Sector desert~
+Exit south 10110
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10137
+Name Deep in the Desert~
+Desc The motion of the undulating dunes slows to a near standstill.  It is
+dryer here than you thought possible.  The lack of wind has left the sand
+in larger bits.  Looking closely you can see a few tracks from some ... 
+Animals?   Whatever it was, it was big.   
+~
+Sector desert~
+Exit north 10141
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10107
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10103
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10138
+Name Deep in the Desert~
+Desc The universe is nothing more than sand, sand, sand... The wind throws it
+into the air where it bites the skin of any who pass through it. Only the
+hardiest souls, who have an ample supply of water, have a chance of
+surviving here.
+~
+Sector desert~
+Exit north 10143
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10116
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10139
+Name Deep in the Desert~
+Desc Things are different here, dryer, and even hotter than before. The air is
+still, and the grains of sand are larger, like pebbles. Bits of bone can be
+distinguished amongst the sand. There is a price for not being prepared in
+this sort of terrain. The air smells of dust and death.
+~
+Sector desert~
+Exit north 10144
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10140
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10140
+Name Deep in the Desert~
+Desc The motion of the undulating sand stops here.  It is flat, and rocky. 
+ There is no movement, only heat and the smell of death and dust.  In
+the distance there is a call from some kind of starving creature.   
+~
+Sector desert~
+Exit west 10139
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10141
+Name Deep in the Desert~
+Desc Things are not the same here. It is dryer and hotter. The air is still,
+and the grains of sand are larger, like small pebbles. Bits of bone are
+tossed in among them. There is a price for not being prepared in this sort
+of terrain.
+~
+Sector desert~
+Exit north 10145
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10137
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10142
+Name Deep in the Desert~
+Desc The universe is burning sand, nothing else exists.  There is nothing
+but heat and the need for water.  Those who are unprepared have a short
+life expectancy.  There are large tracks in the sand, if dehydration and
+heat don't get you, then perhaps something else will...   
+~
+Sector desert~
+Exit east 10113
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10143
+Name Deep in the Desert~
+Desc Something isn't right.  The sand looks the same, the heat feels the
+same.   But something has changed.  Perhaps someone, or something is
+watching, brooding.  Maybe it would be best to keep moving.  Something
+doesn't feel safe.   
+~
+Sector desert~
+Exit east 10144
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10138
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10144
+Name Deep in the Desert~
+Desc The desert landscape has changed slightly.  The air is still.  The grains
+of sand are larger...like small pebbles.  In the air, there is a hint of...
+could that be...water?  Perhaps you could just "charge" right over the top of
+the dunes and find out.
+~
+Sector desert~
+Exit south 10139
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10143
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10145
+Name Deep in the Desert~
+Desc There is nothing but sand. Mounds of sand, hills of sand, piles of sand.
+Dunes of all shapes and sizes shift and change as the wind blows and pushes
+the sand into new shapes. The air smells of dust and death, and large
+footprints indicate that death may come quickly to those who tary. 
+~
+Sector desert~
+Exit north 10147
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10141
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10146
+Name Deep in the Desert~
+Desc Waves of heat bounce off the surface of the undulating hills of sand.
+Heat presses down on all who seek to breathe or move. Only those with plenty
+of water will survive here.
+~
+Sector desert~
+Exit north 10149
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10120
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10147
+Name Deep in the Desert~
+Desc Waves of heat crush all who pass through this way. Hills of sand undulate
+all around. The wind throws the hot stoney powder into the air and against
+the flesh of any living creatures struggling to survive here. There is a
+price to pay for not having enough water. The smell of death is in the air. 
+~
+Sector desert~
+Exit north 10151
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10145
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10148
+Name Deep in the Desert~
+Desc The motion of the undulating sands slows. It is still and quiet here, too
+quiet. Is someone or something watching? Perhaps it's best not to linger.
+~
+Sector desert~
+Exit north 10119
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10117
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10149
+Name Deep in the Desert~
+Desc Sand. Sand. Sand. The smell of dust and death is in the air. Those who
+are not prepared with plenty of water can not expect to survive. There are
+tracks made by something BIG. It's best to keep moving.
+~
+Sector desert~
+Exit east 10150
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10146
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10150
+Name Deep in the Desert~
+Desc The universe is nothing more than a swirl of biting grains of sand. The
+world outside is too distant to be remembered. There are the tracks of
+something BIG in the sand. Only those who are well prepared will survive.
+~
+Sector desert~
+Exit north 10153
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10149
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10151
+Name Deep in the Desert~
+Desc The universe has withered, until the sands are all that seem to exist
+of the world.  Horizon to horizon, the world has become a shifting,
+roiling entity. It's tendrils seek each pore, every crevice. The need for
+water is a constant companion.  
+~
+Sector desert~
+Exit north 10121
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10119
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10147
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10152
+Name Deep in the Desert~
+Desc The desert's howling wind blows the glittering sands across the harsh
+landscape. The sands, burning by day, hold the fierce heat of the burning
+sun. By night, the sheets of sand are enveloped in the cold light of an
+austere uncaring moon.  
+~
+Sector desert~
+Exit west 10124
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10153
+Name Deep in the Desert~
+Desc There is no end to the reach of the shifting sands. By day, the naked
+sun bleaches the sand to a shimmery pale color. By night, the sands sparkle,
+as bitter cold holds sway.  
+~
+Sector desert~
+Exit north 10155
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10150
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10154
+Name Deep in the Desert~
+Desc The desert landscape has changed slightly.  The air is still.  The grains of 
+sand are larger...  Like small pebbles.  In the air, there is a hint of...  
+Could that be...  Water ?  You detect a slight hint of plant life to the 
+west and the smell of fresh flowers.  
+~
+Sector desert~
+Exit north 10125
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10121
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10189
+End
+
+
+#10155
+Name Deep in the Desert~
+Desc Sand, sand, and more sand. The universe is nothing more than a swirl of
+biting grains of sand. The world outside is forgotten, only the sand and
+heat exist... And those large footprints... Maybe it's best to keep moving. 
+~
+Sector desert~
+Exit north 10130
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10153
+EDesc Sand.  As far as the eye can see.
+~
+Exit west 10126
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10156
+Name Deep in the Desert~
+Desc The motion of the undulating sands slows.  The air is a bit more still.
+The heat feels heavier and dryer.  It is difficult to breathe air like this.
+There is a smell of dust and death.   
+~
+Sector desert~
+Exit north 10132
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10130
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10157
+Name Deep in the Desert~
+Desc So much sand.  It goes on and on, as if there is nothing else in the
+whole universe.  There is no moisture of any kind, and the air is so hot it
+feels like molten lava.   
+~
+Sector desert~
+Exit north 10159
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10158
+Name Deep in the Desert~
+Desc Everywhere there is sand.  Sand and heat.  During the day heat wafts up
+in visible waves, from all surfaces.  When the sun goes down, icy fingers
+reach across the dunes.  Only the hardy and well prepared survive here.   
+~
+Sector desert~
+Exit north 10131
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10129
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10159
+Name Deep in the Desert~
+Desc The universe is nothing more than a swirling mist of sand and heat. 
+Sand and heat have entwined, making it very difficult to breathe.  Through a
+veil of airborne sand, footprints appear.  Large footprints.  Perhaps it's
+best to keep moving.   
+~
+Sector desert~
+Exit north 10133
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10131
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10160
+Name The Desert~
+Desc Dunes of sand stretch out in all directions.  To the south, mountains
+break the horizon with their jagged lines.  The heat, during the day, is
+oppressive.  At night, it is unbearably cold.  Perhaps there is relief just
+over the next dune...
+~
+Sector desert~
+Exit north 10112
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10161
+Name The Desert~
+Desc Sand, sand, sand everywhere... The heat is oppressive, but THERE, to
+the south... Mountains! Could there be a source of water there, or perhaps
+just greater danger?  
+~
+Sector desert~
+Exit north 10114
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10112
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10162
+Name The Desert~
+Desc The heat saps moisture from anything or anyone daring to exist here. 
+Light powdery sand stretches out in all directions, forming dunes and hills
+that constantly shift and change.  There is a smell of dust and death in the
+air.  Off to the south the jagged lines of mountains break the smooth lines
+of the horizon.   
+~
+Sector desert~
+Exit north 10118
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10116
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10163
+Name The Desert~
+Desc Sand stretches out endlessly in all directions but one.  Off to the
+south the endless sand dunes are met by mountains.  There are footprints, of
+something BIG...  Perhaps it's best to keep moving.   
+~
+Sector desert~
+Exit east 10118
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10164
+Name The Desert~
+Desc Everywhere there is sand, the dunes seem to stretch out endlessly.  The
+heat is heavy making it hard to breathe.  There is a smell....  Water?  To
+the west there is something shimmering.   
+~
+Sector desert~
+Exit north 10165
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10122
+EDesc Sand.  As far as the eye can see.
+~
+End
+
+
+#10165
+Name The Desert~
+Desc Sand.  So much sand.  The dunes stretch out almost endlessly.  The
+oppressive heat makes breathing difficult for any who try.  To the west
+three is a glimmer, and there is a scent on the wind.  Could it be water? 
+ 
+~
+Sector desert~
+Exit east 10124
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10164
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10166
+Name The Desert~
+Desc Dunes loom large on all sides.  The smooth lines of the voluminous
+mounds of sand are broken in the north.  There appears to be a town in that
+direction.  Large footprints remind any passerby's to proceed with caution. 
+ 
+~
+Sector desert~
+Exit north 59819
+Exit east 10167
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10128
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10167
+Name The Desert~
+Desc The heat pours down making breathing hard.  Waves of heat bounce off of
+all surfaces.  To the north, and slightly to the west a city can be seen. 
+Perhaps some respite is available there?   
+~
+Sector desert~
+Exit east 10132
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10130
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10166
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10168
+Name The Desert~
+Desc Sand.  Sand dunes stretch on endlessly.  Heat is oppressive.  There is
+the smell of dust and death on the air.  Waves of heat bounce up from all
+surfaces.  Large footprints can be seen in the sand.  Caution is definitely
+in order.   
+~
+Sector desert~
+Exit east 10134
+EDesc Sand.  As far as the eye can see.
+~
+Exit south 10132
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10169
+Name The Desert~
+Desc The heat is a bit less oppressive here.  There is the sound of waves
+crashing on the shore coming from the north.  Sand stretches out, but not
+endlessly.   
+~
+Sector desert~
+Exit east 10135
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10134
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10170
+Name The Desert~
+Desc From the north comes a cool breeze, and the sound of crashing waves. 
+There is an end to the sand as the sea meets it.  There is the smell of salt
+in the air.  There are large footprints in the sand, so caution is still a
+good idea.   
+~
+Sector desert~
+Exit north 59983
+Exit east 10171
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10135
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10171
+Name The Desert~
+Desc A cool breeze cuts through the heat, and the sound of waves caressing
+the shore comes from the north.  The smell of dust and death is giving way
+to salt and sea air.   
+~
+Sector desert~
+Exit north 59985
+Exit south 10133
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10170
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10172
+Name The Desert~
+Desc The graceful lines of huge sand dunes are broken only by the jagged
+peaks of mountains off to the east, and a bit north.  Waves of heat bounce
+off of every surface, making breathing difficult.  The smell of dust and
+death is everywhere.  Large footprints in the sand probably mean caution is
+a good idea.   
+~
+Sector desert~
+Exit north 59987
+Exit south 10129
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10131
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10173
+Name The Desert~
+Desc Sand stretches out in all directions.  Graceful hills rising and
+falling like waves in the ocean, except there is no water to be seen.  It is
+dry beyond belief, and just as hot.  Breathing in the sizzling air requires
+great effort.   
+~
+Sector desert~
+Exit north 59980
+Exit south 10174
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10129
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10174
+Name The Desert~
+Desc Huge mounds of sand gracefully rise and fall like waves in the sea. 
+Heat rises up in waves, making it difficult to breathe.  To the northeast
+jagged mountain peaks break the horizon.   
+~
+Sector desert~
+Exit north 10173
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10175
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10125
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10127
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10175
+Name The Desert~
+Desc Sand.  Everywhere there is sand, and heat.  The smell of dust and
+death is everywhere.  Slithery marks in the sand indicate some creature has
+passed through the area.  Sometimes the smallest creatures can be the most
+deadly.   
+~
+Sector desert~
+Exit north 59978
+Exit east 59901
+Exit south 10123
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10174
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10176
+Name The Desert~
+Desc Sand is everywhere.  Heat rises up in waves from every surface. 
+Slithery marks in the sand indicate that some creature has passed through
+the area.  The smell of dust and death is blown on the hot wind.  To the
+east the sound of waves can be heard, and the smell of salt seems to come on
+a cooler breeze, when it blows from that direction.   
+~
+Sector desert~
+Exit south 10177
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10117
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10177
+Name The Desert~
+Desc The smell of salt and the sea wafts in on a cooler breeze from the
+east.  Sand is everywhere, rising in huge mounds, like waves slow moving
+waves of the sea.  Slithery marks in the sand indicate that some creature
+has been through the area recently.  Caution is a good idea.   
+~
+Sector desert~
+Exit north 10176
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10178
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10115
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10178
+Name The Desert~
+Desc Sand is everywhere.  From the east there is the sound of distant waves
+crashing against the beach.  There is a cooler breeze bearing the smell of
+salt, and water.  In the sand there are slithery marks as if some creature
+has been through the area.   
+~
+Sector desert~
+Exit north 10177
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 10179
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10113
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10179
+Name The Desert~
+Desc From the east comes a cooler breeze bearing the smell of salt and
+water.  The sound of waves crashing on the shore can be heard.  Everywhere
+is sand, and the tracks of all sorts of creatures, probably not all
+friendly.  Caution is probably a good idea.   
+~
+Sector desert~
+Exit north 10178
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10111
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10180
+Name The Desert~
+Desc Smooth mounds of sand rise up all around.  Heat wafts up in waves from
+all surfaces.  It is hard to breathe.  To the south the gentle lines are
+broken by the sharp jagged lines of mountains.  There are some rather large
+footprints.   
+~
+Sector desert~
+Exit north 10107
+EDesc Sand. As far as the eye can see.  
+~
+Exit west 10181
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10181
+Name The Desert~
+Desc Smooth mounds of sand rise up all around.  Heat wafts up in waves from
+all surfaces.  It is difficult to breathe the hot air.  Slithery marks are
+all over the sand, and a few large footprints.  Perhaps caution would be
+wise.   
+~
+Sector desert~
+Exit north 10105
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10180
+EDesc Sand. As far as the eye can see.  
+~
+End
+
+
+#10182
+Name The Desert~
+Desc Sand is everywhere.  Time seems to halt, everything else seems unreal.
+All that exists is heat and sand.  The wind picks up the grains hurling them
+like small daggers through the air.  Large footprints look menacing.   
+~
+Sector desert~
+Exit north 10100
+EDesc Sand. As far as the eye can see.  
+~
+Exit east 10105
+EDesc Sand. As far as the eye can see.  
+~
+Exit south 59981
+End
+
+
+#10183
+Name Entrance to Savina's Oasis~
+Desc Sweet relief!  Here there is verdent green vegetation accompanied by
+the overwhelming smells of water, flowers and fruit.  Life flourishes here. 
+From the north comes the sound of splashing water.   
+~
+Sector field~
+Exit north 10186
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10184
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10184
+Name A Shabby Tent ~
+Desc The tent is shabby from years of use, but it's a welcome retreat from
+the hot sun and sands of the desert.  No one seems to be at home, but there
+is food laid out, as if for any passing stranger.  There is no light, except
+what seeps in through the seems of the tent and door.  After long hours in
+the desert sun, the dark is refreshing.   
+~
+RoomFlags indoors~
+Sector inside~
+Mana 125
+Heal 125
+Exit west 10183
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10185
+Name The Spring~
+Desc Water and shade have cooled the air here.  Tall palms and a myriad of
+other trees hold back the beating rays of the sun during the day.  There are
+footprints scattered over the ground, as many creatures frequent this spot. 
+ 
+~
+Sector field~
+Exit east 10186
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10189
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10188
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10186
+Name Savina's Oasis ~
+Desc Banana trees are heavy with yellow fruit.  Slender papaya trees sway in
+the breeze looking prehistoric.  The earth smells rich and moist.   
+~
+Sector field~
+Exit east 10187
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10183
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10185
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10187
+Name A Merchant's Tent ~
+Desc A variety of wares are available here. Apparently this oasis is a
+stopping place for merchants from all sorts of places, and this merchant is
+happy to do business with them all, for a price, of course.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10186
+End
+
+
+#10188
+Name By the Spring~
+Desc Vegitation is especially lush here, as the spring is nearby. A carpet
+of dark green vines with bright read flowers cascades down some of the other
+vegitation. Palm and banana trees grow and shed their fruit, free for the
+taking.  
+~
+Sector field~
+Exit north 10191
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10185
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10190
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10193
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10189
+Name Entrance to Savina's Oasis~
+Desc The sands of the desert fall away and rich soil takes over.  The smell
+of death and dust is replaced with the smells and sounds of life.  Birds
+call from the trees.  The smell of fruit ripened in the warm sun wafts by on
+a gentle breeze.  There are trees everywhere, and the shade they create is
+refreshing and cool in comparison to the hot dry desert.   
+~
+Sector field~
+Exit north 10185
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10154
+Exit west 10190
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10190
+Name Savina's Oasis~
+Desc A lovely cool breeze bears the smell of fertile earth, fresh flowers
+and ripe fruit.  Bits of sunlight break through the leafy ceiling.  Lacy
+patterns dance across the moist ground.  Animals are fat, from the easy life
+here.   
+~
+Sector field~
+Exit north 10188
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10189
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10192
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10191
+Name Savina's Oasis~
+Desc Ah, a nice restful spot.  Cool shade, fruit trees, anything a traveler
+could ever want.  Nothing but the chatter of monkeys to disrupt a good rest.
+Lovely flowers entertain the eye and scent the air.   
+~
+Sector field~
+Exit south 10188
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10194
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10192
+Name Savina's Oasis~
+Desc This is a good place for a caravan, or weary adventurer, to rest. 
+There is plenty of food, shade, and anything else a traveler could want. 
+Palm trees provide shade and coconuts.  The air smells sweet, from nearby
+ripening fruit.   
+~
+Sector field~
+Exit north 10193
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10190
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10199
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10197
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10193
+Name Savina's Oasis~
+Desc There is plenty of room here for a traveler to set up camp and rest and
+an ideal spot for a caravan to take a break from a long desert journey. 
+Water is nearby, fruit is free and plentiful.  Everything a traveler could
+want is available.   
+~
+Sector field~
+Exit north 10194
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10188
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10192
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10196
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10194
+Name Savina's Oasis~
+Desc This is a place of life and abundance.  Plants flourish and produce
+food for the animals, who grow fat from the easy life.  The gentle sound of
+splashing water can be heard in the distance.   
+~
+Sector field~
+Exit east 10191
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10193
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10195
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10195
+Name Savina's Oasis~
+Desc This is a shady spot, an ideal place for weary adventurers and
+travelers to rest and shake off the dust of the desert.  Banana trees are
+laden with their yellow fruit, ripe and ready to eat.   
+~
+Sector field~
+Exit east 10194
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10196
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10196
+Name Savina's Oasis~
+Desc The scent of fresh fruit is lovely on the cool breeze.  It's hot here,
+but cool and refreshing in comparison to the desert.  Bits of sunlight break
+through the leaves making lacy patterns that dance across the ground.   
+~
+Sector field~
+Exit north 10195
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10193
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10197
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10197
+Name Savina's Oasis~
+Desc The shade here is especially deep and cool.  The rustle of the leaves
+is all around.  A cool breeze sweeps through, bearing the smells of fresh
+fruit and heady flowers.   
+~
+Sector field~
+Exit north 10196
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10192
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit south 10198
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10198
+Name Savina's Oasis~
+Desc A cool breeze bears the smell of flowers and ripe fruit. The shade here
+is deep, due to the lush vegitation. Everywhere greenery is dotted with
+bright flowers. This is a good place for a rest.  
+~
+Sector field~
+Exit north 10197
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit east 10199
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#10199
+Name Savina's Oasis~
+Desc A cool breeze bears the smell of fresh fruit and flowers.  The local
+animals are well fed in this abundant oasis.  Life here is easy.  Everywhere
+banana and papaya trees grow, providing food and shade.   
+~
+Sector field~
+Exit north 10192
+EDesc The oasis is surrounded by huge dunes.
+~
+Exit west 10198
+EDesc The oasis is surrounded by huge dunes.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 10101 spec_poison
+M 10104 spec_poison
+M 10105 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 10106 10 10100 1
+M 0 10103 5 10101 1
+O 0 10103 0 10101
+M 0 10111 4 10102 1
+O 0 10103 0 10102
+O 0 10103 0 10103
+M 0 10104 5 10104 1
+O 0 10103 0 10104
+M 0 10101 5 10105 1
+O 0 10103 0 10105
+O 0 10103 0 10106
+O 0 10103 0 10107
+O 0 10103 0 10108
+M 0 10111 4 10109 1
+M 0 10101 5 10110 1
+O 0 10103 0 10110
+O 0 10103 0 10111
+O 0 10103 0 10112
+O 0 10103 0 10113
+M 0 10103 5 10114 1
+O 0 50014 -1 10114
+O 0 10103 0 10114
+M 0 10101 5 10115 1
+O 0 10103 0 10115
+O 0 10103 0 10116
+O 0 10103 0 10117
+O 0 10103 0 10118
+M 0 10103 5 10119 1
+O 0 10103 0 10119
+M 0 10101 5 10120 1
+O 0 10103 0 10120
+M 0 10106 10 10121 1
+O 0 50009 -1 10121
+O 0 10103 0 10122
+O 0 10103 0 10123
+M 0 10106 10 10124 1
+M 0 10106 10 10126 1
+M 0 10103 5 10127 1
+O 0 10103 0 10127
+O 0 10103 0 10128
+O 0 10103 0 10129
+M 0 10101 5 10130 1
+O 0 10103 0 10130
+M 0 10101 5 10131 1
+O 0 10103 0 10131
+O 0 10103 0 10132
+M 0 10110 4 10133 1
+O 0 10103 0 10133
+O 0 10103 0 10134
+O 0 10103 0 10135
+O 0 10103 0 10136
+M 0 10109 5 10137 1
+O 0 10103 0 10137
+M 0 10106 10 10138 1
+O 0 10103 0 10139
+M 0 10111 4 10140 1
+O 0 10103 0 10140
+O 0 10103 0 10141
+M 0 10103 5 10142 1
+O 0 10103 0 10142
+O 0 10103 0 10143
+M 0 10107 1 10144 1
+O 0 10103 0 10144
+O 0 10103 0 10145
+M 0 10109 5 10146 1
+O 0 10103 0 10146
+M 0 10104 5 10147 1
+O 0 10103 0 10147
+O 0 10103 0 10148
+O 0 10103 0 10149
+M 0 10104 5 10150 1
+O 0 10103 0 10150
+O 0 10103 0 10151
+O 0 10103 0 10152
+O 0 10103 0 10153
+O 0 10103 0 10154
+O 0 10103 0 10155
+O 0 10103 0 10156
+M 0 10109 5 10157 1
+O 0 10103 0 10157
+O 0 10103 0 10158
+O 0 10103 0 10159
+M 0 10109 5 10160 1
+O 0 10103 0 10160
+O 0 10103 0 10161
+M 0 10110 4 10162 1
+O 0 10103 0 10162
+M 0 10102 1 10163 1
+M 0 10112 4 10163 1
+O 0 10104 0 10163
+P 0 10105 1 10104 1
+M 0 10104 5 10164 1
+O 0 10103 0 10164
+M 0 10111 4 10165 1
+O 0 10103 0 10165
+M 0 10103 5 10166 1
+O 0 10103 0 10166
+O 0 10103 0 10167
+M 0 10110 4 10168 1
+O 0 10103 0 10168
+O 0 10103 0 10169
+M 0 10103 5 10170 1
+O 0 10103 0 10170
+M 0 10106 10 10171 1
+M 0 10112 4 10172 1
+O 0 10103 0 10172
+M 0 10106 10 10173 1
+O 0 10103 0 10174
+M 0 10101 5 10175 1
+O 0 10103 0 10175
+M 0 10109 5 10176 1
+O 0 10103 0 10176
+M 0 10110 4 10177 1
+O 0 10103 0 10177
+M 0 10112 4 10178 1
+O 0 10103 0 10178
+M 0 10104 5 10179 1
+O 0 10103 0 10179
+M 0 10106 10 10180 1
+M 0 10112 4 10181 1
+O 0 10103 0 10181
+O 0 10103 0 10182
+O 0 10117 0 10183
+P 0 10100 25 10117 1
+O 0 10111 0 10184
+O 0 10107 0 10184
+P 0 10108 25 10107 1
+O 0 10109 0 10184
+P 0 10101 25 10109 1
+M 0 10105 1 10184 1
+E 0 10127 0 wielded~
+E 0 10126 0 torso~
+O 0 10102 0 10185
+O 0 10117 0 10185
+P 0 10100 25 10117 1
+M 0 10183 5 10185 1
+M 0 10184 5 10185 1
+M 0 10186 5 10185 1
+O 0 10117 0 10186
+P 0 10100 25 10117 1
+M 0 10186 5 10186 1
+M 0 10184 5 10186 1
+M 0 10100 1 10187 1
+G 0 10106 0
+G 0 10114 0
+G 0 10112 0
+G 0 10113 0
+G 0 10115 0
+G 0 10128 0
+O 0 10117 0 10188
+P 0 10100 25 10117 1
+M 0 10183 5 10188 1
+O 0 50014 -1 10189
+M 0 10184 5 10190 1
+O 0 10117 0 10192
+P 0 10100 25 10117 1
+M 0 10183 5 10192 1
+M 0 10185 10 10193 2
+M 0 10183 5 10195 1
+M 0 10186 5 10195 1
+O 0 10117 0 10196
+P 0 10100 25 10117 1
+M 0 10186 5 10196 1
+O 0 10117 0 10197
+P 0 10100 25 10117 1
+P 0 10100 25 10117 1
+O 0 10117 0 10198
+P 0 10100 25 10117 1
+M 0 10186 5 10198 1
+O 0 10117 0 10199
+P 0 10100 25 10117 1
+M 0 10184 5 10199 1
+S
+
+
+
+#SHOPS
+#10100
+buy_type armor~
+buy_type weapon~
+buy_type gem~
+buy_type treasure~
+buy_type jewelry~
+profit_buy 200
+profit_sell 30
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#10108
+code if ispc $n
+  mob echo `yYou quickly scramble over the top of the dunes.`x
+  mob transfer $n 10189
+else
+endif
+~
+disabled false
+END
+
+#10107
+code if ispc $n
+  mob echo `yYou quickly scramble over the top of the dunes.`x
+  mob transfer $n 10183
+else
+endif
+~
+disabled false
+END
+
+#10106
+code if ispc $n
+  mob echo `rHowling winds torment the desert's surface.`x
+else
+endif
+~
+disabled false
+END
+
+#10105
+code if carries $n 10110
+  mob echo `yThou should not be so greedy!`x
+  mob remove $n 10105
+  mob echo `yThe `rtattered scroll `ydisappears with a *POOF*!`x
+else
+  if carries $n 10105
+  mob oload 10110
+  mob remove $n 10105
+  mob echo `yThe `rtattered scroll `ydisappears with a *POOF* as a `Rscarab necklace `yreplaces it!`x
+  give scarab $n
+endif
+~
+disabled false
+END
+
+#10101
+code mob echo `RA naughty monkey sneaks up, tries to steal something, and disappears. `x
+~
+disabled false
+END
+
+#10100
+code mob echo A `Bbright peacock`x flares his `Bt`ba`gi`Yl`x and begins his mating dance.
+~
+disabled false
+END
+
+#0
+
+
+#$

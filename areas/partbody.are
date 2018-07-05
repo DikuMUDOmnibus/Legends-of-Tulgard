@@ -1,0 +1,2701 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Stupid World: Body Parts Castle~
+ShortName   Body Parts Castle~
+Builders    none~
+Credits     Papilla~
+VNUMs       4600 4699
+LComment    `#`C[ 35- 55]`^
+Security    9
+Colour      C~
+colourcode  {
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   StupidWorld~
+Continent   stupid~
+*LastSaved  Sat Aug 20 19:14:13 2005~
+End
+
+
+
+#MOBILES
+#4600
+Name hip guardian head femur~
+ShortD the hip guardian~
+LongD A really weird head of a femur glares at you.~
+Desc This is the strangest guardien you have ever seen.  It seem that a huge
+head of a femur has grown arm, legs and a head.  Wierd!  The guardian will
+fight till the very end, he tells you.  
+~
+Race human~
+Align -1 -1
+Level 40
+Hitroll 0
+HitDice 10d108+648
+ManaDice 40d10+100
+DamDice 5d14+20
+DamType none
+AC -150 -150 -150 -20
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  sanctuary haste~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4601
+Name guard leg evil~
+ShortD the evil leg guard~
+LongD A mean looking guard of some sort wanders here.~
+Desc This guy belongs to the guard force of the left leg.  These troops look like 
+they would defend each other.  He is real mean looking - you better not do 
+anything to upset him!  
+~
+Race human~
+Align 1 -1
+Level 42
+Hitroll 0
+HitDice 10d119+700
+ManaDice 42d10+100
+DamDice 5d14+24
+DamType none
+AC -160 -160 -160 -30
+Wealth 420
+Act    npc no_tame stay_area~
+Off    dodge assist_vnum~
+Imm    summon charm disease~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4602
+Name guard leg good~
+ShortD the good leg guard~
+LongD A pleasant looking guard of the right is here.~
+Desc This guard is guarding the right leg.  He tells you: "My friends will
+help me, and I will help my friends."  
+~
+Race human~
+Align 2 1
+Level 42
+Hitroll 0
+HitDice 10d119+700
+ManaDice 42d10+100
+DamDice 5d14+24
+DamType none
+AC -160 -160 -160 -30
+Wealth 420
+Act    npc no_tame~
+Off    dodge assist_vnum~
+Imm    summon charm disease~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4603
+Name brain mad~
+ShortD the mad brain~
+LongD The feared Mad Brain is lookin pathetic.~
+Desc So this is the leader of this horrible castle.  You had expected some
+worse and now you fell sorry for the poor creature.  You think maybe you
+should let him live....  Nahhhh!!!  
+~
+Race human~
+Align 3 0
+Level 55
+Hitroll 0
+HitDice 10d204+1078
+ManaDice 55d10+100
+DamDice 5d19+28
+DamType none
+AC -240 -240 -240 -70
+Wealth 550
+Act    npc dont_wander no_tame aggressive mage~
+AffBy  sanctuary haste~
+Off    dodge kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4604
+Name guard arm good~
+ShortD the good arm guard~
+LongD The guard here look quite nice.....but is he?~
+Desc This is a strange creature.  He is made from different body parts.  He
+tells you: "My job is to defend this side of the arm, and my friends will
+help me."  
+~
+Race human~
+Align -1 1
+Level 50
+Hitroll 0
+HitDice 10d168+930
+ManaDice 50d10+100
+DamDice 5d17+27
+DamType acbite
+AC -210 -210 -210 -50
+Wealth 500
+Act    npc no_tame stay_area~
+AffBy  haste~
+Off    kick assist_vnum~
+Imm    summon charm acid~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4605
+Name guard arm evil~
+ShortD the evil arm guard~
+LongD This guard is mean looking - better keep your distance!~
+Desc This is a strange creature.  He is made from different body parts.  He
+tells you: "My job is to defend this side of the arm, and my friends will
+help me."  
+~
+Race human~
+Align 3 -1
+Level 50
+Hitroll 0
+HitDice 10d168+930
+ManaDice 50d10+100
+DamDice 5d17+27
+DamType acbite
+AC -210 -210 -210 -50
+Wealth 500
+Act    npc no_tame stay_area~
+AffBy  haste~
+Off    dodge kick assist_vnum~
+Imm    summon charm acid~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4606
+Name blood corpuscle white~
+ShortD the white blood corpuscle~
+LongD A strange white blood corpuscle floats around here.~
+Desc This is a strange blob.  You realise, that it must be a huge blood
+corpuscle.  This one is white.  You wonder where the red ones are.  
+~
+Race human~
+Align 3 1
+Level 47
+Hitroll 0
+HitDice 10d149+836
+ManaDice 47d10+100
+DamDice 5d16+25
+DamType digestion
+AC -190 -190 -190 -40
+Wealth 470
+Act    npc no_tame~
+AffBy  flying haste~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4607
+Name hip guardian head femur~
+ShortD the hip guardian~
+LongD A really weird head of a femur glares at you.~
+Desc This is the strangest guardian you have ever seen.  It seems that a huge
+head of a femur has grown arms, legs and a head.  Weird!  The guardian will
+fight till the very end, he tells you.  
+~
+Race human~
+Align 2 1
+Level 40
+Hitroll 0
+HitDice 10d108+648
+ManaDice 40d10+100
+DamDice 5d14+20
+DamType none
+AC -150 -150 -150 -20
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  sanctuary haste~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4608
+Name blood corpuscle red~
+ShortD the red blood corpuscle~
+LongD Something here looks like a huge red blood corpuscle.~
+Desc There is a red blob here.  The red blood corpuscle of course.  This one
+looks real mean.  You better not mess with the stuff its guarding!  
+~
+Race human~
+Align -1 -1
+Level 47
+Hitroll 0
+HitDice 10d149+836
+ManaDice 47d10+100
+DamDice 5d16+25
+DamType digestion
+AC -190 -190 -190 -40
+Wealth 470
+Act    npc no_tame~
+AffBy  flying haste~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4609
+Name guard neuron royal~
+ShortD the royal neuron guard~
+LongD A Royal Neuron Guard is here guarding the castle headquarters.~
+Desc This guard looks real good.  He loves being the best that he can be for
+his master, The Mad Brain.  
+~
+Race human~
+Align 1 0
+Level 55
+Hitroll 0
+HitDice 10d204+1078
+ManaDice 55d10+100
+DamDice 5d19+28
+DamType none
+AC -240 -240 -240 -70
+Wealth 550
+Act    npc no_tame~
+AffBy  sanctuary pass_door~
+Off    kick assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4610
+Name captain royal neuron~
+ShortD the royal neuron captain~
+LongD This captain must be the leader of The Royal Neuron Guard.~
+Desc This creature looks real important.  He is very busy ordering the guards
+around.  It has been a while since his last fight - with all the paperwork,
+but he still looks fit for fight.  
+~
+Race human~
+Align -1 0
+Level 52
+Hitroll 0
+HitDice 10d182+988
+ManaDice 52d10+100
+DamDice 5d18+27
+DamType none
+AC -220 -220 -220 -60
+Wealth 520
+Act    npc dont_wander no_tame~
+AffBy  sanctuary haste~
+Off    dodge kick~
+Imm    summon charm~
+Vuln   acid~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4611
+Name mean baby toe~
+ShortD a mean baby toe~
+LongD A baby toe is playing here....he looks mean.~
+Desc At first you think this baby toe is kinda cute, but as you discover the
+big nasty teeth in its mouth you change your mind.  
+~
+Race human~
+Align 2 -1
+Level 37
+Hitroll 0
+HitDice 10d92+578
+ManaDice 37d10+100
+DamDice 5d12+23
+DamType none
+AC -130 -130 -130 -10
+Wealth 370
+Act    npc dont_wander no_tame~
+AffBy  curse weaken~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4612
+Name good little toe~
+ShortD a good little toe~
+LongD A good little toe is playing with its toys, it looks so peaceful.~
+Desc This toe looks cute.  You have never seen anything like this.  
+~
+Race human~
+Align -2 1
+Level 37
+Hitroll 0
+HitDice 10d92+578
+ManaDice 37d10+100
+DamDice 5d12+23
+DamType none
+AC -130 -130 -130 -10
+Wealth 370
+Act    npc dont_wander no_tame~
+AffBy  curse weaken~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4613
+Name huge bad toe~
+ShortD the huge bad toe~
+LongD There is a huge, mean looking toe here glaring at you.~
+Desc You guess this toe is the leader of this little mean toe family.  This is
+the first toe you have ever seen with over 100 teeth.  
+~
+Race human~
+Align -3 -1
+Level 36
+Hitroll 0
+HitDice 10d87+555
+ManaDice 36d10+100
+DamDice 5d12+21
+DamType bite
+AC -120 -120 -120 -10
+Wealth 360
+Act    npc dont_wander no_tame~
+AffBy  sanctuary haste~
+Off    dirt_kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4614
+Name kind father toe~
+ShortD the kind toe father~
+LongD There is a big kind looking toe here....he must be the father.~
+Desc This toe must be the father.  He is huge, but he looks quite friendly.  
+~
+Race human~
+Align -1 1
+Level 36
+Hitroll 0
+HitDice 10d87+555
+ManaDice 36d10+100
+DamDice 5d12+21
+DamType bite
+AC -120 -120 -120 -10
+Wealth 360
+Act    npc dont_wander no_tame~
+AffBy  sanctuary haste~
+Off    dirt_kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4615
+Name muscle soleus~
+ShortD the soleus muscle~
+LongD There is a strange muscle called Soleus here.~
+Desc This thing looks really odd.  Its half muscle half man, but it has a kind
+looking face.  
+~
+Race human~
+Align -2 0
+Level 37
+Hitroll 0
+HitDice 10d92+578
+ManaDice 37d10+100
+DamDice 5d12+23
+DamType none
+AC -130 -130 -130 -10
+Wealth 370
+Act    npc dont_wander no_tame warrior~
+AffBy  sanctuary haste~
+Off    disarm dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4616
+Name muscle peroneus longus~
+ShortD the peroneus longus muscle~
+LongD This muscle creature says he is called Peroneus Longus...wierd!~
+Desc You can smell the evil in this creature.....  He will kill you if you let
+him.  RUN AWAY!  
+~
+Race human~
+Align 1 0
+Level 37
+Hitroll 0
+HitDice 10d92+578
+ManaDice 37d10+100
+DamDice 5d12+23
+DamType none
+AC -130 -130 -130 -10
+Wealth 370
+Act    npc dont_wander no_tame warrior~
+AffBy  sanctuary haste~
+Off    disarm dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4617
+Name appendix~
+ShortD the appendix~
+LongD This thing looks like an appendix with arms and leg.~
+Desc At first you think this is a giant straw with arms and legs, but you
+realize, that this must be a gigantic appendix with arms and legs.  This
+creature looks kind in spite of its odd appearance.  
+~
+Race human~
+Align -1 0
+Level 42
+Hitroll 0
+HitDice 10d119+700
+ManaDice 42d10+100
+DamDice 5d14+24
+DamType none
+AC -160 -160 -160 -30
+Wealth 420
+Act    npc dont_wander no_tame warrior~
+AffBy  sanctuary haste~
+Off    dodge kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4618
+Name intestine large~
+ShortD the large intestine~
+LongD This large intestine is angry with its wife...or just plain mean.~
+Desc You guess this is the man in the intestine house.  He is pretty angry for 
+some reason.  Perhaps its your being here that upsets him....  I would run 
+if I were in your shoes.  
+~
+Race human~
+Align 3 0
+Level 43
+Hitroll 0
+HitDice 10d124+733
+ManaDice 43d10+100
+DamDice 5d15+21
+DamType none
+AC -160 -160 -160 -30
+Wealth 430
+Act    npc dont_wander no_tame mage~
+AffBy  sanctuary haste~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4619
+Name intestine small~
+ShortD the small intestine~
+LongD The small intestine looks angry with her husband.....or you!~
+Desc This is the wife in the intestine family.  She looks smaller than her
+husband, but she looks very mean.....  Perhaps she gives her husband a good
+kicking now and then.  
+~
+Race human~
+Align -3 0
+Level 50
+Hitroll 0
+HitDice 5d8+270
+ManaDice 6d9+330
+DamDice 6d6+17
+DamType none
+AC -190 -190 -190 -155
+Wealth 440
+Act    npc dont_wander no_tame mage~
+AffBy  sanctuary haste~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4620
+Name kidney left~
+ShortD the left kidney~
+LongD A mean looking kidney tells you to get lost.~
+Desc This guy is evil...  You can tell just by looking at him.  He looks at you 
+and says: "Do I really have to kick you out?"  
+~
+Race human~
+Align -1 -1
+Level 45
+Hitroll 0
+HitDice 10d136+786
+ManaDice 45d10+100
+DamDice 5d15+26
+DamType none
+AC -180 -180 -180 -40
+Wealth 450
+Act    npc dont_wander no_tame undead~
+AffBy  sanctuary haste~
+Off    dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4621
+Name kidney right~
+ShortD the right kidney~
+LongD A kidney says: "welcome to my office, sit down!"~
+Desc Here is a nice looking fellow.  He smiles at you and asks, "What do you want 
+to drink?"  
+~
+Race human~
+Align -1 1
+Level 45
+Hitroll 0
+HitDice 10d136+786
+ManaDice 45d10+100
+DamDice 5d15+26
+DamType none
+AC -180 -180 -180 -40
+Wealth 450
+Act    npc dont_wander no_tame undead~
+AffBy  sanctuary haste~
+Off    dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4622
+Name vien saphenus~
+ShortD the saphenus vein~
+LongD A vein called Saphenus is guarding its home here.~
+Desc This thing doesn't even give you time to explain.  
+~
+Race human~
+Align 2 0
+Level 41
+Hitroll 0
+HitDice 10d113+678
+ManaDice 41d10+100
+DamDice 5d14+22
+DamType none
+AC -150 -150 -150 -20
+Wealth 410
+Act    npc dont_wander no_tame aggressive~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared protect_evil protect_good haste dark_vision~
+Off    disarm dodge parry~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4623
+Name heart~
+ShortD the beating heart~
+LongD A heart with arms and leg are beating away here.~
+Desc At first you think this is a man.  But as you take a closer look you
+notice, that the body of this thing is beating like a heart.  In fact it is
+a heart!  
+~
+Race human~
+Align -3 0
+Level 46
+Hitroll 0
+HitDice 10d142+815
+ManaDice 46d10+100
+DamDice 5d16+23
+DamType none
+AC -180 -180 -180 -40
+Wealth 460
+Act    npc dont_wander no_tame undead~
+AffBy  sanctuary haste~
+Off    dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4624
+Name lung left evil~
+ShortD the left lung~
+LongD This left lung look a bit mean you think.~
+Desc This lung could provide air for a whale.  It is huge with big nasty
+teeth.  Its real ugly looking, and you guess it could kill you instantly.  
+~
+Race human~
+Align 3 -1
+Level 46
+Hitroll 0
+HitDice 10d142+815
+ManaDice 46d10+100
+DamDice 5d16+23
+DamType none
+AC -180 -180 -180 -40
+Wealth 460
+Act    npc dont_wander no_tame~
+AffBy  sanctuary~
+Off    dodge kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4625
+Name lung right good~
+ShortD the good right lung~
+LongD An ugly but kind looking lung creature is here.~
+Desc This lung could provide air for a small city....  It is huge.  This thing 
+has big teeth and smells aweful.  Its look pretty kind though and you dont 
+think it wants to kill you.  
+~
+Race human~
+Align -3 1
+Level 46
+Hitroll 0
+HitDice 10d142+815
+ManaDice 46d10+100
+DamDice 5d16+23
+DamType none
+AC -180 -180 -180 -40
+Wealth 460
+Act    npc dont_wander no_tame~
+AffBy  sanctuary~
+Off    dodge kick~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4626
+Name finger evil~
+ShortD the evil finger~
+LongD A finger has grown arms and legs...he is looking at you.~
+Desc This finger is really tough.....  You can tell just by looking.  He tells 
+you, "I live in this arm, and I will guard my home with my life."  You think 
+he could use a good kicking.  
+~
+Race human~
+Align -3 -1
+Level 47
+Hitroll 0
+HitDice 10d149+836
+ManaDice 47d10+100
+DamDice 5d16+25
+DamType none
+AC -190 -190 -190 -40
+Wealth 470
+Act    npc no_tame~
+Off    disarm kick assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4627
+Name finger good~
+ShortD the good finger~
+LongD A nice looking finger is here. It asks: "Can I help you?"~
+Desc This finger looks like it could really mess you up, but you dont feel
+like fighting it since it looks so nice.  
+~
+Race human~
+Align 3 1
+Level 47
+Hitroll 0
+HitDice 10d149+836
+ManaDice 47d10+100
+DamDice 5d16+25
+DamType none
+AC -190 -190 -190 -40
+Wealth 470
+Act    npc no_tame~
+Off    disarm kick assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4628
+Name child finger evil~
+ShortD the evil finger child~
+LongD A finger child is destroying toys here. ~
+Desc This child is the worst brat you have ever seen.  It is shaped as a finger 
+but you can tell its a brat through the disguise.  This thing needs a good 
+spanking!  
+~
+Race human~
+Align 3 -1
+Level 53
+Hitroll 0
+HitDice 10d189+1019
+ManaDice 53d10+100
+DamDice 5d18+29
+DamType none
+AC -230 -230 -230 -60
+Wealth 530
+Act    npc dont_wander no_tame~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4629
+Name child finger good~
+ShortD the good finger child~
+LongD A nice looking finger child is here playing with its toys.~
+Desc This is one of those kids who always does their homework.  You bet this kid 
+has never skipped one day in school.  He just pisses you off.  
+~
+Race human~
+Align 0 1
+Level 53
+Hitroll 0
+HitDice 10d189+1019
+ManaDice 53d10+100
+DamDice 5d18+29
+DamType none
+AC -230 -230 -230 -60
+Wealth 530
+Act    npc dont_wander no_tame~
+AffBy  sanctuary~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4630
+Name mean father finger~
+ShortD the mean father finger~
+LongD There is a big mean looking finger here.....must be the father.~
+Desc This is the worst parent you have ever seen.  He kicks the children around 
+to make them real evil.  It looks as he is real good at that too.  He is one 
+evil parent thats for sure.  
+~
+Race human~
+Align 0 -1
+Level 50
+Hitroll 0
+HitDice 10d168+930
+ManaDice 50d10+100
+DamDice 5d17+27
+DamType none
+AC -210 -210 -210 -50
+Wealth 500
+Act    npc dont_wander scavenger no_tame thief~
+AffBy  sanctuary haste~
+Off    dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#4631
+Name mother finger good~
+ShortD the good mother~
+LongD There is a pleasant looking female finger here...must be the mother.~
+Desc This is a great parent you think.  You wish you had a mother like that....  
+Real nice and stuff.  She loves to play with her children too......  Well, 
+that is so cute!  
+~
+Race human~
+Align 0 1
+Level 50
+Hitroll 0
+HitDice 10d168+930
+ManaDice 50d10+100
+DamDice 5d17+27
+DamType none
+AC -210 -210 -210 -50
+Wealth 500
+Act    npc dont_wander scavenger no_tame thief~
+AffBy  sanctuary haste~
+Off    dodge~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4632
+Name servant mad brain~
+ShortD a servant of the mad brain~
+LongD This servant is bringing stuff to and from the mad brain.~
+Desc You are real happy that you are not in the shoes of this guy.  He has to run 
+all the time to make his ruler, the Brain, happy.  Put him out of his 
+misery!  
+~
+Race human~
+Align -2 0
+Level 57
+Hitroll 0
+HitDice 10d219+1144
+ManaDice 57d10+100
+DamDice 5d19+33
+DamType none
+AC -250 -250 -250 -70
+Wealth 570
+Act    npc no_tame~
+AffBy  sanctuary pass_door~
+Off    disarm assist_vnum~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#4633
+Name testicle giant~
+ShortD a giant testicle~
+LongD This is the biggest testicle you will ever see......I hope.~
+Desc You didn't think that testicles could look this mean.  They usually seem so 
+cute and fragile.  You can kick these testicles all you like....  They will 
+never break.  You begin to wish you had a pair just like them.  
+~
+Race human~
+Align 2 0
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -287
+Wealth 430
+Act    npc dont_wander no_tame aggressive~
+Off    assist_vnum~
+Imm    summon charm~
+Form   edible non_skinable sentient biped mammal~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4634
+Name cook chef~
+ShortD the cook~
+LongD This cook should be in some sort of army....he is awesome!~
+Desc Its an awesome sight.....  You almost fall over backwards at the sight of 
+this cook.  This is like the mad cook from hell.  You would never eat 
+anything this guy would serve.  He is real mean looking, and he would poison 
+you if he could.  
+~
+Race human~
+Align -1 0
+Level 54
+Hitroll 0
+HitDice 10d196+1053
+ManaDice 54d10+100
+DamDice 5d18+31
+DamType none
+AC -230 -230 -230 -60
+Wealth 540
+Act    npc dont_wander no_tame mage~
+AffBy  sanctuary haste~
+Off    dodge~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#4635
+Name cupcake dragon~
+ShortD a `#`Wcu`Ypca`Wke `Ydr`Wag`Yon`^~
+LongD `#A dragon covered with `?m`?u`?l`?t`?i`Y-`?c`?o`?l`?o`?r`?e`?d `Wcu`Ypc`Wake`^ frosting is standing here.~
+Desc This dragon is not only immense in size, it is made entirely of frosting. 
+Large multi-colored sprinkles adorn its 'skin', and a long row of miniature 
+cupcakes extend down its back like strange spikes. Swirls of various colors 
+cover its body, and frosting drips from its mouth. 
+~
+Race dragon~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType claw
+AC -700 -700 -700 -574
+Wealth 100
+Act    npc no_tame stay_area~
+AffBy  infrared flying haste dark_vision~
+Off    area_attack bash tail~
+Imm    summon charm bash sleep~
+Res    magic~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material 'cupcake frosting'
+END
+
+#0
+
+
+
+#OBJECTS
+#4600
+Name White key~
+Short the white key~
+Desc A fine white key, with strange runes on it~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    antievil~
+Wear     take~
+End
+
+#4601
+Name pile rotting heap bed~
+Short the heap of carnage~
+Desc There is a bed made of carnage here.~
+Level 5
+ItemType container~
+Cost 10
+Durability 5
+Asize 0
+Rsize 50
+Values 30 0 0 30 100
+Weight 0
+Material oldstyle~
+End
+
+#4602
+Name none~
+Short the troll skin~
+Desc The filthy hide of a beast is laying here.~
+Level 12
+ItemType key~
+Cost 30
+Durability 5
+Asize 200
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material oldstyle~
+Wear     take waist~
+Affect modifier -1 12 -1 strength 2 0
+ExtraDesc troll skin~
+This is the skin from a huge (and dead) beast.  It looks bad, smells bad,
+and feels bad.
+~
+End
+
+#4603
+Name Black key~
+Short an opal ring~
+Desc A ring of black opal lies here gathering dust.~
+Level 30
+ItemType key~
+Cost 180
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material opal~
+Extra    antievil nonmetal~
+Wear     take finger~
+ClassAllowances mage cleric druid paladin ranger~
+Affect modifier -1 30 -1 damroll 2 0
+Affect modifier -1 30 -1 hitroll 3 0
+ExtraDesc ring opal~
+It is a full circle of opal, smooth and simple.
+~
+End
+
+#4604
+Name leather belt~
+Short a leather belt~
+Desc An old leather belt is left on the floor.~
+Level 15
+ItemType armor~
+Cost 50
+Durability 5
+Asize 50
+Rsize 50
+Values 6 6 6 0 0
+Weight 50
+Material oldstyle~
+Extra    magic antievil~
+Wear     take waist~
+ClassAllowances mage cleric druid paladin ranger~
+ExtraDesc leather belt~
+This old, smelly belt looks like it is barely better than rotting cloth.
+~
+End
+
+#4605
+Name bone cracked~
+Short a cracked bone~
+Desc A cracked piece of bone lies here.~
+Level 45
+ItemType weapon~
+Cost 10
+Durability 5
+Asize 30
+Rsize 50
+Values mace 3 16 pound 0
+Weight 30
+Material oldstyle~
+Extra    antievil nonmetal~
+Wear     take wield~
+ClassAllowances mage cleric druid paladin ranger~
+Affect modifier -1 45 -1 hitroll 2 0
+ExtraDesc bone~
+This piece of bone looks sturdy enough to be used as a weapon, but you
+wouldn't want to entrust your life to it.
+~
+End
+
+#4606
+Name bloody crack~
+Short the fossa poplitea~
+Desc You see a strange bloody crack here....you wonder whats in there.~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 0 4639 0
+Weight 0
+Material none~
+End
+
+#4607
+Name black key~
+Short the black key~
+Desc A strange black key with runes on it.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Wear     take hold~
+End
+
+#4608
+Name heart key~
+Short the heart key~
+Desc An odd little key with a heart on it.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Wear     take hold~
+End
+
+#4609
+Name fantasy~
+Short the fantasy of the brain~
+Desc The fantasy of the brain fills the air....dare you enter?~
+Level 40
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 0 0 4642 0
+Weight 0
+Material none~
+Extra    invis rotdeath~
+End
+
+#4610
+Name key living room~
+Short the brain's living room key~
+Desc A short key for the brain's living room.~
+Level 1
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Wear     take hold~
+End
+
+#4611
+Name yellowed armor~
+Short a hunk of yellowed armor~
+Desc A hunk of `#`Yyellow`^ armor rests here, slowly decaying.~
+Level 35
+ItemType armor~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 12 12 12 8 0
+Weight 20
+Material none~
+Extra    antineutral~
+Wear     take torso~
+Affect affects -1 35 -1 damroll 2 0
+Affect affects -1 35 -1 hitroll 2 0
+End
+
+#4612
+Name skull cap~
+Short a skull cap~
+Desc Some sort of protection for the skull rests here.~
+Level 55
+ItemType armor~
+Cost 450
+Durability 5
+Asize 25
+Rsize 50
+Values 11 5 9 10 0
+Weight 25
+Material antimatter~
+Extra    hum magic nolocate~
+Wear     take head~
+ClassAllowances mage cleric spellfilcher~
+Affect affects -1 55 -1 damroll 3 0
+Affect modifier -1 55 -1 hitroll 1 0
+End
+
+#4613
+Name glob flesh~
+Short a glob of flesh~
+Desc A glob of rotting flesh stinking up the place rests here.~
+Level 55
+ItemType armor~
+Cost 450
+Durability 5
+Asize 45
+Rsize 50
+Values 9 9 9 9 0
+Weight 45
+Material none~
+Extra    glow hum invis magic~
+Wear     take wrist~
+ClassAllowances druid~
+Affect affects -1 55 -1 empathy 3 0
+Affect modifier -1 55 -1 intuition 3 0
+End
+
+#4614
+Name bone earring~
+Short a `#`cbone`^ earring~
+Desc A brittle earring made of bone lies before you.~
+Level 40
+ItemType gem~
+Cost 400
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material none~
+Extra    hum invis magic nodrop~
+Wear     take ear~
+Affect affects -1 40 -1 mana 40 0
+Affect modifier -1 40 -1 ac -6 0
+End
+
+#4615
+Name bone mace~
+Short a `#`cbone`^ mace~
+Desc A strange mace made of bone is sitting here.~
+Level 35
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 28
+Rsize 50
+Values mace 3 11 none D
+Weight 28
+Material none~
+Extra    nodrop~
+Wear     take wield~
+End
+
+#4616
+Name sword bone~
+Short a sharp sword made of `#`cbone`^~
+Desc A sword made of a sharpened upper arm bone lies here.~
+Level 50
+ItemType weapon~
+Cost 503
+Durability 5
+Asize 36
+Rsize 50
+Values sword 4 12 slice D
+Weight 36
+Material bone~
+Extra    hum nodrop~
+Wear     take wield~
+Affect affects -1 50 -1 hitroll 4 0
+Affect affects -1 50 -1 damroll 4 0
+End
+
+#4617
+Name bloodletter whip~
+Short Whip of the `#`RBloodletter`^~
+Desc A blood-drenched whip lies here, waiting to cause havoc.~
+Level 45
+ItemType weapon~
+Cost 430
+Durability 5
+Asize 23
+Rsize 50
+Values whip 3 14 bite H
+Weight 23
+Material none~
+Extra    hum~
+Wear     take wield~
+Affect affects -1 45 -1 hitroll 5 0
+Affect affects -1 45 -1 damroll 3 0
+End
+
+#4618
+Name wicked staff~
+Short a `#`cW`ri`cc`rk`ce`rd`^ staff~
+Desc A long `#`cw`ri`cc`rk`ce`rd`^ staff laced in poison rests here.~
+Level 50
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 67
+Rsize 50
+Values polearm 3 18 thrust DH
+Weight 67
+Material none~
+Extra    hum~
+Wear     take wield~
+ClassAllowances warrior barbarian knight~
+Affect affects -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 hitroll 4 0
+End
+
+#4619
+Name apron~
+Short the apron~
+Desc This is some sort of apron....looks rather heavy though.~
+Level 53
+ItemType armor~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values 13 13 13 10 0
+Weight 10
+Material none~
+Extra    glow~
+Wear     take about~
+ClassAllowances druid paladin ranger spellfilcher monk anti-paladin~
+Affect affects -1 53 -1 move 10 0
+Affect affects -1 53 -1 quickness 1 0
+Affect modifier -1 53 -1 hp 2 0
+Affect modifier -1 53 -1 mana 20 0
+End
+
+#4620
+Name dagger bone~
+Short the bone dagger~
+Desc This dagger is made of bone.~
+Level 40
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 23
+Rsize 50
+Values dagger 3 11 stab 0
+Weight 23
+Material bone~
+Extra    antievil~
+Wear     take wield~
+Affect modifier -1 40 -1 quickness 2 0
+End
+
+#4621
+Name leggings white metal~
+Short `#`WWhite`^ metal leggings~
+Desc A durable set of white metal leggings rests here.~
+Level 40
+ItemType armor~
+Cost 400
+Durability 5
+Asize 50
+Rsize 50
+Values 8 8 8 6 0
+Weight 50
+Material none~
+Extra    antievil~
+Wear     take legs~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 40 -1 mana 45 0
+End
+
+#4622
+Name book of intruders~
+Short the book of intruders~
+Desc A book with a long list of intruders is here.~
+Level 42
+ItemType weapon~
+Cost 290
+Durability 5
+Asize 25
+Rsize 50
+Values exotic 5 6 none F
+Weight 25
+Material paper~
+Extra    hum nodrop~
+Wear     take wield~
+Affect affects -1 42 -1 hitroll 3 0
+Affect affects -1 42 -1 damroll 2 0
+End
+
+#4623
+Name rotting sleeves~
+Short `#`Cdecayed`^ sleeves~
+Desc A set of decayed sleeves lies here, collecting dust.~
+Level 44
+ItemType armor~
+Cost 300
+Durability 5
+Asize 30
+Rsize 50
+Values 12 12 12 14 0
+Weight 30
+Material skin~
+Extra    glow antievil nonmetal~
+Wear     take arms~
+ClassAllowances druid~
+Affect modifier -1 44 -1 hitroll 2 0
+Affect modifier -1 44 -1 damroll 1 0
+Affect modifier -1 44 -1 quickness 2 0
+End
+
+#4624
+Name plate rusted heavy~
+Short a heavy `#`crusted`^ plate~
+Desc A heavy rusted plate lies here, glowing with an orange aura.~
+Level 55
+ItemType armor~
+Cost 500
+Durability 5
+Asize 60
+Rsize 50
+Values 13 20 15 15 0
+Weight 60
+Material metal~
+Extra    magic bless antievil~
+Extra2   nochaoslace~
+Wear     take~
+ClassAllowances mage cleric druid~
+Affect affects -1 55 -1 empathy 3 0
+End
+
+#4625
+Name belt peace inner~
+Short the belt of inner peace~
+Desc A belt helping calm the nerves, promoting inner peace rests here.~
+Level 52
+ItemType armor~
+Cost 480
+Durability 5
+Asize 20
+Rsize 50
+Values 11 11 11 11 0
+Weight 20
+Material metal~
+Extra    invis magic bless antievil~
+Wear     take waist~
+ClassAllowances druid ranger~
+Affect affects -1 52 -1 hitroll 2 0
+Affect affects -1 52 -1 damroll 2 0
+Affect affects -1 52 -1 presence 2 0
+End
+
+#4626
+Name spear jagged~
+Short a short jagged spear~
+Desc A short jagged spear lays here, waiting to be used.~
+Level 36
+ItemType weapon~
+Cost 290
+Durability 5
+Asize 22
+Rsize 50
+Values exotic 3 11 pierce F
+Weight 22
+Material none~
+Extra    hum nodrop antievil~
+Wear     take wield~
+Affect affects -1 36 -1 hitroll 3 0
+End
+
+#4627
+Name gauntlets strength~
+Short gauntlets of strength~
+Desc These gauntlets, adorned with bright colored `#`rjewels`^ would make one formidable in a fight where strength is required.~
+Level 37
+ItemType armor~
+Cost 280
+Durability 5
+Asize 25
+Rsize 50
+Values 10 10 10 7 0
+Weight 25
+Material metal~
+Extra    antievil~
+Wear     take hands~
+ClassAllowances mage cleric warrior druid paladin spellfilcher~
+Affect modifier -1 37 -1 strength 4 0
+End
+
+#4628
+Name boots beast~
+Short boots of the `#`rbeast`^~
+Desc This must be boots for beasts.~
+Level 37
+ItemType armor~
+Cost 340
+Durability 5
+Asize 30
+Rsize 50
+Values 8 8 8 5 0
+Weight 30
+Material metal~
+Extra    glow antievil~
+Wear     take feet~
+ClassAllowances warrior druid paladin barbarian spellfilcher~
+Affect modifier -1 37 -1 strength 1 0
+Affect modifier -1 37 -1 hitroll 2 0
+End
+
+#4629
+Name ring speed~
+Short the ring of speed~
+Desc A ring rests here, humming quite violently.~
+Level 50
+ItemType jewelry~
+Cost 290
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material metal~
+Extra    hum antievil~
+Wear     take finger~
+ClassAllowances warrior druid paladin ranger barbarian spellfilcher~
+Affect affects -1 50 -1 damroll 1 0
+Affect modifier -1 50 -1 quickness 2 0
+Affect modifier -1 50 -1 hitroll 2 0
+End
+
+#4630
+Name shield leather~
+Short a `#`cleather`^ shield~
+Desc A shield made of finely tanned leather lies here.~
+Level 45
+ItemType armor~
+Cost 300
+Durability 5
+Asize 40
+Rsize 50
+Values 8 9 9 9 0
+Weight 40
+Material leather~
+Extra    bless antievil nonmetal~
+Wear     take shield~
+ClassAllowances druid paladin~
+Affect modifier -1 45 -1 quickness 2 0
+Affect modifier -1 45 -1 strength 1 0
+End
+
+#4631
+Name aura chaos~
+Short `#`YAura `Wof `#`?Chaos`^~
+Desc A strange aura floats about here.~
+Level 55
+ItemType armor~
+Cost 430
+Durability 5
+Asize 17
+Rsize 50
+Values 5 5 5 5 0
+Weight 17
+Material immaterial~
+Extra    invis magic bless antievil burnproof chaos~
+Wear     take float~
+ClassAllowances mage cleric druid paladin~
+Affect modifier -1 55 -1 memory 3 0
+Affect modifier -1 55 -1 reasoning 1 0
+Affect modifier -1 55 -1 agility 2 0
+End
+
+#4632
+Name necklace yellow rings~
+Short a necklace of `Yyellow`^ rings~
+Desc A necklace with many `#`Yyellow`^ rings interlinked lies here.~
+Level 46
+ItemType armor~
+Cost 300
+Durability 5
+Asize 5
+Rsize 50
+Values 11 15 0 6 0
+Weight 5
+Material gel-like substance~
+Extra    glow magic antievil nolocate~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin ranger~
+Affect affects -1 46 -1 mana 30 0
+Affect modifier -1 46 -1 hp 5 0
+End
+
+#4633
+Name stone red bright~
+Short a `#`Rbright `rred`^ stone~
+Desc A burning kidney stone is here.~
+Level 45
+ItemType light~
+Cost 280
+Durability 5
+Asize 16
+Rsize 50
+Values 0 0 -1 0 0
+Weight 16
+Material none~
+Extra    glow antievil nonmetal~
+Wear     take~
+ClassAllowances mage cleric paladin ranger~
+End
+
+#4634
+Name shield corroded acid~
+Short a shield corroded by `#`gacid`^~
+Desc An shield corroded by acid is here.~
+Level 44
+ItemType armor~
+Cost 400
+Durability 5
+Asize 53
+Rsize 50
+Values 12 12 12 12 0
+Weight 53
+Material steel~
+Extra    glow nolocate~
+Wear     take shield~
+Affect affects -1 44 -1 mana 13 0
+Affect resist -1 44 -1 none 0 acid
+Affect modifier -1 44 -1 saves -4 0
+End
+
+#4635
+Name no name~
+Short (no short description)~
+Desc (no description)~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+End
+
+#4636
+Name glasses bright glowing~
+Short a pair of `#`Wbright `Rglowing`^ glasses~
+Desc A pair of glowing glasses lies here, the lenses slightly scratched.~
+Level 42
+ItemType armor~
+Cost 300
+Durability 5
+Asize 1
+Rsize 50
+Values 8 5 5 5 0
+Weight 1
+Material none~
+Extra    glow antievil nolocate~
+Wear     take eyes~
+ClassAllowances mage cleric druid paladin ranger~
+Affect modifier -1 42 -1 hp 2 0
+Affect modifier -1 42 -1 selfdiscipline 2 0
+End
+
+#4637
+Name hairy goosebumped skin~
+Short some `#`Cskin`^~
+Desc There is some hairy, goosebumped skin here.~
+Level 43
+ItemType gem~
+Cost 220
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material none~
+Extra    hum antievil~
+Wear     take hold~
+ClassAllowances mage cleric druid paladin ranger~
+Affect affects -1 43 -1 empathy 1 0
+Affect affects -1 43 -1 intuition 1 0
+Affect affects -1 43 -1 mana 28 0
+End
+
+#4640
+Name cape neural networks~
+Short the cape of `#`Rn`Be`Ru`Br`Ra`Bl `Rn`Be`Rt`Bw`Ro`Br`Rk`Bs`^~
+Desc A cape made of the `#`Rt`Bi`Re`Bs `Wthat `Rb`Bi`Rn`Bd`^ lies here.~
+Level 57
+ItemType container~
+Cost 550
+Durability 5
+Asize 20
+Rsize 50
+Values 120 A 0 16 26
+Weight 20
+Material none~
+Extra    magic antievil nolocate burnproof~
+Wear     take about~
+ClassAllowances mage cleric druid paladin ranger~
+Affect modifier -1 57 -1 ac -8 0
+Affect modifier -1 57 -1 mana 10 0
+Affect modifier -1 57 -1 damroll 3 0
+End
+
+#0
+
+
+
+#ROOMS
+#4600
+Name The questlords room~
+Desc This room is Papillas room.....He prepares quests here.
+~
+RoomFlags no_mob private~
+Sector inside~
+End
+
+
+#4601
+Name The left thigh~
+Desc Here is a room shaped like the inside of a thigh.  It looks like a health
+club.  Some muscles are here working out.  An exit leads north, but you cant
+make out whats in the next room.  If you go south you will get back to the
+knee joint.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc plaque~
+This zone (trollden) is created by MERC for any MERC Mud.
+copyright 1992
+~
+Exit north 4609
+Exit south 4608
+End
+
+
+#4602
+Name Crus Sinistra~
+Desc You are standing in a tube shaped room.  It appears to be the inside of
+the left lower leg.  Living beings, that look like muscles, are here.  You
+have a hard time figuring out if its men or muscles.  To the north is the
+strangest room you have ever seen.  Going south will lead you back to the
+left foot.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc Half-eaten body rotting corpse~
+YUCK!  You find worms crawling in and out this poor unfortunate former human.
+~
+Exit north 4608
+Exit south 4604
+End
+
+
+#4603
+Name The right foot~
+Desc You feel a bit confused.  Apearently you are standing inside the right
+foot of a huge man.  Some small toes are here.  They obey their leader: The
+Big Toe.  To the north you see some sort of tunnel and the entrance to the
+castle lies west of here.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 4606
+EDesc You see some sort of tunnel.
+~
+Exit west 4605
+EDesc You see the entrance to the castle.
+~
+End
+
+
+#4604
+Name The left foot~
+Desc You have entered a room shaped as the inside of a foot.  The toes seem to
+live here.  To the north you see what looks like the lower part of a leg.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc arm rotting~
+This reminds you of what a baby would do to its formula during dinnertime,
+plastering it on the wall.
+~
+Exit north 4602
+Exit east 4605
+End
+
+
+#4605
+Name Entrance to The Body Parts Castle~
+Desc Welcome to Body Parts!  You have entered a really strange place.  The air
+is thick and there is a rotten smell here.  An old man sits in a corner
+talking nonsense.  He tells you that the ruler of his fair land has been
+blown to pieces and his bodyparts have come alive to revenge his death. 
+They have taken control of everything and they have shaped the castle as a
+human body.  He begs you to help destroy the brain of the "body"....  Before
+it takes over the whole world and makes us all slaves.  To the east and west
+you see rooms shaped as feet...  Strange!  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit east 4603
+EDesc You see a room shaped as a foot.
+~
+Exit south 7912
+Exit west 4604
+EDesc You see a room shaped as a foot.
+~
+End
+
+
+#4606
+Name Crus Dextra~
+Desc You find your self in some sort of tunnel.....  Hey now you get it: Its
+the inside of the right lower leg.  Muscles with arms, legs and heads are
+here....  This is really wierd!  To the north is a passage to somewhere even
+stranger than this.  To the south you see the right foot.  
+~
+Sector inside~
+Exit north 4607
+EDesc There is a strange room to the north.
+~
+Exit south 4603
+EDesc The is a room shaped as a foot to the south.
+~
+End
+
+
+#4607
+Name The right knee region~
+Desc You think: "This must be the inside of a knee", and you are absolutely 
+right.  Some strings, that were meant to hold the knee joint together, are 
+running around giving their new arms and legs a workout.  You are beginning 
+to get the feeling, that you would be better off at home.  Going north will 
+lead you to a tunnel and south will lead you back to the lower leg.  
+~
+Sector inside~
+Exit north 4613
+EDesc The thigh is to the north.
+~
+Exit south 4606
+EDesc You see a room shaped as the lower part of a leg.
+~
+End
+
+
+#4608
+Name The left knee region~
+Desc What has happened here?!!  You browse through your atlas of human
+anatomy.....  Hmmm.  Yes, here it is: You are standing in what seems to be
+the inside of a knee.  There is a strange bloody crack in the floor.....  Do
+you dare to examine it?  To the north is a strange tunnel and the southern
+exit leads you back to the left lower leg.  
+~
+Sector inside~
+Exit north 4601
+Exit south 4602
+End
+
+
+#4609
+Name The left hip joint~
+Desc Somebody has worked on this room so it looks like a hip joint.  A
+guardian is here guarding something....  An entrance?  The guardian is real
+funny looking.  He looks like head of a femur, only he has arms an legs. 
+There must be something mighty important beyond this room.  The only exit
+you see is back to the thigh.  
+~
+Sector inside~
+Exit east 4610
+EFlags door closed locked~
+EKeyvnum 4600
+EDesc You see something, that might look like a black door.  
+~
+Exit south 4601
+EDesc To the south is the thigh region.
+~
+End
+
+
+#4610
+Name Pelvis~
+Desc You are in a huge arched room.  The creatures who made this wanted it to
+look like the inside of a pelvis, and they have done a pretty good job too. 
+You start to wonder if it was meant to be the pelvis of a man or a woman. 
+After a few hours you give up, and start to look around.  There is some sort
+of intersection to the north and there is a strange room to the south. 
+Going east and west will take to the hip joints.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 4614
+EDesc You see a very complicated intersection.  
+~
+Exit east 4612
+EFlags door closed locked~
+EDesc You see the right hip joint.  
+~
+Exit south 4611
+EDesc No, it can't be...  Yes, it is a huge scrotum.  You have got a bed
+feeling about this.  
+~
+Exit west 4609
+EFlags door closed locked~
+EDesc You see the left hip joint.  
+~
+End
+
+
+#4611
+Name The Scrotum~
+Desc This is disgusting.  You are standing in what looks like a gigantic
+scrotum....  Bwarr!  This is of course the home of the giant testicles.  You
+are really beginning to think that you should be home in bed.  You can still
+make it: RUN AWAY!  
+~
+Sector inside~
+Exit north 4610
+End
+
+
+#4612
+Name The right hip joint~
+Desc The walls here have been carefully shaped to look like the inside of a
+hip joint.  You would not think there was anything special about the room if
+it wasn't for the strange guardian standing here.  He is apparently guarding
+something, but you can't figure out what.  The only exit you can see leads
+you back to the knee joint.  
+~
+Sector inside~
+Exit south 4613
+EDesc The southern exit leads to the thigh region.
+~
+Exit west 4610
+EFlags door closed locked~
+EKeyvnum 4607
+EDesc You see something, that might look like a white door.  
+~
+End
+
+
+#4613
+Name The right thigh~
+Desc You are in a room meant to look like a thigh.  It is now the home of a
+huge male femur and his little femur wife.  They have been busy making a
+large family....  You see very small femur babies running around here.  This
+is the wierdest thing you have ever seen.  To the north is a strange room
+and the exit to the south will take you to the knee joint.  
+~
+Sector inside~
+Exit north 4612
+EDesc To the north you see a guard guarding something.
+~
+Exit south 4607
+EDesc There is the knee joint.
+~
+End
+
+
+#4614
+Name Abdominal intersection~
+Desc This is a colossal room.  Many passages meet here.  You think it is a bit
+odd thats there is no creatures here.  Passages lead off in all directions. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4615
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4608
+Exit east 4620
+Exit south 4610
+Exit west 4622
+Exit up 4619
+Exit down 4618
+End
+
+
+#4615
+Name Pericardium~
+Desc You have entered the Pericardium.  It holds a human heart.  This heart
+look really strange as it stands before you beating away.  This heart looks
+pretty much like a man, its only the beating body, that lets you know you
+are not dealing with your neighbour here.  To the south you see an
+intersection and there is a tunnel to the north.  
+~
+RoomFlags no_mob~
+Sector inside~
+Exit north 4624
+Exit east 4617
+Exit south 4614
+EFlags door closed locked pickproof nopass~
+Exit west 4616
+End
+
+
+#4616
+Name The left lung cavity~
+Desc The fresh air in this room overwhelms you.  The ceiling in this room
+seems to move blowing fresh air in.  Ahhhh, thats nice.  This is also the
+home of a strange lung shaped creature.  He is real mean looking.  I
+wouldn't get too close if I were you!  A passage leads east to the
+pericardium.  
+~
+Sector inside~
+Exit east 4615
+End
+
+
+#4617
+Name The right lung cavity~
+Desc The first thing you notice about this place is the ceiling.  Its moving! 
+Apparently it is pumping fresh air into the castle.  Its a pity it never
+leaves this room.  A peacefull looking lung creature seems to live here.  An
+exit to the west leads to the pericardium.  
+~
+Sector inside~
+Exit west 4615
+End
+
+
+#4618
+Name The huge belly button~
+Desc Well, this is not the hub of the Universe, but it looks a lot like it. 
+You are standing in a gigantic navel.  This place would make a great
+swimming pool.  If you go up you will get back to the intersection.  
+~
+Sector inside~
+Exit up 4614
+End
+
+
+#4619
+Name Spinal cord~
+Desc This room is filled with odd strings.  It looks like a spiders web.  You
+try to figure out where the strings begin and where they end, but you get
+dizzy.  You can go down to the intersection.  
+~
+Sector inside~
+Exit down 4614
+End
+
+
+#4620
+Name Home of the Appendix~
+Desc You are beginning to think you should have paid more attention in
+biology.  What is this place.....  Hmmmmm.  Oh, now you get it: That looks
+like an appendix.  A passage leads up to some sort of office and you can go
+west back to the intersection.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4614
+Exit up 4621
+End
+
+
+#4621
+Name The office of the right kidney~
+Desc This room looks almost normal?!  It seems to be some sort of office. 
+From habit you start filling in some papers.....  How stupid.  You slap
+yourself.  A passage leads down.  
+~
+Sector inside~
+Exit down 4620
+End
+
+
+#4622
+Name The home of the intestines~
+Desc Yuck!  This is too much: guts all over the walls.  You throw up, but you
+comfort yourself: You are not the first.  A married couple lives here.  Its
+the large and the small intestine.  If you go up you come to an office of
+some sort and going east leads you back to the intersection.  
+~
+Sector inside~
+Exit east 4614
+Exit up 4623
+End
+
+
+#4623
+Name The office of the left kidney~
+Desc You step in to an office of some sort.  You start your own queue.  After
+a while you start to wonder: "What am I waiting for?"  .  You give yourself
+a good kicking.  A passage leads down.  
+~
+Sector inside~
+Exit down 4622
+End
+
+
+#4624
+Name Cross Roads in the neck region~
+Desc You wonder where you should go now.  Four passages meet here.  You can't
+make up your mind....  Perhaps you should just go home in bed.  To the east
+and west you see something that looks like arms.  The neck continues north
+and you can enter the pericardium to the south.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 4633
+Exit east 4629
+Exit south 4615
+Exit west 4625
+End
+
+
+#4625
+Name Brachium~
+Desc This area is populated by odd creatures, that look like parts of arms and
+hands.  The air is cold and you get the feeling, that the inhabitants here
+want you to go back home.  You have a feeling, that somebody is staring at
+you from the dark corners of this room.  You want to go back east but you
+can also continue west.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4624
+EDesc You see the cross roads in the neck.  
+~
+Exit west 4626
+EDesc There is a small room to the west, you wonder what it could be.  
+~
+End
+
+
+#4626
+Name Elbow joint~
+Desc It gets darker as you continue your exploration of this side of the cross
+roads.  The creatures you have meet until now did not make you feel very
+welcome and you think you should turn back.  There is a narrow tunnel to the
+west and the tunnel to the east will lead you to the cross roads.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4625
+EDesc There is a tunnel leading back to the cross roads.  
+~
+Exit west 4627
+EDesc You see a narrow tunnel.
+~
+End
+
+
+#4627
+Name Antebrachium~
+Desc This is a very narrow tunnel.  You have to crawl on yor hands and knee in
+some places.  The tunnel becomes very narrow to the west, and you want to
+turn back as you here odd voices like screams from a room at the end of the
+tunnel.  There is a passage to the east leading back to the elbow joint.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4626
+EDesc You see a room shaped as an elbow joint.  
+~
+Exit west 4628
+EDesc There is some sort of living room to the west.
+~
+End
+
+
+#4628
+Name The left hand~
+Desc There is an awful smell in this room.  You soon figure out, that the
+smell comes from the family of walking and talking fingers who live here. 
+These creatures have body parts on the floor as decorations and the walls
+are painted with blood.  I wouldn't get too close if I were you.  The only
+passage leads back east.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4627
+EDesc You see a narrow tunnel.  
+~
+End
+
+
+#4629
+Name Brachium~
+Desc You have entered a part of the casle populated by creatures, that look
+like they belong to the upper extremity of a human body.  This room looks a
+lot like the thigh region, the tunnel is just smaller.  You can go west to
+the cross roads in the neck and you see a passage to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4630
+Exit west 4624
+End
+
+
+#4630
+Name Elbow joint~
+Desc The walls here are shaped as bones that meet, you have been in this
+castle long enough to know, that this is some sort of joint.  This is of
+course meant to look like the elbow joint.  You are beginning to think that
+the creatures, that populate this side of the cross roads, look quite
+peacefull.  You wonder how the are on the other side.  You can go east and
+west here.  
+~
+Sector inside~
+Exit east 4631
+Exit west 4629
+End
+
+
+#4631
+Name Antebrachium~
+Desc The tunnel is pretty narrow here.  You crawl on your hands and knees as
+you move forward.  You want to turn back as the passage become very narrow
+to the east, but you notice, that there is room at the end of the tunnel. 
+You can go west back to the elbow joint.  
+~
+Sector inside~
+Exit east 4632
+Exit west 4630
+End
+
+
+#4632
+Name The right hand~
+Desc This is a really cosy room.  A family of walking, talking fingers live
+here.  If this had been the first room you had seen in this castle, you
+would have been amazed, but you find it rather cute.  A passage leads west
+back to the narrow tunnel.  
+~
+Sector inside~
+Exit west 4631
+End
+
+
+#4633
+Name The skull reception hall~
+Desc You find your self in the entrance of some sort of royal residence.  You
+wonder: "Who could be the owner of this residence.  The Queen...  Nahhh." 
+There is a lot of commotion here: servents and guards running around.  They
+are so busy they don't even notice you.  The headquarters of the guards is
+to the east and a passage leads north.  The passage that you came from has
+closed behind you!  
+~
+Sector inside~
+Exit north 4635
+EFlags door closed locked pickproof nopass~
+EKeyvnum 4610
+Exit east 4634
+Exit south 4624
+End
+
+
+#4634
+Name The Neuron Guard Office~
+Desc This is the headquarters of the Royal Neuron Guards.  Their job is to
+guard the ruler of the castle.  If they are half as tough as you think you
+are in big trouble.  The Royal Neuron Captain uses this room for paper work
+- not that there is a lot of that.  A passage leads west to the reception
+hall.  
+~
+Sector inside~
+Exit west 4633
+End
+
+
+#4635
+Name The main living room of the Mad Brain~
+Desc This must be where the brain lives.  There are pictures on the wall of a
+brain with arms and legs.  This looks like quite a nice living room and you
+think that this brain might be a nice guy.  You change your mind as you
+discover that the passage has closed behind you.  You can still run away,
+there is an way out to the north.  Passages leads east and west.  
+~
+Sector inside~
+Exit north 4638
+EFlags door closed~
+Exit east 4636
+Exit west 4637
+End
+
+
+#4636
+Name The Mad Brain's royal bedroom~
+Desc This must be where the Mad Brain sleeps.  There is a bed here and it
+looks really nice.  You wonder if you should go to sleep in the bed, when
+you discover, that the sheets are all slimy....  Yuck!  The passage west
+leads to the living room.  
+~
+Sector inside~
+Exit west 4635
+Exit down 4641
+End
+
+
+#4637
+Name A kitchen~
+Desc The cook and his helpers prepare the food for the Mad Brain here.  You
+look in some of the pots here and you throw up...  Twice!  No normal man
+could eat this.  You can get to the main living room if you go east.  
+~
+Sector inside~
+Exit east 4635
+End
+
+
+#4638
+Name The exit of the Body Parts Castle~
+Desc The passage has closed behind you, but you don't care.  You are finally
+free of that horrible castle.  The only passage out of here leads up.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit up 4605
+End
+
+
+#4639
+Name Knee-deep in the knee~
+Desc The walls here are sticky and the floor is very bloody.  The smell here is 
+awful and your stomach turns.  Better move on!  A passage opens to the 
+north.  
+~
+Sector inside~
+Exit north 4640
+End
+
+
+#4640
+Name Home of the Saphenus Vein~
+Desc A vein has a really nice home here.  He will guard it with his life.  You
+can go up and south.  
+~
+Sector inside~
+Exit south 4639
+Exit up 4605
+End
+
+
+#4641
+Name The Mad Brain's Shelter~
+Desc The brain must have been expecting your attack.  He has hidden himself in
+this nice little shelter.  You kinda feel pity for him - mighty ruler has to
+hide in a shelter.  And then again you really want to give him a good
+kicking.  You can go back the way you came.  
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit up 4636
+End
+
+
+#4642
+Name ~
+Desc ~
+RoomFlags no_mob~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 4603 spec_breath_lightning
+M 4610 spec_breath_lightning
+M 4618 spec_breath_acid
+M 4619 spec_breath_acid
+M 4620 spec_cast_undead
+M 4621 spec_cast_undead
+M 4623 spec_cast_undead
+M 4630 spec_thief
+M 4631 spec_thief
+M 4633 spec_breath_frost
+M 4634 spec_breath_fire
+M 4635 spec_cupcake_dragon
+S
+
+
+
+#RESETS2
+M 0 4601 4 4601 1
+E 0 4622 16 wielded~
+M 0 4608 10 4601 1
+M 0 4601 4 4602 1
+E 0 4622 16 wielded~
+M 0 4616 1 4602 1
+E 0 4628 8 feet~
+M 0 4608 10 4602 1
+E 0 4617 16 wielded~
+M 0 4614 1 4603 1
+E 0 4611 5 torso~
+E 0 4626 16 wielded~
+M 0 4612 4 4603 4
+E 0 4611 5 torso~
+M 0 4613 1 4604 1
+E 0 4611 5 torso~
+E 0 4626 16 wielded~
+M 0 4611 4 4604 4
+E 0 4611 5 torso~
+M 0 4602 4 4606 1
+E 0 4622 16 wielded~
+M 0 4615 1 4606 1
+E 0 4627 9 hands~
+M 0 4606 10 4606 1
+E 0 4617 16 wielded~
+M 0 4602 4 4607 1
+E 0 4622 16 wielded~
+O 0 4606 0 4607
+M 0 4606 10 4607 1
+E 0 4617 16 wielded~
+O 0 4606 0 4608
+M 0 4601 4 4608 1
+E 0 4622 16 wielded~
+M 0 4608 10 4608 1
+E 0 4617 16 wielded~
+M 0 4600 1 4609 1
+G 0 4600 -1
+E 0 4620 16 wielded~
+M 0 4601 4 4609 1
+E 0 4622 16 wielded~
+M 0 4608 10 4609 1
+M 0 4633 2 4611 2
+E 0 4637 17 hold~
+M 0 4633 2 4611 2
+E 0 4637 17 hold~
+M 0 4607 1 4612 1
+G 0 4607 -1
+E 0 4620 16 wielded~
+M 0 4602 4 4612 1
+E 0 4622 16 wielded~
+M 0 4606 4 4612 1
+E 0 4617 16 wielded~
+M 0 4606 10 4612 1
+M 0 4602 4 4613 1
+E 0 4622 16 wielded~
+M 0 4606 10 4613 1
+M 0 4606 10 4614 1
+E 0 4617 16 wielded~
+M 0 4608 10 4614 1
+E 0 4617 16 wielded~
+M 0 4623 1 4615 1
+E 0 4617 16 wielded~
+E 0 4632 3 neck1~
+G 0 4632 -1
+M 0 4624 1 4616 1
+M 0 4625 1 4617 1
+M 0 4606 10 4618 1
+E 0 4617 16 wielded~
+M 0 4608 10 4618 1
+E 0 4617 16 wielded~
+M 0 4606 10 4619 1
+E 0 4617 16 wielded~
+M 0 4608 10 4619 1
+E 0 4617 16 wielded~
+M 0 4617 1 4620 1
+G 0 4636 -1
+M 0 4606 10 4620 1
+M 0 4608 10 4620 1
+M 0 4621 1 4621 1
+G 0 4608 -1
+G 0 4633 -1
+M 0 4606 10 4621 1
+M 0 4608 10 4621 1
+M 0 4618 1 4622 1
+E 0 4623 10 arms~
+M 0 4619 1 4622 1
+E 0 4634 11 shield~
+M 0 4606 10 4622 1
+M 0 4608 10 4622 1
+M 0 4620 1 4623 1
+G 0 4608 -1
+G 0 4633 -1
+M 0 4605 4 4625 1
+E 0 4616 16 wielded~
+M 0 4605 4 4626 1
+E 0 4616 16 wielded~
+M 0 4605 4 4627 1
+E 0 4616 16 wielded~
+M 0 4628 1 4628 1
+M 0 4630 1 4628 1
+G 0 4629 -1
+M 0 4604 4 4629 1
+E 0 4616 16 wielded~
+M 0 4604 4 4630 1
+E 0 4616 16 wielded~
+M 0 4604 4 4631 1
+E 0 4616 16 wielded~
+M 0 4604 4 4631 1
+E 0 4616 16 wielded~
+M 0 4629 1 4632 1
+M 0 4629 1 4632 1
+M 0 4629 1 4632 1
+M 0 4631 1 4632 1
+G 0 4629 -1
+M 0 4629 1 4632 1
+M 0 4609 4 4633 1
+E 0 4618 16 wielded~
+E 0 4624 5 torso~
+M 0 4632 4 4633 1
+E 0 4640 12 about~
+M 0 4610 1 4634 1
+E 0 4618 16 wielded~
+E 0 4624 5 torso~
+E 0 4625 13 waist~
+G 0 4610 -1
+M 0 4609 4 4634 1
+E 0 4618 16 wielded~
+E 0 4624 5 torso~
+M 0 4609 4 4635 1
+E 0 4618 16 wielded~
+E 0 4624 5 torso~
+M 0 4632 4 4635 1
+E 0 4640 12 about~
+M 0 4632 4 4636 1
+E 0 4640 12 about~
+M 0 4634 1 4637 1
+E 0 4619 12 about~
+M 0 4609 4 4637 1
+M 0 4632 4 4637 1
+M 0 4622 1 4640 1
+G 0 4614 -1
+M 0 4603 1 4641 1
+E 0 4612 6 head~
+E 0 4618 16 wielded~
+E 0 4631 18 floating~
+E 0 4613 14 lwrist~
+G 0 4613 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

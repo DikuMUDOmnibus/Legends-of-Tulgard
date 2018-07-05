@@ -1,0 +1,3379 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Khalaman Port~
+ShortName   `cKhalaman Port`^~
+Builders    None~
+Credits     None~
+VNUMs       12000 12099
+LComment    `#`C[ 35- 60]`^
+Security    9
+Colour      c~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Thu Oct 20 21:18:23 2005~
+End
+
+
+
+#MOBILES
+#12000
+Name Captain Amos Trask~
+ShortD the Captain~
+LongD Captain Amos Trask is here yelling orders to his crew.~
+Desc The captain is a man in his fifties.  What's left of his hair is 
+slicked and tied at the back of his head.  He has had much experience
+in commanding rowdy pirate crews.  He has a tough, weather-worn face 
+and a stern complextion.  He must have been BAD to get into such a 
+command so don't mess with him!
+~
+Race human~
+Align -2 -3
+Level 58
+Hitroll 20
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType none
+AC -300 -300 -300 -249
+Wealth 600
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    area_attack bash disarm dodge fast parry trip~
+Imm    summon charm bash~
+Res    magic fire cold lightning acid poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12000 100~
+END
+
+#12001
+Name Navigator~
+ShortD the Navigator~
+LongD The ship's navigator is trying to figure out which sea route to take.~
+Desc The navigator looks rather busy.  He has a pencil stuck on his ear.
+He is a rather young scholar with some minor experience in navigation.
+He looks like he has been missing some sleep because of working on all
+those maps.  Yet, he still seems ready to react to anything quickly
+and defend himself if necessary.  He tells you to leave his equipment
+alone!
+~
+Race human~
+Align -2 0
+Level 50
+Hitroll 9
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -180
+Wealth 500
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12001 100~
+END
+
+#12002
+Name First Mate~
+ShortD the First Mate~
+LongD The First Mate is taking a break from the Captain's sharp tongue.~
+Desc The first mate looks rather stressed.  He has been doing things for
+the captain all day and is now relieved to have his break.  He seems
+to have an air of command around him which must explain why he got
+his position on the ship as a First Mate.
+~
+Race human~
+Align 0 -3
+Level 50
+Hitroll 15
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -174
+Wealth 500
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12003
+Name Cook chef~
+ShortD the Ship's Cook~
+LongD The ship's Cook is preparing Gak for the crew to eat.~
+Desc The cook is rather sloppy.  His hands are as dirty as his clothing.  
+He is running around the room preparing one thing after the next.  
+He constantly keeps an eye on the big cauldron in the center of the 
+room. It looks like he mixes whatever leftovers he has into the 
+cauldron and calls it food.  For some strange reason, you loose 
+your appetite.
+~
+Race human~
+Align 2 0
+Level 45
+Hitroll 7
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType none
+AC -157 -157 -157 -133
+Wealth 450
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_invis infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12004
+Name Hired Assassin Guard~
+ShortD the Hired Assassin Guard~
+LongD The hired assassin is standing here guarding the's pirates' plunder.~
+Desc You barely notice him in the dim light.  He is very lithe and subtle in
+his movements.  He looks trained to kill in a single blow, so don't get
+on his bad side!
+~
+Race human~
+Align -3 -3
+Level 55
+Hitroll 10
+HitDice 6d9+300
+ManaDice 2d5+50
+DamDice 10d4+23
+DamType none
+AC -250 -250 -250 -205
+Wealth 550
+Act    npc scavenger aggressive stay_area warrior~
+AffBy  detect_invis detect_hidden infrared sneak hide~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12005
+Name sleeping pirate~
+ShortD the sleepy pirate~
+LongD A raggedy pirate is sleeping here.~
+Desc The pirate looks quite at peace.  The harsh lines of trouble are 
+gone from his face, taken away by the sandman.  I bet he would be 
+VERY upset if you woke him up, so step lightly.
+~
+Race human~
+Align 0 -3
+Level 38
+Hitroll 3
+HitDice 5d6+230
+ManaDice 2d5+25
+DamDice 5d6+12
+DamType none
+AC -130 -130 -130 -106
+Wealth 380
+Act    npc dont_wander aggressive stay_area warrior~
+AffBy  infrared sleep~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12006
+Name Pirate~
+ShortD the pirate~
+LongD A pirate is standing here talking to his parrot.~
+Desc The pirate looks quite frustrated.  He doesn't seem to be going 
+anywhere in his argument with his parrot.  You wonder who has 
+higher intellect ... the bird or the pirate?
+~
+Race human~
+Align -1 -3
+Level 45
+Hitroll 3
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType none
+AC -157 -157 -157 -131
+Wealth 450
+Act    npc scavenger stay_area wimpy warrior~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12003 100~
+END
+
+#12007
+Name angry pirate~
+ShortD the angry pirate~
+LongD An angry pirate is standing here cursing at you!~
+Desc His face is red and his ears almost seem to be blowing steam!  What did
+you do to make him so mad?
+~
+Race human~
+Align -2 -3
+Level 41
+Hitroll 5
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType none
+AC -157 -157 -157 -128
+Wealth 450
+Act    npc scavenger aggressive stay_area warrior~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12002 100~
+END
+
+#12008
+Name drunk pirate~
+ShortD the drunk pirate~
+LongD A very drunk pirate is singing his troubles away!~
+Desc He sways left and right as he walks.  The pirate is constantly plugging
+his mouth with a bottle of beer.  As he sings, drool comes spitting
+out of his mouth. Yuk!
+~
+Race human~
+Align -1 -3
+Level 39
+Hitroll 3
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType none
+AC -157 -157 -157 -135
+Wealth 450
+Act    npc scavenger aggressive stay_area warrior~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12004 100~
+END
+
+#12009
+Name swash swashbuckler~
+ShortD the swashbuckler~
+LongD The swashbuckler looks very bored.~
+Desc He has been standing out in the sun for hours doing nothing but 
+getting a really bad tan.  He sure could use a friend to talk to.
+~
+Race human~
+Align 2 -1
+Level 43
+Hitroll 3
+HitDice 5d8+265
+ManaDice 2d5+30
+DamDice 6d6+17
+DamType none
+AC -170 -170 -170 -153
+Wealth 470
+Act    npc scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12010
+Name buccaneer~
+ShortD the buccaneer~
+LongD A buccaneer is standing here observing you.~
+Desc He looks like the quiet type.  But don't let looks decieve you, he could
+be very deadly in combat.
+~
+Race human~
+Align -3 0
+Level 43
+Hitroll 3
+HitDice 5d8+265
+ManaDice 2d5+30
+DamDice 6d6+17
+DamType none
+AC -170 -170 -170 -144
+Wealth 470
+Act    npc scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12011
+Name midshipman man~
+ShortD the midshipman~
+LongD A midshipman is kneeling here swabbing the deck.~
+Desc He looks like a very hardworking man.  His energy seems inexhaustible.
+When you try to talk to him, he gruffly says,"Work! Work! Work! That's
+all we do everyday! WORK!"
+~
+Race human~
+Align -2 -3
+Level 33
+Hitroll 3
+HitDice 5d6+215
+ManaDice 2d5+18
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -105
+Wealth 350
+Act    npc scavenger no_tame stay_area wimpy warrior~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Imm    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 12005 75~
+END
+
+#12012
+Name sailor~
+ShortD the sailor~
+LongD The sailor is standing here enjoying the sea breeze.~
+Desc He looks like a happy-go-lucky man who takes things as they come.
+~
+Race human~
+Align 2 -3
+Level 35
+Hitroll 3
+HitDice 5d6+215
+ManaDice 2d5+18
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -102
+Wealth 200
+Act    npc scavenger stay_area wimpy warrior~
+AffBy  infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12013
+Name rat~
+ShortD the seafaring rat~
+LongD A seafaring rat is scurrying around scavenging for food.~
+Desc This is the BIGGEST rat you've ever seen!  He has razor sharp teeth!
+~
+Race human~
+Align -2 -3
+Level 35
+Hitroll 3
+HitDice 5d6+215
+ManaDice 2d5+18
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -98
+Wealth 0
+Act    npc scavenger aggressive stay_area wimpy warrior~
+Act2   no_random_obj~
+AffBy  infrared plague~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12014
+Name lookout~
+ShortD the Lookout~
+LongD A lookout has been posted here to search for signs of danger.~
+Desc He peers intently in all directions and keeps an eye on the weather.
+~
+Race human~
+Align 1 -3
+Level 50
+Hitroll 15
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -176
+Wealth 500
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12015
+Name she~
+ShortD she~
+LongD She sells seashells by the seashore.~
+Desc `BShe is a pretty young girl standing behind the counter watching the shop.`x
+~
+Race human~
+Align -1 -3
+Level 91
+Hitroll 20
+HitDice 9d13+445
+ManaDice 4d5+95
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -536
+Wealth 1090
+Act    npc dont_wander scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    area_attack bash disarm dodge fast parry trip~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#12099
+Name captain Cronos boat~
+ShortD captain Cronos~
+LongD Captain Cronos is here, ready to book your passage on his ship.~
+Desc ~
+Race human~
+Align 3 0
+Level 88
+Hitroll 200
+HitDice 9d13+440
+ManaDice 4d5+95
+DamDice 10d11+45
+DamType crush
+AC -600 -600 -600 -528
+Wealth 1000
+Act    npc dont_wander train warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared regeneration~
+Off    area_attack disarm dodge fade fast dirt_kick parry assist_race~
+Imm    summon charm weapon mental~
+Res    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12000
+Name amulet captain~
+Short the `#`Rp`rirate`^ captain's `#`Ba`bmulet`^~
+Desc Captain Amos's precious amulet has been accidentally left here.~
+Level 51
+ItemType treasure~
+Cost 200
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material platinum~
+Extra    invis magic nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior paladin spellfilcher bard anti-paladin~
+Affect modifier -1 51 -1 mana 20 0
+Affect modifier -1 51 -1 strength 2 0
+Affect modifier -1 51 -1 hp 6 0
+ExtraDesc amulet captain~
+It is a small coin shaped amulet hung on a thin gold chain.  On the
+face of the amulet is a picture of a dagger pointing down at a set
+of skull and crossbones.
+~
+End
+
+#12001
+Name key long wooden~
+Short a long wooden key~
+Desc A long wooden key has been dropped here.~
+Level 43
+ItemType key~
+Cost 50
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Wear     take~
+End
+
+#12002
+Name key small wooden~
+Short a small wooden key~
+Desc A small wooden key has been dropped here.~
+Level 44
+ItemType key~
+Cost 50
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Wear     take~
+End
+
+#12003
+Name skull crossbone key~
+Short a skull key~
+Desc A key with the symbol of a set of skull and crossbones lies here.~
+Level 51
+ItemType key~
+Cost 100
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Wear     take~
+End
+
+#12004
+Name log~
+Short the Captain's Log~
+Desc Captain Amos's Log is lying on the table.~
+Level 1
+ItemType container~
+Cost 500
+Durability 5
+Asize 3
+Rsize 50
+Values 100 ACD 12003 100 100
+Weight 3
+Material unknown~
+ExtraDesc log captain~
+It is a very old book which the captain uses to keep track of his journeys.
+~
+End
+
+#12005
+Name hat captain~
+Short the Pirate Captain's Hat~
+Desc Captain Amos's hat is flipped upside down here.~
+Level 51
+ItemType clothing~
+Cost 500
+Durability 5
+Asize 3
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material cloth~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take head~
+ClassAllowances mage cleric thief warrior paladin spellfilcher bard anti-paladin~
+Affect modifier -1 51 -1 ac -15 0
+Affect modifier -1 51 -1 hitroll 4 0
+Affect modifier -1 51 -1 damroll 2 0
+End
+
+#12006
+Name ring pirate~
+Short a `#`Rp`rirate's`^ ring~
+Desc A pirate's ring is rolling around on the floor.~
+Level 44
+ItemType jewelry~
+Cost 250
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material gold~
+Extra    magic nodegrade~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior paladin spellfilcher bard anti-paladin~
+Affect modifier -1 44 -1 damroll 4 0
+Affect modifier -1 44 -1 hitroll 4 0
+Affect modifier -1 44 -1 ac -5 0
+End
+
+#12007
+Name ring pearl~
+Short a `#`Cp`ce`Ca`cr`Cl`^ ring~
+Desc A pearl ring is rolling around on the floor.~
+Level 43
+ItemType jewelry~
+Cost 250
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material pearl~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 43 -1 saves -4 0
+Affect modifier -1 43 -1 hitroll 4 0
+Affect modifier -1 43 -1 mana 20 0
+End
+
+#12008
+Name shellfish necklace~
+Short a `#`mseashell`^ necklace~
+Desc A bunch of seashells are piled on the floor.~
+Level 48
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material bone~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 48 -1 saves -2 0
+Affect modifier -1 48 -1 mana 40 0
+Affect modifier -1 48 -1 hp 4 0
+End
+
+#12009
+Name raggedy shirt~
+Short a raggedy shirt~
+Desc Some torn cloth is piled on the floor.~
+Level 32
+ItemType clothing~
+Cost 100
+Durability 5
+Asize 3
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 32 -1 quickness 3 0
+End
+
+#12010
+Name vest dragonscale~
+Short a `#`ws`Wh`si`wn`Wy `Rd`rragon`Rs`rcale`^ vest~
+Desc A shiny dragonscale vest has been left here.~
+Level 48
+ItemType armor~
+Cost 500
+Durability 5
+Asize 7
+Rsize 50
+Values 16 16 16 12 0
+Weight 70
+Material dragonscale~
+Extra    nonmetal nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 48 -1 saves -4 0
+Affect modifier -1 48 -1 mana 60 0
+End
+
+#12011
+Name parrot~
+Short a `#`Yt`Ra`Bl`Yk`Ra`Bt`Yi`Rv`Be `Yp`Ra`Br`Yr`Ro`Bt`^~
+Desc An extremely loquacious parrot is perched here.~
+Level 42
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    nodrop noremove nonmetal meltdrop nodegrade~
+Wear     take float~
+Affect modifier -1 42 -1 hitroll 2 0
+Affect modifier -1 42 -1 damroll 2 0
+Affect modifier -1 42 -1 hp 2 0
+Affect modifier -1 42 -1 ac -5 0
+End
+
+#12012
+Name cap sailor~
+Short a `#`Ws`wa`Wi`wl`Wo`wr'`Ws`^ cap~
+Desc A blue and white cap sits here.~
+Level 32
+ItemType armor~
+Cost 100
+Durability 5
+Asize 4
+Rsize 50
+Values 8 8 8 6 0
+Weight 10
+Material cloth~
+Extra    magic nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 32 -1 intuition 1 0
+Affect modifier -1 32 -1 hitroll 2 0
+Affect modifier -1 32 -1 damroll 2 0
+Affect modifier -1 32 -1 reasoning 1 0
+End
+
+#12013
+Name pegleg peg~
+Short a pegleg~
+Desc A short stick is leaning against the wall.~
+Level 42
+ItemType armor~
+Cost 100
+Durability 5
+Asize 5
+Rsize 50
+Values 10 10 10 8 0
+Weight 50
+Material wood~
+Extra    magic nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances cleric thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 42 -1 damroll 4 0
+Affect modifier -1 42 -1 quickness -1 0
+Affect modifier -1 42 -1 agility -1 0
+Affect modifier -1 42 -1 hp 6 0
+Affect modifier -1 42 -1 hitroll 2 0
+End
+
+#12014
+Name baggy pants~
+Short a `#`spair`^ of `#`Wb`sa`Wg`sg`Wy`^ pants~
+Desc A pair of baggy pants hangs here.~
+Level 41
+ItemType clothing~
+Cost 50
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material cloth~
+Extra    magic nodegrade~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 41 -1 quickness 1 0
+Affect modifier -1 41 -1 mana 40 0
+Affect modifier -1 41 -1 agility 1 0
+Affect modifier -1 41 -1 saves -2 0
+End
+
+#12015
+Name sandals fishing~
+Short some fishing sandals~
+Desc A pair of fishing sandals have been dropped here.~
+Level 44
+ItemType armor~
+Cost 100
+Durability 5
+Asize 2
+Rsize 50
+Values 9 9 9 7 0
+Weight 20
+Material leather~
+Extra    magic nonmetal nodegrade~
+Wear     take feet~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 44 -1 quickness 1 0
+Affect modifier -1 44 -1 mana 40 0
+Affect modifier -1 44 -1 hp 4 0
+End
+
+#12016
+Name boots Captain~
+Short captain Amos's Boots~
+Desc Some fancy boots with a skull and crossbone design on them sits here.~
+Level 50
+ItemType armor~
+Cost 250
+Durability 5
+Asize 15
+Rsize 50
+Values 10 10 10 8 0
+Weight 60
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take feet~
+ClassAllowances mage cleric thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 50 -1 intuition 2 0
+Affect modifier -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 move 40 0
+End
+
+#12017
+Name ringmail gloves~
+Short a pair of ringmail gloves~
+Desc A pair of ringmail gloves have been dumped here.~
+Level 48
+ItemType armor~
+Cost 450
+Durability 5
+Asize 20
+Rsize 50
+Values 10 10 10 8 0
+Weight 80
+Material steel~
+Extra    nodegrade~
+Wear     take hands~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 48 -1 strength 2 0
+Affect modifier -1 48 -1 hitroll 4 0
+End
+
+#12018
+Name gloves Captain~
+Short captain Amos's gloves~
+Desc Captain Amos's gloves have been dropped in the dust.~
+Level 50
+ItemType armor~
+Cost 650
+Durability 5
+Asize 25
+Rsize 50
+Values 10 10 10 8 0
+Weight 25
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take hands~
+ClassAllowances mage cleric thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 50 -1 quickness 3 0
+Affect modifier -1 50 -1 hitroll 4 0
+End
+
+#12019
+Name shield polished wooden~
+Short a polished wooden shield~
+Desc A polished wooden shield has been dropped here.~
+Level 45
+ItemType armor~
+Cost 250
+Durability 5
+Asize 18
+Rsize 50
+Values 15 15 15 11 0
+Weight 180
+Material wood~
+Extra    glow nonmetal nodegrade~
+Wear     take shield~
+Affect modifier -1 45 -1 strength 2 0
+Affect modifier -1 45 -1 saves -4 0
+End
+
+#12020
+Name net fishing~
+Short a fishing net~
+Desc A fishing net is crumpled up here.~
+Level 43
+ItemType clothing~
+Cost 0
+Durability 5
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material cloth~
+Extra    noremove nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 43 -1 agility -4 0
+Affect modifier -1 43 -1 quickness -4 0
+Affect affects -1 43 -1 none 0 slow
+End
+
+#12021
+Name pearl bracelet~
+Short a `#`cp`Ce`ca`Cr`cl `sb`wr`Wacel`we`st`^~
+Desc A ring of pearl has been left here.~
+Level 46
+ItemType jewelry~
+Cost 400
+Durability 5
+Asize 24
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material pearl~
+Extra    magic nonmetal nodegrade~
+Wear     take wrist~
+Affect modifier -1 46 -1 hitroll 2 0
+Affect modifier -1 46 -1 damroll 2 0
+Affect modifier -1 46 -1 ac -10 0
+Affect modifier -1 46 -1 hp 2 0
+End
+
+#12022
+Name dagger gold~
+Short a `#`Yg`yo`Yl`yd `Yd`ya`Yg`yg`Ye`yr`^~
+Desc A shiny gold dagger shines in the sun.~
+Level 43
+ItemType weapon~
+Cost 500
+Durability 5
+Asize 3
+Rsize 50
+Values dagger 4 9 pierce 0
+Weight 30
+Material gold~
+Extra    evil magic antigood nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 43 -1 hitroll 2 0
+Affect modifier -1 43 -1 damroll 2 0
+End
+
+#12023
+Name dirk pirate~
+Short a pirate's dirk~
+Desc A pirate's dirk is pulsing with evil.~
+Level 48
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 4
+Rsize 50
+Values dagger 2 22 stab 0
+Weight 15
+Material iron~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger bard anti-paladin~
+Affect modifier -1 48 -1 damroll 4 0
+Affect modifier -1 48 -1 hitroll 6 0
+End
+
+#12024
+Name katana blade~
+Short a katana blade~
+Desc An extremely sharp blade lies on the floor.~
+Level 47
+ItemType weapon~
+Cost 150
+Durability 5
+Asize 5
+Rsize 50
+Values sword 4 12 slash 0
+Weight 50
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 47 -1 hitroll 2 0
+Affect modifier -1 47 -1 damroll 6 0
+End
+
+#12025
+Name charm good luck~
+Short a good luck charm~
+Desc A good luck charm is here just waiting for someone to pick it up.~
+Level 12
+ItemType wand~
+Cost 500
+Durability 5
+Asize 3
+Rsize 50
+Values 15 5 5 bless 0
+Weight 10
+Material wood~
+Extra    glow magic bless nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+ExtraDesc charm good luck~
+On it is written :
+
+       Straighten your chin up and smile a bright smile,
+       The GODS are on your side thru each and every trial.
+       Don't worry about your troubles or even of your woes.
+       Because the GODS wish you the best of luck in everything you do!
+
+~
+End
+
+#12026
+Name foot lucky rabbit~
+Short a lucky rabbit's foot~
+Desc The dismembered paw of a rabbit is rotting away in the dirt.~
+Level 12
+ItemType wand~
+Cost 200
+Durability 5
+Asize 2
+Rsize 50
+Values 15 3 3 haste 0
+Weight 2
+Material unknown~
+Extra    magic nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+End
+
+#12027
+Name jug beer~
+Short a jug of beer~
+Desc A jug of beer has been carelessly dumped here.~
+Level 42
+ItemType drinkcontainer~
+Cost 10
+Durability 5
+Asize 4
+Rsize 50
+Values 10 7 beer 0 0
+Weight 4
+Material unknown~
+Wear     take hold~
+End
+
+#12028
+Name flag pirate~
+Short a pirates' flag~
+Desc A black flag waves in the wind.~
+Level 1
+ItemType staff~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values 7 10 10 'dispel good' 0
+Weight 10
+Material silk~
+Extra    evil magic nodegrade~
+Wear     take hold~
+ExtraDesc flag pirates~
+There is a picture of a dagger pointed down upon a white set of skull and 
+crossbones.  In small letters you see : Amos Trask, The Dagger of the Sea! 
+~
+End
+
+#12029
+Name glasses spy~
+Short a spy-glass~
+Desc A pair of spy-glasses sit here distorting the light.~
+Level 48
+ItemType treasure~
+Cost 500
+Durability 5
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material glass~
+Extra    evil magic nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 48 -1 empathy 3 0
+Affect modifier -1 48 -1 hp -8 0
+Affect affects -1 48 -1 none 0 detect_hidden
+Affect vuln -1 48 -1 none 0 magic
+End
+
+#12030
+Name cloak assassin~
+Short an `#`sassassin's c`wl`so`wa`sk`^~
+Desc An assassin's cloak covers the floor.~
+Level 50
+ItemType armor~
+Cost 1500
+Durability 5
+Asize 5
+Rsize 50
+Values 12 12 12 10 0
+Weight 50
+Material silk~
+Extra    magic nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief warrior spellfilcher bard anti-paladin~
+Affect modifier -1 50 -1 quickness 2 0
+Affect modifier -1 50 -1 damroll 4 0
+Affect modifier -1 50 -1 hitroll 2 0
+End
+
+#12031
+Name shroud assassin~
+Short an `#`sassassin's s`wh`sr`wo`su`wd`^~
+Desc An assassin's shroud covers the floor.~
+Level 50
+ItemType armor~
+Cost 1000
+Durability 5
+Asize 4
+Rsize 50
+Values 9 9 9 7 0
+Weight 10
+Material silk~
+Extra    magic nodegrade~
+Wear     take face~
+ClassAllowances mage cleric thief warrior spellfilcher bard anti-paladin~
+Affect modifier -1 50 -1 quickness 1 0
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 damroll 2 0
+Affect modifier -1 50 -1 agility 1 0
+Affect modifier -1 50 -1 hp 2 0
+End
+
+#12032
+Name boots thieves~
+Short a `#`spair`^ of `#`Rt`rhieve's `yboots`^~
+Desc A sneaky pair of sneakers rests here.~
+Level 51
+ItemType armor~
+Cost 800
+Durability 5
+Asize 5
+Rsize 50
+Values 10 10 10 9 0
+Weight 30
+Material leather~
+Extra    nodegrade~
+Wear     take feet~
+ClassAllowances thief spellfilcher bard anti-paladin~
+Affect modifier -1 51 -1 damroll 2 0
+Affect modifier -1 51 -1 hp 4 0
+Affect modifier -1 51 -1 agility 1 0
+Affect modifier -1 51 -1 quickness 1 0
+End
+
+#12033
+Name ring assassin~
+Short an `#`sassassin's r`wi`sn`wg`^~
+Desc A small sharp ring lies on the ground.~
+Level 51
+ItemType jewelry~
+Cost 800
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gold~
+Extra    magic~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior spellfilcher bard anti-paladin~
+Affect modifier -1 51 -1 hitroll 4 0
+Affect modifier -1 51 -1 damroll 2 0
+Affect modifier -1 51 -1 ac -10 0
+Affect modifier -1 51 -1 saves -2 0
+End
+
+#12034
+Name chest treasure~
+Short a treasure chest~
+Desc A treasure chest sits in the corner!~
+Level 1
+ItemType container~
+Cost 1000
+Durability 5
+Asize 35
+Rsize 50
+Values 100 ACD 12000 100 100
+Weight 35
+Material unknown~
+End
+
+#12035
+Name diamond black~
+Short `#`wa `sb`wl`sa`wc`sk `wdiamond`^~
+Desc A black diamond is glittering here.~
+Level 1
+ItemType treasure~
+Cost 1000
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Wear     take~
+End
+
+#12036
+Name stone multi-colored~
+Short `#`wa `?m`?u`?l`?t`?i-`?c`?o`?l`?o`?r`?e`?d `wstone`^~
+Desc A colorful stone is here.~
+Level 44
+ItemType jewelry~
+Cost 150
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Wear     take float~
+Affect modifier -1 44 -1 mana 20 0
+Affect modifier -1 44 -1 hitroll 2 0
+Affect modifier -1 44 -1 damroll 2 0
+End
+
+#12037
+Name topaz stone~
+Short `Wa `Yg`yo`Yl`yd `Wtrimmed `ytopaz `Wstone`^~
+Desc A gold-trimmed topaz stone lies here.~
+Level 1
+ItemType warpstone~
+Cost 1000
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material topaz~
+Wear     take~
+End
+
+#12038
+Name carcass rat dead~
+Short `#`wa `sdead `yrat `scarcass`^~
+Desc The corpse of a dead rat is rotting here.~
+Level 10
+ItemType treasure~
+Cost 50
+Durability 5
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    glow hum~
+Wear     take hold~
+Affect modifier -1 10 -1 mana 10 0
+Affect modifier -1 10 -1 hitroll 2 0
+Affect modifier -1 10 -1 damroll 2 0
+End
+
+#12039
+Name crate wooden~
+Short a wooden crate~
+Desc A wooden crate lies here.~
+Level 1
+ItemType container~
+Cost 200
+Durability 5
+Asize 15
+Rsize 50
+Values 150 A -1 150 100
+Weight 15
+Material unknown~
+End
+
+#12040
+Name apple~
+Short a delicious apple~
+Desc A delicious apple makes your mouth water.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 2
+Rsize 50
+Values 6 4 0 0 0
+Weight 2
+Material unknown~
+Wear     take hold~
+End
+
+#12041
+Name apple~
+Short a rotten apple~
+Desc A rotten apple is here.~
+Level 1
+ItemType food~
+Cost 10
+Durability 5
+Asize 2
+Rsize 50
+Values 6 4 0 A 0
+Weight 2
+Material unknown~
+Wear     take~
+End
+
+#12042
+Name barrel water~
+Short a water barrel~
+Desc A barrel of water sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 20
+Rsize 50
+Values 30 30 water 0 0
+Weight 20
+Material unknown~
+Wear     take~
+End
+
+#12043
+Name carton milk~
+Short a carton of milk~
+Desc An open carton of milk is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 40
+Durability 5
+Asize 3
+Rsize 50
+Values 10 10 milk 0 0
+Weight 3
+Material unknown~
+Wear     take~
+End
+
+#12044
+Name mop~
+Short a mop~
+Desc A mop has been left here.~
+Level 32
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 5
+Rsize 50
+Values polearm 2 10 pound 0
+Weight 5
+Material unknown~
+Wear     take wield~
+End
+
+#12045
+Name pearl giant~
+Short `#`wa giant `Cp`ce`Ca`cr`Cl`^~
+Desc A large ball of pearl rolls around the floor.~
+Level 15
+ItemType wand~
+Cost 900
+Durability 5
+Asize 3
+Rsize 50
+Values 18 5 5 heal 0
+Weight 3
+Material unknown~
+Extra    glow invis magic~
+Wear     take hold~
+End
+
+#12046
+Name guano~
+Short guano~
+Desc Some guano has been deposited here by seagulls. Yuk!~
+Level 25
+ItemType pill~
+Cost 500
+Durability 5
+Asize 1
+Rsize 50
+Values 25 'stone skin' fly refresh ''
+Weight 1
+Material unknown~
+Wear     take hold~
+End
+
+#12047
+Name grey potion~
+Short a grey potion~
+Desc A heavy grey potion sits on the stone.~
+Level 30
+ItemType potion~
+Cost 500
+Durability 5
+Asize 8
+Rsize 50
+Values 26 'stone skin' shield '' ''
+Weight 8
+Material unknown~
+Wear     take~
+End
+
+#12048
+Name feather wand~
+Short a feather wand~
+Desc A feather drifts in the wind.~
+Level 10
+ItemType wand~
+Cost 1000
+Durability 5
+Asize 3
+Rsize 50
+Values 32 3 3 fly 0
+Weight 3
+Material unknown~
+Wear     take hold~
+End
+
+#12049
+Name sack~
+Short a traveller's sac~
+Desc A traveller's sac is dumped on the floor.~
+Level 1
+ItemType container~
+Cost 100
+Durability 5
+Asize 5
+Rsize 50
+Values 300 A 1 300 80
+Weight 5
+Material unknown~
+Wear     take back~
+End
+
+#12050
+Name fish~
+Short a fish~
+Desc A fish is flip-flopping around on the floor.~
+Level 0
+ItemType food~
+Cost 50
+Durability 5
+Asize 2
+Rsize 50
+Values 24 20 0 0 0
+Weight 2
+Material unknown~
+Wear     take~
+End
+
+#12051
+Name dagger assassin~
+Short `#`wan `Ra`rssassin's `sdagger`^~
+Desc An extremely sharp dagger is protruding from the ground.~
+Level 55
+ItemType weapon~
+Cost 1500
+Durability 5
+Asize 5
+Rsize 50
+Values dagger 4 9 stab H
+Weight 40
+Material steel~
+Extra    hum magic nodegrade~
+Wear     take wield~
+ClassAllowances mage thief warrior spellfilcher bard anti-paladin~
+Affect modifier -1 55 -1 strength -2 0
+Affect modifier -1 55 -1 damroll 4 0
+Affect modifier -1 55 -1 hitroll 6 0
+End
+
+#12052
+Name gold bullions~
+Short `#`Yg`yo`Yl`yd `YB`yu`Yl`yl`Yi`yo`Yn`ys`^~
+Desc Piles of Gold Bullion lay glittering on the floor!~
+Level 2
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2000 0 0 0 0
+Weight 0
+Material silver~
+Wear     take~
+End
+
+#12053
+Name katana blade~
+Short a katana blade~
+Desc An extremely sharp blade lies on the floor.~
+Level 50
+ItemType weapon~
+Cost 200
+Durability 5
+Asize 6
+Rsize 50
+Values sword 4 13 slash 0
+Weight 60
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 50 -1 hitroll 2 0
+Affect modifier -1 50 -1 damroll 6 0
+End
+
+#12054
+Name katana blade~
+Short a katana blade~
+Desc An extremely sharp blade lies on the floor.~
+Level 60
+ItemType weapon~
+Cost 300
+Durability 5
+Asize 5
+Rsize 50
+Values sword 11 5 slash 0
+Weight 50
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian spellfilcher bard anti-paladin~
+Affect modifier -1 60 -1 hitroll 4 0
+Affect modifier -1 60 -1 damroll 6 0
+End
+
+#0
+
+
+
+#ROOMS
+#12000
+Name Beginning of the Pier~
+Desc You stand at the beginning of a pier where ships come in and out.  
+The smells of fish being loaded on and off the ships here are 
+overwhelming.  There is a large ship docked to the east.  The pier 
+continues north and south to the dock.
+~
+Sector city~
+ExtraDesc ship~
+It is a huge ship belonging to the royal family.  On its side is 
+painted in big bold letters : `BTHE ROYAL EAGLE.`x
+~
+Exit north 12001
+EKeyvnum -1
+EDesc The pier continues north.
+~
+Exit east 12099
+Exit southwest 54225
+End
+
+
+#12001
+Name Along the Pier~
+Desc You are walking along the pier leading to the plank of the Royal Eagle.
+The pier runs north and south from here.
+~
+Sector city~
+Exit north 12002
+EKeyvnum -1
+EDesc The pier continues north.
+~
+Exit south 12000
+EKeyvnum -1
+EDesc You see the entrance to the pier.
+~
+End
+
+
+#12002
+Name Along the Pier~
+Desc You are walking along the pier leading to the plank of the Royal Eagle.
+The pier runs north and south from here.
+~
+Sector city~
+Exit north 12003
+EKeyvnum -1
+EDesc The pier continues north.
+~
+Exit south 12001
+EKeyvnum -1
+EDesc The pier continues south.
+~
+End
+
+
+#12003
+Name Along the Pier~
+Desc You are walking along the pier leading to the plank of the Royal Eagle.
+The pier runs north and south from here.
+~
+Sector city~
+Exit north 12004
+EKeyvnum -1
+EDesc The pier continues north from here and takes a turn east.
+~
+Exit south 12002
+EKeyvnum -1
+EDesc The pier continues south.
+~
+End
+
+
+#12004
+Name A Turn at the Pier~
+Desc You are walking along the pier.  There is a turn to the east here.  
+You may go east onto the plank or south to leave. To the west, is
+a small shop.
+~
+Sector city~
+Exit east 12005
+EKeyvnum -1
+EDesc To the east is the plank where one can board the ship.
+~
+Exit south 12003
+EKeyvnum -1
+EDesc The pier continues south from here.
+~
+Exit west 12084
+EKeyvnum -1
+EDesc To the west is a small shop.
+~
+End
+
+
+#12005
+Name Plankway to the Royal Eagle~
+Desc You are on the walkway to the Royal Eagle.  Men are bustling about
+running errands for the Admiral Amos and his Highness.  These men 
+looked like they have been out to sea many times judging from their 
+skin.  You may board the Royal Eagle or leave to the west.
+~
+Sector city~
+Exit west 12004
+EKeyvnum -1
+EDesc This direction leads away from the ship.
+~
+Exit up 12021
+EKeyvnum -1
+EDesc You see the entrance to the ship.
+~
+End
+
+
+#12006
+Name Southwest Corner of Aft Deck~
+Desc You are standing on the aft deck of the ship.  From here, you could see
+all the people ashore selling their fresh catch.  The ship rocks slowly
+back and forth due to the waves that come in to shore.  You begin to
+feel seasick.
+~
+Sector city~
+Exit north 12011
+EKeyvnum -1
+Exit east 12007
+EKeyvnum -1
+End
+
+
+#12007
+Name Aft Deck South~
+Desc You are standing on the aft deck of the ship.  From here, you could see
+all the people ashore selling their fresh catch.  The ship rocks slowly
+back and forth due to the waves that come in to shore.  You begin to
+feel seasick.
+~
+Sector city~
+Exit north 12012
+EKeyvnum -1
+Exit east 12008
+EKeyvnum -1
+Exit west 12006
+EKeyvnum -1
+End
+
+
+#12008
+Name Aft Deck South~
+Desc You are standing on the aft deck of the ship.  From here, you could see
+all the people ashore selling their fresh catch.  The ship rocks slowly
+back and forth due to the waves that come in to shore.  You begin to
+feel seasick.
+~
+Sector city~
+Exit north 12013
+EKeyvnum -1
+Exit east 12009
+EKeyvnum -1
+Exit west 12007
+EKeyvnum -1
+End
+
+
+#12009
+Name Aft Deck South~
+Desc You are standing on the aft deck of the ship.  From here, you could see
+all the people ashore selling their fresh catch.  The ship rocks slowly
+back and forth due to the waves that come in to shore.  You begin to
+feel seasick.
+~
+Sector city~
+Exit north 12014
+EKeyvnum -1
+Exit east 12010
+EKeyvnum -1
+Exit west 12008
+EKeyvnum -1
+End
+
+
+#12010
+Name Southeast Corner of Aft Deck~
+Desc You are standing on the aft deck of the ship.  From here, you could see
+all the people ashore selling their fresh catch.  The ship rocks slowly
+back and forth due to the waves that come in to shore.  You begin to
+feel seasick.
+~
+Sector city~
+Exit north 12015
+EKeyvnum -1
+Exit west 12009
+EKeyvnum -1
+End
+
+
+#12011
+Name Aft Deck - Port Side~
+Desc You are standing on the aft deck of the ship.  The ship sways back and
+forth slowly, causing you to feel seasick.  Pirates walk around up here
+looking for stowaways.  Watch out!  They may mistake you for one!
+You can escape down to the main deck or go talk to the captain just
+east of here.
+~
+Sector city~
+Exit east 12012
+EKeyvnum -1
+Exit south 12006
+EKeyvnum -1
+Exit down 12016
+EKeyvnum -1
+End
+
+
+#12012
+Name Aft Deck~
+Desc You are standing on the aft deck of the ship.  The ship sways back and
+forth slowly, causing you to feel seasick.  Pirates walk around up here
+looking for stowaways.  Watch out!  They may mistake you for one!
+You can escape west and down to the main deck or go talk to the captain
+just east of here.
+~
+Sector city~
+Exit east 12013
+EKeyvnum -1
+Exit south 12007
+EKeyvnum -1
+Exit west 12011
+EKeyvnum -1
+End
+
+
+#12013
+Name Center Aft Deck~
+Desc You are standing on the aft deck of the ship.  This happens to be the
+place from which the captain shouts orders to his crew to get the ship
+ready for sail.  You stomach wrenches as the ship moves over a large
+swell in the sea.
+~
+Sector city~
+Exit east 12014
+EKeyvnum -1
+Exit south 12008
+EKeyvnum -1
+Exit west 12012
+EKeyvnum -1
+End
+
+
+#12014
+Name Aft Deck~
+Desc You are standing on the aft deck of the ship.  The ship sways back and
+forth slowly, causing you to feel seasick.  Pirates walk around up here
+looking for stowaways.  Watch out!  They may mistake you for one!
+You can escape east and down to the main deck or go talk to the captain
+just west of here.
+~
+Sector city~
+Exit east 12015
+EKeyvnum -1
+Exit south 12009
+EKeyvnum -1
+Exit west 12013
+EKeyvnum -1
+End
+
+
+#12015
+Name Aft Deck - Starboard Side~
+Desc You are standing on the aft deck of the ship.  The ship sways back and
+forth slowly, causing you to feel seasick.  Pirates walk around up here
+looking for stowaways.  Watch out!  They may mistake you for one!
+You can escape down to the main deck or go talk to the captain just
+west of here.
+~
+Sector city~
+Exit south 12010
+EKeyvnum -1
+Exit west 12014
+EKeyvnum -1
+Exit down 12020
+EKeyvnum -1
+End
+
+
+#12016
+Name Main Deck of the Royal Eagle - Port~
+Desc You are aboard the Royal Eagle - the flagship of the Krondorian fleet.  
+She has been out to sea many times on many voyages, some of which are 
+not completely lawful.  She has been disquised so that she could raid 
+merchant ships travelling the South Seas in order to "improve" the 
+trade.
+~
+Sector city~
+Exit north 12021
+EKeyvnum -1
+Exit east 12017
+EKeyvnum -1
+Exit up 12011
+EKeyvnum -1
+End
+
+
+#12017
+Name Main Deck of the Royal Eagle~
+Desc You are aboard the Royal Eagle - the flag ship of the Krondorian fleet.
+She seems to have been out to sea many times on many voyages.  Crewmen 
+are working hard cleaning the deck and tidying up the ship in 
+preparation to set sail.  There seems to be a slight crevice in the 
+south wall, the weather must have really worn this ship out.
+~
+Sector city~
+ExtraDesc crevice~
+Upon closer inspection, you see that the crevice is as high and thin 
+as a coin slot.  You also notice a small symbol carved into the wood 
+just above the slot.
+~
+ExtraDesc symbol~
+This is so small, you can barely see it.  It seems to show a picture of
+a dagger pointed down at a set of skull and crossbones.
+~
+Exit north 12022
+EKeyvnum -1
+Exit east 12018
+EKeyvnum -1
+Exit south 12074
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+EKeywords wall door~
+EDesc You notice a crevice in the wall.  It may just have been weatherworn.
+~
+Exit west 12016
+EKeyvnum -1
+End
+
+
+#12018
+Name Main Deck of the Royal Eagle~
+Desc You are aboard the Royal Eagle - the flag ship of the Krondorian fleet.  
+She seems to have been out to sea many times on many voyages.  Crewmen 
+are working hard cleaning the deck and tidying up the ship in 
+preparation to set sail.  The floorboard here seems to creak as you 
+walk across it.  You think to yourself, "Geez, this ship sure needs some 
+repairs!"
+~
+Sector city~
+ExtraDesc floorboard floor~
+It seems to squeak.  It could be a door of some kind.
+~
+Exit north 12023
+EKeyvnum -1
+Exit east 12019
+EKeyvnum -1
+Exit west 12017
+EKeyvnum -1
+Exit down 12069
+EFlags door closed locked pickproof~
+EKeyvnum 12001
+EKeywords floorboard floor~
+EDesc The floorboards seem to squeak.
+~
+End
+
+
+#12019
+Name Main Deck of the Royal Eagle~
+Desc You are aboard the Royal Eagle - the flag ship of the Krondorian fleet.  
+She seems to have been out to sea many times on many voyages.  Crewmen 
+are working hard cleaning the deck and tidying up the ship in 
+preparation to set sail.
+~
+Sector city~
+Exit north 12024
+EKeyvnum -1
+Exit east 12020
+EKeyvnum -1
+Exit west 12018
+EKeyvnum -1
+End
+
+
+#12020
+Name Main Deck of the Royal Eagle - Starboard~
+Desc You are aboard the Royal Eagle - the flagship of the Krondorian fleet.  
+She has been out to sea many times on many voyages, some of which are 
+not completely lawful.  She has been disquised so that she could raid 
+merchant ships travelling the South Seas in order to "improve" the 
+trade.
+~
+Sector city~
+Exit north 12025
+EKeyvnum -1
+Exit west 12019
+EKeyvnum -1
+Exit up 12015
+EKeyvnum -1
+End
+
+
+#12021
+Name Entrance to the Royal Eagle - Main Deck~
+Desc You are aboard the Royal Eagle - the flagship of the Krondorian fleet.  
+She has been out to sea many times on many voyages, some of which are 
+not completely lawful.  She has been disquised so that she could raid 
+merchant ships travelling the South Seas in order to "improve" the 
+trade.  You may leave the ship by going down the plank.
+~
+Sector city~
+Exit north 12026
+EKeyvnum -1
+Exit east 12022
+EKeyvnum -1
+Exit south 12016
+EKeyvnum -1
+Exit down 12005
+EKeyvnum -1
+End
+
+
+#12022
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12027
+EKeyvnum -1
+Exit east 12023
+EKeyvnum -1
+Exit south 12017
+EKeyvnum -1
+Exit west 12021
+EKeyvnum -1
+End
+
+
+#12023
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12028
+EKeyvnum -1
+Exit east 12024
+EKeyvnum -1
+Exit south 12018
+EKeyvnum -1
+Exit west 12022
+EKeyvnum -1
+End
+
+
+#12024
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12029
+EKeyvnum -1
+Exit east 12025
+EKeyvnum -1
+Exit south 12019
+EKeyvnum -1
+Exit west 12023
+EKeyvnum -1
+End
+
+
+#12025
+Name Main Deck - Starboard~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12030
+EKeyvnum -1
+Exit south 12020
+EKeyvnum -1
+Exit west 12024
+EKeyvnum -1
+End
+
+
+#12026
+Name Main Deck - Port~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12031
+EKeyvnum -1
+Exit east 12027
+EKeyvnum -1
+Exit south 12021
+EKeyvnum -1
+End
+
+
+#12027
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12032
+EKeyvnum -1
+Exit east 12028
+EKeyvnum -1
+Exit south 12022
+EKeyvnum -1
+Exit west 12026
+EKeyvnum -1
+End
+
+
+#12028
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12033
+EKeyvnum -1
+Exit east 12029
+EKeyvnum -1
+Exit south 12023
+EKeyvnum -1
+Exit west 12027
+EKeyvnum -1
+End
+
+
+#12029
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12034
+EKeyvnum -1
+Exit east 12030
+EKeyvnum -1
+Exit south 12024
+EKeyvnum -1
+Exit west 12028
+EKeyvnum -1
+End
+
+
+#12030
+Name Main Deck - Starboard~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12035
+EKeyvnum -1
+Exit south 12025
+EKeyvnum -1
+Exit west 12029
+EKeyvnum -1
+End
+
+
+#12031
+Name Main Deck - Port~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12036
+EKeyvnum -1
+Exit east 12032
+EKeyvnum -1
+Exit south 12026
+EKeyvnum -1
+End
+
+
+#12032
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12037
+EKeyvnum -1
+Exit east 12033
+EKeyvnum -1
+Exit south 12027
+EKeyvnum -1
+Exit west 12031
+EKeyvnum -1
+End
+
+
+#12033
+Name Base of the Mast~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.  There is a mast here which 
+you could climb up, but be careful not to fall!
+~
+Sector city~
+Exit north 12038
+EKeyvnum -1
+Exit east 12034
+EKeyvnum -1
+Exit south 12028
+EKeyvnum -1
+Exit west 12032
+EKeyvnum -1
+Exit up 12078
+EKeyvnum -1
+EDesc You look up the mast of the ship.  It seems very high and you get a 
+feeling of vertigo.
+~
+End
+
+
+#12034
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12039
+EKeyvnum -1
+Exit east 12035
+EKeyvnum -1
+Exit south 12029
+EKeyvnum -1
+Exit west 12033
+EKeyvnum -1
+End
+
+
+#12035
+Name Main Deck - Starboard~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12040
+EKeyvnum -1
+Exit south 12030
+EKeyvnum -1
+Exit west 12034
+EKeyvnum -1
+End
+
+
+#12036
+Name Main Deck - Port~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12041
+EKeyvnum -1
+Exit east 12037
+EKeyvnum -1
+Exit south 12031
+EKeyvnum -1
+End
+
+
+#12037
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12042
+EKeyvnum -1
+Exit east 12038
+EKeyvnum -1
+Exit south 12032
+EKeyvnum -1
+Exit west 12036
+EKeyvnum -1
+End
+
+
+#12038
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12043
+EKeyvnum -1
+Exit east 12039
+EKeyvnum -1
+Exit south 12033
+EKeyvnum -1
+Exit west 12037
+EKeyvnum -1
+End
+
+
+#12039
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12044
+EKeyvnum -1
+Exit east 12040
+EKeyvnum -1
+Exit south 12034
+EKeyvnum -1
+Exit west 12038
+EKeyvnum -1
+End
+
+
+#12040
+Name Main Deck - Starboard~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12045
+EKeyvnum -1
+Exit south 12035
+EKeyvnum -1
+Exit west 12039
+EKeyvnum -1
+End
+
+
+#12041
+Name Main Deck - Port~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit east 12042
+EKeyvnum -1
+Exit south 12036
+EKeyvnum -1
+End
+
+
+#12042
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12046
+EKeyvnum -1
+Exit east 12043
+EKeyvnum -1
+Exit south 12037
+EKeyvnum -1
+Exit west 12041
+EKeyvnum -1
+End
+
+
+#12043
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12047
+EKeyvnum -1
+Exit east 12044
+EKeyvnum -1
+Exit south 12038
+EKeyvnum -1
+Exit west 12042
+EKeyvnum -1
+End
+
+
+#12044
+Name Main Deck~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit north 12048
+EKeyvnum -1
+Exit east 12045
+EKeyvnum -1
+Exit south 12039
+EKeyvnum -1
+Exit west 12043
+EKeyvnum -1
+End
+
+
+#12045
+Name Main Deck - Starboard~
+Desc You are aboard the Royal Eagle.  She is preparing to take off on the 
+next high tide.  The crew is busy disguising her for a pirate's raid 
+planned on a ship spotted off the coast.
+~
+Sector city~
+Exit south 12040
+EKeyvnum -1
+Exit west 12044
+EKeyvnum -1
+End
+
+
+#12046
+Name Bow of the Royal Eagle~
+Desc You are aboard the Royal Eagle, the flagship of the Krondorian fleet.  
+She is preparing to set sale at next high tide.  The crew is swabbing 
+the deck and trimming the sails in preparation for departure.
+~
+Sector city~
+Exit north 12049
+EKeyvnum -1
+Exit east 12047
+EKeyvnum -1
+Exit south 12042
+EKeyvnum -1
+End
+
+
+#12047
+Name Bow of the Royal Eagle~
+Desc You are aboard the Royal Eagle, the flagship of the Krondorian fleet.  
+She is preparing to set sale at next high tide.  The crew is swabbing 
+the deck and trimming the sails in preparation for departure.  There is 
+a hatch on the floor here.  Sailors go up and down the hatch, it must 
+lead to their sleeping quarters.
+~
+Sector city~
+Exit north 12050
+EKeyvnum -1
+Exit east 12048
+EKeyvnum -1
+Exit south 12043
+EKeyvnum -1
+Exit west 12046
+EKeyvnum -1
+Exit down 12053
+EFlags door closed locked~
+EKeyvnum 12002
+EKeywords hatch~
+End
+
+
+#12048
+Name Bow of the Royal Eagle~
+Desc You are aboard the Royal Eagle, the flagship of the Krondorian fleet.
+She is preparing to set sale at next high tide.  The crew is swabbing 
+the deck and trimming the sails in preparation for departure.
+~
+Sector city~
+Exit north 12051
+EKeyvnum -1
+Exit south 12044
+EKeyvnum -1
+Exit west 12047
+EKeyvnum -1
+End
+
+
+#12049
+Name Bow of the Royal Eagle~
+Desc You are aboard the Royal Eagle, the flagship of the Krondorian fleet.  
+She is preparing to set sale at next high tide.  The crew is swabbing 
+the deck and trimming the sails in preparation for departure.
+~
+Sector city~
+Exit east 12050
+EKeyvnum -1
+Exit south 12046
+EKeyvnum -1
+End
+
+
+#12050
+Name Bow of the Royal Eagle~
+Desc You are aboard the Royal Eagle, the flagship of the Krondorian fleet.  
+She is preparing to set sale at next high tide.  The crew is swabbing 
+the deck and trimming the sails in preparation for departure.
+~
+Sector city~
+Exit north 12052
+EKeyvnum -1
+Exit east 12051
+EKeyvnum -1
+Exit south 12047
+EKeyvnum -1
+Exit west 12049
+EKeyvnum -1
+End
+
+
+#12051
+Name Bow of the Royal Eagle~
+Desc You are aboard the Royal Eagle, the flagship of the Krondorian fleet.  
+She is preparing to set sale at next high tide.  The crew is swabbing 
+the deck and trimming the sails in preparation for departure.
+~
+Sector city~
+Exit south 12048
+EKeyvnum -1
+Exit west 12050
+EKeyvnum -1
+End
+
+
+#12052
+Name Tip of the Royal Eagle~
+Desc You are aboard the Royal Eagle which is ready to set sail soon.  You are
+standing at the tip of the ship.  From here you could look forward and
+see the vast South Seas.  As you look back, you see all the crew of the 
+ship busy at work.  The only exit is south of course.
+~
+Sector city~
+ExtraDesc blood sea~
+The sea is so vast, it covers the expanse of the horizon from east to 
+west. The water in the sea is deep blue in color.  
+~
+Exit south 12050
+EKeyvnum -1
+End
+
+
+#12053
+Name Stairs to the Main Deck~
+Desc You are below deck of the Royal Eagle.  It is poorly lighted down here.
+There is a hallway to the south and you also smell an odor from the 
+south. You could exit to the main deck through the hatch from here.
+~
+RoomFlags dark~
+Sector inside~
+Exit south 12054
+EKeyvnum -1
+Exit up 12047
+EFlags door closed locked pickproof~
+EKeyvnum 12002
+EKeywords hatch~
+EDesc You see the main deck of the Royal Eagle above you.
+~
+End
+
+
+#12054
+Name Below Deck~
+Desc You are in a hallway below the deck of the ship.  The hallway goes
+north and south and is very poorly lighted.  There is a faint smell
+coming from the stern of the ship.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12053
+EKeyvnum -1
+Exit south 12057
+EKeyvnum -1
+End
+
+
+#12056
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  there are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.  You can exit 
+through the east door or continue on south.
+~
+RoomFlags dark~
+Sector inside~
+Exit east 12057
+EFlags door closed locked pickproof~
+EKeyvnum 12002
+EKeywords door~
+Exit south 12059
+EKeyvnum -1
+End
+
+
+#12057
+Name An Intersection Below Deck~
+Desc You are in a hallway below deck of the ship.  There are doors leading
+east and west from here.  The hallway continues north and south.  A
+faint odor drifts to you from the southern part of the hallway.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12054
+EKeyvnum -1
+Exit east 12058
+EFlags door closed locked pickproof~
+EKeyvnum 12002
+EKeywords door~
+Exit south 12060
+EKeyvnum -1
+Exit west 12056
+EFlags door closed locked pickproof~
+EKeyvnum 12002
+EKeywords door~
+End
+
+
+#12058
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  there are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.  You can exit 
+through the west door or continue on south.
+~
+RoomFlags dark~
+Sector inside~
+Exit south 12061
+EKeyvnum -1
+Exit west 12057
+EFlags door closed locked pickproof~
+EKeyvnum 12002
+EKeywords door~
+End
+
+
+#12059
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  there are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12056
+EKeyvnum -1
+Exit south 12062
+EKeyvnum -1
+End
+
+
+#12060
+Name Below Deck~
+Desc You are in a hallway below the deck of the ship.  The hallway goes
+north and south and is very poorly lighted.  There is a strong smell
+coming from the stern of the ship.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12057
+EKeyvnum -1
+Exit south 12063
+EKeyvnum -1
+End
+
+
+#12061
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  There are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12058
+EKeyvnum -1
+Exit south 12064
+EKeyvnum -1
+End
+
+
+#12062
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  there are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.  The store rooms 
+are south of here.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12059
+EKeyvnum -1
+Exit south 12065
+EKeyvnum -1
+End
+
+
+#12063
+Name The Kitchen~
+Desc Wheww!  This was where that odor was coming from.  The rooms stinks of
+garlic, old meat and other foods which would make a beggar's face 
+green! You feel like throwing up due to the sway of the sea and the 
+rotten food here.  You can exit north.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12060
+EKeyvnum -1
+End
+
+
+#12064
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  there are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12061
+EKeyvnum -1
+Exit south 12067
+EKeyvnum -1
+End
+
+
+#12065
+Name Storeroom~
+Desc This room is used for storing the various supplies needed for a long
+voyage.  There are barrels and crates of food and weapons piled up 
+in the room.  You can go north or east from here.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12062
+EKeyvnum -1
+Exit east 12066
+EKeyvnum -1
+End
+
+
+#12066
+Name Storeroom~
+Desc This room is used for storing the various supplies needed for a long
+voyage.  There are barrels and crates of food and weapons piled up
+in the room.  There are no exits except west.
+~
+RoomFlags dark~
+Sector inside~
+Exit west 12065
+EKeyvnum -1
+End
+
+
+#12067
+Name Sleeping Quarters~
+Desc You see bunkbeds lined againts the wall.  there are various items 
+scattered around the room.  The room is very dark.  Sailors come down 
+here to rest and get their sleep.  They are very grumpy if they miss 
+their naps so be very quiet in order not to wake them.  You can only 
+exit north.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12064
+EKeyvnum -1
+End
+
+
+#12068
+Name Below Deck - Port~
+Desc You are in a corridor below deck of the ship.  The hall is very poorly
+lighted.  The exits are east and there is a door to the south.
+~
+RoomFlags dark~
+Sector inside~
+Exit east 12069
+EKeyvnum -1
+Exit south 12071
+EFlags door closed locked~
+EKeyvnum 12003
+EKeywords door~
+EDesc You see the door leading to the First Mate's quarters.
+~
+End
+
+
+#12069
+Name Below Deck~
+Desc You are in a corridor below deck of the ship.  The hallway goes east 
+and west and is very poorly lighted.  There is a door to the south.
+~
+RoomFlags dark~
+Sector inside~
+Exit east 12070
+EKeyvnum -1
+Exit south 12072
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+EKeywords door~
+EDesc You see the door leading to the Captain's quarters.
+~
+Exit west 12068
+EKeyvnum -1
+Exit up 12018
+EFlags door closed locked pickproof~
+EKeyvnum 12001
+EKeywords hatch~
+End
+
+
+#12070
+Name Below Deck - Starboard~
+Desc You are in a corridor below deck of the ship.  The hall is very poorly
+lighted.  The exits are west and there is a door to the south.
+~
+RoomFlags dark~
+Sector inside~
+Exit south 12073
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+EKeywords door~
+EDesc You see the door leading to the Navigator's quarters.
+~
+Exit west 12069
+EKeyvnum -1
+End
+
+
+#12071
+Name First Mate's Quarters~
+Desc This room is very messy.  There is a small table against the wall with a
+little lamp on it.  Clothing is scattered all over the floor and you see
+empty bottles of beer here and there.  Sheets on the bed are crumpled
+up as if they haven't been washed in decades.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12068
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+EKeywords door~
+End
+
+
+#12072
+Name Captain's Quarters~
+Desc This is the Captain's room.  He seems to be very tidy for a pirate.  
+There are various articles of note in this room, most of which are 
+keepsakes from his other expeditions by the looks of it.  In the center 
+of the room is a small table, and you see his log on top of it.  The 
+Captain is rarely here. He must be outside commanding the crew, but if 
+he sees you in here, he will be VERY upset, so get out quick!
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12069
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+EKeywords door~
+End
+
+
+#12073
+Name Navigator's Quarters~
+Desc This room is filled with maps from wall to wall.  There is a huge table 
+in center with a map showing the ocean currents and winds.  Navigation
+instruments have been laid all over the table.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12070
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+End
+
+
+#12074
+Name Hidden Room~
+Desc You are in a small secret room covered with cobwebs.  It seems that no 
+one has been here in a LONG time.  The room is very cold and dark.  It 
+goes east of here and there is a door to the north.
+~
+RoomFlags dark~
+Sector inside~
+Exit north 12017
+EFlags door closed locked pickproof~
+EKeyvnum 12003
+EKeywords door wall~
+EDesc You see the main deck of the Royal Eagle.
+~
+Exit east 12075
+EKeyvnum -1
+End
+
+
+#12075
+Name Hidden Room~
+Desc You are in a small secret room covered with cobwebs.  It seems that no 
+one has been here in a LONG time.  The room is very cold and dark.  It 
+goes east and west.
+~
+RoomFlags dark~
+Sector inside~
+Exit east 12076
+EKeyvnum -1
+Exit west 12074
+EKeyvnum -1
+End
+
+
+#12076
+Name Treasure Room~
+Desc WOW!  Look at all the gold and jewelry chests here.  You could buy a
+kingdom with all these riches!  This must be the room where the Captain
+hides the pirate's plunder he has been accumulating over the years.
+You couldn't possibly carry out all this gold.  Too bad.
+~
+RoomFlags dark~
+Sector inside~
+Exit west 12075
+EKeyvnum -1
+End
+
+
+#12077
+Name Out on the Mast~
+Desc You are hanging out on the mast of the Royal Eagle.  Literally!  The
+only way to climb around the mast is by using all the ropes dangling
+around from the top.  You feel like Peter Pan for some strange reason.
+~
+Sector mountain~
+Exit east 12078
+EKeyvnum -1
+End
+
+
+#12078
+Name The Mast~
+Desc You are climbing the mast of the Royal Eagle.  It is very windy up
+here so hang on tight!  You see all the little men scrambling around
+on the ship below.  You can go east or west, up or down.
+~
+Sector mountain~
+Exit east 12079
+EKeyvnum -1
+Exit west 12077
+EKeyvnum -1
+Exit up 12081
+EKeyvnum -1
+Exit down 12033
+EKeyvnum -1
+End
+
+
+#12079
+Name Out on the Mast~
+Desc You are hanging out on the mast of the Royal Eagle.  Litterally!  The
+only way to climb around the mast is by using all the ropes dangling
+around from the top.  You feel like Peter Pan for some strange reason.
+~
+Sector mountain~
+Exit west 12078
+EKeyvnum -1
+End
+
+
+#12080
+Name Out on the Mast~
+Desc You are hanging out on the mast of the Royal Eagle.  Litterally!  The
+only way to climb around the mast is by using all the ropes dangling
+around from the top.  It is very high and windy up here, so don't
+look down if you have acrophobia.
+~
+Sector mountain~
+Exit east 12081
+EKeyvnum -1
+End
+
+
+#12081
+Name The Mast~
+Desc You are climbing the mast of the Royal Eagle.  It is very windy up
+here so hang on tight!  You see all the little men scrambling around
+on the ship below.  As you look down, you loose your lunch, breakfast,
+and anything else that you ate.  It lands on a pirate below who must
+be furious now!  Ewwe!  You can go east or west, up or down.
+~
+Sector mountain~
+Exit east 12082
+EKeyvnum -1
+Exit west 12080
+EKeyvnum -1
+Exit up 12083
+EKeyvnum -1
+Exit down 12078
+EKeyvnum -1
+End
+
+
+#12082
+Name Out on the Mast~
+Desc You are hanging out on the mast of the Royal Eagle.  Litterally!  The
+only way to climb around the mast is by using all the ropes dangling
+around from the top.  It is very high and windy up here, so don't
+look down if you have acrophobia.
+~
+Sector mountain~
+Exit west 12081
+EKeyvnum -1
+End
+
+
+#12083
+Name Crow's Nest~
+Desc You are at the highest point on the ship.  From here you can almost see
+Castle Square.  You see all the little dots scrambling around below you.
+This is where the lookout is posted.  Suddenly, the swaying of the ship
+and the height gets to you and you let loose your dinner.  Ewwe!
+~
+Sector mountain~
+Exit down 12081
+EKeyvnum -1
+EDesc You get dizzy and can't help but throw up again!
+~
+End
+
+
+#12084
+Name Seashells Galore~
+Desc This remote shop located by the seashore, sells trinkets made from 
+everything immaginable.  The walls are stacked with shelves and shelves 
+of multi-colored potions and wands.  A traveller can find all the things 
+he needs for any journeys he may plan.  Try out the delicious seafood 
+they serve here!
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 12004
+EKeyvnum -1
+End
+
+
+#12099
+Name On the Ship "Black Diamond"~
+Desc . On the ship "Black Diamond", you can speak with the Captain about booking 
+passage to the various harbors, towns, and port cities across the realm.  On 
+occasion, he can also take you to exotic locations, just don't expect him to 
+stick around to bring you back.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12000
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 12001 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 12012 5 12001 1
+E 0 12012 0 head~
+M 0 12012 5 12003 1
+E 0 12012 0 head~
+M 0 12008 5 12004 1
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+E 0 12027 0 hold~
+M 0 12012 5 12004 1
+E 0 12012 0 head~
+M 0 12010 6 12005 1
+E 0 12021 0 lwrist~
+G 0 12036 0
+M 0 12007 5 12006 1
+E 0 12013 0 legs~
+E 0 12022 0 wielded~
+M 0 12007 5 12009 1
+E 0 12007 0 lfinger~
+E 0 12013 0 legs~
+M 0 12007 5 12010 1
+E 0 12013 0 legs~
+E 0 12022 0 wielded~
+M 0 12007 5 12012 1
+E 0 12007 0 lfinger~
+E 0 12013 0 legs~
+M 0 12012 5 12012 1
+E 0 12012 0 head~
+M 0 12000 1 12013 1
+E 0 12003 0 hold~
+E 0 12005 0 head~
+E 0 12006 0 lfinger~
+E 0 12007 0 rfinger~
+E 0 12016 0 feet~
+E 0 12018 0 hands~
+E 0 12054 0 wielded~
+M 0 12010 6 12013 1
+E 0 12024 0 wielded~
+E 0 12021 0 lwrist~
+G 0 12036 0
+M 0 12007 5 12015 1
+E 0 12013 0 legs~
+E 0 12022 0 wielded~
+M 0 12006 10 12016 1
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12009 6 12018 1
+E 0 12038 0 hold~
+G 0 12040 0
+M 0 12011 10 12019 1
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12009 6 12021 1
+E 0 12019 0 shield~
+G 0 12040 0
+M 0 12011 10 12021 1
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12012 5 12022 1
+E 0 12012 0 head~
+M 0 12008 5 12023 1
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+E 0 12027 0 hold~
+O 0 12020 0 12025
+M 0 12006 10 12025 1
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12006 10 12028 1
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+O 0 12038 0 12033
+M 0 12009 6 12033 1
+E 0 12019 0 shield~
+E 0 12038 0 hold~
+G 0 12040 0
+M 0 12011 10 12033 1
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12008 5 12034 1
+E 0 12009 0 torso~
+E 0 12027 0 hold~
+M 0 12006 10 12036 2
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12006 10 12036 2
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12006 10 12037 1
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12008 5 12037 1
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+E 0 12027 0 hold~
+M 0 12011 10 12039 2
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12011 10 12039 2
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12011 10 12042 1
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12006 10 12045 1
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12006 10 12047 1
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12008 5 12048 1
+E 0 12009 0 torso~
+E 0 12027 0 hold~
+M 0 12011 10 12049 1
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12009 6 12050 1
+E 0 12019 0 shield~
+G 0 12040 0
+M 0 12011 10 12051 1
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12006 10 12052 2
+E 0 12002 0 hold~
+E 0 12006 0 lfinger~
+G 0 12011 -1
+M 0 12006 10 12052 2
+E 0 12006 0 lfinger~
+E 0 12011 0 head~
+M 0 12011 10 12052 2
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12011 10 12052 2
+E 0 12044 0 wielded~
+E 0 12009 0 torso~
+M 0 12010 6 12053 1
+E 0 12024 0 wielded~
+E 0 12021 0 lwrist~
+G 0 12036 0
+M 0 12010 6 12054 1
+E 0 12024 0 wielded~
+E 0 12021 0 lwrist~
+G 0 12036 0
+M 0 12005 7 12058 1
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12005 7 12059 1
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12010 6 12060 1
+E 0 12021 0 lwrist~
+G 0 12036 0
+M 0 12005 7 12061 2
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12005 7 12061 2
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12005 7 12062 1
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12003 1 12063 1
+E 0 12001 0 hold~
+E 0 12015 0 feet~
+E 0 12019 0 shield~
+E 0 12020 0 about~
+M 0 12013 5 12063 1
+O 0 12042 0 12065
+O 0 12027 0 12065
+M 0 12013 5 12065 1
+O 0 12042 0 12066
+O 0 12039 0 12066
+P 0 12040 3 12039 3
+P 0 12041 1 12039 1
+M 0 12013 5 12066 2
+M 0 12013 5 12066 2
+M 0 12005 7 12067 2
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12005 7 12067 2
+E 0 12009 0 torso~
+E 0 12014 0 legs~
+M 0 12013 5 12068 1
+M 0 12002 1 12071 1
+E 0 12008 0 neck1~
+E 0 12021 0 lwrist~
+E 0 12017 0 hands~
+E 0 12023 0 wielded~
+O 0 12004 0 12072
+P 0 12000 1 12004 1
+M 0 12001 1 12073 1
+E 0 12008 0 neck1~
+E 0 12021 0 lwrist~
+E 0 12024 0 wielded~
+E 0 12010 0 torso~
+O 0 12034 0 12076
+P 0 12035 1 12034 1
+P 0 12036 3 12034 3
+P 0 12037 2 12034 2
+P 0 12052 2 12034 2
+M 0 12004 1 12076 1
+G 0 12026 0
+G 0 12030 -1
+E 0 12031 -1 face~
+E 0 12051 0 wielded~
+E 0 12032 0 feet~
+E 0 12033 0 lfinger~
+M 0 12009 6 12079 1
+E 0 12019 0 shield~
+G 0 12040 0
+M 0 12009 6 12080 1
+E 0 12019 0 shield~
+E 0 12038 0 hold~
+G 0 12040 0
+M 0 12010 6 12081 1
+E 0 12024 0 wielded~
+E 0 12021 0 lwrist~
+G 0 12036 0
+O 0 12028 0 12083
+M 0 12014 1 12083 1
+G 0 12029 -1
+M 0 12015 1 12084 1
+G 0 12040 0
+G 0 12043 0
+G 0 12045 0
+G 0 12046 0
+G 0 12047 0
+G 0 12048 0
+G 0 12049 0
+G 0 12050 0
+M 0 12099 1 12099 1
+S
+
+
+
+#SHOPS
+#12015
+buy_type scroll~
+buy_type wand~
+buy_type treasure~
+buy_type armor~
+buy_type food~
+profit_buy 120
+profit_sell 80
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#12005
+code say Work! Work! Work! That's all we do everyday! WORK!
+~
+disabled false
+END
+
+#12004
+code emote sings "My Bonnie lies over the ocean...*hic*...my Bonnie lies over the sea."
+emote slurps a big swig of his bottle.
+emote sings  "My Bonnie lies over the ocean...*hic*..so bring back my...ummm....Bonnie to me." *hic*
+~
+disabled false
+END
+
+#12003
+code say Come you stupid excuse for a bird. Say it...Polly wanta cracker!
+say I know you can hear me...stop playing dumb or I'll pluck you and cook you for my dinner.  Come on....look....ummmm....good cracker....
+~
+disabled false
+END
+
+#12002
+code say You @#$%&!! I'll carve you to pieces, I will, you &%*$#!!
+~
+disabled false
+END
+
+#12001
+code emote turns his tired, but stern eyes toward you.
+say Don't touch nothin', ya hear? Get your slimy butt out of here!
+~
+disabled false
+END
+
+#12000
+code say Ho! You lazy cur. Git your muscles into that or I'll string you up and set the lashes to you.
+say And you there $n. What are you doin' on my ship? eh? Get off or get to work! I don't put up with no scum bags the likes of you.
+~
+disabled false
+END
+
+#0
+
+
+#$

@@ -1,0 +1,199 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Sabine's Cave Estate~
+ShortName   Sabine's Cave~
+Builders    None~
+VNUMs       8910 8919
+AFlags  noteleport noscry hidden nogateinto nosummoninto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Oct  9 01:01:34 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#8910
+Name marble fountain water~
+Short `#`wa large `sblack marble `wfountain`^~
+Desc `#`wa large `sblack marble `wfountain sits here.`^~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 blood 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nolocate nodegrade burnproof nogetall~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#8918
+Name portal~
+Short `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal`^~
+Desc `#`wa `ssh`wad`sow`wy l`soo`wki`sng `wportal is here.`^~
+Level 1
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 K 0 8910 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+End
+
+#0
+
+
+
+#ROOMS
+#8910
+Name Foyer~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Owner alessandra~
+Exit north 8911
+Exit southeast 10411
+EFlags door closed locked nopass hard infuriating~
+EKeywords door~
+End
+
+
+#8911
+Name Grand Ballroom~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit north 8913
+Exit east 8912
+Exit south 8910
+Exit west 8914
+End
+
+
+#8912
+Name Study~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit west 8911
+End
+
+
+#8913
+Name kitchen~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit south 8911
+Exit down 8919
+End
+
+
+#8914
+Name Den~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit east 8911
+Exit up 8915
+End
+
+
+#8915
+Name Hallway~
+Desc ~
+Sector inside~
+Exit north 8916
+Exit down 8914
+End
+
+
+#8916
+Name Bedroom~
+Desc ~
+Sector inside~
+Exit south 8915
+End
+
+
+#8917
+Name Master Bedroom~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit east 8918
+End
+
+
+#8918
+Name Treasury Room~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Owner Alessandra~
+Exit west 8917
+End
+
+
+#8919
+Name Torture Room~
+Desc ~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit up 8913
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 8910 -1 8917
+O 0 8918 -1 8918
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

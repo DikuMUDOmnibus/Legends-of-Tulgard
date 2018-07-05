@@ -1,0 +1,163 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of Anacor~
+ShortName   Temple of Anacor~
+Builders    None~
+VNUMs       7570 7579
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      r~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#7570
+Name altar~
+Short an altar to `CAnacor`x~
+Desc An altar to `#`CAnacor`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 QR 150 150
+Weight 5000
+Material stone~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#7571
+Name wooden box~
+Short a large wooden box~
+Desc A large wooden box rests here.~
+Level 1
+ItemType container~
+Cost 10
+Durability 5
+Asize 25
+Rsize 50
+Values 99999 0 0 100 100
+Weight 150
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#0
+
+
+
+#ROOMS
+#7570
+Name Entranceway~
+Desc You find yourself just inside of a large temple.  The walls are covered in 
+soft velvet maroon and black draperies and sweet smelling incense fills the 
+air.  Soft chanting can be heard from north of you.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7571
+Exit south 27099
+End
+
+
+#7571
+Name Grand Foyer~
+Desc The ceiling in the foyer stands well over 10 feet tall and there is a large 
+elaborate chandelier hanging from the ceiling.  The walls are covered in 
+soft velvet maroon and black draperies.  Sweet smelling incense fills the 
+air.  There is a large altar to your north and rooms to both your east and 
+west.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 7572
+Exit east 7573
+EFlags door closed~
+Exit south 7570
+Exit west 7574
+EFlags door closed~
+End
+
+
+#7572
+Name Altar Room~
+Desc The walls are covered in soft velvet maroon and black draperies.  There are 
+2 large braziers resting on either side of a large altar creating a soft 
+light in the room.  Sweet smelling incense fills the air.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 7571
+End
+
+
+#7573
+Name High Priest's Chamber~
+Desc The walls in this room are covered in the same soft velvet maroon and black 
+draperies as throughtout the temple.  Sweet smelling incense fills the air 
+in the room.  The way out is to your west.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 7571
+EFlags door closed~
+End
+
+
+#7574
+Name Donation Room~
+Desc You are in a small room lined with shelves.  There are several wooden boxed 
+lined neatly in the middle of the room.  Anacor's worshipers seem to use 
+this room to hoard things here.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7571
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 7570 -1 7572
+O 0 7571 -1 7574
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

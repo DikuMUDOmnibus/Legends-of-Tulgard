@@ -1,0 +1,315 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Temple of Graal~
+ShortName   Temple of Graal~
+Builders    None~
+VNUMs       7540 7549
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#7540
+Name grove lime trees~
+Short a `#`Glime`^ tree~
+Desc A small grove of lime trees is growing here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 0 0 200 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     no_sac~
+End
+
+#7541
+Name giant lime~
+Short a giant `#`Glime`^~
+Desc A giant lime has been dropped here.~
+Level 0
+ItemType food~
+Cost 4
+Durability 5
+Asize 0
+Rsize 50
+Values 2 0 0 0 0
+Weight 5
+Material unknown~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#7542
+Name wooden bench~
+Short a wooden bench~
+Desc A comfortable-looking wooden bench is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 6 6000 BEHKQX 0 0
+Weight 0
+Material wood~
+Extra    nonmetal~
+Wear     no_sac~
+End
+
+#7545
+Name altar~
+Short an altar to `#`SGraal`^~
+Desc An altar to `#`SGraal`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 QR 150 150
+Weight 5000
+Material stone~
+Extra    glow nopurge nonmetal nodegrade burnproof norestring~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#7540
+Name A Vaulted Foyer~
+Desc The antechamber of this temple is adorned with grand white marble and green 
+malachite carvings to either side of the room.  The still figures of unknown 
+scholars and sages with arms reaching skyward support the thirty-foot tall 
+ceiling.  Each of the statues wears a giant glowing amulet of Graal 
+around it's neck, providing adequate lighting for this grand chamber.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7549
+EFlags door closed~
+EKeywords door~
+Exit northwest 7541
+End
+
+
+#7541
+Name The Gallery - South Wing~
+Desc Many fine works of art decorate the western wall of this 
+contrastingly-starke gallery.  Items on display range from exotic tapestries 
+to masterfully-worked bronze busts.  One item stands out above all the 
+others here, a simple painting which sits upon a four-foot-tall lapis 
+column.  The gallery continues northward.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc painting ~
+This still-life, "Acorns upon Stone", was painted by an amateur hand.  There 
+is a large glob of cobalt paint upon one corner of the canvas which covers 
+up most of a signature.  You can only make out "Chr.........  Rks".  
+~
+ExtraDesc lapis column~
+This dark-blue stone column serves to display a simple painted picture.  
+It's surface is smooth and highly polished, giving it an almost-reflective 
+shine.  
+~
+Exit north 7542
+Exit southeast 7540
+End
+
+
+#7542
+Name The Gallery - North Wing~
+Desc Displayed items within this section of the gallery include those of arcane 
+nature.  Within the center of the room is a large pool of liquid.  High 
+above this pool many scintillating, prismatic shards of crystal levitate 
+mysteriously.  Upon a stand along the east wall, a dragon-shaped ice 
+sculpture remains unharmed by a blazing shroud of magical flames.  More 
+items are on display in the south wing of the gallery as well.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc prismatic shards crystal~
+These small shards of crystal send out rainbows of light across the surface 
+of the pool below, creating a hypnotic display.  
+~
+ExtraDesc pool liquid~
+The liquid contained within this pool is being set ablaze with an entrancing 
+shower of lights.  The rainbow-hued affects are being created by small 
+crystals hovering above the surface of the pool.  
+~
+ExtraDesc ice dragon sculpture~
+There is no evidence of melting ice to be seen from this exquisite dragon.  
+The crystal-clear sculpture appears to writhe in pain from the heat of fire 
+around it.  
+~
+ExtraDesc blazing shroud magical flames~
+The blue-red flames of this magical vestment appear to make the ice dragon 
+writhe in pain.  Even so, there is no trace of melting ice to be seen 
+anywhere.  
+~
+Exit south 7541
+Exit northeast 7543
+End
+
+
+#7543
+Name Stained-Glass Hallway~
+Desc Both walls of this long hallway are lined with vivid stained-glass windows.  
+Scenes of sunsets, clouds, and starry skies give the area a very somber 
+feeling.  Some of the fifty windows depict the tell-tale funnel of a tornado 
+descending from the base of a massive cloud.  A great many more of the 
+glassworks have been constructed into the presentation of a voluminous tome. 
+ A large dias stands at the far east end of this fused-silica passage.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 7544
+Exit southwest 7542
+End
+
+
+#7544
+Name Before the Dias~
+Desc A large stone dias rests here, to which is attached an engraved metal plate. 
+ A long flight of stairs begins to wind it's way around the inside of this 
+towering spire.  You can't even see the ceiling from down here!  A corridor 
+lined with stained-glass lies to the west of here.  
+~
+RoomFlags indoors light~
+Sector inside~
+ExtraDesc dias metal plate~
+The metal plate which has been affixed to the front of the dias is engraved 
+with a message.  
+"Three-Thousand Steps will take you there."
+~
+Exit west 7543
+Exit up 7545
+End
+
+
+#7545
+Name Taking Three-Thousand Steps~
+Desc This section of the spiral walkway is quite near the bottom of the spire.  
+The shallowness of the steps makes for a very long journey indeed.  Below 
+you can see the form of a stone dias resting upon the floor.  You cannot see 
+the ceiling from this point of the journey.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 7546
+Exit down 7544
+End
+
+
+#7546
+Name Taking Three-Thousand Steps~
+Desc This is about midway between the base and top of the spire, or so it should 
+seem.  You cannot see the floor or the ceiling from here.  Good thing there 
+is a railing to hold onto.  Up or down, there is a good amount of travel in 
+either direction to get off of the Steps.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 7548
+Exit down 7545
+End
+
+
+#7547
+Name Atop the Spire~
+Desc This lookout atop the Three-Thousand Steps is home to the shrine of Graal, 
+the Keeper of Tradition.  From atop this lofty perch is visable the sprawl 
+of Tulgard and the outlaying lands of the world.  
+~
+RoomFlags light~
+Sector city~
+Exit down 7548
+End
+
+
+#7548
+Name Taking Three-Thousand Steps~
+Desc This portion of the Three-Thousand Steps is very near the top of the spire.  
+The ceiling is now within plain sight, but the floor remains unseen far 
+below you.  The steps lead through an opening in the ceiling and onto the 
+peak of the spire.  The downward spiral of the Steps will eventually lead to 
+the base of this skyward temple.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 7547
+Exit down 7546
+End
+
+
+#7549
+Name The Temple Courtyard~
+Desc You are before the entrance to the temple of Graal.  A cobblestone walk 
+leads westward to the tall doors of the temple foyer.  Well-tended groves of 
+fruit-bearing trees adorn the remainder of the fenced-in courtyard.  To the 
+east, an archway in the wrought-iron fence allows you to leave the temple 
+grounds.  
+~
+RoomFlags indoors light~
+Sector city~
+Exit east 3097
+Exit west 7540
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 7542 -1 7541
+O 0 7542 -1 7542
+O 0 7545 -1 7547
+O 0 7540 -1 7549
+P 0 7541 9 7540 9
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

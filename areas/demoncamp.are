@@ -1,0 +1,2282 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Demon Encampment~
+ShortName   Demon Encampment~
+Builders    ardayne rashka~
+build_restricts 'all' ardayne ~
+VNUMs       64520 64599
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Abaddon~
+*LastSaved  Thu Jan 19 21:53:24 2006~
+End
+
+
+
+#MOBILES
+#64520
+Name cambion soldier~
+ShortD a `#`RC`ra`Smbi`ro`Rn `rS`Xo`Sldi`Xe`rr`^~
+LongD A `#`RC`ra`Smbi`ro`Rn `rS`Xo`Sldi`Xe`rr`^ is here, standing proudly.~
+Desc This cambion soldier stands proudly. He appears highly trained and very 
+nimble. His armor is in top condition. He gleams as if he were on fire by 
+the colors of his equipment and cloth robes. Do you dare to fight him? 
+~
+Race cambion~
+Align 0 -2
+Level 98
+Hitroll 0
+HitDice 9d13+450
+ManaDice 9d13+600
+DamDice 10d12+48
+DamType claw
+AC -630 -630 -630 -522
+Wealth 1209
+Act    npc no_tame stay_area thief~
+Act2   allskills~
+AffBy  haste dark_vision~
+AffBy2 mute~
+Off    bash disarm dodge circle~
+Imm    fire poison~
+Vuln   lightning holy~
+Form   poison sentient biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material demon
+END
+
+#64521
+Name zombie death knight~
+ShortD a `#`SDeath `WK`Xn`Sig`Xh`Wt`^~
+LongD A `#`SDeath `WK`Xn`Sig`Xh`Wt`^ stands here proudly riding a rotting horse.~
+Desc Astride a rather large undead steed, this death knight appears quite 
+formidable. His armor is thick, appearing unpierceable. From within his helm 
+are two glowing eyes. He seems to have no form underneath his armor, he's 
+kept together by some dark unholy will.. Dare you fight him? 
+~
+Race dragon~
+Align 0 -3
+XPMod 110
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType drain
+AC -800 -800 -800 -704
+Wealth 400
+Act    npc stay_area warrior~
+Act2   allskills~
+AffBy  detect_evil detect_invis detect_magic detect_hidden infrared protect_evil protect_good hide haste dark_vision~
+Off    bash disarm fast dirt_kick crush~
+Imm    summon charm bash sleep~
+Res    holy~
+Vuln   lightning acid light sound~
+Form   edible sentient biped mountable mammal reptile dragon terrain_restricted~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+Ter    field~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#64522
+Name demon general succubi~
+ShortD the `#`rD`Re`rm`Ro`rn `XG`Seneral`^~
+LongD The `#`rD`Re`rm`Ro`rn `XG`Seneral`^ stands here seductively as she plans her next offensive.~
+Desc This demon woman has very seductive features. Glossy black wings sprout from 
+her shoulders. Brandished on her fingers are huge nails that have a better 
+likeness to talons then claws. She has a sensual smile as she glances up at 
+you. 
+~
+Race aurak draconian~
+Align -3 -3
+XPMod 175
+Level 118
+Hitroll 0
+HitDice 11d15+550
+ManaDice 5d5+125
+DamDice 12d14+68
+DamType claw
+AC -830 -830 -830 -738
+Wealth 500
+Act    npc dont_wander scavenger stay_area warrior~
+Act2   allskills~
+AffBy  detect_invis detect_hidden detect_good infrared flying dark_vision~
+Off    dodge kick parry tail~
+Imm    summon charm fire poison negative disease drowning scry hunger thirst fear~
+Res    illusion~
+Vuln   holy sound~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#64523
+Name dark wizard~
+ShortD the `#`SDark `WW`Xi`Sza`Xr`Wd`^~
+LongD The `#`SDark `WW`Xi`Sza`Xr`Wd`^ stands here doing conjurations for the war.~
+Desc Towering above you is a rather huge lich adorned in regal robes of an 
+archmage. He glowers down in your direction and his bones curl and crack as 
+rotting sinews snap and pop while he creates but the most simplest of 
+guestures.. a smile. 
+~
+Race dragon~
+Align 0 -3
+XPMod 110
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType wither
+AC -800 -800 -800 -704
+Wealth 400
+Act    npc dont_wander stay_area mage~
+AffBy  detect_evil detect_invis detect_magic detect_hidden infrared protect_evil protect_good hide haste dark_vision~
+Off    disarm dodge fast parry~
+Imm    summon charm bash sleep~
+Res    holy~
+Vuln   lightning acid light sound~
+Form   edible instant_decay sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#64524
+Name demon soldier~
+ShortD a `#`rD`Re`rm`Ro`rn `SS`Xo`rldi`Xe`Sr`^~
+LongD A `#`rD`Re`rm`Ro`rn `SS`Xo`rldi`Xe`Sr`^ flexes his talons and smirks at you.~
+Desc Standing tall and fearesome is a large demon soldier. He towers above you 
+ominously. Twin horns curve out toward you and back from his forehead. His 
+skin is a fiery red, almost as if he were made of magma. His tail ends with 
+a trident point, wisping off into three tips. 
+~
+Race unique~
+Align -3 -3
+XPMod 105
+Level 98
+Hitroll 0
+HitDice 10d13+475
+ManaDice 4d5+105
+DamDice 10d13+53
+DamType claw
+AC -680 -680 -680 -544
+Wealth 350
+Act    npc stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden flying haste~
+Off    disarm dodge fade fast parry tail~
+Imm    summon charm~
+Form   edible~
+Ter    field~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material demon
+END
+
+#64525
+Name infernal demoness commander obsidian bat like wings~
+ShortD an `#`rI`Rn`rf`Rer`rn`Ra`rl `yC`Som`Xm`Wa`Xn`Sde`yr`^~
+LongD A `#`rd`Re`rm`Ro`rn`Re`rs`Rs`^ with `#`Sobs`Xi`Sd`Xi`San bat-like`^ wings is standing here.~
+Desc Standing here is a beautiful woman.. if you are into those dark tastes 
+anyway. Her skin is a creamy pale white. Her lips are a blood red tone. Her 
+fangs gleam brilliantly as do her talonous fingernails. A long slender tail 
+trails behind her following two large bat-like obsidian-toned wings. Her 
+long black hair flows beautifully down her back. You could almost ignore the 
+two small devil horns on her forehead.. or the devilish smirk. 
+~
+Race unique~
+Align -3 -3
+XPMod 150
+Level 110
+Hitroll 0
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType cleave
+AC -800 -800 -800 -672
+Wealth 500
+Act    npc dont_wander docile stay_area warrior~
+AffBy  invisible detect_evil detect_invis detect_magic detect_hidden protect_evil protect_good sneak hide haste~
+Off    berserk disarm dodge fade fast parry trip~
+Imm    summon charm~
+Res    holy~
+Vuln   light sound~
+Form   poison instant_decay non_skinable insect cold_blood~
+Part   head legs heart brains guts eye fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    female~
+Material unknown
+END
+
+#64526
+Name unicorn black winged stallion~
+ShortD a `#`SU`Xn`Sico`Xr`Sn S`Xta`Sll`Xio`Sn`^~
+LongD A winged `#`SU`Xn`Sico`Xr`Sn S`Xta`Sll`Xio`Sn`^ is here pawing the ground with his golden hooves.~
+Desc This is a Massively huge black unicorn stallion. His obsidian mane and tail 
+are long, flowing in a spectral manner. His fur is as black as the pitch of 
+night. He crushes the ground beneath his sharp golden hooves. Sprouting from 
+his back are two, enormous bat-like wings. Crowned upon this Unicorn's head 
+is a deranged razor horn. When snorting and snarling, this ghostly mount 
+reveals his sharp fanged teeth. Within his eyes are two glowing red embers. 
+His form doesn't appear solid, it is very ethereal, as if you could pass 
+right through him. Solid though, he is. For an ungodly being, this steed 
+would make the perfect companion... if you dare to try and tame the savage 
+beast. 
+~
+Race horse~
+Align -3 -3
+XPMod 120
+Level 91
+Hitroll 90
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType drain
+AC -610 -610 -610 -500
+Wealth 900
+Act    npc stay_area no_hunt cleric warrior~
+AffBy  invisible detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary protect_evil sneak hide flying haste dark_vision regeneration~
+Off    bash dodge fast kick dirt_kick parry tail trip crush gore~
+Imm    summon holy light illusion scry hunger thirst~
+Res    charm magic mental~
+Vuln   acid poison negative disease~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye wings tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#64520
+Name red trimmed black warlock robes~
+Short a `#`Rr`red`S-`Xt`Sr`ri`Smm`re`Sd b`rl`Sack`^ warlock robe~
+Desc A heavy black cloak trimmed in red is here.~
+Level 87
+ItemType armor~
+Cost 5240
+Durability 1
+Asize 200
+Rsize 50
+Values 28 31 31 27 0
+Weight 200
+Material silk~
+Extra    glow dark evil magic bless antigood nonmetal nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take torso no_sac~
+ClassAllowances mage cleric druid ranger bard anti-paladin~
+Affect modifier -1 0 -1 intuition 4 0
+Affect modifier -1 0 -1 mana 60 0
+Affect modifier -1 0 -1 selfdiscipline 2 0
+End
+
+#64521
+Name kilt red trimmed warlock black~
+Short a `#`Rr`red`S-`Xt`Sr`ri`Smm`re`Sd b`rl`Sack`^ warlock kilt~
+Desc A heavy black kilt trimmed in red is here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 20 20 20 15 0
+Weight 100
+Material silk~
+Extra    evil magic bless antigood nonmetal nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take legs no_sac~
+ClassAllowances mage cleric druid ranger bard anti-paladin~
+Affect modifier -1 0 -1 hitroll 3 0
+Affect modifier -1 0 -1 damroll 3 0
+Affect modifier -1 0 -1 mana 80 0
+Affect modifier -1 0 -1 selfdiscipline 3 0
+End
+
+#64522
+Name red trimmed black warlock boots~
+Short a `#`Rr`red`S-`Xt`Sr`ri`Smm`re`Sd b`rl`Sack`^ warlock boots~
+Desc A pair of heavy black boots trimmed in red are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 17 17 17 14 0
+Weight 100
+Material silk~
+Extra    glow dark evil magic bless antigood nonmetal nodegrade chaos~
+Extra2   nodecay~
+Wear     take feet~
+ClassAllowances mage cleric druid ranger bard anti-paladin~
+Affect modifier -1 0 -1 move 60 0
+Affect modifier -1 0 -1 hp 5 0
+Affect modifier -1 0 -1 hitroll 3 0
+Affect modifier -1 0 -1 damroll 3 0
+End
+
+#64523
+Name red trimmed black warlock gloves~
+Short a `#`Rr`red`S-`Xt`Sr`ri`Smm`re`Sd b`rl`Sack`^ warlock gloves~
+Desc A pair of black gloves trimmed in red are here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 18 18 18 15 0
+Weight 100
+Material silk~
+Extra    dark evil magic bless antigood nonmetal nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take hands no_sac~
+ClassAllowances mage cleric druid ranger bard anti-paladin~
+Affect modifier -1 0 -1 mana 40 0
+Affect modifier -1 0 -1 damroll 4 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 hp 6 0
+End
+
+#64524
+Name cot centaur skin~
+Short a `#`ycot`^ made from `#`Sc`Xe`Sn`Xta`Sur`^ skin~
+Desc A `#`ycot`^ made from `#`Sc`Xe`Sn`Xta`Sur`^ skin stands here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 5000 AEHKQ 100 100
+Weight 2
+Material flesh~
+Extra    nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#64525
+Name red trimmed black warlock girdle~
+Short a `#`Rr`red`S-`Xt`Sr`ri`Smm`re`Sd b`rl`Sack`^ warlock girdle~
+Desc A heavy black girdle trimmed in red is here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 17 18 18 16 0
+Weight 100
+Material silk~
+Extra    glow dark evil magic bless antigood nonmetal nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take waist~
+ClassAllowances mage cleric druid bard monk anti-paladin~
+Affect modifier -1 0 -1 mana 40 0
+Affect modifier -1 0 -1 selfdiscipline 6 0
+Affect modifier -1 0 -1 hp 2 0
+End
+
+#64526
+Name steel arm engraved runes~
+Short a `#`Sst`Xee`Sl arm e`rn`Rg`rra`Sv`re`Sd`^ with `#`Rr`runes`^~
+Desc A complete steel arm built specifically for the loss of a limb is here.~
+Level 87
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 20 18 19 16 0
+Weight 100
+Material gold~
+Extra    glow dark evil magic bless antigood nonmetal nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take arms no_sac~
+ClassAllowances mage cleric druid ranger bard anti-paladin~
+Affect modifier -1 0 -1 selfdiscipline 3 0
+Affect modifier -1 0 -1 hitroll 2 0
+Affect modifier -1 0 -1 damroll 2 0
+Affect modifier -1 0 -1 intuition 3 0
+End
+
+#64527
+Name antlered circlet~
+Short an `#`Xa`yn`Xtler`ye`Xd `Scirclet`^~
+Desc A circlet crested with two large antlers is here.~
+Level 90
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 100
+Rsize 50
+Values 19 18 19 16 0
+Weight 100
+Material gold~
+Extra    glow dark evil magic bless antigood nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take head no_sac~
+ClassAllowances mage cleric druid ranger bard~
+AttuneFlags attunable equal_level~
+Affect modifier -1 0 -1 intuition 3 0
+Affect modifier -1 0 -1 mana 60 0
+Affect affects2 -1 0 -1 none 0 vicegrip
+Affect modifier -1 0 -1 selfdiscipline 4 0
+End
+
+#64528
+Name red flowing cloak~
+Short a long, `#`Rf`rlowing `Rc`rloak`^~
+Desc A flowing red silk cloak trimmed in gold is crumpled here.~
+Level 87
+ItemType armor~
+Cost 2200
+Durability 1
+Asize 100
+Rsize 50
+Values 22 21 21 18 0
+Weight 80
+Material silk~
+Extra    glow dark evil magic bless antigood nonmetal nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take about no_sac~
+ClassAllowances mage cleric druid ranger bard monk anti-paladin~
+Affect objectspell bless 0 -1 none 0 0
+Affect modifier -1 0 -1 hp 4 0
+Affect modifier -1 0 -1 intuition 3 0
+Affect modifier -1 87 -1 mana 40 0
+End
+
+#64529
+Name flail eight serpent headed tendrils~
+Short a `#`Sflail`^ with `#`Xe`Sigh`Xt `gs`Ge`yr`gp`ye`Gn`gt`S-`gh`ye`ga`Gd`ye`gd `Xt`Sendril`Xs`^~
+Desc A `#`Sflail`^ with `#`Xe`Sigh`Xt `gs`Ge`yr`gp`ye`Gn`gt`S-`gh`ye`ga`Gd`ye`gd `Xt`Sendril`Xs`^ is here hissing quietly.~
+Level 91
+ItemType weapon~
+Cost 1209
+Durability 1
+Asize 0
+Rsize 50
+Values flail 22 3 vibration HIL
+Weight 30
+Material poison~
+Extra    evil magic bless antigood nolocate nodegrade burnproof chaos horned~
+Extra2   nodecay nosecondary nochaoslace nosell~
+Wear     take wield no_sac~
+ClassAllowances cleric druid ranger anti-paladin~
+AttuneFlags attunable equal_level easy once~
+End
+
+#64530
+Name black steel plated breastplate~
+Short a `#`Sb`Xl`Sack-`Sst`Xee`Sl`^ plated `#`Sbr`Xe`Sa`Xs`Stpl`Xa`St`Xe`^~
+Desc A protective breastplate made from plates of black-steel is here.~
+Level 90
+ItemType armor~
+Cost 2300
+Durability 1
+Asize 0
+Rsize 50
+Values 30 32 30 27 0
+Weight 200
+Material black-steel~
+Extra    dark evil bless antigood nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take torso no_sac~
+ClassAllowances thief warrior druid ranger barbarian anti-paladin~
+Affect modifier -1 90 -1 hp 10 0
+Affect modifier -1 90 -1 hitroll 5 0
+Affect modifier -1 90 -1 damroll 5 0
+End
+
+#64531
+Name belt leather steel black~
+Short a `#`Sb`Xe`Slt`^ of `#`Sb`Xl`Sack-`Sst`Xee`Sl`^ and `#`yl`Sea`yth`Se`yr`^~
+Desc A belt made of black-steel and dark leather is here.~
+Level 90
+ItemType armor~
+Cost 1100
+Durability 1
+Asize 0
+Rsize 50
+Values 19 19 20 15 0
+Weight 40
+Material leather~
+Extra    dark evil bless antigood nonmetal nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take waist~
+ClassAllowances thief warrior druid ranger barbarian spellfilcher anti-paladin~
+Affect modifier -1 90 -1 strength 3 0
+Affect modifier -1 90 -1 hitroll 2 0
+Affect modifier -1 90 -1 damroll 4 0
+Affect modifier -1 90 -1 hp 6 0
+End
+
+#64532
+Name black steel gauntlets~
+Short a pair of `#`Sb`Xl`Sack-`Sst`Xee`Sl `Sg`Xa`Suntl`Xe`Sts`^~
+Desc A pair of gauntlets made from black-steel are here.~
+Level 90
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 20 20 20 18 0
+Weight 100
+Material black-steel~
+Extra    dark evil bless antigood nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take hands no_sac~
+ClassAllowances thief warrior druid ranger barbarian spellfilcher anti-paladin~
+Affect modifier -1 90 -1 hitroll 4 0
+Affect modifier -1 90 -1 damroll 4 0
+Affect modifier -1 90 -1 hp 4 0
+Affect modifier -1 90 -1 strength 2 0
+End
+
+#64533
+Name black steel plated boots~
+Short a pair of `#`Sb`Xl`Sack-`Sst`Xee`Sl`^ plated `#`Sb`Xoo`Sts`^~
+Desc A pair of boots plated with black-steel are here.~
+Level 90
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 17 17 18 15 0
+Weight 100
+Material black-steel~
+Extra    dark evil bless antigood nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take feet no_sac~
+ClassAllowances thief warrior druid paladin ranger barbarian spellfilcher anti-paladin~
+Affect modifier -1 90 -1 saves -6 0
+Affect modifier -1 90 -1 quickness 3 0
+Affect modifier -1 90 -1 damroll 4 0
+End
+
+#64534
+Name black steel plated greaves~
+Short a pair of `#`Sb`Xl`Sack-`Sst`Xee`Sl`^ plated `#`Sgr`Xea`Sves`^~
+Desc A pair of greaves made with plates of black-steel are here.~
+Level 90
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 18 19 18 17 0
+Weight 100
+Material black-steel~
+Extra    dark evil bless antigood nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take legs no_sac~
+ClassAllowances thief warrior druid ranger barbarian spellfilcher anti-paladin~
+Affect modifier -1 90 -1 hitroll 5 0
+Affect modifier -1 90 -1 damroll 5 0
+Affect modifier -1 90 -1 ac -15 0
+End
+
+#64535
+Name black steel plated shoulder guards~
+Short a pair of `#`Sb`Xl`Sack-`Sst`Xee`Sl`^ plated `#`Ssh`Xou`Sd`Xe`Sr-gu`Xa`Srds`^~
+Desc A pair of shoulder-guards made with plates of black-steel are here.~
+Level 90
+ItemType armor~
+Cost 2610
+Durability 1
+Asize 0
+Rsize 50
+Values 20 18 19 20 0
+Weight 100
+Material black-steel~
+Extra    dark evil bless antigood nolocate nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take arms no_sac~
+ClassAllowances thief warrior druid ranger barbarian anti-paladin~
+Affect modifier -1 90 -1 agility 3 0
+Affect modifier -1 90 -1 hitroll 4 0
+Affect modifier -1 90 -1 damroll 4 0
+End
+
+#64536
+Name black steel horned helm~
+Short a `#`Sh`ro`Rrn`re`Sd `Sb`Xl`Sack-`Sst`Xee`Sl helm`^~
+Desc A black-steel helm donned with two curved horns is here.~
+Level 90
+ItemType armor~
+Cost 1100
+Durability 1
+Asize 0
+Rsize 50
+Values 19 18 19 16 0
+Weight 40
+Material black-steel~
+Extra    dark evil bless antigood nolocate nodegrade burnproof chaos horned~
+Extra2   nodecay~
+Wear     take head no_sac~
+ClassAllowances thief warrior druid ranger barbarian anti-paladin~
+Affect modifier -1 90 -1 strength 2 0
+Affect modifier -1 90 -1 hitroll 4 0
+Affect modifier -1 90 -1 damroll 6 0
+End
+
+#64537
+Name flail three spiked heads~
+Short a `#`Sflail`^ with `#`Sthree `Rs`rp`Sik`re`Rd `Sheads`^~
+Desc A `#`Sflail`^ with `#`Sthree `Rs`rp`Sik`re`Rd `Sheads`^ is here.~
+Level 90
+ItemType weapon~
+Cost 3000
+Durability 1
+Asize 0
+Rsize 50
+Values flail 13 6 drain HLM
+Weight 30
+Material demon-steel~
+Extra    dark evil magic bless antigood nonmetal nolocate meltdrop nodegrade burnproof chaos~
+Extra2   nodecay~
+Wear     take wield no_sac~
+End
+
+#64538
+Name metal steel claw~
+Short a `#`Xs`Steel c`Xl`ra`Sw`^~
+Desc A `#`Xs`Steel c`Xl`ra`Sw`^ that extends from one's arm gleams here.~
+Level 90
+ItemType weapon~
+Cost 2500
+Durability 1
+Asize 0
+Rsize 50
+Values dagger 3 26 slice EGL
+Weight 33
+Material steel~
+Extra    dark evil antigood burnproof chaos~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 90 -1 hitroll 5 0
+Affect modifier -1 90 -1 damroll 11 0
+End
+
+#64539
+Name ring silver blackfire black fire~
+Short a `#`Xs`Si`Wlv`Se`Xr r`Sin`Xg`^ of `#`SBlack`X-`SF`Xir`Se`^~
+Desc A silver ring gleams here engulfed in chaotic black flames.~
+Level 85
+ItemType jewelry~
+Cost 2550
+Durability 1
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material magic~
+Extra    glow hum dark evil magic bless antigood noremove meltdrop burnproof chaos~
+Extra2   nodecay nochaoslace regrowing~
+Wear     take finger~
+Affect modifier -1 0 -1 hp 4 0
+Affect modifier -1 0 -1 mana 40 0
+Affect modifier -1 85 -1 damroll 4 0
+Affect modifier -1 85 -1 hitroll 4 0
+Affect modifier -1 85 -1 ac -10 0
+End
+
+#64540
+Name amulet knowledge eye third~
+Short an `#`rA`Smulet`^ of `#`rK`Sno`rw`Rl`re`Sdg`re`^~
+Desc A dark amulet in the shape of a the third eye is here.~
+Level 85
+ItemType armor~
+Cost 2550
+Durability 1
+Asize 75
+Rsize 50
+Values 12 13 14 10 2
+Weight 10
+Material mind~
+Extra    glow dark evil magic bless antigood nonmetal nolocate burnproof chaos horned~
+Extra2   nodecay~
+Wear     take neck~
+Affect modifier -1 0 -1 reasoning 3 0
+Affect modifier -1 0 -1 intuition 3 0
+Affect modifier -1 85 -1 memory 2 0
+End
+
+#64541
+Name emblem silent hunter~
+Short an `#`XE`Smblem`^ of the `#`XS`Silent `SH`Sunter`^~
+Desc The emblem of the silent hunter is here.~
+Level 20
+ItemType gem~
+Cost 909
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow bless nonmetal nolocate meltdrop nodegrade chaos horned norestring~
+Extra2   nodecay nochaoslace nosell antilaw~
+Wear     take hold no_sac~
+AttuneFlags attunable once~
+Affect affects -1 20 -1 none 0 sneak
+Affect affects -1 20 -1 none 0 hide
+End
+
+#64542
+Name painted runes~
+Short some `#`?Pa`Gin`Yte`yd `?R`Gu`Yn`ye`gs`^~
+Desc The warpaint that lies here leaps at you as you reach for it!~
+Level 85
+ItemType jewelry~
+Cost 850
+Durability 1
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material runes~
+Extra    glow hum dark evil magic bless antigood burnproof chaos~
+Extra2   nodecay~
+Wear     take wrist~
+Affect modifier -1 0 -1 hp 10 0
+Affect modifier -1 0 -1 mana 60 0
+Affect modifier -1 0 -1 hitroll 2 0
+End
+
+#64543
+Name small silver pentagram~
+Short a small `#`Ws`Xi`Slv`Xe`Wr `Xp`Sentagra`Xm`^~
+Desc A tiny silver pentagram gleams here.~
+Level 85
+ItemType jewelry~
+Cost 780
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material silver~
+Extra    dark invis magic bless antigood antineutral nolocate meltdrop nodegrade burnproof chaos horned~
+Extra2   nodecay nosell~
+Wear     take no_sac ear~
+ClassAllowances mage cleric thief warrior druid ranger spellfilcher anti-paladin~
+Affect modifier -1 85 -1 damroll 6 0
+Affect modifier -1 85 -1 hitroll 6 0
+Affect modifier -1 85 -1 hp 2 0
+Affect modifier -1 85 -1 mana 20 0
+End
+
+#64544
+Name demonic foot brace~
+Short a `#`rd`Re`rm`Ro`rn`Ri`rc `Sfoot-brace`^~
+Desc A demonic fashioned foot-brace is here.~
+Level 82
+ItemType jewelry~
+Cost 1215
+Durability 1
+Asize 90
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material silver~
+Extra    dark evil magic bless antigood nonmetal nolocate nodegrade burnproof chaos horned~
+Extra2   nodecay~
+Wear     take ankle~
+Affect modifier -1 82 -1 hitroll 5 0
+Affect modifier -1 82 -1 damroll 5 0
+Affect modifier -1 82 -1 ac -10 0
+End
+
+#64545
+Name demonic face guard~
+Short a `#`rd`Re`rm`Ro`rn`Ri`rc `Sface-guard`^~
+Desc A face-guard that looks like a demon's face is here.~
+Level 91
+ItemType armor~
+Cost 1800
+Durability 1
+Asize 40
+Rsize 50
+Values 20 19 20 18 0
+Weight 25
+Material flesh~
+Extra    dark evil bless antigood burnproof chaos horned~
+Extra2   nodecay~
+Wear     take face~
+ClassAllowances mage thief warrior druid ranger barbarian spellfilcher anti-paladin~
+Affect modifier -1 0 -1 hitroll 4 0
+Affect modifier -1 0 -1 damroll 6 0
+Affect modifier -1 91 -1 hp 4 0
+Affect modifier -1 91 -1 mana 20 0
+End
+
+#64546
+Name unicorn spiral horn~
+Short a `#`SS`Xp`bir`Xa`Sl `XH`Sor`Xn`^~
+Desc The long `#`SS`Xp`bir`Xa`Sl `XH`Sor`Xn`^ of a `#`SU`Xn`Sico`Xr`Sn`^ glows here with `#`SUnHoly`^ power~
+Level 91
+ItemType treasure~
+Cost 100000
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 210
+Material unholy~
+Extra    hum dark evil magic bless antigood antineutral noremove rotdeath nonmetal nolocate meltdrop nodegrade burnproof chaos horned norestring~
+Extra2   nosell noidentify~
+Wear     take head no_sac~
+ClassAllowances cleric druid ranger~
+Affect modifier -1 0 -1 mana 140 0
+Affect resist -1 91 -1 none 0 holy
+End
+
+#64547
+Name vial unicorn blood~
+Short a `#`WV`Xial`^ of `#`WU`Xn`Wico`Xr`Wn`S'`Ws `XB`Sl`Xoo`Sd`^~
+Desc A vial containing a precious silver fluid is here.~
+Level 90
+ItemType potion~
+Cost 10000
+Durability 1
+Asize 0
+Rsize 50
+Values 100 'restore life' curse mute despair
+Weight 11
+Material holy~
+Extra    glow hum magic bless noremove rotdeath nonmetal nolocate meltdrop nodegrade burnproof horned norestring~
+Extra2   nosell noidentify~
+Wear     take no_sac~
+End
+
+#64548
+Name gargoyle mouth~
+Short the gargoyle's mouth~
+Desc ~
+Level 1
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 500 AC 0 100 0
+Weight 5000
+Material stone~
+Extra    nolocate nodegrade burnproof norestring~
+Extra2   nodecay~
+ExtraDesc gargoyle massive stone ~
+Towering above you is a massive stone gargoyle. It gleams with a rather odd 
+flicker, seemingly cursing you with the wrath of beasts. It's claws are 
+sharp, wickedly long as bear claws. Within it's closed mouth are serpent 
+fangs. As the wind passes through or by the statue, the grinding sound of a 
+lion's growl emerges. It's base is made up out of stone carvings of people 
+suffering the black death. 
+~
+End
+
+#64549
+Name piece tattered flesh~
+Short a piece of `#`St`ya`Stt`yere`Sd`^ flesh~
+Desc A piece of `#`St`ya`Stt`yere`Sd`^ flesh is here empowered with the wrath of beasts.~
+Level 70
+ItemType scroll~
+Cost 1290
+Durability 1
+Asize 0
+Rsize 50
+Values 80 'lion roar' 'bears claw' blight 'snake bite'
+Weight 1
+Material flesh~
+Extra    burnproof chaos~
+Wear     take hold~
+End
+
+#64550
+Name barbed bone ankus~
+Short a `#`SB`Xa`Wrb`Xe`Sd `WB`Xo`Wn`Xe`^ Ankus~
+Desc A `#`SB`Xa`Wrb`Xe`Sd `WB`Xo`Wn`Xe`^ Ankus beckons to you.~
+Level 91
+ItemType weapon~
+Cost 4000
+Durability 1
+Asize 150
+Rsize 50
+Values exotic 17 4 drain ACK
+Weight 150
+Material bone~
+Extra    dark evil nodrop bless antigood noremove nonmetal nolocate nodegrade burnproof horned norestring~
+Extra2   buried nodecay nochaoslace nosell~
+Wear     take wield~
+ClassAllowances druid ranger barbarian~
+Affect modifier -1 91 -1 hitroll 6 0
+Affect modifier -1 91 -1 damroll 10 0
+ExtraDesc barbed bone ankus~
+The weapon gleaming here starts off with the shape of a small pike, sizeable 
+to use with one hand. Branching off the center of the sharpened tip, before 
+the handle is a scythe-like extention that curves in a deadly manner. On the 
+end of the handle, opposite the sharpened point, is a carved image of a 
+sneering skull. It really doesn't look like you wanna tick off the wielder.. 
+
+~
+End
+
+#64551
+Name small ceremonial chest~
+Short a small `#`Yc`Xer`ye`Ymo`yn`Xia`Yl`^ chest~
+Desc A small `#`Yc`Xer`ye`Ymo`yn`Xia`Yl`^ chest shows visibly here.~
+Level 1
+ItemType container~
+Cost 26
+Durability 1
+Asize 5
+Rsize 50
+Values 20 ACD 64554 20 100
+Weight 2
+Material bone~
+Extra    nonmetal nodegrade~
+Extra2   buried regrowing~
+Wear     take hold~
+End
+
+#64552
+Name glowing treasure gold bag~
+Short a bag of gold~
+Desc A small bag is here glowing softly.~
+Level 60
+ItemType armor~
+Cost 1000
+Durability 1
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 20
+Material brass~
+Extra    nonmetal nodegrade burnproof chaos~
+Wear     take hold no_sac~
+Affect modifier -1 60 -1 hitroll 5 0
+Affect modifier -1 60 -1 damroll 5 0
+ExtraDesc bag glowing treasure gold~
+This bag of gold is protected by the souls of those murdered by the demoness.
+~
+End
+
+#64553
+Name ethereal battlesword mystical holy sword~
+Short `#an `Ce`ct`Sh`Xer`Se`ca`Cl `Sbattlesword`^~
+Desc A mystical sword lies here glowing with a holy aura.~
+Level 90
+ItemType weapon~
+Cost 2980
+Durability 1
+Asize 0
+Rsize 50
+Values sword 11 7 divine EIL
+Weight 50
+Material ethereal~
+Extra    invis magic bless antievil antineutral nonmetal nolocate meltdrop burnproof~
+Extra2   nodecay~
+Wear     take wield no_sac~
+Affect modifier -1 0 -1 damroll 10 0
+Affect modifier -1 0 -1 hitroll 6 0
+End
+
+#64554
+Name ethereal key~
+Short an `#`Ce`ct`Sh`Xer`Se`ca`Cl`^ key~
+Desc An ethereal key lays here.~
+Level 1
+ItemType key~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material ethereal~
+Extra    nonmetal nolocate nodegrade burnproof norestring~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#64520
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit north 64521
+Exit south 15421
+End
+
+
+#64521
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit north 64522
+Exit east 64540
+EFlags door closed~
+Exit south 64520
+Exit west 64541
+EFlags door closed~
+End
+
+
+#64522
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit north 64525
+EFlags door closed~
+Exit south 64521
+Exit northeast 64523
+Exit northwest 64524
+End
+
+
+#64523
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit east 64531
+EFlags door closed~
+Exit northeast 64526
+Exit southwest 64522
+End
+
+
+#64524
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit west 64528
+EFlags door closed~
+Exit southeast 64522
+Exit northwest 64529
+End
+
+
+#64525
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest northward. 
+~
+Sector trail~
+Exit north 64535
+Exit south 64522
+EFlags door closed~
+Exit down 64549
+EFlags door closed~
+End
+
+
+#64526
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit north 64527
+Exit east 64538
+EFlags door closed~
+Exit west 64539
+EFlags door closed~
+Exit southwest 64523
+End
+
+
+#64527
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest northward. 
+~
+Sector trail~
+Exit north 64542
+Exit south 64526
+End
+
+
+#64528
+Name the Commander's Tent~
+Desc Inside the commander's tent, you find yourself engulfed by the maps hanging 
+off the walls and ceilings. Rolled up maps are stuffed in barrels within 
+each corner of the tent, as well as piled atop a large table. It's not a 
+very tidy room. 
+~
+Sector inside~
+Exit east 64524
+EFlags door closed~
+End
+
+
+#64529
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest elsewhere. 
+~
+Sector trail~
+Exit north 64530
+Exit east 64536
+EFlags door closed~
+Exit west 64537
+EFlags door closed~
+Exit southeast 64524
+End
+
+
+#64530
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest northward. 
+~
+Sector trail~
+Exit north 64547
+Exit south 64529
+End
+
+
+#64531
+Name The Commander's Tent~
+Desc Inside the commander's tent, you find yourself engulfed by the maps hanging 
+off the walls and ceilings. Rolled up maps are stuffed in barrels within 
+each corner of the tent, as well as piled atop a large table. It's not a 
+very tidy room. 
+~
+Sector inside~
+Exit west 64523
+EFlags door closed~
+End
+
+
+#64532
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest westward. Between the 
+two areas is a massive gargoyle. 
+~
+Sector trail~
+Exit east 64533
+Exit south 64535
+Exit west 64534
+End
+
+
+#64533
+Name the general's tent~
+Desc Within the general's tent.. artifacts, weapons and all sorts of tormenting 
+implements reside. There is a table centering the room holding all sorts of 
+small figurines atop what appears to be a map of the entire plains and 
+forest. The figures depict the ongoing battle, and move accordingly to those 
+they represent. The General commandingly sends orders as the pieces move. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit west 64532
+End
+
+
+#64534
+Name the conjuration circle~
+Desc Centered here on the ground is a large arcane circle made of human and elven 
+blood. The ground is sparse of life, dead and withered away. Dark energies 
+writhe and squirm with life here as conjurations are begun and completed 
+with expert care. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 64532
+End
+
+
+#64535
+Name a worn road~
+Desc You find yourself here on the road within the demon encampment. The ground 
+is worn and well trodden. There's a hint of blood in the air as the sound of 
+weapons and fists clashing are heard nearby. Chantings of unholy sages hum 
+in the back of your mind as the dark energies manifest northward. 
+~
+Sector trail~
+Exit north 64532
+Exit south 64525
+End
+
+
+#64536
+Name the soldier barracks~
+Desc The tent is dull and torn in small places. It's made from the flesh of 
+humans and elves alike, sewn together tightly. Bloodstained and filled with 
+a rancid stench, the tent at least holds the wind at bay. 
+~
+Sector inside~
+Exit west 64529
+EFlags door closed~
+End
+
+
+#64537
+Name the soldier barracks~
+Desc The tent is dull and torn in small places. It's made from the flesh of 
+humans and elves alike, sewn together tightly. Bloodstained and filled with 
+a rancid stench, the tent at least holds the wind at bay. 
+~
+Sector inside~
+Exit east 64529
+EFlags door closed~
+End
+
+
+#64538
+Name the soldier barracks~
+Desc The tent is dull and torn in small places. It's made from the flesh of 
+humans and elves alike, sewn together tightly. Bloodstained and filled with 
+a rancid stench, the tent at least holds the wind at bay. 
+~
+Sector inside~
+Exit west 64526
+EFlags door closed~
+End
+
+
+#64539
+Name the soldier barracks~
+Desc The tent is dull and torn in small places. It's made from the flesh of 
+humans and elves alike, sewn together tightly. Bloodstained and filled with 
+a rancid stench, the tent at least holds the wind at bay. 
+~
+Sector inside~
+Exit east 64526
+EFlags door closed~
+End
+
+
+#64540
+Name the guard barracks~
+Desc You're standing within the barraks of the gate guards. It's sure nothing 
+fancy, kinda unkept. It actually just appears to look like someone pitched 
+the tent and left it to the mercy of the wind. 
+~
+Sector inside~
+Exit west 64521
+EFlags door closed~
+End
+
+
+#64541
+Name the guard barracks~
+Desc You're standing within the barraks of the gate guards. It's sure nothing 
+fancy, kinda unkept. It actually just appears to look like someone pitched 
+the tent and left it to the mercy of the wind. 
+~
+Sector inside~
+Exit east 64521
+EFlags door closed~
+End
+
+
+#64542
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64556
+Exit east 64543
+Exit south 64527
+Exit west 64544
+End
+
+
+#64543
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64557
+Exit west 64542
+End
+
+
+#64544
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64555
+Exit east 64542
+Exit west 64545
+End
+
+
+#64545
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64554
+Exit east 64544
+Exit west 64546
+End
+
+
+#64546
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64553
+Exit east 64545
+Exit west 64547
+End
+
+
+#64547
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64552
+Exit east 64546
+Exit south 64530
+Exit west 64548
+End
+
+
+#64548
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64551
+Exit east 64547
+End
+
+
+#64549
+Name An underground tunnel~
+Desc This is a dimly light tunnel. It looks like the general stashed various 
+things down here. Skeletons lean against the walls and gold coins lay 
+scattered about the floor. 
+~
+Sector inside~
+Exit north 64550
+Exit up 64525
+EFlags door closed~
+End
+
+
+#64550
+Name An underground tunnel~
+Desc This is a dimly light tunnel. It looks like the general stashed various 
+things down here. Skeletons lean against the walls and gold coins lay 
+scattered about the floor. 
+~
+Sector inside~
+Exit south 64549
+End
+
+
+#64551
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64564
+Exit east 64552
+Exit south 64548
+End
+
+
+#64552
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64563
+Exit east 64553
+Exit south 64547
+Exit west 64551
+End
+
+
+#64553
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64562
+Exit east 64554
+Exit south 64546
+Exit west 64552
+End
+
+
+#64554
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64561
+Exit east 64555
+Exit south 64545
+Exit west 64553
+End
+
+
+#64555
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64560
+Exit east 64556
+Exit south 64544
+Exit west 64554
+End
+
+
+#64556
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64559
+Exit east 64557
+Exit south 64542
+Exit west 64555
+End
+
+
+#64557
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64558
+Exit south 64543
+Exit west 64556
+End
+
+
+#64558
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64571
+Exit south 64557
+Exit west 64559
+End
+
+
+#64559
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64570
+Exit east 64558
+Exit south 64556
+Exit west 64560
+End
+
+
+#64560
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64569
+Exit east 64559
+Exit south 64555
+Exit west 64561
+End
+
+
+#64561
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64568
+Exit east 64560
+Exit south 64554
+Exit west 64562
+End
+
+
+#64562
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64567
+Exit east 64561
+Exit south 64553
+Exit west 64563
+End
+
+
+#64563
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64566
+Exit east 64562
+Exit south 64552
+Exit west 64564
+End
+
+
+#64564
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64565
+Exit east 64563
+Exit south 64551
+End
+
+
+#64565
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64572
+Exit east 64566
+Exit south 64564
+End
+
+
+#64566
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64573
+Exit east 64567
+Exit south 64563
+Exit west 64565
+End
+
+
+#64567
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64574
+Exit east 64568
+Exit south 64562
+Exit west 64566
+End
+
+
+#64568
+Name A Conjuror's Circle~
+Desc Centered here on the ground is a large arcane circle made of human and elven 
+blood. The ground is sparse of life, dead and withered away. Dark energies 
+writhe and squirm with life here as conjurations are begun and completed 
+with expert care. 
+~
+Sector field~
+Exit north 64575
+Exit east 64569
+Exit south 64561
+Exit west 64567
+End
+
+
+#64569
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64576
+Exit east 64570
+Exit south 64560
+Exit west 64568
+End
+
+
+#64570
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64577
+Exit east 64571
+Exit south 64559
+Exit west 64569
+End
+
+
+#64571
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64578
+Exit south 64558
+Exit west 64570
+End
+
+
+#64572
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64579
+Exit east 64573
+Exit south 64565
+End
+
+
+#64573
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64580
+Exit east 64574
+Exit south 64566
+Exit west 64572
+End
+
+
+#64574
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64581
+Exit east 64575
+Exit south 64567
+Exit west 64573
+End
+
+
+#64575
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64582
+Exit east 64576
+Exit south 64568
+Exit west 64574
+End
+
+
+#64576
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64583
+Exit east 64577
+Exit south 64569
+Exit west 64575
+End
+
+
+#64577
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. Standing here, the ground is 
+well trodden and bloodstained. The sound of demonic soldiers and undead, 
+ghostly steeds echo the area. The air is heavy with humidity, giving the 
+area an unruly fog. 
+~
+Sector field~
+Exit north 64584
+Exit east 64578
+Exit south 64570
+Exit west 64576
+End
+
+
+#64578
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64585
+Exit south 64571
+Exit west 64577
+End
+
+
+#64579
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64586
+Exit east 64580
+Exit south 64572
+End
+
+
+#64580
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64587
+Exit east 64581
+Exit south 64573
+Exit west 64579
+End
+
+
+#64581
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64588
+Exit east 64582
+Exit south 64574
+Exit west 64580
+End
+
+
+#64582
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64589
+Exit east 64583
+Exit south 64575
+Exit west 64581
+End
+
+
+#64583
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64590
+Exit east 64584
+Exit south 64576
+Exit west 64582
+End
+
+
+#64584
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64591
+Exit east 64585
+Exit south 64577
+Exit west 64583
+End
+
+
+#64585
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64592
+Exit south 64578
+Exit west 64584
+End
+
+
+#64586
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64593
+Exit east 64587
+Exit south 64579
+End
+
+
+#64587
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64594
+Exit east 64588
+Exit south 64580
+Exit west 64586
+End
+
+
+#64588
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64595
+Exit east 64589
+Exit south 64581
+Exit west 64587
+End
+
+
+#64589
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64596
+Exit east 64590
+Exit south 64582
+Exit west 64588
+End
+
+
+#64590
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64597
+Exit east 64591
+Exit south 64583
+Exit west 64589
+End
+
+
+#64591
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64598
+Exit east 64592
+Exit south 64584
+Exit west 64590
+End
+
+
+#64592
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit north 64599
+Exit south 64585
+Exit west 64591
+End
+
+
+#64593
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit east 64594
+Exit south 64586
+End
+
+
+#64594
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit east 64595
+Exit south 64587
+Exit west 64593
+End
+
+
+#64595
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit east 64596
+Exit south 64588
+Exit west 64594
+End
+
+
+#64596
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit east 64597
+Exit south 64589
+Exit west 64595
+End
+
+
+#64597
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit east 64598
+Exit south 64590
+Exit west 64596
+End
+
+
+#64598
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit east 64599
+Exit south 64591
+Exit west 64597
+End
+
+
+#64599
+Name a bloody field~
+Desc Standing here, the ground is well trodden and bloodstained. The sound of 
+demonic soldiers and undead, ghostly steeds echo the area. The air is heavy 
+with humidity, giving the area an unruly fog. 
+~
+Sector field~
+Exit south 64592
+Exit west 64598
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 64521 spec_shadow_dragon
+M 64522 spec_breath_any
+M 64523 spec_cast_mage
+M 64525 spec_poison
+S
+
+
+
+#RESETS2
+M 0 64520 10 64520 3
+E 0 64531 -1 waist~
+E 0 64530 -1 torso~
+E 0 64538 -1 wielded~
+M 0 64520 10 64522 3
+E 0 64530 -1 torso~
+E 0 64531 -1 waist~
+E 0 64538 -1 wielded~
+M 0 64520 10 64526 3
+E 0 64530 -1 torso~
+E 0 64531 -1 waist~
+E 0 64538 -1 wielded~
+O 0 64524 -1 64528
+M 0 64525 3 64528 1
+E 0 64543 -1 rear~
+E 0 64539 -1 rfinger~
+E 0 64543 -1 lear~
+E 0 64539 -1 lfinger~
+E 0 64541 -1 hold~
+M 0 64520 10 64529 3
+E 0 64530 -1 torso~
+E 0 64531 -1 waist~
+E 0 64538 -1 wielded~
+O 0 64524 -1 64531
+M 0 64525 3 64531 1
+E 0 64543 -1 rear~
+E 0 64543 -1 lear~
+E 0 64539 -1 lfinger~
+E 0 64539 -1 rfinger~
+E 0 64541 -1 hold~
+O 0 64548 -1 64532
+P 0 64549 1 64548 1
+M 0 64522 1 64533 1
+E 0 64545 -1 face~
+E 0 64540 -1 neck1~
+E 0 64528 -1 about~
+E 0 64537 -1 wielded~
+E 0 64554 -1 hold~
+M 0 64523 1 64534 1
+E 0 64529 -1 wielded~
+E 0 64527 -1 head~
+E 0 64526 -1 arms~
+E 0 64525 -1 waist~
+E 0 64523 -1 hands~
+E 0 64522 -1 feet~
+E 0 64521 -1 legs~
+E 0 64520 -1 torso~
+O 0 64524 -1 64536
+O 0 64524 -1 64537
+O 0 64524 -1 64538
+O 0 64524 -1 64539
+O 0 64524 -1 64540
+O 0 64524 -1 64541
+M 0 64524 13 64545 6
+E 0 64544 -1 rankle~
+E 0 64544 -1 lankle~
+E 0 64545 -1 face~
+O 0 64551 -1 64550
+P 0 64553 1 64551 1
+P 0 64552 1 64551 1
+M 0 64521 10 64552 3
+E 0 64532 -1 hands~
+E 0 64533 -1 feet~
+E 0 64534 -1 legs~
+E 0 64535 -1 arms~
+E 0 64536 -1 head~
+E 0 64537 -1 wielded~
+M 0 64521 10 64556 3
+E 0 64532 -1 hands~
+E 0 64533 -1 feet~
+E 0 64534 -1 legs~
+E 0 64535 -1 arms~
+E 0 64536 -1 head~
+E 0 64537 -1 wielded~
+M 0 64524 13 64561 6
+E 0 64544 -1 rankle~
+E 0 64544 -1 lankle~
+E 0 64545 -1 face~
+M 0 64521 10 64561 3
+E 0 64532 -1 hands~
+E 0 64533 -1 feet~
+E 0 64534 -1 legs~
+E 0 64535 -1 arms~
+E 0 64537 -1 wielded~
+E 0 64536 -1 head~
+M 0 64526 1 64568 1
+G 0 64547 -1
+E 0 64546 -1 head~
+O 0 64550 -1 64568
+M 0 64521 10 64573 3
+E 0 64532 -1 hands~
+E 0 64533 -1 feet~
+E 0 64534 -1 legs~
+E 0 64535 -1 arms~
+E 0 64536 -1 head~
+E 0 64537 -1 wielded~
+M 0 64524 13 64575 6
+E 0 64544 -1 lankle~
+E 0 64544 -1 rankle~
+E 0 64545 -1 face~
+M 0 64521 10 64577 3
+E 0 64532 -1 hands~
+E 0 64533 -1 feet~
+E 0 64534 -1 legs~
+E 0 64535 -1 arms~
+E 0 64536 -1 head~
+E 0 64537 -1 wielded~
+M 0 64524 13 64589 6
+E 0 64544 -1 lankle~
+E 0 64544 -1 rankle~
+E 0 64545 -1 face~
+M 0 64524 13 64595 6
+E 0 64544 -1 lankle~
+E 0 64544 -1 rankle~
+E 0 64545 -1 face~
+M 0 64525 3 64596 1
+E 0 64543 -1 rear~
+E 0 64539 -1 rfinger~
+E 0 64539 -1 lfinger~
+E 0 64543 -1 lear~
+E 0 64541 -1 hold~
+M 0 64524 13 64597 6
+E 0 64545 -1 face~
+E 0 64544 -1 rankle~
+E 0 64544 -1 lankle~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

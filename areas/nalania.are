@@ -1,0 +1,980 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Nalania's Estate~
+ShortName   Nalania's Estate~
+Builders    rashka~
+VNUMs       8930 8950
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+*LastSaved  Sun Sep 18 01:54:21 2005~
+End
+
+
+
+#MOBILES
+#8930
+Name butler~
+ShortD a `#`Ws`Xtr`Wappi`Xn`Wg`^ young man~
+LongD A `#`Ws`Xtr`Wappi`Xn`Wg`^ young man waits on your every command.~
+Desc A strapping young man stands here dressed in proper butler garb. He holds a 
+silver tray in his hands and awaits your every command with a dazzling 
+smile. 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 78
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   avoids_all_attacks no_tendency allow_feed~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8931
+Name cat~
+ShortD a `#`Ws`Xl`Wy `Sb`Xl`Sack cat`^~
+LongD A `#`Ws`Xl`Wy `Sb`Xl`Sack cat`^ slinks about curiously.~
+Desc Peering up at you is a sly little black cat. Her fur is pure black with 
+little blue eyes and white whiskers. 
+~
+Race cat~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 79
+Wealth 0
+Act    npc docile no_tame stay_area pet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#8932
+Name maid~
+ShortD a young `#`Smaid`^~
+LongD A young `#`Smaid`^ diligently cleans everything about her.~
+Desc Standing here with a feather duster and other cleaning items is a young 
+maid. She works hard on keeping the house clean, stopping briefly to bow 
+before you in greeting. 
+~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   nohunt avoids_all_attacks allow_feed~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#8933
+Name servant~
+ShortD a little `#`Ys`ye`Xrva`yn`Yt`y boy`^~
+LongD A little `#`Ys`ye`Xrva`yn`Yt`y boy`^ scurries about doing errands.~
+Desc The boy scurrying about here is barely entering his teens. He is 
+surprisingly quick-footed.. one moment he's here.. the next moment.. Poof! 
+off to the next errand! 
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 74
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   nohunt avoids_all_attacks allow_feed~
+AffBy  sneak~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#8934
+Name hand maiden~
+ShortD a `#`Mh`mand-`Mm`ma`Mi`mden`^~
+LongD A young `#`Mh`mand-`Mm`ma`Mi`mden`^ waits on you patiently.~
+Desc This young maiden is dressed properly in her maid garbs. She awaits your 
+commands and wishes diligently. 
+~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   nohunt avoids_all_attacks allow_feed~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#8935
+Name no name~
+ShortD a `#`Mh`mand-`Mm`ma`Mi`mden`^~
+LongD A young `#`Mh`mand-`Mm`ma`Mi`mden`^ waits on you patiently.~
+Desc This young maiden is dressed properly in her maid garbs. She awaits your 
+commands and wishes diligently. 
+~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Act2   nohunt avoids_all_attacks allow_feed~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#8930
+Name yard~
+Short the door to the backyard~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 0 A 8940 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   regrowing~
+End
+
+#8931
+Name door~
+Short the door to the house~
+Desc An `#`RA`rrched `RD`roorway`^~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 0 A 8938 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   regrowing~
+End
+
+#8932
+Name racks~
+Short one of the `#`Sracks`^~
+Desc Some `#`Rw`ricke`Rd `Sracks`^ hang along the walls.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 40 0 0 999 0
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade chaos~
+Extra2   regrowing~
+End
+
+#8933
+Name portrait rosaline~
+Short the darkness~
+Desc A `#`Rp`rortrai`Rt`^ of the `#`RE`rmpress `RR`rosaline`^ hangs on the wall.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 ABG 0 8941 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+ExtraDesc rosaline ~
+A defiant woman sits here on a demonic throne with long, flowing raven-black 
+hair. Her hair cascades down her back in soft waves, shimmering with health 
+in the light. Set upon her face are two almond shaped eyes, a nicely set 
+nose and sly looking lips. Her face is setup softly with her high 
+cheekbones. She is quite easy on the eyes.  Her lips are a fierce blood red, 
+her eyes lined in black, defining them both in a complimenting way. Within 
+her eyes are two orbs of a greenish yellow hue. Standing out even more so 
+with the black liner, her eyes almost glow like greenish fire. Her bodily 
+frame is dainty, but still looks like it could handle a great deal of 
+physical wear.  She is slightly muscular but only in a complimenting way.  
+Her body is pieced together generously with a supple torso, a slim waist and 
+lusciously rounded hips.  Her strong thighs keep her posture elegant and 
+graceful. 
+~
+ExtraDesc portrait ~
+A defiant woman sits here on a demonic throne with long, flowing raven-black 
+hair. Her hair cascades down her back in soft waves, shimmering with health 
+in the light. Set upon her face are two almond shaped eyes, a nicely set 
+nose and sly looking lips. Her face is setup softly with her high 
+cheekbones. She is quite easy on the eyes.  Her lips are a fierce blood red, 
+her eyes lined in black, defining them both in a complimenting way. Within 
+her eyes are two orbs of a greenish yellow hue. Standing out even more so 
+with the black liner, her eyes almost glow like greenish fire. Her bodily 
+frame is dainty, but still looks like it could handle a great deal of 
+physical wear.  She is slightly muscular but only in a complimenting way.  
+Her body is pieced together generously with a supple torso, a slim waist and 
+lusciously rounded hips.  Her strong thighs keep her posture elegant and 
+graceful. 
+~
+ExtraDesc empress ~
+A defiant woman sits here on a demonic throne with long, flowing raven-black 
+hair. Her hair cascades down her back in soft waves, shimmering with health 
+in the light. Set upon her face are two almond shaped eyes, a nicely set 
+nose and sly looking lips. Her face is setup softly with her high 
+cheekbones. She is quite easy on the eyes.  Her lips are a fierce blood red, 
+her eyes lined in black, defining them both in a complimenting way. Within 
+her eyes are two orbs of a greenish yellow hue. Standing out even more so 
+with the black liner, her eyes almost glow like greenish fire. Her bodily 
+frame is dainty, but still looks like it could handle a great deal of 
+physical wear.  She is slightly muscular but only in a complimenting way.  
+Her body is pieced together generously with a supple torso, a slim waist and 
+lusciously rounded hips.  Her strong thighs keep her posture elegant and 
+graceful. 
+~
+End
+
+#8934
+Name shadows~
+Short the deepening darkness~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 0 F 8936 0
+Weight 0
+Material unknown~
+Extra    noremove nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8935
+Name shadows~
+Short the deepening shadows~
+Desc ~
+Level 0
+ItemType portal~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 99999 0 F 8950 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8936
+Name seductive silk feather bed~
+Short the `#`Sb`Xl`Sack s`Xi`Slk sh`Xee`Sts`^~
+Desc A huge `#`Ss`Xe`Sd`Xu`Sct`Xi`Sv`Xe `Sf`Xe`Sath`Xe`Sr b`Xe`Sd`^ dominates the room~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 99999 BEHW 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade chaos~
+Extra2   nodecay regrowing~
+End
+
+#8937
+Name coffin~
+Short a `#`Sb`Xl`Sack c`Xo`Sff`Xi`Sn`^~
+Desc A `#`Wb`Xea`Wuti`Xfu`Wl `Sb`Xl`Sack c`Xo`Sff`Xi`Sn`^ sits in the center of the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 99999 CFILQ 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade chaos~
+Extra2   nodecay regrowing~
+End
+
+#8938
+Name rug fireplace~
+Short the `#`rrug`^ beside `#`Sf`Xi`Srepl`Xa`Sc`Xe`^.~
+Desc An `#`Sobs`Xi`Sd`Xi`San f`Xi`Srepl`Xa`Sc`Xe `rb`Rl`Yaz`Re`rs`^ here beside a comfy `#`rrug`^.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 5 99999 BEHKR 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8939
+Name doghouse house~
+Short a `#`ys`Xh`Sab`Xb`yy `Sdoghouse`^~
+Desc A `#`ys`Xh`Sab`Xb`yy `Sdoghouse`^ stands in the center of the `#`Gg`gras`Gs`^.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 3 99999 BFILS 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8940
+Name bowl~
+Short a `#`Smetal `yb`Xo`Sw`yl`^~
+Desc A `#`Smetal `yb`Xo`Sw`yl`^ of `#`Cw`ca`Ct`ce`Cr`^ sits here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade nogetall~
+Extra2   nodecay regrowing~
+End
+
+#8941
+Name bed canopy~
+Short the `#`Sw`Xo`Slf-f`Xu`Sr b`Xl`San`Xk`Se`Xt`Ss`^~
+Desc A large `#`Sc`Xa`Sno`Xp`Sy bed`^ with `#`Sw`Xo`Slf-f`Xu`Sr b`Xl`San`Xk`Se`Xt`Ss`^ centers the room.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 4 99999 BEHW 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8942
+Name chains~
+Short some `#`Schains`^~
+Desc Uncomfortable `#`Rw`ricke`Rd`S-looking chains`^ hang off the wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 3 99999 CFILS 100 100
+Weight 0
+Material unknown~
+Extra    evil nodegrade chaos~
+Extra2   nodecay regrowing~
+End
+
+#8943
+Name iron maiden~
+Short an `#`Siron `rm`Ra`rid`Re`rn`^~
+Desc A `#`rcruel-`Slooking `Xi`Sron `rm`Ra`rid`Re`rn`^~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 9999 CI 100 100
+Weight 0
+Material unknown~
+Extra    evil noremove nodegrade chaos~
+Extra2   nodecay regrowing~
+End
+
+#8944
+Name table~
+Short a `#`Rt`rortur`Re `ytable`^~
+Desc A `#`Rb`rl`Roo`rdy `ytable`^ for torture is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 9999 BEHK 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8945
+Name furnice~
+Short an `#`Ra`rngry f`Ru`Yr`yn`Yi`Rc`re`^~
+Desc An `#`Ra`rngry f`Ru`Yr`yn`Yi`Rc`re b`Rl`Yaz`Re`rs`^ here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 2 0 0 2 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8946
+Name chair~
+Short a `#`Ws`Xp`Wi`Xk`We`Xd `Schair`^~
+Desc A `#`rbl`Roo`rdy `Schair`^ with sharp `#`Xs`St`Xee`Sl `Ws`Xp`Wi`Xk`We`Xs`^ sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 1 9999 EH 100 100
+Weight 0
+Material unknown~
+Extra    evil nodegrade chaos~
+Extra2   nodecay regrowing~
+End
+
+#8947
+Name brand~
+Short an `#`Si`Xron `Sb`Xrand`^ with a '`#`yW`^'~
+Desc A `#`rf`Ri`Ye`Rr`ry `Si`Xron `Sb`Xrand`^ with a '`#`yW`^' smolders here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow evil rotdeath nolocate nodegrade chaos norestring~
+Extra2   nodecay nosell antilaw noidentify regrowing~
+Wear     take hold~
+End
+
+#8948
+Name table~
+Short a dining room `#`Xt`Sable`^~
+Desc A large, rectangular dining room `#`Xt`Sable`^ is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 20 99999 DGJ 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade chaos~
+Extra2   nodecay regrowing~
+End
+
+#8949
+Name sofa~
+Short a `#`Wl`Xu`Wx`Xu`Wr`Xi`Wo`Xu`Ws`S sofa`^~
+Desc A gigantic `#`Wl`Xu`Wx`Xu`Wr`Xi`Wo`Xu`Ws`S sofa`^ centers the room here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 10 99999 EHK 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nodegrade~
+Extra2   nodecay regrowing~
+End
+
+#8950
+Name treasury key~
+Short an `#`SObs`Xi`Sd`Xi`San `WTreasury`^ key~
+Desc An `#`Sobs`Xi`Sd`Xi`San `WTreasury`^ key is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove inventory nopurge nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay regrowing~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#8930
+Name Iron-rod Gates~
+Desc Upon entering the two black, rod-iron gates you find yourself upon a well 
+worn path. On either side of the road are large rose bushes. Surprisingly, 
+the bushes aren't green.. the leaves upon the enchanted bushes are almost a 
+blood red. The roses themselves are black. Wicked looking silver thorns 
+sprout about two inches long... Ready to keep out unwanted strangers. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit down 53002
+EFlags door closed~
+Exit northwest 8931
+End
+
+
+#8931
+Name Rose Gardens~
+Desc The gardens are beautiful. Stunning. Breath-taking. The grass is greener 
+then you could have possibly imagined, the air is fresher then you thought 
+possible, the trees all around the large house and tower before you are 
+enormous. It is very peaceful here. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 8932
+EFlags door closed locked nopass infuriating~
+EKeyvnum 8950
+EKeywords double-door~
+Exit southeast 8930
+End
+
+
+#8932
+Name the Grand Hall~
+Desc You're inside the grand hall. The high ceiling holds a large chandelier 
+composed of black translucent diamods. There is a large red rug on the black 
+marble floor. There is an exit to the north toward the living room. There is 
+an exit to the east into the dining room, and an exit to the west into the 
+Tower. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 8937
+Exit east 8938
+Exit south 8931
+EFlags door closed locked nopass infuriating~
+EKeyvnum 8950
+EKeywords double-door~
+Exit west 8933
+End
+
+
+#8933
+Name the Tower Entrance~
+Desc You find yourself standing before the entrance to a large spiraling 
+staircase. The wall opposite of the wall rests a large portrait of a 
+terrifying woman. On either side of the frame are tapistries depicting many 
+demonic beings. The room is lit by two skulls with candles inside them that 
+hover with magic on either side of the painting with the tapistries. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8932
+Exit up 8934
+End
+
+
+#8934
+Name Spiral Staircase~
+Desc Climbing up the spiral staircase, you've come to the next level. On either 
+side to the east and west are tall arched doors. The hall is lit elegantly 
+by candles inside mounted skulls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8939
+EFlags door closed obvious~
+EKeywords door~
+Exit west 8949
+EFlags door closed obvious~
+EKeywords door~
+Exit up 8935
+Exit down 8933
+End
+
+
+#8935
+Name Spiral Staircase~
+Desc Climbing up the spiral staircase, you've come to the next level. Standing 
+right before you is perhaps the blackest door you've ever seen. On either 
+side of arched door are silver runes of protection that glimmer and sparkle 
+mysteriously in the light. The hall is lit elegantly by candles inside 
+mounted skulls. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit up 8936
+EFlags door closed locked pickproof nopass~
+EKeyvnum 8950
+EKeywords door~
+Exit down 8934
+End
+
+
+#8936
+Name a Stunning Bedroom~
+Desc The minute you enter this room, an eerie feeling overcomes you.  The entire 
+room is encased in black, save for the silver carpet.  At every corner of 
+the room, blood red skulls with glowing eyes float lighting up only little 
+cirlces of the room. A huge portrait of Nalania and Rosaline is hung on the 
+wall. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 8935
+EFlags door closed locked pickproof nopass~
+EKeyvnum 8950
+EKeywords door~
+End
+
+
+#8937
+Name Luxurious Living Room~
+Desc The living room is spacious and quite roomy. The carpet on the floor is a 
+deepening blood red. It goes in perfect contrast with the obsidian fireplace 
+and black drapes hanging off either side of the large window. On top of the 
+fireplace mantle are various candles that sit on top of various skulls. Each 
+of the skulls have a pentagram with two points up. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 8932
+End
+
+
+#8938
+Name Banquet Hall~
+Desc The dining hall is luxurious. Clearly the estate's owner is quite wealthy. 
+High atop gleams a black diamond chandelier. The windows are wide open with 
+a nice view of the Yard. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 8932
+End
+
+
+#8939
+Name a Lavishing Guest Room~
+Desc The guest room is very large. The carpet is fluffy and soft. The room is 
+kept very warm due to the blazing fireplace. The room is lit by candles 
+sitting atop of skulls at each corner of the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 8934
+EFlags door closed obvious~
+EKeywords door~
+End
+
+
+#8940
+Name Backyard~
+Desc The yard is pretty big. It isn't too considerably cramped to live in for one 
+person. The grass a very light green, nearly dead. There isn't much out here 
+for cover.. no trees.. just a large, cruel-looking fence. During the day the 
+sun beats down on the area.. the nights are freezing cold. 
+~
+RoomFlags noscry~
+Sector forest~
+RoomEcho  0 23  20 `#`RR`red `Re`ryes`^ glare from the `#`Sshadows`^..~
+End
+
+
+#8941
+Name a Dark Hall~
+Desc You find yourself walking through a dark corridor. The stone granite floor 
+is damp and slippery.. slowly corroding away by the water. You definately 
+know you're skrewed... 
+~
+Sector inside~
+Exit south 8942
+End
+
+
+#8942
+Name a Dark Hall~
+Desc You find yourself walking through a dark corridor. The stone granite floor 
+is damp and slippery.. slowly corroding away by the water. You definately 
+know you're skrewed... 
+~
+Sector inside~
+Exit north 8941
+Exit east 8944
+Exit south 8945
+Exit west 8943
+End
+
+
+#8943
+Name a Bloody Chamber~
+Desc Hanging heavily in the air is the stench of blood and burning flesh. The 
+floor, and walls are all sticky with the faint hint of blood. The room is 
+dark, lit well by wall scones that hold candle-lit skulls. The skulls seem 
+to glare down at you in amusement. Your time has come.. 
+~
+Sector inside~
+Exit east 8942
+End
+
+
+#8944
+Name a Bloody Chamber~
+Desc Hanging heavily in the air is the stench of blood and burning flesh. The 
+floor, and walls are all sticky with the faint hint of blood. The room is 
+dark, lit well by wall scones that hold candle-lit skulls. The skulls seem 
+to glare down at you in amusement. Your time has come.. 
+~
+Sector inside~
+Exit west 8942
+End
+
+
+#8945
+Name a Dark Hall~
+Desc ~
+Sector inside~
+Exit north 8942
+Exit south 8947
+EFlags door closed nopass obvious~
+EKeywords cell~
+Exit southeast 8948
+EFlags door closed nopass obvious~
+EKeywords cell~
+Exit southwest 8946
+EFlags door closed nopass obvious~
+EKeywords cell~
+End
+
+
+#8946
+Name a cold, damp cell~
+Desc You find yourself locked in a cold, damp cell. The floor is laden with moist 
+straw and stained with dried blood. A heavy stench hovers in the air. It is 
+the smell of decay. There are no windows.. there is no escape.. Despair 
+overtakes you as you hear the screams of the tormented. 
+~
+Sector inside~
+Exit northeast 8945
+EFlags door closed nopass obvious~
+EKeywords cell~
+End
+
+
+#8947
+Name a cold, damp cell~
+Desc You find yourself locked in a cold, damp cell. The floor is laden with moist 
+straw and stained with dried blood. A heavy stench hovers in the air. It is 
+the smell of decay. There are no windows.. there is no escape.. Despair 
+overtakes you as you hear the screams of the tormented. 
+~
+Sector inside~
+Exit north 8945
+EFlags door closed nopass obvious~
+EKeywords cell~
+End
+
+
+#8948
+Name a cold, damp cell~
+Desc You find yourself locked in a cold, damp cell. The floor is laden with moist 
+straw and stained with dried blood. A heavy stench hovers in the air. It is 
+the smell of decay. There are no windows.. there is no escape.. Despair 
+overtakes you as you hear the screams of the tormented. 
+~
+Sector inside~
+Exit northwest 8945
+EFlags door closed nopass obvious~
+EKeywords cell~
+End
+
+
+#8949
+Name a Lavishing Guest Room~
+Desc The guest room is very large. The carpet is fluffy and soft. The room is 
+kept very warm due to the blazing fireplace. The room is lit by candles 
+sitting atop of skulls at each corner of the room. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 8934
+EFlags door closed obvious~
+EKeywords door~
+End
+
+
+#8950
+Name Tower Chamber~
+Desc This room is cold and cruel. The walls are completely black, made with 
+obsidian stone. No light enters this room save for the light off the candles 
+that cover the various ledges along the walls. The floors of the wall edges 
+are covered by skull piles. 
+~
+RoomFlags indoors light~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 3
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 8931 1 8932 1
+O 0 8933 -1 8933
+M 0 8932 1 8933 1
+O 0 8935 -1 8936
+O 0 8936 -1 8936
+O 0 8938 -1 8936
+O 0 8949 -1 8937
+O 0 8938 -1 8937
+M 0 8930 1 8937 1
+O 0 8948 -1 8938
+O 0 8930 -1 8938
+M 0 8933 1 8938 1
+O 0 8941 -1 8939
+O 0 8938 -1 8939
+M 0 8935 1 8939 1
+O 0 8939 -1 8940
+O 0 8940 -1 8940
+O 0 8931 -1 8940
+O 0 8931 -1 8941
+O 0 8932 -1 8942
+O 0 8943 -1 8943
+O 0 8944 -1 8943
+O 0 8945 -1 8943
+P 0 8947 1 8945 1
+O 0 8944 -1 8944
+O 0 8945 -1 8944
+P 0 8947 1 8945 1
+O 0 8946 -1 8944
+O 0 8942 -1 8946
+O 0 8942 -1 8947
+O 0 8942 -1 8948
+O 0 8941 -1 8949
+O 0 8938 -1 8949
+M 0 8934 1 8949 1
+O 0 8934 -1 8950
+O 0 8937 -1 8950
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

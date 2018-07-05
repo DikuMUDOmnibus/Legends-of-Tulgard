@@ -1,0 +1,723 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Misc Area~
+ShortName   ~
+Builders    None~
+VNUMs       3600 3669
+AFlags  olconly noteleport noscry hidden nogateinto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:31:02 2005~
+End
+
+
+
+#MOBILES
+#3600
+Name mystical force~
+ShortD `#`Gunseen_open_water`^~
+LongD Unseen_open_waterway~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 80
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material n/a
+MProg SPEECH 3600 elements~
+MProg DELAY 3602 100~
+MProg EXALL 3601 down~
+END
+
+#3601
+Name xix representitive faerie small~
+ShortD xix's representitive~
+LongD A small faerie is here, hovering above the ground.~
+Desc ~
+Race faerie~
+Align 0 0
+XPMod 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -500
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_magic flying~
+Res    magic pierce mental~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material void
+MProg SPEECH 3603 yes~
+MProg PREKILL 11104 100~
+MProg GREET 3604 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#3600
+Name token_waterway_open~
+Short token_waterway_open~
+Desc Token_waterway_open~
+Level 1
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath~
+Wear     take~
+End
+
+#3601
+Name recieved gifts~
+Short has_gotten_present~
+Desc Has_gotten_present~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material token~
+Wear     take~
+End
+
+#3602
+Name white snowball~
+Short (no short description 3602)~
+Desc (no description 3602)~
+Level 1
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#3600
+Name A small secluded beach~
+Desc You've walked onto a small secluded beach.  The sand is white as the waves 
+calm before entering.  The beach is is surrounded by water, except for the 
+west side, which leads back onto the field.  In the center of the small 
+"island" is a cylindrical `#`sstone`^ that extends 5 to 6 feet straight into the 
+air.  In the center of the stone, it is segmented into small sections that 
+turn.  Each of the sections have images imprinted on it.  
+~
+RoomFlags antimagic~
+Sector field~
+RoomEcho  0 23   1 The waves wash up onto the beach.~
+ExtraDesc stone ~
+Looking more carefully at the stone, the 4 sections have four images 
+imprinted onto them.  One on each side, north, east, south, and west.  Each 
+section looks as if it is able to rotate to line up with the other pictures. 
+~
+Exit west 53666
+Exit down 3601
+EKeywords waterway~
+EDesc You see a marble stairway leading downwards into the ocean.  The parts of 
+the stairway that see the sun gleam with brilliance.  
+~
+End
+
+
+#3601
+Name On the stairway~
+Desc Your walking down on a stairway in the ocean.  The stairway is not dirty, 
+but actually very well kept.  There is no seaweed or fish or anything of 
+that sort on it.  On the sides of the stairway are great walls of water.  
+Fish can sometimes be swimming around, pausing to look through the water.  
+The stairway continues downward, deeper into the ocean.  
+~
+Sector inside~
+RoomEcho  0 23   5 A school of fish swim by.~
+RoomEcho  0 23   5 A large fish swims up near the wall, pausing to look through before swimming off.~
+Exit down 3602
+End
+
+
+#3602
+Name Further down the stairwell~
+Desc You continue to walk down the flight of stairs.  Looking back, the exit 
+seems to have closed off.  The stairway is still lit by mystical balls of 
+energy on the edges of the steps.  `1 Looking forward, there is a large house, almost a castle, encased inside 
+what appears to be a giant bubble.  The stairway leads straight into the 
+bubble.  
+~
+Sector inside~
+RoomEcho  0 23  10 Fish swim up to the edge of the wall, pausing for a moment before jetting off.~
+Exit down 3603
+End
+
+
+#3603
+Name Bottom of the stairwell~
+Desc You've reached the bottom of the stairway.  It seems as if you've walked 
+really far from the coastline.  Looking back, the stairs have been blocked 
+off with water.  The only direction left is to go north, inside the large 
+bubble.  
+~
+Sector inside~
+Exit north 3604
+End
+
+
+#3604
+Name Inside the Bubble~
+Desc You've just entered inside a giant bubble beneat the water.  You are on a 
+cobblestone path that seems to lead northwards towards a giant `#`rred-wood`^ tree 
+resting ontop of the hill.  From this angle, the tree seems to extend 
+upwards almost endless.  What appears to be light from above the ocean 
+cascades down and fills the bubble.  There is much lushious `Ggreen`^ grass and 
+flowers near the cobblestone path.  
+~
+Sector trail~
+Exit north 3605
+Exit east 3606
+Exit west 3608
+Exit northeast 3607
+Exit northwest 3609
+End
+
+
+#3605
+Name Along the path~
+Desc Your moving up along a cobblestone pathway.  The pathway extends south and 
+north, up a small hill.  The plush `#`Ggreen `^grass surrounds the area.  To the 
+north is a giant `rred-wood`^ that looks to be the size of a castle.  It 
+stretches far up to the top of the dome.  You notice that there is a wooden 
+door on the side of the giantic tree.  
+~
+Sector trail~
+ExtraDesc door doors~
+You see before you a very large pair of glass doors.  They are hinged so 
+that they swing in both directions.  The glass is tinted slightly `#`Ccyan`^ and 
+you can see clear through it.  
+~
+Exit north 3624
+EFlags door closed~
+Exit east 3607
+Exit south 3604
+Exit west 3609
+Exit southeast 3606
+Exit southwest 3608
+End
+
+
+#3606
+Name Along the bubble~
+Desc Your are travelling at the edge of the giant bubble.  The grass beneat you 
+is a vibrant `#`Ggreen`^ and there are `#`?m`?u`?l`?t`?i`?-`?c`?o`?l`?o`?u`?r`?e`?d`^ growing here and there.
+Gazing out the bubble, you can see the water and a multitude of underwater 
+life.  There is some vivid coloured coral on the opposite side of the 
+bubble.  Small fish dart in and out.  
+~
+Sector field~
+Exit north 3607
+Exit west 3604
+Exit northeast 3611
+Exit northwest 3605
+End
+
+
+#3607
+Name Front Yard~
+Desc The grass beneath you is very soft and cool.  Flowers and small shrubs are 
+scattered throughout.  Around you, there is much grass and open space.  `1Looking to the west, you can see a cobblestone path leading north.  To the 
+north, you see a gigantic `#`rred-wood`^ sitting ontop of a hill.  
+~
+Sector field~
+Exit east 3611
+Exit south 3606
+Exit west 3605
+Exit southwest 3604
+End
+
+
+#3608
+Name Along the bubble~
+Desc Your are travelling at the edge of the giant bubble.  The grass beneat you 
+is a vibrant `#`Ggreen`^ and there are `#`?m`?u`?l`?t`?i`?-`?c`?o`?l`?o`?u`?r`?e`?d`^ growing here and there.
+Gazing out the bubble, you can see the water and a multitude of underwater 
+life.  There is some vivid coloured coral on the opposite side of the 
+bubble.  Small fish dart in and out.  
+~
+Sector field~
+Exit north 3609
+Exit east 3604
+Exit northeast 3605
+Exit northwest 3613
+End
+
+
+#3609
+Name Front Yard~
+Desc The grass beneath you is very soft and cool.  Flowers and small shrubs are 
+scattered throughout.  Around you, there is much grass and open space.  `1Looking to the west, you can see a cobblestone path leading north.  To the 
+north, you see a gigantic `#`rred-wood`^ sitting ontop of a hill.  
+~
+Sector field~
+Exit east 3605
+Exit south 3608
+Exit west 3613
+Exit southeast 3604
+End
+
+
+#3610
+Name Eastern Edge of Bubble~
+Desc You are at the eastern edge of the bubble.  The wall of the bubble seems 
+very thin, and is so clear, you can hardly see it in the surrounding blue of 
+the waters.  Fish can be seen swimming peacefully through the bubble.  Some 
+stop by to look through before jetting off.  
+~
+Sector field~
+Exit north 3612
+Exit south 3611
+End
+
+
+#3611
+Name Eastern Edge of Bubble~
+Desc You are at the eastern edge of the bubble.  The wall of the bubble seems 
+very thin, and is so clear, you can hardly see it in the surrounding blue of 
+the waters.  Fish can be seen swimming peacefully through the bubble.  Some 
+stop by to look through before jetting off.  
+~
+Sector field~
+Exit north 3610
+Exit west 3607
+Exit southwest 3606
+End
+
+
+#3612
+Name Eastern Edge of Bubble~
+Desc You are at the eastern edge of the bubble.  The wall of the bubble seems 
+very thin, and is so clear, you can hardly see it in the surrounding blue of 
+the waters.  Fish can be seen swimming peacefully through the bubble.  Some 
+stop by to look through before jetting off.  
+~
+Sector field~
+Exit south 3610
+Exit northwest 3620
+End
+
+
+#3613
+Name Western Edge of Bubble~
+Desc You are at the west edge of the bubble.  The wall of the bubble seems very 
+thin, and is so clear, you can hardly see it in the surrounding blue of the 
+waters.  Fish can be seen swimming peacefully through the bubble.  Some stop 
+by to look through before jetting off.  
+~
+Sector field~
+Exit north 3614
+Exit east 3609
+Exit southeast 3608
+End
+
+
+#3614
+Name Western Edge of Bubble~
+Desc You are at the west edge of the bubble.  The wall of the bubble seems very 
+thin, and is so clear, you can hardly see it in the surrounding blue of the 
+waters.  Fish can be seen swimming peacefully through the bubble.  Some stop 
+by to look through before jetting off.  
+~
+Sector field~
+Exit north 3615
+Exit south 3613
+End
+
+
+#3615
+Name Western Edge of Bubble~
+Desc You are at the west edge of the bubble.  The wall of the bubble seems very 
+thin, and is so clear, you can hardly see it in the surrounding blue of the 
+waters.  Fish can be seen swimming peacefully through the bubble.  Some stop 
+by to look through before jetting off.  
+~
+Sector field~
+Exit south 3614
+Exit northeast 3616
+End
+
+
+#3616
+Name Western Edge of Bubble~
+Desc You are at the west edge of the bubble.  The wall of the bubble seems very 
+thin, and is so clear, you can hardly see it in the surrounding blue of the 
+waters.  Fish can be seen swimming peacefully through the bubble.  Some stop 
+by to look through before jetting off.  
+~
+Sector field~
+Exit east 3621
+Exit northeast 3617
+Exit southwest 3615
+End
+
+
+#3617
+Name Along the bubble~
+Desc Your travelling near the bubble.  The grass beneath you is warm and relaxing.  
+If you gaze out the bubble, you'll see an underwater enviroment bursting 
+with undersea life.  
+~
+Sector field~
+Exit east 3618
+Exit south 3621
+Exit southeast 3622
+Exit southwest 3616
+End
+
+
+#3618
+Name Northern edge of the bubble~
+Desc You've reached the far north end of the giant bubble.  You can see almost 
+endless water, if there was that much light.  Fish and aquatic life can be 
+seen outside.  Nearby is a large golden beacon on the ground.  It flashes 
+and shimmers.  Near the beacon are 4 giant pillars.  They are silver in 
+colour and shimmer like the beacon.  There are many engravings on them.  
+~
+Sector field~
+Exit east 3619
+Exit south 3622
+Exit west 3617
+Exit southeast 3623
+Exit southwest 3621
+End
+
+
+#3619
+Name Northern edge of the bubble~
+Desc You've reached the far north end of the giant bubble.  You can see almost 
+endless water, if there was that much light.  Fish and aquatic life can be 
+seen outside.  Nearby is a large golden beacon on the ground.  It flashes 
+and shimmers.  Near the beacon are 4 giant pillars.  They are silver in 
+colour and shimmer like the beacon.  There are many engravings on them.  
+~
+Sector field~
+Exit south 3623
+Exit west 3618
+Exit southeast 3620
+Exit southwest 3622
+End
+
+
+#3620
+Name Eastern Edge of Bubble~
+Desc You are at the eastern edge of the bubble.  The wall of the bubble seems 
+very thin, and is so clear, you can hardly see it in the surrounding blue of 
+the waters.  Fish can be seen swimming peacefully through the bubble.  Some 
+stop by to look through before jetting off.  
+~
+Sector field~
+Exit west 3623
+Exit southeast 3612
+Exit northwest 3619
+End
+
+
+#3621
+Name Back Yard~
+Desc Your outside near the back of the large estate.  To the south is the large 
+tree where the patio can be seen.  Looking up, you find it hard to spot 
+exactly where the bubble is.  
+~
+Sector field~
+Exit north 3617
+Exit east 3622
+Exit west 3616
+Exit northeast 3618
+End
+
+
+#3622
+Name North of Patio~
+Desc Your just south of a large wooden pation.  Around you the grass and flowers 
+can be seen.  There are steps that lead up onto the patio.  
+~
+Sector field~
+Exit north 3618
+Exit east 3623
+Exit south 3632
+Exit west 3621
+Exit northeast 3619
+Exit northwest 3617
+End
+
+
+#3623
+Name Back Yard~
+Desc Your outside near the back of the large estate.  To the south is the large 
+tree where the patio can be seen.  Looking up, you find it hard to spot 
+exactly where the bubble is.  
+~
+Sector field~
+Exit north 3619
+Exit east 3620
+Exit west 3622
+Exit northwest 3618
+End
+
+
+#3624
+Name Inside the Red-Wood~
+Desc You've just entered the large redwood.  Behind you are the large wooden 
+doors that you came in through.  The room is very well lit, and the floors 
+are wooden but very smooth.  The room is very round, and looks like it takes 
+up the entire base of the tree.  There are a few windows on the north and 
+eastern part of the circular room, in the wall.  To the west is a stair made 
+of just planks of wood stuck into the wall.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 3625
+Exit south 3605
+EFlags door closed~
+End
+
+
+#3625
+Name ~
+Desc ~
+Sector inside~
+Exit south 3624
+End
+
+
+#3628
+Name Underwater Hot Spring~
+Desc Your inside a very, very large cave.  The rocks around you are barren and 
+somewhat angular.  The cieling of the cave is quite high.  The floor is 
+somewhat flat, with a walkway that leads to a huge steaming pool of water.  
+It looks as if the water is heated.  The pool itself is quite large, and is 
+part of the rock.  The room is lit by many torches that give a warm glow to 
+the dark, steaming cave.  `1To the north is what appears to be a small room for changing.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 3629
+EKeywords change room~
+EDesc There is a large white curtain that covers the entrance to the room.  
+~
+End
+
+
+#3629
+Name Changing Room~
+Desc Your inside a moderatly sized room.  Around you the walls are barren rock 
+and there is a torch placed in the corner to light the room.  There is a 
+mirror hung on one the flat surfaces of the jagged rock.  There is a large 
+bench in the center of the room that extend from one side to the other.  
+~
+RoomFlags solitary light~
+Sector inside~
+Exit south 3628
+End
+
+
+#3630
+Name Kitchen~
+Desc Your inside the kitchen of the large villa.  The floor beneath you is black 
+and white checkered tiles, like a chessboard.  There are many marble 
+countertops in this room.  A few of the countertops have a basin, but most 
+are bare.  On one side of the room there stand a very large cabinent that 
+extends from the ground to about 6 feet in height.  The entire northern wall 
+is made of panels of glass.  One of the panels seems to be able to slide 
+open.  `1Through the glass you see a patio.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 3632
+EFlags door closed~
+EKeywords door patio glass~
+End
+
+
+#3632
+Name Patio~
+Desc You have just arrived onto the patio.  You can see most the back of the 
+bubble from here.  To your west is a large pit with a spot for a fire and to 
+your east is a collection of benches build into the patio itself.  
+~
+Sector city~
+Exit north 3622
+Exit east 3633
+Exit south 3630
+EFlags door closed~
+EKeywords door kitchen glass~
+Exit west 3634
+End
+
+
+#3633
+Name Patio~
+Desc Your on the eastern edge of the patio.  There are benches build directly 
+into the patio to the east, north, and south.  In center center between the 
+benches is a large wooden table.  
+~
+Sector city~
+Exit west 3632
+End
+
+
+#3634
+Name Patio~
+Desc You are on the western edge of the patio.  This portion of the patio 
+overlooks a portion of the back of the bubble.  It seems that there has been 
+a grill built directly into the patio.  
+~
+Sector city~
+Exit east 3632
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 3600 1 3600 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#3604
+author Echmoro~
+code sayto $n Welcome, Xix is honoured to help you out with some gold.
+sayto $n Do you wish to accept his gift?
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1072924438
+END
+
+#3603
+title Give out Money~
+author Echmoro~
+code mob oload 3601
+if !hastoken $n 3601
+  mob seeall
+  give 1000 gold $n
+else
+  sayto $n You've already been blessed by Xix's wealth, don't be greedy.
+endif
+mob tgive 3601 $n
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G3603`x,`Y3601`x,`B706`x,`r1`x,`C0`x:
+             `YMobprog: invalid if_check (if) '$n', mob 3601 prog 3603
+`x             Trigger type 'SPEECH' phrase 'yes'
+             Call stack info:
+             MOBprog 3603 on mob 3601 (in room 706), line 1
+`S#############
+
+~
+last_editor Echmoro~
+last_editdate 1072970783
+END
+
+#3602
+title Close Waterway~
+author Echmoro~
+code mob echo The water begins to slowly close again, hiding with it the stairway.
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057528635
+END
+
+#3601
+title Walk down into waterway~
+author Echmoro~
+code if hastoken $i 3600
+  mob letpass
+else
+  mob echoat $n Thats not a good idea. You'd probably drown.
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1057235416
+END
+
+#3600
+title Open WaterWay~
+author Echmoro~
+code if !hastoken $i 3600
+mob echo At the eastern edge of the island the surface of the water begins moving apart.
+mob echo The water continues to split, forming a walkway between the ocean.
+mob echo A flight of stairs leading down into the water is revealed.
+mob oload 3600
+mob ttimer 3600 $i 1
+mob delay 10
+endif
+~
+disabled false
+last_editor Echmoro~
+last_editdate 1066503893
+END
+
+#0
+
+
+#$

@@ -1,0 +1,1192 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        G'Ryu Manor Estate~
+ShortName   G'Ryu Manor~
+Builders    none~
+Credits     Gedeon~
+VNUMs       15201 15220
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    7
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+AreaEcho  0  0 100 A blood curdling scream echoes throughout the manor.~
+*LastSaved  Mon Oct 10 22:41:36 2005~
+End
+
+
+
+#MOBILES
+#15201
+Name rotting figure, klaus~
+ShortD a rotting figure~
+LongD A tall, `#`gr`yo`gt`yt`gi`yn`gg`^ figure in `sblack`^ stands here.~
+Desc ~
+Race undead~
+Align -3 -3
+XPMod 0
+Level 1
+Hitroll 20
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 72
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden protect_evil plague dark_vision~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative energy mental disease drowning light sound sleep wood silver iron illusion scry~
+Vuln   holy~
+Form   edible sentient mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+Group 1
+END
+
+#15202
+Name hannibal, the enormous black hound with red eyes~
+ShortD an enormous black hound with `#`Rr`re`Rd`^ eyes~
+LongD An enormous black hound with red eyes is here.~
+Desc ~
+Race dog~
+Align 0 0
+XPMod 0
+Level 5
+Hitroll 100
+HitDice 10d10+50
+ManaDice 2d5+5
+DamDice 10d10+50
+DamType bite
+AC 50 50 50 42
+Wealth 0
+Act    npc scavenger no_tame aggressive~
+AffBy  detect_invis detect_hidden protect_evil pass_door haste dark_vision berserk~
+Off    berserk fast tail assist_align~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative energy mental disease drowning light sound sleep wood silver iron illusion scry~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+Group 1
+END
+
+#15203
+Name ghengis, an enormous black hound with yellow eyes~
+ShortD an enormous black hound with `#`yyellow`^ eyes~
+LongD An enormous black hound with yellow eyes is here.~
+Desc ~
+Race dog~
+Align 0 0
+XPMod 0
+Level 5
+Hitroll 100
+HitDice 10d10+50
+ManaDice 2d5+5
+DamDice 10d10+50
+DamType bite
+AC 50 50 50 41
+Wealth 0
+Act    npc scavenger no_tame aggressive stay_area~
+AffBy  detect_invis detect_hidden protect_evil pass_door haste dark_vision berserk~
+Off    berserk fast tail assist_align~
+Imm    summon charm magic weapon bash pierce slash fire cold lightning acid poison negative energy mental disease drowning light sound sleep wood silver iron illusion scry~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+Group 1
+END
+
+#15204
+Name ugly black rat~
+ShortD an ugly `#`sblack`^ rat~
+LongD An ugly black rat is here.~
+Desc ~
+Race rat~
+Align -2 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 79
+Wealth 0
+Act    npc scavenger no_tame stay_area thief indoors~
+Act2   no_random_obj~
+AffBy  sneak hide plague~
+Res    cold~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#15205
+Name disembodied eyes~
+ShortD a pair of disembodied eyes~
+LongD A pair of disembodied eyes float here.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   avoids_all_attacks~
+AffBy  sanctuary~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg EXALL 15201 0~
+MProg GRALL 15202 100~
+END
+
+#15206
+Name black rose bush~
+ShortD a `#`sblack rose`^ bush~
+LongD A black rose bush grows here.~
+Desc ~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 78
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  plague~
+Form   edible sentient biped~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material plant
+END
+
+#15207
+Name unseen gate opener~
+ShortD unseen gate opener~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 120
+Hitroll 0
+HitDice 12d15+580
+ManaDice 12d16+818
+DamDice 12d16+75
+DamType none
+AC -900 -900 -900 -783
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+AffBy  detect_evil detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg TICK 15203 10~
+MProg GRALL 15203 100~
+MProg EXALL 15204 2~
+END
+
+#0
+
+
+
+#OBJECTS
+#15201
+Name moldy sofa~
+Short a `#`gm`yo`gl`yd`gy`^ sofa~
+Desc A moldy old sofa sits here~
+Level 1
+ItemType furniture~
+Cost 1
+Durability 5
+Asize 0
+Rsize 50
+Values 4 1000 EHK 75 75
+Weight 0
+Material moldy velvet~
+Extra    nodegrade burnproof~
+Extra2   nodecay nosell~
+ExtraDesc moldy sofa~
+A moldy old sofa rests here in the gloom.  It is covered in a thick layer of 
+grime and scum.  In certain patches you can see expensive velvet, plush and 
+fine, beneath.  
+~
+End
+
+#15202
+Name marble fireplace~
+Short `#an enormous `Wm`Sa`Wr`Sb`Wl`Se `wfireplace`^~
+Desc An enourmous, marble fireplace is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 ADGQ 75 75
+Weight 0
+Material marble~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc marble fireplace~
+An enormous fireplace dominates the entire northern wall of this hall.  It 
+is easily large enough to hold 10 standing men.  A small fire burns within 
+the fireplace, casting an odd green light.  
+~
+End
+
+#15203
+Name banquet table~
+Short an enormous old banquet table~
+Desc An enormous, old banquet table is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 8 8000 DGQ 100 100
+Weight 0
+Material oak~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc banquet table~
+An enormous oak table, large enough to sit over 100 people, rests in the 
+center of this room.  An old grey tablecloth, moldy and worn, rests upon it. 
+ 
+~
+End
+
+#15204
+Name old grand piano~
+Short an old, grand `#`ypiano`^~
+Desc An old, grand piano is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 DG 50 50
+Weight 0
+Material oak~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#15205
+Name dusty pantry~
+Short a `#`ydusty`^ old pantry~
+Desc A dusty old pantry is here.~
+Level 1
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 10 0
+Weight 0
+Material oak~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc dusty pantry~
+A large oak pantry stands here, covered in dust and mold it doesn't appear 
+to have been opened in years.  
+~
+End
+
+#15206
+Name blood fountain~
+Short a fountain of `#`Rb`rloo`Rd`^~
+Desc A fountain of blood is here.~
+Level 1
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 -1 blood 0 0
+Weight 0
+Material black onyx~
+Extra    glow evil nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc fountain blood~
+The figure of a woman, carved from blackest obsidian, stands tall and 
+beautiful in the midst of this fountain.  She weeps tears of blood.  The 
+crimson droplets spill down her smooth cheeks, cascading the length of her 
+naked body to collect, filling the fountain with the thick liquid.  
+~
+End
+
+#15207
+Name marble billiards table~
+Short a `#`sm`wa`sr`wb`sl`we`^ billiards table~
+Desc A solid marble billiards table rests here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material marble~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc marble billiards~
+This table is solid and very heavy.  Some marble balls rest upon its surface 
+in a perfect rack, waiting for someone to play.  A set of billiard sticks 
+rest next to the table.  
+~
+End
+
+#15208
+Name dartboard~
+Short a `#`rd`ga`rr`gt`rb`go`ra`gr`rd`^~
+Desc A dartboard hangs on the wall here.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cork~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc dart board dartboard~
+.               MMMMMMMMMM               
+            MMMM;;;M    MMMM            
+          MMM;;;;;;M       MMM          
+        MM  MM;;;;;M      MM;;MM        
+       MM    M;;;;;M      M;;;;MM       
+      MM     MM;;;;M     MM;;;;;MM      
+     MM       M;;;;M     M;;;;;;;MM     
+    MM;M      M;;;;M     M;;;;;;M MM    
+   MM;;;M     MM;;;M    MM;;;;;M   MM   
+   M;;;;;M     MMMMMMMMMM;;;;;M     M   
+  M;;;;;;;M   MMM  M;;;MMM;;;M       M  
+  M;;;;;;;;M MM;M  M;;;M MM;M        M  
+ MMM;;;;;;;;M;;;M  M;;;M   M        MMM 
+ M MMM;;;;;M M;;MM M;;MM  M;M     MMM;M 
+ M   MMMM;MM  M;;M M;;M  M;;MM MMMM;;;M 
+MM      MMM    M;MMM;MM M;;;;MMM;;;;;;MM
+M        MMMMM  M;MM;M M;;MMMMM;;;;;;;;M
+M        M;;;MMM MMMMMM;MMM   M;;;;;;;;M
+M        M;;;;;MMMMMMMMMM     M;;;;;;;;M
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+M;;;;;;;;M   MMM;MMMMMM MMM;;;M        M
+M;;;;;;;;MMMMM;;M MM M;M  MMMMM        M
+MM;;;;;;MMM;;;;M MMM MM;M    MMM      MM
+ M;;;MMMM MM;;M  M;M  M;;M  MM;MMMM   M 
+ M;MMM     M;M  MM;M  MM;;M M;;;;;MMM M 
+ MMM        M   M;;M   M;;;M;;;;;;;;MMM 
+  M        M;MM M;;M   M;MM M;;;;;;;;M  
+  M       M;;;MMM;;M   MMM   M;;;;;;;M  
+   M     M;;;;;MMMMMMMMMM     M;;;;;M   
+   MM   M;;;;;MM   M;;;;MM     M;;;MM   
+    MM M;;;;;;M    M;;;;;M      M;MM    
+     MM;;;;;;;M    M;;;;;M       MM    
+      MM;;;;;MM    M;;;;;MM     MM     
+       MM;;;;M     M;;;;;;M    MM       
+        MM;;MM     M;;;;;;MM  MM        
+          MMM      M;;;;;;;MMM          
+            MMMM   M;;;;MMMM            
+               MMMMMMMMMM               
+~
+End
+
+#15209
+Name gate key~
+Short a key~
+Desc A big key is here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodrop noremove inventory rotdeath nonmetal nolocate nodegrade burnproof nouncurse norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#15211
+Name shattered marble statue~
+Short a shattered `#`sm`wa`sr`wb`sl`we `ss`wt`sa`wt`su`we `^~
+Desc A shattered marble statue lies here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material marble~
+Extra    nodegrade burnproof chaos~
+Extra2   nodecay~
+ExtraDesc shattered marble statue~
+The shattered remains of a marble statue lie in the middle of the room.  The 
+statue is broken into several pieces yet you can see that it was once a 
+statue of a proud knight.  
+~
+End
+
+#15212
+Name treasury key~
+Short `#`sGedeon's Key`^~
+Desc `#`sGedeon's Key`^ is here.~
+Level 0
+ItemType roomkey~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra    nodrop inventory nonmetal nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosecondary nosell~
+Wear     take hold~
+End
+
+#15213
+Name dragon head key~
+Short a `#`rDragon's Head `skey`^~
+Desc A Dragon's Head key is here.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material onyx~
+Extra    rotdeath nodegrade burnproof~
+Extra2   nodecay nosell~
+Wear     take hold~
+End
+
+#15214
+Name wine rack~
+Short an `#`yold wine rack`^~
+Desc An old wine rack lies here.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 5 5
+Weight 0
+Material oak~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#15215
+Name special brew black wine~
+Short a `#`sblack `Rwine`^ bottle~
+Desc A black whine bottle rests here.~
+Level 1
+ItemType drinkcontainer~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5 blood 0 0
+Weight 0
+Material glass~
+Extra    evil nodegrade burnproof~
+Extra2   nodecay~
+Wear     take hold~
+End
+
+#15216
+Name metal change~
+Short a `#`smetal`^ cage~
+Desc A metal cage hangs from the ceiling here by chains.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 1 1000 FIS -50 -50
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#15217
+Name bloody black altar~
+Short a `#`rbloody`^, `sblack altar`^~
+Desc A bloody altar to the dark gods rests here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 Q 130 130
+Weight 0
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc bloody altar shrine~
+`sThis is an enormous slab of black onyx.  It is covered with arcane runes 
+that pulsate and hum wickedly.  The altar is covered in dried `rblood `sand 
+`rg`go`rr`ge`s.  A stingingly chill fog emanates from the altar in thick waves.  `^ 
+~
+End
+
+#15218
+Name great red dragon head mounted~
+Short a stuffed `#`rdragon's`s head`^~
+Desc The enormous head of a great red dragon has been mounted on the wall here.~
+Level 1
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material dragonskin~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc dragon head~
+The enormous head o an ancient red dragon has been mounted on the wall.  
+Even in death the great wyrm is commanding in its power.  Its eyes seem to 
+stare back at you hatefully.  Below the head is a small plaque bearing the 
+name "DoomFyre."  
+~
+End
+
+#15219
+Name a black rose~
+Short a `#`sblack rose`^~
+Desc A black rose lies here, wilted.~
+Level 1
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plant~
+Extra    evil visdeath meltdrop norestring~
+Wear     take hold~
+End
+
+#15220
+Name iron maiden vest wicked spiked~
+Short an `#`siron maiden`^~
+Desc A wicked, spiked vest lies here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material iron~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+Wear     take about~
+Affect modifier -1 1 -1 hp -100 0
+Affect modifier -1 1 -1 move -100 0
+Affect modifier -1 1 -1 strength -20 0
+Affect modifier -1 1 -1 agility -20 0
+Affect modifier -1 1 -1 constitution -20 0
+Affect objectspell weaken 0 -1 none 0 0
+End
+
+#0
+
+
+
+#ROOMS
+#15201
+Name The Entrance Hall~
+Desc You stand in the entrance hall to a grand mansion.  A plush carpet, moldy 
+and worn with age, rests beneath your feet.  Despite the wear, an outline of 
+an ancient family crest is still discernable upon the carpet.  A matching 
+crest, a great dragon resting upon a glimmering altar, is carved upon the 
+double oak doors leading to the mansion's interior.  
+~
+Room2Flags no_area_echoes~
+Sector inside~
+RoomEcho  1 23  25 A wolf howls eerily in the distance.~
+Exit north 15202
+EFlags door closed nopass hard~
+EKeyvnum 15213
+EKeywords door~
+Exit south 52917
+End
+
+
+#15202
+Name The Grand Hall~
+Desc It is obvious that this room once acted as the grand entrance hall for a 
+very well to do family.  Spacious and wide, the walls stretch high above you 
+meeting in a large dome above your head.  A grand mural depicting the night 
+sky has been painted upon the dome giving the room a dismal impression of 
+eternal midnight.  Despite years of neglect the furnishings within this room 
+still bear testimony to the wealth and prestige that must have marked this 
+abode.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 15201
+EFlags door closed nopass hard~
+EKeyvnum 15213
+EKeywords door~
+Exit northeast 15203
+Exit northwest 15205
+End
+
+
+#15203
+Name The East Wing~
+Desc A dim light seeps into this hallway from large ornate windows that overlook 
+the central courtyard.  The light seems dull and grey, having filtered 
+through the dirty windows, and does little to fend away the darkness and 
+gloom.  An eerie chill breeze blows through this corridor rustling cobwebs 
+and playing with the heavy drapes of the windows.  The corridor continues to 
+the north and back to the Grand Hall.  A set of double doors leads to a room 
+to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc window west~
+You are forced to wipe away layers of grime before you are able to clearly 
+see through these windows.  Peering through the clear patch you see a dark 
+courtyard.  It is thickly overrun by vines and you can faintly see what 
+appears to be a fountain in the dark.  
+~
+Exit north 15204
+Exit east 15207
+EFlags door closed~
+EKeywords door~
+Exit southwest 15202
+End
+
+
+#15204
+Name The East Wing~
+Desc This end of the hall is dark and dreary.  There are large windows that look 
+out onto the manor's inner courtyard yet these are far too filthy to allow 
+much light to filter in.  You can see that one of these windows is smashed 
+and crack, letting in a chill damp breeze.  Aside from a large oak door at 
+the northern end, there is little to see in this corridor.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc broken window west~
+You peek through a broken crack in the window and see a dark courtyard.  It 
+is thickly overrun by vines and you can faintly see what appears to be a 
+fountain in the dark.  
+~
+Exit north 15215
+EFlags door closed~
+EKeywords door~
+Exit south 15203
+End
+
+
+#15205
+Name The West Wing~
+Desc You are in the hall of the west wing.  It is dark and gloomy.  Small candles 
+are mounted throughout the hall but their light does little to illuminate 
+the way.  A faint odor of mildew and decay clings in the air.  There are 
+large windows overlooking the front lawn.  
+~
+RoomFlags indoors light~
+Sector inside~
+RoomEcho  0 22  15 You hear something scuttling around within the walls.~
+Exit west 15206
+Exit southeast 15202
+End
+
+
+#15206
+Name The West Wing~
+Desc This end of the corridor is thick with dust and cobwebs.  There are no 
+candles to light the way here and it is difficult to see through the cobwebs 
+and darkness.  A strong stench of decay dominates the hall.  You can faintly 
+see a large oak door to the west.  It is almost completely obscured by thick 
+cobwebs as though it has not been opened in ages.  Another set of double 
+doors leads to the north.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 15211
+EFlags door closed~
+EKeywords double~
+Exit east 15205
+Exit west 15210
+EFlags door closed locked hard~
+EKeyvnum 15212
+EKeywords oak~
+End
+
+
+#15207
+Name The Banquet Hall~
+Desc This was once an exquisite banquet hall for holding grand parties.  Yet 
+years of neglect have left this hall in a sad state.  The walls and floors 
+have been masterfully crafted from polished white marble which is now just a 
+cracked dirty dull grey.  A black ivy has grown within the room, clinging to 
+the walls and crawling along the floor like snakes.  Heavy drapes shut out 
+any of the light that may have once graced this room through grand floor to 
+ceiling windows.  The hall continues to the east and a small oak door can be 
+seen to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15209
+EFlags door closed~
+EKeywords door~
+Exit east 15208
+Exit west 15203
+EFlags door closed~
+End
+
+
+#15208
+Name The Ballroom~
+Desc Ages ago happy couples would dance and frolic within this hall laughing in 
+merriment.  Now this is just a hall of sorrow and gloom.  Large floor to 
+ceiling windows have been heavily draped, shutting out all outside light, 
+swallowing the entire hall in one deep ominous shadow.  The shadow seems 
+alive, moaning and weeping in sorrow.  The only light in the room filters in 
+from a large hole in the ceiling where years ago the roof had collapsed 
+above this hall.  The walls, floor and ceiling are almost completely covered 
+with a clinging black ivy.  
+~
+RoomFlags dark~
+Sector inside~
+RoomEcho  1 22  20 A small drip of water falls from the ceiling, splashing to the floor.~
+RoomEcho  1 23  30 A faint melody echoes within the room, as though someone were playing the piano.~
+Exit west 15207
+End
+
+
+#15209
+Name The Kitchen~
+Desc Entering this room a spicy rich aroma assails your nostrils.  At first whiff 
+it is mouth wateringly sweet, as if some master chef were preparing a great 
+roast.  Yet a keen nose soon sniffs a feint underlying scent of decay, as 
+though the meat had gone rancid and sour.  The source of the aroma is a 
+mystery, for no fires are lit for cooking.  Nor does it appear that anything 
+has been prepared in this kitchen in decades.  Mold and cobwebs cover the 
+oak pantries and countertops.  There is a small trapdoor in the far corner.  
+
+~
+RoomFlags indoors~
+Sector inside~
+RoomEcho  0 23   5 You hear something scuttling around within the walls.~
+Exit south 15207
+EFlags door closed~
+EKeywords door~
+Exit down 15217
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#15210
+Name The Library~
+Desc This room once served as the focal point for knowledge and study in this 
+manor.  After ages of neglect and indifference this library has fallen into 
+a wretched state.  Numerous oak bookshelves, filled to capacity with ancient 
+and obscure texts, line the finely carved wooden walls of this room.  Great 
+and invaluable works of intellect, long believed lost or destroyed, rest 
+forgotten upon the shelves.  A solid wooden door leads back to the west 
+wing.  
+~
+RoomFlags dark indoors~
+Sector inside~
+LockerQuant 1
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 10000
+LockerCapacity 200
+LockerPickProof 1
+Exit east 15206
+EFlags door closed locked hard~
+EKeyvnum 15212
+EKeywords door~
+End
+
+
+#15211
+Name The Trophy Room~
+Desc A tribute to manliness, this room is dedicated to conquest and triumph.  
+Everywhere you see marvelous trophies marking a great hunter and swordsman.  
+Spectacular and horrible creatures, many of which are completely unfamiliar, 
+have been mounted throughout the room.  In each of the four corners of this 
+room stands a different warrior statue wearing full battle regalia and 
+wielding strange and exotic weapons.  An eerie purple fire burns within a 
+large fireplace.  The flames cast strange flickering light throughout the 
+room and the affect is to give the figures within an ominous vitality.  A 
+wooden door leads south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit east 15212
+Exit south 15206
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15212
+Name The Game Room~
+Desc This room has been brightly decorated with `rred `^and `bblue`^ striped wallpaper.  
+A plush golden carpet spans the length of the entire floor.  The room is 
+full of different gaming pieces and sporting items including a complete 
+Orcish Mulletball set.  There is a striking grandfather clock against the 
+northern wall.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 15213
+EFlags door closed nopass~
+EKeywords grandfather~
+Exit west 15211
+End
+
+
+#15213
+Name The Shrine~
+Desc `sAs you enter this unholy shrine a chilling sense of unease grips you.
+Lesser men would flee from this room screaming in terror.  This is an
+abominable place where the vilest acts of perversion and decadence are
+performed in homage to the dark gods.  The walls, floor and ceiling have 
+been covered with arcane runes painted in blood.  An obscene mural has been 
+painted upon the entire western wall.  It is a horrible painting of demons 
+raping and torturing young girls in a foul orgy of sacrifice to the black 
+deities.`^
+~
+RoomFlags indoors noscry light~
+Sector inside~
+Exit east 15214
+Exit south 15212
+EFlags door closed nopass~
+End
+
+
+#15214
+Name The Parlor~
+Desc This room is large and spacious.  The entire northern wall consists of 
+enormous floor to ceiling windows, each 15 feet in height.  They have been 
+heavily draped with thick black curtains that block all outside light.  
+Black and white marble tiles make up an enormous checker board pattern upon 
+the floor.  A small glass door leads south and another oak door leads to the 
+east.  A large winding staircase curves around the room, ascending to the 
+second floor.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 15220
+EFlags door closed~
+EKeywords door~
+Exit east 15215
+EFlags door closed~
+EKeywords oak~
+Exit south 15216
+EFlags door closed~
+EKeywords glass~
+Exit west 15213
+Exit up 15218
+End
+
+
+#15215
+Name The Gallery~
+Desc This is the gallery where the portraits of the great lords and ladies of 
+this manor would be proudly displayed.  However, the atmosphere permeating 
+throughout this room is one of mourning rather than pride.  The room is 
+totally dark and the portraits have all been covered with moldy white 
+sheets.  There is a door leading south and another larger oak door 
+leading west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 15204
+EFlags door closed~
+EKeywords door~
+Exit west 15214
+EFlags door closed~
+EKeywords oak~
+End
+
+
+#15216
+Name The Courtyard~
+Desc `sThe air in this courtyard is heavy with the scent of decay and burning 
+leaves.  It is not an unpleasant odor though.  Rather, within this courtyard 
+it seems quite fitting and oddly comforting.  A gnarly black ivy has almost 
+completely overrun the courtyard.  The ivy is thick and clinging, seeming to 
+entwine itself around your feet as though it wished to ensnare and bind you. 
+ `^ 
+~
+RoomFlags dark~
+Sector swamp~
+RoomEcho  0 23  25 A gnarled black vine gropes at your leg.~
+Exit north 15214
+EFlags door closed~
+End
+
+
+#15217
+Name The Wine Cellar~
+Desc A strange `ggreen`^ moss grows upon the stone walls and floor of this room.  It 
+glows, shedding a feint eerie green light throughout the room.  The air is 
+thick with the musty smell of rotting leaves.  There are some boxes piled to 
+the ceiling along the far wall.  An old wooden ladder leads to a trapdoor in 
+the ceiling.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 15219
+EFlags door closed~
+EKeywords boxes~
+Exit up 15209
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#15218
+Name The Master Bedroom~
+Desc This room is exquisitely decorated and well kept.  The furniture is 
+obviously of the finest elven craftsmanship.  A plush purple carpet spans 
+the entire floor.  Matching drapes of purple cover the windows blocking any 
+outside light from entering.  The air is richly perfumed but with a faint 
+underlying scent of decay.  An eerie green fire burns within a small 
+fireplace along the southern wall.  
+~
+RoomFlags indoors safe noscry light~
+Sector inside~
+Exit down 15214
+End
+
+
+#15219
+Name The Dungeon~
+Desc This room is dark and damp and altogether unpleasant.  The walls and floor 
+are made from a cold grey slate.  Shackles have been mounted to the walls 
+and a few sets of chains dangle from the ceiling.  In spots you can see dark 
+red stains spotted along the walls and along the floor.  The shadows in this 
+room seem unnaturally dark and foreboding.  
+~
+RoomFlags dark indoors~
+Sector inside~
+RoomEcho  0 23  10 The chains clatter and clink as a cool breeze flows through the room.~
+Exit east 15217
+EFlags door closed~
+EKeywords panel~
+End
+
+
+#15220
+Name The Yard~
+Desc `sIt's as though the autumn twilight never lifts in this yard.  It is 
+overgrown and very unkept.  The yard is surrounded by a forest of giant 
+trees that stand cheerless and dejected.  The leaves are eternally sad 
+shades of grey and brown.  You can see movements within the trees, quick
+and darting.  To the south a door leads into the manor.
+~
+RoomFlags dark~
+Sector field~
+RoomEcho  0 23  25 The silence is broken by the long sorrowful howl of a wolf in the distance.~
+Exit south 15214
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 15207 1 15202 1
+E 0 15213 -1 hold~
+O 0 15201 -1 15202
+O 0 15202 -1 15202
+M 0 15204 5 15206 2
+O 0 4312 -1 15206
+O 0 15203 -1 15207
+M 0 15201 1 15207 1
+O 0 15204 -1 15208
+O 0 15205 -1 15209
+M 0 15204 5 15209 1
+O 0 23636 -1 15209
+O 0 17777 -1 15210
+O 0 23691 -1 15210
+O 0 1855 -1 15211
+O 0 15218 -1 15211
+O 0 15207 -1 15212
+O 0 15208 -1 15212
+O 0 15217 -1 15213
+M 0 15202 1 15214 1
+M 0 15203 1 15214 1
+O 0 15211 -1 15215
+O 0 15206 -1 15216
+O 0 15214 -1 15217
+P 0 27171 2 15214 1
+P 0 15215 2 15214 1
+O 0 23673 -1 15218
+O 0 2018 -1 15219
+O 0 15216 -1 15219
+O 0 15220 -1 15219
+O 0 3076 -1 15220
+M 0 15206 1 15220 1
+G 0 15219 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#15204
+author Reath~
+code unlock south
+open south
+mob letpass
+end
+~
+disabled false
+last_editor Reath~
+last_editdate 1117827097
+END
+
+#15203
+author Reath~
+code mob seeall
+close door
+lock door
+~
+disabled false
+last_editor Reath~
+last_editdate 1117827066
+END
+
+#15202
+title close doors~
+author Ixliam~
+code mob seeall
+close north
+lock north
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1081125278
+END
+
+#15201
+title Open door~
+author Echmoro~
+code mobseeall
+language native
+if isimmort $n
+ sayto $n Welcome Great One.
+ bow $n
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+if name $n adian
+ sayto $n Welcome Master!
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+if fealty $n adian
+ sayto $n Welcome to Morderhand Manor.
+ unlock north
+ open north
+ mob letpass
+ end
+endif
+sayto $n Get lost. You are not welcome here!
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1081125052
+END
+
+#0
+
+
+#$

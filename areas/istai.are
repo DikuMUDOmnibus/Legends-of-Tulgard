@@ -1,0 +1,3936 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Zhaman Fort/Istai Forest~
+ShortName   Istai~
+Builders    None~
+Credits     Nikol~
+VNUMs       28700 28799
+LRange      35 90
+Security    9
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#28700
+Name troglodyte humaniod figure~
+ShortD a Troglodyte peasant~
+LongD A humanoid figure stands here, watching you with glowing red eyes.~
+Desc Before you stands a lumpy, humanoid figure clothed in a loin cloth and a 
+leather belt.  After a moment, it looks at you, and you see it is just a 
+peasant.  
+~
+Race troglodyte~
+Align 3 0
+Level 40
+Hitroll 1500
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType pound
+AC -137 -137 -137 -121
+Wealth 130
+Act    npc stay_area~
+AffBy  infrared~
+Off    kick assist_race~
+Imm    poison~
+Res    bash cold disease~
+Vuln   mental~
+Form   edible poison sentient biped reptile~
+Part   head arms legs heart brains guts feet fingers ear eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#28701
+Name troglodyte warrior humaniod figure~
+ShortD a Troglodyte warrior~
+LongD A humanoid growls at you, baring its yellow fangs.~
+Desc Before you stands a lumpy humanoid figure clothed in plate armor, and wielding a sword. After a moment he looks at you and growls, baring his yellow fangs.
+~
+Race troglodyte~
+Align -1 0
+Level 50
+Hitroll 1512
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -168
+Wealth 300
+Act    npc dont_wander stay_area warrior~
+AffBy  infrared~
+Off    bash berserk disarm kick assist_race~
+Imm    poison~
+Res    bash cold disease~
+Vuln   mental~
+Form   edible poison sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28702
+Name troglodyte khazi~
+ShortD a Troglodyte khazi~
+LongD A humanoid figure stands here, chanting arcane words.~
+Desc Before you stands a lumpy, humanoid figure wearing the black robes of
+evil.  After a moment, he looks to you, his eyes seeming to stare into your
+soul.  Assuming you are not a threat, he turns back to his studies,
+forgetting you are even there.  
+~
+Race troglodyte~
+Align 2 0
+XPMod 110
+Level 45
+Hitroll 1536
+HitDice 5d7+247
+ManaDice 5d9+300
+DamDice 3d12+14
+DamType claw
+AC -153 -153 -153 -136
+Wealth 350
+Act    npc dont_wander stay_area mage~
+AffBy  infrared~
+Off    area_attack kick assist_race~
+Imm    poison~
+Res    bash cold disease~
+Vuln   mental~
+Form   edible poison sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#28703
+Name troglodyte shaman~
+ShortD a Troglodyte shaman~
+LongD A humanoid figure stands here, watching your every move.~
+Desc Before you stands a lumpy, humanoid figure wearing the robes of a healer.
+After a moment he looks at you, regarding you intently, determining whether
+you are a threat or not.  After a moment, he returns back to the book he was
+reading, forgetting you are even here.  
+~
+Race troglodyte~
+Align -3 0
+XPMod 125
+Level 55
+Hitroll 1548
+HitDice 5d9+300
+ManaDice 5d9+300
+DamDice 7d6+22
+DamType slice
+AC -250 -250 -250 -220
+Wealth 400
+Act    npc dont_wander stay_area cleric~
+AffBy  sanctuary infrared~
+Off    dodge kick assist_race~
+Imm    poison~
+Res    bash cold disease~
+Vuln   mental~
+Form   edible poison sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28704
+Name kharas~
+ShortD kharas~
+LongD A black robed archmage stands here, seeming as if he is waiting for someone.~
+Desc Before you stands a human clothed in the Black Robes of evil. After a moment he turns to you, and he stares at you, considering. Shrugging lightly, he turns back to the path, deciding you are not worth the trouble.
+~
+Race human~
+Align -3 -3
+XPMod 125
+Level 69
+Hitroll 200
+HitDice 7d10+350
+ManaDice 8d11+460
+DamDice 7d8+32
+DamType magic
+AC -380 -380 -380 -323
+Wealth 700
+Act    npc dont_wander mage~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_good~
+Off    area_attack dodge~
+Imm    summon charm sleep illusion~
+Res    fire cold lightning acid mental~
+Vuln   poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 28701 100~
+MProg SPEECH 28702 yes~
+END
+
+#28705
+Name ogre~
+ShortD a large ogre~
+LongD A large ogre stands here, watching you with glowing red eyes.~
+Desc Before you stands a large ogre. After a moment he turns to you, and growls, As you watch him, however, he turns back to the path infront of him, as if waiting.
+~
+Race human~
+Align -3 -3
+XPMod 110
+Level 70
+Hitroll 1800
+HitDice 7d11+360
+ManaDice 3d5+70
+DamDice 8d8+34
+DamType crush
+AC -400 -400 -400 -328
+Wealth 700
+Act    npc dont_wander no_tame warrior~
+Act2   nohunt no_tendency~
+AffBy  detect_invis detect_hidden sanctuary infrared haste dark_vision~
+AffBy2 vicegrip~
+Off    bash berserk disarm dirt_kick parry~
+Imm    summon charm sleep~
+Res    cold lightning acid~
+Vuln   drowning illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg GRALL 28703 100~
+MProg SPEECH 28705 sure~
+MProg SPEECH 28704 yes~
+END
+
+#28706
+Name khan white-robbed mage~
+ShortD a white-robbed mage~
+LongD A white-robed archmage stands here, watching you.~
+Desc Before you stands a human clothed in the White Robes of good. After a moment he turns and looks at you, and you notice his eyes are white. After several moments, he returns to the path before him, as if waiting.
+~
+Race human~
+Align 2 3
+Level 66
+Hitroll 1800
+HitDice 6d10+340
+ManaDice 8d11+400
+DamDice 8d7+29
+DamType punch
+AC -350 -350 -350 -304
+Wealth 700
+Act    npc dont_wander stay_area mage~
+AffBy  detect_invis detect_hidden sanctuary infrared~
+Off    area_attack dodge~
+Imm    summon sleep~
+Res    charm mental illusion~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28707
+Name hakan figure~
+ShortD hakan~
+LongD A figure dressed in plate mail stands here, guarding the trail.~
+Desc Before you stands Hakan, Guardian of the `gForest of Istai`x. After a moment, he looks at you, his eyes red with blood-lust. Several moments later, however, he returns to his original position, facing the path.
+~
+Race human~
+Align 2 3
+XPMod 125
+Level 60
+Hitroll 1800
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType slice
+AC -300 -300 -300 -258
+Wealth 600
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared~
+Off    bash berserk disarm dodge parry~
+Imm    summon charm~
+Res    poison mental disease illusion~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 28700 100~
+END
+
+#28708
+Name troglodyte assassin~
+ShortD a Troglodyte assassin~
+LongD A humanoid figure stands here, in the shadows.~
+Desc Before you stands nothing.  Nothing but shadows.  In the shadows,
+however, is a set of glowing red eyes.  They turn to you, and a growl can be
+heard.  After a moment however, he decides you are not worth the trouble and
+fades back into the shadows completely.  
+~
+Race human~
+Align 1 -3
+Level 65
+Hitroll 1560
+HitDice 6d10+335
+ManaDice 5d6+160
+DamDice 8d7+30
+DamType pierce
+AC -340 -340 -340 -306
+Wealth 700
+Act    npc dont_wander stay_area thief~
+AffBy  detect_invis detect_hidden sanctuary infrared sneak hide~
+Off    backstab disarm dodge fade kick trip~
+Imm    charm~
+Res    magic bash~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28709
+Name xavier~
+ShortD xavier~
+LongD A disembodied head floats here, thirsting for your living blood.~
+Desc Before you floats a disembodied head.  A being condemned to guard this
+castle.  After a moment it turns to you, and a blood-chilling cold surrounds
+you, nearly stopping your heart.  `G'Begone,'`x it hisses.  `G'And you shall
+live.  '`x Only he can let you through if he so chooses or if you ask
+nicely.  
+~
+Race human~
+Align -2 -3
+XPMod 110
+Level 72
+Hitroll 1860
+HitDice 7d11+370
+ManaDice 3d5+75
+DamDice 8d8+36
+DamType suction
+AC -420 -420 -420 -361
+Wealth 700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary flying dark_vision regeneration~
+Off    area_attack dodge fast~
+Imm    summon charm mental sleep illusion~
+Res    pierce poison disease~
+Vuln   bash holy~
+Form   magical instant_decay other sentient undead~
+Part   brains ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg SPEECH 28714 shut~
+MProg SPEECH 28710 xavier~
+MProg SPEECH 28713 unlock~
+END
+
+#28710
+Name knight evil~
+ShortD the Knight of Evil~
+LongD A knight dressed in black platemail stands here.~
+Desc Before you stands a knight in the King's service. He donned the black armor, a sign of his alignment..Evil. After a moment he seems to vanish, but he just blended in with the shadows, ready to do his job.
+~
+Race unique~
+Align 0 -3
+Level 75
+Hitroll 1560
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType slash
+AC -450 -450 -450 -387
+Wealth 700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary slow~
+Off    berserk disarm dodge kick dirt_kick parry crush~
+Imm    charm negative~
+Res    weapon~
+Vuln   magic holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28711
+Name knight neutrality~
+ShortD the Knight of Neutrality~
+LongD A knight dressed in grey platemail stands here.~
+Desc Before you stands a knight in the King's service. He donned the grey armor, a sign of his alignment..Neutral. After a moment he seems to vanish, but he just blended in with the shadows, ready to do his job.
+~
+Race unique~
+Align -2 0
+Level 75
+Hitroll 510
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType slice
+AC -450 -450 -450 -405
+Wealth 700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared flying slow~
+Off    disarm dodge kick dirt_kick parry crush~
+Imm    charm~
+Res    negative~
+Vuln   light~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28712
+Name knight justice~
+ShortD the Knight of Justice~
+LongD A knight dressed in white platemail stands here.~
+Desc Before you stands a knight in the King's service. He donned the white armor, a sign of his alignment..Good. After a moment he seems to vanish, but he just blended in with the shadows, ready to do his job.
+~
+Race unique~
+Align 2 3
+Level 75
+Hitroll 1560
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType chop
+AC -450 -450 -450 -360
+Wealth 700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    disarm dodge kick dirt_kick parry crush assist_race~
+Imm    charm holy~
+Res    weapon~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28713
+Name king dayare~
+ShortD king Dayare~
+LongD The king stands here, watching your every move.~
+Desc Before you stands King Dayare of Zhaman Castle.  After a moment he turns
+and looks at you, and you notice his eyes are a deep grey.  You can only
+guess what this man is capable of, but before you can do anything, he
+suddenly growls loudly.  After a moment, he turns back to the southern
+hallway, as if waiting.  
+~
+Race unique~
+Align 2 0
+XPMod 150
+Level 80
+Hitroll 1800
+HitDice 8d12+400
+ManaDice 3d5+800
+DamDice 9d9+41
+DamType slash
+AC -500 -500 -500 -405
+Wealth 700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_hidden sanctuary haste~
+Off    area_attack bash berserk dodge~
+Imm    summon charm cold lightning~
+Res    negative holy~
+Form   edible sentient biped~
+Part   head legs heart hands feet~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg KILL 28721 100~
+MProg GRALL 28719 100~
+END
+
+#28714
+Name mael~
+ShortD ma'el~
+LongD A hideous creature from your worst nightmares stands here, waiting.~
+Desc Before you stands a creature of hideous visage, as such exists in your
+worst nightmares.  He looks at you pitifully, his eyes a deep red color. 
+Say the right words and he might obey.  
+~
+Race human~
+Align -2 0
+XPMod 150
+Level 73
+Hitroll 1800
+HitDice 7d11+375
+ManaDice 3d5+75
+DamDice 8d9+36
+DamType claw
+AC -430 -430 -430 -378
+Wealth 700
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary infrared flying dark_vision regeneration~
+Off    bash dodge dirt_kick parry~
+Imm    summon charm negative mental disease drowning~
+Res    weapon cold~
+Vuln   holy silver~
+Form   edible magical other sentient undead~
+Part   arms legs feet eyestalks wings tail claws horns scales tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 28727 bring food and drink~
+MProg SPEECH 28710 ma'el~
+MProg SPEECH 28715 open~
+MProg SPEECH 28716 close~
+END
+
+#28715
+Name servant~
+ShortD a servant~
+LongD A servant stands here, waiting for an order.~
+Desc ~
+Race human~
+Align -3 0
+Level 62
+Hitroll 1560
+HitDice 6d10+330
+ManaDice 3d5+60
+DamDice 8d7+28
+DamType pound
+AC -320 -320 -320 -275
+Wealth 400
+Act    npc scavenger stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    berserk dodge kick~
+Imm    summon~
+Res    charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 28710 servant~
+END
+
+#28716
+Name guard castle~
+ShortD a castle guard~
+LongD A guard stands at attention here.~
+Desc ~
+Race human~
+Align -1 0
+XPMod 125
+Level 65
+Hitroll 1560
+HitDice 7d10+350
+ManaDice 3d5+65
+DamDice 7d8+33
+DamType crush
+AC -370 -370 -370 -329
+Wealth 670
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_evil sanctuary infrared protect_evil haste~
+Off    area_attack bash dirt_kick parry~
+Imm    charm negative~
+Res    weapon~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 28717 report~
+MProg SPEECH 28718 guard~
+MProg GRALL 28709 100~
+END
+
+#28717
+Name dresen~
+ShortD dresen~
+LongD A man stands here, waiting to take your order.~
+Desc ~
+Race human~
+Align 0 0
+Level 91
+Hitroll 1560
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType crush
+AC -610 -610 -610 -524
+Wealth 1820
+Act    npc dont_wander docile stay_area~
+Act2   avoids_all_attacks~
+AffBy  dark_vision regeneration~
+Imm    summon charm magic weapon poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28718
+Name duranne~
+ShortD duranne~
+LongD The castle trainer stands here, waiting.~
+Desc Before you stands Duranne, the castle trainer.  Though he is clothed in
+nothing but black baggy clothes, you suspect he is a capable fighter, and is
+quite adept at magic as well.  After a moment he turns to you, his eyes
+glowing a blue color.  Assuming you do not want training, he turns back,
+facing the door, as if waiting.  
+~
+Race human~
+Align 2 0
+XPMod 150
+Level 91
+Hitroll 1560
+HitDice 10d13+465
+ManaDice 4d5+105
+DamDice 10d12+51
+DamType none
+AC -660 -660 -660 -554
+Wealth 890
+Act    npc dont_wander train practice warrior gain~
+AffBy  detect_invis detect_hidden sanctuary infrared haste regeneration~
+Off    area_attack bash berserk disarm dodge kick parry~
+Imm    summon charm poison disease sleep~
+Res    magic weapon~
+Vuln   mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28719
+Name lokin~
+ShortD lokin~
+LongD The castle barkeep stands here, waiting.~
+Desc Before you stands Lokin, the castle barkeep.  Though he seems like a nice
+person, he should not be underestimated.  After e moment he turns to you and
+laughs, holding up a mug of ale.  Turnign back to the crowd, he places a few
+more drinks on a table.  After several moments, he forgets you are even here
+altogether.  
+~
+Race human~
+Align 0 0
+Level 91
+Hitroll 1560
+HitDice 9d13+445
+ManaDice 4d5+95
+DamDice 10d11+46
+DamType none
+AC -610 -610 -610 -549
+Wealth 1820
+Act    npc dont_wander docile stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  sanctuary infrared regeneration~
+Off    berserk disarm dodge fast kick dirt_kick parry trip~
+Imm    summon charm magic weapon negative holy mental drowning sound wood silver iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28720
+Name mason~
+ShortD mason~
+LongD The castle smithy stands here, waiting for an order.~
+Desc Before you stands Mason, the castle smithy. After a moment he turns to you, and you notice his eyes are completely black, not a normal thing for a human. Before turning back to the door, he makes a motion with his hand, gesturing to the armor around him.
+~
+Race human~
+Align -1 0
+Level 91
+Hitroll 1560
+HitDice 9d13+445
+ManaDice 4d5+95
+DamDice 10d11+46
+DamType pound
+AC -610 -610 -610 -488
+Wealth 1820
+Act    npc dont_wander stay_area warrior~
+Act2   avoids_all_attacks~
+AffBy  detect_hidden haste regeneration~
+Off    bash disarm dodge kick dirt_kick parry~
+Imm    summon charm magic weapon fire cold lightning acid poison negative holy mental disease sound sleep~
+Form   edible sentient biped mammal~
+Part   legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28721
+Name thief~
+ShortD a sneaky thief~
+LongD A sneaky thief is sneaking around here.~
+Desc ~
+Race human~
+Align -1 -3
+Level 80
+Hitroll 1680
+HitDice 8d11+395
+ManaDice 5d6+235
+DamDice 9d9+40
+DamType none
+AC -490 -490 -490 -426
+Wealth 1400
+Act    npc dont_wander stay_area thief~
+AffBy  detect_invis detect_hidden sneak hide pass_door haste dark_vision~
+Off    disarm dodge dirt_kick parry trip~
+Imm    charm negative~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28722
+Name khazar~
+ShortD khazar~
+LongD A figure clothed in the black robes of evil kneels here, praying before an altar.~
+Desc ~
+Race human~
+Align 1 0
+Level 80
+Hitroll 1680
+HitDice 8d11+395
+ManaDice 9d12+575
+DamDice 9d9+38
+DamType none
+AC -490 -490 -490 -411
+Wealth 749
+Act    npc dont_wander stay_area mage~
+AffBy  detect_invis detect_magic detect_hidden sanctuary flying haste regeneration~
+Off    area_attack dodge trip~
+Imm    summon charm negative~
+Res    weapon~
+Vuln   holy~
+Form   mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 28722 10~
+MProg GRALL 28723 40~
+END
+
+#28723
+Name sakai~
+ShortD sakai~
+LongD A figure clothed in the robes of a cleric kneels here, praying before an altar.~
+Desc ~
+Race human~
+Align 2 3
+XPMod 150
+Level 80
+Hitroll 1560
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+40
+DamType wrath
+AC -500 -500 -500 -440
+Wealth 0
+Act    npc dont_wander stay_area cleric~
+AffBy  detect_invis detect_hidden sanctuary infrared haste regeneration~
+Off    area_attack dodge trip~
+Imm    holy sleep~
+Res    summon charm weapon~
+Vuln   mental iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 28725 40~
+MProg GRALL 28724 10~
+END
+
+#28724
+Name kyazinth~
+ShortD kyazinth~
+LongD A daemon floats here, watching you from the shadows.~
+Desc ~
+Race unique~
+Align -3 -3
+Level 88
+Hitroll 1560
+HitDice 9d12+435
+ManaDice 4d5+95
+DamDice 10d10+45
+DamType claw
+AC -580 -580 -580 -510
+Wealth 0
+Act    npc aggressive stay_area warrior~
+AffBy  invisible detect_hidden protect_good flying~
+Off    disarm dodge kick parry~
+Imm    summon charm negative~
+Res    acid~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28725
+Name figure cloaked~
+ShortD a cloaked figure~
+LongD Someone stands here, breathing softly.~
+Desc ~
+Race human~
+Align 0 -3
+XPMod 150
+Level 86
+Hitroll 1560
+HitDice 9d12+425
+ManaDice 4d5+90
+DamDice 10d10+43
+DamType bite
+AC -560 -560 -560 -504
+Wealth 700
+Act    npc stay_area warrior~
+AffBy  detect_hidden sanctuary infrared sneak hide~
+Off    bash disarm fast kick dirt_kick parry~
+Imm    summon sleep~
+Res    charm weapon acid~
+Vuln   fire iron~
+Form   edible sentient biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28726
+Name cyinth~
+ShortD cyinth~
+LongD A spirit from a different plane floats here, watching you with its sightless eyes.~
+Desc ~
+Race orc~
+Align 0 -3
+XPMod 150
+Level 88
+Hitroll 1560
+HitDice 9d12+435
+ManaDice 4d5+600
+DamDice 10d10+45
+DamType chill
+AC -580 -580 -580 -498
+Wealth 0
+Act    npc aggressive stay_area warrior~
+AffBy  detect_hidden sanctuary infrared flying~
+Off    bash berserk disarm dodge kick dirt_kick parry~
+Imm    summon charm~
+Res    acid disease~
+Vuln   lightning holy light~
+Form   edible other sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28727
+Name snake serpent~
+ShortD a serpent~
+LongD A long snake lies here, watching you with its beady eyes.~
+Desc ~
+Race snake~
+Align 0 0
+XPMod 150
+Level 86
+Hitroll 1560
+HitDice 9d12+425
+ManaDice 4d5+90
+DamDice 10d10+43
+DamType bite
+AC -560 -560 -560 -459
+Wealth 0
+Act    npc aggressive stay_area warrior~
+Act2   no_random_obj~
+AffBy  detect_hidden sanctuary~
+Off    disarm dodge dirt_kick parry trip crush~
+Imm    summon charm poison~
+Res    weapon~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28728
+Name commoner~
+ShortD a commoner~
+LongD A commoner wanders about the castle.~
+Desc ~
+Race human~
+Align 3 0
+Level 57
+Hitroll 960
+HitDice 6d9+310
+ManaDice 2d5+55
+DamDice 6d8+24
+DamType none
+AC -270 -270 -270 -224
+Wealth 250
+Act    npc stay_area wimpy~
+AffBy  infrared~
+Off    dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28729
+Name royal guard~
+ShortD a royal guard~
+LongD A guard stands here, standing at attention.~
+Desc ~
+Race human~
+Align 1 0
+XPMod 110
+Level 70
+Hitroll 1560
+HitDice 7d11+360
+ManaDice 3d5+140
+DamDice 8d8+34
+DamType pound
+AC -400 -400 -400 -328
+Wealth 680
+Act    npc stay_area warrior~
+AffBy  detect_hidden sanctuary~
+Off    bash berserk disarm parry~
+Imm    charm~
+Res    weapon~
+Vuln   acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#28730
+Name monk figure~
+ShortD a monk~
+LongD A figure clothed in grey robes stands here, watching you silently.~
+Desc ~
+Race human~
+Align 1 0
+Level 64
+Hitroll 1560
+HitDice 6d10+335
+ManaDice 6d10+355
+DamDice 8d7+29
+DamType punch
+AC -340 -340 -340 -306
+Wealth 700
+Act    npc scavenger stay_area cleric~
+AffBy  detect_hidden sanctuary infrared haste~
+Off    berserk disarm dodge trip~
+Res    charm holy mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#28731
+Name nephil~
+ShortD a Nephil~
+LongD A lithe, cat-like figure stands here.~
+Desc ~
+Race cat~
+Align 2 0
+Level 62
+Hitroll 960
+HitDice 6d10+320
+ManaDice 7d11+365
+DamDice 8d6+26
+DamType claw
+AC -310 -310 -310 -266
+Wealth 580
+Act    npc stay_area mage~
+AffBy  detect_hidden infrared sneak dark_vision~
+Off    dodge fast~
+Imm    charm~
+Res    cold negative holy~
+Form   edible magical animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28732
+Name slithzerekai~
+ShortD a Slithzerekai~
+LongD A tall, lizard-like figure stands here, wielding a large spear.~
+Desc ~
+Race lizardman~
+Align 2 0
+Level 51
+Hitroll 1500
+HitDice 5d9+295
+ManaDice 2d5+50
+DamDice 6d7+21
+DamType claw
+AC -230 -230 -230 -200
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden sneak dark_vision~
+Off    disarm kick parry~
+Imm    charm~
+Res    poison~
+Vuln   cold~
+Form   edible animal sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28733
+Name giant lizard~
+ShortD a giant lizard~
+LongD A large lizard is here, sunning itself.~
+Desc ~
+Race lizardman~
+Align -2 0
+Level 48
+Hitroll 1500
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+18
+DamType claw
+AC -180 -180 -180 -149
+Wealth 0
+Act    npc stay_area~
+AffBy  dark_vision~
+Off    berserk fast tail~
+Imm    charm~
+Res    poison~
+Vuln   cold~
+Form   edible animal mountable reptile cold_blood~
+Part   head legs heart brains guts feet eye long_tongue tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#28734
+Name giant spider~
+ShortD a giant spider~
+LongD A large spider waits for prey to pass.~
+Desc ~
+Race insect~
+Align 1 0
+Level 45
+Hitroll 1500
+HitDice 5d7+250
+ManaDice 5d7+260
+DamDice 8d4+16
+DamType bite
+AC -157 -157 -157 -141
+Wealth 0
+Act    npc no_tame stay_area noalign noautosocial~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    fast~
+Imm    mental~
+Vuln   bash~
+Form   edible poison non_skinable insect spider mountable cold_blood~
+Part   head legs guts eye fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#28735
+Name asp snake~
+ShortD an asp~
+LongD A long snake lies here, watching you with its beady eyes.~
+Desc ~
+Race snake~
+Align -1 0
+Level 47
+Hitroll 1500
+HitDice 5d8+270
+ManaDice 5d8+270
+DamDice 4d10+18
+DamType bite
+AC -190 -190 -190 -163
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+Act2   no_random_obj~
+AffBy  infrared~
+Off    dodge fast tail~
+Imm    charm poison~
+Res    pierce mental~
+Vuln   cold~
+Form   edible poison animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#28736
+Name ochre slime~
+ShortD an ochre slime~
+LongD An ochre-colored pile of slime sits here.~
+Desc ~
+Race unique~
+Align 3 0
+Level 50
+Hitroll 1500
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType slime
+AC -260 -260 -260 -231
+Wealth 190
+Act    npc dont_wander scavenger no_tame stay_area~
+AffBy  detect_hidden dark_vision~
+Off    bash berserk~
+Imm    charm poison mental disease drowning sleep~
+Res    weapon~
+Vuln   cold lightning~
+Form   poison instant_decay non_skinable blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#28737
+Name mauve slime~
+ShortD a mauve slime~
+LongD A mauve-colored pile of slime sits here.~
+Desc ~
+Race unique~
+Align -3 0
+Level 51
+Hitroll 1500
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType drain
+AC -210 -210 -210 -186
+Wealth 250
+Act    npc dont_wander scavenger no_tame stay_area~
+AffBy  detect_hidden~
+Off    bash~
+Imm    charm poison mental disease sound sleep illusion~
+Res    weapon acid~
+Vuln   fire lightning energy~
+Form   instant_decay non_skinable blob cold_blood~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#28738
+Name elite assassin~
+ShortD an Elite Assassin~
+LongD A veil of shadows is here.~
+Desc ~
+Race human~
+Align 1 -3
+Level 84
+Hitroll 2040
+HitDice 8d12+410
+ManaDice 5d7+245
+DamDice 9d10+42
+DamType claw
+AC -530 -530 -530 -455
+Wealth 1000
+Act    npc dont_wander stay_area thief~
+AffBy  invisible detect_evil detect_hidden detect_good sanctuary protect_good sneak~
+Off    berserk disarm dodge fade fast kick parry~
+Res    charm weapon fire cold lightning acid~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 28720 100~
+MProg GRALL 28708 100~
+MProg GRALL 28726 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#28700
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#28701
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#28702
+Name ring istai~
+Short an `#`rIstai`^ ring~
+Desc A small ring lies upon the ground here, gathering dust.~
+Level 53
+ItemType jewelry~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material platinum~
+Extra    magic noremove nodegrade~
+Extra2   nochaoslace~
+Wear     take finger~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 53 -1 mana 120 0
+End
+
+#28703
+Name twisted key~
+Short a twisted key~
+Desc A small black key lies here, gathering dust.~
+Level 120
+ItemType key~
+Cost 1
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    lock invis nonmetal nolocate burnproof~
+Wear     take hold~
+End
+
+#28704
+Name Angelic Blade~
+Short an `#`WA`Cn`Wg`Ce`Wl`Ci`Wc`^ blade~
+Desc A holy blade floats in the air here, waiting for a new owner.~
+Level 65
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 150
+Rsize 50
+Values sword 15 4 chop FI
+Weight 180
+Material platinum~
+Extra    glow magic bless antievil antineutral nolocate meltdrop burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield~
+Affect resist -1 65 -1 none 0 negative
+End
+
+#28705
+Name axe neutrality~
+Short the `#`RAxe`^ of `#`sNeutrality`^~
+Desc An axe lies here, gleaming with a red aura.~
+Level 53
+ItemType weapon~
+Cost 650
+Durability 5
+Asize 100
+Rsize 50
+Values axe 12 4 cleave DEF
+Weight 300
+Material steel~
+Extra    glow magic antigood antievil~
+Wear     take wield~
+ClassAllowances warrior paladin ranger bard~
+Affect modifier -1 53 -1 hitroll 6 0
+Affect modifier -1 53 -1 damroll 6 0
+Affect modifier -1 53 -1 hp 2 0
+End
+
+#28706
+Name blade hellfire dagger~
+Short a `#`RH`re`Rl`rl`Rf`ri`Rr`re`^ dagger~
+Desc A small dagger with a blood red blade lies on the ground here, surrounded by black and red flames.~
+Level 62
+ItemType weapon~
+Cost 600
+Durability 5
+Asize 75
+Rsize 50
+Values dagger 4 12 flame AE
+Weight 15
+Material iron~
+Extra    glow magic antigood burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 62 -1 mana 40 0
+Affect modifier -1 62 -1 damroll 2 0
+Affect modifier -1 62 -1 hitroll 2 0
+End
+
+#28707
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    hum~
+End
+
+#28708
+Name forest key~
+Short the Forest Key~
+Desc A green key lies here, attempting to blend in with the scenery.~
+Level 120
+ItemType key~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Extra    invis~
+Wear     take hold~
+End
+
+#28709
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#28710
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#28711
+Name deathbringer sword~
+Short the `#`sDeath`bBringer`^~
+Desc A large sword lies here, surrounded by blue and black flames.~
+Level 65
+ItemType weapon~
+Cost 600
+Durability 5
+Asize 20
+Rsize 50
+Values sword 14 4 slash BCF
+Weight 60
+Material silver~
+Extra    evil magic antigood antineutral noremove burnproof~
+Wear     take wield~
+ClassAllowances warrior~
+Affect affects -1 65 -1 none 0 curse
+Affect modifier -1 65 -1 hp 12 0
+Affect modifier -1 65 -1 ac -10 0
+ExtraDesc sword ~
+Engraved upon the blade of this sword is the word `#`sDeath`bBringer`^.  
+~
+End
+
+#28712
+Name grizzly bear hide~
+Short a `#`ygrizzly bear`^ hide~
+Desc The hide of some strange beast lies on the ground here.~
+Level 65
+ItemType armor~
+Cost 500
+Durability 5
+Asize 10
+Rsize 50
+Values 16 16 16 13 0
+Weight 100
+Material bear skin~
+Extra    nonmetal~
+Wear     take about~
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hp 4 0
+End
+
+#28713
+Name good white robes~
+Short the `#`wR`Wo`wb`We`ws`^ of `#`WGood`^~
+Desc A pile of white cloth is here.~
+Level 66
+ItemType armor~
+Cost 500
+Durability 5
+Asize 5
+Rsize 50
+Values 16 16 16 16 0
+Weight 50
+Material silk~
+Extra    magic bless antievil antineutral nonmetal burnproof~
+Wear     take about~
+ClassAllowances mage cleric druid paladin ranger spellfilcher bard~
+Affect modifier -1 66 -1 mana 100 0
+Affect modifier -1 66 -1 saves -6 0
+End
+
+#28714
+Name Angelic Dagger~
+Short an `#`WA`Cn`Wg`Ce`Wl`Ci`Wc`^ dagger~
+Desc A holy blade floats here, waiting for a new owner.~
+Level 66
+ItemType weapon~
+Cost 550
+Durability 5
+Asize 100
+Rsize 50
+Values dagger 2 28 pierce GI
+Weight 10
+Material platinum~
+Extra    magic bless antievil antineutral nolocate burnproof~
+Extra2   nochaoslace~
+Wear     take wield~
+Affect modifier -1 66 -1 mana 160 0
+End
+
+#28715
+Name robe death~
+Short the `#`sR`wo`sb`we`ss`^ of `#`sDeath`^~
+Desc A pile of black cloth is here, shrouded in a black aura.~
+Level 69
+ItemType armor~
+Cost 600
+Durability 5
+Asize 10
+Rsize 50
+Values 17 17 17 18 0
+Weight 100
+Material unknown~
+Extra    magic antigood antineutral nonmetal burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take about~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 69 -1 mana 120 0
+Affect modifier -1 69 -1 saves -4 0
+End
+
+#28716
+Name flamebringer dagger~
+Short the `#`RFlamebringer`^ dagger~
+Desc A small dagger is lying here, engulfed in flames.~
+Level 69
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 7
+Rsize 50
+Values dagger 10 4 pierce A
+Weight 10
+Material bone~
+Extra    glow evil magic antigood nonmetal burnproof~
+Extra2   nochaoslace~
+Wear     take wield~
+ClassAllowances mage~
+Affect resist -1 69 -1 none 0 fire
+Affect vuln -1 69 -1 none 0 cold
+Affect modifier -1 69 -1 mana 140 0
+End
+
+#28717
+Name plate titans~
+Short `wThe `sPlate `wof `RTitans`^~
+Desc A suit of platemail lies here, gathering dust.~
+Level 30
+ItemType armor~
+Cost 0
+Durability 5
+Asize 20
+Rsize 50
+Values 10 10 10 8 0
+Weight 20
+Material steel~
+Extra    glow hum~
+Wear     take torso~
+End
+
+#28718
+Name demonslayer~
+Short `sThe Demon`RSlayer`^~
+Desc A blade rests here, radiating incredible power.~
+Level 30
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 10
+Rsize 50
+Values sword 2 16 slash EF
+Weight 10
+Material platinum~
+Extra    glow hum antievil antineutral~
+Wear     take wield~
+End
+
+#28719
+Name longsword humanslayer~
+Short a longsword named `#`sHuman`RSlayer`^~
+Desc A longsword lies here, stained with the blood of humans.~
+Level 50
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 25
+Rsize 50
+Values sword 2 28 slash EF
+Weight 150
+Material steel~
+Extra    evil~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian bard anti-paladin~
+Affect modifier -1 50 -1 damroll 6 0
+Affect modifier -1 50 -1 hitroll 2 0
+End
+
+#28720
+Name reinforced staff~
+Short a `#`yre`wi`yn`wfo`yr`wc`yed`^ staff~
+Desc A long staff lies here, gathering dust.~
+Level 55
+ItemType weapon~
+Cost 400
+Durability 5
+Asize 20
+Rsize 50
+Values staff 3 10 pound AFG
+Weight 70
+Material wood~
+Extra    glow magic nonmetal burnproof~
+Wear     take wield~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 55 -1 mana 60 0
+End
+
+#28721
+Name platinum dagger~
+Short a `#`wp`sl`wa`st`wi`sn`wu`sm`^ dagger~
+Desc A small dagger lies here, enshrouded in a grey aura.~
+Level 45
+ItemType weapon~
+Cost 350
+Durability 5
+Asize 50
+Rsize 50
+Values dagger 2 15 pierce BD
+Weight 20
+Material platinum~
+Extra    evil~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 45 -1 hitroll 2 0
+Affect modifier -1 45 -1 damroll 2 0
+Affect modifier -1 45 -1 quickness 2 0
+End
+
+#28722
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take about~
+End
+
+#28723
+Name assassin blade~
+Short `mAssassin's `sBlade `sof `RChaos`^~
+Desc A blade of energy balances on its tip here, waiting for a new victim.~
+Level 30
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 100
+Rsize 50
+Values dagger 3 3 pierce BDE
+Weight 100
+Material chaos energy~
+Extra    hum antigood antineutral~
+Wear     take wield~
+End
+
+#28724
+Name magius key~
+Short a gnarled magius key~
+Desc A gnarled key lies here, half-eaten.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material chaos energy~
+Extra    nolocate~
+Wear     take hold~
+End
+
+#28725
+Name simple key~
+Short a simple key~
+Desc A key lies here, glinting in the light.~
+Level 0
+ItemType key~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material steel~
+Extra    nolocate~
+Wear     take hold~
+End
+
+#28726
+Name bone throne~
+Short a `#`Bthrone`^ of `#`Wbone`^~
+Desc A throne made entirely of human bones sits here.~
+Level 80
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 1000
+Rsize 50
+Values 1 1000 BEHKQ 100 -50
+Weight 1000
+Material bone~
+Extra    noremove nopurge nonmetal nolocate nodegrade burnproof nouncurse norestring nogetall~
+Wear     no_sac~
+End
+
+#28727
+Name fish exotic~
+Short exotic fish~
+Desc A plate of some kind of fish lies here.~
+Level 0
+ItemType food~
+Cost 30
+Durability 5
+Asize 1
+Rsize 50
+Values 10 10 0 0 0
+Weight 1
+Material fish~
+Wear     take hold~
+End
+
+#28728
+Name travelling rations~
+Short travelling rations~
+Desc A plate of rations lies here, waiting to be picked up.~
+Level 0
+ItemType food~
+Cost 40
+Durability 5
+Asize 4
+Rsize 50
+Values 15 15 0 0 0
+Weight 4
+Material platinum~
+Wear     take hold~
+End
+
+#28729
+Name stew beef~
+Short beef stew~
+Desc A pot of beef stew lies here.~
+Level 0
+ItemType food~
+Cost 50
+Durability 5
+Asize 3
+Rsize 50
+Values 20 20 0 0 0
+Weight 3
+Material stew~
+Wear     take hold~
+End
+
+#28730
+Name soul drink~
+Short a soul drink~
+Desc A bottle containing a strange kind of liquid lies here.~
+Level 0
+ItemType drinkcontainer~
+Cost 100
+Durability 5
+Asize 5
+Rsize 50
+Values 10 10 'salt water' 0 0
+Weight 5
+Material souls~
+Wear     take hold~
+End
+
+#28731
+Name mug ale~
+Short a mug of ale~
+Desc A mug of ale lies on the ground here.~
+Level 0
+ItemType drinkcontainer~
+Cost 50
+Durability 5
+Asize 2
+Rsize 50
+Values 70 70 ale 0 0
+Weight 2
+Material clay~
+Extra    hum~
+Wear     take hold~
+End
+
+#28732
+Name glass mead~
+Short a glass of mead~
+Desc A mug of mead lies on the ground here.~
+Level 0
+ItemType drinkcontainer~
+Cost 75
+Durability 5
+Asize 2
+Rsize 50
+Values 100 100 mead 0 0
+Weight 2
+Material glass~
+Extra    hum~
+Wear     take hold~
+End
+
+#28733
+Name illygrith breastplate~
+Short an `#`rIllygrith`^ breastplate~
+Desc A strange breastplate lies here.~
+Level 48
+ItemType armor~
+Cost 1212
+Durability 5
+Asize 20
+Rsize 50
+Values 16 16 16 12 0
+Weight 40
+Material hide~
+Extra    nonmetal burnproof~
+Wear     take torso~
+Affect modifier -1 48 -1 ac -10 0
+Affect modifier -1 48 -1 hp 4 0
+End
+
+#28734
+Name illygrith bracer~
+Short an `#`rIllygrith`^ bracer~
+Desc A strange bracer lies on the ground here.~
+Level 48
+ItemType armor~
+Cost 987
+Durability 5
+Asize 12
+Rsize 50
+Values 7 7 7 5 0
+Weight 20
+Material hide~
+Extra    nonmetal burnproof~
+Wear     take wrist~
+Affect modifier -1 48 -1 hp 4 0
+Affect modifier -1 48 -1 ac -10 0
+End
+
+#28735
+Name illygrith sword~
+Short an `#`rIllygrith`^ sword~
+Desc A strange sword lies on the ground here.~
+Level 90
+ItemType weapon~
+Cost 1721
+Durability 5
+Asize 150
+Rsize 50
+Values sword 4 19 slice D
+Weight 10
+Material glass~
+Extra    nonmetal meltdrop burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield~
+Affect modifier -1 90 -1 damroll 2 0
+Affect modifier -1 90 -1 hitroll 2 0
+Affect modifier -1 90 -1 hp 10 0
+End
+
+#28736
+Name illygrith dagger~
+Short an `#`rIllygrith`^ dagger~
+Desc A strange dagger lies on the ground here.~
+Level 85
+ItemType weapon~
+Cost 1721
+Durability 5
+Asize 75
+Rsize 50
+Values dagger 3 20 pierce D
+Weight 5
+Material glass~
+Extra    nonmetal burnproof~
+Extra2   nodecay nochaoslace~
+Wear     take wield~
+Affect modifier -1 85 -1 hitroll 6 0
+Affect modifier -1 85 -1 hp 6 0
+End
+
+#28737
+Name plate death~
+Short `sthe plate of `Rd`se`Ra`st`Rh`^~
+Desc A suit of black platemail lies here, gathering dust.~
+Level 30
+ItemType armor~
+Cost 50
+Durability 5
+Asize 25
+Rsize 50
+Values 10 10 10 8 0
+Weight 25
+Material steel~
+Extra    hum dark evil antigood antineutral burnproof~
+Wear     take torso~
+End
+
+#28738
+Name plate neutrality~
+Short `wthe `splate `wof `gneutrality`^~
+Desc A suit of grey platemail lies here, gathering dust.~
+Level 30
+ItemType armor~
+Cost 50
+Durability 5
+Asize 25
+Rsize 50
+Values 10 10 10 8 0
+Weight 25
+Material steel~
+Extra    glow hum antigood antievil burnproof~
+Wear     take torso~
+End
+
+#28739
+Name plate justice~
+Short `Wthe `splate `Wof `Bjustice`^~
+Desc A suit of white platemail lies here, gathering dust.~
+Level 30
+ItemType armor~
+Cost 50
+Durability 5
+Asize 25
+Rsize 50
+Values 10 10 10 8 0
+Weight 25
+Material platinum~
+Extra    glow hum antievil antineutral burnproof~
+Wear     take torso~
+End
+
+#28740
+Name zhaman crown royal~
+Short the `#`YCrown`^ of `#`sZhaman`^~
+Desc A black crown lies here, gleaming with a black aura.~
+Level 80
+ItemType treasure~
+Cost 1200
+Durability 5
+Asize 15
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material silver~
+Extra    glow hum magic burnproof~
+Extra2   nodecay~
+Wear     take head~
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 mana 40 0
+Affect modifier -1 80 -1 hp 4 0
+Affect modifier -1 80 -1 saves -4 0
+Affect resist -1 80 -1 none 0 magic
+End
+
+#28741
+Name sword chaos~
+Short the `#`CSword`^ of `#`RC`rh`Ra`ro`Rs`^~
+Desc A blade balances on its tip here, waiting for a new owner.~
+Level 80
+ItemType weapon~
+Cost 900
+Durability 5
+Asize 150
+Rsize 50
+Values sword 5 14 cleave EF
+Weight 150
+Material iron~
+Extra    glow hum magic burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances warrior paladin ranger bard anti-paladin~
+Affect modifier -1 80 -1 saves -4 0
+Affect modifier -1 80 -1 agility 3 0
+End
+
+#28742
+Name altar darkness~
+Short an `#`Waltar`^ of `#`sDarkness`^~
+Desc An altar rests on a large rock here, gleaming with a dark aura.~
+Level 100
+ItemType container~
+Cost 0
+Durability 5
+Asize 200
+Rsize 50
+Values 10000 AC 0 2 14
+Weight 200
+Material drow steel~
+Extra    glow hum evil~
+Wear     no_sac~
+End
+
+#28743
+Name paper piece~
+Short a partially shredded piece of paper~
+Desc A shredded piece of parchment lies on the ground here.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 3
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material unknown~
+Extra    glow hum evil meltdrop nouncurse~
+Wear     take hold~
+ExtraDesc paper~
+As you look down at the paper, words suddenly flicker and appear on the 
+paper.  They say, 'When wandering the secret passages, beware the runed 
+circles.  Daemons, Vampyres, Shades, and Asps will burst forth, should you 
+activate one.  Should you activate one, may the gods be with you, for 
+nothing but the magic sealed doors shall keep then contained, unless a brave 
+hero should enter, in hopes of vanquishing them.  
+~
+End
+
+#28744
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    hum~
+End
+
+#28745
+Name {x~
+Short `x~
+Desc `x~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     hold~
+End
+
+#28746
+Name soul taker~
+Short the `#`sSoul`rTaker`^ sword~
+Desc A blade containing many lost souls floats here, seemingly waiting.~
+Level 72
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 20
+Rsize 50
+Values sword 5 14 thrust C
+Weight 110
+Material silver~
+Extra    hum magic nonmetal burnproof~
+Extra2   nodecay~
+Wear     take wield~
+ClassAllowances warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 72 -1 damroll 6 0
+Affect modifier -1 72 -1 hitroll 6 0
+Affect modifier -1 72 -1 hp 4 0
+End
+
+#28747
+Name blade knowledge~
+Short the `#`cBlade`^ of `#`rKnowledge`^~
+Desc A blade gleaming with a black aura lies here.~
+Level 73
+ItemType weapon~
+Cost 1000
+Durability 5
+Asize 100
+Rsize 50
+Values dagger 3 15 pierce D
+Weight 25
+Material mithril~
+Extra    glow magic burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher bard anti-paladin~
+Affect modifier -1 73 -1 damroll 2 0
+Affect modifier -1 73 -1 hitroll 2 0
+Affect modifier -1 73 -1 memory 4 0
+End
+
+#0
+
+
+
+#ROOMS
+#28700
+Name Beside an Old Gnarled Tree~
+Desc You are on a trail leading to the `gForest`x of Istai.  To the east lies
+a large plain whereas to the west and north lies a forest.  Sounds of
+various creatures can be heard, as though the area is teeming with life.  An
+old gnarled tree trunk blocks the way to the south.  
+~
+RoomFlags dark~
+Sector forest~
+Exit north 28701
+Exit east 56106
+Exit south 56186
+Exit west 56104
+End
+
+
+#28701
+Name A dirt trail~
+Desc You are standing on a trail leading to the `gForest`x of Istai.  To your
+east lies a large plain.  To your west and north lies a forest.  Sounds of
+various creatures can be heard, as though the area is teeming with life.  To
+the north lies the `gForest`x of Istai, and to your south lies a dirt trail.
+~
+Sector trail~
+Exit north 28702
+Exit east 56025
+Exit south 28700
+Exit west 56022
+End
+
+
+#28702
+Name Before the Forest of Istai~
+Desc You are standing on a trail leading to the `gForest`x of Istai.  To your
+east lies a large plain.  To your west and north lies a forest.  Sounds of
+various creatures can be heard, as though the area is teeming with life.  To
+the immediate north lies the `gForest`x of Istai, and to your immediate
+south lies a dirt trail.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28703
+Exit south 28701
+End
+
+
+#28703
+Name Forest of Istai~
+Desc You are standing in a grove of trees.  All around you, the fog is as
+thick water, except it does not hamper your breathing, only your sight.  The
+fog is thinner in all directions, suggesting pathways.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28708
+Exit east 28704
+Exit south 28702
+Exit west 28712
+End
+
+
+#28704
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the east and west, the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28705
+Exit west 28703
+End
+
+
+#28705
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the west and north the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28706
+Exit west 28704
+End
+
+
+#28706
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the west and south the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28723
+EFlags door closed~
+Exit south 28705
+Exit west 28707
+End
+
+
+#28707
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the east and west the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28706
+Exit west 28708
+End
+
+
+#28708
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick water, except it does not hamper your breathing, only your sight. 
+The fog is thinner in all directions, suggesting pathways.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28713
+Exit east 28707
+Exit south 28703
+Exit west 28709
+End
+
+
+#28709
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the east and west the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28708
+Exit west 28710
+End
+
+
+#28710
+Name A dirt trail~
+Desc You are standing on a dirt trail, leading to the `gForest`x of Istai. North of you lies the `gForest`x of Istai.  South of you lies the dirt trail which leads back to Kieron.
+~
+RoomFlags dark noautomap noautoexits~
+Sector trail~
+Exit east 28709
+Exit south 28711
+End
+
+
+#28711
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the east and north the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28710
+Exit east 28712
+End
+
+
+#28712
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you fog is as
+thick as water, but it does not hamper your breathing, only your sight. 
+Sounds of animals can be heard, as though the forest is teeming with life. 
+To the east and west the fog is thinner, suggesting a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28703
+Exit west 28711
+End
+
+
+#28713
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to all directions, suggesting paths. 
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28720
+Exit east 28714
+Exit south 28708
+Exit west 28717
+End
+
+
+#28714
+Name Forest of Istai~
+Desc Desc You are standing in the `gForest of Istai`x.  All around you, the
+fog is thick as water, though it does not hamper your breathing, only your
+sight.  All around you, sounds of animals can be heard, as though the forest
+is teeming with life.  The fog is thinner to the east and west, suggesting
+pathways.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28715
+Exit west 28713
+End
+
+
+#28715
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, fog is
+thick as water, but it does not hamper your breathing, just your sight. 
+Sounds of creatures can be heard all around you, as though the forest was
+teeming with life.  The fog is thinner to the east and north, suggesting
+pathways.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28722
+Exit west 28714
+End
+
+
+#28716
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to the north and east, suggesting a
+path.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28718
+Exit east 28717
+End
+
+
+#28717
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  Alla round you, fog is as
+thick as water, though it does not hamper your breathing, just your sight. 
+Around you, sounds of various creatures can be heard, as though the forest
+was teeming with life.  The fog is thinner to the east and west, suggesting
+a pathway.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28713
+Exit west 28716
+End
+
+
+#28718
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to the south and east, suggesting a
+path.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28719
+Exit south 28716
+Exit west 28730
+EKeyvnum 28703
+End
+
+
+#28719
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to the east and west, suggesting a
+path.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28720
+Exit west 28718
+End
+
+
+#28720
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to the east, north, and west,
+suggesting paths.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28736
+Exit east 28721
+Exit south 28713
+Exit west 28719
+End
+
+
+#28721
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to the east and west, suggesting a
+path.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28722
+Exit west 28720
+End
+
+
+#28722
+Name Forest of Istai~
+Desc You are standing in the `gForest of Istai`x.  All around you, the fog is
+as thick as water, but it does not hamper your breathing, just your sight. 
+Around you, sounds of creatures can be heard, as though the forest is
+teeming with life.  The fog is thinner to the east and south, suggesting a
+path.  
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit south 28715
+Exit west 28721
+End
+
+
+#28723
+Name A foggy grove~
+Desc All around you, fog is everywhere. Nothing can be seen, but the impenetrable fog. As you look around though, you can see red eyes watching you. To the east you see a red glow.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28724
+Exit west 28706
+EFlags door closed~
+End
+
+
+#28724
+Name A foggy grove~
+Desc All around you, fog is everywhere. Nothing can be seen, but the impenetrable fog. As you look around though, you can see red eyes watching you. To the south you see a red glow.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit south 28725
+Exit west 28723
+End
+
+
+#28725
+Name A foggy grove~
+Desc All around you, fog is everywhere. Nothing can be seen, but the impenetrable fog. As you look around though, you can see red eyes watching you. To the south you see a red glow.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28724
+Exit south 28726
+End
+
+
+#28726
+Name A foggy grove~
+Desc In the center of the grove is a large red stone. From the light it is emanating, you can see exits in all directions.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28725
+Exit east 28728
+Exit south 28727
+Exit west 28729
+End
+
+
+#28727
+Name A foggy grove~
+Desc You are standing in the middle of a clearing. All around you, the same fog is there, preventing you from seeing much. Upon further examination, however, you notice a small blue ring on the ground.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28726
+End
+
+
+#28728
+Name A foggy grove~
+Desc You are standing in the middle of a clearing. All around you, the same fog is there, preventing you from seeing much. Upon further examination, however, you notice a small key on the ground.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit west 28726
+End
+
+
+#28729
+Name A foggy grove~
+Desc You are standing in the middle of a clearing. All around you, the same fog is there, preventing you from seeing much. Upon further examination, however, you notice a large axe on the ground.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28726
+End
+
+
+#28730
+Name A misty grove~
+Desc You are standing in a mist filled clearing. Small, black creatures fly around, under the cover of the mist, and all around you, growling can be heard. To the north and south, the growling seems to get louder.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28735
+Exit east 28718
+EKeyvnum 28703
+Exit south 28731
+End
+
+
+#28731
+Name A misty grove~
+Desc You are standing in a mist-filled clearing. Small, black creatures fly around, under the cover of the mist, and all around you, growling can be heard. Here, the growling is the loudest.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28730
+Exit west 28732
+End
+
+
+#28732
+Name A misty grove~
+Desc You are standing in a mist-filled clearing. Small, black creatures fly around, under the cover of the mist, and all around you, growling can be heard. To the north, the growling seems to get louder.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28733
+Exit east 28731
+End
+
+
+#28733
+Name A misty grove~
+Desc You are standing in a mist-filled clearing. Small, black creatures fly around, under the cover of the mist, and all around you, growling can be heard. Here, the growling is the loudest.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit north 28734
+Exit south 28732
+End
+
+
+#28734
+Name A misty grove~
+Desc You are standing in a mist-filled clearing. Small, black creatures fly around, under the cover of the mist, and all around you, growling can be heard. To the south, the growling seems to get louder.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit east 28735
+Exit south 28733
+End
+
+
+#28735
+Name A misty grove~
+Desc You are standing in a mist-filled clearing. Small, black creatures fly around, under the cover of the mist, and all around you, growling can be heard. To the west, the growling seems to get louder.
+~
+RoomFlags noautomap noautoexits~
+Sector forest~
+Exit south 28730
+Exit west 28734
+End
+
+
+#28736
+Name A trail leading north of the Forest of Istai~
+Desc You are standing on a dirt trail thats leads north of the `gForest of
+Istai`x.  South of you lies the forest, whilst the trail continues north.  
+~
+Sector trail~
+Exit north 28737
+Exit south 28720
+End
+
+
+#28737
+Name The end of the trail~
+Desc You are standing at the end of the trail.  At the center of the clearing
+is a pile of bones.  What put them there, you can not even guess.  All
+around you, no sound can be heard, except your own breathing, and the
+occasional flap of wings.  
+~
+Sector trail~
+Exit south 28736
+End
+
+
+#28738
+Name A blackened and burnt forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green, is now the opposite.  Burnt and blackened.  Around you, nothing can
+be heard, except your own breathing.  To the north and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28739
+End
+
+
+#28739
+Name A blackened and burnt forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green, is now the opposite.  Burnt and blackened.  Around you, nothing can
+be heard, except your own breathing.  To the south and east are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit east 28740
+Exit south 28738
+End
+
+
+#28740
+Name A burnt and blackened forest~
+Desc You are standing in the middle of the remains of a forest.  What once was
+luch and green is now the opposite.  Burnt and blackened.  Around you,
+nothing can be heard, except your own breathing.  To the east and west are
+pathways through the remains of the forest.  
+~
+Sector forest~
+Exit east 28741
+Exit west 28739
+End
+
+
+#28741
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and gree
+is now the opposite.  Burnst and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the east and west are pathways through
+the remains of the forest.  
+~
+Sector forest~
+Exit east 28742
+Exit west 28740
+End
+
+
+#28742
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the north and west are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28743
+Exit west 28741
+End
+
+
+#28743
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnst and blackened.  Around you, nothing can
+be heard, except your own breathing.  To the west and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit south 28742
+Exit west 28745
+End
+
+
+#28745
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the north and east are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28746
+Exit east 28743
+Exit west 28750
+EFlags door closed~
+End
+
+
+#28746
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the north and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28747
+Exit south 28745
+End
+
+
+#28747
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the west and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit south 28746
+Exit west 28748
+End
+
+
+#28748
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the east and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28799
+Exit east 28747
+Exit south 28749
+End
+
+
+#28749
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the north and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28748
+Exit south 28750
+End
+
+
+#28750
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the north and west are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28749
+Exit east 28745
+EFlags door closed~
+Exit west 28751
+End
+
+
+#28751
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the east and west are pathways through
+the remains of the forest.  
+~
+Sector forest~
+Exit east 28750
+Exit west 28752
+End
+
+
+#28752
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the east and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit east 28751
+Exit south 28753
+End
+
+
+#28753
+Name A burnt and blackened forest~
+Desc You are standing in the remains of a forest.  What once was lush and
+green is now the opposite.  Burnt and blackened.  Around you, nothing can be
+heard, except your own breathing.  To the north and south are pathways
+through the remains of the forest.  
+~
+Sector forest~
+Exit north 28752
+Exit south 28754
+End
+
+
+#28754
+Name A burnt and blackened forest~
+Desc You have reached the end of the trail. Around you, are the same burnt and blackened trees. In the center of the forest, however, is a black robed figure. He motions for you to come closer.
+~
+Sector forest~
+Exit north 28753
+End
+
+
+#28755
+Name `RZhaman Castle`x: Entrance Way~
+Desc `D You are standing in the entrance way to Zhaman Castle, a castle deep within the Forest of Istai. South of you lies a trail, while north of you lies a guard post.
+~
+RoomFlags indoors~
+Sector trail~
+Exit north 28756
+Exit south 28799
+End
+
+
+#28756
+Name `RZhaman Castle`x: Guard Post~
+Desc `D You are standing near a guard post of Zhaman Castle.  Guards sit at a
+table and talk, while watching the entrance way, for any signs of intruders.
+North of you lies the path into the main hallway of the castle, while south
+lies the entrance way.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28757
+Exit south 28755
+End
+
+
+#28757
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners of the three Orders of Knights. North of you continues the hallway, while south of you lies the guard post.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28758
+Exit south 28756
+End
+
+
+#28758
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people 
+line the walls, as well as banners of the three Orders of Knights. To the 
+north and south, the hallway continues. To the east and west are separate 
+hallways. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28773
+Exit east 28759
+EFlags door closed~
+Exit south 28757
+Exit west 28767
+EFlags door closed~
+End
+
+
+#28759
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners of the three Orders of Knights. To the east, the hallway continues, while the main hallway is to your west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28760
+Exit west 28758
+EFlags door closed~
+End
+
+
+#28760
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway.  Swords of various
+people line the walls, as well as banners of the three Orders of Knights. 
+To the west, the hallway continues.  To the east, the servants' quarters
+begins.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28761
+Exit west 28759
+End
+
+
+#28761
+Name The Servant's Quarters~
+Desc `D You are standing in the housing quarters for the servants of the
+castle.  Along one wall are a line of beds, and you notice a guard near the
+door next to you.  To the north and south, the servants' quarters continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28766
+Exit south 28762
+Exit west 28760
+End
+
+
+#28762
+Name The Servant's Quarters~
+Desc `D You are standing in the housing quarters for the servants of the castle. Along one wall are a line of beds, and you notice a guard near the door to the north. To the north and east, the servants' quarters continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28761
+Exit east 28763
+End
+
+
+#28763
+Name The Servants' Quarters~
+Desc `D You are standing in the housing quarters for the servants of the castle. Along one wall are a line of beds, and you notice a guard to the north. To the north and west, the servants' quarters continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28764
+Exit west 28762
+End
+
+
+#28764
+Name The Servants' Quarters~
+Desc `D You are standing in the housing quarters for the servants of the castle. Along one wall are a line of beds, and you notice a guard next to a door near you. To the north and south, the servants' quarters continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28765
+Exit south 28763
+End
+
+
+#28765
+Name The Servants' Quarters~
+Desc `D You are standing in the housing quarters for the servants of the castle. Along one wall are a line of beds, and you notice a guard to the south. To the west and south, the servants' quarters continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 28764
+Exit west 28766
+End
+
+
+#28766
+Name The Servants' Quarters~
+Desc `D You are standing in the housing quarters for the servants of the castle. Along one wall are a line of beds, and you notice a guard to the south. To the north and south, the servants' quarters continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28765
+Exit south 28761
+End
+
+
+#28767
+Name A side hallway~
+Desc `D You are standing in a side hallway. To the west, sounds of laughter and metal striking metal can be heard. To the east lies the main hallway.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28758
+EFlags door closed~
+Exit west 28768
+End
+
+
+#28768
+Name A side hallway~
+Desc `D You are standing in a side hallway. To the south, the sounds of laughter grow louder, and to the north, sounds of metal striking metal grow louder. To the east the hallway continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28771
+Exit east 28767
+Exit south 28769
+End
+
+
+#28769
+Name Outside the tavern~
+Desc `D You stand outside the castle tavern. To the west, you see a door, and the sounds of laughter grow louder as you near it. To the north lies the hallway.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28768
+Exit west 28770
+End
+
+
+#28770
+Name The Castle Tavern~
+Desc `D You are standing in the tavern of the castle. All around you, scents of various liquors hang in the air, making the air thick and hard to breathe. Busy barmaids weave their way through the crowd, delivering drinks as they go.
+~
+RoomFlags indoors safe~
+Sector inside~
+Exit east 28769
+End
+
+
+#28771
+Name Before the Armoury~
+Desc `D You stand before the Armoury of the castle. Tot he west, a door can be seen, and the sounds of metal striking metal grow louder as you approach it. To the south lies the hallway.
+~
+Sector inside~
+Exit south 28768
+Exit west 28772
+End
+
+
+#28772
+Name The Castle Armoury~
+Desc `D You are standing in the Armoury. All around you, armor and weapons hang on the walls, for display. A human wearing leather armor can be seen behind the counter, waiting.
+~
+RoomFlags safe~
+Sector inside~
+Exit east 28771
+End
+
+
+#28773
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners of the three Orders of Knights. To the north and south, the hallway continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28774
+Exit south 28758
+End
+
+
+#28774
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners of the three Orders of Knights. To the north and south, the hallway continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28775
+Exit south 28773
+End
+
+
+#28775
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners of the three Orders of Knights. To the north and south, the hallway continues. To the east, another hallway branches off.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28783
+Exit east 28776
+EFlags door closed~
+Exit south 28774
+End
+
+
+#28776
+Name A side hallway~
+Desc `D You are standing in a side hallway.  Although it branches off from the
+main, it is still lavishly decorated.  Swords and armor of various people
+line the walls, a well as the banner of the three Orders of Knights.  The
+The hallway leads back west, while to the east, there is a faint smell of food, and an odd sound can be heard.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28777
+Exit west 28775
+EFlags door closed~
+End
+
+
+#28777
+Name A side hallway~
+Desc `DYou are standing in a side hallway.  Although it branches off from the
+main, it is still lavishly decorated.  Swords and armor of various people
+line the walls, a well as the banner of the three Orders of Knights.  The
+hallway leads back east, while north there is a distinct smell of food, and
+to the south, there are sounds of metal striking metal.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28778
+Exit west 28776
+End
+
+
+#28778
+Name A side hallway~
+Desc `D You are standing in a side hallway. To the west, the side hallway continues. To the north, smells of foods hang in the air. To the south, sounds of battles can be heard.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28781
+Exit south 28779
+Exit west 28777
+End
+
+
+#28779
+Name Before the Practice Yard~
+Desc `D You are standing in a hallway before the practice yard. North of you lies the hallway which leads to here, and east you lies a door which seperates you and the practice yard.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28778
+Exit east 28780
+End
+
+
+#28780
+Name The Practice Yard~
+Desc `D You are standing in a practice yard. All around you, dummies lie on the ground, some pierced by blades, others blackened by magic. In the center of the yard stands a man.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 28779
+End
+
+
+#28781
+Name A side hallway~
+Desc `D You are standing in a side hallway leading to the castle bakery. To the east, a door can be seen, and the smells of foods grow stronger as you approach. To the south, the hallway continues.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28782
+Exit south 28778
+End
+
+
+#28782
+Name The Castle Food Shop~
+Desc `D You are standing in the castle food shop. Along the northern wall is a long counter. Placed upon it are several different types of foods, for display. Behind the counter stands a man.
+~
+RoomFlags indoors safe law~
+Sector inside~
+Exit west 28781
+End
+
+
+#28783
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway leading. Swords of various people line the walls, as well as banners of the three Orders of Knights. The hallway continues north and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28784
+Exit south 28775
+End
+
+
+#28784
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners from the three Orders of Knights. The hallwall continues north and south, and to the west, a second hallway branches off.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28788
+Exit south 28783
+Exit west 28785
+End
+
+
+#28785
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people 
+line the walls, as well as banners from the three Orders of Knights. The 
+hallwall continues westward. To the east lies the main hallway. `x 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28784
+Exit west 28786
+End
+
+
+#28786
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as banners from the three Orders of Knights. To the west lies a wall. To the east lies the hallway in which you came.
+`x
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28785
+Exit west 28787
+EFlags door closed locked pickproof nopass~
+EKeyvnum 28724
+End
+
+
+#28787
+Name A Secret Room~
+Desc `D You are standing in the middle of an arcane study.  Cages line one
+wall, and there are creatures in several of the cages.  Above the screeching
+of the creatures, there is a distinct smell of sulfur and decay.  Along the
+far wall are several bookshelves, holding countless spellbooks.  To the east
+lies a wall, disguising the hallway from which you just entered.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28786
+EFlags door closed locked pickproof nopass~
+EKeyvnum 28724
+End
+
+
+#28788
+Name A hallway~
+Desc `D You are standing in a lavishly decorated hallway. Swords of various people line the walls, as well as the banners of the three Orders of the Knights. To the south lies the hallway, and to the north lies a large room.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28789
+Exit south 28784
+End
+
+
+#28789
+Name Dayare's Meeting Chamber~
+Desc `D You are standing in the throne room of Zhaman Castle.  In the center
+of the room sits a large throne made of bone.  Weapons and armor of all
+kinds line the walls.  To the south lies the hallway from which you just
+came.  `DThere is a small picture of a maze on the far wall.  
+`x
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28790
+EFlags door closed locked pickproof nopass~
+EKeyvnum 28725
+Exit south 28788
+End
+
+
+#28790
+Name A Secret Passageway~
+Desc `D You are standing in a passageway north of the throne room. South of you lies the throne room, while the passage way continues to the east and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28795
+Exit south 28789
+EFlags door closed locked pickproof nopass~
+EKeyvnum 28725
+Exit west 28791
+End
+
+
+#28791
+Name A secret passageway~
+Desc `D You are standing in a secret passageway. To the northwest, there is a distinct smell of sulfur and decaying creatures. To the north and west are continuations of the passageway.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28794
+Exit east 28790
+Exit west 28792
+End
+
+
+#28792
+Name A secret passageway~
+Desc `D You are standing in a secret passageway. To the north, there is a distinct smell of sulfur and decaying creatures. To the north is a continuation of the passageway.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28793
+Exit east 28791
+End
+
+
+#28793
+Name A secret passageway~
+Desc `DYou are standing in a secret passageway.  There is a distinct smell of
+sulfur and decaying creatures hanging in the air.  The walls are scorched,
+and a large circle is carved into the floor.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28794
+Exit south 28792
+End
+
+
+#28794
+Name A secret passageway~
+Desc `D You are standing in a secret passageway. To the west, there is a distinct smell of sulfur and decaying creatures. To the west is a continuation of the passageway.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 28791
+Exit west 28793
+End
+
+
+#28795
+Name A secret passageway~
+Desc `D You are standing in a secret passageway. To the northeast, there is a distinct smell of herbs. The passageway continues to the east and north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28798
+Exit east 28796
+Exit west 28790
+End
+
+
+#28796
+Name A secret passageway~
+Desc `D You are standing in a secret passageway. To the north, there is a distinct smell of herbs. The passageways continues to the west and north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28797
+Exit west 28795
+End
+
+
+#28797
+Name A secret passageway~
+Desc `D You are standing in a secret passageway.  There is a distinct smell of
+herbs, as though someone had just been mixing potions.  There is a small
+circle carved into the floor, and there are small holes beside it.  The
+passageway continues to the south and west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 28796
+Exit west 28798
+End
+
+
+#28798
+Name A secret passageway~
+Desc `D You are standing in a secret passageway. To the east, there is a distinct smell of herbs. The passageway continues to the east and south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 28797
+Exit south 28795
+End
+
+
+#28799
+Name A hidden path~
+Desc You are standing in a hidden path in the forest.  All around you lies
+nothing but the burnt and blackened trees of the `DShadow Grove`x.  The path
+continues north, to a large fortress.  No sounds can be heard, except your
+own breathing.  You may continue north, or search for the southern exit.  
+~
+Sector trail~
+Exit north 28755
+Exit south 28748
+EKeywords tree~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 28702 spec_cast_mage
+M 28703 spec_cast_cleric
+M 28704 spec_cast_mage
+M 28706 spec_cast_mage
+M 28708 spec_thief
+M 28709 spec_poison
+M 28713 spec_cast_druid
+M 28714 spec_breath_gas
+M 28721 spec_thief
+M 28722 spec_cast_mage
+M 28723 spec_cast_cleric
+M 28724 spec_breath_any
+M 28726 spec_cast_druid
+M 28727 spec_poison
+M 28729 spec_cast_cleric
+M 28730 spec_cast_cleric
+M 28731 spec_cast_mage
+M 28734 spec_poison
+M 28735 spec_poison
+M 28736 spec_poison
+M 28738 spec_thief
+S
+
+
+
+#RESETS2
+M 0 28734 8 28700 1
+M 0 28707 1 28701 1
+M 0 28734 8 28702 1
+M 0 28733 7 28702 1
+M 0 28737 7 28703 1
+M 0 28735 7 28703 1
+M 0 28700 6 28703 1
+M 0 28701 9 28704 2
+E 0 28719 -1 wielded~
+M 0 28733 7 28706 1
+M 0 28702 6 28706 1
+E 0 28721 0 wielded~
+M 0 28734 8 28707 1
+M 0 28701 9 28708 1
+E 0 28719 0 wielded~
+M 0 28733 7 28710 1
+M 0 28734 8 28711 1
+M 0 28700 6 28711 1
+M 0 28736 7 28712 1
+M 0 28734 8 28713 1
+M 0 28732 7 28714 1
+M 0 28737 7 28715 1
+M 0 28733 7 28715 1
+M 0 28733 7 28716 1
+M 0 28732 7 28717 1
+M 0 28735 7 28718 1
+M 0 28702 6 28718 1
+E 0 28721 0 wielded~
+M 0 28735 7 28719 1
+M 0 28736 7 28720 1
+M 0 28732 7 28720 1
+M 0 28701 9 28720 1
+E 0 28719 0 wielded~
+M 0 28734 8 28721 1
+M 0 28737 7 28722 1
+M 0 28736 7 28722 1
+M 0 28734 8 28723 1
+M 0 28735 7 28724 1
+M 0 28702 6 28724 1
+E 0 28721 0 wielded~
+M 0 28733 7 28725 1
+M 0 28732 7 28727 1
+E 0 28702 -1 rfinger~
+M 0 28703 5 28727 1
+E 0 28720 0 wielded~
+M 0 28732 7 28728 1
+E 0 28703 -1 hold~
+M 0 28703 5 28728 1
+E 0 28720 0 wielded~
+M 0 28732 7 28729 1
+E 0 28705 -1 wielded~
+M 0 28703 5 28729 1
+E 0 28720 0 wielded~
+M 0 28737 7 28730 1
+M 0 28734 8 28731 1
+M 0 28702 6 28731 1
+E 0 28721 0 wielded~
+M 0 28701 9 28732 1
+E 0 28719 0 wielded~
+M 0 28735 7 28733 1
+O 0 28704 0 28733
+M 0 28703 5 28733 1
+E 0 28720 -1 wielded~
+M 0 28737 7 28734 1
+M 0 28732 7 28734 1
+M 0 28701 9 28734 1
+E 0 28719 0 wielded~
+M 0 28736 7 28735 1
+M 0 28702 6 28735 1
+E 0 28721 0 wielded~
+M 0 28735 7 28736 1
+M 0 28733 7 28736 1
+M 0 28705 1 28737 1
+E 0 5093 -1 wielded~
+E 0 28711 -1 second~
+E 0 28712 0 about~
+M 0 28706 1 28738 1
+E 0 28713 0 about~
+E 0 28714 0 wielded~
+M 0 28737 7 28739 1
+M 0 28731 7 28739 1
+E 0 28706 -1 wielded~
+M 0 28701 9 28739 1
+E 0 28719 -1 wielded~
+M 0 28701 9 28740 2
+E 0 28719 -1 wielded~
+M 0 28731 7 28741 1
+E 0 28706 -1 wielded~
+M 0 28700 6 28742 1
+M 0 28731 7 28745 1
+E 0 28706 0 wielded~
+M 0 28736 7 28746 1
+M 0 28700 6 28746 1
+M 0 28731 7 28747 1
+E 0 28706 -1 wielded~
+M 0 28703 5 28747 1
+E 0 28720 0 wielded~
+M 0 28702 6 28748 1
+E 0 28721 0 wielded~
+M 0 28736 7 28749 1
+M 0 28700 6 28749 1
+M 0 28731 7 28750 1
+E 0 28706 -1 wielded~
+M 0 28737 7 28751 1
+M 0 28700 6 28751 1
+M 0 28731 7 28752 1
+E 0 28706 -1 wielded~
+M 0 28736 7 28753 1
+M 0 28731 7 28754 1
+E 0 28706 -1 wielded~
+M 0 28704 1 28754 1
+E 0 28715 0 about~
+E 0 28716 0 wielded~
+M 0 28729 6 28756 1
+M 0 28728 6 28756 1
+M 0 28716 3 28756 1
+M 0 28730 6 28760 1
+M 0 28715 2 28761 1
+M 0 28716 3 28761 1
+M 0 28729 6 28762 1
+M 0 28729 6 28764 1
+M 0 28716 3 28764 1
+M 0 28730 6 28766 1
+M 0 28730 6 28767 1
+M 0 28729 6 28769 1
+M 0 28719 1 28770 1
+G 0 28732 0
+G 0 28731 0
+M 0 28720 1 28772 1
+G 0 28733 0
+G 0 28734 0
+G 0 28735 0
+G 0 28736 0
+M 0 28730 6 28773 1
+M 0 28728 6 28777 1
+M 0 28730 6 28779 1
+M 0 28718 1 28780 1
+M 0 28717 1 28782 1
+G 0 28728 0
+G 0 28729 0
+G 0 28730 0
+G 0 28727 0
+M 0 28728 6 28783 1
+M 0 28730 6 28786 1
+M 0 28709 1 28786 1
+E 0 28746 0 wielded~
+G 0 28724 0
+M 0 28714 1 28787 1
+E 0 28747 0 wielded~
+G 0 28724 0
+O 0 28726 0 28789
+M 0 28715 2 28789 1
+M 0 28713 1 28789 1
+E 0 28740 0 head~
+E 0 28741 0 wielded~
+G 0 28725 0
+O 0 28742 0 28793
+P 0 28743 2 28742 1
+M 0 28722 1 28793 1
+O 0 28742 0 28797
+P 0 28743 2 28742 1
+M 0 28723 1 28797 1
+S
+
+
+
+#SHOPS
+#28717
+buy_type food~
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#28719
+buy_type drinkcontainer~
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#28720
+buy_type weapon~
+buy_type armor~
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#28728
+disabled false
+END
+
+#28727
+code say As you wish, My Lord.
+mob oload 28731
+mob oload 28731
+mob oload 20
+mob oload 20
+give ale $n
+give ale $n
+give mushroom $n
+give mushroom $n
+say If you need anything else, My Lord, I will be here.
+~
+disabled false
+END
+
+#28726
+code if isgood $n
+say Only those of Evil are allowed in his presence.
+mob transfer $n 3001
+endif
+~
+disabled false
+END
+
+#28725
+code mob echo $I weaves a set of symbols in the air, hissing as $j does so.
+mob echo The runed circle suddenly starts glowing a deep red color, and Slith suddenly bursts forth!
+mob mload 28727
+mob echo Slith hisses once at Sakai, then turns to you and bares its fangs, hissing loudly.
+~
+disabled false
+END
+
+#28724
+code mob echo $I places $l hands on the Altar of Darkness, uttering a few words as $j does so.
+mob echo The runed circle suddenly glows a myriad of colors, and Cyinth bursts forth from the circle!
+mob mload 28726
+mob echo Cyinth bows before Sakai, then fades into the shadows.
+~
+disabled false
+END
+
+#28723
+code mob echo $I raises a dagger into the air.
+mob echo $I plunges the dagger deep into $l hand!
+mob echo As some of the blood drips onto the altar, Angelus suddenly bursts forth from the runed circle!
+mob mload 28725
+mob echo Angelus growls and sinks his fangs into Khazar's neck!
+mob echo After drinking his fill, Angelus withdraws his fangs and turns to you, growling.
+~
+disabled false
+END
+
+#28722
+code mob echo $I places $l hands on the altar, speaking a few words as $j does so.
+mob echo The runed circle on the ground glows a fiery red, and Kyazinth bursts forth!
+mob mload 28724
+mob echo Kyazinth growls loudly, then steps into the shadows, still watching you.
+~
+disabled false
+END
+
+#28721
+code mob echo $I shouts for help!
+if mobhere 28710
+else
+mob echo A guard runs in to aid $I!
+mob mload 28710
+endif
+if mobhere 28711
+else
+mob echo A guard runs in to aid $I!
+mob mload 28711
+endif
+if mobhere 28712
+else
+mob echo A guard runs in to aid $I!
+mob mload 28712
+endif
+~
+disabled false
+END
+
+#28720
+code if isneutral $n
+say Only those of Evil are allowed in his presence.
+mob transfer $n 3001
+endif
+~
+disabled false
+END
+
+#28719
+code say Welcome to Zhaman Castle. May your stay be pleasant. If you need anything, feel free to ask the servants.
+
+~
+disabled false
+END
+
+#28718
+code say Yes Sir?
+~
+disabled false
+END
+
+#28717
+code say no signs of intruders, Sir.
+say All is well in the castle.
+mob echo $I salutes $n.
+~
+disabled false
+END
+
+#28716
+code say As you wish, My Lord.
+close east
+lock east
+~
+disabled false
+END
+
+#28715
+code say As you wish, My Lord.
+unlock east
+open east
+~
+disabled false
+END
+
+#28714
+code say As you wish, My Lord.
+close west
+lock west
+~
+disabled false
+END
+
+#28713
+code say As you wish, My Lord.
+unlock west
+open west
+~
+disabled false
+END
+
+#28712
+code mob echo $I withdraws from the shadows.
+say As you wish, My Lord.
+mob oload 28731
+give ale $n
+say If you need anything else, My Lord, I shall be here.
+mob echo $I withdraws into the shadows.
+~
+disabled false
+END
+
+#28711
+code mob echo $I withdraws from the shadows.
+say As you wish, My Lord.
+mob oload 20
+give mushroom $n
+say If you need anything else, My Lord, I shall be here.
+mob echo $I withdraws into the shadows.
+~
+disabled false
+END
+
+#28710
+code say Yes, My Lord?
+~
+disabled false
+END
+
+#28709
+code say Welcome to Zhaman Castle, My Lord.
+mob echoat $n $I salutes you.
+~
+disabled false
+END
+
+#28708
+code if isevil $n
+say Tread lightly in his presence, Evil One.
+endif
+~
+disabled false
+END
+
+#28707
+code say You are in need of curing?
+say Very well.
+mob cast 'cure disease' $n
+mob cast 'cure blindness' $n
+mob cast 'cure poison' $n
+say There you go. Be careful, and may the gods treat you well.
+~
+disabled false
+END
+
+#28706
+code say You are in need of assistance?
+say Very well.
+mob cast giant $n
+mob cast haste $n
+mob cast sanc $n
+mob cast regen $n
+mob cast armor $n
+say There you are. Be careful, and may the gods treat you well.
+~
+disabled false
+END
+
+#28705
+code say It is YOUR life that you are staking, you have been warned!
+mob echoat $n The room fades from view.
+mob transfer $n 28738
+mob at 28738 mob echoat $n The room comes back into focus.
+mob at 28738 mob cast sanctuary $n
+say Be careful little one.
+~
+disabled false
+END
+
+#28704
+code nod
+if level $n >= 125
+ mob echoat $n The room fades out of veiw.
+ mob transfer $n 28738
+ mob at 28738 mob echoat $n The room comes back into focus.
+ break
+else
+say You are not yet strong enough!
+say If you really wish to go, I shall let you pass even though you are inexperianced, but there WILL be a price. If you wish to go, say SURE
+endif
+~
+disabled false
+END
+
+#28703
+code say Do you think you are strong enough to brave the Shadow Grove?
+~
+disabled false
+END
+
+#28702
+code nod
+mob echo $i chants a few quick words.
+mob echoat $n A sudden feeling of weightlessness hits you.
+mob gtransfer $n 28737
+mob at 28737 mob echoat $n You feel a bit sick as you appear in the forest.
+~
+disabled false
+END
+
+#28701
+code Say Do you wish to return to the Forest of Istai?  
+~
+disabled false
+END
+
+#28700
+code if level $n >= 25
+say Welcome to the Forest of Istai.
+else
+say Only the strong may enter this forest.
+say Begone, come back when you're tougher!
+mob transfer $n 28700
+endif
+~
+disabled false
+last_editor Majere~
+last_editdate 1033848866
+END
+
+#0
+
+
+#$

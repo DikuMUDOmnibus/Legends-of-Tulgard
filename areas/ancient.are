@@ -1,0 +1,1198 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Amulets & Misc Items~
+ShortName   ~
+Builders    None~
+VNUMs       60000 60099
+AFlags  noteleport noscry hidden nogateinto nosummoninto~
+LRange      0 0
+Security    9
+Colour      s~
+colourcode  `
+MapScale    0
+MapLevel    92
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:36:04 2005~
+End
+
+
+
+#MOBILES
+#60000
+Name demon~
+ShortD a demon enveloped in `#`Rflames`^~
+LongD A massive demon with `#`Ssmoking skin`^ enveloped in `Rflames`^ is here.~
+Desc This demon is huge and is covered with a smoking black skin.  His eyesockets 
+are filled with blazing fire, and what would be hair atop his head is 
+instead long whisps of flames.  He stands well over fifteen feet tall, and 
+must weigh as much as 5 trolls.  
+~
+Race unique~
+Align 3 -3
+Level 52
+Hitroll 0
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType claw
+AC -300 -300 -300 -252
+Wealth 1040
+Act    npc no_tame aggressive wimpy warrior~
+AffBy  detect_invis detect_hidden otterlungs protect_good pass_door haste dark_vision~
+AffBy2 shadowsight vicegrip~
+Off    bash disarm tail~
+Imm    summon charm fire poison negative disease drowning sleep scry~
+Vuln   holy silver iron~
+Form   magical biped cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear wings claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#60001
+Name Tulgard elite elite guard~
+ShortD an elite guard~
+LongD An elite guard stands at rigid attention here.~
+Desc This guard looks very powerful and well-trained.  He is wearing the
+standard armours of the town, but does have a special insignia on his chest
+identifying him.  
+~
+Race human~
+Align 3 3
+Level 125
+Hitroll 2
+HitDice 13d16+610
+ManaDice 5d6+150
+DamDice 13d17+80
+DamType punch
+AC -950 -950 -950 -836
+Wealth 200
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_hidden~
+Off    bash berserk disarm dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#60002
+Name tulgard soldier man~
+ShortD `#`RMelkor, `cCaptain `wof the `cTulgard `cArmy`^~
+LongD `#`RMelkor, `cCaptain `wof the `cTulgard `cArmy`^ is here.~
+Desc This soldier appears very powerful and well-trained. His equipment is 
+freshly polished, and he appears ready for battle. 
+~
+Race human~
+Align 3 3
+Level 100
+Hitroll 2
+HitDice 10d14+485
+ManaDice 4d5+110
+DamDice 10d13+55
+DamType slash
+AC -700 -700 -700 -560
+Wealth 200
+Act    npc no_tame warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste~
+AffBy2 vicegrip~
+Off    bash berserk disarm dodge kick~
+Imm    summon charm disease fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg ACT 60000 gotowar~
+MProg EVENT 60004 0~
+END
+
+#60003
+Name werewolf~
+ShortD `#`wa `Sw`we`Sr`we`Sw`wo`Sl`wf`^~
+LongD A large `#`Sw`we`Sr`we`Sw`wo`Sl`wf`^ is prowling about here.~
+Desc Covered with hair and standing over 6 foot tall, the werewolf is a 
+terrifying creature.  A powerful body with a large wolf-like head, with 
+sharp canine teeth protruding from its mouth.  
+~
+Race werewolf~
+Align -3 -3
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType claw
+AC -137 -137 -137 -112
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt nopurge update_always~
+AffBy  detect_hidden infrared dark_vision~
+AffBy2 passwotrace detect_vanish~
+Off    dodge fade tail~
+Imm    summon charm~
+Res    magic disease~
+Vuln   holy silver iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#60004
+Name vampire bat~
+ShortD a `#`rvampire`^ bat~
+LongD A `#`rvampire `sbat`^ grins evilly at you.~
+Desc Extraordinarily large with unusually piercing eyes, this bat looks
+hungry. In fact, it isn't the type to turn down a feast of blood at any time
+of the day or night.... 
+~
+Race bat~
+Align -2 -3
+Level 55
+Hitroll 220
+HitDice 6d9+300
+ManaDice 2d5+50
+DamDice 10d4+23
+DamType suction
+AC -250 -250 -250 -220
+Wealth 550
+Act    npc no_tame no_hunt warrior nopurge update_always~
+Act2   no_random_obj~
+AffBy  detect_invis detect_hidden infrared flying dark_vision~
+AffBy2 vamp_bite~
+Off    dodge fast parry rescue~
+Imm    summon charm~
+Vuln   light~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#60005
+Name huge black wolf~
+ShortD a huge black wolf~
+LongD A huge black wolf stalks about here.~
+Desc This black wolf is much larger than most wolves, standing well over three 
+feet at the shoulders.  Intense black eyes look out at the world, seeming 
+to regard everything as prey.
+~
+Race wolf~
+Align 0 -3
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType chomp
+AC 10 10 10 10
+Wealth 100
+Act    npc no_tame no_hunt nopurge update_always~
+Act2   no_random_obj~
+AffBy  detect_hidden dark_vision~
+AffBy2 vamp_bite~
+Off    bash dodge fast tail~
+Vuln   pierce~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#60006
+Name mist~
+ShortD a cloud of mist~
+LongD A cloud of mist is floating through the air.~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame no_hunt noalign nopurge update_always unseen~
+AffBy  detect_invis detect_hidden sneak hide flying pass_door dark_vision~
+AffBy2 vamp_bite passwotrace~
+Form   non_skinable mist intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#60007
+Name elf~
+ShortD a handsome male elf~
+LongD An attractive male elf is here.~
+Desc Before you is a very slender elf.
+~
+Race elf~
+Align 0 3
+Level 40
+Hitroll 37
+HitDice 5d6+230
+ManaDice 3d5+85
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -119
+Wealth 370
+Act    npc no_tame no_hunt noalign nopurge~
+AffBy  infrared sneak~
+Off    dirt_kick trip~
+Imm    summon charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#60008
+Name elf~
+ShortD an attractive female elf~
+LongD An attractive female elf is here.~
+Desc Before you is a very slender elf.
+~
+Race elf~
+Align 0 3
+Level 40
+Hitroll 37
+HitDice 5d6+230
+ManaDice 3d5+85
+DamDice 5d6+13
+DamType punch
+AC -133 -133 -133 -119
+Wealth 370
+Act    npc no_tame no_hunt noalign nopurge~
+AffBy  infrared sneak~
+Off    dirt_kick trip~
+Imm    summon charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#60009
+Name tulgard soldier man~
+ShortD a soldier of `#`cTulgard`^~
+LongD A soldier of `#`cTulgard`^ is here, ready for battle.~
+Desc This soldier appears very powerful and well-trained. His equipment is 
+freshly polished, and he appears ready for battle. 
+~
+Race human~
+Align 3 3
+Level 50
+Hitroll 2
+HitDice 6d10+320
+ManaDice 3d5+60
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -240
+Wealth 200
+Act    npc no_tame warrior~
+AffBy  detect_hidden~
+AffBy2 vicegrip~
+Off    bash berserk disarm dodge kick assist_vnum~
+Imm    summon charm disease fear~
+Form   edible sentient biped mammal~
+Part   head legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg ACT 60001 gotowar~
+MProg TICK 60004 100~
+MProg SPEECH 60004 dogdogdog~
+END
+
+#60010
+Name black ant~
+ShortD a black ant~
+LongD A black ant is here, to ruin the picnic.~
+Desc This tiny black ant looks fairly harmless, though it can bite.
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc noalign~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    dodge fast~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison non_skinable animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#60011
+Name angel seandac~
+ShortD a `#`WHoly `CAngel `Yof `WSeandac`^~
+LongD A `#`WHoly `CAngel `Yof `WSeandac`^ is looking for evil to destroy.~
+Desc This angel is 15' tall, and very muscular. Large white feathered wings 
+spring from their back, and white robes clothe them. 
+~
+Race angel~
+Align 2 3
+Level 75
+Hitroll 0
+HitDice 8d11+380
+ManaDice 3d5+75
+DamDice 8d9+38
+DamType divine
+AC -450 -450 -450 -360
+Wealth 1010
+Act    npc no_tame warrior~
+AffBy  detect_evil detect_invis detect_hidden sanctuary infrared protect_evil flying haste dark_vision~
+AffBy2 shadowsight vicegrip~
+Off    dodge fast kick parry crush assist_race~
+Imm    summon charm lightning disease light sleep scry hunger thirst fear~
+Res    magic illusion~
+Vuln   negative~
+Form   edible magical sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+MProg GRALL 60003 100~
+MProg EVENT 60004 0~
+END
+
+#60012
+Name ugly goblin raider~
+ShortD a goblin raider~
+LongD An ugly goblin is here, looking for spoils.~
+Desc ~
+Race goblin~
+Align -3 0
+Level 20
+Hitroll 260
+HitDice 3d5+82
+ManaDice 2d5+30
+DamDice 2d7+5
+DamType slash
+AC -40 -40 -40 -35
+Wealth 400
+Act    npc scavenger no_tame thief warrior~
+AffBy  dark_vision~
+Off    assist_race assist_vnum~
+Imm    summon charm poison~
+Res    negative disease~
+Vuln   magic fire mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg EVENT 60004 0~
+END
+
+#60060
+Name gate guardian~
+ShortD a large guard~
+LongD A large guard is here, protecting the gate.~
+Desc This guard looks very powerful and well-trained. He is wearing the insignia 
+of his master on his tunic. 
+~
+Race human~
+Align 3 3
+Level 95
+Hitroll 2
+HitDice 10d13+460
+ManaDice 4d5+100
+DamDice 10d12+50
+DamType slash
+AC -650 -650 -650 -546
+Wealth 0
+Act    npc dont_wander no_tame stay_area no_hunt warrior noalign nopurge noautosocial~
+Act2   nohunt no_tendency no_random_obj~
+AffBy  sanctuary~
+AffBy2 passwotrace vicegrip~
+Off    bash berserk disarm dodge kick dirt_kick assist_vnum~
+Imm    summon charm scry hunger thirst fear~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#60000
+Name gold~
+Short drop this and pick up for 1 gold~
+Desc A gold piece is here.~
+Level 35
+ItemType money~
+Cost 260
+Durability 5
+Asize 40
+Rsize 50
+Values 0 1 0 0 0
+Weight 40
+Material gold~
+Wear     take~
+End
+
+#60001
+Name tulgard breastplate steel~
+Short `#`cTulgardian `cBreastplate`^~
+Desc A steel breastplate with fancy engraving is lying here.~
+Level 50
+ItemType armor~
+Cost 240
+Durability 5
+Asize 20
+Rsize 50
+Values 12 12 13 10 0
+Weight 50
+Material steel~
+Extra    burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian bard knight~
+End
+
+#60002
+Name puddle~
+Short a small rain puddle~
+Desc A small rain puddle is here.~
+Level 0
+ItemType drinkcontainer~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 'untainted water' 0 0
+Weight 0
+Material water~
+Extra    nolocate norestring~
+End
+
+#60003
+Name snow~
+Short a blanket of snow~
+Desc A layer of `#`Wwhite snow`^ covers the ground.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material water~
+Extra    nolocate norestring~
+End
+
+#60004
+Name dagger judgement quest maeol~
+Short the `#`wDagger of `YJ`Su`Yd`Sg`Ye`Sm`Ye`Sn`Yt`^~
+Desc An extremly sharp dagger belonging to Maeol is here.~
+Level 30
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values dagger 11 8 pierce CEL
+Weight 5
+Material silver~
+Extra    glow inventory nopurge nonmetal nolocate nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take wield~
+Affect objectspell vicegrip 100 -1 none 0 0
+Affect objectspell 'know alignment' 100 -1 none 0 0
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 damroll 2 0
+ExtraDesc judgement dagger~
+This dagger is sharp beyond belief. It's blade shimmers with ever-changing 
+colors. There is a golden cross etched into one side of the handle. On the 
+other side, there is a black skull. 
+~
+End
+
+#60010
+Name transform_token~
+Short transform_token~
+Desc Transform_token~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#60011
+Name deck_transform_token~
+Short deck_transform_token~
+Desc Deck_transform_token~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#60025
+Name amulet anacor~
+Short `CA`cmulet `wof `CA`cnacor`x~
+Desc An amulet with the symbol of balance scales is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    nodrop noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+Affect modifier -1 1 -1 strength 3 0
+End
+
+#60026
+Name amulet venalena~
+Short `CA`cmulet `wof `CV`cenalena`x~
+Desc An amulet with the symbol of young woman nursing a child is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+Affect modifier -1 1 -1 strength 3 0
+End
+
+#60027
+Name amulet seandac~
+Short `WA`cmulet `wof `WS`ceandac`x~
+Desc An amulet with the symbol of a white shield is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 strength 3 0
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+End
+
+#60028
+Name amulet kreav~
+Short `YA`cmulet `wof `YK`creav`x~
+Desc An amulet with the symbol of a compass is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+Affect modifier -1 1 -1 strength 3 0
+End
+
+#60029
+Name amulet jivanor~
+Short `CA`cmulet `wof `CJ`civanor`x~
+Desc An amulet with the symbol of theater masks is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 strength 3 0
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+End
+
+#60030
+Name amulet dorenne~
+Short `GA`cmulet `wof `GD`corenne`x~
+Desc An amulet with the symbol of a tree is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 strength 3 0
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+End
+
+#60031
+Name amulet graal~
+Short `SA`cmulet `wof `SG`craal`x~
+Desc An amulet with the symbol of a black shield is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 strength 3 0
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+End
+
+#60032
+Name amulet harpan~
+Short `SA`cmulet `wof `SH`carpan`x~
+Desc An amulet with the symbol of a gutting hook is here.~
+Level 1
+ItemType armor~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 0
+Material etheral~
+Extra    noremove inventory nonmetal nolocate meltdrop nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nosell~
+Wear     take neck~
+Affect modifier -1 1 -1 hitroll 5 0
+Affect modifier -1 1 -1 damroll 5 0
+Affect modifier -1 1 -1 strength 3 0
+End
+
+#60050
+Name ixliam sawed-off shotgun~
+Short a `#`csawed-off `ydouble-barrel `cshotgun`^~
+Desc A sawed-off double-barrel shotgun is lying here.~
+Level 0
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 1000 1000 gunshot CEFLN
+Weight 0
+Material southern ass-whoopin!~
+Extra    nodrop rotdeath nodegrade burnproof norestring~
+Extra2   nodecay nosell~
+Wear     take wield~
+Affect objectspell vicegrip 120 -1 none 0 0
+End
+
+#60052
+Name statue krekenshtai~
+Short a statue of `#`GKrekenshtai`^~
+Desc A statue of `#`YKrekenshtai`^, `WAlliance`w of the `CD`Wivin`Ce `rF`Rl`Ya`Rm`re`^.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 Q 150 150
+Weight 0
+Material unknown~
+Extra    glow noremove nolocate burnproof norestring nogetall~
+Extra2   nodecay~
+End
+
+#60059
+Name headstone memorial~
+Short a memorial~
+Desc A large headstone is here.~
+Level 5
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material stone~
+Extra2   nodecay nosell~
+ExtraDesc memorial headstone~
+May the memories of those who died in service of Tulgard not go unnoticed. 
+May Seandac carry their souls to the great above, and may they find peace in 
+his arms. 
+~
+End
+
+#0
+
+
+
+#ROOMS
+#60000
+Name ~
+Desc ~
+RoomFlags indoors nowhere noscry light~
+Sector inside~
+Exit south 60001
+End
+
+
+#60001
+Name A Rundown Crack House Full of Ho's~
+Desc ~
+RoomFlags indoors nowhere noscry light noscan~
+Sector inside~
+Exit north 60000
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 60000 spec_event_breath
+M 60003 spec_werewolf
+M 60009 spec_tulgard_army
+M 60011 spec_event_breath
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#60060
+title Test Fealty Guard~
+author Ixliam~
+code Say I see you.
+mobseeall
+if fealty $n Ixliam
+ say You are sworn to Ixliam
+else say You don't have anything.
+endif
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1081095129
+END
+
+#60004
+title Extract Event Mob~
+author Ixliam~
+code mob purge self
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G60004`x,`Y60009`x,`B3517`x,`r0`x,`C0`x:
+             `YMobprog: invalid if_check (if) 'event', mob 60009 prog 60004
+`x             Trigger type 'SPEECH' phrase 'dogdogdog'
+             Call stack info:
+             MOBprog 60004 on mob 60009 (in room 3517), line 0
+`S#############
+
+~
+last_editor Ixliam~
+last_editdate 1080523629
+END
+
+#60003
+title Angel Kill~
+author Ixliam~
+code if isevil $n
+ emote screams and attacks!!
+ pkill $n
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G60003`x,`Y60011`x,`B16224`x,`r3`x,`C0`x:
+             `YMobprog: endif without if, mob 60011 prog 60003
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 60003 on mob 60011 (in room 16224), line 3
+`S#############
+
+~
+last_editor Zaroth~
+last_editdate 1108533845
+END
+
+#60002
+title Kill in town~
+author Ixliam~
+code if isevil $n
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif
+if race $n gnoll
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif
+if race $n orc
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif
+if race $n goblin
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif
+if race $n duergar
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif
+if race $n drow
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif
+if race $n troll
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif   
+if race $n cambion
+  sayto $n Die evil scum!!!
+  mob kill $n
+  break
+endif 
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1080349334
+END
+
+#60001
+title Soldiers March to Throytl~
+author Ixliam~
+code mob oload 60001
+wear breast
+mob oload 26943
+wear helm
+mob oload 23532
+wield sword
+emote comes to attention.
+mob queue 4 south
+mob queue 6 south
+mob queue 8 south
+mob queue 10 south
+mob queue 12 south
+mob queue 16 south
+mob queue 18 south
+mob queue 20 south
+mob queue 22 south
+mob queue 24 south
+mob queue 25 pmote guard salutes @.
+mob queue 26 open gate
+mob queue 28 south
+mob queue 32 east
+mob queue 34 east
+mob queue 36 east
+mob queue 38 east
+mob queue 40 east
+mob queue 42 east
+mob queue 44 east
+mob queue 46 east
+mob queue 48 east
+mob queue 50 east
+mob queue 52 east
+mob queue 54 east
+mob queue 56 east
+mob queue 58 east
+mob queue 60 east
+mob queue 62 east
+mob queue 64 east
+mob queue 66 south
+mob queue 73 south
+mob queue 76 south
+mob queue 78 mob wander
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1080348436
+END
+
+#60000
+title Leader Tulgard march to Throytl~
+author Ixliam~
+code mob oload 60001
+wear breast
+mob oload 26943
+wear helm
+mob oload 29653
+wield sword
+yell Throytl will burn!! To War We Go!!!
+mob queue 2 yell MARCH!
+mob queue 4 south
+mob queue 5 yell Stand up! Stand up for Tulgard, you warriors of the beard!
+mob queue 6 south
+mob queue 7 yell Lift high the Great Banner that half the world has feared!
+mob queue 8 south
+mob queue 9 yell From the deserts to the wastelands shall sound the Warrior's Cry.
+mob queue 10 south
+mob queue 11 yell Till every foe is vanquished, and Seandac reigns most high!
+mob queue 12 south
+mob queue 13 yell March forth with steel flashing beneath the naked Sun.
+mob queue 16 south
+mob queue 17 yell And never stand at rest again 'til all the World is won!
+mob queue 18 south
+mob queue 19 yell Let scarlet sword his symbol carve in every nation's sod
+mob queue 20 south
+mob queue 21 yell 'Til every man still breathing stands up for Tulgard!
+mob queue 22 south
+mob queue 24 south
+mob queue 25 yell Throytl will be left in ruins! Soldiers March!
+mob queue 26 open gate
+mob queue 28 south
+mob queue 32 east
+mob queue 33 yell Let ships with prows of Dragons the mighty oceans cleave.
+mob queue 34 east
+mob queue 35 yell And every land not worthy our crimson gifts receive.
+mob queue 36 east
+mob queue 37 yell Let Red Banners fill the sky where every man has trod.
+mob queue 38 east
+mob queue 39 yell And all the soil beneath them belong to Tulgard!
+mob queue 40 east
+mob queue 41 yell Stand up! Stand up for Tulgard, you Warriors of the Land!
+mob queue 42 east
+mob queue 43 yell With silver swords a-flashing to victory go forth!
+mob queue 44 east
+mob queue 45 yell From the deserts to the wastelands shall sound the Warrior's Cry
+mob queue 46 east
+mob queue 47 yell Till every foe is vanquished, and Seandac reigns most high!
+mob queue 48 east
+mob queue 50 east
+mob queue 52 east
+mob queue 54 east
+mob queue 56 east
+mob queue 57 yell For Peace! For Freeedom! For Tulgard! 
+mob queue 58 east
+mob queue 60 east
+mob queue 62 east
+mob queue 64 east
+mob queue 66 south
+mob queue 67 yell Prepare for battle men!!
+mob queue 71 yell Soldiers, level this city, and leave it in ruins!
+mob queue 73 south
+mob queue 76 south
+mob queue 77 west
+mob queue 78 emote attacks and kills the shopkeeper.
+mob queue 79 mob purge human
+mob queue 80 yell Time to die scum!
+mob queue 81 east
+mob queue 82 south
+mob queue 84 west
+mob queue 85 emote attacks and kills the shopkeeper.
+mob queue 86 mob purge human
+mob queue 88 east
+mob queue 90 south
+mob queue 92 south
+mob queue 93 yell Throytl will pay for their crimes!
+mob queue 94 west
+mob queue 95 south
+mob queue 96 emote attacks and kills the shopkeeper.
+mob queue 97 mob purge kobold
+mob queue 100 north
+mob queue 102north
+mob queue 104 emote attacks and kills the shopkeeper.
+mob queue 105 mob purge orc
+mob queue 108 south
+mob queue 109 west
+mob queue 110 north
+mob queue 112 mob purge dwarf
+mob queue 113 emote attacks and kills the shopkeeper.
+mob queue 115 south
+mob queue 116 south
+mob queue 117 yell Death comes to Throytl by our hands!
+mob queue 118 mob purge human
+mob queue 119 emote attacks and kills the shopkeeper.
+mob queue 120 north
+mob queue 121 west
+mob queue 122 north
+mob queue 124 mob purge human
+mob queue 125 emote attacks and kills the shopkeeper.
+mob queue 128 south
+mob queue 129 west
+mob queue 130 south
+mob queue 132 south
+mob queue 134 east
+mob queue 136 mob purge kobold
+mob queue 137 emote attacks and kills the shopkeeper.
+mob queue 140 west
+mob queue 142 south
+mob queue 144 south
+mob queue 146 east
+mob queue 150 north
+mob queue 151 yell Eat death from my blade!
+mob queue 152 mob purge gnoll
+mob queue 153 emote attacks and kills the shopkeeper.
+mob queue 156 south
+mob queue 158 south
+mob queue 160 mob purge orc
+mob queue 161 emote attacks and kills the shopkeeper.
+mob queue 162 north
+mob queue 163 east
+mob queue 165 south
+mob queue 167 mob purge duergar
+mob queue 168 emote attacks and kills the shopkeeper.
+mob queue 170 north
+mob queue 172 east
+mob queue 174 east
+mob queue 176 north
+mob queue 178 north
+mob queue 180 north
+mob queue 182 north
+mob queue 184 east
+mob queue 186 north
+mob queue 188 mob purge ogre
+mob queue 189 emote attacks and kills the shopkeeper.
+mob queue 190 south
+mob queue 191 south
+mob queue 193 mob purge gnoll
+mob queue 194 emote attacks and kills the shopkeeper.
+mob queue 196 north
+mob queue 198 east
+mob queue 200 north
+mob queue 202 mob purge woman
+mob queue 203 emote attacks and kills the shopkeeper.
+mob queue 205 south
+mob queue 206 yell Let the blood run through the streets men!
+mob queue 207 south
+mob queue 208 mob purge orc
+mob queue 209 emote attacks and kills the shopkeeper.
+mob queue 210 north
+mob queue 212 east
+mob queue 214 north
+mob queue 216 mob purge lizard
+mob queue 217 emote attacks and kills the shopkeeper.
+mob queue 220 south
+mob queue 222 south
+mob queue 224 mob purge troll
+mob queue 225 emote attacks and kills the shopkeeper.
+mob queue 228 north
+mob queue 229 yell Our mission is complete! Home, to TULGARD!!!
+mob queue 230 mob purge self
+ 
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1080348342
+END
+
+#0
+
+
+#$

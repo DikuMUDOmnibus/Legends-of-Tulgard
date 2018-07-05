@@ -1,0 +1,1280 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Mythewood~
+ShortName   Mythewood~
+Builders    None~
+Credits     Nakasha~
+VNUMs       2700 2799
+LComment    `#`R[ 60- 80]`^
+LRange      60 80
+Security    7
+Colour      g~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Nov 19 02:54:45 2005~
+End
+
+
+
+#MOBILES
+#2700
+Name unseen fall mob~
+ShortD unseen fall mob~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 2700 100~
+END
+
+#2701
+Name unseen pit mob~
+ShortD unseen pit mob~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXIT 2701 4~
+END
+
+#2702
+Name air elemental~
+ShortD an `#`Ba`ci`Wr `Ce`bl`Be`cm`We`Cn`bt`Ba`cl`^~
+LongD An air elemental flies languidly here.~
+Desc ~
+Race pixie~
+Align 0 0
+XPMod 120
+Level 85
+Hitroll 0
+HitDice 8d11+395
+ManaDice 9d12+575
+DamDice 9d9+38
+DamType scratch
+AC -490 -490 -490 -392
+Wealth 0
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  invisible sanctuary faerie_fire flying~
+Off    kick parry assist_vnum~
+Imm    charm energy mental silver~
+Res    summon negative disease~
+Vuln   lightning sound~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2703
+Name fire elemental~
+ShortD a `#`Rf`Yi`rr`Ye `Re`rl`Ye`Rm`re`Yn`Rt`ra`Yl`^~
+LongD A fire elemental coils here in the lava.~
+Desc ~
+Race dragon~
+Align 0 0
+XPMod 120
+Level 85
+Hitroll 0
+HitDice 8d11+400
+ManaDice 2d5+30
+DamDice 9d9+40
+DamType claw
+AC -490 -490 -490 -416
+Wealth 712
+Act    npc dont_wander no_tame stay_area thief warrior~
+AffBy  infrared haste dark_vision regeneration~
+Off    bash tail crush~
+Imm    summon charm bash fire sleep~
+Res    magic poison disease drowning~
+Vuln   cold illusion~
+Form   edible non_skinable sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#2704
+Name water elemental~
+ShortD a `#`Ww`Ba`bte`Br `We`Bl`bem`Be`Wn`Bt`ba`Wl`^~
+LongD A water elemental peeks out of the water here.~
+Desc ~
+Race water fowl~
+Align 0 0
+XPMod 120
+Level 85
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType bite
+AC -500 -500 -500 -425
+Wealth 678
+Act    npc dont_wander no_tame stay_area~
+AffBy  hide haste berserk~
+Off    disarm fade~
+Imm    charm disease drowning~
+Res    magic cold~
+Vuln   fire poison~
+Form   edible non_skinable sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2705
+Name earth elemental~
+ShortD an `#`ye`Ya`gr`yt`Yh `ye`Yl`ge`ym`Ye`yn`gt`Ya`yl`^~
+LongD An earth elemental is here, blending in with his surroundings.~
+Desc ~
+Race Golem~
+Align 0 0
+XPMod 120
+Level 85
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+480
+DamDice 9d9+41
+DamType crush
+AC -500 -500 -500 -450
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary infrared otterlungs dark_vision regeneration~
+Off    bash berserk kick crush~
+Imm    summon charm poison disease drowning sleep hunger thirst~
+Res    bash pierce~
+Vuln   slash acid~
+Form   edible magical non_skinable sentient construct biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2706
+Name wood nymph~
+ShortD a `#`gw`Go`yo`gd `Gn`gy`ym`Gp`gh`^~
+LongD A wood nymph sits on the rock here, looking over the spring.~
+Desc ~
+Race faerie~
+Align 0 0
+XPMod 110
+Level 80
+Hitroll 0
+HitDice 7d11+380
+ManaDice 7d11+380
+DamDice 8d9+38
+DamType radiance
+AC -450 -450 -450 -360
+Wealth 842
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic sanctuary flying~
+Off    dodge fast kick trip~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#2707
+Name gnome~
+ShortD a `#`gg`Gn`go`Gm`ge`^~
+LongD A gnome scrambles over the path here busy at his work.~
+Desc ~
+Race gnome~
+Align 0 0
+XPMod 110
+Level 66
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType beating
+AC -350 -350 -350 -297
+Wealth 821
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic infrared~
+Off    disarm dodge trip assist_vnum~
+Imm    charm poison~
+Res    magic cold~
+Vuln   fire silver~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2708
+Name pixie mischievious~
+ShortD a mischievous `#`Mp`yi`sx`yi`Me`^~
+LongD A mischievous pixie flits here, looking for trouble.~
+Desc ~
+Race pixie~
+Align 0 0
+XPMod 110
+Level 60
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -301
+Wealth 765
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying haste~
+Off    dodge fast kick trip~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+MProg GRALL 2702 60~
+END
+
+#2709
+Name kraken dangerous sea creature~
+ShortD a `#`gk`sr`ga`Gk`se`Gn`^~
+LongD A dangerous sea creature lurks here deep beneath the waters surface.~
+Desc ~
+Race fish~
+Align 0 0
+XPMod 115
+Level 84
+Hitroll 0
+HitDice 8d12+415
+ManaDice 8d12+520
+DamDice 9d10+43
+DamType none
+AC -540 -540 -540 -459
+Wealth 0
+Act    npc dont_wander scavenger no_tame aggressive stay_area amphibian thief warrior~
+AffBy  hide~
+Off    area_attack bash disarm dodge~
+Imm    summon charm lightning~
+Res    cold drowning~
+Vuln   energy mental~
+Form   poison animal fish cold_blood~
+Part   head heart brains guts fingers eye long_tongue tentacles tail claws scales tusks~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2710
+Name salamander~
+ShortD a `#`Rsa`rla`Rma`rnd`Rer`^~
+LongD A salamander slithers along the lava pools here.~
+Desc ~
+Race lizardman~
+Align 0 0
+XPMod 110
+Level 68
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -287
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    dodge tail~
+Imm    fire~
+Res    poison disease drowning~
+Vuln   cold illusion~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail claws scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2711
+Name gryphon~
+ShortD a mighty `#`yg`Yr`sy`yp`Yh`so`yn`^~
+LongD A mighty gryphon roams here.~
+Desc ~
+Race avian~
+Align 0 0
+XPMod 110
+Level 69
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -294
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_hidden sanctuary dark_vision~
+Off    bash berserk dodge trip assist_vnum~
+Imm    summon charm~
+Res    mental illusion~
+Vuln   poison disease~
+Form   edible sentient biped bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#2712
+Name water nymph~
+ShortD a `#`Cw`Ba`bt`ce`br`B n`Cy`cm`bp`Bh`^~
+LongD A water nymph hovers in the water here, watching.~
+Desc ~
+Race faerie~
+Align 0 0
+XPMod 110
+Level 68
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -308
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_magic flying~
+Off    fast kick parry~
+Res    magic pierce mental~
+Vuln   cold poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2700
+Name boulder large flat~
+Short a large, flat boulder~
+Desc A large, flat boulder is here near the spring.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 BEHKR 100 0
+Weight 0
+Material rock~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#2701
+Name refreshing spring~
+Short a refreshing spring~
+Desc A spring gurgles here as it passes through the wood from an unknown resource.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#0
+
+
+
+#ROOMS
+#2700
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit north 2702
+Exit south 54218
+Exit northeast 2703
+Exit northwest 2701
+End
+
+
+#2701
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit east 2702
+Exit northeast 2705
+Exit southeast 2700
+Exit northwest 2704
+End
+
+
+#2702
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit north 2705
+Exit east 2703
+Exit south 2700
+Exit west 2701
+End
+
+
+#2703
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit west 2702
+Exit northeast 2706
+Exit southwest 2700
+Exit northwest 2705
+End
+
+
+#2704
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit east 2705
+Exit southeast 2701
+Exit northwest 2710
+End
+
+
+#2705
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit north 2713
+EFlags door closed~
+EKeywords bushes~
+Exit east 2706
+Exit south 2702
+Exit west 2704
+Exit southeast 2703
+Exit southwest 2701
+End
+
+
+#2706
+Name a quiet forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  A thin mist flows through the forest's floor, as white as snow yet 
+translucent, its ghostly appearance seems some what soothing if not calming. 
+ 
+~
+Sector forest~
+Exit west 2705
+Exit northeast 2707
+Exit southwest 2703
+End
+
+
+#2707
+Name a forested hill~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Tiny flowers dot the grass as 
+it begins to slope, the path rising and becoming harder to travel.  A thin 
+mist flows through the forest's floor, obscuring the path, making each step 
+upward harder and harder.  
+~
+Sector forest~
+Exit north 2708
+Exit southwest 2706
+End
+
+
+#2708
+Name a forested hill~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Tiny flowers dot the grass as 
+it begins to slope, the path rising and becoming harder to travel.  A thin 
+mist flows through the forest's floor, obscuring the path, making each step 
+upward harder and harder.  
+~
+Sector forest~
+Exit south 2707
+Exit northwest 2709
+End
+
+
+#2709
+Name a forested hill~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Tiny flowers dot the grass as 
+it begins to slope, the path rising and becoming harder to travel.  A thin 
+mist flows through the forest's floor, obscuring the path, making each step 
+upward harder and harder.  
+~
+Sector forest~
+Exit up 2716
+Exit northeast 12170
+EFlags door closed locked obvious~
+EKeyvnum 12170
+EKeywords tunnel~
+Exit southeast 2708
+End
+
+
+#2710
+Name a forested hill~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Tiny flowers dot the grass as 
+it begins to slope, the path rising and becoming harder to travel.  A thin 
+mist flows through the forest's floor, obscuring the path, making each step 
+upward harder and harder.  
+~
+Sector forest~
+Exit north 2711
+Exit southeast 2704
+End
+
+
+#2711
+Name a forested hill~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Tiny flowers dot the grass as 
+it begins to slope, the path rising and becoming harder to travel.  A thin 
+mist flows through the forest's floor, obscuring the path, making each step 
+upward harder and harder.  
+~
+Sector forest~
+Exit south 2710
+Exit northeast 2712
+End
+
+
+#2712
+Name a forested hill~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Tiny flowers dot the grass as 
+it begins to slope, the path rising and becoming harder to travel.  A thin 
+mist flows through the forest's floor, obscuring the path, making each step 
+upward harder and harder.  
+~
+Sector forest~
+Exit up 2714
+Exit southwest 2711
+End
+
+
+#2713
+Name A clearing~
+Desc Flowers of all types and colours flourish on this clearings ground.  The 
+tree's surrounding the clearing seem majestic.  Healthy and strong they loom 
+over the small opening, seeming a barrier to those who may wish to enter.  A 
+large stone sits in the middle of the clearing, ivy and moss covering it's 
+surface and spreading from it's base to cover a large section of the ground. 
+ 
+~
+Sector field~
+Exit south 2705
+EFlags door closed~
+Exit northwest 5300
+EFlags door closed~
+EKeywords foilage~
+End
+
+
+#2714
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit down 2712
+Exit northeast 2715
+End
+
+
+#2715
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+RoomFlags noscan~
+Sector mountain~
+Exit up 2717
+Exit southeast 2716
+Exit southwest 2714
+Exit northwest 2718
+End
+
+
+#2716
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit down 2709
+Exit northwest 2715
+End
+
+
+#2717
+Name a sharp ledge~
+Desc . Jutting up from the valley below, a rough path of rock and tumbling stones 
+lead to this narrow ledge.  Upon it, it's possible to look out over the full 
+valley.  Prickly bushes and rough vegetation grow out in spurts around the 
+rough edges of the ledge.  
+~
+RoomFlags indoors~
+Sector mountain~
+Exit up 2730
+Exit down 2715
+Exit northeast 2725
+EFlags door closed~
+EKeywords bush~
+End
+
+
+#2718
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit northeast 2719
+Exit southeast 2715
+End
+
+
+#2719
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit northeast 2720
+Exit southwest 2718
+Exit northwest 2724
+End
+
+
+#2720
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit southwest 2719
+Exit northwest 2721
+End
+
+
+#2721
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit east 2723
+EFlags door closed~
+EKeywords boulder~
+Exit northeast 2722
+Exit southeast 2720
+Exit southwest 2724
+End
+
+
+#2722
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continuously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit southwest 2721
+End
+
+
+#2723
+Name a dark cave~
+Desc . This cave is dark and dank, with any light cast being chased away by 
+shadows.  Rough edges of the mountain it's built into jut out dangerously.  
+A slight moistness can be felt along the walls and an occsional drop of 
+water drips down.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit west 2721
+EFlags door closed~
+End
+
+
+#2724
+Name a cavernous valley~
+Desc Jagged rock peeks out from the ledges rising above.  This valley is deep and 
+cavernous, leading up to a small slit of sky.  Rock and brush cross this 
+path, making the trek treacherous.  A harsh wind seems to blow continously 
+down from the narrow mouth of the valley.  
+~
+Sector mountain~
+Exit northeast 2721
+Exit southeast 2719
+End
+
+
+#2725
+Name a moist cave~
+Desc The sound of rushing water can be heard as it echoes off the jagged walls of 
+this cave.  The air seems moist and humid and small puddles along the ground 
+form here and there.  The walls are darkened with moist dampness, rifflets 
+of water trickling down them from the ceiling.  
+~
+RoomFlags dark indoors~
+Sector mountain~
+Exit southeast 2726
+Exit southwest 2717
+EFlags door closed~
+End
+
+
+#2726
+Name a moist cave~
+Desc The sound of rushing water can be heard as it echoes off the jagged walls of 
+this cave.  The air seems moist and humid and small puddles along the ground 
+form here and there.  The walls are darkened with moist dampness, rifflets 
+of water trickling down them from the ceiling.  
+~
+RoomFlags dark indoors~
+Sector mountain~
+Exit east 2727
+Exit northwest 2725
+End
+
+
+#2727
+Name before the waterfall~
+Desc . A wall of water tumbles before you.  Lots of water, as it completely blocks 
+the eastern edge of the cave.  The cave, seeming to be formed under a 
+waterfall appears to end here, the only remaining direction being the one 
+you just came from.  The going is difficult, the ground and walls so damp 
+that it's hard not to slip.  The falling water is almost deafening as it 
+crashes down, leading to parts unknown.  
+~
+RoomFlags dark indoors~
+Sector mountain~
+Exit west 2726
+Exit down 2728
+End
+
+
+#2728
+Name a treacherous path~
+Desc The path along the waterfalls edge is treacherous.  Slippery rocks covered 
+with water, loose stones that roll and tumble with each step downward...  
+One wrong move and you tumble down.  A few vines grow along the rock, making 
+for excellent handholds.  
+~
+RoomFlags indoors~
+Sector swim~
+Exit up 2727
+Exit down 2729
+End
+
+
+#2729
+Name a treacherous path~
+Desc The path along the waterfalls edge is treacherous.  Slippery rocks covered 
+with water, loose stones that roll and tumble with each step downward...  
+One wrong move and you tumble down.  A few vines grow along the rock, making 
+for excellent handholds.  
+~
+RoomFlags indoors~
+Sector swim~
+Exit east 2734
+Exit west 2731
+Exit up 2728
+End
+
+
+#2730
+Name a sharp ledge~
+Desc Jutting up from the valley below, a rough path of rock and tumbling stones 
+lead to this narrow ledge.  Upon it, it's possible to look out over the full 
+valley.  Prickly bushes and rough vegetation grow out in spurts around the 
+rough edges of the ledge.  
+~
+RoomFlags indoors noscan~
+Sector inside~
+Exit up 2739
+Exit down 2717
+End
+
+
+#2731
+Name a molten cavern~
+Desc Molten rock forms the walls of this cavern.  Occasionaly patches seem to be 
+hotter then the others as you make your way through the dips and turns.  The 
+sound of rushing water can still be heard to the east, but it can't quite be 
+seen from this point.  Towards the west, the cavern seems to open up more.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 2729
+Exit west 2733
+End
+
+
+#2732
+Name a pit of water~
+Desc Water fills this pit as it rushes from above, pounding away at the jagged 
+rocks.  Reaching the top of the ledge seems a challenge, as a proper 
+handhold can't be found.  The gurgling water pulls at you, tugging you 
+deeper and deeper.  
+~
+RoomFlags dark indoors nospeak~
+Sector underwater~
+Exit up 2729
+End
+
+
+#2733
+Name a molten cavern~
+Desc The ceiling of this cavern opens up, rising high.  The ground, though rough 
+and uneven, looks like it has been poured over the floor, flowing smoothly.  
+Water drips down the walls, making the dark rock shine a dull glare when 
+light hits it.  Heat seems to fill the room, making it almost suffocating, 
+regardless of it's size.  Steam rises here and there from the ground, making 
+the ground hard to determine.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 2731
+Exit west 2737
+End
+
+
+#2734
+Name bottom of the falls~
+Desc The water plummels down from the falls, pounding on jagged rocks that lie 
+beneath.  Water sloshes wildly, the current struggling east.  The rapids 
+pull and tug, making this journey difficult.  
+~
+RoomFlags indoors~
+Sector noswim~
+Exit east 2735
+Exit west 2729
+End
+
+
+#2735
+Name along the stream~
+Desc The water grows calmer here as it settles from the fall.  Almost tranquil in 
+it's smooth flow, it appears glass-like.  As the stream continues on east, 
+it's noticable that the water becomes more murky, and harder to see.  Did 
+something just move beneath the shadowed water?  
+~
+RoomFlags dark indoors noautoexits~
+Sector swim~
+Exit west 2734
+Exit northeast 2736
+End
+
+
+#2736
+Name beneath the water~
+Desc . Dark and murky, the water pulls and tugs around you, turning you until you 
+lose your barings.  Did something just brush against you?  
+~
+RoomFlags dark indoors nospeak noscan noautomap noautoexits~
+Sector underwater~
+Exit southwest 2735
+End
+
+
+#2737
+Name a molten cavern~
+Desc The temperature seems to become hotter and hotter with each step onward.  
+The stone ceiling seems to narrow here, slopping farther to the west.  
+Jagged points jut up from the floor and dangle down from the ceiling, making 
+this path almost maze-like as you are forced to weave your way through.  Hot 
+lava bubbles from holes along the ground.  An odd sound can be heard echoing 
+from the northwest.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 2733
+Exit northwest 2738
+End
+
+
+#2738
+Name a molten cavern~
+Desc Steam and smoke fills this small cavern, stinging your eyes and throat.  The 
+ground seems hotter here then before as lava seeps from a few openings.  A 
+slight rustling can be heard farther in the back of the cave.  
+~
+RoomFlags indoors noscan~
+Sector cave~
+Exit southeast 2737
+End
+
+
+#2739
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit north 2741
+Exit east 2742
+Exit south 2743
+Exit west 2740
+Exit up 2748
+Exit down 2730
+End
+
+
+#2740
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit east 2739
+Exit west 2747
+Exit northeast 2741
+Exit southeast 2743
+End
+
+
+#2741
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit north 2744
+Exit south 2739
+Exit southeast 2742
+Exit southwest 2740
+End
+
+
+#2742
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit east 2745
+Exit west 2739
+Exit southwest 2743
+Exit northwest 2741
+End
+
+
+#2743
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit north 2739
+Exit south 2746
+Exit northeast 2742
+Exit northwest 2740
+End
+
+
+#2744
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit south 2741
+End
+
+
+#2745
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit west 2742
+End
+
+
+#2746
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit north 2743
+End
+
+
+#2747
+Name a wide range~
+Desc You find yourself along a mountain range.  It's steep slopes spans out all 
+around you.  Wind blows roughly, the sound like a screeching howl.  
+~
+Sector mountain~
+Exit east 2740
+End
+
+
+#2748
+Name the peak~
+Desc The mountain sprawls out below, and beneath that a glimpse of the valley can 
+be seen.  The sky is clear and cool here.  A faint breeze stirs the dry air, 
+causing a rustling sound as it stirs a few leaves scattered about.  
+~
+RoomFlags indoors noscan~
+Sector inside~
+Exit down 2739
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 2703 spec_breath_fire
+S
+
+
+
+#RESETS2
+M 0 2708 8 2700 1
+M 0 2708 8 2701 1
+M 0 2708 8 2703 1
+M 0 2708 8 2705 1
+M 0 2708 8 2707 1
+M 0 2708 8 2709 1
+M 0 2708 8 2712 1
+O 0 2701 -1 2713
+O 0 2700 -1 2713
+M 0 2706 1 2713 1
+M 0 2707 8 2714 1
+M 0 2707 8 2718 1
+M 0 2707 8 2720 1
+M 0 2707 8 2722 1
+M 0 2705 1 2723 1
+M 0 2707 8 2724 1
+M 0 2712 5 2727 1
+M 0 2712 5 2729 1
+M 0 2700 2 2729 1
+M 0 2711 6 2730 1
+M 0 2710 3 2731 1
+M 0 2701 1 2732 1
+M 0 2710 3 2733 1
+M 0 2712 5 2734 1
+M 0 2704 1 2735 1
+M 0 2709 1 2736 1
+M 0 2710 3 2737 1
+M 0 2703 1 2738 1
+M 0 2711 6 2739 1
+M 0 2711 6 2744 1
+M 0 2711 6 2745 1
+M 0 2711 6 2746 1
+M 0 2711 6 2747 1
+M 0 2702 1 2748 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2702
+title pixie stealing~
+author Nakasha~
+code misch
+steal coin $n
+~
+disabled false
+last_editor Nakasha~
+last_editdate 1069527002
+END
+
+#2701
+title Attempt to Climb up~
+author Echmoro~
+code if rand 30
+ mob echoat $n You begin to slowly climb up the jagged sides.
+   mob echoat $n As you make your way to the top, you can see a bit of light.
+   mob echoat $n Freedom at last!
+mob echoaround $n $n Slowly climbs up to the top of the pit and escapes the trap.
+mob letpass
+else
+   mob echoat $n You begin to slowly climb up the jagged sides.
+   mob echoat $n As you reach for another handhold, you slip and fall back down.
+   mob echoaround $n You see $n attempt to climb up the sides and fail.
+endif
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G2701`x,`Y2701`x,`B2732`x,`r11`x,`C0`x:
+             `YMobprog: else without if, mob 2701 prog 2701
+`x             Trigger type 'EXIT' phrase '4'
+             Call stack info:
+             MOBprog 2701 on mob 2701 (in room 2732), line 11
+`S#############
+
+~
+last_editor Echmoro~
+last_editdate 1068152242
+END
+
+#2700
+title Pit Trap~
+author Echmoro~
+code if !affected $n fly
+   if rand 35
+      mob echoat $n You hear a rumble as the rocks loosen beneath your feet.
+      mob echoat $n You fall to the bottom of a pit with a loud SPLASH.
+      mob gtransfer $n 2732
+   endif
+endif
+~
+disabled false
+last_editor Nakasha~
+last_editdate 1067463269
+END
+
+#0
+
+
+#$

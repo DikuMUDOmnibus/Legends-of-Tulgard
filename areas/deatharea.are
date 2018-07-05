@@ -1,0 +1,373 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Death~
+ShortName   Death~
+Builders    None~
+Credits     Ixliam~
+VNUMs       10395 10400
+LComment    `#`S[ `RDEATH`S]`^
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      R~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#10396
+Name assad executioner~
+ShortD `#`RAssad the `RExecutioner`^~
+LongD The executioner stands ready to take your head.~
+Desc Assad stands almost 7' tall with his face covered with an executioners 
+hood.  Black robes cover his muscular body, and the stench of death is 
+around him.  In several places on his robes are the stains of old blood.  
+His sharpened axe has many notches on the handle, probably from the number 
+of victims he has found.  
+~
+Race human~
+Align 0 0
+Level 125
+Hitroll 0
+HitDice 13d16+605
+ManaDice 13d16+860
+DamDice 13d17+80
+DamType wrath
+AC -950 -950 -950 -826
+Wealth 0
+Act    npc no_tame stay_area warrior noalign nopurge update_always~
+AffBy  detect_invis detect_hidden sanctuary protect_evil pass_door haste dark_vision regeneration~
+Off    bash berserk disarm dodge fast kick dirt_kick parry trip crush neck_thrust circle~
+Imm    summon charm bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#10397
+Name knight~
+ShortD `#a `YKnight`^~
+LongD A Knight is here, protecting his master.~
+Desc The Knight is covered in plate armor from head to toe.  He is loyal to his 
+master and will protect them at all cost.  
+~
+Race Giant~
+Align 0 0
+Level 91
+Hitroll 0
+HitDice 9d13+440
+ManaDice 9d13+575
+DamDice 10d11+46
+DamType slash
+AC -610 -610 -610 -549
+Wealth 0
+Act    npc pet warrior noalign~
+AffBy  sanctuary charm haste regeneration~
+AffBy2 vicegrip~
+Off    bash dirt_kick parry trip assist_players~
+Form   edible magical sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#10398
+Name death grim reaper~
+ShortD `#`SDeath`^~
+LongD Death stands here, ready to send you to meet your maker.~
+Desc Death is covered in long flowing black robes.  A skeletal hand wields a 
+scythe and you notice a skull inside his hood with burning bright red eyes.  
+
+~
+Race Lich~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType slash
+AC -1100 -1100 -1100 -957
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area undead warrior noalign~
+AffBy  detect_invis detect_hidden sanctuary protect_evil protect_good flying haste dark_vision regeneration~
+AffBy2 passwotrace detect_treeform detect_vanish vicegrip~
+Off    bash berserk dodge fast kick dirt_kick parry trip crush~
+Imm    summon charm poison negative holy energy mental disease drowning light sleep silver scry~
+Res    magic weapon bash pierce slash fire cold lightning acid~
+Form   edible poison magical sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10399
+Name assad executioner~
+ShortD `#`RAssad the `RExecutioner`^~
+LongD The executioner stands ready to take your head.~
+Desc Assad stands almost 7' tall with his face covered with an executioners 
+hood.  Black robes cover his muscular body, and the stench of death is 
+around him.  In several places on his robes are the stains of old blood.  
+His sharpened axe has many notches on the handle, probably from the number 
+of victims he has found.  
+~
+Race human~
+Align 0 0
+Level 125
+Hitroll 0
+HitDice 13d16+605
+ManaDice 13d16+860
+DamDice 13d17+80
+DamType wrath
+AC -950 -950 -950 -826
+Wealth 0
+Act    npc no_tame stay_area warrior noalign nopurge update_always~
+AffBy  detect_invis detect_hidden sanctuary protect_evil pass_door haste dark_vision regeneration~
+Off    bash berserk disarm dodge fast kick dirt_kick parry trip crush neck_thrust circle~
+Imm    summon charm bash pierce slash fire cold lightning acid poison negative holy energy mental disease drowning light sound sleep wood silver iron illusion scry~
+Res    magic~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#10395
+Name avoid_death_token~
+Short avoid_death_token~
+Desc Avoid_death_token~
+Level 0
+ItemType token~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material token~
+Extra    nodrop noremove nonmetal nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+End
+
+#10396
+Name throne card~
+Short `#a `YThrone `YCard`^~
+Desc A throne card from the deck of fate lies here.~
+Level 0
+ItemType treasure~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material immortal~
+Extra    glow magic nodrop noremove nopurge rotdeath nolocate nodegrade nouncurse norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take~
+ExtraDesc throne card~
+Go to a high level immortal for redemption of this.  You will be required to 
+download the Offline OLC building software and create your castle.  You are 
+allowed 10 rooms and any non-removeable objects you see fit to place in 
+them.  The builder guide will help you, but the best guide is the websites 
+below.  To download the OLC software, go to the WOTL website.  
+ 
+WOTL Website: http://www.wotl.org
+OLC: Down & Dirty in the Mud:  http://www.mageslair.net/builder/index.html
+~
+End
+
+#10397
+Name prison pardon card~
+Short a prison pardon card~
+Desc A prison pardon card is here.~
+Level 1
+ItemType gem~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material moonstone~
+Extra    glow magic nodrop nopurge nolocate nodegrade burnproof nouncurse norestring~
+Extra2   nodecay nochaoslace nosell~
+Wear     take hold~
+ExtraDesc prison pardon~
+This card will allow you to not be jailed if you are arrested or thrown in 
+prison for some reason.  You will automatically be released and pardoned.  
+~
+End
+
+#10398
+Name death scythe~
+Short `#`wThe `SS`Wc`Sy`Wt`Sh`We `wof `SD`We`Sa`Wt`Sh`^~
+Desc Ixliam's scythe is lying here.~
+Level 101
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values sickle 10 18 slash BCDEHLMN
+Weight 0
+Material unknown~
+Extra    dark evil nodrop noremove inventory nonmetal nolocate nodegrade burnproof nouncurse norestring nogetall~
+Extra2   nodecay nosell~
+Wear     take wield~
+End
+
+#0
+
+
+
+#ROOMS
+#10396
+Name At the Chopping Block~
+Desc Blood covers the ground as you are brought before the executioner.  A large 
+chopping block with iron shackles on it is here, waiting for the next 
+victim.  A large basket sits at one end of the block to catch your head as 
+it falls.  
+~
+RoomFlags indoors no_recall nowhere noscry light noscan noautomap noautoexits~
+Room2Flags no_area_echoes~
+Sector inside~
+End
+
+
+#10397
+Name ~
+Desc ~
+Sector inside~
+End
+
+
+#10398
+Name At Death's Door~
+Desc `#`R
+                ...
+              ;::::;
+            ;::::; :;
+          ;:::::'   :;
+         ;:::::;     ;.
+        ,:::::'       ;           OOO\
+        ::::::;       ;          OOOOO\
+        ;:::::;       ;         OOOOOOOO
+       ,;::::::;     ;'         / OOOOOOO
+     ;:::::::::'. ,,,;.        /  / DOOOOOO
+   .';:::::::::::::::::;,     /  /     DOOOO
+  ,::::::;::::::;;;;::::;,   /  /        DOOO
+ ;'::::::''::::::;;;::::: ,#/  /          DOOO
+ :':::::::';::::::;;::: ;::#  /            DOOO
+ ::':::::::';:::::::: ;::::# /              DOO
+ ':':::::::';:::::: ;::::::#/               DOO
+  :::':::::::';; ;:::::::::##                OO
+  ::::':::::::';::::::::;:::#                OO
+   ::::'::::::::::::;';::#                    O
+    ::::'::::::::;' /  / #
+`^
+Time to meet `YDEATH!!!`^
+~
+RoomFlags indoors no_recall nowhere noscry light noscan~
+Room2Flags no_area_echoes~
+Sector inside~
+Exit north 10398
+Exit east 10398
+Exit south 10398
+Exit west 10398
+Exit northeast 10398
+Exit southeast 10398
+Exit southwest 10398
+Exit northwest 10398
+End
+
+
+#10399
+Name At the Chopping Block~
+Desc Blood covers the ground as you are brought before the executioner.  A large 
+chopping block with iron shackles on it is here, waiting for the next 
+victim.  A large basket sits at one end of the block to catch your head as 
+it falls.  
+~
+RoomFlags indoors no_recall law nowhere noscry antimagic light noscan noautomap noautoexits~
+Sector inside~
+End
+
+
+#10400
+Name Prisoner Belonging Storage Room~
+Desc This room is where all the prisoner's gear are stored in bags.  Do not 
+change or adjust.  
+~
+RoomFlags no_mob indoors no_recall imm_only nowhere noscry noscan noautoexits~
+Room2Flags no_area_echoes~
+Sector inside~
+LockerQuant 2000
+LockerInitRent 1
+LockerOngoRent 1
+LockerWeight 9999
+LockerCapacity 9999
+LockerPickProof 3
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 10396 spec_beheader
+M 10399 spec_prison_executioner
+S
+
+
+
+#RESETS2
+M 0 10396 1 10396 1
+M 0 10397 1 10397 1
+M 0 10398 1 10398 1
+E 0 10398 -1 wielded~
+M 0 10399 1 10399 1
+E 0 2024 -1 wielded~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

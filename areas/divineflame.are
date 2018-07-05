@@ -1,0 +1,230 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Divine Flame Clan Hall~
+ShortName   Divine Flame~
+Builders    none~
+VNUMs       2594 2599
+AFlags  noteleport noscry hidden nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:40:36 2005~
+End
+
+
+
+#MOBILES
+#2596
+Name calm looking man in white robes~
+ShortD a calm looking man~
+LongD A calm looking man dressed in white robes rests here, ready to cure your wounds.~
+Desc ~
+Race human~
+Align 2 3
+XPMod 120
+Level 140
+Hitroll 2
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+94
+DamType punch
+AC -1100 -1100 -1100 -913
+Wealth 400
+Act    npc dont_wander no_tame stay_area cleric nopurge healer~
+Act2   avoids_all_attacks~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared dark_vision~
+Off    disarm dodge parry~
+Imm    summon charm magic disease sound~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#2597
+Name Banker Changer~
+ShortD the Banker~
+LongD The Divine Flame banker is here, waiting for your money.~
+Desc Beeing built.
+~
+Race human~
+Align -3 0
+Level 30
+Hitroll 10
+HitDice 1d1+500
+ManaDice 1d1+500
+DamDice 5d5+25
+DamType slice
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area changer~
+AffBy  sanctuary~
+Form   edible mammal~
+Part   head arms legs brains guts~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#2595
+Name marble fountain~
+Short `Wa `wmarble `Wfountain`^~
+Desc `#A `WMarble `Wfountain`^ is full of water here.~
+Level 0
+ItemType fountain~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 10000 water 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+End
+
+#0
+
+
+
+#ROOMS
+#2594
+Name Clan Bank~
+Desc A thick red rug covers the elegant floors of marble.  Rich tapestries cover 
+the walls with a wide desk being the center of attention.  Behind it, a bank 
+vault can be seen.  
+~
+RoomFlags indoors bank~
+Sector inside~
+Clan alliance
+Exit south 2598
+End
+
+
+#2595
+Name Main Hall ~
+Desc Before you stands a grand hall.  Your voice seems to echo off the stone 
+walls.  You see four tapestries hanging from ceiling to floor here with 
+different crests on them.  Above the meeting room you see a plaque with the 
+words, "Die for what is right".  To the south you see armor and weapons 
+laying around.  To the west the sweet smell of potions, and to the east you 
+hear some prayers being said.  
+~
+RoomFlags indoors light~
+Sector inside~
+Mana 120
+Exit north 2596
+Exit east 2599
+Exit south 2597
+Exit west 2598
+Exit up 27003
+Exit down 3000
+End
+
+
+#2596
+Name Grand Meeting Room~
+Desc You have arrived in a large office like room.  You see a large some what 
+round marble table in the center of the room.  You see the same four crests 
+etched into the marble as you saw on the tapestries.  You notice parchments 
+and letters sprawled out onto the table.  The only exit is to the south.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit south 2595
+End
+
+
+#2597
+Name Donation Room~
+Desc Here you notice a large room full of armor and weapons.  You see a note on 
+the locker that reads.  "Feel free to help yourself to any equipment in this 
+room."  "Keep in mind your other clan members."  
+~
+RoomFlags indoors light~
+Sector inside~
+Clan alliance
+Exit north 2595
+Exit east 54091
+End
+
+
+#2598
+Name Supply Room~
+Desc Many potions and items line the walls as you enter the clan shop.  Just type 
+LIST to see what the shopkeeper has for sale.  You see the exit to the east. 
+ 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit north 2594
+Exit east 2595
+End
+
+
+#2599
+Name Healer's Room~
+Desc Here stands the local clan healer.  He is here to treat the sick and heal 
+the weak.  You see a large altar to the north of the room.  You notice the 
+only way out is the way you came.  
+~
+RoomFlags indoors light~
+Sector inside~
+Exit west 2595
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 2597 1 2594 1
+O 0 2595 -1 2595
+M 0 2596 1 2599 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#2595
+title alliance~
+author Delandria~
+code nod
+~
+disabled false
+last_editor Ixliam~
+last_editdate 1082030642
+END
+
+#0
+
+
+#$

@@ -1,0 +1,2657 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Player Housing Authority~
+ShortName   ~
+Builders    None~
+Credits     Ixliam~
+VNUMs       700 799
+LComment    `#`Y[  ALL  ]`^
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    6
+Colour      r~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Tue Jan 24 21:14:35 2006~
+End
+
+
+
+#MOBILES
+#700
+Name death grim reaper~
+ShortD `#`SDeath`^~
+LongD Death stands here, ready to send you to meet your maker.~
+Desc Death is covered in long flowing black robes.  A skeletal hand wields a 
+scythe and you notice a skull inside his hood with burning bright red eyes.  
+
+~
+Race Lich~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType slash
+AC -1100 -1100 -1100 -957
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area undead warrior noalign~
+AffBy  detect_invis detect_hidden sanctuary protect_evil protect_good flying haste dark_vision regeneration~
+Off    bash berserk dodge fast kick dirt_kick parry trip crush~
+Imm    summon charm poison negative holy energy mental disease drowning light sleep silver scry~
+Res    magic weapon bash pierce slash fire cold lightning acid~
+Form   edible poison magical sentient undead biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#701
+Name suspicious looking cloaked figure thief~
+ShortD a suspicious looking cloaked figure~
+LongD A suspicious looking cloaked figure is here.~
+Desc ~
+Race human~
+Align -1 -3
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+650
+DamDice 10d13+55
+DamType pierce
+AC -700 -700 -700 -567
+Wealth 150
+Act    npc dont_wander no_tame stay_area wimpy changer~
+Act2   avoids_all_attacks~
+AffBy  sneak hide~
+Off    dodge parry~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#702
+Name band~
+ShortD an acoustic band~
+LongD A band is here, working on the music to keep the folks happy.~
+Desc This lively band is playing away, content on keeping those who attend happy, 
+and enjoying themselves. 
+~
+Race human~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType none
+AC -1100 -1100 -1100 -946
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden sanctuary haste regeneration~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#703
+Name band member~
+ShortD a band member~
+LongD A band member is here, mingling with the group.~
+Desc A band member is here, dressed in full attire to impress the group.
+~
+Race human~
+Align 0 0
+Level 140
+Hitroll 0
+HitDice 14d17+680
+ManaDice 14d18+987
+DamDice 14d20+95
+DamType none
+AC -1100 -1100 -1100 -913
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#700
+Name aquarium~
+Short an aquarium filled with exotic fish~
+Desc A beautiful aquarium filled with exotic fish stands here.~
+Level 0
+ItemType trash~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material glass~
+Extra    hum nonmetal nodegrade burnproof norestring~
+Extra2   nodecay nochaoslace~
+End
+
+#701
+Name aquarium~
+Short an aquarium with a pet turtle inside~
+Desc A beautiful aquarium with a pet turtle inside stands here.~
+Level 0
+ItemType trash~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material glass~
+Extra    hum nonmetal nodegrade burnproof norestring~
+End
+
+#702
+Name aquarium~
+Short a beautiful aquarium~
+Desc A beautiful aquarium with a large snake crawling about stands here.~
+Level 0
+ItemType trash~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material glass~
+Extra    nonmetal nodegrade burnproof norestring~
+End
+
+#703
+Name aquarium~
+Short a beautiful aquarium~
+Desc A beautiful aquarium with a spider crawling inside stands here.~
+Level 0
+ItemType trash~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material glass~
+Extra    nonmetal nodegrade burnproof norestring~
+End
+
+#704
+Name chair~
+Short a carved wooden chair~
+Desc A nice carved wooden chair is here.~
+Level 1
+ItemType furniture~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 FIL 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#705
+Name chair~
+Short a highback chair~
+Desc A nice highback chair is here.~
+Level 1
+ItemType furniture~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 FIL 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#706
+Name chair~
+Short a hard chair~
+Desc A hard chair made of oak is here.~
+Level 1
+ItemType furniture~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 FIL 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#707
+Name chair~
+Short a sturdy chair~
+Desc A nice sturdy chair is sitting here.~
+Level 1
+ItemType furniture~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 FIL 100 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#708
+Name desk~
+Short an oak desk~
+Desc A nice oak desk is here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 DGJ 100 100
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade norestring~
+End
+
+#709
+Name desk~
+Short a pine desk~
+Desc A nice pine desk is here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 DGJ 100 100
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade norestring~
+End
+
+#710
+Name desk~
+Short a carved desk~
+Desc A lovely carved desk is here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 DGJ 100 100
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade norestring~
+End
+
+#711
+Name desk~
+Short a polished desk~
+Desc A large polished desk is here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 DGJ 100 100
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade norestring~
+End
+
+#712
+Name desk~
+Short a teak desk~
+Desc A beautiful teak desk is here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 DGJ 100 100
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade norestring~
+End
+
+#713
+Name desk~
+Short a plain desk~
+Desc A plain desk is sitting here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1 10000 DGJ 100 100
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade norestring~
+End
+
+#714
+Name couch sofa~
+Short a nice plush sofa~
+Desc A nice plush sofa is here.~
+Level 1
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHKR 0 100
+Weight 400
+Material couch material~
+Extra    nodegrade burnproof~
+End
+
+#715
+Name couch sofa~
+Short a cheap padded sofa~
+Desc A cheap padded sofa is here.~
+Level 1
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHR 100 100
+Weight 400
+Material couch material~
+Extra    nodegrade burnproof norestring~
+End
+
+#716
+Name couch sofa~
+Short a comfy sofa~
+Desc A nice comfy sofa is here.~
+Level 1
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHKR 100 100
+Weight 400
+Material couch material~
+Extra    nodegrade burnproof~
+End
+
+#717
+Name couch sofa~
+Short a fluffed sofa~
+Desc A fluffed-up sofa is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHKR 100 100
+Weight 400
+Material couch material~
+Extra    nodegrade burnproof norestring~
+End
+
+#718
+Name stage~
+Short a large wooden stage~
+Desc A large wooden stage.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 10 8000 BEHK 100 100
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#719
+Name endtable table~
+Short an oak endtable~
+Desc An oak endtable is sitting here.~
+Level 0
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#720
+Name endtable table~
+Short a pine endtable~
+Desc A pine endtable is sitting here.~
+Level 0
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#721
+Name endtable table~
+Short a carved endtable~
+Desc A carved endtable is sitting here.~
+Level 0
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#722
+Name endtable table~
+Short a teak endtable~
+Desc A teak endtable is sitting here.~
+Level 0
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#723
+Name endtable table~
+Short an endtable~
+Desc An endtable is sitting here.~
+Level 0
+ItemType furniture~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#724
+Name table dining~
+Short an oak table~
+Desc A nice oak table is sitting here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#725
+Name table pine~
+Short a pine table~
+Desc A nice pine table is sitting here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#726
+Name carved table~
+Short a carved table~
+Desc A nice carved table is sitting here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#727
+Name polished table~
+Short a polished table~
+Desc A nice polished table is sitting here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#728
+Name teak table~
+Short a teak table~
+Desc A nice polished table is sitting here.~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BDGJ 100 100
+Weight 500
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#729
+Name comfy comfortable recliner~
+Short a comfortable recliner~
+Desc A comfortable recliner is sitting here~
+Level 0
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 2 10000 BFIL 100 100
+Weight 500
+Material couch~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#730
+Name lamp~
+Short an oil lamp~
+Desc A nice oil lamp is burning here.~
+Level 0
+ItemType light~
+Cost 2000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 20
+Material unknown~
+Extra    glow nodegrade burnproof~
+Extra2   nodecay nochaoslace~
+End
+
+#731
+Name lantern~
+Short a lantern~
+Desc A nice iron lantern is burning here.~
+Level 0
+ItemType light~
+Cost 1500
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 20
+Material unknown~
+Extra    glow nodegrade burnproof~
+End
+
+#732
+Name torch~
+Short a torch~
+Desc A torch is lit here, burning in an iron scone on the wall.~
+Level 0
+ItemType light~
+Cost 1000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 20
+Material unknown~
+Extra    glow nodegrade burnproof~
+End
+
+#733
+Name dresser~
+Short an oak dresser~
+Desc An oak dresser sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#734
+Name dresser~
+Short a pine dresser~
+Desc A pine dresser sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#735
+Name dresser~
+Short a carved dresser~
+Desc A carved dresser sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#736
+Name dresser~
+Short a polished dresser~
+Desc A well-polished dresser sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#737
+Name dresser~
+Short a teak dresser~
+Desc A nice teak dresser sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#738
+Name dresser~
+Short a dresser~
+Desc A nice dresser sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#739
+Name footchest chest~
+Short an oak footchest~
+Desc An oak footchest sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#740
+Name footchest chest~
+Short a pine footchest~
+Desc A pine footchest sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#741
+Name footchest chest~
+Short a carved footchest~
+Desc A carved footchest sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#742
+Name footchest chest~
+Short a polished footchest~
+Desc A polished footchest sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#743
+Name footchest chest~
+Short a teak footchest~
+Desc A teak footchest sits here.~
+Level 0
+ItemType container~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#744
+Name several rows chairs~
+Short a chair~
+Desc Several rows of chairs sit here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 15 8000 BEHK 100 100
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#745
+Name armoire~
+Short an oak armoire~
+Desc An oak armoire stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#746
+Name armoire~
+Short a pine armoire~
+Desc An pine armoire stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#747
+Name armoire~
+Short a carved armoire~
+Desc An carved armoire stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#748
+Name armoire~
+Short a polished armoire~
+Desc An nicely polished armoire stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#749
+Name armoire~
+Short a teak armoire~
+Desc An teak armoire stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#750
+Name wicker table and chairs~
+Short a chair~
+Desc A huge wicker table rests here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 10 8000 BEHK 100 100
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#751
+Name wardrobe~
+Short an oak wardrobe~
+Desc An oak wardrobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#752
+Name wardrobe~
+Short a pine wardrobe~
+Desc A pine wardrobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#753
+Name wardrobe~
+Short a carved wardrobe~
+Desc A carved wardrobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#754
+Name wardrobe~
+Short a polished wardrobe~
+Desc A polished wardrobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#755
+Name wardrobe~
+Short a teak wardrobe~
+Desc A teak wardrobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#757
+Name bookcase~
+Short an oak bookcase~
+Desc An oak bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#758
+Name bookcase~
+Short a pine bookcase~
+Desc A pine bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#759
+Name bookcase~
+Short a carved bookcase~
+Desc A carved bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#760
+Name bookcase~
+Short a polished bookcase~
+Desc A polished bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#761
+Name bookcase~
+Short a teak bookcase~
+Desc A teak bookcase stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 E 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#763
+Name chifferobe~
+Short an oak chifferobe~
+Desc An oak chifferobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#764
+Name chifferobe~
+Short a pine chifferobe~
+Desc A pine chifferobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#765
+Name chifferobe~
+Short a carved chifferobe~
+Desc A carved chifferobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#766
+Name chifferobe polished~
+Short a polished chifferobe~
+Desc A polished chifferobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#767
+Name chifferobe~
+Short a teak chifferobe~
+Desc A teak chifferobe stands here.~
+Level 0
+ItemType container~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 1000 AC 0 1000 0
+Weight 1000
+Material unknown~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#769
+Name royal bed~
+Short a royal bed~
+Desc A royal-looking large bed is here, looking very comfortable.~
+Level 1
+ItemType furniture~
+Cost 9900
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 200 200
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#770
+Name cot~
+Short a cot~
+Desc A sturdy-looking cot is here.~
+Level 1
+ItemType furniture~
+Cost 1000
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 1 1000 EHK 110 110
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#771
+Name featherbed bed~
+Short a featherbed~
+Desc A comfortable featherbed is here.~
+Level 1
+ItemType furniture~
+Cost 2500
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 2 1000 EHK 125 125
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#772
+Name canopybed bed~
+Short a canopybed~
+Desc A large bed with a canopy over it is here.~
+Level 1
+ItemType furniture~
+Cost 8500
+Durability 5
+Condition 90
+Asize 1
+Rsize 50
+Values 3 1000 EHK 175 175
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#773
+Name a four-post bed large ~
+Short a four-post bed~
+Desc A large four-post bed sits here, with `#`Wsilk`^ drapes.~
+Level 1
+ItemType furniture~
+Cost 7500
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 BEHK 165 165
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#774
+Name twinbed bed~
+Short a twin bed~
+Desc A twin bed is sitting here.~
+Level 1
+ItemType furniture~
+Cost 5000
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 BEHK 130 130
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#775
+Name baby crib~
+Short a small wooden baby crib~
+Desc A small wooden baby crib is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 3 5000 CFILS 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof nogetall~
+Extra2   nodecay~
+End
+
+#776
+Name rocking chair~
+Short a comfy wooden rocking chair~
+Desc A comfy wooden rocking chair sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 500 DGJ 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#777
+Name hottub~
+Short a `#`rburgundy`^ wooded hottub~
+Desc A burgundy wooded hottub is here on a golden incline.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 50000 CFILS 150 130
+Weight 20000
+Material wood~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc hottub ~
+A large golden incline makes up the center of the garden.  Wide planks of 
+smooth burgundy wood form this nize-sized hottub that sits in the middle of 
+the incline.  It's full of water that seem to be warmed by a gnomish device 
+behind it when activated.  
+~
+End
+
+#778
+Name wooden swing~
+Short a wooden swing set~
+Desc A wooden swing set is here.~
+Level 0
+ItemType furniture~
+Cost 8000
+Durability 5
+Asize 0
+Rsize 50
+Values 3 30000 BEHK 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+Extra2   nodecay~
+End
+
+#779
+Name robust hottub~
+Short a robust hottub made from polished marble~
+Desc A robust hottub made from polished marble is here in the far corner.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 50000 CFILS 150 150
+Weight 30000
+Material marble~
+Extra    hum magic nodegrade~
+Extra2   nodecay~
+ExtraDesc robust hottub~
+Rich aromatic steam rises above the hottubs waters.  
+~
+End
+
+#780
+Name large stone coffin~
+Short a large `#`sstone coffin`^~
+Desc A large stone coffin is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2000 IL 100 100
+Weight 0
+Material unknown~
+Extra    evil nonmetal nolocate burnproof~
+Extra2   nodecay nosell~
+End
+
+#781
+Name altar harpan bael~
+Short an altar of harpan~
+Desc A large altar with the symbol of Harpan is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 5000 Q 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+ExtraDesc altar harpan~
+This is a very large altar that has a large hook in the middle of a golden 
+circle at the top.  There is a life-like statue on the front of the altar 
+with arms out, as if it were there to accept sacrafices. 
+~
+End
+
+#782
+Name polished burnt wood pews~
+Short a pew of polished burnt wood~
+Desc Rows of polished burnt wood pews are lined here.~
+Level 1
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 15 15000 AEHK 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Extra2   nodecay~
+End
+
+#783
+Name plaque sword soultaker soul taker~
+Short a sword mounted on a plaque~
+Desc A sword mounted on a plaque is firmly attached to the wall here.~
+Level 0
+ItemType rp~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material metal~
+Extra    hum magic burnproof~
+Extra2   nodecay~
+Wear     no_sac~
+ExtraDesc plaque sword soultaker taker~
+The `#`SSoul `RTaker`^ sword, a prized possession of Imari's is hanging here on the 
+wall.  Containing the souls of many, the magic and power it possesses is 
+unmatched. 
+~
+End
+
+#784
+Name stone monument~
+Short a stone monument~
+Desc A triangular stone monument covered with symbols is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2000
+Material stone~
+Extra    hum nopurge nonmetal nolocate~
+Extra2   nodecay~
+ExtraDesc stone monument symbol~
+The multi-sided stone monument is labled with strange symbols, corresponding 
+to symbols on the Stellar Gateway. 
+`+`+
+`#`YB2R5F `W- `CWorld of Arthos`^
+`#`YA1Z2_ `W- `CStupid World `s(the last symbol is missing)`^
+`#`Y_3O1A `W- `CWorld of Olympus `s(the first symbol is missing)`^
+`Y_5B_C `W- `CWorld of Abaddon `s(some symbols missing)`^
+`#`Ye2_3b `W- `CWorld of Krynn`^
+ 
+`cThe first set of symbols on the Stellar Gateway are `YA - G`^
+`cThe second set of symbols on the Stellar Gateway are `Y1 - 5`^
+`cThe third set of symbols on the Stellar Gateway are `YA - Z`^
+`cThe fourth set of symbols on the Stellar Gateway are `Y1 - 5`^
+`cThe fifth set of symbols on the Stellar Gateway are `YA - G`^
+ 
+`STo use the Stellar Gateway, type `cgate <code>`S.`^
+~
+End
+
+#0
+
+
+
+#ROOMS
+#700
+Name Rainia's Home~
+Desc Very `YLight yellow `^ and `Wwhite `^ colors adorn your eyes upon entering this 
+home. A large portrait of `CVenalena `^ hangs above the bed. Next to it is a 
+family portrait of `YR`Wa`Yi`Wn`Yi`Wa'`Ys`^ family - `GWindica, `BElemir, `gAquilo `^and `cDevon. 
+`^Various books and tomes cover the desk and bookcase. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner rainia elemir devon aquilo~
+Exit east 3079
+End
+
+
+#701
+Name Asih's Home~
+Desc This home is painted in a soft yellow. Handpainted daisies trail gracefully 
+along the window sills. The furnishings are simple yet tasteful. The desk is 
+polished to a shine, and on top of it rests an open songbook. Freshly cut 
+herbs hang in one corner of the home and give it a nice smell. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner asih belzac~
+Exit west 3079
+End
+
+
+#702
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 27065
+EFlags door~
+End
+
+
+#703
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 3078
+End
+
+
+#704
+Name Myne's Home~
+Desc This room is large and comfertable.  The walls are covered in an icy blue 
+wallpaper that meets the cieling that is painted the darkest of blacks.  The 
+floor is coverd in thick blue carpeting, to give the room a completed look.  
+All the furinture you see is outlined in a black fur to draw your attention 
+to it, insted of the mess of books and junk its owner has left around.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Myne~
+Exit west 3111
+EFlags door closed~
+EKeywords door~
+End
+
+
+#705
+Name Tiako's Home~
+Desc This home is rather bright when the light shines in.  When light is inside, 
+it reveals a whole plethora of pinks and purples.  This room clearly belongs 
+to a girl with the amount of pink. Pink curtains, pink pillows, pink bed, 
+the only standing out thing that's not pink would be the desk. There's a 
+purple couch that sits at the foot of the royal bed. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Tiako Derran Leonidas Jamila Nilith Belzac~
+Exit west 3112
+End
+
+
+#706
+Name Indoor Beach~
+Desc You walk inside a a large room. There is no ceiling above you, just the 
+roof. It is made of transparent glass, almost as if there is no roof at all. 
+The floor cannot be seen at all. Instead, there is a very thick layer of 
+sand. On the northern wall is a wooden door with wooden blinds like 
+structures. They are able to move up and down like a fan directing the wind. 
+The door is high enough so as the sand does not block the doorway from 
+swinging open. The door is hinged so that it can swing both ways. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit west 3114
+EFlags door closed~
+End
+
+
+#707
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 27089
+End
+
+
+#708
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 3034
+EFlags door~
+End
+
+
+#709
+Name Rainia's Home~
+Desc Pleasant light colors greet your eyes upon entering. Open windows allow a 
+soft breeze to softly blow the curtains and fabrics on the canopy. There are 
+many tomes and scrolls upon the desk for studies. Tons of toys clutter the 
+home, but it isn't messy...just comfy. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Rainia~
+Exit north 833
+End
+
+
+#710
+Name Shen's Home~
+Desc This cozy home smells of honey and tea leaves. Reflections of several 
+candles dance on the polished oak floor. The western wall is decorated with 
+many exotic weapons, mostly used for practice. Hand carved furniture is 
+arranged along the walls, leaving the center of the room open for activity. 
+The eastern door leads back to the bustling street. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Shen Nilith~
+Exit east 3107
+End
+
+
+#711
+Name Mishka's Home~
+Desc . This house seems quite larger inside than it did from the outside.  The 
+ceiling rises high, giving enough room for a small second story.  Along the 
+eastern wall, a circular staircase can be seen leading to the lofty area, 
+which seems to be the bedroom.  Far back along the northern wall is a small 
+kitchen and dining area blocked off by a tall screen of burgundy silk 
+fabric.  The western wall consists of a large fireplace and black mantle, 
+taking up the majority of the wall.  The walls themselves are a pale shade 
+of gold, with a scrolling leaf design all along it in a darker golden hue.  
+The main furnishings are placed in front of the fireplace, making this 
+living space seem cozy and welcoming.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner mishka kirren desari talintha~
+Exit north 745
+EFlags door closed~
+Exit east 3105
+EFlags door closed~
+EKeywords door~
+Exit up 738
+EFlags door obvious~
+End
+
+
+#712
+Name Sable's Import/Export~
+Desc The small office is sparsely furnished with a discreet eloquence.  The floor 
+is made up of a black marble spidered by silvery veins.  Two lush plants 
+flank the desk.  A sign is set near the entrance. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+ExtraDesc sign ~
+`#`RServices:`+
+-Problems Exported`+
+-Artifacts Imported`+
+-Reasonable Loans`+
+ `+
+Contact Sable`^ 
+~
+Exit west 3957
+End
+
+
+#714
+Name Leonidas's Home~
+Desc This is a normal sized house, built up to the Western wall of Tulgard. The
+lower part of the house is made of stone, with a timber frame supporting a
+high roof; these are unpainted, but clean. During the day, illumination comes
+comes from windows in the East and West walls; the western window looks out 
+over the walls to forest. The Lake Lhorandia provides a backdrop to this
+peaceful scene.
+The floor is constructed of sturdy wooden boards, bearing the marks of what
+appear to be hooves. The only exit is a large door to the east, within a
+substantial frame, a head taller and twice as broad as the average human.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner leonidas vashti~
+Exit east 3112
+End
+
+
+#715
+Name Kahori's Home~
+Desc Upon entering the Hiwigawa residence, you notice the house is abundant in 
+shrubbery.  Vines of `Gi`gv`Gy `Xgrow freely upon the walls, making a green decor of 
+the house.  `RR`r`Ro`rs`Re `Xplants hang from the corners, gleaming from the sunlight.  
+`YS`yu`Yn`yl`Yi`yg`Yh`yt `Xpours from stained-glass windows in each wall.  Through the window 
+on the left, you can see the pond sparkling.  On each window-sill sits a 
+slew of flowers of every kind you could imagine. A portrait of a landscape 
+is hung upon the right wall. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Kahori Nyte~
+Exit south 828
+End
+
+
+#716
+Name Nydira's Home~
+Desc `1 `^`YT`^`yhis bright and airy villa is a page torn out of sinister library. 
+Prominent in the room is the stuffed bodies of some of the more interesting 
+and lesser known creatures in Arthos.. From a dissected Thri-Kreen to a 
+Sahuagin warrior. Each are stuffed and mounted behind polished steel and 
+wood; with a plaque under each exhibit listing a small history of the race. 
+Books of the history of the world and the dieties are littered about the 
+room; stacked on tables, chairs, and even some parts of the soft black 
+carpeted floor. Between each of the exhibits, large dark columns are carved 
+out of the wall to support the sides of the ceiling. The columns themselves 
+are made from a black marble to match the rest of the darkly colored room`^`Y.`^ 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Nydira Kamos~
+Exit east 10055
+End
+
+
+#717
+Name Windica's Home~
+Desc Upon walking in, there is a warm glow from the lighting equipment and the 
+various candles. The walls are an emerald green, that gives the room a warm 
+feeling. There are portraits hanging on the walls, one of an Elven gentleman 
+with a horse and one of a breath-taking Elven lady with flowing blonde hair. 
+The Oak desk is covered in papers, tomes, scrolls and books. There are empty 
+potion bottles on the oak table, with a few burn marks here and there. A few 
+loose hairs are on the sofa and the bed, blonde and an odd pink. It is a 
+content home, with a welcoming aura. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Windica~
+Exit east 10061
+End
+
+
+#718
+Name Leaghe's Home~
+Desc . 
+This room is small and cozy, with dark wood panelling and a polished wooden floor. Rough wooden beams support the roof, and hooks are attached to support lamps. There are small windows on two walls, but these are tightly closed and shuttered.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Leaghe~
+Exit west 10061
+End
+
+
+#719
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit west 10070
+End
+
+
+#720
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit west 10073
+End
+
+
+#721
+Name Gedeon's Home~
+Desc These are the quarters of Gedeon, The Corrupted.  Walls of polished obsydian 
+seem to draw the light from the room, making it difficult to see all that 
+lies within.  What little light there is seems to eminate from strange and 
+arcane books, which line an ornately carved bookcase along the northern 
+wall.  In the far corner of the room stads the mummified form of a huge and 
+ancient creature.  There is a tight spiral staircase, standing in another 
+corner, leading to a trapdoor in the room's ceiling.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner gedeon dalia~
+Exit east 640
+EFlags door closed~
+Exit up 741
+EFlags door closed~
+Exit down 740
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#722
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 642
+EFlags door closed~
+End
+
+
+#724
+Name Dalia's Home~
+Desc This home has no windows. There is a large brazier burning in the far east 
+corner of the home for light. The floors and walls are made of wood and 
+there is a huge black rug covering the floor. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Dalia~
+Exit west 640
+End
+
+
+#725
+Name Thaymos's Home~
+Desc As you walk into this massive room you first see the aquarium sitting on the 
+foor towards the back with a grand bed to the east and a recliner to the 
+west. Hanging from the ceiling is a bronze lamp that fills the room with a 
+warm glow and makes it feel very inviting. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner thaymos makiel~
+Exit south 833
+End
+
+
+#726
+Name Alura's Home~
+Desc . Simple, yet elegant, silk drapes flow from the ceiling to drape to the 
+floor.  Dark jewel tones of violet, red, and gold they soften the appearance 
+of this small room, making it seem larger than it is.  Slightly musty, it 
+appears this house isn't used often as cobwebs fill the corners and dust 
+floats on the air.  In the center of the room there is a large stone coffin, 
+it' surface a dark black-red.  Flowing around it from the ceiling are dark 
+silken drapes which can be pulled about it to cover it completely.  A sofa 
+seems to be the only other furniture, as not much time or effort was put 
+into this home for anyone but the owner.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Alura~
+Exit south 660
+EFlags door closed~
+End
+
+
+#727
+Name Aphix's Home~
+Desc The walls of this room are marble slabs with intricate carvings all over 
+them.  They depict events and places that all somehow seemed linked 
+together.  The floor is a shaggy, `#`rdeep `Rred `Rc`ra`Rr`rp`Re`rt`^.  It seems to be made from 
+some type of dyed animal hide.  The ceiling is made from highly polished and 
+glossed wood boards that are a reddish brown in color.  
+~
+RoomFlags no_mob indoors safe light~
+Sector inside~
+Owner Aphix~
+Exit south 687
+End
+
+
+#728
+Name Leaghe's Home~
+Desc This home is little more than a shack, and has not been kept up.  The walls 
+and cieling are made of rough basalt slabs, and a doorway is to the south.  
+Except for a few light pieces of furniture, this room is bare and uncared 
+for...  The owner apparently spends little time here.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Leaghe~
+Exit south 678
+End
+
+
+#729
+Name Myne's Home~
+Desc There are windows on every wall in this small home. The walls are covered in 
+a nice white velvet cloth, and the floor is completely covered in a thick 
+black shag carpet. It is kept neat and tidy incase guests decide to come 
+over. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Myne~
+Exit west 879
+End
+
+
+#730
+Name Cassia's Home~
+Desc A `#portrait of `RH`sa`Rr`sp`Ra`sn`^ hangs above a `ywood powered stove`^ that has `slil puffs of 
+smoke flowing from it`^. `BA`?t`?h`?a`?m`?e`?s`? and `?w`?h`?i`?p`?s`^ decorate the `rwalls, which are 
+painted a deep, blood red.`^ `YClothes are scattered`^ and `Wbooks and tomes clutter 
+the `Mdesk `Wand `mendtable.`^ It seems the owner doesn't spend much time here.  
+Under the window sits `Cincense that provides a serene and peaceful aroma to 
+the home`^. Above the bed, is a `Wself portrait of Cassia.`^ There are no signs of 
+anything relating to family or friends, with the exception of the `?pet snake.`^`^ 
+
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner cassia exal vyarli~
+Exit west 27076
+End
+
+
+#731
+Name Jaylin's Home~
+Desc You find yourself in a rather large room, with tasteful furniture with carved accents.  The room smells heavily of jasmine, smoke from an insense burner seems to come from every corner of the room.  The floor is a hard, dry `sstone`=? with large turkish rugs sitting under the furniture.  The walls are painted a quiet `mmaroon`=?, though at the top a thin line holds brilliant designs in different hues of `Bb`bl`Bu`be`=? and `Cc`cy`Ca`cn`=?, bordered with a thin line of blood `rred`=?.  The ceiling holds a strange painting of the `ydesert sands`=? set against a `smoonlight sky`=?.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Jaylin~
+Exit east 830
+End
+
+
+#732
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit south 821
+End
+
+
+#733
+Name Genevieve's Home~
+Desc The minute you walk through the wooden doorway, you feel at home here.  You 
+notice a huge burning `Rf`Yi`Rr`Ye`Rp`Yl`Ra`Yc`Re`X, adorned with litle trinkets of all sorts.  
+Various books are strewn randomly throughout the place, as if they had been 
+looked at everyday. A picture of a giant green valley, abundant with flowers 
+greets you on the wall.  Soft light radiates from the little window during 
+the day, and upon the window a big potted `gp`Gl`ga`Gn`gt`X.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner genevieve seroth aerian~
+Exit south 811
+End
+
+
+#734
+Name The Offices of The Four Corners Periodicals~
+Desc . A busy, yet calm atmosphere greets those entering the office. A large 
+window looks out onto the streets of Galioldor and those that pass by 
+generally pause to wave at the occupants. The walls are colored a beige and 
+white, very basic and businesslike. Visitors are welcome to have a seat on 
+the sofa, or read any number of the back issues of the newspapers stacked in 
+the bookcase. A large blackboard cover a wall with assignments and future 
+ideas for issues of the paper. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit south 46184
+End
+
+
+#735
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit west 830
+End
+
+
+#736
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Exit east 879
+End
+
+
+#737
+Name Dyn's Home~
+Desc Upon entering the room, you find it's not shabby at all. Unkept, certainly, 
+but not shabby. There is a nice window next to the door with a view to the 
+road that also lets in nice breeze while cracked open. The floor is carpeted 
+with tan rugs so while barefoot, it feels good. The room is quite snug and 
+makes a perfect little place to live. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner rhea vyarli~
+Exit east 3111
+EFlags door closed nopass~
+EKeywords sliding door~
+End
+
+
+#738
+Name A wide loft in Mishka's home~
+Desc This large area is bright and welcoming, as it looks over the main section 
+of the lower story.  The lofts front wall is nothing but a banister 
+connecting to a winding, circular staircase along the front eastern wall 
+that leads down.  The rest of the rooms walls are a deep burgundy in colour 
+with a small detailing along the ceiling in a golden ivy design.  A large 
+bay window makes up the back wall, creating a large sitting area that shows 
+a glimpse of a small backyward with a garden.  A large rug covers the 
+hardwood flooring, a similar design of ivy along its edging.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Owner mishka kirren desari talintha~
+Exit west 742
+EFlags door closed obvious~
+Exit down 711
+EFlags door obvious~
+End
+
+
+#739
+Name Letitia's Home~
+Desc The room before you is very neat and tidy. There is a neatly made canopy bed 
+in the far corner. There is a polished table with an oil lamp sitting on it 
+with two chairs placed on opposite ends of the table. Along one wall there 
+is a plush sofa. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner letitia aubretia alegna vithe sigbjorn~
+Exit west 3078
+End
+
+
+#740
+Name Gedeon's Dungeon Lab~
+Desc This is a dimly lit room, with only a few small torches along the walls to 
+throw off light.  The northern wall is all but obscured by a huge oaken 
+worktable.  Upon the table stands a fantastic chemistry set, with many 
+strange and unfamiliar tools along with beakers filled with strange liquids. 
+ A small chair, with many leather straps upon it sits in the far corner of 
+the room.  The chair is covered with what appears to be blood stains, most 
+likely resulted from the use of one the many horrific of torture instruments 
+arrayed upon the walls.  You hear strange sounds coming from another dimly 
+lit corner of the room.  The sounds come from hideously deformed creatures, 
+which you can only catch quick glimpses of in the dim light.  
+~
+Sector inside~
+Owner gedeon dalia~
+Exit up 721
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#741
+Name Gedeon's Master Chamber~
+Desc The room is luxuriously decorated.  The floor is covered by a rich black 
+carpet, so plush one gets the impression of sinking into it.  All the walls, 
+save the north, are covered with ornate tapestries.  The tapestries pay 
+homage to the Great Spider Queen Lolth and depict her in all her glory.  The 
+northern wall is dominated by a gigantic intricately carved fireplace of 
+polished black marble.  A roaring fire casts a comforting warmth throughout 
+the room.  Four Gargoyles, one in each corner of the room, stand as ominous 
+sentinels, watching over those who would choose to slumber here.  
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Owner gedeon dalia~
+Exit down 721
+EFlags door closed~
+End
+
+
+#742
+Name A private garden in Mishka's home~
+Desc You are standing on a large elevated hardwood pine platform.  The walls are 
+made up of elegant gold lattice covered in thick, bright green vines and 
+what looks like thousands of violet and white roses.  There are three large 
+pine basins filled with lush vegetation running parallel to the northern, 
+southern, and western sides of the platform.  Also, there are various small 
+trees in pine boxes scattered about the room in a natural looking fashion.  
+There is a built-in aquarium attached to the outside western wall of the 
+hottub.  To the right of the door stands a narrow gardening rack with 
+numerous potted flowers and herbs sitting upon it.  A sparkling crystal 
+canopy set in gold trim sits on top of a golden post in each corner to cover 
+the entire garden.  
+~
+RoomFlags no_mob light noscan~
+Sector inside~
+Owner mishka kirren desari talintha~
+Exit east 738
+EFlags door closed obvious~
+End
+
+
+#743
+Name Dyn's Home~
+Desc This home is surprisingly clean. Almost spotless despite the fact that it 
+has a hardwood floor at the same level as the ground outside the door. Dirt 
+being easily tracked in. The walls are kept spiffy clean as is the 
+furniture. The room is spacious, but kept surprisingly bare. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner dyn lena zekare twila karrigan~
+Exit east 2527
+End
+
+
+#744
+Name The Parlour in Karrusmon's Home~
+Desc You have entered the parlour of The Dark One, Karrusmon Uulthyr.  The smell 
+of pipeweed is strong in the air here as well as in the shop downstairs.  
+The parlour is well lit from the floating balls of light that seem to wander 
+aimlessly around the room and through the walls.  There are some bookshelves 
+on the eastern and western walls that hold common texts.  The furnishings 
+are ornate and from many different places around the world, showing that the 
+owner has been well traveled 
+~
+RoomFlags no_mob indoors light~
+Sector inside~
+Owner Karrusmon~
+Exit down 3118
+EFlags door closed~
+End
+
+
+#745
+Name Mairan's Bedroom~
+Desc ~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner toreli mishka mairan talintha~
+Exit south 711
+EFlags door closed~
+End
+
+
+#746
+Name Eleassa's Home~
+Desc Comfort and warmth greet you as you enter this humble abode.  You can tell 
+laughter is a welcome friend here.  Upon the soft green walls are photos of 
+family and friends.  A framed photo of Windica adorns the west wall and a 
+large picture of Nyte decorates the south wall.  Lace curtains cover the 
+windows letting in just enough light to make everything feel homey.  This is 
+truly a place for friends and loved ones to relax and rest.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Eleassa~
+Exit north 823
+End
+
+
+#748
+Name Sira's Home~
+Desc ~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Sira~
+Exit east 3021
+End
+
+
+#749
+Name Imari's Home~
+Desc A lavish small house is adorned with the basics of living, a bed, table, and 
+couch.  A solid oak table rests in the middle of the room, with the bed 
+along the far wall.  A plush couch stretches along the west wall, leaving 
+plenty of room for visiting company to rest.  Ambient light flowing in 
+provides plenty of warmth to this small and tranquil place. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner imari sable leaghe dyn lena andru sakura anastasia~
+Exit north 27095
+EFlags door closed~
+End
+
+
+#751
+Name An Abandoned Home~
+Desc This home can be yours for a mere 1000 gold!
+ 
+Type HOME or HELP HOME for options on purchasing it.
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+End
+
+
+#752
+Name Sariel's Home~
+Desc This home is rather plain.  The walls are clean of smudges or even any color 
+other than white.  The home itself is plain as well, furnished only with a 
+large bed, and a couch. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Sariel Makiel~
+Exit east 3039
+EKeywords door~
+End
+
+
+#753
+Name Empty Room~
+Desc The room is dark and there is a funny odor coming from somewhere. The floors 
+creak when you walk on them. You can hear people talking in the tavern below 
+you. The only thing in this room is a funny looking portal. 
+`+`+
+`#`yA triangular stone monument covered with symbols is here.`^
+`+`+
+~
+RoomFlags no_mob indoors safe~
+Sector gateway~
+ExtraDesc monument ~
+The multi-sided stone monument is labled with strange symbols, corresponding 
+to symbols on the Stellar Gateway. `+
+`+
+`#`YB2R5F `C- World of Arthos`+
+`YA1Z2_ `C- Stupid World `s(the last symbol is missing)`+
+` `Y_3O1A `C- World of Olympus `s(the first symbol is missing)`+
+`Y_5B_C `C- World of Abaddon `s(some symbols missing)`+
+`Ye2_3b `C- World of Krynn `s(the third symbol is missing)`+
+ `+
+`+
+`cThe first set of symbols on the Stellar Gateway are `YA - G`+
+`cThe second set of symbols on the Stellar Gateway are `Y1 - 5`+
+`cThe third set of symbols on the Stellar Gateway are `YA - Z`+
+`cThe fourth set of symbols on the Stellar Gateway are `Y1 - 5`+
+`cThe fifth set of symbols on the Stellar Gateway are `YA - G`+
+`+
+`+
+ `cTo use the Stellar Gateway, `ctype gate <code>`s.`^ 
+~
+Exit down 3016
+End
+
+
+#755
+Name Olaynn's Home~
+Desc A nice and cozy home.  The walls are a soft, cream color.  A nice contrast 
+between the multi-colored, dark rugs that cover the floor.  Slight claw 
+impressions of what appears to come from a giant beast decor the edges of 
+the doorway.  The house is overall kept neat and clean, obviously lived in 
+with a gentle home-feel. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Zatzu Olaynn Belzac~
+Exit east 2526
+End
+
+
+#756
+Name Leaghe's Home~
+Desc . This tent is spacious and comfortably arranged.  Tasteful rugs cover the 
+floor, while piles of silken pillows invite vistors to recline in the 
+corners.  Silken tapestries hang from the walls, fluttering lightly from an 
+unseen breeze.  
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Leaghe~
+Exit west 2543
+End
+
+
+#757
+Name The Royale Theater~
+Desc As you enter the large arena, Right there at the focal point is a large, 
+stage raised above the crowd. On the stage there are various instruments 
+strewn about in an orderly fashion. From where you stand, there is theater 
+seating to sit and relax on and listen to the music. There's also a wide 
+area right in front of the stage for crowds who enjoy dancing or going crazy 
+within the arena limits. The roof has a large opening, allowing the light of 
+the moon to glow through and illuminate the area, reflecting off of the 
+shiny hardwood floor. A soft breeze flows through the open windows, softly 
+touching the skin of patrons. 
+~
+RoomFlags no_mob indoors safe light~
+Sector inside~
+Exit east 758
+Exit south 4400
+End
+
+
+#758
+Name Booking Office~
+Desc The recreation and resting area is nice, comfy and warm. You can still hear 
+melodies coming from the stage while music is being played. There are 
+chairs, tables, shade for the heat of the day and heat torches that are lit 
+for cool nights. This room is used for a mutiltude of purposes, from 
+dressing room to booking office and general get togethers. 
+~
+RoomFlags no_mob indoors safe light~
+Sector inside~
+Exit west 757
+End
+
+
+#759
+Name Brell's Home~
+Desc In addition to being in good repair, this house has a clean freshness to it, 
+as well as that sense of being inhabited that makes it a home. Aside from 
+various furniture, armor and weapon racks line the walls, most of them 
+empty, the equipment currently being put to use. Additionally, many books, 
+some of them quite valuable, stand in neat rows on the bookshelf; one or two 
+lie open on the desk. `1 There is a faint smell of incense in the air. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner brell quedani kaiya~
+Exit west 27016
+End
+
+
+#762
+Name Sable's Home~
+Desc It seems someone has furnished a backroom opening unto the tunnel you had 
+just left.  The room is shrouded in shadows, almost unnaturally so,  making 
+it difficult to see. There are several gouges and scratches visible on the 
+floor. The furniture is well worn with a few nicks. Along the walls are a 
+number of various targets for throwing weapons, some of which even show 
+signs of magic-induced damage. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Sable~
+Exit south 33464
+EFlags door closed~
+End
+
+
+#763
+Name Rynn's Home~
+Desc This home is pretty bare..a few blood stains are on the ground. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Rynn Zana Selestia Thermor~
+Exit west 809
+End
+
+
+#764
+Name Varia's Home~
+Desc This home is small and cozy. There is an large window on three of the walls 
+that let in ample sunlight to light the room as well as a large thick wooden 
+door on the west wall. A small brazier rests in the far northeast corner of 
+the home and a small cookstove in the southeast corner. A thick black carpet 
+covers a slightly banged up hardwood floor. 
+~
+RoomFlags no_mob indoors safe~
+Sector inside~
+Owner Varia~
+Exit west 815
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 772 0 700
+O 0 761 0 700
+O 0 730 0 700
+O 0 712 0 700
+O 0 717 0 700
+O 0 701 0 700
+O 0 700 0 700
+O 0 722 0 700
+O 0 749 0 700
+O 0 772 0 700
+O 0 771 0 701
+O 0 730 0 701
+O 0 710 0 701
+O 0 716 0 701
+O 0 771 0 704
+O 0 730 0 704
+O 0 714 0 704
+O 0 761 0 704
+O 0 717 0 704
+O 0 769 0 704
+O 0 769 0 705
+O 0 708 0 705
+O 0 714 0 705
+M 0 11300 1 706 1
+G 0 11358 -1
+G 0 11354 -1
+G 0 11353 -1
+O 0 717 -1 706
+O 0 716 -1 706
+O 0 732 -1 706
+O 0 772 0 709
+O 0 711 0 709
+O 0 730 0 709
+O 0 717 0 709
+O 0 719 0 709
+O 0 769 0 710
+O 0 704 0 710
+O 0 730 0 711
+O 0 729 0 711
+O 0 716 -1 711
+O 0 712 0 712
+O 0 715 0 712
+O 0 761 0 712
+O 0 731 0 712
+M 0 701 2 712 2
+O 0 730 0 714
+O 0 729 0 714
+O 0 729 0 714
+O 0 771 0 715
+O 0 736 0 715
+O 0 730 0 715
+O 0 771 0 716
+O 0 772 0 717
+O 0 717 0 717
+O 0 708 0 717
+O 0 724 0 717
+O 0 705 0 717
+O 0 730 0 717
+O 0 732 0 717
+O 0 719 0 717
+O 0 771 0 717
+O 0 701 0 718
+O 0 771 0 718
+O 0 708 0 718
+O 0 761 0 718
+O 0 708 0 721
+O 0 662 -1 721
+O 0 714 -1 721
+O 0 730 0 725
+O 0 769 0 725
+O 0 729 0 725
+O 0 701 0 725
+O 0 704 0 725
+O 0 780 -1 726
+O 0 717 0 726
+O 0 769 0 727
+O 0 729 0 727
+O 0 729 0 727
+O 0 716 0 727
+O 0 730 0 727
+O 0 767 0 727
+O 0 715 0 728
+O 0 730 0 728
+O 0 770 0 728
+O 0 769 0 729
+O 0 716 0 729
+O 0 714 0 729
+O 0 700 0 729
+O 0 731 0 729
+O 0 773 0 730
+O 0 714 0 730
+O 0 702 0 730
+O 0 708 0 730
+O 0 719 0 730
+O 0 769 0 730
+O 0 710 0 731
+O 0 704 0 731
+O 0 772 0 731
+O 0 772 0 733
+O 0 730 0 733
+O 0 714 0 733
+O 0 759 -1 733
+O 0 710 0 733
+O 0 712 -1 734
+O 0 761 -1 734
+O 0 717 -1 734
+O 0 730 -1 734
+O 0 708 -1 734
+O 0 769 0 737
+O 0 702 0 737
+O 0 724 0 737
+O 0 717 0 737
+O 0 770 0 737
+O 0 701 0 738
+O 0 735 0 738
+O 0 772 0 738
+O 0 729 0 738
+O 0 772 0 739
+O 0 714 0 739
+O 0 727 0 739
+O 0 704 0 739
+O 0 704 0 739
+O 0 730 0 739
+O 0 2018 -1 740
+O 0 2013 -1 740
+P 0 2014 1 2013 1
+P 0 2017 1 2013 1
+P 0 2016 1 2013 1
+P 0 2015 1 2013 1
+O 0 1855 -1 740
+P 0 15741 1 1855 1
+P 0 15734 1 1855 1
+O 0 769 0 741
+O 0 703 0 741
+O 0 766 -1 741
+O 0 779 -1 741
+O 0 777 -1 742
+O 0 778 -1 742
+O 0 700 0 742
+O 0 701 0 743
+O 0 770 0 743
+O 0 730 0 743
+O 0 772 0 743
+O 0 717 0 743
+O 0 726 0 744
+O 0 705 0 744
+O 0 705 0 744
+O 0 705 0 744
+O 0 705 0 744
+O 0 700 0 744
+O 0 772 -1 745
+O 0 776 -1 745
+O 0 729 0 745
+O 0 735 0 745
+O 0 716 0 746
+O 0 772 0 746
+O 0 721 0 746
+O 0 730 0 746
+O 0 729 0 746
+O 0 755 0 746
+O 0 700 0 746
+O 0 741 0 746
+O 0 710 0 746
+O 0 704 0 748
+O 0 708 0 748
+O 0 770 0 748
+O 0 725 0 748
+O 0 23697 -1 749
+O 0 3224 -1 749
+O 0 708 -1 749
+O 0 714 -1 749
+O 0 769 0 752
+O 0 714 0 752
+O 0 7900 -1 753
+O 0 769 0 755
+O 0 714 0 756
+O 0 730 0 756
+O 0 743 0 756
+O 0 718 -1 757
+O 0 744 -1 757
+O 0 750 -1 758
+O 0 773 0 759
+O 0 741 0 759
+O 0 761 0 759
+O 0 707 0 759
+O 0 710 0 759
+O 0 716 0 759
+O 0 771 0 759
+O 0 716 0 762
+O 0 761 0 762
+O 0 743 0 762
+O 0 731 0 762
+O 0 702 0 762
+O 0 728 0 762
+O 0 771 0 763
+O 0 769 0 764
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

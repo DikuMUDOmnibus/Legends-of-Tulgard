@@ -1,0 +1,3075 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Whispers of Times Lost~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Beach~
+ShortName   ~
+Builders    ~
+Credits     Shang-ti~
+VNUMs       26400 26499
+LComment    `#`C[ 20- 50]`^
+LRange      20 50
+Security    9
+Colour      c~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+World   Arthos~
+Continent   valarin~
+*LastSaved  Sat Aug 20 10:33:49 2005~
+End
+
+
+
+#MOBILES
+#26400
+Name demon lord glaabzerai~
+ShortD the demon `#`sLord `RGlaabzerai`^~
+LongD A massive demon lord with smoking skin and hair of flames stands here.~
+Desc This demon is huge and is covered with a smoking black skin.  His eyesockets 
+are filled with blazing fire, and what would be hair atop his head is 
+instead long whisps of flames.  He stands well over fifteen feet tall, and 
+must weigh as much as 5 trolls.  
+~
+Race unique~
+Align 3 -3
+Level 52
+Hitroll 0
+HitDice 5d9+290
+ManaDice 2d5+50
+DamDice 6d7+20
+DamType flame
+AC -220 -220 -220 -195
+Wealth 1040
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden otterlungs pass_door~
+Off    area_attack bash disarm~
+Imm    summon charm fire poison negative mental disease drowning sleep wood iron illusion~
+Res    pierce slash cold lightning acid~
+Vuln   holy~
+Form   magical instant_decay cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear wings claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#26401
+Name test shopkeep~
+ShortD the `#`Wyes-man`^~
+LongD Shang-ti's `#`Wyes-man`^ stands here.~
+Desc ~
+Race human~
+Align 0 0
+Level 101
+Hitroll 0
+HitDice 10d14+485
+ManaDice 10d14+658
+DamDice 11d12+56
+DamType none
+AC -710 -710 -710 -582
+Wealth 2020
+Act    npc dont_wander no_tame changer~
+Act2   avoids_all_attacks~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 26400 100~
+MProg BRIBE 26401 2000~
+END
+
+#26402
+Name hiddukel~
+ShortD the mortal form of hiddukel~
+LongD A small ball of swirling black mist is floating here.~
+Desc This swirling ball of mist seems to draw the very warmth from the room.  
+Many small sparks flash within the center of it's spherical shape.  The 
+black color quickly turns to a dark blue each time one of the sparks flash, 
+only to slowly fade back to the murky blackness.  
+~
+Race unique~
+Align -3 -3
+Level 95
+Hitroll 0
+HitDice 9d13+455
+ManaDice 11d14+692
+DamDice 10d11+46
+DamType wrath
+AC -640 -640 -640 -512
+Wealth 0
+Act    npc dont_wander no_tame stay_area cleric mage~
+Act2   allskills~
+AffBy  detect_evil detect_invis detect_hidden detect_good otterlungs flying pass_door haste dark_vision regeneration~
+AffBy2 passwotrace detect_treeform detect_vanish~
+Off    area_attack dodge~
+Imm    summon charm poison negative mental disease drowning sleep illusion scry~
+Res    magic weapon~
+Form   magical instant_decay sentient mist intangible~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#26410
+Name giant crab~
+ShortD a gigantic crab~
+LongD A gigantic crab is moving slowly along the sands.~
+Desc This looks to be a giant version of a normal blue crab.  It's claws are the 
+size of a man, and it's shell is covered with many spiked growths.  The two 
+eyestalks protruding from it twist and flail around in an attempt to assess 
+it's surrounding and locate anything edible.  
+~
+Race unique~
+Align 0 0
+Level 29
+Hitroll 0
+HitDice 5d5+130
+ManaDice 5d5+130
+DamDice 2d12+8
+DamType claw
+AC -90 -90 -90 -72
+Wealth 0
+Act    npc stay_area~
+Act2   no_random_obj~
+AffBy  dark_vision~
+Off    area_attack bash berserk~
+Imm    drowning~
+Res    cold~
+Vuln   lightning~
+Form   edible non_skinable sentient crustacean cold_blood~
+Part   legs heart brains guts eye eyestalks claws~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#26422
+Name mixxalixxar~
+ShortD an wicked leprechaun~
+LongD A leprechaun is here dancing circles around you.~
+Desc This tiny man-like creature has a wicked grin upon his face.  He wears a 
+small green suit with red suspenders and a pointy hat.  He seems to be 
+taunting you an laughing to himself.  
+~
+Race unique~
+Align -3 -2
+Level 38
+Hitroll 0
+HitDice 5d6+225
+ManaDice 5d6+220
+DamDice 5d6+12
+DamType wrath
+AC -130 -130 -130 -111
+Wealth 592
+Act    npc scavenger no_tame stay_area wimpy thief~
+AffBy  invisible detect_invis detect_hidden infrared sneak~
+Off    dodge trip~
+Imm    sleep~
+Res    charm illusion~
+Vuln   mental~
+Form   edible magical sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#26428
+Name angry wasp~
+ShortD an angry wasp~
+LongD A very large wasp flies about here.~
+Desc The wasp has a white face and a irridescent black body, giving it the look 
+of having a mask on.  It is about ten inches long and it has a wicked 
+looking sting protruding from the rear of it's abdomen.  
+~
+Race insect~
+Align 0 0
+Level 26
+Hitroll 0
+HitDice 4d5+115
+ManaDice 4d5+115
+DamDice 3d7+7
+DamType sting
+AC -75 -75 -75 -60
+Wealth 0
+Act    npc dont_wander no_tame aggressive noalign noautosocial~
+Act2   no_random_obj~
+AffBy  infrared flying berserk~
+Off    fast~
+Imm    mental~
+Vuln   bash~
+Form   edible poison non_skinable sentient insect~
+Part   head legs guts wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#26431
+Name baby sea turtle~
+ShortD a very small turtle~
+LongD A baby turtle is moving along towards the water.~
+Desc This turtle is very small and must be quite young.  It's shell is a solid 
+green color and looks as though it is quite soft still.  It seems to be 
+making it's way to the edge of the water.  
+~
+Race turtle~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 54
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  slow~
+Vuln   cold~
+Form   edible sentient amphibian cold_blood~
+Part   head legs heart brains guts feet eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#26432
+Name adult sea turtle~
+ShortD a large turtle~
+LongD A large turtle lumbers around slowly.~
+Desc This adult turtle is huge, much larger than your average dog.  It's shell is 
+a splotchy black-green with stripes of orange in some parts.  It is moving 
+along very slowly and pauses frequently.  
+~
+Race turtle~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType chomp
+AC -25 -25 -25 -20
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  slow~
+Off    bash~
+Res    bash~
+Vuln   cold~
+Form   edible sentient amphibian cold_blood~
+Part   head legs heart brains guts feet eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#26435
+Name strangle vine~
+ShortD a strangle vine~
+LongD A large strangle vine grows upon the ground here.~
+Desc The thick vines of this plant move with a life of thier own.  From what is 
+visible to you, there are 24 apendage vines snaking away from it's core.  At 
+the core is a tall growth of stalks tipped with small, faceted globes.  
+These tend to sway and twist around, almost as if looking at the 
+surroundings.  
+~
+Race unique~
+Align 0 0
+XPMod 110
+Level 21
+Hitroll 0
+HitDice 4d5+115
+ManaDice 4d5+115
+DamDice 3d7+7
+DamType grep
+AC -75 -75 -75 -66
+Wealth 0
+Act    npc dont_wander scavenger no_tame aggressive~
+AffBy  regeneration~
+Off    disarm trip~
+Imm    sleep~
+Res    charm~
+Vuln   slash fire cold acid~
+Form   edible magical other non_skinable~
+Part   eye eyestalks tentacles~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material plant
+END
+
+#26448
+Name giant cliff swallow bird~
+ShortD a giant bird~
+LongD A giant bird flies in circles overhead.~
+Desc The size of this bird is astounding.  It covers the whole area with it's 
+shadow as it flies about.  It has a wingspan the size of a war galley.  It's 
+claws could easily carry away a large elephant, and it's beak looks capable 
+of piercing through ten feet of rock.  
+~
+Race bird~
+Align 0 0
+Level 46
+Hitroll 0
+HitDice 5d8+255
+ManaDice 5d8+265
+DamDice 6d6+16
+DamType peck
+AC -160 -160 -160 -129
+Wealth 0
+Act    npc no_tame stay_area~
+Act2   no_random_obj~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient bird~
+Part   head legs heart brains guts eye wings tail claws~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#26450
+Name zorn~
+ShortD the zorn~
+LongD The zorn stands quite still here, melding with it's surroundings.~
+Desc This creature resembles a boulder with four arms and five legs.  It has a 
+centrally located maw, that is within reach of each of it's arms.  It seems 
+to be made of pure rock.  
+~
+Race unique~
+Align -1 0
+Level 66
+Hitroll 0
+HitDice 7d10+340
+ManaDice 7d10+370
+DamDice 7d8+32
+DamType acbite
+AC -360 -360 -360 -309
+Wealth 0
+Act    npc dont_wander scavenger no_tame~
+AffBy  invisible detect_invis detect_hidden infrared dark_vision regeneration~
+Off    area_attack bash berserk~
+Imm    pierce lightning~
+Res    slash cold~
+Vuln   sound illusion~
+Form   magical instant_decay sentient~
+Part   arms legs feet claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material stone
+END
+
+#26473
+Name giant bullfrog~
+ShortD a giant bullfrog~
+LongD A bullfrog of titanic proportions croaks loudly here.~
+Desc This resembles a normal bullfrog, all but for the sheer size of it.  This 
+thing looks as if it could swallow a whole cow in one gulp and still be 
+hungry after.  
+~
+Race frog~
+Align 0 0
+Level 33
+Hitroll 0
+HitDice 5d6+195
+ManaDice 5d6+170
+DamDice 6d4+10
+DamType suction
+AC -110 -110 -110 -88
+Wealth 0
+Act    npc dont_wander no_tame stay_area amphibian~
+AffBy  otterlungs swim~
+Off    dodge~
+Imm    poison disease~
+Vuln   cold~
+Form   edible sentient mountable amphibian cold_blood~
+Part   head legs heart brains guts feet eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#26475
+Name mosquito swarm~
+ShortD a mosquito swarm~
+LongD A dark cloud of mosquitos buzzes around loudly in the air here.~
+Desc There is a thick cloud of mosquitos buzzing in the air here.  There must 
+literally be thousands of them within this dark mass.  
+~
+Race insect~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType none
+AC -117 -117 -117 -97
+Wealth 0
+Act    npc dont_wander no_tame aggressive noalign noautosocial~
+Act2   no_random_obj~
+AffBy  detect_hidden flying~
+Off    area_attack dodge fast~
+Imm    mental~
+Res    weapon~
+Vuln   magic fire~
+Form   poison instant_decay non_skinable insect~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#26497
+Name portcullis exit guard~
+ShortD the portcullis guard~
+LongD A guard stands here collecting a toll for passage.~
+Desc This large minotaur looks like a seasoned warrior.  He looks more than 
+capable of guarding this passage.  
+~
+Race minotaur~
+Align 0 0
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -315
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden infrared~
+Off    bash disarm parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg BRIBE 26497 2~
+MProg GREET 26496 100~
+END
+
+#26498
+Name portcullis entrance guard~
+ShortD the portcullis guard~
+LongD A well-armed guard stands here, collecting the toll for passage.~
+Desc This minotaur looks to be a veteran of the cityguard.  He has many scars 
+which you would assume come from injuries sustained in battle.  
+~
+Race minotaur~
+Align 3 0
+Level 63
+Hitroll 0
+HitDice 6d10+340
+ManaDice 6d10+360
+DamDice 7d8+32
+DamType none
+AC -350 -350 -350 -315
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden infrared~
+Off    bash disarm parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg BRIBE 26498 2~
+MProg GREET 26499 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#26400
+Name regal announcement~
+Short a regal-looking announcement~
+Desc A regal-looking announcement has been dropped here.~
+Level 1
+ItemType parchment~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 1 0 human 0 Weight 10
+Material parchment~
+Extra    glow hum magic nonmetal nodegrade~
+Extra2   nodecay~
+ExtraDesc regal announcement~
+(This is written in fine caligraphy using the human language.)  Let it be 
+known that the Minotaur Masters of Mahn-Tor Keep have issued a challenge to 
+any and all who feel that they are worthy!  Come test your mettle against 
+the best that Mahn-Tor could find.  Be warned though, many of Mahn-Tor's 
+residents dislike outsiders within the keep and will attack on sight.  
+Signed, `#`GMahn-Tor`^ 
+~
+End
+
+#26401
+Name tiger anklet~
+Short a `#`Rtiger `Yanklet`^~
+Desc A tiger-shaped anklet lies forgotten here.~
+Level 100
+ItemType jewelry~
+Cost 100000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material stuff~
+Extra    magic noremove nonmetal nolocate burnproof nouncurse norestring~
+Extra2   nodecay nochaoslace~
+Wear     take ankle~
+Affect modifier -1 100 -1 move 1000 0
+Affect modifier -1 100 -1 agility 24 0
+Affect modifier -1 100 -1 quickness 24 0
+Affect modifier -1 100 -1 hp 1000 0
+Affect modifier -1 100 -1 hitroll 50 0
+Affect modifier -1 100 -1 damroll 50 0
+Affect modifier -1 100 -1 saves -30 0
+Affect immune -1 100 -1 none 0 disease
+Affect immune -1 100 -1 none 0 poison
+Affect immune -1 100 -1 none 0 holy
+Affect immune -1 100 -1 none 0 scry
+Affect modifier -1 100 -1 ac -100 0
+End
+
+#26402
+Name kali stick~
+Short a kali stick~
+Desc A two-foot long stick of pine lies here.~
+Level 100
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values staff 21 4 thwack DEGIL
+Weight 0
+Material pine~
+Extra    magic bless antievil nonmetal nolocate burnproof~
+Extra2   nodecay~
+Wear     take wield~
+AttuneFlags attunable once~
+End
+
+#26403
+Name karrusmon ice whip~
+Short a `#`wc`cry`Cst`Wall`Ciz`ce`wd`^ whip~
+Desc A whip imbued with steaming ice crystals lies here.~
+Level 65
+ItemType weapon~
+Cost 20000
+Durability 5
+Asize 0
+Rsize 50
+Values whip 6 9 frbite BEL
+Weight 110
+Material ice~
+Extra    glow hum magic nonmetal burnproof~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher anti-paladin~
+Affect modifier -1 65 -1 hitroll 8 0
+Affect modifier -1 65 -1 damroll 8 0
+Affect resist -1 65 -1 none 0 cold
+End
+
+#26404
+Name large raw emerald~
+Short a large, uncut `#`Gemerald`^ gemstone~
+Desc A very large, uncut emerald lies here.~
+Level 0
+ItemType gem~
+Cost 400
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material gemstone~
+Extra    nonmetal nolocate burnproof norestring~
+Wear     take hold~
+End
+
+#26405
+Name emerald mace~
+Short an `#`Gemerald`^ mace~
+Desc A superbly-crafted, solid `#`Gemerald`^ mace lies here.~
+Level 30
+ItemType weapon~
+Cost 2500
+Durability 5
+Asize 0
+Rsize 50
+Values mace 2 15 smash D
+Weight 80
+Material emerald~
+Extra    nonmetal nolocate burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian anti-paladin~
+AttuneFlags hard once~
+Affect modifier -1 30 -1 damroll 4 0
+End
+
+#26406
+Name no name 26406~
+Short (no short description 26406)~
+Desc (no description 26406)~
+Level 30
+ItemType jewelry~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#26407
+Name silenced m-4 rifle ~
+Short a `#`cSilenced `sM-4 `cRifle`^~
+Desc A rifle has been dropped here.~
+Level 92
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values exotic 10000 1 gunshot DEI
+Weight 0
+Material unknown~
+Extra    nolocate meltdrop burnproof nouncurse~
+Extra2   nodecay nosecondary~
+Wear     take wield~
+Affect modifier -1 92 -1 hitroll 200 0
+End
+
+#26408
+Name m-16 assault rifle~
+Short an `#`RM-16 Assault Rifle`^~
+Desc A rifle has been dropped here.~
+Level 92
+ItemType firearm~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 0 gunshot 2136 ABCDE
+Weight 0
+Material unknown~
+Extra    nolocate meltdrop burnproof nouncurse~
+Extra2   nodecay nosecondary~
+Wear     take wield~
+Affect modifier -1 0 -1 hitroll 200 0
+End
+
+#26409
+Name baked mushroom~
+Short a baked mushroom~
+Desc A baked mushroom lies here.~
+Level 1
+ItemType pill~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 plague poison drunkenness blindness
+Weight 0
+Material unknown~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#26410
+Name band silver runed anklet~
+Short a `#`ss`ci`sl`cv`se`cr`s-`cr`su`cn`se`cd`^ anklet~
+Desc A band of silver lies here.~
+Level 1
+ItemType jewelry~
+Cost 50000
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material unknown~
+Extra    magic nolocate burnproof~
+Extra2   nodecay~
+Wear     take ankle~
+Affect modifier -1 1 -1 selfdiscipline 30 0
+Affect modifier -1 1 -1 strength 30 0
+Affect modifier -1 1 -1 quickness 10 0
+Affect modifier -1 1 -1 mana 200 0
+Affect modifier -1 1 -1 hp 20 0
+End
+
+#26412
+Name old shipwreck~
+Short an old shipwreck~
+Desc The rotted remains of an ancient sailing vessel have washed ashore here.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     no_sac~
+ExtraDesc ship ~
+The wood of this ship has advanced beyond the stage of rot and is now hard 
+and petrified as it lies upon the sands of the beach.  Many holes and 
+crevases allow an abundance of creatures to make this seemingly worthless 
+scrap into a sturdy shelter.  
+~
+End
+
+#26415
+Name gatestone runestone gateway~
+Short a `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^~
+Desc A `#`CM`Wys`Sti`Wca`Cl `CG`Wat`Ses`Wton`Ce`^ is on the ground here.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 KN F 1165 0
+Weight 20000
+Material adamantium~
+Extra    glow magic nopurge nonmetal nolocate nodegrade norestring~
+Extra2   nodecay nochaoslace~
+Wear     no_sac~
+End
+
+#26429
+Name granite column~
+Short a granite column~
+Desc An engraved granite column towers above the shore.~
+Level 0
+ItemType portal~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values -1 ABCIM E 3000 0
+Weight 0
+Material stone~
+Extra    magic~
+Wear     no_sac~
+ExtraDesc column ~
+The engravings on the column seem to form a sharp outline along the stone 
+surface.  
+~
+End
+
+#26440
+Name bird egg~
+Short a small white egg~
+Desc A small bird egg sits here.~
+Level 0
+ItemType food~
+Cost 5
+Durability 5
+Asize 1
+Rsize 50
+Values 48 2 0 0 0
+Weight 1
+Material unknown~
+Wear     take~
+End
+
+#26441
+Name brambles~
+Short a hedge of brambles~
+Desc `x~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 10 0
+Weight 0
+Material plant~
+Wear     no_sac~
+End
+
+#26442
+Name thorn~
+Short a sharp thorn~
+Desc A sharp thorn off of some brambles lies here.~
+Level 5
+ItemType weapon~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values exotic 2 4 scratch H
+Weight 1
+Material wood~
+Extra    nonmetal~
+Wear     take wield~
+End
+
+#26446
+Name colony~
+Short a colony of yellow lichens~
+Desc A colony of `#`yyellow lichens`^ thrives upon the rocks here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 500 BEHKNR -50 -50
+Weight 0
+Material plant~
+Extra    nonmetal~
+Wear     no_sac~
+End
+
+#26447
+Name rock nest~
+Short a nest made between the rocks~
+Desc `x~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 0 0 2 0
+Weight 0
+Material stone~
+Wear     no_sac~
+End
+
+#26449
+Name spinel gemstone~
+Short a spinel gem~
+Desc A small deep-blue gemstone has been dropped here.~
+Level 0
+ItemType gem~
+Cost 300
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gem~
+Wear     take hold~
+End
+
+#26450
+Name crack~
+Short a crack in the floor of the pool~
+Desc `x~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 3 0
+Weight 0
+Material stone~
+Wear     no_sac~
+End
+
+#26451
+Name ripe berry~
+Short a ripe berry~
+Desc A ripe, juicy berry is atracting some ants here.~
+Level 0
+ItemType food~
+Cost 10
+Durability 5
+Asize 1
+Rsize 50
+Values 48 2 0 0 0
+Weight 1
+Material plant~
+Wear     take hold~
+End
+
+#26452
+Name strawberry patch~
+Short a patch of strawberries~
+Desc `x~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 5 0 0 5 0
+Weight 0
+Material plant~
+Wear     no_sac~
+End
+
+#26454
+Name standing stone rock~
+Short a standing stone~
+Desc A short, broad rock rests within the circle of trees.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 BEHKR 25 25
+Weight 0
+Material stone~
+Extra    nonmetal burnproof~
+Wear     no_sac~
+ExtraDesc stone ~
+The stone is some form of quartz, but carries the color of sapphires and 
+rubies.  The top of it is worn smooth as though it has been used as a seat 
+for all of time.  
+~
+End
+
+#26466
+Name old hut~
+Short an old, delapitated hut~
+Desc A weathered hut barely remains standing here.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 1000 FIL 10 -10
+Weight 0
+Material wood~
+Wear     no_sac~
+End
+
+#26467
+Name wildberry~
+Short a juicy wildberry~
+Desc A juicy berry here is looking pretty delicious.~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 1
+Rsize 50
+Values 24 2 0 A 0
+Weight 1
+Material plant~
+Wear     take~
+End
+
+#26468
+Name thicket~
+Short a wildberry thicket~
+Desc `x~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 0
+Material plant~
+Wear     no_sac~
+End
+
+#26469
+Name mouth~
+Short a hole inside of the totem's mouth~
+Desc `x~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 50 0 0 50 0
+Weight 0
+Material wood~
+Wear     no_sac~
+End
+
+#26470
+Name sacrificial tree~
+Short a minotaur totem~
+Desc A gruesome, `#`rblood-stained`^ totem looms upon the shore.~
+Level 0
+ItemType trash~
+Cost 0
+Durability 5
+Asize 2000
+Rsize 50
+Values 0 0 0 0 0
+Weight 2000
+Material wood~
+Extra    evil magic nonmetal~
+Wear     no_sac~
+End
+
+#26471
+Name offering coins~
+Short a handfull of coins~
+Desc A small handfull of coins are piled in a heap.~
+Level 0
+ItemType money~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 18 1 0 0 0
+Weight 0
+Material gold~
+Wear     take~
+End
+
+#26473
+Name platinum seal~
+Short a royal seal~
+Desc A polished platinum seal rests on the floor here.~
+Level 0
+ItemType jewelry~
+Cost 130
+Durability 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material platinum~
+Extra    burnproof~
+Wear     take hold~
+End
+
+#26474
+Name faceted ruby~
+Short a multi-faceted ruby~
+Desc A gleaming ruby has been dropped here.~
+Level 0
+ItemType gem~
+Cost 200
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material ruby~
+Extra    nonmetal burnproof~
+Wear     take hold~
+End
+
+#26476
+Name bed moss~
+Short a bed of moss~
+Desc A bed of `#`Gvibrant moss`^ grows thick upon the rocky soil.~
+Level 0
+ItemType furniture~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 10 10000 EHK 20 10
+Weight 0
+Material plant~
+Extra    nonmetal~
+Wear     no_sac~
+ExtraDesc moss~
+This lush bed of moss looks like it would serve as a comfortable spot to
+relax and gather yourself.  
+~
+End
+
+#26488
+Name glowing plum~
+Short a `#`mglowing`^ plum~
+Desc An oddly glowing plum lies on the ground here.~
+Level 0
+ItemType food~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 2 2 0 A 0
+Weight 10
+Material unknown~
+Extra    glow magic nonmetal~
+Wear     take hold~
+Affect affects -1 0 -1 none 0 faerie_fire
+ExtraDesc glow ~
+The plum radiates an odd `#`mpurple`^ light from beneath it's skin.  
+~
+End
+
+#26489
+Name magic plum tree~
+Short the plum tree~
+Desc A plum tree stands here, it's fruits glowing magically.~
+Level 0
+ItemType container~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 100 0 0 10 0
+Weight 0
+Material unknown~
+Extra    glow magic~
+Wear     no_sac~
+ExtraDesc tree ~
+This tree is unique indeed, bearing a small fruit that glows with an odd 
+purplish light.  Perhaps it is a creation of the mage who lays claim to this 
+tower.  
+~
+ExtraDesc plum ~
+The fruits are aglow with an odd `#`mpurplish`^ light.  Must be of a magical 
+origin.  
+~
+End
+
+#26497
+Name boots of action~
+Short the boots of action~
+Desc A simple looking pair of cloth boots have been left here.~
+Level 90
+ItemType clothing~
+Cost 12000
+Durability 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cloth~
+Extra    magic nonmetal~
+Wear     take feet~
+Affect affects -1 90 -1 none 0 haste
+Affect modifier -1 90 -1 hitroll 3 0
+Affect modifier -1 90 -1 move 200 0
+Affect modifier -1 90 -1 quickness 2 0
+ExtraDesc boots~
+These boots are very simple cloth footwear.  They fasten around either
+ankle by means of a small clasp.  
+~
+End
+
+#26498
+Name portcullis key~
+Short the portcullis key~
+Desc A worn iron key has been dropped here.~
+Level 70
+ItemType key~
+Cost 0
+Durability 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material iron~
+Wear     take hold~
+ExtraDesc key ~
+The key looks like it is heavily worn and made of iron.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#26400
+Name A Field of Wildflowers~
+Desc This vast field stretches out as far as you can see in any direction.  The 
+grass that grows here is quite lush and shines with a vibrant green life.  
+Sprouting up from this living carpet are countless wildflowers which give 
+the ground a rainbow affect.  As the flowers sway with the breeze, you are 
+mezmerised by the dancing and swaggering colors.  The air smells a bit 
+salty, almost as if some great expanse of sea were nearby.  There are 
+various flocks of birds making their flight across the clear blue sky, the 
+soothing calls of them carry gently on the wind.  
+~
+RoomFlags no_recall nowhere noscry light~
+Sector field~
+Mana 250
+Heal 250
+Exit north 26400
+Exit east 26400
+Exit south 26400
+Exit west 26400
+Exit northeast 26400
+Exit southeast 26400
+Exit southwest 26400
+Exit northwest 26400
+End
+
+
+#26401
+Name Shores of Horned Bay~
+Desc You are on the shore of the Great Horned Bay of Mithas, a bustling harbor
+of trade between the city of Lacynos and all of Krynn.  The full sails of
+many a trade ship can be seen on the horizon, both entering and exiting the
+bay.  The bay stretches out to the west, while lush plains spread out to
+your north and south.  A ways off to the east you can make out the grand
+bronze spires of the Royal Palace of Lacynos.  
+~
+Sector field~
+Exit north 26402
+Exit east 26961
+Exit south 26499
+End
+
+
+#26402
+Name Wide trail near the shore~
+Desc This trail through the tall grasses seems to follow the shores of Horned
+Bay to the north and south.  To the west are the churning blue waters of the
+bay proper.  You find it impossible to break a trail through the thick brush
+and brambles to the east.  
+~
+Sector field~
+Exit north 26403
+Exit south 26401
+End
+
+
+#26403
+Name Bend in the trail~
+Desc The briars grow thickly here, but a few paths have been cut through them.  
+The way south looks to be heavily travelled, worn with deep ruts of caravans 
+and wagons.  A narrow trail heads off west, following the shore of Horned 
+Bay.  
+~
+Sector field~
+Exit south 26402
+Exit west 26404
+End
+
+
+#26404
+Name Along the northern shore of Horned Bay~
+Desc This well travelled path runs east and west along the northern shores of
+the great Horned Bay.  Large waves crash against the rocks of the shore,
+sending plumes of spray into the air.  A large medow lies to the north, but
+the thick brambles make travel through it impossible.  
+~
+Sector field~
+Exit east 26403
+Exit west 26405
+End
+
+
+#26405
+Name Trail along the water~
+Desc At this point the trail runs right to the edge of the water, and waves
+crash over the road from time to time.  A section of the path has washed
+away, so a large boulder has been set in place to make the repair.  The
+trail continues off to the west and east, making it's way around the Horned
+Bay.  
+~
+Sector field~
+Exit east 26404
+Exit west 26406
+End
+
+
+#26406
+Name Lush wetlands~
+Desc The ground here has become very spongy and wet, allowing a dense growth
+of reeds to grow rather tall.  The path is very broken through here, being
+lost to large pools of mud and water in quite a few spots.  The path becomes
+solid a ways off to the east, and you can attempt passage further into this
+marsh to the west.  
+~
+Sector field~
+Exit east 26405
+Exit west 26407
+End
+
+
+#26407
+Name Within a murky bog~
+Desc The path has completely dissolved in this area, giving way to a deep bog
+filled with odd looking amphibians and surrounded by towering reeds.  To the
+east the ground becomes a bit more solid and the reeds disperse a little.  A
+ways to the south there seems to be a break in the reeds, and the ground
+becomes sandy at that point.  
+~
+RoomFlags no_mob~
+Sector swamp~
+Exit east 26406
+Exit south 26408
+End
+
+
+#26408
+Name Upon a rocky beach~
+Desc The sands of this beach are littered with many chunks of driftwood and
+large rocks are strewn about.  The waters are very turbulent here, the place
+where the Horned Bay and Blood Sea collide in violent fury.  A tall
+lighthouse stands on the southwest section of the beach, warning the ships
+of the rough waters ahead of them.  
+~
+Sector desert~
+Exit north 26407
+Exit west 26409
+End
+
+
+#26409
+Name A large boulder on the beach~
+Desc A very large boulder rests on the beach here.  Many things have been
+carved into it's surface, giving you the impression that this spot is rather
+frequented.  The rock faintly resembles the massive head of some gargantuan
+minotaur, minus the horns.  
+~
+Sector desert~
+ExtraDesc boulder~
+Kaz wuz here
+~
+Exit east 26408
+Exit south 26410
+Exit west 26412
+End
+
+
+#26410
+Name On the sandy beach~
+Desc The sand of this beach bears ripples from the strong winds blowing in
+from the Blood Sea.  There is not much of note here, save for the occasional
+piece of driftwood.  A tall lighthouse stands near to the west, and the
+beach becomes pretty rocky to the north.  
+~
+Sector desert~
+RoomEcho  0 23  10 A wave rolls in across the sandy beach.~
+Exit north 26409
+Exit west 26411
+End
+
+
+#26411
+Name A lighthouse on the beach~
+Desc A tall lighthouse stands here, it's light serves as a warning to all the
+ships sailing into or out of Horned Bay.  A small stairway winds it's way
+around the outside of the tower, reaching up to the top room which houses
+the beacon of light.  The whole of the lighthouse seems to be carved from a
+single rock, as there are no visible seams in the stone.  
+~
+Sector desert~
+RoomEcho  0 23  10 A wave rolls in across the sandy beach.~
+Exit north 26412
+Exit east 26410
+Exit up 26868
+End
+
+
+#26412
+Name An old shipwreck~
+Desc The battered remnants of an old sailing vessel lie on the beach here, a
+gaping hole in the hull telling of the fate it met.  It's wood has long
+since become rotten, and there are signs that many creatures take shelter
+within.  Ironicly, there is a lighthouse a short distance south of here.  
+~
+Sector desert~
+RoomEcho  0 23  10 A wave rolls in across the sandy beach.~
+Exit north 26413
+Exit east 26409
+Exit south 26411
+Exit west 59426
+End
+
+
+#26413
+Name Western shore~
+Desc The churning waters of the Blood Sea crash hard against the rocky shore
+here.  Hollows have formed in some of the larger rocks, and countless marine
+birds have found them to be good nesting spots.  Dense growths of vegetation
+force you to follow the shorline either north or south from here.  
+~
+RoomFlags no_mob~
+Sector field~
+RoomEcho  0 23  10 A big wave crashes against the rocks.~
+RoomEcho  5 20   5 A bird flies closely by you, the turns away into the wind.~
+Exit north 26414
+Exit south 26412
+End
+
+
+#26414
+Name Blood Sea lookout~
+Desc The higher ground here affords a view of the Blood Sea that is as chaotic
+as it is poetic.  Waves reach impossible heights before crashing against the
+cliffs below, almost as if they are trying to soak you.  The mast of some
+long forgotten vessel protrudes from beneath the waters below.  Small scraps
+of what was once a sail still cling to the mast in spots.  From here you can
+follow the coastline to the east and also to the south.  
+~
+Sector hills~
+Exit north 59347
+Exit east 26415
+Exit south 26413
+End
+
+
+#26415
+Name Northern shore~
+Desc The air here carries a strong, salty smell.  Various animal tracks lead
+down to the edge of the water here, and there are numerous fish bones strewn
+about.  Some tall grass to the south almost entirely conceals the mouth of a
+cave.  You can also make your way both east and west along the shore.  
+~
+RoomFlags no_mob safe~
+Sector gateway~
+Exit east 26417
+Exit south 26416
+Exit west 26414
+End
+
+
+#26416
+Name Dank cave~
+Desc The air of this cave is cold and damp.  Upon one of the walls is a
+primative drawing of what appears to be a minotaur fighting a giant green
+dragon bare-handed.  A small, steep tunnel leads deeper into the cave from
+here.  
+~
+RoomFlags dark no_mob indoors~
+Sector hills~
+ExtraDesc draw~
+The minotaur has one hand around the dragon's neck, the other is cocked
+back, ready to throw a punch.  The dragon is recoiling in fear it seems.  
+~
+ExtraDesc primative~
+The minotaur has one hand around the dragon's neck, the other is cocked
+back, ready to throw a punch.  The dragon is recoiling in fear it seems.  
+~
+Exit north 26415
+Exit down 26861
+End
+
+
+#26417
+Name Coastal trail~
+Desc This well-kept trail follows along the northern coast of Mithas.  The
+trail is made dirt, but ruts have not been allowed to work in to the surface
+of it.  The edges of the trail are bordered with logs, helping to keep the
+thick grasses it passes through from growing on it.  The trail heads off to
+the east and looks like an easy travel.  The way to the west seems to be a
+bit more rugged though.  
+~
+Sector field~
+Exit east 26418
+Exit west 26415
+End
+
+
+#26418
+Name Coastal trail~
+Desc The trail maintains it's sturdiness through this area.  A lot of effort
+was put into the construction of this road.  If not for the moss growing on
+the timbers edging the trail, you would assume that it was newly made.  The
+thick grasses of the plains spread out to the south, only rarely displaced
+by a small copse of trees or a jutting rock formation.  The trail heads off
+both east and west from here.  
+~
+Sector field~
+Exit east 26419
+Exit west 26417
+End
+
+
+#26419
+Name Coastal trail~
+Desc A lone oak tree grows here, forcing the trail to curve around the base of
+it's large trunk.  The tree has taken some damage, seemingly from a
+lightning strike, that has left it without a few branches on one side.  A
+family of squirrels has taken the hollow left from the blast as thier new
+home, and many of them scamper through the branches at your approach.  A
+sturdy bridge can be seen a ways off to the east, and the trail travels
+easily to the west.  
+~
+Sector field~
+RoomEcho  6 20  20 A squirrel chirps at you from high in the tree.~
+Exit east 26420
+Exit west 26418
+End
+
+
+#26420
+Name Bridge over a deep cove~
+Desc A sturdy wooden bridge has been constructed over this cove, allowing the
+coastal trail to continue it's course.  Far below this arching pass is an
+outlet that drains into the Blood Sea, although the waves from the sea seem
+to force more water into the cove than they let out.  The spray from the
+waves has made the deck of this bridge a bit of a slippery walk.  The
+coastal trail continues on from both the east and west sides of this
+construct.  
+~
+Sector field~
+RoomEcho  0 23  15 The bridge creaks and sways in the wind.~
+RoomEcho  0 23  85 A wave rolls into the cove far below you.~
+Exit east 26421
+Exit west 26419
+End
+
+
+#26421
+Name Rough coastal trail~
+Desc The coastal trail has become difficult to traverse as it is now cutting 
+through some hilly land.  The proximity of the hills has made it impossible 
+for the trail to cut a straight, flat course through here.  Rather, it is 
+now a winding, undulating track that becomes tiring quickly.  Even for the 
+difficulty of travel, this section of the trail is as well made as those of 
+the flatter lands to the west.  To the east the track continues it's winding 
+through even more hills.  
+~
+Sector hills~
+Exit east 26422
+Exit west 26420
+End
+
+
+#26422
+Name Rough coastal trail~
+Desc At this point, the trail crests the top of a very steep hill.  A small
+burrow has been dug off to the side of the road here.  What is odd is that
+there is a stone-lined path that leads from the mouth of the hole to the
+trail.  There is also a tiny sign stuck in the ground by the little stone
+path.  This must be home to some faeries or a leprechaun.  Better be on your
+way before you become the butt of some practical joke.  The trail winds
+through more hills to both the east and west.  
+~
+Sector hills~
+RoomEcho  6 22   2 A small head peeks out of the hole and giggles at you.~
+ExtraDesc sign~
+Home of Mixxalixxar the Mighty!  You ARE trespassing on PRIVATE property!  
+~
+Exit east 26423
+Exit west 26421
+End
+
+
+#26423
+Name Rough coastal trail~
+Desc The hills here are not so rugged as they look off to the west.  The trail
+winds gently down the side of a low mound, heading south to a flat overlook
+of the Blood Sea.  To the west the trail cuts over a very steep hill,
+looking like a difficult walk.  The air here is very heavy with the scent of
+the sea, and it is also quite misty from seaspray.  
+~
+Sector hills~
+Exit south 26424
+Exit west 26422
+End
+
+
+#26424
+Name Bluff overlooking the Blood Sea~
+Desc From your vantage point upon this flat bluff, you see a grand view of the
+Blood Sea.  The surroundings of this area provide little protection from the
+buffetting winds comming from the sea.  You are also getting wet from the
+spray of the crashing waves against the rocks below the bluff.  A sturdy
+trail heads north into the hills, and a well-worn footpath heads along the
+shore to the east.  
+~
+Sector hills~
+RoomEcho  0 23  35 A strong gale blows hard across the bluff.~
+RoomEcho  0 23  15 The spray from a crashing wave douses you with a damp mist.~
+Exit north 26423
+Exit east 26425
+End
+
+
+#26425
+Name Path through some dense brush~
+Desc Some very dense brush grows all about this area.  Any movement other than
+on the trail is impossible.  This would be a very good spot for an ambush,
+so be on guard.  The path to the west clears the brush not too far away. 
+The way east heads even deeper into this jungle of brush.  
+~
+Sector forest~
+RoomEcho  0 23   5 Something is rustling in the brush close by.~
+Exit east 26426
+Exit west 26424
+End
+
+
+#26426
+Name Path through some dense brush~
+Desc The plants here grow with no space between them, enclosing the trail in
+walls of briars and thorns.  Passage for even a rabbit would seem impossible
+through the tangled masses about you.  Some of the vines move, almost as if
+they mean to lash out at you as you move by.  The path cuts deep into the
+brush to the west, and it opens up to the east.  
+~
+Sector forest~
+Exit east 26427
+Exit west 26425
+End
+
+
+#26427
+Name Path near the beach~
+Desc In this area the path runs through some very short grasses speckled with
+bunches of small wildflowers that grow in large bunches.  Travel through
+this section of the road is easy going, but some thick brush to the west
+would make passage much more difficult.  The low grasses spread out to the
+east, offering continued easy travelling.  A small path runs down a slope to
+the north, leading to a sandy beach.  
+~
+RoomFlags no_mob~
+Sector field~
+Exit north 26432
+Exit east 26428
+Exit west 26426
+End
+
+
+#26428
+Name Weathered old tree~
+Desc A tall, dead tree stands here.  There is no bark left covering it's pale 
+flesh, and it is riddled with tiny holes of many termites.  There is also 
+deep buzzing noise comming from inside of it's trunk, most likely caused by 
+a large nest of bees or wasps.  Some large yellow and black striped wasps 
+can be seen flying around near the top of the tree.  You can continue your 
+travels along the path to both the east and west.  
+~
+Sector field~
+RoomEcho  0 23 100 A droning buzz issues forth from within the dead tree.~
+RoomEcho  6 18  80 Many wasps fly angrily about thier work.~
+ExtraDesc wasps~
+As you examine the wasps flying about, the buzzing inside the tree grows
+louder.  Many more wasps issue out from a large hole near the top of the
+tree.  They seem to be quite upset at your curiosity of thier home.  
+~
+ExtraDesc nest~
+As you examine the wasps flying about, the buzzing inside the tree grows
+louder.  Many more wasps issue out from a large hole near the top of the
+tree.  They seem to be quite upset at your curiosity of thier home.  
+~
+Exit east 26429
+Exit west 26427
+End
+
+
+#26429
+Name Before the granite column~
+Desc At this point, upon an earth mound, rests a marker stone hewn from red
+granite.  It has been fashioned into a twenty foot tall cylinder, and spans
+a six foot diameter.  An engraving of an ivy vine slowly wraps it's way up
+the column, the thousands of leaves each delicately carved by a masterful
+hand.  The sands of a beach can be seen close to the north, and a small,
+overgrown path heads to the west and south.  
+~
+RoomFlags no_mob~
+Sector field~
+RoomEcho  0 23   1 A clunking sound seems to come from within the column.~
+Exit north 26430
+Exit south 26433
+Exit west 26428
+End
+
+
+#26430
+Name Fine sandy beach~
+Desc A fine yellow sand covers the beach here.  The scuttle marks from troops
+of marching crabs trace odd, twisting patterns across the sand.  A large
+expanse of rocks, about 200 yards out to sea, serves as a breakwall so that
+the waters of this beach are quite calm.  To the south you can climb up a
+small cliff, or you can travel the beach to the west.  
+~
+Sector desert~
+Exit south 26429
+Exit west 26431
+End
+
+
+#26431
+Name Fine sandy beach~
+Desc Countless shallow pockets have been dug into the sand here, each with a
+set of labored tracks leading back to the water.  Some of the pockets have
+been dug up, and broken shells lie scattered about them.  From these, many
+tiny tracks reach the waters edge.  At the moment, nothing is moving upon
+the beach, so you cannot see what is making these tracks.  The beach
+stretches out to the east and west from here.  
+~
+Sector desert~
+RoomEcho 20  2   1 A baby turtle makes it's way out of the sand and into the water.~
+Exit east 26430
+Exit west 26432
+End
+
+
+#26432
+Name Fine sandy beach~
+Desc The sands of this beach are smooth as glass, undisturbed by the wind or
+waves from the Blood Sea.  A breakwall of jagged rocks 200 yards out calms
+the churning waters, making this area a tranquil resting spot.  A short
+distance east, the sand becomes quite lumpy, like something was digging a
+bunch of holes there.  A small footpath, heading off of the beach to the
+south, is the only other exit from here.  
+~
+Sector desert~
+RoomEcho  0 23   1 A small crab scurries across the sand.~
+Exit east 26431
+Exit south 26427
+End
+
+
+#26433
+Name Grassy plains~
+Desc Lush grass sways in the breeze here, performing a calm dance that is
+rather distracting.  There is very little hiderance to movement either north
+or east, but huge growths of briars block any west or south travels.  
+~
+Sector field~
+Exit north 26429
+Exit east 26434
+End
+
+
+#26434
+Name Grassy plains~
+Desc The plains grow thick here, forcing you to blaze a trail through the
+dense foliage.  The moisture comming off of the sea to the east must provide
+optimum conditions for these weeds to grow in.  You can work your way
+through the plains to either the west or to the south.  Both look to prove
+difficult routes of travel.  
+~
+Sector field~
+Exit south 26435
+Exit west 26433
+End
+
+
+#26435
+Name Giant mantrap~
+Desc All about you there are odd-looking plants that writhe and sway under
+thier own ability.  Some of them actually look like it would be a bit too
+dangerous to get close to, others are a bit more deceiving.  The bones of
+small creatures litter the ground near some of the more wicked looking
+plants.  You can go to the north or south from here to get away from these
+vile plants.  
+~
+Sector field~
+Exit north 26434
+Exit south 26436
+End
+
+
+#26436
+Name Coastal crossroads~
+Desc You are at a crossing of trails that head north, west, and south.  A
+marker stone rests by the side of the road, an old boulder that has a
+message inscribed upon it.  The quality of the air is very good here, if not
+a bit refreshing.  The great Blood Sea crashes against the shoreline to the
+east, endlessly wearing away at the stone.  The north/south trail follows
+along the coast, while the western choice looks to head into the central
+plains.  
+~
+Sector field~
+ExtraDesc boulder~
+Minotaur lands to the west.  Beware.  
+~
+Exit north 26435
+Exit south 26437
+Exit west 26800
+End
+
+
+#26437
+Name Cliffs above the Blood Sea~
+Desc The plains surrounding you grow rampantly, no sign of passage through
+them can be seen anywhere.  Your only choice of travel is along the
+shoreline, dangerously close to the edge of the cliff.  A trip over the edge
+would mean a painful meeting with the jagged rocks below.  
+~
+Sector field~
+Exit north 26436
+Exit south 26438
+End
+
+
+#26438
+Name Cliffs above the Blood Sea~
+Desc The ground has begun to rise and fall, forming foothills for some steeper
+lands to the southwest.  To the east is an abrupt cliff, and far below it
+are the frothy waters of the Blood Sea.  Broken terrain to the west makes
+travel through there impossible.  An old trail leads away north and south
+from this spot.  
+~
+Sector hills~
+Exit north 26437
+Exit south 26439
+End
+
+
+#26439
+Name Colapsed ridge~
+Desc A large colapse has occured along the ridge to the east, making the
+footing through this area precarious and unstable.  Large cracks run through
+the ground here, adding to the difficult travel.  Two paths lead safely away
+from this dangerous bluff.  You can head either north or west to avoid the
+ridge.  
+~
+Sector field~
+Exit north 26438
+Exit west 26440
+End
+
+
+#26440
+Name Rolling hills~
+Desc The lands about this area consist of wide, rolling hillocks covered in
+dense, thorny flora.  A myriad of birds have found these brambles the
+perfect place to build thier nests, no doubt it offers good protection from
+predators.  Passage can be made through the brush to the south and east.  
+~
+Sector hills~
+RoomEcho  6 19  30 A flock of birds cry out from within the brambles.~
+Exit east 26439
+Exit south 26441
+End
+
+
+#26441
+Name Rolling hills~
+Desc The countryside is becoming rather pitched and rugged all around.  There
+is no substantial path left to follow, but the restricting brambles guide
+your travel north or south.  The lands seem to smooth off to the north,
+while some very prominent peaks can be seen to the south.  
+~
+Sector hills~
+Exit north 26440
+Exit south 26442
+End
+
+
+#26442
+Name Rolling hills~
+Desc The lands have heaved up in towering lumps, allowing passage on a winding
+trail through the valleys.  There are low hanging clouds which conceal the
+tops of the tallest hills.  Coursing it's way through the valley is a
+shallow stream, gurgling as it flows slowly toward the Blood Sea.  It looks
+to be easily crossable in a few spots.  The valley path leads both north and
+south.  
+~
+Sector hills~
+RoomEcho  0 23   3 A small fish leaps out of the water with a splash.~
+ExtraDesc stream~
+This small brook runs only a couple of feet at it's deepest point,
+crossing over it would only dampen your feet.  Some crawfish dart about
+between the rocky bed, and a school of tiny minnows tries to avoid thier
+claws.  
+~
+Exit north 26441
+Exit south 26443
+End
+
+
+#26443
+Name Before a rope bridge~
+Desc An abysmal gorge cuts sharply through the land here, separating the hilly
+lands to the north from the mountains to the south.  A rope bridge has been
+constructed to span the narrowest section between the two sides.  The bridge
+consists of one thick rope serving as a foothold, and two thinner ropes used
+for holding onto with your hands.  The rope is in good shape and should
+prove to be strong enough to hold your weight safely.  
+~
+RoomFlags no_mob~
+Sector hills~
+Exit north 26442
+Exit east 26444
+End
+
+
+#26444
+Name Dangerous highlands~
+Desc The earth peaks into a grand mountain on this peninsula of Mithas.  A
+billow of white steam or smoke issues from the top of this gargantuan tor. 
+The land all about is jumbled with tremendous boulders and layered in a
+blanket of grey soot.  You seem to be able to work your way over the carnage
+to the south, or there is a sturdy looking rope bridge to some distance
+westward.  
+~
+Sector mountain~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+Exit south 26445
+Exit west 26443
+End
+
+
+#26445
+Name Dangerous highlands~
+Desc A layer of fine ash covers most of everything in sight, save for the
+waters of the Blood Sea to the east.  A massive mountain rises up to the
+west, looking like it violently forced it's way up from the crust of Krynn. 
+No plant life is growing anywhere near the mountain, and a plume of smoke
+stretches away from the cap.  A short ways to the west is the gaping mouth
+of a cave.  The ground about you is also navigable to the north and south.  
+~
+Sector mountain~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+Exit north 26444
+Exit south 26447
+Exit west 26446
+End
+
+
+#26446
+Name Mouth of a warm cave~
+Desc The yawning mouth of this cave becons you to explore it's reaches.  A
+warm air flows outward, and it carries a hint of sulphur with it.  The only
+life that looks to be thriving is a large colony of yellow lichens growing
+upon the floor of the cave.  A pair of stalactites has formed from the upper
+lip of the cavern mouth, giving the appearance of two fangs.  
+~
+RoomFlags dark indoors~
+Sector cave~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+ExtraDesc lichens~
+This thin growth of primitive plantlife spreads across much of the rocky
+surface before the cave.  It is slowly breaking the hard stone into fine
+soil, taking in needed minerals as this process wears on.  
+~
+Exit east 26445
+Exit down 26889
+End
+
+
+#26447
+Name Perilous ridge~
+Desc A small ridge works it's way around the side of the volcano at this
+point.  It seems a bit unstable in parts, but should prove to be crossable
+with some cautious movement.  There are quite a number of cliff dwelling
+birds which have built nests within the cracked rock.  Some of them swoop
+angrily at your head, threatened by your proximity to thier homes.  You can
+manuver your way along the ridge westward, or head to some more stable
+ground to the north.  
+~
+Sector mountain~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+Exit north 26445
+Exit west 26448
+End
+
+
+#26448
+Name Perilous ridge~
+Desc The ridge you are travelling on gets more unstable through this section,
+many spots the path has broken off and plummeted into the raging waters of
+the Blood Sea far below.  Myriads of birds cling to the rocks of the
+mountainside, loudly sounding thier displeasure of your intrusion.  The
+ridge fattens a distance to the west, and the gaping mouth of a cavern can
+be seen there as well.  This ridge also skirts along the side of the
+mountain to the east.  
+~
+Sector mountain~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+Exit east 26447
+Exit west 26449
+End
+
+
+#26449
+Name Cave Opening~
+Desc A small opening in the side of the volcano leads into a dark cave.  A
+cool, sweet air flows out from somewhere within it's dark recesses.  The
+decomposing corpses of countless birds blanket the ground before the cavern
+enterance.  Not one of them was killed for food it seems, they are
+completely intact, save for the rot that is slowly taking them back to the
+dirt.  Some rather odd looking tracks leads off to the west along a wide
+pass.  A very narrow ridge snakes along the side of the mountain to the east
+of here.  
+~
+Sector mountain~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+Exit north 26450
+Exit east 26448
+Exit west 26451
+End
+
+
+#26450
+Name Flooded cave~
+Desc This cavern has been filled with cool, clear water that slowly drips down
+from many stactites clinging to the ceiling.  There are some small fish with
+translucent skin and milky white eyes swimming lazily in the deep pool.  The
+sound of crickets resonates off the stones in a muddle of shrill echos.  You
+can sense the presence of something unseen here, you get the dire feeling of
+being watched from the shadows.  
+~
+RoomFlags dark indoors~
+Sector cave~
+RoomEcho  0 23   7 A fish splashes about the top of the pool.~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+ExtraDesc pool~
+Looking into the pool, you can see a large crack in the bottom that vents
+small bubbles of gas in a steady stream.  The albino fish keep thier
+distance from this fissure, acting skitterish when they swim too near it.  
+~
+Exit south 26449
+End
+
+
+#26451
+Name Cleft in the mountainside~
+Desc A rubble-strewn path cuts through this area.  The mountainside has been
+split apart in what appears to have been a very violent eruption of the
+volcano.  Man-sized mounds of lava have cooled and hardened all about here,
+making some climbing a requirement to traverse this cleft.  Viable
+directions of movement are to the north and east from here.  
+~
+Sector mountain~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+Exit north 26452
+Exit east 26449
+End
+
+
+#26452
+Name Clearing in the highlands~
+Desc The rough terrain has leveled off in this area of the mountainous
+coastline, allowing a small field of hearty grasses to sprout up.  There are
+a few birds foraging between the blades of this coarse covering, attempting
+to score whatever type of meal they can manage here.  An ancient looking
+copse of elms grows to the north of here.  The mountainside to the south has
+cracked open, allowing passage through that direction.  A footpath also
+leads off to the west along a sheer cliff hundreds of feet above the Blood
+Sea.  
+~
+RoomFlags no_mob~
+Sector field~
+RoomEcho  0 23   1 The ground violently trembles beneath your feet.~
+ExtraDesc grasses~
+Rumaging through the thick grass reveals a patch of ripe strawberries
+growing here.  
+~
+Exit north 26453
+Exit south 26451
+Exit west 26455
+End
+
+
+#26453
+Name Copse of elms~
+Desc You are standing beneath a canopy created by the branches of the ancient elm 
+trees that grow here.  Many small lights float about in the air here, 
+providing enough light to make it seem as though the sun is at high noon.  
+The elms must be of a magic nature, you can feel them inside your mind, 
+telling you to go east.  
+~
+RoomFlags indoors antimagic light~
+Sector forest~
+Exit east 26454
+Exit south 26452
+End
+
+
+#26454
+Name Standing stone~
+Desc The elm trees grow in a perfect fifty foot wide circle here.  Standing in 
+the center of this circle is a short, broad rock.  The whole area seems 
+alive with magic, you can even feel it coursing through your body.  The same 
+floating lights illuminate this area as well.  A soft melody caries in the 
+air as well.  
+~
+RoomFlags indoors light~
+Sector forest~
+Mana 150
+Heal 150
+RoomEcho  0 23   5 The calming notes of a lute carry faintly upon the breeze.~
+Exit west 26453
+End
+
+
+#26455
+Name High atop the cliffs~
+Desc The plains of Mithas come to an abrupt end here.  Far below this cliff,
+the angry Blood Sea smashes against the stones, determined to inundate the
+island.  A seemingly trustworthy path leads off along the clifftop
+stretching north of here.  A grass covered clearing spreads out a short ways
+to the east.  
+~
+Sector mountain~
+Exit north 26456
+Exit east 26452
+End
+
+
+#26456
+Name High atop the cliffs~
+Desc These cliffs tower above the Blood Sea, forming the southern shores of
+Mithas.  Far in the distance, both east and west, rise the smoking peaks of
+volcanos.  A low rumble jars the ground occasionally, the anger of the
+mountains being felt.  The cliff has colapsed to the west, making it
+impassable in that direction.  The path you stand upon leads off to the
+south quite some distance.  
+~
+Sector mountain~
+Exit south 26455
+Exit west 26457
+End
+
+
+#26457
+Name Flying above the Blood Sea~
+Desc You are floating high above jagged rocks and foamy surf that comprise
+this southern shore of Mithas.  Good thing you can fly, for the twisted and
+broken skeletons far below are reminders of what happens to those who
+cannot.  Some solid ground is to be had to the east, while far off to the
+west you can see some sure footing as well.  
+~
+Sector air~
+RoomEcho  0 23  15 A large gull swoops down upon you!~
+Exit east 26456
+Exit west 26458
+End
+
+
+#26458
+Name Flying above the Blood Sea~
+Desc Strong winds make it difficult to keep yourself going in the right
+direction here.  You are getting quite buffeted by the gale, and even worse
+are the diving birds assulting you.  There must be two dozen of them
+swooping all about you, angry and vengeful in thier quick passes.  Luckily
+there is some sure footing close by to the west.  Flying to the east is also
+another option of travel.  
+~
+Sector air~
+RoomEcho  0 23  15 A large gull swoops down upon you!~
+Exit east 26457
+Exit west 26459
+End
+
+
+#26459
+Name Path around the volcano rim~
+Desc This narrow path runs along the rim of the mighty volcano.  Looking down
+into the crater, you see a raging lake of liquid fire, the blood of Krynn
+that has seeped to the surface.  Ash and smoke are driven high into the air
+by the constantly boiling lava, obscuring much of your vision.  It seems
+that the crater rim continues to the south of here, the path staying
+traversable in that direction.  
+~
+Sector mountain~
+RoomEcho  0 23   3 A `#`yn`go`yx`gi`yo`gu`ys `gc`yl`go`yu`gd`^ of gasses passes over you.~
+Exit east 26458
+Exit south 26460
+End
+
+
+#26460
+Name Path around the volcano rim~
+Desc A very precarious path threads it's way around the rim of this massive
+volcano.  To either side is certain doom, one being a thounsand foot fall to
+the rocky coastline, the other a dip into some molten lava.  The smoke
+rising from the crater blows away from you, so you can tell that this path
+heads to the north and the west from this point.  
+~
+Sector mountain~
+RoomEcho  0 23   3 A `#`yn`go`yx`gi`yo`gu`ys `gc`yl`go`yu`gd`^ of gasses passes over you.~
+Exit north 26459
+Exit west 26461
+End
+
+
+#26461
+Name Path around the volcano rim~
+Desc The view from atop this peak spans the island of Mithas in it's entirety.
+Now and then, a plume of ash bellows from the crater below, obstructing your
+vision.  A glance down into the crater reveals the entrance to a cave a
+short climb down to the north.  The lip of the volcano can be traversed
+either west or east from this area.  
+~
+Sector mountain~
+RoomEcho  0 23   3 A `#`yn`go`yx`gi`yo`gu`ys `gc`yl`go`yu`gd`^ of gasses passes over you.~
+Exit north 26462
+Exit east 26460
+Exit west 26463
+End
+
+
+#26462
+Name Dark cave~
+Desc The mouth of this narrow cavern sits precariously on the inner side of
+the volcano, about half way from the rim and the lava.  Glowing red rocks
+frequently shoot up from the gurgling slag below, crashing explosively
+against the crater walls around you.  You could duck into the small cavern
+to escape the barage from the mountain, or you could head south, back out of
+the crater.  
+~
+RoomFlags dark indoors~
+Sector cave~
+RoomEcho  0 23  25 A `#`yn`go`yx`gi`yo`gu`ys `gc`yl`go`yu`gd`^ of gasses passes over you.~
+Exit south 26461
+Exit down 26892
+End
+
+
+#26463
+Name Path descending the volcano~
+Desc The path that has run around the top of the volcano now begins to descend
+along the outer side of the mountain, leading to the north.  It appears that
+to travel down the mountainside, you would need to stand with your back to
+the rocks, facing outwards.  The path is very narrow at the best of spots,
+and makes for some very slow going.  You seem to be able to walk along the
+rim of the volcano that rounds away to the east of here.  
+~
+Sector mountain~
+Exit north 26464
+Exit east 26461
+End
+
+
+#26464
+Name Path descending the volcano~
+Desc This treacherous path leads around the outer face of the volcano, it's
+narrowness forcing you to keep your back to the stones while you shimmy
+along.  It slopes slowly upwards to the south, and continues to descend to
+the north.  You should probably hasten your travel, lest a strong wind
+should pick up and blow you off this ridge.  
+~
+Sector mountain~
+Exit north 26465
+Exit south 26463
+End
+
+
+#26465
+Name Shores of Blood Bay~
+Desc Before you are the gentle waters of a large lagoon that is teaming with
+fish.  Silver and black stripped salmon frequently break the surface of the
+water, snatching unseen bugs from the air.  Many small mammals scurry about
+the short brush that grows abundantly throughout this area.  More of this
+lush greenery stretches off to the east along the shoreline.  A large
+volcano stands southeast of here, looming upon this gentle bay as if it were
+jealous of such calm.  It appears that, to the south, a very small trail
+begins a slow ascent up the side of the mountain.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+RoomEcho  0 23   2 A large fish breaks through the surface of the lagoon with a splash.~
+Exit east 26466
+Exit south 26464
+End
+
+
+#26466
+Name Before an old hut~
+Desc A small hut stands here, long abandoned and ravaged by the countless
+seasons since.  The roof has fallen in, and the door has come off it's
+hinges.  It does serve as home to some large beast, the collapsed thatch
+roof being used as it's bedding.  It is not home at the moment, but might be
+headed back at any moment.  A path eastward leads down into a deep grotto,
+and the shores of the bay continue to the north and west from here.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+Exit north 26468
+Exit east 26467
+Exit west 26465
+End
+
+
+#26467
+Name Deep grotto~
+Desc A short path from the shore has led you to the bottom of this deep
+grotto.  Towering walls of flagstones rise up on either side, tightly
+confining this area.  A small stream runs along the floor, draining into a
+gully hole at the far end of the grotto.  The hole apears to be large enough
+to enter, maybe something has been washed into it.  If you travel upstream,
+you can make your way out of this rocky cell.  
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit west 26466
+Exit down 26895
+End
+
+
+#26468
+Name Shores of Blood Bay~
+Desc A thicket of wildberries has grown rampant through here, choking out all
+the other plant life.  Big, ripe berries weigh the vines down, causing them
+to form large arches of thorn-laden greenery.  There is little room to
+manuver here, the scratching tendrils of the thicket creep nearly to the
+edge of the water.  You can manage to move in a western direction along the
+coast, or you can travel south towards a small hut that can be seen standing
+off in the distance.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+Exit south 26466
+Exit west 26469
+End
+
+
+#26469
+Name Shores of Blood Bay~
+Desc The velvet waters of Blood Bay lap gently against smooth rocks that
+compose this shore.  An expanding shroud of pasturage lies across all the
+lands that you can see, save for some mountainous peaks transcending the
+southern coast.  The shoreline allows for easy travel to both the west and
+the east.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+RoomEcho  0 23   2 A large fish breaks through the surface of the lagoon with a splash.~
+Exit east 26468
+Exit west 26470
+End
+
+
+#26470
+Name Before a totem~
+Desc An enormous totem stands along the shore, carved from a venerable tree
+who's roots still hold firm to the soil.  The visage of many a hideous
+minotaur are represented within the grains, worked roughly to bolster the
+savagery of the scene.  The wood is stained by what can only be age-old
+blood, and the remains of large fish are scattered about the base.  Each of
+the faces upon the totem bears a fiendish grin, and all of the eyes seem to
+be focused on a volcano that can be seen far off to the southwest.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+RoomEcho  0 23   2 A large fish breaks through the surface of the lagoon with a splash.~
+ExtraDesc totem~
+The totem towers upwards, representing the gargantuan heads of eight
+grizzly minotaurs.  They gaze upon the smoking peak of a volcano that rises
+up from the horizon far to the southwest.  The mouth of the lowest head
+stands agape, sneering, and filled with sharply carved teeth.  
+~
+Exit east 26469
+Exit west 26471
+End
+
+
+#26471
+Name Shores of Blood Bay~
+Desc At this point in your travels you come to an intersection of paths, one
+that leads around the shore is bisected by another that heads into the wild
+plains of Mithas.  The thrush covering the plains forms high green walls
+around the inland trail, as well as forcing you to walk along the edge of
+the water to make your way around the bay.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+RoomEcho  0 23   2 A large fish breaks through the surface of the lagoon with a splash.~
+Exit east 26470
+Exit west 26472
+End
+
+
+#26472
+Name A dock on the water~
+Desc An old wooden dock juts out from the shore here, but it looks rather
+unsteady.  A small fishing pole lies upon the wet planks near the far end of
+the dock, just big enough for a pixie or nymph.  There is no sign of the
+pole's owner anywhere about, not that you would want to find a pixie on
+purpose.  The coastline arcs and heads either east or south from here.  An
+animal's trail heads off west, right into a small break in the brush.  
+~
+Sector field~
+RoomEcho  0 23   1 A small rodent scurries across the path and into the brush.~
+RoomEcho  0 23   2 A large fish breaks through the surface of the lagoon with a splash.~
+ExtraDesc dock~
+The wooden planks of the dock are rotted and broken, making it unsafe to
+stand upon.  Out at the far end lies a tiny fishing pole, about the size of
+a matchstick.  
+~
+Exit east 26471
+Exit south 26473
+Exit west 26859
+End
+
+
+#26473
+Name Marshy ground~
+Desc The path has lead right into some spongy marshlands full of quicksand and
+cattails.  Walking through here would prove a desperate exercise, and the
+remains of the unfortunate who have attempted the trek lie half-burried in
+the bog.  The deep, croaking chorus of the marsh frogs raises up to surround
+you, originating from lairs hidden well away.  The bog allows for passage
+both north and south of here.  
+~
+Sector swamp~
+RoomEcho  0 23   3 A bullfrog croaks loudly.~
+Exit north 26472
+Exit south 26474
+End
+
+
+#26474
+Name Marshy ground~
+Desc The waters of Blood Bay must inundate this area as the tide rises, causing 
+the ground to be as sloppy as it is now.  The bottoms of a few cyprus trees 
+lie exposed, creating an entangled mass of roots that shelter bog rats and 
+water snakes.  There is a pungent smell, not unlike that of a latrine, who's 
+vapors form a hovering shell over this swamp.  The entrance to a thatch den 
+can be seen to the west, and the swamp continues both north and east.  
+~
+Sector swamp~
+RoomEcho  0 23   3 A bullfrog croaks loudly.~
+ExtraDesc roots~
+The complex web of roots offers many places of sanctuary for the fauna of
+the swamp.  Better not search them too closely, lest you should be bitten by
+a venomous water snake or attacked by a horde of leeches.  
+~
+Exit north 26473
+Exit east 26475
+Exit west 26860
+End
+
+
+#26475
+Name Marshy ground~
+Desc This section of the swamp lies totally submerged by the waters of Blood
+Bay.  Huge beds of reeds flourish here, having perfect conditions to promote
+thier expanses.  These wetlands also prove to be a fertile breeding ground
+for the mosquito, who's vast numbers create a hazy, buzzing cloud that
+encroaches upon all with life-sustaining blood.  The marsh appears to
+solidify a bit to the west, while giving way to some rocky hills a good
+distance south of here.  
+~
+Sector swamp~
+RoomEcho  0 23   3 A bullfrog croaks loudly.~
+ExtraDesc mosquito~
+There are hundreds of them currently trying to establish a feast upon
+your life-blood.  
+~
+Exit south 26476
+Exit west 26474
+End
+
+
+#26476
+Name Southern highlands~
+Desc The grassland pitches sharply upwards to the south, rising up to join
+with the volcanic tor.  The northern slope plunges deep into some dense
+moorlands lush with reeds and cyprus trees.  The calm, satin waters of a
+large lagoon fill the eastern view as seen from atop this bluff.  A small
+patch of moss grows under the shade of an oak tree, which looks as if it has
+been rooted here for countless ages.  To the west a plume of silvery vapor
+rises up from a large fissure in a nearby hillside.  
+~
+Sector hills~
+Exit north 26475
+Exit south 26478
+Exit west 26477
+End
+
+
+#26477
+Name Steamy fissure~
+Desc A pillar of water vapor rises up to the sky here, originating from
+somewhere inside of the massive fissure before you.  The crack runs for
+quite some distance up the hillside, nearly cleaving it in two.  The breadth
+of the split is roughly ten feet at the widest point, tappering in from
+there.  At that point, a number of rocks are able to be used as a means to
+go spelunking into the depths below.  
+~
+Sector field~
+RoomEcho  0 23  75 A cloud of `#`Rhot `Csteam`^ blasts up from within the fissure.~
+Exit east 26476
+Exit down 26870
+End
+
+
+#26478
+Name Southern highlands~
+Desc The terrain here is rather rocky and broken, the affects of the nearby 
+volcano have left their destructive marks all around you.  Most of the rocks 
+are bigger than a troll head and are shaped in blob-like masses.  With some 
+difficulty, you could make your way both to the north and west from here.  
+The way west looks to head right up to the lip of the volcano, while some 
+lush land lies a short ways north.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit north 26476
+Exit west 26479
+End
+
+
+#26479
+Name Southern highlands~
+Desc Rocks, rocks, and more rocks.  Everywhere you look there are rocks.  Small 
+rocks and big rocks.  Green rocks and red rocks.  Smooth rocks and pointy 
+rocks.  Just a whole lot of rocks.  This volcano is a never-ending producer 
+of rocks, so it would seem.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit east 26478
+Exit west 26480
+End
+
+
+#26480
+Name Southern highlands~
+Desc This area is a crossroads of sorts with a few traversable paths to choose 
+from.  To the north a path winds it's way right up to the rim of the 
+volcano, where a plume of soot rises steadily into the air.  To the west a 
+path forms between the rocks and boulders strewn across the ground.  
+Likewise, a path leads off the east from here, looking much the same as the 
+path to the west.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit north 26481
+Exit east 26479
+Exit west 26483
+End
+
+
+#26481
+Name Base of the volcano~
+Desc This narrow path runs steeply up the side of the volcano, right up to the 
+edge of the crater just a short ways to the west.  Perhaps it would be a 
+good idea to head south, away from here.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit south 26480
+Exit west 26482
+End
+
+
+#26482
+Name Crater rim~
+Desc You are atop the volcano now, and it is really hot!  A lake of molten rock 
+bubbles ferociously inside the confines of the crater walls.  The spray of 
+lava and the heavy fumes would make descent into the crater nearly 
+impossible.  Even so, there appears to be some sort of opening below you.  
+~
+Sector mountain~
+Mana 0
+Heal 0
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+RoomEcho  0 23  90 Noxious gasses and heavy soot hurl violently into the air.~
+Exit east 26481
+Exit down 26897
+End
+
+
+#26483
+Name Southern highlands~
+Desc This rocky prominence dangerously winds it's way around the outside of the 
+massive volcano.  The way west pitches almost vertically, while to the east 
+the ground flattens out into a rocky plain.  A tall column of ash is 
+constantly being spewed out of the volcano high above you.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit east 26480
+Exit west 26484
+End
+
+
+#26484
+Name Southern highlands~
+Desc You have managed to climb to the top of a large, jagged boulder.  The rough 
+surface provides plenty of handholds and made the climb quite easy.  From 
+here you could head north or east, with neither way looking very fun.  You 
+probably wouldn't want to be up here if the volcano suddenly erupted.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit north 26485
+Exit east 26483
+End
+
+
+#26485
+Name Southern highlands~
+Desc At this point, the path around the base of the volcano is pinched tightly 
+between two massive stones.  One stone looks like it flew through the air 
+and landed here, lodging deeply and breaking the ground when it hit.  The 
+other looks more like a big glob of lava that slid down the mountainside and 
+cooled into a lumpy mass.  It does look narrow, but the pass can be 
+travelled both north and south.  
+~
+RoomFlags solitary~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit north 26486
+Exit south 26484
+End
+
+
+#26486
+Name Southern highlands~
+Desc The land here is broken in a few spots, long fissures run down the side of 
+the volcano all the way into the sea to the west.  Fortunately, the cracks 
+across the path are rather narrow and can be crossed over easily.  There 
+seems to be some molten lava at the bottom of the split rock that is mixing 
+with the cool seawater and creating alot of steam and noise.  The eastern 
+path looks like it heads into some more forgiving land, while to the south 
+it looks like the path comes to an end abruptly before some large boulders.  
+
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit east 26487
+Exit south 26485
+End
+
+
+#26487
+Name Southern highlands~
+Desc You stand due north of a massive volcano which is spewing a noxious pillar 
+of ash and gasses high into the air.  The terrain here is a transforming 
+point for the rocky lands west of here and the grassy plains to the north.  
+There are the beginnings of some hearty plants growing here, as well as many 
+large, globular rocks which obviously must have been sent out from the lava 
+inside the volcano.  
+~
+Sector mountain~
+RoomEcho  0 23  10 The land heaves violently and a spray of lava shoots high into the air.~
+Exit north 26488
+Exit west 26486
+End
+
+
+#26488
+Name Southwestern shore~
+Desc The path comes to a fork at this point in your travels.  To the south looms 
+an ominous volcano that appears to be quite active.  A short ways east a 
+black tower has been built, and although it is grand indeed, it is miniscule 
+when compared to the mass of the volcano.  The north bound trail looks to be 
+descending slowly towards the choppy waters of the Horned Bay.  
+~
+Sector hills~
+Exit north 26490
+Exit east 26489
+Exit south 26487
+End
+
+
+#26489
+Name Before the Tower~
+Desc You are at the base of a black tower that rises up many floors from the 
+rocky ground.  A wide stairway leads up to the foyer, doorless and exposed 
+to the elements.  A green moss grows all over the tower in large patches, 
+giving the whole a molting look.  An ancient plum tree stands to the side of 
+the stairway, it's glowing fruit shedding a magical light upon the 
+surrounding area.  
+~
+RoomFlags no_mob light~
+Sector hills~
+RoomEcho  0  4  10 A wailing sream echoes from within the tower.~
+RoomEcho 12 16   3 An explosion jolts the tower, then smoke billows from one of the upper windows.~
+Exit west 26488
+Exit up 26877
+End
+
+
+#26490
+Name Southwestern shore~
+Desc Grass and brush grows quite thick between large rocks that dot the landscape 
+all around you at this point.  An odd whistling noise reverberates with the 
+breeze coming off the ocean, growing into a loud tone when the wind is high, 
+and barely audible when the wind is calm.  A black tower and a mighty 
+volcano can be reached by travelling south from here.  Also, the trail heads 
+northwards and comes to some kind of end there.  
+~
+Sector hills~
+Exit north 26491
+Exit south 26488
+Exit down 26859
+EFlags door closed nopass~
+EKeywords brambles~
+EDesc A thick growth of brambles covers over the entrance to a cave below!  
+~
+End
+
+
+#26491
+Name Southwestern shore~
+Desc The path heads along the coastline and descends into a damp tunnel.  The 
+tunnel must be below sea level, as this area is only about five feet higher 
+than the water.  The tunnel is large and the trail heading in has been 
+covered with large cobblestones.  It would seem that this passage is heavily 
+travelled by the inhabitants of this island.  Far to the south stands a tall 
+mountain which is heavily spewing smoke.  
+~
+Sector hills~
+Exit east 26492
+Exit south 26490
+End
+
+
+#26492
+Name Tunnel roadway~
+Desc The road through passing through the tunnel exits to the west, and heads 
+deeper to the north.  Many sconces light the passage well, and the 
+cobblestones provide for easy travel through here.  
+~
+RoomFlags indoors light~
+Sector cave~
+Exit north 26493
+Exit west 26491
+End
+
+
+#26493
+Name Tunnel roadway~
+Desc The tunnel air is damp, although no water is seen here.  The passage must be 
+below the water level of the Great Horned Bay, as it has a light downward 
+slope heading eastward from here.  
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 26494
+Exit south 26492
+End
+
+
+#26494
+Name Tunnel roadway~
+Desc The passage has levelled off here and travels flatly to the east.  The 
+tunnel begins to rise slowly to the west of here.  Numerous torches hung 
+upon the walls sputter in the damp air, but still provide decent light.  
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 26495
+Exit west 26493
+End
+
+
+#26495
+Name Tunnel roadway~
+Desc The wide tunnel begins an curving, upward slope the east.  Some of the 
+cobblestones are wet and slippery, and the dampness has extinguished a few 
+of the torches that provide lighting.  The smell of the salty sea permeates 
+the air here.  
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 26496
+Exit west 26494
+End
+
+
+#26496
+Name Tunnel roadway~
+Desc The tunnel climbs higher as it heads north from here, and seems to level off 
+a short ways to the west.  Brightly lit by torches, the cobblestone roadway 
+offers excellent travel.  
+~
+RoomFlags indoors light~
+Sector cave~
+Exit north 26497
+Exit west 26495
+End
+
+
+#26497
+Name Tunnel roadway~
+Desc This is the checkpoint for the roadway that travels between the southwestern 
+shores of the island and the port of the capital, Lacynos.  A well-armed 
+guard stands here, collecting a toll for passage through this well-built 
+tunnel.  An heavy iron and wood portcullis bars your travel to the east.  
+~
+RoomFlags indoors light~
+Sector cave~
+Exit east 26498
+EFlags door closed locked infuriating~
+EKeyvnum 26498
+EKeywords portcullis~
+Exit south 26496
+End
+
+
+#26498
+Name Before the portcullis~
+Desc A large iron and wood portcullis is mounted into the face of a cliff to the 
+west.  A checkpoint stands off to the side of the closed doorway.  A small 
+sign stands at the checkpoint.  A well travelled trail heads off to the east 
+towards the capital city.  
+~
+Sector field~
+ExtraDesc sign ~
+The small wooden sign has `#`YThe Horned Bay Tunnel`^ engraved onto it.
+~
+Exit east 26499
+Exit west 26497
+EFlags door closed locked infuriating~
+EKeyvnum 26498
+EKeywords portcullis~
+End
+
+
+#26499
+Name Shores of Horned Bay~
+Desc This well defined trail winds it's way around the coast of the great
+Horned Bay, running from the north and heading off into the distance to the
+west.  
+~
+Sector field~
+Exit north 26401
+Exit west 26498
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 26400 spec_charmer
+M 26402 spec_cast_meaner
+M 26475 spec_poison
+S
+
+
+
+#RESETS2
+M 0 26410 1 26410 1
+O 0 26412 -1 26412
+O 0 26415 -1 26415
+M 0 26422 1 26422 1
+M 0 26428 1 26428 1
+O 0 26429 -1 26429
+M 0 26431 1 26431 1
+M 0 26432 1 26432 1
+M 0 26435 1 26435 1
+O 0 26441 0 26440
+P 0 26440 1 26441 1
+O 0 26441 0 26441
+P 0 26442 1 26441 1
+O 0 26446 0 26446
+O 0 26447 0 26447
+M 0 26448 1 26448 1
+O 0 26450 0 26450
+P 0 26449 1 26450 1
+M 0 26450 1 26450 1
+O 0 26452 0 26452
+P 0 26451 1 26452 1
+O 0 26454 -1 26454
+O 0 26466 0 26466
+O 0 26468 0 26468
+P 0 26467 1 26468 1
+O 0 26470 0 26470
+O 0 26469 0 26470
+P 0 26471 1 26469 1
+M 0 26473 1 26473 1
+M 0 26475 1 26475 1
+O 0 26476 0 26476
+O 0 26489 -1 26489
+P 0 26488 10 26489 10
+M 0 26497 1 26497 1
+E 0 26498 -1 hold~
+M 0 26498 1 26498 1
+E 0 26498 -1 hold~
+S
+
+
+
+#SHOPS
+#26401
+buy_type weapon~
+buy_type gem~
+buy_type armor~
+buy_type scroll~
+buy_type potion~
+profit_buy 120
+profit_sell 85
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#26499
+title portcullis closed~
+author Habbakuk~
+code close west
+lock west
+say The toll is two gold pieces, pay or you will not pass.
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1036627079
+END
+
+#26498
+title portcullis entrance guard payment~
+author Habbakuk~
+code unlock west
+open west
+bow
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1036626756
+END
+
+#26497
+title portcullis exit guard payment~
+author Habbakuk~
+code unlock east
+open east
+bow
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1036626683
+END
+
+#26496
+title portcullis exit closed~
+author Habbakuk~
+code close east
+lock east
+say The toll is two gold pieces, pay or you will not pass.
+~
+disabled false
+last_editor Habbakuk~
+last_editdate 1036626946
+END
+
+#26402
+title drunken irishman challenge~
+author Shang-ti~
+code pmote $n headbutts @!!!
+mob damage $n 1 10
+laugh
+~
+disabled false
+last_editor Shang-ti~
+last_editdate 1047924883
+END
+
+#26401
+title specialmace test~
+author Shang-ti~
+code if wears $n 26404
+  mob remove $n 26404
+  nod $n
+  mq2 pmote $n takes the uncut `#`Gemerald`^ from @.
+  mq3 emote places the gemstone upon his workbench.
+  mq4 emote picks up a hammer and chisel from his tool rack.
+  mq6 emote begins to heavily chisel upon the gemstone.
+  mq7 mob echo Hammer-blows ring upon the chisel, shaping the `#`Gemerald`^.
+  mq12 emote stops hammering and examines the emerald.
+  mq13 grin
+  mq15 emote begins to heavily chisel upon the gemstone.
+  mq16 mob echo Hammer-blows ring upon the chisel, shaping the `#`Gemerald`^ even more.
+  mq21 emote stops hammering and examines the emerald once more. 
+  mq23 smile
+  mq24 emote begins to finely chisel upon the gemstone.
+  mq25 mob echo Light taps upon the chisel work smaller details into the `#`Gemerald`^.
+  mq28 emote begins signing to the beat of the hammer-blows.
+  mq29 say [in a melodic tone] Fine emerald...
+  mq30 emote stikes the hammer upon the chisel.
+  mq31 mob echo Chiiiing!!!
+  mq32 say [in a melodic tone] I make you deadly...
+  mq33 emote strikes the hammer upon the chisel.
+  mq34 mob echo Chiiiing!!!
+  mq35 say [in a melodic tone] Shaping your facets...
+  mq36 emote strikes the hammer upon the chisel.
+  mq37 mob echo Chiiiing!!!
+  mq38 say [in a melodic tone] To crush your enemy!
+  mq39 emote strikes the hammer upon the chisel with a forcefull blow.
+  mq40 mob echo CHIIIING!!!!!!
+  mq42 emote puts his tools down.
+  mq43 emote picks up the finished mace.
+  mq44 delight
+  mq45 mob oload 26405
+  mq46 give mace $n
+  mq47 say > $n [smiling broadly] Behold, a masterpiece of a mace, if I've ever seen one!
+  mq48 say > $n I hope you use it well.
+  mq49 bow $n
+else
+  say > $n You need to have the emerald as well!
+  mq2 sigh
+endif
+end
+~
+disabled false
+last_editor Shang-ti~
+last_editdate 1046272395
+END
+
+#26400
+title specialshop test~
+author Shang-ti~
+code if wears $n 26404
+  nod $n
+  mq2 pmote $n looks at @.
+  mq3 gasp
+  mq5 say > $n That is quite the find you have there...
+  mq6 pmote $n points to @r large uncut gemstone.
+  mq8 smile $n
+  mq9 say > $n You know what?
+  mq11 say > $n I could work a superb mace from that gemstone.
+  mq13 say > $n Give me 20 gold and the mace shall be yours.
+else
+  nod $n
+  mq2 say > $n [smiling warmly] Good day to you. Might I help you somehow?
+endif
+end
+~
+disabled false
+disabled_text `S#############
+             Disabling mobprog `G26400`x,`Y26401`x,`B3000`x,`r0`x,`C1`x:
+             `YMobprog: invalid if_check (if) 'wear', mob 26401 prog 26400
+`x             Trigger type 'GRALL' phrase '100'
+             Call stack info:
+             MOBprog 26400 on mob 26401 (in room 3000), line 0
+`S#############
+
+~
+last_editor Shang-ti~
+last_editdate 1046270065
+END
+
+#0
+
+
+#$
